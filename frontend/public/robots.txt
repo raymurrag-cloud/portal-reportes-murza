@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+Sitemap: https://reportes.murzainversiones.com/api/reportes/sitemap.xml
