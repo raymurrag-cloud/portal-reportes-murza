@@ -116,13 +116,40 @@ img { max-width: 100%; }
 .chart-block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px 12px; margin: 24px 0; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
 .chart-title { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 4px; }
 
-/* ── Score Bar ─────────────────────────────────────────────────────────── */
-.score-bar-block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
-.score-bar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-.score-bar-label { font-size: 14px; font-weight: 700; color: var(--text); }
-.score-bar-value { font-size: 1.4rem; font-weight: 800; }
-.score-bar-track { background: #e2e8f0; border-radius: 999px; height: 12px; overflow: hidden; }
-.score-bar-fill { height: 100%; border-radius: 999px; transition: width 0.8s ease; }
+/* ── Score Block ───────────────────────────────────────────────────────── */
+.score-block { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 24px 0; box-shadow: 0 1px 6px rgba(0,0,0,.06); }
+.score-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.score-label { font-size: 15px; font-weight: 700; color: var(--text); }
+.score-num { font-size: 2rem; font-weight: 900; }
+.score-track { background: #e2e8f0; border-radius: 999px; height: 14px; overflow: hidden; margin-bottom: 20px; }
+.score-fill { height: 100%; border-radius: 999px; transition: width 1s ease; }
+.score-items { display: flex; flex-direction: column; gap: 10px; }
+.score-item { display: grid; grid-template-columns: 1fr 120px 48px; align-items: center; gap: 12px; font-size: 13px; }
+.score-item-label { color: var(--text); font-weight: 500; }
+.score-item-bar { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+.score-item-val { text-align: right; font-weight: 700; color: var(--text-muted); }
+
+/* ── Flags Block ───────────────────────────────────────────────────────── */
+.flags-block { display: flex; flex-direction: column; gap: 12px; margin: 24px 0; }
+.flag-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid; border-radius: 0 10px 10px 0; padding: 16px 18px; }
+.flag-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.flag-icon { font-size: 1.1rem; }
+.flag-title { font-weight: 700; font-size: 14px; flex: 1; }
+.flag-badge { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.flag-row { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-top: 4px; }
+.flag-row strong { color: var(--text); }
+
+/* ── Verdict Block ─────────────────────────────────────────────────────── */
+.verdict-block { border: 2px solid; border-radius: 16px; padding: 28px; margin: 28px 0; background: var(--surface); box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.verdict-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.verdict-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 4px; }
+.verdict-status { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; }
+.verdict-score { color: #fff; font-size: 1.3rem; font-weight: 800; padding: 12px 20px; border-radius: 12px; }
+.verdict-metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; padding: 16px; background: var(--bg); border-radius: 10px; }
+.verdict-metric { display: flex; flex-direction: column; gap: 2px; }
+.verdict-metric-label { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.verdict-metric-value { font-size: 1rem; font-weight: 700; color: var(--text); }
+.verdict-summary { font-size: 14px; line-height: 1.8; color: var(--text-muted); margin: 0; }
 
 /* Separadores y citas */
 .reporte-contenido hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }

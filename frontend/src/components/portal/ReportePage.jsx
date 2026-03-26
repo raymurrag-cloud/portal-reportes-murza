@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { api } from '../../api.js';
-import { ChartBlock, KpiBlock, ScoreBar } from './ChartBlocks.jsx';
+import { ChartBlock, KpiBlock, ScoreBar, FlagsBlock, VerdictBlock } from './ChartBlocks.jsx';
 
 export default function ReportePage() {
   const { slug } = useParams();
@@ -87,6 +87,12 @@ export default function ReportePage() {
                   }
                   if (!inline && lang === 'score') {
                     try { return <ScoreBar {...JSON.parse(raw)} />; } catch {}
+                  }
+                  if (!inline && lang === 'flags') {
+                    try { return <FlagsBlock items={JSON.parse(raw)} />; } catch {}
+                  }
+                  if (!inline && lang === 'verdict') {
+                    try { return <VerdictBlock {...JSON.parse(raw)} />; } catch {}
                   }
                   if (inline) return <code className={className} {...props}>{children}</code>;
                   return <pre className="code-block"><code>{raw}</code></pre>;
