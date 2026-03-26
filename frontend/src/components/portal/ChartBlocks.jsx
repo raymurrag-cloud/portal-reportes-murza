@@ -1,41 +1,60 @@
 import React from 'react';
 import {
-  BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
-  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine
+  AreaChart, Area,
+  BarChart, Bar,
+  PieChart, Pie, Cell,
+  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
-const GOLD   = '#A08040';
-const GRAY   = '#94a3b8';
-const GREEN  = '#16a34a';
-const RED    = '#dc2626';
-const YELLOW = '#d97706';
-const BLUE   = '#2563eb';
+/* ── Paleta cálida — zero blue ─────────────────────────────────────────── */
+const GOLD   = '#B5872A';
+const GOLD2  = '#D4A035';
+const COPPER = '#C07040';
+const SAGE   = '#6A8C6A';
+const SIENNA = '#9C5A3C';
+const CLAY   = '#8A7060';
+const GRAY   = '#9A8E82';
+const GREEN  = '#2D7A4F';
+const RED    = '#B83232';
+const AMBER  = '#B5722A';
 
-const PALETTE = [GOLD, '#C9A84C', '#e8c97a', BLUE, GRAY];
+const PALETTE = [GOLD, COPPER, SAGE, SIENNA, GOLD2, CLAY];
 
 function sigColor(s) {
-  return s === 'green' ? GREEN : s === 'red' ? RED : s === 'yellow' ? YELLOW : GRAY;
+  return s === 'green' ? GREEN : s === 'red' ? RED : s === 'yellow' ? AMBER : GRAY;
 }
 function sigBg(s) {
-  return s === 'green' ? '#f0fdf4' : s === 'red' ? '#fef2f2' : s === 'yellow' ? '#fffbeb' : '#f8fafc';
+  return s === 'green' ? '#EAF4EE' : s === 'red' ? '#FAECEC' : s === 'yellow' ? '#FBF0E3' : '#F4EFE6';
 }
 
-// ── Tooltip ─────────────────────────────────────────────────────────────────
+/* ── Tooltip premium — parchment warm ──────────────────────────────────── */
 const Tip = ({ active, payload, label, unit }) => {
   if (!active || !payload?.length) return null;
   return (
-    <div style={{ background:'#fff', border:'1px solid #e2e8f0', borderRadius:8, padding:'10px 14px', boxShadow:'0 4px 16px rgba(0,0,0,.12)', fontSize:13 }}>
-      <p style={{ margin:0, fontWeight:700, color:'#1e293b', marginBottom:4 }}>{label}</p>
-      {payload.map((p,i) => (
-        <p key={i} style={{ margin:'2px 0', color:p.color }}>
-          {p.name}: <strong>{typeof p.value === 'number' ? p.value.toLocaleString() : p.value}{unit ? ` ${unit}` : ''}</strong>
+    <div style={{
+      background: '#FAF6EF',
+      border: '1px solid #C9BDA8',
+      borderRadius: 8,
+      padding: '11px 16px',
+      boxShadow: '0 8px 32px rgba(28,20,16,.2)',
+      fontSize: 13,
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      minWidth: 140,
+    }}>
+      <p style={{ margin: 0, fontWeight: 800, color: '#1C1410', marginBottom: 6, fontSize: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>{label}</p>
+      {payload.map((p, i) => (
+        <p key={i} style={{ margin: '3px 0', color: p.color || p.stroke, fontWeight: 600, fontSize: 13 }}>
+          {p.name}: <strong style={{ color: '#1C1410' }}>
+            {typeof p.value === 'number' ? p.value.toLocaleString('es-MX') : p.value}
+            {unit ? ` ${unit}` : ''}
+          </strong>
         </p>
       ))}
     </div>
   );
 };
 
-// ── ChartBlock ───────────────────────────────────────────────────────────────
+/* ── ChartBlock ─────────────────────────────────────────────────────────── */
 export function ChartBlock({ config }) {
   const { type, title, subtitle, data, unit, color, series } = config;
   const c = color || GOLD;
@@ -50,69 +69,122 @@ export function ChartBlock({ config }) {
           </div>
         </div>
       )}
-      <ResponsiveContainer width="100%" height={300}>
+
+      <ResponsiveContainer width="100%" height={320}>
+
+        {/* ── Bar chart ─────────────────────────────────────────────────── */}
         {type === 'bar' ? (
-          <BarChart data={data} margin={{ top:8, right:20, left:0, bottom:4 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
-            <XAxis dataKey="label" tick={{ fontSize:12, fill:'#64748b' }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fontSize:11, fill:'#94a3b8' }} axisLine={false} tickLine={false}
-              tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} />
-            <Tooltip content={<Tip unit={unit} />} cursor={{ fill:'rgba(160,128,64,.06)' }} />
+          <BarChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 4 }}>
+            <defs>
+              <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stopColor={c} stopOpacity={1} />
+                <stop offset="100%" stopColor={c} stopOpacity={0.5} />
+              </linearGradient>
+              {PALETTE.map((col, i) => (
+                <linearGradient key={i} id={`barG${i}`} x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stopColor={col} stopOpacity={1} />
+                  <stop offset="100%" stopColor={col} stopOpacity={0.5} />
+                </linearGradient>
+              ))}
+            </defs>
+            <CartesianGrid strokeDasharray="2 4" stroke="#DDD4C0" vertical={false} strokeOpacity={0.7} />
+            <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false}
+              tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}K` : v} />
+            <Tooltip content={<Tip unit={unit} />} cursor={{ fill: 'rgba(181,135,42,.06)' }} />
             {series ? (
               <>
-                <Legend wrapperStyle={{ fontSize:12 }} />
-                {series.map((s,i) => (
-                  <Bar key={s.key} dataKey={s.key} name={s.name||s.label} fill={PALETTE[i]} radius={[4,4,0,0]} maxBarSize={48} />
+                <Legend wrapperStyle={{ fontSize: 12, color: '#7A6D5E', fontFamily: 'sans-serif', paddingTop: 8 }} />
+                {series.map((s, i) => (
+                  <Bar key={s.key} dataKey={s.key} name={s.name || s.label}
+                    fill={`url(#barG${i})`} radius={[5, 5, 0, 0]} maxBarSize={44} />
                 ))}
               </>
             ) : (
-              <Bar dataKey="value" name={unit||'Valor'} radius={[4,4,0,0]} maxBarSize={56}
-                fill="url(#barGrad)">
-                <defs>
-                  <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor={c} stopOpacity={1} />
-                    <stop offset="100%" stopColor={c} stopOpacity={0.7} />
-                  </linearGradient>
-                </defs>
-              </Bar>
+              <Bar dataKey="value" name={unit || 'Valor'}
+                radius={[5, 5, 0, 0]} maxBarSize={54} fill={`url(#barGrad)`} />
             )}
           </BarChart>
+
+        /* ── Area / Line chart ────────────────────────────────────────── */
         ) : type === 'line' ? (
-          <LineChart data={data} margin={{ top:8, right:20, left:0, bottom:4 }}>
+          <AreaChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 4 }}>
             <defs>
-              <linearGradient id="lineArea" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor={c} stopOpacity={0.15} />
-                <stop offset="95%" stopColor={c} stopOpacity={0} />
+              <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stopColor={c} stopOpacity={0.22} />
+                <stop offset="70%"  stopColor={c} stopOpacity={0.05} />
+                <stop offset="100%" stopColor={c} stopOpacity={0} />
               </linearGradient>
+              {PALETTE.map((col, i) => (
+                <linearGradient key={i} id={`areaF${i}`} x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stopColor={col} stopOpacity={0.18} />
+                  <stop offset="75%"  stopColor={col} stopOpacity={0.03} />
+                  <stop offset="100%" stopColor={col} stopOpacity={0} />
+                </linearGradient>
+              ))}
             </defs>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
-            <XAxis dataKey="label" tick={{ fontSize:12, fill:'#64748b' }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fontSize:11, fill:'#94a3b8' }} axisLine={false} tickLine={false} />
+            <CartesianGrid strokeDasharray="2 4" stroke="#DDD4C0" vertical={false} strokeOpacity={0.7} />
+            <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
             <Tooltip content={<Tip unit={unit} />} />
-            {series ? series.map((s,i) => (
-              <Line key={s.key} type="monotone" dataKey={s.key} name={s.name||s.label}
-                stroke={PALETTE[i]} strokeWidth={2.5} dot={{ r:4, fill:PALETTE[i] }} />
-            )) : (
-              <Line type="monotone" dataKey="value" stroke={c} strokeWidth={2.5}
-                dot={{ r:5, fill:c, strokeWidth:2, stroke:'#fff' }} activeDot={{ r:7 }} />
+            {series ? (
+              <>
+                <Legend wrapperStyle={{ fontSize: 12, color: '#7A6D5E', fontFamily: 'sans-serif', paddingTop: 8 }} />
+                {series.map((s, i) => (
+                  <Area key={s.key} type="monotone" dataKey={s.key} name={s.name || s.label}
+                    stroke={PALETTE[i]} strokeWidth={2.5}
+                    fill={`url(#areaF${i})`}
+                    dot={false}
+                    activeDot={{ r: 6, fill: PALETTE[i], stroke: '#FAF6EF', strokeWidth: 2.5 }} />
+                ))}
+              </>
+            ) : (
+              <Area type="monotone" dataKey="value"
+                stroke={c} strokeWidth={2.5}
+                fill="url(#areaFill)"
+                dot={false}
+                activeDot={{ r: 7, fill: c, stroke: '#FAF6EF', strokeWidth: 2.5 }} />
             )}
-          </LineChart>
+          </AreaChart>
+
+        /* ── Donut chart ──────────────────────────────────────────────── */
         ) : type === 'donut' ? (
           <PieChart>
-            <Pie data={data} cx="50%" cy="50%" innerRadius={75} outerRadius={115}
-              dataKey="value" nameKey="label" paddingAngle={3}>
-              {data.map((_,i) => <Cell key={i} fill={PALETTE[i % PALETTE.length]} />)}
+            <defs>
+              {PALETTE.map((col, i) => (
+                <radialGradient key={i} id={`pieG${i}`} cx="50%" cy="50%" r="50%">
+                  <stop offset="0%"   stopColor={col} stopOpacity={1} />
+                  <stop offset="100%" stopColor={col} stopOpacity={0.72} />
+                </radialGradient>
+              ))}
+            </defs>
+            <Pie data={data} cx="50%" cy="50%"
+              innerRadius={82} outerRadius={120}
+              dataKey="value" nameKey="label"
+              paddingAngle={2} strokeWidth={0}>
+              {data.map((_, i) => (
+                <Cell key={i} fill={`url(#pieG${i % PALETTE.length})`} />
+              ))}
             </Pie>
-            <Tooltip formatter={(v,n) => [`${v}${unit||''}`, n]} />
-            <Legend wrapperStyle={{ fontSize:12 }} />
+            <Tooltip
+              formatter={(v, n) => [`${v}${unit || ''}`, n]}
+              contentStyle={{
+                background: '#FAF6EF', border: '1px solid #C9BDA8',
+                borderRadius: 8, fontSize: 13,
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+              }}
+            />
+            <Legend wrapperStyle={{ fontSize: 12, color: '#7A6D5E', fontFamily: 'sans-serif' }} />
           </PieChart>
+
         ) : null}
+
       </ResponsiveContainer>
     </div>
   );
 }
 
-// ── KpiBlock ─────────────────────────────────────────────────────────────────
+/* ── KpiBlock ───────────────────────────────────────────────────────────── */
 export function KpiBlock({ items }) {
   return (
     <div className="kpi-grid">
@@ -132,28 +204,31 @@ export function KpiBlock({ items }) {
   );
 }
 
-// ── ScoreBar ──────────────────────────────────────────────────────────────────
+/* ── ScoreBar ───────────────────────────────────────────────────────────── */
 export function ScoreBar({ score, max = 10, label, items }) {
   const pct = (score / max) * 100;
-  const col  = pct >= 80 ? GREEN : pct >= 60 ? YELLOW : RED;
+  const col = pct >= 80 ? GREEN : pct >= 60 ? AMBER : RED;
   return (
     <div className="score-block">
       <div className="score-header">
         <span className="score-label">{label || 'Quality Score'}</span>
-        <span className="score-num" style={{ color: col }}>{score} <span style={{ fontSize:'1rem', fontWeight:400, color:'#94a3b8' }}>/ {max}</span></span>
+        <span className="score-num" style={{ color: col }}>
+          {score} <span style={{ fontSize: '1rem', fontWeight: 400, color: '#A8998A' }}>/ {max}</span>
+        </span>
       </div>
       <div className="score-track">
-        <div className="score-fill" style={{ width:`${pct}%`, background:`linear-gradient(90deg, ${col}cc, ${col})` }} />
+        <div className="score-fill" style={{ width: `${pct}%`, background: `linear-gradient(90deg, ${col}cc, ${col})` }} />
       </div>
       {items && (
         <div className="score-items">
-          {items.map((it,i) => {
+          {items.map((it, i) => {
             const p2 = (it.score / it.max) * 100;
+            const c2 = p2 >= 80 ? GREEN : p2 >= 60 ? AMBER : RED;
             return (
               <div key={i} className="score-item">
                 <span className="score-item-label">{it.label}</span>
                 <div className="score-item-bar">
-                  <div style={{ width:`${p2}%`, background: p2>=80?GREEN:p2>=60?YELLOW:RED, height:'100%', borderRadius:999 }} />
+                  <div style={{ width: `${p2}%`, background: c2, height: '100%', borderRadius: 999 }} />
                 </div>
                 <span className="score-item-val">{it.score}/{it.max}</span>
               </div>
@@ -165,12 +240,12 @@ export function ScoreBar({ score, max = 10, label, items }) {
   );
 }
 
-// ── FlagsBlock ────────────────────────────────────────────────────────────────
+/* ── FlagsBlock ─────────────────────────────────────────────────────────── */
 export function FlagsBlock({ items }) {
-  const icon = { red:'🔴', yellow:'🟡', green:'🟢' };
+  const icon = { red: '🔴', yellow: '🟡', green: '🟢' };
   return (
     <div className="flags-block">
-      {items.map((it,i) => (
+      {items.map((it, i) => (
         <div key={i} className="flag-card" style={{ borderLeftColor: sigColor(it.level) }}>
           <div className="flag-header">
             <span className="flag-icon">{icon[it.level] || '⚪'}</span>
@@ -181,22 +256,22 @@ export function FlagsBlock({ items }) {
               </span>
             )}
           </div>
-          {it.evidence    && <div className="flag-row"><strong>Evidencia:</strong> {it.evidence}</div>}
-          {it.context     && <div className="flag-row"><strong>Contexto:</strong> {it.context}</div>}
+          {it.evidence && <div className="flag-row"><strong>Evidencia:</strong> {it.evidence}</div>}
+          {it.context  && <div className="flag-row"><strong>Contexto:</strong> {it.context}</div>}
         </div>
       ))}
     </div>
   );
 }
 
-// ── VerdictBlock ──────────────────────────────────────────────────────────────
+/* ── VerdictBlock ───────────────────────────────────────────────────────── */
 export function VerdictBlock({ status, score, color, summary, metrics }) {
-  const col = color === 'green' ? GREEN : color === 'red' ? RED : YELLOW;
+  const col = color === 'green' ? GREEN : color === 'red' ? RED : AMBER;
   return (
     <div className="verdict-block" style={{ borderColor: col }}>
       <div className="verdict-top">
         <div>
-          <div className="verdict-label">Veredicto</div>
+          <div className="verdict-label">Veredicto del Analista</div>
           <div className="verdict-status" style={{ color: col }}>{status}</div>
         </div>
         {score && (
@@ -207,7 +282,7 @@ export function VerdictBlock({ status, score, color, summary, metrics }) {
       </div>
       {metrics && (
         <div className="verdict-metrics">
-          {metrics.map((m,i) => (
+          {metrics.map((m, i) => (
             <div key={i} className="verdict-metric">
               <span className="verdict-metric-label">{m.label}</span>
               <span className="verdict-metric-value">{m.value}</span>
