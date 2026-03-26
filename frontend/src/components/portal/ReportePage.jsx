@@ -119,6 +119,15 @@ export default function ReportePage() {
                   return <td {...props}>{children}</td>;
                 },
 
+                /* ── Tabla con scroll horizontal ── */
+                table({ children, ...props }) {
+                  return (
+                    <div style={{ overflowX: 'auto', width: '100%', WebkitOverflowScrolling: 'touch' }}>
+                      <table {...props}>{children}</table>
+                    </div>
+                  );
+                },
+
                 /* ── Bloques de código personalizados ── */
                 code({ node, inline, className, children, ...props }) {
                   const lang = /language-(\w+)/.exec(className || '')?.[1];

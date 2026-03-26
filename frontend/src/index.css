@@ -176,9 +176,11 @@ img { max-width: 100%; }
     radial-gradient(ellipse at 15% 85%, rgba(181,135,42,.06) 0%, transparent 45%),
     linear-gradient(155deg, #1C1410 0%, #2A1F14 45%, #1E170E 75%, #150F0A 100%);
   border-bottom: 2px solid var(--gold);
-  padding: 56px 64px;
+  padding: 56px clamp(24px, 5vw, 64px);
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* Subtle financial grid texture */
@@ -234,7 +236,13 @@ img { max-width: 100%; }
 
 
 /* ── Contenido wrap ────────────────────────────────────────────────────── */
-.reporte-contenido-wrap { padding: 56px 64px; background: var(--bg); }
+.reporte-contenido-wrap {
+  padding: 56px clamp(20px, 5vw, 64px);
+  background: var(--bg);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
 
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -295,33 +303,25 @@ img { max-width: 100%; }
    • Números tabulares alineados a la derecha desde col 2 en adelante
 ═══════════════════════════════════════════════════════════════════════ */
 
-/* Wrapper para scroll horizontal */
-.reporte-contenido .table-scroll,
-.reporte-contenido table {
-  display: block;
-  width: 100%;
+/* El wrapper div (inyectado por ReactMarkdown renderer) maneja el scroll */
+.reporte-contenido div:has(> table) {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  margin: 24px 0 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
 }
-/* Cuando ReactMarkdown genera la tabla directamente, necesitamos el wrapper interno */
+
 .reporte-contenido table {
   display: table;
   width: 100%;
-  min-width: 480px;
+  min-width: 560px;
   border-collapse: separate; border-spacing: 0;
-  margin: 24px 0 40px; font-size: 13px;
+  margin: 0; font-size: 13px;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow); border: 1px solid var(--border-warm);
-  font-variant-numeric: tabular-nums;
-}
-/* Wrapper externo que sí hace el scroll */
-.reporte-contenido > table,
-.reporte-contenido p + table,
-.reporte-contenido h1 + table,
-.reporte-contenido h2 + table,
-.reporte-contenido h3 + table {
-  display: block;
-  overflow-x: auto;
+  border: 1px solid var(--border-warm);
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .reporte-contenido thead tr { background: var(--espresso); }
@@ -357,9 +357,10 @@ img { max-width: 100%; }
 .reporte-contenido td:last-child { border-right: none; }
 .reporte-contenido td:first-child {
   text-align: left; font-weight: 700; color: var(--espresso);
-  background: rgba(245,237,216,.18);
+  background: #F8F4EC;
   position: sticky; left: 0; z-index: 1;
   white-space: normal;
+  min-width: 140px; max-width: 220px;
 }
 
 
@@ -530,7 +531,7 @@ img { max-width: 100%; }
 .verdict-metric-label {
   font-size: 9.5px; color: var(--text-faint); font-weight: 800;
   text-transform: uppercase; letter-spacing: 1.2px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  white-space: normal; word-break: break-word;
 }
 .verdict-metric-value {
   font-size: 1.05rem; font-weight: 800; color: var(--espresso);
@@ -624,14 +625,8 @@ img { max-width: 100%; }
 
 
 /* ── Responsive ────────────────────────────────────────────────────────── */
-@media (max-width: 1200px) {
-  .reporte-hero { padding: 48px 48px; }
-  .reporte-contenido-wrap { padding: 48px 48px; }
-}
 @media (max-width: 1024px) {
-  .reporte-hero { padding: 40px 36px; }
   .reporte-ticker-hero { font-size: 4rem; }
-  .reporte-contenido-wrap { padding: 40px 36px; }
 }
 @media (max-width: 768px) {
   .portal-header { padding: 12px 20px; }
