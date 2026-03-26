@@ -10,7 +10,7 @@ function generarSlug(empresa, ticker) {
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
-  const fecha = new Date().toISOString().slice(0, 7); // 2026-03
+  const fecha = new Date().toISOString().slice(0, 7);
   return `${base}-${fecha}`;
 }
 
@@ -20,70 +20,68 @@ function cortarPorParrafos(md, n) {
 }
 
 // ── Buscar / listar reportes públicos ──────────────────────────────────────
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   const { ticker } = req.query;
-  let rows;
+  let result;
   if (ticker) {
-    rows = db.prepare(`
-      SELECT id, ticker, empresa, slug, meta_descripcion, created_at
-      FROM reportes WHERE publicado = 1 AND ticker LIKE ?
-      ORDER BY created_at DESC
-    `).all(`%${ticker.toUpperCase()}%`);
+    result = await db.execute({
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 AND ticker LIKE ? ORDER BY created_at DESC',
+      args: [`%${ticker.toUpperCase()}%`],
+    });
   } else {
-    rows = db.prepare(`
-      SELECT id, ticker, empresa, slug, meta_descripcion, created_at
-      FROM reportes WHERE publicado = 1
-      ORDER BY created_at DESC LIMIT 20
-    `).all();
+    result = await db.execute({
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC LIMIT 20',
+      args: [],
+    });
   }
-  res.json(rows);
+  res.json(result.rows);
 });
 
 // ── Leer reporte público (preview) ────────────────────────────────────────
-router.get('/:slug', (req, res) => {
-  const reporte = db.prepare(`
-    SELECT id, ticker, empresa, contenido_md, parrafos_gratis, slug, meta_descripcion, created_at
-    FROM reportes WHERE slug = ? AND publicado = 1
-  `).get(req.params.slug);
+router.get('/:slug', async (req, res) => {
+  if (req.params.slug === 'sitemap.xml') return res.status(404).end();
 
+  const { rows } = await db.execute({
+    sql:  'SELECT id, ticker, empresa, contenido_md, parrafos_gratis, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    args: [req.params.slug],
+  });
+  const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
 
   const preview = cortarPorParrafos(reporte.contenido_md, reporte.parrafos_gratis);
   const total   = reporte.contenido_md.split(/\n\n+/).filter(p => p.trim()).length;
 
   res.json({
-    id:              reporte.id,
-    ticker:          reporte.ticker,
-    empresa:         reporte.empresa,
-    slug:            reporte.slug,
+    id:               Number(reporte.id),
+    ticker:           reporte.ticker,
+    empresa:          reporte.empresa,
+    slug:             reporte.slug,
     meta_descripcion: reporte.meta_descripcion,
-    created_at:      reporte.created_at,
+    created_at:       reporte.created_at,
     contenido_preview: preview,
-    parrafos_gratis: reporte.parrafos_gratis,
-    total_parrafos:  total,
-    tiene_mas:       total > reporte.parrafos_gratis,
+    parrafos_gratis:  reporte.parrafos_gratis,
+    total_parrafos:   total,
+    tiene_mas:        total > reporte.parrafos_gratis,
   });
 });
 
 // ── Leer reporte completo (requiere login de usuario) ─────────────────────
-router.get('/:slug/completo', authUser, (req, res) => {
-  const reporte = db.prepare(`
-    SELECT id, ticker, empresa, contenido_md, slug, meta_descripcion, created_at
-    FROM reportes WHERE slug = ? AND publicado = 1
-  `).get(req.params.slug);
-
+router.get('/:slug/completo', authUser, async (req, res) => {
+  const { rows } = await db.execute({
+    sql:  'SELECT id, ticker, empresa, contenido_md, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    args: [req.params.slug],
+  });
+  const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
-  res.json(reporte);
+  res.json({ ...reporte, id: Number(reporte.id) });
 });
 
 // ── Sitemap XML ───────────────────────────────────────────────────────────
-router.get('/sitemap.xml', (req, res) => {
-  const reportes = db.prepare(`
-    SELECT slug, updated_at FROM reportes WHERE publicado = 1
-  `).all();
+router.get('/sitemap.xml', async (req, res) => {
+  const { rows } = await db.execute({ sql: 'SELECT slug, updated_at FROM reportes WHERE publicado = 1', args: [] });
 
   const base = process.env.SITE_URL || 'https://reportes.murzainversiones.com';
-  const urls = reportes.map(r => `
+  const urls = rows.map(r => `
   <url>
     <loc>${base}/reporte/${r.slug}</loc>
     <lastmod>${r.updated_at?.split(' ')[0]}</lastmod>
