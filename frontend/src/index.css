@@ -244,6 +244,13 @@ img { max-width: 100%; }
   width: 100%;
 }
 
+.reporte-contenido {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 
 /* ═══════════════════════════════════════════════════════════════════════
    TYPOGRAPHY — editorial financial publication
@@ -487,9 +494,11 @@ img { max-width: 100%; }
   background: var(--surface-pure);
   box-shadow: var(--shadow-lg);
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .verdict-block::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -497,9 +506,9 @@ img { max-width: 100%; }
   opacity: .5; pointer-events: none;
 }
 .verdict-block::after {
-  content: ''; position: absolute; bottom: -24px; right: -24px;
+  content: ''; position: absolute; bottom: 0; right: 0;
   width: 180px; height: 180px;
-  background: radial-gradient(circle at 70% 70%, rgba(181,135,42,.07), transparent 65%);
+  background: radial-gradient(circle at 80% 80%, rgba(181,135,42,.07), transparent 65%);
   pointer-events: none;
 }
 
