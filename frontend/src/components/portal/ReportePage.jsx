@@ -101,16 +101,16 @@ export default function ReportePage() {
                       return (
                         <td {...props}>
                           <span style={{
-                            color: pos ? '#2D7A4F' : '#B83232',
+                            color: pos ? '#16A34A' : '#DC2626',
                             fontWeight: 700,
-                            background: pos ? '#EAF4EE' : '#FAECEC',
+                            background: pos ? 'rgba(22,163,74,.10)' : 'rgba(220,38,38,.10)',
                             padding: '2px 8px',
                             borderRadius: 4,
                             fontSize: '12px',
                             fontFamily: 'sans-serif',
                             letterSpacing: '0.3px',
                           }}>
-                            {pos && !text.startsWith('+') ? `+${text}` : text}
+                            {pos ? '▲ ' : '▼ '}{pos && !text.startsWith('+') ? `+${text}` : text}
                           </span>
                         </td>
                       );

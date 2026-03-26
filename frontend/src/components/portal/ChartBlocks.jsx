@@ -14,8 +14,8 @@ const SAGE   = '#6A8C6A';
 const SIENNA = '#9C5A3C';
 const CLAY   = '#8A7060';
 const GRAY   = '#9A8E82';
-const GREEN  = '#2D7A4F';
-const RED    = '#B83232';
+const GREEN  = '#16A34A';
+const RED    = '#DC2626';
 const AMBER  = '#B5722A';
 
 const PALETTE = [GOLD, COPPER, SAGE, SIENNA, GOLD2, CLAY];
@@ -24,7 +24,7 @@ function sigColor(s) {
   return s === 'green' ? GREEN : s === 'red' ? RED : s === 'yellow' ? AMBER : GRAY;
 }
 function sigBg(s) {
-  return s === 'green' ? '#EAF4EE' : s === 'red' ? '#FAECEC' : s === 'yellow' ? '#FBF0E3' : '#F4EFE6';
+  return s === 'green' ? 'rgba(22,163,74,.10)' : s === 'red' ? 'rgba(220,38,38,.10)' : s === 'yellow' ? 'rgba(181,114,42,.10)' : 'rgba(168,153,138,.10)';
 }
 
 /* ── Tooltip premium — parchment warm ──────────────────────────────────── */
@@ -200,7 +200,7 @@ export function KpiBlock({ items }) {
           <div className="kpi-value">{it.value}</div>
           {it.change && (
             <div className="kpi-change" style={{ color: sigColor(it.signal), background: sigBg(it.signal) }}>
-              {it.change}
+              {it.signal === 'green' ? '▲ ' : it.signal === 'red' ? '▼ ' : ''}{it.change}
             </div>
           )}
           {it.note && <div className="kpi-note">{it.note}</div>}

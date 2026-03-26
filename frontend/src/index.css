@@ -31,12 +31,12 @@
   --text-muted:    #7A6D5E;
   --text-faint:    #A8998A;
 
-  --green:         #2D7A4F;
-  --green-bg:      #EAF4EE;
-  --red:           #B83232;
-  --red-bg:        #FAECEC;
+  --green:         #16A34A;
+  --green-bg:      rgba(22,163,74,.10);
+  --red:           #DC2626;
+  --red-bg:        rgba(220,38,38,.10);
   --amber:         #B5722A;
-  --amber-bg:      #FBF0E3;
+  --amber-bg:      rgba(181,114,42,.10);
 
   --radius:        10px;
   --radius-lg:     16px;
@@ -48,25 +48,20 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
 
-/* UI chrome uses sans-serif */
-.portal-header, .portal-footer, .admin-page, .auth-page,
-.kpi-label, .kpi-change, .kpi-note,
-.chart-title, .chart-subtitle,
-.score-label, .score-item-label, .score-item-val,
-.flag-title, .flag-badge, .flag-row,
-.verdict-label, .verdict-metric-label, .verdict-metric-value,
-.reporte-hero-meta, .hero-brand,
-.reporte-empresa-hero,
-.btn-primary, .btn-primary-sm, .btn-ghost, .btn-ghost-sm,
-.reporte-contenido h3,
-.reporte-contenido table {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+/* Serif only for display numerics and editorial headings */
+.reporte-ticker-hero,
+.kpi-value,
+.score-num,
+.verdict-status,
+.verdict-score,
+.verdict-metric-value {
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 a { color: var(--gold-dark); text-decoration: none; }
@@ -171,7 +166,7 @@ img { max-width: 100%; }
    REPORTE ARTICLE — the main canvas
 ═══════════════════════════════════════════════════════════════════════ */
 
-.reporte-article { max-width: 1440px; margin: 0 auto; flex: 1; width: 100%; }
+.reporte-article { max-width: 1280px; margin: 0 auto; flex: 1; width: 100%; }
 
 
 /* ── Hero banner ───────────────────────────────────────────────────────── */
@@ -332,11 +327,12 @@ img { max-width: 100%; }
 .reporte-contenido thead tr { background: var(--espresso); }
 
 .reporte-contenido th {
-  color: rgba(245,237,216,.72);
-  padding: 13px 18px; text-align: right;
-  font-weight: 700; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: rgba(245,237,216,.65);
+  padding: 11px 18px; text-align: right;
+  font-weight: 600; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
   border-right: 1px solid rgba(245,237,216,.06);
   white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 .reporte-contenido th:first-child {
   text-align: left;
@@ -349,14 +345,14 @@ img { max-width: 100%; }
 .reporte-contenido th:last-child { border-right: none; }
 
 .reporte-contenido tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
-.reporte-contenido tbody tr:nth-child(even) { background: var(--bg-alt); }
-.reporte-contenido tbody tr:hover { background: var(--gold-pale); }
+.reporte-contenido tbody tr:hover { background: rgba(181,135,42,.04); }
 .reporte-contenido tbody tr:last-child { border-bottom: none; }
 
 .reporte-contenido td {
   padding: 12px 18px; vertical-align: middle;
   color: var(--text-warm); border-right: 1px solid var(--border);
   text-align: right; white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 .reporte-contenido td:last-child { border-right: none; }
 .reporte-contenido td:first-child {
