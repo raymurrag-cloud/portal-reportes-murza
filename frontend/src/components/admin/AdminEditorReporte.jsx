@@ -196,11 +196,11 @@ export default function AdminEditorReporte() {
                 {modo === 'json' ? 'Secciones gratis' : 'Párrafos gratis'}
                 {modo === 'markdown' && <span className="hint"> ({totalParrafos} totales)</span>}
               </label>
-              <input name="parrafos_gratis" type="number" min="1" max={modo === 'json' ? 9 : (totalParrafos || 99)}
+              <input name="parrafos_gratis" type="number" min="1" max={modo === 'json' ? 14 : (totalParrafos || 99)}
                 value={form.parrafos_gratis} onChange={set} />
               <span className="field-hint">
                 {modo === 'json'
-                  ? 'Secciones visibles sin login: 1=Solo resumen · 2=+Descripción · 3=+Tabla · 4=+KPIs · 5=+Gráfica ingresos · 6=+Gráfica márgenes · 7=+Flags · 8=+Score · 9=Todo'
+                  ? 'Secciones sin login: 1=Resumen · 2=+Descripción · 3=+Tabla · 4=+KPIs · 5=+Gráfica ingresos · 6=+Gráfica márgenes · 7=+Capital Allocation · 8=+Comparación sector · 9=+Flags · 10=+Score · 11=+Análisis cualitativo · 12=+Veredicto · 13=+Conclusión · 14=Todo'
                   : 'Los primeros N párrafos se muestran sin login'}
               </span>
             </div>

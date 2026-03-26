@@ -32,7 +32,6 @@ function TablaFinanciera({ headers, rows }) {
                     {cell}
                   </td>
                 );
-                // Colorear celdas con porcentaje
                 const text = String(cell).trim();
                 if (text.includes('%')) {
                   const num = parseFloat(text.replace(/[^\-\d.]/g, ''));
@@ -71,24 +70,126 @@ function SeccionTexto({ titulo, contenido }) {
   );
 }
 
+/* ── Capital Allocation ──────────────────────────────────────────────────── */
+function CapitalAllocation({ items }) {
+  if (!items) return null;
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, margin: '8px 0 32px' }}>
+      {items.map((item, i) => (
+        <div key={i} style={{ background: '#FFFDF8', border: '1px solid #DDD4C0', borderRadius: 10, padding: '14px 18px' }}>
+          <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#7A6D5E', fontWeight: 600, marginBottom: 6 }}>{item.label}</div>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1410', lineHeight: 1.4 }}>{item.value}</div>
+          {item.nota && <div style={{ fontSize: 12, color: '#7A6D5E', marginTop: 4 }}>{item.nota}</div>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ── Comparación con el Sector ───────────────────────────────────────────── */
+function ComparacionSector({ headers, rows }) {
+  if (!headers || !rows) return null;
+  const posStyle = (text) => {
+    const t = text.toLowerCase();
+    if (t.includes('encima') || t.includes('excepcional') || t.includes('descuento')) return { color: '#16A34A', background: 'rgba(22,163,74,.10)' };
+    if (t.includes('debajo') || t.includes('presion')) return { color: '#DC2626', background: 'rgba(220,38,38,.10)' };
+    return { color: '#B5872A', background: 'rgba(181,135,42,.10)' };
+  };
+  return (
+    <div style={{ overflowX: 'auto', width: '100%', WebkitOverflowScrolling: 'touch', margin: '24px 0 40px', borderRadius: 12, boxShadow: '0 4px 20px rgba(28,20,16,.10)', border: '1px solid #C9BDA8' }}>
+      <table style={{ display: 'table', width: '100%', minWidth: 520, borderCollapse: 'separate', borderSpacing: 0, fontSize: 13, borderRadius: 12 }}>
+        <thead>
+          <tr style={{ background: '#F5EDD8' }}>
+            {headers.map((h, i) => (
+              <th key={i} style={{ padding: '11px 18px', textAlign: i === 0 ? 'left' : 'center', fontWeight: 700, fontSize: 11, letterSpacing: '0.06em', textTransform: 'uppercase', color: i === 0 ? '#1C1410' : '#7A6D5E', borderRight: i < headers.length - 1 ? '1px solid #DDD4C0' : 'none', borderLeft: i === 0 ? '3px solid #B5872A' : 'none', whiteSpace: 'nowrap' }}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, ri) => (
+            <tr key={ri} style={{ borderBottom: ri < rows.length - 1 ? '1px solid #DDD4C0' : 'none' }}>
+              {row.map((cell, ci) => {
+                if (ci === 0) return <td key={ci} style={{ padding: '12px 18px', fontWeight: 600, color: '#1C1410', background: '#FFFDF8', minWidth: 140, borderRight: '1px solid #DDD4C0' }}>{cell}</td>;
+                if (ci === row.length - 1) {
+                  const st = posStyle(String(cell));
+                  return <td key={ci} style={{ padding: '12px 18px', textAlign: 'center' }}><span style={{ ...st, padding: '3px 10px', borderRadius: 4, fontSize: 12, fontWeight: 700 }}>{cell}</span></td>;
+                }
+                return <td key={ci} style={{ padding: '12px 18px', textAlign: 'center', color: '#2E2318', borderRight: ci < row.length - 1 ? '1px solid #DDD4C0' : 'none', whiteSpace: 'nowrap' }}>{cell}</td>;
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/* ── Análisis Cualitativo ────────────────────────────────────────────────── */
+function AnalisisCualitativo({ estrategia, ventajas, debilidades, riesgos, catalizadores }) {
+  const secciones = [
+    { titulo: 'Estrategia', contenido: estrategia, acento: '#B5872A' },
+    { titulo: 'Ventajas competitivas', contenido: ventajas, acento: '#16A34A' },
+    { titulo: 'Debilidades', contenido: debilidades, acento: '#B5872A' },
+    { titulo: 'Catalizadores', contenido: catalizadores, acento: '#16A34A' },
+  ].filter(s => s.contenido);
+  return (
+    <div>
+      {secciones.map((s, i) => (
+        <div key={i} style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 15, fontWeight: 700, color: '#1C1410', margin: '0 0 10px', paddingLeft: 12, borderLeft: `3px solid ${s.acento}` }}>{s.titulo}</h3>
+          <p style={{ color: '#3D3229', lineHeight: 1.75, margin: 0 }}>{s.contenido}</p>
+        </div>
+      ))}
+      {riesgos && riesgos.length > 0 && (
+        <div>
+          <h3 style={{ fontSize: 15, fontWeight: 700, color: '#1C1410', margin: '0 0 12px', paddingLeft: 12, borderLeft: '3px solid #DC2626' }}>Riesgos principales</h3>
+          <ul style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {riesgos.map((r, i) => (
+              <li key={i} style={{ color: '#3D3229', lineHeight: 1.7 }}>{r}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Conclusión detallada ────────────────────────────────────────────────── */
+function Conclusion({ items }) {
+  if (!items) return null;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+      {items.map((item, i) => (
+        <div key={i} style={{ padding: '20px 0', borderBottom: i < items.length - 1 ? '1px solid #DDD4C0' : 'none' }}>
+          <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700, color: '#B5872A', marginBottom: 8 }}>{item.label}</div>
+          <p style={{ color: '#3D3229', lineHeight: 1.75, margin: 0 }}>{item.texto}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /* ── Renderer principal ──────────────────────────────────────────────────── */
 export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2 }) {
   if (!data) return null;
 
   const secciones = [];
 
-  if (data.resumen) secciones.push({ tipo: 'texto', titulo: 'Resumen Ejecutivo', contenido: data.resumen });
-  if (data.descripcion) secciones.push({ tipo: 'texto', titulo: 'Descripción del Negocio', contenido: data.descripcion });
-  if (data.tabla) secciones.push({ tipo: 'tabla' });
-  if (data.kpis) secciones.push({ tipo: 'kpis' });
-  if (data.chart_ingresos) secciones.push({ tipo: 'chart_ingresos' });
-  if (data.chart_margenes) secciones.push({ tipo: 'chart_margenes' });
-  if (data.secciones_extra) data.secciones_extra.forEach(s => secciones.push({ tipo: 'texto_extra', ...s }));
-  if (data.flags) secciones.push({ tipo: 'flags' });
-  if (data.score) secciones.push({ tipo: 'score' });
-  if (data.verdict) secciones.push({ tipo: 'verdict' });
+  if (data.resumen)              secciones.push({ tipo: 'texto', titulo: 'Resumen Ejecutivo', contenido: data.resumen });
+  if (data.descripcion)          secciones.push({ tipo: 'texto', titulo: 'Descripción del Negocio', contenido: data.descripcion });
+  if (data.tabla)                secciones.push({ tipo: 'tabla' });
+  if (data.kpis)                 secciones.push({ tipo: 'kpis' });
+  if (data.chart_ingresos)       secciones.push({ tipo: 'chart_ingresos' });
+  if (data.chart_margenes)       secciones.push({ tipo: 'chart_margenes' });
+  if (data.capital_allocation)   secciones.push({ tipo: 'capital_allocation' });
+  if (data.comparacion_sector)   secciones.push({ tipo: 'comparacion_sector' });
+  if (data.secciones_extra)      data.secciones_extra.forEach(s => secciones.push({ tipo: 'texto_extra', ...s }));
+  if (data.flags)                secciones.push({ tipo: 'flags' });
+  if (data.score)                secciones.push({ tipo: 'score' });
+  if (data.analisis_cualitativo) secciones.push({ tipo: 'analisis_cualitativo' });
+  if (data.verdict)              secciones.push({ tipo: 'verdict' });
+  if (data.conclusion)           secciones.push({ tipo: 'conclusion' });
 
-  // Preview: mostrar las primeras N secciones según parrafos_gratis del admin
   const visibles = soloPreview ? secciones.slice(0, seccionesGratis) : secciones;
 
   return (
@@ -143,6 +244,22 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
               </div>
             );
 
+          case 'capital_allocation':
+            return (
+              <div key={i}>
+                <h2 className="rr-h2">Capital Allocation</h2>
+                <CapitalAllocation items={data.capital_allocation.items} />
+              </div>
+            );
+
+          case 'comparacion_sector':
+            return (
+              <div key={i}>
+                <h2 className="rr-h2">Comparación con el Sector</h2>
+                <ComparacionSector headers={data.comparacion_sector.headers} rows={data.comparacion_sector.rows} />
+              </div>
+            );
+
           case 'texto_extra':
             return <SeccionTexto key={i} titulo={sec.titulo} contenido={sec.contenido} />;
 
@@ -162,11 +279,27 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
               </div>
             );
 
+          case 'analisis_cualitativo':
+            return (
+              <div key={i}>
+                <h2 className="rr-h2">Análisis Cualitativo</h2>
+                <AnalisisCualitativo {...data.analisis_cualitativo} />
+              </div>
+            );
+
           case 'verdict':
             return (
               <div key={i}>
-                <h2 className="rr-h2">Conclusión</h2>
+                <h2 className="rr-h2">Veredicto de Inversión</h2>
                 <VerdictBlock {...data.verdict} />
+              </div>
+            );
+
+          case 'conclusion':
+            return (
+              <div key={i}>
+                <h2 className="rr-h2">Conclusión del Analista</h2>
+                <Conclusion items={data.conclusion.items} />
               </div>
             );
 
