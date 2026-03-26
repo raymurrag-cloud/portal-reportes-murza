@@ -80,27 +80,39 @@ img { max-width: 100%; }
 .reporte-fecha { font-size: 12px; color: var(--text-muted); margin-top: auto; }
 
 /* ── Reporte article ───────────────────────────────────────────────────── */
-.reporte-article { max-width: 760px; margin: 0 auto; padding: 40px; flex: 1; width: 100%; }
-.reporte-meta { margin-bottom: 32px; }
-.reporte-ticker-grande { display: inline-block; background: var(--gold-pale); color: var(--gold-dark); font-weight: 800; font-size: 15px; padding: 5px 14px; border-radius: 20px; margin-bottom: 10px; }
-.reporte-meta h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+.reporte-article { max-width: 1100px; margin: 0 auto; padding: 40px 48px; flex: 1; width: 100%; }
+.reporte-meta { margin-bottom: 40px; padding-bottom: 28px; border-bottom: 2px solid var(--gold); }
+.reporte-ticker-grande { display: inline-block; background: var(--gold); color: #fff; font-weight: 800; font-size: 15px; padding: 5px 16px; border-radius: 20px; margin-bottom: 12px; letter-spacing: 1px; }
+.reporte-meta h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
 .reporte-meta time { color: var(--text-muted); font-size: 14px; }
 
 /* Markdown styles */
-.reporte-contenido h1, .reporte-contenido h2, .reporte-contenido h3 { margin: 28px 0 12px; font-weight: 700; line-height: 1.3; }
-.reporte-contenido h1 { font-size: 1.7rem; }
-.reporte-contenido h2 { font-size: 1.35rem; }
-.reporte-contenido h3 { font-size: 1.1rem; }
+.reporte-contenido h1 { font-size: 1.6rem; font-weight: 800; margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--gold); color: var(--gold-dark); }
+.reporte-contenido h2 { font-size: 1.3rem; font-weight: 700; margin: 32px 0 12px; padding-left: 12px; border-left: 4px solid var(--gold); }
+.reporte-contenido h3 { font-size: 1.05rem; font-weight: 700; margin: 24px 0 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.85rem; }
 .reporte-contenido p  { margin-bottom: 16px; line-height: 1.8; }
 .reporte-contenido ul, .reporte-contenido ol { padding-left: 24px; margin-bottom: 16px; }
-.reporte-contenido li { margin-bottom: 6px; line-height: 1.7; }
-.reporte-contenido table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
-.reporte-contenido th { background: var(--gold-pale); color: var(--gold-dark); padding: 10px 14px; text-align: left; font-weight: 600; }
-.reporte-contenido td { padding: 9px 14px; border-bottom: 1px solid var(--border); }
-.reporte-contenido strong { font-weight: 700; }
-.reporte-contenido hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
-.reporte-contenido blockquote { border-left: 3px solid var(--gold); padding-left: 16px; color: var(--text-muted); margin: 20px 0; }
-.reporte-contenido code { background: var(--gold-pale); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+.reporte-contenido li { margin-bottom: 8px; line-height: 1.7; }
+.reporte-contenido strong { font-weight: 700; color: var(--text); }
+
+/* Tablas profesionales */
+.reporte-contenido table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.reporte-contenido thead tr { background: var(--gold); }
+.reporte-contenido th { color: #fff; padding: 12px 16px; text-align: left; font-weight: 700; font-size: 13px; letter-spacing: 0.3px; }
+.reporte-contenido tbody tr:nth-child(even) { background: var(--gold-pale); }
+.reporte-contenido tbody tr:hover { background: #f5edda; }
+.reporte-contenido td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.reporte-contenido td:first-child { font-weight: 500; }
+
+/* Separadores y citas */
+.reporte-contenido hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+.reporte-contenido blockquote { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 14px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; color: var(--text-muted); font-style: italic; }
+.reporte-contenido blockquote p { margin-bottom: 0; }
+
+/* Código — para ASCII art como barras de progreso */
+.reporte-contenido pre { background: #1a1a2e; color: #e2e8f0; padding: 20px 24px; border-radius: 10px; overflow-x: auto; margin: 20px 0; font-size: 13px; line-height: 1.7; }
+.reporte-contenido code { background: var(--gold-pale); color: var(--gold-dark); padding: 2px 7px; border-radius: 4px; font-size: 13px; font-family: monospace; }
+.reporte-contenido pre code { background: none; color: inherit; padding: 0; }
 
 /* ── Paywall ───────────────────────────────────────────────────────────── */
 .paywall { position: relative; margin-top: -60px; }
