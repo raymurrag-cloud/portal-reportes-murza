@@ -294,35 +294,77 @@ img { max-width: 100%; }
 
 
 /* ═══════════════════════════════════════════════════════════════════════
-   TABLAS FINANCIERAS — Bloomberg terminal printout
+   TABLAS FINANCIERAS — Bloomberg / Stock Analysis style
+   • Scroll horizontal en mobile
+   • Primera columna sticky
+   • Números tabulares alineados a la derecha desde col 2 en adelante
 ═══════════════════════════════════════════════════════════════════════ */
 
+/* Wrapper para scroll horizontal */
+.reporte-contenido .table-scroll,
 .reporte-contenido table {
-  width: 100%; border-collapse: separate; border-spacing: 0;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* Cuando ReactMarkdown genera la tabla directamente, necesitamos el wrapper interno */
+.reporte-contenido table {
+  display: table;
+  width: 100%;
+  min-width: 480px;
+  border-collapse: separate; border-spacing: 0;
   margin: 24px 0 40px; font-size: 13px;
-  border-radius: var(--radius-lg); overflow: hidden;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow); border: 1px solid var(--border-warm);
+  font-variant-numeric: tabular-nums;
+}
+/* Wrapper externo que sí hace el scroll */
+.reporte-contenido > table,
+.reporte-contenido p + table,
+.reporte-contenido h1 + table,
+.reporte-contenido h2 + table,
+.reporte-contenido h3 + table {
+  display: block;
+  overflow-x: auto;
 }
 
 .reporte-contenido thead tr { background: var(--espresso); }
 
 .reporte-contenido th {
-  color: rgba(245,237,216,.75);
-  padding: 14px 20px; text-align: left;
-  font-weight: 700; font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase;
+  color: rgba(245,237,216,.72);
+  padding: 13px 18px; text-align: right;
+  font-weight: 700; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase;
   border-right: 1px solid rgba(245,237,216,.06);
+  white-space: nowrap;
+}
+.reporte-contenido th:first-child {
+  text-align: left;
+  border-left: 3px solid var(--gold);
+  color: rgba(245,237,216,.92);
+  position: sticky; left: 0;
+  background: var(--espresso);
+  z-index: 2;
 }
 .reporte-contenido th:last-child { border-right: none; }
-.reporte-contenido th:first-child { border-left: 3px solid var(--gold); color: rgba(245,237,216,.92); }
 
 .reporte-contenido tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
 .reporte-contenido tbody tr:nth-child(even) { background: var(--bg-alt); }
 .reporte-contenido tbody tr:hover { background: var(--gold-pale); }
 .reporte-contenido tbody tr:last-child { border-bottom: none; }
 
-.reporte-contenido td { padding: 13px 20px; vertical-align: middle; color: var(--text-warm); border-right: 1px solid var(--border); }
+.reporte-contenido td {
+  padding: 12px 18px; vertical-align: middle;
+  color: var(--text-warm); border-right: 1px solid var(--border);
+  text-align: right; white-space: nowrap;
+}
 .reporte-contenido td:last-child { border-right: none; }
-.reporte-contenido td:first-child { font-weight: 700; color: var(--espresso); background: rgba(245,237,216,.2); }
+.reporte-contenido td:first-child {
+  text-align: left; font-weight: 700; color: var(--espresso);
+  background: rgba(245,237,216,.18);
+  position: sticky; left: 0; z-index: 1;
+  white-space: normal;
+}
 
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -447,7 +489,10 @@ img { max-width: 100%; }
   padding: 40px; margin: 36px 0;
   background: var(--surface-pure);
   box-shadow: var(--shadow-lg);
-  position: relative; overflow: hidden;
+  position: relative;
+  overflow: visible;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .verdict-block::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -472,7 +517,7 @@ img { max-width: 100%; }
 }
 
 .verdict-metrics {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1px; margin-bottom: 32px;
   background: var(--border-warm);
   border-radius: 12px; overflow: hidden;
@@ -480,15 +525,28 @@ img { max-width: 100%; }
 }
 .verdict-metric {
   display: flex; flex-direction: column; gap: 5px;
-  background: var(--bg); padding: 18px 22px;
+  background: var(--bg); padding: 16px 18px;
+  min-width: 0; /* permite que el contenido se comprima */
 }
 .verdict-metric:first-child { border-radius: 12px 0 0 12px; }
 .verdict-metric:last-child  { border-radius: 0 12px 12px 0; }
 
-.verdict-metric-label { font-size: 9.5px; color: var(--text-faint); font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; }
-.verdict-metric-value { font-size: 1.05rem; font-weight: 800; color: var(--espresso); font-family: 'Georgia', serif; }
+.verdict-metric-label {
+  font-size: 9.5px; color: var(--text-faint); font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.verdict-metric-value {
+  font-size: 1.05rem; font-weight: 800; color: var(--espresso);
+  font-family: 'Georgia', serif;
+  word-break: break-word; overflow-wrap: break-word;
+}
 
-.verdict-summary { font-size: 15px; line-height: 1.95; color: var(--text-warm); margin: 0; padding-top: 4px; position: relative; z-index: 1; }
+.verdict-summary {
+  font-size: 15px; line-height: 1.95; color: var(--text-warm);
+  margin: 0; padding-top: 4px; position: relative; z-index: 1;
+  word-wrap: break-word; overflow-wrap: break-word;
+}
 
 
 /* ── Paywall ───────────────────────────────────────────────────────────── */

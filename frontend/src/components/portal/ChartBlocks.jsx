@@ -3,7 +3,7 @@ import {
   AreaChart, Area,
   BarChart, Bar,
   PieChart, Pie, Cell,
-  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine, ResponsiveContainer
 } from 'recharts';
 
 /* ── Paleta cálida — zero blue ─────────────────────────────────────────── */
@@ -56,8 +56,10 @@ const Tip = ({ active, payload, label, unit }) => {
 
 /* ── ChartBlock ─────────────────────────────────────────────────────────── */
 export function ChartBlock({ config }) {
-  const { type, title, subtitle, data, unit, color, series } = config;
+  const { type, title, subtitle, data, unit, color, series, valueFormat, refLine } = config;
   const c = color || GOLD;
+  const isPct = valueFormat === '%' || unit === '%';
+  const yFmt = isPct ? v => `${v}%` : v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v;
 
   return (
     <div className="chart-block">
@@ -89,8 +91,7 @@ export function ChartBlock({ config }) {
             </defs>
             <CartesianGrid strokeDasharray="2 4" stroke="#DDD4C0" vertical={false} strokeOpacity={0.7} />
             <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false}
-              tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}K` : v} />
+            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} tickFormatter={yFmt} />
             <Tooltip content={<Tip unit={unit} />} cursor={{ fill: 'rgba(181,135,42,.06)' }} />
             {series ? (
               <>
@@ -125,20 +126,25 @@ export function ChartBlock({ config }) {
             </defs>
             <CartesianGrid strokeDasharray="2 4" stroke="#DDD4C0" vertical={false} strokeOpacity={0.7} />
             <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fontSize: 11, fill: '#A8998A', fontFamily: 'sans-serif' }} axisLine={false} tickLine={false} tickFormatter={yFmt} />
             <Tooltip content={<Tip unit={unit} />} />
+            {(isPct || refLine != null) && (
+              <ReferenceLine y={refLine ?? 0} stroke="#C9BDA8" strokeDasharray="4 3" strokeWidth={1.5} label={{ value: isPct ? '0%' : '0', fill: '#A8998A', fontSize: 10 }} />
+            )}
             {series ? (
+              /* Multi-series: solo líneas, sin relleno (evita superposición) */
               <>
                 <Legend wrapperStyle={{ fontSize: 12, color: '#7A6D5E', fontFamily: 'sans-serif', paddingTop: 8 }} />
                 {series.map((s, i) => (
                   <Area key={s.key} type="monotone" dataKey={s.key} name={s.name || s.label}
-                    stroke={PALETTE[i]} strokeWidth={2.5}
-                    fill={`url(#areaF${i})`}
+                    stroke={PALETTE[i]} strokeWidth={2}
+                    fill="none"
                     dot={false}
-                    activeDot={{ r: 6, fill: PALETTE[i], stroke: '#FAF6EF', strokeWidth: 2.5 }} />
+                    activeDot={{ r: 5, fill: PALETTE[i], stroke: '#FAF6EF', strokeWidth: 2 }} />
                 ))}
               </>
             ) : (
+              /* Serie única: línea con relleno degradado */
               <Area type="monotone" dataKey="value"
                 stroke={c} strokeWidth={2.5}
                 fill="url(#areaFill)"

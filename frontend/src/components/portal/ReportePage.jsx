@@ -89,6 +89,37 @@ export default function ReportePage() {
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
+                /* ── Colores en celdas con porcentajes (Var. YoY) ── */
+                td({ children, ...props }) {
+                  const text = React.Children.toArray(children)
+                    .map(c => typeof c === 'string' ? c : '')
+                    .join('').trim();
+                  if (text.includes('%')) {
+                    const num = parseFloat(text.replace(/[^\-\d.]/g, ''));
+                    if (!isNaN(num) && num !== 0) {
+                      const pos = num > 0 && !text.startsWith('-');
+                      return (
+                        <td {...props}>
+                          <span style={{
+                            color: pos ? '#2D7A4F' : '#B83232',
+                            fontWeight: 700,
+                            background: pos ? '#EAF4EE' : '#FAECEC',
+                            padding: '2px 8px',
+                            borderRadius: 4,
+                            fontSize: '12px',
+                            fontFamily: 'sans-serif',
+                            letterSpacing: '0.3px',
+                          }}>
+                            {pos && !text.startsWith('+') ? `+${text}` : text}
+                          </span>
+                        </td>
+                      );
+                    }
+                  }
+                  return <td {...props}>{children}</td>;
+                },
+
+                /* ── Bloques de código personalizados ── */
                 code({ node, inline, className, children, ...props }) {
                   const lang = /language-(\w+)/.exec(className || '')?.[1];
                   const raw  = String(children).replace(/\n$/, '');
