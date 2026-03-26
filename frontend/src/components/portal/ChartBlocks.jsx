@@ -273,30 +273,35 @@ export function FlagsBlock({ items }) {
 /* ── VerdictBlock ───────────────────────────────────────────────────────── */
 export function VerdictBlock({ status, score, color, summary, metrics }) {
   const col = color === 'green' ? GREEN : color === 'red' ? RED : AMBER;
+  const bg  = color === 'green' ? 'rgba(22,163,74,.06)' : color === 'red' ? 'rgba(220,38,38,.06)' : 'rgba(181,114,42,.06)';
   return (
-    <div className="verdict-block" style={{ borderColor: col }}>
-      <div className="verdict-top">
-        <div>
-          <div className="verdict-label">Veredicto del Analista</div>
-          <div className="verdict-status" style={{ color: col }}>{status}</div>
-        </div>
-        {score && (
-          <div className="verdict-score" style={{ background: col }}>
-            {score}
-          </div>
-        )}
+    <div className="verdict-block" style={{ borderColor: col, background: bg }}>
+
+      {/* Eyebrow + veredicto en una línea */}
+      <div className="verdict-header">
+        <span className="verdict-eyebrow">Veredicto del Analista</span>
+        {score && <span className="verdict-pill" style={{ background: col }}>{score}</span>}
       </div>
-      {metrics && (
+      <div className="verdict-status" style={{ color: col }}>{status}</div>
+
+      {/* Métricas clave */}
+      {metrics && metrics.length > 0 && (
         <div className="verdict-metrics">
           {metrics.map((m, i) => (
             <div key={i} className="verdict-metric">
-              <span className="verdict-metric-label">{m.label}</span>
-              <span className="verdict-metric-value">{m.value}</span>
+              <div className="verdict-metric-label">{m.label}</div>
+              <div className="verdict-metric-value">{m.value}</div>
             </div>
           ))}
         </div>
       )}
-      {summary && <p className="verdict-summary">{summary}</p>}
+
+      {/* Resumen */}
+      {summary && (
+        <div className="verdict-summary-wrap">
+          <p className="verdict-summary">{summary}</p>
+        </div>
+      )}
     </div>
   );
 }
