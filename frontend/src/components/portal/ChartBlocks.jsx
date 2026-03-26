@@ -42,9 +42,15 @@ export function ChartBlock({ config }) {
 
   return (
     <div className="chart-block">
-      {title    && <div className="chart-title">{title}</div>}
-      {subtitle && <div className="chart-subtitle">{subtitle}</div>}
-      <ResponsiveContainer width="100%" height={260}>
+      {(title || subtitle) && (
+        <div className="chart-header">
+          <div>
+            {title    && <div className="chart-title">{title}</div>}
+            {subtitle && <div className="chart-subtitle">{subtitle}</div>}
+          </div>
+        </div>
+      )}
+      <ResponsiveContainer width="100%" height={300}>
         {type === 'bar' ? (
           <BarChart data={data} margin={{ top:8, right:20, left:0, bottom:4 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
