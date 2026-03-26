@@ -124,13 +124,50 @@ function ComparacionSector({ headers, rows }) {
   );
 }
 
+/* ── Detección de Deterioro Financiero ───────────────────────────────────── */
+function DeteriorizacionFinanciera({ veredicto, analisis, items }) {
+  if (!veredicto && !items) return null;
+  const statusCfg = {
+    ok:   { icon: '✓', color: '#16A34A', border: '#BBF7D0', bg: 'rgba(22,163,74,.06)'  },
+    warn: { icon: '⚠', color: '#B5872A', border: '#FDE68A', bg: 'rgba(181,135,42,.07)' },
+    bad:  { icon: '✗', color: '#DC2626', border: '#FECACA', bg: 'rgba(220,38,38,.06)'  },
+  };
+  return (
+    <div>
+      {(veredicto || analisis) && (
+        <div style={{ background: 'rgba(22,163,74,.07)', border: '1px solid #BBF7D0', borderRadius: 10, padding: '16px 20px', marginBottom: 20 }}>
+          {veredicto && <div style={{ fontWeight: 700, color: '#15803D', marginBottom: analisis ? 6 : 0 }}>Veredicto: {veredicto}</div>}
+          {analisis  && <p style={{ margin: 0, color: '#166534', lineHeight: 1.65, fontSize: 14 }}>{analisis}</p>}
+        </div>
+      )}
+      {items && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {items.map((item, i) => {
+            const cfg = statusCfg[item.status] || statusCfg.ok;
+            return (
+              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, background: cfg.bg, border: `1px solid ${cfg.border}`, borderRadius: 8, padding: '11px 16px' }}>
+                <span style={{ fontWeight: 800, color: cfg.color, fontSize: 15, lineHeight: 1.3, flexShrink: 0 }}>{cfg.icon}</span>
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontWeight: 700, color: '#1C1410', fontSize: 13 }}>{item.metrica}</span>
+                  <span style={{ color: '#3D3229', fontSize: 13 }}> — {item.valor}</span>
+                  {item.nota && <div style={{ color: '#7A6D5E', fontSize: 12, marginTop: 3 }}>{item.nota}</div>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ── Análisis Cualitativo ────────────────────────────────────────────────── */
-function AnalisisCualitativo({ estrategia, ventajas, debilidades, riesgos, catalizadores }) {
+function AnalisisCualitativo({ estrategia, ventajas, debilidades, riesgos, inversiones_estrategicas }) {
   const secciones = [
-    { titulo: 'Estrategia', contenido: estrategia, acento: '#B5872A' },
-    { titulo: 'Ventajas competitivas', contenido: ventajas, acento: '#16A34A' },
-    { titulo: 'Debilidades', contenido: debilidades, acento: '#B5872A' },
-    { titulo: 'Catalizadores', contenido: catalizadores, acento: '#16A34A' },
+    { titulo: 'Estrategia',             contenido: estrategia,             acento: '#B5872A' },
+    { titulo: 'Ventajas competitivas',  contenido: ventajas,               acento: '#16A34A' },
+    { titulo: 'Debilidades',            contenido: debilidades,            acento: '#B5872A' },
+    { titulo: 'Inversiones estratégicas', contenido: inversiones_estrategicas, acento: '#16A34A' },
   ].filter(s => s.contenido);
   return (
     <div>
@@ -175,14 +212,15 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
 
   const secciones = [];
 
-  if (data.resumen)              secciones.push({ tipo: 'texto', titulo: 'Resumen Ejecutivo', contenido: data.resumen });
-  if (data.descripcion)          secciones.push({ tipo: 'texto', titulo: 'Descripción del Negocio', contenido: data.descripcion });
+  if (data.resumen)              secciones.push({ tipo: 'texto',             titulo: 'Resumen Ejecutivo',          contenido: data.resumen });
+  if (data.descripcion)          secciones.push({ tipo: 'texto',             titulo: 'Descripción del Negocio',   contenido: data.descripcion });
   if (data.tabla)                secciones.push({ tipo: 'tabla' });
   if (data.kpis)                 secciones.push({ tipo: 'kpis' });
   if (data.chart_ingresos)       secciones.push({ tipo: 'chart_ingresos' });
   if (data.chart_margenes)       secciones.push({ tipo: 'chart_margenes' });
   if (data.capital_allocation)   secciones.push({ tipo: 'capital_allocation' });
   if (data.comparacion_sector)   secciones.push({ tipo: 'comparacion_sector' });
+  if (data.deterioro)            secciones.push({ tipo: 'deterioro' });
   if (data.secciones_extra)      data.secciones_extra.forEach(s => secciones.push({ tipo: 'texto_extra', ...s }));
   if (data.flags)                secciones.push({ tipo: 'flags' });
   if (data.score)                secciones.push({ tipo: 'score' });
@@ -220,11 +258,8 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
               <div key={i}>
                 <h2 className="rr-h2">Tendencia de Ingresos</h2>
                 <ChartBlock config={{
-                  type: 'line',
-                  title: 'EVOLUCIÓN FINANCIERA',
-                  subtitle: 'Revenue y Utilidad Neta',
-                  unit: data.chart_ingresos.unit || 'B USD',
-                  ...data.chart_ingresos,
+                  type: 'line', title: 'EVOLUCIÓN FINANCIERA', subtitle: 'Revenue y Utilidad Neta',
+                  unit: data.chart_ingresos.unit || 'B USD', ...data.chart_ingresos,
                 }} />
               </div>
             );
@@ -234,12 +269,8 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
               <div key={i}>
                 <h2 className="rr-h2">Márgenes — Tendencia</h2>
                 <ChartBlock config={{
-                  type: 'line',
-                  title: 'MÁRGENES',
-                  subtitle: 'Bruto, Operativo y Neto (%)',
-                  valueFormat: '%',
-                  refLine: 0,
-                  ...data.chart_margenes,
+                  type: 'line', title: 'MÁRGENES', subtitle: 'Bruto, Operativo y Neto (%)',
+                  valueFormat: '%', refLine: 0, ...data.chart_margenes,
                 }} />
               </div>
             );
@@ -257,6 +288,14 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
               <div key={i}>
                 <h2 className="rr-h2">Comparación con el Sector</h2>
                 <ComparacionSector headers={data.comparacion_sector.headers} rows={data.comparacion_sector.rows} />
+              </div>
+            );
+
+          case 'deterioro':
+            return (
+              <div key={i}>
+                <h2 className="rr-h2">Detección de Deterioro Financiero</h2>
+                <DeteriorizacionFinanciera {...data.deterioro} />
               </div>
             );
 
