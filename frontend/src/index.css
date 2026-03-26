@@ -244,6 +244,23 @@ img { max-width: 100%; }
    TYPOGRAPHY — editorial financial publication
 ═══════════════════════════════════════════════════════════════════════ */
 
+/* ── ReporteRenderer helpers ────────────────────────────────────────────── */
+.rr-h2 {
+  font-size: 1.1rem; font-weight: 700;
+  margin: 40px 0 14px;
+  display: flex; align-items: center; gap: 12px;
+  color: var(--charcoal);
+}
+.rr-h2::before {
+  content: ''; display: block;
+  width: 3px; height: 1.15em;
+  background: var(--gold); border-radius: 2px; flex-shrink: 0;
+}
+.rr-p {
+  font-size: 15.5px; line-height: 1.9; color: var(--text-warm);
+  margin-bottom: 18px;
+}
+
 .reporte-contenido h1 {
   font-size: 1.6rem; font-weight: 800;
   margin: 56px 0 18px; padding: 0 0 14px;
@@ -651,6 +668,11 @@ img { max-width: 100%; }
 .editor-actions { display: flex; gap: 10px; margin-top: 20px; }
 .editor-contenido { display: flex; flex-direction: column; gap: 8px; }
 .editor-contenido-label { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.editor-tabs { display: flex; gap: 4px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+.editor-tab { padding: 7px 16px; border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; font-size: 13px; font-weight: 600; cursor: pointer; background: transparent; color: var(--text-muted); margin-bottom: -1px; }
+.editor-tab.active { background: var(--surface-pure); border-color: var(--border); color: var(--gold-dark); border-bottom-color: var(--surface-pure); }
+.editor-tab:not(.active):hover { color: var(--text); }
+
 .editor-textarea { width: 100%; min-height: 600px; padding: 16px; border: 1px solid var(--border); border-radius: 12px; font-size: 14px; font-family: 'Courier New', monospace; line-height: 1.6; resize: vertical; background: var(--surface-pure); }
 .editor-textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(181,135,42,.1); }
 .input-ticker { text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: .05em; font-family: 'Courier New', monospace; }

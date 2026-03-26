@@ -50,5 +50,11 @@ export async function initDb() {
     console.log('✅ Admin creado: raymurra / Portal2026');
   }
 
+  // Migración: agregar contenido_json si no existe
+  try {
+    await db.execute({ sql: 'ALTER TABLE reportes ADD COLUMN contenido_json TEXT', args: [] });
+    console.log('✅ Migración: columna contenido_json agregada');
+  } catch { /* ya existe, ignorar */ }
+
   console.log('✅ Base de datos lista (Turso)');
 }

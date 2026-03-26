@@ -25,18 +25,20 @@ router.get('/reportes/:id', async (req, res) => {
 
 // ── Crear reporte ─────────────────────────────────────────────────────────
 router.post('/reportes', async (req, res) => {
-  const { ticker, empresa, contenido_md, parrafos_gratis, publicado, slug, meta_descripcion } = req.body;
+  const { ticker, empresa, contenido_md, contenido_json, parrafos_gratis, publicado, slug, meta_descripcion } = req.body;
 
-  if (!ticker || !empresa || !contenido_md)
-    return res.status(400).json({ error: 'ticker, empresa y contenido_md son requeridos' });
+  if (!ticker || !empresa || (!contenido_md && !contenido_json))
+    return res.status(400).json({ error: 'ticker, empresa y contenido son requeridos' });
 
   const slugFinal = slug?.trim() || generarSlug(empresa, ticker);
+  const mdBase = contenido_md || '';
   const desc = meta_descripcion?.trim() ||
-    contenido_md.replace(/#+\s/g, '').replace(/\*\*/g, '').trim().slice(0, 160);
+    mdBase.replace(/#+\s/g, '').replace(/\*\*/g, '').trim().slice(0, 160) ||
+    `Análisis financiero de ${empresa} (${ticker})`;
 
   const result = await db.execute({
-    sql:  'INSERT INTO reportes (ticker, empresa, contenido_md, parrafos_gratis, publicado, slug, meta_descripcion) VALUES (?, ?, ?, ?, ?, ?, ?)',
-    args: [ticker.toUpperCase(), empresa, contenido_md, parrafos_gratis || 2, publicado ? 1 : 0, slugFinal, desc],
+    sql:  'INSERT INTO reportes (ticker, empresa, contenido_md, contenido_json, parrafos_gratis, publicado, slug, meta_descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+    args: [ticker.toUpperCase(), empresa, mdBase, contenido_json || null, parrafos_gratis || 2, publicado ? 1 : 0, slugFinal, desc],
   });
 
   res.status(201).json({ id: Number(result.lastInsertRowid), slug: slugFinal });
@@ -44,12 +46,12 @@ router.post('/reportes', async (req, res) => {
 
 // ── Actualizar reporte ────────────────────────────────────────────────────
 router.put('/reportes/:id', async (req, res) => {
-  const { ticker, empresa, contenido_md, parrafos_gratis, slug, meta_descripcion } = req.body;
+  const { ticker, empresa, contenido_md, contenido_json, parrafos_gratis, slug, meta_descripcion } = req.body;
   const now = new Date().toISOString().replace('T', ' ').slice(0, 19);
 
   await db.execute({
-    sql:  'UPDATE reportes SET ticker = ?, empresa = ?, contenido_md = ?, parrafos_gratis = ?, slug = ?, meta_descripcion = ?, updated_at = ? WHERE id = ?',
-    args: [ticker.toUpperCase(), empresa, contenido_md, parrafos_gratis || 2, slug, meta_descripcion, now, req.params.id],
+    sql:  'UPDATE reportes SET ticker = ?, empresa = ?, contenido_md = ?, contenido_json = ?, parrafos_gratis = ?, slug = ?, meta_descripcion = ?, updated_at = ? WHERE id = ?',
+    args: [ticker.toUpperCase(), empresa, contenido_md || '', contenido_json || null, parrafos_gratis || 2, slug, meta_descripcion, now, req.params.id],
   });
 
   res.json({ success: true });

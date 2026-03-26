@@ -42,38 +42,42 @@ router.get('/:slug', async (req, res) => {
   if (req.params.slug === 'sitemap.xml') return res.status(404).end();
 
   const { rows } = await db.execute({
-    sql:  'SELECT id, ticker, empresa, contenido_md, parrafos_gratis, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, parrafos_gratis, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
     args: [req.params.slug],
   });
   const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
 
+  // Reporte JSON: mostrar primeras 2 secciones como preview
+  if (reporte.contenido_json) {
+    return res.json({
+      id: Number(reporte.id), ticker: reporte.ticker, empresa: reporte.empresa,
+      slug: reporte.slug, meta_descripcion: reporte.meta_descripcion, created_at: reporte.created_at,
+      contenido_json: reporte.contenido_json,
+      es_json: true, tiene_mas: true,
+    });
+  }
+
+  // Reporte markdown (legacy)
   const preview = cortarPorParrafos(reporte.contenido_md, reporte.parrafos_gratis);
   const total   = reporte.contenido_md.split(/\n\n+/).filter(p => p.trim()).length;
-
   res.json({
-    id:               Number(reporte.id),
-    ticker:           reporte.ticker,
-    empresa:          reporte.empresa,
-    slug:             reporte.slug,
-    meta_descripcion: reporte.meta_descripcion,
-    created_at:       reporte.created_at,
-    contenido_preview: preview,
-    parrafos_gratis:  reporte.parrafos_gratis,
-    total_parrafos:   total,
-    tiene_mas:        total > reporte.parrafos_gratis,
+    id: Number(reporte.id), ticker: reporte.ticker, empresa: reporte.empresa,
+    slug: reporte.slug, meta_descripcion: reporte.meta_descripcion, created_at: reporte.created_at,
+    contenido_preview: preview, parrafos_gratis: reporte.parrafos_gratis,
+    total_parrafos: total, tiene_mas: total > reporte.parrafos_gratis,
   });
 });
 
 // ── Leer reporte completo (requiere login de usuario) ─────────────────────
 router.get('/:slug/completo', authUser, async (req, res) => {
   const { rows } = await db.execute({
-    sql:  'SELECT id, ticker, empresa, contenido_md, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
     args: [req.params.slug],
   });
   const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
-  res.json({ ...reporte, id: Number(reporte.id) });
+  res.json({ ...reporte, id: Number(reporte.id), es_json: !!reporte.contenido_json });
 });
 
 // ── Sitemap XML ───────────────────────────────────────────────────────────

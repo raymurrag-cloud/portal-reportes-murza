@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { api } from '../../api.js';
 import { ChartBlock, KpiBlock, ScoreBar, FlagsBlock, VerdictBlock } from './ChartBlocks.jsx';
+import ReporteRenderer from './ReporteRenderer.jsx';
 
 export default function ReportePage() {
   const { slug } = useParams();
@@ -36,6 +37,8 @@ export default function ReportePage() {
   if (loading) return <div className="portal-page"><div className="loading-state">Cargando reporte...</div></div>;
   if (error)   return <div className="portal-page"><div className="error-state">Reporte no encontrado.</div></div>;
 
+  const esJson    = reporte.es_json && reporte.contenido_json;
+  const jsonData  = esJson ? JSON.parse(reporte.contenido_json) : null;
   const contenido = reporte.completo ? reporte.contenido_md : reporte.contenido_preview;
 
   return (
@@ -85,7 +88,31 @@ export default function ReportePage() {
           </div>
 
           <div className="reporte-contenido-wrap">
-          <div className="reporte-contenido">
+
+          {/* ── Reporte JSON estructurado ── */}
+          {esJson ? (
+            <>
+              <ReporteRenderer data={jsonData} soloPreview={!reporte.completo} />
+              {!reporte.completo && (
+                <div className="paywall">
+                  <div className="paywall-blur" />
+                  <div className="paywall-cta">
+                    <h3>Continúa leyendo el análisis completo</h3>
+                    <p>Regístrate gratis para acceder a todos los reportes sin límite.</p>
+                    <Link to={`/registro?redirect=/reporte/${slug}`} className="btn-primary btn-lg">
+                      Crear cuenta gratis
+                    </Link>
+                    <p className="paywall-login">
+                      ¿Ya tienes cuenta? <Link to={`/login?redirect=/reporte/${slug}`}>Inicia sesión</Link>
+                    </p>
+                  </div>
+                </div>
+              )}
+            </>
+          ) : (
+
+          /* ── Reporte Markdown (legacy) ── */
+          <><div className="reporte-contenido">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
@@ -152,24 +179,21 @@ export default function ReportePage() {
                 }
               }}
             >{contenido}</ReactMarkdown>
-          </div>{/* /reporte-contenido */}
-
-          {/* Paywall */}
+          </div>
           {!reporte.completo && reporte.tiene_mas && (
             <div className="paywall">
               <div className="paywall-blur" />
               <div className="paywall-cta">
                 <h3>Continúa leyendo el análisis completo</h3>
                 <p>Regístrate gratis para acceder a todos los reportes sin límite.</p>
-                <Link to={`/registro?redirect=/reporte/${slug}`} className="btn-primary btn-lg">
-                  Crear cuenta gratis
-                </Link>
-                <p className="paywall-login">
-                  ¿Ya tienes cuenta? <Link to={`/login?redirect=/reporte/${slug}`}>Inicia sesión</Link>
-                </p>
+                <Link to={`/registro?redirect=/reporte/${slug}`} className="btn-primary btn-lg">Crear cuenta gratis</Link>
+                <p className="paywall-login">¿Ya tienes cuenta? <Link to={`/login?redirect=/reporte/${slug}`}>Inicia sesión</Link></p>
               </div>
             </div>
           )}
+          </>
+
+          )}{/* fin ternario JSON/Markdown */}
           </div>{/* /reporte-contenido-wrap */}
         </article>
 
