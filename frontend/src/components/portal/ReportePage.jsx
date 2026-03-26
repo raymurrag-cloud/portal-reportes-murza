@@ -112,8 +112,6 @@ export default function ReportePage() {
                 }
               }}
             >{contenido}</ReactMarkdown>
-          </div>
-
           </div>{/* /reporte-contenido */}
 
           {/* Paywall */}
