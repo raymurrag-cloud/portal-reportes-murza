@@ -48,12 +48,13 @@ router.get('/:slug', async (req, res) => {
   const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
 
-  // Reporte JSON: mostrar primeras 2 secciones como preview
+  // Reporte JSON: enviar parrafos_gratis para que el frontend controle el paywall
   if (reporte.contenido_json) {
     return res.json({
       id: Number(reporte.id), ticker: reporte.ticker, empresa: reporte.empresa,
       slug: reporte.slug, meta_descripcion: reporte.meta_descripcion, created_at: reporte.created_at,
       contenido_json: reporte.contenido_json,
+      parrafos_gratis: Number(reporte.parrafos_gratis) || 2,
       es_json: true, tiene_mas: true,
     });
   }
