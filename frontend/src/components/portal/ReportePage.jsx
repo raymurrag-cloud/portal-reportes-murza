@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { api } from '../../api.js';
+import { ChartBlock, KpiBlock, ScoreBar } from './ChartBlocks.jsx';
 
 export default function ReportePage() {
   const { slug } = useParams();
@@ -72,7 +73,26 @@ export default function ReportePage() {
           </div>
 
           <div className="reporte-contenido">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{contenido}</ReactMarkdown>
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                code({ node, inline, className, children, ...props }) {
+                  const lang = /language-(\w+)/.exec(className || '')?.[1];
+                  const raw  = String(children).replace(/\n$/, '');
+                  if (!inline && lang === 'chart') {
+                    try { return <ChartBlock config={JSON.parse(raw)} />; } catch {}
+                  }
+                  if (!inline && lang === 'kpi') {
+                    try { return <KpiBlock items={JSON.parse(raw)} />; } catch {}
+                  }
+                  if (!inline && lang === 'score') {
+                    try { return <ScoreBar {...JSON.parse(raw)} />; } catch {}
+                  }
+                  if (inline) return <code className={className} {...props}>{children}</code>;
+                  return <pre className="code-block"><code>{raw}</code></pre>;
+                }
+              }}
+            >{contenido}</ReactMarkdown>
           </div>
 
           {/* Paywall */}

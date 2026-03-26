@@ -104,6 +104,26 @@ img { max-width: 100%; }
 .reporte-contenido td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
 .reporte-contenido td:first-child { font-weight: 500; }
 
+/* ── KPI Cards ─────────────────────────────────────────────────────────── */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; margin: 24px 0; }
+.kpi-card { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.kpi-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); }
+.kpi-value { font-size: 1.5rem; font-weight: 800; color: var(--text); line-height: 1.1; }
+.kpi-change { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 20px; width: fit-content; }
+.kpi-note { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+/* ── Chart Block ───────────────────────────────────────────────────────── */
+.chart-block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px 12px; margin: 24px 0; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.chart-title { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 4px; }
+
+/* ── Score Bar ─────────────────────────────────────────────────────────── */
+.score-bar-block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+.score-bar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.score-bar-label { font-size: 14px; font-weight: 700; color: var(--text); }
+.score-bar-value { font-size: 1.4rem; font-weight: 800; }
+.score-bar-track { background: #e2e8f0; border-radius: 999px; height: 12px; overflow: hidden; }
+.score-bar-fill { height: 100%; border-radius: 999px; transition: width 0.8s ease; }
+
 /* Separadores y citas */
 .reporte-contenido hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
 .reporte-contenido blockquote { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 14px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; color: var(--text-muted); font-style: italic; }
