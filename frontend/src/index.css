@@ -537,7 +537,33 @@ img { max-width: 100%; }
   white-space: nowrap;
 }
 
-/* Resumen — párrafo de texto libre */
+/* Bullets de tesis */
+.verdict-bullets {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  margin-bottom: 0;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.verdict-bullet {
+  display: flex; align-items: baseline; gap: 14px;
+}
+.verdict-bullet-marker {
+  font-size: 9px; flex-shrink: 0; margin-top: 2px;
+  opacity: .8;
+}
+.verdict-bullet-text {
+  font-size: 15px; line-height: 1.75; color: var(--text-warm);
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  word-break: break-word; overflow-wrap: break-word;
+}
+.verdict-bullet-text strong {
+  font-weight: 700; color: var(--espresso);
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+}
+
+/* Resumen — párrafo libre opcional */
 .verdict-summary-wrap {
   border-top: 1px solid var(--border);
   padding-top: 20px;

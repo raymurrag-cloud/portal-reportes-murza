@@ -271,16 +271,18 @@ export function FlagsBlock({ items }) {
 }
 
 /* ── VerdictBlock ───────────────────────────────────────────────────────── */
-export function VerdictBlock({ status, score, color, summary, metrics }) {
+export function VerdictBlock({ status, score, color, summary, metrics, bullets }) {
   const col = color === 'green' ? GREEN : color === 'red' ? RED : AMBER;
   return (
     <div className="verdict-block" style={{ borderColor: col }}>
 
-      {/* Eyebrow + veredicto en una línea */}
+      {/* Eyebrow + score pill */}
       <div className="verdict-header">
         <span className="verdict-eyebrow">Veredicto del Analista</span>
-        {score && <span className="verdict-pill" style={{ background: col }}>{score}</span>}
+        {score && <span className="verdict-pill" style={{ borderColor: col, color: col }}>{score}</span>}
       </div>
+
+      {/* Título veredicto */}
       <div className="verdict-status" style={{ color: col }}>{status}</div>
 
       {/* Métricas clave */}
@@ -295,7 +297,28 @@ export function VerdictBlock({ status, score, color, summary, metrics }) {
         </div>
       )}
 
-      {/* Resumen */}
+      {/* Bullets de tesis */}
+      {bullets && bullets.length > 0 && (
+        <div className="verdict-bullets">
+          {bullets.map((b, i) => {
+            const tipo = b.type || 'neutral';
+            const markerCol = tipo === 'pro' ? GREEN : tipo === 'con' ? RED : col;
+            const parts = b.text.split(/\*\*(.*?)\*\*/);
+            return (
+              <div key={i} className="verdict-bullet">
+                <span className="verdict-bullet-marker" style={{ color: markerCol }}>◆</span>
+                <p className="verdict-bullet-text">
+                  {parts.map((p, j) =>
+                    j % 2 === 1 ? <strong key={j}>{p}</strong> : p
+                  )}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Párrafo libre opcional */}
       {summary && (
         <div className="verdict-summary-wrap">
           <p className="verdict-summary">{summary}</p>
