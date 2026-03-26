@@ -56,7 +56,7 @@ export function ChartBlock({ config }) {
               <>
                 <Legend wrapperStyle={{ fontSize:12 }} />
                 {series.map((s,i) => (
-                  <Bar key={s.key} dataKey={s.key} name={s.name} fill={PALETTE[i]} radius={[4,4,0,0]} maxBarSize={48} />
+                  <Bar key={s.key} dataKey={s.key} name={s.name||s.label} fill={PALETTE[i]} radius={[4,4,0,0]} maxBarSize={48} />
                 ))}
               </>
             ) : (
@@ -84,7 +84,7 @@ export function ChartBlock({ config }) {
             <YAxis tick={{ fontSize:11, fill:'#94a3b8' }} axisLine={false} tickLine={false} />
             <Tooltip content={<Tip unit={unit} />} />
             {series ? series.map((s,i) => (
-              <Line key={s.key} type="monotone" dataKey={s.key} name={s.name}
+              <Line key={s.key} type="monotone" dataKey={s.key} name={s.name||s.label}
                 stroke={PALETTE[i]} strokeWidth={2.5} dot={{ r:4, fill:PALETTE[i] }} />
             )) : (
               <Line type="monotone" dataKey="value" stroke={c} strokeWidth={2.5}

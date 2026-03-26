@@ -66,12 +66,25 @@ export default function ReportePage() {
         </header>
 
         <article className="reporte-article">
-          <div className="reporte-meta">
-            <span className="reporte-ticker-grande">{reporte.ticker}</span>
-            <h1>{reporte.empresa}</h1>
-            <time>{new Date(reporte.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+          <div className="reporte-hero">
+            <div className="reporte-hero-inner">
+              <div className="reporte-hero-left">
+                <div className="reporte-ticker-hero">{reporte.ticker}</div>
+                <div className="reporte-empresa-hero">{reporte.empresa}</div>
+                <div className="reporte-hero-meta">
+                  <span>Análisis Financiero</span>
+                  <span className="hero-sep">·</span>
+                  <time>{new Date(reporte.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                </div>
+              </div>
+              <div className="reporte-hero-right">
+                <img src="/murza-logo.png" alt="Murza Inversiones" className="hero-logo" />
+                <div className="hero-brand">Murza Inversiones</div>
+              </div>
+            </div>
           </div>
 
+          <div className="reporte-contenido-wrap">
           <div className="reporte-contenido">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
@@ -101,6 +114,8 @@ export default function ReportePage() {
             >{contenido}</ReactMarkdown>
           </div>
 
+          </div>{/* /reporte-contenido */}
+
           {/* Paywall */}
           {!reporte.completo && reporte.tiene_mas && (
             <div className="paywall">
@@ -117,6 +132,7 @@ export default function ReportePage() {
               </div>
             </div>
           )}
+          </div>{/* /reporte-contenido-wrap */}
         </article>
 
         <footer className="portal-footer">
