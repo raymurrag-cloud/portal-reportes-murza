@@ -111,22 +111,22 @@ img { max-width: 100%; }
 .portal-header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px 48px;
-  border-bottom: 1px solid rgba(181,135,42,.25);
-  background: var(--espresso);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-pure);
   position: sticky; top: 0; z-index: 10;
+  box-shadow: 0 1px 12px rgba(28,20,16,.06);
 }
-.portal-logo       { height: 34px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; }
+.portal-logo       { height: 34px; object-fit: contain; }
 .portal-logo-link  { display: flex; align-items: center; }
 .portal-header-right { display: flex; align-items: center; gap: 10px; }
-.portal-header .btn-ghost-sm { color: rgba(245,237,216,.6); border-color: rgba(245,237,216,.18); }
-.portal-header .btn-ghost-sm:hover { border-color: var(--gold); color: var(--gold-bright); }
+.portal-header .btn-ghost-sm { color: var(--text-muted); border-color: var(--border); }
+.portal-header .btn-ghost-sm:hover { border-color: var(--gold); color: var(--gold-dark); }
 .portal-footer {
   margin-top: auto; padding: 20px 48px;
-  border-top: 1px solid rgba(181,135,42,.2);
-  background: var(--espresso);
-  text-align: center; color: rgba(245,237,216,.28);
+  border-top: 1px solid var(--border);
+  background: var(--surface-pure);
+  text-align: center; color: var(--text-faint);
   font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 
@@ -171,68 +171,56 @@ img { max-width: 100%; }
 
 /* ── Hero banner ───────────────────────────────────────────────────────── */
 .reporte-hero {
-  background:
-    radial-gradient(ellipse at 68% 50%, rgba(181,135,42,.13) 0%, transparent 55%),
-    radial-gradient(ellipse at 15% 85%, rgba(181,135,42,.06) 0%, transparent 45%),
-    linear-gradient(155deg, #1C1410 0%, #2A1F14 45%, #1E170E 75%, #150F0A 100%);
+  background: var(--surface-pure);
   border-bottom: 2px solid var(--gold);
-  padding: 56px clamp(24px, 5vw, 64px);
+  padding: 52px clamp(24px, 5vw, 64px) 44px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* Subtle financial grid texture */
-.reporte-hero::after {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(181,135,42,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(181,135,42,.025) 1px, transparent 1px);
-  background-size: 44px 44px;
-  pointer-events: none;
-}
-
-/* Gold glow line at very bottom */
+/* Línea gold sutil al fondo */
 .reporte-hero::before {
   content: '';
-  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--gold) 25%, var(--gold-bright) 50%, var(--gold) 75%, transparent 100%);
-  opacity: .65;
+  position: absolute; bottom: 0; left: clamp(24px,5vw,64px); right: clamp(24px,5vw,64px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+  opacity: .35;
   pointer-events: none;
 }
 
-.reporte-hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; position: relative; z-index: 1; }
-.reporte-hero-left  { flex: 1; }
-.reporte-hero-right { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; flex-shrink: 0; }
+.reporte-hero::after { display: none; }
+
+.reporte-hero-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
+.reporte-hero-left  { flex: 1; min-width: 0; }
+.reporte-hero-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
 
 .reporte-ticker-hero {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   font-weight: 900;
-  color: var(--gold-bright);
-  letter-spacing: -3px;
+  color: var(--espresso);
+  letter-spacing: -2px;
   line-height: 1;
   font-family: 'Georgia', 'Times New Roman', serif;
-  text-shadow: 0 0 80px rgba(181,135,42,.5), 0 0 140px rgba(181,135,42,.2), 0 2px 6px rgba(0,0,0,.7);
 }
 
 .reporte-empresa-hero {
-  font-size: 1.2rem; font-weight: 400;
-  color: rgba(245,237,216,.82);
-  margin-top: 12px; letter-spacing: 0.2px;
+  font-size: 1.15rem; font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 10px; letter-spacing: 0.1px;
 }
 
 .reporte-hero-meta {
   display: flex; align-items: center; gap: 10px;
-  margin-top: 18px; font-size: 10.5px;
-  color: rgba(245,237,216,.32);
+  margin-top: 16px; font-size: 10px;
+  color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 1.5px;
 }
-.hero-sep { opacity: .25; }
+.hero-sep { color: var(--border-strong); }
 
-.hero-logo  { height: 30px; filter: brightness(0) invert(1); opacity: .5; }
-.hero-brand { font-size: 9px; color: rgba(245,237,216,.28); font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; }
+.hero-logo  { height: 28px; opacity: .55; }
+.hero-brand { font-size: 9px; color: var(--text-faint); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 
 
 /* ── Contenido wrap ────────────────────────────────────────────────────── */
@@ -331,22 +319,22 @@ img { max-width: 100%; }
   font-variant-numeric: lining-nums tabular-nums;
 }
 
-.reporte-contenido thead tr { background: var(--espresso); }
+.reporte-contenido thead tr { background: var(--gold-pale); }
 
 .reporte-contenido th {
-  color: rgba(245,237,216,.65);
+  color: var(--text-muted);
   padding: 11px 18px; text-align: right;
-  font-weight: 600; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
-  border-right: 1px solid rgba(245,237,216,.06);
+  font-weight: 700; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+  border-right: 1px solid var(--border);
   white-space: nowrap;
   font-variant-numeric: lining-nums tabular-nums;
 }
 .reporte-contenido th:first-child {
   text-align: left;
   border-left: 3px solid var(--gold);
-  color: rgba(245,237,216,.92);
+  color: var(--espresso);
   position: sticky; left: 0;
-  background: var(--espresso);
+  background: var(--gold-pale);
   z-index: 2;
 }
 .reporte-contenido th:last-child { border-right: none; }
@@ -363,11 +351,12 @@ img { max-width: 100%; }
 }
 .reporte-contenido td:last-child { border-right: none; }
 .reporte-contenido td:first-child {
-  text-align: left; font-weight: 700; color: var(--espresso);
-  background: #F8F4EC;
+  text-align: left; font-weight: 600; color: var(--espresso);
+  background: var(--surface-pure);
   position: sticky; left: 0; z-index: 1;
   white-space: normal;
   min-width: 140px; max-width: 220px;
+  border-right: 1px solid var(--border);
 }
 
 
@@ -519,9 +508,11 @@ img { max-width: 100%; }
 
 /* Veredicto — el título grande */
 .verdict-status {
-  font-size: 1.6rem; font-weight: 800;
+  font-size: 1.7rem; font-weight: 700;
   line-height: 1.2; margin-bottom: 24px;
   word-break: break-word;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: -0.3px;
 }
 
 /* Métricas — fila de chips */
@@ -552,11 +543,12 @@ img { max-width: 100%; }
   padding-top: 20px;
 }
 .verdict-summary {
-  font-size: 15px; line-height: 1.85; color: var(--text-warm);
+  font-size: 15.5px; line-height: 1.9; color: var(--text-warm);
   margin: 0;
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 
