@@ -497,6 +497,7 @@ img { max-width: 100%; }
   margin: 32px 0;
   box-sizing: border-box;
   width: 100%;
+  background: var(--surface-pure);
 }
 
 /* Eyebrow row: label + pill en la misma línea */
@@ -509,9 +510,11 @@ img { max-width: 100%; }
   letter-spacing: 2px; color: var(--text-faint);
 }
 .verdict-pill {
-  color: #fff; font-size: 12px; font-weight: 800;
+  font-size: 11px; font-weight: 800;
   padding: 3px 12px; border-radius: 99px;
   letter-spacing: 0.5px;
+  border: 1.5px solid currentColor;
+  background: transparent;
 }
 
 /* Veredicto — el título grande */

@@ -273,9 +273,8 @@ export function FlagsBlock({ items }) {
 /* ── VerdictBlock ───────────────────────────────────────────────────────── */
 export function VerdictBlock({ status, score, color, summary, metrics }) {
   const col = color === 'green' ? GREEN : color === 'red' ? RED : AMBER;
-  const bg  = color === 'green' ? 'rgba(22,163,74,.06)' : color === 'red' ? 'rgba(220,38,38,.06)' : 'rgba(181,114,42,.06)';
   return (
-    <div className="verdict-block" style={{ borderColor: col, background: bg }}>
+    <div className="verdict-block" style={{ borderColor: col }}>
 
       {/* Eyebrow + veredicto en una línea */}
       <div className="verdict-header">
