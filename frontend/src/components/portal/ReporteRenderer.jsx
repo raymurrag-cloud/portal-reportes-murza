@@ -72,7 +72,7 @@ function SeccionTexto({ titulo, contenido }) {
 }
 
 /* ── Renderer principal ──────────────────────────────────────────────────── */
-export default function ReporteRenderer({ data, soloPreview }) {
+export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2 }) {
   if (!data) return null;
 
   const secciones = [];
@@ -88,8 +88,8 @@ export default function ReporteRenderer({ data, soloPreview }) {
   if (data.score) secciones.push({ tipo: 'score' });
   if (data.verdict) secciones.push({ tipo: 'verdict' });
 
-  // Preview: solo las primeras 2 secciones de texto
-  const visibles = soloPreview ? secciones.filter(s => s.tipo === 'texto').slice(0, 2) : secciones;
+  // Preview: mostrar las primeras N secciones según parrafos_gratis del admin
+  const visibles = soloPreview ? secciones.slice(0, seccionesGratis) : secciones;
 
   return (
     <div className="reporte-contenido">

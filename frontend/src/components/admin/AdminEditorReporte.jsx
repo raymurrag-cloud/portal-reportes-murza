@@ -192,10 +192,17 @@ export default function AdminEditorReporte() {
               <input name="empresa" value={form.empresa} onChange={set} placeholder="Apple Inc." />
             </div>
             <div className="form-group">
-              <label>Párrafos gratis <span className="hint">({totalParrafos} totales)</span></label>
-              <input name="parrafos_gratis" type="number" min="1" max={totalParrafos || 99}
+              <label>
+                {modo === 'json' ? 'Secciones gratis' : 'Párrafos gratis'}
+                {modo === 'markdown' && <span className="hint"> ({totalParrafos} totales)</span>}
+              </label>
+              <input name="parrafos_gratis" type="number" min="1" max={modo === 'json' ? 9 : (totalParrafos || 99)}
                 value={form.parrafos_gratis} onChange={set} />
-              <span className="field-hint">Los primeros N párrafos se muestran sin login</span>
+              <span className="field-hint">
+                {modo === 'json'
+                  ? 'Secciones visibles sin login: 1=Solo resumen · 2=+Descripción · 3=+Tabla · 4=+KPIs · 5=+Gráfica ingresos · 6=+Gráfica márgenes · 7=+Flags · 8=+Score · 9=Todo'
+                  : 'Los primeros N párrafos se muestran sin login'}
+              </span>
             </div>
             <div className="form-group">
               <label>Slug (URL)</label>

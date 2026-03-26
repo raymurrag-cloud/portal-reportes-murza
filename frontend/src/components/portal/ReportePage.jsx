@@ -92,7 +92,7 @@ export default function ReportePage() {
           {/* ── Reporte JSON estructurado ── */}
           {esJson ? (
             <>
-              <ReporteRenderer data={jsonData} soloPreview={!reporte.completo} />
+              <ReporteRenderer data={jsonData} soloPreview={!reporte.completo} seccionesGratis={reporte.parrafos_gratis ?? 2} />
               {!reporte.completo && (
                 <div className="paywall">
                   <div className="paywall-blur" />
