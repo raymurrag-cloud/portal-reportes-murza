@@ -17,6 +17,28 @@ export default function HomePage() {
   const navigate = useNavigate();
   const solicitudRef = useRef(null);
 
+  // Prospecto GBM
+  const [gbm, setGbm]           = useState({ nombre: '', telefono: '', correo: '', valor_portafolio: '' });
+  const [gbmEnviado, setGbmEnviado] = useState(false);
+  const [gbmEnviando, setGbmEnviando] = useState(false);
+  const [gbmError, setGbmError] = useState('');
+
+  const enviarGBM = async (e) => {
+    e.preventDefault();
+    if (!gbm.nombre || !gbm.telefono || !gbm.correo || !gbm.valor_portafolio) {
+      setGbmError('Completa todos los campos.'); return;
+    }
+    setGbmEnviando(true); setGbmError('');
+    try {
+      await api.enviarProspectoGBM(gbm);
+      setGbmEnviado(true);
+    } catch {
+      setGbmError('Hubo un error, intenta de nuevo.');
+    } finally {
+      setGbmEnviando(false);
+    }
+  };
+
   // Solicitar reporte
   const [empresa, setEmpresa]   = useState('');
   const [tickerSol, setTickerSol] = useState('');
@@ -184,6 +206,70 @@ export default function HomePage() {
             </div>
           </section>
         )}
+
+        {/* Prospecto GBM */}
+        <section style={{
+          margin: '48px auto', maxWidth: 700, padding: '40px 36px',
+          background: 'linear-gradient(135deg, rgba(160,128,64,0.12) 0%, rgba(160,128,64,0.04) 100%)',
+          border: '1px solid rgba(160,128,64,0.3)', borderRadius: 16,
+        }}>
+          <h2 style={{ marginTop: 0, fontSize: 22 }}>
+            Quieres que Murza Inversiones sea tu asesor en tu cuenta de GBM?
+          </h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: 28, fontSize: 15, lineHeight: 1.6 }}>
+            Te daremos atencion 24/7 para revisar, discutir y decidir sobre tu portafolio.
+          </p>
+          {gbmEnviado ? (
+            <div style={{
+              background: 'rgba(22,163,74,0.08)', border: '1px solid rgba(22,163,74,0.25)',
+              borderRadius: 10, padding: '18px 24px', color: '#16A34A', fontWeight: 600,
+            }}>
+              Recibimos tu informacion. Te contactaremos pronto.
+            </div>
+          ) : (
+            <form onSubmit={enviarGBM} style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
+              <input
+                value={gbm.nombre}
+                onChange={e => setGbm(g => ({ ...g, nombre: e.target.value }))}
+                placeholder="Nombre completo *"
+                className="buscador-input"
+                style={{ flex: '1 1 200px' }}
+              />
+              <input
+                value={gbm.telefono}
+                onChange={e => setGbm(g => ({ ...g, telefono: e.target.value }))}
+                placeholder="Telefono *"
+                className="buscador-input"
+                style={{ flex: '1 1 160px' }}
+                type="tel"
+              />
+              <input
+                value={gbm.correo}
+                onChange={e => setGbm(g => ({ ...g, correo: e.target.value }))}
+                placeholder="Correo electronico *"
+                className="buscador-input"
+                style={{ flex: '1 1 200px' }}
+                type="email"
+              />
+              <select
+                value={gbm.valor_portafolio}
+                onChange={e => setGbm(g => ({ ...g, valor_portafolio: e.target.value }))}
+                className="buscador-input"
+                style={{ flex: '1 1 200px' }}
+              >
+                <option value="">Valor de portafolio *</option>
+                <option value="Menos de $500K">Menos de $500,000</option>
+                <option value="$500K - $1M">$500,000 — $1,000,000</option>
+                <option value="$1M - $3M">$1,000,000 — $3,000,000</option>
+                <option value="Mas de $3M">Mas de $3,000,000</option>
+              </select>
+              <button type="submit" className="btn-primary" disabled={gbmEnviando} style={{ flex: '1 1 100%' }}>
+                {gbmEnviando ? 'Enviando...' : 'Quiero que Murza sea mi asesor'}
+              </button>
+              {gbmError && <p style={{ color: '#DC2626', fontSize: 13, width: '100%', margin: 0 }}>{gbmError}</p>}
+            </form>
+          )}
+        </section>
 
         {/* Solicitar reporte — al final */}
         <section className="reportes-grid-section" ref={solicitudRef} style={{ marginTop: 32 }}>

@@ -47,4 +47,8 @@ export const api = {
   // Solicitudes de reportes
   solicitarReporte: (body) => req('POST', '/solicitudes', body),
   adminGetSolicitudes: () => req('GET', '/admin/solicitudes', null, 'admin'),
+
+  // Prospectos GBM
+  enviarProspectoGBM: (body) => req('POST', '/prospectos-gbm', body),
+  adminGetProspectos: () => req('GET', '/admin/prospectos', null, 'admin'),
 };

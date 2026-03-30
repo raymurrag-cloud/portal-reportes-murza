@@ -41,6 +41,7 @@ export default function AdminReportes() {
           <nav className="admin-nav">
             <Link to="/admin/reportes"    className="admin-nav-link active">Reportes</Link>
             <Link to="/admin/leads"       className="admin-nav-link">Leads</Link>
+            <Link to="/admin/prospectos"  className="admin-nav-link">Prospectos GBM</Link>
             <Link to="/admin/solicitudes" className="admin-nav-link">Solicitudes</Link>
           </nav>
         </div>

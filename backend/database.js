@@ -56,6 +56,19 @@ export async function initDb() {
     console.log('✅ Migración: columna contenido_json agregada');
   } catch { /* ya existe, ignorar */ }
 
+  // Tabla de prospectos GBM
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS prospectos_gbm (
+      id              INTEGER PRIMARY KEY AUTOINCREMENT,
+      nombre          TEXT NOT NULL,
+      telefono        TEXT NOT NULL,
+      correo          TEXT NOT NULL,
+      valor_portafolio TEXT NOT NULL,
+      created_at      TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+
   // Tabla de solicitudes de reportes
   await db.execute({
     sql: `CREATE TABLE IF NOT EXISTS solicitudes_reporte (

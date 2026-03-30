@@ -38,6 +38,34 @@ async function enviarEmail({ to, subject, text }) {
   }
 }
 
+// ── Prospectos GBM (público) ───────────────────────────────────────────────
+app.post('/api/prospectos-gbm', async (req, res) => {
+  const { nombre, telefono, correo, valor_portafolio } = req.body || {};
+  if (!nombre?.trim() || !telefono?.trim() || !correo?.trim() || !valor_portafolio?.trim())
+    return res.status(400).json({ error: 'Todos los campos son requeridos' });
+  const { db } = await import('./database.js');
+  await db.execute({
+    sql:  'INSERT INTO prospectos_gbm (nombre, telefono, correo, valor_portafolio) VALUES (?, ?, ?, ?)',
+    args: [nombre.trim().slice(0, 100), telefono.trim().slice(0, 20), correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50)],
+  });
+  enviarEmail({
+    to:      'rmurra@murzainversiones.com',
+    subject: `Nuevo prospecto GBM: ${nombre.trim()}`,
+    text: [
+      'Nuevo prospecto interesado en asesoria GBM:',
+      '',
+      `Nombre:           ${nombre.trim()}`,
+      `Telefono:         ${telefono.trim()}`,
+      `Correo:           ${correo.trim()}`,
+      `Valor portafolio: ${valor_portafolio.trim()}`,
+      '',
+      'Ver todos los prospectos: https://reportes.murzainversiones.com/admin/prospectos',
+    ].join('\n'),
+  }).then(() => console.log('Email prospecto GBM enviado OK'))
+    .catch(err => console.error('Email prospecto GBM error:', err.message));
+  res.status(201).json({ ok: true });
+});
+
 // ── Solicitudes de reportes (público) ─────────────────────────────────────
 app.post('/api/solicitudes', async (req, res) => {
   const { empresa, ticker, email } = req.body || {};
