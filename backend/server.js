@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import nodemailer from 'nodemailer';
 import { initDb } from './database.js';
 import authRoutes from './routes/auth.js';
 import reportesRoutes from './routes/reportes.js';
@@ -18,17 +17,26 @@ app.use('/api/admin',    adminRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 
-// ── Mailer Gmail ───────────────────────────────────────────────────────────
-const mailer = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  family: 4, // forzar IPv4
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: (process.env.GMAIL_PASS || '').replace(/\s/g, ''),
-  },
-});
+// ── Resend (email via HTTPS) ───────────────────────────────────────────────
+async function enviarEmail({ to, subject, text }) {
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'Portal Murza <onboarding@resend.dev>',
+      to: [to],
+      subject,
+      text,
+    }),
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(err);
+  }
+}
 
 // ── Solicitudes de reportes (público) ─────────────────────────────────────
 app.post('/api/solicitudes', async (req, res) => {
@@ -46,9 +54,8 @@ app.post('/api/solicitudes', async (req, res) => {
   });
 
   // Notificacion por email (fire-and-forget)
-  mailer.sendMail({
-    from:    `"Portal Murza" <${process.env.GMAIL_USER}>`,
-    to:      process.env.GMAIL_USER,
+  enviarEmail({
+    to:      'rmurra@murzainversiones.com',
     subject: `Nueva solicitud de reporte: ${empresaClean}${tickerClean ? ` (${tickerClean})` : ''}`,
     text: [
       'Nueva solicitud de reporte en el portal:',
@@ -58,9 +65,9 @@ app.post('/api/solicitudes', async (req, res) => {
       emailClean  ? `Email:   ${emailClean}`  : '',
       '',
       'Ver todas las solicitudes: https://reportes.murzainversiones.com/admin/solicitudes',
-    ].filter(l => l !== null).join('\n'),
+    ].filter(Boolean).join('\n'),
   }).then(() => console.log('Email solicitud enviado OK'))
-    .catch(err => console.error('Email solicitud error:', err.message, err.code));
+    .catch(err => console.error('Email solicitud error:', err.message));
 
   res.status(201).json({ ok: true });
 });
