@@ -21,11 +21,12 @@ app.get('/api/health', (_, res) => res.json({ ok: true }));
 // ── Mailer Gmail ───────────────────────────────────────────────────────────
 const mailer = nodemailer.createTransport({
   host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
+  family: 4, // forzar IPv4
   auth: {
     user: process.env.GMAIL_USER,
-    pass: (process.env.GMAIL_PASS || '').replace(/\s/g, ''), // quita espacios del app password
+    pass: (process.env.GMAIL_PASS || '').replace(/\s/g, ''),
   },
 });
 
