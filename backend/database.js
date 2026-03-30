@@ -56,5 +56,17 @@ export async function initDb() {
     console.log('✅ Migración: columna contenido_json agregada');
   } catch { /* ya existe, ignorar */ }
 
+  // Tabla de solicitudes de reportes
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS solicitudes_reporte (
+      id         INTEGER PRIMARY KEY AUTOINCREMENT,
+      empresa    TEXT NOT NULL,
+      ticker     TEXT,
+      email      TEXT,
+      created_at TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+
   console.log('✅ Base de datos lista (Turso)');
 }

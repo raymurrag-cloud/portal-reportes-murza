@@ -92,4 +92,13 @@ router.get('/leads', async (req, res) => {
   res.json(rows.map(r => ({ ...r, id: Number(r.id) })));
 });
 
+// ── Lista de solicitudes de reportes ──────────────────────────────────────
+router.get('/solicitudes', async (req, res) => {
+  const { rows } = await db.execute({
+    sql:  'SELECT id, empresa, ticker, email, created_at FROM solicitudes_reporte ORDER BY created_at DESC',
+    args: [],
+  });
+  res.json(rows.map(r => ({ ...r, id: Number(r.id) })));
+});
+
 export default router;

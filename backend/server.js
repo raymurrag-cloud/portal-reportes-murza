@@ -17,6 +17,19 @@ app.use('/api/admin',    adminRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 
+// ── Solicitudes de reportes (público) ─────────────────────────────────────
+app.post('/api/solicitudes', async (req, res) => {
+  const { empresa, ticker, email } = req.body || {};
+  if (!empresa || typeof empresa !== 'string' || empresa.trim().length < 2)
+    return res.status(400).json({ error: 'Nombre de empresa requerido' });
+  const { db } = await import('./database.js');
+  await db.execute({
+    sql:  'INSERT INTO solicitudes_reporte (empresa, ticker, email) VALUES (?, ?, ?)',
+    args: [empresa.trim().slice(0, 100), (ticker || '').trim().toUpperCase().slice(0, 10) || null, (email || '').trim().slice(0, 100) || null],
+  });
+  res.status(201).json({ ok: true });
+});
+
 // ── Precio en vivo (Yahoo Finance, server-side para evitar CORS) ───────────
 const precioCache = new Map(); // ticker → { precio, timestamp }
 const CACHE_TTL = 15 * 60 * 1000; // 15 minutos

@@ -39,8 +39,9 @@ export default function AdminReportes() {
         <div className="admin-header-left">
           <img src="/murza-logo.png" alt="Murza" className="admin-logo" />
           <nav className="admin-nav">
-            <Link to="/admin/reportes" className="admin-nav-link active">Reportes</Link>
-            <Link to="/admin/leads"    className="admin-nav-link">Leads</Link>
+            <Link to="/admin/reportes"    className="admin-nav-link active">Reportes</Link>
+            <Link to="/admin/leads"       className="admin-nav-link">Leads</Link>
+            <Link to="/admin/solicitudes" className="admin-nav-link">Solicitudes</Link>
           </nav>
         </div>
         <button className="btn-ghost-sm" onClick={logout}>Salir</button>

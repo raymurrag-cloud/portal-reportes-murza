@@ -1,0 +1,146 @@
+{
+  "resumen": "Adobe Inc. es el lider global en software creativo y de experiencia digital con una base de ARR de $25.2B y el 96.4% de sus ingresos por suscripcion recurrente. En FY2025 (terminado el 28 de noviembre de 2025) registro revenue record de $23.77B (+11% YoY), FCF de $9.85B (+25% YoY), margen bruto de 89.3% y EPS GAAP de $16.70 (+35% YoY). Veredicto: empresa de calidad excepcional que cotiza con un descuento historico del 63% respecto a su P/E promedio de 10 anos y del 56% frente al sector software.",
+  "descripcion": "Adobe opera en tres segmentos: Digital Media (Creative Cloud + Acrobat/Document Cloud, ~75% de ingresos), Digital Experience (Adobe Experience Cloud, marketing enterprise) y Publishing & Advertising. El modelo es 96.4% suscripcion recurrente, con ARR de $25.2B creciendo al 11.5% anual. Productos como Photoshop, Illustrator, Premiere, Acrobat y Adobe Experience Platform son estandares de facto en sus categorias con switching costs estructuralmente altos. Los modelos de IA Firefly estan entrenados en contenido licenciado propio, diferenciando a Adobe en compliance corporativo frente a competidores como OpenAI y Google. Revenue internacional representa ~40% del total. A partir de Q1 FY2026 consolida sus tres segmentos en uno solo para reflejar cambios en su estrategia de reporte. Cotiza en NASDAQ desde 1986, componente del S&P 500.",
+  "tabla": {
+    "headers": ["Metrica", "2021", "2022", "2023", "2024", "2025", "Var. YoY"],
+    "rows": [
+      ["Revenue ($B)", "15.8", "17.6", "19.4", "21.5", "23.8", "+11%"],
+      ["Utilidad Neta ($B)", "4.8", "4.8", "5.6", "5.6", "7.1", "+28%"],
+      ["Margen Neto (%)", "30%", "27%", "29%", "26%", "30%", "+4.2pp"],
+      ["EBITDA ($B)", "6.2", "7.0", "7.5", "8.2", "9.5", "+16%"],
+      ["FCF ($B)", "6.1", "6.6", "7.1", "7.9", "9.9", "+25%"],
+      ["EPS (GAAP)", "$9.93", "$10.10", "$12.00", "$12.36", "$16.70", "+35%"],
+      ["Deuda Neta ($B)", "-0.4", "-1.4", "-2.5", "-3.2", "0.8", "N/D"]
+    ]
+  },
+  "kpis": [
+    { "label": "P/E Ratio", "value": "~17x", "change": "-63% vs hist.", "signal": "yellow", "note": "vs. sector 30-40x" },
+    { "label": "EV/EBITDA", "value": "10.9x", "signal": "yellow" },
+    { "label": "P/FCF", "value": "~12x", "signal": "yellow" },
+    { "label": "Deuda/EBITDA", "value": "0.65x", "signal": "green" },
+    { "label": "ROE", "value": "58.77%", "signal": "green" },
+    { "label": "ROIC", "value": "62.91%", "signal": "green" }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      { "label": "2021", "revenue": 15.8, "utilidad": 4.8 },
+      { "label": "2022", "revenue": 17.6, "utilidad": 4.8 },
+      { "label": "2023", "revenue": 19.4, "utilidad": 5.6 },
+      { "label": "2024", "revenue": 21.5, "utilidad": 5.6 },
+      { "label": "2025", "revenue": 23.8, "utilidad": 7.1 }
+    ],
+    "series": [
+      { "key": "revenue", "name": "Revenue" },
+      { "key": "utilidad", "name": "Utilidad Neta" }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      { "label": "2021", "bruto": 87.1, "operativo": 33.7, "neto": 30.2 },
+      { "label": "2022", "bruto": 87.6, "operativo": 35.1, "neto": 27.0 },
+      { "label": "2023", "bruto": 88.0, "operativo": 34.2, "neto": 28.6 },
+      { "label": "2024", "bruto": 88.5, "operativo": 31.3, "neto": 25.8 },
+      { "label": "2025", "bruto": 89.3, "operativo": 36.6, "neto": 30.0 }
+    ],
+    "series": [
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      { "label": "Flujo de Caja Operativo", "value": "$10.03B en FY2025" },
+      { "label": "Free Cash Flow", "value": "$9.85B — margen FCF 41.4%" },
+      { "label": "CAPEX", "value": "$179M (-2.2% YoY)" },
+      { "label": "Recompras de acciones", "value": "$11.3B · 30.8M acciones · -5.7% share count (450M → 427M)", "nota": "100% del retorno al accionista via recompras — Adobe no paga dividendos en efectivo" },
+      { "label": "Deuda nueva emitida (ene 2025)", "value": "~$2.1B en bonos: notas 4.75% 2028, 4.95% 2030 y 5.30% 2035", "nota": "Financio parcialmente el programa de recompras aceleradas" },
+      { "label": "Deuda pagada en FY2025", "value": "$1,499M de deuda de corto plazo cancelada" }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": ["Metrica", "Adobe FY2025", "Sector SaaS ref.", "Posicion relativa"],
+    "rows": [
+      ["Gross margin", "89.3%", "~70-75%", "Por encima"],
+      ["Operating margin", "36.6% GAAP / 46.2% non-GAAP", "~20-25%", "Muy por encima"],
+      ["FCF margin", "41.4%", "~20-30%", "Por encima"],
+      ["Revenue growth", "+10.5%", "~12-15%", "Levemente por debajo"],
+      ["P/E TTM", "~17x", "~30-40x", "Descuento significativo"],
+      ["EV/EBITDA", "~10.9x", "~20-25x", "Descuento notable"]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "No se detecta deterioro operativo simultaneo",
+    "analisis": "El incremento de deuda y la caida del current ratio y equity son consecuencia deliberada y calculada de la politica de recompras aceleradas, respaldada por un FCF excepcional. La empresa podria cancelar toda su deuda en menos de 9 meses con el FCF actual. No hay red flags criticas de tipo operacional, de margenes, de cobertura de intereses ni de flujo de caja libre.",
+    "items": [
+      { "metrica": "Revenue YoY", "valor": "+10.5% ($21.5B → $23.8B)", "status": "ok", "nota": "Crecimiento organico consistente sostenido multiples anos." },
+      { "metrica": "Margen Bruto YoY", "valor": "+0.8pp (88.5% → 89.3%)", "status": "ok" },
+      { "metrica": "Operating margin YoY (GAAP)", "valor": "+530bp (31.3% → 36.6%)", "status": "ok", "nota": "FY2024 incluia cargo unico de $1B por terminacion del acuerdo Figma." },
+      { "metrica": "FCF YoY", "valor": "+25.1% ($7.9B → $9.85B)", "status": "ok" },
+      { "metrica": "Current ratio", "valor": "Bajo a 0.99x (pasivo corriente supera ligeramente activo corriente)", "status": "warn", "nota": "Explicado principalmente por deferred revenue de $6.9B — servicios ya cobrados, no deuda real. Con $5.4B en caja y $9.9B en FCF anual el riesgo real es bajo." },
+      { "metrica": "Deuda LT YoY", "valor": "+50% ($4.1B → $6.2B)", "status": "warn", "nota": "Emision de ~$2.1B en bonos para financiar recompras aceleradas. Debt/EBITDA de 0.65x, facilmente manejable dado el FCF." },
+      { "metrica": "Shareholders equity", "valor": "Cayendo por $11.3B en recompras en FY2025", "status": "warn", "nota": "Efecto intencional y calculado. No refleja deterioro del negocio; refleja la agresiva devolucion de capital al accionista." },
+      { "metrica": "Red flags operacionales", "valor": "No se detectaron", "status": "ok", "nota": "Sin deterioro en margenes operativos, cobertura de intereses ni generacion de FCF." }
+    ]
+  },
+  "flags": [
+    { "level": "green", "title": "96.4% ingresos recurrentes + FCF record", "impact": "Alto", "evidence": "ARR de $25.2B (+11.5% YoY). El 96.4% del revenue es suscripcion recurrente. OCF de $10.03B y FCF de $9.85B en FY2025, con margen FCF del 41.4%. Adobe podria cancelar toda su deuda en menos de 9 meses con el FCF actual.", "context": "Visibilidad y predictibilidad de ingresos excepcionales. Pocos negocios en el mundo generan este nivel de caja con esta consistencia y calidad." },
+    { "level": "green", "title": "Moat estructural profundo con AI", "impact": "Alto", "evidence": "Photoshop, Illustrator, Premiere, Acrobat y Adobe Experience Platform son estandares de facto en sus categorias. Switching costs elevados por integracion de ecosistema. AI-influenced ARR supera $5B y el ARR de productos AI-first ya excedio la meta de $250M.", "context": "Firefly entrenado en contenido licenciado propio diferencia a Adobe para clientes enterprise con requerimientos de compliance de propiedad intelectual. ROIC del 62.91% valida la calidad del moat." },
+    { "level": "yellow", "title": "Current ratio < 1 (0.99x)", "impact": "Bajo", "evidence": "El pasivo corriente supera ligeramente el activo corriente. Sin embargo, se explica principalmente por el deferred revenue de $6.9B — obligaciones de entrega de servicios ya cobrados, no deuda real.", "context": "Con $5.4B en caja y $9.9B en FCF anual, el riesgo de liquidez real es bajo. No representa una amenaza operacional." },
+    { "level": "yellow", "title": "Deuda LT +50% YoY ($4.1B → $6.2B)", "impact": "Medio", "evidence": "Adobe emitio ~$2.1B en nuevos bonos en enero 2025 (notas 4.75% 2028, 4.95% 2030 y 5.30% 2035) para financiar el programa de recompras aceleradas.", "context": "El Debt/EBITDA de 0.65x es muy conservador y facilmente manejable dado el FCF. Si los tipos de interes permanecen elevados, el costo del servicio de deuda aumentara gradualmente." },
+    { "level": "yellow", "title": "Shareholders equity cayendo", "impact": "Bajo", "evidence": "Efecto intencional de $11.3B en recompras durante FY2025 (30.8M acciones, -5.7% del share count). El equity contable cae pero el valor intrinseco del negocio sigue creciendo.", "context": "No refleja deterioro del negocio; refleja la agresiva devolucion de capital al accionista. Politica pro-shareholder deliberada y sostenida por el FCF." },
+    { "level": "red", "title": "Competencia AI disruptiva + Figma", "impact": "Alto", "evidence": "OpenAI (DALL-E/Sora), Google (Imagen), Canva y Midjourney ofrecen herramientas creativas AI a bajo costo o gratuitas. La adquisicion de Figma ($20B) fue bloqueada por reguladores en 2023, dejando el segmento de diseno colaborativo en navegador como debilidad organica.", "context": "La fragmentacion del mercado creativo AI podria presionar el crecimiento de nuevos usuarios especialmente entre estudiantes y freelancers. Mitiga: switching costs altos en base enterprise, Firefly con modelo de compliance diferenciado y $25.2B en ARR como ancla de ingresos." }
+  ],
+  "score": {
+    "score": 8.8,
+    "max": 10,
+    "items": [
+      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 7, "max": 10 },
+      { "label": "Calidad de margenes", "score": 10, "max": 10 },
+      { "label": "Solidez del balance", "score": 9, "max": 10 },
+      { "label": "Generacion de FCF", "score": 10, "max": 10 }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Adobe se posiciona como lider en aplicaciones creativas AI con AI-influenced ARR superando los $5B y el ARR de productos AI-first ya excediendo su objetivo de $250M para fin de ano. La estrategia pivota sobre tres ejes: integrar IA generativa y agentica en todo el portafolio (Firefly, AI Assistant en Acrobat), expandir la base de clientes hacia profesionales de negocios y consumidores, y consolidar su plataforma Adobe Experience Platform para clientes enterprise. Para FY2026 guia crecimiento de ARR total superior al 10% y revenue de $25.9B-$26.1B.",
+    "ventajas": "Adobe posee ventajas estructurales profundas. Su ecosistema esta profundamente integrado: Creative Cloud, Acrobat y Experience Cloud se retroalimentan generando switching costs elevadisimos. Las herramientas de Adobe son estandares de facto en diseno grafico, edicion de video, PDF y marketing digital a nivel global. La base de ARR de $25.2B con mas del 96% de ingresos por suscripcion ofrece una visibilidad de ingresos que pocos negocios del mundo igualan. Los modelos Firefly estan entrenados en contenido licenciado propio, ofreciendo una propuesta diferenciada para clientes corporativos preocupados por la propiedad intelectual y el compliance.",
+    "debilidades": "El crecimiento de revenue (+10.5%) es moderado para una empresa de software premium. La expansion de costos operativos (R&D +8.9%, S&M +12.6%) podria presionar margenes non-GAAP si el crecimiento de revenue se desacelera. La tentativa fallida de adquisicion de Figma ($20B, bloqueada por reguladores en 2023) revelo que Adobe tiene una debilidad real en diseno colaborativo basado en navegador, segmento que Figma domina y que Adobe debe construir organicamente.",
+    "riesgos": [
+      "Competencia AI: OpenAI (DALL-E/Sora), Google (Imagen), Canva y startups como Midjourney ofrecen herramientas creativas AI a bajo costo o gratuitas que podrian erosionar el valor percibido de Creative Cloud, especialmente entre estudiantes y freelancers.",
+      "Presion regulatoria: La revision de la FTC sobre la compra bloqueada de Figma y escrutinio potencial de adquisiciones futuras limitan las opciones de M&A estrategico.",
+      "Macro y divisas: Aproximadamente 40% de los ingresos son internacionales. Fortaleza del dolar puede impactar negativamente los resultados reportados en USD.",
+      "Deuda creciente: Si los tipos de interes permanecen elevados y Adobe continua emitiendo deuda para financiar recompras, el costo del servicio de deuda aumentara."
+    ],
+    "inversiones_estrategicas": "A partir del primer trimestre del ano fiscal 2026, Adobe combinara sus segmentos previos en un unico segmento operativo y reportable, debido a cambios en como la gerencia evalua resultados y ejecuta las oportunidades estrategicas. Tambien anuncio la adquisicion pendiente de Semrush (herramienta SEO/marketing digital), sujeta a aprobaciones regulatorias. Para FY2026, Adobe guia un crecimiento de ARR total superior al 10% y revenue total de $25.9B-$26.1B. Guia EPS GAAP FY2026: $17.90-$18.10 (+7-8% YoY)."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.8/10",
+    "color": "green",
+    "metrics": [
+      { "label": "Revenue TTM", "value": "$23.77B" },
+      { "label": "Margen Neto", "value": "30.0%" },
+      { "label": "FCF Yield", "value": "~10%" },
+      { "label": "P/E Forward", "value": "~15.8x" },
+      { "label": "Crecimiento Rev.", "value": "+11% YoY" }
+    ],
+    "bullets": [
+      { "text": "**FCF maquina de efectivo ->** $9.85B en FCF con margen del 41.4%, creciendo al 25% anual. Adobe esta entre las 5 empresas de software que mas caja generan en el mundo, con visibilidad garantizada por $25.2B en ARR recurrente.", "type": "pro" },
+      { "text": "**Descuento historico inusual ->** P/E de ~17x frente a un promedio historico de 10 anos de ~45x y frente al sector software de 30-40x. EV/EBITDA de 10.9x para un negocio con margen bruto del 89.3% y ROIC del 62.91% es una anomalia de mercado.", "type": "pro" },
+      { "text": "**Moat y recompras aceleradas ->** 30.8M acciones recompradas por $11.3B (-5.7% del share count), combinado con switching costs estructurales y el estandar de facto en creatividad digital, amplifica el EPS incluso con crecimiento moderado de revenue.", "type": "pro" },
+      { "text": "**Riesgo estrategico AI ->** La irrupcion de herramientas AI generativas gratuitas podria frenar la adquisicion de nuevos usuarios. La perdida de Figma dejo sin cobertura el segmento de diseno colaborativo. Crecimiento de revenue de +11% es moderado para una empresa de software premium.", "type": "con" }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      { "label": "Ingresos", "texto": "Adobe cerro FY2025 con revenue record de $23.77B, un crecimiento del 11% interanual sostenido consistentemente durante los ultimos anos. La base de suscripciones recurrentes (96.4% del total) y el ARR de $25.2B (+11.5% YoY) dan visibilidad y predictibilidad de ingresos excepcionales. La guia FY2026 de $25.9B-$26.1B implica crecimiento de ~9-10%, en linea con la trayectoria historica." },
+      { "label": "Margenes", "texto": "Los margenes GAAP se expandieron de forma notable (+530bp en operating margin), aunque en parte refleja la ausencia del cargo unico de $1B de FY2024 (terminacion de Figma). El margen operativo non-GAAP se mantiene estable en ~46.2%, demostrando una estructura de costos muy eficiente. El gross margin de 89.3% es excepcional para cualquier empresa a esta escala." },
+      { "label": "EPS", "texto": "El EPS diluido GAAP de $16.70 crecio 35.1% interanual, acelerado por la combinacion de mejora de margenes y la reduccion agresiva del share count (-5.7% YoY). El EPS non-GAAP de $20.94 crece ~17%. La guia FY2026 de $17.90-$18.10 (GAAP) implica un crecimiento mas moderado del ~7-8%." },
+      { "label": "Balance", "texto": "El balance tiene una solidez operativa indiscutible. La empresa mantuvo $5.4B en caja frente a $6.2B en deuda de largo plazo. El Debt/EBITDA de 0.65x es muy conservador, aunque la deuda LT aumento un 50% durante el ano para financiar las recompras. El equity contable cae por las recompras, pero el valor intrinseco del negocio sigue creciendo." },
+      { "label": "Generacion de caja", "texto": "El free cash flow de $9.85B en FY2025 representa un incremento del 25.1% respecto a 2024, una cifra extraordinaria que posiciona a Adobe entre las empresas que mas caja generan en el sector software global. El FCF yield de ~10% al precio actual de ~$284 es una propuesta atractiva para inversores de largo plazo." },
+      { "label": "Riesgos principales", "texto": "El riesgo fundamental no es financiero sino estrategico: la irrupcion del software creativo AI podria fragmentar el mercado y presionar el crecimiento de nuevos usuarios. Sin embargo, la fortaleza del modelo de suscripcion con switching costs elevados, la integracion AI propia (Firefly) y la base enterprise robusta mitigan significativamente este riesgo en el horizonte de 3-5 anos. Adobe no tiene red flags financieras graves; es una empresa de altisima calidad que cotiza con un descuento historico inusual." }
+    ]
+  }
+}

@@ -34,8 +34,9 @@ export default function AdminLeads() {
         <div className="admin-header-left">
           <img src="/murza-logo.png" alt="Murza" className="admin-logo" />
           <nav className="admin-nav">
-            <Link to="/admin/reportes" className="admin-nav-link">Reportes</Link>
-            <Link to="/admin/leads"    className="admin-nav-link active">Leads</Link>
+            <Link to="/admin/reportes"    className="admin-nav-link">Reportes</Link>
+            <Link to="/admin/leads"       className="admin-nav-link active">Leads</Link>
+            <Link to="/admin/solicitudes" className="admin-nav-link">Solicitudes</Link>
           </nav>
         </div>
         <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>

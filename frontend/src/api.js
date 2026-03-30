@@ -43,4 +43,8 @@ export const api = {
 
   // Admin — leads
   adminGetLeads: () => req('GET', '/admin/leads', null, 'admin'),
+
+  // Solicitudes de reportes
+  solicitarReporte: (body) => req('POST', '/solicitudes', body),
+  adminGetSolicitudes: () => req('GET', '/admin/solicitudes', null, 'admin'),
 };

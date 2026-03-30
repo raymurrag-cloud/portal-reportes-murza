@@ -1,0 +1,150 @@
+{
+  "resumen": "Broadcom (AVGO) cerro FY2025 con revenue record de $63.9B (+24% YoY), impulsado por la explosion de la inteligencia artificial y la plena integracion de VMware. Con FCF de $26.9B (margen 42%) y EBITDA ajustado de $43B, es una de las generadoras de caja mas poderosas del sector tech. El momentum en semiconductores de IA con revenue +74% YoY en Q4 FY2025 y guidance de doblar en Q1 FY2026 posiciona a Broadcom como proveedor critico de custom silicon para los principales hyperscalers del mundo.",
+
+  "descripcion": "Broadcom Inc. es un lider global en semiconductores e infraestructura de software con dos segmentos: Semiconductor Solutions ($36.9B en FY2025) e Infrastructure Software ($27.0B). En semiconductores disena XPUs custom para IA usados por Google, Meta y Apple, ademas de chips de red, almacenamiento y conectividad. Tras la adquisicion de VMware por $61B en noviembre 2023, el segmento de software ofrece soluciones de virtualizacion, multi-cloud y seguridad a las principales empresas Fortune 500. El modelo de negocio combina altos margenes brutos (68%), revenue recurrente en software y un moat defensivo en custom silicon de alto volumen. El CEO Hock Tan ha ejecutado esta estrategia de 'adquirir, integrar y optimizar' durante 15 anos con retornos superiores de forma consistente.",
+
+  "tabla": {
+    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Var. YoY"],
+    "rows": [
+      ["Revenue ($B)", "27.45", "33.20", "35.82", "51.57", "63.89", "+23.9%"],
+      ["Utilidad Neta ($B)", "6.44", "11.22", "14.08", "5.62", "23.13", "+311.6%"],
+      ["Margen Neto (%)", "23.5%", "33.8%", "39.3%", "10.9%", "36.2%", "+25.3pp"],
+      ["EBITDA ($B)", "14.56", "19.21", "20.04", "23.47", "34.26", "+46.0%"],
+      ["FCF ($B)", "13.32", "16.31", "17.63", "19.41", "26.91", "+38.6%"],
+      ["EPS (GAAP)", "$1.50", "$2.65", "$3.30", "$1.23", "$4.77", "+287.8%"],
+      ["Deuda Neta ($B)", "27.57", "27.10", "25.04", "58.22", "48.96", "-15.9%"]
+    ]
+  },
+
+  "kpis": [
+    { "label": "P/E Ratio", "value": "~60x", "change": "Forward P/E 23x vs. sector ~31x", "signal": "yellow", "note": "GAAP distorsionado por amortizacion VMware ~$8B/ano" },
+    { "label": "EV/EBITDA", "value": "39.7x", "signal": "yellow" },
+    { "label": "P/FCF", "value": "~31x", "signal": "yellow" },
+    { "label": "Deuda/EBITDA", "value": "1.43x", "signal": "green" },
+    { "label": "ROE", "value": "33.4%", "signal": "green" },
+    { "label": "ROIC", "value": "21.3%", "signal": "green" }
+  ],
+
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      { "label": "FY2021", "revenue": 27.45, "utilidad": 6.44 },
+      { "label": "FY2022", "revenue": 33.20, "utilidad": 11.22 },
+      { "label": "FY2023", "revenue": 35.82, "utilidad": 14.08 },
+      { "label": "FY2024", "revenue": 51.57, "utilidad": 5.62 },
+      { "label": "FY2025", "revenue": 63.89, "utilidad": 23.13 }
+    ],
+    "series": [{ "key": "revenue", "name": "Revenue" }, { "key": "utilidad", "name": "Utilidad Neta" }]
+  },
+
+  "chart_margenes": {
+    "data": [
+      { "label": "FY2021", "bruto": 61.36, "operativo": 31.03, "neto": 23.5 },
+      { "label": "FY2022", "bruto": 66.55, "operativo": 42.84, "neto": 33.8 },
+      { "label": "FY2023", "bruto": 68.93, "operativo": 45.25, "neto": 39.3 },
+      { "label": "FY2024", "bruto": 63.03, "operativo": 26.10, "neto": 10.9 },
+      { "label": "FY2025", "bruto": 67.77, "operativo": 39.89, "neto": 36.2 }
+    ],
+    "series": [
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
+    ]
+  },
+
+  "capital_allocation": {
+    "items": [
+      { "label": "Recompra de acciones", "value": "$6.3B", "nota": "FY2025; $12.4B en FY2024 post-split" },
+      { "label": "Dividendos", "value": "$11.1B", "nota": "$0.65/qtr = $2.60 anualizado; 15 incrementos consecutivos" },
+      { "label": "Capex", "value": "$0.62B", "nota": "Menos del 1% del revenue; modelo fabless en TSMC" },
+      { "label": "M&A / Adquisiciones", "value": "$61B", "nota": "VMware cerrada noviembre 2023; mayor adquisicion en historia de semiconductores" }
+    ]
+  },
+
+  "comparacion_sector": {
+    "headers": ["Metrica", "AVGO FY25", "Sector Semi", "Posicion relativa"],
+    "rows": [
+      ["Gross margin", "67.8%", "~55%", "Por encima del sector"],
+      ["Margen operativo", "39.9%", "~25%", "Por encima del sector"],
+      ["Revenue growth YoY", "+23.9%", "~15%", "Por encima del sector"],
+      ["P/E forward", "~23x", "~25x", "En linea con el sector"],
+      ["ROIC", "21.3%", "~15%", "Por encima del sector"]
+    ]
+  },
+
+  "deterioro": {
+    "veredicto": "No se detecta deterioro operativo significativo",
+    "analisis": "Los margenes GAAP deprimidos en FY2024 fueron consecuencia directa de la amortizacion de intangibles post-VMware (aprox. $9B ese ano), no de deterioro real del negocio. En FY2025 los margenes se recuperaron con fuerza: margen operativo de 39.9% (+13.8pp YoY) y margen neto de 36.2% (+25.3pp). La deuda sigue siendo alta pero se esta reduciendo a buen ritmo gracias al FCF record.",
+    "items": [
+      { "metrica": "Revenue YoY", "valor": "+23.9%", "status": "ok" },
+      { "metrica": "Margen operativo", "valor": "39.9%", "status": "ok" },
+      { "metrica": "FCF conversion", "valor": "116%", "status": "ok" },
+      { "metrica": "Margen bruto", "valor": "67.8%", "status": "ok" },
+      { "metrica": "Deuda LT", "valor": "$62B", "status": "warn", "nota": "Elevada por VMware; redujo $4.3B en FY2025 y sigue en trayectoria de paydown" }
+    ]
+  },
+
+  "flags": [
+    { "level": "green", "title": "Lider en custom silicon para IA", "impact": "Alto", "evidence": "AI semiconductor revenue +74% YoY en Q4 FY2025; guidance Q1 FY2026 de $8.2B solo en AI (+100% YoY)", "context": "Broadcom disena XPUs exclusivos para Google TPU, Meta MTIA y Apple Neural Engine; relacion multi-ano de diseno co-integrado imposible de replicar en el ciclo de producto" },
+    { "level": "green", "title": "FCF excepcional y dividendo creciente", "impact": "Alto", "evidence": "FCF FY2025 de $26.9B (margen 42%); 15 incrementos consecutivos de dividendo; $11.1B distribuidos en FY2025", "context": "FCF supera la utilidad neta GAAP (conversion 116%), indicando calidad superior de ganancias; dividendo creciente cubierto de forma holgada" },
+    { "level": "green", "title": "VMware integrado y generando caja", "impact": "Alto", "evidence": "Infrastructure Software $27B en FY2025 (+25.8% YoY); EBITDA ajustado del segmento supera 70% de margen", "context": "La conversion de VMware a modelo de suscripcion anual con precios mas altos esta generando cash flows estables y recurrentes; integracion completada en menos de 2 anos" },
+    { "level": "yellow", "title": "Valuacion premium en metricas GAAP", "impact": "Medio", "evidence": "P/E trailing aprox. 60x; EV/EBITDA GAAP 39.7x; sin embargo forward P/E de 23x refleja salto de earnings esperado en FY2026", "context": "La alta amortizacion de intangibles (~$8B/ano) distorsiona el GAAP hacia abajo; en forward P/E y EV/EBITDA ajustado la valuacion es razonable vs. sector" },
+    { "level": "yellow", "title": "Deuda neta elevada por adquisicion VMware", "impact": "Medio", "evidence": "Deuda neta de $48.96B al cierre FY2025; aunque redujo $9.3B desde el pico de $58.2B en FY2024", "context": "A FCF de $26.9B la empresa puede liquidar toda la deuda neta en menos de 2 anos; el riesgo es de percepcion mas que operativo, pero limita flexibilidad para nuevas adquisiciones grandes" },
+    { "level": "yellow", "title": "Concentracion de clientes en IA", "impact": "Medio", "evidence": "Revenue de AI concentrado en 3-4 hyperscalers (Google, Meta, ByteDance, Apple); dos clientes representan mayoria del revenue de AI segun reportes", "context": "Perdida o reduccion de un contrato de XPU podria impactar materialmente el revenue de semiconductores en el corto plazo" },
+    { "level": "red", "title": "Riesgo regulatorio de exportacion con China", "impact": "Alto", "evidence": "ByteDance es uno de los principales clientes de AI chips de Broadcom; restricciones de exportacion de chips a China pueden bloquear envios en cualquier momento", "context": "Si ByteDance es bloqueado como cliente, Broadcom perderia un porcentaje material de su revenue de IA; la regulacion de chips a China es el riesgo sistematico mas relevante para el segmento de semiconductores" }
+  ],
+
+  "score": {
+    "score": 8.4,
+    "max": 10,
+    "items": [
+      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 9, "max": 10 },
+      { "label": "Calidad de margenes", "score": 8, "max": 10 },
+      { "label": "Solidez del balance", "score": 7, "max": 10 },
+      { "label": "Generacion de FCF", "score": 9, "max": 10 }
+    ]
+  },
+
+  "analisis_cualitativo": {
+    "estrategia": "Broadcom opera con un modelo 'acquire, integrate and optimize': adquiere empresas con productos criticos en nichos de alta barrera, optimiza costos, sube precios y convierte revenue en FCF a tasas extraordinarias. En semiconductores se enfoca en custom silicon (XPUs) para hyperscalers de IA y en switches de red de alto rendimiento (Tomahawk, Trident) que son el estandar de facto en data centers. En software, replico con VMware la misma receta usada con CA, Symantec y Brocade: conversion a suscripciones premium con enfoque en los 10,000 clientes empresariales mas grandes del mundo.",
+    "ventajas": "El moat de Broadcom descansa en tres pilares: (1) custom silicon co-disenado con el cliente durante 3 a 5 anos, imposible de reemplazar dentro del ciclo de producto activo; (2) software critico de virtualizacion VMware con costos de cambio altisimos para empresas Fortune 500; (3) posicion de mercado dominante en switching ethernet para AI clusters con mas del 60% de market share. El CEO Hock Tan ha demostrado por 15 anos una asignacion de capital disciplinada con retornos consistentemente superiores al mercado.",
+    "debilidades": "La estructura de capital es agresiva con $62B en deuda, lo que limita la flexibilidad para nuevas adquisiciones grandes en el corto plazo. Los margenes GAAP son estructuralmente menores a los adjusted por la alta amortizacion de intangibles adquiridos (~$8B/ano). La dependencia de pocos hyperscalers para el revenue de IA crea volatilidad si alguno desarrolla capacidad interna de diseno de chips a gran escala.",
+    "riesgos": [
+      "Restricciones de exportacion de chips a China que impacten la relacion con ByteDance y otros clientes chinos (impacto potencial de 5-10% del revenue de IA si se restringen envios)",
+      "Desaceleracion del ciclo de CapEx de hyperscalers post-2026 que reduzca la demanda de custom XPUs tras el super-ciclo actual",
+      "Presion regulatoria antitrust sobre VMware: la EU y el DOJ han abierto investigaciones sobre practicas de precios agresivos post-adquisicion"
+    ],
+    "inversiones_estrategicas": "R&D de $10.98B en FY2025 (17.2% del revenue) enfocado en next-gen XPU para nodos 3nm y 2nm, Tomahawk 6 (51.2Tbps switching), y evolucion de la plataforma VMware Cloud Foundation hacia AI-native infrastructure. Capex minimo de $0.62B refleja modelo fabless; fabricacion tercerizada en TSMC. La guidance de Q1 FY2026 de $19.1B (+28% YoY) y AI revenue de $8.2B confirman que el ciclo de inversion sigue en plena aceleracion."
+  },
+
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.4/10",
+    "color": "green",
+    "metrics": [
+      { "label": "Revenue TTM", "value": "$63.9B" },
+      { "label": "Margen Neto", "value": "36.2%" },
+      { "label": "FCF Yield", "value": "~2.0%" },
+      { "label": "P/E Forward", "value": "~23x" },
+      { "label": "Crecimiento Rev.", "value": "+23.9% YoY" }
+    ],
+    "bullets": [
+      { "text": "**IA semiconductor dominance:** Custom XPUs para Google, Meta y Apple con revenue +74% YoY en Q4; guidance Q1 FY2026 de $8.2B en AI solo, doblando YoY.", "type": "pro" },
+      { "text": "**FCF Machine:** $26.9B de FCF en FY2025 (margen 42%); cubre dividendo ($11.1B), recompras ($6.3B) y amortizacion de deuda VMware al mismo tiempo.", "type": "pro" },
+      { "text": "**VMware integrado y compounding:** Infrastructure Software de $27B crece 25.8% YoY con margenes EBITDA ajustado por encima del 70%; modelo de suscripcion asegura visibilidad de revenue.", "type": "pro" },
+      { "text": "**Riesgo geopolitico y concentracion:** Dependencia de hyperscalers chinos (ByteDance) expone un porcentaje del revenue de IA a riesgo regulatorio si se amplian restricciones de exportacion.", "type": "con" }
+    ]
+  },
+
+  "conclusion": {
+    "items": [
+      { "label": "Ingresos", "texto": "Revenue FY2025 de $63.9B representa crecimiento de 23.9% YoY, acelerado por AI semiconductors (+74% en Q4) y la integracion plena de VMware. La guidance para Q1 FY2026 de $19.1B (+28% YoY) confirma que el momentum se mantiene. Los dos segmentos crecen en paralelo: Semiconductor Solutions +22.5% ($36.9B) e Infrastructure Software +25.8% ($27.0B)." },
+      { "label": "Margenes", "texto": "Los margenes GAAP se recuperaron en FY2025 tras la distorsion de FY2024 causada por amortizacion de intangibles VMware. Margen bruto de 67.8% (vs. 63.0% FY2024), margen operativo de 39.9% (vs. 26.1% FY2024) y margen neto de 36.2% (vs. 10.9% FY2024). El EBITDA ajustado alcanza 67% del revenue, de los margenes mas altos en el universo tech global." },
+      { "label": "EPS", "texto": "EPS GAAP diluido de $4.77 en FY2025 vs. $1.23 en FY2024 (+288%), normalizandose tras el impacto masivo de amortizaciones post-VMware. El EPS ajustado (non-GAAP) supero $6.40 en FY2025, reflejando el poder real de generacion de ganancias. La brecha entre GAAP y adjusted permanecera mientras Broadcom amortiza aprox. $8B anuales de intangibles adquiridos durante varios anos mas." },
+      { "label": "Balance", "texto": "Deuda neta de $48.96B al cierre de FY2025, reducida $9.3B desde el pico de $58.2B en FY2024 cuando cerro VMware. Con FCF anual de $26.9B, el ratio Deuda Neta/FCF es de 1.8x; la empresa puede en teoria eliminar toda la deuda neta en menos de 2 anos. Equity de $81.3B refleja la base de activos intangibles de VMware y el portfolio de IP de semiconductores acumulado." },
+      { "label": "Generacion de caja", "texto": "FCF de $26.9B en FY2025 (+38.6% YoY) con margen FCF del 42%, excepcional para una empresa de esta escala. La conversion FCF sobre Utilidad Neta GAAP de 116% confirma que las ganancias en caja superan al beneficio contable. El capital se distribuyo entre dividendos ($11.1B), recompras ($6.3B) y pago de deuda a largo plazo (aprox. $4.3B reducidos en LT debt)." },
+      { "label": "Riesgos principales", "texto": "Los 3 riesgos clave a monitorear: (1) restricciones de exportacion a China que afecten a ByteDance y otros clientes chinos de chips de IA, con impacto potencial de 5-10% del revenue de semiconductores; (2) posible desaceleracion del super-ciclo de CapEx de hyperscalers post-2026 que reduzca demanda de XPUs; y (3) presion regulatoria antitrust sobre VMware por politicas de precios agresivos post-adquisicion en Europa y EE.UU." }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "resumen": "Micron Technology es el unico fabricante de memoria semiconductora de escala en EE.UU., con liderazgo en DRAM, NAND y High Bandwidth Memory (HBM) para inteligencia artificial. El negocio atraviesa el mejor ciclo operativo de su historia: margen bruto del 74% y EPS de $12 en un solo trimestre (Q2 FY2026). Veredicto: superciclo estructural con visibilidad inusual y valuacion con descuento del 56% frente al sector.",
+  "descripcion": "Micron disena, fabrica y vende chips de memoria DRAM (79% de ingresos), NAND Flash (20%) y SSDs. Modelo IDM con plantas propias en EE.UU., Japon, Taiwan y Singapur. Cuatro segmentos: Cloud Memory (HBM para IA, 39% de ingresos y 66% de margen bruto), Core Data Center (DDR5 y SSD enterprise), Mobile & Client (smartphones y PCs) y Automotive & Embedded. Motor principal: HBM para GPUs NVIDIA Blackwell con el 100% de produccion vendida y precios fijados para todo el calendario 2026.",
+  "tabla": {
+    "headers": ["Metrica", "2020", "2021", "2022", "2023", "2024", "Var. YoY"],
+    "rows": [
+      ["Revenue ($B)", "21.4", "27.7", "30.8", "15.5", "25.1", "+62%"],
+      ["Utilidad Neta ($B)", "2.7", "5.9", "8.7", "-5.8", "0.8", "N/D"],
+      ["Margen Neto (%)", "12%", "21%", "28%", "-37%", "3%", "+20pp"],
+      ["EBITDA ($B)", "8.0", "10.8", "15.1", "1.0", "6.7", "+570%"],
+      ["FCF ($B)", "2.0", "3.1", "4.2", "-7.6", "0.4", "+863%"],
+      ["EPS", "$2.38", "$5.28", "$7.53", "-$5.36", "$0.70", "+984%"],
+      ["Deuda Neta ($B)", "1.9", "-0.8", "0.6", "5.3", "4.5", "-15%"]
+    ]
+  },
+  "kpis": [
+    { "label": "P/E Ratio", "value": "17.9x", "change": "-56% vs sector", "signal": "yellow", "note": "vs. sector 40.9x" },
+    { "label": "EV/EBITDA", "value": "24x", "signal": "yellow" },
+    { "label": "P/FCF", "value": "20x", "signal": "yellow" },
+    { "label": "Deuda Neta/EBITDA", "value": "0.27x", "signal": "green" },
+    { "label": "ROE", "value": "38.2%", "signal": "green" },
+    { "label": "ROIC", "value": "37.4%", "signal": "green" }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      { "label": "2020", "revenue": 21.4, "utilidad": 2.7 },
+      { "label": "2021", "revenue": 27.7, "utilidad": 5.9 },
+      { "label": "2022", "revenue": 30.8, "utilidad": 8.7 },
+      { "label": "2023", "revenue": 15.5, "utilidad": -5.8 },
+      { "label": "2024", "revenue": 25.1, "utilidad": 0.8 }
+    ],
+    "series": [
+      { "key": "revenue", "name": "Revenue" },
+      { "key": "utilidad", "name": "Utilidad Neta" }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      { "label": "2020", "bruto": 32.3, "operativo": 13.3, "neto": 12.5 },
+      { "label": "2021", "bruto": 32.9, "operativo": 19.2, "neto": 21.3 },
+      { "label": "2022", "bruto": 46.9, "operativo": 30.6, "neto": 28.2 },
+      { "label": "2023", "bruto": 9.1, "operativo": -18.7, "neto": -37.4 },
+      { "label": "2024", "bruto": 22.4, "operativo": 5.2, "neto": 3.1 }
+    ],
+    "series": [
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
+    ]
+  },
+  "flags": [
+    { "level": "green", "title": "HBM sold out 2026", "impact": "Alto", "evidence": "100% de la produccion de HBM vendida con precios fijados para todo el calendario 2026. CEO confirmo que solo puede surtir entre 50-67% de la demanda actual.", "context": "Visibilidad de ingresos inusual para un fabricante de commodities. Elimina riesgo de precio en el segmento de mayor margen (66% bruto)." },
+    { "level": "green", "title": "Balance impecable", "impact": "Alto", "evidence": "Deuda Neta/EBITDA 0.27x, cobertura de intereses 20.5x, current ratio 2.46x. Deuda total cayo $2.8B en un solo trimestre (Q1 FY2026).", "context": "Capacidad para sostener CAPEX de $25B+ en FY2026 sin estres financiero y con $9.7B en efectivo." },
+    { "level": "yellow", "title": "CAPEX comprometido $25B+", "impact": "Medio", "evidence": "Guia de CAPEX FY2026 supera $25,000M para el megafab en Nueva York, el mayor proyecto de manufactura de semiconductores en la historia de EE.UU.", "context": "Requiere que el ciclo favorable persista al menos 3 anos. Parcialmente mitigado por $13.6B en subsidios del CHIPS Act." },
+    { "level": "red", "title": "Ciclicidad estructural", "impact": "Alto", "evidence": "FY2023: perdida neta de $5.8B con revenue cayendo 50% desde el pico de FY2022. Ciclos de sobre-oferta en DRAM han ocurrido multiples veces.", "context": "Una desaceleracion en inversion de IA de los hiperescaladores o la recuperacion de Samsung en HBM podria revertir el ciclo abruptamente." }
+  ],
+  "score": {
+    "score": 8.5,
+    "max": 10,
+    "items": [
+      { "label": "Poder de fijacion de precios", "score": 7, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 10, "max": 10 },
+      { "label": "Calidad de margenes", "score": 9, "max": 10 },
+      { "label": "Solidez del balance", "score": 9, "max": 10 },
+      { "label": "Generacion de FCF", "score": 8, "max": 10 }
+    ]
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.5/10",
+    "color": "green",
+    "metrics": [
+      { "label": "Revenue TTM", "value": "$37.4B" },
+      { "label": "Margen Neto", "value": "22.8%" },
+      { "label": "FCF Yield", "value": "~5%" },
+      { "label": "P/E Forward", "value": "12.3x" },
+      { "label": "Crecimiento Rev.", "value": "+62% YoY" }
+    ],
+    "bullets": [
+      { "text": "**HBM como moat temporal ->** Micron tiene el 100% de su produccion de HBM vendida para 2026 con precios fijados, eliminando el riesgo de precio en el segmento de 66% de margen bruto y otorgando visibilidad de ingresos inusual para el sector.", "type": "pro" },
+      { "text": "**Aceleracion sin precedentes ->** Revenue de $8.7B (Q1 FY25) a guia de $33.5B (Q3 FY26) en cinco trimestres. Margenes brutos del 74% y EPS de $12 en un solo trimestre rivalizan con empresas de software.", "type": "pro" },
+      { "text": "**Unico fabricante de escala en EE.UU. ->** Posicion geopolitica irremplazable con $13.6B en subsidios del CHIPS Act y contratos estrategicos con los principales hiperescaladores. Ventaja regulatoria estructural frente a Samsung y SK Hynix.", "type": "pro" },
+      { "text": "**Riesgo ciclico latente ->** En FY2023 Micron perdio $5.8B. Una desaceleracion en inversion de IA de los hiperescaladores o la recuperacion de Samsung en HBM podria revertir el ciclo abruptamente.", "type": "con" }
+    ]
+  }
+}
