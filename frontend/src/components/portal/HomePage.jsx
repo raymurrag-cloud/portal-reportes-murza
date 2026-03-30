@@ -150,8 +150,43 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* Solicitar reporte */}
-        <section className="reportes-grid-section" ref={solicitudRef} style={{ marginTop: 8 }}>
+        {/* Lista completa alfabetica */}
+        {!loading && todosAlfabeticos.length > 0 && (
+          <section className="reportes-grid-section" style={{ marginTop: 32 }}>
+            <h2>Todos los reportes</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0, maxWidth: 640 }}>
+              {todosAlfabeticos.map((r) => (
+                <Link
+                  to={`/reporte/${r.slug}`}
+                  key={r.id}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: '11px 4px',
+                    borderBottom: '1px solid var(--border-color, rgba(255,255,255,0.07))',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    gap: 12,
+                  }}
+                >
+                  <span style={{ fontWeight: 600, fontSize: 15 }}>
+                    {r.empresa}
+                    <span style={{ color: 'var(--text-muted)', fontWeight: 400, marginLeft: 8, fontSize: 13 }}>
+                      ({r.ticker})
+                    </span>
+                  </span>
+                  <span style={{ color: 'var(--text-muted)', fontSize: 13, whiteSpace: 'nowrap' }}>
+                    {formatMes(r.created_at)}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Solicitar reporte — al final */}
+        <section className="reportes-grid-section" ref={solicitudRef} style={{ marginTop: 32 }}>
           <h2>No encuentras la empresa que buscas?</h2>
           <p style={{ color: 'var(--text-muted)', marginBottom: 20, fontSize: 15 }}>
             Escribenos cual empresa quieres que analicemos y la agregamos al portal.
@@ -200,41 +235,6 @@ export default function HomePage() {
             </form>
           )}
         </section>
-
-        {/* Lista completa alfabetica */}
-        {!loading && todosAlfabeticos.length > 0 && (
-          <section className="reportes-grid-section" style={{ marginTop: 32 }}>
-            <h2>Todos los reportes</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 0, maxWidth: 640 }}>
-              {todosAlfabeticos.map((r, i) => (
-                <Link
-                  to={`/reporte/${r.slug}`}
-                  key={r.id}
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding: '11px 4px',
-                    borderBottom: '1px solid var(--border-color, rgba(255,255,255,0.07))',
-                    textDecoration: 'none',
-                    color: 'inherit',
-                    gap: 12,
-                  }}
-                >
-                  <span style={{ fontWeight: 600, fontSize: 15 }}>
-                    {r.empresa}
-                    <span style={{ color: 'var(--text-muted)', fontWeight: 400, marginLeft: 8, fontSize: 13 }}>
-                      ({r.ticker})
-                    </span>
-                  </span>
-                  <span style={{ color: 'var(--text-muted)', fontSize: 13, whiteSpace: 'nowrap' }}>
-                    {formatMes(r.created_at)}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
 
         <footer className="portal-footer">
           <p>© {new Date().getFullYear()} Murza Inversiones — Empresa afiliada a GBM</p>
