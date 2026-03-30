@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import nodemailer from 'nodemailer';
 import { initDb } from './database.js';
 import authRoutes from './routes/auth.js';
 import reportesRoutes from './routes/reportes.js';
@@ -17,16 +18,43 @@ app.use('/api/admin',    adminRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 
+// ── Mailer Gmail ───────────────────────────────────────────────────────────
+const mailer = nodemailer.createTransport({
+  service: 'gmail',
+  auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
+});
+
 // ── Solicitudes de reportes (público) ─────────────────────────────────────
 app.post('/api/solicitudes', async (req, res) => {
   const { empresa, ticker, email } = req.body || {};
   if (!empresa || typeof empresa !== 'string' || empresa.trim().length < 2)
     return res.status(400).json({ error: 'Nombre de empresa requerido' });
   const { db } = await import('./database.js');
+  const empresaClean = empresa.trim().slice(0, 100);
+  const tickerClean  = (ticker || '').trim().toUpperCase().slice(0, 10) || null;
+  const emailClean   = (email || '').trim().slice(0, 100) || null;
+
   await db.execute({
     sql:  'INSERT INTO solicitudes_reporte (empresa, ticker, email) VALUES (?, ?, ?)',
-    args: [empresa.trim().slice(0, 100), (ticker || '').trim().toUpperCase().slice(0, 10) || null, (email || '').trim().slice(0, 100) || null],
+    args: [empresaClean, tickerClean, emailClean],
   });
+
+  // Notificacion por email (fire-and-forget)
+  mailer.sendMail({
+    from:    `"Portal Murza" <${process.env.GMAIL_USER}>`,
+    to:      process.env.GMAIL_USER,
+    subject: `Nueva solicitud de reporte: ${empresaClean}${tickerClean ? ` (${tickerClean})` : ''}`,
+    text: [
+      'Nueva solicitud de reporte en el portal:',
+      '',
+      `Empresa: ${empresaClean}`,
+      tickerClean ? `Ticker:  ${tickerClean}` : '',
+      emailClean  ? `Email:   ${emailClean}`  : '',
+      '',
+      'Ver todas las solicitudes: https://reportes.murzainversiones.com/admin/solicitudes',
+    ].filter(l => l !== null).join('\n'),
+  }).catch(err => console.error('Email solicitud error:', err));
+
   res.status(201).json({ ok: true });
 });
 
