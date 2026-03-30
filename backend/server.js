@@ -26,7 +26,7 @@ async function enviarEmail({ to, subject, text }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Portal Murza <onboarding@resend.dev>',
+      from: 'Portal Murza <noreply@murzainversiones.com>',
       to: [to],
       subject,
       text,
