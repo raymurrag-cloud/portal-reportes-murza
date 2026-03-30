@@ -20,8 +20,13 @@ app.get('/api/health', (_, res) => res.json({ ok: true }));
 
 // ── Mailer Gmail ───────────────────────────────────────────────────────────
 const mailer = nodemailer.createTransport({
-  service: 'gmail',
-  auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: (process.env.GMAIL_PASS || '').replace(/\s/g, ''), // quita espacios del app password
+  },
 });
 
 // ── Solicitudes de reportes (público) ─────────────────────────────────────
@@ -53,7 +58,8 @@ app.post('/api/solicitudes', async (req, res) => {
       '',
       'Ver todas las solicitudes: https://reportes.murzainversiones.com/admin/solicitudes',
     ].filter(l => l !== null).join('\n'),
-  }).catch(err => console.error('Email solicitud error:', err));
+  }).then(() => console.log('Email solicitud enviado OK'))
+    .catch(err => console.error('Email solicitud error:', err.message, err.code));
 
   res.status(201).json({ ok: true });
 });
