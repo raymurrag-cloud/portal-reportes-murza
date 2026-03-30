@@ -207,7 +207,7 @@ function Conclusion({ items }) {
 }
 
 /* ── Renderer principal ──────────────────────────────────────────────────── */
-export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2 }) {
+export default function ReporteRenderer({ data, ticker, soloPreview, seccionesGratis = 2 }) {
   if (!data) return null;
 
   const secciones = [];
@@ -249,7 +249,7 @@ export default function ReporteRenderer({ data, soloPreview, seccionesGratis = 2
             return (
               <div key={i}>
                 <h2 className="rr-h2">Métricas Clave de Valuación</h2>
-                <KpiBlock items={data.kpis} />
+                <KpiBlock items={data.kpis} ticker={ticker || data.ticker} />
               </div>
             );
 

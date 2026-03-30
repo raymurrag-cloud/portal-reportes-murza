@@ -34,9 +34,26 @@ Cuando el usuario pida un análisis financiero de una empresa, responde ÚNICAME
   },
 
   "kpis": [
-    { "label": "P/E Ratio", "value": "Xx", "change": "+X% YoY", "signal": "yellow", "note": "vs. sector Xx" },
-    { "label": "EV/EBITDA", "value": "Xx", "change": "+X% YoY", "signal": "yellow" },
-    { "label": "P/FCF", "value": "Xx", "signal": "yellow" },
+    {
+      "label": "P/E Trailing", "value": "28x", "signal": "yellow", "note": "vs. sector 22x",
+      "precio_base": 152.50, "precio_fecha": "2026-03-20",
+      "fundamento": { "tipo": "eps_ttm", "valor": 5.44 }
+    },
+    {
+      "label": "P/E Forward", "value": "25x", "signal": "yellow",
+      "precio_base": 152.50, "precio_fecha": "2026-03-20",
+      "fundamento": { "tipo": "eps_fwd", "valor": 6.10 }
+    },
+    {
+      "label": "EV/EBITDA", "value": "20x", "signal": "yellow",
+      "precio_base": 152.50, "precio_fecha": "2026-03-20",
+      "fundamento": { "tipo": "ev_ebitda", "ebitda_b": 130.0, "shares_m": 15400, "deuda_neta_b": 67.0 }
+    },
+    {
+      "label": "P/FCF", "value": "30x", "signal": "yellow",
+      "precio_base": 152.50, "precio_fecha": "2026-03-20",
+      "fundamento": { "tipo": "p_fcf", "fcf_b": 100.0, "shares_m": 15400 }
+    },
     { "label": "Deuda Neta/EBITDA", "value": "X.Xx", "signal": "green" },
     { "label": "ROE", "value": "X%", "signal": "green" },
     { "label": "ROIC", "value": "X%", "signal": "green" }

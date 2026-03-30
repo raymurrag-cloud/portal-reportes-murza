@@ -191,21 +191,71 @@ export function ChartBlock({ config }) {
 }
 
 /* ── KpiBlock ───────────────────────────────────────────────────────────── */
-export function KpiBlock({ items }) {
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
+
+function calcularRatio(precio, fundamento) {
+  if (!precio || !fundamento) return null;
+  const { tipo, valor, shares_m, fcf_b, ebitda_b, deuda_neta_b } = fundamento;
+  try {
+    if ((tipo === 'eps_ttm' || tipo === 'eps_fwd') && valor > 0)
+      return precio / valor;
+    if (tipo === 'fcf_per_share' && valor > 0)
+      return precio / valor;
+    if (tipo === 'p_fcf' && shares_m > 0 && fcf_b > 0)
+      return (precio * shares_m) / (fcf_b * 1000); // ambos en misma escala
+    if (tipo === 'ev_ebitda' && shares_m > 0 && ebitda_b > 0) {
+      const marketCap = (precio * shares_m) / 1000; // $B
+      return (marketCap + (deuda_neta_b || 0)) / ebitda_b;
+    }
+  } catch { /* sin retorno */ }
+  return null;
+}
+
+export function KpiBlock({ items, ticker }) {
+  const [precioVivo, setPrecioVivo] = React.useState(null);
+  const [precioError, setPrecioError] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!ticker || !items.some(it => it.fundamento)) return;
+    fetch(`${API_BASE}/precio/${ticker}`)
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(d => { if (d.precio) setPrecioVivo(d); else setPrecioError(true); })
+      .catch(() => setPrecioError(true));
+  }, [ticker]);
+
   return (
     <div className="kpi-grid">
-      {items.map((it, i) => (
-        <div key={i} className="kpi-card" style={{ borderTopColor: sigColor(it.signal) }}>
-          <div className="kpi-label">{it.label}</div>
-          <div className="kpi-value">{it.value}</div>
-          {it.change && (
-            <div className="kpi-change" style={{ color: sigColor(it.signal), background: sigBg(it.signal) }}>
-              {it.signal === 'green' ? '▲ ' : it.signal === 'red' ? '▼ ' : ''}{it.change}
-            </div>
-          )}
-          {it.note && <div className="kpi-note">{it.note}</div>}
-        </div>
-      ))}
+      {items.map((it, i) => {
+        const ratio = precioVivo && it.fundamento ? calcularRatio(precioVivo.precio, it.fundamento) : null;
+        const valorMostrar = ratio !== null ? `${ratio.toFixed(1)}x` : it.value;
+        const esVivo = ratio !== null;
+
+        return (
+          <div key={i} className="kpi-card" style={{ borderTopColor: sigColor(it.signal) }}>
+            <div className="kpi-label">{it.label}</div>
+            <div className="kpi-value">{valorMostrar}</div>
+
+            {/* Badge: en vivo o precio de referencia */}
+            {esVivo ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 10, color: '#16A34A', fontWeight: 700, marginTop: 3 }}>
+                <span style={{ fontSize: 8 }}>●</span>
+                <span>En vivo · ${precioVivo.precio.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {precioVivo.moneda}</span>
+              </div>
+            ) : it.precio_base && it.precio_fecha ? (
+              <div style={{ fontSize: 10, color: '#A8998A', marginTop: 3 }}>
+                Calculado con ${it.precio_base.toLocaleString('en-US', { minimumFractionDigits: 2 })} · {it.precio_fecha}
+              </div>
+            ) : null}
+
+            {it.change && (
+              <div className="kpi-change" style={{ color: sigColor(it.signal), background: sigBg(it.signal) }}>
+                {it.signal === 'green' ? '▲ ' : it.signal === 'red' ? '▼ ' : ''}{it.change}
+              </div>
+            )}
+            {it.note && <div className="kpi-note">{it.note}</div>}
+          </div>
+        );
+      })}
     </div>
   );
 }
