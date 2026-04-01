@@ -113,7 +113,7 @@ export default function HomePage() {
         {/* Hero + buscador */}
         <section className="hero">
           <h1>Analisis financiero profesional</h1>
-          <p>Reportes fundamentales de empresas publicas elaborados por expertos en inversiones.</p>
+          <p>Resumen de reportes fundamentales de empresas publicas.</p>
           <form className="buscador" onSubmit={buscar}>
             <input
               value={busqueda}
