@@ -323,7 +323,7 @@ export default function HomePage() {
         </section>
 
         <footer className="portal-footer">
-          <p>© {new Date().getFullYear()} Murza Inversiones — Empresa afiliada a GBM</p>
+          <p>© {new Date().getFullYear()} Murza Inversiones</p>
         </footer>
       </div>
     </>
