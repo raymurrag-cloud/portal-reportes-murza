@@ -214,7 +214,7 @@ export default function HomePage() {
           border: '1px solid rgba(160,128,64,0.3)', borderRadius: 16,
         }}>
           <h2 style={{ marginTop: 0, fontSize: 22 }}>
-            Quieres que Murza Inversiones sea tu asesor en tu cuenta de GBM?
+            ¿Quieres que Murza Inversiones sea el asesor de tu portafolio?
           </h2>
           <p style={{ color: 'var(--text-muted)', marginBottom: 28, fontSize: 15, lineHeight: 1.6 }}>
             Te daremos atencion 24/7 para revisar, discutir y decidir sobre tu portafolio.
