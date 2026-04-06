@@ -22,6 +22,8 @@ export default function HomePage() {
   const [gbmEnviado, setGbmEnviado] = useState(false);
   const [gbmEnviando, setGbmEnviando] = useState(false);
   const [gbmError, setGbmError] = useState('');
+  const [gbmStarted, setGbmStarted] = useState(false);
+  const [solStarted, setSolStarted] = useState(false);
 
   const enviarGBM = async (e) => {
     e.preventDefault();
@@ -32,6 +34,8 @@ export default function HomePage() {
     try {
       await api.enviarProspectoGBM(gbm);
       setGbmEnviado(true);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'form_submit_gbm' });
     } catch {
       setGbmError('Hubo un error, intenta de nuevo.');
     } finally {
@@ -87,6 +91,8 @@ export default function HomePage() {
       await api.solicitarReporte({ empresa: empresa.trim(), ticker: tickerSol.trim(), email: emailSol.trim() });
       setEnviado(true);
       setEmpresa(''); setTickerSol(''); setEmailSol('');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'form_submit_solicitud' });
     } catch {
       setErrorSol('Hubo un error, intenta de nuevo.');
     } finally {
@@ -227,7 +233,7 @@ export default function HomePage() {
               Recibimos tu informacion. Te contactaremos pronto.
             </div>
           ) : (
-            <form onSubmit={enviarGBM} style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
+            <form id="form-gbm" onSubmit={enviarGBM} onFocus={() => { if (!gbmStarted) { setGbmStarted(true); window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'form_start_gbm' }); } }} style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
               <input
                 value={gbm.nombre}
                 onChange={e => setGbm(g => ({ ...g, nombre: e.target.value }))}
@@ -290,7 +296,7 @@ export default function HomePage() {
               >Solicitar otra</button>
             </div>
           ) : (
-            <form onSubmit={enviarSolicitud} style={{ display: 'flex', flexWrap: 'wrap', gap: 10, maxWidth: 620 }}>
+            <form id="form-solicitud" onSubmit={enviarSolicitud} onFocus={() => { if (!solStarted) { setSolStarted(true); window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'form_start_solicitud' }); } }} style={{ display: 'flex', flexWrap: 'wrap', gap: 10, maxWidth: 620 }}>
               <input
                 value={empresa}
                 onChange={e => setEmpresa(e.target.value)}
