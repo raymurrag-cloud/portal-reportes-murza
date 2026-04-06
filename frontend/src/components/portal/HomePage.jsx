@@ -23,6 +23,7 @@ export default function HomePage() {
   const [gbmEnviando, setGbmEnviando] = useState(false);
   const [gbmError, setGbmError] = useState('');
   const [gbmStarted, setGbmStarted] = useState(false);
+  const [gbmFiltro, setGbmFiltro] = useState(null); // null | 'califica' | 'no_califica'
   const [solStarted, setSolStarted] = useState(false);
 
   const enviarGBM = async (e) => {
@@ -231,6 +232,52 @@ export default function HomePage() {
               borderRadius: 10, padding: '18px 24px', color: '#16A34A', fontWeight: 600,
             }}>
               Recibimos tu informacion. Te contactaremos pronto.
+            </div>
+          ) : gbmFiltro === null ? (
+            <div>
+              <p style={{ fontWeight: 600, fontSize: 15, marginBottom: 14, color: 'var(--text)' }}>
+                ¿Cual es tu situacion actual?
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {[
+                  { label: 'Ya tengo mas de $1,000,000 invertido', value: 'califica' },
+                  { label: 'Quiero invertir mas de $1,000,000', value: 'califica' },
+                  { label: 'Tengo menos de $1,000,000 actualmente', value: 'no_califica' },
+                ].map((op, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setGbmFiltro(op.value)}
+                    style={{
+                      background: 'rgba(160,128,64,0.08)',
+                      border: '1px solid rgba(160,128,64,0.3)',
+                      borderRadius: 10, padding: '14px 20px',
+                      color: 'var(--text)', fontSize: 15, fontWeight: 500,
+                      cursor: 'pointer', textAlign: 'left',
+                      transition: 'background 0.15s, border-color 0.15s',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.background = 'rgba(160,128,64,0.18)'; e.currentTarget.style.borderColor = 'rgba(160,128,64,0.6)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'rgba(160,128,64,0.08)'; e.currentTarget.style.borderColor = 'rgba(160,128,64,0.3)'; }}
+                  >
+                    {op.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : gbmFiltro === 'no_califica' ? (
+            <div style={{
+              background: 'rgba(160,128,64,0.07)', border: '1px solid rgba(160,128,64,0.25)',
+              borderRadius: 10, padding: '20px 24px',
+            }}>
+              <p style={{ margin: 0, fontSize: 15, lineHeight: 1.7, color: 'var(--text-muted)' }}>
+                En este momento trabajamos con portafolios de <strong style={{ color: 'var(--text)' }}>$1,000,000 o mas</strong>.
+                Si en el futuro tu portafolio llega a ese nivel, con mucho gusto te asesoramos.
+              </p>
+              <button
+                onClick={() => setGbmFiltro(null)}
+                style={{ marginTop: 14, background: 'none', border: 'none', color: 'var(--gold)', fontSize: 13, cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
+              >
+                Volver
+              </button>
             </div>
           ) : (
             <form id="form-gbm" onSubmit={enviarGBM} onFocus={() => { if (!gbmStarted) { setGbmStarted(true); window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'form_start_gbm' }); } }} style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
