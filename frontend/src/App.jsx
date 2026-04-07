@@ -2,10 +2,11 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 // Portal público
-import HomePage      from './components/portal/HomePage.jsx';
-import ReportePage   from './components/portal/ReportePage.jsx';
-import RegistroPage  from './components/portal/RegistroPage.jsx';
-import LoginPage     from './components/portal/LoginPage.jsx';
+import HomePage           from './components/portal/HomePage.jsx';
+import ReportePage        from './components/portal/ReportePage.jsx';
+import RegistroPage       from './components/portal/RegistroPage.jsx';
+import LoginPage          from './components/portal/LoginPage.jsx';
+import EarningsCalendar   from './components/portal/EarningsCalendar.jsx';
 
 // Admin
 import AdminLogin           from './components/admin/AdminLogin.jsx';
@@ -25,6 +26,7 @@ export default function App() {
     <Routes>
       {/* Portal público */}
       <Route path="/"              element={<HomePage />} />
+      <Route path="/earnings"      element={<EarningsCalendar />} />
       <Route path="/reporte/:slug" element={<ReportePage />} />
       <Route path="/registro"      element={<RegistroPage />} />
       <Route path="/login"         element={<LoginPage />} />

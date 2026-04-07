@@ -110,7 +110,34 @@ export default function HomePage() {
 
       <div className="portal-page">
         <header className="portal-header">
-          <img src="/murza-logo.png" alt="Murza Inversiones" className="portal-logo" />
+          <Link to="/" className="portal-logo-link">
+            <img src="/murza-logo.png" alt="Murza Inversiones" className="portal-logo" />
+          </Link>
+          <nav style={{ display: 'flex', gap: 2 }}>
+            <Link
+              to="/"
+              style={{
+                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                color: 'var(--gold-dark)', fontWeight: 600,
+                background: 'var(--gold-pale)',
+                textDecoration: 'none',
+              }}
+            >
+              Reportes
+            </Link>
+            <Link
+              to="/earnings"
+              style={{
+                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                color: 'var(--text-muted)', fontWeight: 500,
+                textDecoration: 'none', transition: 'all 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}
+            >
+              Earnings
+            </Link>
+          </nav>
           <div className="portal-header-right">
             <Link to="/login" className="btn-ghost-sm">Iniciar sesion</Link>
             <Link to="/registro" className="btn-primary-sm">Registro gratis</Link>
