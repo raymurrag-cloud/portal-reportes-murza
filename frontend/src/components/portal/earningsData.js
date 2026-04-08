@@ -537,6 +537,25 @@ export const EARNINGS_DATA = {
       'Presion competitiva de Microsoft Copilot: tasas de renovacion y expansion en segmentos donde Dynamics 365 compite directamente con Sales Cloud y Service Cloud.'
     ],
   },
+  // -- Abril 2026 -------------------------------------------------------------------
+  CVNA: {
+    nombre: 'Carvana Co.',
+    trimestre: 'Q1 FY2026',
+    fecha: "2026-04-29T20:30:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 1.47,
+    revenue_estimate_b: 6,
+    forward_pe: null,
+    last_surprise_pct: 259,
+    what_to_watch: [
+      'GPU (Ganancia por Unidad): meta de superar 7,000 USD por unidad — indicador central de la rentabilidad del turnaround.',
+      'Unidades retail vendidas: el crecimiento YoY confirma si el modelo recupera escala sin sacrificar margen.',
+      'EBITDA ajustado: seguimiento del record FY2025; cualquier compresion seria senal de alerta.',
+      'Comentarios sobre tasas: impacto en demanda financiada y gain-on-sale del portafolio de prestamos.',
+      'Reduccion de deuda: pagos anticipados o refinanciamiento que mejoren el perfil de vencimientos.',
+    ],
+  },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
