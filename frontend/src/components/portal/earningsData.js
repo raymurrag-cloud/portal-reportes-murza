@@ -518,6 +518,25 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Mayo 2026 ──────────────────────────────────────────────────────────────
+  CRM: {
+    nombre: 'Salesforce, Inc.',
+    trimestre: 'Q1 FY2027',
+    fecha: "2026-05-27T20:30:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 3.13,
+    revenue_estimate_b: 11.1,
+    forward_pe: null,
+    last_surprise_pct: 24.9,
+    what_to_watch: [
+      'Adopcion de Agentforce: numero de clientes pagados, deals cerrados y ARR incremental — el KPI clave para justificar la tesis de IA agentica.',
+      'Crecimiento de Data Cloud + Informatica: ingresos combinados y progreso de integracion post-adquisicion de 9.6B USD.',
+      'Expansion de margen operativo: guia de management apunta a 21-22% en FY2027 vs. 20.1% en FY2026 — cualquier desvio es senal de alerta.',
+      'Crecimiento de RPO corriente (cRPO): indicador adelantado de ingresos futuros — en FY2026 crecio +16% YoY, se espera mantenimiento de ese ritmo.',
+      'Presion competitiva de Microsoft Copilot: tasas de renovacion y expansion en segmentos donde Dynamics 365 compite directamente con Sales Cloud y Service Cloud.'
+    ],
+  },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
