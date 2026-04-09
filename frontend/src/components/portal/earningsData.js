@@ -577,4 +577,24 @@ export const MESES = {
   10: 'Octubre',
   11: 'Noviembre',
   12: 'Diciembre',
+  // -- Mayo 2026 -----------------------------------------------------------------------
+  BABA: {
+    nombre: 'Alibaba Group Holding Ltd',
+    trimestre: 'Q4 FY2026',
+    fecha: "2026-05-14T20:30:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 7.54,
+    revenue_estimate_b: 248.3,
+    forward_pe: null,
+    last_surprise_pct: -35.2,
+    what_to_watch: [
+      'Crecimiento Alibaba Cloud: target >15% YoY y expansion de margen operativo del segmento hacia 8%+',
+      'Market share Taobao/Tmall vs PDD/Pinduoduo: estabilizacion o perdida acelerada de GMV domestico',
+      'Ritmo de recompras: capital restante del programa 35.3B USD y velocidad de reduccion del float',
+      'Novedades Ant Group: re-listado en HK o levantamiento de restricciones regulatorias al fintech',
+      'Revenue AIDC internacional: sostenimiento del +22% YoY y camino a rentabilidad de AliExpress/Trendyol',
+    ],
+  },
+
 };
