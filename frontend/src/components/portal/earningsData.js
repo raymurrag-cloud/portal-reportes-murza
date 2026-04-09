@@ -556,6 +556,47 @@ export const EARNINGS_DATA = {
       'Reduccion de deuda: pagos anticipados o refinanciamiento que mejoren el perfil de vencimientos.',
     ],
   },
+
+  // ── Mayo 2026 ─────────────────────────────────────────────────────────────
+
+  BABA: {
+    nombre: 'Alibaba Group Holding Ltd',
+    trimestre: 'Q4 FY2026',
+    fecha: '2026-05-14T20:30:00',
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 7.54,
+    revenue_estimate_b: 248.3,
+    forward_pe: null,
+    last_surprise_pct: -35.2,
+    what_to_watch: [
+      'Crecimiento Alibaba Cloud: target >15% YoY y expansion de margen operativo del segmento hacia 8%+',
+      'Market share Taobao/Tmall vs PDD/Pinduoduo: estabilizacion o perdida acelerada de GMV domestico',
+      'Ritmo de recompras: capital restante del programa 35.3B USD y velocidad de reduccion del float',
+      'Novedades Ant Group: re-listado en HK o levantamiento de restricciones regulatorias al fintech',
+      'Revenue AIDC internacional: sostenimiento del +22% YoY y camino a rentabilidad de AliExpress/Trendyol',
+    ],
+  },
+
+  CEG: {
+    nombre: 'Constellation Energy Corp',
+    trimestre: 'Q1 2026',
+    fecha: '2026-05-11T20:30:00',
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 2.68,
+    revenue_estimate_b: 9.3,
+    forward_pe: 20.6,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Actualizacion contrato Microsoft/AI datacenters: renovaciones o nuevos acuerdos de energia nuclear a largo plazo.',
+      'Generacion nuclear: factor de capacidad y disponibilidad de la flota — cualquier outage no programado impacta guidance.',
+      'Progreso Calpine acquisition: aprobaciones regulatorias y timeline de cierre del deal de 16.4B USD.',
+      'Guidance FY2026: confirmacion o ajuste del EPS guidance ante volatilidad en precios del mercado electrico.',
+      'Politica energetica federal: cambios en creditos fiscales IRA para energia nuclear y su impacto en unit economics.',
+    ],
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -577,24 +618,4 @@ export const MESES = {
   10: 'Octubre',
   11: 'Noviembre',
   12: 'Diciembre',
-  // -- Mayo 2026 -----------------------------------------------------------------------
-  BABA: {
-    nombre: 'Alibaba Group Holding Ltd',
-    trimestre: 'Q4 FY2026',
-    fecha: "2026-05-14T20:30:00",
-    cuando: 'Despues del cierre',
-    fecha_confirmada: true,
-    eps_estimate: 7.54,
-    revenue_estimate_b: 248.3,
-    forward_pe: null,
-    last_surprise_pct: -35.2,
-    what_to_watch: [
-      'Crecimiento Alibaba Cloud: target >15% YoY y expansion de margen operativo del segmento hacia 8%+',
-      'Market share Taobao/Tmall vs PDD/Pinduoduo: estabilizacion o perdida acelerada de GMV domestico',
-      'Ritmo de recompras: capital restante del programa 35.3B USD y velocidad de reduccion del float',
-      'Novedades Ant Group: re-listado en HK o levantamiento de restricciones regulatorias al fintech',
-      'Revenue AIDC internacional: sostenimiento del +22% YoY y camino a rentabilidad de AliExpress/Trendyol',
-    ],
-  },
-
 };
