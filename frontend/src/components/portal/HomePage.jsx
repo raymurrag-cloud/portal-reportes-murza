@@ -289,87 +289,110 @@ export default function HomePage() {
               </span>
             </div>
 
-            {/* Filtro 1 — Sector (plegable) */}
-            <div style={{ marginBottom: 12, maxWidth: 640 }}>
-              <button
-                onClick={() => setSectorAbierto(o => !o)}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: 8,
-                  background: sectorFiltro ? 'rgba(160,128,64,0.12)' : 'rgba(255,255,255,0.04)',
-                  border: '1px solid ' + (sectorFiltro ? 'rgba(160,128,64,0.4)' : 'rgba(255,255,255,0.12)'),
-                  borderRadius: 8, padding: '8px 14px', cursor: 'pointer',
-                  color: sectorFiltro ? 'var(--gold)' : 'var(--text-muted)',
-                  fontSize: 13, fontWeight: sectorFiltro ? 600 : 400, width: '100%',
-                  justifyContent: 'space-between',
-                }}
-              >
-                <span>Sector{sectorFiltro ? ': ' + sectorFiltro : ''}</span>
-                <span style={{ fontSize: 11, opacity: 0.7 }}>{sectorAbierto ? '▲' : '▼'}</span>
-              </button>
+            {/* Filtros */}
+            <div style={{ maxWidth: 640, marginBottom: 20 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style={{ opacity: 0.5 }}>
+                  <path d="M1 3h14M3.5 8h9M6 13h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+                </svg>
+                <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                  Filtrar por
+                </span>
+              </div>
 
-              {sectorAbierto && (
-                <div style={{
-                  border: '1px solid rgba(255,255,255,0.1)', borderTop: 'none',
-                  borderRadius: '0 0 8px 8px', padding: '12px',
-                  background: 'rgba(255,255,255,0.02)',
-                  display: 'flex', flexWrap: 'wrap', gap: 8,
-                }}>
-                  {sectoresDisponibles.map(s => (
-                    <button
-                      key={s}
-                      onClick={() => seleccionarSector(s)}
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'flex-start' }}>
+
+                {/* Sector — botón desplegable */}
+                <div style={{ position: 'relative', flex: '1 1 220px' }}>
+                  <button
+                    onClick={() => setSectorAbierto(o => !o)}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      width: '100%', padding: '9px 14px', borderRadius: 8, cursor: 'pointer',
+                      fontSize: 13, fontWeight: 600, gap: 8,
+                      background: sectorFiltro ? 'rgba(160,128,64,0.15)' : 'rgba(160,128,64,0.06)',
+                      border: '1.5px solid ' + (sectorFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.35)'),
+                      color: sectorFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.8)',
+                      transition: 'all 0.15s',
+                    }}
+                  >
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <span style={{ fontSize: 15 }}>⊞</span>
+                      {sectorFiltro || 'Sector'}
+                    </span>
+                    <span style={{ fontSize: 10 }}>{sectorAbierto ? '▲' : '▼'}</span>
+                  </button>
+
+                  {sectorAbierto && (
+                    <div style={{
+                      position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, zIndex: 20,
+                      border: '1.5px solid rgba(160,128,64,0.35)',
+                      borderRadius: 8, padding: '10px',
+                      background: 'var(--card-bg, #1a1a1a)',
+                      boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
+                      display: 'flex', flexWrap: 'wrap', gap: 7,
+                    }}>
+                      {sectoresDisponibles.map(s => (
+                        <button
+                          key={s}
+                          onClick={() => seleccionarSector(s)}
+                          style={{
+                            padding: '5px 11px', borderRadius: 20, fontSize: 12, cursor: 'pointer',
+                            border: '1px solid ' + (sectorFiltro === s ? 'var(--gold)' : 'rgba(255,255,255,0.18)'),
+                            background: sectorFiltro === s ? 'rgba(160,128,64,0.25)' : 'rgba(255,255,255,0.04)',
+                            color: sectorFiltro === s ? 'var(--gold)' : 'var(--text)',
+                            fontWeight: sectorFiltro === s ? 700 : 400,
+                            transition: 'all 0.12s',
+                          }}
+                        >
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Industria — dropdown, solo si hay sector con varias industrias */}
+                {sectorFiltro && industriasDisponibles.length > 1 && (
+                  <div style={{ flex: '1 1 220px' }}>
+                    <select
+                      value={industriaFiltro}
+                      onChange={e => { setIndustriaFiltro(e.target.value); setPagina(0); }}
                       style={{
-                        padding: '5px 12px', borderRadius: 20, fontSize: 12, cursor: 'pointer',
-                        border: '1px solid ' + (sectorFiltro === s ? 'var(--gold)' : 'rgba(255,255,255,0.15)'),
-                        background: sectorFiltro === s ? 'rgba(160,128,64,0.2)' : 'transparent',
-                        color: sectorFiltro === s ? 'var(--gold)' : 'var(--text-muted)',
-                        fontWeight: sectorFiltro === s ? 600 : 400,
-                        transition: 'all 0.15s',
+                        width: '100%', padding: '9px 14px', borderRadius: 8, fontSize: 13,
+                        fontWeight: industriaFiltro ? 600 : 400,
+                        background: industriaFiltro ? 'rgba(160,128,64,0.15)' : 'rgba(160,128,64,0.06)',
+                        border: '1.5px solid ' + (industriaFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.35)'),
+                        color: industriaFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.8)',
+                        cursor: 'pointer', outline: 'none', appearance: 'none',
+                        backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'10\' height=\'6\' viewBox=\'0 0 10 6\'%3E%3Cpath d=\'M1 1l4 4 4-4\' stroke=\'%23a08040\' stroke-width=\'1.5\' fill=\'none\'/%3E%3C/svg%3E")',
+                        backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center',
+                        paddingRight: 32,
                       }}
                     >
-                      {s}
-                    </button>
-                  ))}
-                </div>
-              )}
+                      <option value="">Industria</option>
+                      {industriasDisponibles.map(i => (
+                        <option key={i} value={i}>{i}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {/* Limpiar */}
+                {(sectorFiltro || industriaFiltro) && (
+                  <button
+                    onClick={() => { setSectorFiltro(''); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
+                    style={{
+                      padding: '9px 12px', borderRadius: 8, fontSize: 12, cursor: 'pointer',
+                      border: '1.5px solid rgba(255,255,255,0.15)', background: 'transparent',
+                      color: 'var(--text-muted)', whiteSpace: 'nowrap', alignSelf: 'flex-start',
+                    }}
+                  >
+                    ✕ Limpiar
+                  </button>
+                )}
+              </div>
             </div>
-
-            {/* Filtro 2 — Industria (dropdown, solo si hay sector) */}
-            {sectorFiltro && industriasDisponibles.length > 1 && (
-              <div style={{ marginBottom: 16, maxWidth: 640 }}>
-                <select
-                  value={industriaFiltro}
-                  onChange={e => { setIndustriaFiltro(e.target.value); setPagina(0); }}
-                  style={{
-                    width: '100%', padding: '8px 14px', borderRadius: 8, fontSize: 13,
-                    background: industriaFiltro ? 'rgba(160,128,64,0.1)' : 'rgba(255,255,255,0.04)',
-                    border: '1px solid ' + (industriaFiltro ? 'rgba(160,128,64,0.4)' : 'rgba(255,255,255,0.12)'),
-                    color: industriaFiltro ? 'var(--gold)' : 'var(--text-muted)',
-                    cursor: 'pointer', outline: 'none',
-                  }}
-                >
-                  <option value="">Todas las industrias</option>
-                  {industriasDisponibles.map(i => (
-                    <option key={i} value={i}>{i}</option>
-                  ))}
-                </select>
-              </div>
-            )}
-
-            {/* Limpiar filtros */}
-            {(sectorFiltro || industriaFiltro) && (
-              <div style={{ marginBottom: 16 }}>
-                <button
-                  onClick={() => { setSectorFiltro(''); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
-                  style={{
-                    fontSize: 12, color: 'var(--text-muted)', background: 'none',
-                    border: 'none', cursor: 'pointer', padding: 0, textDecoration: 'underline',
-                  }}
-                >
-                  Limpiar filtros
-                </button>
-              </div>
-            )}
 
             {/* Lista */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0, maxWidth: 640 }}>
