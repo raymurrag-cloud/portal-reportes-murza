@@ -319,32 +319,36 @@ export default function HomePage() {
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       width: '100%', padding: '9px 14px', borderRadius: 8, cursor: 'pointer',
                       fontSize: 13, fontWeight: 600, gap: 8, boxSizing: 'border-box',
-                      background: sectoresFiltro.size > 0 ? 'rgba(160,128,64,0.18)' : '#2a2a2a',
-                      border: '1.5px solid ' + (sectoresFiltro.size > 0 ? '#c9a84c' : '#444'),
-                      color: sectoresFiltro.size > 0 ? '#e8c96a' : '#ccc',
+                      background: sectoresFiltro.size > 0 ? '#F5EDD8' : '#fff',
+                      border: '1.5px solid ' + (sectoresFiltro.size > 0 ? '#B5872A' : '#D4C4A8'),
+                      color: sectoresFiltro.size > 0 ? '#8A6520' : '#7A6D5E',
+                      boxShadow: '0 1px 4px rgba(181,135,42,0.08)',
                     }}
                   >
-                    <span>
-                      {sectoresFiltro.size === 0 && 'Sector'}
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
+                      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" style={{ opacity: 0.6, flexShrink: 0 }}>
+                        <path d="M1 3h14M3.5 8h9M6 13h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+                      </svg>
+                      {sectoresFiltro.size === 0 && 'Filtrar por sector'}
                       {sectoresFiltro.size === 1 && [...sectoresFiltro][0]}
-                      {sectoresFiltro.size > 1 && sectoresFiltro.size + ' sectores'}
+                      {sectoresFiltro.size > 1 && sectoresFiltro.size + ' sectores seleccionados'}
                     </span>
-                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                      <path d={sectorAbierto ? 'M1 5l4-4 4 4' : 'M1 1l4 4 4-4'} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style={{ flexShrink: 0, opacity: 0.5 }}>
+                      <path d={sectorAbierto ? 'M1 5l4-4 4 4' : 'M1 1l4 4 4-4'} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
                     </svg>
                   </button>
 
                   {sectorAbierto && (
                     <div style={{
-                      position: 'absolute', top: 'calc(100% + 6px)', left: 0, minWidth: '100%',
+                      position: 'absolute', top: 'calc(100% + 6px)', left: 0, minWidth: '260px',
                       zIndex: 50, borderRadius: 10, overflow: 'hidden',
-                      border: '1px solid #3a3a3a',
-                      boxShadow: '0 12px 32px rgba(0,0,0,0.7)',
-                      background: '#242424',
+                      border: '1px solid #E0D0B0',
+                      boxShadow: '0 8px 28px rgba(140,100,30,0.15)',
+                      background: '#FFFCF5',
                     }}>
-                      <div style={{ padding: '8px 10px 4px', borderBottom: '1px solid #333' }}>
-                        <span style={{ fontSize: 11, color: '#888', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                          Sector — selecciona uno o varios
+                      <div style={{ padding: '10px 14px 8px', borderBottom: '1px solid #EDE0C8' }}>
+                        <span style={{ fontSize: 11, color: '#A8906A', fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase' }}>
+                          Sector GICS
                         </span>
                       </div>
                       {sectoresDisponibles.map(s => {
@@ -355,23 +359,23 @@ export default function HomePage() {
                             onClick={() => toggleSector(s)}
                             style={{
                               display: 'flex', alignItems: 'center', gap: 10,
-                              padding: '10px 14px', cursor: 'pointer',
-                              background: sel ? 'rgba(160,128,64,0.15)' : 'transparent',
-                              borderLeft: sel ? '3px solid #c9a84c' : '3px solid transparent',
+                              padding: '9px 14px', cursor: 'pointer',
+                              background: sel ? '#F5EDD8' : 'transparent',
+                              borderLeft: '3px solid ' + (sel ? '#B5872A' : 'transparent'),
                               transition: 'background 0.1s',
                             }}
-                            onMouseEnter={e => { if (!sel) e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+                            onMouseEnter={e => { if (!sel) e.currentTarget.style.background = '#FBF6EE'; }}
                             onMouseLeave={e => { if (!sel) e.currentTarget.style.background = 'transparent'; }}
                           >
                             <div style={{
                               width: 16, height: 16, borderRadius: 4, flexShrink: 0,
-                              border: '1.5px solid ' + (sel ? '#c9a84c' : '#555'),
-                              background: sel ? '#c9a84c' : 'transparent',
+                              border: '1.5px solid ' + (sel ? '#B5872A' : '#C8B898'),
+                              background: sel ? '#B5872A' : '#fff',
                               display: 'flex', alignItems: 'center', justifyContent: 'center',
                             }}>
-                              {sel && <svg width="9" height="7" viewBox="0 0 9 7" fill="none"><path d="M1 3.5l2.5 2.5 5-5" stroke="#1a1a1a" strokeWidth="1.8" strokeLinecap="round"/></svg>}
+                              {sel && <svg width="9" height="7" viewBox="0 0 9 7" fill="none"><path d="M1 3.5l2.5 2.5 5-5" stroke="#fff" strokeWidth="1.8" strokeLinecap="round"/></svg>}
                             </div>
-                            <span style={{ fontSize: 13, color: sel ? '#e8c96a' : '#e0e0e0', fontWeight: sel ? 600 : 400 }}>
+                            <span style={{ fontSize: 13, color: sel ? '#7A5010' : '#2E2318', fontWeight: sel ? 600 : 400 }}>
                               {s}
                             </span>
                           </div>
@@ -381,11 +385,11 @@ export default function HomePage() {
                         <div
                           onClick={() => { setSectoresFiltro(new Set()); setIndustriaFiltro(''); setPagina(0); }}
                           style={{
-                            padding: '8px 14px', borderTop: '1px solid #333', cursor: 'pointer',
-                            fontSize: 12, color: '#888', textAlign: 'center',
+                            padding: '9px 14px', borderTop: '1px solid #EDE0C8', cursor: 'pointer',
+                            fontSize: 12, color: '#A8906A', textAlign: 'center', fontWeight: 500,
                           }}
-                          onMouseEnter={e => e.currentTarget.style.color = '#ccc'}
-                          onMouseLeave={e => e.currentTarget.style.color = '#888'}
+                          onMouseEnter={e => { e.currentTarget.style.background = '#FBF6EE'; e.currentTarget.style.color = '#8A6520'; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#A8906A'; }}
                         >
                           Limpiar selección
                         </div>
@@ -394,7 +398,7 @@ export default function HomePage() {
                   )}
                 </div>
 
-                {/* Industria — dropdown nativo, solo si 1 sector y tiene varias industrias */}
+                {/* Industria — dropdown nativo, solo si 1 sector con varias industrias */}
                 {sectoresFiltro.size === 1 && industriasDisponiblesActual.length > 1 && (
                   <div style={{ flex: '1 1 200px' }}>
                     <select
@@ -403,15 +407,16 @@ export default function HomePage() {
                       style={{
                         width: '100%', padding: '9px 14px', borderRadius: 8, fontSize: 13,
                         fontWeight: industriaFiltro ? 600 : 400, boxSizing: 'border-box',
-                        background: industriaFiltro ? 'rgba(160,128,64,0.18)' : '#2a2a2a',
-                        border: '1.5px solid ' + (industriaFiltro ? '#c9a84c' : '#444'),
-                        color: industriaFiltro ? '#e8c96a' : '#ccc',
+                        background: industriaFiltro ? '#F5EDD8' : '#fff',
+                        border: '1.5px solid ' + (industriaFiltro ? '#B5872A' : '#D4C4A8'),
+                        color: industriaFiltro ? '#8A6520' : '#7A6D5E',
                         cursor: 'pointer', outline: 'none',
+                        boxShadow: '0 1px 4px rgba(181,135,42,0.08)',
                       }}
                     >
-                      <option value="" style={{ background: '#242424', color: '#e0e0e0' }}>Todas las industrias</option>
+                      <option value="">Todas las industrias</option>
                       {industriasDisponiblesActual.map(i => (
-                        <option key={i} value={i} style={{ background: '#242424', color: '#e0e0e0' }}>{i}</option>
+                        <option key={i} value={i}>{i}</option>
                       ))}
                     </select>
                   </div>
@@ -423,9 +428,12 @@ export default function HomePage() {
                     onClick={() => { setSectoresFiltro(new Set()); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
                     style={{
                       padding: '9px 13px', borderRadius: 8, fontSize: 12, cursor: 'pointer',
-                      border: '1.5px solid #444', background: 'transparent',
-                      color: '#888', whiteSpace: 'nowrap', alignSelf: 'stretch',
+                      border: '1.5px solid #D4C4A8', background: '#fff',
+                      color: '#7A6D5E', whiteSpace: 'nowrap', alignSelf: 'stretch',
+                      boxShadow: '0 1px 4px rgba(0,0,0,0.05)',
                     }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = '#B5872A'; e.currentTarget.style.color = '#8A6520'; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = '#D4C4A8'; e.currentTarget.style.color = '#7A6D5E'; }}
                   >
                     ✕ Limpiar
                   </button>
