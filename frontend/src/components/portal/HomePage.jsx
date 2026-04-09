@@ -3,6 +3,24 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
 
+const SECTORES = {
+  AAPL:  'Tecnología', ADBE:  'Tecnología', CRM:   'Tecnología',
+  GOOGL: 'Tecnología', META:  'Tecnología', MSFT:  'Tecnología',
+  ORCL:  'Tecnología', PLTR:  'Tecnología',
+  AMD:   'Semiconductores', ASML:  'Semiconductores', AVGO:  'Semiconductores',
+  MRVL:  'Semiconductores', MU:    'Semiconductores', NVDA:  'Semiconductores',
+  SNDK:  'Semiconductores',
+  AMZN:  'E-commerce', BABA:  'E-commerce', CPNG:  'E-commerce',
+  MELI:  'E-commerce', SE:    'E-commerce',
+  LLY:   'Salud',  NVO:   'Salud',
+  CEG:   'Energía', CVX:   'Energía',
+  COST:  'Consumo', NFLX:  'Consumo', CVNA:  'Consumo',
+  TSLA:  'Movilidad', UBER:  'Movilidad',
+  PYPL:  'Fintech',
+};
+
+const POR_PAGINA = 20;
+
 function formatMes(dateStr) {
   const d = new Date(dateStr);
   const mes = d.toLocaleDateString('es-MX', { month: 'long' });
@@ -56,10 +74,33 @@ export default function HomePage() {
     api.getReportes().then(setTodosReportes).finally(() => setLoading(false));
   }, []);
 
+  const [sectoresFiltro, setSectoresFiltro] = useState(new Set());
+  const [pagina, setPagina] = useState(0);
+
   const recientes = todosReportes.slice(0, 6);
   const todosAlfabeticos = [...todosReportes].sort((a, b) =>
     a.empresa.localeCompare(b.empresa, 'es')
   );
+
+  const sectoresDisponibles = [...new Set(
+    todosAlfabeticos.map(r => SECTORES[r.ticker] || 'Otro').filter(Boolean)
+  )].sort();
+
+  const toggleSector = (s) => {
+    setSectoresFiltro(prev => {
+      const next = new Set(prev);
+      next.has(s) ? next.delete(s) : next.add(s);
+      return next;
+    });
+    setPagina(0);
+  };
+
+  const reportesFiltrados = sectoresFiltro.size === 0
+    ? todosAlfabeticos
+    : todosAlfabeticos.filter(r => sectoresFiltro.has(SECTORES[r.ticker] || 'Otro'));
+
+  const totalPaginas = Math.ceil(reportesFiltrados.length / POR_PAGINA);
+  const reportesPagina = reportesFiltrados.slice(pagina * POR_PAGINA, (pagina + 1) * POR_PAGINA);
 
   const buscar = (e) => {
     e.preventDefault();
@@ -206,24 +247,62 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* Lista completa alfabetica */}
+        {/* Lista completa con filtro por sector y paginacion */}
         {!loading && todosAlfabeticos.length > 0 && (
           <section className="reportes-grid-section" style={{ marginTop: 32 }}>
-            <h2>Todos los reportes</h2>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap', marginBottom: 16 }}>
+              <h2 style={{ margin: 0 }}>Todos los reportes</h2>
+              <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
+                {reportesFiltrados.length} empresa{reportesFiltrados.length !== 1 ? 's' : ''}
+              </span>
+            </div>
+
+            {/* Filtro por sector */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 20 }}>
+              {sectoresDisponibles.map(s => {
+                const activo = sectoresFiltro.has(s);
+                return (
+                  <button
+                    key={s}
+                    onClick={() => toggleSector(s)}
+                    style={{
+                      padding: '5px 13px', borderRadius: 20, fontSize: 13, cursor: 'pointer',
+                      fontWeight: activo ? 600 : 400, border: '1px solid',
+                      borderColor: activo ? 'var(--gold)' : 'rgba(255,255,255,0.15)',
+                      background: activo ? 'rgba(160,128,64,0.18)' : 'transparent',
+                      color: activo ? 'var(--gold)' : 'var(--text-muted)',
+                      transition: 'all 0.15s',
+                    }}
+                  >
+                    {s}
+                  </button>
+                );
+              })}
+              {sectoresFiltro.size > 0 && (
+                <button
+                  onClick={() => { setSectoresFiltro(new Set()); setPagina(0); }}
+                  style={{
+                    padding: '5px 13px', borderRadius: 20, fontSize: 13, cursor: 'pointer',
+                    border: '1px solid rgba(255,255,255,0.1)', background: 'transparent',
+                    color: 'var(--text-muted)', transition: 'all 0.15s',
+                  }}
+                >
+                  Limpiar filtro
+                </button>
+              )}
+            </div>
+
+            {/* Lista */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0, maxWidth: 640 }}>
-              {todosAlfabeticos.map((r) => (
+              {reportesPagina.map((r) => (
                 <Link
                   to={`/reporte/${r.slug}`}
                   key={r.id}
                   style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
+                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '11px 4px',
                     borderBottom: '1px solid var(--border-color, rgba(255,255,255,0.07))',
-                    textDecoration: 'none',
-                    color: 'inherit',
-                    gap: 12,
+                    textDecoration: 'none', color: 'inherit', gap: 12,
                   }}
                 >
                   <span style={{ fontWeight: 600, fontSize: 15 }}>
@@ -231,6 +310,16 @@ export default function HomePage() {
                     <span style={{ color: 'var(--text-muted)', fontWeight: 400, marginLeft: 8, fontSize: 13 }}>
                       ({r.ticker})
                     </span>
+                    {SECTORES[r.ticker] && (
+                      <span style={{
+                        marginLeft: 10, fontSize: 11, fontWeight: 500,
+                        color: 'var(--gold)', background: 'rgba(160,128,64,0.12)',
+                        border: '1px solid rgba(160,128,64,0.25)',
+                        borderRadius: 10, padding: '1px 7px',
+                      }}>
+                        {SECTORES[r.ticker]}
+                      </span>
+                    )}
                   </span>
                   <span style={{ color: 'var(--text-muted)', fontSize: 13, whiteSpace: 'nowrap' }}>
                     {formatMes(r.created_at)}
@@ -238,6 +327,40 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
+
+            {/* Paginacion */}
+            {totalPaginas > 1 && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 20 }}>
+                <button
+                  onClick={() => setPagina(p => p - 1)}
+                  disabled={pagina === 0}
+                  style={{
+                    padding: '7px 18px', borderRadius: 8, fontSize: 14, cursor: pagina === 0 ? 'default' : 'pointer',
+                    border: '1px solid rgba(255,255,255,0.15)', background: 'transparent',
+                    color: pagina === 0 ? 'var(--text-muted)' : 'var(--text)',
+                    opacity: pagina === 0 ? 0.4 : 1, transition: 'all 0.15s',
+                  }}
+                >
+                  Anterior
+                </button>
+                <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+                  Página {pagina + 1} de {totalPaginas}
+                </span>
+                <button
+                  onClick={() => setPagina(p => p + 1)}
+                  disabled={pagina >= totalPaginas - 1}
+                  style={{
+                    padding: '7px 18px', borderRadius: 8, fontSize: 14,
+                    cursor: pagina >= totalPaginas - 1 ? 'default' : 'pointer',
+                    border: '1px solid rgba(255,255,255,0.15)', background: 'transparent',
+                    color: pagina >= totalPaginas - 1 ? 'var(--text-muted)' : 'var(--text)',
+                    opacity: pagina >= totalPaginas - 1 ? 0.4 : 1, transition: 'all 0.15s',
+                  }}
+                >
+                  Siguiente
+                </button>
+              </div>
+            )}
           </section>
         )}
 
