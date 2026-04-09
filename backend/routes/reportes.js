@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
     });
   } else {
     result = await db.execute({
-      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC LIMIT 20',
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC',
       args: [],
     });
   }
