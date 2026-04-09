@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
@@ -91,9 +91,10 @@ export default function HomePage() {
     api.getReportes().then(setTodosReportes).finally(() => setLoading(false));
   }, []);
 
-  const [sectorFiltro, setSectorFiltro]       = useState('');
+  const [sectoresFiltro, setSectoresFiltro]   = useState(new Set());
   const [industriaFiltro, setIndustriaFiltro] = useState('');
   const [sectorAbierto, setSectorAbierto]     = useState(false);
+  const sectorRef = useRef(null);
   const [pagina, setPagina] = useState(0);
 
   const recientes = todosReportes.slice(0, 6);
@@ -106,27 +107,44 @@ export default function HomePage() {
     todosAlfabeticos.map(r => CLASIFICACION[r.ticker]?.sector).filter(Boolean)
   )].sort();
 
-  // Industrias del sector seleccionado
-  const industriasDisponibles = sectorFiltro
+  // Industrias del sector seleccionado (solo cuando hay exactamente 1 sector)
+  const industriasDisponibles = sectoresFiltro.size === 1
     ? [...new Set(
         todosAlfabeticos
-          .filter(r => CLASIFICACION[r.ticker]?.sector === sectorFiltro)
+          .filter(r => sectoresFiltro.has(CLASIFICACION[r.ticker]?.sector))
           .map(r => CLASIFICACION[r.ticker]?.industria)
           .filter(Boolean)
       )].sort()
     : [];
 
-  const seleccionarSector = (s) => {
-    const nuevo = sectorFiltro === s ? '' : s;
-    setSectorFiltro(nuevo);
+  // Cerrar dropdown al click fuera
+  useEffect(() => {
+    const handler = (e) => {
+      if (sectorRef.current && !sectorRef.current.contains(e.target))
+        setSectorAbierto(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const toggleSector = (s) => {
+    setSectoresFiltro(prev => {
+      const next = new Set(prev);
+      next.has(s) ? next.delete(s) : next.add(s);
+      return next;
+    });
     setIndustriaFiltro('');
     setPagina(0);
-    if (nuevo) setSectorAbierto(false);
   };
+
+  // Industrias solo cuando hay exactamente 1 sector seleccionado
+  const industriasDisponiblesActual = sectoresFiltro.size === 1
+    ? industriasDisponibles
+    : [];
 
   const reportesFiltrados = todosAlfabeticos.filter(r => {
     const c = CLASIFICACION[r.ticker];
-    if (sectorFiltro && c?.sector !== sectorFiltro) return false;
+    if (sectoresFiltro.size > 0 && !sectoresFiltro.has(c?.sector)) return false;
     if (industriaFiltro && c?.industria !== industriaFiltro) return false;
     return true;
   });
@@ -291,101 +309,122 @@ export default function HomePage() {
 
             {/* Filtros */}
             <div style={{ maxWidth: 640, marginBottom: 20 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style={{ opacity: 0.5 }}>
-                  <path d="M1 3h14M3.5 8h9M6 13h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-                </svg>
-                <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-                  Filtrar por
-                </span>
-              </div>
-
               <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'flex-start' }}>
 
-                {/* Sector — botón desplegable */}
-                <div style={{ position: 'relative', flex: '1 1 220px' }}>
+                {/* Sector — multi-select desplegable */}
+                <div ref={sectorRef} style={{ position: 'relative', flex: '1 1 200px' }}>
                   <button
                     onClick={() => setSectorAbierto(o => !o)}
                     style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       width: '100%', padding: '9px 14px', borderRadius: 8, cursor: 'pointer',
-                      fontSize: 13, fontWeight: 600, gap: 8,
-                      background: sectorFiltro ? 'rgba(160,128,64,0.15)' : 'rgba(160,128,64,0.06)',
-                      border: '1.5px solid ' + (sectorFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.35)'),
-                      color: sectorFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.8)',
-                      transition: 'all 0.15s',
+                      fontSize: 13, fontWeight: 600, gap: 8, boxSizing: 'border-box',
+                      background: sectoresFiltro.size > 0 ? 'rgba(160,128,64,0.18)' : '#2a2a2a',
+                      border: '1.5px solid ' + (sectoresFiltro.size > 0 ? '#c9a84c' : '#444'),
+                      color: sectoresFiltro.size > 0 ? '#e8c96a' : '#ccc',
                     }}
                   >
-                    <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                      <span style={{ fontSize: 15 }}>⊞</span>
-                      {sectorFiltro || 'Sector'}
+                    <span>
+                      {sectoresFiltro.size === 0 && 'Sector'}
+                      {sectoresFiltro.size === 1 && [...sectoresFiltro][0]}
+                      {sectoresFiltro.size > 1 && sectoresFiltro.size + ' sectores'}
                     </span>
-                    <span style={{ fontSize: 10 }}>{sectorAbierto ? '▲' : '▼'}</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                      <path d={sectorAbierto ? 'M1 5l4-4 4 4' : 'M1 1l4 4 4-4'} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
                   </button>
 
                   {sectorAbierto && (
                     <div style={{
-                      position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, zIndex: 20,
-                      border: '1.5px solid rgba(160,128,64,0.35)',
-                      borderRadius: 8, padding: '10px',
-                      background: 'var(--card-bg, #1a1a1a)',
-                      boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
-                      display: 'flex', flexWrap: 'wrap', gap: 7,
+                      position: 'absolute', top: 'calc(100% + 6px)', left: 0, minWidth: '100%',
+                      zIndex: 50, borderRadius: 10, overflow: 'hidden',
+                      border: '1px solid #3a3a3a',
+                      boxShadow: '0 12px 32px rgba(0,0,0,0.7)',
+                      background: '#242424',
                     }}>
-                      {sectoresDisponibles.map(s => (
-                        <button
-                          key={s}
-                          onClick={() => seleccionarSector(s)}
+                      <div style={{ padding: '8px 10px 4px', borderBottom: '1px solid #333' }}>
+                        <span style={{ fontSize: 11, color: '#888', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                          Sector — selecciona uno o varios
+                        </span>
+                      </div>
+                      {sectoresDisponibles.map(s => {
+                        const sel = sectoresFiltro.has(s);
+                        return (
+                          <div
+                            key={s}
+                            onClick={() => toggleSector(s)}
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: 10,
+                              padding: '10px 14px', cursor: 'pointer',
+                              background: sel ? 'rgba(160,128,64,0.15)' : 'transparent',
+                              borderLeft: sel ? '3px solid #c9a84c' : '3px solid transparent',
+                              transition: 'background 0.1s',
+                            }}
+                            onMouseEnter={e => { if (!sel) e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+                            onMouseLeave={e => { if (!sel) e.currentTarget.style.background = 'transparent'; }}
+                          >
+                            <div style={{
+                              width: 16, height: 16, borderRadius: 4, flexShrink: 0,
+                              border: '1.5px solid ' + (sel ? '#c9a84c' : '#555'),
+                              background: sel ? '#c9a84c' : 'transparent',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            }}>
+                              {sel && <svg width="9" height="7" viewBox="0 0 9 7" fill="none"><path d="M1 3.5l2.5 2.5 5-5" stroke="#1a1a1a" strokeWidth="1.8" strokeLinecap="round"/></svg>}
+                            </div>
+                            <span style={{ fontSize: 13, color: sel ? '#e8c96a' : '#e0e0e0', fontWeight: sel ? 600 : 400 }}>
+                              {s}
+                            </span>
+                          </div>
+                        );
+                      })}
+                      {sectoresFiltro.size > 0 && (
+                        <div
+                          onClick={() => { setSectoresFiltro(new Set()); setIndustriaFiltro(''); setPagina(0); }}
                           style={{
-                            padding: '5px 11px', borderRadius: 20, fontSize: 12, cursor: 'pointer',
-                            border: '1px solid ' + (sectorFiltro === s ? 'var(--gold)' : 'rgba(255,255,255,0.18)'),
-                            background: sectorFiltro === s ? 'rgba(160,128,64,0.25)' : 'rgba(255,255,255,0.04)',
-                            color: sectorFiltro === s ? 'var(--gold)' : 'var(--text)',
-                            fontWeight: sectorFiltro === s ? 700 : 400,
-                            transition: 'all 0.12s',
+                            padding: '8px 14px', borderTop: '1px solid #333', cursor: 'pointer',
+                            fontSize: 12, color: '#888', textAlign: 'center',
                           }}
+                          onMouseEnter={e => e.currentTarget.style.color = '#ccc'}
+                          onMouseLeave={e => e.currentTarget.style.color = '#888'}
                         >
-                          {s}
-                        </button>
-                      ))}
+                          Limpiar selección
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
 
-                {/* Industria — dropdown, solo si hay sector con varias industrias */}
-                {sectorFiltro && industriasDisponibles.length > 1 && (
-                  <div style={{ flex: '1 1 220px' }}>
+                {/* Industria — dropdown nativo, solo si 1 sector y tiene varias industrias */}
+                {sectoresFiltro.size === 1 && industriasDisponiblesActual.length > 1 && (
+                  <div style={{ flex: '1 1 200px' }}>
                     <select
                       value={industriaFiltro}
                       onChange={e => { setIndustriaFiltro(e.target.value); setPagina(0); }}
                       style={{
                         width: '100%', padding: '9px 14px', borderRadius: 8, fontSize: 13,
-                        fontWeight: industriaFiltro ? 600 : 400,
-                        background: industriaFiltro ? 'rgba(160,128,64,0.15)' : 'rgba(160,128,64,0.06)',
-                        border: '1.5px solid ' + (industriaFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.35)'),
-                        color: industriaFiltro ? 'var(--gold)' : 'rgba(160,128,64,0.8)',
-                        cursor: 'pointer', outline: 'none', appearance: 'none',
-                        backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'10\' height=\'6\' viewBox=\'0 0 10 6\'%3E%3Cpath d=\'M1 1l4 4 4-4\' stroke=\'%23a08040\' stroke-width=\'1.5\' fill=\'none\'/%3E%3C/svg%3E")',
-                        backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center',
-                        paddingRight: 32,
+                        fontWeight: industriaFiltro ? 600 : 400, boxSizing: 'border-box',
+                        background: industriaFiltro ? 'rgba(160,128,64,0.18)' : '#2a2a2a',
+                        border: '1.5px solid ' + (industriaFiltro ? '#c9a84c' : '#444'),
+                        color: industriaFiltro ? '#e8c96a' : '#ccc',
+                        cursor: 'pointer', outline: 'none',
                       }}
                     >
-                      <option value="">Industria</option>
-                      {industriasDisponibles.map(i => (
-                        <option key={i} value={i}>{i}</option>
+                      <option value="" style={{ background: '#242424', color: '#e0e0e0' }}>Todas las industrias</option>
+                      {industriasDisponiblesActual.map(i => (
+                        <option key={i} value={i} style={{ background: '#242424', color: '#e0e0e0' }}>{i}</option>
                       ))}
                     </select>
                   </div>
                 )}
 
-                {/* Limpiar */}
-                {(sectorFiltro || industriaFiltro) && (
+                {/* Limpiar todo */}
+                {(sectoresFiltro.size > 0 || industriaFiltro) && (
                   <button
-                    onClick={() => { setSectorFiltro(''); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
+                    onClick={() => { setSectoresFiltro(new Set()); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
                     style={{
-                      padding: '9px 12px', borderRadius: 8, fontSize: 12, cursor: 'pointer',
-                      border: '1.5px solid rgba(255,255,255,0.15)', background: 'transparent',
-                      color: 'var(--text-muted)', whiteSpace: 'nowrap', alignSelf: 'flex-start',
+                      padding: '9px 13px', borderRadius: 8, fontSize: 12, cursor: 'pointer',
+                      border: '1.5px solid #444', background: 'transparent',
+                      color: '#888', whiteSpace: 'nowrap', alignSelf: 'stretch',
                     }}
                   >
                     ✕ Limpiar
