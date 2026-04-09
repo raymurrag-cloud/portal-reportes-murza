@@ -3,20 +3,37 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
 
-const SECTORES = {
-  AAPL:  'Tecnología', ADBE:  'Tecnología', CRM:   'Tecnología',
-  GOOGL: 'Tecnología', META:  'Tecnología', MSFT:  'Tecnología',
-  ORCL:  'Tecnología', PLTR:  'Tecnología',
-  AMD:   'Semiconductores', ASML:  'Semiconductores', AVGO:  'Semiconductores',
-  MRVL:  'Semiconductores', MU:    'Semiconductores', NVDA:  'Semiconductores',
-  SNDK:  'Semiconductores',
-  AMZN:  'E-commerce', BABA:  'E-commerce', CPNG:  'E-commerce',
-  MELI:  'E-commerce', SE:    'E-commerce',
-  LLY:   'Salud',  NVO:   'Salud',
-  CEG:   'Energía', CVX:   'Energía',
-  COST:  'Consumo', NFLX:  'Consumo', CVNA:  'Consumo',
-  TSLA:  'Movilidad', UBER:  'Movilidad',
-  PYPL:  'Fintech',
+const CLASIFICACION = {
+  AAPL:  { sector: 'Information Technology',  industria: 'Technology Hardware & Peripherals' },
+  ADBE:  { sector: 'Information Technology',  industria: 'Software' },
+  AMD:   { sector: 'Information Technology',  industria: 'Semiconductors' },
+  AMZN:  { sector: 'Consumer Discretionary',  industria: 'Broadline Retail' },
+  ASML:  { sector: 'Information Technology',  industria: 'Semiconductors' },
+  AVGO:  { sector: 'Information Technology',  industria: 'Semiconductors' },
+  BABA:  { sector: 'Consumer Discretionary',  industria: 'Broadline Retail' },
+  CEG:   { sector: 'Utilities',               industria: 'Independent Power Producers' },
+  COST:  { sector: 'Consumer Staples',        industria: 'Consumer Staples Distribution & Retail' },
+  CPNG:  { sector: 'Consumer Discretionary',  industria: 'Broadline Retail' },
+  CRM:   { sector: 'Information Technology',  industria: 'Software' },
+  CVNA:  { sector: 'Consumer Discretionary',  industria: 'Specialty Retail' },
+  CVX:   { sector: 'Energy',                  industria: 'Integrated Oil & Gas' },
+  GOOGL: { sector: 'Communication Services',  industria: 'Interactive Media & Services' },
+  LLY:   { sector: 'Health Care',             industria: 'Pharmaceuticals' },
+  MELI:  { sector: 'Consumer Discretionary',  industria: 'Broadline Retail' },
+  META:  { sector: 'Communication Services',  industria: 'Interactive Media & Services' },
+  MRVL:  { sector: 'Information Technology',  industria: 'Semiconductors' },
+  MSFT:  { sector: 'Information Technology',  industria: 'Software' },
+  MU:    { sector: 'Information Technology',  industria: 'Semiconductors' },
+  NFLX:  { sector: 'Communication Services',  industria: 'Entertainment' },
+  NVDA:  { sector: 'Information Technology',  industria: 'Semiconductors' },
+  NVO:   { sector: 'Health Care',             industria: 'Pharmaceuticals' },
+  ORCL:  { sector: 'Information Technology',  industria: 'Software' },
+  PLTR:  { sector: 'Information Technology',  industria: 'Software' },
+  PYPL:  { sector: 'Financials',              industria: 'Payment Processing Services' },
+  SE:    { sector: 'Consumer Discretionary',  industria: 'Broadline Retail' },
+  SNDK:  { sector: 'Information Technology',  industria: 'Technology Hardware & Peripherals' },
+  TSLA:  { sector: 'Consumer Discretionary',  industria: 'Automobile Manufacturers' },
+  UBER:  { sector: 'Industrials',             industria: 'Ground Transportation' },
 };
 
 const POR_PAGINA = 20;
@@ -74,7 +91,9 @@ export default function HomePage() {
     api.getReportes().then(setTodosReportes).finally(() => setLoading(false));
   }, []);
 
-  const [sectoresFiltro, setSectoresFiltro] = useState(new Set());
+  const [sectorFiltro, setSectorFiltro]       = useState('');
+  const [industriaFiltro, setIndustriaFiltro] = useState('');
+  const [sectorAbierto, setSectorAbierto]     = useState(false);
   const [pagina, setPagina] = useState(0);
 
   const recientes = todosReportes.slice(0, 6);
@@ -82,22 +101,35 @@ export default function HomePage() {
     a.empresa.localeCompare(b.empresa, 'es')
   );
 
+  // Sectores presentes en el portal
   const sectoresDisponibles = [...new Set(
-    todosAlfabeticos.map(r => SECTORES[r.ticker] || 'Otro').filter(Boolean)
+    todosAlfabeticos.map(r => CLASIFICACION[r.ticker]?.sector).filter(Boolean)
   )].sort();
 
-  const toggleSector = (s) => {
-    setSectoresFiltro(prev => {
-      const next = new Set(prev);
-      next.has(s) ? next.delete(s) : next.add(s);
-      return next;
-    });
+  // Industrias del sector seleccionado
+  const industriasDisponibles = sectorFiltro
+    ? [...new Set(
+        todosAlfabeticos
+          .filter(r => CLASIFICACION[r.ticker]?.sector === sectorFiltro)
+          .map(r => CLASIFICACION[r.ticker]?.industria)
+          .filter(Boolean)
+      )].sort()
+    : [];
+
+  const seleccionarSector = (s) => {
+    const nuevo = sectorFiltro === s ? '' : s;
+    setSectorFiltro(nuevo);
+    setIndustriaFiltro('');
     setPagina(0);
+    if (nuevo) setSectorAbierto(false);
   };
 
-  const reportesFiltrados = sectoresFiltro.size === 0
-    ? todosAlfabeticos
-    : todosAlfabeticos.filter(r => sectoresFiltro.has(SECTORES[r.ticker] || 'Otro'));
+  const reportesFiltrados = todosAlfabeticos.filter(r => {
+    const c = CLASIFICACION[r.ticker];
+    if (sectorFiltro && c?.sector !== sectorFiltro) return false;
+    if (industriaFiltro && c?.industria !== industriaFiltro) return false;
+    return true;
+  });
 
   const totalPaginas = Math.ceil(reportesFiltrados.length / POR_PAGINA);
   const reportesPagina = reportesFiltrados.slice(pagina * POR_PAGINA, (pagina + 1) * POR_PAGINA);
@@ -257,40 +289,87 @@ export default function HomePage() {
               </span>
             </div>
 
-            {/* Filtro por sector */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 20 }}>
-              {sectoresDisponibles.map(s => {
-                const activo = sectoresFiltro.has(s);
-                return (
-                  <button
-                    key={s}
-                    onClick={() => toggleSector(s)}
-                    style={{
-                      padding: '5px 13px', borderRadius: 20, fontSize: 13, cursor: 'pointer',
-                      fontWeight: activo ? 600 : 400, border: '1px solid',
-                      borderColor: activo ? 'var(--gold)' : 'rgba(255,255,255,0.15)',
-                      background: activo ? 'rgba(160,128,64,0.18)' : 'transparent',
-                      color: activo ? 'var(--gold)' : 'var(--text-muted)',
-                      transition: 'all 0.15s',
-                    }}
-                  >
-                    {s}
-                  </button>
-                );
-              })}
-              {sectoresFiltro.size > 0 && (
-                <button
-                  onClick={() => { setSectoresFiltro(new Set()); setPagina(0); }}
-                  style={{
-                    padding: '5px 13px', borderRadius: 20, fontSize: 13, cursor: 'pointer',
-                    border: '1px solid rgba(255,255,255,0.1)', background: 'transparent',
-                    color: 'var(--text-muted)', transition: 'all 0.15s',
-                  }}
-                >
-                  Limpiar filtro
-                </button>
+            {/* Filtro 1 — Sector (plegable) */}
+            <div style={{ marginBottom: 12, maxWidth: 640 }}>
+              <button
+                onClick={() => setSectorAbierto(o => !o)}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 8,
+                  background: sectorFiltro ? 'rgba(160,128,64,0.12)' : 'rgba(255,255,255,0.04)',
+                  border: '1px solid ' + (sectorFiltro ? 'rgba(160,128,64,0.4)' : 'rgba(255,255,255,0.12)'),
+                  borderRadius: 8, padding: '8px 14px', cursor: 'pointer',
+                  color: sectorFiltro ? 'var(--gold)' : 'var(--text-muted)',
+                  fontSize: 13, fontWeight: sectorFiltro ? 600 : 400, width: '100%',
+                  justifyContent: 'space-between',
+                }}
+              >
+                <span>Sector{sectorFiltro ? ': ' + sectorFiltro : ''}</span>
+                <span style={{ fontSize: 11, opacity: 0.7 }}>{sectorAbierto ? '▲' : '▼'}</span>
+              </button>
+
+              {sectorAbierto && (
+                <div style={{
+                  border: '1px solid rgba(255,255,255,0.1)', borderTop: 'none',
+                  borderRadius: '0 0 8px 8px', padding: '12px',
+                  background: 'rgba(255,255,255,0.02)',
+                  display: 'flex', flexWrap: 'wrap', gap: 8,
+                }}>
+                  {sectoresDisponibles.map(s => (
+                    <button
+                      key={s}
+                      onClick={() => seleccionarSector(s)}
+                      style={{
+                        padding: '5px 12px', borderRadius: 20, fontSize: 12, cursor: 'pointer',
+                        border: '1px solid ' + (sectorFiltro === s ? 'var(--gold)' : 'rgba(255,255,255,0.15)'),
+                        background: sectorFiltro === s ? 'rgba(160,128,64,0.2)' : 'transparent',
+                        color: sectorFiltro === s ? 'var(--gold)' : 'var(--text-muted)',
+                        fontWeight: sectorFiltro === s ? 600 : 400,
+                        transition: 'all 0.15s',
+                      }}
+                    >
+                      {s}
+                    </button>
+                  ))}
+                </div>
               )}
             </div>
+
+            {/* Filtro 2 — Industria (dropdown, solo si hay sector) */}
+            {sectorFiltro && industriasDisponibles.length > 1 && (
+              <div style={{ marginBottom: 16, maxWidth: 640 }}>
+                <select
+                  value={industriaFiltro}
+                  onChange={e => { setIndustriaFiltro(e.target.value); setPagina(0); }}
+                  style={{
+                    width: '100%', padding: '8px 14px', borderRadius: 8, fontSize: 13,
+                    background: industriaFiltro ? 'rgba(160,128,64,0.1)' : 'rgba(255,255,255,0.04)',
+                    border: '1px solid ' + (industriaFiltro ? 'rgba(160,128,64,0.4)' : 'rgba(255,255,255,0.12)'),
+                    color: industriaFiltro ? 'var(--gold)' : 'var(--text-muted)',
+                    cursor: 'pointer', outline: 'none',
+                  }}
+                >
+                  <option value="">Todas las industrias</option>
+                  {industriasDisponibles.map(i => (
+                    <option key={i} value={i}>{i}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Limpiar filtros */}
+            {(sectorFiltro || industriaFiltro) && (
+              <div style={{ marginBottom: 16 }}>
+                <button
+                  onClick={() => { setSectorFiltro(''); setIndustriaFiltro(''); setPagina(0); setSectorAbierto(false); }}
+                  style={{
+                    fontSize: 12, color: 'var(--text-muted)', background: 'none',
+                    border: 'none', cursor: 'pointer', padding: 0, textDecoration: 'underline',
+                  }}
+                >
+                  Limpiar filtros
+                </button>
+              </div>
+            )}
 
             {/* Lista */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0, maxWidth: 640 }}>
@@ -310,14 +389,14 @@ export default function HomePage() {
                     <span style={{ color: 'var(--text-muted)', fontWeight: 400, marginLeft: 8, fontSize: 13 }}>
                       ({r.ticker})
                     </span>
-                    {SECTORES[r.ticker] && (
+                    {CLASIFICACION[r.ticker] && (
                       <span style={{
                         marginLeft: 10, fontSize: 11, fontWeight: 500,
-                        color: 'var(--gold)', background: 'rgba(160,128,64,0.12)',
-                        border: '1px solid rgba(160,128,64,0.25)',
+                        color: 'var(--text-muted)', background: 'rgba(255,255,255,0.05)',
+                        border: '1px solid rgba(255,255,255,0.1)',
                         borderRadius: 10, padding: '1px 7px',
                       }}>
-                        {SECTORES[r.ticker]}
+                        {CLASIFICACION[r.ticker].industria}
                       </span>
                     )}
                   </span>
