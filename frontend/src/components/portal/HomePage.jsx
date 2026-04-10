@@ -239,15 +239,39 @@ export default function HomePage() {
         <section className="hero">
           <h1>Analisis financiero profesional</h1>
           <p>Resumen de reportes fundamentales de empresas publicas.</p>
-          <form className="buscador" onSubmit={buscar}>
-            <input
-              value={busqueda}
-              onChange={e => setBusqueda(e.target.value)}
-              placeholder="Busca por ticker o empresa: AAPL, Tesla, AMZN..."
-              className="buscador-input"
-            />
-            <button type="submit" className="btn-primary">Buscar</button>
-          </form>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
+            <form className="buscador" onSubmit={buscar} style={{ margin: 0 }}>
+              <input
+                value={busqueda}
+                onChange={e => setBusqueda(e.target.value)}
+                placeholder="Busca por ticker o empresa: AAPL, Tesla, AMZN..."
+                className="buscador-input"
+              />
+              <button type="submit" className="btn-primary">Buscar</button>
+            </form>
+            <button
+              type="button"
+              onClick={() => solicitudRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              style={{
+                background: 'rgba(160,128,64,0.10)',
+                border: '1px solid rgba(160,128,64,0.35)',
+                borderRadius: 8,
+                color: '#C8A84B',
+                fontSize: 13,
+                padding: '8px 14px',
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                fontWeight: 500,
+                lineHeight: 1.3,
+                transition: 'background 0.2s',
+              }}
+              onMouseEnter={e => e.currentTarget.style.background = 'rgba(160,128,64,0.18)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'rgba(160,128,64,0.10)'}
+            >
+              No encuentras la empresa?<br />
+              <span style={{ fontWeight: 400, opacity: 0.8 }}>Solicita el analisis aqui</span>
+            </button>
+          </div>
         </section>
 
         {/* Resultados de busqueda */}
@@ -625,9 +649,9 @@ export default function HomePage() {
 
         {/* Solicitar reporte — al final */}
         <section className="reportes-grid-section" ref={solicitudRef} style={{ marginTop: 32 }}>
-          <h2>No encuentras la empresa que buscas?</h2>
+          <h2>Solicita el analisis de una empresa</h2>
           <p style={{ color: 'var(--text-muted)', marginBottom: 20, fontSize: 15 }}>
-            Escribenos cual empresa quieres que analicemos y la agregamos al portal.
+            Si la empresa que buscas no esta en el portal, dinos cual es y la agregamos pronto.
           </p>
           {enviado ? (
             <div style={{
