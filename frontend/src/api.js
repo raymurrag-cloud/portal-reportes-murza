@@ -41,7 +41,7 @@ export const api = {
   login:      (body)      => req('POST', '/auth/login', body),
 
   // Reportes públicos
-  getReportes:    (ticker) => req('GET', `/reportes${ticker ? `?ticker=${ticker}` : ''}`, null, 'user', { retries: 4, retryDelay: 8000 }),
+  getReportes:    (ticker) => req('GET', `/reportes${ticker ? `?ticker=${ticker}` : ''}`, null, 'user', { retries: 10, retryDelay: 3000 }),
   getReporte:     (slug)   => req('GET', `/reportes/${slug}`),
   getReporteCompleto: (slug) => req('GET', `/reportes/${slug}/completo`),
 
