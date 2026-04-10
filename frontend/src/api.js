@@ -4,19 +4,31 @@ function getToken(type = 'user') {
   return localStorage.getItem(type === 'admin' ? 'portal_admin_token' : 'portal_user_token');
 }
 
-async function req(method, path, body, tokenType = 'user') {
+const wait = (ms) => new Promise(r => setTimeout(r, ms));
+
+async function req(method, path, body, tokenType = 'user', { retries = 0, retryDelay = 8000 } = {}) {
   const token = getToken(tokenType);
-  const res = await fetch(`${BASE}${path}`, {
-    method,
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || 'Error en la solicitud');
-  return data;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(`${BASE}${path}`, {
+        method,
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Error en la solicitud');
+      return data;
+    } catch (err) {
+      if (attempt < retries) {
+        await wait(retryDelay);
+      } else {
+        throw err;
+      }
+    }
+  }
 }
 
 // ── Auth ───────────────────────────────────────────────────────────────────
@@ -29,7 +41,7 @@ export const api = {
   login:      (body)      => req('POST', '/auth/login', body),
 
   // Reportes públicos
-  getReportes:    (ticker) => req('GET', `/reportes${ticker ? `?ticker=${ticker}` : ''}`),
+  getReportes:    (ticker) => req('GET', `/reportes${ticker ? `?ticker=${ticker}` : ''}`, null, 'user', { retries: 4, retryDelay: 8000 }),
   getReporte:     (slug)   => req('GET', `/reportes/${slug}`),
   getReporteCompleto: (slug) => req('GET', `/reportes/${slug}/completo`),
 
