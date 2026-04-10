@@ -80,12 +80,13 @@ export default function HomePage() {
   };
 
   // Solicitar reporte
-  const [empresa, setEmpresa]   = useState('');
-  const [tickerSol, setTickerSol] = useState('');
-  const [emailSol, setEmailSol]   = useState('');
-  const [enviado, setEnviado]     = useState(false);
-  const [enviando, setEnviando]   = useState(false);
-  const [errorSol, setErrorSol]   = useState('');
+  const [empresa, setEmpresa]               = useState('');
+  const [tickerSol, setTickerSol]           = useState('');
+  const [emailSol, setEmailSol]             = useState('');
+  const [enviado, setEnviado]               = useState(false);
+  const [enviando, setEnviando]             = useState(false);
+  const [errorSol, setErrorSol]             = useState('');
+  const [showSolicitudInline, setShowSolicitudInline] = useState(false);
 
   useEffect(() => {
     api.getReportes().then(setTodosReportes).finally(() => setLoading(false));
@@ -165,7 +166,7 @@ export default function HomePage() {
     }
     setResultados(filtrados);
     if (filtrados.length === 0) {
-      setTimeout(() => solicitudRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+      setShowSolicitudInline(true);
     }
   };
 
@@ -239,7 +240,7 @@ export default function HomePage() {
         <section className="hero">
           <h1>Analisis financiero profesional</h1>
           <p>Resumen de reportes fundamentales de empresas publicas.</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
             <form className="buscador" onSubmit={buscar} style={{ margin: 0 }}>
               <input
                 value={busqueda}
@@ -251,27 +252,91 @@ export default function HomePage() {
             </form>
             <button
               type="button"
-              onClick={() => solicitudRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              onClick={() => setShowSolicitudInline(v => !v)}
               style={{
-                background: 'rgba(160,128,64,0.10)',
-                border: '1px solid rgba(160,128,64,0.35)',
+                background: showSolicitudInline ? 'var(--gold)' : 'var(--surface-pure)',
+                border: '1.5px solid var(--gold)',
                 borderRadius: 8,
-                color: '#C8A84B',
+                color: showSolicitudInline ? '#fff' : 'var(--gold-dark)',
                 fontSize: 13,
-                padding: '8px 14px',
+                padding: '10px 16px',
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
-                fontWeight: 500,
-                lineHeight: 1.3,
-                transition: 'background 0.2s',
+                fontWeight: 600,
+                lineHeight: 1,
+                transition: 'all 0.18s',
+                boxShadow: '0 1px 6px rgba(181,135,42,.18)',
               }}
-              onMouseEnter={e => e.currentTarget.style.background = 'rgba(160,128,64,0.18)'}
-              onMouseLeave={e => e.currentTarget.style.background = 'rgba(160,128,64,0.10)'}
             >
-              No encuentras la empresa?<br />
-              <span style={{ fontWeight: 400, opacity: 0.8 }}>Solicita el analisis aqui</span>
+              No encuentras la empresa?
             </button>
           </div>
+
+          {showSolicitudInline && (
+            <div style={{
+              marginTop: 20,
+              background: 'var(--surface-pure)',
+              border: '1px solid var(--border-warm)',
+              borderTop: '3px solid var(--gold)',
+              borderRadius: 12,
+              padding: '22px 24px',
+              maxWidth: 560,
+              margin: '20px auto 0',
+              textAlign: 'left',
+              boxShadow: '0 4px 18px rgba(28,20,16,.08)',
+            }}>
+              <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: 4, fontSize: 15 }}>
+                Solicita el analisis de una empresa
+              </p>
+              <p style={{ color: 'var(--text-muted)', fontSize: 13, marginBottom: 16 }}>
+                Si no esta en el portal, dinos cual es y la agregamos pronto.
+              </p>
+              {enviado ? (
+                <div style={{
+                  background: 'rgba(22,163,74,0.08)', border: '1px solid rgba(22,163,74,0.25)',
+                  borderRadius: 8, padding: '14px 18px', color: '#16A34A', fontWeight: 600, fontSize: 14,
+                  display: 'flex', alignItems: 'center', gap: 12,
+                }}>
+                  Solicitud enviada. Revisaremos y publicaremos el reporte pronto.
+                  <button className="btn-ghost-sm" onClick={() => setEnviado(false)}>Solicitar otra</button>
+                </div>
+              ) : (
+                <form
+                  onSubmit={enviarSolicitud}
+                  onFocus={() => { if (!solStarted) { setSolStarted(true); window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'form_start_solicitud' }); } }}
+                  style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}
+                >
+                  <input
+                    value={empresa}
+                    onChange={e => setEmpresa(e.target.value)}
+                    placeholder="Nombre de la empresa *"
+                    className="buscador-input"
+                    style={{ flex: '1 1 200px' }}
+                  />
+                  <input
+                    value={tickerSol}
+                    onChange={e => setTickerSol(e.target.value.toUpperCase())}
+                    placeholder="Ticker (opcional)"
+                    className="buscador-input"
+                    style={{ flex: '0 1 120px' }}
+                    maxLength={10}
+                  />
+                  <input
+                    value={emailSol}
+                    onChange={e => setEmailSol(e.target.value)}
+                    placeholder="Tu email para notificarte (opcional)"
+                    className="buscador-input"
+                    type="email"
+                    style={{ flex: '1 1 200px' }}
+                  />
+                  <button type="submit" className="btn-primary" disabled={enviando} style={{ flex: '0 0 auto' }}>
+                    {enviando ? 'Enviando...' : 'Solicitar'}
+                  </button>
+                  {errorSol && <p style={{ color: '#DC2626', fontSize: 13, width: '100%', margin: 0 }}>{errorSol}</p>}
+                </form>
+              )}
+            </div>
+          )}
         </section>
 
         {/* Resultados de busqueda */}
@@ -647,56 +712,6 @@ export default function HomePage() {
           )}
         </section>
 
-        {/* Solicitar reporte — al final */}
-        <section className="reportes-grid-section" ref={solicitudRef} style={{ marginTop: 32 }}>
-          <h2>Solicita el analisis de una empresa</h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: 20, fontSize: 15 }}>
-            Si la empresa que buscas no esta en el portal, dinos cual es y la agregamos pronto.
-          </p>
-          {enviado ? (
-            <div style={{
-              background: 'rgba(22,163,74,0.08)', border: '1px solid rgba(22,163,74,0.25)',
-              borderRadius: 10, padding: '18px 24px', color: '#16A34A', fontWeight: 600, maxWidth: 480
-            }}>
-              Solicitud enviada. Revisaremos y publicaremos el reporte pronto.
-              <button
-                className="btn-ghost-sm"
-                style={{ marginLeft: 16 }}
-                onClick={() => setEnviado(false)}
-              >Solicitar otra</button>
-            </div>
-          ) : (
-            <form id="form-solicitud" onSubmit={enviarSolicitud} onFocus={() => { if (!solStarted) { setSolStarted(true); window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'form_start_solicitud' }); } }} style={{ display: 'flex', flexWrap: 'wrap', gap: 10, maxWidth: 620 }}>
-              <input
-                value={empresa}
-                onChange={e => setEmpresa(e.target.value)}
-                placeholder="Nombre de la empresa *"
-                className="buscador-input"
-                style={{ flex: '1 1 220px' }}
-              />
-              <input
-                value={tickerSol}
-                onChange={e => setTickerSol(e.target.value.toUpperCase())}
-                placeholder="Ticker (opcional)"
-                className="buscador-input"
-                style={{ flex: '0 1 130px' }}
-                maxLength={10}
-              />
-              <input
-                value={emailSol}
-                onChange={e => setEmailSol(e.target.value)}
-                placeholder="Tu email para notificarte (opcional)"
-                className="buscador-input"
-                type="email"
-                style={{ flex: '1 1 220px' }}
-              />
-              <button type="submit" className="btn-primary" disabled={enviando} style={{ flex: '0 0 auto' }}>
-                {enviando ? 'Enviando...' : 'Solicitar reporte'}
-              </button>
-              {errorSol && <p style={{ color: '#DC2626', fontSize: 13, width: '100%', margin: 0 }}>{errorSol}</p>}
-            </form>
-          )}
-        </section>
 
         <footer className="portal-footer">
           <p>© {new Date().getFullYear()} Murza Inversiones</p>
