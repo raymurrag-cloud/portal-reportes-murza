@@ -241,7 +241,7 @@ export default function HomePage() {
           <h1>Analisis financiero profesional</h1>
           <p>Resumen de reportes fundamentales de empresas publicas.</p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-            <form className="buscador" onSubmit={buscar} style={{ margin: 0 }}>
+            <form className="buscador" onSubmit={buscar} style={{ margin: 0, minWidth: 420, maxWidth: 520 }}>
               <input
                 value={busqueda}
                 onChange={e => setBusqueda(e.target.value)}
