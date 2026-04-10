@@ -714,7 +714,12 @@ export default function HomePage() {
 
 
         <footer className="portal-footer">
-          <p>© {new Date().getFullYear()} Murza Inversiones</p>
+          <p style={{ marginBottom: 10 }}>© {new Date().getFullYear()} Murza Inversiones</p>
+          <p style={{ fontSize: 11, color: 'var(--text-faint)', maxWidth: 600, margin: '0 auto', lineHeight: 1.6, opacity: 0.75 }}>
+            El contenido de este portal es exclusivamente informativo y no constituye una recomendacion de inversion.
+            Cada persona es responsable de realizar su propio analisis antes de tomar cualquier decision financiera.
+            Esta es una herramienta de apoyo, no de asesoria.
+          </p>
         </footer>
       </div>
     </>
