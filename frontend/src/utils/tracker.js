@@ -1,40 +1,52 @@
-// tracker.js — captura silenciosa de comportamiento del visitante
-// Almacena sesion en localStorage y la envia al registrarse
+// tracker.js — analytics silencioso de comportamiento
+// Cada page view se registra en la BD via sendBeacon al desmontar el componente
 
-const SESSION_KEY  = 'mz_session';
-const LAST_VISIT_KEY = 'mz_last_visit';
-const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 min sin actividad = nueva sesion
+const VISITOR_KEY  = 'mz_vid';      // UUID permanente por navegador
+const SESSION_KEY  = 'mz_sid';      // UUID por pestaña/sesion (sessionStorage)
+const META_KEY     = 'mz_smeta';    // metadata de sesion (fuente, dispositivo...)
+const LAST_VISIT_KEY = 'mz_lv';     // timestamp ultima visita
+const SESSION_FORM_KEY = 'mz_session'; // para getTrackingData() del form (mantener)
+
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
+
+// ── UUID simple ───────────────────────────────────────────────────────────────
+function uuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = Math.random() * 16 | 0;
+    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+  });
+}
 
 // ── Parsear User Agent ────────────────────────────────────────────────────────
 function parseUA(ua) {
   let dispositivo = 'Desktop';
-  if (/iPhone/i.test(ua))              dispositivo = 'iPhone';
-  else if (/iPad/i.test(ua))           dispositivo = 'iPad';
+  if (/iPhone/i.test(ua))               dispositivo = 'iPhone';
+  else if (/iPad/i.test(ua))            dispositivo = 'iPad';
   else if (/Android.*Mobile/i.test(ua)) dispositivo = 'Android Phone';
-  else if (/Android/i.test(ua))        dispositivo = 'Android Tablet';
+  else if (/Android/i.test(ua))         dispositivo = 'Android Tablet';
 
   let sistema = 'Desconocido';
   const ios     = ua.match(/OS (\d+[_\d]*) like Mac/);
   const android = ua.match(/Android (\d+[\.\d]*)/);
   const win     = ua.match(/Windows NT (\d+\.\d+)/);
   const mac     = ua.match(/Mac OS X (\d+[_\d]*)/);
-  if (ios)     sistema = `iOS ${ios[1].replace(/_/g, '.')}`;
+  if (ios)          sistema = `iOS ${ios[1].replace(/_/g, '.')}`;
   else if (android) sistema = `Android ${android[1]}`;
   else if (win) {
-    const map = { '10.0': '10/11', '6.3': '8.1', '6.2': '8', '6.1': '7' };
-    sistema = `Windows ${map[win[1]] || win[1]}`;
+    const m = { '10.0': '10/11', '6.3': '8.1', '6.2': '8', '6.1': '7' };
+    sistema = `Windows ${m[win[1]] || win[1]}`;
   }
-  else if (mac) sistema = `macOS ${mac[1].replace(/_/g, '.')}`;
+  else if (mac)     sistema = `macOS ${mac[1].replace(/_/g, '.')}`;
 
   let navegador = 'Desconocido';
-  if (/CriOS/i.test(ua))          navegador = 'Chrome iOS';
-  else if (/FxiOS/i.test(ua))     navegador = 'Firefox iOS';
+  if (/CriOS/i.test(ua))           navegador = 'Chrome iOS';
+  else if (/FxiOS/i.test(ua))      navegador = 'Firefox iOS';
   else if (/SamsungBrowser/i.test(ua)) navegador = 'Samsung Browser';
-  else if (/OPR|Opera/i.test(ua)) navegador = 'Opera';
-  else if (/Edg\//i.test(ua))     navegador = 'Edge';
-  else if (/Chrome/i.test(ua))    navegador = 'Chrome';
-  else if (/Safari/i.test(ua))    navegador = 'Safari';
-  else if (/Firefox/i.test(ua))   navegador = 'Firefox';
+  else if (/OPR|Opera/i.test(ua))  navegador = 'Opera';
+  else if (/Edg\//i.test(ua))      navegador = 'Edge';
+  else if (/Chrome/i.test(ua))     navegador = 'Chrome';
+  else if (/Safari/i.test(ua))     navegador = 'Safari';
+  else if (/Firefox/i.test(ua))    navegador = 'Firefox';
 
   return { dispositivo, sistema, navegador };
 }
@@ -56,118 +68,182 @@ function parseFuente() {
   } else if (/whatsapp/i.test(referrer)) {
     fuente = 'WhatsApp';
   } else if (referrer) {
-    try { fuente = new URL(referrer).hostname; } catch { fuente = referrer; }
+    try { fuente = new URL(referrer).hostname; } catch { fuente = referrer.slice(0, 60); }
   }
 
   return {
     fuente,
     campana: params.get('utm_campaign') || null,
     anuncio: params.get('utm_content') || params.get('utm_ad') || null,
-    referrer_raw: referrer || null,
   };
 }
 
-// ── Leer / guardar sesion ─────────────────────────────────────────────────────
-function leerSesion() {
-  try { return JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch { return null; }
-}
-function guardarSesion(s) {
-  try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch {}
+// ── IDs persistentes ──────────────────────────────────────────────────────────
+function getVisitorId() {
+  let id = localStorage.getItem(VISITOR_KEY);
+  if (!id) { id = uuid(); localStorage.setItem(VISITOR_KEY, id); }
+  return id;
 }
 
-// ── initTracker — llamar en cada pagina al montar ─────────────────────────────
-// nombrePagina: string legible, ej. "Home", "Reporte NVDA"
-// Devuelve cleanup() para llamar en el useEffect return
-export function initTracker(nombrePagina) {
-  const now = Date.now();
-  const ua  = navigator.userAgent;
+function getSessionId() {
+  let id = sessionStorage.getItem(SESSION_KEY);
+  if (!id) { id = uuid(); sessionStorage.setItem(SESSION_KEY, id); }
+  return id;
+}
 
-  // Visita recurrente
+// ── Metadata de sesion (se captura una vez por session) ───────────────────────
+function getSessionMeta() {
+  try {
+    const raw = sessionStorage.getItem(META_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {}
+
+  // Primera pagina de esta sesion: capturar todo
+  const ua = navigator.userAgent;
+  const { dispositivo, sistema, navegador } = parseUA(ua);
+  const { fuente, campana, anuncio } = parseFuente();
   const lastVisit = localStorage.getItem(LAST_VISIT_KEY);
+  const ahora = Date.now();
   const esRecurrente = !!lastVisit;
-  const diasDesde = lastVisit ? Math.floor((now - parseInt(lastVisit)) / 86400000) : null;
-  localStorage.setItem(LAST_VISIT_KEY, String(now));
+  const diasDesde = lastVisit ? Math.floor((ahora - parseInt(lastVisit)) / 86400000) : null;
+  localStorage.setItem(LAST_VISIT_KEY, String(ahora));
 
-  // Sesion activa o nueva
-  let session = leerSesion();
-  const sesionActiva = session && (now - (session.ultima_actividad || 0) < SESSION_TIMEOUT);
+  const meta = { dispositivo, sistema, navegador, fuente, campana, anuncio, esRecurrente, diasDesde };
+  try { sessionStorage.setItem(META_KEY, JSON.stringify(meta)); } catch {}
+  return meta;
+}
 
-  if (!sesionActiva) {
-    const f = parseFuente();
-    const d = parseUA(ua);
-    session = {
-      inicio: now,
-      ultima_actividad: now,
-      fuente: f.fuente,
-      campana: f.campana,
-      anuncio: f.anuncio,
-      referrer: f.referrer_raw,
-      dispositivo: d.dispositivo,
-      sistema: d.sistema,
-      navegador: d.navegador,
-      recurrente: esRecurrente,
-      dias_ultima_visita: diasDesde,
-      paginas: [],
+// ── Enviar beacon ─────────────────────────────────────────────────────────────
+function sendBeacon(payload) {
+  try {
+    const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+    navigator.sendBeacon(`${API_BASE}/track`, blob);
+  } catch {}
+}
+
+// ── initTracker — llamar en useEffect de cada pagina ─────────────────────────
+// nombrePagina: string legible, ej. "Home", "Reporte NVDA"
+// Devuelve cleanup() para el return del useEffect
+export function initTracker(nombrePagina) {
+  const now       = Date.now();
+  const visitorId = getVisitorId();
+  const sessionId = getSessionId();
+  const meta      = getSessionMeta();
+  let scrollMax   = 0;
+
+  // Tambien actualizar el mz_session (para getTrackingData del form)
+  try {
+    const SESSION_TIMEOUT = 30 * 60 * 1000;
+    let s = {};
+    try { s = JSON.parse(localStorage.getItem(SESSION_FORM_KEY) || '{}'); } catch {}
+    const sesionActiva = s.inicio && (now - (s.ultima_actividad || 0) < SESSION_TIMEOUT);
+    if (!sesionActiva) {
+      s = {
+        inicio: now, ultima_actividad: now,
+        fuente: meta.fuente, campana: meta.campana, anuncio: meta.anuncio,
+        dispositivo: meta.dispositivo, sistema: meta.sistema, navegador: meta.navegador,
+        recurrente: meta.esRecurrente, dias_ultima_visita: meta.diasDesde, paginas: [],
+      };
+    }
+    const idx = s.paginas.length;
+    s.paginas.push({ url: window.location.pathname, titulo: nombrePagina, entrada: now, tiempo_seg: 0, scroll_max: 0 });
+    s.ultima_actividad = now;
+    localStorage.setItem(SESSION_FORM_KEY, JSON.stringify(s));
+
+    // Scroll tracker para el form
+    const onScrollForm = () => {
+      const pct = Math.round(((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100);
+      try {
+        const fs = JSON.parse(localStorage.getItem(SESSION_FORM_KEY) || '{}');
+        if (fs.paginas?.[idx]) {
+          fs.paginas[idx].scroll_max = Math.max(fs.paginas[idx].scroll_max || 0, Math.min(pct, 100));
+          fs.paginas[idx].tiempo_seg = Math.round((Date.now() - now) / 1000);
+          fs.ultima_actividad = Date.now();
+          localStorage.setItem(SESSION_FORM_KEY, JSON.stringify(fs));
+        }
+      } catch {}
     };
-  }
+    window.addEventListener('scroll', onScrollForm, { passive: true });
+    // Cleanup form scroll en return (guardado abajo junto con beacon cleanup)
+  } catch {}
 
-  // Registrar entrada a esta pagina
-  const idx = session.paginas.length;
-  session.paginas.push({
-    url:       window.location.pathname,
-    titulo:    nombrePagina,
-    entrada:   now,
-    tiempo_seg: 0,
-    scroll_max: 0,
-  });
-  session.ultima_actividad = now;
-  guardarSesion(session);
-
-  // Trackear scroll en tiempo real
+  // Scroll tracker para beacon
   const onScroll = () => {
     const pct = Math.round(((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100);
-    const s = leerSesion();
-    if (s?.paginas?.[idx]) {
-      s.paginas[idx].scroll_max  = Math.max(s.paginas[idx].scroll_max || 0, Math.min(pct, 100));
-      s.paginas[idx].tiempo_seg  = Math.round((Date.now() - now) / 1000);
-      s.ultima_actividad = Date.now();
-      guardarSesion(s);
-    }
+    scrollMax = Math.max(scrollMax, Math.min(pct, 100));
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Actualizar tiempo al desmontar
+  // Enviar en beforeunload (cierre de tab/navegador)
+  const onUnload = () => {
+    sendBeacon({
+      visitor_id:       visitorId,
+      session_id:       sessionId,
+      pagina_url:       window.location.pathname,
+      pagina_titulo:    nombrePagina,
+      tiempo_seg:       Math.round((Date.now() - now) / 1000),
+      scroll_max:       scrollMax,
+      fuente:           meta.fuente,
+      campana:          meta.campana,
+      dispositivo:      meta.dispositivo,
+      sistema_os:       meta.sistema,
+      visita_recurrente: meta.esRecurrente ? 1 : 0,
+    });
+  };
+  window.addEventListener('beforeunload', onUnload);
+
+  // Cleanup: se llama en React al desmontar (navegacion SPA) y en beforeunload
   return () => {
     window.removeEventListener('scroll', onScroll);
-    const s = leerSesion();
-    if (s?.paginas?.[idx]) {
-      s.paginas[idx].tiempo_seg = Math.round((Date.now() - now) / 1000);
-      guardarSesion(s);
-    }
+    window.removeEventListener('beforeunload', onUnload);
+
+    // Actualizar form session
+    try {
+      const fs = JSON.parse(localStorage.getItem(SESSION_FORM_KEY) || '{}');
+      if (fs.paginas?.length > 0) {
+        const last = fs.paginas[fs.paginas.length - 1];
+        last.tiempo_seg = Math.round((Date.now() - now) / 1000);
+        localStorage.setItem(SESSION_FORM_KEY, JSON.stringify(fs));
+      }
+    } catch {}
+
+    // Enviar beacon de esta pagina
+    sendBeacon({
+      visitor_id:        visitorId,
+      session_id:        sessionId,
+      pagina_url:        window.location.pathname,
+      pagina_titulo:     nombrePagina,
+      tiempo_seg:        Math.round((Date.now() - now) / 1000),
+      scroll_max:        scrollMax,
+      fuente:            meta.fuente,
+      campana:           meta.campana,
+      dispositivo:       meta.dispositivo,
+      sistema_os:        meta.sistema,
+      visita_recurrente: meta.esRecurrente ? 1 : 0,
+    });
   };
 }
 
-// ── getTrackingData — llamar al enviar el formulario ─────────────────────────
+// ── getTrackingData — para enviar con el formulario de prospecto ──────────────
 export function getTrackingData() {
   try {
-    const s = leerSesion();
+    const s = JSON.parse(localStorage.getItem(SESSION_FORM_KEY) || 'null');
     if (!s) return {};
-    // Actualizar tiempo de la ultima pagina antes de enviar
     if (s.paginas?.length > 0) {
       const last = s.paginas[s.paginas.length - 1];
       last.tiempo_seg = Math.round((Date.now() - last.entrada) / 1000);
     }
     return {
-      fuente:              s.fuente || 'Directo',
-      campana:             s.campana || null,
-      anuncio:             s.anuncio || null,
-      dispositivo:         s.dispositivo || null,
-      sistema_os:          s.sistema || null,
-      navegador:           s.navegador || null,
-      visita_recurrente:   s.recurrente ? 1 : 0,
-      dias_ultima_visita:  s.dias_ultima_visita ?? null,
-      tiempo_total_seg:    Math.round((Date.now() - s.inicio) / 1000),
-      paginas_json:        JSON.stringify(s.paginas || []),
+      fuente:             s.fuente || 'Directo',
+      campana:            s.campana || null,
+      anuncio:            s.anuncio || null,
+      dispositivo:        s.dispositivo || null,
+      sistema_os:         s.sistema || null,
+      navegador:          s.navegador || null,
+      visita_recurrente:  s.recurrente ? 1 : 0,
+      dias_ultima_visita: s.dias_ultima_visita ?? null,
+      tiempo_total_seg:   Math.round((Date.now() - s.inicio) / 1000),
+      paginas_json:       JSON.stringify(s.paginas || []),
     };
   } catch {
     return {};

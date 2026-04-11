@@ -15,6 +15,7 @@ import AdminEditorReporte   from './components/admin/AdminEditorReporte.jsx';
 import AdminLeads           from './components/admin/AdminLeads.jsx';
 import AdminSolicitudes     from './components/admin/AdminSolicitudes.jsx';
 import AdminProspectos      from './components/admin/AdminProspectos.jsx';
+import AdminAnalytics       from './components/admin/AdminAnalytics.jsx';
 
 function RequireAdmin({ children }) {
   const token = localStorage.getItem('portal_admin_token');
@@ -39,6 +40,7 @@ export default function App() {
       <Route path="/admin/leads"        element={<RequireAdmin><AdminLeads /></RequireAdmin>} />
       <Route path="/admin/solicitudes" element={<RequireAdmin><AdminSolicitudes /></RequireAdmin>} />
       <Route path="/admin/prospectos"  element={<RequireAdmin><AdminProspectos /></RequireAdmin>} />
+      <Route path="/admin/analytics"   element={<RequireAdmin><AdminAnalytics /></RequireAdmin>} />
       <Route path="/admin"             element={<Navigate to="/admin/reportes" replace />} />
     </Routes>
   );

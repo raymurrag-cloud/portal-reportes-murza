@@ -110,4 +110,127 @@ router.get('/solicitudes', async (req, res) => {
   res.json(rows.map(r => ({ ...r, id: Number(r.id) })));
 });
 
+// ── Analytics ─────────────────────────────────────────────────────────────────
+router.get('/analytics', async (req, res) => {
+  const periodo = req.query.periodo || 'semana'; // hoy | semana | mes | total
+  const diasMap = { hoy: 1, semana: 7, mes: 30, total: 3650 };
+  const dias = diasMap[periodo] || 7;
+
+  const [{ rows: visitas }, { rows: prospRows }] = await Promise.all([
+    db.execute({
+      sql: `SELECT visitor_id, session_id, pagina_url, pagina_titulo,
+                   tiempo_seg, scroll_max, fuente, campana,
+                   dispositivo, sistema_os, visita_recurrente, ciudad, estado, created_at
+            FROM visitantes
+            WHERE created_at >= datetime('now', ?)
+            ORDER BY created_at DESC LIMIT 20000`,
+      args: [`-${dias} days`],
+    }),
+    db.execute({ sql: 'SELECT COUNT(*) as total FROM prospectos_gbm', args: [] }),
+  ]);
+
+  const totalProspectos = Number(prospRows[0]?.total || 0);
+
+  // ── Helpers ────────────────────────────────────────────────────────────────
+  const countBy = (arr, key) => {
+    const m = {};
+    arr.forEach(r => { const v = r[key] || 'Desconocido'; m[v] = (m[v] || 0) + 1; });
+    return Object.entries(m).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ label: k, count: v }));
+  };
+
+  // ── Visitantes únicos y sesiones ──────────────────────────────────────────
+  const visitantesUnicos = new Set(visitas.map(r => r.visitor_id)).size;
+  const sesionesUnicas   = new Set(visitas.map(r => r.session_id)).size;
+  const pageviews        = visitas.length;
+
+  // ── Resumen por sub-periodos (siempre desde 0, independiente del periodo) ─
+  const ahora = Date.now();
+  const hace  = (d) => new Date(ahora - d * 86400000).toISOString();
+  const { rows: all } = await db.execute({
+    sql: `SELECT visitor_id, session_id, created_at FROM visitantes ORDER BY created_at DESC LIMIT 50000`,
+    args: [],
+  });
+  const resumen = ['hoy', 'semana', 'mes', 'total'].reduce((acc, p) => {
+    const d = { hoy: 1, semana: 7, mes: 30, total: 3650 }[p];
+    const filtro = all.filter(r => new Date(r.created_at) >= new Date(ahora - d * 86400000));
+    acc[p] = {
+      visitantes: new Set(filtro.map(r => r.visitor_id)).size,
+      sesiones:   new Set(filtro.map(r => r.session_id)).size,
+      pageviews:  filtro.length,
+    };
+    return acc;
+  }, {});
+
+  // ── Fuentes ────────────────────────────────────────────────────────────────
+  const fuentes = countBy(visitas, 'fuente');
+
+  // ── Dispositivos ───────────────────────────────────────────────────────────
+  const dispositivos = countBy(visitas, 'dispositivo');
+
+  // ── Ciudades (ciudad + estado) ─────────────────────────────────────────────
+  const ciudadesMap = {};
+  visitas.forEach(r => {
+    if (!r.ciudad) return;
+    const key = r.estado ? `${r.ciudad}, ${r.estado}` : r.ciudad;
+    ciudadesMap[key] = (ciudadesMap[key] || 0) + 1;
+  });
+  const ciudades = Object.entries(ciudadesMap)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 15)
+    .map(([label, count]) => ({ label, count }));
+
+  // ── Top páginas ────────────────────────────────────────────────────────────
+  const paginasMap = {};
+  visitas.forEach(r => {
+    const key = r.pagina_url;
+    if (!paginasMap[key]) paginasMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, tiempo_total: 0, scroll_total: 0, con_scroll: 0, completos: 0 };
+    const p = paginasMap[key];
+    p.vistas++;
+    p.tiempo_total += Number(r.tiempo_seg) || 0;
+    if (r.scroll_max > 0) { p.scroll_total += Number(r.scroll_max); p.con_scroll++; }
+    if (Number(r.scroll_max) >= 80) p.completos++;
+  });
+  const paginas = Object.values(paginasMap)
+    .sort((a, b) => b.vistas - a.vistas)
+    .slice(0, 15)
+    .map(p => ({
+      url:             p.url,
+      titulo:          p.titulo,
+      vistas:          p.vistas,
+      tiempo_promedio: p.vistas > 0 ? Math.round(p.tiempo_total / p.vistas) : 0,
+      scroll_promedio: p.con_scroll > 0 ? Math.round(p.scroll_total / p.con_scroll) : 0,
+      completos:       p.completos,
+    }));
+
+  // ── Embudo ────────────────────────────────────────────────────────────────
+  const sessionesSet = new Set(visitas.map(r => r.session_id));
+  const leyeronReporte = new Set(visitas.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
+  const leyeronCompleto = new Set(visitas.filter(r => r.pagina_url?.startsWith('/reporte/') && Number(r.scroll_max) >= 80).map(r => r.session_id)).size;
+  const vieronEarnings  = new Set(visitas.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
+
+  // Nuevos vs recurrentes (por sesion unica)
+  const sessionesArr = [...new Map(visitas.map(r => [r.session_id, r])).values()];
+  const recurrentes = sessionesArr.filter(r => r.visita_recurrente).length;
+
+  res.json({
+    resumen,
+    fuentes,
+    dispositivos,
+    ciudades,
+    paginas,
+    embudo: {
+      total_sesiones:    sesionesUnicas,
+      leyeron_reporte:   leyeronReporte,
+      leyeron_completo:  leyeronCompleto,
+      vieron_earnings:   vieronEarnings,
+      llenaron_form:     totalProspectos,
+    },
+    nuevos_vs_recurrentes: {
+      nuevos:      sesionesUnicas - recurrentes,
+      recurrentes: recurrentes,
+    },
+    periodo,
+  });
+});
+
 export default router;

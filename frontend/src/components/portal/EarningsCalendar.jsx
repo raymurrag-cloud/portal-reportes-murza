@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
 import { EARNINGS_DATA, getMesNumero, MESES } from './earningsData.js';
+import { initTracker } from '../../utils/tracker.js';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Hook: actualiza cada segundo para los countdowns
@@ -345,6 +346,8 @@ export default function EarningsCalendar() {
   const [mesFiltro, setMesFiltro]     = useState(null);   // null = todos
   const [expanded, setExpanded]       = useState(new Set());
   const now = useNow();
+
+  useEffect(() => initTracker('Earnings'), []);
 
   useEffect(() => {
     api.getReportes()

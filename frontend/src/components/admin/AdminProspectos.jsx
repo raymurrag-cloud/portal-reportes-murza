@@ -29,6 +29,7 @@ export default function AdminProspectos() {
             <Link to="/admin/leads"       className="admin-nav-link">Leads</Link>
             <Link to="/admin/prospectos"  className="admin-nav-link active">Prospectos GBM</Link>
             <Link to="/admin/solicitudes" className="admin-nav-link">Solicitudes</Link>
+            <Link to="/admin/analytics"  className="admin-nav-link">Analytics</Link>
           </nav>
         </div>
         <button className="btn-ghost-sm" onClick={logout}>Salir</button>
