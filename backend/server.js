@@ -43,11 +43,23 @@ app.post('/api/prospectos-gbm', async (req, res) => {
   const { nombre, telefono, correo, valor_portafolio } = req.body || {};
   if (!nombre?.trim() || !telefono?.trim() || !correo?.trim() || !valor_portafolio?.trim())
     return res.status(400).json({ error: 'Todos los campos son requeridos' });
+
+  // Geolocalización silenciosa por IP
+  let ciudad = null, estado = null;
+  try {
+    const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.socket.remoteAddress;
+    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,status&lang=es`)
+      .then(r => r.json());
+    if (geo.status === 'success') { ciudad = geo.city || null; estado = geo.regionName || null; }
+  } catch (_) { /* no bloquear el registro si falla la geo */ }
+
   const { db } = await import('./database.js');
   await db.execute({
-    sql:  'INSERT INTO prospectos_gbm (nombre, telefono, correo, valor_portafolio) VALUES (?, ?, ?, ?)',
-    args: [nombre.trim().slice(0, 100), telefono.trim().slice(0, 20), correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50)],
+    sql:  'INSERT INTO prospectos_gbm (nombre, telefono, correo, valor_portafolio, ciudad, estado) VALUES (?, ?, ?, ?, ?, ?)',
+    args: [nombre.trim().slice(0, 100), telefono.trim().slice(0, 20), correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50), ciudad, estado],
   });
+
+  const ubicacion = ciudad && estado ? `${ciudad}, ${estado}` : ciudad || estado || 'No disponible';
   enviarEmail({
     to:      'rmurra@murzainversiones.com',
     subject: `Nuevo prospecto GBM: ${nombre.trim()}`,
@@ -58,6 +70,7 @@ app.post('/api/prospectos-gbm', async (req, res) => {
       `Telefono:         ${telefono.trim()}`,
       `Correo:           ${correo.trim()}`,
       `Valor portafolio: ${valor_portafolio.trim()}`,
+      `Ubicacion:        ${ubicacion}`,
       '',
       'Ver todos los prospectos: https://reportes.murzainversiones.com/admin/prospectos',
     ].join('\n'),

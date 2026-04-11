@@ -54,6 +54,7 @@ export default function AdminProspectos() {
                   <th>Telefono</th>
                   <th>Correo</th>
                   <th>Portafolio</th>
+                  <th>Ubicacion</th>
                   <th>Fecha</th>
                 </tr>
               </thead>
@@ -64,6 +65,9 @@ export default function AdminProspectos() {
                     <td>{p.telefono}</td>
                     <td>{p.correo}</td>
                     <td>{p.valor_portafolio}</td>
+                    <td style={{ color: 'var(--text-muted)', fontSize: 13 }}>
+                      {p.ciudad && p.estado ? `${p.ciudad}, ${p.estado}` : p.ciudad || p.estado || '—'}
+                    </td>
                     <td style={{ color: 'var(--text-muted)', fontSize: 13 }}>
                       {new Date(p.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'short', day: 'numeric' })}
                     </td>
