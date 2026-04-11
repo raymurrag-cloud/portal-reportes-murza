@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
+import { initTracker, getTrackingData } from '../../utils/tracker.js';
 
 const CLASIFICACION = {
   AAPL:  { sector: 'Information Technology',  industria: 'Technology Hardware & Peripherals' },
@@ -68,7 +69,7 @@ export default function HomePage() {
     }
     setGbmEnviando(true); setGbmError('');
     try {
-      await api.enviarProspectoGBM(gbm);
+      await api.enviarProspectoGBM({ ...gbm, ...getTrackingData() });
       setGbmEnviado(true);
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'form_submit_gbm' });
@@ -87,6 +88,8 @@ export default function HomePage() {
   const [enviando, setEnviando]             = useState(false);
   const [errorSol, setErrorSol]             = useState('');
   const [showSolicitudInline, setShowSolicitudInline] = useState(false);
+
+  useEffect(() => initTracker('Home'), []);
 
   useEffect(() => {
     api.getReportes().then(setTodosReportes).finally(() => setLoading(false));

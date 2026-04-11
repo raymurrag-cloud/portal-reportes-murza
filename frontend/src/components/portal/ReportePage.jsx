@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { api } from '../../api.js';
 import { ChartBlock, KpiBlock, ScoreBar, FlagsBlock, VerdictBlock } from './ChartBlocks.jsx';
 import ReporteRenderer from './ReporteRenderer.jsx';
+import { initTracker } from '../../utils/tracker.js';
 
 export default function ReportePage() {
   const { slug } = useParams();
@@ -14,6 +15,10 @@ export default function ReportePage() {
   const [loading, setLoading]   = useState(true);
   const [error, setError]       = useState(null);
   const userToken = localStorage.getItem('portal_user_token');
+
+  useEffect(() => {
+    return initTracker(`Reporte ${slug.toUpperCase()}`);
+  }, [slug]);
 
   useEffect(() => {
     const cargar = async () => {

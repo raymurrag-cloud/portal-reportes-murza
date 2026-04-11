@@ -40,7 +40,12 @@ async function enviarEmail({ to, subject, text }) {
 
 // ── Prospectos GBM (público) ───────────────────────────────────────────────
 app.post('/api/prospectos-gbm', async (req, res) => {
-  const { nombre, telefono, correo, valor_portafolio } = req.body || {};
+  const {
+    nombre, telefono, correo, valor_portafolio,
+    fuente, campana, anuncio, dispositivo, sistema_os, navegador,
+    visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json,
+  } = req.body || {};
+
   if (!nombre?.trim() || !telefono?.trim() || !correo?.trim() || !valor_portafolio?.trim())
     return res.status(400).json({ error: 'Todos los campos son requeridos' });
 
@@ -48,18 +53,47 @@ app.post('/api/prospectos-gbm', async (req, res) => {
   let ciudad = null, estado = null;
   try {
     const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.socket.remoteAddress;
-    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,status&lang=es`)
-      .then(r => r.json());
+    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,status&lang=es`).then(r => r.json());
     if (geo.status === 'success') { ciudad = geo.city || null; estado = geo.regionName || null; }
-  } catch (_) { /* no bloquear el registro si falla la geo */ }
+  } catch (_) {}
 
   const { db } = await import('./database.js');
   await db.execute({
-    sql:  'INSERT INTO prospectos_gbm (nombre, telefono, correo, valor_portafolio, ciudad, estado) VALUES (?, ?, ?, ?, ?, ?)',
-    args: [nombre.trim().slice(0, 100), telefono.trim().slice(0, 20), correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50), ciudad, estado],
+    sql: `INSERT INTO prospectos_gbm
+      (nombre, telefono, correo, valor_portafolio, ciudad, estado,
+       fuente, campana, anuncio, dispositivo, sistema_os, navegador,
+       visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+    args: [
+      nombre.trim().slice(0, 100), telefono.trim().slice(0, 20),
+      correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50),
+      ciudad, estado,
+      fuente || null, campana || null, anuncio || null,
+      dispositivo || null, sistema_os || null, navegador || null,
+      visita_recurrente ? 1 : 0, dias_ultima_visita ?? null,
+      tiempo_total_seg ?? null, paginas_json || null,
+    ],
   });
 
-  const ubicacion = ciudad && estado ? `${ciudad}, ${estado}` : ciudad || estado || 'No disponible';
+  // Formatear paginas para el email
+  let paginasTexto = '';
+  try {
+    const paginas = JSON.parse(paginas_json || '[]');
+    paginasTexto = paginas.map((p, i) => {
+      const scroll = p.scroll_max ? ` (scroll ${p.scroll_max}%)` : '';
+      const t = p.tiempo_seg >= 60
+        ? `${Math.floor(p.tiempo_seg / 60)} min ${p.tiempo_seg % 60} seg`
+        : `${p.tiempo_seg || 0} seg`;
+      return `  ${i + 1}. ${p.titulo.padEnd(22)} ${t}${scroll}`;
+    }).join('\n');
+  } catch (_) {}
+
+  const ubicacion  = ciudad && estado ? `${ciudad}, ${estado}` : ciudad || estado || 'No disponible';
+  const recurrente = visita_recurrente ? `Si (hace ${dias_ultima_visita ?? '?'} dias)` : 'No (primera visita)';
+  const tiempoTotal = tiempo_total_seg >= 60
+    ? `${Math.floor(tiempo_total_seg / 60)} min ${tiempo_total_seg % 60} seg`
+    : `${tiempo_total_seg || 0} seg`;
+
   enviarEmail({
     to:      'rmurra@murzainversiones.com',
     subject: `Nuevo prospecto GBM: ${nombre.trim()}`,
@@ -70,12 +104,30 @@ app.post('/api/prospectos-gbm', async (req, res) => {
       `Telefono:         ${telefono.trim()}`,
       `Correo:           ${correo.trim()}`,
       `Valor portafolio: ${valor_portafolio.trim()}`,
-      `Ubicacion:        ${ubicacion}`,
+      '',
+      '── Ubicacion ──────────────────────────',
+      `Ciudad:           ${ubicacion}`,
+      '',
+      '── Dispositivo ────────────────────────',
+      `Dispositivo:      ${dispositivo || 'Desconocido'}`,
+      `Sistema:          ${sistema_os || 'Desconocido'}`,
+      `Navegador:        ${navegador || 'Desconocido'}`,
+      '',
+      '── Origen ─────────────────────────────',
+      `Fuente:           ${fuente || 'Directo'}`,
+      campana ? `Campana:          ${campana}` : null,
+      anuncio ? `Anuncio:          ${anuncio}` : null,
+      '',
+      '── Comportamiento ─────────────────────',
+      `Visita recurrente: ${recurrente}`,
+      `Tiempo en sitio:  ${tiempoTotal}`,
+      paginasTexto ? `Paginas vistas:\n${paginasTexto}` : null,
       '',
       'Ver todos los prospectos: https://reportes.murzainversiones.com/admin/prospectos',
-    ].join('\n'),
+    ].filter(l => l !== null).join('\n'),
   }).then(() => console.log('Email prospecto GBM enviado OK'))
     .catch(err => console.error('Email prospecto GBM error:', err.message));
+
   res.status(201).json({ ok: true });
 });
 

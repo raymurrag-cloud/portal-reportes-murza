@@ -95,7 +95,7 @@ router.get('/leads', async (req, res) => {
 // ── Lista de prospectos GBM ───────────────────────────────────────────────
 router.get('/prospectos', async (req, res) => {
   const { rows } = await db.execute({
-    sql:  'SELECT id, nombre, telefono, correo, valor_portafolio, ciudad, estado, created_at FROM prospectos_gbm ORDER BY created_at DESC',
+    sql:  'SELECT id, nombre, telefono, correo, valor_portafolio, ciudad, estado, fuente, campana, dispositivo, sistema_os, visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json, created_at FROM prospectos_gbm ORDER BY created_at DESC',
     args: [],
   });
   res.json(rows.map(r => ({ ...r, id: Number(r.id) })));

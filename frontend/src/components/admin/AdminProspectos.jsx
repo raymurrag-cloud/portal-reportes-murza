@@ -52,27 +52,67 @@ export default function AdminProspectos() {
                 <tr>
                   <th>Nombre</th>
                   <th>Telefono</th>
-                  <th>Correo</th>
                   <th>Portafolio</th>
                   <th>Ubicacion</th>
+                  <th>Dispositivo</th>
+                  <th>Origen</th>
+                  <th>Comportamiento</th>
                   <th>Fecha</th>
                 </tr>
               </thead>
               <tbody>
-                {prospectos.map(p => (
-                  <tr key={p.id}>
-                    <td style={{ fontWeight: 600 }}>{p.nombre}</td>
-                    <td>{p.telefono}</td>
-                    <td>{p.correo}</td>
-                    <td>{p.valor_portafolio}</td>
-                    <td style={{ color: 'var(--text-muted)', fontSize: 13 }}>
-                      {p.ciudad && p.estado ? `${p.ciudad}, ${p.estado}` : p.ciudad || p.estado || '—'}
-                    </td>
-                    <td style={{ color: 'var(--text-muted)', fontSize: 13 }}>
-                      {new Date(p.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'short', day: 'numeric' })}
-                    </td>
-                  </tr>
-                ))}
+                {prospectos.map(p => {
+                  // Formatear paginas visitadas
+                  let paginasResumen = '—';
+                  try {
+                    const pags = JSON.parse(p.paginas_json || '[]');
+                    if (pags.length > 0) {
+                      paginasResumen = pags.map(pg => {
+                        const t = pg.tiempo_seg >= 60
+                          ? `${Math.floor(pg.tiempo_seg/60)}m${pg.tiempo_seg%60}s`
+                          : `${pg.tiempo_seg||0}s`;
+                        const scroll = pg.scroll_max ? ` ${pg.scroll_max}%` : '';
+                        return `${pg.titulo} (${t}${scroll})`;
+                      }).join(' → ');
+                    }
+                  } catch (_) {}
+
+                  const tiempoTotal = p.tiempo_total_seg >= 60
+                    ? `${Math.floor(p.tiempo_total_seg/60)}m ${p.tiempo_total_seg%60}s`
+                    : `${p.tiempo_total_seg||0}s`;
+
+                  return (
+                    <tr key={p.id}>
+                      <td style={{ fontWeight: 600 }}>
+                        {p.nombre}
+                        <div style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 400 }}>{p.correo}</div>
+                      </td>
+                      <td>{p.telefono}</td>
+                      <td>{p.valor_portafolio}</td>
+                      <td style={{ fontSize: 13 }}>
+                        {p.ciudad && p.estado ? `${p.ciudad}, ${p.estado}` : p.ciudad || p.estado || '—'}
+                      </td>
+                      <td style={{ fontSize: 13 }}>
+                        {p.dispositivo || '—'}
+                        {p.sistema_os && <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>{p.sistema_os}</div>}
+                      </td>
+                      <td style={{ fontSize: 13 }}>
+                        {p.fuente || '—'}
+                        {p.campana && <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>{p.campana}</div>}
+                      </td>
+                      <td style={{ fontSize: 12, maxWidth: 280 }}>
+                        <div style={{ color: p.visita_recurrente ? '#16A34A' : 'var(--text-muted)' }}>
+                          {p.visita_recurrente ? `Recurrente (hace ${p.dias_ultima_visita ?? '?'} dias)` : 'Primera visita'}
+                        </div>
+                        <div style={{ color: 'var(--text-muted)' }}>Tiempo: {tiempoTotal}</div>
+                        <div style={{ color: 'var(--text-muted)', marginTop: 2, lineHeight: 1.4 }}>{paginasResumen}</div>
+                      </td>
+                      <td style={{ color: 'var(--text-muted)', fontSize: 13 }}>
+                        {new Date(p.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'short', day: 'numeric' })}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
