@@ -54,7 +54,37 @@ export default function ReportePage() {
         <meta property="og:title" content={`${reporte.empresa} (${reporte.ticker}) — Análisis Financiero`} />
         <meta property="og:description" content={reporte.meta_descripcion} />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href={`${window.location.origin}/reporte/${reporte.slug}`} />
+        <meta property="og:url" content={`https://reportes.murzainversiones.com/reporte/${reporte.slug}`} />
+        <link rel="canonical" href={`https://reportes.murzainversiones.com/reporte/${reporte.slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": `${reporte.empresa} (${reporte.ticker}) — Analisis Financiero`,
+          "description": reporte.meta_descripcion,
+          "url": `https://reportes.murzainversiones.com/reporte/${reporte.slug}`,
+          "datePublished": reporte.created_at ? reporte.created_at.split(' ')[0] : undefined,
+          "dateModified": reporte.updated_at ? reporte.updated_at.split(' ')[0] : reporte.created_at?.split(' ')[0],
+          "inLanguage": "es",
+          "author": {
+            "@type": "Person",
+            "name": "Ray Murra",
+            "worksFor": { "@type": "Organization", "name": "Murza Inversiones" }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Murza Inversiones",
+            "url": "https://reportes.murzainversiones.com",
+            "logo": { "@type": "ImageObject", "url": "https://reportes.murzainversiones.com/murza-logo.png" }
+          },
+          "about": {
+            "@type": "Corporation",
+            "tickerSymbol": reporte.ticker,
+            "name": reporte.empresa,
+            "description": `Empresa publica de EE.UU. cotizada en bolsa bajo el ticker ${reporte.ticker}`
+          },
+          "articleSection": "Analisis Financiero",
+          "keywords": `${reporte.ticker}, ${reporte.empresa}, analisis financiero, 10-K, FCF, EBITDA, valuacion, invertir en bolsa`
+        })}</script>
       </Helmet>
 
       <div className="portal-page">

@@ -1,4 +1,46 @@
 User-agent: *
 Disallow: /admin/
 Allow: /
+
+# ── AI Training Bots ──────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: GoogleExtended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ── AI Search & Retrieval Bots (indexan para respuestas en tiempo real) ──────
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Gemini-Crawl
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://reportes.murzainversiones.com/api/reportes/sitemap.xml

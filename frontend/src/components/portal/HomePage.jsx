@@ -200,7 +200,55 @@ export default function HomePage() {
     <>
       <Helmet>
         <title>Analisis Financiero de Empresas | Murza Inversiones</title>
-        <meta name="description" content="Reportes de analisis financiero de empresas publicas. Busca por ticker y accede a analisis fundamentales detallados." />
+        <meta name="description" content="Reportes de analisis financiero de empresas publicas de EE.UU. basados en datos SEC EDGAR. Analisis fundamental con tablas financieras, ratios de valuacion, FCF, EBITDA y veredicto de inversion. En espanol para inversionistas de Mexico y Latinoamerica." />
+        <meta property="og:title" content="Analisis Financiero de Empresas | Murza Inversiones" />
+        <meta property="og:description" content="Portal de analisis fundamental de empresas publicas de EE.UU. Reportes basados en 10-K/10-Q de SEC EDGAR. Gratis. En espanol." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reportes.murzainversiones.com" />
+        <link rel="canonical" href="https://reportes.murzainversiones.com" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://reportes.murzainversiones.com/#organization",
+              "name": "Murza Inversiones",
+              "url": "https://reportes.murzainversiones.com",
+              "logo": "https://reportes.murzainversiones.com/murza-logo.png",
+              "description": "Firma de asesoria financiera independiente con sede en Mexico. Produce reportes de analisis fundamental de empresas publicas de EE.UU. para inversionistas hispanohablantes.",
+              "founder": { "@type": "Person", "name": "Ray Murra" },
+              "areaServed": ["MX", "LA"],
+              "knowsLanguage": "es",
+              "sameAs": []
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://reportes.murzainversiones.com/#website",
+              "url": "https://reportes.murzainversiones.com",
+              "name": "Murza Inversiones — Portal de Analisis Financiero",
+              "description": "Portal de reportes de analisis fundamental de empresas publicas de EE.UU. basados en 10-K/10-Q de la SEC. Tablas financieras, ratios de valuacion, FCF, EBITDA, Quality Score y veredicto de inversion.",
+              "publisher": { "@id": "https://reportes.murzainversiones.com/#organization" },
+              "inLanguage": "es",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": { "@type": "EntryPoint", "urlTemplate": "https://reportes.murzainversiones.com/?ticker={search_term_string}" },
+                "query-input": "required name=search_term_string"
+              }
+            },
+            {
+              "@type": "ItemList",
+              "name": "Reportes de Analisis Financiero disponibles",
+              "description": "Lista de empresas publicas de EE.UU. con analisis fundamental basado en 10-K SEC EDGAR",
+              "numberOfItems": todosReportes.length,
+              "itemListElement": todosReportes.slice(0, 20).map((r, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "url": `https://reportes.murzainversiones.com/reporte/${r.slug}`,
+                "name": `${r.empresa} (${r.ticker}) — Analisis Financiero`
+              }))
+            }
+          ]
+        })}</script>
       </Helmet>
 
       <div className="portal-page">

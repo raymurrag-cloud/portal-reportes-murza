@@ -83,21 +83,41 @@ router.get('/:slug/completo', authUser, async (req, res) => {
 
 // ── Sitemap XML ───────────────────────────────────────────────────────────
 router.get('/sitemap.xml', async (req, res) => {
-  const { rows } = await db.execute({ sql: 'SELECT slug, updated_at FROM reportes WHERE publicado = 1', args: [] });
+  const { rows } = await db.execute({ sql: 'SELECT slug, ticker, empresa, updated_at, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC', args: [] });
 
   const base = process.env.SITE_URL || 'https://reportes.murzainversiones.com';
-  const urls = rows.map(r => `
+  const today = new Date().toISOString().split('T')[0];
+
+  const staticUrls = [
+    { loc: base, priority: '1.0', changefreq: 'daily', lastmod: today },
+    { loc: `${base}/earnings`, priority: '0.8', changefreq: 'weekly', lastmod: today },
+    { loc: `${base}/registro`, priority: '0.5', changefreq: 'monthly', lastmod: today },
+  ];
+
+  const staticXml = staticUrls.map(u => `
   <url>
-    <loc>${base}/reporte/${r.slug}</loc>
-    <lastmod>${r.updated_at?.split(' ')[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>${u.loc}</loc>
+    <lastmod>${u.lastmod}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
   </url>`).join('');
 
+  const reportXml = rows.map(r => {
+    const lastmod = (r.updated_at || r.created_at || today).split(' ')[0];
+    return `
+  <url>
+    <loc>${base}/reporte/${r.slug}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+  }).join('');
+
   res.header('Content-Type', 'application/xml');
+  res.header('Cache-Control', 'public, max-age=3600');
   res.send(`<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${base}</loc><priority>1.0</priority></url>${urls}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${staticXml}${reportXml}
 </urlset>`);
 });
 
