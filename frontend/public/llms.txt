@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (30 empresas)
+## Reportes de acciones (31 empresas)
 
+- [Invesco QQQ Trust (NASDAQ-100 ETF) (QQQ)](https://reportes.murzainversiones.com/reporte/QQQ): Reporte completo del ETF QQQ (Invesco QQQ Trust): AUM, expense ratio, rendimientos historicos, top holdings, analisis del NASDAQ-100 y comparacion vs S&P500. Veredicto: Mantener / Compra en Correcciones.
 - [Alibaba Group Holding Ltd (BABA)](https://reportes.murzainversiones.com/reporte/BABA): Analisis financiero completo de Alibaba Group (BABA): revenue 129.3B USD, caja neta 52.5B, valuacion en minimos historicos con riesgo regulatorio China. Veredicto: Mantener / Compra en Correccion.
 - [Constellation Energy Group (CEG)](https://reportes.murzainversiones.com/reporte/CEG): Analisis financiero de Constellation Energy Group (CEG): lider en energia nuclear en EE.UU., con 32.4 GW de capacidad y contratos de largo plazo con hyperscalers Veredicto: Mantener / Compra en Correccion.
 - [Carvana Co. (CVNA)](https://reportes.murzainversiones.com/reporte/CVNA): Analisis financiero completo de Carvana (CVNA): turnaround operativo, margenes record en FY2025, deuda y valuacion basado en el 10-K 2025. Veredicto: Mantener / Compra en Correccion.
