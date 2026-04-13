@@ -228,7 +228,10 @@ app.get('/api/precio/:ticker', async (req, res) => {
   }
 });
 
-// ── /llms.txt — Guia de navegacion para agentes de IA ────────────────────
+// ── llms.txt y llms-full.txt se sirven como estaticos desde Vercel CDN ──────
+// Generados por generate-llms.mjs al finalizar cada /reporte-financiero.
+
+// ── Placeholder (nunca deberia llegar aqui) ───────────────────────────────
 app.get('/llms.txt', async (req, res) => {
   const { db } = await import('./database.js');
   const { rows } = await db.execute({

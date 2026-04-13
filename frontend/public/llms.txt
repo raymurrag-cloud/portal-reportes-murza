@@ -1,0 +1,59 @@
+# Murza Inversiones — Portal de Analisis Financiero
+
+> Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
+
+## Reportes de acciones (30 empresas)
+
+- [Alibaba Group Holding Ltd (BABA)](https://reportes.murzainversiones.com/reporte/BABA): Analisis financiero completo de Alibaba Group (BABA): revenue 129.3B USD, caja neta 52.5B, valuacion en minimos historicos con riesgo regulatorio China. Veredicto: Mantener / Compra en Correccion.
+- [Constellation Energy Group (CEG)](https://reportes.murzainversiones.com/reporte/CEG): Analisis financiero de Constellation Energy Group (CEG): lider en energia nuclear en EE.UU., con 32.4 GW de capacidad y contratos de largo plazo con hyperscalers Veredicto: Mantener / Compra en Correccion.
+- [Carvana Co. (CVNA)](https://reportes.murzainversiones.com/reporte/CVNA): Analisis financiero completo de Carvana (CVNA): turnaround operativo, margenes record en FY2025, deuda y valuacion basado en el 10-K 2025. Veredicto: Mantener / Compra en Correccion.
+- [Salesforce, Inc. (CRM)](https://reportes.murzainversiones.com/reporte/CRM): Analisis financiero completo de Salesforce (CRM): revenue 41.5B USD, FCF 14.4B USD, Agentforce IA agentica y valuacion atractiva a P/FCF 11.8x. Veredicto: Comprar con Conviccion.
+- [Marvell Technology, Inc. (MRVL)](https://reportes.murzainversiones.com/reporte/MRVL): Analisis financiero MRVL: Revenue +42% YoY a 8.19B USD en FY26, impulsado por AI custom chips y electro-optica. P/E Forward 24x, posicion estrategica en infraestructura AI. Veredicto: Mantener / Compra en Correccion.
+- [Sea Limited (SE)](https://reportes.murzainversiones.com/reporte/SE): Analisis financiero FY2025 de Sea Limited (NYSE: SE): Shopee, Monee y Garena. Revenue 22.9B USD +36% YoY, FCF 4.5B, caja neta 9B USD. Veredicto: Comprar con Conviccion.
+- [PayPal Holdings, Inc. (PYPL)](https://reportes.murzainversiones.com/reporte/PYPL): Analisis financiero completo de PayPal Holdings (PYPL): revenue 33.2B USD, FCF yield 13.3%, P/E 8x, veredicto Mantener con sesgo comprador. Veredicto: Mantener / Compra en Correccion.
+- [ASML Holding N.V. (ASML)](https://reportes.murzainversiones.com/reporte/ASML): Analisis financiero completo de ASML Holding: el monopolio mundial en litografia EUV, resultados FY2025, valuacion y perspectivas ante la demanda de AI. Veredicto: Compra en Correccion.
+- [Oracle Corporation (ORCL)](https://reportes.murzainversiones.com/reporte/ORCL): Analisis financiero completo de Oracle Corporation (ORCL): ingresos, margenes, OCI, base de datos, valuacion y perspectivas 2025. Veredicto: Compra con Conviccion en Correcciones.
+- [Chevron Corporation (CVX)](https://reportes.murzainversiones.com/reporte/CVX): Reporte financiero Chevron (CVX): ingresos 189B, FCF 16.6B, Dividend Aristocrat 38 anos, activos Guyana post-Hess. Analisis FY2025. Veredicto: Mantener / Compra en Correccion.
+- [Netflix, Inc. (NFLX)](https://reportes.murzainversiones.com/reporte/NFLX): Analisis financiero completo de Netflix FY2025: revenue 45.2B USD, margen operativo 29.5%, FCF 9.46B. Valuacion, riesgos y veredicto de inversion actualizado. Veredicto: Comprar con Conviccion.
+- [Uber Technologies, Inc. (UBER)](https://reportes.murzainversiones.com/reporte/UBER): Analisis financiero de Uber Technologies: ingresos, margenes, FCF record y perspectivas de inversion para 2025-2026. Veredicto: Mantener / Comprar en Correccion.
+- [Tesla, Inc. (TSLA)](https://reportes.murzainversiones.com/reporte/TSLA): Analisis financiero completo de Tesla (TSLA) 2025: ingresos $94.8B, FCF $6.2B, transicion a IA y Robotaxi. Datos del 10-K 2025. Veredicto: Especulativo -- IA Premium en Transicion.
+- [Coupang, Inc. (CPNG)](https://reportes.murzainversiones.com/reporte/CPNG): Analisis financiero completo de Coupang (CPNG): ingresos $34.5B, lider e-commerce en Korea, balance solido con $5.67B caja neta, valuacion atractiva a 1.0x ventas. Veredicto: MANTENER / ACUMULAR EN CAIDAS.
+- [Microsoft Corporation (MSFT)](https://reportes.murzainversiones.com/reporte/MSFT): Analisis financiero de Microsoft (MSFT) basado en 10-K FY2025. Revenue record 281.7B +15% YoY, Azure +30%, margen operativo 45.6%, utilidad neta 101.8B. Activo de primera calidad a valuacion exigente. Veredicto: Mantener / Compra en Correccion.
+- [Sandisk Corp (SNDK)](https://reportes.murzainversiones.com/reporte/SNDK): Analisis financiero de SanDisk (SNDK) basado en 10-K FY2025. Revenue 7.36B +10.5% YoY, margen bruto recuperado a 30.1% desde 7.1% en FY2023, Cloud +195% YoY. Valuacion especulativa a 102B de market cap. Veredicto: Especulativo — Alta Valuacion.
+- [MercadoLibre Inc. (MELI)](https://reportes.murzainversiones.com/reporte/MELI): Analisis financiero de MercadoLibre (MELI) basado en 10-K FY2025. Revenue 28.89B +39% YoY, lider en e-commerce y fintech LATAM, OCF 12.12B, Mercado Pago principal contribuidor de revenue. Veredicto: Mantener con Sesgo Positivo.
+- [Palantir Technologies Inc. (PLTR)](https://reportes.murzainversiones.com/reporte/PLTR): Analisis financiero de Palantir (PLTR) basado en 10-K FY2025. Revenue $4.48B +56% YoY, lider en IA operacional con AIP, FCF $2.1B, balance sin deuda. P/E 215x — negocio excepcional a valuacion extrema. Veredicto: Mantener / Comprar en Caidas.
+- [Novo Nordisk A/S (NVO)](https://reportes.murzainversiones.com/reporte/NVO): Analisis financiero de Novo Nordisk (NVO) basado en 20-F 2025. Revenue $44.2B, lider GLP-1 con Ozempic y Wegovy, valuacion en minimos historicos P/E 11x, guidance 2026 negativo. Veredicto: Mantener / Especulativo en recuperacion.
+- [Eli Lilly and Company (LLY)](https://reportes.murzainversiones.com/reporte/LLY): Analisis financiero de Eli Lilly (LLY) basado en 10-K 2025. Revenue $65.2B, margenes record 83% bruto, dominio GLP-1 con Mounjaro y Zepbound, veredicto de inversion. Veredicto: Mantener / Acumular en debilidad.
+- [Advanced Micro Devices Inc. (AMD)](https://reportes.murzainversiones.com/reporte/AMD): Analisis financiero de Advanced Micro Devices (AMD) basado en 10-K FY2024. Data Center, AI, CPU vs Intel, FCF y veredicto de inversion. Veredicto: Mantener / Vigilar.
+- [Apple Inc. (AAPL)](https://reportes.murzainversiones.com/reporte/AAPL): Analisis financiero de Apple Inc. (AAPL) basado en 10-K FY2025. Revenue, margenes, FCF, servicios y veredicto de inversion. Veredicto: Mantener con Sesgo Positivo.
+- [Amazon.com Inc. (AMZN)](https://reportes.murzainversiones.com/reporte/AMZN): Analisis financiero de Amazon (AMZN) basado en 10-K FY2025. Revenue $716.9B, AWS +20%, margen neto 10.9%, EBITDA $145.7B. Veredicto y KPIs actualizados. Veredicto: Comprar con Conviccion.
+- [Costco Wholesale Corporation (COST)](https://reportes.murzainversiones.com/reporte/COST): Analisis financiero de Costco Wholesale (COST) basado en 10-K fiscal 2025. Revenue $275.2B, FCF $7.8B, modelo de membresias, riesgos y veredicto de inversion. Veredicto: Mantener / Calidad Premium.
+- [Broadcom Inc. (AVGO)](https://reportes.murzainversiones.com/reporte/AVGO): Analisis financiero de Broadcom (AVGO) basado en 10-K fiscal 2025. Revenue $63.9B, FCF $26.9B, AI semiconductor +74% YoY, veredicto de inversion. Veredicto: Comprar con Conviccion.
+- [Alphabet Inc. (GOOGL)](https://reportes.murzainversiones.com/reporte/GOOGL): Analisis financiero de Alphabet Inc. (GOOGL) basado en Form 10-K FY2025. Revenue $402.8B, Cloud +48%, margen neto 32.8%, EPS $10.80. Veredicto: Comprar con Conviccion. Veredicto: Comprar con Conviccion.
+- [NVIDIA Corporation (NVDA)](https://reportes.murzainversiones.com/reporte/NVDA): Analisis financiero de NVIDIA Corporation (NVDA) basado en Form 10-K FY2025. Revenue $130.5B, margen neto 55.8%, FCF $60.9B. Reporte completo con margenes, KPIs, riesgos y veredicto de inversion. Veredicto: Comprar con Conviccion.
+- [Meta Platforms Inc. (META)](https://reportes.murzainversiones.com/reporte/META): Analisis financiero completo de Meta Platforms FY2025: revenue 201B USD +22% YoY, margen operativo 41.4%, FCF 46B USD y estrategia de IA con capex record de 69.7B. Veredicto: Comprar con Conviccion.
+- [Adobe Inc. (ADBE)](https://reportes.murzainversiones.com/reporte/ADBE): Analisis financiero de Adobe Inc. (ADBE) basado en 10-K FY2025. Revenue $23.77B, FCF $9.85B, margen bruto 89.3%. Veredicto, KPIs, riesgos y graficas. Veredicto: Comprar con Conviccion.
+- [Micron Technology Inc. (MU)](https://reportes.murzainversiones.com/reporte/MU): Análisis financiero de Micron Technology Inc. (MU) Veredicto: Comprar con Conviccion.
+
+## Calendario de Earnings
+
+- [Calendario de Earnings](https://reportes.murzainversiones.com/earnings): Proximas fechas de resultados trimestrales, estimados de EPS y revenue, sorpresa historica, P/E Forward y puntos clave a vigilar por empresa.
+
+## Pagina principal
+
+- [Inicio](https://reportes.murzainversiones.com): Directorio completo de reportes, buscador por ticker, y formulario para solicitar analisis de nuevas empresas.
+
+## Recursos para sistemas de IA
+
+- [llms-full.txt](https://reportes.murzainversiones.com/llms-full.txt): Contenido completo — metodologia, glosario y resumen financiero de cada empresa.
+- [Sitemap XML](https://reportes.murzainversiones.com/api/reportes/sitemap.xml): Todas las URLs con fechas de actualizacion.
+
+## Metodologia
+
+Fuente: API XBRL SEC EDGAR. Metricas: Revenue, Utilidad Neta, EBITDA, FCF (=FCO-Capex), EPS diluido, Deuda Neta, Margen Neto, ROE, ROIC. Ratios de valuacion (P/E, P/FCF, EV/EBITDA) calculados en tiempo real con precio via Yahoo Finance. Estimados forward: consenso de analistas.
+
+Escala de veredictos: Comprar con Conviccion > Comprar > Mantener > Reducir > Evitar
+
+## Sobre Murza Inversiones
+
+Firma de asesoria financiera con sede en Mexico. Fundador: Ray Murra, asesor afiliado a GBM (Grupo Bursatil Mexicano). Cobertura: Mexico y Latinoamerica.
