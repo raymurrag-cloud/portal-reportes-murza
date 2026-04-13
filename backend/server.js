@@ -228,6 +228,184 @@ app.get('/api/precio/:ticker', async (req, res) => {
   }
 });
 
+// ── /llms.txt — Guia de navegacion para agentes de IA ────────────────────
+app.get('/llms.txt', async (req, res) => {
+  const { db } = await import('./database.js');
+  const { rows } = await db.execute({
+    sql: `SELECT ticker, empresa, slug, meta_descripcion, contenido_json, tipo
+          FROM reportes WHERE publicado = 1 ORDER BY created_at DESC`,
+    args: [],
+  });
+
+  const acciones = rows.filter(r => r.tipo !== 'etf');
+  const etfs     = rows.filter(r => r.tipo === 'etf');
+  const base     = 'https://reportes.murzainversiones.com';
+
+  const formatLinea = (r) => {
+    let veredicto = '';
+    try {
+      const j = JSON.parse(r.contenido_json);
+      if (j?.verdict?.status) veredicto = ` Veredicto: ${j.verdict.status}.`;
+    } catch (_) {}
+    return `- [${r.empresa} (${r.ticker})](${base}/reporte/${r.slug}): ${r.meta_descripcion || ''}${veredicto}`;
+  };
+
+  let md = `# Murza Inversiones — Portal de Analisis Financiero\n\n`;
+  md += `> Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Cada reporte incluye tablas financieras de 5 anos, ratios de valuacion calculados en tiempo real, graficas de ingresos y margenes, deteccion de deterioro operativo, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para inversionistas de Mexico y Latinoamerica.\n\n`;
+
+  if (acciones.length > 0) {
+    md += `## Reportes de acciones (${acciones.length} empresas)\n\n`;
+    md += acciones.map(formatLinea).join('\n') + '\n\n';
+  }
+
+  if (etfs.length > 0) {
+    md += `## Reportes de ETFs (${etfs.length} fondos)\n\n`;
+    md += etfs.map(formatLinea).join('\n') + '\n\n';
+  }
+
+  md += `## Calendario de Earnings\n\n`;
+  md += `- [Calendario de Earnings](${base}/earnings): Proximas fechas de resultados trimestrales, estimados de EPS y revenue, porcentaje de sorpresa historica, P/E Forward y puntos clave a vigilar en cada empresa cubierta.\n\n`;
+
+  md += `## Pagina principal\n\n`;
+  md += `- [Inicio](${base}): Directorio completo de reportes, buscador por ticker, y formulario para solicitar analisis de nuevas empresas.\n\n`;
+
+  md += `## Recursos para sistemas de IA\n\n`;
+  md += `- [llms-full.txt](${base}/llms-full.txt): Contenido completo del portal en un solo archivo — metodologia, glosario y resumen financiero de cada empresa.\n`;
+  md += `- [Sitemap XML](${base}/api/reportes/sitemap.xml): Todas las URLs publicadas con fechas de actualizacion.\n\n`;
+
+  md += `## Metodologia\n\n`;
+  md += `Fuente: API XBRL de SEC EDGAR (companyfacts). Metricas: Revenue, Utilidad Neta, EBITDA, FCF (=FCO-Capex), EPS diluido, Deuda Neta (=Deuda LP - Efectivo), Margen Neto, ROE, ROIC. Ratios de valuacion (P/E, P/FCF, EV/EBITDA) se recalculan en tiempo real con el precio actual de la accion via Yahoo Finance. Estimados forward provienen de consenso de analistas.\n\n`;
+  md += `Escala de veredictos: Comprar con Conviccion > Comprar > Mantener > Reducir > Evitar.\n\n`;
+
+  md += `## Sobre Murza Inversiones\n\n`;
+  md += `Firma de asesoria financiera con sede en Mexico. Fundador: Ray Murra, asesor de inversiones afiliado a GBM (Grupo Bursatil Mexicano). Cobertura: Mexico y Latinoamerica.\n`;
+
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.send(md);
+});
+
+// ── /llms-full.txt — Contenido completo para ingesta directa por IA ───────
+app.get('/llms-full.txt', async (req, res) => {
+  const { db } = await import('./database.js');
+  const { rows } = await db.execute({
+    sql: `SELECT ticker, empresa, slug, meta_descripcion, contenido_json, tipo, created_at
+          FROM reportes WHERE publicado = 1 ORDER BY created_at DESC`,
+    args: [],
+  });
+
+  const base = 'https://reportes.murzainversiones.com';
+  const today = new Date().toISOString().split('T')[0];
+
+  let md = `# Murza Inversiones — Portal de Analisis Financiero\n`;
+  md += `## Guia completa para sistemas de IA\n\n`;
+  md += `**URL**: ${base}\n`;
+  md += `**Actualizado**: ${today}\n`;
+  md += `**Idioma**: Espanol\n`;
+  md += `**Cobertura**: Mexico y Latinoamerica\n\n---\n\n`;
+
+  md += `## Que es este portal\n\n`;
+  md += `Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales del 10-K/10-Q presentados ante la SEC via EDGAR. Diseñado para inversionistas hispanohablantes. Acceso libre con registro gratuito. Fundador: Ray Murra, asesor de inversiones afiliado a GBM (Grupo Bursatil Mexicano).\n\n`;
+
+  md += `## Metodologia\n\n`;
+  md += `**Fuente primaria**: API XBRL de SEC EDGAR — https://data.sec.gov/api/xbrl/companyfacts/CIK{CIK}.json\n\n`;
+  md += `**Metricas calculadas**:\n`;
+  md += `- FCF = Flujo de caja operativo - Capex\n`;
+  md += `- EBITDA = Utilidad operativa + Depreciacion y amortizacion\n`;
+  md += `- Deuda Neta = Deuda LP - Efectivo\n`;
+  md += `- ROE = Utilidad Neta / Patrimonio Neto\n`;
+  md += `- ROIC = NOPAT / Capital invertido\n\n`;
+  md += `**Ratios de valuacion**: P/E Trailing, P/E Forward, EV/EBITDA, P/FCF — recalculados en tiempo real con precio de Yahoo Finance.\n\n`;
+  md += `**Estimados forward** (EPS/Revenue): consenso de analistas de Wall Street.\n\n`;
+  md += `**Escala de veredictos**: Comprar con Conviccion | Comprar | Mantener | Reducir | Evitar\n\n`;
+  md += `**Estructura de cada reporte**: Resumen ejecutivo, tabla financiera 5 anos, KPIs de valuacion, graficas de ingresos y margenes, deteccion de deterioro operativo (semaforo ok/warn/bad), red flags y fortalezas (verde/amarillo/rojo), Quality Score 1-10, analisis cualitativo, comparacion sectorial, capital allocation, veredicto final.\n\n---\n\n`;
+
+  // Seccion por cada reporte
+  const acciones = rows.filter(r => r.tipo !== 'etf');
+  const etfs     = rows.filter(r => r.tipo === 'etf');
+
+  const renderReporte = (r) => {
+    let section = `### ${r.ticker} — ${r.empresa}\n`;
+    section += `**URL**: ${base}/reporte/${r.slug}\n`;
+    if (r.created_at) section += `**Publicado**: ${r.created_at.split(' ')[0]}\n`;
+
+    try {
+      const j = JSON.parse(r.contenido_json);
+
+      if (j?.resumen)      section += `\n${j.resumen}\n`;
+      if (j?.descripcion)  section += `\n${j.descripcion}\n`;
+
+      // Tabla financiera resumida
+      if (j?.tabla?.headers && j?.tabla?.rows?.length) {
+        const hdrs = j.tabla.headers;
+        const rows = j.tabla.rows;
+        section += `\n**Tabla financiera**:\n`;
+        rows.forEach(row => {
+          const metrica = row[0];
+          const ultimo  = row[row.length - 2]; // penultimo = ultimo año completo
+          const yoy     = row[row.length - 1]; // ultimo = var YoY
+          section += `- ${metrica}: ${ultimo} (${yoy} YoY)\n`;
+        });
+      }
+
+      // KPIs de valuacion
+      if (j?.kpis?.length) {
+        section += `\n**KPIs de valuacion**: `;
+        section += j.kpis.map(k => `${k.label} ${k.value}`).join(', ') + '\n';
+      }
+
+      // Veredicto
+      if (j?.verdict) {
+        section += `\n**Veredicto**: ${j.verdict.status || ''} (Score: ${j.verdict.score || ''})\n`;
+        if (j.verdict.bullets?.length) {
+          j.verdict.bullets.forEach(b => {
+            const tipo = b.type === 'pro' ? '+' : '-';
+            section += `${tipo} ${b.text.replace(/\*\*/g, '')}\n`;
+          });
+        }
+      }
+    } catch (_) {
+      if (r.meta_descripcion) section += `\n${r.meta_descripcion}\n`;
+    }
+
+    section += `\n`;
+    return section;
+  };
+
+  if (acciones.length > 0) {
+    md += `## Reportes de acciones (${acciones.length} empresas)\n\n`;
+    md += acciones.map(renderReporte).join('---\n\n');
+  }
+
+  if (etfs.length > 0) {
+    md += `## Reportes de ETFs (${etfs.length} fondos)\n\n`;
+    md += etfs.map(renderReporte).join('---\n\n');
+  }
+
+  md += `---\n\n## Glosario\n\n`;
+  md += `- **Revenue**: Ingresos totales del periodo\n`;
+  md += `- **Utilidad Neta**: Revenue menos todos los costos, impuestos e intereses\n`;
+  md += `- **EBITDA**: Earnings Before Interest, Taxes, Depreciation & Amortization\n`;
+  md += `- **FCF**: Free Cash Flow — efectivo real generado por el negocio\n`;
+  md += `- **EPS**: Earnings Per Share — utilidad por accion diluida\n`;
+  md += `- **Deuda Neta**: Deuda financiera menos efectivo (negativa = caja neta)\n`;
+  md += `- **P/E**: Price-to-Earnings — precio / EPS\n`;
+  md += `- **P/E Forward**: Precio / EPS estimado siguiente ejercicio fiscal\n`;
+  md += `- **EV/EBITDA**: Enterprise Value / EBITDA — metrica de adquisicion\n`;
+  md += `- **P/FCF**: Market Cap / FCF anual\n`;
+  md += `- **ROE**: Return on Equity — eficiencia del capital propio\n`;
+  md += `- **ROIC**: Return on Invested Capital — eficiencia del capital total\n`;
+  md += `- **YoY**: Year-over-Year — variacion vs. mismo periodo del ano anterior\n`;
+  md += `- **TTM**: Trailing Twelve Months — ultimos 12 meses acumulados\n\n`;
+
+  md += `---\n\n## Nota legal\n\n`;
+  md += `Los reportes son con fines informativos y educativos. No constituyen recomendaciones de inversion personalizadas. Cada inversionista debe evaluar su perfil de riesgo antes de tomar decisiones.\n`;
+
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.send(md);
+});
+
 initDb().then(() => {
   app.listen(PORT, () => console.log(`Portal backend corriendo en puerto ${PORT}`));
 }).catch(err => {

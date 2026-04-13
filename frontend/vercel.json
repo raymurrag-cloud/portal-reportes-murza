@@ -1,3 +1,7 @@
 {
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/llms.txt",      "destination": "https://portal-reportes-murza.onrender.com/llms.txt" },
+    { "source": "/llms-full.txt", "destination": "https://portal-reportes-murza.onrender.com/llms-full.txt" },
+    { "source": "/((?!api/).*)",  "destination": "/index.html" }
+  ]
 }
