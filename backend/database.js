@@ -81,5 +81,33 @@ export async function initDb() {
     args: [],
   });
 
+  // Tabla de visitantes (analytics de comportamiento)
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS visitantes (
+      id               INTEGER PRIMARY KEY AUTOINCREMENT,
+      visitor_id       TEXT NOT NULL,
+      session_id       TEXT NOT NULL,
+      pagina_url       TEXT NOT NULL,
+      pagina_titulo    TEXT,
+      tiempo_seg       INTEGER DEFAULT 0,
+      scroll_max       INTEGER DEFAULT 0,
+      fuente           TEXT,
+      campana          TEXT,
+      dispositivo      TEXT,
+      sistema_os       TEXT,
+      visita_recurrente INTEGER DEFAULT 0,
+      ciudad           TEXT,
+      estado           TEXT,
+      created_at       TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+
+  // Índices para consultas de analytics
+  try {
+    await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_visitantes_created ON visitantes(created_at)`, args: [] });
+    await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_visitantes_session ON visitantes(session_id)`, args: [] });
+  } catch { /* ignorar si ya existen */ }
+
   console.log('✅ Base de datos lista (Turso)');
 }
