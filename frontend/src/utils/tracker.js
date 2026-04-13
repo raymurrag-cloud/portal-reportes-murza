@@ -121,6 +121,18 @@ function sendBeacon(payload) {
   } catch {}
 }
 
+// ── Enviar via fetch (para el ping de entrada — beacon no garantiza en load) ──
+function sendPing(payload) {
+  try {
+    fetch(`${API_BASE}/track`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }).catch(() => {});
+  } catch {}
+}
+
 // ── initTracker — llamar en useEffect de cada pagina ─────────────────────────
 // nombrePagina: string legible, ej. "Home", "Reporte NVDA"
 // Devuelve cleanup() para el return del useEffect
@@ -130,6 +142,22 @@ export function initTracker(nombrePagina) {
   const sessionId = getSessionId();
   const meta      = getSessionMeta();
   let scrollMax   = 0;
+
+  // Ping de entrada — registra la visita inmediatamente al cargar la pagina
+  // (tiempo_seg=0, scroll_max=0 — se actualiza en el beacon de salida)
+  sendPing({
+    visitor_id:        visitorId,
+    session_id:        sessionId,
+    pagina_url:        window.location.pathname,
+    pagina_titulo:     nombrePagina,
+    tiempo_seg:        0,
+    scroll_max:        0,
+    fuente:            meta.fuente,
+    campana:           meta.campana,
+    dispositivo:       meta.dispositivo,
+    sistema_os:        meta.sistema,
+    visita_recurrente: meta.esRecurrente ? 1 : 0,
+  });
 
   // Tambien actualizar el mz_session (para getTrackingData del form)
   try {
