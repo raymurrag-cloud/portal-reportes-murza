@@ -44,12 +44,13 @@ export default function ReportePage() {
 
   const esJson    = reporte.es_json && reporte.contenido_json;
   const jsonData  = esJson ? JSON.parse(reporte.contenido_json) : null;
+  const esEtf     = jsonData?.tipo === 'etf';
   const contenido = reporte.completo ? reporte.contenido_md : reporte.contenido_preview;
 
   return (
     <>
       <Helmet>
-        <title>{reporte.empresa} ({reporte.ticker}) — Análisis Financiero | Murza Inversiones</title>
+        <title>{reporte.empresa} ({reporte.ticker}) — {esEtf ? 'Analisis ETF' : 'Analisis Financiero'} | Murza Inversiones</title>
         <meta name="description" content={reporte.meta_descripcion} />
         <meta property="og:title" content={`${reporte.empresa} (${reporte.ticker}) — Análisis Financiero`} />
         <meta property="og:description" content={reporte.meta_descripcion} />
@@ -110,7 +111,15 @@ export default function ReportePage() {
                 <div className="reporte-ticker-hero">{reporte.ticker}</div>
                 <div className="reporte-empresa-hero">{reporte.empresa}</div>
                 <div className="reporte-hero-meta">
-                  <span>Análisis Financiero</span>
+                  {esEtf ? (
+                    <span style={{
+                      background: 'rgba(106,140,106,.15)', border: '1px solid rgba(106,140,106,.32)',
+                      borderRadius: 6, padding: '2px 9px', fontSize: 12, fontWeight: 700,
+                      color: '#3D6B3D', letterSpacing: '0.07em', textTransform: 'uppercase',
+                    }}>ETF</span>
+                  ) : (
+                    <span>Analisis Financiero</span>
+                  )}
                   <span className="hero-sep">·</span>
                   <time>{new Date(reporte.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
                 </div>

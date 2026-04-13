@@ -401,7 +401,12 @@ export default function HomePage() {
               <div className="reportes-grid">
                 {resultados.map(r => (
                   <Link to={`/reporte/${r.slug}`} key={r.id} className="reporte-card">
-                    <span className="reporte-ticker">{r.ticker}</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                      <span className="reporte-ticker">{r.ticker}</span>
+                      {r.tipo === 'etf' && (
+                        <span style={{ fontSize: 10, fontWeight: 700, color: '#3D6B3D', background: 'rgba(106,140,106,.13)', border: '1px solid rgba(106,140,106,.28)', borderRadius: 5, padding: '1px 6px', letterSpacing: '0.07em', textTransform: 'uppercase' }}>ETF</span>
+                      )}
+                    </div>
                     <h3 className="reporte-empresa">{r.empresa}</h3>
                     <p className="reporte-desc">{r.meta_descripcion}</p>
                     <span className="reporte-fecha">{formatMes(r.created_at)}</span>
@@ -427,7 +432,12 @@ export default function HomePage() {
             <div className="reportes-grid">
               {recientes.map(r => (
                 <Link to={`/reporte/${r.slug}`} key={r.id} className="reporte-card">
-                  <span className="reporte-ticker">{r.ticker}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                    <span className="reporte-ticker">{r.ticker}</span>
+                    {r.tipo === 'etf' && (
+                      <span style={{ fontSize: 10, fontWeight: 700, color: '#3D6B3D', background: 'rgba(106,140,106,.13)', border: '1px solid rgba(106,140,106,.28)', borderRadius: 5, padding: '1px 6px', letterSpacing: '0.07em', textTransform: 'uppercase' }}>ETF</span>
+                    )}
+                  </div>
                   <h3 className="reporte-empresa">{r.empresa}</h3>
                   <p className="reporte-desc">{r.meta_descripcion}</p>
                   <span className="reporte-fecha">{formatMes(r.created_at)}</span>
@@ -599,7 +609,16 @@ export default function HomePage() {
                     <span style={{ color: 'var(--text-muted)', fontWeight: 400, marginLeft: 8, fontSize: 13 }}>
                       ({r.ticker})
                     </span>
-                    {CLASIFICACION[r.ticker] && (
+                    {r.tipo === 'etf' ? (
+                      <span style={{
+                        marginLeft: 10, fontSize: 10, fontWeight: 700,
+                        color: '#3D6B3D', background: 'rgba(106,140,106,.13)',
+                        border: '1px solid rgba(106,140,106,.28)',
+                        borderRadius: 5, padding: '1px 6px', letterSpacing: '0.07em', textTransform: 'uppercase',
+                      }}>
+                        ETF
+                      </span>
+                    ) : CLASIFICACION[r.ticker] ? (
                       <span style={{
                         marginLeft: 10, fontSize: 11, fontWeight: 500,
                         color: 'var(--text-muted)', background: 'rgba(255,255,255,0.05)',
@@ -608,7 +627,7 @@ export default function HomePage() {
                       }}>
                         {CLASIFICACION[r.ticker].industria}
                       </span>
-                    )}
+                    ) : null}
                   </span>
                   <span style={{ color: 'var(--text-muted)', fontSize: 13, whiteSpace: 'nowrap' }}>
                     {formatMes(r.created_at)}

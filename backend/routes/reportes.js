@@ -25,12 +25,12 @@ router.get('/', async (req, res) => {
   let result;
   if (ticker) {
     result = await db.execute({
-      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 AND ticker LIKE ? ORDER BY created_at DESC',
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 AND ticker LIKE ? ORDER BY created_at DESC',
       args: [`%${ticker.toUpperCase()}%`],
     });
   } else {
     result = await db.execute({
-      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC',
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 ORDER BY created_at DESC',
       args: [],
     });
   }

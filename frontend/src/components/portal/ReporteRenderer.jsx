@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChartBlock, KpiBlock, ScoreBar, FlagsBlock, VerdictBlock } from './ChartBlocks.jsx';
+import EtfRenderer from './EtfRenderer.jsx';
 
 /* ── Tabla financiera con colores YoY automáticos ───────────────────────── */
 function TablaFinanciera({ headers, rows }) {
@@ -209,6 +210,11 @@ function Conclusion({ items }) {
 /* ── Renderer principal ──────────────────────────────────────────────────── */
 export default function ReporteRenderer({ data, ticker, soloPreview, seccionesGratis = 2 }) {
   if (!data) return null;
+
+  // ETFs usan su propio renderer especializado
+  if (data.tipo === 'etf') {
+    return <EtfRenderer data={data} soloPreview={soloPreview} seccionesGratis={seccionesGratis} />;
+  }
 
   const secciones = [];
 
