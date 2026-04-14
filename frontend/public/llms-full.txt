@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-13
+**Actualizado**: 2026-04-14
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -29,30 +29,30 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ## Reportes de acciones (31 empresas)
 
-### QQQ — Invesco QQQ Trust (NASDAQ-100 ETF)
-**URL**: https://reportes.murzainversiones.com/reporte/QQQ
-**Publicado**: 2026-04-13
+### V — Visa Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/V
+**Publicado**: 2026-04-14
 
-El Invesco QQQ Trust (QQQ) es el ETF de renta variable mas negociado del mundo, con 372.5B USD en activos bajo administracion al 13-abr-2026. Replica el NASDAQ-100, el indice de las 100 mayores empresas no financieras del NASDAQ, con un expense ratio de solo 0.200%. El fondo ha generado retornos anualizados del 18.98% en 10 anos y del 23.73% en el ultimo ano, superando consistentemente al S&P500. Su alta concentracion en mega-caps tecnologicas (NVDA 8.67%, AAPL 7.62%, MSFT 5.62%) amplifica retornos en ciclos bull pero profundiza caidas en correcciones. Veredicto: instrumento superior para exposicion sistematica a tecnologia e innovacion con horizonte de largo plazo.
+Visa Inc. es la mayor red de pagos digitales del mundo, conectando consumidores, comercios, instituciones financieras y gobiernos en mas de 200 paises. Su modelo asset-light procesa transacciones sin asumir riesgo crediticio, generando margenes netos del 50.1% y FCF de 21.6B USD en FY2025. Con ingresos de 40.0B USD (+11.3% YoY) y un crecimiento consistente del volumen de pagos global, Visa representa uno de los negocios mas defensivos del mercado. El principal riesgo es el caso antitrust del DOJ sobre su red de debito en EE.UU. — el mayor riesgo binario en el horizonte 2026-2027.
 
-QQQ replica el NASDAQ-100 Index, que incluye las 100 mayores empresas no financieras listadas en el NASDAQ, ponderadas por capitalizacion de mercado flotante. La cartera esta dominada por empresas de tecnologia, comunicaciones y consumo digital. Distribucion sectorial real (abr-2026): Technology 50.5%, Communication Services 13.8%, Consumer Cyclical 12.6%, Consumer Defensive 8.6%, Healthcare 6.8%, Other 7.7%. El fondo tiene 26 anos de trayectoria (lanzado en marzo 1999), es operado por Invesco Ltd, y se rebalancea trimestralmente con revision anual en diciembre. El NASDAQ-100 excluye financieras por diseno, lo que sesga el indice hacia modelos de alto margen, escalabilidad y efecto de red. Con volumenes diarios de mas de 40 millones de acciones y spread de 1 centavo, QQQ es el instrumento de facto para exposicion a largo plazo en tecnologia.
+Visa opera VisaNet, la infraestructura tecnologica que procesa transacciones de debito, credito y prepago bajo marcas Visa, Visa Electron y Plus. Sus ingresos se dividen en cuatro fuentes: service revenues (por volumenes de pago), data processing revenues (transacciones procesadas), international transaction revenues (pagos cross-border con comision adicional) y other revenues. Con 4.4B+ credenciales activas y presencia en 200+ paises, su moat central es la red de dos caras: emisores quieren la red con mayor aceptacion en comercios y viceversa, creando un circulo virtuoso con externalidades de red casi imposibles de replicar. Visa Direct expande el TAM a pagos P2P, B2B y remesas en tiempo real.
 
 **Datos financieros**:
-- Retorno del ETF (precio): +25.6% (N/A YoY)
-- Retorno NASDAQ-100 (indice): +25.6% (N/A YoY)
-- AUM (B USD aprox.): ~295 (+31.1% YoY)
-- Expense Ratio: 0.200% (0.000pp YoY)
-- Precio cierre ano (USD): ~513 (N/A YoY)
-- Concentracion Top 10 (%): ~51% (N/A YoY)
-- Num. holdings: 100 (N/A YoY)
+- Revenue (B USD): 40.00 (+11.3% YoY)
+- Utilidad Neta (B USD): 20.06 (+1.6% YoY)
+- Margen Neto: 50.1% (N/D YoY)
+- EBITDA (B USD): 25.21 (+2.4% YoY)
+- FCF (B USD): 21.58 (+15.4% YoY)
+- EPS Diluido: 10.19 (+4.7% YoY)
+- Deuda Neta (B USD): 0.18 (N/D YoY)
 
-**Valuacion**: Precio Actual 617.39 USD, AUM 372.5B USD, Expense Ratio 0.2%, Retorno YTD 2026 -5.86%, Retorno 1 Ano 23.73%, Retorno 3 Anos (anualizado) 22.33%, Retorno 5 Anos (anualizado) 13.29%, Retorno 10 Anos (anualizado) 18.98%, Concentracion Top 10 52.1%
+**Valuacion**: P/E Trailing 29.3x, P/E Forward 21.4x, EV/EBITDA 20.8x, P/FCF 24.3x, Deuda Neta/EBITDA 0.01x, Margen Neto 50.1%, ROE 52.9%
 
-**Veredicto**: Mantener / Compra en Correcciones (Score: 7.8/10)
-+ Exposicion optima al ciclo de IA — NVDA, MSFT, AMZN y GOOGL representan colectivamente mas del 24% del fondo; QQQ es el vehiculo mas eficiente para capturar el boom de infraestructura de inteligencia artificial sin seleccion activa de acciones.
-+ Historial de alpha sostenido a 10 anos — Retorno anualizado de 18.98% en la ultima decada vs ~13% del S&P500; la concentracion en modelos de alto margen y efecto de red ha generado outperformance de ~600 bps anuales de forma consistente.
-+ Liquidez y costo insuperables — ETF mas negociado de renta variable del mundo con spread de 1 centavo, expense ratio de 0.200% y tracking error menor de 5 bps; instrumento de primer nivel para implementar exposicion tecnologica de forma instantanea y eficiente.
-- Concentracion y regulacion como riesgos clave — 52.1% en 10 nombres con NVDA sola en 8.67%; ademas top holdings bajo escrutinio regulatorio activo (DOJ, FTC). Correcciones de -30% o mas son historicamente posibles en ciclos adversos.
+**Veredicto**: Mantener / Compra en Correccion (Score: 8.4/10)
++ Moat de red insuperable — Con 4.4B credenciales y 150M+ comercios en 200+ paises, la red de dos caras de Visa es virtualmente imposible de replicar. Cada nuevo participante aumenta el valor para todos, creando una ventaja que se auto-refuerza con el tiempo.
++ Margenes de clase mundial sin riesgo crediticio — Margen neto del 50.1% con un modelo que no presta dinero. Las utilidades son estructuralmente resilientes incluso en recesiones, cuando el consumo cae pero Visa no acumula deudas incobrables.
++ FCF masivo y retorno total excepcional — 21.6B USD de FCF en FY2025 con 18.3B USD en recompras y 4.6B USD en dividendos. El capital se redistribuye sistematicamente generando retorno total de ~10-12% anual estructuralmente.
+- Riesgo DOJ antitrust (debito) — El caso del Departamento de Justicia podria forzar cambios estructurales en la red de debito de EE.UU. — mayor riesgo binario en el horizonte 2026-2027 que justifica esperar valoracion con descuento o mantener posicion existente sin agregar.
 
 ---
 

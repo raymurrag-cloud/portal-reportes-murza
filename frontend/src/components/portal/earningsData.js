@@ -605,6 +605,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  V: {
+    nombre: 'Visa Inc.',
+    trimestre: 'Q2 FY2026',
+    fecha: "2026-04-28T20:30:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 3.1,
+    revenue_estimate_b: 10.7,
+    forward_pe: null,
+    last_surprise_pct: 0.9,
+    what_to_watch: [
+      'Volumen de pagos globales y crecimiento cross-border vs. estimados — señal de salud del consumo global',
+      'Actualizacion del caso DOJ sobre monopolio en debito — cualquier development o fecha de juicio es critico',
+      'Guidance de revenue y EPS para Q3 FY2026 — momentum en transacciones y expansion de margenes',
+      'Crecimiento de Visa Direct en pagos B2B y remesas — penetracion de nuevos flujos de pago fuera del consumer',
+      'Impacto de tipo de cambio en ingresos internacionales — el dolar fuerte reduce fees cross-border reportados',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 
