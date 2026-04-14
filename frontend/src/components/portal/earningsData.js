@@ -625,6 +625,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // -- Mayo 2026 -----------------------------------------------------------------------
+  SNOW: {
+    nombre: 'Snowflake Inc.',
+    trimestre: 'Q1 FY2027',
+    fecha: "2026-05-27T20:30:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: true,
+    eps_estimate: 0.32,
+    revenue_estimate_b: 1.32,
+    forward_pe: null,
+    last_surprise_pct: 17.8,
+    what_to_watch: [
+      'Aceleracion de ingresos por productos Cortex AI — primer indicador de traccion real en IA nativa.',
+      'Net Revenue Retention (NRR): mantener por encima de 125% es critico para la tesis de expansion organica.',
+      'Remaining Performance Obligation (RPO): crecimiento del backlog indica visibilidad de ingresos futuros.',
+      'Margen operativo no-GAAP: progreso hacia punto de equilibrio es el catalista de revaluacion.',
+      'Guidance FY2027: el mercado premia guidance conservador que se supera — vigilar el tono sobre Cortex AI.',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

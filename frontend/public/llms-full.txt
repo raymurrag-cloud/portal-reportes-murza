@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (31 empresas)
+## Reportes de acciones (32 empresas)
+
+### SNOW — Snowflake Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/SNOW
+**Publicado**: 2026-04-14
+
+Snowflake (SNOW) es la plataforma de datos en la nube lider del mercado, con arquitectura multi-cloud unica que desacopla almacenamiento y computo permitiendo escalar cargas de IA sin migrar datos. Con ingresos de 4.68B USD en FY2026 (+29% YoY), mas de 10,900 clientes activos y un RPO superior a 6.9B USD, SNOW se posiciona como infraestructura esencial del ecosistema de datos e IA empresarial. El FCF de 1.12B USD (+23% YoY) valida la sostenibilidad del modelo a pesar de los margenes GAAP negativos por inversion agresiva en Cortex AI y R&D. Empresa de alta calidad con valuacion exigente — acumular en correcciones significativas.
+
+Snowflake opera una plataforma de datos en la nube para almacenamiento, procesamiento y colaboracion de datos a escala empresarial. Su arquitectura desacopla almacenamiento (S3/GCS/Azure Blob) del computo, con modelo de precios por consumo (consumption-based). Opera sobre los tres hiperscaladores (AWS, Azure, GCP) de forma neutral. Productos clave: Data Cloud (almacenamiento y queries), Snowpark (data engineering Python/Java), Cortex AI (LLMs y ML nativos sin mover datos), Document AI (extraccion de documentos no estructurados), y Snowflake Marketplace (>3,000 listings de datos para compartir). Mas del 40% del Fortune 500 son clientes. El moat central es el efecto de red del Data Cloud: cuantos mas clientes comparten datos, mayor el valor de toda la plataforma para todos los participantes.
+
+**Datos financieros**:
+- Revenue (B USD): 4.68 (+28.9% YoY)
+- Utilidad Neta (B USD): -1.33 (N/D YoY)
+- Margen Neto: -28.4% (+7.1pp YoY)
+- EBITDA (B USD): -1.21 (+4.7% YoY)
+- FCF (B USD): 1.12 (+23.1% YoY)
+- EPS Diluido: 0 (N/D YoY)
+- Deuda Neta (B USD): -0.52 (N/D YoY)
+
+**Valuacion**: P/E Trailing N/A (perdida), P/E Forward 55.7x, EV/Revenue 9.9x, P/FCF 41.8x, Deuda Neta (B USD) -0.52B, Margen Bruto 67.3%, Margen Operativo -30.8%, FCF Margin 23.9%, Revenue YoY +28.9%, FCF YoY +23.1%
+
+**Veredicto**: Mantener / Acumular en Correccion (Score: 7.0/10)
++ Liderazgo en Data Cloud con efecto de red — Con mas de 10,900 clientes, RPO de 6.9B USD (+34% YoY) y el unico Data Cloud neutral multi-cloud, Snowflake tiene un moat estructural que los hiperscaladores no pueden replicar sin perder su posicion competitiva.
++ FCF positivo y creciente valida el modelo — FCF de 1.12B USD (+23% YoY) con margen del 23.9% confirma economia del negocio solida. Las perdidas GAAP son por SBC y opex estrategico, no por un modelo de negocio deficiente.
++ Cortex AI como catalista de consumo incremental — La integracion de LLMs nativos y Document AI sobre los datos existentes de los clientes elimina la necesidad de mover datos para workloads de IA, expandiendo el TAM y el consumo por cliente sin friccion de adopcion.
+- Valuacion exigente con alta sensibilidad al guidance — Con P/FCF de 41.8x y EV/Sales de 9.9x, cualquier miss en NRR, RPO o guidance puede generar caidas de -20% o mas en una sesion. Solo para inversionistas con horizonte 3-5 anos y alta tolerancia a volatilidad.
+
+---
 
 ### V — Visa Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/V
