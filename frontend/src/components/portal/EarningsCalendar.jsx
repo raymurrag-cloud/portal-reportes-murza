@@ -191,10 +191,31 @@ function EarningsCard({ ticker, empresa, earnings, reporteSlug, now, expanded, o
             )}
             {earnings && yaReporto && (
               <div style={{ textAlign: 'right' }}>
-                <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 2 }}>Reportado el</div>
-                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
+                <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 1 }}>Reportado el</div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text)', marginBottom: earnings.fecha_siguiente ? 8 : 0 }}>
                   {formatFecha(earnings.fecha)}
                 </div>
+                {earnings.fecha_siguiente && (
+                  <div style={{
+                    background: 'rgba(181,135,42,0.07)',
+                    border: '1px solid rgba(181,135,42,0.22)',
+                    borderRadius: 6, padding: '4px 8px',
+                    marginTop: 2,
+                  }}>
+                    <div style={{ fontSize: 10, color: 'var(--gold-dark)', fontWeight: 700, letterSpacing: '0.04em', marginBottom: 1 }}>
+                      SIGUIENTE REPORTE
+                    </div>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--gold-dark)' }}>
+                      {formatFecha(earnings.fecha_siguiente)}
+                    </div>
+                    {earnings.trimestre_siguiente && (
+                      <div style={{ fontSize: 10, color: 'var(--text-muted)', marginTop: 1 }}>
+                        {earnings.trimestre_siguiente}
+                        <span style={{ marginLeft: 4, fontStyle: 'italic', color: 'var(--text-faint)' }}>(est.)</span>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )}
             {!earnings && (
@@ -344,6 +365,7 @@ export default function EarningsCalendar() {
   const [reportes, setReportes]       = useState([]);
   const [loading, setLoading]         = useState(true);
   const [mesFiltro, setMesFiltro]     = useState(null);   // null = todos
+  const [diasFiltro, setDiasFiltro]   = useState(null);   // null | 7 | 14 | 30
   const [expanded, setExpanded]       = useState(new Set());
   const now = useNow();
 
@@ -371,13 +393,21 @@ export default function EarningsCalendar() {
       .map(e => getMesNumero(e.earnings.fecha))
   )].sort((a, b) => a - b);
 
-  // ── Filtrar por mes ───────────────────────────────────────────────────────
-  const filtradas = mesFiltro === null
-    ? empresas
-    : empresas.filter(e => {
+  // ── Filtrar por mes o por días recientes ─────────────────────────────────
+  const filtradas = diasFiltro !== null
+    ? empresas.filter(e => {
         if (!e.earnings?.fecha) return false;
-        return getMesNumero(e.earnings.fecha) === mesFiltro;
-      });
+        const fechaReporte = new Date(e.earnings.fecha);
+        if (fechaReporte > now) return false;
+        const diffDias = (now - fechaReporte) / (1000 * 60 * 60 * 24);
+        return diffDias <= diasFiltro;
+      })
+    : mesFiltro === null
+      ? empresas
+      : empresas.filter(e => {
+          if (!e.earnings?.fecha) return false;
+          return getMesNumero(e.earnings.fecha) === mesFiltro;
+        });
 
   // ── Ordenar: próximas primero (menor diff), ya reportadas al final ────────
   const ordenadas = [...filtradas].sort((a, b) => {
@@ -502,20 +532,39 @@ export default function EarningsCalendar() {
           )}
         </section>
 
-        {/* ── Filtros por mes ── */}
+        {/* ── Filtros ── */}
         <section style={{ padding: '0 48px 24px', maxWidth: 1100, margin: '0 auto', width: '100%' }}>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+          {/* Fila 1: por mes */}
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center', marginBottom: 10 }}>
             <FiltroTab
               label="Todos"
-              activo={mesFiltro === null}
-              onClick={() => setMesFiltro(null)}
+              activo={mesFiltro === null && diasFiltro === null}
+              onClick={() => { setMesFiltro(null); setDiasFiltro(null); }}
             />
             {mesesDisponibles.map(mes => (
               <FiltroTab
                 key={mes}
                 label={MESES[mes] || `Mes ${mes}`}
-                activo={mesFiltro === mes}
-                onClick={() => setMesFiltro(mes)}
+                activo={mesFiltro === mes && diasFiltro === null}
+                onClick={() => { setMesFiltro(mes); setDiasFiltro(null); }}
+              />
+            ))}
+          </div>
+          {/* Fila 2: reportes recientes */}
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--text-faint)', letterSpacing: '0.06em', textTransform: 'uppercase', marginRight: 2 }}>
+              Reportaron en:
+            </span>
+            {[7, 14, 30].map(dias => (
+              <FiltroTab
+                key={dias}
+                label={`Ultimos ${dias} dias`}
+                activo={diasFiltro === dias}
+                onClick={() => {
+                  setDiasFiltro(diasFiltro === dias ? null : dias);
+                  setMesFiltro(null);
+                }}
+                color="blue"
               />
             ))}
           </div>
@@ -529,9 +578,11 @@ export default function EarningsCalendar() {
 
           {!loading && ordenadas.length === 0 && (
             <div className="empty-state">
-              {mesFiltro
-                ? `No hay reportes en ${MESES[mesFiltro]} para las empresas del portal.`
-                : 'No hay empresas en el portal aun.'}
+              {diasFiltro
+                ? `Ninguna empresa reporto en los ultimos ${diasFiltro} dias.`
+                : mesFiltro
+                  ? `No hay reportes en ${MESES[mesFiltro]} para las empresas del portal.`
+                  : 'No hay empresas en el portal aun.'}
             </div>
           )}
 
@@ -573,16 +624,23 @@ export default function EarningsCalendar() {
 // ─────────────────────────────────────────────────────────────────────────────
 // Micro-componentes internos
 // ─────────────────────────────────────────────────────────────────────────────
-function FiltroTab({ label, activo, onClick }) {
+function FiltroTab({ label, activo, onClick, color = 'gold' }) {
+  const isBlue = color === 'blue';
   return (
     <button
       onClick={onClick}
       style={{
-        padding: '7px 16px',
+        padding: '6px 14px',
         borderRadius: 8,
-        border: activo ? '1px solid rgba(181,135,42,0.5)' : '1px solid var(--border)',
-        background: activo ? 'var(--gold-pale)' : 'var(--surface-pure)',
-        color: activo ? 'var(--gold-dark)' : 'var(--text-muted)',
+        border: activo
+          ? (isBlue ? '1px solid rgba(59,130,246,0.45)' : '1px solid rgba(181,135,42,0.5)')
+          : '1px solid var(--border)',
+        background: activo
+          ? (isBlue ? 'rgba(59,130,246,0.09)' : 'var(--gold-pale)')
+          : 'var(--surface-pure)',
+        color: activo
+          ? (isBlue ? '#3B82F6' : 'var(--gold-dark)')
+          : 'var(--text-muted)',
         fontWeight: activo ? 700 : 500,
         fontSize: 13,
         cursor: 'pointer',
