@@ -217,9 +217,9 @@ export const EARNINGS_DATA = {
   ASML: {
     nombre: 'ASML Holding N.V.',
     trimestre: 'Q1 2026',
-    fecha: '2026-04-16T06:00:00',
+    fecha: '2026-04-15T06:00:00',
     cuando: 'Antes de apertura',
-    fecha_confirmada: false,
+    fecha_confirmada: true,
     eps_estimate: 5.82,
     revenue_estimate_b: 7.7,
     forward_pe: 26.1,

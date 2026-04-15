@@ -101,9 +101,12 @@ function SurpriseBadge({ pct }) {
 // Sub-componente: Tarjeta de empresa
 // ─────────────────────────────────────────────────────────────────────────────
 function EarningsCard({ ticker, empresa, earnings, reporteSlug, now, expanded, onToggle }) {
-  const countdown = earnings ? getCountdown(earnings.fecha, now) : null;
-  const yaReporto = earnings ? (countdown === null) : false;
-  const esHoy     = earnings ? isToday(earnings.fecha, now) : false;
+  const countdown     = earnings ? getCountdown(earnings.fecha, now) : null;
+  const yaReporto     = earnings ? (countdown === null) : false;
+  const esHoy         = earnings ? isToday(earnings.fecha, now) : false;
+  const countdownNext = yaReporto && earnings?.fecha_siguiente
+    ? getCountdown(earnings.fecha_siguiente, now)
+    : null;
 
   // Formatear EPS estimate
   const epsStr = earnings?.eps_estimate != null
@@ -169,7 +172,9 @@ function EarningsCard({ ticker, empresa, earnings, reporteSlug, now, expanded, o
             </div>
             {earnings && (
               <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
-                {earnings.trimestre}
+                {countdownNext && earnings.trimestre_siguiente
+                  ? earnings.trimestre_siguiente
+                  : earnings.trimestre}
                 {!earnings.fecha_confirmada && (
                   <span style={{ marginLeft: 6, fontSize: 11, color: 'var(--amber)', fontStyle: 'italic' }}>
                     (fecha estimada)
@@ -186,36 +191,34 @@ function EarningsCard({ ticker, empresa, earnings, reporteSlug, now, expanded, o
 
           {/* Countdown o Ya reporto */}
           <div style={{ flexShrink: 0, textAlign: 'right' }}>
+            {/* Próxima a reportar: countdown normal */}
             {earnings && countdown && (
               <CountdownBlock countdown={countdown} />
             )}
-            {earnings && yaReporto && (
+            {/* Ya reportó con siguiente fecha: countdown al próximo + último reporte abajo */}
+            {earnings && yaReporto && countdownNext && (
               <div style={{ textAlign: 'right' }}>
-                <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 1 }}>Reportado el</div>
-                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text)', marginBottom: earnings.fecha_siguiente ? 8 : 0 }}>
-                  {formatFecha(earnings.fecha)}
-                </div>
-                {earnings.fecha_siguiente && (
-                  <div style={{
-                    background: 'rgba(181,135,42,0.07)',
-                    border: '1px solid rgba(181,135,42,0.22)',
-                    borderRadius: 6, padding: '4px 8px',
-                    marginTop: 2,
-                  }}>
-                    <div style={{ fontSize: 10, color: 'var(--gold-dark)', fontWeight: 700, letterSpacing: '0.04em', marginBottom: 1 }}>
-                      SIGUIENTE REPORTE
-                    </div>
-                    <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--gold-dark)' }}>
-                      {formatFecha(earnings.fecha_siguiente)}
-                    </div>
-                    {earnings.trimestre_siguiente && (
-                      <div style={{ fontSize: 10, color: 'var(--text-muted)', marginTop: 1 }}>
-                        {earnings.trimestre_siguiente}
-                        <span style={{ marginLeft: 4, fontStyle: 'italic', color: 'var(--text-faint)' }}>(est.)</span>
-                      </div>
+                <CountdownBlock countdown={countdownNext} />
+                {earnings.trimestre_siguiente && (
+                  <div style={{ fontSize: 10, color: 'var(--gold-dark)', fontWeight: 600, marginTop: 3 }}>
+                    {earnings.trimestre_siguiente}
+                    {!earnings.fecha_confirmada && (
+                      <span style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--text-faint)', marginLeft: 4 }}>(est.)</span>
                     )}
                   </div>
                 )}
+                <div style={{ fontSize: 10, color: 'var(--text-faint)', marginTop: 4, borderTop: '1px solid var(--border)', paddingTop: 4 }}>
+                  Ultimo reporte el {formatFecha(earnings.fecha)}
+                </div>
+              </div>
+            )}
+            {/* Ya reportó sin siguiente fecha: mostrar fecha del último reporte */}
+            {earnings && yaReporto && !countdownNext && (
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 1 }}>Reportado el</div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
+                  {formatFecha(earnings.fecha)}
+                </div>
               </div>
             )}
             {!earnings && (
@@ -240,9 +243,10 @@ function EarningsCard({ ticker, empresa, earnings, reporteSlug, now, expanded, o
             marginBottom: 14, width: 'fit-content',
           }}>
             <span>📅</span>
-            <span>{formatFecha(earnings.fecha)}</span>
+            {/* Si hay countdown al siguiente, mostrar fecha_siguiente; si no, la fecha actual */}
+            <span>{countdownNext ? formatFecha(earnings.fecha_siguiente) : formatFecha(earnings.fecha)}</span>
             <span style={{ color: 'var(--border-warm)' }}>·</span>
-            <span>{formatHora(earnings.fecha)}</span>
+            <span>{countdownNext ? formatHora(earnings.fecha_siguiente) : formatHora(earnings.fecha)}</span>
             <span style={{ color: 'var(--border-warm)' }}>·</span>
             <span>{earnings.cuando}</span>
           </div>
@@ -409,20 +413,26 @@ export default function EarningsCalendar() {
           return getMesNumero(e.earnings.fecha) === mesFiltro;
         });
 
-  // ── Ordenar: próximas primero (menor diff), ya reportadas al final ────────
-  const ordenadas = [...filtradas].sort((a, b) => {
-    const cdA = a.earnings ? getCountdown(a.earnings.fecha, now) : null;
-    const cdB = b.earnings ? getCountdown(b.earnings.fecha, now) : null;
-    const aFutura = cdA !== null;
-    const bFutura = cdB !== null;
-    if (aFutura && bFutura) return cdA.diff - cdB.diff;         // más próxima primero
-    if (!aFutura && !bFutura) {
-      // ya reportaron: más reciente primero
-      const fa = a.earnings ? new Date(a.earnings.fecha) : new Date(0);
-      const fb = b.earnings ? new Date(b.earnings.fecha) : new Date(0);
-      return fb - fa;
+  // ── Ordenar ──────────────────────────────────────────────────────────────
+  // tipo 0: próximas a reportar (countdown a fecha)
+  // tipo 1: ya reportaron con fecha_siguiente futura (countdown al próximo)
+  // tipo 2: ya reportaron sin fecha_siguiente (ordenadas por recencia, más reciente primero)
+  // tipo 3: sin datos
+  const getSortKey = (e) => {
+    if (!e.earnings) return { tipo: 3, val: 0 };
+    const cd = getCountdown(e.earnings.fecha, now);
+    if (cd !== null) return { tipo: 0, val: cd.diff };
+    if (e.earnings.fecha_siguiente) {
+      const cdNext = getCountdown(e.earnings.fecha_siguiente, now);
+      if (cdNext !== null) return { tipo: 1, val: cdNext.diff };
     }
-    return aFutura ? -1 : 1; // futuras antes que pasadas
+    return { tipo: 2, val: -new Date(e.earnings.fecha).getTime() };
+  };
+  const ordenadas = [...filtradas].sort((a, b) => {
+    const kA = getSortKey(a);
+    const kB = getSortKey(b);
+    if (kA.tipo !== kB.tipo) return kA.tipo - kB.tipo;
+    return kA.val - kB.val;
   });
 
   // ── Toggle expandible ─────────────────────────────────────────────────────
@@ -435,12 +445,20 @@ export default function EarningsCalendar() {
   };
 
   // ── Contadores resumen ────────────────────────────────────────────────────
-  const totalProximas = empresas.filter(e =>
-    e.earnings && getCountdown(e.earnings.fecha, now) !== null
-  ).length;
-  const totalReportaron = empresas.filter(e =>
-    e.earnings && getCountdown(e.earnings.fecha, now) === null
-  ).length;
+  const totalProximas = empresas.filter(e => {
+    if (!e.earnings) return false;
+    if (getCountdown(e.earnings.fecha, now) !== null) return true; // aún no reporta
+    if (e.earnings.fecha_siguiente && getCountdown(e.earnings.fecha_siguiente, now) !== null) return true; // ya reportó, próximo confirmado
+    return false;
+  }).length;
+  const totalReportaron = empresas.filter(e => {
+    if (!e.earnings) return false;
+    const yaReporto = getCountdown(e.earnings.fecha, now) === null;
+    if (!yaReporto) return false;
+    // Solo cuentan como "ya reportaron" las que no tienen siguiente fecha futura
+    if (e.earnings.fecha_siguiente && getCountdown(e.earnings.fecha_siguiente, now) !== null) return false;
+    return true;
+  }).length;
 
   return (
     <>
