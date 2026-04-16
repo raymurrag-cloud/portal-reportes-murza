@@ -275,30 +275,30 @@ PayPal opera como plataforma de dos lados de pagos digitales: el segmento consum
 
 ---
 
-### ASML — ASML Holding N.V.
+### ASML — ASML Holding NV
 **URL**: https://reportes.murzainversiones.com/reporte/ASML
 **Publicado**: 2026-04-07
 
-ASML Holding N.V. es el unico fabricante mundial de sistemas de litografia EUV (Extreme Ultraviolet), tecnologia absolutamente esencial para producir los chips mas avanzados del planeta. Con ingresos de 32.67B EUR en FY2025 (+15.6% YoY) y un monopolio tecnologico sin rival real a 10 anos vista, ASML posee uno de los moats mas profundos de la industria tecnologica global. La empresa acelero significativamente en 2025 impulsada por demanda de AI y recuperacion del ciclo semiconductor, con margen neto del 29.4% y EPS de 24.71 EUR. Veredicto: activo de calidad excepcional con valuacion exigente (P/E TTM ~49x), justificada por el monopolio pero optimo en correcciones profundas.
+ASML Holding es el unico proveedor mundial de sistemas de litografia EUV (Extreme Ultraviolet), tecnologia imprescindible para fabricar chips avanzados de 7nm o menos. Con cuota de mercado del 100% en EUV y ~80% en litografia total, posee uno de los moats tecnologicos mas profundos de la historia industrial. FY2024 cerro con ingresos de 30.7B USD (+2.9% YoY), margen bruto de 51.3% y backlog de ~36B EUR que da visibilidad de 12-18 meses. Veredicto: activo de calidad excepcional con valuacion exigente; atractivo en correcciones del 15-20%.
 
-ASML disenia, desarrolla y comercializa sistemas de litografia utilizados por TSMC, Samsung, Intel y SK Hynix para imprimir circuitos en obleas de silicio. Su producto emblematico, la maquina EUV, no tiene sustituto: la version High NA EUV de ultima generacion cuesta hasta 350M USD por unidad. Opera bajo tres segmentos: sistemas EUV (alta marginalidad), sistemas DUV (mayor volumen), y servicios y mantenimiento de instalaciones (ingresos recurrentes ~25% del revenue). Geograficamente, Corea del Sur (~35%), Taiwan (~30%) y Europa (~15%) son los principales mercados en FY2025. ASML es infraestructura critica de toda la cadena de valor semiconductora global: sin sus maquinas no hay chips de AI, smartphones de ultima generacion ni datacenters avanzados.
+ASML disena, fabrica y vende sistemas de litografia fotonica para fabricantes de semiconductores (foundries e IDMs). Opera en dos segmentos: sistemas nuevos (>70% ingresos) y base instalada/IB (servicio, upgrades y herramientas reacondicionadas, ~30% ingresos, margen >60%). Clientes principales: TSMC (~44% ingresos), Samsung (~25%), Intel (~10%) y foundries emergentes. Distribucion geografica FY2024: Taiwan ~44%, Corea ~33%, China ~14%, Europa ~6%, EEUU ~3%. Sede en Veldhoven, Paises Bajos. Cotiza en Euronext Amsterdam y Nasdaq (ADR). El moat se basa en tecnologia EUV con 100K+ componentes de precision entregados por 457 proveedores especializados y >25 anos de R&D acumulado -- barrera de entrada practicamente infranqueable.
 
 **Datos financieros**:
-- Revenue (B EUR): 32.67 (+15.6% YoY)
-- Utilidad Neta (B EUR): 9.61 (+26.9% YoY)
-- Margen Neto: 29.4% (2.6pp YoY)
-- EBITDA (B EUR): 12.25 (+24.1% YoY)
-- FCF (B EUR): 6.50 (+97.0% YoY)
-- EPS Diluido (EUR): 24.71 (+28.4% YoY)
-- Deuda Neta (B EUR): -3.20 (N/D YoY)
+- Revenue (B USD): 35.9 (+2.9% YoY)
+- Utilidad Neta (B USD): 10.0 (+0.4% YoY)
+- Margen Neto: 28% (-0.7pp YoY)
+- EBITDA (B USD): 13.3 (+14.5% YoY)
+- FCF (B USD): 7.1 (+11.7% YoY)
+- EPS Diluido (USD): 25.62 (-0.1% YoY)
+- Deuda Neta (B USD): -1.1 (Caja neta YoY)
 
-**Valuacion**: P/E Trailing 48.9x, P/E Forward 40.8x, EV/EBITDA 38.1x, P/FCF 72.2x, FCF Yield 1.4%, Deuda Neta/EBITDA Caja Neta, ROE 56.5%, ROIC 68.4%, Margen Bruto 52.8%, Margen Operativo 34.6%
+**Valuacion**: P/E Trailing 66.3x, P/E Forward 55.6x, EV/EBITDA 53x, P/FCF 110.7x, Deuda Neta/EBITDA Caja neta, ROE 50.5%, ROIC 53.2%
 
-**Veredicto**: Compra en Correccion (Score: 8.2/10)
-+ Monopolio EUV sin rival — Unico fabricante mundial de la tecnologia que hace posibles los chips de AI avanzados; sin ASML no hay 3nm ni 2nm en el planeta. Barrera de entrada de 30 anos de I+D acumulado.
-+ Aceleracion FY2025 impulsada por AI — Revenue +15.6%, EPS +28.4%; la demanda de infraestructura de AI lleva a TSMC y Samsung a acelerar inversion en litografia EUV de forma estructural.
-+ Balance de fortaleza con caja neta — 3.2B EUR de caja neta, ROE 56.5%, ROIC 68.4%; retornos de capital excepcionales sin apalancamiento financiero.
-- Valuacion exigente mas riesgo geopolitico — P/E TTM de 48.9x y riesgo de escalada de restricciones de exportacion a China son los principales factores de riesgo en el corto plazo.
+**Veredicto**: Mantener / Compra en Correccion (Score: 8.4/10)
++ Monopolio tecnologico sin sustitutos -- ASML es el unico proveedor mundial de litografia EUV; sin su tecnologia es imposible fabricar chips avanzados. Esta posicion es practicamente permanente en el horizonte de inversion.
++ Superciclo de IA y soberania semiconductora -- TSMC, Samsung, Intel y RAPIDUS invierten decenas de billions en nuevas fabricas para chips de IA; cada fabrica necesita multiples sistemas ASML EUV, asegurando demanda creciente hasta 2030+.
++ High-NA EUV duplica ASP y expande margenes hacia 56-60% -- La transicion de clientes a EXE:5000 (~370M EUR/sistema) y el crecimiento del negocio IB (>60% margen) impulsan expansion de rentabilidad hasta la guia 2030.
+- Valuacion exigente -- esperar correccion del 15-20% -- El P/E de 66.3x descuenta escenarios optimistas; desaceleracion del capex semiconductor o escalada en China podrian comprimir el precio 25-35% desde niveles actuales.
 
 ---
 
