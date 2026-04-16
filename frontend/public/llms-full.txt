@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-14
+**Actualizado**: 2026-04-16
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -360,26 +360,26 @@ Chevron opera dos segmentos: Upstream (exploracion, produccion y transporte de c
 **URL**: https://reportes.murzainversiones.com/reporte/NFLX
 **Publicado**: 2026-04-06
 
-Netflix es la plataforma de entretenimiento por streaming dominante a nivel global, con presencia en 190 paises y una base masiva de suscriptores que en 2025 supero los 300 millones. En FY2025 alcanzo ingresos de 45.2B USD (+16% YoY), margen operativo del 29.5% y utilidad neta de 11.0B USD (+26% YoY), marcando otro ejercicio record. El negocio de publicidad y los aumentos de precios son los catalizadores de crecimiento estructural. Con FCF de 9.5B USD y ROE superior al 58%, la calidad financiera es excepcional. A precio de mercado actual (~99 USD), Netflix cotiza a niveles de multiples que representan la mayor oportunidad de entrada desde 2022.
+Netflix es el lider global del streaming con 302 millones de suscriptores en 190+ paises. La empresa ejecuto una transformacion estrategica exitosa: la eliminacion del password sharing y la introduccion del tier publicitario impulsaron un crecimiento de revenue del +15.7% YoY en FY2024 y una expansion de margen operativo al 18.0%. Con FCF de 6.6B USD y ROE del 80%, Netflix opera como el monopolio de facto del entretenimiento en streaming global y representa una tesis de inversion de alta conviction para inversores de largo plazo.
 
-Netflix opera en un unico segmento de negocio: streaming de entretenimiento on-demand. Genera ingresos principalmente via suscripciones mensuales en tres niveles (Standard con publicidad, Standard y Premium), con presencia en mas de 190 paises y contenido producido en multiples idiomas. El modelo de negocio se basa en amortizar una inversion masiva en contenido original (~18B USD anuales) sobre la base de suscriptores mas grande del sector, generando economias de escala que ningun competidor puede igualar. El negocio de publicidad (Netflix Ads), lanzado en 2022, representa una fuente de ingresos adicional con potencial de expansion del ARPU. UCAN aporta 44% del revenue, EMEA 32%, LATAM 12% y APAC 12%.
+Netflix opera la plataforma de streaming de video on-demand mas grande del mundo. Sus ingresos provienen del servicio de streaming dividido en tier estandar/premium y tier con publicidad (ad-supported, lanzado 2022). Opera en 190+ paises con contenido original en 30+ idiomas. El modelo de negocio es SaaS de consumidor: suscripcion mensual recurrente con bajo churn (~2%/mes). El moat descansa en tres pilares: escala de datos (302M usuarios con retroalimentacion que mejora el algoritmo con 15+ anos de ventaja), presupuesto de contenido (18B+ USD anuales para originals imposibles de igualar), y marca premium global reconocida. El tier publicitario abre acceso a un mercado de publicidad digital de ~500B USD apenas en sus primeras etapas para Netflix.
 
 **Datos financieros**:
-- Revenue (B USD): 45.18 (+15.8% YoY)
-- Utilidad Neta (B USD): 10.98 (+26.1% YoY)
-- Margen Neto: 24.3% (+2pp YoY)
-- EBITDA (B USD): 13.66 (+27.1% YoY)
-- FCF (B USD): 9.46 (+36.7% YoY)
-- EPS Diluido: 26.01 (+27.8% YoY)
-- Deuda Neta (B USD): 5.11 (-1.23B YoY)
+- Revenue (B USD): 39.00 (+15.7% YoY)
+- Utilidad Neta (B USD): 8.71 (+61.0% YoY)
+- Margen Neto: 22.3% (+6.3pp YoY)
+- EBITDA (B USD): 7.41 (N/D YoY)
+- FCF (B USD): 6.60 (-1.2% YoY)
+- EPS Diluido (post-split): 19.83 (N/D YoY)
+- Deuda Neta (B USD): 6.31 (N/D YoY)
 
-**Valuacion**: P/E Trailing 3.8x, P/E Forward ~13x, EV/EBITDA 3.4x, P/FCF 4.4x, Deuda Neta/EBITDA 0.37x, ROE 58%, ROIC 48.8%
+**Valuacion**: P/E Trailing 42.7x, P/E Forward 27.8x, EV/EBITDA 64.0x, P/FCF 70.8x, Deuda Neta/EBITDA 0.9x, ROE 80.1%, ROIC 32.2%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.4/10)
-+ Fundamentales record vs. precio deprimido — FY2025 es el mejor ejercicio en la historia de Netflix (revenue +16%, EBITDA +27%, FCF +37%), mientras que la accion cotiza a los multiples mas bajos de los ultimos 5 anos. El mercado esta valorando como si el crecimiento fuera a desacelerarse drasticamente, lo cual contradice la evidencia operativa.
-+ Doble catalizador de crecimiento no agotado — El tier con publicidad (~94M MAU) y los incrementos de precio sostenidos son dos motores que aun tienen recorrido significativo: el ARPU del tier con ads puede crecer 2-3x a medida que Netflix madura su plataforma publicitaria.
-+ Apalancamiento operativo real y sostenido — Margen operativo de 29.5% en FY2025 vs. 20.6% en FY2023, con guia de management para +100bp anuales en los proximos anos. La estructura de costos de Netflix genera incremento automatico de rentabilidad con cada aumento de revenue.
-- Riesgo macro de corto plazo — La incertidumbre por las politicas comerciales de la administracion Trump (tariffs, posible recesion en EEUU) genera volatilidad de corto plazo. El riesgo es real pero manejable dado la naturaleza esencial del entretenimiento en el gasto del hogar.
+**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
++ Moat de escala insuperable -- 302M suscriptores y 18B USD anuales en contenido crean una barrera competitiva que ningun rival puede replicar; el algoritmo de recomendacion mejora con cada view generando un circulo virtuoso que reduce el costo efectivo del catalogo.
++ Expansion de margenes estructural -- Margen operativo de 8.2% en FY2022 a 18.0% en FY2024; ROE del 80%. El apalancamiento del modelo plataforma garantiza que el crecimiento futuro de revenue fluira en alta proporcion a ganancias.
++ Tier publicitario -- catalizador de re-rating pendiente -- Netflix acaba de ingresar al mercado de publicidad digital de 500B USD con datos first-party unicos; a medida que ads madure el mercado deberia asignar un multiplo superior, similar a la revaluacion de Meta en 2023.
+- Valuacion exigente con dependencia de contenido -- EV/EBITDA de 64.0x y P/FCF de 70.8x dejan poco margen de error; un miss en guidance o aumento del gasto en contenido puede causar compresion rapida del multiplo desde niveles elevados.
 
 ---
 
