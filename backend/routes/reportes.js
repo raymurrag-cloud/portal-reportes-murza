@@ -42,7 +42,7 @@ router.get('/:slug', async (req, res) => {
   if (req.params.slug === 'sitemap.xml') return res.status(404).end();
 
   const { rows } = await db.execute({
-    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, parrafos_gratis, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, parrafos_gratis, slug, meta_descripcion, created_at, updated_at, fecha_reporte FROM reportes WHERE slug = ? AND publicado = 1',
     args: [req.params.slug],
   });
   const reporte = rows[0];
@@ -53,6 +53,7 @@ router.get('/:slug', async (req, res) => {
     return res.json({
       id: Number(reporte.id), ticker: reporte.ticker, empresa: reporte.empresa,
       slug: reporte.slug, meta_descripcion: reporte.meta_descripcion, created_at: reporte.created_at,
+      updated_at: reporte.updated_at, fecha_reporte: reporte.fecha_reporte,
       contenido_json: reporte.contenido_json,
       parrafos_gratis: Number(reporte.parrafos_gratis) || 2,
       es_json: true, tiene_mas: true,
@@ -73,7 +74,7 @@ router.get('/:slug', async (req, res) => {
 // ── Leer reporte completo (requiere login de usuario) ─────────────────────
 router.get('/:slug/completo', authUser, async (req, res) => {
   const { rows } = await db.execute({
-    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, slug, meta_descripcion, created_at FROM reportes WHERE slug = ? AND publicado = 1',
+    sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, slug, meta_descripcion, created_at, updated_at, fecha_reporte FROM reportes WHERE slug = ? AND publicado = 1',
     args: [req.params.slug],
   });
   const reporte = rows[0];

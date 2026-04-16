@@ -120,8 +120,14 @@ export default function ReportePage() {
                   ) : (
                     <span>Analisis Financiero</span>
                   )}
+                  {reporte.fecha_reporte && (
+                    <>
+                      <span className="hero-sep">·</span>
+                      <span>Empresa reporto: <time>{new Date(reporte.fecha_reporte).toLocaleDateString('es-MX', { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                    </>
+                  )}
                   <span className="hero-sep">·</span>
-                  <time>{new Date(reporte.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                  <span>Actualizado: <time>{new Date(reporte.updated_at || reporte.created_at).toLocaleDateString('es-MX', { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
                 </div>
               </div>
               <div className="reporte-hero-right">
