@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-16
+**Actualizado**: 2026-04-18
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -360,26 +360,26 @@ Chevron opera dos segmentos: Upstream (exploracion, produccion y transporte de c
 **URL**: https://reportes.murzainversiones.com/reporte/NFLX
 **Publicado**: 2026-04-06
 
-Netflix es el lider global del streaming con 302 millones de suscriptores en 190+ paises. La empresa ejecuto una transformacion estrategica exitosa: la eliminacion del password sharing y la introduccion del tier publicitario impulsaron un crecimiento de revenue del +15.7% YoY en FY2024 y una expansion de margen operativo al 18.0%. Con FCF de 6.6B USD y ROE del 80%, Netflix opera como el monopolio de facto del entretenimiento en streaming global y representa una tesis de inversion de alta conviction para inversores de largo plazo.
+Netflix cerro FY2025 con ingresos de USD 45.2B (+15.8% YoY) y utilidad neta de USD 11.0B (+26.1%), impulsados por el crecimiento de la base de suscriptores globales y el exitoso lanzamiento del plan con publicidad. El margen operativo alcanzo 29.5%, su nivel historico mas alto, y el FCF de USD 9.5B refleja una generacion de caja estructuralmente superior. En Q1 2026 los ingresos crecieron +16.2% YoY a USD 12.3B con EPS de USD 1.23 que supero expectativas; la utilidad neta incluyo USD 2.9B en ganancias no operativas derivadas de coberturas cambiarias.
 
-Netflix opera la plataforma de streaming de video on-demand mas grande del mundo. Sus ingresos provienen del servicio de streaming dividido en tier estandar/premium y tier con publicidad (ad-supported, lanzado 2022). Opera en 190+ paises con contenido original en 30+ idiomas. El modelo de negocio es SaaS de consumidor: suscripcion mensual recurrente con bajo churn (~2%/mes). El moat descansa en tres pilares: escala de datos (302M usuarios con retroalimentacion que mejora el algoritmo con 15+ anos de ventaja), presupuesto de contenido (18B+ USD anuales para originals imposibles de igualar), y marca premium global reconocida. El tier publicitario abre acceso a un mercado de publicidad digital de ~500B USD apenas en sus primeras etapas para Netflix.
+Netflix es el servicio de entretenimiento en streaming lider mundial con mas de 300 millones de suscriptores en 190 paises. Opera con un modelo de suscripcion de tres niveles: plan basico con publicidad, estandar y premium. Sus ventajas competitivas incluyen un catalogo de contenido original de primer nivel (series, peliculas, documentales, live events y juegos), escala global que diluye los costos de contenido sobre una base de suscriptores masiva, y capacidad de fijacion de precios probada en multiples mercados. El segmento de publicidad (Ads Plan) se perfila como el principal motor de crecimiento incremental de ingresos para FY2026-2027, mientras que los eventos en vivo amplian el valor percibido de la suscripcion.
 
 **Datos financieros**:
-- Revenue (B USD): 39.00 (+15.7% YoY)
-- Utilidad Neta (B USD): 8.71 (+61.0% YoY)
-- Margen Neto: 22.3% (+6.3pp YoY)
-- EBITDA (B USD): 7.41 (N/D YoY)
-- FCF (B USD): 6.60 (-1.2% YoY)
-- EPS Diluido (post-split): 19.83 (N/D YoY)
-- Deuda Neta (B USD): 6.31 (N/D YoY)
+- Revenue (B USD): 12.25 (+16.2% YoY)
+- Utilidad Neta (B USD): 5.28 (+82.8% YoY)
+- Margen Neto: 43.1% (+26.8pp YoY)
+- EBITDA (B USD): 4.29 (+28.2% YoY)
+- FCF (B USD): N/D (+36.7% YoY)
+- EPS Diluido (post-split): 1.23 (+86.4% YoY)
+- Deuda Neta (B USD): N/D (-26.2% YoY)
 
-**Valuacion**: P/E Trailing 42.7x, P/E Forward 27.8x, EV/EBITDA 64.0x, P/FCF 70.8x, Deuda Neta/EBITDA 0.9x, ROE 80.1%, ROIC 32.2%
+**Valuacion**: P/E Trailing 38.5x, P/E Forward 30.4x, EV/EBITDA 30.4x, P/FCF 43.4x, Deuda Neta/EBITDA 0.32x, ROE 41.3%, ROIC 37.1%
 
-**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
-+ Moat de escala insuperable -- 302M suscriptores y 18B USD anuales en contenido crean una barrera competitiva que ningun rival puede replicar; el algoritmo de recomendacion mejora con cada view generando un circulo virtuoso que reduce el costo efectivo del catalogo.
-+ Expansion de margenes estructural -- Margen operativo de 8.2% en FY2022 a 18.0% en FY2024; ROE del 80%. El apalancamiento del modelo plataforma garantiza que el crecimiento futuro de revenue fluira en alta proporcion a ganancias.
-+ Tier publicitario -- catalizador de re-rating pendiente -- Netflix acaba de ingresar al mercado de publicidad digital de 500B USD con datos first-party unicos; a medida que ads madure el mercado deberia asignar un multiplo superior, similar a la revaluacion de Meta en 2023.
-- Valuacion exigente con dependencia de contenido -- EV/EBITDA de 64.0x y P/FCF de 70.8x dejan poco margen de error; un miss en guidance o aumento del gasto en contenido puede causar compresion rapida del multiplo desde niveles elevados.
+**Veredicto**: Mantener con Sesgo Positivo (Score: 7.8/10)
++ Expansion de margenes estructural — Margen operativo de 29.5% en FY2025 refleja el apalancamiento operativo del modelo de streaming a escala global; management guia 29%+ sostenido.
++ Motor publicitario en rampa de despegue — El Ads Plan con 70M+ MAUs se convierte en un segundo motor de ingresos de alto margen que el mercado aun no valora completamente.
++ FCF inflexion clara — De FCF negativo en FY2021 a USD 9.5B en FY2025; la empresa devuelve capital masivo via recompras de USD 9.1B en FY2025.
+- Valuacion premium con poco margen de error — A 30x P/E forward, cualquier miss en suscriptores o guidance de ingresos generaria una correccion significativa.
 
 ---
 
