@@ -25,12 +25,12 @@ router.get('/', async (req, res) => {
   let result;
   if (ticker) {
     result = await db.execute({
-      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 AND ticker LIKE ? ORDER BY created_at DESC',
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 AND ticker LIKE ? ORDER BY updated_at DESC',
       args: [`%${ticker.toUpperCase()}%`],
     });
   } else {
     result = await db.execute({
-      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 ORDER BY created_at DESC',
+      sql:  'SELECT id, ticker, empresa, slug, meta_descripcion, created_at, tipo FROM reportes WHERE publicado = 1 ORDER BY updated_at DESC',
       args: [],
     });
   }
@@ -84,7 +84,7 @@ router.get('/:slug/completo', authUser, async (req, res) => {
 
 // ── Sitemap XML ───────────────────────────────────────────────────────────
 router.get('/sitemap.xml', async (req, res) => {
-  const { rows } = await db.execute({ sql: 'SELECT slug, ticker, empresa, updated_at, created_at FROM reportes WHERE publicado = 1 ORDER BY created_at DESC', args: [] });
+  const { rows } = await db.execute({ sql: 'SELECT slug, ticker, empresa, updated_at, created_at FROM reportes WHERE publicado = 1 ORDER BY updated_at DESC', args: [] });
 
   const base = process.env.SITE_URL || 'https://reportes.murzainversiones.com';
   const today = new Date().toISOString().split('T')[0];
