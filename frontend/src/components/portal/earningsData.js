@@ -649,6 +649,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  AXP: {
+    nombre: 'American Express',
+    trimestre: 'Q1 2026',
+    fecha: "2026-04-17T08:30:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Billed business crecimiento YoY — indicador adelantado de discount revenue y salud del gasto premium',
+      'Tasa de write-offs y delinquency — normalizacion post-pandemia; umbral critico >2.5% de la cartera',
+      'Net card fees YoY — refleja poder de premiumizacion y disposicion a pagar del Card Member',
+      'Nuevas adquisiciones de Card Members Millennial/Gen Z — clave para crecimiento a largo plazo',
+      'Guidance de EPS para FY2026 — management guio 5.00-5.50 en Q4 2025; revisar revision al alza',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 
