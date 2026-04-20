@@ -729,6 +729,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  CB: {
+    nombre: 'Chubb Limited',
+    trimestre: 'Q1 2026',
+    fecha: "2026-04-22T08:00:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Combined ratio: mantener por debajo de 90% en entorno de mayor frecuencia de catastrofes',
+      'Crecimiento de primas escritas netas en segmento comercial de Norteamerica',
+      'Impacto de social inflation en reservas de liability lines y ajuste de pricing',
+      'Expansion en Asia-Pacifico: crecimiento de primas y rentabilidad en China y SE Asia',
+      'Retorno de capital: nivel de buybacks y aumento de dividendo en 2026',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (36 empresas)
+## Reportes de acciones (37 empresas)
+
+### CB — Chubb Limited
+**URL**: https://reportes.murzainversiones.com/reporte/CB
+**Publicado**: 2026-04-20
+
+Chubb Limited (CB) es la aseguradora de propiedad y casualidad mas grande del mundo por activos y una de las mas rentables del sector. En FY2025 reporto ingresos de 63.9B USD y utilidad neta de 11.1B USD, con crecimiento consistente impulsado por el endurecimiento del mercado de seguros comerciales. Opera en mas de 54 paises con portafolio diversificado de seguros comerciales y personales. Su combined ratio de clase mundial (~87%) y 35 anos de dividendo creciente la posicionan como referencia global.
+
+Chubb opera a traves de tres segmentos: North America Commercial P&C Insurance (el mayor por volumen), North America Personal P&C Insurance y Overseas General Insurance. Su moat se basa en capacidad de suscripcion selectiva, escala global irreplicable, marca premium y relaciones de largo plazo con brokers corporativos. La disciplina en combined ratio es el principal diferenciador competitivo frente a pares del sector.
+
+**Datos financieros**:
+- Revenue (B USD): 63.9 (+9.2% YoY)
+- Utilidad Neta (B USD): 11.1 (+8.8% YoY)
+- Margen Neto: 17.4% (+0.0pp YoY)
+- EBITDA (B USD): 14.6 (+8.1% YoY)
+- FCF (B USD): 12.9 (+9.3% YoY)
+- EPS Diluido: 27.20 (+9.9% YoY)
+- Deuda Neta (B USD): 9.1 (-9.9% YoY)
+
+**Valuacion**: P/E Trailing N/D, P/E Forward 11.3x, EV/EBITDA 10.0x, P/FCF 10.6x, Deuda Neta/EBITDA 0.6x, ROE 19.2%, ROIC 18.6%
+
+**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
++ Lider global irreplicable — Chubb es la aseguradora P&C mas grande del mundo con presencia en 54+ paises, combined ratio de ~87% y 35 anos de dividendo creciente.
++ Disciplina en suscripcion como ventaja estructural — Rechaza sistematicamente negocios no rentables; genera margenes superiores al sector de forma consistente a lo largo del ciclo asegurador.
++ Crecimiento y FCF solido — Revenue crecio +9.2% YoY y FCF supera 12.9B USD, financiando buybacks y dividendos sin estres en el balance.
+- Riesgo catastrofe y social inflation — Eventos climaticos extremos y aumento de litigios en EEUU son riesgos estructurales que pueden impactar resultados en anos adversos.
+
+---
 
 ### TBBB — BBB Foods Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/TBBB
