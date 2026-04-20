@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (33 empresas)
+## Reportes de acciones (34 empresas)
+
+### OSCR — Oscar Health, Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/OSCR
+**Publicado**: 2026-04-20
+
+Oscar Health (OSCR) es una empresa de tecnologia de salud que opera planes de seguro medico en el mercado individual bajo la ACA. En FY2025, los ingresos crecieron 27.5% a $11.7B impulsados por un crecimiento de miembros superior al mercado hasta 2.04 millones. Sin embargo, el MLR se deterioro 570pb a 87.4%, generando perdida operativa de $396M y perdida neta de $443M tras el unico ano rentable en FY2024. El FCF operativo se mantiene positivo en $1.06B y la caja neta asciende a $2.34B.
+
+Oscar Health opera planes de salud individuales bajo la ACA en Estados Unidos, combinando tecnologia cloud-native propia con enfoque diferenciado en experiencia del miembro. Su plataforma +Oscar licencia capacidades de engagement, IA y analytics a proveedores y pagadores (B2B). En 2025 adquirio Lucie, IHC Specialty Benefits y Healthinsurance.org para expandirse al mercado ICHRA. El modelo es intensivo en capital regulatorio y altamente sensible al Medical Loss Ratio y al programa federal de ajuste de riesgo.
+
+**Datos financieros**:
+- Revenue (B USD): 11.70 (+27.5% YoY)
+- Utilidad Neta (B USD): -0.44 (N/M YoY)
+- Margen Neto: -3.8% (-4.1pp YoY)
+- EBITDA (B USD): -0.37 (N/M YoY)
+- FCF (B USD): 1.06 (+11.6% YoY)
+- EPS Diluido: -1.68 (N/M YoY)
+- Deuda Neta (B USD): -2.34 (+90.2% YoY)
+
+**Valuacion**: P/E Trailing N/A, P/E Forward N/A, EV/EBITDA N/A, P/FCF 4.1x, Deuda Neta/EBITDA Caja Neta, ROE N/A, ROIC N/A
+
+**Veredicto**: Especulativa — Alto Riesgo (Score: 5.2/10)
++ Crecimiento explosivo de revenue — Revenue crecio de $1.8B en 2021 a $11.7B en 2025 (CAGR ~58%), con base de miembros de 2.04M. La plataforma tecnologica escala con costos marginales decrecientes.
++ FCF positivo y caja neta de $2.34B — A pesar de perdidas contables, el FCF fue $1.06B por el float de primas. La caja neta otorga runway de 5+ anos sin necesidad de financiamiento externo inmediato.
++ Opcionalidad B2B via +Oscar — La monetizacion de tecnologia a proveedores y pagadores (Campaign Builder, EDE) diversifica el modelo mas alla del riesgo de seguros puro y no esta valorada por el mercado.
+- Deterioro del MLR y riesgo regulatorio critico — El MLR de 87.4% (+570pb) revirtio la rentabilidad de FY2024. La expiracion de eAPTCs y los cambios de CMS amenazan la base de miembros en 2026. Estos factores son en gran parte exogenos y dificultan la proyeccion de retorno a la rentabilidad.
+
+---
 
 ### AXP — American Express Company
 **URL**: https://reportes.murzainversiones.com/reporte/AXP
@@ -306,26 +333,26 @@ PayPal opera como plataforma de dos lados de pagos digitales: el segmento consum
 **URL**: https://reportes.murzainversiones.com/reporte/ASML
 **Publicado**: 2026-04-07
 
-ASML Holding es el unico proveedor mundial de sistemas de litografia EUV (Extreme Ultraviolet), tecnologia imprescindible para fabricar chips avanzados de 7nm o menos. Con cuota de mercado del 100% en EUV y ~80% en litografia total, posee uno de los moats tecnologicos mas profundos de la historia industrial. FY2024 cerro con ingresos de 30.7B USD (+2.9% YoY), margen bruto de 51.3% y backlog de ~36B EUR que da visibilidad de 12-18 meses. Veredicto: activo de calidad excepcional con valuacion exigente; atractivo en correcciones del 15-20%.
+ASML Holding es el unico proveedor mundial de sistemas de litografia EUV (Extreme Ultraviolet), tecnologia imprescindible para fabricar chips avanzados de 7nm o menos. Con cuota de mercado del 100% en EUV y ~80% en litografia total, posee uno de los moats tecnologicos mas profundos de la historia industrial. FY2025 cerro con ingresos de 34.8B USD (+13.3% YoY), margen bruto de 52.8% y backlog de 38.8B EUR que da visibilidad de 12-18 meses. Q1 2026 confirma el momentum: 9.5B USD de ingresos (+13.2% YoY) y margen neto de 30.3%. Veredicto: activo de calidad excepcional con valuacion mas comprimida que en 2024; atractivo en el rango actual.
 
-ASML disena, fabrica y vende sistemas de litografia fotonica para fabricantes de semiconductores (foundries e IDMs). Opera en dos segmentos: sistemas nuevos (>70% ingresos) y base instalada/IB (servicio, upgrades y herramientas reacondicionadas, ~30% ingresos, margen >60%). Clientes principales: TSMC (~44% ingresos), Samsung (~25%), Intel (~10%) y foundries emergentes. Distribucion geografica FY2024: Taiwan ~44%, Corea ~33%, China ~14%, Europa ~6%, EEUU ~3%. Sede en Veldhoven, Paises Bajos. Cotiza en Euronext Amsterdam y Nasdaq (ADR). El moat se basa en tecnologia EUV con 100K+ componentes de precision entregados por 457 proveedores especializados y >25 anos de R&D acumulado -- barrera de entrada practicamente infranqueable.
+ASML disena, fabrica y vende sistemas de litografia fotonica para fabricantes de semiconductores (foundries e IDMs). Opera en dos segmentos: sistemas nuevos (>70% ingresos) y base instalada/IB (servicio, upgrades y herramientas reacondicionadas, ~30% ingresos, margen >60%). Clientes principales: TSMC (~44% ingresos), Samsung (~25%), Intel (~10%) y foundries emergentes. Distribucion geografica FY2025: Taiwan ~44%, Corea ~30%, China ~14%, Europa ~8%, EEUU ~4%. En Q1 2026, China aumento a 19% de ventas (vs 36% en Q4 2025 -- reduccion por tightening de controles de exportacion). Sede en Veldhoven, Paises Bajos. Cotiza en Euronext Amsterdam y Nasdaq (ADR). El moat se basa en tecnologia EUV con 100K+ componentes de precision entregados por 457 proveedores especializados y >25 anos de R&D acumulado -- barrera de entrada practicamente infranqueable.
 
 **Datos financieros**:
-- Revenue (B USD): 35.9 (+2.9% YoY)
-- Utilidad Neta (B USD): 10.0 (+0.4% YoY)
-- Margen Neto: 28% (-0.7pp YoY)
-- EBITDA (B USD): 13.3 (+14.5% YoY)
-- FCF (B USD): 7.1 (+11.7% YoY)
-- EPS Diluido (USD): 25.62 (-0.1% YoY)
-- Deuda Neta (B USD): -1.1 (Caja neta YoY)
+- Revenue (B USD): 9.5 (+13.2% YoY)
+- Utilidad Neta (B USD): 3.0 (+17.1% YoY)
+- Margen Neto: 30.3% (+0.3pp YoY)
+- EBITDA (B USD): 3.9 (+18% YoY)
+- FCF (B USD): N/D (- YoY)
+- EPS Diluido (USD): 7.76 (+19% YoY)
+- Deuda Neta (B USD): -4.3 (Caja neta YoY)
 
-**Valuacion**: P/E Trailing 66.3x, P/E Forward 55.6x, EV/EBITDA 53x, P/FCF 110.7x, Deuda Neta/EBITDA Caja neta, ROE 50.5%, ROIC 53.2%
+**Valuacion**: P/E Trailing 54.1x, P/E Forward 45.3x, EV/EBITDA 38x, P/FCF 42.3x, Deuda Neta/EBITDA Caja neta, ROE 42.1%, ROIC 53.2%
 
 **Veredicto**: Mantener / Compra en Correccion (Score: 8.4/10)
 + Monopolio tecnologico sin sustitutos -- ASML es el unico proveedor mundial de litografia EUV; sin su tecnologia es imposible fabricar chips avanzados. Esta posicion es practicamente permanente en el horizonte de inversion.
-+ Superciclo de IA y soberania semiconductora -- TSMC, Samsung, Intel y RAPIDUS invierten decenas de billions en nuevas fabricas para chips de IA; cada fabrica necesita multiples sistemas ASML EUV, asegurando demanda creciente hasta 2030+.
++ Aceleracion real en FY2025 y Q1 2026 -- Revenue +13.3% en FY2025 y +13.2% en Q1 2026 YoY confirman que la normalizacion post-FY2023 termino; la demanda de chips de IA y la rampa de High-NA impulsan el crecimiento sostenido.
 + High-NA EUV duplica ASP y expande margenes hacia 56-60% -- La transicion de clientes a EXE:5000 (~370M EUR/sistema) y el crecimiento del negocio IB (>60% margen) impulsan expansion de rentabilidad hasta la guia 2030.
-- Valuacion exigente -- esperar correccion del 15-20% -- El P/E de 66.3x descuenta escenarios optimistas; desaceleracion del capex semiconductor o escalada en China podrian comprimir el precio 25-35% desde niveles actuales.
+- Valuacion aun exigente -- mantener disciplina de precio -- El P/E de 54.1x sigue descontando escenarios optimistas; nuevas restricciones a China y desaceleracion del capex de IA podrian comprimir el precio 20-30% desde niveles actuales.
 
 ---
 

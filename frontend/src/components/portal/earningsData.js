@@ -669,6 +669,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Mayo 2026 ──────────────────────────────────────────────────────────────
+  OSCR: {
+    nombre: 'Oscar Health',
+    trimestre: 'Q1 2026',
+    fecha: "2026-05-08T07:00:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'MLR Q1 2026: si supera 88% la perdida se profundiza; si baja a 84% senaliza recuperacion del modelo',
+      'Membership 2026: impacto real de expiracion de eAPTCs en enrollment y desercion de miembros',
+      'Ajuste de riesgo federal: actualizacion del accrual de risk adjustment podria generar cargo o beneficio material',
+      'Capital estatutario: exceso de solo 315M sobre minimo — vigilar inyecciones de capital a subsidiarias',
+      'Revenue +Oscar: monetizacion B2B y traccion de nuevas adquisiciones ICHRA (Lucie, IHC, Healthinsurance.org)',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

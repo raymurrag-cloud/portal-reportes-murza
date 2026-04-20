@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (33 empresas)
+## Reportes de acciones (34 empresas)
 
+- [Oscar Health, Inc. (OSCR)](https://reportes.murzainversiones.com/reporte/OSCR): Reporte financiero completo de Oscar Health (OSCR): ingresos FY2025 de 11.7B USD (+27.5%), MLR 87.4%, FCF 1.06B y caja neta 2.34B. Analisis del mercado ACA. Veredicto: Especulativa — Alto Riesgo.
 - [American Express Company (AXP)](https://reportes.murzainversiones.com/reporte/AXP): Analisis financiero de American Express (AXP): ingresos 54.9B USD, ROE 32.4%, FCF Yield 7%, P/E forward 19.6x. Plataforma de pagos integrada con moat estructural. Veredicto: Comprar con Conviccion.
 - [Snowflake Inc. (SNOW)](https://reportes.murzainversiones.com/reporte/SNOW): Analisis financiero completo de Snowflake (SNOW): Data Cloud, ingresos, FCF, Cortex AI, valuacion y riesgos con datos del 10-K FY2026. Veredicto: Mantener / Acumular en Correccion.
 - [Visa Inc. (V)](https://reportes.murzainversiones.com/reporte/V): Analisis financiero completo de Visa Inc. (V): ingresos, margenes, FCF, KPIs y tesis de inversion. La mayor red de pagos digitales del mundo con presencia en 200+ paises. Veredicto: Mantener / Compra en Correccion.
