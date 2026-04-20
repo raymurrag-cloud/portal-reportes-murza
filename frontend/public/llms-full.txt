@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (34 empresas)
+## Reportes de acciones (35 empresas)
+
+### CMG — Chipotle Mexican Grill, Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/CMG
+**Publicado**: 2026-04-20
+
+Chipotle Mexican Grill cerro FY2025 con ingresos de $11.93B (+5.4% YoY), aunque el crecimiento fue impulsado por nuevas aperturas ya que las ventas comparables cayeron 1.7%. La utilidad neta llego a $1.54B (+0.7% YoY) y el EPS diluido crecio 2.7% a $1.14 post-split. La empresa mantiene balance saneado con caja neta de $350M y cero deuda financiera, y recompro $2.43B en acciones durante 2025. Con 4,042 restaurantes al cierre del ano, CMG sigue siendo el lider indiscutible del fast-casual premium.
+
+Chipotle Mexican Grill opera 4,042 restaurantes en EE.UU. e internacionalmente bajo un modelo de cadena propia sin franquicias tradicionales. Su propuesta de valor se basa en ingredientes frescos, personalizacion del pedido y velocidad de servicio. El moat competitivo esta en la percepcion de calidad superior a precio accesible (Food with Integrity), la eficiencia operativa del formato Chipotlane (drive-thru digital), y la lealtad de su base de clientes. El canal digital represento el 36.7% de las ventas en 2025. Opera un solo segmento reportable: restaurantes en EE.UU. con expansion internacional incipiente en Europa y Medio Oriente via licencias.
+
+**Datos financieros**:
+- Revenue (B USD): 11.93 (+5.5% YoY)
+- Utilidad Neta (B USD): 1.54 (+0.7% YoY)
+- Margen Neto: 12.9% (-0.6pp YoY)
+- EBITDA (B USD): 2.30 (+2.2% YoY)
+- FCF (B USD): 1.45 (-4.0% YoY)
+- EPS Diluido: 1.14 (+2.7% YoY)
+- Deuda Neta (B USD): -0.35 (N/A YoY)
+
+**Valuacion**: P/E Trailing 31.4x, P/E Forward 28.7x, EV/EBITDA 20.8x, P/FCF 33.2x, Deuda Neta/EBITDA 0.0x, ROE 54.4%, ROIC 57.9%
+
+**Veredicto**: Mantener con Cautela (Score: 7.2/10)
++ Balance ejemplar -- Cero deuda financiera, caja neta de $350M y $2.43B en recompras en 2025 reflejan una empresa que genera caja con consistencia.
++ ROIC del 57.9% -- Cada restaurante nuevo genera payback en ~3 anos, justificando la expansion agresiva de Chipotlanes.
++ Margenes superiores al sector -- Margen bruto de 70.4% y operativo de 16.3% reflejan el poder de la marca y eficiencia operativa.
+- Ventas comparables en negativo -- La caida de -1.7% en comp sales y guidance plano para 2026 limitan el potencial alcista a corto plazo con valuacion en 28.7x P/E Forward.
+
+---
 
 ### OSCR — Oscar Health, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/OSCR

@@ -689,6 +689,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  CMG: {
+    nombre: 'Chipotle Mexican Grill',
+    trimestre: 'Q1 2026',
+    fecha: "2026-04-22T16:00:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Ventas comparables Q1 2026: management guia planas vs -1.7% de FY2025 -- clave para saber si el trafico se recupera',
+      'Costos de alimentos: seguimiento del impacto de aranceles estimado en 15bps -- riesgo si politica arancelaria se endurece',
+      'Aperturas 2026: plan de 350-370 restaurantes con 80% Chipotlane -- execution risk en mercados internacionales',
+      'Costos laborales: inflacion salarial en California y NY presiona el 25.1% de labor como % de revenue',
+      'Expansion internacional: 11 restaurantes abiertos en Medio Oriente via socios -- modelo replicable o concentrado en EE.UU.',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 
