@@ -709,6 +709,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Mayo 2026 ──────────────────────────────────────────────────────────────
+  TBBB: {
+    nombre: 'BBB Foods Inc.',
+    trimestre: 'Q1 2026',
+    fecha: "2026-05-15T17:00:00",
+    cuando: 'Despues del cierre',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'RSUs: el plan Liquidity Event reconoce Ps.2,930M/ano en gradiente inverso -- seguir el gasto SBC en Q1 2026',
+      'SSS 2026: la tasa de 18.3% en 2025 debe mantenerse sobre 15% para justificar la valuacion actual',
+      'Apertura de tiendas: ritmo de 500+ por ano requiere flawless execution -- monitorear capex vs guidance',
+      'Competencia: expansion de Bodega Aurrera en segmento popular y posibles nuevos entrantes de hard discount',
+      'Tipo de cambio MXN/USD: empresa mantiene dolares del IPO en balance -- variaciones impactan resultado financiero',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

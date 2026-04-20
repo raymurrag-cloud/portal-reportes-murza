@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (35 empresas)
+## Reportes de acciones (36 empresas)
+
+### TBBB — BBB Foods Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/TBBB
+**Publicado**: 2026-04-20
+
+BBB Foods Inc. (Tiendas 3B) es el lider del modelo hard discount grocery en Mexico, con 3,346 tiendas al cierre de 2025 y revenue de Ps.78.2B MXN (US$4.4B), creciendo 36.1% YoY y 35.6% CAGR desde 2021. La perdida neta reportada de Ps.2,840M en FY2025 se explica en mas de un 100% por un gasto no-cash de Ps.2,930M en RSUs del plan de compensacion post-IPO; el negocio subyacente mantiene solidez operativa y OCF record de Ps.4,682M. A US$39, el mercado premia el hipercrecimiento con multiples exigentes que dejan poco margen ante desaceleraciones.
+
+Tiendas 3B opera bajo el modelo hard discount: ~850-900 SKUs, precio minimo sostenible de mercado, y tiendas compactas en vecindarios centrales. El 58.2% de ventas es marca propia (private label), 35.9% marcas reconocidas y 5.7% productos spot. Los clientes visitan 3-4 veces por semana. El moat competitivo es su estructura de costos mas baja que supermercados tradicionales y su modelo de NWC negativo (Ps.-5,876M en 2025) que autofinancia la expansion via float de cuentas por pagar. Presencia 100% en Mexico con 3,346 tiendas y 4 centros de distribucion al cierre de FY2025.
+
+**Datos financieros**:
+- Revenue (B MXN): 78.2 (+36.1% YoY)
+- Utilidad Neta (B MXN): -2.84 (N/A YoY)
+- Margen Neto: -3.6% (-4.2pp YoY)
+- EBITDA (B MXN): 0.91 (-64.6% YoY)
+- FCF (B MXN): 1.13 (-13.7% YoY)
+- EPS Diluido (MXN): -24.69 (N/A YoY)
+- Deuda Neta (B MXN): 0.82 (+N/A YoY)
+
+**Valuacion**: P/E Trailing N/A, P/E Forward N/D, EV/EBITDA (adj.) 21x, P/FCF 71x, Deuda Neta/EBITDA (adj.) 0.9x, ROE -68.8%, ROIC -9.6%
+
+**Veredicto**: Mantener / Acumular en correcciones (Score: 7.0/10)
++ Crecimiento excepcional -> Revenue CAGR 35.6% en 4 anos con 3,346 tiendas y SSS +18.3% en 2025 demuestran que el modelo hard discount resuena profundamente en el consumidor mexicano.
++ Caja autopropulsada -> NWC negativo de Ps.-5,876M y OCF de Ps.4,682M (+24.9% YoY) muestran que el negocio crece sin quemar caja operativa, financiandose con el float de proveedores.
++ Perdida contable temporal -> La perdida neta de Ps.2,840M en FY2025 es en >100% atribuible a RSUs no-cash del plan post-IPO; el EBITDA ajustado es Ps.3,838M y el negocio operativo esta intacto.
+- Valuacion sin margen de error -> P/FCF ~71x y EV/EBITDA adj ~21x descuentan anos de hipercrecimiento perfecto; cualquier tropiezo en SSS, expansion o competencia podria generar caida severa.
+
+---
 
 ### CMG — Chipotle Mexican Grill, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/CMG
