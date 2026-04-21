@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (39 empresas)
+## Reportes de acciones (40 empresas)
+
+### CAT — Caterpillar Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/CAT
+**Publicado**: 2026-04-21
+
+Caterpillar reporto ingresos de 67.6 B USD en FY2025, un alza de +4.3% vs FY2024, pero enfrento presion en margenes por mayores costos y mezcla de productos desfavorable. La utilidad neta bajo -17.7% a 8.9 B USD y el EPS diluido cayo de 22.05 a 18.81, aunque sigue siendo el tercer mejor registro historico. El FCF fue de 8.9 B USD y la deuda neta se mantiene manejable en 1.5x EBITDA. La empresa continuo su programa de recompras y dividendos, demostrando solidez de balance en un ciclo de demanda moderada.
+
+Caterpillar Inc. es el fabricante lider mundial de maquinaria de construccion y mineria, motores diesel y de gas natural, y turbinas industriales. Opera a traves de tres segmentos: Construction Industries (30% de ventas), Resource Industries (mineria, 20%) y Energy and Transportation (E&T, 42%), ademas de Financial Products (8%). Su ventaja competitiva proviene de su red de 3,800+ distribuidores en 190 paises, marca Cat reconocida globalmente, y fidelidad de clientes por el costo total de propiedad. Los servicios de postventa representan un flujo recurrente creciente.
+
+**Datos financieros**:
+- Revenue (B USD): 67.59 (+4.3% YoY)
+- Utilidad Neta (B USD): 8.88 (-17.7% YoY)
+- Margen Neto: 13.1% (-3.6pp YoY)
+- EBITDA (B USD): 13.41 (-12.0% YoY)
+- FCF (B USD): 8.92 (-11.2% YoY)
+- EPS Diluido: 18.81 (-14.7% YoY)
+- Deuda Neta (B USD): 20.72 (+1.3% YoY)
+
+**Valuacion**: P/E Trailing 42.4x, P/E Forward 45.6x, EV/EBITDA 29.7x, P/FCF 42.3x, Deuda Neta/EBITDA 1.55x, ROE 41.7%, ROIC 20.2%
+
+**Veredicto**: Mantener con Sesgo Positivo (Score: 7.4/10)
++ Lider mundial con moat real — La red de 3,800+ distribuidores exclusivos en 190 paises y la base instalada de millones de equipos generan ingresos recurrentes imposibles de replicar por competidores.
++ Capital allocation excepcional — 7.9 B devueltos en FY2025; el float se redujo 21% en 5 anos. CAT es una maquina de retorno de capital en ciclos altos.
++ Tailwind E&T y data centers — El segmento de Energia y Transporte (42% de ventas) se beneficia de la demanda de generadores para IA y reindustrializacion de EE.UU.
+- Valuacion exigente en ciclo bajo — Con P/E de 42x y EPS cayendo 14.7%, el mercado descuenta una recuperacion que aun no es visible. Aranceles y debilidad en China son riesgos reales para 2026.
+
+---
 
 ### DPZ — Dominos Pizza Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/DPZ

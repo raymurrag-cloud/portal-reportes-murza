@@ -789,6 +789,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  CAT: {
+    nombre: 'Caterpillar Inc',
+    trimestre: 'Q1 2026',
+    fecha: "2026-04-29T07:30:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Margenes: seguimiento del margen bruto en Q1 2026 — recuperacion desde 33.8% o mayor presion por aranceles',
+      'Guidance de management sobre impacto de aranceles en costos de manufactura para FY2026',
+      'Demanda en Construction Industries: indicadores de vivienda y obra civil en EE.UU. y Europa',
+      'Segmento E&T: crecimiento en generadores para data centers como motor de ingresos recurrentes',
+      'EPS forward: recuperacion hacia 20-22 USD en FY2026 es clave para justificar la valuacion actual de 42x',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 
