@@ -749,6 +749,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Mayo 2026 ──────────────────────────────────────────────────────────────
+  YPF: {
+    nombre: 'YPF Sociedad Anonima',
+    trimestre: 'Q1 2026',
+    fecha: "2026-05-15T08:00:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Produccion de Vaca Muerta: seguir volumen de produccion no convencional vs. plan — objetivo de crecimiento hacia 2030',
+      'Precio del Brent: cada 10 USD/bbl impacta ~500-700M en EBITDA; Brent en 68 USD/bbl en 2025 es un headwind',
+      'FCF: seguir si FCF regresa a positivo en 2026 conforme baja el capex y sube la produccion',
+      'Deuda y refinanciamiento: vencimientos de deuda de 10.6B total — costo de refinanciamiento en mercados emergentes',
+      'Avance del proyecto LNG: hitos del proyecto Argentina LNG (licencias, contratos de venta, decision final de inversion)',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 
