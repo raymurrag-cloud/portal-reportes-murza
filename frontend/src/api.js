@@ -63,4 +63,7 @@ export const api = {
   // Prospectos GBM
   enviarProspectoGBM: (body) => req('POST', '/prospectos-gbm', body),
   adminGetProspectos: () => req('GET', '/admin/prospectos', null, 'admin'),
+
+  // Earnings (fechas dinámicas desde Turso)
+  getEarnings: () => req('GET', '/earnings'),
 };

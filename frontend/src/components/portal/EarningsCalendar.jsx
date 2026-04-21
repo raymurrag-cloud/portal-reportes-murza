@@ -368,6 +368,7 @@ function EstimadoPill({ label, value }) {
 export default function EarningsCalendar() {
   const [reportes, setReportes]       = useState([]);
   const [loading, setLoading]         = useState(true);
+  const [earningsMap, setEarningsMap] = useState(EARNINGS_DATA); // inicia con estático, se actualiza desde API
   const [mesFiltro, setMesFiltro]     = useState(null);   // null = todos
   const [diasFiltro, setDiasFiltro]   = useState(null);   // null | 7 | 14 | 30
   const [expanded, setExpanded]       = useState(new Set());
@@ -381,13 +382,24 @@ export default function EarningsCalendar() {
       .finally(() => setLoading(false));
   }, []);
 
+  // Cargar fechas dinámicas desde Turso vía API (sobrescribe el estático si hay datos)
+  useEffect(() => {
+    api.getEarnings()
+      .then(rows => {
+        if (!rows?.length) return;
+        const map = { ...EARNINGS_DATA };
+        rows.forEach(e => { map[e.ticker.toUpperCase()] = e; });
+        setEarningsMap(map);
+      })
+      .catch(() => { /* mantiene EARNINGS_DATA como fallback */ });
+  }, []);
+
   // ── Construir lista enriquecida ───────────────────────────────────────────
-  // Parte de las empresas en la BD y enriquece con earningsData
   const empresas = reportes.map(r => ({
     ticker:      r.ticker,
     empresa:     r.empresa,
     slug:        r.slug,
-    earnings:    EARNINGS_DATA[r.ticker.toUpperCase()] || null,
+    earnings:    earningsMap[r.ticker.toUpperCase()] || null,
   }));
 
   // ── Meses disponibles para el filtro ─────────────────────────────────────

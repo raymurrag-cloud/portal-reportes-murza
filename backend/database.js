@@ -109,5 +109,26 @@ export async function initDb() {
     await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_visitantes_session ON visitantes(session_id)`, args: [] });
   } catch { /* ignorar si ya existen */ }
 
+  // Tabla earnings (fechas dinámicas, reemplaza earningsData.js estático)
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS earnings (
+      ticker               TEXT PRIMARY KEY,
+      nombre               TEXT,
+      trimestre            TEXT,
+      fecha                TEXT,
+      cuando               TEXT,
+      fecha_confirmada     INTEGER DEFAULT 0,
+      fecha_siguiente      TEXT,
+      trimestre_siguiente  TEXT,
+      eps_estimate         REAL,
+      revenue_estimate_b   REAL,
+      forward_pe           REAL,
+      last_surprise_pct    REAL,
+      what_to_watch        TEXT,
+      updated_at           TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+
   console.log('✅ Base de datos lista (Turso)');
 }

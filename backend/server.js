@@ -1,9 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import { initDb } from './database.js';
-import authRoutes from './routes/auth.js';
+import authRoutes    from './routes/auth.js';
 import reportesRoutes from './routes/reportes.js';
-import adminRoutes from './routes/admin.js';
+import adminRoutes    from './routes/admin.js';
+import earningsRoutes from './routes/earnings.js';
 
 const app  = express();
 const PORT = process.env.PORT || 3002;
@@ -14,6 +15,7 @@ app.use(express.json({ limit: '5mb' }));
 app.use('/api/auth',     authRoutes);
 app.use('/api/reportes', reportesRoutes);
 app.use('/api/admin',    adminRoutes);
+app.use('/api/earnings', earningsRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 

@@ -1,0 +1,19 @@
+name: Refresh Earnings Dates
+
+on:
+  schedule:
+    # 8:00 AM Ciudad de México (UTC-6) = 14:00 UTC
+    - cron: '0 14 * * *'
+  workflow_dispatch: # permite correrlo manualmente desde GitHub
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Llamar endpoint de refresco
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer ${{ secrets.EARNINGS_REFRESH_SECRET }}" \
+            -H "Content-Type: application/json" \
+            --fail-with-body \
+            https://portal-murza.onrender.com/api/earnings/refresh
