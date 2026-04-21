@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (38 empresas)
+## Reportes de acciones (39 empresas)
 
+- [Dominos Pizza Inc. (DPZ)](https://reportes.murzainversiones.com/reporte/DPZ): Analisis financiero completo de Dominos Pizza (DPZ): revenue 4.94B USD, FCF +31% YoY, P/E forward 19x, lider global de pizza con modelo franquiciado y plataforma digital. Veredicto: Comprar con Conviccion.
 - [YPF Sociedad Anonima (YPF)](https://reportes.murzainversiones.com/reporte/YPF): Analisis financiero de YPF (YPF) FY2025: empresa energetica integrada de Argentina, Vaca Muerta, EV/EBITDA 5.2x, P/E forward 7.1x Veredicto: Mantener con Sesgo Positivo.
 - [Chubb Limited (CB)](https://reportes.murzainversiones.com/reporte/CB): Analisis financiero de Chubb Limited (CB): revenue, utilidad neta, margenes, FCF, valuacion y perspectivas FY2025. Veredicto: Comprar con Conviccion.
 - [BBB Foods Inc. (TBBB)](https://reportes.murzainversiones.com/reporte/TBBB): Analisis financiero BBB Foods (Tiendas 3B): revenue Ps.78.2B MXN +36% YoY, 3,346 tiendas, CAGR 35.6%. Perdida contable no recurrente por RSUs. Valoracion, FCF y perspectivas. Veredicto: Mantener / Acumular en correcciones.

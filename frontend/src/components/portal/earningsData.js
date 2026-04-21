@@ -769,6 +769,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Abril 2026 ──────────────────────────────────────────────────────────────
+  DPZ: {
+    nombre: 'Dominos Pizza',
+    trimestre: 'Q1 2026',
+    fecha: "2026-04-28T08:00:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'Same-store sales EE.UU. en Q1 2026: recuperacion o nueva caida ante presion del consumidor',
+      'Apertura neta de tiendas internacionales: ritmo vs guidance de 800-850 nuevas tiendas en 2026',
+      'Margen neto: si se recupera por encima del 12.3% de FY2024 o sigue bajo presion impositiva',
+      'Impacto del USD fuerte en conversion de royalties internacionales reportados en dolares',
+      'Actualizacion del programa Hungry for MORE y penetracion digital del programa Rewards',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

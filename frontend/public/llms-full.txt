@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (38 empresas)
+## Reportes de acciones (39 empresas)
+
+### DPZ — Dominos Pizza Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/DPZ
+**Publicado**: 2026-04-21
+
+Dominos Pizza (DPZ) es la cadena de pizza mas grande del mundo con mas de 22,100 ubicaciones en mas de 90 mercados al cierre de FY2025. Su modelo casi totalmente franquiciado genera ingresos predecibles y margenes superiores al sector. En FY2025 reporto ingresos de 4.94B USD (+4.9% YoY), FCF de 0.67B USD (+31.4% YoY) y EPS diluido de 17.86 USD. La empresa mantiene una posicion financiera solida y retorna capital agresivamente via recompras y dividendos.
+
+Dominos opera principalmente a traves de dos segmentos: U.S. Stores (tiendas corporativas y royalties de franquicias en EE.UU.) e International Franchise (royalties globales). El modelo de franquicia genera royalties sobre ventas del sistema, suministro de ingredientes y tecnologia, produciendo margenes operativos superiores con minima inversion de capital. Su app digital y programa Dominos Rewards son ventajas competitivas clave, con mas del 85% de pedidos en EE.UU. via canales digitales. El moat se apoya en escala de supply chain, marca global y tecnologia propietaria de pedidos.
+
+**Datos financieros**:
+- Revenue (B USD): 4.94 (+4.9% YoY)
+- Utilidad Neta (B USD): 0.60 (+3.4% YoY)
+- Margen Neto: 12.1% (-0.2pp YoY)
+- EBITDA (B USD): 1.04 (+7.2% YoY)
+- FCF (B USD): 0.67 (+31.4% YoY)
+- EPS Diluido: 17.86 (+5.6% YoY)
+- Deuda Neta (B USD): -0.11 (N/A YoY)
+
+**Valuacion**: P/E Trailing 20.7x, P/E Forward 19.0x, EV/EBITDA 11.8x, P/FCF 18.5x, Deuda Neta/EBITDA -0.11x, ROE N/A, ROIC ~35%
+
+**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
++ Lider global indiscutible — Mayor cadena de pizza del mundo con 22,100+ ubicaciones en 90 mercados y ventaja competitiva sostenible via escala de supply chain y plataforma digital propia.
++ FCF excepcional en FY2025 — FCF crecio +31% a 670M USD; FCF yield del 5.4% sobre precio actual representa valoracion atractiva para una empresa de esta calidad.
++ Valuacion con descuento — P/E forward de 19x y EV/EBITDA de 11.8x ofrecen descuento respecto al historico de DPZ y al sector QSR, con potencial de re-rating al alza.
+- Riesgo FX y SSS domesticos — Fortaleza del USD y desaceleracion de same-store sales en EE.UU. son los principales vientos en contra a monitorear en 2026.
+
+---
 
 ### YPF — YPF Sociedad Anonima
 **URL**: https://reportes.murzainversiones.com/reporte/YPF
