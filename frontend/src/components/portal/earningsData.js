@@ -809,6 +809,26 @@ export const EARNINGS_DATA = {
     ],
   },
 
+  // ── Mayo 2026 ──────────────────────────────────────────────────────────────
+  BN: {
+    nombre: 'Brookfield Corporation',
+    trimestre: 'Q1 2026',
+    fecha: "2026-05-15T08:00:00",
+    cuando: 'Antes de apertura',
+    fecha_confirmada: false,
+    eps_estimate: null,
+    revenue_estimate_b: null,
+    forward_pe: null,
+    last_surprise_pct: null,
+    what_to_watch: [
+      'AUM growth: confirmar si supera 1.1T USD en Q1 2026 — clave para fee revenue y re-rating',
+      'DE before realizations: mantener tendencia +10% YoY; cualquier caida es senal de alerta',
+      'BPY real estate: valuaciones de oficinas y comercial en EEUU y UK bajo presion de tasas altas',
+      'Refinanciamiento: 245B en non-recourse debt con vencimientos 2025-2030 en entorno de tasas elevadas',
+      'Captacion nuevos fondos: BIF VI e infraestructura digital — meta de 30B+ por fondo en 2026',
+    ],
+  },
+
 // __EARNINGS_DATA_END__
 };
 

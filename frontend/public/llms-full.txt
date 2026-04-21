@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (40 empresas)
+## Reportes de acciones (41 empresas)
+
+### BN — Brookfield Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/BN
+**Publicado**: 2026-04-21
+
+Brookfield Corporation (BN) es uno de los gestores de activos alternativos mas grandes del mundo, con mas de USD 1 trillon en AUM al cierre de FY2025. Opera a traves de tres negocios principales: Asset Management (73% de BAM), Wealth Solutions (seguros y rentas via BWS) y Operating Businesses (infraestructura, renovables, real estate y private equity). En FY2025 reporto ingresos consolidados de USD 75.1B, Distributable Earnings de USD 6.0B y OCF de USD 10.96B. La accion cotiza a ~7.9x EPS Forward, un descuento significativo vs peers como Blackstone y KKR que cotizan a 22-24x.
+
+BN actua como holding de tres negocios complementarios: 1) Asset Management via 73% en BAM con USD 1T+ en AUM generando fees recurrentes y carried interest en renovables, infraestructura, real estate, private equity y credito. 2) Wealth Solutions via BWS con USD 143B en activos de seguros como fuente de capital perpetuo de bajo costo. 3) Operating Businesses con posiciones directas en infraestructura (BIP), renovables (BEP), private equity (BBU) y real estate. El moat proviene de escala global, relaciones con 1,000+ institucionales y track record de mas de 30 anos en activos reales a traves de multiples ciclos economicos.
+
+**Datos financieros**:
+- Revenue (B USD): 75.1 (-12.7% YoY)
+- NI Accionistas (B USD): 1.31 (+103.9% YoY)
+- Margen Neto: 1.7% (+1.0pp YoY)
+- EBITDA consol. (B USD): 31.9 (+17.3% YoY)
+- Distrib. Earnings (B USD): 6.01 (-4.2% YoY)
+- EPS Diluido (GAAP): 0.49 (+145.0% YoY)
+- Deuda Neta consol. (B USD): 243.4 (+9.6% YoY)
+
+**Valuacion**: P/E Trailing 94.6x, P/E Forward 7.9x, EV/EBITDA 10.9x, P/Distrib.Earnings 17.2x, Deuda Neta/EBITDA 7.6x, ROE 3.0%, DE Yield (MCap) 5.8%
+
+**Veredicto**: Comprar con Conviccion (Score: 7.4/10)
++ Descuento vs peers injustificado -> BN cotiza a 7.9x P/E Forward y 10.9x EV/EBITDA vs Blackstone y KKR que cotizan a 22-24x, ofreciendo acceso a una gestora de USD 1T en AUM a precio de holding con descuento excepcional.
++ DE crecientes y resilientes -> Distributable Earnings before realizations crecio +11% YoY a USD 5.4B en FY2025, respaldado por fees recurrentes de BAM y expansion de Wealth Solutions, con alta visibilidad de continuidad.
++ Wealth Solutions como diferencial competitivo -> USD 143B en activos de seguros proporcionan capital de bajo costo perpetuo para financiar activos reales, un modelo que Blackstone y KKR no replican con la misma escala e integracion.
+- Riesgo de refinanciamiento en tasas altas -> USD 245B en non-recourse borrowings en subsidiarias deben refinanciarse en entorno de tasas elevadas, comprimiendo spreads y potencialmente presionando los DE en 2025-2028.
+
+---
 
 ### CAT — Caterpillar Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/CAT
