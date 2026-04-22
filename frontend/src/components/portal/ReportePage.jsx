@@ -56,6 +56,12 @@ export default function ReportePage() {
         <meta property="og:description" content={reporte.meta_descripcion} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://reportes.murzainversiones.com/reporte/${reporte.slug}`} />
+        <meta property="og:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
+        <meta property="og:site_name" content="Murza Inversiones" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${reporte.empresa} (${reporte.ticker}) — Analisis Financiero | Murza Inversiones`} />
+        <meta name="twitter:description" content={reporte.meta_descripcion} />
+        <meta name="twitter:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
         <link rel="canonical" href={`https://reportes.murzainversiones.com/reporte/${reporte.slug}`} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -85,6 +91,14 @@ export default function ReportePage() {
           },
           "articleSection": "Analisis Financiero",
           "keywords": `${reporte.ticker}, ${reporte.empresa}, analisis financiero, 10-K, FCF, EBITDA, valuacion, invertir en bolsa`
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://reportes.murzainversiones.com" },
+            { "@type": "ListItem", "position": 2, "name": `${reporte.empresa} (${reporte.ticker})`, "item": `https://reportes.murzainversiones.com/reporte/${reporte.slug}` }
+          ]
         })}</script>
       </Helmet>
 

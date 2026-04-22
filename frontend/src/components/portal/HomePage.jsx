@@ -205,6 +205,12 @@ export default function HomePage() {
         <meta property="og:description" content="Portal de analisis fundamental de empresas publicas de EE.UU. Reportes basados en 10-K/10-Q de SEC EDGAR. Gratis. En espanol." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reportes.murzainversiones.com" />
+        <meta property="og:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
+        <meta property="og:site_name" content="Murza Inversiones" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Analisis Financiero de Empresas | Murza Inversiones" />
+        <meta name="twitter:description" content="Portal de analisis fundamental de empresas publicas de EE.UU. Reportes basados en 10-K/10-Q de SEC EDGAR. Gratis. En espanol." />
+        <meta name="twitter:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
         <link rel="canonical" href="https://reportes.murzainversiones.com" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

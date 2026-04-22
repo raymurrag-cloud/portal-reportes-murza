@@ -477,6 +477,17 @@ export default function EarningsCalendar() {
       <Helmet>
         <title>Calendario de Earnings | Murza Inversiones</title>
         <meta name="description" content="Fechas de earnings, estimados de EPS y revenue, y analisis previo al reporte de las principales empresas del mercado." />
+        <meta property="og:title" content="Calendario de Earnings | Murza Inversiones" />
+        <meta property="og:description" content="Proximas fechas de resultados trimestrales, estimados de EPS y revenue, sorpresa historica y puntos clave a vigilar por empresa." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reportes.murzainversiones.com/earnings" />
+        <meta property="og:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
+        <meta property="og:site_name" content="Murza Inversiones" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Calendario de Earnings | Murza Inversiones" />
+        <meta name="twitter:description" content="Proximas fechas de resultados trimestrales, estimados y puntos clave por empresa." />
+        <meta name="twitter:image" content="https://reportes.murzainversiones.com/murza-logo.png" />
+        <link rel="canonical" href="https://reportes.murzainversiones.com/earnings" />
       </Helmet>
 
       <div className="portal-page">

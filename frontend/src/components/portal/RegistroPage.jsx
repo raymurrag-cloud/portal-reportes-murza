@@ -39,7 +39,10 @@ export default function RegistroPage() {
   return (
     <>
       <Helmet>
-        <title>Registro | Murza Inversiones</title>
+        <title>Registro gratis | Murza Inversiones</title>
+        <meta name="description" content="Crea tu cuenta gratis en Murza Inversiones y accede a todos los reportes de analisis financiero de empresas publicas de EE.UU." />
+        <link rel="canonical" href="https://reportes.murzainversiones.com/registro" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="auth-page">
