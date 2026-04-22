@@ -37,9 +37,48 @@ router.get('/', async (req, res) => {
   res.json(result.rows);
 });
 
+// ── Sitemap XML ───────────────────────────────────────────────────────────
+router.get('/sitemap.xml', async (req, res) => {
+  const { rows } = await db.execute({ sql: 'SELECT slug, ticker, empresa, updated_at, created_at FROM reportes WHERE publicado = 1 ORDER BY updated_at DESC', args: [] });
+
+  const base = process.env.SITE_URL || 'https://reportes.murzainversiones.com';
+  const today = new Date().toISOString().split('T')[0];
+
+  const staticUrls = [
+    { loc: base, priority: '1.0', changefreq: 'daily', lastmod: today },
+    { loc: `${base}/earnings`, priority: '0.8', changefreq: 'weekly', lastmod: today },
+    { loc: `${base}/registro`, priority: '0.5', changefreq: 'monthly', lastmod: today },
+  ];
+
+  const staticXml = staticUrls.map(u => `
+  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${u.lastmod}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`).join('');
+
+  const reportXml = rows.map(r => {
+    const lastmod = (r.updated_at || r.created_at || today).split(' ')[0];
+    return `
+  <url>
+    <loc>${base}/reporte/${r.slug}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+  }).join('');
+
+  res.header('Content-Type', 'application/xml');
+  res.header('Cache-Control', 'public, max-age=3600');
+  res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${staticXml}${reportXml}
+</urlset>`);
+});
+
 // ── Leer reporte público (preview) ────────────────────────────────────────
 router.get('/:slug', async (req, res) => {
-  if (req.params.slug === 'sitemap.xml') return res.status(404).end();
 
   const { rows } = await db.execute({
     sql:  'SELECT id, ticker, empresa, contenido_md, contenido_json, parrafos_gratis, slug, meta_descripcion, created_at, updated_at, fecha_reporte FROM reportes WHERE slug = ? AND publicado = 1',
@@ -80,46 +119,6 @@ router.get('/:slug/completo', authUser, async (req, res) => {
   const reporte = rows[0];
   if (!reporte) return res.status(404).json({ error: 'Reporte no encontrado' });
   res.json({ ...reporte, id: Number(reporte.id), es_json: !!reporte.contenido_json });
-});
-
-// ── Sitemap XML ───────────────────────────────────────────────────────────
-router.get('/sitemap.xml', async (req, res) => {
-  const { rows } = await db.execute({ sql: 'SELECT slug, ticker, empresa, updated_at, created_at FROM reportes WHERE publicado = 1 ORDER BY updated_at DESC', args: [] });
-
-  const base = process.env.SITE_URL || 'https://reportes.murzainversiones.com';
-  const today = new Date().toISOString().split('T')[0];
-
-  const staticUrls = [
-    { loc: base, priority: '1.0', changefreq: 'daily', lastmod: today },
-    { loc: `${base}/earnings`, priority: '0.8', changefreq: 'weekly', lastmod: today },
-    { loc: `${base}/registro`, priority: '0.5', changefreq: 'monthly', lastmod: today },
-  ];
-
-  const staticXml = staticUrls.map(u => `
-  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`).join('');
-
-  const reportXml = rows.map(r => {
-    const lastmod = (r.updated_at || r.created_at || today).split(' ')[0];
-    return `
-  <url>
-    <loc>${base}/reporte/${r.slug}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>`;
-  }).join('');
-
-  res.header('Content-Type', 'application/xml');
-  res.header('Cache-Control', 'public, max-age=3600');
-  res.send(`<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${staticXml}${reportXml}
-</urlset>`);
 });
 
 export { generarSlug };
