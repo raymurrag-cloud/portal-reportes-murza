@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import AdminPreviewBar from './components/admin/AdminPreviewBar.jsx';
 
 // Portal público
 import HomePage           from './components/portal/HomePage.jsx';
@@ -26,7 +27,9 @@ function RequireAdmin({ children }) {
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <AdminPreviewBar />
+      <Routes>
       {/* Portal público */}
       <Route path="/"              element={<HomePage />} />
       <Route path="/earnings"      element={<EarningsCalendar />} />
@@ -47,5 +50,6 @@ export default function App() {
       <Route path="/admin/visitantes/:visitorId" element={<RequireAdmin><AdminVisitanteDetalle /></RequireAdmin>} />
       <Route path="/admin"             element={<Navigate to="/admin/reportes" replace />} />
     </Routes>
+    </>
   );
 }
