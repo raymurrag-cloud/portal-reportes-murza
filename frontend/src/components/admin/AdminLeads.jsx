@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { api } from '../../api.js';
-import { AdminModeToggle } from './AdminModeToggle.jsx';
 
 const CAPITAL_LABELS = {
   menos_500k: '< $500K',
@@ -43,10 +42,7 @@ export default function AdminLeads() {
             <Link to="/admin/visitantes" className="admin-nav-link">Visitantes</Link>
           </nav>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <AdminModeToggle />
-          <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>
-        </div>
+        <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>
       </header>
 
       <main className="admin-main">

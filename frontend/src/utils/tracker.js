@@ -7,7 +7,6 @@ const META_KEY         = 'mz_smeta';    // metadata de sesion (fuente, dispositi
 const LAST_VISIT_KEY   = 'mz_lv';      // timestamp ultima visita
 const FIRST_VISIT_KEY  = 'mz_fvt';     // timestamp primera visita ever
 const SESSION_FORM_KEY = 'mz_session'; // para getTrackingData() del form (mantener)
-const ADMIN_MODE_KEY   = 'mz_admin_mode'; // cuando está '1', no se registra ninguna visita
 
 const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
@@ -143,7 +142,7 @@ function sendPing(payload) {
 // nombrePagina: string legible, ej. "Home", "Reporte NVDA"
 // Devuelve cleanup() para el return del useEffect
 export function initTracker(nombrePagina) {
-  if (localStorage.getItem(ADMIN_MODE_KEY) === '1') return () => {};
+  if (localStorage.getItem('portal_admin_token')) return () => {};
 
   const now       = Date.now();
   const visitorId = getVisitorId();

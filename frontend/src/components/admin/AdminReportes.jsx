@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { api } from '../../api.js';
-import { AdminModeToggle } from './AdminModeToggle.jsx';
 
 export default function AdminReportes() {
   const navigate = useNavigate();
@@ -48,10 +47,7 @@ export default function AdminReportes() {
             <Link to="/admin/visitantes" className="admin-nav-link">Visitantes</Link>
           </nav>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <AdminModeToggle />
-          <button className="btn-ghost-sm" onClick={logout}>Salir</button>
-        </div>
+        <button className="btn-ghost-sm" onClick={logout}>Salir</button>
       </header>
 
       <main className="admin-main">
