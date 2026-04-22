@@ -39,6 +39,7 @@ export default function AdminLeads() {
             <Link to="/admin/prospectos"  className="admin-nav-link">Prospectos GBM</Link>
             <Link to="/admin/solicitudes" className="admin-nav-link">Solicitudes</Link>
             <Link to="/admin/analytics"  className="admin-nav-link">Analytics</Link>
+            <Link to="/admin/visitantes" className="admin-nav-link">Visitantes</Link>
           </nav>
         </div>
         <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>

@@ -172,6 +172,7 @@ router.get('/analytics', async (req, res) => {
     }
   });
   const visitasDedup = [...pageVisitMap.values()];
+  const visitasDedupClean = visitasDedup.filter(r => !r.pagina_url?.startsWith('__'));
 
   // Una fila por sesion (para fuente, dispositivo, nuevos/recurrentes)
   const sessionFirstMap = new Map();
@@ -209,9 +210,6 @@ router.get('/analytics', async (req, res) => {
   // ── Exit intents (registrados como pagina_url='__exit_intent__') ──────────
   const exitIntentSessions = new Set(visitas.filter(r => r.pagina_url === '__exit_intent__').map(r => r.session_id));
   const exitIntents = exitIntentSessions.size;
-
-  // Excluir exit_intent de visitasDedup para no contaminar stats de paginas
-  const visitasDedupClean = visitasDedup.filter(r => !r.pagina_url.startsWith('__'));
 
   // ── Fuentes (1 por sesion) ─────────────────────────────────────────────────
   const fuentes = countBy(visitasPorSesion, 'fuente');
@@ -435,6 +433,252 @@ router.get('/analytics', async (req, res) => {
     portafolio_por_fuente,
     tiempo_hasta_conversion,
     periodo,
+  });
+});
+
+// ── Lista de visitantes con engagement score ──────────────────────────────────
+router.get('/visitantes', async (req, res) => {
+  const limit  = parseInt(req.query.limit)  || 100;
+  const offset = parseInt(req.query.offset) || 0;
+
+  const [{ rows: visitas }, { rows: prospectos }] = await Promise.all([
+    db.execute({
+      sql: `SELECT visitor_id, session_id, pagina_url, tiempo_seg, scroll_max,
+                   fuente, dispositivo, ciudad, pais, isp, es_proxy, navegador, created_at
+            FROM visitantes ORDER BY created_at DESC LIMIT 80000`,
+      args: [],
+    }),
+    db.execute({
+      sql: `SELECT visitor_id, nombre, valor_portafolio, created_at FROM prospectos_gbm WHERE visitor_id IS NOT NULL`,
+      args: [],
+    }),
+  ]);
+
+  const prospectosMap = new Map();
+  prospectos.forEach(p => { if (p.visitor_id) prospectosMap.set(p.visitor_id, p); });
+
+  // Dedup pages
+  const pvMap = new Map();
+  visitas.forEach(r => {
+    const key = `${r.session_id}::${r.pagina_url}`;
+    const ex = pvMap.get(key);
+    if (!ex) {
+      pvMap.set(key, { ...r, scroll_max: Number(r.scroll_max) || 0, tiempo_seg: Number(r.tiempo_seg) || 0 });
+    } else {
+      ex.scroll_max = Math.max(ex.scroll_max, Number(r.scroll_max) || 0);
+      ex.tiempo_seg = Math.max(ex.tiempo_seg, Number(r.tiempo_seg) || 0);
+    }
+  });
+  const dedup = [...pvMap.values()].filter(r => !r.pagina_url?.startsWith('__'));
+
+  // Aggregate per visitor
+  const vMap = new Map();
+  dedup.forEach(r => {
+    const vid = r.visitor_id;
+    if (!vMap.has(vid)) {
+      vMap.set(vid, {
+        visitor_id:    vid,
+        sesiones:      new Set(),
+        dias:          new Set(),
+        reportes:      new Set(),
+        scroll_rep:    [],
+        tiempo_total:  0,
+        primera:       r.created_at,
+        ultima:        r.created_at,
+        ciudad:        r.ciudad,
+        pais:          r.pais,
+        fuente:        r.fuente,
+        dispositivo:   r.dispositivo,
+        isp:           r.isp,
+        es_proxy:      r.es_proxy,
+        navegador:     r.navegador,
+      });
+    }
+    const v = vMap.get(vid);
+    v.sesiones.add(r.session_id);
+    const fecha = r.created_at?.slice(0, 10);
+    if (fecha) v.dias.add(fecha);
+    v.tiempo_total += Number(r.tiempo_seg) || 0;
+    if (r.pagina_url?.startsWith('/reporte/')) {
+      v.reportes.add(r.pagina_url);
+      if (r.scroll_max > 0) v.scroll_rep.push(r.scroll_max);
+    }
+    if (r.created_at < v.primera) v.primera = r.created_at;
+    if (r.created_at > v.ultima)  v.ultima  = r.created_at;
+  });
+
+  const visitantes = [...vMap.values()].map(v => {
+    const reportes_leidos = v.reportes.size;
+    const total_sesiones  = v.sesiones.size;
+    const total_dias      = v.dias.size;
+    const scroll_prom     = v.scroll_rep.length > 0
+      ? Math.round(v.scroll_rep.reduce((a, b) => a + b, 0) / v.scroll_rep.length) : 0;
+    const tiempo_min = v.tiempo_total / 60;
+
+    const score = Math.min(reportes_leidos * 10, 30)
+                + Math.min(Math.round(scroll_prom * 0.25), 25)
+                + Math.min((total_dias - 1) * 10, 20)
+                + Math.min(Math.round(tiempo_min), 15)
+                + Math.min(total_sesiones * 2, 10);
+
+    return {
+      visitor_id:       v.visitor_id,
+      score,
+      reportes_leidos,
+      total_sesiones,
+      total_dias,
+      scroll_promedio:  scroll_prom,
+      tiempo_total_seg: v.tiempo_total,
+      primera_visita:   v.primera,
+      ultima_visita:    v.ultima,
+      ciudad:           v.ciudad,
+      pais:             v.pais,
+      fuente:           v.fuente,
+      dispositivo:      v.dispositivo,
+      isp:              v.isp,
+      es_proxy:         v.es_proxy,
+      navegador:        v.navegador,
+      es_prospecto:     prospectosMap.has(v.visitor_id),
+      prospecto:        prospectosMap.get(v.visitor_id) || null,
+    };
+  });
+
+  visitantes.sort((a, b) => b.score - a.score || b.ultima_visita.localeCompare(a.ultima_visita));
+
+  res.json({ total: visitantes.length, visitantes: visitantes.slice(offset, offset + limit) });
+});
+
+// ── Perfil individual de visitante ────────────────────────────────────────────
+router.get('/visitantes/:visitorId', async (req, res) => {
+  const { visitorId } = req.params;
+
+  const [{ rows: visitas }, { rows: prospectos }] = await Promise.all([
+    db.execute({
+      sql: `SELECT visitor_id, session_id, pagina_url, pagina_titulo,
+                   tiempo_seg, scroll_max, fuente, campana, dispositivo, sistema_os,
+                   ciudad, estado, pais, isp, es_proxy, zona_horaria, navegador,
+                   visita_recurrente, created_at
+            FROM visitantes WHERE visitor_id = ? ORDER BY created_at ASC`,
+      args: [visitorId],
+    }),
+    db.execute({
+      sql: `SELECT id, nombre, telefono, correo, valor_portafolio, fuente, campana,
+                   dispositivo, tiempo_total_seg, paginas_json, primera_visita_at, created_at
+            FROM prospectos_gbm WHERE visitor_id = ?`,
+      args: [visitorId],
+    }),
+  ]);
+
+  if (visitas.length === 0) return res.status(404).json({ error: 'Visitante no encontrado' });
+
+  // Dedup pages
+  const pvMap = new Map();
+  visitas.forEach(r => {
+    const key = `${r.session_id}::${r.pagina_url}`;
+    const ex = pvMap.get(key);
+    if (!ex) {
+      pvMap.set(key, { ...r, scroll_max: Number(r.scroll_max) || 0, tiempo_seg: Number(r.tiempo_seg) || 0 });
+    } else {
+      ex.scroll_max = Math.max(ex.scroll_max, Number(r.scroll_max) || 0);
+      ex.tiempo_seg = Math.max(ex.tiempo_seg, Number(r.tiempo_seg) || 0);
+    }
+  });
+  const dedup = [...pvMap.values()].sort((a, b) => a.created_at.localeCompare(b.created_at));
+  const dedupClean = dedup.filter(r => !r.pagina_url?.startsWith('__'));
+
+  // Group by session
+  const sMap = new Map();
+  dedupClean.forEach(r => {
+    if (!sMap.has(r.session_id)) {
+      sMap.set(r.session_id, {
+        session_id:  r.session_id,
+        fecha:       r.created_at?.slice(0, 10),
+        inicio:      r.created_at,
+        fin:         r.created_at,
+        fuente:      r.fuente,
+        campana:     r.campana,
+        dispositivo: r.dispositivo,
+        paginas:     [],
+      });
+    }
+    const s = sMap.get(r.session_id);
+    s.paginas.push({ url: r.pagina_url, titulo: r.pagina_titulo, tiempo_seg: r.tiempo_seg, scroll_max: r.scroll_max, created_at: r.created_at });
+    if (r.created_at > s.fin) s.fin = r.created_at;
+  });
+
+  const sesiones = [...sMap.values()].sort((a, b) => a.inicio.localeCompare(b.inicio));
+
+  // Group sessions by day
+  const diasMap = new Map();
+  sesiones.forEach(s => {
+    const f = s.fecha;
+    if (!diasMap.has(f)) diasMap.set(f, []);
+    diasMap.get(f).push(s);
+  });
+  const dias = [...diasMap.entries()].map(([fecha, sessDia]) => ({
+    fecha,
+    sesiones:    sessDia,
+    visitas_dia: sessDia.reduce((acc, s) => acc + s.paginas.length, 0),
+    tiempo_dia:  sessDia.reduce((acc, s) => acc + s.paginas.reduce((a, p) => a + p.tiempo_seg, 0), 0),
+  }));
+
+  // Reportes vistos
+  const repMap = {};
+  dedupClean.filter(r => r.pagina_url?.startsWith('/reporte/')).forEach(r => {
+    const url = r.pagina_url;
+    if (!repMap[url]) repMap[url] = { url, titulo: r.pagina_titulo, vistas: 0, scroll_max: 0, tiempo_total: 0 };
+    repMap[url].vistas++;
+    repMap[url].scroll_max   = Math.max(repMap[url].scroll_max, r.scroll_max);
+    repMap[url].tiempo_total += r.tiempo_seg;
+  });
+  const reportes = Object.values(repMap).sort((a, b) => b.vistas - a.vistas);
+
+  // Engagement score
+  const reportes_leidos = reportes.length;
+  const total_sesiones  = sesiones.length;
+  const total_dias      = dias.length;
+  const scroll_rep      = reportes.map(r => r.scroll_max).filter(s => s > 0);
+  const scroll_prom     = scroll_rep.length > 0
+    ? Math.round(scroll_rep.reduce((a, b) => a + b, 0) / scroll_rep.length) : 0;
+  const tiempo_total    = dedupClean.reduce((acc, r) => acc + r.tiempo_seg, 0);
+  const tiempo_min      = tiempo_total / 60;
+
+  const s_reportes = Math.min(reportes_leidos * 10, 30);
+  const s_scroll   = Math.min(Math.round(scroll_prom * 0.25), 25);
+  const s_dias     = Math.min((total_dias - 1) * 10, 20);
+  const s_tiempo   = Math.min(Math.round(tiempo_min), 15);
+  const s_sesiones = Math.min(total_sesiones * 2, 10);
+  const score      = s_reportes + s_scroll + s_dias + s_tiempo + s_sesiones;
+
+  const primer = visitas[0];
+  const ultimo = visitas[visitas.length - 1];
+
+  res.json({
+    visitor_id:      visitorId,
+    score,
+    score_detalle:   { reportes: s_reportes, scroll: s_scroll, dias: s_dias, tiempo: s_tiempo, sesiones: s_sesiones },
+    primera_visita:  primer.created_at,
+    ultima_visita:   ultimo.created_at,
+    ciudad:          primer.ciudad,
+    estado:          primer.estado,
+    pais:            primer.pais,
+    isp:             primer.isp,
+    es_proxy:        primer.es_proxy,
+    zona_horaria:    primer.zona_horaria,
+    navegador:       primer.navegador,
+    dispositivo:     primer.dispositivo,
+    sistema_os:      primer.sistema_os,
+    fuente:          primer.fuente,
+    campana:         primer.campana,
+    visita_recurrente: primer.visita_recurrente,
+    total_sesiones,
+    total_dias,
+    tiempo_total_seg: tiempo_total,
+    reportes_leidos,
+    scroll_promedio:  scroll_prom,
+    dias,
+    reportes,
+    prospectos: prospectos.map(p => ({ ...p, id: Number(p.id) })),
   });
 });
 
