@@ -1,10 +1,11 @@
 // tracker.js — analytics silencioso de comportamiento
 // Cada page view se registra en la BD via sendBeacon al desmontar el componente
 
-const VISITOR_KEY  = 'mz_vid';      // UUID permanente por navegador
-const SESSION_KEY  = 'mz_sid';      // UUID por pestaña/sesion (sessionStorage)
-const META_KEY     = 'mz_smeta';    // metadata de sesion (fuente, dispositivo...)
-const LAST_VISIT_KEY = 'mz_lv';     // timestamp ultima visita
+const VISITOR_KEY      = 'mz_vid';      // UUID permanente por navegador
+const SESSION_KEY      = 'mz_sid';      // UUID por pestaña/sesion (sessionStorage)
+const META_KEY         = 'mz_smeta';    // metadata de sesion (fuente, dispositivo...)
+const LAST_VISIT_KEY   = 'mz_lv';      // timestamp ultima visita
+const FIRST_VISIT_KEY  = 'mz_fvt';     // timestamp primera visita ever
 const SESSION_FORM_KEY = 'mz_session'; // para getTrackingData() del form (mantener)
 
 const API_BASE = import.meta.env.VITE_API_URL || '/api';
@@ -107,8 +108,12 @@ function getSessionMeta() {
   const esRecurrente = !!lastVisit;
   const diasDesde = lastVisit ? Math.floor((ahora - parseInt(lastVisit)) / 86400000) : null;
   localStorage.setItem(LAST_VISIT_KEY, String(ahora));
+  if (!localStorage.getItem(FIRST_VISIT_KEY)) localStorage.setItem(FIRST_VISIT_KEY, String(ahora));
 
-  const meta = { dispositivo, sistema, navegador, fuente, campana, anuncio, esRecurrente, diasDesde };
+  let zonaHoraria = null;
+  try { zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch {}
+
+  const meta = { dispositivo, sistema, navegador, fuente, campana, anuncio, esRecurrente, diasDesde, zonaHoraria };
   try { sessionStorage.setItem(META_KEY, JSON.stringify(meta)); } catch {}
   return meta;
 }
@@ -144,7 +149,6 @@ export function initTracker(nombrePagina) {
   let scrollMax   = 0;
 
   // Ping de entrada — registra la visita inmediatamente al cargar la pagina
-  // (tiempo_seg=0, scroll_max=0 — se actualiza en el beacon de salida)
   sendPing({
     visitor_id:        visitorId,
     session_id:        sessionId,
@@ -157,6 +161,7 @@ export function initTracker(nombrePagina) {
     dispositivo:       meta.dispositivo,
     sistema_os:        meta.sistema,
     navegador:         meta.navegador,
+    zona_horaria:      meta.zonaHoraria,
     visita_recurrente: meta.esRecurrente ? 1 : 0,
   });
 
@@ -196,6 +201,33 @@ export function initTracker(nombrePagina) {
     // Cleanup form scroll en return (guardado abajo junto con beacon cleanup)
   } catch {}
 
+  // Tiempo hasta primer scroll
+  let primerScrollSeg = null;
+  const onPrimerScroll = () => {
+    if (primerScrollSeg === null) primerScrollSeg = Math.round((Date.now() - now) / 1000);
+  };
+  window.addEventListener('scroll', onPrimerScroll, { once: true, passive: true });
+
+  // Exit intent — solo desktop, solo una vez por sesion
+  const exitIntentKey = `mz_exit_${sessionId}`;
+  const onExitIntent = (e) => {
+    if (e.clientY > 5) return; // solo si el mouse sale por arriba
+    if (sessionStorage.getItem(exitIntentKey)) return; // ya se registro
+    sessionStorage.setItem(exitIntentKey, '1');
+    sendBeacon({
+      visitor_id: visitorId, session_id: sessionId,
+      pagina_url: '__exit_intent__', pagina_titulo: nombrePagina,
+      tiempo_seg: Math.round((Date.now() - now) / 1000),
+      scroll_max: scrollMax, fuente: meta.fuente, campana: meta.campana,
+      dispositivo: meta.dispositivo, sistema_os: meta.sistema,
+      navegador: meta.navegador, zona_horaria: meta.zonaHoraria,
+      visita_recurrente: meta.esRecurrente ? 1 : 0,
+    });
+  };
+  if (!/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    document.addEventListener('mouseleave', onExitIntent);
+  }
+
   // Scroll tracker para beacon
   const onScroll = () => {
     const pct = Math.round(((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100);
@@ -206,18 +238,20 @@ export function initTracker(nombrePagina) {
   // Enviar en beforeunload (cierre de tab/navegador)
   const onUnload = () => {
     sendBeacon({
-      visitor_id:       visitorId,
-      session_id:       sessionId,
-      pagina_url:       window.location.pathname,
-      pagina_titulo:    nombrePagina,
-      tiempo_seg:       Math.round((Date.now() - now) / 1000),
-      scroll_max:       scrollMax,
-      fuente:           meta.fuente,
-      campana:          meta.campana,
-      dispositivo:      meta.dispositivo,
-      sistema_os:       meta.sistema,
-      navegador:        meta.navegador,
-      visita_recurrente: meta.esRecurrente ? 1 : 0,
+      visitor_id:           visitorId,
+      session_id:           sessionId,
+      pagina_url:           window.location.pathname,
+      pagina_titulo:        nombrePagina,
+      tiempo_seg:           Math.round((Date.now() - now) / 1000),
+      scroll_max:           scrollMax,
+      fuente:               meta.fuente,
+      campana:              meta.campana,
+      dispositivo:          meta.dispositivo,
+      sistema_os:           meta.sistema,
+      navegador:            meta.navegador,
+      zona_horaria:         meta.zonaHoraria,
+      tiempo_primer_scroll: primerScrollSeg,
+      visita_recurrente:    meta.esRecurrente ? 1 : 0,
     });
   };
   window.addEventListener('beforeunload', onUnload);
@@ -226,6 +260,7 @@ export function initTracker(nombrePagina) {
   return () => {
     window.removeEventListener('scroll', onScroll);
     window.removeEventListener('beforeunload', onUnload);
+    document.removeEventListener('mouseleave', onExitIntent);
 
     // Actualizar form session
     try {
@@ -239,19 +274,29 @@ export function initTracker(nombrePagina) {
 
     // Enviar beacon de esta pagina
     sendBeacon({
-      visitor_id:        visitorId,
-      session_id:        sessionId,
-      pagina_url:        window.location.pathname,
-      pagina_titulo:     nombrePagina,
-      tiempo_seg:        Math.round((Date.now() - now) / 1000),
-      scroll_max:        scrollMax,
-      fuente:            meta.fuente,
-      campana:           meta.campana,
-      dispositivo:       meta.dispositivo,
-      sistema_os:        meta.sistema,
-      navegador:         meta.navegador,
-      visita_recurrente: meta.esRecurrente ? 1 : 0,
+      visitor_id:           visitorId,
+      session_id:           sessionId,
+      pagina_url:           window.location.pathname,
+      pagina_titulo:        nombrePagina,
+      tiempo_seg:           Math.round((Date.now() - now) / 1000),
+      scroll_max:           scrollMax,
+      fuente:               meta.fuente,
+      campana:              meta.campana,
+      dispositivo:          meta.dispositivo,
+      sistema_os:           meta.sistema,
+      navegador:            meta.navegador,
+      zona_horaria:         meta.zonaHoraria,
+      tiempo_primer_scroll: primerScrollSeg,
+      visita_recurrente:    meta.esRecurrente ? 1 : 0,
     });
+  };
+}
+
+// ── getVisitorSession — para búsquedas fallidas y otros eventos públicos ──────
+export function getVisitorSession() {
+  return {
+    visitor_id: localStorage.getItem(VISITOR_KEY) || null,
+    session_id: sessionStorage.getItem(SESSION_KEY) || null,
   };
 }
 
@@ -275,6 +320,8 @@ export function getTrackingData() {
       dias_ultima_visita: s.dias_ultima_visita ?? null,
       tiempo_total_seg:   Math.round((Date.now() - s.inicio) / 1000),
       paginas_json:       JSON.stringify(s.paginas || []),
+      visitor_id:         localStorage.getItem(VISITOR_KEY) || null,
+      primera_visita_at:  localStorage.getItem(FIRST_VISIT_KEY) || null,
     };
   } catch {
     return {};

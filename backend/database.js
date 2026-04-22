@@ -105,9 +105,27 @@ export async function initDb() {
     args: [],
   });
 
-  // Migraciones: columnas nuevas en tabla existente
+  // Tabla de búsquedas fallidas (tickers buscados que no existen)
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS busquedas_fallidas (
+      id         INTEGER PRIMARY KEY AUTOINCREMENT,
+      query      TEXT NOT NULL,
+      visitor_id TEXT,
+      session_id TEXT,
+      created_at TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+
+  // Migraciones: columnas nuevas en tablas existentes
   try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN navegador TEXT`, args: [] }); } catch {}
   try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN pais TEXT`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN zona_horaria TEXT`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN isp TEXT`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN es_proxy INTEGER DEFAULT 0`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN tiempo_primer_scroll INTEGER`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE prospectos_gbm ADD COLUMN visitor_id TEXT`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE prospectos_gbm ADD COLUMN primera_visita_at TEXT`, args: [] }); } catch {}
 
   // Índices para consultas de analytics
   try {

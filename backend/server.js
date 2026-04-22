@@ -46,6 +46,7 @@ app.post('/api/prospectos-gbm', async (req, res) => {
     nombre, telefono, correo, valor_portafolio,
     fuente, campana, anuncio, dispositivo, sistema_os, navegador,
     visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json,
+    visitor_id, primera_visita_at,
   } = req.body || {};
 
   if (!nombre?.trim() || !telefono?.trim() || !correo?.trim() || !valor_portafolio?.trim())
@@ -64,8 +65,9 @@ app.post('/api/prospectos-gbm', async (req, res) => {
     sql: `INSERT INTO prospectos_gbm
       (nombre, telefono, correo, valor_portafolio, ciudad, estado,
        fuente, campana, anuncio, dispositivo, sistema_os, navegador,
-       visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json)
-      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+       visita_recurrente, dias_ultima_visita, tiempo_total_seg, paginas_json,
+       visitor_id, primera_visita_at)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
     args: [
       nombre.trim().slice(0, 100), telefono.trim().slice(0, 20),
       correo.trim().slice(0, 100), valor_portafolio.trim().slice(0, 50),
@@ -74,6 +76,7 @@ app.post('/api/prospectos-gbm', async (req, res) => {
       dispositivo || null, sistema_os || null, navegador || null,
       visita_recurrente ? 1 : 0, dias_ultima_visita ?? null,
       tiempo_total_seg ?? null, paginas_json || null,
+      visitor_id || null, primera_visita_at || null,
     ],
   });
 
@@ -136,18 +139,21 @@ app.post('/api/prospectos-gbm', async (req, res) => {
 // ── Track de visitantes (público, sin auth) ───────────────────────────────
 app.post('/api/track', async (req, res) => {
   const { visitor_id, session_id, pagina_url, pagina_titulo, tiempo_seg, scroll_max,
-          fuente, campana, dispositivo, sistema_os, visita_recurrente, navegador } = req.body || {};
+          fuente, campana, dispositivo, sistema_os, visita_recurrente, navegador,
+          zona_horaria, tiempo_primer_scroll } = req.body || {};
   if (!visitor_id || !session_id || !pagina_url) return res.status(204).send();
 
-  // Geo por IP
-  let ciudad = null, estado = null, pais = null;
+  // Geo + ISP por IP
+  let ciudad = null, estado = null, pais = null, isp = null, es_proxy = 0;
   try {
     const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.socket.remoteAddress;
-    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,country,status&lang=es`).then(r => r.json());
+    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,country,org,proxy,status&lang=es`).then(r => r.json());
     if (geo.status === 'success') {
-      ciudad = geo.city || null;
-      estado = geo.regionName || null;
-      pais   = geo.country || null;
+      ciudad   = geo.city || null;
+      estado   = geo.regionName || null;
+      pais     = geo.country || null;
+      isp      = geo.org ? geo.org.replace(/^AS\d+\s+/, '') : null;
+      es_proxy = geo.proxy ? 1 : 0;
     }
   } catch (_) {}
 
@@ -156,8 +162,9 @@ app.post('/api/track', async (req, res) => {
     await db.execute({
       sql: `INSERT INTO visitantes (visitor_id, session_id, pagina_url, pagina_titulo,
               tiempo_seg, scroll_max, fuente, campana, dispositivo, sistema_os,
-              visita_recurrente, ciudad, estado, navegador, pais)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+              visita_recurrente, ciudad, estado, navegador, pais,
+              zona_horaria, isp, es_proxy, tiempo_primer_scroll)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
       args: [
         visitor_id.slice(0, 40), session_id.slice(0, 40),
         pagina_url.slice(0, 100), (pagina_titulo || '').slice(0, 100),
@@ -166,7 +173,23 @@ app.post('/api/track', async (req, res) => {
         dispositivo || null, sistema_os || null,
         visita_recurrente ? 1 : 0, ciudad, estado,
         navegador || null, pais,
+        zona_horaria || null, isp, es_proxy,
+        tiempo_primer_scroll != null ? Number(tiempo_primer_scroll) : null,
       ],
+    });
+  } catch (_) {}
+  res.status(204).send();
+});
+
+// ── Búsquedas fallidas (público) ──────────────────────────────────────────
+app.post('/api/busqueda-fallida', async (req, res) => {
+  const { query, visitor_id, session_id } = req.body || {};
+  if (!query || typeof query !== 'string' || query.trim().length < 1) return res.status(204).send();
+  try {
+    const { db } = await import('./database.js');
+    await db.execute({
+      sql: `INSERT INTO busquedas_fallidas (query, visitor_id, session_id) VALUES (?, ?, ?)`,
+      args: [query.trim().toUpperCase().slice(0, 50), visitor_id || null, session_id || null],
     });
   } catch (_) {}
   res.status(204).send();

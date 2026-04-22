@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
-import { initTracker, getTrackingData } from '../../utils/tracker.js';
+import { initTracker, getTrackingData, getVisitorSession } from '../../utils/tracker.js';
+
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 const CLASIFICACION = {
   AAPL:  { sector: 'Information Technology',  industria: 'Technology Hardware & Peripherals' },
@@ -170,6 +172,13 @@ export default function HomePage() {
     setResultados(filtrados);
     if (filtrados.length === 0) {
       setShowSolicitudInline(true);
+      // Registrar búsqueda fallida en analytics
+      const { visitor_id, session_id } = getVisitorSession();
+      fetch(`${API_BASE}/busqueda-fallida`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: q, visitor_id, session_id }),
+      }).catch(() => {});
     }
   };
 

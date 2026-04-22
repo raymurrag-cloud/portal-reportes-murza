@@ -116,25 +116,32 @@ router.get('/analytics', async (req, res) => {
   const diasMap = { hoy: 1, semana: 7, mes: 30, total: 3650 };
   const dias = diasMap[periodo] || 7;
 
-  const [{ rows: visitas }, { rows: prospRows }] = await Promise.all([
+  const [{ rows: visitas }, { rows: prospectos }, { rows: busquedas }] = await Promise.all([
     db.execute({
       sql: `SELECT visitor_id, session_id, pagina_url, pagina_titulo,
                    tiempo_seg, scroll_max, fuente, campana,
                    dispositivo, sistema_os, visita_recurrente, ciudad, estado,
-                   navegador, pais, created_at
+                   navegador, pais, zona_horaria, isp, es_proxy,
+                   tiempo_primer_scroll, created_at
             FROM visitantes
             WHERE created_at >= datetime('now', ?)
             ORDER BY created_at DESC LIMIT 20000`,
       args: [`-${dias} days`],
     }),
-    // Filtrar prospectos por el mismo periodo seleccionado
     db.execute({
-      sql: `SELECT COUNT(*) as total FROM prospectos_gbm WHERE created_at >= datetime('now', ?)`,
+      sql: `SELECT fuente, valor_portafolio, paginas_json, primera_visita_at, created_at
+            FROM prospectos_gbm WHERE created_at >= datetime('now', ?)
+            ORDER BY created_at DESC`,
+      args: [`-${dias} days`],
+    }),
+    db.execute({
+      sql: `SELECT query, COUNT(*) as count FROM busquedas_fallidas
+            WHERE created_at >= datetime('now', ?) GROUP BY query ORDER BY count DESC LIMIT 20`,
       args: [`-${dias} days`],
     }),
   ]);
 
-  const totalProspectos = Number(prospRows[0]?.total || 0);
+  const totalProspectos = prospectos.length;
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const countBy = (arr, key) => {
@@ -143,17 +150,25 @@ router.get('/analytics', async (req, res) => {
     return Object.entries(m).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ label: k, count: v }));
   };
 
-  // ── Dedup: cada visita genera 2 filas (ping entrada scroll=0 + beacon salida scroll=real)
-  // Mergear por (session_id, pagina_url) conservando max scroll y max tiempo
+  // ── Dedup: cada visita genera 2 filas (ping entrada + beacon salida)
+  // Mergear por (session_id, pagina_url) conservando max scroll, tiempo y primer_scroll real
   const pageVisitMap = new Map();
   visitas.forEach(r => {
     const key = `${r.session_id}::${r.pagina_url}`;
     const ex = pageVisitMap.get(key);
     if (!ex) {
-      pageVisitMap.set(key, { ...r, scroll_max: Number(r.scroll_max) || 0, tiempo_seg: Number(r.tiempo_seg) || 0 });
+      pageVisitMap.set(key, {
+        ...r,
+        scroll_max:           Number(r.scroll_max) || 0,
+        tiempo_seg:           Number(r.tiempo_seg) || 0,
+        tiempo_primer_scroll: r.tiempo_primer_scroll != null ? Number(r.tiempo_primer_scroll) : null,
+      });
     } else {
       ex.scroll_max = Math.max(ex.scroll_max, Number(r.scroll_max) || 0);
       ex.tiempo_seg = Math.max(ex.tiempo_seg, Number(r.tiempo_seg) || 0);
+      // primer scroll: tomar el valor no-nulo
+      if (r.tiempo_primer_scroll != null && ex.tiempo_primer_scroll == null)
+        ex.tiempo_primer_scroll = Number(r.tiempo_primer_scroll);
     }
   });
   const visitasDedup = [...pageVisitMap.values()];
@@ -171,7 +186,7 @@ router.get('/analytics', async (req, res) => {
   // ── Visitantes únicos y sesiones ──────────────────────────────────────────
   const visitantesUnicos = visitasPorVisitor.length;
   const sesionesUnicas   = visitasPorSesion.length;
-  const pageviews        = visitasDedup.length;
+  const pageviews        = visitasDedupClean.length;
 
   // ── Resumen por sub-periodos (siempre desde 0, independiente del periodo) ─
   const ahora = Date.now();
@@ -190,6 +205,13 @@ router.get('/analytics', async (req, res) => {
     };
     return acc;
   }, {});
+
+  // ── Exit intents (registrados como pagina_url='__exit_intent__') ──────────
+  const exitIntentSessions = new Set(visitas.filter(r => r.pagina_url === '__exit_intent__').map(r => r.session_id));
+  const exitIntents = exitIntentSessions.size;
+
+  // Excluir exit_intent de visitasDedup para no contaminar stats de paginas
+  const visitasDedupClean = visitasDedup.filter(r => !r.pagina_url.startsWith('__'));
 
   // ── Fuentes (1 por sesion) ─────────────────────────────────────────────────
   const fuentes = countBy(visitasPorSesion, 'fuente');
@@ -215,9 +237,9 @@ router.get('/analytics', async (req, res) => {
   // ── Paises (1 por visitor) ─────────────────────────────────────────────────
   const paises = countBy(visitasPorVisitor, 'pais');
 
-  // ── Top páginas (dedup: max scroll y tiempo por visita) ───────────────────
+  // ── Top páginas ────────────────────────────────────────────────────────────
   const paginasMap = {};
-  visitasDedup.forEach(r => {
+  visitasDedupClean.forEach(r => {
     const key = r.pagina_url;
     if (!paginasMap[key]) paginasMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, tiempo_total: 0, scroll_total: 0, con_scroll: 0, completos: 0 };
     const p = paginasMap[key];
@@ -238,62 +260,143 @@ router.get('/analytics', async (req, res) => {
       completos:       p.completos,
     }));
 
-  // ── Engagement por reporte (solo paginas /reporte/) ────────────────────────
+  // ── Engagement por reporte ────────────────────────────────────────────────
   const reporteEngMap = {};
-  visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/')).forEach(r => {
+  visitasDedupClean.filter(r => r.pagina_url?.startsWith('/reporte/')).forEach(r => {
     const key = r.pagina_url;
-    if (!reporteEngMap[key]) reporteEngMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, scroll_total: 0, con_scroll: 0, tiempo_total: 0, completos: 0 };
+    if (!reporteEngMap[key]) reporteEngMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, scroll_total: 0, con_scroll: 0, tiempo_total: 0, completos: 0, primer_scroll_total: 0, con_primer_scroll: 0 };
     const re = reporteEngMap[key];
     re.vistas++;
     re.tiempo_total += r.tiempo_seg;
     if (r.scroll_max > 0) { re.scroll_total += r.scroll_max; re.con_scroll++; }
     if (r.scroll_max >= 80) re.completos++;
+    if (r.tiempo_primer_scroll > 0) { re.primer_scroll_total += r.tiempo_primer_scroll; re.con_primer_scroll++; }
   });
   const reportes_engagement = Object.values(reporteEngMap)
     .sort((a, b) => b.vistas - a.vistas)
     .map(r => ({
-      url:             r.url,
-      titulo:          r.titulo,
-      vistas:          r.vistas,
-      scroll_promedio: r.con_scroll > 0 ? Math.round(r.scroll_total / r.con_scroll) : 0,
-      tiempo_promedio: r.vistas > 0 ? Math.round(r.tiempo_total / r.vistas) : 0,
-      completos:       r.completos,
-      tasa_completado: r.vistas > 0 ? Math.round((r.completos / r.vistas) * 100) : 0,
+      url:              r.url,
+      titulo:           r.titulo,
+      vistas:           r.vistas,
+      scroll_promedio:  r.con_scroll > 0 ? Math.round(r.scroll_total / r.con_scroll) : 0,
+      tiempo_promedio:  r.vistas > 0 ? Math.round(r.tiempo_total / r.vistas) : 0,
+      primer_scroll:    r.con_primer_scroll > 0 ? Math.round(r.primer_scroll_total / r.con_primer_scroll) : null,
+      completos:        r.completos,
+      tasa_completado:  r.vistas > 0 ? Math.round((r.completos / r.vistas) * 100) : 0,
     }));
 
   // ── Embudo ────────────────────────────────────────────────────────────────
-  const leyeronReporte  = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
-  const leyeronCompleto = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/') && r.scroll_max >= 80).map(r => r.session_id)).size;
-  const vieronEarnings  = new Set(visitasDedup.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
+  const leyeronReporte  = new Set(visitasDedupClean.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
+  const leyeronCompleto = new Set(visitasDedupClean.filter(r => r.pagina_url?.startsWith('/reporte/') && r.scroll_max >= 80).map(r => r.session_id)).size;
+  const vieronEarnings  = new Set(visitasDedupClean.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
 
-  // ── Nuevos vs recurrentes (1 por sesion) ──────────────────────────────────
+  // ── Nuevos vs recurrentes ─────────────────────────────────────────────────
   const recurrentes = visitasPorSesion.filter(r => r.visita_recurrente).length;
 
   // ── Comportamiento de sesion ───────────────────────────────────────────────
-  const paginasPorSesion = {};
-  visitasDedup.forEach(r => { paginasPorSesion[r.session_id] = (paginasPorSesion[r.session_id] || 0) + 1; });
-  const conteosPorSesion = Object.values(paginasPorSesion);
-  const sesionesRebote   = conteosPorSesion.filter(n => n === 1).length;
-  const tasaRebote       = sesionesUnicas > 0 ? Math.round((sesionesRebote / sesionesUnicas) * 100) : 0;
-  const paginasPromSesion = sesionesUnicas > 0 ? Math.round((visitasDedup.length / sesionesUnicas) * 10) / 10 : 0;
+  const paginasPorSesionMap = {};
+  visitasDedupClean.forEach(r => { paginasPorSesionMap[r.session_id] = (paginasPorSesionMap[r.session_id] || 0) + 1; });
+  const conteosPorSesion   = Object.values(paginasPorSesionMap);
+  const sesionesRebote     = conteosPorSesion.filter(n => n === 1).length;
+  const tasaRebote         = sesionesUnicas > 0 ? Math.round((sesionesRebote / sesionesUnicas) * 100) : 0;
+  const paginasPromSesion  = sesionesUnicas > 0 ? Math.round((visitasDedupClean.length / sesionesUnicas) * 10) / 10 : 0;
 
   const tiempoPorSesion = {};
-  visitasDedup.forEach(r => { tiempoPorSesion[r.session_id] = (tiempoPorSesion[r.session_id] || 0) + r.tiempo_seg; });
-  const tiemposSesionArr = Object.values(tiempoPorSesion);
+  visitasDedupClean.forEach(r => { tiempoPorSesion[r.session_id] = (tiempoPorSesion[r.session_id] || 0) + r.tiempo_seg; });
+  const tiemposSesionArr   = Object.values(tiempoPorSesion);
   const duracionPromSesion = tiemposSesionArr.length > 0
     ? Math.round(tiemposSesionArr.reduce((a, b) => a + b, 0) / tiemposSesionArr.length)
     : 0;
 
-  // ── Distribución horaria (hora local MX = UTC-6) ───────────────────────────
+  // ── Primer scroll promedio en reportes ────────────────────────────────────
+  const primerScrollArr = visitasDedupClean
+    .filter(r => r.pagina_url?.startsWith('/reporte/') && r.tiempo_primer_scroll > 0)
+    .map(r => r.tiempo_primer_scroll);
+  const primerScrollProm = primerScrollArr.length > 0
+    ? Math.round(primerScrollArr.reduce((a, b) => a + b, 0) / primerScrollArr.length)
+    : null;
+
+  // ── ISP (1 por visitor) ────────────────────────────────────────────────────
+  const isps = countBy(visitasPorVisitor.filter(r => r.isp), 'isp').slice(0, 10);
+
+  // ── Zona horaria (1 por visitor) ──────────────────────────────────────────
+  const zonas_horarias = countBy(visitasPorVisitor.filter(r => r.zona_horaria), 'zona_horaria').slice(0, 10);
+
+  // ── Proxies/VPN ───────────────────────────────────────────────────────────
+  const proxies_count = visitasPorVisitor.filter(r => r.es_proxy).length;
+
+  // ── Distribución horaria ──────────────────────────────────────────────────
   const horasMap = {};
   for (let h = 0; h < 24; h++) horasMap[h] = 0;
-  visitasDedup.forEach(r => {
+  visitasDedupClean.forEach(r => {
     if (!r.created_at) return;
     const utcH = new Date(r.created_at.replace(' ', 'T') + 'Z').getUTCHours();
     const mxH  = (utcH - 6 + 24) % 24;
     horasMap[mxH] = (horasMap[mxH] || 0) + 1;
   });
   const horas = Object.entries(horasMap).map(([h, count]) => ({ hora: Number(h), count }));
+
+  // ── Inteligencia de conversión (desde prospectos_gbm) ─────────────────────
+  const PORTAFOLIO_VALORES = {
+    'Menos de $500K': 250000,
+    '$500K - $1M':    750000,
+    '$1M - $3M':      2000000,
+    'Mas de $3M':     4000000,
+  };
+
+  // Qué reporte genera más leads
+  const reporteLeadsMap = {};
+  prospectos.forEach(p => {
+    try {
+      const pags = JSON.parse(p.paginas_json || '[]');
+      const tickers = [...new Set(pags
+        .filter(pg => pg.url?.startsWith('/reporte/'))
+        .map(pg => pg.url.split('/reporte/')[1]?.toUpperCase())
+        .filter(Boolean)
+      )];
+      tickers.forEach(t => { reporteLeadsMap[t] = (reporteLeadsMap[t] || 0) + 1; });
+    } catch {}
+  });
+  const conversion_por_reporte = Object.entries(reporteLeadsMap)
+    .sort((a, b) => b[1] - a[1])
+    .map(([ticker, leads]) => ({ ticker, leads }));
+
+  // Portafolio promedio por fuente
+  const fuentePortMap = {};
+  prospectos.forEach(p => {
+    const fuente = p.fuente || 'Directo';
+    const valor  = PORTAFOLIO_VALORES[p.valor_portafolio] || 0;
+    if (!fuentePortMap[fuente]) fuentePortMap[fuente] = { total: 0, count: 0, breakdown: {} };
+    fuentePortMap[fuente].total += valor;
+    fuentePortMap[fuente].count++;
+    fuentePortMap[fuente].breakdown[p.valor_portafolio] = (fuentePortMap[fuente].breakdown[p.valor_portafolio] || 0) + 1;
+  });
+  const portafolio_por_fuente = Object.entries(fuentePortMap)
+    .map(([fuente, d]) => ({
+      fuente,
+      leads:           d.count,
+      promedio:        d.count > 0 ? Math.round(d.total / d.count) : 0,
+      breakdown:       d.breakdown,
+    }))
+    .sort((a, b) => b.leads - a.leads);
+
+  // Tiempo hasta conversión (primera_visita_at → created_at del prospecto)
+  const tiemposConvArr = prospectos
+    .filter(p => p.primera_visita_at)
+    .map(p => {
+      const primera    = parseInt(p.primera_visita_at);
+      const convertido = new Date(p.created_at.replace(' ', 'T') + 'Z').getTime();
+      const dias       = Math.round((convertido - primera) / 86400000);
+      return dias >= 0 ? dias : null;
+    })
+    .filter(d => d !== null);
+  const tiempo_hasta_conversion = tiemposConvArr.length > 0 ? {
+    promedio_dias:  Math.round((tiemposConvArr.reduce((a, b) => a + b, 0) / tiemposConvArr.length) * 10) / 10,
+    mismo_dia:      tiemposConvArr.filter(d => d === 0).length,
+    uno_a_tres:     tiemposConvArr.filter(d => d >= 1 && d <= 3).length,
+    mas_de_tres:    tiemposConvArr.filter(d => d > 3).length,
+    total:          tiemposConvArr.length,
+  } : null;
 
   res.json({
     resumen,
@@ -302,6 +405,9 @@ router.get('/analytics', async (req, res) => {
     navegadores,
     ciudades,
     paises,
+    isps,
+    zonas_horarias,
+    proxies_count,
     paginas,
     reportes_engagement,
     embudo: {
@@ -316,11 +422,18 @@ router.get('/analytics', async (req, res) => {
       recurrentes: recurrentes,
     },
     comportamiento: {
-      tasa_rebote:        tasaRebote,
-      paginas_por_sesion: paginasPromSesion,
-      duracion_sesion:    duracionPromSesion,
+      tasa_rebote:          tasaRebote,
+      paginas_por_sesion:   paginasPromSesion,
+      duracion_sesion:      duracionPromSesion,
+      exit_intents:         exitIntents,
+      exit_intent_rate:     sesionesUnicas > 0 ? Math.round((exitIntents / sesionesUnicas) * 100) : 0,
+      primer_scroll_seg:    primerScrollProm,
     },
     horas,
+    busquedas_fallidas:    busquedas.map(r => ({ query: r.query, count: Number(r.count) })),
+    conversion_por_reporte,
+    portafolio_por_fuente,
+    tiempo_hasta_conversion,
     periodo,
   });
 });

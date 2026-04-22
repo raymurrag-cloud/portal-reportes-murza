@@ -32,7 +32,7 @@ function MetricCard({ label, value, sub, accent }) {
       borderRadius: 12, padding: '18px 20px', boxShadow: 'var(--shadow-sm)',
     }}>
       <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1.2px', color: 'var(--text-faint)', marginBottom: 8 }}>{label}</div>
-      <div style={{ fontSize: 30, fontWeight: 800, color: 'var(--text)', lineHeight: 1 }}>{value ?? '—'}</div>
+      <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--text)', lineHeight: 1 }}>{value ?? '—'}</div>
       {sub && <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 6 }}>{sub}</div>}
     </div>
   );
@@ -51,12 +51,13 @@ function Card({ title, children, style }) {
   );
 }
 
-function ListaBar({ items, color }) {
-  if (!items || items.length === 0) return <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin datos aún</p>;
-  const max = items[0]?.count || 1;
-  return items.map(f => (
-    <div key={f.label} style={{ marginBottom: 12 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, marginBottom: 5, color: 'var(--text-warm)' }}>
+function ListaBar({ items, color, maxItems = 8 }) {
+  const lista = (items || []).slice(0, maxItems);
+  if (lista.length === 0) return <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin datos aún</p>;
+  const max = lista[0]?.count || 1;
+  return lista.map(f => (
+    <div key={f.label} style={{ marginBottom: 10 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, marginBottom: 4, color: 'var(--text-warm)' }}>
         <span style={{ fontWeight: 500 }}>{f.label}</span>
         <span style={{ color: 'var(--text-muted)' }}>{f.count}</span>
       </div>
@@ -69,6 +70,12 @@ function fmtTiempo(seg) {
   if (!seg || seg < 1) return '—';
   if (seg < 60) return `${seg}s`;
   return `${Math.floor(seg / 60)}m ${seg % 60}s`;
+}
+
+function fmtPeso(valor) {
+  if (!valor) return '—';
+  if (valor >= 1000000) return `$${(valor / 1000000).toFixed(1)}M`;
+  return `$${(valor / 1000).toFixed(0)}K`;
 }
 
 function pct(n, t) {
@@ -84,7 +91,6 @@ const PERIODOS = [
 
 const EMBUDO_COLORS = ['var(--gold)', '#B57A2A', '#8A6520', 'var(--green)', '#0E7B38'];
 
-// Gráfica de barras horarias
 function HorasChart({ horas }) {
   if (!horas || horas.length === 0) return <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin datos</p>;
   const max = Math.max(...horas.map(h => h.count), 1);
@@ -99,10 +105,9 @@ function HorasChart({ horas }) {
               width: '100%', height: `${Math.max(altura, 2)}%`,
               background: esPico ? 'var(--gold)' : 'var(--border)',
               borderRadius: '2px 2px 0 0', minHeight: 2,
-              transition: 'height .4s ease',
-            }} title={`${h.hora}:00 — ${h.count} visitas`} />
-            {(h.hora % 6 === 0) && (
-              <span style={{ fontSize: 9, color: 'var(--text-faint)', whiteSpace: 'nowrap' }}>{h.hora}h</span>
+            }} title={`${h.hora}:00 — ${h.count}`} />
+            {h.hora % 6 === 0 && (
+              <span style={{ fontSize: 9, color: 'var(--text-faint)' }}>{h.hora}h</span>
             )}
           </div>
         );
@@ -132,11 +137,9 @@ export default function AdminAnalytics() {
   const emb = d?.embudo || {};
   const nvr = d?.nuevos_vs_recurrentes || {};
   const com = d?.comportamiento || {};
+  const thc = d?.tiempo_hasta_conversion;
   const nvrTotal = (nvr.nuevos || 0) + (nvr.recurrentes || 0);
-
-  const convPct = rp.sesiones > 0
-    ? ((emb.llenaron_form / rp.sesiones) * 100).toFixed(1) + '%'
-    : '—';
+  const convPct = rp.sesiones > 0 ? ((emb.llenaron_form / rp.sesiones) * 100).toFixed(1) + '%' : '—';
 
   return (
     <div className="admin-page">
@@ -156,7 +159,7 @@ export default function AdminAnalytics() {
 
       <main className="admin-main">
         <div className="admin-section-header" style={{ marginBottom: 24 }}>
-          <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: 'var(--text)' }}>Analytics del Portal</h2>
+          <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Analytics del Portal</h2>
           <div style={{ display: 'flex', gap: 6 }}>
             {PERIODOS.map(p => (
               <button key={p.key} className={`btn-filtro${periodo === p.key ? ' active' : ''}`} onClick={() => setPeriodo(p.key)}>
@@ -171,40 +174,45 @@ export default function AdminAnalytics() {
         {!loading && d && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
-            {/* ── Métricas principales ── */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 12 }}>
-              <MetricCard label="Visitantes únicos"   value={rp.visitantes?.toLocaleString()} />
-              <MetricCard label="Sesiones"            value={rp.sesiones?.toLocaleString()} />
-              <MetricCard label="Page Views"          value={rp.pageviews?.toLocaleString()} />
-              <MetricCard label="Conversión"          value={convPct} sub={`${emb.llenaron_form} prospectos`} accent="var(--green)" />
-              <MetricCard label="Visitantes nuevos"   value={nvr.nuevos?.toLocaleString()} sub={pct(nvr.nuevos, nvrTotal)} />
-              <MetricCard label="Recurrentes"         value={nvr.recurrentes?.toLocaleString()} sub={pct(nvr.recurrentes, nvrTotal)} accent="var(--amber)" />
+            {/* ── Métricas de tráfico ── */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
+              <MetricCard label="Visitantes únicos"  value={rp.visitantes?.toLocaleString()} />
+              <MetricCard label="Sesiones"           value={rp.sesiones?.toLocaleString()} />
+              <MetricCard label="Page Views"         value={rp.pageviews?.toLocaleString()} />
+              <MetricCard label="Conversión"         value={convPct} sub={`${emb.llenaron_form} prospectos`} accent="var(--green)" />
+              <MetricCard label="Nuevos"             value={nvr.nuevos?.toLocaleString()} sub={pct(nvr.nuevos, nvrTotal)} />
+              <MetricCard label="Recurrentes"        value={nvr.recurrentes?.toLocaleString()} sub={pct(nvr.recurrentes, nvrTotal)} accent="var(--amber)" />
             </div>
 
-            {/* ── Comportamiento de sesión ── */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 12 }}>
-              <MetricCard label="Tasa de rebote"      value={`${com.tasa_rebote ?? '—'}%`} sub="Sesiones de 1 sola página" accent="#888" />
-              <MetricCard label="Páginas / sesión"    value={com.paginas_por_sesion ?? '—'} sub="Promedio de páginas vistas" accent="var(--gold)" />
-              <MetricCard label="Duración sesión"     value={fmtTiempo(com.duracion_sesion)} sub="Tiempo promedio en el sitio" accent="var(--amber)" />
+            {/* ── Métricas de comportamiento ── */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
+              <MetricCard label="Tasa de rebote"     value={`${com.tasa_rebote ?? '—'}%`}       sub="Sesiones de 1 página"         accent="#888" />
+              <MetricCard label="Páginas / sesión"   value={com.paginas_por_sesion ?? '—'}       sub="Promedio páginas vistas"       accent="var(--gold)" />
+              <MetricCard label="Duración sesión"    value={fmtTiempo(com.duracion_sesion)}       sub="Tiempo total promedio"         accent="var(--amber)" />
+              <MetricCard label="Exit intent"        value={com.exit_intents ?? '—'}             sub={`${com.exit_intent_rate ?? 0}% de sesiones`} accent="#C04040" />
+              <MetricCard label="Primer scroll"      value={com.primer_scroll_seg != null ? `${com.primer_scroll_seg}s` : '—'} sub="Seg. hasta 1er scroll en reportes" accent="var(--gold)" />
+              <MetricCard label="Proxies / VPN"      value={d.proxies_count ?? 0}               sub="Visitantes con IP anónima"     accent="#888" />
             </div>
 
             {/* ── Fuentes + Dispositivos ── */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-              <Card title="Fuente de origen">
-                <ListaBar items={d.fuentes} color="var(--gold)" />
-              </Card>
-              <Card title="Dispositivos">
-                <ListaBar items={d.dispositivos} color="var(--amber)" />
-              </Card>
+              <Card title="Fuente de origen"><ListaBar items={d.fuentes} color="var(--gold)" /></Card>
+              <Card title="Dispositivos"><ListaBar items={d.dispositivos} color="var(--amber)" /></Card>
             </div>
 
             {/* ── Navegadores + Países ── */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-              <Card title="Navegadores">
-                <ListaBar items={d.navegadores} color="#6B84C8" />
+              <Card title="Navegadores"><ListaBar items={d.navegadores} color="#6B84C8" /></Card>
+              <Card title="Países"><ListaBar items={d.paises} color="var(--green)" /></Card>
+            </div>
+
+            {/* ── ISP + Zona horaria ── */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+              <Card title="ISP / Empresa (por visitor)">
+                <ListaBar items={d.isps} color="#9B6FC8" />
               </Card>
-              <Card title="Países">
-                <ListaBar items={d.paises} color="var(--green)" />
+              <Card title="Zona horaria (por visitor)">
+                <ListaBar items={d.zonas_horarias} color="#4EA8A8" />
               </Card>
             </div>
 
@@ -216,8 +224,8 @@ export default function AdminAnalytics() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '10px 32px' }}>
                   {d.ciudades.map(c => (
                     <div key={c.label} style={{ marginBottom: 4 }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, marginBottom: 5, color: 'var(--text-warm)' }}>
-                        <span style={{ fontWeight: 500 }}>{c.label}</span>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, marginBottom: 4 }}>
+                        <span style={{ fontWeight: 500, color: 'var(--text-warm)' }}>{c.label}</span>
                         <span style={{ color: 'var(--text-muted)' }}>{c.count}</span>
                       </div>
                       <Bar count={c.count} max={d.ciudades[0]?.count || 1} color="var(--green)" />
@@ -229,17 +237,34 @@ export default function AdminAnalytics() {
 
             {/* ── Horario de visitas ── */}
             <Card title="Horario de visitas (hora MX)">
-              {d.horas && <HorasChart horas={d.horas} />}
+              <HorasChart horas={d.horas} />
               {d.horas && (() => {
                 const pico = d.horas.reduce((a, b) => b.count > a.count ? b : a, { hora: 0, count: 0 });
-                const valle = d.horas.reduce((a, b) => b.count < a.count && b.count > 0 ? b : a, { hora: 0, count: Infinity });
                 return pico.count > 0 ? (
-                  <div style={{ display: 'flex', gap: 24, marginTop: 10, fontSize: 12, color: 'var(--text-muted)' }}>
-                    <span>Hora pico: <strong style={{ color: 'var(--gold-dark)' }}>{pico.hora}:00–{pico.hora + 1}:00</strong> ({pico.count} visitas)</span>
-                    {valle.count < Infinity && <span>Hora valle: {valle.hora}:00–{valle.hora + 1}:00 ({valle.count} visitas)</span>}
+                  <div style={{ marginTop: 10, fontSize: 12, color: 'var(--text-muted)' }}>
+                    Hora pico: <strong style={{ color: 'var(--gold-dark)' }}>{pico.hora}:00–{pico.hora + 1}:00</strong> ({pico.count} visitas)
                   </div>
                 ) : null;
               })()}
+            </Card>
+
+            {/* ── Búsquedas fallidas ── */}
+            <Card title="Búsquedas fallidas (tickers sin reporte)">
+              {!d.busquedas_fallidas || d.busquedas_fallidas.length === 0 ? (
+                <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin búsquedas fallidas en este periodo — todos los tickers buscados existen.</p>
+              ) : (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {d.busquedas_fallidas.map(b => (
+                    <div key={b.query} style={{
+                      background: 'var(--bg-alt)', border: '1px solid var(--border)',
+                      borderRadius: 8, padding: '6px 14px', display: 'flex', gap: 10, alignItems: 'center',
+                    }}>
+                      <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>{b.query}</span>
+                      <span style={{ fontSize: 12, color: 'var(--text-muted)', background: 'var(--border)', borderRadius: 4, padding: '1px 7px' }}>{b.count}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </Card>
 
             {/* ── Páginas más vistas ── */}
@@ -264,7 +289,7 @@ export default function AdminAnalytics() {
                         return (
                           <tr key={p.url}>
                             <td>
-                              <span style={{ fontWeight: 600, color: 'var(--text)' }}>{p.titulo}</span>
+                              <span style={{ fontWeight: 600 }}>{p.titulo}</span>
                               <span style={{ fontSize: 11, color: 'var(--text-faint)', marginLeft: 8 }}>{p.url}</span>
                             </td>
                             <td style={{ textAlign: 'right', fontWeight: 600 }}>{p.vistas}</td>
@@ -287,7 +312,7 @@ export default function AdminAnalytics() {
             </Card>
 
             {/* ── Engagement por reporte ── */}
-            {d.reportes_engagement && d.reportes_engagement.length > 0 && (
+            {d.reportes_engagement?.length > 0 && (
               <Card title="Engagement por reporte">
                 <div className="admin-table-wrapper" style={{ border: 'none', boxShadow: 'none', borderRadius: 0 }}>
                   <table className="admin-table">
@@ -295,37 +320,33 @@ export default function AdminAnalytics() {
                       <tr>
                         <th>Reporte</th>
                         <th style={{ textAlign: 'right' }}>Visitas</th>
-                        <th style={{ textAlign: 'right' }}>Tiempo prom.</th>
+                        <th style={{ textAlign: 'right' }}>T. prom.</th>
+                        <th style={{ textAlign: 'right' }}>1er scroll</th>
                         <th style={{ textAlign: 'right' }}>Scroll prom.</th>
-                        <th style={{ textAlign: 'right' }}>Completados</th>
                         <th style={{ textAlign: 'right' }}>% completado</th>
                       </tr>
                     </thead>
                     <tbody>
                       {d.reportes_engagement.map(r => (
                         <tr key={r.url}>
-                          <td style={{ fontWeight: 600, color: 'var(--text)' }}>
+                          <td style={{ fontWeight: 600 }}>
                             {r.titulo}
                             <span style={{ fontSize: 11, color: 'var(--text-faint)', marginLeft: 8 }}>{r.url}</span>
                           </td>
                           <td style={{ textAlign: 'right', fontWeight: 600 }}>{r.vistas}</td>
                           <td style={{ textAlign: 'right', color: 'var(--text-muted)' }}>{fmtTiempo(r.tiempo_promedio)}</td>
+                          <td style={{ textAlign: 'right', color: 'var(--text-muted)' }}>{r.primer_scroll != null ? `${r.primer_scroll}s` : '—'}</td>
                           <td style={{ textAlign: 'right' }}>
                             <span style={{ color: r.scroll_promedio >= 50 ? 'var(--green)' : r.scroll_promedio >= 25 ? 'var(--amber)' : 'var(--text-muted)' }}>
                               {r.scroll_promedio > 0 ? `${r.scroll_promedio}%` : '—'}
                             </span>
-                          </td>
-                          <td style={{ textAlign: 'right', color: r.completos > 0 ? 'var(--green)' : 'var(--text-faint)', fontWeight: r.completos > 0 ? 600 : 400 }}>
-                            {r.completos}
                           </td>
                           <td style={{ textAlign: 'right' }}>
                             <span style={{
                               background: r.tasa_completado >= 20 ? 'rgba(22,163,74,.12)' : r.tasa_completado >= 5 ? 'rgba(202,138,4,.12)' : 'var(--bg-alt)',
                               color:      r.tasa_completado >= 20 ? 'var(--green)'         : r.tasa_completado >= 5 ? 'var(--amber)'         : 'var(--text-faint)',
                               padding: '2px 8px', borderRadius: 4, fontSize: 12, fontWeight: 600,
-                            }}>
-                              {r.tasa_completado}%
-                            </span>
+                            }}>{r.tasa_completado}%</span>
                           </td>
                         </tr>
                       ))}
@@ -335,7 +356,81 @@ export default function AdminAnalytics() {
               </Card>
             )}
 
-            {/* ── Embudo de conversión ── */}
+            {/* ── Inteligencia de conversión ── */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+
+              {/* Qué reporte genera más leads */}
+              <Card title="Reportes que generan leads">
+                {!d.conversion_por_reporte || d.conversion_por_reporte.length === 0 ? (
+                  <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin datos — se acumulan cuando leads llenan el formulario después de leer reportes.</p>
+                ) : (
+                  d.conversion_por_reporte.slice(0, 8).map((r, i) => (
+                    <div key={r.ticker} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                      <span style={{
+                        width: 28, height: 28, borderRadius: 6, background: i === 0 ? 'var(--gold)' : 'var(--bg-alt)',
+                        border: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        fontSize: 11, fontWeight: 800, color: i === 0 ? '#fff' : 'var(--text-muted)', flexShrink: 0,
+                      }}>{i + 1}</span>
+                      <span style={{ flex: 1, fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>{r.ticker}</span>
+                      <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>{r.leads} lead{r.leads !== 1 ? 's' : ''}</span>
+                      <Bar count={r.leads} max={d.conversion_por_reporte[0]?.leads || 1} color="var(--gold)" />
+                    </div>
+                  ))
+                )}
+              </Card>
+
+              {/* Portafolio por fuente */}
+              <Card title="Portafolio promedio por fuente">
+                {!d.portafolio_por_fuente || d.portafolio_por_fuente.length === 0 ? (
+                  <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>Sin datos aún.</p>
+                ) : (
+                  d.portafolio_por_fuente.map(f => (
+                    <div key={f.fuente} style={{ marginBottom: 14 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, marginBottom: 4 }}>
+                        <span style={{ fontWeight: 600, color: 'var(--text)' }}>{f.fuente}</span>
+                        <span style={{ color: 'var(--text-muted)' }}>{f.leads} leads</span>
+                      </div>
+                      <div style={{ display: 'flex', gap: 8, fontSize: 12, flexWrap: 'wrap' }}>
+                        <span style={{ color: 'var(--gold-dark)', fontWeight: 700, fontSize: 16 }}>{fmtPeso(f.promedio)} promedio</span>
+                      </div>
+                      {f.breakdown && (
+                        <div style={{ display: 'flex', gap: 6, marginTop: 6, flexWrap: 'wrap' }}>
+                          {Object.entries(f.breakdown).map(([label, cnt]) => (
+                            <span key={label} style={{ fontSize: 11, background: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 4, padding: '2px 8px', color: 'var(--text-muted)' }}>
+                              {label}: {cnt}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))
+                )}
+              </Card>
+            </div>
+
+            {/* ── Tiempo hasta conversión ── */}
+            {thc && (
+              <Card title="Tiempo hasta conversión (primera visita → formulario GBM)">
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
+                  <MetricCard label="Promedio" value={`${thc.promedio_dias} días`} sub={`${thc.total} leads con dato`} accent="var(--gold)" />
+                  <MetricCard label="Mismo día" value={thc.mismo_dia} sub={pct(thc.mismo_dia, thc.total)} accent="var(--green)" />
+                  <MetricCard label="1–3 días" value={thc.uno_a_tres} sub={pct(thc.uno_a_tres, thc.total)} accent="var(--amber)" />
+                  <MetricCard label="Más de 3 días" value={thc.mas_de_tres} sub={pct(thc.mas_de_tres, thc.total)} accent="#888" />
+                </div>
+                <p style={{ fontSize: 12, color: 'var(--text-faint)', marginTop: 12, marginBottom: 0 }}>
+                  * Solo incluye leads cuya primera visita fue rastreada (guardada en el navegador). Leads sin dato: el visitante borró cookies o llegó desde otro dispositivo.
+                </p>
+              </Card>
+            )}
+            {!thc && (
+              <Card title="Tiempo hasta conversión">
+                <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>
+                  Sin datos — se acumula cuando leads que visitaron el portal en días anteriores llenan el formulario. Requiere que el visitante no haya borrado cookies.
+                </p>
+              </Card>
+            )}
+
+            {/* ── Embudo ── */}
             <Card title="Embudo de conversión">
               {[
                 { label: 'Entran al sitio',          value: emb.total_sesiones },
