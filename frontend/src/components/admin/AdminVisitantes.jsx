@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { AdminModeToggle } from './AdminModeToggle.jsx';
 
 const BASE = import.meta.env.VITE_API_URL || '/api';
 
@@ -52,26 +53,38 @@ function NavAdmin({ active }) {
           <Link to="/admin/visitantes"  className={`admin-nav-link${active === 'visitantes' ? ' active' : ''}`}>Visitantes</Link>
         </nav>
       </div>
-      <button className="btn-ghost-sm" onClick={logout}>Salir</button>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <AdminModeToggle />
+        <button className="btn-ghost-sm" onClick={logout}>Salir</button>
+      </div>
     </header>
   );
 }
+
+const PERIODOS = [
+  { key: 'hoy',    label: 'Hoy' },
+  { key: 'semana', label: '7 días' },
+  { key: 'mes',    label: '30 días' },
+  { key: 'total',  label: 'Total' },
+];
 
 export default function AdminVisitantes() {
   const navigate    = useNavigate();
   const [data, setData]       = useState(null);
   const [loading, setLoading] = useState(true);
   const [page, setPage]       = useState(0);
+  const [periodo, setPeriodo] = useState('total');
   const PER_PAGE = 50;
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${BASE}/admin/visitantes?limit=500`, { headers: authHeaders() })
+    setPage(0);
+    fetch(`${BASE}/admin/visitantes?limit=500&periodo=${periodo}`, { headers: authHeaders() })
       .then(r => { if (!r.ok) throw new Error(); return r.json(); })
       .then(setData)
       .catch(() => navigate('/admin/login'))
       .finally(() => setLoading(false));
-  }, []);
+  }, [periodo]);
 
   const visitantes  = data?.visitantes || [];
   const total       = visitantes.length;
@@ -88,14 +101,23 @@ export default function AdminVisitantes() {
 
       <main className="admin-main">
         <div className="admin-section-header" style={{ marginBottom: 20 }}>
-          <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Visitantes</h2>
-          {data && (
-            <div style={{ display: 'flex', gap: 16, fontSize: 13, color: 'var(--text-muted)', alignItems: 'center' }}>
-              <span><strong style={{ color: 'var(--text)' }}>{total}</strong> visitantes únicos</span>
-              <span><strong style={{ color: 'var(--green)' }}>{prospectos}</strong> convertidos</span>
-              <span><strong style={{ color: 'var(--gold)' }}>{scoreAlto}</strong> score ≥ 60</span>
-            </div>
-          )}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Visitantes</h2>
+            {data && (
+              <div style={{ display: 'flex', gap: 12, fontSize: 13, color: 'var(--text-muted)', alignItems: 'center' }}>
+                <span><strong style={{ color: 'var(--text)' }}>{total}</strong> únicos</span>
+                <span><strong style={{ color: 'var(--green)' }}>{prospectos}</strong> leads</span>
+                <span><strong style={{ color: 'var(--gold)' }}>{scoreAlto}</strong> score ≥ 60</span>
+              </div>
+            )}
+          </div>
+          <div style={{ display: 'flex', gap: 6 }}>
+            {PERIODOS.map(p => (
+              <button key={p.key} className={`btn-filtro${periodo === p.key ? ' active' : ''}`} onClick={() => setPeriodo(p.key)}>
+                {p.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {loading && <div className="loading-state">Cargando visitantes...</div>}

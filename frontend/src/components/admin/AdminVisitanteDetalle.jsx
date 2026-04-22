@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { AdminModeToggle } from './AdminModeToggle.jsx';
 
 const BASE = import.meta.env.VITE_API_URL || '/api';
 
@@ -107,7 +108,10 @@ export default function AdminVisitanteDetalle() {
             <Link to="/admin/visitantes"  className="admin-nav-link active">Visitantes</Link>
           </nav>
         </div>
-        <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <AdminModeToggle />
+          <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_admin_token'); navigate('/admin/login'); }}>Salir</button>
+        </div>
       </header>
 
       <main className="admin-main">

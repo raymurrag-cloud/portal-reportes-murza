@@ -438,15 +438,19 @@ router.get('/analytics', async (req, res) => {
 
 // ── Lista de visitantes con engagement score ──────────────────────────────────
 router.get('/visitantes', async (req, res) => {
-  const limit  = parseInt(req.query.limit)  || 100;
-  const offset = parseInt(req.query.offset) || 0;
+  const limit   = parseInt(req.query.limit)  || 100;
+  const offset  = parseInt(req.query.offset) || 0;
+  const periodo = req.query.periodo || 'total';
+  const diasMap = { hoy: 1, semana: 7, mes: 30, total: 3650 };
+  const dias    = diasMap[periodo] || 3650;
 
   const [{ rows: visitas }, { rows: prospectos }] = await Promise.all([
     db.execute({
       sql: `SELECT visitor_id, session_id, pagina_url, tiempo_seg, scroll_max,
                    fuente, dispositivo, ciudad, pais, isp, es_proxy, navegador, created_at
-            FROM visitantes ORDER BY created_at DESC LIMIT 80000`,
-      args: [],
+            FROM visitantes WHERE created_at >= datetime('now', ?)
+            ORDER BY created_at DESC LIMIT 80000`,
+      args: [`-${dias} days`],
     }),
     db.execute({
       sql: `SELECT visitor_id, nombre, valor_portafolio, created_at FROM prospectos_gbm WHERE visitor_id IS NOT NULL`,
@@ -545,7 +549,7 @@ router.get('/visitantes', async (req, res) => {
 
   visitantes.sort((a, b) => b.score - a.score || b.ultima_visita.localeCompare(a.ultima_visita));
 
-  res.json({ total: visitantes.length, visitantes: visitantes.slice(offset, offset + limit) });
+  res.json({ total: visitantes.length, visitantes: visitantes.slice(offset, offset + limit), periodo });
 });
 
 // ── Perfil individual de visitante ────────────────────────────────────────────

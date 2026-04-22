@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { api } from '../../api.js';
+import { AdminModeToggle } from './AdminModeToggle.jsx';
 
 const JSON_TEMPLATE = `{
   "resumen": "Escribe aquí el resumen ejecutivo...",
@@ -174,7 +175,10 @@ export default function AdminEditorReporte() {
             <Link to="/admin/visitantes" className="admin-nav-link">Visitantes</Link>
           </nav>
         </div>
-        <Link to="/admin/reportes" className="btn-ghost-sm">← Volver</Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <AdminModeToggle />
+          <Link to="/admin/reportes" className="btn-ghost-sm">← Volver</Link>
+        </div>
       </header>
 
       <main className="admin-main">
