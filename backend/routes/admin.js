@@ -120,7 +120,8 @@ router.get('/analytics', async (req, res) => {
     db.execute({
       sql: `SELECT visitor_id, session_id, pagina_url, pagina_titulo,
                    tiempo_seg, scroll_max, fuente, campana,
-                   dispositivo, sistema_os, visita_recurrente, ciudad, estado, created_at
+                   dispositivo, sistema_os, visita_recurrente, ciudad, estado,
+                   navegador, pais, created_at
             FROM visitantes
             WHERE created_at >= datetime('now', ?)
             ORDER BY created_at DESC LIMIT 20000`,
@@ -190,13 +191,16 @@ router.get('/analytics', async (req, res) => {
     return acc;
   }, {});
 
-  // ── Fuentes (1 por sesion, no por page view) ───────────────────────────────
+  // ── Fuentes (1 por sesion) ─────────────────────────────────────────────────
   const fuentes = countBy(visitasPorSesion, 'fuente');
 
   // ── Dispositivos (1 por sesion) ────────────────────────────────────────────
   const dispositivos = countBy(visitasPorSesion, 'dispositivo');
 
-  // ── Ciudades (1 por visitor, no por page view) ─────────────────────────────
+  // ── Navegadores (1 por sesion) ─────────────────────────────────────────────
+  const navegadores = countBy(visitasPorSesion, 'navegador');
+
+  // ── Ciudades (1 por visitor) ───────────────────────────────────────────────
   const ciudadesMap = {};
   visitasPorVisitor.forEach(r => {
     if (!r.ciudad) return;
@@ -207,6 +211,9 @@ router.get('/analytics', async (req, res) => {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 15)
     .map(([label, count]) => ({ label, count }));
+
+  // ── Paises (1 por visitor) ─────────────────────────────────────────────────
+  const paises = countBy(visitasPorVisitor, 'pais');
 
   // ── Top páginas (dedup: max scroll y tiempo por visita) ───────────────────
   const paginasMap = {};
@@ -231,20 +238,72 @@ router.get('/analytics', async (req, res) => {
       completos:       p.completos,
     }));
 
-  // ── Embudo (usando visitasDedup para scroll correcto) ─────────────────────
+  // ── Engagement por reporte (solo paginas /reporte/) ────────────────────────
+  const reporteEngMap = {};
+  visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/')).forEach(r => {
+    const key = r.pagina_url;
+    if (!reporteEngMap[key]) reporteEngMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, scroll_total: 0, con_scroll: 0, tiempo_total: 0, completos: 0 };
+    const re = reporteEngMap[key];
+    re.vistas++;
+    re.tiempo_total += r.tiempo_seg;
+    if (r.scroll_max > 0) { re.scroll_total += r.scroll_max; re.con_scroll++; }
+    if (r.scroll_max >= 80) re.completos++;
+  });
+  const reportes_engagement = Object.values(reporteEngMap)
+    .sort((a, b) => b.vistas - a.vistas)
+    .map(r => ({
+      url:             r.url,
+      titulo:          r.titulo,
+      vistas:          r.vistas,
+      scroll_promedio: r.con_scroll > 0 ? Math.round(r.scroll_total / r.con_scroll) : 0,
+      tiempo_promedio: r.vistas > 0 ? Math.round(r.tiempo_total / r.vistas) : 0,
+      completos:       r.completos,
+      tasa_completado: r.vistas > 0 ? Math.round((r.completos / r.vistas) * 100) : 0,
+    }));
+
+  // ── Embudo ────────────────────────────────────────────────────────────────
   const leyeronReporte  = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
   const leyeronCompleto = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/') && r.scroll_max >= 80).map(r => r.session_id)).size;
   const vieronEarnings  = new Set(visitasDedup.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
 
-  // Nuevos vs recurrentes (1 por sesion)
+  // ── Nuevos vs recurrentes (1 por sesion) ──────────────────────────────────
   const recurrentes = visitasPorSesion.filter(r => r.visita_recurrente).length;
+
+  // ── Comportamiento de sesion ───────────────────────────────────────────────
+  const paginasPorSesion = {};
+  visitasDedup.forEach(r => { paginasPorSesion[r.session_id] = (paginasPorSesion[r.session_id] || 0) + 1; });
+  const conteosPorSesion = Object.values(paginasPorSesion);
+  const sesionesRebote   = conteosPorSesion.filter(n => n === 1).length;
+  const tasaRebote       = sesionesUnicas > 0 ? Math.round((sesionesRebote / sesionesUnicas) * 100) : 0;
+  const paginasPromSesion = sesionesUnicas > 0 ? Math.round((visitasDedup.length / sesionesUnicas) * 10) / 10 : 0;
+
+  const tiempoPorSesion = {};
+  visitasDedup.forEach(r => { tiempoPorSesion[r.session_id] = (tiempoPorSesion[r.session_id] || 0) + r.tiempo_seg; });
+  const tiemposSesionArr = Object.values(tiempoPorSesion);
+  const duracionPromSesion = tiemposSesionArr.length > 0
+    ? Math.round(tiemposSesionArr.reduce((a, b) => a + b, 0) / tiemposSesionArr.length)
+    : 0;
+
+  // ── Distribución horaria (hora local MX = UTC-6) ───────────────────────────
+  const horasMap = {};
+  for (let h = 0; h < 24; h++) horasMap[h] = 0;
+  visitasDedup.forEach(r => {
+    if (!r.created_at) return;
+    const utcH = new Date(r.created_at.replace(' ', 'T') + 'Z').getUTCHours();
+    const mxH  = (utcH - 6 + 24) % 24;
+    horasMap[mxH] = (horasMap[mxH] || 0) + 1;
+  });
+  const horas = Object.entries(horasMap).map(([h, count]) => ({ hora: Number(h), count }));
 
   res.json({
     resumen,
     fuentes,
     dispositivos,
+    navegadores,
     ciudades,
+    paises,
     paginas,
+    reportes_engagement,
     embudo: {
       total_sesiones:    sesionesUnicas,
       leyeron_reporte:   leyeronReporte,
@@ -256,6 +315,12 @@ router.get('/analytics', async (req, res) => {
       nuevos:      sesionesUnicas - recurrentes,
       recurrentes: recurrentes,
     },
+    comportamiento: {
+      tasa_rebote:        tasaRebote,
+      paginas_por_sesion: paginasPromSesion,
+      duracion_sesion:    duracionPromSesion,
+    },
+    horas,
     periodo,
   });
 });

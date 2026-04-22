@@ -156,6 +156,7 @@ export function initTracker(nombrePagina) {
     campana:           meta.campana,
     dispositivo:       meta.dispositivo,
     sistema_os:        meta.sistema,
+    navegador:         meta.navegador,
     visita_recurrente: meta.esRecurrente ? 1 : 0,
   });
 
@@ -215,6 +216,7 @@ export function initTracker(nombrePagina) {
       campana:          meta.campana,
       dispositivo:      meta.dispositivo,
       sistema_os:       meta.sistema,
+      navegador:        meta.navegador,
       visita_recurrente: meta.esRecurrente ? 1 : 0,
     });
   };
@@ -247,6 +249,7 @@ export function initTracker(nombrePagina) {
       campana:           meta.campana,
       dispositivo:       meta.dispositivo,
       sistema_os:        meta.sistema,
+      navegador:         meta.navegador,
       visita_recurrente: meta.esRecurrente ? 1 : 0,
     });
   };

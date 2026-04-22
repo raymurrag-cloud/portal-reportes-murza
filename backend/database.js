@@ -98,10 +98,16 @@ export async function initDb() {
       visita_recurrente INTEGER DEFAULT 0,
       ciudad           TEXT,
       estado           TEXT,
+      navegador        TEXT,
+      pais             TEXT,
       created_at       TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
     )`,
     args: [],
   });
+
+  // Migraciones: columnas nuevas en tabla existente
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN navegador TEXT`, args: [] }); } catch {}
+  try { await db.execute({ sql: `ALTER TABLE visitantes ADD COLUMN pais TEXT`, args: [] }); } catch {}
 
   // Índices para consultas de analytics
   try {

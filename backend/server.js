@@ -136,15 +136,19 @@ app.post('/api/prospectos-gbm', async (req, res) => {
 // ── Track de visitantes (público, sin auth) ───────────────────────────────
 app.post('/api/track', async (req, res) => {
   const { visitor_id, session_id, pagina_url, pagina_titulo, tiempo_seg, scroll_max,
-          fuente, campana, dispositivo, sistema_os, visita_recurrente } = req.body || {};
+          fuente, campana, dispositivo, sistema_os, visita_recurrente, navegador } = req.body || {};
   if (!visitor_id || !session_id || !pagina_url) return res.status(204).send();
 
   // Geo por IP
-  let ciudad = null, estado = null;
+  let ciudad = null, estado = null, pais = null;
   try {
     const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.socket.remoteAddress;
-    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,status&lang=es`).then(r => r.json());
-    if (geo.status === 'success') { ciudad = geo.city || null; estado = geo.regionName || null; }
+    const geo = await fetch(`http://ip-api.com/json/${ip}?fields=city,regionName,country,status&lang=es`).then(r => r.json());
+    if (geo.status === 'success') {
+      ciudad = geo.city || null;
+      estado = geo.regionName || null;
+      pais   = geo.country || null;
+    }
   } catch (_) {}
 
   try {
@@ -152,8 +156,8 @@ app.post('/api/track', async (req, res) => {
     await db.execute({
       sql: `INSERT INTO visitantes (visitor_id, session_id, pagina_url, pagina_titulo,
               tiempo_seg, scroll_max, fuente, campana, dispositivo, sistema_os,
-              visita_recurrente, ciudad, estado)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+              visita_recurrente, ciudad, estado, navegador, pais)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
       args: [
         visitor_id.slice(0, 40), session_id.slice(0, 40),
         pagina_url.slice(0, 100), (pagina_titulo || '').slice(0, 100),
@@ -161,6 +165,7 @@ app.post('/api/track', async (req, res) => {
         fuente || null, campana || null,
         dispositivo || null, sistema_os || null,
         visita_recurrente ? 1 : 0, ciudad, estado,
+        navegador || null, pais,
       ],
     });
   } catch (_) {}

@@ -119,6 +119,12 @@ export default function ReportePage() {
         </header>
 
         <article className="reporte-article">
+          <div className="reporte-breadcrumb">
+            <Link to="/" className="reporte-back-link">
+              ← Todos los reportes
+            </Link>
+          </div>
+
           <div className="reporte-hero">
             <div className="reporte-hero-inner">
               <div className="reporte-hero-left">

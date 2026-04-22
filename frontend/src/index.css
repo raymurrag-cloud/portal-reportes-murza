@@ -168,6 +168,10 @@ img { max-width: 100%; }
 
 .reporte-article { max-width: 1280px; margin: 0 auto; flex: 1; width: 100%; }
 
+.reporte-breadcrumb { padding: 12px clamp(24px, 5vw, 64px); border-bottom: 1px solid var(--border); }
+.reporte-back-link  { font-size: 13px; font-weight: 600; color: var(--gold-dark); text-decoration: none; opacity: .85; transition: opacity .15s; }
+.reporte-back-link:hover { opacity: 1; text-decoration: underline; }
+
 
 /* ── Hero banner ───────────────────────────────────────────────────────── */
 .reporte-hero {
