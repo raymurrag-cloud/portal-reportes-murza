@@ -126,7 +126,11 @@ router.get('/analytics', async (req, res) => {
             ORDER BY created_at DESC LIMIT 20000`,
       args: [`-${dias} days`],
     }),
-    db.execute({ sql: 'SELECT COUNT(*) as total FROM prospectos_gbm', args: [] }),
+    // Filtrar prospectos por el mismo periodo seleccionado
+    db.execute({
+      sql: `SELECT COUNT(*) as total FROM prospectos_gbm WHERE created_at >= datetime('now', ?)`,
+      args: [`-${dias} days`],
+    }),
   ]);
 
   const totalProspectos = Number(prospRows[0]?.total || 0);
@@ -138,38 +142,63 @@ router.get('/analytics', async (req, res) => {
     return Object.entries(m).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ label: k, count: v }));
   };
 
+  // ── Dedup: cada visita genera 2 filas (ping entrada scroll=0 + beacon salida scroll=real)
+  // Mergear por (session_id, pagina_url) conservando max scroll y max tiempo
+  const pageVisitMap = new Map();
+  visitas.forEach(r => {
+    const key = `${r.session_id}::${r.pagina_url}`;
+    const ex = pageVisitMap.get(key);
+    if (!ex) {
+      pageVisitMap.set(key, { ...r, scroll_max: Number(r.scroll_max) || 0, tiempo_seg: Number(r.tiempo_seg) || 0 });
+    } else {
+      ex.scroll_max = Math.max(ex.scroll_max, Number(r.scroll_max) || 0);
+      ex.tiempo_seg = Math.max(ex.tiempo_seg, Number(r.tiempo_seg) || 0);
+    }
+  });
+  const visitasDedup = [...pageVisitMap.values()];
+
+  // Una fila por sesion (para fuente, dispositivo, nuevos/recurrentes)
+  const sessionFirstMap = new Map();
+  visitas.forEach(r => { if (!sessionFirstMap.has(r.session_id)) sessionFirstMap.set(r.session_id, r); });
+  const visitasPorSesion = [...sessionFirstMap.values()];
+
+  // Una fila por visitor (para ciudades)
+  const visitorFirstMap = new Map();
+  visitas.forEach(r => { if (!visitorFirstMap.has(r.visitor_id)) visitorFirstMap.set(r.visitor_id, r); });
+  const visitasPorVisitor = [...visitorFirstMap.values()];
+
   // ── Visitantes únicos y sesiones ──────────────────────────────────────────
-  const visitantesUnicos = new Set(visitas.map(r => r.visitor_id)).size;
-  const sesionesUnicas   = new Set(visitas.map(r => r.session_id)).size;
-  const pageviews        = visitas.length;
+  const visitantesUnicos = visitasPorVisitor.length;
+  const sesionesUnicas   = visitasPorSesion.length;
+  const pageviews        = visitasDedup.length;
 
   // ── Resumen por sub-periodos (siempre desde 0, independiente del periodo) ─
   const ahora = Date.now();
-  const hace  = (d) => new Date(ahora - d * 86400000).toISOString();
   const { rows: all } = await db.execute({
-    sql: `SELECT visitor_id, session_id, created_at FROM visitantes ORDER BY created_at DESC LIMIT 50000`,
+    sql: `SELECT visitor_id, session_id, pagina_url, created_at FROM visitantes ORDER BY created_at DESC LIMIT 50000`,
     args: [],
   });
   const resumen = ['hoy', 'semana', 'mes', 'total'].reduce((acc, p) => {
     const d = { hoy: 1, semana: 7, mes: 30, total: 3650 }[p];
     const filtro = all.filter(r => new Date(r.created_at) >= new Date(ahora - d * 86400000));
+    const pvSet = new Set(filtro.map(r => `${r.session_id}::${r.pagina_url}`));
     acc[p] = {
       visitantes: new Set(filtro.map(r => r.visitor_id)).size,
       sesiones:   new Set(filtro.map(r => r.session_id)).size,
-      pageviews:  filtro.length,
+      pageviews:  pvSet.size,
     };
     return acc;
   }, {});
 
-  // ── Fuentes ────────────────────────────────────────────────────────────────
-  const fuentes = countBy(visitas, 'fuente');
+  // ── Fuentes (1 por sesion, no por page view) ───────────────────────────────
+  const fuentes = countBy(visitasPorSesion, 'fuente');
 
-  // ── Dispositivos ───────────────────────────────────────────────────────────
-  const dispositivos = countBy(visitas, 'dispositivo');
+  // ── Dispositivos (1 por sesion) ────────────────────────────────────────────
+  const dispositivos = countBy(visitasPorSesion, 'dispositivo');
 
-  // ── Ciudades (ciudad + estado) ─────────────────────────────────────────────
+  // ── Ciudades (1 por visitor, no por page view) ─────────────────────────────
   const ciudadesMap = {};
-  visitas.forEach(r => {
+  visitasPorVisitor.forEach(r => {
     if (!r.ciudad) return;
     const key = r.estado ? `${r.ciudad}, ${r.estado}` : r.ciudad;
     ciudadesMap[key] = (ciudadesMap[key] || 0) + 1;
@@ -179,16 +208,16 @@ router.get('/analytics', async (req, res) => {
     .slice(0, 15)
     .map(([label, count]) => ({ label, count }));
 
-  // ── Top páginas ────────────────────────────────────────────────────────────
+  // ── Top páginas (dedup: max scroll y tiempo por visita) ───────────────────
   const paginasMap = {};
-  visitas.forEach(r => {
+  visitasDedup.forEach(r => {
     const key = r.pagina_url;
     if (!paginasMap[key]) paginasMap[key] = { url: key, titulo: r.pagina_titulo || key, vistas: 0, tiempo_total: 0, scroll_total: 0, con_scroll: 0, completos: 0 };
     const p = paginasMap[key];
     p.vistas++;
-    p.tiempo_total += Number(r.tiempo_seg) || 0;
-    if (r.scroll_max > 0) { p.scroll_total += Number(r.scroll_max); p.con_scroll++; }
-    if (Number(r.scroll_max) >= 80) p.completos++;
+    p.tiempo_total += r.tiempo_seg;
+    if (r.scroll_max > 0) { p.scroll_total += r.scroll_max; p.con_scroll++; }
+    if (r.scroll_max >= 80) p.completos++;
   });
   const paginas = Object.values(paginasMap)
     .sort((a, b) => b.vistas - a.vistas)
@@ -202,15 +231,13 @@ router.get('/analytics', async (req, res) => {
       completos:       p.completos,
     }));
 
-  // ── Embudo ────────────────────────────────────────────────────────────────
-  const sessionesSet = new Set(visitas.map(r => r.session_id));
-  const leyeronReporte = new Set(visitas.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
-  const leyeronCompleto = new Set(visitas.filter(r => r.pagina_url?.startsWith('/reporte/') && Number(r.scroll_max) >= 80).map(r => r.session_id)).size;
-  const vieronEarnings  = new Set(visitas.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
+  // ── Embudo (usando visitasDedup para scroll correcto) ─────────────────────
+  const leyeronReporte  = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/')).map(r => r.session_id)).size;
+  const leyeronCompleto = new Set(visitasDedup.filter(r => r.pagina_url?.startsWith('/reporte/') && r.scroll_max >= 80).map(r => r.session_id)).size;
+  const vieronEarnings  = new Set(visitasDedup.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
 
-  // Nuevos vs recurrentes (por sesion unica)
-  const sessionesArr = [...new Map(visitas.map(r => [r.session_id, r])).values()];
-  const recurrentes = sessionesArr.filter(r => r.visita_recurrente).length;
+  // Nuevos vs recurrentes (1 por sesion)
+  const recurrentes = visitasPorSesion.filter(r => r.visita_recurrente).length;
 
   res.json({
     resumen,
