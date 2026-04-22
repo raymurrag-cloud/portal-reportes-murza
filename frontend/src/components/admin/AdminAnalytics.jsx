@@ -181,8 +181,8 @@ export default function AdminAnalytics() {
               <MetricCard label="Sesiones"           value={rp.sesiones?.toLocaleString()} />
               <MetricCard label="Page Views"         value={rp.pageviews?.toLocaleString()} />
               <MetricCard label="Conversión"         value={convPct} sub={`${emb.llenaron_form} prospectos`} accent="var(--green)" />
-              <MetricCard label="Nuevos"             value={nvr.nuevos?.toLocaleString()} sub={pct(nvr.nuevos, nvrTotal)} />
-              <MetricCard label="Recurrentes"        value={nvr.recurrentes?.toLocaleString()} sub={pct(nvr.recurrentes, nvrTotal)} accent="var(--amber)" />
+              <MetricCard label="Visitantes nuevos"   value={nvr.nuevos?.toLocaleString()} sub={`${pct(nvr.nuevos, nvrTotal)} de visitantes únicos`} />
+              <MetricCard label="Visitantes recurrentes" value={nvr.recurrentes?.toLocaleString()} sub={`${pct(nvr.recurrentes, nvrTotal)} de visitantes únicos`} accent="var(--amber)" />
             </div>
 
             {/* ── Métricas de comportamiento ── */}

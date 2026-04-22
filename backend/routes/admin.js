@@ -198,7 +198,7 @@ router.get('/analytics', async (req, res) => {
   const resumen = ['hoy', 'semana', 'mes', 'total'].reduce((acc, p) => {
     const d = { hoy: 1, semana: 7, mes: 30, total: 3650 }[p];
     const filtro = all.filter(r => new Date(r.created_at) >= new Date(ahora - d * 86400000));
-    const pvSet = new Set(filtro.map(r => `${r.session_id}::${r.pagina_url}`));
+    const pvSet = new Set(filtro.filter(r => !r.pagina_url?.startsWith('__')).map(r => `${r.session_id}::${r.pagina_url}`));
     acc[p] = {
       visitantes: new Set(filtro.map(r => r.visitor_id)).size,
       sesiones:   new Set(filtro.map(r => r.session_id)).size,
@@ -288,8 +288,8 @@ router.get('/analytics', async (req, res) => {
   const leyeronCompleto = new Set(visitasDedupClean.filter(r => r.pagina_url?.startsWith('/reporte/') && r.scroll_max >= 80).map(r => r.session_id)).size;
   const vieronEarnings  = new Set(visitasDedupClean.filter(r => r.pagina_url === '/earnings').map(r => r.session_id)).size;
 
-  // ── Nuevos vs recurrentes ─────────────────────────────────────────────────
-  const recurrentes = visitasPorSesion.filter(r => r.visita_recurrente).length;
+  // ── Nuevos vs recurrentes (por visitante único, no por sesión) ─────────────
+  const recurrentes = visitasPorVisitor.filter(r => r.visita_recurrente).length;
 
   // ── Comportamiento de sesion ───────────────────────────────────────────────
   const paginasPorSesionMap = {};
@@ -416,7 +416,7 @@ router.get('/analytics', async (req, res) => {
       llenaron_form:     totalProspectos,
     },
     nuevos_vs_recurrentes: {
-      nuevos:      sesionesUnicas - recurrentes,
+      nuevos:      visitantesUnicos - recurrentes,
       recurrentes: recurrentes,
     },
     comportamiento: {
