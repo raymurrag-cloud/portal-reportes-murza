@@ -192,17 +192,23 @@ router.get('/analytics', async (req, res) => {
   // ── Resumen por sub-periodos (siempre desde 0, independiente del periodo) ─
   const ahora = Date.now();
   const { rows: all } = await db.execute({
-    sql: `SELECT visitor_id, session_id, pagina_url, created_at FROM visitantes ORDER BY created_at DESC LIMIT 50000`,
+    sql: `SELECT visitor_id, session_id, pagina_url, created_at, visita_recurrente FROM visitantes ORDER BY created_at DESC LIMIT 50000`,
     args: [],
   });
   const resumen = ['hoy', 'semana', 'mes', 'total'].reduce((acc, p) => {
     const d = { hoy: 1, semana: 7, mes: 30, total: 3650 }[p];
     const filtro = all.filter(r => new Date(r.created_at) >= new Date(ahora - d * 86400000));
     const pvSet = new Set(filtro.filter(r => !r.pagina_url?.startsWith('__')).map(r => `${r.session_id}::${r.pagina_url}`));
+    const vMap = new Map();
+    filtro.forEach(r => { if (!vMap.has(r.visitor_id)) vMap.set(r.visitor_id, r); });
+    const visitantesCnt  = vMap.size;
+    const recurrentesCnt = [...vMap.values()].filter(r => r.visita_recurrente).length;
     acc[p] = {
-      visitantes: new Set(filtro.map(r => r.visitor_id)).size,
-      sesiones:   new Set(filtro.map(r => r.session_id)).size,
-      pageviews:  pvSet.size,
+      visitantes:  visitantesCnt,
+      sesiones:    new Set(filtro.map(r => r.session_id)).size,
+      pageviews:   pvSet.size,
+      nuevos:      visitantesCnt - recurrentesCnt,
+      recurrentes: recurrentesCnt,
     };
     return acc;
   }, {});
@@ -416,8 +422,8 @@ router.get('/analytics', async (req, res) => {
       llenaron_form:     totalProspectos,
     },
     nuevos_vs_recurrentes: {
-      nuevos:      visitantesUnicos - recurrentes,
-      recurrentes: recurrentes,
+      nuevos:      resumen[periodo].nuevos,
+      recurrentes: resumen[periodo].recurrentes,
     },
     comportamiento: {
       tasa_rebote:          tasaRebote,
