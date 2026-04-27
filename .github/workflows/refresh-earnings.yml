@@ -16,4 +16,4 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.EARNINGS_REFRESH_SECRET }}" \
             -H "Content-Type: application/json" \
             --fail-with-body \
-            https://portal-murza.onrender.com/api/earnings/refresh
+            https://portal-reportes-murza.onrender.com/api/earnings/refresh
