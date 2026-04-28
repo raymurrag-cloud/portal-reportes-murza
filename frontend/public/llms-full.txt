@@ -712,32 +712,26 @@ Uber opera a traves de tres segmentos: Mobility (transporte bajo demanda, ~61% d
 **URL**: https://reportes.murzainversiones.com/reporte/TSLA
 **Publicado**: 2026-04-06
 
-Tesla (TSLA) cerro 2025 con ingresos de $94.8B (-2.9% YoY), marcando la primera caida de ingresos en su historia como empresa publica. El margen bruto se estabilizo en 18.0% pero el margen operativo cayo a 4.6% y el neto a 4.0%, afectados por recortes de precios y gastos en IA y autonomia. Sin embargo, el FCF mejoro a $6.2B (+73.7% YoY) y la caja llego a $44.1B record. La empresa esta en transicion critica: de fabricante de EVs a empresa de IA, robotaxi y robotica.
+Tesla reporto ingresos de 94.83B USD en FY2025, una caida de -2.9% frente a FY2024, reflejando presion en margenes automotrices y mayor competencia global en EVs. La utilidad neta cayo -46.5% a 3.79B USD por recortes de precios y mayor gasto en IA. El FCF se recupero +73.7% a 6.22B por disciplina en capex. Q1 2026 muestra recuperacion solida: revenue 22.39B (+15.8% YoY), NI 477M (+16.6% YoY), 408K vehiculos producidos y 8.8 GWh de energia desplegada. Tesla mantiene 44.74B en caja al cierre Q1 2026 e invierte en IA, Optimus y Robotaxi como catalizadores de largo plazo.
 
-Tesla, Inc. (TSLA) es lider mundial en vehiculos electricos, almacenamiento de energia y soluciones de generacion solar. Opera los modelos Model 3, Model Y, Model S, Model X, Cybertruck y Semi, ademas del negocio de energia (Powerwall, Megapack). En 2025 lanzo su servicio Robotaxi (Cybercab) en junio y acelero el desarrollo de Optimus (robot humanoide). Con 6 Gigafactories activas y presencia en 50+ paises, Tesla integra verticalmente desde baterias hasta software FSD. La empresa pivoto su narrativa hacia IA y autonomia, posicionandose como competidor de Waymo y empresa robotica.
+Tesla opera en tres segmentos: Automotriz (EVs — Model 3/Y/S/X/Cybertruck/Cybercab), Energia (Megapack, Powerwall, solar) y Servicios. Su moat se basa en integracion vertical de baterias y semiconductores, ecosistema Supercharger con NACS adoptado por Ford/GM/Rivian, y liderazgo en datos de conduccion autonoma con mas de 7 millones de vehiculos generando datos para FSD. Robotaxi en operacion desde jun-2025 en Austin y Optimus en produccion piloto representan opcionalidad significativa en AI-robotica.
 
 **Datos financieros**:
-- Ingresos (B): $94.8 (-3.0% YoY)
-- Utilidad Bruta (B): $17.1 (-2.3% YoY)
-- Utilidad Operativa (B): $4.4 (-38.0% YoY)
-- Utilidad Neta (B): $3.8 (-46.5% YoY)
-- Margen Bruto: 18.0% (+0.1pp YoY)
-- Margen Operativo: 4.6% (-2.6pp YoY)
-- Margen Neto: 4.0% (-3.3pp YoY)
-- FCF (B): $6.2 (+72.2% YoY)
-- Caja Neta (B): $9.9 (-6.6% YoY)
-- Acciones (M): 3,751 (+16.6% YoY)
+- Revenue (B USD): 22.39 (+15.8% YoY)
+- Utilidad Neta (B USD): 0.48 (+16.6% YoY)
+- Margen Neto: 2.1% (+0.1pp YoY)
+- EBITDA (B USD): 2.3 (+20.8% YoY)
+- FCF (B USD): 1.45 (+116.4% YoY)
+- EPS Diluido: $0.15 (+16.6% YoY)
+- Deuda Neta (B USD): -38.2 (N/A YoY)
 
-**Valuacion**: Precio Actual $348.43, P/E Forward 122.8x, Ingresos 2025 $94.8B, Margen Bruto 18.0%, Margen Operativo 4.6%, Margen Neto 4.0%, EPS Diluido 2025 $1.01, P/E (trailing) 345.0x, FCF 2025 $6.2B, Caja Neta $9.9B, Deuda LP $6.6B, Vehiculos Entregados 1.64M, Energia Desplegada 46.7 GWh
+**Valuacion**: P/E Trailing 372x, P/E Forward 107x, EV/EBITDA 158x, P/FCF 227x, Deuda Neta/EBITDA Caja Neta, ROE 10.5%, ROIC 13.4%
 
-**Veredicto**: Especulativo -- IA Premium en Transicion (Score: 6.3/10)
-- Primera contraccion de ingresos en historia publica: -2.9% YoY a $94.8B
-- Margen operativo en minimo historico de 4.6% -- presion de precios y gastos en IA
-- FCF mejoro 73.7% a $6.2B gracias a disciplina de capex -- senal positiva de eficiencia
-- Caja record de $44.1B -- balance excepcionalmente solido sin presion financiera
-- Robotaxi lanzado en junio 2025 -- apuesta de alto riesgo/alto retorno en autonomia
-- Valuacion de 345.0x P/E descuenta escenarios de IA que aun no se materializan
-- Energia (Megapack) crece fuerte: 46.7 GWh desplegados con mejores margenes que autos
+**Veredicto**: Mantener / Especulativo (Score: 6.0/10)
++ Recuperacion Q1 2026 — Revenue +15.8% YoY y NI +16.6% confirman que el piso operativo de FY2025 fue ciclico, no estructural.
++ Caja neta 38.2B — Balance excepcional que da runway virtualmente ilimitado para ejecutar agenda de IA y robotica sin riesgo financiero.
++ Optimus y Robotaxi como opcionalidad real — Cybercab en produccion piloto y Robotaxi operando en Austin representan opciones de valor aun no capturadas en financials.
+- Valuacion extrema sin margen de error — P/E 107x forward y margen neto de 4% exigen ejecucion perfecta en autonomia y robotica. Cualquier decepcion puede generar correccion severa.
 
 ---
 
