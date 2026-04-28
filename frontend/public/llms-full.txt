@@ -657,26 +657,26 @@ Chevron opera dos segmentos: Upstream (exploracion, produccion y transporte de c
 **URL**: https://reportes.murzainversiones.com/reporte/NFLX
 **Publicado**: 2026-04-06
 
-Netflix cerro FY2025 con ingresos de USD 45.2B (+15.8% YoY) y utilidad neta de USD 11.0B (+26.1%), impulsados por el crecimiento de la base de suscriptores globales y el exitoso lanzamiento del plan con publicidad. El margen operativo alcanzo 29.5%, su nivel historico mas alto, y el FCF de USD 9.5B refleja una generacion de caja estructuralmente superior. En Q1 2026 los ingresos crecieron +16.2% YoY a USD 12.3B con EPS de USD 1.23 que supero expectativas; la utilidad neta incluyo USD 2.9B en ganancias no operativas derivadas de coberturas cambiarias.
+Netflix, Inc. es el lider mundial en streaming con mas de 300 millones de suscriptores en 190 paises. En FY2025 reporto ingresos de 45.18B USD (+16% YoY), margen operativo del 29.5% y FCF de 9.46B USD, marcando su mejor ano historico en generacion de caja. El split 10:1 de noviembre 2025 democratizo el acceso a la accion sin alterar los fundamentals. Con guidance de margen operativo del 29% para FY2026 y crecimiento sostenido via publicidad y live events, Netflix transita de empresa de crecimiento puro a generador masivo de caja libre.
 
-Netflix es el servicio de entretenimiento en streaming lider mundial con mas de 300 millones de suscriptores en 190 paises. Opera con un modelo de suscripcion de tres niveles: plan basico con publicidad, estandar y premium. Sus ventajas competitivas incluyen un catalogo de contenido original de primer nivel (series, peliculas, documentales, live events y juegos), escala global que diluye los costos de contenido sobre una base de suscriptores masiva, y capacidad de fijacion de precios probada en multiples mercados. El segmento de publicidad (Ads Plan) se perfila como el principal motor de crecimiento incremental de ingresos para FY2026-2027, mientras que los eventos en vivo amplian el valor percibido de la suscripcion.
+Netflix opera como un segmento unico: streaming de contenido (series, peliculas, juegos y eventos en vivo) a nivel global. Sus ingresos provienen casi exclusivamente de suscripciones mensuales. Los cuatro segmentos geograficos son UCAN (44% del rev), EMEA (32%), LATAM (12%) y APAC (12%). La empresa ha expandido su moat via: (1) escala de contenido con 17B+ USD de gasto anual, (2) plan con publicidad que amplia el TAM, (3) live events que elevan fidelizacion, y (4) monetizacion de cuentas compartidas. El modelo de economias de escala en streaming genera expansion de margen estructural y FCF creciente.
 
 **Datos financieros**:
-- Revenue (B USD): 12.25 (+16.2% YoY)
-- Utilidad Neta (B USD): 5.28 (+82.8% YoY)
-- Margen Neto: 43.1% (+26.8pp YoY)
-- EBITDA (B USD): 4.29 (+28.2% YoY)
-- FCF (B USD): N/D (+36.7% YoY)
-- EPS Diluido (post-split): 1.23 (+86.4% YoY)
-- Deuda Neta (B USD): N/D (-26.2% YoY)
+- Revenue (B USD): 12.25 (+16% YoY)
+- Utilidad Neta (B USD): 5.28 (+26% YoY)
+- Margen Neto: 43.1%* (+2pp YoY)
+- EBITDA (B USD): N/D (+27% YoY)
+- FCF (B USD): 5.09 (+37% YoY)
+- EPS Diluido: $1.23 (+86% YoY)
+- Deuda Neta (B USD): 2.10 (-$3.33B YoY)
 
-**Valuacion**: P/E Trailing 38.5x, P/E Forward 30.4x, EV/EBITDA 30.4x, P/FCF 43.4x, Deuda Neta/EBITDA 0.32x, ROE 41.3%, ROIC 37.1%
+**Valuacion**: P/E Trailing 35.9x, P/E Forward 31.8x, EV/EBITDA 28.9x, P/FCF 41.1x, Deuda Neta/EBITDA 0.40x, ROE 41.2%, ROIC 36.9%
 
-**Veredicto**: Mantener con Sesgo Positivo (Score: 7.8/10)
-+ Expansion de margenes estructural — Margen operativo de 29.5% en FY2025 refleja el apalancamiento operativo del modelo de streaming a escala global; management guia 29%+ sostenido.
-+ Motor publicitario en rampa de despegue — El Ads Plan con 70M+ MAUs se convierte en un segundo motor de ingresos de alto margen que el mercado aun no valora completamente.
-+ FCF inflexion clara — De FCF negativo en FY2021 a USD 9.5B en FY2025; la empresa devuelve capital masivo via recompras de USD 9.1B en FY2025.
-- Valuacion premium con poco margen de error — A 30x P/E forward, cualquier miss en suscriptores o guidance de ingresos generaria una correccion significativa.
+**Veredicto**: Mantener / Acumular en retrocesos (Score: 8.0/10)
++ Maquina de FCF -- Netflix genera 9.46B USD de FCF en FY2025 y 5.09B en solo Q1 2026. El run rate anualizado supera los 20B USD, financiando recompras agresivas que elevan EPS por accion de forma consistente.
++ Expansion de margen estructural -- De 20.6% en FY2023 a 29.5% en FY2025 en solo 2 anos. El apalancamiento operativo de escala es el driver: cada punto de revenue growth genera mas de un punto de mejora en margen operativo.
++ Balance saneado y recompras -- Deuda neta de solo 0.40x EBITDA con 9.13B USD de recompras en FY2025. La caja crece a 12.3B al Q1 2026, consolidando uno de los balances mas solidos del sector media.
+- Valuacion exigente -- A 31.8x P/E forward y 41x P/FCF, Netflix cotiza con prima que requiere ejecucion impecable y sostenida. Una desaceleracion en suscriptores o retraso en publicidad podria comprimir el multiplo 20-30%.
 
 ---
 
