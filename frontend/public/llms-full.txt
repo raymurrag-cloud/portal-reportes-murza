@@ -137,30 +137,30 @@ Caterpillar Inc. es el fabricante lider mundial de maquinaria de construccion y 
 
 ---
 
-### DPZ — Dominos Pizza Inc.
+### DPZ — Domino's Pizza, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/DPZ
 **Publicado**: 2026-04-21
 
-Dominos Pizza (DPZ) es la cadena de pizza mas grande del mundo con mas de 22,100 ubicaciones en mas de 90 mercados al cierre de FY2025. Su modelo casi totalmente franquiciado genera ingresos predecibles y margenes superiores al sector. En FY2025 reporto ingresos de 4.94B USD (+4.9% YoY), FCF de 0.67B USD (+31.4% YoY) y EPS diluido de 17.86 USD. La empresa mantiene una posicion financiera solida y retorna capital agresivamente via recompras y dividendos.
+Dominos Pizza (DPZ) es el operador y franquiciador de pizza mas grande del mundo, con mas de 22,100 tiendas en 90+ mercados. En FY2025 reporto ingresos de 4.94B USD (+4.9% YoY), utilidad neta de 600M USD (+3.4%) y FCF de 670M USD (+31.4%), el mejor de su historia. El modelo asset-light con >97% de tiendas franquiciadas genera royalties predecibles con capex minimo. El Q1 2026 (reportado el 27-abr-2026) muestra revenue de 699M USD (+4.3% YoY) y EPS de 4.13 USD, aunque la utilidad neta cayo -6.6% YoY por costos de reestructura y transicion de liderazgo.
 
-Dominos opera principalmente a traves de dos segmentos: U.S. Stores (tiendas corporativas y royalties de franquicias en EE.UU.) e International Franchise (royalties globales). El modelo de franquicia genera royalties sobre ventas del sistema, suministro de ingredientes y tecnologia, produciendo margenes operativos superiores con minima inversion de capital. Su app digital y programa Dominos Rewards son ventajas competitivas clave, con mas del 85% de pedidos en EE.UU. via canales digitales. El moat se apoya en escala de supply chain, marca global y tecnologia propietaria de pedidos.
+Dominos opera bajo un modelo casi 100% franquiciado: en EE.UU. >97% de tiendas son franquiciadas; internacionalmente el 100%. Los ingresos provienen de tres segmentos: U.S. Stores (~18% del revenue en royalties y tarifas), Supply Chain (~44%, ventas de alimentos e insumos a franquiciados), e International (~10%, royalties globales). El moat de Dominos radica en su plataforma digital propietaria con >75% pedidos online, el programa Dominos Rewards con 37M+ miembros activos, y su cadena de suministro que provee ingredientes a ~75% de tiendas EE.UU. generando margen adicional. Es la pizza #1 en participacion de mercado en EE.UU. con 65+ anos de historia.
 
 **Datos financieros**:
-- Revenue (B USD): 4.94 (+4.9% YoY)
-- Utilidad Neta (B USD): 0.60 (+3.4% YoY)
-- Margen Neto: 12.1% (-0.2pp YoY)
-- EBITDA (B USD): 1.04 (+7.2% YoY)
-- FCF (B USD): 0.67 (+31.4% YoY)
-- EPS Diluido: 17.86 (+5.6% YoY)
-- Deuda Neta (B USD): -0.11 (N/A YoY)
+- Revenue (B USD): 0.699 (+4.3% YoY)
+- Utilidad Neta (B USD): 0.140 (-6.7% YoY)
+- Margen Neto: 20% (-2.4pp YoY)
+- EBITDA (B USD): N/D (+7.2% YoY)
+- FCF (B USD): 0.147 (+31.4% YoY)
+- EPS Diluido: 4.13 (-4.6% YoY)
+- Deuda Neta (B USD): N/D (+1.4% YoY)
 
-**Valuacion**: P/E Trailing 20.7x, P/E Forward 19.0x, EV/EBITDA 11.8x, P/FCF 18.5x, Deuda Neta/EBITDA -0.11x, ROE N/A, ROIC ~35%
+**Valuacion**: P/E Trailing 19.1x, P/E Forward 17.9x, EV/EBITDA 15.5x, P/FCF 17.1x, Deuda Neta/EBITDA 4.5x, ROE 15.4%, ROIC 92.4%
 
-**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
-+ Lider global indiscutible — Mayor cadena de pizza del mundo con 22,100+ ubicaciones en 90 mercados y ventaja competitiva sostenible via escala de supply chain y plataforma digital propia.
-+ FCF excepcional en FY2025 — FCF crecio +31% a 670M USD; FCF yield del 5.4% sobre precio actual representa valoracion atractiva para una empresa de esta calidad.
-+ Valuacion con descuento — P/E forward de 19x y EV/EBITDA de 11.8x ofrecen descuento respecto al historico de DPZ y al sector QSR, con potencial de re-rating al alza.
-- Riesgo FX y SSS domesticos — Fortaleza del USD y desaceleracion de same-store sales en EE.UU. son los principales vientos en contra a monitorear en 2026.
+**Veredicto**: Mantener / Compra Selectiva (Score: 7.4/10)
++ Maquina de FCF asset-light — El modelo 97% franquiciado genero 670M USD de FCF en FY2025 (+31% YoY) con capex de solo 120M USD; la conversion de capital es excepcional y sostenible.
++ Plataforma digital #1 en pizza — Con >75% de pedidos online, 37M+ miembros en Rewards y tecnologia propietaria, Dominos tiene la ventaja digital mas solida del sector QSR, creando un moat creciente.
++ Expansion global con runway de una decada — El plan Hungry for MORE apunta a 50,000+ tiendas; India (potencial 4,000+), LatAm y mercados emergentes ofrecen crecimiento de unidades por muchos anos.
+- Deuda 4.5x EBITDA y presion en Q1 2026 — La estructura de capital con 4.8B USD de deuda y equity negativo de -3.9B USD limita flexibilidad; la caida del NI -6.6% en Q1 2026 y los costos laborales son riesgos concretos a vigilar.
 
 ---
 
