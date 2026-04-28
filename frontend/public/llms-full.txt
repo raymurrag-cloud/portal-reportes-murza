@@ -303,26 +303,26 @@ Oscar Health opera planes de salud individuales bajo la ACA en Estados Unidos, c
 **URL**: https://reportes.murzainversiones.com/reporte/AXP
 **Publicado**: 2026-04-20
 
-American Express (AXP) cerro FY2025 con ingresos netos de 54.9B USD (+8.8% YoY) y utilidad neta de 10.8B USD, demostrando la resiliencia de su modelo de negocio premium centrado en gasto por consumo. Su plataforma de pagos integrada — card issuer, acquirer y network — genera ventajas estructurales dificiles de replicar. Con ROE de 32.4%, ROIC de 25.9% y FCF Yield del 7%, AXP opera con alta eficiencia de capital. La accion cotiza a 21x P/E TTM y 15x EV/EBITDA, una prima razonable dado su consistente crecimiento de gasto facturado y la calidad de su base de clientes premium.
+American Express (AXP) es la marca de pagos premium mas reconocida del mundo, con 175 anos de historia y un modelo integrado unico que conecta directamente a tarjetahabientes de alto poder adquisitivo con comercios. En FY2025 reporto ingresos netos de 72.2B USD (+9.5% YoY) y EPS diluido de 15.38 (+9.8% YoY), consolidando seis anos consecutivos de crecimiento de doble digito en revenue. El veredicto: AXP opera con ventaja competitiva estructural -- su red propietaria closed-loop y su base de clientes premium generan margenes superiores y baja sensibilidad al ciclo. A 15.7x P/E forward, la valuacion es atractiva frente a su historico y al sector financiero.
 
-American Express opera una plataforma de pagos integrada de ciclo cerrado con cuatro segmentos: U.S. Consumer Services (USCS), Commercial Services (CS), International Card Services (ICS) y Global Merchant and Network Services (GMNS). A diferencia de Visa/Mastercard, AXP actua simultaneamente como emisor de tarjetas, adquirente de comercios y red de pago, lo que le otorga acceso a datos en ambos extremos de la transaccion. Sus principales fuentes de ingreso son: discount revenue (mayor fuente, comision sobre transaccion al comercio), interest income sobre prestamos, net card fees de membresias anuales premium, y service fees. La ventaja competitiva central radica en el ecosistema de beneficios premium (Centurion Lounges, recompensas, acceso a viajes) que retiene a un Card Member de alto poder adquisitivo con gasto promedio muy superior al de tarjetas bancarias convencionales.
+American Express opera un modelo de pagos integrado de extremo a extremo con cuatro segmentos: U.S. Consumer Services (USCS), Commercial Services (CS), International Card Services (ICS) y Global Merchant & Network Services (GMNS). A diferencia de Visa/Mastercard, AXP actua como emisor, adquirente y red de pagos simultaneamente (closed-loop), lo que le da acceso a datos transaccionales completos en ambos extremos. Sus ingresos provienen de: descuentos de comercios (la mayor fuente), ingresos por intereses sobre prestamos, comisiones anuales de tarjetas premium (Platinum, Centurion) y servicios de red. El moat reside en su base de clientes de altos ingresos que gastan mas y presentan menor riesgo crediticio, las membresias de cuotas anuales elevadas con alta retencion, y el ecosistema de beneficios (lounges, hoteles, restaurantes) que genera lealtad estructural. International Card Services y el segmento de millennials/GenZ representan los principales vectores de crecimiento secular.
 
 **Datos financieros**:
-- Revenue (B USD): 54.87 (+8.8% YoY)
-- Utilidad Neta (B USD): 10.83 (+6.9% YoY)
-- Margen Neto: 19.7% (-0.4pp YoY)
-- EBITDA (B USD): 15.58 (+6.9% YoY)
-- FCF (B USD): 16.00 (+31.8% YoY)
-- EPS Diluido: 15.56 (+9.5% YoY)
-- Deuda Neta (B USD): 8.60 (-0.5B YoY)
+- Revenue (B USD): 18.9 (+9.5% YoY)
+- Utilidad Neta (B USD): 2.97 (+6.9% YoY)
+- Margen Neto: 15.7% (-0.4pp YoY)
+- EBITDA (B USD): -- (+6.3% YoY)
+- FCF (B USD): -- (+31.9% YoY)
+- EPS Diluido: 4.28 (+9.8% YoY)
+- Deuda Neta (B USD): -- (+14.1% YoY)
 
-**Valuacion**: P/E Trailing 21.2x, P/E Forward 19.6x, EV/EBITDA 15.3x, P/FCF 14.3x, Deuda Neta/EBITDA 0.55x, ROE 32.4%, ROIC 25.9%
+**Valuacion**: P/E Trailing 20.5x, P/E Forward 15.7x, EV/EBITDA 14.5x, P/FCF 13.5x, Deuda Neta/EBITDA 2.8x, ROE 32.4%, ROIC 15.2%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.2/10)
-+ Plataforma integrada con moat estructural -> A diferencia de Visa y Mastercard, AXP opera como issuer, acquirer y red simultaneamente, lo que genera barreras de entrada excepcionales y poder de datos que sus competidores no pueden replicar.
-+ Compounding de EPS via recompras disciplinadas -> La reduccion sistematica de acciones en circulacion (806M a 696M en 5 anos, -13.6%) junto con crecimiento de utilidad produce un EPS compounding de ~12-15% anual, superior al crecimiento de revenue.
-+ Valuacion atractiva para la calidad del negocio -> A 19.6x P/E forward y 14.3x P/FCF con ROE de 32.4% y ROIC de 25.9%, AXP cotiza con prima moderada sobre el sector financiero pero a descuento significativo respecto a sus fundamentos de calidad.
-- Riesgo macro en gasto discrecional premium -> Una recesion severa o deterioro del mercado laboral en segmentos medios-altos podria reducir el billed business (41% corporativo/SMB) y elevar provisiones crediticias, presionando simultaneamente revenue y utilidad.
++ Closed-loop inigualable -> El modelo integrado emisor-adquirente-red genera datos superiores, menor fraude y pricing power estructural que ninguna fintech o banco puede replicar facilmente.
++ Valuacion atractiva -> P/E forward de 15.7x con FCF yield del 7.4% y ROE del 32.4% es una combinacion rara en el sector. El mercado subestima la calidad de los ingresos por cuotas anuales recurrentes.
++ Momentum acelerado en 2026 -> Q1 2026 muestra aceleracion: revenue +11.4% YoY y EPS +17.6% YoY. El segmento de clientes menores de 35 anos crece doble digito, asegurando el pipeline de tarjetahabientes premium de la proxima decada.
+- Riesgo macro-arancelario -> Una recesion inducida por aranceles podria comprimir el gasto discrecional premium y afectar el billed business internacional. Monitorear write-off rates trimestralmente.
 
 ---
 
