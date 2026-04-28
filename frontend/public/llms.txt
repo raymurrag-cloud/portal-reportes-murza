@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (41 empresas)
+## Reportes de acciones (42 empresas)
 
+- [JBS S.A. (JBS)](https://reportes.murzainversiones.com/reporte/JBS): Analisis financiero completo de JBS S.A. (JBSAY): la mayor procesadora de proteinas del mundo. Revenue 73.5B USD, valoracion, margenes y perspectivas 2025. Veredicto: Mantener / Compra Especulativa.
 - [Brookfield Corporation (BN)](https://reportes.murzainversiones.com/reporte/BN): Analisis financiero de Brookfield Corporation (BN): AUM de 1 trillon USD, Distributable Earnings de 6.0B, descuento de 50% vs Blackstone y KKR. Reporte FY2025. Veredicto: Comprar con Conviccion.
 - [Caterpillar Inc. (CAT)](https://reportes.murzainversiones.com/reporte/CAT): Reporte financiero Caterpillar (CAT) FY2025: revenue 67.6B, EPS 18.81, FCF 8.9B. Analisis completo de margenes, balance, valuacion y perspectivas. Veredicto: Mantener con Sesgo Positivo.
 - [Dominos Pizza Inc. (DPZ)](https://reportes.murzainversiones.com/reporte/DPZ): Analisis financiero completo de Dominos Pizza (DPZ): revenue 4.94B USD, FCF +31% YoY, P/E forward 19x, lider global de pizza con modelo franquiciado y plataforma digital. Veredicto: Comprar con Conviccion.

@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-21
+**Actualizado**: 2026-04-28
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (41 empresas)
+## Reportes de acciones (42 empresas)
+
+### JBS — JBS S.A.
+**URL**: https://reportes.murzainversiones.com/reporte/JBS
+**Publicado**: 2026-04-28
+
+JBS S.A. es la mayor procesadora de proteinas animales del mundo, con operaciones en carne vacuna, porcina, aves y derivados en mas de 20 paises. Cotiza en la B3 de Brasil (JBSS3) y como ADR en NYSE (JBSAY). En FY2024 reporto ingresos de USD 73.5B con recuperacion notable del margen neto tras el dificil FY2023. La empresa opera bajo un modelo de integracion vertical con marcas globales como Swift, Pilgrim Pride, Primo Foods y Seara.
+
+JBS opera cuatro segmentos principales: JBS Beef North America (30% revenue), Pilgrim Pride Corp-PPC (aves, 22%), JBS Brazil (vacuno/porcino/aves, 20%) y JBS International (Europa/Australia/Oceania, 28%). Su moat se sustenta en escala operativa sin precedente, integracion vertical desde granjas hasta retail, y un portafolio de marcas premium en multiples proteinas. Opera mas de 400 plantas de procesamiento.
+
+**Datos financieros**:
+- Revenue (B USD): 75.2 (+2.3% YoY)
+- Utilidad Neta (B USD): 2.10 (+15.4% YoY)
+- Margen Neto: 2.8% (+0.3pp YoY)
+- EBITDA (B USD): 7.8 (+8.3% YoY)
+- FCF (B USD): 1.6 (+14.3% YoY)
+- EPS Diluido: 0.89 (+15.6% YoY)
+- Deuda Neta (B USD): 14.5 (-1.4% YoY)
+
+**Valuacion**: P/E Trailing 9.7x, P/E Forward 7.1x, EV/EBITDA 8.7x, P/FCF 33.3x, Deuda Neta/EBITDA 1.9x, ROE 15.2%, ROIC 13.5%
+
+**Veredicto**: Mantener / Compra Especulativa (Score: 6.4/10)
++ Lider global con escala unica -- Ninguna empresa rivaliza con los 73.5B USD de revenue y presencia en 20+ paises. La escala genera eficiencias que los competidores no pueden replicar.
++ Catalizador claro: relisting NYSE -- El proceso de listado primario en NYSE podria eliminar el descuento ADR (~20-30%) y atraer capital institucional, desbloqueando valor significativo.
++ Recuperacion del ciclo ganadero -- El ciclo en EE.UU. normaliza en 2025-2026, lo que impulsara margenes de JBS Beef North America, el segmento mas rentable historicamente.
+- Deuda neta de 14.7B USD -- En escenarios adversos, el servicio de deuda consume buena parte del FCF. Es el principal riesgo financiero estructural.
+
+---
 
 ### BN — Brookfield Corporation
 **URL**: https://reportes.murzainversiones.com/reporte/BN
