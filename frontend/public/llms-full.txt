@@ -195,26 +195,26 @@ YPF es la empresa energetica integrada mas grande de Argentina con mas de 100 an
 **URL**: https://reportes.murzainversiones.com/reporte/CB
 **Publicado**: 2026-04-20
 
-Chubb Limited (CB) es la aseguradora de propiedad y casualidad mas grande del mundo por activos y una de las mas rentables del sector. En FY2025 reporto ingresos de 63.9B USD y utilidad neta de 11.1B USD, con crecimiento consistente impulsado por el endurecimiento del mercado de seguros comerciales. Opera en mas de 54 paises con portafolio diversificado de seguros comerciales y personales. Su combined ratio de clase mundial (~87%) y 35 anos de dividendo creciente la posicionan como referencia global.
+Chubb Limited (CB) es la aseguradora de propiedad y responsabilidad civil mas grande del mundo por capitalizacion de mercado, con operaciones en 54 paises y activos totales de 272B USD. En FY2025 genero ingresos de 59.4B USD y utilidad neta de 10.31B USD a pesar de los incendios de California. El Q1 2026 fue excepcionalmente fuerte: ingresos de 14.77B (+10.6% YoY) y net income de 2.32B (+74% YoY). Veredicto: Comprar con Conviccion para inversionistas de largo plazo que buscan una aseguradora con combined ratio de clase mundial y crecimiento de EPS compuesto del 20%+ desde 2021.
 
-Chubb opera a traves de tres segmentos: North America Commercial P&C Insurance (el mayor por volumen), North America Personal P&C Insurance y Overseas General Insurance. Su moat se basa en capacidad de suscripcion selectiva, escala global irreplicable, marca premium y relaciones de largo plazo con brokers corporativos. La disciplina en combined ratio es el principal diferenciador competitivo frente a pares del sector.
+Chubb opera en cuatro segmentos: (1) North America Commercial P&C Insurance - polizas complejas para Fortune 500 y empresas medianas; (2) North America Personal P&C Insurance - hogar y auto de alto patrimonio (HNW/UHNW); (3) Overseas General Insurance - operaciones en 50+ mercados con foco en Asia, Europa y Latam; (4) Life Insurance - vida y accidentes con fuerte presencia en Asia. Su moat: capacidad unica de suscribir riesgos complejos, balance AAA con 272B en activos, y marca Chubb/ACE con 130+ anos de historia. Combined ratio historico de 85-90% vs. industria 95-98%.
 
 **Datos financieros**:
-- Revenue (B USD): 63.9 (+9.2% YoY)
-- Utilidad Neta (B USD): 11.1 (+8.8% YoY)
-- Margen Neto: 17.4% (+0.0pp YoY)
-- EBITDA (B USD): 14.6 (+8.1% YoY)
-- FCF (B USD): 12.9 (+9.3% YoY)
-- EPS Diluido: 27.20 (+9.9% YoY)
-- Deuda Neta (B USD): 9.1 (-9.9% YoY)
+- Revenue (B USD): 14.77 (+6.5% YoY)
+- Utilidad Neta (B USD): 2.32 (+11.2% YoY)
+- Margen Neto: 15.7% (+0.8pp YoY)
+- EBITDA (B USD): -- (-5.9% YoY)
+- FCF (B USD): -- (-21.2% YoY)
+- EPS Diluido: -- (+13.9% YoY)
+- Deuda Neta (B USD): -- (+10.2% YoY)
 
-**Valuacion**: P/E Trailing N/D, P/E Forward 11.3x, EV/EBITDA 10.0x, P/FCF 10.6x, Deuda Neta/EBITDA 0.6x, ROE 19.2%, ROIC 18.6%
+**Valuacion**: P/E Trailing 12.5x, P/E Forward 10.8x, EV/EBITDA 12.7x, P/FCF 10.3x, Deuda Neta/EBITDA 1.2x, ROE 13.9%, ROIC 10.9%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
-+ Lider global irreplicable — Chubb es la aseguradora P&C mas grande del mundo con presencia en 54+ paises, combined ratio de ~87% y 35 anos de dividendo creciente.
-+ Disciplina en suscripcion como ventaja estructural — Rechaza sistematicamente negocios no rentables; genera margenes superiores al sector de forma consistente a lo largo del ciclo asegurador.
-+ Crecimiento y FCF solido — Revenue crecio +9.2% YoY y FCF supera 12.9B USD, financiando buybacks y dividendos sin estres en el balance.
-- Riesgo catastrofe y social inflation — Eventos climaticos extremos y aumento de litigios en EEUU son riesgos estructurales que pueden impactar resultados en anos adversos.
+**Veredicto**: Comprar con Conviccion (Score: 8/10)
++ Suscripcion de clase mundial -- Combined ratio ~89% en FY2025 con wildfires incluidos; esta ventaja de underwriting genera valor independientemente del entorno de tasas y es la barrera de entrada mas dificil de replicar en seguros.
++ Q1 2026 record -- Net income de 2.32B en Q1 2026 (+74% vs Q1 2025) y revenue de 14.77B (+10.6%); el rebote post-wildfires es mas fuerte de lo esperado y senala re-aceleracion hacia FY2026 potencialmente record.
++ Capital allocation excelente -- Dividendo aristocrata 30+ anos; buybacks acelerados (3.69B FY2025); EPS CAGR ~20% desde 2021; negocio con capex minimo y FCF yield del 9.7%.
+- Riesgo climatico estructural -- La creciente frecuencia de catastrofes naturales es el mayor riesgo de largo plazo; eventos extremos podrian presionar el combined ratio y requerir aumento de reservas o reduccion de exposicion en mercados clave.
 
 ---
 
