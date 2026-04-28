@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (42 empresas)
+## Reportes de acciones (43 empresas)
+
+### NBIS — Nebius Group N.V.
+**URL**: https://reportes.murzainversiones.com/reporte/NBIS
+**Publicado**: 2026-04-28
+
+Nebius Group N.V. (NASDAQ: NBIS) es una empresa global de infraestructura AI cloud que provee GPU clusters de alto rendimiento, una plataforma cloud propietaria y herramientas avanzadas para entrenamiento e inferencia de modelos de IA. La compania fue reconstituida en 2024 tras la desinversion de sus operaciones rusas (Yandex), y desde entonces ha ejecutado un crecimiento explosivo: de $91.5M en revenue FY2024 a $529.8M en FY2025 (+479% YoY). Con $4.1B en notas convertibles emitidas en 2025 y una cartera de hardware en expansion masiva, Nebius invierte a ritmo acelerado para capturar el mercado de AI cloud frente a hyperscalers y neoclouds. Tiene sede en Amsterdam y opera centros de datos en Finlandia, Francia, Islandia y EE.UU.
+
+Nebius opera cuatro segmentos: (1) Nebius AI Cloud, el negocio principal con GPU clusters NVIDIA de alta densidad y plataforma cloud full-stack para startups de IA y laboratorios frontera; (2) Avride, desarrolladora de vehiculos autonomos y robotica de entrega; (3) TripleTen, plataforma edtech de re-skilling tecnologico; y (4) Toloka (equity method investment desde Q2 2025), plataforma de datos para entrenamiento de modelos. El moat de Nebius reside en su experiencia tecnica profunda en infraestructura de IA, capacidad de despliegue en multiples regiones fuera de EE.UU., y contratos de deferred revenue de largo plazo ($1.6B) que dan visibilidad sobre ingresos futuros. El 50% de los revenues provienen de EE.UU.
+
+**Datos financieros**:
+- Revenue (B USD): 0.530 (+479% YoY)
+- Utilidad Neta Cont. (B USD): 0.029 (n/m YoY)
+- Margen Bruto: 69% (+17pp YoY)
+- Adj. EBITDA (B USD): -0.065 (+71% YoY)
+- FCF (B USD): -3.664 (n/a YoY)
+- EPS Diluido (cont.): 0.11 (n/m YoY)
+- Deuda Neta (B USD): 0.45 (n/a YoY)
+
+**Valuacion**: EV/Revenue TTM 65.7x, P/E Forward N/A, EV/Adj.EBITDA N/M, P/FCF N/M, Deuda Neta/EBITDA N/M, Crecimiento Rev. YoY +479%, Margen Bruto 69%
+
+**Veredicto**: Especulativo - Alto Riesgo/Alta Recompensa (Score: 6.4/10)
++ Hipercrecimiento validado -- Revenue de $91.5M a $530M en un ano; Q4 2025 mostro el primer Adj. EBITDA positivo ($15M), senalando el camino hacia rentabilidad.
++ Moat tecnico y geografico -- Infraestructura full-stack sobre expertise de Yandex; posicion unica en Europa con data centers sostenibles; $1.6B en deferred revenue avala demanda real.
++ Margen bruto en expansion rapida -- De 52% a 69% en un ano demuestra apalancamiento operativo real y poder de fijacion de precios sobre GPU compute.
+- Riesgo de capital estructural -- FCF de -$3.66B, deuda de $4.1B en convertibles y dependencia de mercados de capitales para CapEx de $4B+ anuales crean riesgo de dilucion severa o crisis de liquidez.
+
+---
 
 ### JBS — JBS S.A.
 **URL**: https://reportes.murzainversiones.com/reporte/JBS
