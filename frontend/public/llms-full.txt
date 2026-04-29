@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-28
+**Actualizado**: 2026-04-29
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -114,26 +114,26 @@ BN actua como holding de tres negocios complementarios: 1) Asset Management via 
 **URL**: https://reportes.murzainversiones.com/reporte/CAT
 **Publicado**: 2026-04-21
 
-Caterpillar reporto ingresos de 67.6 B USD en FY2025, un alza de +4.3% vs FY2024, pero enfrento presion en margenes por mayores costos y mezcla de productos desfavorable. La utilidad neta bajo -17.7% a 8.9 B USD y el EPS diluido cayo de 22.05 a 18.81, aunque sigue siendo el tercer mejor registro historico. El FCF fue de 8.9 B USD y la deuda neta se mantiene manejable en 1.5x EBITDA. La empresa continuo su programa de recompras y dividendos, demostrando solidez de balance en un ciclo de demanda moderada.
+Caterpillar Inc. es el lider mundial en maquinaria de construccion, mineria e infraestructura, con mas de 100 anos de historia y una red de dealers global incomparable. En FY2025 reporto ingresos de 67.6B USD con compresion de margenes respecto al pico de FY2024 por menores volumenes en Construction Industries. El Q1 2026 reportado hoy (29-abr) mostro Revenue de 14.2B (-10% YoY) y EPS ajustado de 4.25, reflejando normalizacion ciclica. El balance es solido con FCF de 8.9B y dividendo creciente por 31 anos consecutivos.
 
-Caterpillar Inc. es el fabricante lider mundial de maquinaria de construccion y mineria, motores diesel y de gas natural, y turbinas industriales. Opera a traves de tres segmentos: Construction Industries (30% de ventas), Resource Industries (mineria, 20%) y Energy and Transportation (E&T, 42%), ademas de Financial Products (8%). Su ventaja competitiva proviene de su red de 3,800+ distribuidores en 190 paises, marca Cat reconocida globalmente, y fidelidad de clientes por el costo total de propiedad. Los servicios de postventa representan un flujo recurrente creciente.
+Caterpillar opera en tres segmentos: Construction Industries (maquinaria para construccion e infraestructura), Resource Industries (maquinaria minera y agregados) y Energy & Transportation (motores, turbinas, locomotoras y Cat Financial). Su moat descansa en la red de 3,000+ dealers globales, la marca de confiabilidad extrema y el negocio de repuestos/servicio con margenes altos. Aproximadamente 40% de las ventas son partes y servicios de alto margen. Mas del 50% de ingresos provienen de mercados internacionales.
 
 **Datos financieros**:
 - Revenue (B USD): 67.59 (+4.3% YoY)
 - Utilidad Neta (B USD): 8.88 (-17.7% YoY)
-- Margen Neto: 13.1% (-3.6pp YoY)
+- Margen Neto: 13.1% (-3.5pp YoY)
 - EBITDA (B USD): 13.41 (-12.0% YoY)
 - FCF (B USD): 8.92 (-11.2% YoY)
 - EPS Diluido: 18.81 (-14.7% YoY)
 - Deuda Neta (B USD): 20.72 (+1.3% YoY)
 
-**Valuacion**: P/E Trailing 42.4x, P/E Forward 45.6x, EV/EBITDA 29.7x, P/FCF 42.3x, Deuda Neta/EBITDA 1.55x, ROE 41.7%, ROIC 20.2%
+**Valuacion**: P/E Trailing 43.1x, P/E Forward 41.5x, EV/EBITDA 29.7x, P/FCF 42.3x, Deuda Neta/EBITDA 1.55x, ROE 75.9%, ROIC 26.8%
 
-**Veredicto**: Mantener con Sesgo Positivo (Score: 7.4/10)
-+ Lider mundial con moat real — La red de 3,800+ distribuidores exclusivos en 190 paises y la base instalada de millones de equipos generan ingresos recurrentes imposibles de replicar por competidores.
-+ Capital allocation excepcional — 7.9 B devueltos en FY2025; el float se redujo 21% en 5 anos. CAT es una maquina de retorno de capital en ciclos altos.
-+ Tailwind E&T y data centers — El segmento de Energia y Transporte (42% de ventas) se beneficia de la demanda de generadores para IA y reindustrializacion de EE.UU.
-- Valuacion exigente en ciclo bajo — Con P/E de 42x y EPS cayendo 14.7%, el mercado descuenta una recuperacion que aun no es visible. Aranceles y debilidad en China son riesgos reales para 2026.
+**Veredicto**: Mantener (Score: 7.0/10)
++ Moat estructural — Red de 3,000+ dealers, marca premium y negocio de partes/servicio crean ventajas competitivas que tardan decadas en construirse y son practicamente irreplicables.
++ Balance solido y FCF resiliente — Deuda Neta/EBITDA de 1.54x y FCF de 8.92B permiten dividendos crecientes (Aristocrat 31 anos) y recompras activas incluso en ciclos adversos.
++ Energy & Transportation como ancla secular — Motores para data centers de IA, mineria y generacion de energia representan el catalizador de crecimiento a largo plazo que reduce la ciclicidad historica.
+- Valuacion premium injustificada — P/E forward de 41.5x vs historico de 15-20x para industriales ciclicos. El Q1 2026 con -10% en revenue ya cuestiona el escenario optimista descontado en USD 810.
 
 ---
 
