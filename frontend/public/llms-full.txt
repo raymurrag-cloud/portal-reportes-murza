@@ -357,26 +357,26 @@ Snowflake opera una plataforma de datos en la nube para almacenamiento, procesam
 **URL**: https://reportes.murzainversiones.com/reporte/V
 **Publicado**: 2026-04-14
 
-Visa Inc. es la mayor red de pagos digitales del mundo, conectando consumidores, comercios, instituciones financieras y gobiernos en mas de 200 paises. Su modelo asset-light procesa transacciones sin asumir riesgo crediticio, generando margenes netos del 50.1% y FCF de 21.6B USD en FY2025. Con ingresos de 40.0B USD (+11.3% YoY) y un crecimiento consistente del volumen de pagos global, Visa representa uno de los negocios mas defensivos del mercado. El principal riesgo es el caso antitrust del DOJ sobre su red de debito en EE.UU. — el mayor riesgo binario en el horizonte 2026-2027.
+Visa Inc. es la red de pagos digitales mas grande del mundo, operando la mayor infraestructura de procesamiento de pagos con mas de 4.5 trillones de transacciones anuales. En FY2025 (año fiscal Oct-Sep) reporto ingresos de 40.0B USD (+11.3% YoY) y NI de 17.5B. Q2 FY2026 (enero-marzo 2026, reportado ayer) mostro Revenue de 11.23B (+17.1% YoY) y NI de 6.02B (+31.6% YoY), con EPS de 3.14, superando expectativas del mercado. Visa es un duopolio con Mastercard: modelo asset-light con margenes operativos de 60%+ y FCF yield de 3.3%. Valuacion razonable a P/E forward 28x para la calidad del negocio.
 
-Visa opera VisaNet, la infraestructura tecnologica que procesa transacciones de debito, credito y prepago bajo marcas Visa, Visa Electron y Plus. Sus ingresos se dividen en cuatro fuentes: service revenues (por volumenes de pago), data processing revenues (transacciones procesadas), international transaction revenues (pagos cross-border con comision adicional) y other revenues. Con 4.4B+ credenciales activas y presencia en 200+ paises, su moat central es la red de dos caras: emisores quieren la red con mayor aceptacion en comercios y viceversa, creando un circulo virtuoso con externalidades de red casi imposibles de replicar. Visa Direct expande el TAM a pagos P2P, B2B y remesas en tiempo real.
+Visa opera una red de procesamiento de pagos donde cobra fees por servicio (service fees, data processing fees, international transaction fees) sin asumir riesgo de credito (a diferencia de bancos emisores). El modelo es un duopolio de facto: Visa y Mastercard procesan el 90%+ de pagos con tarjeta en EE.UU. Cuenta con mas de 4.4B tarjetas activas, 130M+ comercios afiliados y procesa transacciones en 200 paises. Segmentos principales: Consumer Payments, Commercial Solutions y Value-Added Services. El growth driver es la digitalizacion del efectivo global: solo el 40% de transacciones son electronicos, dejando 60% como oportunidad.
 
 **Datos financieros**:
-- Revenue (B USD): 40.00 (+11.3% YoY)
-- Utilidad Neta (B USD): 20.06 (+1.6% YoY)
-- Margen Neto: 50.1% (N/D YoY)
-- EBITDA (B USD): 25.21 (+2.4% YoY)
-- FCF (B USD): 21.58 (+15.4% YoY)
-- EPS Diluido: 10.19 (+4.7% YoY)
-- Deuda Neta (B USD): 0.18 (N/D YoY)
+- Revenue (B USD): 11.23 (+17.1% YoY)
+- Utilidad Neta (B USD): 6.02 (+31.5% YoY)
+- Margen Neto: 53.6% (+5.9pp YoY)
+- EBITDA (B USD): 7.70 (+16.5% YoY)
+- FCF (B USD): 5.80 (+14.2% YoY)
+- EPS Diluido: 3.14 (+14.6% YoY)
+- Deuda Neta (B USD): ~1.20 (-48.5% YoY)
 
-**Valuacion**: P/E Trailing 29.3x, P/E Forward 21.4x, EV/EBITDA 20.8x, P/FCF 24.3x, Deuda Neta/EBITDA 0.01x, Margen Neto 50.1%, ROE 52.9%
+**Valuacion**: P/E Trailing 32.8x, P/E Forward 28.1x, EV/EBITDA 25.4x, P/FCF 30.2x, Deuda Neta/EBITDA 0.06x, ROE 47.3%, ROIC 49.8%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 8.4/10)
-+ Moat de red insuperable — Con 4.4B credenciales y 150M+ comercios en 200+ paises, la red de dos caras de Visa es virtualmente imposible de replicar. Cada nuevo participante aumenta el valor para todos, creando una ventaja que se auto-refuerza con el tiempo.
-+ Margenes de clase mundial sin riesgo crediticio — Margen neto del 50.1% con un modelo que no presta dinero. Las utilidades son estructuralmente resilientes incluso en recesiones, cuando el consumo cae pero Visa no acumula deudas incobrables.
-+ FCF masivo y retorno total excepcional — 21.6B USD de FCF en FY2025 con 18.3B USD en recompras y 4.6B USD en dividendos. El capital se redistribuye sistematicamente generando retorno total de ~10-12% anual estructuralmente.
-- Riesgo DOJ antitrust (debito) — El caso del Departamento de Justicia podria forzar cambios estructurales en la red de debito de EE.UU. — mayor riesgo binario en el horizonte 2026-2027 que justifica esperar valoracion con descuento o mantener posicion existente sin agregar.
+**Veredicto**: Comprar con Conviccion (Score: 8.8/10)
++ Duopolio irreplicable — Red de 130M+ comercios y 4.4B tarjetas construida en 60 anos con efectos de red bilaterales que ninguna big tech ha podido superar: Apple Pay, Google Pay, PayPal procesan SOBRE la infraestructura de Visa.
++ Margenes extraordinarios en expansion — Margen operativo de 60%, FCF de 21.77B y ROIC de 49.8% con capex de apenas 0.68B. Q2 FY2026 confirma: NI +31.6% YoY con margen neto de 53.6%, eliminando los cargos no recurrentes de FY2025.
++ Valuacion razonable para la calidad — P/E forward de 28x es un descuento vs peers de pagos (~30x) y vs el historico de Visa (32-35x). FCF yield de 3.3% con crecimiento de doble digito es atractivo.
+- Riesgo regulatorio y sistemas alternativos — Investigacion DOJ antimonopolio activa y sistemas de pago nacionales (PIX Brasil, UPI India) que excluyen a Visa de mercados con 3B+ personas. El duopolio es duradero pero no invulnerable.
 
 ---
 
