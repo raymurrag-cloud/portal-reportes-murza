@@ -906,26 +906,26 @@ Novo Nordisk A/S (fundada 1923, Dinamarca) es lider mundial en Obesidad y Diabet
 **URL**: https://reportes.murzainversiones.com/reporte/LLY
 **Publicado**: 2026-03-31
 
-Eli Lilly (LLY) reporto ingresos de $65.2B en 2025, crecimiento del +45% YoY impulsado por el volumen masivo de Mounjaro y Zepbound en el mercado de GLP-1. El margen operativo escalo de 18.9% (2023) a 40.4% (2025) y la utilidad neta se duplico a $20.6B (+95% YoY). LLY es la farmaceutica con mayor momentum de margenes en el mundo, pero cotiza a 40x P/E y 92x P/FCF — una valuacion que descuenta ejecucion perfecta por varios anos.
+Eli Lilly es la empresa farmaceutica de mayor crecimiento en el mundo gracias a su liderazgo absoluto en GLP-1 (Mounjaro/Zepbound para diabetes y obesidad) e inhibidores de CDK4/6 para cancer de mama. En FY2025 reporto ingresos de 65.2B USD (+45% YoY), utilidad neta de 20.6B (+95% YoY) y EPS diluido de 22.95, impulsados principalmente por Mounjaro (+74%) y Zepbound (lanzado en nov-2023, ya en 5.5B en 2025). Q1 2026 reportado hoy mostro Revenue de 12.7B (+45% YoY) y reafirmo guidance de FY2026. El mayor riesgo es la valuacion: P/E forward de 38.6x con expectativas ya muy elevadas.
 
-Eli Lilly and Company (fundada 1876, Indianapolis, Indiana) descubre, desarrolla, fabrica y comercializa productos farmaceuticos humanos en un solo segmento de negocio. Sus productos se venden en aproximadamente 90 paises. El portafolio se divide en Salud Cardiometabolica — Mounjaro y Zepbound (tirzepatida, doble agonismo GIP/GLP-1, diabetes tipo 2 y obesidad), Jardiance (licencia Boehringer), Trulicity, Humalog, Humulin — y Oncologia: Verzenio (abemaciclib, cancer de mama HR+), Jaypirca, Cyramza, Retevmo, Inluriyo. El moat competitivo central es la plataforma incretin con tirzepatida, que ha demostrado superioridad clinica frente a semaglutide de Novo Nordisk en ensayos head-to-head. El pipeline de siguiente generacion incluye orforglipron (GLP-1 oral sin inyeccion, sometido en EUA/EU/Japon), retatrutide (triple agonismo GIP/GLP-1/glucagon) y donanemab (Kisunla, Alzheimer temprano, aprobado 2024).
+Lilly opera principalmente en dos segmentos: Diabetes & Obesity (Mounjaro/tirzepatide, Zepbound, Humalog, Jardiance) y Oncologia (Verzenio/abemaciclib, Cyramza). Tirzepatide es el farmaco de mayor crecimiento en la historia de Lilly — agonista dual GIP/GLP-1 con eficacia superior a semaglutide de Novo Nordisk. La empresa invierte masivamente en capacidad de manufactura (+7.8B capex en 2025) para satisfacer la demanda insaciable de GLP-1. Pipeline incluye orforglipron (GLP-1 oral), doza (LY3437943) e inhibidores de IL-13 para dermatitis.
 
 **Datos financieros**:
-- Revenue ($B): 65.18 (+44.7% YoY)
-- Utilidad Neta ($B): 20.64 (+94.9% YoY)
-- Margen Neto (%): 31.7% (+8.2pp YoY)
-- EBITDA ($B): 28.30 (+92.9% YoY)
-- FCF ($B): 8.97 (+138.6% YoY)
-- EPS Diluido ($): $22.95 (+96.0% YoY)
-- Deuda Neta ($B): 33.60 (+28.2% YoY)
+- Revenue (B USD): 65.18 (+44.7% YoY)
+- Utilidad Neta (B USD): 20.64 (+94.9% YoY)
+- Margen Neto: 31.7% (+8.2pp YoY)
+- EBITDA (B USD): 29.18 (+88.3% YoY)
+- FCF (B USD): 8.97 (+138.6% YoY)
+- EPS Diluido: 22.95 (+96.0% YoY)
+- Deuda Neta (B USD): 33.60 (+33.0% YoY)
 
-**Valuacion**: P/E TTM 40.1x, P/E Forward 22.7x, EV/EBITDA 30.4x, P/FCF 92.2x, Deuda/EBITDA 1.19x, ROE 77.8%, ROIC 35.1%
+**Valuacion**: P/E Trailing 37.1x, P/E Forward 38.6x, EV/EBITDA 27.4x, P/FCF 85.3x, Deuda Neta/EBITDA 1.15x, ROE >100%, ROIC 49.3%
 
-**Veredicto**: Mantener / Acumular en debilidad (Score: 7.6/10)
-+ Crecimiento y margenes excepcionales -> +45% revenue y +95% NI en 2025; margen operativo de 40.4% — expansion simultanea en los tres niveles imposible de ignorar.
-+ Pipeline de next-gen como catalizador -> Orforglipron (GLP-1 oral), retatrutide y donanemab son apuestas concretas para 2026-2028 con datos clinicos favorables ya publicados.
-+ Liderazgo clinico con datos superiores -> Tirzepatida demostro superioridad vs. semaglutide en ensayos head-to-head; el moat no es solo comercial, es cientifico.
-- Valuacion sin margen de error -> P/FCF de 92x y P/E de 40x requieren ejecucion perfecta por 5+ anos; cualquier sorpresa negativa en GLP-1 o el pipeline puede generar correccion severa.
+**Veredicto**: Mantener (Score: 8.0/10)
++ GLP-1 monopolio clinico — Tirzepatide lidera en eficacia (SURMOUNT, SURPASS trials) con -22.5% perdida de peso vs -14.9% de semaglutide, en el mercado de obesidad estimado en 100B USD para 2030.
++ Margenes en expansion masiva — Margen operativo de 41.7% en FY2025 vs 30.5% en FY2024. El apalancamiento operativo de los GLP-1 es estructural: costo marginal bajo con precios premium de 800-900 USD/mes.
++ Pipeline de proxima generacion — Orforglipron (oral, sin inyeccion), LY3437943 (triple agonista) y donanemab (Alzheimer) representan la siguiente ola de crecimiento mas alla de tirzepatide inyectable.
+- Valuacion sin margen de seguridad — P/E forward de 38.6x descuenta un escenario perfecto. Competencia de semaglutide oral (Novo), presion de precios Medicare IRA y concentracion en una sola molecula hacen que el riesgo/retorno sea asimetrico a USD 851.
 
 ---
 
