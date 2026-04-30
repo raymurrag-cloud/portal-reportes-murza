@@ -2,99 +2,410 @@
   "resumen": "Costco Wholesale (COST) reporto ingresos totales record de $275.2B en FY2025 (+8.1% YoY), con utilidad neta de $8.1B y FCF de $7.8B, ambos maximos historicos. El modelo unico de membresias genera $5.3B en fees anuales que representan ~66% de toda la utilidad neta, respaldado por 81 millones de miembros con renovacion del 92.3% en EE.UU. La mayor debilidad no es operativa sino de valuacion: a 51x P/E, el precio descuenta anos de crecimiento perfecto sin margen de seguridad.",
   "descripcion": "Costco Wholesale Corporation es el segundo retailer mas grande del mundo por ingresos, operando 914 warehouses en 14 paises al cierre de FY2025 (agosto 2025). Su modelo cobra membresias anuales ($65 Gold Star / $130 Executive) para acceder a productos seleccionados a precios ultra-competitivos, con un markup maximo del 15% en merchandise. Los $5.3B en ingresos de membresias son practicamente pura ganancia y representan el verdadero motor de rentabilidad. La linea propia Kirkland Signature representa ~25-30% del revenue y actua como diferenciador que ninguna competencia puede replicar facilmente. Con una tasa de renovacion global del 89.8%, Costco ha construido uno de los ecosistemas de lealtad de cliente mas solidos del retail global.",
   "tabla": {
-    "headers": ["Metrica", "2021", "2022", "2023", "2024", "2025", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", "195.9", "227.0", "242.3", "254.5", "275.2", "+8.1%"],
-      ["Utilidad Neta ($B)", "5.0", "5.8", "6.3", "7.4", "8.1", "+9.9%"],
-      ["Margen Neto (%)", "2.56%", "2.58%", "2.60%", "2.90%", "2.94%", "+0.04pp"],
-      ["EBITDA ($B)", "8.5", "9.7", "10.2", "11.5", "12.8", "+11.2%"],
-      ["FCF ($B)", "5.4", "3.5", "6.7", "6.6", "7.8", "+18.2%"],
-      ["EPS (GAAP)", "$11.27", "$13.14", "$14.16", "$16.56", "$18.21", "+10.0%"],
-      ["Deuda Neta ($B)", "-2.0", "-2.0", "-6.4", "-3.0", "-7.1", "Mejora"]
+      [
+        "Revenue ($B)",
+        "195.9",
+        "227.0",
+        "242.3",
+        "254.5",
+        "275.2",
+        "+8.1%"
+      ],
+      [
+        "Utilidad Neta ($B)",
+        "5.0",
+        "5.8",
+        "6.3",
+        "7.4",
+        "8.1",
+        "+9.9%"
+      ],
+      [
+        "Margen Neto (%)",
+        "2.56%",
+        "2.58%",
+        "2.60%",
+        "2.90%",
+        "2.94%",
+        "+0.04pp"
+      ],
+      [
+        "EBITDA ($B)",
+        "8.5",
+        "9.7",
+        "10.2",
+        "11.5",
+        "12.8",
+        "+11.2%"
+      ],
+      [
+        "FCF ($B)",
+        "5.4",
+        "3.5",
+        "6.7",
+        "6.6",
+        "7.8",
+        "+18.2%"
+      ],
+      [
+        "EPS (GAAP)",
+        "$11.27",
+        "$13.14",
+        "$14.16",
+        "$16.56",
+        "$18.21",
+        "+10.0%"
+      ],
+      [
+        "Deuda Neta ($B)",
+        "-2.0",
+        "-2.0",
+        "-6.4",
+        "-3.0",
+        "-7.1",
+        "Mejora"
+      ]
     ]
   },
   "kpis": [
-    { "label": "P/E Ratio", "value": "51.2x", "change": "vs. ~47x hace 1 ano", "signal": "red", "note": "vs. sector retail ~20x" },
-    { "label": "EV/EBITDA", "value": "31.7x", "signal": "yellow" },
-    { "label": "P/FCF", "value": "48.0x", "signal": "yellow" },
-    { "label": "Deuda/EBITDA", "value": "0.0x", "signal": "green", "note": "Caja neta de $7.1B" },
-    { "label": "ROE", "value": "30.7%", "signal": "green" },
-    { "label": "ROIC", "value": "21.7%", "signal": "green" }
+    {
+      "label": "P/E Trailing",
+      "value": "53.6x",
+      "change": "vs. ~47x hace 1 ano",
+      "signal": "red",
+      "note": "vs. sector retail ~20x",
+      "precio_base": 1033.2,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 19.27
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "46x",
+      "signal": "red",
+      "precio_base": 1033.73,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 22.4661
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "31.7x",
+      "signal": "yellow"
+    },
+    {
+      "label": "P/FCF",
+      "value": "48.0x",
+      "signal": "yellow"
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "0.0x",
+      "signal": "green",
+      "note": "Caja neta de $7.1B"
+    },
+    {
+      "label": "ROE",
+      "value": "30.7%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "21.7%",
+      "signal": "green"
+    }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2021", "revenue": 195.9, "utilidad": 5.0 },
-      { "label": "2022", "revenue": 227.0, "utilidad": 5.8 },
-      { "label": "2023", "revenue": 242.3, "utilidad": 6.3 },
-      { "label": "2024", "revenue": 254.5, "utilidad": 7.4 },
-      { "label": "2025", "revenue": 275.2, "utilidad": 8.1 }
+      {
+        "label": "2021",
+        "revenue": 195.9,
+        "utilidad": 5
+      },
+      {
+        "label": "2022",
+        "revenue": 227,
+        "utilidad": 5.8
+      },
+      {
+        "label": "2023",
+        "revenue": 242.3,
+        "utilidad": 6.3
+      },
+      {
+        "label": "2024",
+        "revenue": 254.5,
+        "utilidad": 7.4
+      },
+      {
+        "label": "2025",
+        "revenue": 275.2,
+        "utilidad": 8.1
+      }
     ],
-    "series": [{ "key": "revenue", "name": "Revenue" }, { "key": "utilidad", "name": "Utilidad Neta" }]
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "2021", "bruto": 12.88, "operativo": 3.42, "neto": 2.56 },
-      { "label": "2022", "bruto": 12.15, "operativo": 3.43, "neto": 2.58 },
-      { "label": "2023", "bruto": 12.26, "operativo": 3.35, "neto": 2.60 },
-      { "label": "2024", "bruto": 12.61, "operativo": 3.65, "neto": 2.90 },
-      { "label": "2025", "bruto": 12.84, "operativo": 3.77, "neto": 2.94 }
+      {
+        "label": "2021",
+        "bruto": 12.88,
+        "operativo": 3.42,
+        "neto": 2.56
+      },
+      {
+        "label": "2022",
+        "bruto": 12.15,
+        "operativo": 3.43,
+        "neto": 2.58
+      },
+      {
+        "label": "2023",
+        "bruto": 12.26,
+        "operativo": 3.35,
+        "neto": 2.6
+      },
+      {
+        "label": "2024",
+        "bruto": 12.61,
+        "operativo": 3.65,
+        "neto": 2.9
+      },
+      {
+        "label": "2025",
+        "bruto": 12.84,
+        "operativo": 3.77,
+        "neto": 2.94
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Bruto" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
-      { "label": "Dividendos regulares", "value": "$2.2B", "nota": "$4.64/share anual FY2025; yield 0.53%" },
-      { "label": "Dividendo especial (FY2024)", "value": "$7.2B", "nota": "$15/share pagado dic-2023; segundo especial en 3 anos" },
-      { "label": "Recompra de acciones", "value": "$903M", "nota": "FY2025; recompras modestas, share count esencialmente plano desde 2021" },
-      { "label": "Capex", "value": "$5.5B", "nota": "2.0% del revenue; 23 nuevos warehouses en FY2025; acelerando YoY" }
+      {
+        "label": "Dividendos regulares",
+        "value": "$2.2B",
+        "nota": "$4.64/share anual FY2025; yield 0.53%"
+      },
+      {
+        "label": "Dividendo especial (FY2024)",
+        "value": "$7.2B",
+        "nota": "$15/share pagado dic-2023; segundo especial en 3 anos"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "$903M",
+        "nota": "FY2025; recompras modestas, share count esencialmente plano desde 2021"
+      },
+      {
+        "label": "Capex",
+        "value": "$5.5B",
+        "nota": "2.0% del revenue; 23 nuevos warehouses en FY2025; acelerando YoY"
+      }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "COST FY2025", "Sector retail", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "COST FY2025",
+      "Sector retail",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Gross margin", "12.8%", "~22%", "En linea con modelo"],
-      ["Margen operativo", "3.77%", "~5%", "En linea con modelo"],
-      ["Revenue growth YoY", "+8.1%", "~4%", "Por encima del sector"],
-      ["P/E forward", "46x", "~18x", "Premium vs. sector"],
-      ["ROIC", "21.7%", "~14%", "Por encima del sector"]
+      [
+        "Gross margin",
+        "12.8%",
+        "~22%",
+        "En linea con modelo"
+      ],
+      [
+        "Margen operativo",
+        "3.77%",
+        "~5%",
+        "En linea con modelo"
+      ],
+      [
+        "Revenue growth YoY",
+        "+8.1%",
+        "~4%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E forward",
+        "46x",
+        "~18x",
+        "Premium vs. sector"
+      ],
+      [
+        "ROIC",
+        "21.7%",
+        "~14%",
+        "Por encima del sector"
+      ]
     ]
   },
   "deterioro": {
     "veredicto": "No se detecta deterioro operativo significativo",
     "analisis": "Costco muestra aceleracion en todas las metricas clave en FY2025: revenue +8.1%, EBITDA +11.2%, FCF +18.2%, EPS +10.0%. Los margenes operativos mejoraron a 3.77% (mejor nivel en 5 anos) y la tasa de renovacion de membresias se mantiene sobre 89% global. El unico punto de atencion es la aceleracion del Capex hacia $5.5B, que debe traducirse en membership growth sostenido.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+8.1%", "status": "ok" },
-      { "metrica": "Margen operativo", "valor": "3.77%", "status": "ok" },
-      { "metrica": "FCF conversion", "valor": "96.8%", "status": "ok" },
-      { "metrica": "Renovacion membresias US/CA", "valor": "92.3%", "status": "ok" },
-      { "metrica": "Deuda LT", "valor": "$5.7B", "status": "ok", "nota": "Caja neta de $7.1B; posicion financiera sin estres" },
-      { "metrica": "Capex/Revenue", "valor": "2.0%", "status": "warn", "nota": "Capex sube a $5.5B (+16.7% YoY); requiere que las nuevas aperturas generen membership esperado" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+8.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen operativo",
+        "valor": "3.77%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF conversion",
+        "valor": "96.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Renovacion membresias US/CA",
+        "valor": "92.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda LT",
+        "valor": "$5.7B",
+        "status": "ok",
+        "nota": "Caja neta de $7.1B; posicion financiera sin estres"
+      },
+      {
+        "metrica": "Capex/Revenue",
+        "valor": "2.0%",
+        "status": "warn",
+        "nota": "Capex sube a $5.5B (+16.7% YoY); requiere que las nuevas aperturas generen membership esperado"
+      }
     ]
   },
   "flags": [
-    { "level": "green", "title": "Modelo de membresias: motor de rentabilidad real", "impact": "Alto", "evidence": "$5.3B en membership fees FY2025 representan ~66% de la utilidad neta de $8.1B", "context": "Los fees son practicamente pura ganancia y crean un flujo recurrente predecible que protege la rentabilidad del negocio independientemente del ciclo economico" },
-    { "level": "green", "title": "Lealtad estructural: 92.3% de renovacion en EE.UU.", "impact": "Alto", "evidence": "81 millones de miembros pagados con tasa de renovacion 92.3% US/Canada y 89.8% global en FY2025", "context": "Una renovacion sostenida >90% en retail es practicamente unica a nivel mundial y valida el moat de Costco. Cada punto que cae afecta directamente ~$530M en fees" },
-    { "level": "green", "title": "Balance de fortaleza maxima: caja neta de $7.1B", "impact": "Alto", "evidence": "$14.2B en caja contra $5.7B en deuda LP al cierre FY2025; ratio Deuda/EBITDA efectivo: 0x", "context": "Permite financiar expansion organica, dividendos especiales recurrentes y recompras de forma simultanea sin depender de mercados de deuda ni comprometer rating crediticio" },
-    { "level": "green", "title": "Crecimiento acelerado de FCF y EPS", "impact": "Alto", "evidence": "FCF +18.2% YoY a $7.8B en FY2025; EPS GAAP +10.0% a $18.21; quinto ano consecutivo de crecimiento de doble digito en EPS", "context": "La calidad de las ganancias es alta: FCF supera a la utilidad neta con conversion del 97%, sin dilucion de acciones ni ganancias por ingenieria financiera" },
-    { "level": "yellow", "title": "Valuacion premium exige ejecucion perfecta", "impact": "Alto", "evidence": "P/E trailing 51.2x, P/FCF 48x, EV/EBITDA 31.7x al precio de ~$984/share (mar-2026)", "context": "A estos multiples el mercado descuenta 10+ anos de crecimiento consistente. Una desaceleracion en comparable sales o membership podria generar contraccion multiple de 20-30% sin deterioro operativo real" },
-    { "level": "yellow", "title": "Margenes de merchandise bajos por estructura del modelo", "impact": "Medio", "evidence": "Gross margin 12.8% vs ~22% promedio del sector retail; markup maximo de 15% es politica interna de Costco", "context": "Esta es una feature del modelo, no un bug. Pero limita expansion de margenes brutos y hace que la rentabilidad real dependa casi exclusivamente del crecimiento de fees y control de SG&A" },
-    { "level": "yellow", "title": "Capex en aceleracion: $5.5B en FY2025 (+16.7%)", "impact": "Medio", "evidence": "Capex creció de $3.6B en FY2021 a $5.5B en FY2025; plan de apertura acelerada de warehouses continua", "context": "Si las nuevas aperturas no generan el nivel de membership proyectado, el FCF libre puede comprimirse materialmente en los proximos 2-3 anos y reducir la probabilidad del siguiente dividendo especial" },
-    { "level": "red", "title": "Concentracion geografica: ~72% del revenue en EE.UU./Canada", "impact": "Medio", "evidence": "Operaciones US/Canada representan ~72% del revenue total segun desglose geografico del 10-K FY2025", "context": "Una recesion severa en EE.UU. o cambios en habitos de consumo de la clase media norteamericana podrian afectar comparable sales y tasas de renovacion. La historia muestra resiliencia, pero la concentracion es real" }
+    {
+      "level": "green",
+      "title": "Modelo de membresias: motor de rentabilidad real",
+      "impact": "Alto",
+      "evidence": "$5.3B en membership fees FY2025 representan ~66% de la utilidad neta de $8.1B",
+      "context": "Los fees son practicamente pura ganancia y crean un flujo recurrente predecible que protege la rentabilidad del negocio independientemente del ciclo economico"
+    },
+    {
+      "level": "green",
+      "title": "Lealtad estructural: 92.3% de renovacion en EE.UU.",
+      "impact": "Alto",
+      "evidence": "81 millones de miembros pagados con tasa de renovacion 92.3% US/Canada y 89.8% global en FY2025",
+      "context": "Una renovacion sostenida >90% en retail es practicamente unica a nivel mundial y valida el moat de Costco. Cada punto que cae afecta directamente ~$530M en fees"
+    },
+    {
+      "level": "green",
+      "title": "Balance de fortaleza maxima: caja neta de $7.1B",
+      "impact": "Alto",
+      "evidence": "$14.2B en caja contra $5.7B en deuda LP al cierre FY2025; ratio Deuda/EBITDA efectivo: 0x",
+      "context": "Permite financiar expansion organica, dividendos especiales recurrentes y recompras de forma simultanea sin depender de mercados de deuda ni comprometer rating crediticio"
+    },
+    {
+      "level": "green",
+      "title": "Crecimiento acelerado de FCF y EPS",
+      "impact": "Alto",
+      "evidence": "FCF +18.2% YoY a $7.8B en FY2025; EPS GAAP +10.0% a $18.21; quinto ano consecutivo de crecimiento de doble digito en EPS",
+      "context": "La calidad de las ganancias es alta: FCF supera a la utilidad neta con conversion del 97%, sin dilucion de acciones ni ganancias por ingenieria financiera"
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion premium exige ejecucion perfecta",
+      "impact": "Alto",
+      "evidence": "P/E trailing 51.2x, P/FCF 48x, EV/EBITDA 31.7x al precio de ~$984/share (mar-2026)",
+      "context": "A estos multiples el mercado descuenta 10+ anos de crecimiento consistente. Una desaceleracion en comparable sales o membership podria generar contraccion multiple de 20-30% sin deterioro operativo real"
+    },
+    {
+      "level": "yellow",
+      "title": "Margenes de merchandise bajos por estructura del modelo",
+      "impact": "Medio",
+      "evidence": "Gross margin 12.8% vs ~22% promedio del sector retail; markup maximo de 15% es politica interna de Costco",
+      "context": "Esta es una feature del modelo, no un bug. Pero limita expansion de margenes brutos y hace que la rentabilidad real dependa casi exclusivamente del crecimiento de fees y control de SG&A"
+    },
+    {
+      "level": "yellow",
+      "title": "Capex en aceleracion: $5.5B en FY2025 (+16.7%)",
+      "impact": "Medio",
+      "evidence": "Capex creció de $3.6B en FY2021 a $5.5B en FY2025; plan de apertura acelerada de warehouses continua",
+      "context": "Si las nuevas aperturas no generan el nivel de membership proyectado, el FCF libre puede comprimirse materialmente en los proximos 2-3 anos y reducir la probabilidad del siguiente dividendo especial"
+    },
+    {
+      "level": "red",
+      "title": "Concentracion geografica: ~72% del revenue en EE.UU./Canada",
+      "impact": "Medio",
+      "evidence": "Operaciones US/Canada representan ~72% del revenue total segun desglose geografico del 10-K FY2025",
+      "context": "Una recesion severa en EE.UU. o cambios en habitos de consumo de la clase media norteamericana podrian afectar comparable sales y tasas de renovacion. La historia muestra resiliencia, pero la concentracion es real"
+    }
   ],
   "score": {
     "score": 7.6,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 8, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 7, "max": 10 },
-      { "label": "Calidad de margenes", "score": 6, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
-      { "label": "Generacion de FCF", "score": 8, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
@@ -113,27 +424,72 @@
     "score": "7.6/10",
     "color": "yellow",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$275.2B" },
-      { "label": "Margen Neto", "value": "2.94%" },
-      { "label": "FCF Yield", "value": "1.8%" },
-      { "label": "P/E Forward", "value": "46.2x" },
-      { "label": "Crecimiento Rev.", "value": "+8.1% YoY" }
+      {
+        "label": "Revenue TTM",
+        "value": "$275.2B"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "2.94%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.8%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "46.2x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+8.1% YoY"
+      }
     ],
     "bullets": [
-      { "text": "**Moat de membresias irreplicable ->** 81M miembros con renovacion 92.3% en EE.UU. generan $5.3B en fees que representan ~66% de la utilidad neta total de la empresa.", "type": "pro" },
-      { "text": "**Balance de fortaleza maxima ->** Caja neta de $7.1B (caja supera deuda total), sin estres financiero, con capacidad para dividendos especiales y expansion simultanea sin tocar deuda.", "type": "pro" },
-      { "text": "**Crecimiento consistente a escala global ->** Revenue +8.1%, EPS +10%, FCF +18.2% en FY2025; cinco anos consecutivos de expansion de margenes operativos sobre una base de $275B.", "type": "pro" },
-      { "text": "**Valuacion exige perfeccion absoluta ->** P/E de 51x y P/FCF de 48x dejan margen de seguridad minimo. Cualquier desaceleracion en membership o comparable sales puede generar contraccion multiple del 20-30% sin que el negocio se deteriore operativamente.", "type": "con" }
+      {
+        "text": "**Moat de membresias irreplicable ->** 81M miembros con renovacion 92.3% en EE.UU. generan $5.3B en fees que representan ~66% de la utilidad neta total de la empresa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance de fortaleza maxima ->** Caja neta de $7.1B (caja supera deuda total), sin estres financiero, con capacidad para dividendos especiales y expansion simultanea sin tocar deuda.",
+        "type": "pro"
+      },
+      {
+        "text": "**Crecimiento consistente a escala global ->** Revenue +8.1%, EPS +10%, FCF +18.2% en FY2025; cinco anos consecutivos de expansion de margenes operativos sobre una base de $275B.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion exige perfeccion absoluta ->** P/E de 51x y P/FCF de 48x dejan margen de seguridad minimo. Cualquier desaceleracion en membership o comparable sales puede generar contraccion multiple del 20-30% sin que el negocio se deteriore operativamente.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
-      { "label": "Ingresos", "texto": "Costco genero $275.2B en ingresos totales en FY2025, crecimiento de 8.1% YoY sobre una base de $254.5B. El crecimiento es impulsado por apertura de nuevos warehouses (914 unidades, +23 netas en FY2025) y comparable sales growth positivo en todas las regiones. El revenue por warehouse aumento a ~$301M promedio anual, reflejo de mayor densidad de miembros y consumo por visita. Los ingresos de membresias alcanzaron $5.3B (+10.3% YoY), impulsados por el crecimiento en Executive Memberships y el alza de fees de septiembre 2024." },
-      { "label": "Margenes", "texto": "Los margenes de Costco son estructuralmente bajos por diseno: gross margin del 12.8% vs ~22% del sector retail, porque opera con un markup maximo de 15% en merchandise. Sin embargo, el margen operativo mejoro a 3.77% y el neto a 2.94%, ambos maximos de 5 anos. La clave es el apalancamiento operativo: una base fija de SG&A sobre revenues crecientes, mas la contribucion marginal alta de los fees de membresia que fluyen casi integramente a la linea de operacion." },
-      { "label": "EPS", "texto": "El EPS GAAP diluted alcanzo $18.21 en FY2025 (+10.0% YoY), quinto ano consecutivo de crecimiento de doble digito. La calidad de las ganancias es alta: FCF de $7.8B vs utilidad neta de $8.1B implica una conversion del 96.8%, y el share count permanece practicamente plano desde 2021 (~445M acciones), sin dilucion. Las ganancias no estan infladas por recompras agresivas ni ingenieria contable." },
-      { "label": "Balance", "texto": "El balance de Costco es una fortaleza mayor. Mantiene $14.2B en caja y equivalentes contra $5.7B de deuda a largo plazo, resultando en caja neta de $7.1B. El ratio Deuda/EBITDA efectivo es practicamente cero. El patrimonio crece de $23.6B a $29.2B en FY2025. Esta solidez permite financiar expansion organica, pagar dividendos especiales masivos cada 2-3 anos y mantener programa de recompras sin depender del mercado de deuda ni comprometer el rating crediticio." },
-      { "label": "Generacion de caja", "texto": "Costco genero $13.3B en flujo operativo y $7.8B en FCF en FY2025, ambos maximos historicos. El Capex aumento a $5.5B (2% del revenue), reflejo de la aceleracion en aperturas de warehouses. El uso del capital es disciplinado: $903M en recompras, $2.2B en dividendos regulares, y sin M&A relevante. La empresa ha pagado dos dividendos especiales en los ultimos 5 anos: $10/share en FY2021 y $15/share en diciembre 2023 (FY2024), totalizando ~$11.6B en retornos extraordinarios al accionista." },
-      { "label": "Riesgos principales", "texto": "Los tres riesgos a monitorear son: (1) Desaceleracion de la tasa de renovacion de membresias (actualmente 92.3% US/CA), que si cae por debajo del 90% seria senal de alerta roja dado que los fees son ~66% de la utilidad neta; (2) Rerating por valuacion comprimida: a P/E 51x, una desaceleracion de crecimiento al +5% anual podria justificar una contraccion de precio del 20-30% aun sin deterioro operativo; (3) Capex en aumento ($5.5B) que si no genera el nivel de membership proyectado puede comprimir FCF y reducir la probabilidad del proximo dividendo especial en 2026-2027." }
+      {
+        "label": "Ingresos",
+        "texto": "Costco genero $275.2B en ingresos totales en FY2025, crecimiento de 8.1% YoY sobre una base de $254.5B. El crecimiento es impulsado por apertura de nuevos warehouses (914 unidades, +23 netas en FY2025) y comparable sales growth positivo en todas las regiones. El revenue por warehouse aumento a ~$301M promedio anual, reflejo de mayor densidad de miembros y consumo por visita. Los ingresos de membresias alcanzaron $5.3B (+10.3% YoY), impulsados por el crecimiento en Executive Memberships y el alza de fees de septiembre 2024."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Los margenes de Costco son estructuralmente bajos por diseno: gross margin del 12.8% vs ~22% del sector retail, porque opera con un markup maximo de 15% en merchandise. Sin embargo, el margen operativo mejoro a 3.77% y el neto a 2.94%, ambos maximos de 5 anos. La clave es el apalancamiento operativo: una base fija de SG&A sobre revenues crecientes, mas la contribucion marginal alta de los fees de membresia que fluyen casi integramente a la linea de operacion."
+      },
+      {
+        "label": "EPS",
+        "texto": "El EPS GAAP diluted alcanzo $18.21 en FY2025 (+10.0% YoY), quinto ano consecutivo de crecimiento de doble digito. La calidad de las ganancias es alta: FCF de $7.8B vs utilidad neta de $8.1B implica una conversion del 96.8%, y el share count permanece practicamente plano desde 2021 (~445M acciones), sin dilucion. Las ganancias no estan infladas por recompras agresivas ni ingenieria contable."
+      },
+      {
+        "label": "Balance",
+        "texto": "El balance de Costco es una fortaleza mayor. Mantiene $14.2B en caja y equivalentes contra $5.7B de deuda a largo plazo, resultando en caja neta de $7.1B. El ratio Deuda/EBITDA efectivo es practicamente cero. El patrimonio crece de $23.6B a $29.2B en FY2025. Esta solidez permite financiar expansion organica, pagar dividendos especiales masivos cada 2-3 anos y mantener programa de recompras sin depender del mercado de deuda ni comprometer el rating crediticio."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "Costco genero $13.3B en flujo operativo y $7.8B en FCF en FY2025, ambos maximos historicos. El Capex aumento a $5.5B (2% del revenue), reflejo de la aceleracion en aperturas de warehouses. El uso del capital es disciplinado: $903M en recompras, $2.2B en dividendos regulares, y sin M&A relevante. La empresa ha pagado dos dividendos especiales en los ultimos 5 anos: $10/share en FY2021 y $15/share en diciembre 2023 (FY2024), totalizando ~$11.6B en retornos extraordinarios al accionista."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los tres riesgos a monitorear son: (1) Desaceleracion de la tasa de renovacion de membresias (actualmente 92.3% US/CA), que si cae por debajo del 90% seria senal de alerta roja dado que los fees son ~66% de la utilidad neta; (2) Rerating por valuacion comprimida: a P/E 51x, una desaceleracion de crecimiento al +5% anual podria justificar una contraccion de precio del 20-30% aun sin deterioro operativo; (3) Capex en aumento ($5.5B) que si no genera el nivel de membership proyectado puede comprimir FCF y reducir la probabilidad del proximo dividendo especial en 2026-2027."
+      }
     ]
   }
 }

@@ -1,47 +1,91 @@
 {
-  "resumen": "Micron Technology es el unico fabricante de memoria semiconductora de escala en EE.UU., con liderazgo en DRAM, NAND y High Bandwidth Memory (HBM) para inteligencia artificial. El negocio atraviesa el mejor ciclo operativo de su historia: margen bruto del 74% y EPS de $12 en un solo trimestre (Q2 FY2026). Veredicto: superciclo estructural con visibilidad inusual y valuacion con descuento del 56% frente al sector.",
-  "descripcion": "Micron disena, fabrica y vende chips de memoria DRAM (79% de ingresos), NAND Flash (20%) y SSDs. Modelo IDM con plantas propias en EE.UU., Japon, Taiwan y Singapur. Cuatro segmentos: Cloud Memory (HBM para IA, 39% de ingresos y 66% de margen bruto), Core Data Center (DDR5 y SSD enterprise), Mobile & Client (smartphones y PCs) y Automotive & Embedded. Motor principal: HBM para GPUs NVIDIA Blackwell con el 100% de produccion vendida y precios fijados para todo el calendario 2026.",
+  "resumen": "Micron Technology (MU) entra en el superciclo de ganancias mas potente de su historia, impulsado por la demanda masiva de HBM para infraestructura de AI. En FY2025 (ago-2025), revenue crecio +48.8% a $37.4B y EBITDA casi doblo a $18.1B. En Q2 FY2026 (dic-feb 2026), Micron reporto ingresos record de $23.9B (+196% YoY) con margen bruto del 75%; la empresa guio $33.5B para Q3 FY2026. Con HBM sold out para todo 2026 y un P/E Forward de 9.2x, MU opera como proveedor critico irremplazable de AI con valuacion de descuento estructural frente al sector.",
+
+  "descripcion": "Micron Technology es el mayor fabricante de semiconductores de memoria de EE.UU. y el tercero a nivel mundial. Disena, fabrica y vende: DRAM de alto rendimiento (principal motor de crecimiento via HBM), NAND Flash (almacenamiento no volatil) y SSDs empresariales. HBM (High Bandwidth Memory) es el segmento de mayor margen, integrado en GPUs NVIDIA y aceleradores de AI. Opera como IDM (Integrated Device Manufacturer) con fabricas en EE.UU., Taiwan y Japon. El CHIPS Act otorgo a Micron $6.1B para expandir produccion DRAM en Boise, Idaho, siendo la unica empresa de memoria de escala con manufactura domestica en EE.UU.",
+
   "tabla": {
-    "headers": ["Metrica", "2020", "2021", "2022", "2023", "2024", "Var. YoY"],
+    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Var. YoY"],
     "rows": [
-      ["Revenue ($B)", "21.4", "27.7", "30.8", "15.5", "25.1", "+62%"],
-      ["Utilidad Neta ($B)", "2.7", "5.9", "8.7", "-5.8", "0.8", "N/D"],
-      ["Margen Neto (%)", "12%", "21%", "28%", "-37%", "3%", "+20pp"],
-      ["EBITDA ($B)", "8.0", "10.8", "15.1", "1.0", "6.7", "+570%"],
-      ["FCF ($B)", "2.0", "3.1", "4.2", "-7.6", "0.4", "+863%"],
-      ["EPS", "$2.38", "$5.28", "$7.53", "-$5.36", "$0.70", "+984%"],
-      ["Deuda Neta ($B)", "1.9", "-0.8", "0.6", "5.3", "4.5", "-15%"]
+      ["Revenue ($B)", "27.7", "30.8", "15.5", "25.1", "37.4", "+48.8%"],
+      ["Utilidad Neta ($B)", "5.9", "8.7", "-5.8", "0.8", "8.5", "+998%"],
+      ["Margen Neto (%)", "21.2%", "28.3%", "-37.5%", "3.1%", "22.8%", "+19.7pp"],
+      ["EBITDA ($B)", "12.5", "16.8", "2.0", "9.1", "18.1", "+99.1%"],
+      ["FCF ($B)", "2.4", "3.1", "-6.1", "0.1", "1.7", "+1,278%"],
+      ["EPS (GAAP)", "$5.14", "$7.75", "-$5.34", "$0.70", "$7.59", "+984%"],
+      ["Deuda Neta ($B)", "-1.1", "-1.5", "4.5", "5.9", "4.4", "-25.4%"]
     ]
   },
+
   "kpis": [
-    { "label": "P/E Ratio", "value": "17.9x", "change": "-56% vs sector", "signal": "yellow", "note": "vs. sector 40.9x" },
-    { "label": "EV/EBITDA", "value": "24x", "signal": "yellow" },
-    { "label": "P/FCF", "value": "20x", "signal": "yellow" },
-    { "label": "Deuda Neta/EBITDA", "value": "0.27x", "signal": "green" },
-    { "label": "ROE", "value": "38.2%", "signal": "green" },
-    { "label": "ROIC", "value": "37.4%", "signal": "green" }
+    {
+      "label": "P/E Ratio",
+      "value": "15.1x",
+      "signal": "green",
+      "note": "vs. sector semis ~25x",
+      "precio_base": 323.69,
+      "precio_fecha": "Mar-2026",
+      "fundamento": { "tipo": "eps_ttm", "valor": 21.26 }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "9.2x",
+      "signal": "green",
+      "precio_base": 323.69,
+      "precio_fecha": "Mar-2026",
+      "fundamento": { "tipo": "eps_fwd", "valor": 35.27 }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "9.8x",
+      "signal": "green"
+    },
+    {
+      "label": "P/FCF",
+      "value": "35.5x",
+      "signal": "yellow",
+      "precio_base": 323.69,
+      "precio_fecha": "Mar-2026",
+      "fundamento": { "tipo": "p_fcf", "fcf_b": 10.3, "shares_m": 1129 }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.26x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "38%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "35%",
+      "signal": "green"
+    }
   ],
+
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2020", "revenue": 21.4, "utilidad": 2.7 },
-      { "label": "2021", "revenue": 27.7, "utilidad": 5.9 },
-      { "label": "2022", "revenue": 30.8, "utilidad": 8.7 },
-      { "label": "2023", "revenue": 15.5, "utilidad": -5.8 },
-      { "label": "2024", "revenue": 25.1, "utilidad": 0.8 }
+      { "label": "FY2021", "revenue": 27.7, "utilidad": 5.9 },
+      { "label": "FY2022", "revenue": 30.8, "utilidad": 8.7 },
+      { "label": "FY2023", "revenue": 15.5, "utilidad": -5.8 },
+      { "label": "FY2024", "revenue": 25.1, "utilidad": 0.8 },
+      { "label": "FY2025", "revenue": 37.4, "utilidad": 8.5 }
     ],
     "series": [
       { "key": "revenue", "name": "Revenue" },
       { "key": "utilidad", "name": "Utilidad Neta" }
     ]
   },
+
   "chart_margenes": {
     "data": [
-      { "label": "2020", "bruto": 32.3, "operativo": 13.3, "neto": 12.5 },
-      { "label": "2021", "bruto": 32.9, "operativo": 19.2, "neto": 21.3 },
-      { "label": "2022", "bruto": 46.9, "operativo": 30.6, "neto": 28.2 },
-      { "label": "2023", "bruto": 9.1, "operativo": -18.7, "neto": -37.4 },
-      { "label": "2024", "bruto": 22.4, "operativo": 5.2, "neto": 3.1 }
+      { "label": "FY2021", "bruto": 37.6, "operativo": 22.7, "neto": 21.2 },
+      { "label": "FY2022", "bruto": 45.2, "operativo": 31.5, "neto": 28.3 },
+      { "label": "FY2023", "bruto": -9.1, "operativo": -37.0, "neto": -37.5 },
+      { "label": "FY2024", "bruto": 22.4, "operativo": 5.2, "neto": 3.1 },
+      { "label": "FY2025", "bruto": 39.8, "operativo": 26.1, "neto": 22.8 }
     ],
     "series": [
       { "key": "bruto", "name": "Margen Bruto" },
@@ -49,39 +93,189 @@
       { "key": "neto", "name": "Margen Neto" }
     ]
   },
+
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex",
+        "value": "$15.9B en FY2025",
+        "nota": "42.5% del revenue; expansion masiva HBM3E y DRAM data center; TTM capex $20.4B con HBM4 en rampa"
+      },
+      {
+        "label": "CHIPS Act / Subsidios",
+        "value": "~$6.1B",
+        "nota": "Fondo federal aprobado para nueva megafabrica DRAM en Boise, Idaho"
+      },
+      {
+        "label": "Dividendos",
+        "value": "$0.5B en FY2025",
+        "nota": "Yield ~0.2%; programa modesto y consistente desde FY2022"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "$0 en FY2025",
+        "nota": "Pausadas para priorizar inversion en capacidad HBM; $300M en FY2024"
+      }
+    ]
+  },
+
+  "comparacion_sector": {
+    "headers": ["Metrica", "MU FY2025", "Sector memoria", "Posicion relativa"],
+    "rows": [
+      ["Gross margin", "39.8%", "~32%", "Por encima del sector"],
+      ["Margen operativo", "26.1%", "~15%", "Por encima del sector"],
+      ["Revenue growth YoY", "+48.8%", "~18%", "Por encima del sector"],
+      ["P/E forward", "9.2x", "~18x", "Descuento vs. sector"],
+      ["ROIC", "35%", "~12%", "Por encima del sector"]
+    ]
+  },
+
+  "deterioro": {
+    "veredicto": "No se detecta deterioro — empresa en fase de aceleracion maxima",
+    "analisis": "Tras la contraccion de FY2023 (revenue -49.5%, FCF -$6.1B por el ciclo DRAM), Micron completo su recuperacion en FY2025 con revenue record y expansion masiva de margenes. En Q2 FY2026, un solo trimestre genero $23.9B (+196% YoY) — mas que todo FY2023 entero ($15.5B). Todos los indicadores clave apuntan a aceleracion. La unica nota de cautela es que el FCF de FY2025 fue comprimido por el ciclo de capex de $15.9B, pero el TTM FCF ya recupero a $10.3B.",
+    "items": [
+      { "metrica": "Revenue YoY", "valor": "+48.8%", "status": "ok" },
+      { "metrica": "Margen operativo", "valor": "26.1%", "status": "ok" },
+      { "metrica": "EPS GAAP YoY", "valor": "+984%", "status": "ok" },
+      { "metrica": "FCF FY2025", "valor": "$1.7B", "status": "warn", "nota": "Comprimido por capex de $15.9B; TTM FCF ya recupero a $10.3B" },
+      { "metrica": "Deuda Neta TTM", "valor": "Caja neta", "status": "ok" }
+    ]
+  },
+
   "flags": [
-    { "level": "green", "title": "HBM sold out 2026", "impact": "Alto", "evidence": "100% de la produccion de HBM vendida con precios fijados para todo el calendario 2026. CEO confirmo que solo puede surtir entre 50-67% de la demanda actual.", "context": "Visibilidad de ingresos inusual para un fabricante de commodities. Elimina riesgo de precio en el segmento de mayor margen (66% bruto)." },
-    { "level": "green", "title": "Balance impecable", "impact": "Alto", "evidence": "Deuda Neta/EBITDA 0.27x, cobertura de intereses 20.5x, current ratio 2.46x. Deuda total cayo $2.8B en un solo trimestre (Q1 FY2026).", "context": "Capacidad para sostener CAPEX de $25B+ en FY2026 sin estres financiero y con $9.7B en efectivo." },
-    { "level": "yellow", "title": "CAPEX comprometido $25B+", "impact": "Medio", "evidence": "Guia de CAPEX FY2026 supera $25,000M para el megafab en Nueva York, el mayor proyecto de manufactura de semiconductores en la historia de EE.UU.", "context": "Requiere que el ciclo favorable persista al menos 3 anos. Parcialmente mitigado por $13.6B en subsidios del CHIPS Act." },
-    { "level": "red", "title": "Ciclicidad estructural", "impact": "Alto", "evidence": "FY2023: perdida neta de $5.8B con revenue cayendo 50% desde el pico de FY2022. Ciclos de sobre-oferta en DRAM han ocurrido multiples veces.", "context": "Una desaceleracion en inversion de IA de los hiperescaladores o la recuperacion de Samsung en HBM podria revertir el ciclo abruptamente." }
+    {
+      "level": "green",
+      "title": "HBM sold out para todo 2026",
+      "impact": "Alto",
+      "evidence": "Micron confirmo en Q2 FY2026 earnings call (mar-2026) que toda su capacidad HBM esta vendida para 2026 con contratos a precio fijo con NVIDIA y hyperscalers",
+      "context": "HBM es el producto de mayor margen; elimina el riesgo de precio en el segmento clave durante 2026 y da visibilidad inusual de ingresos"
+    },
+    {
+      "level": "green",
+      "title": "Q2 FY2026: margen bruto del 75%, un trimestre supera FY2023 entero",
+      "impact": "Alto",
+      "evidence": "Q2 FY2026: revenue $23.9B (+196% YoY), margen bruto 75%, EPS GAAP $12.20 vs. $1.56 un ano atras (+682%)",
+      "context": "Margenes del 75% son historicamente ineditos para Micron; refleja el premium que paga el mercado de AI por HBM de alto rendimiento"
+    },
+    {
+      "level": "green",
+      "title": "CHIPS Act: unico fabricante de memoria de escala en EE.UU.",
+      "impact": "Medio",
+      "evidence": "$6.1B en subsidios federales aprobados para nueva megafabrica DRAM en Boise, Idaho",
+      "context": "Ventaja estrategica estructural: supply chain de memoria domestica critica para defensa nacional y AI soberana de EE.UU."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF FY2025 diluido por ciclo de capex masivo",
+      "impact": "Medio",
+      "evidence": "FCF FY2025 de solo $1.7B a pesar de $8.5B en utilidad neta; capex de $15.9B (42.5% del revenue) consumio la caja generada",
+      "context": "La inversion es necesaria para sostener liderazgo en HBM; el TTM FCF ya se recupero a $10.3B demostrando el leverage operativo"
+    },
+    {
+      "level": "yellow",
+      "title": "Ciclicalidad estructural del mercado de memoria",
+      "impact": "Alto",
+      "evidence": "FY2023: revenue cayo -49.5% de $30.8B a $15.5B, FCF negativo -$6.1B, EPS -$5.34 GAAP — el ciclo anterior fue devastador",
+      "context": "El mercado DRAM/NAND opera en ciclos de boom/bust; el ciclo AI podria revertirse si el gasto de hyperscalers se modera o la oferta supera la demanda"
+    },
+    {
+      "level": "red",
+      "title": "Concentracion de produccion DRAM en Taiwan",
+      "impact": "Alto",
+      "evidence": "Mayoria de produccion DRAM en FY2025 provino de fabricas en Taiwan — riesgo explicito en 10-K FY2025, Item 1A",
+      "context": "Un conflicto geopolitico en el Estrecho de Taiwan podria interrumpir la cadena de suministro global de DRAM de forma catastrofica e inmediata"
+    },
+    {
+      "level": "red",
+      "title": "Competencia china subsidiada (CXMT, YMTC)",
+      "impact": "Medio",
+      "evidence": "CXMT y YMTC reciben inversion masiva del gobierno chino para desarrollar capacidad DRAM y NAND a escala (10-K FY2025, Item 1A)",
+      "context": "Entrada agresiva de productores chinos con subsidios podria generar sobreoferta y presion severa en precios DRAM/NAND en el ciclo 2027-2028"
+    }
   ],
+
   "score": {
-    "score": 8.5,
+    "score": 8.4,
     "max": 10,
     "items": [
       { "label": "Poder de fijacion de precios", "score": 7, "max": 10 },
       { "label": "Crecimiento de revenue", "score": 10, "max": 10 },
       { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
+      { "label": "Solidez del balance", "score": 8, "max": 10 },
       { "label": "Generacion de FCF", "score": 8, "max": 10 }
     ]
   },
+
+  "analisis_cualitativo": {
+    "estrategia": "Micron ejecuta una estrategia de doble via: (1) capturar el maximo valor del superciclo de AI via HBM — capacidad 100% vendida para 2026, con HBM4 en rampa desde Q2 FY2026 — mientras (2) consolida su posicion de largo plazo como el unico fabricante de memoria de escala en EE.UU., apoyado por $6.1B del CHIPS Act para expandir produccion en Idaho. Paralelamente, transiciona el portafolio NAND hacia enterprise SSD y soluciones de data center de mayor margen, alejandose del NAND de consumo de bajo margen.",
+    "ventajas": "1) Unico productor de HBM con escala en EE.UU. — ventaja estrategica unica en el entorno geopolitico actual. 2) HBM3E con superior eficiencia energetica vs. competidores Samsung y SK Hynix — critico para el costo de operacion de centros de datos de AI. 3) Contratos de supply agreement a largo plazo con NVIDIA y hyperscalers que aseguran ingresos para 2026. 4) CHIPS Act funding de $6.1B que reduce el costo de capital efectivo de la expansion. 5) HBM4 en produccion desde Q2 FY2026, manteniendo la ventaja tecnologica sobre la competencia.",
+    "debilidades": "Alta intensidad de capital: el negocio requiere $15-20B anuales en capex para mantener y expandir capacidad competitiva. Los precios de DRAM convencional y NAND son determinados por el mercado global y pueden colapsar si la oferta supera la demanda. Alta dependencia de Taiwan para produccion DRAM en el corto plazo hasta que la planta de Idaho entre en produccion plena.",
+    "riesgos": [
+      "Concentracion de fabricas DRAM en Taiwan — riesgo geopolitico de interrupcion de suministro que podria ser catastrofico (10-K FY2025, Item 1A)",
+      "Sobreoferta de DRAM convencional si la demanda de HBM se desacelera y los fabricantes redirigen capacidad (10-K FY2025, Item 1A)",
+      "Competencia china subsidiada (CXMT, YMTC) que podria generar sobreoferta y presion de precios en DRAM/NAND para 2027-2028 (10-K FY2025, Item 1A)",
+      "Ciclicidad: si el gasto en infraestructura de AI de hyperscalers se modera o hay recesion, el mercado de memoria podria replicar el colapso de FY2023"
+    ],
+    "inversiones_estrategicas": "Capex de $15.9B en FY2025 (42.5% del revenue) y $20.4B TTM, enfocado en expansion de capacidad HBM3E y DRAM de data center. R&D de $3.8B en FY2025 (+10.7% YoY) para desarrollo de HBM4, con rampa confirmada en Q2 FY2026. CHIPS Act grant de $6.1B para nueva megafabrica DRAM en Boise, Idaho. El ciclo de inversion masiva ya genera retornos con TTM OCF de $30.7B y guidance de $33.5B para Q3 FY2026."
+  },
+
   "verdict": {
     "status": "Comprar con Conviccion",
-    "score": "8.5/10",
+    "score": "8.4/10",
     "color": "green",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$37.4B" },
-      { "label": "Margen Neto", "value": "22.8%" },
-      { "label": "FCF Yield", "value": "~5%" },
-      { "label": "P/E Forward", "value": "12.3x" },
-      { "label": "Crecimiento Rev.", "value": "+62% YoY" }
+      { "label": "Revenue FY2025", "value": "$37.4B" },
+      { "label": "Margen Neto FY25", "value": "22.8%" },
+      { "label": "FCF Yield TTM", "value": "2.8%" },
+      { "label": "P/E Forward", "value": "9.2x" },
+      { "label": "Crecimiento Q2 FY26", "value": "+196% YoY" }
     ],
     "bullets": [
-      { "text": "**HBM como moat temporal ->** Micron tiene el 100% de su produccion de HBM vendida para 2026 con precios fijados, eliminando el riesgo de precio en el segmento de 66% de margen bruto y otorgando visibilidad de ingresos inusual para el sector.", "type": "pro" },
-      { "text": "**Aceleracion sin precedentes ->** Revenue de $8.7B (Q1 FY25) a guia de $33.5B (Q3 FY26) en cinco trimestres. Margenes brutos del 74% y EPS de $12 en un solo trimestre rivalizan con empresas de software.", "type": "pro" },
-      { "text": "**Unico fabricante de escala en EE.UU. ->** Posicion geopolitica irremplazable con $13.6B en subsidios del CHIPS Act y contratos estrategicos con los principales hiperescaladores. Ventaja regulatoria estructural frente a Samsung y SK Hynix.", "type": "pro" },
-      { "text": "**Riesgo ciclico latente ->** En FY2023 Micron perdio $5.8B. Una desaceleracion en inversion de IA de los hiperescaladores o la recuperacion de Samsung en HBM podria revertir el ciclo abruptamente.", "type": "con" }
+      {
+        "text": "**HBM sold out 2026 ->** Toda la capacidad HBM esta vendida para 2026 con contratos a precio fijo con NVIDIA y hyperscalers; sin riesgo de precio en el corto plazo para el segmento de mayor margen con margenes brutos del 75%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Descuento masivo de valuacion ->** P/E Forward de 9.2x para empresa con EPS consensus de $35.27 en FY2026 y guidance de $33.5B en Q3 solo; el mercado aun no ha preciado el nuevo nivel estructural de ganancias.",
+        "type": "pro"
+      },
+      {
+        "text": "**Superciclo en aceleracion maxima ->** Q2 FY2026: $23.9B en un trimestre (+196% YoY), superando todo FY2023 ($15.5B); EPS TTM de $21.26 representa crecimiento de +2,937% vs. EPS de $0.70 en FY2024.",
+        "type": "pro"
+      },
+      {
+        "text": "**Ciclicidad estructural ->** FY2023 evidencio el riesgo: revenue -49.5% y EPS -$5.34. Si la demanda de AI se normaliza o la competencia china escala produccion, los margenes del 75% podrian comprimirse a niveles de un digito como en FY2024.",
+        "type": "con"
+      }
+    ]
+  },
+
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue crecio de $15.5B en FY2023 a $37.4B en FY2025 (+141% en 2 anos), impulsado por recuperacion de precios DRAM y demanda explosiva de HBM. En Q2 FY2026, un solo trimestre genero $23.9B — mas que todo FY2023 entero. La guia de Q3 FY2026 es $33.5B, implica un revenue anualizado superior a $100B si el momentum actual persiste."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto recupero de -9.1% en FY2023 a 39.8% en FY2025, y alcanzo 75% en Q2 FY2026 impulsado por el mix de HBM de alto valor. Margen operativo paso de -37% en FY2023 a 26.1% en FY2025. La expansion de margenes es la mas rapida y profunda en la historia de Micron, reflejando el diferencial de precio que paga el ecosistema de AI por HBM de alta performance."
+      },
+      {
+        "label": "EPS",
+        "texto": "EPS GAAP paso de -$5.34 en FY2023 a $7.59 en FY2025 (+984%), y el TTM (a feb-2026) ya es $21.26, impulsado por EPS de Q2 FY2026 de $12.20 vs. $1.56 un ano atras (+682%). El consenso de analistas para FY2026 completo es $35.27 EPS, representando crecimiento de +365% adicional vs. FY2025. 50 analistas cubren el valor con precio objetivo promedio de $443."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de $4.4B en FY2025 (LT Debt $14B - Cash $9.6B), con Deuda/EBITDA de 0.77x en base FY2025. En el TTM (feb-2026), la posicion mejoro a caja neta positiva ($13.9B cash vs. $9.6B LT Debt ajustado), Deuda/EBITDA TTM de 0.26x. ROE TTM del 38% y ROIC del 35%, reflejando el leverage operativo del ciclo actual."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de FY2025 fue $1.7B — bajo vs. los $8.5B de utilidad — por el ciclo de capex masivo de $15.9B para construir capacidad HBM. El TTM FCF ya es $10.3B con OCF de $30.7B, demostrando el leverage operativo cuando los precios son altos. Capex TTM de $20.4B con HBM4 en rampa activa desde Q2 FY2026."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo mas inmediato e incontrolable es la concentracion de produccion DRAM en Taiwan — un conflicto geopolitico podria interrumpir el suministro global de memoria de forma catastrofica (10-K FY2025, Item 1A). El riesgo de largo plazo es la ciclicidad: la competencia china subsidiada (CXMT, YMTC) podria generar sobreoferta en 2027-2028. El CHIPS Act de $6.1B mitiga el riesgo de largo plazo con manufactura domestica en Idaho."
+      }
     ]
   }
 }

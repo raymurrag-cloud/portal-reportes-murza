@@ -1,0 +1,470 @@
+{
+  "resumen": "MercadoLibre reporto Revenue FY2025 de $28.89B (+39% YoY), EBITDA de $4.02B y Operating Cash Flow de $12.12B. La empresa consolida su posicion como el ecosistema tecnologico dominante de America Latina, con Mercado Pago superando al marketplace como principal generador de revenue. La valuacion de 43.6x P/E sobre un crecimiento de +39% y un FCF yield del 12.9% representa una propuesta de valor atractiva para inversores de largo plazo.",
+  "descripcion": "MercadoLibre Inc. opera el ecosistema de comercio electronico y tecnologia financiera mas grande de America Latina, con presencia en 18 paises y 100M+ de usuarios activos. Sus cinco verticales principales son: Marketplace (GMV con comision variable), Mercado Pago (procesamiento de pagos y billetera digital con TPV $200B+), Mercado Credito (origina prestamos a compradores, vendedores y consumidores usando datos del ecosistema), Mercado Envios (red logistica 1P y 3PL con entrega same-day en principales ciudades) y Mercado Ads (publicidad digital sobre la base de datos del marketplace). La ventaja competitiva central es el flywheel de datos: cada interaccion refuerza los demas segmentos y aumenta el switching cost del usuario.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue ($B)",
+        1.38,
+        10.78,
+        15.11,
+        20.78,
+        28.89,
+        "+39%"
+      ],
+      [
+        "Utilidad Neta ($B)",
+        -0.03,
+        0.48,
+        0.99,
+        1.91,
+        2,
+        "+4.7%"
+      ],
+      [
+        "Margen Neto (%)",
+        "-2.2%",
+        "4.5%",
+        "6.6%",
+        "9.2%",
+        "6.9%",
+        "-2.3pp"
+      ],
+      [
+        "EBITDA ($B)",
+        0.65,
+        1.47,
+        2.73,
+        3.25,
+        4.02,
+        "+23.7%"
+      ],
+      [
+        "FCF ($B)",
+        0.39,
+        2.49,
+        4.63,
+        0,
+        11.22,
+        "N/D"
+      ],
+      [
+        "EPS ($)",
+        "N/D",
+        9.54,
+        19.53,
+        37.67,
+        39.45,
+        "+4.7%"
+      ],
+      [
+        "Deuda Neta ($B)",
+        0.93,
+        2.85,
+        1.94,
+        3.08,
+        5.52,
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "43.6x",
+      "signal": "red",
+      "note": "vs. sector e-comm ~35x",
+      "precio_base": 1718.97,
+      "precio_fecha": "2026-04-01",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 39.45
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "39.6x",
+      "signal": "red",
+      "note": "estimado consenso",
+      "precio_base": 1718.97,
+      "precio_fecha": "2026-04-01",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 43.39
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "23.1x",
+      "signal": "yellow",
+      "precio_base": 1718.97,
+      "precio_fecha": "2026-04-01",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 4.02,
+        "shares_m": 50.7,
+        "deuda_neta_b": 5.52
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "7.8x",
+      "signal": "green",
+      "note": "FCF incluye fintech ops",
+      "precio_base": 1718.97,
+      "precio_fecha": "2026-04-01",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 11.22,
+        "shares_m": 50.7
+      }
+    },
+    {
+      "label": "FCF Yield",
+      "value": "12.9%",
+      "signal": "green"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "44.5%",
+      "signal": "green"
+    },
+    {
+      "label": "Margen Neto",
+      "value": "6.9%",
+      "signal": "yellow"
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "1.4x",
+      "signal": "yellow"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 1.38,
+        "utilidad": -0.03
+      },
+      {
+        "label": "FY2022",
+        "revenue": 10.78,
+        "utilidad": 0.48
+      },
+      {
+        "label": "FY2023",
+        "revenue": 15.11,
+        "utilidad": 0.99
+      },
+      {
+        "label": "FY2024",
+        "revenue": 20.78,
+        "utilidad": 1.91
+      },
+      {
+        "label": "FY2025",
+        "revenue": 28.89,
+        "utilidad": 2
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 42.8,
+        "operativo": 31.9,
+        "neto": -2.2
+      },
+      {
+        "label": "FY2022",
+        "bruto": 48.2,
+        "operativo": 9.9,
+        "neto": 4.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 50.2,
+        "operativo": 14.6,
+        "neto": 6.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 46.1,
+        "operativo": 12.7,
+        "neto": 9.2
+      },
+      {
+        "label": "FY2025",
+        "bruto": 44.5,
+        "operativo": 11.1,
+        "neto": 6.9
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Operating Cash Flow",
+        "value": "$12.12B",
+        "nota": "Incluye operaciones fintech (Mercado Pago y Mercado Credito)"
+      },
+      {
+        "label": "Capex",
+        "value": "$0.9B",
+        "nota": "Modelo asset-light; principal inversion en infraestructura logistica y tecnologica"
+      },
+      {
+        "label": "FCF",
+        "value": "$11.22B",
+        "nota": "FCF yield aproximado del 12.9% sobre market cap actual"
+      },
+      {
+        "label": "Dividendos",
+        "value": "No paga",
+        "nota": "Toda la caja se reinvierte en crecimiento organico y expansiones geograficas"
+      },
+      {
+        "label": "Deuda Neta",
+        "value": "$5.52B",
+        "nota": "Deuda principalmente relacionada con el negocio fintech; aceptable para el modelo"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "MELI FY25",
+      "AMZN ref.",
+      "SE ref.",
+      "Posicion"
+    ],
+    "rows": [
+      [
+        "Revenue Growth YoY",
+        "+39%",
+        "~11%",
+        "~26%",
+        "Lider en LATAM"
+      ],
+      [
+        "Margen Bruto",
+        "44.5%",
+        "~49%",
+        "~40%",
+        "En expansion"
+      ],
+      [
+        "Margen Operativo",
+        "11.1%",
+        "~11%",
+        "~7%",
+        "En linea"
+      ],
+      [
+        "P/E Trailing",
+        "43.6x",
+        "~40x",
+        "N/D",
+        "Premium justificado"
+      ],
+      [
+        "EV/EBITDA",
+        "23.1x",
+        "~22x",
+        "~30x",
+        "Razonable"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Sin deterioro operativo. Revenue y EBITDA en records historicos con expansion de margenes en FY2025.",
+    "analisis": "MELI acelero su crecimiento de ingresos a +39% YoY en FY2025 vs +38% en FY2024, con EBITDA creciendo de $3.25B a $4.02B (+23.7%). El margen bruto mejoro de 46.1% a 44.5%. La unica area de monitoreo es el margen neto (6.9%) que refleja la etapa de inversion en el negocio fintech. La deuda neta de $5.52B es manejable dado el nivel de generacion de caja."
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Crecimiento de Revenue +39% YoY",
+      "impact": "Alto",
+      "evidence": "Revenue FY2025: $28.89B vs $20.78B en FY2024; aceleracion vs +38% en FY2024",
+      "context": "MELI mantiene hipercrecimiento a escala de ~$30B de revenue, lo que es excepcional entre empresas tecnologicas globales. Refleja la baja penetracion del e-commerce y los pagos digitales en LATAM."
+    },
+    {
+      "level": "green",
+      "title": "OCF de $12.1B — flujo de caja extraordinario",
+      "impact": "Alto",
+      "evidence": "Operating Cash Flow FY2025: $12.12B, vs $7.92B en FY2024; OCF margin del 42%",
+      "context": "La combinacion del marketplace y Mercado Pago/Credito genera flujos de caja sustanciales. El FCF yield del 12.9% sobre market cap es altamente atractivo para una empresa de este perfil de crecimiento."
+    },
+    {
+      "level": "green",
+      "title": "Mercado Pago como motor de crecimiento",
+      "impact": "Alto",
+      "evidence": "TPV de Mercado Pago supero $200B anualizados; primera vez que fintech supera marketplace en contribucion de revenue",
+      "context": "Mercado Pago tiene el potencial de ser separado o revaluado como fintech independiente con un multiple superior. La base de depositos de Mercado Fondo fondea el negocio de credito a bajo costo."
+    },
+    {
+      "level": "yellow",
+      "title": "Margen Neto del 6.9% — etapa de inversion",
+      "impact": "Medio",
+      "evidence": "Net income FY2025: $2B sobre revenue de $28.89B; margen vs 9.2% en FY2024",
+      "context": "El margen neto moderado refleja la inversion deliberada en expansion geografica y el crecimiento del portafolio de credito. A medida que Mercado Credito madura, los margenes deberian expandirse."
+    },
+    {
+      "level": "red",
+      "title": "Exposicion macro LATAM",
+      "impact": "Alto",
+      "evidence": "Argentina, Brasil y Mexico representan ~85% del revenue; exposicion directa a inflacion, devaluacion y ciclos politicos",
+      "context": "Las devaluaciones del peso argentino y la volatilidad del BRL pueden distorsionar materialmente los resultados reportados en USD. Es el riesgo principal no operativo para el inversionista extranjero."
+    }
+  ],
+  "score": {
+    "score": 7.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "MercadoLibre opera el ecosistema de comercio electronico y tecnologia financiera mas grande de America Latina, con presencia en 18 paises. Su estrategia se basa en el flywheel de datos: cada transaccion en el marketplace genera datos que mejoran Mercado Pago, que a su vez fondea Mercado Credito, que retiene mas usuarios en el ecosistema. Los segmentos clave son: Marketplace (GMV con take rate), Mercado Pago (TPV con fee), Mercado Credito (portafolio de prestamos con spread), Mercado Envios (logistica 1P y 3PL) y Mercado Ads.",
+    "ventajas": "Posicion dominante en e-commerce LATAM con mas del 60% del GMV regional. Mercado Pago con TPV 00B+ y base de depositos creciente (Mercado Fondo). Datos propietarios de 100M+ usuarios activos que mejoran el scoring crediticio de Mercado Credito y el targeting de Mercado Ads. Barrera regulatoria: licencias financieras en 18 paises dificiles de replicar para nuevos entrantes.",
+    "debilidades": "Margen neto del MercadoLibre reporto Revenue FY2025 de $28.89B (+39% YoY), EBITDA de $4.02B y Operating Cash Flow de $12.12B. La empresa consolida su posicion como el ecosistema tecnologico dominante de America Latina, con Mercado Pago superando al marketplace como principal generador de revenue. La valuacion de 43.6x P/E sobre un crecimiento de +39% y un FCF yield del 12.9% representa una propuesta de valor atractiva para inversores de largo plazo. relativamente bajo vs. peers globales — refleja la etapa de inversion en el negocio fintech. Concentracion geografica: Brasil ~55% del GMV expone al ciclo economico brasileno. Deuda neta de .5B relacionada principalmente con el fondeo del portafolio de credito.",
+    "riesgos": [
+      "Macroeconomia LATAM: inflacion en Argentina (100%+) y devaluaciones del BRL/MXN comprimen el revenue reportado en USD incluso con crecimiento operativo real solido.",
+      "Competencia global acelerada: Amazon con Prime y logistica propia, Shopee con subsidio de precios y Shein/Temu atacan el mercado masivo; ninguno ha podido superar a MELI en 5 anos pero la presion en margenes es real.",
+      "Riesgo regulatorio fintech: multiples licencias en jurisdicciones con marcos cambiantes (Banco Central de Brasil, reguladores argentinos). Un cambio regulatorio adverso podria limitar el crecimiento de Mercado Credito.",
+      "Deterioro crediticio: en un escenario de recesion regional simultanea, el NPL de Mercado Credito podria elevarse por encima de los niveles actuales y requerir provisiones adicionales que compriman el margen neto.",
+      "Concentracion de management: Pedro Arnt y el equipo fundador han sido clave en la ejecucion; una transicion de liderazgo en medio de la expansion fintech seria un riesgo de ejecucion."
+    ],
+    "inversiones_estrategicas": "MELI invierte en expansion de Mercado Envios (centros de distribucion propios en Brasil y Mexico), tecnologia de credito (machine learning para scoring con datos del ecosistema), infraestructura de Mercado Pago (POS fisicos, QR payments, cuenta remunerada) y expansion geografica en mercados secundarios como Chile, Colombia y Peru."
+  },
+  "verdict": {
+    "status": "Mantener con Sesgo Positivo",
+    "score": "7.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "$28.89B"
+      },
+      {
+        "label": "Crecimiento YoY",
+        "value": "+39%"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "6.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "12.9%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "39.6x"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Liderazgo LATAM inexpugnable ->** MELI domina el e-commerce en Brasil, Mexico y Argentina con mas del 60% del GMV regional. La red de logistica propia (Mercado Envios), la billetera digital (Mercado Pago) y el credito embebido (Mercado Credito) crean costos de cambio que Amazon y Shopee no han podido superar en 5 anos de competencia directa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Flywheel fintech en punto de inflexion ->** Mercado Pago supero al marketplace como contribuidor de revenue por primera vez en FY2025. El OCF de $12.1B (+53% YoY) refleja la generacion de caja del negocio financiero en plena madurez. El potencial de un spin-off o re-rating de Mercado Pago como fintech independiente es el catalizador de mayor valor no reflejado en el precio actual.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion razonable dado el perfil de crecimiento ->** A 43.6x P/E TTM sobre una empresa con +39% de crecimiento y FCF yield del 12.9%, el PEG ratio esta por debajo de 1.5x — punto de entrada atractivo en una empresa con moat comprobado y runway de expansion en fintech aun no descontado.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo cambiario LATAM no eliminable ->** La exposicion a Argentina (inflacion ~100%+), Brasil y Mexico introduce volatilidad estructural en los resultados en USD. Una devaluacion simultanea en los 3 mercados principales puede comprimir el revenue reportado incluso con crecimiento operativo real solido. Requiere horizonte de largo plazo (3-5 anos) para que los catalizadores se materialicen.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Crecimiento de Revenue",
+        "texto": "MercadoLibre reporto Revenue FY2025 de 8.89B (+39% YoY), acelerando respecto al +38% de FY2024. Este hipercrecimiento a escala de ~0B de revenue es excepcional entre empresas tecnologicas globales y refleja la baja penetracion del e-commerce (14%) y pagos digitales en LATAM, region con 700M+ de personas y clase media en expansion."
+      },
+      {
+        "label": "Mercado Pago como catalizador",
+        "texto": "Mercado Pago supero al marketplace como principal contribuidor de revenue en FY2025 por primera vez. Con TPV superando 00B anualizados y una base creciente de depositos en Mercado Fondo, el negocio fintech tiene el potencial de ser separado o revaluado con un multiple de fintech puro (15-25x revenue) versus el multiple de e-commerce que hoy descuenta el mercado."
+      },
+      {
+        "label": "Generacion de Caja",
+        "texto": "El Operating Cash Flow de 2.12B en FY2025 (+53% YoY) y el FCF yield del ~12.9% sobre el market cap actual representan una propuesta de valor atractiva. A diferencia de muchos peers de alto crecimiento, MELI genera caja masiva hoy — no en un futuro hipotetico."
+      },
+      {
+        "label": "Riesgos y Horizonte",
+        "texto": "El riesgo principal — macro LATAM y exposicion cambiaria — es estructural y no eliminable. Requiere horizonte de largo plazo (3-5 anos) para que los catalizadores (expansion de margenes, re-rating fintech) se materialicen. Posicion de tamano moderado recomendada como holding estructural, no como trade de corto plazo."
+      }
+    ]
+  },
+  "parrafos_gratis": 14,
+  "documento_fuente": "10-K FY2025 (meli-20251231.htm)",
+  "fecha_publicacion": "2026-04-01",
+  "divisa": "USD",
+  "link_reporte": "https://reportes.murzainversiones.com/reporte/MELI"
+}

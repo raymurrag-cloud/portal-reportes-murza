@@ -1,0 +1,585 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Coupang (CPNG) es la plataforma de e-commerce dominante en Corea del Sur, comparable al Amazon coreano. Con ingresos de $34.5B en 2025 (+14% YoY), la empresa mantiene un crecimiento sostenido, aunque enfrenta presiones en margenes netos debido a inversiones en Farfetch y nuevas geografias. El segmento Product Commerce es altamente rentable (margen adj. EBITDA del 7.2%), compensado por las perdidas del segmento Developing Offerings.",
+  "descripcion": "Fundada en 2010 y listada en NYSE en 2021, Coupang opera la red de e-commerce mas grande de Corea del Sur con 24.6 millones de clientes activos. Su ventaja competitiva central es Rocket Delivery: entrega gratuita al dia siguiente para millones de productos, posible gracias a su infraestructura logistica end-to-end completamente integrada. La empresa ha expandido su ecosistema hacia delivery de restaurantes (Eats), streaming (Play), fintech y moda de lujo (Farfetch). En 2025 reporto ingresos de $34.5B con margen adj. EBITDA del 4.3%, aunque un incidente de datos en noviembre 2025 y el programa de compensacion de $1.2B en vouchers representa un riesgo relevante para 2026.",
+  "conclusion": {
+    "items": [
+      {
+        "label": "Tesis de inversion",
+        "texto": "Coupang es el lider indiscutible del e-commerce en Corea del Sur con ventajas estructurales en logistica. La expansion a Taiwan, Farfetch y nuevos servicios ofrece opcionalidad de crecimiento, pero la conversion a rentabilidad neta sostenida sigue siendo el principal catalizador pendiente."
+      },
+      {
+        "label": "Riesgo principal",
+        "texto": "El incidente de datos de noviembre 2025 y el programa de compensacion de $1.2B en vouchers podria reducir ingresos y margen en Q1 2026. Adicionalmente, la exposicion al won coreano (KRW) y la presion regulatoria de la KFTC son riesgos continuos."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $19.36/accion, CPNG cotiza a 1.0x ventas y ~20x EV/EBITDA ajustado. Para un negocio creciendo +14% con mejora de margenes en el core, la valuacion parece razonable si los margenes netos siguen normalizando hacia positivo de manera sostenida."
+      },
+      {
+        "label": "Conclusion",
+        "texto": "MANTENER/ACUMULAR EN CAIDAS. La tesis de largo plazo permanece intacta: dominio logistico en Korea, expansion Asia-Pacifico, y mejora gradual de rentabilidad. Sin embargo, los proximos 2 trimestres seran de cautela por el impacto del programa de vouchers."
+      }
+    ]
+  },
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "2023",
+      "2024",
+      "2025",
+      "YoY"
+    ],
+    "rows": [
+      [
+        "Ingresos (B)",
+        "$24.4",
+        "$30.3",
+        "$34.5",
+        "+14.1%"
+      ],
+      [
+        "Ganancia Bruta (B)",
+        "$6.2",
+        "$8.8",
+        "$10.1",
+        "+14.9%"
+      ],
+      [
+        "Margen Bruto",
+        "25.4%",
+        "29.2%",
+        "29.4%",
+        "+0.2pp"
+      ],
+      [
+        "Ing. Operativo (B)",
+        "$0.47",
+        "$0.44",
+        "$0.47",
+        "+8.5%"
+      ],
+      [
+        "Margen Operativo",
+        "1.9%",
+        "1.4%",
+        "1.4%",
+        "0pp"
+      ],
+      [
+        "Utilidad Neta (B)",
+        "$1.36*",
+        "$0.07",
+        "$0.21",
+        "+224%"
+      ],
+      [
+        "Margen Neto",
+        "5.6%*",
+        "0.2%",
+        "0.6%",
+        "+0.4pp"
+      ],
+      [
+        "Adj. EBITDA (B)",
+        "$0.75",
+        "$1.38",
+        "$1.49",
+        "+8.4%"
+      ],
+      [
+        "FCF (B)",
+        "$1.76",
+        "$1.02",
+        "$0.53",
+        "-48%"
+      ],
+      [
+        "Clientes Activos (M)",
+        "N/A",
+        "22.8",
+        "24.6",
+        "+7.9%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "Precio",
+      "value": "$19.36",
+      "signal": "yellow",
+      "precio_base": 19.36,
+      "precio_fecha": "2026-04-06",
+      "fundamento": "Precio de mercado al momento del analisis"
+    },
+    {
+      "label": "P/E Forward",
+      "value": "35.8x",
+      "signal": "red",
+      "precio_base": 19.68,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 0.5499
+      }
+    },
+    {
+      "label": "Market Cap",
+      "value": "$35.9B",
+      "signal": "yellow",
+      "note": "1835M acciones x $19.36"
+    },
+    {
+      "label": "Ingresos 2025",
+      "value": "$34.5B",
+      "signal": "green",
+      "note": "+14.1% YoY, +18% en moneda constante"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "29.4%",
+      "signal": "yellow",
+      "note": "Mejorando desde 25.4% en 2023"
+    },
+    {
+      "label": "Margen Neto",
+      "value": "0.6%",
+      "signal": "red",
+      "note": "Bajo aunque en mejora vs 0.2% en 2024"
+    },
+    {
+      "label": "Adj. EBITDA",
+      "value": "$1.49B",
+      "signal": "yellow",
+      "note": "Margen 4.3% vs 4.5% en 2024"
+    },
+    {
+      "label": "FCF 2025",
+      "value": "$0.53B",
+      "signal": "yellow",
+      "note": "Cayo -48% por mayor capex ($1.25B)"
+    },
+    {
+      "label": "Caja Neta",
+      "value": "$5.67B",
+      "signal": "green",
+      "note": "Balance muy solido, deuda neta negativa"
+    },
+    {
+      "label": "P/Ventas",
+      "value": "1.04x",
+      "signal": "green",
+      "note": "Valuacion atractiva para e-commerce lider"
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "20.3x",
+      "signal": "yellow",
+      "note": "Sobre adj. EBITDA de $1.49B"
+    },
+    {
+      "label": "ROE 2025",
+      "value": "2.4%",
+      "signal": "red",
+      "note": "Bajo por margenes comprimidos historicamente"
+    },
+    {
+      "label": "Clientes Activos",
+      "value": "24.6M",
+      "signal": "green",
+      "note": "+8% YoY, crecimiento sostenido"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "Miles de millones USD",
+    "data": [
+      {
+        "label": "2021",
+        "revenue": 18.41,
+        "utilidad": -1.54
+      },
+      {
+        "label": "2022",
+        "revenue": 20.58,
+        "utilidad": -0.09
+      },
+      {
+        "label": "2023",
+        "revenue": 24.38,
+        "utilidad": 1.36
+      },
+      {
+        "label": "2024",
+        "revenue": 30.27,
+        "utilidad": 0.07
+      },
+      {
+        "label": "2025",
+        "revenue": 34.53,
+        "utilidad": 0.21
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "2022",
+        "bruto": 22.9,
+        "operativo": -0.5,
+        "neto": -0.4
+      },
+      {
+        "label": "2023",
+        "bruto": 25.4,
+        "operativo": 1.9,
+        "neto": 5.6
+      },
+      {
+        "label": "2024",
+        "bruto": 29.2,
+        "operativo": 1.4,
+        "neto": 0.2
+      },
+      {
+        "label": "2025",
+        "bruto": 29.4,
+        "operativo": 1.4,
+        "neto": 0.6
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex 2025",
+        "value": "$1.25B",
+        "nota": "+42% vs 2024, inversiones en logistica y expansion"
+      },
+      {
+        "label": "Recompra de acciones 2025",
+        "value": "$240M",
+        "nota": "Programa modesto de buybacks"
+      },
+      {
+        "label": "Dividendos",
+        "value": "$0",
+        "nota": "No paga dividendos — reinversion total"
+      },
+      {
+        "label": "FCF 2025",
+        "value": "$527M",
+        "nota": "Caida por mayor capex; OCF sigue positivo en $1.77B"
+      },
+      {
+        "label": "Caja disponible",
+        "value": "$6.32B",
+        "nota": "Balance muy solido, sin presiones de liquidez"
+      },
+      {
+        "label": "Deuda L/P",
+        "value": "$650M",
+        "nota": "Muy baja vs tamano de empresa y caja"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Empresa",
+      "P/Ventas",
+      "EV/EBITDA",
+      "Margen Bruto",
+      "Crec. Revenue",
+      "Market Cap"
+    ],
+    "rows": [
+      [
+        "Coupang (CPNG)",
+        "1.0x",
+        "20.3x",
+        "29.4%",
+        "+14%",
+        "$35.9B"
+      ],
+      [
+        "Amazon (AMZN)",
+        "3.2x",
+        "22x",
+        "49.8%",
+        "+11%",
+        "$2,100B"
+      ],
+      [
+        "MercadoLibre (MELI)",
+        "5.8x",
+        "35x",
+        "45.1%",
+        "+35%",
+        "$98B"
+      ],
+      [
+        "Sea Ltd (SE)",
+        "3.9x",
+        "45x",
+        "41.2%",
+        "+25%",
+        "$58B"
+      ],
+      [
+        "JD.com (JD)",
+        "0.3x",
+        "8x",
+        "9.6%",
+        "+7%",
+        "$48B"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "ESTABLE — sin senales de deterioro estructural, pero margenes netos muy comprimidos",
+    "analisis": "Coupang muestra mejora gradual en rentabilidad desde perdidas en 2021-2022. El segmento core (Product Commerce) es altamente rentable con adj. EBITDA de $2.5B, pero las inversiones en Developing Offerings (Farfetch, Eats, Taiwan) generan perdidas de $995M que comprimen el consolidado. El incidente de datos de 2025 y el programa de vouchers de $1.2B representan un riesgo de corto plazo para 2026.",
+    "items": [
+      {
+        "metrica": "Crecimiento de ingresos",
+        "valor": "+14.1% YoY",
+        "status": "ok",
+        "nota": "Sostenido y por encima de peers de e-commerce maduro"
+      },
+      {
+        "metrica": "Margen bruto",
+        "valor": "29.4%",
+        "status": "ok",
+        "nota": "Mejorando consistentemente desde 22.9% en 2022"
+      },
+      {
+        "metrica": "Margen operativo",
+        "valor": "1.4%",
+        "status": "warn",
+        "nota": "Comprimido por inversiones en nuevos segmentos"
+      },
+      {
+        "metrica": "Margen neto",
+        "valor": "0.6%",
+        "status": "warn",
+        "nota": "Bajo, aunque mejorando vs 0.2% en 2024"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "$527M",
+        "status": "warn",
+        "nota": "Caida -48% por capex elevado de $1.25B"
+      },
+      {
+        "metrica": "Deuda/Caja",
+        "valor": "Caja neta $5.67B",
+        "status": "ok",
+        "nota": "Balance solido, sin riesgo de solvencia"
+      },
+      {
+        "metrica": "Adj. EBITDA margin",
+        "valor": "4.3%",
+        "status": "warn",
+        "nota": "Ligera contraccion vs 4.5% en 2024"
+      },
+      {
+        "metrica": "Clientes activos",
+        "valor": "24.6M (+8%)",
+        "status": "ok",
+        "nota": "Crecimiento saludable de base de usuarios"
+      },
+      {
+        "metrica": "Riesgo regulatorio",
+        "valor": "Incidente datos 2025",
+        "status": "bad",
+        "nota": "Programa compensacion $1.2B en vouchers impacta Q1 2026"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Liderazgo indiscutible en e-commerce coreano",
+      "impact": "Bajo",
+      "evidence": "24.6M clientes activos, Rocket Delivery, infraestructura logistica unica",
+      "context": "Coupang tiene ventajas estructurales muy dificiles de replicar en Korea"
+    },
+    {
+      "level": "green",
+      "title": "Balance financiero muy solido",
+      "impact": "Bajo",
+      "evidence": "Caja neta de $5.67B, deuda LP de solo $650M",
+      "context": "Sin riesgo de solvencia; capacidad para invertir y hacer buybacks"
+    },
+    {
+      "level": "green",
+      "title": "Crecimiento sostenido de ingresos",
+      "impact": "Bajo",
+      "evidence": "+14% en USD, +18% en moneda constante en 2025",
+      "context": "Supera el crecimiento de e-commerce maduro global"
+    },
+    {
+      "level": "yellow",
+      "title": "Margenes netos muy comprimidos",
+      "impact": "Medio",
+      "evidence": "Margen neto de solo 0.6% en 2025",
+      "context": "Inversiones en Farfetch y nuevas geografias comprimen rentabilidad consolidada"
+    },
+    {
+      "level": "yellow",
+      "title": "FCF en caida por capex elevado",
+      "impact": "Medio",
+      "evidence": "FCF cayo de $1.02B a $0.53B (-48%) por capex de $1.25B",
+      "context": "Mayor inversion en logistica y expansion; justificable si genera retorno futuro"
+    },
+    {
+      "level": "yellow",
+      "title": "Exposicion cambiaria al KRW",
+      "impact": "Medio",
+      "evidence": "La mayoria de ingresos son en won coreano; diferencia +4% entre USD y moneda constante",
+      "context": "Devaluacion del KRW puede impactar reportes en USD"
+    },
+    {
+      "level": "red",
+      "title": "Incidente de datos + compensacion $1.2B en vouchers",
+      "impact": "Alto",
+      "evidence": "En noviembre 2025 acceso no autorizado a cuentas; programa de vouchers desde enero 2026",
+      "context": "Reducira ingresos netos en Q1 2026 y aumenta escrutinio regulatorio en Korea"
+    },
+    {
+      "level": "yellow",
+      "title": "Farfetch: restructuracion costosa",
+      "impact": "Medio",
+      "evidence": "Developing Offerings pierde $995M adj. EBITDA; incluye restructuracion de headcount y leases de Farfetch",
+      "context": "El segmento aun no muestra path claro a rentabilidad"
+    }
+  ],
+  "score": {
+    "score": 6.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Crecimiento de ingresos",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Rentabilidad",
+        "score": 4,
+        "max": 10
+      },
+      {
+        "label": "Balance financiero",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Posicion competitiva",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Riesgo y gobernanza",
+        "score": 4,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Coupang busca dominar el comercio cotidiano en Asia a traves de su red logistica end-to-end, expandiendo desde su core de retail en Korea hacia delivery de alimentos, streaming, fintech y moda de lujo global (Farfetch). La vision es crear un ecosistema donde el cliente resuelva todas sus necesidades de consumo. La inversion sostenida en infraestructura (capex de $1.25B en 2025) apunta a profundizar la ventaja competitiva en tiempos de entrega y costos operativos.",
+    "ventajas": "La ventaja principal es su red logistica completamente integrada que permite Rocket Delivery (entrega gratuita al dia siguiente). Esto crea un efecto de red: mas clientes = mas densidad de rutas = menores costos de entrega = precios mas bajos = mas clientes. Con 24.6M clientes activos y creciendo, la escala es dificil de replicar. El programa WOW Membership genera ingresos recurrentes y mayor fidelidad.",
+    "debilidades": "Los margenes netos son extremadamente bajos (0.6%) para una empresa de su tamano y posicion. La expansion a Farfetch ha sido costosa y su rentabilidad es incierta. La concentracion geografica en Korea (>80% de ingresos) limita la diversificacion de riesgos. El incidente de datos de 2025 dano la confianza de los consumidores y genero obligaciones de compensacion por $1.2B en vouchers.",
+    "riesgos": [
+      "Impacto del programa de compensacion por datos en revenues de 2026 (estimado Q1 principalmente)",
+      "Presion regulatoria de la KFTC (Korea Fair Trade Commission) sobre practicas comerciales",
+      "Riesgo cambiario: depreciacion del won coreano reduce ingresos en USD",
+      "Competencia de Naver Shopping, Kakao y players internacionales en Korea",
+      "Incertidumbre sobre el path a rentabilidad de Farfetch y Developing Offerings",
+      "Riesgo de ejecucion en expansion internacional (Taiwan, potencialmente otros mercados)"
+    ],
+    "inversiones_estrategicas": "Capex de $1.25B en 2025 (+42% YoY) enfocado en expansion de fulfillment centers y red logistica. Adquisicion de Farfetch en enero 2024 por activos de moda de lujo global. Expansion activa en Taiwan como mercado fuera de Korea. Programa de buybacks de $240M en 2025 senaliza confianza de la empresa en su valoracion."
+  },
+  "verdict": {
+    "status": "MANTENER / ACUMULAR EN CAIDAS",
+    "score": "6.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Precio actual",
+        "value": "$19.36"
+      },
+      {
+        "label": "Market Cap",
+        "value": "$35.9B"
+      },
+      {
+        "label": "P/Ventas",
+        "value": "1.04x"
+      },
+      {
+        "label": "EV/EBITDA",
+        "value": "20.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+14.1%"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "0.6%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.47%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "Lider indiscutible del e-commerce en Korea con 24.6M clientes activos y ventajas logisticas unicas",
+        "type": "positive"
+      },
+      {
+        "text": "Balance muy solido con $5.67B de caja neta — sin riesgo de solvencia",
+        "type": "positive"
+      },
+      {
+        "text": "Crecimiento de ingresos sostenido (+14% USD, +18% moneda constante)",
+        "type": "positive"
+      },
+      {
+        "text": "Margen neto de solo 0.6% — la rentabilidad neta sostenida sigue siendo el principal catalizador pendiente",
+        "type": "negative"
+      },
+      {
+        "text": "Incidente de datos noviembre 2025: programa de vouchers $1.2B reducira ingresos en 2026",
+        "type": "negative"
+      },
+      {
+        "text": "Valuacion atractiva a 1.0x ventas vs peers de e-commerce que cotizan 4-6x ventas",
+        "type": "positive"
+      }
+    ]
+  }
+}

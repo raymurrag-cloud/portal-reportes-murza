@@ -1,0 +1,496 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Sea Limited (NYSE: SE) es el mayor conglomerado digital de Asia-Pacifico, con presencia dominante en e-commerce (Shopee), servicios financieros digitales (Monee) y entretenimiento digital (Garena). En FY2025, la compania alcanzo un punto de inflexion: revenue de 22.9B USD (+36.4% YoY), net income de 1.6B USD (vs. 0.45B en FY2024) y FCF de 4.5B USD. Con balance de caja neta de ~9B USD y momentum en los tres segmentos, SE representa una tesis de growth a valuacion razonable en mercados emergentes de alta expansion.",
+  "descripcion": "Sea Limited opera tres segmentos principales: Shopee, la plataforma de e-commerce mas grande de SEA y Taiwan con GMV de 127.4B USD en FY2025 (+26.8% YoY) y 13.9B pedidos; Monee (antes SeaMoney), el brazo fintech con portafolio de prestamos de 9.2B USD y revenue de 3.8B USD (+60.1% YoY); y Garena, la division de gaming con Free Fire como titulo estrella, 633M usuarios activos trimestrales y adj. EBITDA margin del 56.1% sobre bookings. La empresa opera principalmente en Indonesia, Tailandia, Vietnam, Filipinas, Malasia, Singapur, Taiwan y Brasil.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "9.98",
+        "12.45",
+        "13.06",
+        "16.82",
+        "22.94",
+        "+36.4%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-2.05",
+        "-1.66",
+        "0.16",
+        "0.45",
+        "1.61",
+        "+259.7%"
+      ],
+      [
+        "Margen Neto",
+        "N/D",
+        "-13.3%",
+        "1.2%",
+        "2.7%",
+        "7.0%",
+        "+4.3pp"
+      ],
+      [
+        "Adj EBITDA (B USD)",
+        "N/D",
+        "N/D",
+        "1.11",
+        "1.96",
+        "3.44",
+        "+75.2%"
+      ],
+      [
+        "FCF (B USD)",
+        "N/D",
+        "N/D",
+        "1.53",
+        "2.73",
+        "4.51",
+        "+65.2%"
+      ],
+      [
+        "EPS Diluido",
+        "N/D",
+        "-2.96",
+        "0.25",
+        "0.74",
+        "2.52",
+        "+240.5%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "N/D",
+        "N/D",
+        "N/D",
+        "-9.01",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "34.1x",
+      "signal": "yellow",
+      "note": "vs. e-commerce peers ~30-40x",
+      "precio_base": 85.92,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 2.52
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "17x",
+      "signal": "green",
+      "precio_base": 85.92,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 5.04
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "12.5x",
+      "signal": "green",
+      "precio_base": 85.92,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 3.44,
+        "shares_m": 605,
+        "deuda_neta_b": -9.01
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "11.5x",
+      "signal": "green",
+      "precio_base": 85.92,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 4.51,
+        "shares_m": 605
+      }
+    },
+    {
+      "label": "Caja Neta / EBITDA",
+      "value": "2.6x caja",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "12.8%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "40.1%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 9.98,
+        "utilidad": -2.05
+      },
+      {
+        "label": "FY2022",
+        "revenue": 12.45,
+        "utilidad": -1.66
+      },
+      {
+        "label": "FY2023",
+        "revenue": 13.06,
+        "utilidad": 0.16
+      },
+      {
+        "label": "FY2024",
+        "revenue": 16.82,
+        "utilidad": 0.45
+      },
+      {
+        "label": "FY2025",
+        "revenue": 22.94,
+        "utilidad": 1.61
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": null,
+        "operativo": null,
+        "neto": null
+      },
+      {
+        "label": "FY2022",
+        "bruto": 41.7,
+        "operativo": -12,
+        "neto": -13.3
+      },
+      {
+        "label": "FY2023",
+        "bruto": 44.6,
+        "operativo": 1.7,
+        "neto": 1.2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 42.9,
+        "operativo": 3.9,
+        "neto": 2.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 44.6,
+        "operativo": 8.7,
+        "neto": 7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex",
+        "value": "0.51B USD",
+        "nota": "Inversiones en propiedad y equipo FY2025 para soporte de operaciones logisticas y tecnologicas."
+      },
+      {
+        "label": "Recompras",
+        "value": "~14.5M USD",
+        "nota": "Programa de recompra de 1B USD aprobado; ejecutados 14.5M USD en Q4 2025 (116.2K acciones)."
+      },
+      {
+        "label": "M&A",
+        "value": "N/D",
+        "nota": "Sin adquisiciones materiales en FY2025; foco en crecimiento organico de los tres segmentos."
+      },
+      {
+        "label": "Dividendos",
+        "value": "Ninguno",
+        "nota": "Sin distribucion de dividendos; capital retenido para crecimiento del negocio de credito Monee y expansion de Shopee."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "SE TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "44.6%",
+        "~40-50%",
+        "En linea con lideres de e-commerce"
+      ],
+      [
+        "Margen Operativo",
+        "8.7%",
+        "~5-15%",
+        "Fase temprana de expansion de margen"
+      ],
+      [
+        "Revenue Growth",
+        "+36.4%",
+        "~10-20%",
+        "Muy por encima del sector global"
+      ],
+      [
+        "P/E Forward",
+        "17x",
+        "~20-30x",
+        "Prima moderada justificada por crecimiento"
+      ],
+      [
+        "ROIC",
+        "40.1%",
+        "~15-25%",
+        "Beneficio de posicion neta de caja"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Sea Limited muestra mejora financiera estructural sostenida: de perdidas sistematicas a rentabilidad creciente y generacion masiva de caja en FY2025.",
+    "analisis": "El trio de inflexion en FY2023 (primer beneficio neto), aceleracion en FY2024 y expansion dramatica en FY2025 refleja la madurez del modelo. Shopee logro adj. EBITDA positivo sostenido, Monee escala el portafolio de credito con NPL controlado (1.1%), y Garena mantiene margins excepcionales (~56%). El riesgo de deterioro es bajo en el corto plazo.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+36.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "44.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "8.7%",
+        "status": "ok",
+        "nota": "Primera vez en rango saludable, expansion de ~5pp vs. FY2024"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "7.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+65.2% (~4.5B USD)",
+        "status": "ok",
+        "nota": "OCF record de 5.02B USD"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta 9.0B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Shopee: lider indiscutible con rentabilidad creciente",
+      "impact": "Alto",
+      "evidence": "GMV 127.4B USD (+26.8%), 13.9B ordenes, adj. EBITDA de 880.6M USD vs. 155.8M en FY2024 (+465%).",
+      "context": "La transicion de Shopee de modelo de inversion a generador de caja es el principal catalizador de valor. La guia 2026 de +25% GMV confirma la sostenibilidad del crecimiento."
+    },
+    {
+      "level": "green",
+      "title": "Monee: fintech de alto crecimiento con credito saludable",
+      "impact": "Alto",
+      "evidence": "Revenue Monee +60.1% a 3.8B USD. Portafolio 9.2B USD (+80.4% YoY). NPL >90 dias: 1.1% estable.",
+      "context": "El credito digital en SEA esta subpenetrado. Monee tiene ventajas de distribucion unicas via Shopee. Con adj. EBITDA de 1.0B USD y margin expansion, es el segundo motor de valor de la empresa."
+    },
+    {
+      "level": "green",
+      "title": "Balance net cash excepcional: 9B USD",
+      "impact": "Alto",
+      "evidence": "Cash + inversiones corto plazo: 10.57B USD. Deuda total: 1.56B. Caja neta: 9.01B USD.",
+      "context": "La posicion de liquidez proporciona resiliencia ante volatilidad macro, poder de fuego para el programa de recompras y opcionalidad estrategica para M&A en SEA."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia intensificada de TikTok Shop y Lazada",
+      "impact": "Medio",
+      "evidence": "TikTok Shop expande agresivamente en SEA con subsidios significativos. Lazada relanzando con soporte de Alibaba.",
+      "context": "Shopee mantiene liderazgo pero requiere inversion sostenida en marketing (+29.4% YoY en S&M). El mercado podra presionar margenes en 2026 si la competencia escala."
+    },
+    {
+      "level": "yellow",
+      "title": "Garena: dependencia de un solo titulo (Free Fire)",
+      "impact": "Medio",
+      "evidence": "Garena contribuye 2.4B USD revenue pero es 100% dependiente de Free Fire. Nuevo titulo en desarrollo.",
+      "context": "Si Free Fire pierde relevancia antes de que un nuevo juego alcance escala, el segmento de entretenimiento podria declinar. El riesgo es mitigado por el alto margen (~56%) que absorbe potencial deterioro."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo regulatorio en mercados clave (Indonesia, Brasil)",
+      "impact": "Alto",
+      "evidence": "Indonesia representa ~35% del GMV de Shopee. Brasil es el mayor mercado fuera de SEA. Cambios regulatorios en e-commerce y fintech son frecuentes en ambos paises.",
+      "context": "Restricciones a vendedores cross-border, regulacion de tasas de prestamo o impuestos digitales podrian impactar materialmente el modelo economico de Shopee y Monee respectivamente."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Sea Limited ejecuta una estrategia de ecosistema integrado digital en Asia-Pacifico y LatAm. La sinergia entre Shopee (distribucion), Monee (servicios financieros para compradores y vendedores) y Garena (adquisicion de usuarios jovenes) crea un flywheel defensible. Para 2026, la empresa prioriza: (1) profundizar monetizacion de Shopee via publicidad y servicios de valor anadido, (2) escalar el portafolio de credito de Monee con disciplina de NPL, y (3) mantener Garena como generador de caja mientras desarrolla nuevos titulos. La meta es consolidar liderazgo en mercados donde SEA tiene ventajas estructurales de conocimiento local.",
+    "ventajas": "Shopee tiene la mayor red de logistica integrada en SEA con ShopeePay como medio de pago dominante en Indonesia y Tailandia. El efecto de red de 400M compradores activos y 20M vendedores crea barreras de entrada altas. Monee se beneficia de datos de transaccion unicos de Shopee para scoring crediticio superior; NPL de 1.1% en mercados de alto riesgo es excepcional. Garena tiene la IP de Free Fire, el titulo mas descargado de mobile gaming en mercados emergentes en varios anos consecutivos.",
+    "debilidades": "La expansion en Brasil y LatAm genera subsidios significativos que aun presionan los margenes del segmento. La dependencia de Garena en Free Fire es una concentracion de riesgo. La fragmentacion regulatoria en 7+ mercados principales eleva costos de compliance y expone a la empresa a cambios normativos disruptivos simultaneos. El costo de adquisicion de clientes de Monee sigue siendo alto en mercados donde el credito formal esta subdesarrollado.",
+    "riesgos": [
+      "Riesgo regulatorio en Indonesia: cambios en regulacion de e-commerce cross-border o fintech podrian impactar hasta ~35% del GMV de Shopee y el crecimiento del portafolio de Monee.",
+      "Competencia de TikTok Shop: ByteDance ha indicado inversion agresiva en SEA con capacidad de subsidios casi ilimitados, lo que puede prolongar la guerra de precios en Shopee.",
+      "Deterioro de credito de Monee: la expansion del portafolio +80% YoY en un entorno macro incierto puede generar incremento de NPLs si hay deterioro economico en SEA o Brasil.",
+      "Riesgo cambiario: SEA opera en divisas emergentes (IDR, PHP, BRL, THB) vs. reporte en USD. Depreciacion coordenada de estas monedas reduciria revenue y patrimonio reportados."
+    ],
+    "inversiones_estrategicas": "Capex de 514M USD en FY2025 destinado principalmente a infraestructura logistica y tecnologia. R&D de 1.16B USD (-4.1% YoY) refleja eficiencia en innovacion. El programa de recompra de 1B USD senaliza confianza en la valuacion actual. En credito, Monee invirtio organicamente en su portafolio on-book (8.2B USD), sin necesidad de M&A relevante."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.0/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "22.94B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "7.0%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "4.51B USD"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "17x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+36.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Punto de inflexion de rentabilidad** — Shopee paso de EBITDA de 155M a 880M USD en un ano (+465%), confirmando que el modelo de e-commerce en SEA es altamente lucrativo a escala. La trayectoria de margenes solo esta comenzando.",
+        "type": "pro"
+      },
+      {
+        "text": "**Monee: fintech de hypergrowth con credito saludable** — Revenue +60% y portafolio +80% con NPL de solo 1.1% en mercados emergentes es excepcional. Monee tiene potencial de ser el negocio mas valioso del grupo en 3-5 anos.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance net cash de 9B USD con FCF de 4.5B** — La empresa genera mas caja de la que necesita para crecer. El programa de recompra de 1B USD y la ausencia de deuda neta ofrecen resiliencia y retorno de capital creciente.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo regulatorio y competencia en SEA** — TikTok Shop con respaldo de ByteDance y cambios regulatorios en Indonesia/Brasil son los principales riesgos que requieren monitoreo constante. Podrian presionar margenes o requerir inversiones defensivas adicionales.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue FY2025 de 22.94B USD (+36.4% YoY) impulsado por Shopee (+33.4%) y Monee (+60.1%). El crecimiento acelerado supero las expectativas iniciales de la compania. Para 2026, Shopee guia GMV +25% YoY, senalizando continuidad del momentum."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto expanded a 44.7% (vs. 42.9% FY2024), reflejo del mayor mix de marketplace revenue de alto margen vs. goods. Margen operativo subio a 8.7% (vs. 3.9%) con adj. EBITDA de 3.44B USD (+75.2% YoY). Shopee adj. EBITDA paso de 155.8M a 880.6M USD."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF record de 5.02B USD en FY2025 vs. 3.28B en FY2024. FCF ~4.51B USD. La compania inicio un programa de recompra de 1B USD. La generacion de caja confirma que el modelo de negocio multisegmento es sostenible y altamente lucrativo a escala."
+      },
+      {
+        "label": "Balance",
+        "texto": "Posicion de caja neta de ~9B USD (cash 4.16B + inversiones corto plazo 6.41B, menos deuda 1.56B). Los convertible notes de 1.05B (corriente) representan el unico factor de refinanciamiento. Balance solido con equity de 12.5B USD."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con precio a 85.92 USD, SE cotiza a ~17x P/E forward (EPS fwd 5.04) y ~12.5x EV/EBITDA ajustado. Dado el crecimiento de 36%+ revenue y la reaceleracion del EBITDA de Shopee, la valuacion ofrece descuento vs. peers de e-commerce global. Precio objetivo implicito 110-120 USD en 12 meses asumiendo expansion de multiples."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Regulacion digital en Indonesia y Brasil puede presionar unit economics. La competencia de TikTok Shop y Lazada en SEA requiere inversiones defensivas. Exposicion cambiaria a divisas emergentes (PHP, IDR, BRL) puede impactar resultados reportados en USD. La desaceleracion de Garena (aunque rentable) limita la diversificacion de ingresos a largo plazo."
+      }
+    ]
+  }
+}

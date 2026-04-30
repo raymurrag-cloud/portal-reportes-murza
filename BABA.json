@@ -1,0 +1,510 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Alibaba Group es el mayor conglomerado tecnologico de China: lider en comercio electronico (Taobao, Tmall), computacion en la nube (Alibaba Cloud con IA Qwen), logistica (Cainiao) y entretenimiento digital (Youku). Reporta bajo IFRS via 20-F ante la SEC; ejercicio fiscal cierra el 31 de marzo. FY2025 muestra recuperacion de margen neto (9.9% vs 6.3% FY2024) con FCF de 20B USD y caja neta de 52.5B USD, pero ingresos practicamente planos (-0.8% YoY en USD). Veredicto: Mantener con sesgo comprador en correcciones — valuacion en minimos historicos, pero riesgo regulatorio chino y competencia de PDD son estructurales.",
+  "descripcion": "Alibaba opera en seis segmentos: (1) Taobao y Tmall Group — e-commerce domestico China, 900M+ consumidores activos; (2) AIDC — AliExpress, Lazada, Trendyol, crece +22% YoY; (3) Alibaba Cloud Intelligence — IaaS/PaaS/SaaS con modelo de IA Qwen, +13% YoY; (4) Cainiao Smart Logistics — red de entrega y almacenaje; (5) Local Services — Ele.me y Amap; (6) Digital Media — Youku streaming. El moat central es el ecosistema cerrado con efectos de red de doble cara en China con 25 anos de historia. La estructura VIE es el vehiculo legal para inversores extranjeros; ADRs en NYSE no representan propiedad directa de activos chinos.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "109.5",
+        "126.5",
+        "126.5",
+        "130.4",
+        "129.3",
+        "-0.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "22.7",
+        "9.3",
+        "10.5",
+        "8.2",
+        "12.8",
+        "56.1%"
+      ],
+      [
+        "Margen Neto",
+        "20.7%",
+        "7.4%",
+        "8.3%",
+        "6.3%",
+        "9.9%",
+        "1.3pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "15.5",
+        "18.0",
+        "22.8",
+        "28.6",
+        "25.0",
+        "-12.6%"
+      ],
+      [
+        "FCF (B USD)",
+        "21.5",
+        "20.6",
+        "22.5",
+        "18.3",
+        "20.0",
+        "9.3%"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "8.26",
+        "3.44",
+        "3.98",
+        "3.34",
+        "5.82",
+        "74.3%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-56.2",
+        "-38.9",
+        "-33.3",
+        "-51.2",
+        "-52.5",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "21.8x",
+      "signal": "yellow",
+      "note": "vs sector internet China ~15-18x. Descuento estructural por riesgo pais.",
+      "precio_base": 126.975,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 5.82
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "16.7x",
+      "signal": "green",
+      "note": "Sin consenso de analistas disponible — empresa IFRS/20-F",
+      "precio_base": 127.3,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 7.6324
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "9.1x",
+      "signal": "green",
+      "note": "Incluye caja neta 52.5B USD — EV muy conservador",
+      "precio_base": 126.975,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 25,
+        "shares_m": 2200,
+        "deuda_neta_b": -52.5
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "14.0x",
+      "signal": "green",
+      "note": "FCF yield de 7.2% — atractivo vs peers",
+      "precio_base": 126.975,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 20,
+        "shares_m": 2200
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-2.1x",
+      "signal": "green",
+      "note": "Caja neta 52.5B USD — solidez excepcional"
+    },
+    {
+      "label": "ROE",
+      "value": "7.4%",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROIC",
+      "value": "9.5%",
+      "signal": "yellow"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 109.5,
+        "utilidad": 22.7
+      },
+      {
+        "label": "FY2022",
+        "revenue": 126.5,
+        "utilidad": 9.3
+      },
+      {
+        "label": "FY2023",
+        "revenue": 126.5,
+        "utilidad": 10.5
+      },
+      {
+        "label": "FY2024",
+        "revenue": 130.4,
+        "utilidad": 8.2
+      },
+      {
+        "label": "FY2025",
+        "revenue": 129.3,
+        "utilidad": 12.8
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 42.6,
+        "operativo": 6.8,
+        "neto": 20.7
+      },
+      {
+        "label": "FY2022",
+        "bruto": 41.1,
+        "operativo": 7,
+        "neto": 7.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 41.3,
+        "operativo": 10.3,
+        "neto": 8.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 42.9,
+        "operativo": 13.9,
+        "neto": 6.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 44.2,
+        "operativo": 10.8,
+        "neto": 9.9
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "~25B USD (FY2023-2025)",
+        "nota": "Programa activo — reduccion de ~2.75B a ~2.2B ADS (-20% en 3 anos). Total autorizado: 35.3B USD."
+      },
+      {
+        "label": "Dividendos",
+        "value": "~1B USD (FY2025)",
+        "nota": "Dividendo especial iniciado FY2024; historicamente no pagaba dividendos."
+      },
+      {
+        "label": "Capex",
+        "value": "7.5B USD (FY2025)",
+        "nota": "Data centers y GPU para Alibaba Cloud (IA generativa/Qwen) + infraestructura logistica Cainiao."
+      },
+      {
+        "label": "Desinversiones",
+        "value": "Sun Art y reduccion Lazada",
+        "nota": "Venta de Sun Art Retail (~2.3B USD) y reduccion de participacion en Lazada para focalizar capital en negocios core."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "BABA FY2025",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "44.2%",
+        "~40-55%",
+        "En linea con peers e-commerce globales"
+      ],
+      [
+        "Margen Operativo",
+        "10.8%",
+        "~8-15%",
+        "En linea — por debajo del pico FY2024 (13.9%)"
+      ],
+      [
+        "Revenue Growth YoY",
+        "-0.8%",
+        "~5-15%",
+        "Por debajo del sector — macro China y competencia PDD"
+      ],
+      [
+        "P/E Trailing",
+        "21.8x",
+        "~15-25x",
+        "Descuento significativo por riesgo regulatorio y geopolitico"
+      ],
+      [
+        "EV/EBITDA",
+        "9.1x",
+        "~10-18x",
+        "Descuento estructural vs Amazon/JD.com ajustado por riesgo pais"
+      ],
+      [
+        "ROIC",
+        "9.5%",
+        "~10-20%",
+        "Solido — refleja eficiencia del ecosistema digital"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Salud financiera solida con recuperacion de margenes en FY2025, pero crecimiento de ingresos estancado y riesgo regulatorio persistente",
+    "analisis": "BABA muestra mejora de rentabilidad en FY2025 (margen neto de 6.3% a 9.9% YoY) gracias a reduccion de gastos en segmentos no rentables y menor presion regulatoria post-multa 2021. Sin embargo, el revenue en USD es plano (-0.8% YoY) por desaceleracion del consumo chino y competencia de PDD/Douyin. La posicion de caja neta de 52.5B USD es una fortaleza estructural excepcional que mitiga cualquier riesgo de balance.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "-0.8%",
+        "status": "warn",
+        "nota": "Plano en USD — competencia PDD/Douyin y saturacion e-commerce China"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "44.2%",
+        "status": "ok",
+        "nota": "Expansion gradual — mix hacia cloud y servicios de mayor valor"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "10.8%",
+        "status": "warn",
+        "nota": "Por debajo del pico FY2024 (13.9%) por inversion en Cloud/IA"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "9.9%",
+        "status": "ok",
+        "nota": "Recuperacion desde minimo 6.3% FY2024 — tendencia positiva"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "9.3%",
+        "status": "ok",
+        "nota": "FCF de 20.0B USD — conversion solida ~156% de utilidad neta"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-52.5B USD",
+        "status": "ok",
+        "nota": "Caja neta significativa — ~40% del market cap actual"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Caja Neta de 52.5B USD",
+      "impact": "Alto",
+      "evidence": "Efectivo 66.5B USD menos deuda LT 14B USD = caja neta 52.5B. Equivale al 40% del market cap a 126.975 USD.",
+      "context": "Financia recompras agresivas, protege ante shocks regulatorios y podria emplearse en dividendos especiales o M&A en IA sin deuda adicional."
+    },
+    {
+      "level": "green",
+      "title": "Valuacion en Minimos Historicos",
+      "impact": "Alto",
+      "evidence": "P/E 21.8x vs historico 20-35x (2015-2020). EV/EBITDA 9.1x — descuento del 40-50% vs Amazon y Tencent.",
+      "context": "El mercado precio un escenario de declive estructural. Estabilizacion macro o regulatoria puede generar reexpansion de multiplos de 30-50% desde niveles actuales."
+    },
+    {
+      "level": "yellow",
+      "title": "Alibaba Cloud + IA Qwen",
+      "impact": "Alto",
+      "evidence": "Cloud crece +13% YoY. Modelo Qwen-2.5 posicionado top-3 global. Capex en data centers de 7.5B USD en FY2025.",
+      "context": "Si Cloud escala a margenes del 15%+ y Qwen se monetiza via API/enterprise, el segmento podria valer 100B USD+ de forma independiente."
+    },
+    {
+      "level": "yellow",
+      "title": "Riesgo de Deslistamiento ADR",
+      "impact": "Medio",
+      "evidence": "BABA en lista de pre-delisting SEC en 2022. Acuerdo PCAOB-CSRC de 2022 redujo riesgo. Listado dual NYSE+HKEX activo.",
+      "context": "Deslistamiento forzado de NYSE activaria ventas masivas de ETFs/fondos. Aunque BABA tiene liquidez en HK, la base inversora de ADR es mayor."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo Regulatorio China Estructural",
+      "impact": "Alto",
+      "evidence": "Multa de 18.2B RMB (2021) por monopolio. Ant Group bajo restricciones financieras. Estructura VIE sin garantia legal para inversores ADR extranjeros.",
+      "context": "El gobierno chino puede intervenir sin aviso. Este riesgo es permanente y justifica descuento estructural vs peers en mercados abiertos."
+    },
+    {
+      "level": "red",
+      "title": "Perdida de Market Share frente a PDD y Douyin",
+      "impact": "Alto",
+      "evidence": "PDD supero a BABA en market cap en 2024. Pinduoduo y Temu lideran en bajo precio. Douyin captura social commerce. Usuarios jovenes migran de Taobao.",
+      "context": "La erosion del moat de Taobao/Tmall es estructural. Si no se frena, el segmento que genera el 80% del EBITDA continuara comprimiendo margenes y GMV."
+    }
+  ],
+  "score": {
+    "score": 6.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 5,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Segun el 20-F FY2025, Alibaba ejecuta una restructuracion en tres pilares: (1) Rentabilidad del core e-commerce: reduccion de subsidios, enfoque en comerciantes de alto GMV y monetizacion via publicidad programatica (Taobao/Tmall generan ~80% del ingreso publicitario del grupo); (2) Alibaba Cloud como segundo motor: inversion en IA generativa con Qwen, apuntando a mercado enterprise China; (3) Internacionalizacion disciplinada via AIDC: AliExpress y Trendyol crecen rentablemente mientras Lazada se reduce. Recompras agresivas (programa 35.3B USD) reflejan conviccion de que la accion cotiza con descuento vs valor intrinseco.",
+    "ventajas": "Moat principal: ecosistema cerrado con efectos de red de doble cara — 940M+ consumidores activos y 10M+ comerciantes en China, 25 anos de historial. Taobao tiene 5x mas SKUs que Amazon en China. Alipay procesa 119 trillones RMB anuales. Alibaba Cloud tiene ventaja competitiva en datos de comercio para IA. La marca tiene reconocimiento en toda Asia y mercados emergentes. La escala logistica de Cainiao (750M+ pedidos/dia en picos) es dificil de replicar.",
+    "debilidades": "Debilidad estructural principal: concentracion geografica en China (~75% del revenue) en mercado de crecimiento lento con regulacion impredecible. Margenes de e-commerce se comprimen para competir con PDD (precio ultra-bajo) y Douyin (social commerce). Estructura VIE: tenedores de ADR no poseen activos chinos directamente — riesgo legal latente. Lazada (SEA) genera perdidas recurrentes sin liderazgo claro en sus mercados.",
+    "riesgos": [
+      "Riesgo regulatorio China: Nueva intervencion similar a 2021 podria implicar multas adicionales, restricciones operativas o desmembramiento forzado. Ant Group sigue bajo escrutinio regulatorio financiero.",
+      "Deslistamiento ADR: Si el marco PCAOB-CSRC se rompe por tensiones geopoliticas, BABA podria ser removida de NYSE en 3 anos, generando venta masiva de ETFs e institucionales (~250B USD en AUM indexado).",
+      "Perdida estructural de market share: Si PDD/Douyin continuan ganando terreno, el GMV de Taobao/Tmall podria declinar en terminos absolutos en FY2026-2027, comprimiendo el segmento que genera el 80% del EBITDA.",
+      "Riesgo geopolitico EEUU-China: Escalada de sanciones tecnologicas podria limitar el acceso de Alibaba Cloud a chips avanzados (NVIDIA), poniendo en riesgo la estrategia de IA generativa y el crecimiento del segmento cloud."
+    ],
+    "inversiones_estrategicas": "Capex de 7.5B USD en FY2025 (+7% YoY), principalmente data centers para Alibaba Cloud con enfoque en IA (GPUs). R&D estimado en ~6B USD anuales centrado en modelo Qwen (Qwen-2.5 lanzado oct-2024, top-3 global en benchmarks). Desinversiones: venta de Sun Art Retail (~2.3B USD) y reduccion de Lazada. M&A defensivo: inversion en startups de IA en China para mantener acceso a talento y tecnologia ante restricciones de chips occidentales."
+  },
+  "verdict": {
+    "status": "Mantener / Compra en Correccion",
+    "score": "6.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "129.3B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "9.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "7.2%"
+      },
+      {
+        "label": "P/E Trailing",
+        "value": "21.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "-0.8% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Valuacion en minimos historicos** — P/E 21.8x y EV/EBITDA 9.1x incorporan escenario de declive; cualquier mejora macro china o estabilizacion regulatoria genera reexpansion de multiplos de 30-50%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Fortaleza de balance excepcional** — Caja neta de 52.5B USD (40% del market cap) financia recompras agresivas que reducen el float y sustenta FCF yield de 7.2%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Alibaba Cloud + IA Qwen** — Modelo Qwen top-3 mundial; si Cloud escala a margenes del 15%+ el segmento vale mas de 100B USD de forma independiente, sin pagar nada por e-commerce.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo regulatorio y geopolitico estructural** — El gobierno chino puede intervenir sin aviso; la estructura VIE no da derechos reales sobre activos chinos; conflicto EEUU-China podria cortar acceso a chips para IA.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 129.3B USD en FY2025 practicamente plano (-0.8% YoY en USD, ~+5% en RMB ajustado). Taobao/Tmall crece lento ante competencia PDD/Douyin. Los motores emergentes (AIDC +22%, Cloud +13%) aun no compensan la desaceleracion del core e-commerce. La estructura de ingresos refleja un negocio maduro en China en proceso de diversificacion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Recuperacion notable: margen neto de 6.3% (FY2024) a 9.9% (FY2025), impulsada por reduccion de gastos en segmentos no rentables y eficiencia operativa. El margen bruto de 44.2% es el mas alto desde FY2021. El margen operativo de 10.8% es inferior al pico FY2024 (13.9%) porque Alibaba acelera inversion en Cloud/IA."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 20.0B USD en FY2025 (+9.3% YoY) con conversion de ~156% vs utilidad neta. Capital asignado principalmente a recompras (-20% en acciones en 3 anos) con dividendo especial incipiente. La capacidad de generar 20B USD de FCF en entorno adverso confirma la calidad del modelo de negocio core."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de 52.5B USD (66.5B efectivo menos 14B LTD) equivale al 40% del market cap a 126.975 USD. Deuda bien estructurada, sin vencimientos criticos. No hay riesgo de solvencia en ningun escenario razonable, incluyendo multas regulatorias adicionales."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 126.975 USD por ADS, BABA cotiza con P/E trailing de 21.8x y EV/EBITDA de 9.1x — descuento del 40-50% vs su promedio historico y vs peers de calidad similar. FCF yield de 7.2% es atractivo. Precio objetivo conservador a 12 meses: 155-175 USD (reversion parcial a 15x P/E + beneficio de recompras). Upside del 22-38% desde niveles actuales."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Top 3: (1) Regulacion china impredecible — multas o restricciones como en 2021; impacto alto aunque probabilidad de recurrencia inmediata es baja. (2) Perdida de market share en e-commerce ante PDD/Douyin — es el riesgo mas lento pero mas estructural; ya ocurre. (3) Deslistamiento ADR por conflicto PCAOB/CSRC — probabilidad baja (~10-15%) pero impacto masivo en precio si ocurre."
+      }
+    ]
+  }
+}

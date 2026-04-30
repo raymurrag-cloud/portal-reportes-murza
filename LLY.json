@@ -1,0 +1,480 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Eli Lilly es la empresa farmaceutica de mayor crecimiento en el mundo gracias a su liderazgo absoluto en GLP-1 (Mounjaro/Zepbound para diabetes y obesidad) e inhibidores de CDK4/6 para cancer de mama. En FY2025 reporto ingresos de 65.2B USD (+45% YoY), utilidad neta de 20.6B (+95% YoY) y EPS diluido de 22.95, impulsados principalmente por Mounjaro (+74%) y Zepbound (lanzado en nov-2023, ya en 5.5B en 2025). Q1 2026 reportado hoy mostro Revenue de 12.7B (+45% YoY) y reafirmo guidance de FY2026. El mayor riesgo es la valuacion: P/E forward de 38.6x con expectativas ya muy elevadas.",
+  "descripcion": "Lilly opera principalmente en dos segmentos: Diabetes & Obesity (Mounjaro/tirzepatide, Zepbound, Humalog, Jardiance) y Oncologia (Verzenio/abemaciclib, Cyramza). Tirzepatide es el farmaco de mayor crecimiento en la historia de Lilly — agonista dual GIP/GLP-1 con eficacia superior a semaglutide de Novo Nordisk. La empresa invierte masivamente en capacidad de manufactura (+7.8B capex en 2025) para satisfacer la demanda insaciable de GLP-1. Pipeline incluye orforglipron (GLP-1 oral), doza (LY3437943) e inhibidores de IL-13 para dermatitis.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "28.32",
+        "28.54",
+        "34.12",
+        "45.04",
+        "65.18",
+        "+44.7%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.58",
+        "6.24",
+        "5.24",
+        "10.59",
+        "20.64",
+        "+94.9%"
+      ],
+      [
+        "Margen Neto",
+        "19.7%",
+        "21.9%",
+        "15.4%",
+        "23.5%",
+        "31.7%",
+        "+8.2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "9.35",
+        "9.20",
+        "9.13",
+        "15.50",
+        "29.18",
+        "+88.3%"
+      ],
+      [
+        "FCF (B USD)",
+        "5.43",
+        "5.13",
+        "0.79",
+        "3.76",
+        "8.97",
+        "+138.6%"
+      ],
+      [
+        "EPS Diluido",
+        "6.02",
+        "6.88",
+        "5.80",
+        "11.71",
+        "22.95",
+        "+96.0%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "12.92",
+        "12.75",
+        "16.28",
+        "25.26",
+        "33.60",
+        "+33.0%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "37.1x",
+      "signal": "red",
+      "note": "vs. farma growth ~35x",
+      "precio_base": 851.21,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 22.95
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "38.6x",
+      "signal": "red",
+      "precio_base": 851.21,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 22.05
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "27.4x",
+      "signal": "yellow",
+      "precio_base": 851.21,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 29.18,
+        "shares_m": 899.3,
+        "deuda_neta_b": 33.6
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "85.3x",
+      "signal": "red",
+      "precio_base": 851.21,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 8.97,
+        "shares_m": 899.3
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.15x",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROE",
+      "value": ">100%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "49.3%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 28.32,
+        "utilidad": 5.58
+      },
+      {
+        "label": "FY2022",
+        "revenue": 28.54,
+        "utilidad": 6.24
+      },
+      {
+        "label": "FY2023",
+        "revenue": 34.12,
+        "utilidad": 5.24
+      },
+      {
+        "label": "FY2024",
+        "revenue": 45.04,
+        "utilidad": 10.59
+      },
+      {
+        "label": "FY2025",
+        "revenue": 65.18,
+        "utilidad": 20.64
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 72,
+        "operativo": 27.5,
+        "neto": 19.7
+      },
+      {
+        "label": "FY2022",
+        "bruto": 73.5,
+        "operativo": 26.9,
+        "neto": 21.9
+      },
+      {
+        "label": "FY2023",
+        "bruto": 75.5,
+        "operativo": 22.3,
+        "neto": 15.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 79.5,
+        "operativo": 30.5,
+        "neto": 23.5
+      },
+      {
+        "label": "FY2025",
+        "bruto": 83.5,
+        "operativo": 41.7,
+        "neto": 31.7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "4.11B USD",
+        "nota": "FY2025 — shares de 904M a 899M, programa moderado"
+      },
+      {
+        "label": "Dividendos",
+        "value": "5.38B USD",
+        "nota": "Dividend Aristocrat — 50+ anos de crecimiento consecutivo"
+      },
+      {
+        "label": "Capex",
+        "value": "7.84B USD",
+        "nota": "Incremento masivo +55% YoY — inversion en manufactura GLP-1 global"
+      },
+      {
+        "label": "M&A",
+        "value": "~3.0B USD",
+        "nota": "Adquisiciones en oncologia y plataformas de terapia genica"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "LLY TTM",
+      "Sector farma",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "83.5%",
+        "~70%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "41.7%",
+        "~25%",
+        "Lider en el sector"
+      ],
+      [
+        "Revenue Growth",
+        "+44.7%",
+        "~8%",
+        "Crecimiento excepcional por GLP-1"
+      ],
+      [
+        "P/E Forward",
+        "38.6x",
+        "~18x",
+        "Prima de crecimiento elevada"
+      ],
+      [
+        "ROIC",
+        "49.3%",
+        "~20%",
+        "Muy por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "LLY se encuentra en fase de hipercrecimiento estructural con margenes en expansion y FCF mejorando significativamente",
+    "analisis": "FY2025 fue transformacional: revenue +45% YoY a 65.2B, margen operativo expande a 41.7%, NI casi se duplica a 20.6B. El FCF mejoro a 8.97B desde 3.76B pese a capex de 7.84B. La deuda neta crece por inversion en manufactura (40.87B LTD) pero es manejable en 1.15x EBITDA. El principal riesgo es que la valuacion ya descuenta 3-4 anos de crecimiento excepcional.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+44.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "83.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "41.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "31.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+138%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "33.6B USD",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Monjaro + Zepbound: monopolio de GLP-1 premium",
+      "impact": "Alto",
+      "evidence": "Tirzepatide genero mas de 25B USD en 2025 combinados. Superior a semaglutide en trials con -22.5% de perdida de peso vs -14.9%.",
+      "context": "El mercado de obesidad esta estimado en 100B+ USD anuales para 2030. LLY tiene ventaja de 2-3 anos sobre competidores en tirzepatide y el pipeline de GLP-1 oral (orforglipron) extiende el moat."
+    },
+    {
+      "level": "green",
+      "title": "Expansion de margenes estructural",
+      "impact": "Alto",
+      "evidence": "Margen operativo paso de 30.5% en FY2024 a 41.7% en FY2025. Margen bruto de 83.5%. ROE y ROIC >50%.",
+      "context": "El apalancamiento operativo de los GLP-1 es masivo: costo marginal de manufactura bajo y precio promedio muy alto. La expansion de capacidad solo aumenta los margenes conforme se llenan las plantas."
+    },
+    {
+      "level": "yellow",
+      "title": "Capex masivo comprime el FCF relativo",
+      "impact": "Medio",
+      "evidence": "Capex de 7.84B (+55% YoY) para expandir manufactura. FCF yield de 1.2% en base a precio actual.",
+      "context": "La inversion es necesaria y estrategica — LLY no puede satisfacer la demanda actual. Pero el P/FCF de 85x hace que el FCF yield sea poco atractivo para inversionistas de valor."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion descuenta escenario perfecto",
+      "impact": "Alto",
+      "evidence": "P/E forward de 38.6x a USD 851. El mercado ya descuenta crecimiento de 25-30% anual por 3-4 anos.",
+      "context": "Cualquier decepcion en ventas de GLP-1, aprobacion de genericos mas rapida, o competencia de Novo con semaglutide oral podria comprimir multiples de 38x a 25x, implicando caida de 35%+ desde niveles actuales."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "LLY ejecuta una estrategia de hipercrecimiento concentrada en GLP-1 (diabetes/obesidad) y oncologia. La empresa esta invirtiendo masivamente en capacidad de manufactura global (plantas en Indiana, North Carolina, Irlanda, Alemania) para capturar la demanda de tirzepatide. Paralelamente desarrolla la proxima generacion de moleculas: orforglipron (GLP-1 oral), GIP/GLP-1/Glucagon triple agonista y terapias contra Alzheimer (donanemab).",
+    "ventajas": "Liderazgo clinico en GLP-1 con datos de superioridad vs semaglutide. Pipeline de 50+ moleculas con 3 que podrían ser blockbusters (orforglipron, donanemab, LY3437943). Capacidad de manufactura propietaria imposible de replicar rapidamente. Marca de confianza en endocrinologia con decadas de experiencia en insulina. Dividend Aristocrat con 50+ anos de crecimiento.",
+    "debilidades": "Concentracion excesiva en tirzepatide: >38% de revenue en un solo molecula. Deuda neta en expansion a 33.6B por capex masivo. FCF yield de apenas 1.2% es bajo para una empresa de 765B mkt cap. Exposicion a negociaciones de precios Medicare (IRA 2022) que podrian limitar alzas de precio en US.",
+    "riesgos": [
+      "Lanzamiento de semaglutide oral (Novo Nordisk) que compite directamente con orforglipron de LLY en 2026-2027",
+      "Presion de precio por Medicare IRA: tirzepatide en lista de negociacion podria reducir precio neto 20-40%",
+      "Genericos de GLP-1 biosimilares potenciales post-2030 o si tribunales invalidan patentes de formulacion",
+      "Decepcion en datos de fase 3 de donanemab para Alzheimer que ya cotiza prima de valuacion en el precio actual"
+    ],
+    "inversiones_estrategicas": "Inversion de 7.84B en capex FY2025 para manufactura global de tirzepatide. Adquisicion de Morphic Therapeutic (2024, 3.2B) para integrinas en fibrosis. Inversion en AI Drug Discovery con plataforma LOWE. Expansion de distribucion directa en China a traves de partnership con Sinochem."
+  },
+  "verdict": {
+    "status": "Mantener",
+    "score": "8.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "65.2B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "31.7%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.2%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "38.6x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+44.7% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**GLP-1 monopolio clinico** — Tirzepatide lidera en eficacia (SURMOUNT, SURPASS trials) con -22.5% perdida de peso vs -14.9% de semaglutide, en el mercado de obesidad estimado en 100B USD para 2030.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margenes en expansion masiva** — Margen operativo de 41.7% en FY2025 vs 30.5% en FY2024. El apalancamiento operativo de los GLP-1 es estructural: costo marginal bajo con precios premium de 800-900 USD/mes.",
+        "type": "pro"
+      },
+      {
+        "text": "**Pipeline de proxima generacion** — Orforglipron (oral, sin inyeccion), LY3437943 (triple agonista) y donanemab (Alzheimer) representan la siguiente ola de crecimiento mas alla de tirzepatide inyectable.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion sin margen de seguridad** — P/E forward de 38.6x descuenta un escenario perfecto. Competencia de semaglutide oral (Novo), presion de precios Medicare IRA y concentracion en una sola molecula hacen que el riesgo/retorno sea asimetrico a USD 851.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 fue historico: 65.2B USD (+44.7% YoY). Tirzepatide genero mas de 25B combinados (Mounjaro+Zepbound). Q1 2026 reportado hoy mostro 12.7B (+45% YoY), con guidance FY2026 reafirmado en ~58-62B (sin adquisiciones) y EPS adj ~22.05."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Expansion estructural: bruto 83.5%, operativo 41.7%, neto 31.7%. LLY se esta convirtiendo en una empresa de software con margenes farmaceuticos. El apalancamiento operativo del portfolio de GLP-1 es extraordinario."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 8.97B (+138% YoY) pese a capex masivo de 7.84B. La OCF de 16.81B muestra la generacion bruta. Con el capex peak en 2025-2026, el FCF libre deberia expandirse significativamente en 2027+."
+      },
+      {
+        "label": "Balance",
+        "texto": "LTD de 40.87B y deuda neta de 33.6B son el lado debil. Sin embargo, 1.15x EBITDA es manejable. El cash de 7.27B cubre opciones de liquidez. La empresa sigue pagando dividendos crecientes con mas de 50 anos de historial."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A USD 851, el P/E de 38.6x forward ya descuenta crecimiento de 25%+ anual por 3-4 anos. El FCF yield de 1.2% es bajo historicamente. LLY puede sostenerse en esta valuacion si los GLP-1 continuan creciendo al ritmo actual, pero el margen de error es minimo."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Competencia de semaglutide oral (Novo) que podria llegar a mercado en 2026. (2) Negociacion de precios Medicare IRA que puede reducir precio neto de tirzepatide 20-40%. (3) Decepcion en datos de donanemab para Alzheimer. (4) Concentracion en un solo blockbuster para >38% de revenue."
+      }
+    ]
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Uber Technologies (UBER) es la plataforma de movilidad y entrega bajo demanda mas grande del mundo, con presencia en mas de 70 paises. En FY2025 reporto ingresos de 52.02B USD (+18.3% YoY), ingreso operativo de 5.57B USD (+99% YoY) y FCF record de 9.76B USD (+41% YoY), consolidando su transformacion de empresa con perdidas a generadora masiva de caja. Las recompras de 6.52B USD senalan confianza maxima del management. A precio de 72.32 USD cotiza a 15.3x P/FCF y EV/EBITDA de 24.4x, con FCF yield del 6.5% — valuacion razonable para su tasa de crecimiento sostenido.",
+  "descripcion": "Uber opera a traves de tres segmentos: Mobility (transporte bajo demanda, ~61% de revenue), Delivery (comida y productos via Uber Eats, ~37%) y Freight (logistica, ~2%). El modelo es asset-light: cobra comisiones sobre cada transaccion a conductores y restaurantes, y tarifas de servicio a usuarios. La plataforma cuenta con 170M+ usuarios activos mensuales y 7.4M+ conductores/deliverers. Los efectos de red bidireccionales constituyen el moat principal: mas oferta reduce tiempos de espera mejorando conversion, mas usuarios incrementan ingresos para conductores atrayendo mas oferta. Uber Advertising y Uber One son nuevas verticales de alto margen que amplian el moat y mejoran el mix. En autonomia vehicular, Uber eligio ser canal de distribucion de flotas AV (acuerdos con Waymo, WeRide, Avride) en lugar de desarrollar la tecnologia, reduciendo riesgo de capital y acelerando time-to-market.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "17.45",
+        "31.88",
+        "37.28",
+        "43.98",
+        "52.02",
+        "+18.3%"
+      ],
+      [
+        "Op. Income (B USD)",
+        "-3.83",
+        "-1.83",
+        "1.11",
+        "2.80",
+        "5.57",
+        "+98.9%"
+      ],
+      [
+        "EBITDA Aj. (B USD)",
+        "-2.93",
+        "-0.88",
+        "1.93",
+        "3.51",
+        "6.28",
+        "+78.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.50",
+        "-9.14",
+        "1.89",
+        "9.86",
+        "10.05",
+        "+1.9%"
+      ],
+      [
+        "FCF (B USD)",
+        "-0.74",
+        "0.39",
+        "3.36",
+        "6.90",
+        "9.76",
+        "+41.4%"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "-0.26",
+        "-4.56",
+        "0.91",
+        "4.68",
+        "4.86",
+        "+3.8%"
+      ],
+      [
+        "Margen Operativo",
+        "-21.9%",
+        "-5.7%",
+        "3.0%",
+        "6.4%",
+        "10.7%",
+        "4.3pp"
+      ],
+      [
+        "Margen Neto",
+        "-2.9%",
+        "-28.7%",
+        "5.1%",
+        "22.4%",
+        "19.3%",
+        "-3.1pp"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "Precio Actual",
+      "value": "72.32 USD",
+      "signal": "yellow",
+      "precio_base": 72.32,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "precio_mercado",
+        "fuente": "Yahoo Finance"
+      }
+    },
+    {
+      "label": "P/E Trailing",
+      "value": "14.9x",
+      "signal": "yellow",
+      "precio_base": 72.32,
+      "precio_fecha": "2026-04-06",
+      "note": "Incluye ganancias no recurrentes por revaluacion de inversiones",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.86
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "16.7x",
+      "signal": "green",
+      "precio_base": 71.68,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 4.2934
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "24.4x",
+      "signal": "yellow",
+      "precio_base": 72.32,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 6.28,
+        "shares_m": 2067.9,
+        "deuda_neta_b": 3.5
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "15.3x",
+      "signal": "green",
+      "precio_base": 72.32,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 9.76,
+        "shares_m": 2067.9
+      }
+    },
+    {
+      "label": "FCF Yield",
+      "value": "6.5%",
+      "signal": "green"
+    },
+    {
+      "label": "ROE FY2025",
+      "value": "43.7%",
+      "signal": "green"
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.56x",
+      "signal": "green",
+      "note": "Balance solido con FCF de 9.76B"
+    },
+    {
+      "label": "FCF FY2025",
+      "value": "9.76B USD",
+      "signal": "green",
+      "note": "+41.4% YoY"
+    },
+    {
+      "label": "Op. Income FY2025",
+      "value": "5.57B USD",
+      "signal": "green",
+      "note": "Margen 10.7%; +99% YoY"
+    },
+    {
+      "label": "Crecimiento Revenue",
+      "value": "+18.3% YoY",
+      "signal": "green"
+    },
+    {
+      "label": "Recompras FY2025",
+      "value": "6.52B USD",
+      "signal": "green",
+      "note": "Retorno agresivo de capital; 5x vs FY2024"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 17.45,
+        "utilidad": -0.5
+      },
+      {
+        "label": "FY2022",
+        "revenue": 31.88,
+        "utilidad": -9.14
+      },
+      {
+        "label": "FY2023",
+        "revenue": 37.28,
+        "utilidad": 1.89
+      },
+      {
+        "label": "FY2024",
+        "revenue": 43.98,
+        "utilidad": 9.86
+      },
+      {
+        "label": "FY2025",
+        "revenue": 52.02,
+        "utilidad": 10.05
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 15,
+        "operativo": -21.9,
+        "neto": -2.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 20,
+        "operativo": -5.7,
+        "neto": -28.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 22,
+        "operativo": 3,
+        "neto": 5.1
+      },
+      {
+        "label": "FY2024",
+        "bruto": 24,
+        "operativo": 6.4,
+        "neto": 22.4
+      },
+      {
+        "label": "FY2025",
+        "bruto": 25.9,
+        "operativo": 10.7,
+        "neto": 19.3
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras FY2025",
+        "value": "6.52B USD",
+        "nota": "Programa agresivo de buybacks; 5x vs FY2024; reduce dilusion del SBC"
+      },
+      {
+        "label": "FCF generado FY2025",
+        "value": "9.76B USD",
+        "nota": "Margen FCF 18.8%; caja disponible para retorno y crecimiento"
+      },
+      {
+        "label": "CapEx FY2025",
+        "value": "0.34B USD",
+        "nota": "0.7% de revenue; modelo asset-light mantiene baja intensidad de capital"
+      },
+      {
+        "label": "Recompras FY2024",
+        "value": "1.25B USD",
+        "nota": "Inicio del programa; escalado masivo en FY2025"
+      },
+      {
+        "label": "Deuda neta",
+        "value": "3.50B USD",
+        "nota": "ND/EBITDA 0.56x; manejable dado FCF de 9.8B"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "UBER TTM",
+      "LYFT",
+      "DASH",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Revenue TTM",
+        "52.0B USD",
+        "~6.2B USD",
+        "~12B USD",
+        "N/A",
+        "Lider por escala absoluta"
+      ],
+      [
+        "Margen Operativo",
+        "10.7%",
+        "~5%",
+        "~2%",
+        "<5%",
+        "Por encima de todos los pares"
+      ],
+      [
+        "Margen FCF",
+        "18.8%",
+        "~6%",
+        "~5%",
+        "~5-8%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Crecimiento Rev.",
+        "+18.3%",
+        "+~8%",
+        "+~16%",
+        "~10-15%",
+        "Por encima del sector"
+      ],
+      [
+        "P/FCF",
+        "15.3x",
+        "~35x",
+        "N/A",
+        "~25-35x",
+        "Prima justificada por calidad de FCF"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Mejora estructural acelerada en FY2025; margenes operativos duplicados con FCF record",
+    "analisis": "Uber presenta el mejor perfil financiero de su historia en FY2025: ingreso operativo de 5.57B (+99% YoY), FCF de 9.76B (+41% YoY) y recompras de 6.52B demuestran que la transformacion es real y sostenida. La unica nota de cautela es la calidad de la utilidad neta, que incluye ganancias no operacionales por revaluacion de inversiones; el negocio operativo subyacente genera ~5-6B de utilidad real.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+18.3%",
+        "status": "ok",
+        "nota": "CAGR 3 anos ~17%; crecimiento consistente"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "10.7%",
+        "status": "ok",
+        "nota": "De 6.4% (FY2024) a 10.7% (FY2025); expansion historica"
+      },
+      {
+        "metrica": "Margen EBITDA",
+        "valor": "12.1%",
+        "status": "ok",
+        "nota": "De 8.0% a 12.1%; apalancamiento operativo evidente"
+      },
+      {
+        "metrica": "Calidad Utilidad Neta",
+        "valor": "Moderada",
+        "status": "warn",
+        "nota": "NI incluye ganancias no recurrentes por revaluacion de inversiones"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+41.4%",
+        "status": "ok",
+        "nota": "FCF 9.76B; conversion OCF a FCF excelente (>96%)"
+      },
+      {
+        "metrica": "Recompras agresivas",
+        "valor": "6.52B USD",
+        "status": "ok",
+        "nota": "Reduce dilusion estructural del SBC"
+      },
+      {
+        "metrica": "Deuda Neta/EBITDA",
+        "valor": "0.56x",
+        "status": "ok",
+        "nota": "Balance muy solido; cobertura de deuda excelente"
+      },
+      {
+        "metrica": "Riesgo regulatorio",
+        "valor": "Activo EU/UK",
+        "status": "warn",
+        "nota": "Clasificacion conductores como empleados: +20-30% costos si se expande"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "FCF record de 9.76B USD en FY2025",
+      "impact": "Alto",
+      "evidence": "OCF 10.1B - CapEx 0.34B = FCF 9.76B; margen FCF 18.8%; +41% YoY",
+      "context": "Uber genera mas caja anual que el PIB de paises medianos; modelo plataforma a plena escala"
+    },
+    {
+      "level": "green",
+      "title": "Op. Income +99% YoY: de 2.80B a 5.57B USD",
+      "impact": "Alto",
+      "evidence": "Margen operativo de 6.4% (FY2024) a 10.7% (FY2025); expansion de 4.3pp en un solo ano",
+      "context": "Apalancamiento operativo real: costos fijos se diluyen con crecimiento de revenue, mejoras no lineales de margen"
+    },
+    {
+      "level": "green",
+      "title": "Recompras de 6.52B USD: retorno de capital agresivo",
+      "impact": "Alto",
+      "evidence": "5x el nivel de FY2024 (1.25B); equivale a ~8% del market cap anualizado",
+      "context": "El management senala maxima confianza en la sostenibilidad del FCF; reduce dilusion estructural del SBC"
+    },
+    {
+      "level": "yellow",
+      "title": "Calidad de utilidades: ganancias no operacionales significativas",
+      "impact": "Medio",
+      "evidence": "NI 10.05B incluye ganancias por revaluacion de participaciones en Didi, Aurora y otros",
+      "context": "P/E basado en NI reportado distorsiona la valuacion real; usar P/FCF y EV/EBITDA como metricas primarias"
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion premium con riesgo de re-rating",
+      "impact": "Medio",
+      "evidence": "P/FCF 15.3x; EV/EBITDA 24.4x; mercado descuenta crecimiento >15% sostenido",
+      "context": "Si el crecimiento se modera a <12% o la macro se deteriora, puede haber re-rating de 20-30%"
+    },
+    {
+      "level": "red",
+      "title": "Riesgo existencial: reclasificacion de conductores como empleados",
+      "impact": "Alto",
+      "evidence": "UK clasifica conductores como workers; propuestas activas en EU, California, Nueva York",
+      "context": "Si ~7.4M conductores son reclasificados globalmente, costos operativos +20-30% y el modelo de margen se destruye"
+    },
+    {
+      "level": "yellow",
+      "title": "Robotaxis D2C podrian impactar Mobility largo plazo",
+      "impact": "Medio",
+      "evidence": "Waymo opera en 4 ciudades EEUU; Tesla planea Robotaxi 2025; Baidu Apollo activo en China",
+      "context": "Uber apuesta a ser canal de distribucion AV; si fabricantes van directo al consumidor, pierden comisiones de Mobility"
+    }
+  ],
+  "score": {
+    "score": 7.9,
+    "max": 10,
+    "items": [
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8.5,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7.5,
+        "max": 10
+      },
+      {
+        "label": "Valuacion vs fundamentales",
+        "score": 6.5,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Uber ejecuta una estrategia de plataforma multi-producto bajo demanda con tres ejes centrales segun el 10-K FY2025: (1) densificacion del ecosistema via Uber One (membresia premium que incrementa frecuencia +25% vs no-miembros) y Uber Advertising (plataforma publicitaria nativa con 170M MAUs como audiencia, objetivo 2B+ USD en revenue a mediano plazo); (2) expansion geografica organica en mercados emergentes de alta densidad urbana (India, Brasil, Mexico, Africa subsahariana) donde la penetracion sigue siendo baja vs mercados maduros; (3) posicionamiento como plataforma de distribucion de flotas AV mediante acuerdos comerciales con Waymo, WeRide y Avride, reduciendo riesgo de capital tecnologico mientras mantiene exposicion al upside de la transicion a autonomia vehicular.",
+    "ventajas": "Efectos de red bidireccionales globales con 170M+ MAUs y 7.4M+ conductores/deliverers que crean barreras de liquidez insuperables para nuevos entrantes. Marca global reconocida como verbo cultural en 40+ idiomas. Datos longitudinales de movilidad urbana de 10+ anos permiten pricing dinamico y matching predictivo superiores. Diversificacion Mobility+Delivery reduce ciclicalidad y permite cross-selling. Modelo asset-light con CapEx ~0.7% de revenue genera FCF masivo comparado con transporte tradicional. Uber Advertising representa un negocio de alto margen emergente sobre infraestructura ya existente.",
+    "debilidades": "Dependencia de conductores clasificados como independientes: el modelo economico entero depende de esta clasificacion legal, altamente vulnerable a cambios regulatorios. Margen bruto (~26%) bajo vs plataformas software puras por el componente de logistica fisica inherente. Freight opera con margenes negativos y consume capital sin contribucion significativa. SBC elevado (~1.5-2B anuales) genera dilusion estructural que las recompras compensan solo parcialmente. Historia de governance cuestionable pre-Khosrowshahi genera descuento reputacional residual entre inversores institucionales.",
+    "riesgos": [
+      "Reclasificacion de conductores como empleados en mercados clave: en UK ya son workers desde 2021; si se extiende a EEUU y EU, costos operativos suben 20-30% y el modelo de margen actual se destruye estructuralmente.",
+      "Competencia directa de robotaxis D2C: si Tesla Robotaxi o Waymo operan apps propias en ciudades clave sin usar plataformas terceras, Uber pierde comisiones de Mobility sin poder retener al usuario final.",
+      "Regulacion antimonopolio: en mercados con alta concentracion (EEUU: UBER+LYFT >95% del ride-hailing), autoridades podrian imponer restricciones de precios o requerir interoperabilidad de plataformas.",
+      "Desaceleracion macroeconomica: viajes discrecionales y delivery no esencial son los primeros en caer en recesion; FY2022 mostro elasticidad negativa al incremento de precios bajo presion inflacionaria.",
+      "Ciberseguridad y privacidad: Uber fue hackeada en 2022 via ingenieria social; como plataforma con 170M+ datos de usuarios y metodos de pago, es un objetivo de alto valor con riesgo de reputacion y multas regulatorias.",
+      "Competencia regional intensa: InDrive crece en LatAm/CEE con modelo de precio negociado; Bolt en Europa; Grab y Gojek en SEA con apps super integradas que ofrecen servicios financieros adicionales."
+    ],
+    "inversiones_estrategicas": "CapEx de 340M USD en FY2025 (0.7% de revenue) confirma el modelo asset-light. I+D estimado en ~3.5B (6-7% de revenue) financia algoritmos de matching de siguiente generacion, seguridad por IA, plataforma Uber Advertising y preparacion para integracion de flotas AV. Las participaciones estrategicas en Didi (~4%), Aurora Innovation (~26%), Grab y otras generaron ganancias significativas por revaluacion en FY2024-2025. El escalado masivo del programa de recompras a 6.52B en FY2025 indica que el management prioriza retorno de capital sobre M&A agresivo en el corto plazo, aunque se mantiene activo en adquisiciones bolt-on de expansion geografica."
+  },
+  "verdict": {
+    "status": "Mantener / Comprar en Correccion",
+    "score": "7.9/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "52.02B USD"
+      },
+      {
+        "label": "Crecimiento YoY",
+        "value": "+18.3%"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "10.7%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "9.76B USD"
+      },
+      {
+        "label": "P/FCF",
+        "value": "15.3x"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**FCF de 9.76B USD y recompras de 6.52B** — El modelo plataforma genera caja masiva a escala; el management retorna capital agresivamente validando la calidad y sostenibilidad del FCF.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margen operativo de 10.7% vs 6.4% en FY2024** — Expansion de 4.3pp en un solo ano demuestra apalancamiento operativo real; si revenue crece ~18% anual, los margenes operativos pueden llegar a 15-18% en 3-4 anos.",
+        "type": "pro"
+      },
+      {
+        "text": "**Calidad de utilidades: NI incluye ganancias no operacionales** — El P/E normalizado sobre utilidad operativa es mas alto que el reportado; P/FCF y EV/EBITDA son las metricas de valuacion primarias recomendadas.",
+        "type": "con"
+      },
+      {
+        "text": "**Riesgo regulatorio de conductores** — La clasificacion como independientes es el riesgo existencial central; un cambio legal en EEUU incrementaria costos 20-30% y comprimeria margenes de forma estructural e irreversible.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue crece de 17.45B (FY2021) a 52.02B (FY2025), CAGR ~31%. El crecimiento es impulsado por mayor frecuencia de uso (Uber One), expansion geografica en mercados emergentes y nuevas verticales de alto margen como publicidad. Mobility crece ~20% YoY; Delivery ~16%; ambos segmentos mantienen momentum con mejora de mix."
+      },
+      {
+        "label": "Margenes",
+        "texto": "La expansion de margenes en FY2025 es el hito central: margen operativo de -22% (FY2021) a +10.7% (FY2025), expansion de 4.3pp solo en FY2025. El apalancamiento operativo es real y acelerando: costos fijos de tecnologia y G&A se diluyen con el volumen generando mejoras no lineales."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 9.76B en FY2025 (margen FCF 18.8%; +41% YoY) es el dato mas contundente. La conversion de OCF a FCF es excelente dado CapEx minimo. Las recompras de 6.52B demuestran que el FCF es real y el management lo prioriza sobre acumulacion de caja."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 3.50B es muy manejable con FCF de 9.76B; ratio ND/EBITDA de 0.56x es conservador. Caja de 7.11B provee liquidez para operar, invertir y recomprar simultaneamente. El balance no representa riesgo material."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 72.32 USD, P/FCF de 15.3x y EV/EBITDA de 24.4x con crecimiento del 18% implican PEG implicito ~1.0x, atractivo historicamente. FCF yield del 6.5% es competitivo. Precio objetivo de 90-100 USD a 12 meses asumiendo margen operativo de 13-14% y revenue de ~60B en FY2026."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Reclasificacion de conductores: el mayor riesgo existencial; si se globaliza a EEUU, costos +20-30% y margenes colapsan. (2) Competencia AV D2C: si Waymo/Tesla van directo al consumidor, Mobility pierde participacion. (3) Desaceleracion macro: con P/FCF de 15.3x cualquier contraccion de demanda puede provocar re-rating de 20-30%."
+      }
+    ]
+  }
+}

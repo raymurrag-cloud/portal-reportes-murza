@@ -1,0 +1,530 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Chevron Corporation (CVX) es una de las mayores empresas integradas de energia del mundo, con operaciones upstream y downstream en mas de 20 paises. FY2025 mostro presion por precios del petroleo mas bajos: ingresos de 189.0B USD (-6.8% YoY) y utilidad neta de 12.3B USD (-30.3%). A pesar del ciclo adverso, CVX genero FCF solido de 16.6B USD, mantuvo su dividendo por 38 ano consecutivo de incremento y ejecuto recompras por 12.1B USD. La incorporacion de Hess completada en 2025 amplia significativamente su base de activos con activos premium en Guyana. Calificacion: Mantener con sesgo comprador en correcciones.",
+  "descripcion": "Chevron opera dos segmentos: Upstream (exploracion, produccion y transporte de crudo y gas; LNG; pipelines) y Downstream (refinacion, marketing, renovables y petroquimicos). Sus activos mas valiosos incluyen el Permian Basin en Texas, Tengizchevroil en Kazakhstan, proyectos LNG en Australia (Gorgon y Wheatstone) y tras la adquisicion de Hess en 2025, una participacion del 30% en el bloque Stabroek en Guyana. La empresa genera mas del 70% de sus ganancias en upstream, haciendo los resultados altamente sensibles al precio del crudo. Su moat central: activos irreplicables de larga vida, escala operativa global y balance conservador AA-.",
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue 2025 de 189.0B USD, -6.8% YoY vs 202.8B en 2024. La caida refleja precios de crudo mas bajos (Brent promedio ~78 USD en 2025). Produccion upstream record con integracion de activos Hess. Diversificacion geografica mitiga concentracion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto 2025 de 6.5% vs 8.7% en 2024 y 10.6% en 2023, compresion tipica de ciclo bajo. Margen bruto estable en 42.8% gracias a integracion vertical. La adquisicion Hess elevo DA a 20.1B impactando el margen operativo."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF de 33.9B USD (+7.8% YoY). FCF de 16.6B tras Capex de 17.4B. FCF yield del 4.5% sobre market cap. Devolucion de capital: 12.1B en recompras + 12.8B en dividendos = 24.8B total; financiado parcialmente con deuda."
+      },
+      {
+        "label": "Balance",
+        "texto": "Tras la adquisicion de Hess, deuda neta sube a 34.5B USD (vs 17.8B en 2024). Deuda Neta/EBITDA de 0.84x, nivel manejable. Equity de 186.5B. Calificacion crediticia AA- por S&P. Liquidez amplia con 6.3B en caja."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 198.86 USD, P/E TTM de 30x parece elevado pero refleja ganancias deprimidas por ciclo. EV/EBITDA de 9.8x razonable para major integrada. Si petroleo recupera a 80-85 USD/bbl y Guyana escala, EPS podria retornar a 10-12 USD, implicando P/E normalizado de 17-20x con upside del 15-25%."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Exposicion al ciclo de commodities (cada -10 USD/bbl reduce EPS ~1.5 USD). Disputa arbitral con ExxonMobil sobre derechos de preferencia en Guyana. Transicion energetica. Deuda elevada post-Hess requiere monitoreo."
+      }
+    ]
+  },
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "162.5",
+        "246.3",
+        "200.9",
+        "202.8",
+        "189.0",
+        "-6.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "15.6",
+        "35.5",
+        "21.4",
+        "17.7",
+        "12.3",
+        "-30.3%"
+      ],
+      [
+        "Margen Neto",
+        "9.6%",
+        "14.4%",
+        "10.6%",
+        "8.7%",
+        "6.5%",
+        "-2.2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "39.3",
+        "68.9",
+        "47.3",
+        "45.3",
+        "40.9",
+        "-9.7%"
+      ],
+      [
+        "FCF (B USD)",
+        "21.1",
+        "37.6",
+        "19.8",
+        "15.0",
+        "16.6",
+        "+10.4%"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "8.14",
+        "18.28",
+        "11.36",
+        "9.72",
+        "6.63",
+        "-31.8%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "20.0",
+        "3.7",
+        "8.1",
+        "17.8",
+        "34.5",
+        "+93.8%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "30.0x",
+      "signal": "red",
+      "note": "vs. oil majors ~12x; ganancias deprimidas por ciclo bajo petroleo",
+      "precio_base": 198.86,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 6.63
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "21x (est.)",
+      "signal": "yellow",
+      "note": "EPS normalizado estimado 9.5 USD con Brent 75-80 USD",
+      "precio_base": 198.86,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 9.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "9.8x",
+      "signal": "yellow",
+      "note": "Razonable para integrated major; EBITDA presionado por ciclo",
+      "precio_base": 198.86,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 40.91,
+        "shares_m": 1856,
+        "deuda_neta_b": 34.47
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "22.3x",
+      "signal": "yellow",
+      "note": "FCF capex-intensivo post-Hess; mejora esperada 2026-27",
+      "precio_base": 198.86,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 16.59,
+        "shares_m": 1856
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.84x",
+      "signal": "green",
+      "note": "Aumento post-Hess pero aun conservador para una oil major"
+    },
+    {
+      "label": "ROE",
+      "value": "7.3%",
+      "signal": "yellow",
+      "note": "Deprimido por ciclo; 11.3% en 2024, 13.3% en 2023"
+    },
+    {
+      "label": "ROIC",
+      "value": "6.0%",
+      "signal": "yellow",
+      "note": "Ciclo bajo; capex elevado post-adquisicion Hess"
+    },
+    {
+      "label": "FCF Yield",
+      "value": "4.5%",
+      "signal": "yellow",
+      "note": "Sobre market cap actual; dividendo yield 2.7%"
+    },
+    {
+      "label": "Dividend Yield",
+      "value": "2.7%",
+      "signal": "green",
+      "note": "38 anos consecutivos de crecimiento del dividendo"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 162.47,
+        "utilidad": 15.63
+      },
+      {
+        "label": "FY2022",
+        "revenue": 246.25,
+        "utilidad": 35.47
+      },
+      {
+        "label": "FY2023",
+        "revenue": 200.95,
+        "utilidad": 21.37
+      },
+      {
+        "label": "FY2024",
+        "revenue": 202.79,
+        "utilidad": 17.66
+      },
+      {
+        "label": "FY2025",
+        "revenue": 189.03,
+        "utilidad": 12.3
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 41.5,
+        "operativo": 10.8,
+        "neto": 9.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": 40.3,
+        "operativo": 18.8,
+        "neto": 14.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 40.7,
+        "operativo": 14.9,
+        "neto": 10.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 41.2,
+        "operativo": 13.9,
+        "neto": 8.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 42.8,
+        "operativo": 11.1,
+        "neto": 6.5
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Dividendos",
+        "value": "12.75B USD",
+        "nota": "38 anos consecutivos de incremento; yield ~2.7%; dividend aristocrat"
+      },
+      {
+        "label": "Recompras",
+        "value": "12.08B USD",
+        "nota": "225M shares recompradas en 2025; programa sostenido desde 2022"
+      },
+      {
+        "label": "Capex",
+        "value": "17.35B USD",
+        "nota": "Elevado por integracion Hess; guidance 2026 reducido a 14.5-15.5B"
+      },
+      {
+        "label": "Adquisicion Hess",
+        "value": "53B USD",
+        "nota": "Cerrada en 2025; activos Guyana y Bakken transformadores; pago en acciones"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CVX TTM",
+      "Sector ref. (XOM/Shell)",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Bruto",
+        "42.8%",
+        "~38-40%",
+        "Por encima de pares integrados"
+      ],
+      [
+        "Margen Operativo",
+        "11.1%",
+        "~9-12%",
+        "En linea con sector"
+      ],
+      [
+        "Margen Neto",
+        "6.5%",
+        "~6-8%",
+        "En linea con sector en ciclo bajo"
+      ],
+      [
+        "EV/EBITDA",
+        "9.8x",
+        "~9-11x",
+        "En linea con integrated majors"
+      ],
+      [
+        "Deuda Neta/EBITDA",
+        "0.84x",
+        "~0.5-1.5x",
+        "Balance conservador, fortaleza clave"
+      ],
+      [
+        "FCF Yield",
+        "4.5%",
+        "~4-6%",
+        "En linea con sector"
+      ],
+      [
+        "Dividend Growth",
+        "38 anos",
+        "XOM: 42 anos; Shell: variable",
+        "Dividend Aristocrat comprometido"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Salud financiera robusta estructuralmente; presion ciclica tipica de oil major en ciclo bajo de crudo",
+    "analisis": "CVX muestra deterioro en rentabilidad tipico del ciclo bajo: NI cayo 30% en 2025 y EPS bajo a 6.63 USD. Sin embargo el OCF se mantiene saludable (+7.8% YoY a 33.9B) gracias a mayor produccion post-Hess. La deuda neta sube a 34.5B pero se mantiene en 0.84x EBITDA. El balance con equity de 186B y rating AA- es una fortaleza estructural que permite aguantar el ciclo.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "-6.8%",
+        "status": "warn",
+        "nota": "Caida por precios crudo; produccion aumenta post-Hess"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "42.8%",
+        "status": "ok",
+        "nota": "Estable gracias a integracion vertical"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "11.1%",
+        "status": "warn",
+        "nota": "Compresion vs 13.9% en 2024 por mayor DA y menores precios"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "6.5%",
+        "status": "warn",
+        "nota": "Minimo de 5 anos; tipico de ciclo adverso"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+10.4%",
+        "status": "ok",
+        "nota": "Mejora vs 2024 por mayor produccion post-Hess"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "34.5B USD",
+        "status": "warn",
+        "nota": "+93.8% YoY por adquisicion Hess; 0.84x EBITDA, gestionable"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Dividend Aristocrat: 38 anos de crecimiento consecutivo del dividendo",
+      "impact": "Alto",
+      "evidence": "12.75B USD en dividendos pagados en 2025; yield del 2.7%; nunca ha recortado dividendo, ni en 2020 (COVID) ni en 2015-16 (crudo a 30 USD).",
+      "context": "Compromiso historico demostrado con el accionista en todos los ciclos. Dividendo cubierto por FCF en escenarios de Brent mayor a 55-60 USD."
+    },
+    {
+      "level": "green",
+      "title": "Adquisicion de Hess: activos en Guyana de clase mundial",
+      "impact": "Alto",
+      "evidence": "Bloque Stabroek: 11B+ barriles descubiertos; costo de produccion menor a 35 USD/bbl; produccion escala hacia 1.3M BPD para 2027. CVX tiene 30% de participacion.",
+      "context": "Guyana es el activo de crudo de mayor crecimiento y menor costo del mundo. Transforma el perfil de largo plazo de CVX con reservas de muy baja huella de carbono."
+    },
+    {
+      "level": "green",
+      "title": "Balance AA- y OCF resiliente en ciclo adverso",
+      "impact": "Alto",
+      "evidence": "OCF 33.9B (+7.8% YoY); Deuda Neta/EBITDA 0.84x; equity 186.5B; rating AA- S&P; acceso a 10.8B en lineas de credito no utilizadas.",
+      "context": "La solidez del balance es la principal ventaja competitiva de CVX en el ciclo bajo. Permite mantener dividendo + recompras sin comprometer el grado de inversion."
+    },
+    {
+      "level": "yellow",
+      "title": "Disputa arbitral con ExxonMobil sobre derechos de preferencia en Guyana",
+      "impact": "Alto",
+      "evidence": "ExxonMobil arguye derecho de tanteo sobre participacion de Hess en Stabroek. Arbitraje en curso, resolucion esperada en 2026.",
+      "context": "Si ExxonMobil gana el arbitraje, CVX podria perder el activo mas valioso de la adquisicion Hess, con valor estimado entre 15 y 20B USD."
+    },
+    {
+      "level": "yellow",
+      "title": "Alta sensibilidad al precio del petroleo: -10 USD/bbl impacta EPS ~1.5 USD",
+      "impact": "Alto",
+      "evidence": "EPS cayo de 9.72 (2024) a 6.63 (2025). El segmento upstream genera mas del 70% de las ganancias totales.",
+      "context": "En escenario de Brent a 60 USD, EPS podria caer a 3-4 USD poniendo presion sobre la cobertura del dividendo en 2026-27."
+    },
+    {
+      "level": "red",
+      "title": "Deuda neta se duplico a 34.5B por adquisicion Hess",
+      "impact": "Medio",
+      "evidence": "Deuda neta 2024: 17.8B; deuda neta 2025: 34.5B (+93.8%). Long-term debt sube de 20.1B a 39.8B. Interes anual 1.22B USD.",
+      "context": "Si petroleo cae sostenidamente a 60-65 USD/bbl, la combinacion de FCF reducido + servicio de deuda + dividendo + capex comprometido podria presionar el balance."
+    }
+  ],
+  "score": {
+    "score": 6.6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "La estrategia de Chevron se resume en tres pilares: crecer el negocio de oil and gas, reducir la intensidad de carbono de operaciones y desarrollar nuevos negocios energeticos. En 2025 ejecuto la adquisicion de Hess Corp (53B USD, la mas grande de su historia) incorporando activos premium en Guyana (Stabroek 30%), Bakken y Gulf of Mexico. El plan de capital para 2026 es de 14.5-15.5B USD, menor al 2025 por completarse la integracion. La empresa mantiene objetivos de intensidad de GHG para 2028 y desarrolla CCS, hidrogeno y SAF como nuevas palancas.",
+    "ventajas": "Moat basado en activos irreplicables: reservas probadas de mas de 11B BOE post-Hess; posicion lider en el Permian Basin con produccion de ~800K BPD; activos de LNG en Australia con contratos take-or-pay de 20+ anos; bloque Stabroek en Guyana con costo de produccion menor a 35 USD/bbl; y escala financiera AA- que permite acceder a capital barato. Margen bruto estable en 40-43% incluso en ciclos bajos evidencia la integracion vertical efectiva.",
+    "debilidades": "Alta dependencia de precios de commodities fuera del control de CVX. Tasa impositiva alta (36.8% en 2025) por mix de jurisdicciones internacionales. Capex intensivo post-Hess reduce FCF disponible en el corto plazo. Sinergias de la adquisicion Hess aun no materializadas (22B en goodwill e intangibles registrados). Riesgo reputacional y regulatorio creciente por presiones ESG y transicion energetica.",
+    "riesgos": [
+      "Riesgo de precio del petroleo: caida sostenida a 60 USD/bbl reduce EPS a 3-4 USD y podria presionar cobertura del dividendo en 2026-27.",
+      "Riesgo arbitral Guyana: si ExxonMobil ejerce derecho de preferencia sobre la participacion de Hess en Stabroek, CVX pierde el activo mas valioso de la adquisicion (estimado en 15-20B USD).",
+      "Riesgo de transicion energetica: aceleracion de vehiculos electricos y politicas de descarbonizacion podrian reducir la demanda de crudo antes de lo esperado, comprimiendo el valor de largo plazo de las reservas.",
+      "Riesgo de integracion: adquisicion de 53B USD con 22B en goodwill; deterioro de activos requeriria impairments significativos que impacten el equity y la percepcion del mercado."
+    ],
+    "inversiones_estrategicas": "Capex 2025: 17.35B USD (+5.5% YoY), elevado por integracion Hess. Guidance 2026: 14.5-15.5B USD. Desglose aproximado: upstream ~12B (Permian, Guyana, Kazakhstan, LNG Australia), downstream ~2.5B, nuevas energias ~0.5-1B (CCS, hidrogeno, SAF). M&A: Hess completada 2025 por 53B en acciones. No se esperan adquisiciones adicionales hasta desapalancar el balance."
+  },
+  "verdict": {
+    "status": "Mantener / Compra en Correccion",
+    "score": "6.6/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "189.0B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "6.5%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "4.5%"
+      },
+      {
+        "label": "EV/EBITDA",
+        "value": "9.8x"
+      },
+      {
+        "label": "Dividend Growth",
+        "value": "38 anos consecutivos"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Guyana como catalizador secular** - El bloque Stabroek con 11B+ barriles y costos menores a 35 USD/bbl es el activo de crecimiento mas valioso del sector; produccion escala hacia 1.3M BPD para 2027 generando FCF incremental significativo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance AA- y dividendo de 38 anos** - La solidez financiera (Deuda Neta/EBITDA 0.84x) y el historial de dividendo en todos los ciclos son la fortaleza diferencial vs peers mas apalancados.",
+        "type": "pro"
+      },
+      {
+        "text": "**P/E normalizado de 17-20x con petroleo en recuperacion** - EPS podria retornar a 10-12 USD en escenario Brent 80-85 USD; el precio actual descuenta escenario pesimista, generando asimetria positiva.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo arbitral Guyana y sensibilidad al ciclo** - La disputa con ExxonMobil sobre Stabroek y la posible caida adicional del crudo son los dos riesgos clave a monitorear; esperamos resolucion del arbitraje en 2026.",
+        "type": "con"
+      }
+    ]
+  }
+}

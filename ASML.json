@@ -1,0 +1,497 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "ASML Holding es el unico proveedor mundial de sistemas de litografia EUV (Extreme Ultraviolet), tecnologia imprescindible para fabricar chips avanzados de 7nm o menos. Con cuota de mercado del 100% en EUV y ~80% en litografia total, posee uno de los moats tecnologicos mas profundos de la historia industrial. FY2025 cerro con ingresos de 34.8B USD (+13.3% YoY), margen bruto de 52.8% y backlog de 38.8B EUR que da visibilidad de 12-18 meses. Q1 2026 confirma el momentum: 9.5B USD de ingresos (+13.2% YoY) y margen neto de 30.3%. Veredicto: activo de calidad excepcional con valuacion mas comprimida que en 2024; atractivo en el rango actual.",
+  "descripcion": "ASML disena, fabrica y vende sistemas de litografia fotonica para fabricantes de semiconductores (foundries e IDMs). Opera en dos segmentos: sistemas nuevos (>70% ingresos) y base instalada/IB (servicio, upgrades y herramientas reacondicionadas, ~30% ingresos, margen >60%). Clientes principales: TSMC (~44% ingresos), Samsung (~25%), Intel (~10%) y foundries emergentes. Distribucion geografica FY2025: Taiwan ~44%, Corea ~30%, China ~14%, Europa ~8%, EEUU ~4%. En Q1 2026, China aumento a 19% de ventas (vs 36% en Q4 2025 -- reduccion por tightening de controles de exportacion). Sede en Veldhoven, Paises Bajos. Cotiza en Euronext Amsterdam y Nasdaq (ADR). El moat se basa en tecnologia EUV con 100K+ componentes de precision entregados por 457 proveedores especializados y >25 anos de R&D acumulado -- barrera de entrada practicamente infranqueable.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "22.0",
+        "22.3",
+        "29.8",
+        "30.7",
+        "34.8",
+        "9.5",
+        "+13.2%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "7.0",
+        "5.9",
+        "8.5",
+        "8.5",
+        "10.2",
+        "3.0",
+        "+17.1%"
+      ],
+      [
+        "Margen Neto",
+        "31.6%",
+        "26.6%",
+        "28.4%",
+        "27.7%",
+        "29.4%",
+        "30.3%",
+        "+0.3pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "8.1",
+        "6.3",
+        "9.2",
+        "10.6",
+        "14.4",
+        "3.9",
+        "+18%"
+      ],
+      [
+        "FCF (B USD)",
+        "4.7",
+        "2.4",
+        "4.5",
+        "5.1",
+        "13.1",
+        "N/D",
+        "-"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "16.98",
+        "14.55",
+        "21.53",
+        "21.50",
+        "26.34",
+        "7.76",
+        "+19%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-1.8",
+        "-0.9",
+        "-1.3",
+        "-0.7",
+        "-9.5",
+        "-4.3",
+        "Caja neta"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "54.1x",
+      "signal": "red",
+      "note": "Premium por monopolio EUV; historico 40-55x",
+      "precio_base": 1425.49,
+      "precio_fecha": "2026-04-16",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 26.34
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "45.3x",
+      "signal": "yellow",
+      "note": "Basado en EPS FY2026e consenso ~31.5 USD",
+      "precio_base": 1425.49,
+      "precio_fecha": "2026-04-16",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 31.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "38x",
+      "signal": "red",
+      "precio_base": 1425.49,
+      "precio_fecha": "2026-04-16",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 14.4,
+        "shares_m": 389,
+        "deuda_neta_b": -9.5
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "42.3x",
+      "signal": "yellow",
+      "precio_base": 1425.49,
+      "precio_fecha": "2026-04-16",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 13.1,
+        "shares_m": 389
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "Caja neta",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "42.1%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "53.2%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 22.02,
+        "utilidad": 6.96
+      },
+      {
+        "label": "FY2022",
+        "revenue": 22.29,
+        "utilidad": 5.92
+      },
+      {
+        "label": "FY2023",
+        "revenue": 29.82,
+        "utilidad": 8.47
+      },
+      {
+        "label": "FY2024",
+        "revenue": 30.67,
+        "utilidad": 8.5
+      },
+      {
+        "label": "FY2025",
+        "revenue": 34.8,
+        "utilidad": 10.22
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 52.7,
+        "operativo": 37.4,
+        "neto": 31.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": 49.9,
+        "operativo": 27.9,
+        "neto": 26.6
+      },
+      {
+        "label": "FY2023",
+        "bruto": 51.3,
+        "operativo": 30.9,
+        "neto": 28.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 51.3,
+        "operativo": 32.0,
+        "neto": 27.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 52.8,
+        "operativo": 36.9,
+        "neto": 29.4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "Programa hasta 12B EUR (2026-2028)",
+        "nota": "Nuevo programa de recompras anunciado en Q4 2025. En FY2025 se ejecutaron recompras activas; reduccion consistente del float desde 2020."
+      },
+      {
+        "label": "Dividendos",
+        "value": "7.50 EUR/accion FY2025",
+        "nota": "Dividendo +17% vs FY2024 (6.40 EUR). Crecimiento de ~10% CAGR sostenido; yield bajo refleja preferencia por recompras."
+      },
+      {
+        "label": "Capex",
+        "value": "1.67B EUR FY2025",
+        "nota": "Expansion de capacidad productiva en Veldhoven y nueva planta en Berlin para componentes opticos EUV High-NA."
+      },
+      {
+        "label": "R&D",
+        "value": "~4.8B EUR FY2025",
+        "nota": "~14.7% de ingresos. Desarrollo EUV High-NA (EXE:5000), roadmap Hyper-NA y mejoras de productividad en sistemas existentes."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "ASML FY2025",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "52.8%",
+        "~40-48%",
+        "Por encima -- pricing power de monopolio"
+      ],
+      [
+        "Margen Operativo",
+        "36.9%",
+        "~18-25%",
+        "Por encima -- leverage operativo superior"
+      ],
+      [
+        "Revenue Growth YoY",
+        "+13.3%",
+        "~8-15%",
+        "Por encima -- aceleracion post-ciclo normalizado"
+      ],
+      [
+        "EV/EBITDA",
+        "38x",
+        "~18-25x",
+        "Prima de monopolio vs KLA/LRCX/AMAT"
+      ],
+      [
+        "ROIC",
+        "53.2%",
+        "~15-22%",
+        "Por encima -- activos ligeros y alta rentabilidad"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance excepcionalmente solido con caja neta de 9.5B USD; margenes en expansion en FY2025 y Q1 2026 -- sin senales de deterioro estructural.",
+    "analisis": "ASML cerro FY2025 con revenue de 34.8B USD (+13.3% YoY), margen bruto de 52.8% y caja neta de 9.5B USD. El crecimiento se acelero significativamente vs la normalizacion de FY2024 (+2.9%), impulsado por la demanda de chips de IA y la rampa de EUV High-NA. Q1 2026 confirma la tendencia: 9.5B USD de ingresos (+13.2% YoY) con margen neto de 30.3% y EPS de 7.76 USD (+19% YoY). Backlog de 38.8B EUR al cierre de FY2025 da visibilidad robusta para 2026-2027. China retorno a 19% de ventas en Q1 2026.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+13.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "52.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "36.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "29.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF FY2025",
+        "valor": "13.1B USD",
+        "status": "ok",
+        "nota": "FCF incluye liberacion de capital de trabajo por advance payments de clientes EUV; cifra inusualmente alta vs anos anteriores"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta 9.5B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Monopolio absoluto en litografia EUV",
+      "impact": "Alto",
+      "evidence": "100% cuota de mercado en EUV -- no existe un segundo proveedor con capacidad equivalente en horizonte 10+ anos.",
+      "context": "Todo chip avanzado (<7nm) requiere una maquina ASML EUV. TSMC, Samsung e Intel son cautivos tecnologicos estructurales."
+    },
+    {
+      "level": "green",
+      "title": "EUV High-NA duplica ASP y asegura proxima decada",
+      "impact": "Alto",
+      "evidence": "EXE:5000 High-NA a ~370M EUR/sistema (vs ~180M EUR EUV actual). TSMC e Intel tienen unidades en rampa; backlog de 38.8B EUR al cierre FY2025.",
+      "context": "La transicion a High-NA es el proximo superciclo de revenue: re-rating del ASP + segunda ola de ordenes 2026-2030 hacia la guia de 44-60B EUR para 2030."
+    },
+    {
+      "level": "yellow",
+      "title": "Restricciones exportacion China -- volatilidad persistente",
+      "impact": "Medio",
+      "evidence": "China bajo de ~29% en FY2023 a ~14% en FY2024. En Q1 2026 subio a 19% pero nuevas restricciones anunciadas en abril 2026 podrian revertirlo.",
+      "context": "Riesgo residual si nuevas rondas de restricciones cortan el acceso a DUV legacy -- ~4-5B USD de exposicion anual."
+    },
+    {
+      "level": "yellow",
+      "title": "Concentracion en 3 clientes (TSMC/Samsung/Intel)",
+      "impact": "Medio",
+      "evidence": ">70% de ingresos de 3 clientes. Pushouts de capex de TSMC impactan directamente el flujo de pedidos.",
+      "context": "Mitigado por backlog de 38.8B EUR y compromisos de largo plazo; en ciclos bajistas los clientes pueden posponer ordenes."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion aun exigente vs peers del sector",
+      "impact": "Alto",
+      "evidence": "P/E trailing de 54.1x y EV/EBITDA de 38x a 1,425 USD -- comprimido vs 66x y 53x de FY2024, pero aun muy por encima de KLA (25x), LRCX (20x) y AMAT (18x).",
+      "context": "Si el superciclo de IA decepciona o el capex de foundries se desacelera, el multiple podria comprimir 20-30% sin cambio en fundamentales."
+    }
+  ],
+  "score": {
+    "score": 8.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "ASML ejecuta una estrategia de liderazgo tecnologico de largo plazo en litografia de semiconductores con tres pilares: (1) avance continuo de la hoja de ruta EUV hacia High-NA y Hyper-NA para habilitar nodos <2nm; (2) expansion del negocio IB/base instalada que genera ingresos recurrentes con margen >60% via upgrades, servicio y herramientas reacondicionadas (~30% de ingresos FY2025); y (3) diversificacion gradual de manufactura (nueva planta Berlin). La guia oficial para 2030 es revenue de 44-60B EUR con margen bruto de 56-60%, implicando CAGR ~12-18% anual desde FY2025.",
+    "ventajas": "El moat de ASML es practicamente infranqueable: (1) barrera tecnologica -- EUV requiere 100K+ componentes de precision, 457 proveedores especializados y >25 anos de R&D acumulado; (2) switching costs extremos -- instalacion de 6-12 meses e integracion profunda en procesos del cliente; (3) co-desarrollo con clientes -- ASML trabaja conjuntamente con TSMC/Samsung/Intel en la roadmap tecnologica creando lock-in mutuo; (4) mas de 6,000 patentes activas. El negocio IB genera ingresos recurrentes de alta rentabilidad que amortiguan la ciclicidad.",
+    "debilidades": "La principal debilidad estructural es la alta dependencia ciclica del capex semiconductor: en downcycles los clientes posponen ordenes y los ingresos pueden caer 20-30%. La concentracion de manufactura en Veldhoven (Paises Bajos) genera vulnerabilidad operacional sin backup geografico para el ensamble EUV. La dependencia de 3 clientes que concentran >70% de ingresos limita el poder de negociacion en ciclos bajistas. Las restricciones geopoliticas son un riesgo permanente dado el caracter estrategico de la tecnologia.",
+    "riesgos": [
+      "Escalada geopolitica China: nuevas restricciones de exportacion (anunciadas en abril 2026) podrian reducir significativamente el 19% de ingresos de China en Q1 2026, impactando el P&L de FY2026.",
+      "Desaceleracion del ciclo de capex de IA: si la demanda de GPUs y centros de datos decepciona, los planes de expansion de TSMC y Samsung podrian retrasarse, generando pushouts en el backlog de 38.8B EUR.",
+      "Retraso tecnico en High-NA EUV: cualquier problema de yield o adopcion en EXE:5000 retrasaria la expansion de ASP y la trayectoria hacia 44-60B EUR en 2030, comprimiendo las expectativas embebidas en el multiple actual.",
+      "Concentracion de manufactura: un ciberataque, desastre natural en Veldhoven o tension laboral podria interrumpir entregas durante trimestres -- ASML no tiene backup geografico para su planta principal de ensamble EUV."
+    ],
+    "inversiones_estrategicas": "R&D de ~4.8B EUR en FY2025 (~14.7% de ingresos) se concentra en EUV High-NA (EXE:5000 a ~370M EUR/sistema para nodos <2nm), roadmap Hyper-NA para 2028-2030 y mejoras de productividad en EUV legacy. Capex de 1.67B EUR incluye expansion del campus Veldhoven y nueva planta en Berlin para opticas de precision. Nuevo programa de recompras hasta 12B EUR (2026-2028). Sin M&A transformacional en el horizonte -- ASML prefiere desarrollo organico."
+  },
+  "verdict": {
+    "status": "Mantener / Compra en Correccion",
+    "score": "8.4/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "34.8B USD"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "52.8%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "13.1B USD"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "45.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+13.3% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Monopolio tecnologico sin sustitutos** -- ASML es el unico proveedor mundial de litografia EUV; sin su tecnologia es imposible fabricar chips avanzados. Esta posicion es practicamente permanente en el horizonte de inversion.",
+        "type": "pro"
+      },
+      {
+        "text": "**Aceleracion real en FY2025 y Q1 2026** -- Revenue +13.3% en FY2025 y +13.2% en Q1 2026 YoY confirman que la normalizacion post-FY2023 termino; la demanda de chips de IA y la rampa de High-NA impulsan el crecimiento sostenido.",
+        "type": "pro"
+      },
+      {
+        "text": "**High-NA EUV duplica ASP y expande margenes hacia 56-60%** -- La transicion de clientes a EXE:5000 (~370M EUR/sistema) y el crecimiento del negocio IB (>60% margen) impulsan expansion de rentabilidad hasta la guia 2030.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion aun exigente -- mantener disciplina de precio** -- El P/E de 54.1x sigue descontando escenarios optimistas; nuevas restricciones a China y desaceleracion del capex de IA podrian comprimir el precio 20-30% desde niveles actuales.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 34.8B USD en FY2025 crecio +13.3% YoY, aceleracion significativa vs el +2.9% de FY2024. Q1 2026 mantuvo el ritmo con 9.5B USD (+13.2% YoY). El mix IB/Sistemas evoluciona favorablemente: IB alcanza ~30% de ingresos con margen >60%. La guia corporativa de 44-60B EUR para 2030 implica CAGR ~12-18% anual, impulsado por EUV High-NA y expansion de capacidad de clientes para IA."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto de 52.8% en FY2025 supera el 51.3% de FY2024 -- primera expansion significativa desde 2021. Margen operativo de 36.9% refleja mayor leverage operativo con ingresos crecientes. Q1 2026 mantiene margen bruto de 53.0%. La meta de 56-60% gross margin para 2030 es alcanzable via High-NA (ASP ~2x) y mayor mix de IB."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 13.1B USD en FY2025 incluye liberacion de capital de trabajo significativa por advance payments de clientes EUV -- cifra excepcional vs anos anteriores. Caja neta de 9.5B USD al cierre FY2025. La empresa acelero el retorno de capital: nuevo programa de recompras hasta 12B EUR (2026-2028) y dividendo de 7.50 EUR/accion (+17% YoY)."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de 9.5B USD al cierre FY2025 -- posicion financiera excepcionalmente solida. ROE de 42.1% y ROIC de 53.2% son sobresalientes para el sector de equipos semiconductores. En Q1 2026, la caja cayo a 4.3B USD neto por inicio del programa de recompras de 12B EUR."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 1,425 USD, ASML cotiza a 54.1x P/E trailing y 38x EV/EBITDA -- comprimido significativamente vs los 66x y 53x de inicios de 2025, pero aun con prima vs KLA (25x) y LRCX (20x). P/E Forward de 45.3x basado en EPS FY2026e de ~31.5 USD. Precio objetivo de 1,600-1,900 USD en escenario base implica ~28-32x EV/EBITDA sobre EBITDA 2026E."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los dos riesgos que justifican cautela: (1) escalada geopolitica China -- nuevas restricciones en abril 2026 podrian reducir el 19% de ingresos chinos de Q1 2026, y (2) desaceleracion del capex de IA que cause pushouts en el backlog de 38.8B EUR. Ambos pueden comprimir el precio 20-30% sin impactar los fundamentales de largo plazo. El FCF excepcionalmente alto de FY2025 incluye timing de advance payments -- no extrapolar directamente."
+      }
+    ]
+  }
+}

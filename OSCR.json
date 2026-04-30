@@ -1,0 +1,481 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Oscar Health (OSCR) es una empresa de tecnologia de salud que opera planes de seguro medico en el mercado individual bajo la ACA. En FY2025, los ingresos crecieron 27.5% a $11.7B impulsados por un crecimiento de miembros superior al mercado hasta 2.04 millones. Sin embargo, el MLR se deterioro 570pb a 87.4%, generando perdida operativa de $396M y perdida neta de $443M tras el unico ano rentable en FY2024. El FCF operativo se mantiene positivo en $1.06B y la caja neta asciende a $2.34B.",
+  "descripcion": "Oscar Health opera planes de salud individuales bajo la ACA en Estados Unidos, combinando tecnologia cloud-native propia con enfoque diferenciado en experiencia del miembro. Su plataforma +Oscar licencia capacidades de engagement, IA y analytics a proveedores y pagadores (B2B). En 2025 adquirio Lucie, IHC Specialty Benefits y Healthinsurance.org para expandirse al mercado ICHRA. El modelo es intensivo en capital regulatorio y altamente sensible al Medical Loss Ratio y al programa federal de ajuste de riesgo.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "1.84",
+        "3.96",
+        "5.86",
+        "9.18",
+        "11.70",
+        "+27.5%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.57",
+        "-0.61",
+        "-0.27",
+        "0.03",
+        "-0.44",
+        "N/M"
+      ],
+      [
+        "Margen Neto",
+        "-31.0%",
+        "-15.4%",
+        "-4.6%",
+        "0.3%",
+        "-3.8%",
+        "-4.1pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "-0.53",
+        "-0.57",
+        "-0.20",
+        "0.09",
+        "-0.37",
+        "N/M"
+      ],
+      [
+        "FCF (B USD)",
+        "-0.21",
+        "0.35",
+        "-0.30",
+        "0.95",
+        "1.06",
+        "+11.6%"
+      ],
+      [
+        "EPS Diluido",
+        "-3.18",
+        "-2.87",
+        "-1.22",
+        "0.11",
+        "-1.68",
+        "N/M"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-1.10",
+        "-1.26",
+        "-1.57",
+        "-1.23",
+        "-2.34",
+        "+90.2%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A",
+      "signal": "red",
+      "note": "Perdida neta en FY2025",
+      "precio_base": 16.44,
+      "precio_fecha": "2026-04-20",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": -1.68
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "N/A",
+      "signal": "red",
+      "precio_base": 16.44,
+      "precio_fecha": "2026-04-20",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 0
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "N/A",
+      "signal": "red",
+      "precio_base": 16.44,
+      "precio_fecha": "2026-04-20",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": -0.37,
+        "shares_m": 262.4,
+        "deuda_neta_b": -2.34
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "4.1x",
+      "signal": "green",
+      "precio_base": 16.44,
+      "precio_fecha": "2026-04-20",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.06,
+        "shares_m": 262.4
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "Caja Neta",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "N/A",
+      "signal": "red"
+    },
+    {
+      "label": "ROIC",
+      "value": "N/A",
+      "signal": "red"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 1.84,
+        "utilidad": -0.57
+      },
+      {
+        "label": "FY2022",
+        "revenue": 3.96,
+        "utilidad": -0.61
+      },
+      {
+        "label": "FY2023",
+        "revenue": 5.86,
+        "utilidad": -0.27
+      },
+      {
+        "label": "FY2024",
+        "revenue": 9.18,
+        "utilidad": 0.03
+      },
+      {
+        "label": "FY2025",
+        "revenue": 11.7,
+        "utilidad": -0.44
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 11.4,
+        "operativo": -29.3,
+        "neto": -31
+      },
+      {
+        "label": "FY2022",
+        "bruto": 14.1,
+        "operativo": -14.9,
+        "neto": -15.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 16.9,
+        "operativo": -4.1,
+        "neto": -4.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 20.2,
+        "operativo": 0.7,
+        "neto": 0.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 14.4,
+        "operativo": -3.4,
+        "neto": -3.8
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto (100%-MLR)"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "~0 USD",
+        "nota": "Sin programa de recompras activo; foco en preservar capital regulatorio"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0 USD",
+        "nota": "No paga dividendos"
+      },
+      {
+        "label": "Capex",
+        "value": "~40M USD",
+        "nota": "Capex tecnologico bajo; modelo asset-light sobre AWS y Google Cloud"
+      },
+      {
+        "label": "M&A",
+        "value": "~50M USD",
+        "nota": "Adquisiciones ICHRA en 2025: Lucie, IHC Specialty Benefits, Healthinsurance.org"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "OSCR TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "MLR (Medical Loss Ratio)",
+        "87.4%",
+        "~84-87%",
+        "Por encima del sector (desfavorable)"
+      ],
+      [
+        "SGA Expense Ratio",
+        "17.5%",
+        "~15-18%",
+        "En linea con sector"
+      ],
+      [
+        "Revenue Growth",
+        "+27.5%",
+        "~5-10%",
+        "Muy por encima del sector"
+      ],
+      [
+        "P/FCF",
+        "4.1x",
+        "~15-25x",
+        "Valuacion baja refleja riesgo operativo"
+      ],
+      [
+        "Margen Neto",
+        "-3.8%",
+        "~2-5%",
+        "Por debajo del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Regresion significativa en FY2025: reversion a perdidas tras el unico ano rentable (FY2024), impulsada por deterioro del MLR de 570pb y ajuste de riesgo desfavorable.",
+    "analisis": "El MLR escalo a 87.4% desde 81.7% por mayor morbilidad del mercado y ajuste de riesgo neto adverso. A pesar del fuerte crecimiento de ingresos (+27.5%) y miembros (+21.8%), la perdida operativa fue -$396M. El FCF operativo permanece positivo ($1.06B) por el float de primas; la caja neta de $2.34B otorga runway. Sin embargo, el capital estatutario en exceso cayo de $734M a $315M sobre el minimo requerido.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+27.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "MLR",
+        "valor": "87.4% (+570pb)",
+        "status": "bad"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "-3.4%",
+        "status": "bad"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "-3.8%",
+        "status": "bad"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+$110M (+11.6%)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja Neta $2.34B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "FCF positivo y caja neta robusta",
+      "impact": "Alto",
+      "evidence": "FCF $1.06B en FY2025; caja neta $2.34B (cash $2.77B vs deuda $0.43B). Capital estatutario cumple requisitos regulatorios en todos los estados.",
+      "context": "El float de primas genera cash operativo real incluso con perdida contable. El runway financiero es suficiente para absorber 2-3 anos de perdidas al nivel de FY2025 sin necesidad de capital externo inmediato."
+    },
+    {
+      "level": "yellow",
+      "title": "Crecimiento de miembros excepcional pero dependiente de eAPTCs",
+      "impact": "Alto",
+      "evidence": "2.04M miembros en FY2025 (+21.8% YoY). Los eAPTCs expiraron a finales de 2025 sin renovacion confirmada para 2026. Guidance de membership 2026 no publicado al momento del filing.",
+      "context": "La expansion de membership fue parcialmente impulsada por la accesibilidad economica que generan los subsidios federales. Su expiracion podria reducir la base de miembros elegibles y presionar el modelo de crecimiento."
+    },
+    {
+      "level": "red",
+      "title": "Deterioro severo del MLR — reversion a perdidas operativas",
+      "impact": "Alto",
+      "evidence": "MLR 87.4% FY2025 vs 81.7% FY2024. Gastos medicos $10.02B (+37% YoY) superaron el crecimiento de primas (+28%). Perdida operativa -$396M vs ganancia de $57M en FY2024.",
+      "context": "El deterioro refleja mayor morbilidad promedio del mercado y ajuste de riesgo neto desfavorable — factores sistemicos fuera del control de Oscar. Si el MLR no normaliza a ~82-84% en 2026, el modelo financiero se torna insostenible sin capital adicional."
+    },
+    {
+      "level": "red",
+      "title": "Incertidumbre regulatoria ACA — Program Integrity Rules y fin de eAPTCs",
+      "impact": "Alto",
+      "evidence": "CMS impuso reglas de verificacion de elegibilidad mas estrictas, OEPs mas cortos y suspension de ciertos SEPs. Litigio activo (City of Columbus vs. Kennedy) mantiene suspendidas varias disposiciones. eAPTCs expiraron en diciembre 2025.",
+      "context": "Cambios en APTCs, SEPs y procesos de elegibilidad pueden reducir materialmente el enrollment en 2026 y 2027. El entorno politico actual es adverso al mercado ACA, incrementando el riesgo normativo de largo plazo."
+    }
+  ],
+  "score": {
+    "score": 5.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 3,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 3,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Oscar Health busca escalar su plataforma tecnologica de seguros de salud en el mercado ACA, diferenciandose por experiencia del miembro y tecnologia propia. Simultaneamente monetiza su IP via +Oscar (B2B) y diversifica hacia ICHRA con las adquisiciones de 2025. El modelo apunta a la rentabilidad sostenida via escala: a mayor membresia, mejor spread entre primas y costos fijos de tecnologia y SG&A.",
+    "ventajas": "Plataforma tecnologica cloud-native diferenciada construida en 13 anos. NPS superior a competidores tradicionales. Base de datos enriquecida de comportamiento de salud de 2M+ miembros. Posicion de caja neta que da flexibilidad financiera. Crecimiento organico de miembros consistentemente por encima del mercado. Opcion de valor B2B via +Oscar aun no valorada por el mercado.",
+    "debilidades": "Alta sensibilidad al MLR y al programa federal de ajuste de riesgo. Sin poder directo de fijacion de precios (sujeto a regulacion ACA). Dependencia de subsidios gubernamentales (eAPTCs). Capital estatutario con menor excedente tras FY2025. Historial de perdidas recurrente con solo un ano de utilidad (FY2024).",
+    "riesgos": [
+      "Expiracion de eAPTCs sin renovacion: potencial contraccion de 20-30% en membership accesible en 2026",
+      "Persistencia del MLR elevado sobre 85%: si no normaliza, la perdida operativa se profundiza y el capital estatutario se erosiona",
+      "Cambios regulatorios CMS (Program Integrity Rules, OEPs cortos): reduccion estructural del enrollment",
+      "Necesidad de inyecciones de capital a subsidiarias si el capital estatutario cae por debajo del minimo requerido",
+      "Competencia de UnitedHealth (Medicaid), Centene y Molina con mayor escala en el mercado ACA"
+    ],
+    "inversiones_estrategicas": "Adquisiciones 2025 para ICHRA: Lucie (plataforma direct enrollment), IHC Specialty Benefits (brokerage), Healthinsurance.org (educacion). Desarrollo de +Oscar como plataforma B2B de tecnologia de salud con Campaign Builder e IA. Infraestructura cloud distribuida en AWS multi-zona para reducir costos IT a largo plazo."
+  },
+  "verdict": {
+    "status": "Especulativa — Alto Riesgo",
+    "score": "5.2/10",
+    "color": "red",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "11.70B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "-3.8%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "24.6%"
+      },
+      {
+        "label": "P/FCF",
+        "value": "4.1x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+27.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Crecimiento explosivo de revenue** — Revenue crecio de $1.8B en 2021 a $11.7B en 2025 (CAGR ~58%), con base de miembros de 2.04M. La plataforma tecnologica escala con costos marginales decrecientes.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF positivo y caja neta de $2.34B** — A pesar de perdidas contables, el FCF fue $1.06B por el float de primas. La caja neta otorga runway de 5+ anos sin necesidad de financiamiento externo inmediato.",
+        "type": "pro"
+      },
+      {
+        "text": "**Opcionalidad B2B via +Oscar** — La monetizacion de tecnologia a proveedores y pagadores (Campaign Builder, EDE) diversifica el modelo mas alla del riesgo de seguros puro y no esta valorada por el mercado.",
+        "type": "pro"
+      },
+      {
+        "text": "**Deterioro del MLR y riesgo regulatorio critico** — El MLR de 87.4% (+570pb) revirtio la rentabilidad de FY2024. La expiracion de eAPTCs y los cambios de CMS amenazan la base de miembros en 2026. Estos factores son en gran parte exogenos y dificultan la proyeccion de retorno a la rentabilidad.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $11.7B en FY2025 representa crecimiento de 27.5% YoY, impulsado por 21.8% mas miembros (2.04M). CAGR de 4 anos de ~58%, excepcional para el sector de seguros de salud. El pipeline 2026 enfrenta vientos en contra por la expiracion de eAPTCs y cambios en enrollment."
+      },
+      {
+        "label": "Margenes",
+        "texto": "MLR de 87.4% en FY2025 vs 81.7% en 2024 es la principal preocupacion operativa. Margen operativo de -3.4% y margen neto de -3.8%. La mejora tendencial de 2021-2024 fue interrumpida por mayor morbilidad de mercado y ajuste de riesgo adverso. El SG&A ratio mejoro a 17.5% desde 19.1%, demostrando apalancamiento operativo en la base de costos fijos."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $1.06B (+11.6% YoY) es el dato mas constructivo del ejercicio y contradice la narrativa de deterioro puro. El float de primas genera liquidez operativa real incluso con perdida contable. OCF de $1.09B confirma la calidad del modelo de caja. FCF yield de 24.6% es extraordinariamente alto para cualquier sector."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de $2.34B (cash $2.77B vs deuda LT $0.43B). Capital estatutario combinado de $1.0B cumple requisitos regulatorios en todos los estados. El exceso sobre el minimo requerido bajo de $734M a $315M en FY2025, senalizando menor colchon ante escenarios adversos adicionales."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $16.44, OSCR cotiza a 4.1x P/FCF — extraordinariamente bajo si el FCF es sostenible. EV de $1.97B vs revenue de $11.7B implica EV/Revenue de 0.17x. P/E no aplica por perdidas. La valuacion descuenta alta probabilidad de deterioro adicional del MLR y contraccion de membership en 2026. Solo atractiva para inversores con tolerancia alta al riesgo."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "1) Expiracion eAPTCs sin renovacion amenaza el crecimiento de membership en 2026. 2) Si el MLR no normaliza a ~82-84%, las perdidas operativas se profundizan y el capital estatutario se erosiona hacia el minimo regulatorio. 3) Cambios de CMS (Program Integrity Rules, OEPs cortos) pueden limitar enrollment estructuralmente. 4) Dependencia del ajuste de riesgo federal introduce volatilidad fuera del control de la empresa."
+      }
+    ]
+  }
+}

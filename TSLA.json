@@ -1,0 +1,517 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Tesla reporto ingresos de 94.83B USD en FY2025, una caida de -2.9% frente a FY2024, reflejando presion en margenes automotrices y mayor competencia global en EVs. La utilidad neta cayo -46.5% a 3.79B USD por recortes de precios y mayor gasto en IA. El FCF se recupero +73.7% a 6.22B por disciplina en capex. Q1 2026 muestra recuperacion solida: revenue 22.39B (+15.8% YoY), NI 477M (+16.6% YoY), 408K vehiculos producidos y 8.8 GWh de energia desplegada. Tesla mantiene 44.74B en caja al cierre Q1 2026 e invierte en IA, Optimus y Robotaxi como catalizadores de largo plazo.",
+  "descripcion": "Tesla opera en tres segmentos: Automotriz (EVs — Model 3/Y/S/X/Cybertruck/Cybercab), Energia (Megapack, Powerwall, solar) y Servicios. Su moat se basa en integracion vertical de baterias y semiconductores, ecosistema Supercharger con NACS adoptado por Ford/GM/Rivian, y liderazgo en datos de conduccion autonoma con mas de 7 millones de vehiculos generando datos para FSD. Robotaxi en operacion desde jun-2025 en Austin y Optimus en produccion piloto representan opcionalidad significativa en AI-robotica.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "53.82",
+        "81.46",
+        "96.77",
+        "97.69",
+        "94.83",
+        "22.39",
+        "+15.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.52",
+        "12.56",
+        "15.00",
+        "7.09",
+        "3.79",
+        "0.48",
+        "+16.6%"
+      ],
+      [
+        "Margen Neto",
+        "10.3%",
+        "15.4%",
+        "15.5%",
+        "7.3%",
+        "4.0%",
+        "2.1%",
+        "+0.1pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "10.0",
+        "17.9",
+        "13.7",
+        "12.1",
+        "8.9",
+        "2.3",
+        "+20.8%"
+      ],
+      [
+        "FCF (B USD)",
+        "5.01",
+        "7.57",
+        "4.36",
+        "3.58",
+        "6.22",
+        "1.45",
+        "+116.4%"
+      ],
+      [
+        "EPS Diluido",
+        "$1.78",
+        "$3.97",
+        "$4.71",
+        "$2.20",
+        "$1.01",
+        "$0.15",
+        "+16.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-13.3",
+        "-15.2",
+        "-13.7",
+        "-10.6",
+        "-9.9",
+        "-38.2",
+        "N/A"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "372x",
+      "signal": "red",
+      "note": "vs. sector automotriz ~10x",
+      "precio_base": 376.02,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 1.01
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "107x",
+      "signal": "yellow",
+      "note": "consenso FY2026 ~3.50 USD",
+      "precio_base": 376.02,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 3.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "158x",
+      "signal": "red",
+      "precio_base": 376.02,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 8.86,
+        "shares_m": 3751,
+        "deuda_neta_b": 9.93
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "227x",
+      "signal": "red",
+      "precio_base": 376.02,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 6.22,
+        "shares_m": 3751
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "Caja Neta",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "10.5%",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROIC",
+      "value": "13.4%",
+      "signal": "yellow"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 53.82,
+        "utilidad": 5.52
+      },
+      {
+        "label": "FY2022",
+        "revenue": 81.46,
+        "utilidad": 12.56
+      },
+      {
+        "label": "FY2023",
+        "revenue": 96.77,
+        "utilidad": 15
+      },
+      {
+        "label": "FY2024",
+        "revenue": 97.69,
+        "utilidad": 7.09
+      },
+      {
+        "label": "FY2025",
+        "revenue": 94.83,
+        "utilidad": 3.79
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 25.3,
+        "operativo": 12.1,
+        "neto": 10.3
+      },
+      {
+        "label": "FY2022",
+        "bruto": 25.6,
+        "operativo": 16.8,
+        "neto": 15.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 18.2,
+        "operativo": 9.2,
+        "neto": 15.5
+      },
+      {
+        "label": "FY2024",
+        "bruto": 17.9,
+        "operativo": 7.2,
+        "neto": 7.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 18,
+        "operativo": 4.6,
+        "neto": 4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "0B USD",
+        "nota": "Tesla no recompra acciones — reinvierte en capex e IA"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0B USD",
+        "nota": "Sin dividendos — politica de reinversion total"
+      },
+      {
+        "label": "Capex",
+        "value": "8.53B USD",
+        "nota": "FY2025 capex bajo -25% vs 2024; Q1 2026 capex 2.49B"
+      },
+      {
+        "label": "I+D / IA",
+        "value": "~4B USD",
+        "nota": "Inversion creciente en FSD, Dojo, Optimus y semiconductores propios"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "TSLA TTM",
+      "Sector Auto ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "18.0%",
+        "~15%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "4.6%",
+        "~5%",
+        "En linea con sector"
+      ],
+      [
+        "Revenue Growth",
+        "-2.9%",
+        "~3%",
+        "Por debajo del sector"
+      ],
+      [
+        "P/E Forward",
+        "107x",
+        "~8x",
+        "Prima extrema vs. sector tradicional"
+      ],
+      [
+        "ROIC",
+        "13.4%",
+        "~12%",
+        "Ligeramente por encima"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Tesla muestra estres en rentabilidad FY2025 pero Q1 2026 indica recuperacion operacional solida.",
+    "analisis": "Los margenes netos cayeron de 7.3% (2024) a 4.0% (2025) por presion de precios y mayor capex. Q1 2026 confirma recuperacion: revenue +15.8% YoY con NI +16.6%. El balance con 44.74B en caja es fortaleza estructural que respalda la transicion a IA y robotica.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "-2.9% FY2025 / +15.8% Q1-26",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "18.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "4.6%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "4.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+73.7% (6.22B)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta 9.9B FY25 / 38.2B Q1-26",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Recuperacion acelerada Q1 2026",
+      "impact": "Alto",
+      "evidence": "Revenue 22.39B (+15.8% YoY), NI 477M (+16.6%), caja 44.74B",
+      "context": "Primer trimestre post-lanzamiento Robotaxi y produccion Cybercab confirma inflexion operativa real"
+    },
+    {
+      "level": "green",
+      "title": "Balance ultra-solido — caja neta 38.2B",
+      "impact": "Alto",
+      "evidence": "44.74B en caja vs 6.58B LTD al Q1 2026",
+      "context": "Capacidad de invertir en IA, Optimus y expansion sin acceder a mercados de deuda"
+    },
+    {
+      "level": "green",
+      "title": "Ecosistema Supercharger como ventaja estructural",
+      "impact": "Medio",
+      "evidence": "NACS adoptado por Ford, GM, Rivian; red >65K cargadores",
+      "context": "Red de carga genera revenue de terceros y refuerza moat del ecosistema Tesla"
+    },
+    {
+      "level": "yellow",
+      "title": "Compresion severa de margenes 2022-2025",
+      "impact": "Alto",
+      "evidence": "Margen bruto: 25.6% (2022) a 18.0% (2025); margen operativo: 16.8% a 4.6%",
+      "context": "Recortes de precios para competir con BYD y EVs chinos han sacrificado rentabilidad"
+    },
+    {
+      "level": "yellow",
+      "title": "Riesgo arancelario y cadena de suministro",
+      "impact": "Medio",
+      "evidence": "Impacto en segmento Energia mayor al automotriz segun 10-K 2025 y 10-Q Q1 2026",
+      "context": "Politica comercial EE.UU.-China puede encarecer baterias y componentes clave"
+    },
+    {
+      "level": "yellow",
+      "title": "Ejecucion de Optimus y Robotaxi no probada a escala",
+      "impact": "Alto",
+      "evidence": "Robotaxi operando en Austin jun-2025; Cybercab en produccion piloto Q1 2026",
+      "context": "Valuacion actual descuenta escenario optimista de robotica que aun no genera revenue material"
+    },
+    {
+      "level": "red",
+      "title": "Valuacion extrema — P/E 372x trailing, 107x forward",
+      "impact": "Alto",
+      "evidence": "EPS 2025: 1.01 USD con precio 376 USD; EV/EBITDA >150x",
+      "context": "Precio incorpora opcionalidad de Robotaxi, Optimus y FSD global — cualquier decepcion puede generar correccion severa"
+    },
+    {
+      "level": "red",
+      "title": "Riesgo CEO — concentracion y distraccion",
+      "impact": "Medio",
+      "evidence": "Elon Musk lidera Tesla, SpaceX, X, xAI y DOGE simultaneamente",
+      "context": "Periodos de mayor distraccion han coincidido con caidas en entregas; riesgo reputacional de marca"
+    }
+  ],
+  "score": {
+    "score": 6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 5,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Tesla ejecuta una estrategia de plataforma de IA en el mundo fisico: los vehiculos generan datos para entrenar FSD y autonomia, mientras Robotaxi (Cybercab) y Optimus son el siguiente vector de crecimiento. La empresa busca integrar verticalmente su supply chain (baterias propias en Texas, semiconductores Dojo) para reducir costos y aumentar margenes a largo plazo.",
+    "ventajas": "1) Mayor base de datos de conduccion del mundo; 2) Red Supercharger con NACS como estandar de industria; 3) Integracion vertical de baterias, semiconductores y software; 4) Brand premium con OTA y FSD; 5) Caja neta de 38.2B para financiar transicion a IA y robotica.",
+    "debilidades": "1) Margenes brutos en caida desde 25.6% (2022) a 18% (2025); 2) Revenue concentrado en automotriz con presion de BYD; 3) Dependencia del CEO con multiples conflictos de interes; 4) Valuacion extrema sin margen de seguridad; 5) Segmento Energia aun pequeno.",
+    "riesgos": [
+      "Fallo o retraso en escalamiento de Robotaxi/autonomia destruye narrativa de valuacion de IA",
+      "Escalada arancelaria EE.UU.-China encarece supply chain y reduce competitividad vs. BYD",
+      "Guerra de precios en EVs sigue comprimiendo margenes brutos por debajo de 17%",
+      "Riesgo reputacional del CEO que afecte entregas y confianza del mercado en momentos criticos"
+    ],
+    "inversiones_estrategicas": "FSD v13/v14 hacia autonomia total; Cybercab (Robotaxi) en produccion piloto Texas; Optimus en preparacion para produccion masiva; Megapack 3 y nueva Megafactory en Houston; semiconductores propios (Dojo HW3); refineria de litio y catodo propio en Texas."
+  },
+  "verdict": {
+    "status": "Mantener / Especulativo",
+    "score": "6.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue Q1 2026",
+        "value": "22.39B USD"
+      },
+      {
+        "label": "Margen Neto FY2025",
+        "value": "4.0%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "6.22B USD"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "107x"
+      },
+      {
+        "label": "Crecimiento Rev. Q1-26",
+        "value": "+15.8% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Recuperacion Q1 2026** — Revenue +15.8% YoY y NI +16.6% confirman que el piso operativo de FY2025 fue ciclico, no estructural.",
+        "type": "pro"
+      },
+      {
+        "text": "**Caja neta 38.2B** — Balance excepcional que da runway virtualmente ilimitado para ejecutar agenda de IA y robotica sin riesgo financiero.",
+        "type": "pro"
+      },
+      {
+        "text": "**Optimus y Robotaxi como opcionalidad real** — Cybercab en produccion piloto y Robotaxi operando en Austin representan opciones de valor aun no capturadas en financials.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion extrema sin margen de error** — P/E 107x forward y margen neto de 4% exigen ejecucion perfecta en autonomia y robotica. Cualquier decepcion puede generar correccion severa.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 registro 94.83B USD (-2.9% YoY) por presion de precios y competencia. Q1 2026 muestra recuperacion con 22.39B (+15.8% YoY) impulsado por mayor volumen de entregas (358K vehiculos) y energia (8.8 GWh)."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El margen bruto se estabilizo en ~18% en 2024-2025 tras colapsar desde 25.6% en 2022. El margen operativo de 4.6% FY2025 refleja presion de recortes de precios e inversion en IA. Q1 2026 con margen neto de 2.1% aun bajo pero en mejora."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 6.22B en FY2025 (+73.7% YoY) por reduccion de capex. Q1 2026: OCF 3.94B, capex 2.49B, FCF 1.45B. La caja termino Q1 2026 en 44.74B, la mayor de la historia de Tesla."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda de largo plazo de 6.58B vs caja de 44.74B en Q1 2026 — caja neta de 38.2B. Apalancamiento practicamente nulo, flexibilidad total para invertir en Optimus, Dojo y Megapack."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con P/E forward de 107x y EV/EBITDA de 158x, Tesla cotiza como empresa de IA y robotica. El precio de 376 USD descuenta exito de Robotaxi, Optimus y FSD global — narrativa que requiere ejecucion impecable."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "1) Fallo en escalamiento de Robotaxi/autonomia; 2) Aranceles EE.UU.-China en supply chain de baterias; 3) Guerra de precios con BYD que sigue comprimiendo margenes; 4) Riesgo reputacional/distraccion del CEO con multiples proyectos."
+      }
+    ]
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "SanDisk (SNDK) es lider global en almacenamiento NAND flash, separada de Western Digital en febrero 2025 como empresa publica independiente. Opera en mercados de Cloud, Client y Consumer con fuerte recuperacion del margen bruto (7% en FY2023 a 30% en FY2025). Sin embargo, la utilidad neta es negativa por goodwill impairment no-cash de $1.83B. La valuacion de mercado (~$102B) implica expectativas muy altas de recuperacion futura. Recuperacion operativa dramatica en margen bruto (+23pp en 2 anos) y crecimiento de ingresos +10.5% YoY. El catalizador principal es el segmento Cloud (principalmente SSDs para centros de datos con IA), que crecio 195% YoY. Sin embargo, las perdidas netas y la valuacion elevada requieren cautela.",
+  "descripcion": "SanDisk es lider en almacenamiento flash NAND, separada de Western Digital en febrero 2025. Desarrolla y fabrica dispositivos y soluciones de almacenamiento para mercados Cloud, Client y Consumer. Su portfolio incluye SSDs enterprise, tarjetas de memoria, USB flash drives y soluciones embebidas para OEMs. Moat: JV estrategica con Kioxia para manufactura BiCS NAND, marca SanDisk globalmente reconocida, cartera de patentes y relaciones establecidas con hyperscalers y OEMs. Post-separacion de WDC, estrategia enfocada en flash puro con mayor flexibilidad de capital.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "6.09",
+        "6.66",
+        "7.36",
+        "+10.5%"
+      ],
+      [
+        "Utilidad Bruta (B USD)",
+        "0.43",
+        "1.07",
+        "2.21",
+        "+106.5%"
+      ],
+      [
+        "Margen Bruto",
+        "7.1%",
+        "16.1%",
+        "30.1%",
+        "+14.0pp"
+      ],
+      [
+        "EBITDA Ajustado (B USD)",
+        "N/D",
+        "N/D",
+        "0.61",
+        "N/D"
+      ],
+      [
+        "FCF (B USD)",
+        "-0.93",
+        "N/D",
+        "-0.12",
+        "N/D"
+      ],
+      [
+        "EPS GAAP Diluido",
+        "N/D",
+        "N/D",
+        "-11.24",
+        "N/D"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "N/D",
+        "0.37",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A",
+      "signal": "red",
+      "note": "EPS negativo (-11.24 USD)",
+      "precio_base": 701.59,
+      "precio_fecha": "2026-04-02",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": -11.24
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "9.5x",
+      "signal": "green",
+      "note": "No disponible",
+      "precio_base": 851.9,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 90.0868
+      }
+    },
+    {
+      "label": "EV/EBITDA (adj)",
+      "value": "169x",
+      "signal": "red",
+      "note": "EBITDA ajustado excl. goodwill impairment"
+    },
+    {
+      "label": "P/FCF",
+      "value": "N/A",
+      "signal": "red",
+      "note": "FCF negativo (-0.12B USD)"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "30.1%",
+      "signal": "yellow",
+      "note": "Recuperacion desde 7.1% en FY2023"
+    },
+    {
+      "label": "Margen Operativo",
+      "value": "-18.7%",
+      "signal": "red",
+      "note": "GAAP incl. goodwill impairment 1.83B"
+    },
+    {
+      "label": "Margen Neto",
+      "value": "-22.3%",
+      "signal": "red"
+    },
+    {
+      "label": "ROE",
+      "value": "-65.6%",
+      "signal": "red"
+    },
+    {
+      "label": "ROIC (adj.)",
+      "value": "12.4%",
+      "signal": "yellow",
+      "note": "Excl. goodwill impairment"
+    },
+    {
+      "label": "Deuda Neta / EBITDA",
+      "value": "0.6x",
+      "signal": "green",
+      "note": "EBITDA ajustado"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2023",
+        "revenue": 6.09,
+        "utilidad": -1.8
+      },
+      {
+        "label": "FY2024",
+        "revenue": 6.66,
+        "utilidad": -1.1
+      },
+      {
+        "label": "FY2025",
+        "revenue": 7.36,
+        "utilidad": -1.64
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2023",
+        "bruto": 7.1,
+        "operativo": null,
+        "neto": null
+      },
+      {
+        "label": "FY2024",
+        "bruto": 16.1,
+        "operativo": null,
+        "neto": null
+      },
+      {
+        "label": "FY2025",
+        "bruto": 30.1,
+        "operativo": 6.1,
+        "neto": -22.3
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo (adj.)"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex FY2025",
+        "value": "0.20B USD",
+        "nota": "Manufactura y R&D"
+      },
+      {
+        "label": "Dividendos",
+        "value": "No aplica",
+        "nota": "Empresa no paga dividendos - retiene capital para operaciones"
+      },
+      {
+        "label": "Recompras",
+        "value": "N/D",
+        "nota": "Empresa recien independizada (feb 2025)"
+      },
+      {
+        "label": "Prioridad",
+        "value": "Inversion tecnologica + reduccion de deuda",
+        "nota": "Tecnologia NAND, recuperacion de rentabilidad operativa"
+      },
+      {
+        "label": "JV Kioxia",
+        "value": "Activo estrategico",
+        "nota": "Financia parte de la capacidad de manufactura NAND"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Empresa",
+      "EV/EBITDA",
+      "Margen Neto",
+      "Crec. YoY",
+      "Posicion vs. SNDK"
+    ],
+    "rows": [
+      [
+        "SNDK",
+        "169x (adj.)",
+        "-22.3%",
+        "+10.5%",
+        "Valuacion extrema vs. fundamentos"
+      ],
+      [
+        "MU (Micron)",
+        "9.2x",
+        "+12.5%",
+        "+35%",
+        "Mas barato con mejor rentabilidad"
+      ],
+      [
+        "WDC",
+        "8.5x",
+        "+5.2%",
+        "+42%",
+        "Mas barato, mayor crecimiento"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Recuperacion operativa real pero rentabilidad GAAP negativa por goodwill impairment",
+    "analisis": "El margen bruto paso de 7.1% a 30.1% en 2 anos — recuperacion historica. Sin embargo el goodwill impairment de $1.83B distorsiona las metricas GAAP de rentabilidad. El FCF casi alcanzo el break-even (-$0.12B vs. -$0.93B en FY2023).",
+    "items": [
+      {
+        "metrica": "Margen Bruto",
+        "valor": "30.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo (adj.)",
+        "valor": "6.1%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "-22.3%",
+        "status": "bad"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "-0.12B USD",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta / EBITDA (adj)",
+        "valor": "0.6x",
+        "status": "ok"
+      },
+      {
+        "metrica": "Crecimiento YoY",
+        "valor": "10.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "ROE",
+        "valor": "-65.6%",
+        "status": "bad"
+      },
+      {
+        "metrica": "ROIC (adj.)",
+        "valor": "12.4%",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Recuperacion de margen bruto record",
+      "impact": "Alto",
+      "evidence": "Margen bruto de 7.1% (FY2023) a 30.1% (FY2025), +23pp en 2 anos.",
+      "context": "Indica pricing power recuperado y mejora de mix hacia SSDs enterprise de mayor valor."
+    },
+    {
+      "level": "green",
+      "title": "Cloud +195% YoY — catalizador IA",
+      "impact": "Alto",
+      "evidence": "Segmento Cloud crecio de 0.33B a 0.96B en FY2025, impulsado por SSDs para data centers de IA.",
+      "context": "El mercado de SSDs enterprise para IA es el de mayor crecimiento en el sector de almacenamiento."
+    },
+    {
+      "level": "yellow",
+      "title": "Goodwill impairment no-cash 1.83B",
+      "impact": "Medio",
+      "evidence": "Impairment de goodwill en FY2025 que distorsiona utilidad neta y ROE.",
+      "context": "Item no-cash que no afecta el flujo de efectivo operativo pero pesa en metricas GAAP."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF casi break-even",
+      "impact": "Medio",
+      "evidence": "FCF de -0.12B en FY2025 vs. -0.93B en FY2023 — mejora sostenida.",
+      "context": "El FCF positivo es el proximo hito critico para validar la tesis de recuperacion."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion de 102B desconectada de fundamentos",
+      "impact": "Alto",
+      "evidence": "Market cap de 102B con perdidas netas y sin historial independiente (separada feb 2025).",
+      "context": "El mercado descuenta un escenario perfecto de recuperacion que no esta garantizado."
+    },
+    {
+      "level": "red",
+      "title": "Perdidas netas persistentes",
+      "impact": "Alto",
+      "evidence": "Utilidad neta de -1.64B en FY2025 (EPS -11.24). ROE de -65.6%.",
+      "context": "La rentabilidad GAAP sigue siendo negativa, limitando el universo de inversores institucionales."
+    }
+  ],
+  "score": {
+    "score": 4.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 3,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 2,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Riesgo de valuacion",
+        "score": 1,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "La recuperacion de margenes de SNDK es una de las mas rapidas en la historia reciente del sector NAND: el margen bruto paso de 7.1% a 30.1% en solo 2 anos. El catalizador estructural es la demanda de SSDs enterprise para centros de datos con IA, donde el segmento Cloud crecio 195% YoY. El FCF casi alcanzo el break-even. Sin embargo, la valuacion de ~$102B es extremadamente elevada para una empresa con perdidas netas y sin historial independiente. La tesis bull requiere que SNDK alcance margenes operativos sostenidos del 15-20%+ en los proximos 2-3 anos para justificar el precio actual.",
+    "ventajas": "JV estrategica con Kioxia para manufactura BiCS NAND de siguiente generacion. Marca SanDisk globalmente reconocida en consumer y OEM. Cartera de patentes en flash storage. Crecimiento explosivo en SSDs enterprise para IA (+195% YoY en Cloud). Post-separacion, mayor agilidad para partnerships y asignacion de capital.",
+    "debilidades": "Sin historial como empresa independiente (separada feb 2025). Perdidas netas persistentes y goodwill impairment de 1.83B. Dependencia del ciclo NAND de alta volatilidad. Menor escala integrada vs. Samsung y SK Hynix. EV/EBITDA ajustado de 169x refleja expectativas muy elevadas.",
+    "riesgos": [
+      "Perdidas netas persistentes y goodwill impairment de $1.83B en FY2025",
+      "Valuacion de ~$102B desconectada de fundamentos actuales de rentabilidad",
+      "Ciclicidad extrema del mercado NAND",
+      "Competencia de Samsung y SK Hynix con mayor escala integrada",
+      "Sin historial como empresa independiente (separada feb 2025)"
+    ],
+    "inversiones_estrategicas": "Inversion de 0.20B en Capex FY2025 para manufactura y R&D. JV con Kioxia como vehiculo de inversion en capacidad NAND de siguiente generacion. Enfoque en SSDs enterprise y cloud como segmento de alto crecimiento y margenes."
+  },
+  "verdict": {
+    "status": "Especulativo — Alta Valuacion",
+    "score": "4.2/10",
+    "color": "red",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "7.36B USD"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "30.1%"
+      },
+      {
+        "label": "FCF",
+        "value": "-0.12B USD"
+      },
+      {
+        "label": "EV/EBITDA (adj.)",
+        "value": "169x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+10.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Recuperacion operativa real** — El margen bruto paso de 7.1% a 30.1% en 2 anos, una de las recuperaciones mas rapidas en la historia del sector NAND. El segmento Cloud crece +195% YoY impulsado por SSDs para IA.",
+        "type": "pro"
+      },
+      {
+        "text": "**Catalizador estructural IA** — La demanda de SSDs enterprise para centros de datos de IA es un mega-trend secular. SanDisk tiene posicion privilegiada via su JV con Kioxia.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion extrema sin soporte** — Market cap de 102B con perdidas netas, sin historial independiente y EV/EBITDA de 169x. El mercado ya descuenta un escenario perfecto de recuperacion que requiere 2-3 anos de ejecucion impecable.",
+        "type": "con"
+      },
+      {
+        "text": "**Riesgo ciclico y competitivo** — El mercado NAND es altamente ciclico. Samsung y SK Hynix tienen mayor escala integrada. Un deterioro del ciclo puede revertir rapidamente los avances de margen.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": "SanDisk es una historia de recuperacion ciclica acelerada en el mercado NAND con un catalizador real en IA. Los fundamentos operativos mejoran significativamente (margen bruto +23pp en 2 anos, Cloud +195% YoY, FCF casi break-even), pero la valuacion actual de 102B implica expectativas excepcionales que el mercado ya descuenta. Solo para inversores con alta tolerancia al riesgo y horizonte de 2-3 anos. Stop-loss conceptual si el margen bruto retrocede por debajo del 25%."
+}

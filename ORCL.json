@@ -1,0 +1,491 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Oracle Corporation (ORCL) es el lider mundial en software de base de datos empresarial y uno de los principales proveedores de cloud infrastructure (OCI). Con ingresos de 57.4B USD en FY2025 (+8.4% YoY) y margen neto de 21.7%, Oracle combina un negocio de software legacy altamente rentable con crecimiento acelerado en cloud. La transicion hacia OCI y la demanda de infraestructura para IA posicionan a Oracle como uno de los principales beneficiarios del capex de hiperscaladores. El stock merece atencion como posicion de largo plazo con catalizador estructural claro.",
+  "descripcion": "Oracle opera tres segmentos: (1) Cloud and License (86% del revenue FY2025), que incluye Oracle Cloud Services (OCA + OCI) y licencias de software con soporte — el segmento de mayor margen. (2) Hardware (7% del revenue), que vende servidores Exadata en declive estructural. (3) Services (7%), consultoria e implementacion. Oracle Database es el estandar enterprise para OLTP mission-critical con mas del 40% de cuota de mercado y switching costs de anos. OCI crece a mas del 50% YoY impulsado por contratos GPU con OpenAI, xAI y otros actores de IA generativa. La adquisicion de Cerner (2022, 28B) anade una vertical de salud digital. Presencia global con mas del 50% del revenue en Americas.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "40.5",
+        "42.4",
+        "50.0",
+        "53.0",
+        "57.4",
+        "+8.4%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "13.8",
+        "6.7",
+        "8.5",
+        "10.5",
+        "12.4",
+        "+18.8%"
+      ],
+      [
+        "Margen Neto",
+        "34.0%",
+        "15.8%",
+        "17.0%",
+        "19.8%",
+        "21.7%",
+        "+1.9pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "18.4",
+        "14.4",
+        "17.9",
+        "19.9",
+        "23.2",
+        "+16.6%"
+      ],
+      [
+        "FCF (B USD)",
+        "13.8",
+        "5.0",
+        "8.5",
+        "11.8",
+        "-0.4",
+        "N/D"
+      ],
+      [
+        "EPS Diluido",
+        "4.89",
+        "2.52",
+        "3.13",
+        "3.80",
+        "4.43",
+        "+16.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "57.3",
+        "-21.4",
+        "78.2",
+        "80.6",
+        "77.2",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "32.9x",
+      "signal": "yellow",
+      "note": "vs. sector software ~30x",
+      "precio_base": 145.54,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.43
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "29.3x",
+      "signal": "yellow",
+      "precio_base": 145.54,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 4.96
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "20.9x",
+      "signal": "yellow",
+      "precio_base": 145.54,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 23.2,
+        "shares_m": 2807,
+        "deuda_neta_b": 77.2
+      }
+    },
+    {
+      "label": "P/FCF (normalizado)",
+      "value": "40.4x",
+      "signal": "red",
+      "note": "FCF FY2025 negativo por capex OCI; usando promedio FY2023-2024",
+      "precio_base": 145.54,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 10.1,
+        "shares_m": 2807
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "3.3x",
+      "signal": "yellow",
+      "note": "Deuda elevada post-Cerner + capex OCI"
+    },
+    {
+      "label": "ROE",
+      "value": ">100%",
+      "signal": "yellow",
+      "note": "Equity negativo por buybacks acumulados — metrica distorsionada"
+    },
+    {
+      "label": "ROIC",
+      "value": "20.3%",
+      "signal": "green"
+    },
+    {
+      "label": "FCF Yield",
+      "value": "Negativo FY2025",
+      "signal": "yellow",
+      "note": "Capex OCI de 21.2B supero OCF de 20.8B; transitorio"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 40.48,
+        "utilidad": 13.75
+      },
+      {
+        "label": "FY2022",
+        "revenue": 42.44,
+        "utilidad": 6.72
+      },
+      {
+        "label": "FY2023",
+        "revenue": 49.95,
+        "utilidad": 8.5
+      },
+      {
+        "label": "FY2024",
+        "revenue": 52.96,
+        "utilidad": 10.47
+      },
+      {
+        "label": "FY2025",
+        "revenue": 57.4,
+        "utilidad": 12.44
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 79.3,
+        "operativo": 37.6,
+        "neto": 34
+      },
+      {
+        "label": "FY2022",
+        "bruto": 75.9,
+        "operativo": 25.8,
+        "neto": 15.8
+      },
+      {
+        "label": "FY2023",
+        "bruto": 77.7,
+        "operativo": 26.2,
+        "neto": 17
+      },
+      {
+        "label": "FY2024",
+        "bruto": 78.2,
+        "operativo": 29,
+        "neto": 19.8
+      },
+      {
+        "label": "FY2025",
+        "bruto": 79.4,
+        "operativo": 30.8,
+        "neto": 21.7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex / OCI",
+        "value": "21.2B USD",
+        "nota": "Inversion record en data centers para OCI en FY2025; supero OCF generando FCF negativo por primera vez — senala la magnitud del compromiso con infraestructura de IA"
+      },
+      {
+        "label": "Dividendos",
+        "value": "4.7B USD",
+        "nota": "Dividendo trimestral de 0.40 USD/accion; yield ~1.1% — retorno marginal, Oracle prioriza crecimiento sobre yield"
+      },
+      {
+        "label": "Recompras",
+        "value": "0.6B USD",
+        "nota": "Buybacks drasticamente reducidos en FY2025 vs 20.9B en FY2021; capital libre se destina a capex de OCI y servicio de deuda"
+      },
+      {
+        "label": "M&A",
+        "value": "Cerner 28B (FY2022)",
+        "nota": "Adquisicion transformacional en health IT; no se anticipan grandes M&A en el corto plazo dado nivel de deuda y foco en OCI"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "ORCL TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "79.4%",
+        "~70-75%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "30.8%",
+        "~25%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth YoY",
+        "+8.4%",
+        "~8-12%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "29.3x",
+        "~28-32x",
+        "En linea — premium justificado por OCI"
+      ],
+      [
+        "ROIC",
+        "20.3%",
+        "~15%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Oracle muestra momentum financiero solido con aceleracion en cloud y expansion de margenes; el FCF negativo en FY2025 es transitorio y esta explicado por el capex record en OCI.",
+    "analisis": "Los indicadores financieros son positivos en su conjunto. Revenue crece +8.4% YoY con aceleracion en cloud services. Los margenes operativo y neto se expandieron frente a FY2024. El FCF negativo en FY2025 es consecuencia directa del capex de 21.2B en infraestructura OCI — una inversion deliberada con retorno esperado en 2-3 anos. La deuda neta de 77B es elevada pero manejable dado el OCF de 20.8B.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+8.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "79.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "30.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "21.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF FY2025",
+        "valor": "-0.4B USD",
+        "status": "warn",
+        "nota": "Capex OCI 21.2B supero OCF 20.8B; transitorio segun mgmt"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "77.2B USD",
+        "status": "warn",
+        "nota": "ND/EBITDA ~3.3x — manejable pero limita flexibilidad"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Backlog IA y OCI superior a 130B USD",
+      "impact": "Alto",
+      "evidence": "Oracle reporto en Q3 FY2025 un backlog de contratos cloud de mas de 130B USD, incluyendo acuerdos con OpenAI, xAI, Meta y NVIDIA para GPU clusters en OCI.",
+      "context": "Da visibilidad de revenue de 3-5 anos sin precedente para una empresa de infraestructura; justifica el capex agresivo y reduce el riesgo de desaceleracion abrupta."
+    },
+    {
+      "level": "green",
+      "title": "Moat irrompible en Oracle Database",
+      "impact": "Alto",
+      "evidence": "Oracle Database controla mas del 40% del mercado RDBMS enterprise; tasa de renovacion de soporte superior al 95%; migrar a competidor cuesta anos y cientos de millones para empresas grandes.",
+      "context": "Garantia de flujos de caja predecibles y crecientes por pricing power estructural — la base que financia la expansion en OCI sin depender del exito inmediato del cloud."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF negativo por capex OCI en FY2025",
+      "impact": "Medio",
+      "evidence": "Capex de 21.2B USD en FY2025 supero el OCF de 20.8B; FCF = -0.4B, la primera vez negativo en la historia reciente de Oracle.",
+      "context": "Es una inversion deliberada y estrategica, no un deterioro operativo. Pero si OCI no escala al ritmo proyectado, el perfil de deuda se volveria critico."
+    },
+    {
+      "level": "red",
+      "title": "Competencia hiperscaladores en IaaS",
+      "impact": "Alto",
+      "evidence": "AWS (~31%), Azure (~25%) y GCP (~11%) dominan el mercado IaaS global; OCI tiene menos del 5% de cuota y parte desde una posicion de challenger.",
+      "context": "Oracle compite con ventaja de precio/performance solo en workloads Oracle-native; en el mercado IaaS general su ecosistema de servicios es significativamente menor que el de los lideres."
+    }
+  ],
+  "score": {
+    "score": 7.6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Oracle ejecuta una estrategia de tres pilares: (1) defender y crecer el moat de database migrando clientes on-premise a Oracle Database en entornos multicloud para capturar ARR incremental; (2) escalar OCI como la infraestructura cloud preferida para workloads Oracle y para training/inference de IA con GPUs H100/H200, con contratos ya firmados con los principales actores de IA; y (3) monetizar Cerner para construir el sistema operativo de la salud digital apalancando datos clinicos con IA. El CEO Safra Catz tiene como objetivo declarado llevar los revenues a ~100B USD antes de FY2029, implicando un CAGR de ~15%.",
+    "ventajas": "Tres moats superpuestos: (a) switching cost extremo en base de datos — migrar de Oracle Database puede costar anos y cientos de millones para una empresa grande; las aplicaciones criticas de negocio estan construidas sobre Oracle; (b) efectos de red en el ecosistema — consultores, integradores, aplicaciones ERP/HCM/SCM y partners certificados crean lock-in adicional; (c) ventaja de precio/performance en OCI para workloads Oracle-native que corren hasta 10x mas barato que en AWS/Azure. Ademas, acuerdos de interoperabilidad con Microsoft Azure, Google Cloud y AWS permiten a clientes correr Oracle Database en nubes competidoras, eliminando friccion de migracion y expandiendo el TAM.",
+    "debilidades": "El negocio de Hardware (servidores Exadata) declina estructuralmente y es marginal al futuro de la empresa. La cuota de OCI en el mercado IaaS general es muy pequena frente a los tres hiperscaladores. La deuda neta de 77B limita la capacidad de grandes adquisiciones adicionales. La dependencia en pocos contratos de hiperescala para IA concentra riesgo de renovacion.",
+    "riesgos": [
+      "Competencia IaaS: AWS, Azure y GCP tienen ventajas de escala, ecosistema de servicios y marca consolidada; si OCI no logra diferenciar su oferta mas alla de workloads Oracle-native, el crecimiento podria desacelerarse a medida que se agota el mercado addressable natural.",
+      "Ejecucion Cerner: la integracion de un sistema hospitalario legacy es compleja y en un mercado altamente regulado; retrasos en la modernizacion cloud podrian resultar en writedowns y perdida de clientes de salud que tengan alternativas competitivas.",
+      "Concentracion en contratos IA: los acuerdos con OpenAI, xAI y similares representan una porcion creciente del backlog; la no-renovacion o reduccion de escala de estos contratos tendria impacto material en el crecimiento de OCI.",
+      "Nivel de deuda en ciclo adverso: con 77B de deuda neta y 88B de deuda bruta, un entorno de tasas altas prolongado o una recesion que reduzca el gasto IT corporativo podrian comprimir el margen de maniobra financiero, forzando reducciones de capex."
+    ],
+    "inversiones_estrategicas": "Capex de 21.2B USD en FY2025 (vs. 6.9B en FY2024, mas del triple) refleja la construccion acelerada de data centers para OCI en multiples regiones. R&D ronda el 14% del revenue (~8B USD) enfocado en Oracle Database 23ai con capacidades de IA embebidas, Oracle Fusion Cloud con Fusion Data Intelligence, y la plataforma OCI AI. La adquisicion de Cerner (28B, FY2022) es la mayor de la historia de Oracle y representa la apuesta por el mercado de health IT estimado en 500B USD a nivel global."
+  },
+  "verdict": {
+    "status": "Compra con Conviccion en Correcciones",
+    "score": "7.6/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "57.4B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "21.7%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "Neg. transitorio"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "29.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+8.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Backlog IA superior a 130B USD** — Contratos multianual con OpenAI, xAI y Meta para GPU clusters en OCI dan visibilidad de revenue de 3-5 anos con alta certeza de ejecucion; es el catalizador mas potente del sector cloud.",
+        "type": "pro"
+      },
+      {
+        "text": "**Moat de database irrompible** — Oracle Database con mas del 40% de cuota en OLTP enterprise y switching costs de anos garantiza cash flow predecible y creciente que financia la expansion en OCI sin depender del exito inmediato del cloud.",
+        "type": "pro"
+      },
+      {
+        "text": "**Expansion de margenes sostenida** — Margen neto sube de 19.8% a 21.7% YoY y margen operativo de 29.0% a 30.8%; el mix de cloud de mayor margen compensa el capex intensivo, senalando apalancamiento operativo positivo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Deuda neta 77B y FCF negativo** — El nivel de deuda post-Cerner y el capex record en OCI convirtieron el FCF en negativo en FY2025; si OCI no escala al ritmo proyectado en FY2026-2027, el perfil financiero se deteriora y el multiple se comprime.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Oracle reporto revenues de 57.4B USD en FY2025 (+8.4% YoY), con aceleracion en cloud services que representaron el 41% del total y crecieron mas del 24% YoY. El segmento Cloud and License (86% del revenue) es el motor de crecimiento, mientras Hardware y Services son maduros o en declive."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto en torno al 79.5%, reflejo del alto mix de software y cloud. Margen operativo se expande a 30.8% (vs 29.0% en FY2024) y margen neto a 21.7% (vs 19.8%), evidenciando apalancamiento operativo positivo incluso con el capex agresivo en OCI."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF solido de 20.8B USD, pero el capex de 21.2B convirtio el FCF en -0.4B en FY2025. Es una inversion deliberada y estrategica en infraestructura OCI; el management proyecta retorno al FCF positivo en FY2026 conforme el capex se normalice."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 77.2B USD con deuda bruta de ~88B, resultado de la adquisicion de Cerner y el capex en OCI. ND/EBITDA ~3.3x es elevado para el sector pero manejable dado el OCF predecible del negocio de licencias. Se espera desapalancamiento gradual en FY2026-2027."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con P/E forward de 29.3x y EV/EBITDA de 20.9x, Oracle cotiza con prima frente al software legacy pero con descuento frente a hiperscaladores puros. La prima esta justificada por el backlog de IA y el crecimiento de OCI. Precio objetivo 12M en rango 165-180 USD asumiendo multiple de 30x EPS FY2026 estimado de 5.5-6.0 USD."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los dos riesgos mas relevantes: (1) competencia de hiperscaladores en IaaS — si OCI no logra diferenciar mas alla de workloads Oracle-native, el crecimiento decepcionara; (2) nivel de deuda — con 88B de deuda bruta, cualquier deterioro en la generacion de caja o ciclo economico adverso podria presionar el balance y forzar reduccion de capex."
+      }
+    ]
+  }
+}

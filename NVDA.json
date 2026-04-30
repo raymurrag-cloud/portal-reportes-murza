@@ -2,84 +2,337 @@
   "resumen": "NVIDIA (NVDA) reporto ingresos record de $130.5B en FY2025, un crecimiento de +114% interanual impulsado por la demanda explosiva de GPUs para inteligencia artificial y centros de datos. Con un margen neto de 55.8% y un free cash flow de $60.9B, NVIDIA es la empresa mas rentable del sector tecnologico. El balance es solido con deuda neta negativa de -$34.7B (mas caja que deuda). Veredicto: Comprar con Conviccion.",
   "descripcion": "NVIDIA Corporation disena y vende unidades de procesamiento grafico (GPUs), sistemas de computo acelerado y software relacionado. Sus principales segmentos son Data Center (plataformas de IA, supercomputacion) y Gaming (GPUs para consumidores). La empresa genera ingresos principalmente a traves de ventas de hardware (chips H100, H200, Blackwell B200) a hiperescaladores como Microsoft, Amazon, Google y Meta, asi como a empresas de computacion en la nube y gobiernos. Fundada en 1993 y domiciliada en Santa Clara, California, cotiza en el NASDAQ bajo el ticker NVDA. Con una participacion de mercado superior al 80% en GPUs para IA, NVIDIA ha establecido un moat tecnologico y ecosistema de software (CUDA) virtualmente imposible de replicar en el corto plazo.",
   "tabla": {
-    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", "16.7", "26.9", "27.0", "60.9", "130.5", "+114%"],
-      ["Utilidad Neta ($B)", "4.3", "9.8", "4.4", "29.8", "72.9", "+145%"],
-      ["Margen Neto (%)", "25.9%", "36.2%", "16.2%", "48.8%", "55.8%", "+7.0pp"],
-      ["EBITDA ($B)", "4.9", "10.7", "5.1", "34.0", "83.7", "+146%"],
-      ["FCF ($B)", "N/D", "8.1", "3.8", "27.0", "60.9", "+125%"],
-      ["EPS GAAP (split-adj)", "$0.69", "$0.39", "$0.17", "$1.19", "$2.94", "+147%"],
-      ["Deuda Neta ($B)", "-4.6", "-5.3", "-3.5", "-33.1", "-34.7", "Mejora"]
+      [
+        "Revenue ($B)",
+        "16.7",
+        "26.9",
+        "27.0",
+        "60.9",
+        "130.5",
+        "+114%"
+      ],
+      [
+        "Utilidad Neta ($B)",
+        "4.3",
+        "9.8",
+        "4.4",
+        "29.8",
+        "72.9",
+        "+145%"
+      ],
+      [
+        "Margen Neto (%)",
+        "25.9%",
+        "36.2%",
+        "16.2%",
+        "48.8%",
+        "55.8%",
+        "+7.0pp"
+      ],
+      [
+        "EBITDA ($B)",
+        "4.9",
+        "10.7",
+        "5.1",
+        "34.0",
+        "83.7",
+        "+146%"
+      ],
+      [
+        "FCF ($B)",
+        "N/D",
+        "8.1",
+        "3.8",
+        "27.0",
+        "60.9",
+        "+125%"
+      ],
+      [
+        "EPS GAAP (split-adj)",
+        "$0.69",
+        "$0.39",
+        "$0.17",
+        "$1.19",
+        "$2.94",
+        "+147%"
+      ],
+      [
+        "Deuda Neta ($B)",
+        "-4.6",
+        "-5.3",
+        "-3.5",
+        "-33.1",
+        "-34.7",
+        "Mejora"
+      ]
     ]
   },
   "kpis": [
-    { "label": "P/E TTM", "value": "34.2x", "change": "vs. ~60x hace 1 ano", "signal": "yellow", "note": "vs. sector semis ~25x" },
-    { "label": "P/E Forward", "value": "20.2x", "signal": "yellow", "note": "descuento significativo vs. TTM" },
-    { "label": "EV/EBITDA", "value": "30.2x", "signal": "yellow", "note": "premium por liderazgo en IA" },
-    { "label": "P/FCF", "value": "42.1x", "signal": "yellow", "note": "FCF yield 2.4%" },
-    { "label": "Deuda/EBITDA", "value": "0.09x", "signal": "green", "note": "balance virtualmente libre de deuda" },
-    { "label": "ROE", "value": "101.5%", "signal": "green", "note": "excepcional vs. sector ~20-30%" },
-    { "label": "ROIC", "value": "126.3%", "signal": "green", "note": "retorno sobre capital invertido record" }
+    {
+      "label": "P/E Trailing",
+      "value": "37.5x",
+      "change": "vs. ~60x hace 1 ano",
+      "signal": "red",
+      "note": "vs. sector semis ~25x",
+      "precio_base": 183.61,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.9
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "16.5x",
+      "signal": "green",
+      "note": "descuento significativo vs. TTM",
+      "precio_base": 183.77,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 11.1164
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "30.2x",
+      "signal": "yellow",
+      "note": "premium por liderazgo en IA"
+    },
+    {
+      "label": "P/FCF",
+      "value": "42.1x",
+      "signal": "yellow",
+      "note": "FCF yield 2.4%"
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "0.09x",
+      "signal": "green",
+      "note": "balance virtualmente libre de deuda"
+    },
+    {
+      "label": "ROE",
+      "value": "101.5%",
+      "signal": "green",
+      "note": "excepcional vs. sector ~20-30%"
+    },
+    {
+      "label": "ROIC",
+      "value": "126.3%",
+      "signal": "green",
+      "note": "retorno sobre capital invertido record"
+    }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "FY2021", "revenue": 16.7, "utilidad": 4.3 },
-      { "label": "FY2022", "revenue": 26.9, "utilidad": 9.8 },
-      { "label": "FY2023", "revenue": 27.0, "utilidad": 4.4 },
-      { "label": "FY2024", "revenue": 60.9, "utilidad": 29.8 },
-      { "label": "FY2025", "revenue": 130.5, "utilidad": 72.9 }
+      {
+        "label": "FY2021",
+        "revenue": 16.7,
+        "utilidad": 4.3
+      },
+      {
+        "label": "FY2022",
+        "revenue": 26.9,
+        "utilidad": 9.8
+      },
+      {
+        "label": "FY2023",
+        "revenue": 27,
+        "utilidad": 4.4
+      },
+      {
+        "label": "FY2024",
+        "revenue": 60.9,
+        "utilidad": 29.8
+      },
+      {
+        "label": "FY2025",
+        "revenue": 130.5,
+        "utilidad": 72.9
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "FY2021", "bruto": 62.3, "operativo": 27.2, "neto": 25.9 },
-      { "label": "FY2022", "bruto": 64.9, "operativo": 37.3, "neto": 36.2 },
-      { "label": "FY2023", "bruto": 56.9, "operativo": 15.7, "neto": 16.2 },
-      { "label": "FY2024", "bruto": 72.7, "operativo": 54.1, "neto": 48.8 },
-      { "label": "FY2025", "bruto": 75.0, "operativo": 62.4, "neto": 55.8 }
+      {
+        "label": "FY2021",
+        "bruto": 62.3,
+        "operativo": 27.2,
+        "neto": 25.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 64.9,
+        "operativo": 37.3,
+        "neto": 36.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 56.9,
+        "operativo": 15.7,
+        "neto": 16.2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 72.7,
+        "operativo": 54.1,
+        "neto": 48.8
+      },
+      {
+        "label": "FY2025",
+        "bruto": 75,
+        "operativo": 62.4,
+        "neto": 55.8
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Bruto" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
-      { "label": "Recompra de acciones", "value": "$33.7B", "nota": "FY2025: devolucion masiva de capital a accionistas; $50B adicional autorizado en agosto 2024" },
-      { "label": "Dividendos", "value": "$0.83B", "nota": "Dividend yield ~0.02%; prioridad es recompras" },
-      { "label": "Capex", "value": "$3.2B", "nota": "2.5% del revenue; modelo fabless, sin fabricas propias (TSMC fabrica los chips)" },
-      { "label": "M&A / Adquisiciones", "value": "N/D", "nota": "Intento de adquirir Arm Holdings fue bloqueado por reguladores en 2022; sin grandes M&A en FY2025" }
+      {
+        "label": "Recompra de acciones",
+        "value": "$33.7B",
+        "nota": "FY2025: devolucion masiva de capital a accionistas; $50B adicional autorizado en agosto 2024"
+      },
+      {
+        "label": "Dividendos",
+        "value": "$0.83B",
+        "nota": "Dividend yield ~0.02%; prioridad es recompras"
+      },
+      {
+        "label": "Capex",
+        "value": "$3.2B",
+        "nota": "2.5% del revenue; modelo fabless, sin fabricas propias (TSMC fabrica los chips)"
+      },
+      {
+        "label": "M&A / Adquisiciones",
+        "value": "N/D",
+        "nota": "Intento de adquirir Arm Holdings fue bloqueado por reguladores en 2022; sin grandes M&A en FY2025"
+      }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "NVDA FY25", "Sector Semis ref.", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "NVDA FY25",
+      "Sector Semis ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Gross margin", "75.0%", "~50-55%", "Por encima del sector"],
-      ["Margen operativo", "62.4%", "~20-25%", "Por encima del sector"],
-      ["Revenue growth YoY", "+114%", "~10-15%", "Por encima del sector"],
-      ["P/E forward", "20.2x", "~18-22x", "En linea con sector"],
-      ["ROIC", "126.3%", "~15-25%", "Por encima del sector"],
-      ["Deuda/EBITDA", "0.09x", "~0.5-1.5x", "Por encima del sector"]
+      [
+        "Gross margin",
+        "75.0%",
+        "~50-55%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen operativo",
+        "62.4%",
+        "~20-25%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue growth YoY",
+        "+114%",
+        "~10-15%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E forward",
+        "20.2x",
+        "~18-22x",
+        "En linea con sector"
+      ],
+      [
+        "ROIC",
+        "126.3%",
+        "~15-25%",
+        "Por encima del sector"
+      ],
+      [
+        "Deuda/EBITDA",
+        "0.09x",
+        "~0.5-1.5x",
+        "Por encima del sector"
+      ]
     ]
   },
   "deterioro": {
     "veredicto": "No se detecta deterioro operativo significativo",
     "analisis": "Todos los indicadores clave mejoran de forma consistente en FY2025. Los margenes alcanzaron maximos historicos, el FCF crecio +125% y la deuda neta negativa se mantiene solida. El unico punto de atencion es la concentracion de ingresos en Data Center (88% del revenue) que implica dependencia de ciclo de inversion en IA.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+114%", "status": "ok" },
-      { "metrica": "Margen bruto", "valor": "75.0%", "status": "ok" },
-      { "metrica": "Margen operativo", "valor": "62.4%", "status": "ok" },
-      { "metrica": "Margen neto", "valor": "55.8%", "status": "ok" },
-      { "metrica": "FCF conversion", "valor": "83% del net income", "status": "ok" },
-      { "metrica": "Deuda LT", "valor": "$8.5B", "status": "ok", "nota": "cubierta 5x por caja disponible" },
-      { "metrica": "Concentracion Data Center", "valor": "88% del revenue", "status": "warn", "nota": "alta dependencia de un solo segmento" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+114%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen bruto",
+        "valor": "75.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen operativo",
+        "valor": "62.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen neto",
+        "valor": "55.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF conversion",
+        "valor": "83% del net income",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda LT",
+        "valor": "$8.5B",
+        "status": "ok",
+        "nota": "cubierta 5x por caja disponible"
+      },
+      {
+        "metrica": "Concentracion Data Center",
+        "valor": "88% del revenue",
+        "status": "warn",
+        "nota": "alta dependencia de un solo segmento"
+      }
     ]
   },
   "flags": [
@@ -144,11 +397,31 @@
     "score": 9.4,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 10, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 10, "max": 10 },
-      { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
-      { "label": "Generacion de FCF", "score": 9, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
@@ -169,27 +442,72 @@
     "score": "9.4/10",
     "color": "green",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$130.5B" },
-      { "label": "Margen Neto", "value": "55.8%" },
-      { "label": "FCF Yield", "value": "2.4%" },
-      { "label": "P/E Forward", "value": "20.2x" },
-      { "label": "Crecimiento Rev.", "value": "+114% YoY" }
+      {
+        "label": "Revenue TTM",
+        "value": "$130.5B"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "55.8%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.4%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "20.2x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+114% YoY"
+      }
     ],
     "bullets": [
-      { "text": "**Monopolio de IA con moat inexpugnable ->** CUDA tiene 20+ anos de adopcion; >80% cuota de mercado en GPUs para IA; revenue Data Center de $115B en FY2025 (+142% YoY).", "type": "pro" },
-      { "text": "**Margenes en maximos historicos ->** Margen neto de 55.8% y operativo de 62.4%, imposibles de alcanzar por cualquier competidor de semiconductores. FCF de $60.9B en un solo ano.", "type": "pro" },
-      { "text": "**Balance fortaleza ->** Deuda neta negativa de -$34.7B; $43.2B en caja; Debt/EBITDA de 0.09x; $33.7B devueltos a accionistas en recompras en FY2025.", "type": "pro" },
-      { "text": "**Riesgo de ciclo y competencia ->** 88% del revenue concentrado en Data Center; si el ciclo de inversion en IA desacelera o competidores (AMD, chips propios de hiperescaladores) ganan traccion, el premium de valuacion podria comprimirse significativamente.", "type": "con" }
+      {
+        "text": "**Monopolio de IA con moat inexpugnable ->** CUDA tiene 20+ anos de adopcion; >80% cuota de mercado en GPUs para IA; revenue Data Center de $115B en FY2025 (+142% YoY).",
+        "type": "pro"
+      },
+      {
+        "text": "**Margenes en maximos historicos ->** Margen neto de 55.8% y operativo de 62.4%, imposibles de alcanzar por cualquier competidor de semiconductores. FCF de $60.9B en un solo ano.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance fortaleza ->** Deuda neta negativa de -$34.7B; $43.2B en caja; Debt/EBITDA de 0.09x; $33.7B devueltos a accionistas en recompras en FY2025.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo de ciclo y competencia ->** 88% del revenue concentrado en Data Center; si el ciclo de inversion en IA desacelera o competidores (AMD, chips propios de hiperescaladores) ganan traccion, el premium de valuacion podria comprimirse significativamente.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
-      { "label": "Ingresos", "texto": "Revenue de $130.5B en FY2025 representa el mayor crecimiento en la historia de la empresa (+114% YoY). El driver es Data Center con $115.2B, impulsado por chips H100/H200/Blackwell para entrenar y correr modelos de IA. Gaming genero $11.4B (+9% YoY). El guidance para FY2026 apunta a crecimiento adicional con Blackwell en plena rampa de produccion." },
-      { "label": "Margenes", "texto": "Margen bruto: 75.0% (vs. 72.7% FY2024), margen operativo: 62.4% (vs. 54.1%), margen neto: 55.8% (vs. 48.8%). La expansion de margenes es continua conforme escala el revenue y mejora el mix hacia Data Center premium. Son los margenes mas altos en la historia de NVIDIA y de cualquier empresa de semiconductores a gran escala." },
-      { "label": "EPS", "texto": "EPS GAAP diluted de $2.94 en FY2025 (ajustado por split 10:1 de junio 2024), +147% vs. $1.19 en FY2024. La calidad de las ganancias es alta: FCF de $60.9B representa el 83% del net income GAAP, indicando que las utilidades se convierten efectivamente en caja. Las recompras de acciones ($33.7B) han reducido el share count, aportando crecimiento adicional de EPS." },
-      { "label": "Balance", "texto": "Total assets de $111.6B al 26-ene-2025 (+70% YoY). Shareholders equity de $79.3B. Cash + inversiones de $43.2B vs. deuda total de $8.5B (Long-term: $8.5B, sin deuda de corto plazo). Deuda neta negativa de -$34.7B. Debt/EBITDA de solo 0.09x. El balance es uno de los mas solidos del S&P 500." },
-      { "label": "Generacion de caja", "texto": "Operating cash flow de $64.1B (+128% YoY) sobre revenue de $130.5B implica conversion del 49%. Capex de solo $3.2B (modelo fabless, TSMC paga la manufactura). FCF de $60.9B. La empresa devolvio $34.5B a accionistas (recompras $33.7B + dividendos $0.83B) y mantiene $43.2B en caja para oportunidades estrategicas." },
-      { "label": "Riesgos principales", "texto": "1) Ciclo de IA: el revenue de NVIDIA depende en un 88% de que los hiperescaladores continuen invirtiendo agresivamente en infraestructura de IA; una desaceleracion podria reducir el revenue 20-40%. 2) Restricciones de exportacion: China y otras regiones restringidas representan ingresos perdidos y el riesgo regulatorio es persistente. 3) Competencia a largo plazo: Amazon, Google y Microsoft estan construyendo chips propios; si logran paridad de performance en 3-5 anos, erosionaran el pricing power de NVIDIA." }
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $130.5B en FY2025 representa el mayor crecimiento en la historia de la empresa (+114% YoY). El driver es Data Center con $115.2B, impulsado por chips H100/H200/Blackwell para entrenar y correr modelos de IA. Gaming genero $11.4B (+9% YoY). El guidance para FY2026 apunta a crecimiento adicional con Blackwell en plena rampa de produccion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto: 75.0% (vs. 72.7% FY2024), margen operativo: 62.4% (vs. 54.1%), margen neto: 55.8% (vs. 48.8%). La expansion de margenes es continua conforme escala el revenue y mejora el mix hacia Data Center premium. Son los margenes mas altos en la historia de NVIDIA y de cualquier empresa de semiconductores a gran escala."
+      },
+      {
+        "label": "EPS",
+        "texto": "EPS GAAP diluted de $2.94 en FY2025 (ajustado por split 10:1 de junio 2024), +147% vs. $1.19 en FY2024. La calidad de las ganancias es alta: FCF de $60.9B representa el 83% del net income GAAP, indicando que las utilidades se convierten efectivamente en caja. Las recompras de acciones ($33.7B) han reducido el share count, aportando crecimiento adicional de EPS."
+      },
+      {
+        "label": "Balance",
+        "texto": "Total assets de $111.6B al 26-ene-2025 (+70% YoY). Shareholders equity de $79.3B. Cash + inversiones de $43.2B vs. deuda total de $8.5B (Long-term: $8.5B, sin deuda de corto plazo). Deuda neta negativa de -$34.7B. Debt/EBITDA de solo 0.09x. El balance es uno de los mas solidos del S&P 500."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "Operating cash flow de $64.1B (+128% YoY) sobre revenue de $130.5B implica conversion del 49%. Capex de solo $3.2B (modelo fabless, TSMC paga la manufactura). FCF de $60.9B. La empresa devolvio $34.5B a accionistas (recompras $33.7B + dividendos $0.83B) y mantiene $43.2B en caja para oportunidades estrategicas."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "1) Ciclo de IA: el revenue de NVIDIA depende en un 88% de que los hiperescaladores continuen invirtiendo agresivamente en infraestructura de IA; una desaceleracion podria reducir el revenue 20-40%. 2) Restricciones de exportacion: China y otras regiones restringidas representan ingresos perdidos y el riesgo regulatorio es persistente. 3) Competencia a largo plazo: Amazon, Google y Microsoft estan construyendo chips propios; si logran paridad de performance en 3-5 anos, erosionaran el pricing power de NVIDIA."
+      }
     ]
   }
 }

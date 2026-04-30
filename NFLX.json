@@ -1,0 +1,502 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Netflix, Inc. es el lider mundial en streaming con mas de 300 millones de suscriptores en 190 paises. En FY2025 reporto ingresos de 45.18B USD (+16% YoY), margen operativo del 29.5% y FCF de 9.46B USD, marcando su mejor ano historico en generacion de caja. El split 10:1 de noviembre 2025 democratizo el acceso a la accion sin alterar los fundamentals. Con guidance de margen operativo del 29% para FY2026 y crecimiento sostenido via publicidad y live events, Netflix transita de empresa de crecimiento puro a generador masivo de caja libre.",
+  "descripcion": "Netflix opera como un segmento unico: streaming de contenido (series, peliculas, juegos y eventos en vivo) a nivel global. Sus ingresos provienen casi exclusivamente de suscripciones mensuales. Los cuatro segmentos geograficos son UCAN (44% del rev), EMEA (32%), LATAM (12%) y APAC (12%). La empresa ha expandido su moat via: (1) escala de contenido con 17B+ USD de gasto anual, (2) plan con publicidad que amplia el TAM, (3) live events que elevan fidelizacion, y (4) monetizacion de cuentas compartidas. El modelo de economias de escala en streaming genera expansion de margen estructural y FCF creciente.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "29.70",
+        "31.62",
+        "33.72",
+        "39.00",
+        "45.18",
+        "12.25",
+        "+16%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.12",
+        "4.49",
+        "5.41",
+        "8.71",
+        "10.98",
+        "5.28",
+        "+26%"
+      ],
+      [
+        "Margen Neto",
+        "17.2%",
+        "14.2%",
+        "16.0%",
+        "22.3%",
+        "24.3%",
+        "43.1%*",
+        "+2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "6.40",
+        "5.97",
+        "7.31",
+        "10.75",
+        "13.66",
+        "N/D",
+        "+27%"
+      ],
+      [
+        "FCF (B USD)",
+        "-0.13",
+        "1.62",
+        "6.92",
+        "6.92",
+        "9.46",
+        "5.09",
+        "+37%"
+      ],
+      [
+        "EPS Diluido",
+        "$1.17",
+        "$1.02",
+        "$1.24",
+        "$2.01",
+        "$2.57",
+        "$1.23",
+        "+86%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "8.66",
+        "9.20",
+        "7.38",
+        "6.66",
+        "5.43",
+        "2.10",
+        "-$3.33B"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "35.9x",
+      "signal": "yellow",
+      "note": "vs. sector media 28x",
+      "precio_base": 92.27,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 2.57
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "31.8x",
+      "signal": "yellow",
+      "precio_base": 92.27,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 2.9
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "28.9x",
+      "signal": "yellow",
+      "precio_base": 92.27,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 13.66,
+        "shares_m": 4213,
+        "deuda_neta_b": 5.43
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "41.1x",
+      "signal": "yellow",
+      "precio_base": 92.27,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 9.46,
+        "shares_m": 4213
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.40x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "41.2%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "36.9%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 29.7,
+        "utilidad": 5.12
+      },
+      {
+        "label": "FY2022",
+        "revenue": 31.62,
+        "utilidad": 4.49
+      },
+      {
+        "label": "FY2023",
+        "revenue": 33.72,
+        "utilidad": 5.41
+      },
+      {
+        "label": "FY2024",
+        "revenue": 39,
+        "utilidad": 8.71
+      },
+      {
+        "label": "FY2025",
+        "revenue": 45.18,
+        "utilidad": 10.98
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 41.7,
+        "operativo": 20.9,
+        "neto": 17.2
+      },
+      {
+        "label": "FY2022",
+        "bruto": 35.6,
+        "operativo": 17.8,
+        "neto": 14.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 41.5,
+        "operativo": 20.6,
+        "neto": 16
+      },
+      {
+        "label": "FY2024",
+        "bruto": 46.1,
+        "operativo": 26.7,
+        "neto": 22.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 48.5,
+        "operativo": 29.5,
+        "neto": 24.3
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "9.13B USD",
+        "nota": "FY2025: mayor programa de recompras en su historia. Q1 2026: 1.27B adicionales."
+      },
+      {
+        "label": "Dividendos",
+        "value": "0 USD",
+        "nota": "No paga dividendos. Todo el capital libre retorna via recompras."
+      },
+      {
+        "label": "Capex",
+        "value": "0.69B USD",
+        "nota": "Capex minimo modelo asset-light. Contenido se amortiza como activo, no capex."
+      },
+      {
+        "label": "Contenido",
+        "value": "~17B USD",
+        "nota": "Gasto total en contenido (produccion + licencias): principal driver de diferenciacion."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "NFLX TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "48.5%",
+        "~35%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "29.5%",
+        "~18%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+16%",
+        "~8%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "31.8x",
+        "~25x",
+        "Prima moderada justificada"
+      ],
+      [
+        "ROIC",
+        "36.9%",
+        "~15%",
+        "Muy por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Netflix muestra aceleracion de fundamentals sin signos de deterioro: expansion de margen y FCF en tendencia positiva clara.",
+    "analisis": "El margen operativo paso de 20.6% en 2023 a 29.5% en 2025 (+8.9pp en 2 anos). La deuda neta se redujo de 8.66B en 2021 a 5.43B en 2025 y a solo 2.10B en Q1 2026. El unico punto de atencion es que el margen neto de Q1 2026 (43.1%) esta distorsionado por 2.85B de otros ingresos financieros no recurrentes que no deben extrapolarse.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+16%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "48.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "29.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "24.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+37%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "5.43B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Expansion masiva de margen operativo",
+      "impact": "Alto",
+      "evidence": "Margen operativo: 20.6% (FY2023) -> 29.5% (FY2025), +8.9pp en 2 anos. Guidance FY2026: 29%.",
+      "context": "La escala de Netflix genera apalancamiento operativo estructural. Cada dolar adicional de revenue cae en mayor proporcion al EBIT. Con 45B en ingresos, la barrera de entrada para replicar esta estructura es prohibitiva."
+    },
+    {
+      "level": "green",
+      "title": "FCF en despegue estructural",
+      "impact": "Alto",
+      "evidence": "FCF: -0.13B (2021) -> 9.46B (2025) -> 5.09B solo en Q1 2026. Run rate anualizado superior a 20B.",
+      "context": "Netflix transito de empresa quemageneradora de caja a maquina de FCF. El capex es minimo (0.69B); el contenido se amortiza como activo. Este FCF financia recompras agresivas que elevan EPS consistentemente."
+    },
+    {
+      "level": "green",
+      "title": "Balance saneado y reduccion de deuda",
+      "impact": "Medio",
+      "evidence": "Deuda neta: 8.66B (2021) -> 5.43B (2025) -> 2.10B (Q1 2026). ND/EBITDA en 0.40x.",
+      "context": "El FCF masivo permite recomprar acciones agresivamente (9.13B en FY2025) y reducir deuda simultaneamente. La razon ND/EBITDA de 0.40x es de las mas bajas en media y tecnologia de consumo."
+    },
+    {
+      "level": "yellow",
+      "title": "Abandono de reporte de memberships",
+      "impact": "Medio",
+      "evidence": "En FY2025 Netflix elimino el reporte de numero de suscriptores y ARPU como metricas principales.",
+      "context": "Esta decision reduce la transparencia sobre el ritmo de adicion de suscriptores. Los analistas tienen menor visibilidad sobre posible saturacion en mercados maduros como UCAN y EMEA occidental."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion demanda ejecucion sin errores",
+      "impact": "Medio",
+      "evidence": "P/FCF de 41x y EV/EBITDA de 28.9x requieren mantener crecimiento de revenue de doble digito y margen 29%+.",
+      "context": "El mercado ya paga por un Netflix que mantiene y expande margenes varios anos consecutivos. Una desaceleracion material en UCAN o EMEA presionaria el multiplo significativamente."
+    },
+    {
+      "level": "red",
+      "title": "Publicidad: palanca critica aun sin escala probada",
+      "impact": "Medio",
+      "evidence": "Los ingresos publicitarios aun no son material segun el propio 10-K FY2025. La segunda palanca de crecimiento esta pendiente de validacion.",
+      "context": "El plan con publicidad es clave para el siguiente capitulo de crecimiento. Si la monetizacion publicitaria tarda en escalar o reguladores europeos limitan el targeting, el camino a 33%+ de margen operativo se complica estructuralmente."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Netflix ejecuta una estrategia de maximizar el margen operativo dentro de su objetivo de largo plazo, reinvirtiendo en contenido original y live events para reducir dependencia de licencias y elevar diferenciacion. La expansion del plan con publicidad busca ampliar el TAM hacia segmentos precio-sensibles. Para 2026-2027, la apuesta en deportes en vivo (NFL, WWE, F1) es el siguiente gran catalizador para elevar engagement y reducir churn estructuralmente.",
+    "ventajas": "Escala de contenido inigualable (17B+ USD/ano), tecnologia de recomendacion con el mayor dataset de preferencias de entretenimiento del mundo, presencia en 190 paises con brand premium, eficiencia operativa via Open Connect (CDN propio) que reduce costos de streaming, y ventaja de datos: Netflix sabe exactamente que consume cada usuario en cada segundo.",
+    "debilidades": "Alta dependencia de renovacion continua de contenido premium para retener suscriptores (riesgo de churn si los hits disminuyen), ausencia de ecosistema de hardware propio (depende de Samsung, Apple, Roku), y madurez del mercado en UCAN donde el crecimiento organico es mas limitado.",
+    "riesgos": [
+      "Desaceleracion de suscriptores en UCAN/EMEA si el inventario de cuentas compartidas ya fue capturado: efecto catalizador que no se repite.",
+      "Competencia en contenido con Disney+/Hulu, Max (Warner), Amazon Prime y Apple TV+ que incrementan presupuestos y compiten por talentos y derechos.",
+      "Riesgo regulatorio en Europa (DSA, DMA) que podria limitar targeting publicitario o requerir inversiones locales adicionales en contenido.",
+      "Inflacion de costos de produccion: si supera el crecimiento de ARPU, el margen podria comprimirse por debajo del objetivo del 29%."
+    ],
+    "inversiones_estrategicas": "Netflix invierte en: (1) live events deportivos con contratos NFL Christmas games, WWE Raw y potencialmente F1, que atraen audiencias no-scripted con alto engagement; (2) gaming movil incluido en suscripcion, aun experimental pero con potencial de diferenciacion; (3) infraestructura Open Connect, CDN propietario que reduce costos de delivery a escala; y (4) ad tech propio para reducir dependencia de terceros y mejorar yield del inventario publicitario."
+  },
+  "verdict": {
+    "status": "Mantener / Acumular en retrocesos",
+    "score": "8.0/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "45.2B USD"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "29.5%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.43%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "31.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+16% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Maquina de FCF** -- Netflix genera 9.46B USD de FCF en FY2025 y 5.09B en solo Q1 2026. El run rate anualizado supera los 20B USD, financiando recompras agresivas que elevan EPS por accion de forma consistente.",
+        "type": "pro"
+      },
+      {
+        "text": "**Expansion de margen estructural** -- De 20.6% en FY2023 a 29.5% en FY2025 en solo 2 anos. El apalancamiento operativo de escala es el driver: cada punto de revenue growth genera mas de un punto de mejora en margen operativo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance saneado y recompras** -- Deuda neta de solo 0.40x EBITDA con 9.13B USD de recompras en FY2025. La caja crece a 12.3B al Q1 2026, consolidando uno de los balances mas solidos del sector media.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion exigente** -- A 31.8x P/E forward y 41x P/FCF, Netflix cotiza con prima que requiere ejecucion impecable y sostenida. Una desaceleracion en suscriptores o retraso en publicidad podria comprimir el multiplo 20-30%.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 45.18B USD en FY2025 (+16% YoY), con UCAN como region ancla (44% del total). Q1 2026 mantiene el ritmo con 12.25B (+16.2% vs Q1 2025). La empresa ya no reporta suscriptores, simplificando el relato a revenue y margen operativo como KPIs principales."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen operativo de 29.5% en FY2025, guiado hacia 29% en FY2026 (rango 28-30%). El margen bruto mejoro de 35.6% en 2022 a 48.5% en 2025, expansion de +13pp en 3 anos por mayor eficiencia en contenido y crecimiento de ARPU. La meta de largo plazo es 40%+ de margen operativo."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 9.46B en FY2025 vs -0.13B en 2021: una transformacion historica. Q1 2026 genera 5.09B de FCF en un trimestre. El capex es minimo (0.69B) porque el contenido se contabiliza como activo. Este FCF financia 9.13B de recompras en FY2025 y reduce deuda simultaneamente."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 5.43B al cierre de FY2025 (ND/EBITDA 0.40x) y de solo 2.10B al Q1 2026. La caja mas inversiones supera los 12.3B USD al 31-Mar-2026. El balance es uno de los mas solidos del sector media/streaming global."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 92.27 USD/accion (post-split 10:1 de nov-2025), Netflix cotiza a 35.9x P/E TTM, 31.8x P/E forward y 41x P/FCF. El EV/EBITDA de 28.9x refleja que el mercado paga calidad de negocio y expansion de margen. Comparado con su historico (50-80x P/E en 2020-2021), la valuacion es mas razonable dada la mayor base de beneficios actuales."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Fin del efecto catalizador de monetizacion de cuentas compartidas, competencia creciente en contenido con Disney+/Max/Amazon, incertidumbre en la escala del negocio publicitario y riesgo regulatorio en Europa. La valuacion demanda ejecucion sin errores por varios anos consecutivos."
+      }
+    ]
+  }
+}

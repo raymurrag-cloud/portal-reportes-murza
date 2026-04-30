@@ -1,0 +1,535 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Marvell Technology (MRVL) es un proveedor lider de semiconductores para infraestructura de datos, especializado en soluciones para centros de datos, redes y almacenamiento. En su ejercicio fiscal 2026 (cerrado enero 2026), la empresa registro un giro historico: ingresos de 8.19B USD (+42% YoY) impulsados por la explosion de demanda de IA, con utilidad neta de 2.67B USD frente a perdidas consecutivas en FY23-FY25. El negocio de AI custom chips y electro-optica se perfila como el motor principal de crecimiento. La valuacion exigente (P/FCF ~66x, EV/EBITDA ~54x) refleja expectativas muy altas, pero el momentum operativo y la posicion estrategica en infraestructura AI justifican una tesis de largo plazo solida.",
+  "descripcion": "Marvell es un disenador fabless de semiconductores con tres segmentos principales: Data Center (~78% de revenue en FY26), Carrier Infrastructure y Enterprise Networking. Su arquitectura System-on-Chip (SoC) integra procesamiento digital, analogico y de seniales. El moat central reside en la capacidad de co-disenar ASICs personalizados para hiperscalers (Amazon, Google, Microsoft) y en su portafolio de electro-optica (adquirida via Inphi 2021) critico para conectividad AI. La empresa divesto su negocio de ethernet automotriz a Infineon por 2.5B USD en agosto 2025 y adquirio Celestial AI (1.3B) y XConn Technologies (280M) tras el cierre del fiscal. Opera bajo modelo fabless con manufactura en TSMC aprovechando nodos avanzados.",
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 8.19B USD en FY26 (+42% YoY), con el segmento Data Center creciendo 46%. El crecimiento es estructural: la demanda de AI custom chips y electro-optica esta en fase de aceleracion. El negocio de comunicaciones y otros tambien recupero +31% tras correcciones de inventario."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto del 51.0% y margen operativo del 16.1% en FY26 — mejora sustancial vs los margenes negativos de FY24-FY25. El mix hacia productos de AI de mayor valor deberia sostener la expansion de margenes. La amortizacion de intangibles de adquisiciones historicas presiona el margen GAAP vs. el ajustado."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 1.40B USD con yield del 1.5% sobre la capitalizacion actual. El OCF fue 1.75B. La conversion de caja es positiva pero el P/FCF de 66x requiere aceleracion futura del FCF para justificar el precio actual."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 1.83B USD (ratio ND/EBITDA de ~1.0x), significativamente mejor que los 3.9B de FY22. Caja de 2.64B USD. Balance saludable que permite M&A (Celestial AI, XConn) y devolucion de capital (2.2B en FY26 via recompras y dividendos)."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 109.51 USD, MRVL cotiza a P/E TTM ~35x, P/E Forward ~24x y P/FCF ~66x. La valuacion descuenta una aceleracion significativa del FCF en FY27-28 conforme maduren los programas de AI ASIC. No es barata, pero refleja posicion estrategica dificil de replicar. Rango objetivo 120-140 USD a 12 meses en escenario base de crecimiento de revenue +25-30% en FY27."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Concentracion en 2-3 hiperscalers para AI ASIC; restricciones de exportacion a China (~15-20% del revenue historico en riesgo); ejecucion en integracion de Celestial AI y XConn; ciclicidad de semiconductores si la inversion en AI desacelera; competencia de Broadcom y startups de ASIC."
+      }
+    ]
+  },
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "4.46",
+        "5.92",
+        "5.51",
+        "5.77",
+        "8.19",
+        "+41.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.42",
+        "-0.16",
+        "-0.93",
+        "-0.88",
+        "2.67",
+        "pos vs neg"
+      ],
+      [
+        "Margen Bruto",
+        "46.2%",
+        "50.5%",
+        "41.6%",
+        "41.2%",
+        "51.0%",
+        "+9.8pp"
+      ],
+      [
+        "Margen Operativo",
+        "-7.8%",
+        "4.1%",
+        "-10.3%",
+        "-12.5%",
+        "16.1%",
+        "+28.6pp"
+      ],
+      [
+        "Margen Neto",
+        "-9.4%",
+        "-2.7%",
+        "-16.9%",
+        "-15.3%",
+        "32.6%",
+        "+47.9pp"
+      ],
+      [
+        "EBITDA est. (B USD)",
+        "-0.08",
+        "0.54",
+        "-0.22",
+        "-0.32",
+        "1.77",
+        "pos vs neg"
+      ],
+      [
+        "FCF (B USD)",
+        "0.65",
+        "1.08",
+        "1.03",
+        "1.40",
+        "1.40",
+        "0.0%"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "-0.50",
+        "-0.19",
+        "-1.08",
+        "-1.02",
+        "3.15",
+        "pos vs neg"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "3.93",
+        "3.58",
+        "3.22",
+        "3.12",
+        "1.83",
+        "-41.3%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "34.8x",
+      "signal": "yellow",
+      "note": "Primer ano de utilidades GAAP en 4 anyos",
+      "precio_base": 109.51,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 3.15
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "24.3x",
+      "signal": "yellow",
+      "note": "Consenso analistas EPS FY27 ~4.50 USD",
+      "precio_base": 109.51,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 4.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "53.5x",
+      "signal": "red",
+      "note": "EBITDA GAAP aun bajo vs adj EBITDA; mejorara en FY27",
+      "precio_base": 109.51,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 1.77,
+        "shares_m": 847.3,
+        "deuda_neta_b": 1.83
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "66.3x",
+      "signal": "red",
+      "note": "Requiere fuerte aceleracion de FCF en FY27-28",
+      "precio_base": 109.51,
+      "precio_fecha": "2026-04-06",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.4,
+        "shares_m": 847.3
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.03x",
+      "signal": "green",
+      "note": "Mejora de 3.9x en FY22 a 1.0x en FY26"
+    },
+    {
+      "label": "FCF Yield",
+      "value": "1.5%",
+      "signal": "red",
+      "note": "Bajo vs sector; mejora esperada en FY27"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "51.0%",
+      "signal": "green",
+      "note": "Maximo historico reciente; mix AI favorable"
+    },
+    {
+      "label": "Margen Operativo",
+      "value": "16.1%",
+      "signal": "yellow",
+      "note": "Positivo por primera vez en 3 anyos"
+    },
+    {
+      "label": "Crecimiento Revenue",
+      "value": "+41.9%",
+      "signal": "green",
+      "note": "Aceleracion vs -6.9% FY24 y +4.7% FY25"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2022",
+        "revenue": 4.46,
+        "utilidad": -0.42
+      },
+      {
+        "label": "FY2023",
+        "revenue": 5.92,
+        "utilidad": -0.16
+      },
+      {
+        "label": "FY2024",
+        "revenue": 5.51,
+        "utilidad": -0.93
+      },
+      {
+        "label": "FY2025",
+        "revenue": 5.77,
+        "utilidad": -0.88
+      },
+      {
+        "label": "FY2026",
+        "revenue": 8.19,
+        "utilidad": 2.67
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2022",
+        "bruto": 46.2,
+        "operativo": -7.8,
+        "neto": -9.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 50.5,
+        "operativo": 4.1,
+        "neto": -2.7
+      },
+      {
+        "label": "FY2024",
+        "bruto": 41.6,
+        "operativo": -10.3,
+        "neto": -16.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 41.2,
+        "operativo": -12.5,
+        "neto": -15.3
+      },
+      {
+        "label": "FY2026",
+        "bruto": 51,
+        "operativo": 16.1,
+        "neto": 32.6
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "2.04B USD",
+        "nota": "FY26: 26.6M acciones recompradas a precio promedio ~76 USD; 5.5B disponibles en programa autorizado"
+      },
+      {
+        "label": "Dividendos",
+        "value": "205M USD",
+        "nota": "FY26: dividendo trimestral de 0.06 USD por accion; historial consistente desde FY22"
+      },
+      {
+        "label": "Capex",
+        "value": "350M USD",
+        "nota": "FY26: 4.3% del revenue; fabless con capex moderado concentrado en EDA tools y diseno"
+      },
+      {
+        "label": "M&A",
+        "value": "~1.58B USD",
+        "nota": "Post-FY26: Celestial AI (1.3B cash + 24.5M acciones) y XConn (280M); desinversion automotriz por 2.5B a Infineon financio recompras"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "MRVL FY26",
+      "Sector ref. (semis fabless)",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "51.0%",
+        "~50-60%",
+        "En linea con sector fabless"
+      ],
+      [
+        "Margen Operativo GAAP",
+        "16.1%",
+        "~20-30%",
+        "Por debajo; amortizacion intangibles GAAP pesa"
+      ],
+      [
+        "Revenue Growth YoY",
+        "+41.9%",
+        "~15-25%",
+        "Muy por encima; catalizado por AI"
+      ],
+      [
+        "P/E Forward",
+        "24.3x",
+        "~20-30x",
+        "Prima justificada por perfil de crecimiento AI"
+      ],
+      [
+        "FCF Yield",
+        "1.5%",
+        "~2-4%",
+        "Por debajo; FCF aun limitado vs capitalizacion"
+      ],
+      [
+        "ND/EBITDA",
+        "1.03x",
+        "~0.5-2x",
+        "Saludable y en mejora acelerada"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Inflexion positiva en FY26: transicion de perdidas consecutivas a rentabilidad GAAP plena impulsada por AI",
+    "analisis": "Despues de tres ejercicios con utilidades netas negativas (FY23-FY25) impulsadas por alta amortizacion de intangibles post-adquisiciones, MRVL registro su primer beneficio neto GAAP significativo en FY26 (2.67B USD). La clave es la aceleracion en el segmento Data Center AI que elevo el revenue en 42% y expandio margenes brutos al 51%. El FCF se mantiene en 1.4B (sin mejora YoY), ya que la utilidad neta incluye una ganancia extraordinaria de 1.8B por la venta del negocio automotriz a Infineon.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+41.9%",
+        "status": "ok",
+        "nota": "Aceleracion fuerte impulsada por AI data center +46%"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "51.0%",
+        "status": "ok",
+        "nota": "Maximo reciente; mix AI favorable"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "16.1%",
+        "status": "warn",
+        "nota": "Positivo pero aun por debajo de peers; amortizacion GAAP pesa"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "32.6%",
+        "status": "warn",
+        "nota": "Inflado por ganancia de 1.8B de venta de negocio automotriz"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "0.0%",
+        "status": "warn",
+        "nota": "FCF sin mejora vs FY25 (1.40B ambos anos) pese a revenue +42%"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "1.83B USD",
+        "status": "ok",
+        "nota": "Mejora desde 3.93B en FY22; reforzada por venta automotriz"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Posicion estrategica en AI custom chips (ASIC)",
+      "impact": "Alto",
+      "evidence": "Data Center revenue +46% a ~6.4B USD en FY26; demanda de hiperscalers para AI ASIC en expansion acelerada.",
+      "context": "Solo Broadcom y MRVL tienen escala para competir en ASIC personalizados con Amazon, Google y Microsoft. El segmento de AI tiene backlog multianual y barreras de diseno de 3-5 anyos."
+    },
+    {
+      "level": "green",
+      "title": "Liderazgo en electro-optica para interconexion AI",
+      "impact": "Alto",
+      "evidence": "Adquisicion de Inphi (2021, 10B) + Celestial AI (Photonic Fabric, 1.3B post-FY26) consolidan liderazgo en conectividad optica para clusters AI.",
+      "context": "La interconexion entre GPUs es cuello de botella critico en AI. El portafolio de electro-optica de MRVL es uno de los mas completos del mercado y dificil de replicar."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF sin crecimiento pese a revenue record",
+      "impact": "Medio",
+      "evidence": "FCF de 1.40B en FY26 igual que FY25; OCF mejoro a 1.75B pero capex subio a 350M. FCF margin solo 17% sobre revenue de 8.19B.",
+      "context": "La conversion de revenue a FCF deberia mejorar en FY27 conforme se estabilicen costos de integracion y el mix AI madure, reduciendo el peso de amortizacion."
+    },
+    {
+      "level": "yellow",
+      "title": "Restricciones de exportacion a China: impacto material",
+      "impact": "Medio",
+      "evidence": "China represento ~15-20% del revenue historico. Restricciones reducen demanda; clientes chinos pueden acumular inventarios o buscar alternativas domesticas.",
+      "context": "Riesgo en curso con escalada potencial segun politica comercial EEUU-China. MRVL diversifica hacia hiperscalers occidentales pero el impacto en corto plazo es real."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion exigente que no perdona decepcion en guidance",
+      "impact": "Alto",
+      "evidence": "P/FCF de 66x y EV/EBITDA de 53x descuentan aceleracion fuerte en FY27-28. La accion cayo mas del 40% en correcciones de 2024 ante desaceleracion de revenue.",
+      "context": "A 109 USD el mercado paga por el escenario optimo. La concentracion en 2-3 clientes hiperscalers y los ciclos de adopcion AI crean riesgo de volatilidad significativa."
+    }
+  ],
+  "score": {
+    "score": 7.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Marvell ejecuta una estrategia de especializacion en semiconductores de infraestructura AI y datos. Sus tres pilares: (1) Co-diseno de ASICs personalizados con hiperscalers donde actua como socio de diseno exclusivo con ciclos de 3-5 anyos; (2) Liderazgo en electro-optica para interconexion AI (DSPs, PAM4, coherent optics) tras Inphi y Celestial AI; (3) Consolidacion en switching y conectividad de redes. La estrategia de desinversion (automotriz a Infineon) y adquisicion selectiva (Celestial AI para Photonic Fabric, XConn para PCIe/CXL switching) sharpea el enfoque hacia data center AI. El 10-K enfatiza la transicion de empresa diversificada a pure-play de infraestructura AI.",
+    "ventajas": "El moat principal de MRVL reside en las barreras de entrada de sus programas ASIC: el ciclo de co-diseno con un hiperscaler toma 3-5 anyos, creando dependencia mutua y switching cost prohibitivo. En electro-optica, la tecnologia PAM4 y DSP de Inphi tiene ventaja de 2-3 generaciones. Evidencia numerica: margen bruto expandido a 51% (de 41% en FY24-25) conforme crece el mix de productos AI de mayor valor. La base de IP en SoC de alta complejidad es dificil de replicar en el corto plazo.",
+    "debilidades": "La principal debilidad estructural es la baja conversion de revenue a FCF: 1.4B FCF sobre 8.19B revenue implica solo 17% de FCF margin, limitado por alta amortizacion de intangibles de adquisiciones (Inphi ~10B, Cavium ~6B). Adicional: concentracion de clientes (top 3 hiperscalers probablemente mayor al 50% del revenue AI), ciclicidad del segmento carrier infrastructure y dependencia de TSMC para manufactura en nodos avanzados.",
+    "riesgos": [
+      "Concentracion en AI hyperscalers: si Amazon, Google o Microsoft reducen capex AI o cambian a disenos internos propios, el impacto en revenue puede ser del 20-30% en 1-2 trimestres.",
+      "Restricciones de exportacion a China: escalada de tensiones comerciales puede bloquear ventas adicionales; los clientes chinos buscan alternativas domesticas como Huawei HiSilicon y startups locales.",
+      "Ciclo de semiconductores: si la inversion en AI infrastructure desacelera por oversupply de GPUs o correccion de capex cloud, el revenue de MRVL puede contraerse 15-25% como en FY24 (-6.9%).",
+      "Riesgo de integracion M&A: Celestial AI (Photonic Fabric) y XConn son apuestas tecnologicas; el fracaso en integracion o adoption del mercado podria resultar en impairment de goodwill y presion en margenes."
+    ],
+    "inversiones_estrategicas": "R&D estimado en FY26 ~1.8-2.0B USD (~22-24% de revenue), tipico de empresa de semiconductores de alta complejidad. Capex moderado de 350M (4.3% revenue) consistente con modelo fabless. M&A transformacional post-FY26: Celestial AI por ~1.3B en efectivo y 24.5M acciones (total ~2.7-3.0B valorando las acciones), mas XConn por 280M en efectivo. La desinversion del negocio automotriz (2.5B a Infineon, con ganancia pre-tax de 1.8B) financio parcialmente el programa de recompras de 2.0B en FY26 y refuerzo el balance a 2.64B en caja al cierre."
+  },
+  "verdict": {
+    "status": "Mantener / Compra en Correccion",
+    "score": "7.2/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY26",
+        "value": "8.19B USD"
+      },
+      {
+        "label": "Crecimiento Revenue",
+        "value": "+41.9% YoY"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "51.0%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "24.3x"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.5%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Posicion AI ASIC insustituible** -- Solo Broadcom y MRVL tienen escala para competir en chips personalizados para hiperscalers; backlog multianual y barreras de diseno de 3-5 anyos protegen el negocio con visibilidad de revenue.",
+        "type": "pro"
+      },
+      {
+        "text": "**Momentum de ingresos historico** -- +42% YoY en FY26 con Data Center creciendo 46%; el ciclo AI esta en expansion acelerada con demanda de Trainium, TPU y clusters AI propietarios de los grandes hiperscalers.",
+        "type": "pro"
+      },
+      {
+        "text": "**Liderazgo en electro-optica** -- El portafolio de interconexion (Inphi + Celestial AI) resuelve el cuello de botella de conectividad entre GPUs; posicion tecnologica dificil de replicar a corto plazo con ventaja de 2-3 generaciones.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion que no perdona errores** -- P/FCF 66x y EV/EBITDA 54x descuentan ejecucion perfecta; concentracion en 2-3 clientes y dependencia del ciclo AI generan riesgo de correccion severa ante cualquier decepcion en guidance.",
+        "type": "con"
+      }
+    ]
+  }
+}

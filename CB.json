@@ -1,0 +1,496 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Chubb Limited (CB) es la aseguradora de propiedad y responsabilidad civil mas grande del mundo por capitalizacion de mercado, con operaciones en 54 paises y activos totales de 272B USD. En FY2025 genero ingresos de 59.4B USD y utilidad neta de 10.31B USD a pesar de los incendios de California. El Q1 2026 fue excepcionalmente fuerte: ingresos de 14.77B (+10.6% YoY) y net income de 2.32B (+74% YoY). Veredicto: Comprar con Conviccion para inversionistas de largo plazo que buscan una aseguradora con combined ratio de clase mundial y crecimiento de EPS compuesto del 20%+ desde 2021.",
+  "descripcion": "Chubb opera en cuatro segmentos: (1) North America Commercial P&C Insurance - polizas complejas para Fortune 500 y empresas medianas; (2) North America Personal P&C Insurance - hogar y auto de alto patrimonio (HNW/UHNW); (3) Overseas General Insurance - operaciones en 50+ mercados con foco en Asia, Europa y Latam; (4) Life Insurance - vida y accidentes con fuerte presencia en Asia. Su moat: capacidad unica de suscribir riesgos complejos, balance AAA con 272B en activos, y marca Chubb/ACE con 130+ anos de historia. Combined ratio historico de 85-90% vs. industria 95-98%.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        40.87,
+        43.1,
+        49.74,
+        55.75,
+        59.4,
+        14.77,
+        "+6.5%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        8.53,
+        5.25,
+        9.03,
+        9.27,
+        10.31,
+        2.32,
+        "+11.2%"
+      ],
+      [
+        "Margen Neto",
+        "20.9%",
+        "12.2%",
+        "18.2%",
+        "16.6%",
+        "17.4%",
+        "15.7%",
+        "+0.8pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        7.1,
+        4.8,
+        10.6,
+        11.9,
+        11.2,
+        "--",
+        "-5.9%"
+      ],
+      [
+        "FCF (B USD)",
+        10.85,
+        10.96,
+        12.33,
+        15.88,
+        12.52,
+        "--",
+        "-21.2%"
+      ],
+      [
+        "EPS Diluido",
+        20,
+        12.66,
+        22.28,
+        23.13,
+        26.36,
+        "--",
+        "+13.9%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        13.51,
+        12.39,
+        11.24,
+        12.28,
+        13.53,
+        "--",
+        "+10.2%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "12.5x",
+      "signal": "green",
+      "note": "vs. sector seguros ~14x",
+      "precio_base": 330.34,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 26.36
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "10.8x",
+      "signal": "green",
+      "note": "consenso FY2026",
+      "precio_base": 330.34,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 30.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "12.7x",
+      "signal": "yellow",
+      "precio_base": 330.34,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 11.2,
+        "shares_m": 391,
+        "deuda_neta_b": 13.53
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "10.3x",
+      "signal": "green",
+      "precio_base": 330.34,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 12.52,
+        "shares_m": 391
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.2x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "13.9%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "10.9%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 40.87,
+        "utilidad": 8.53
+      },
+      {
+        "label": "FY2022",
+        "revenue": 43.1,
+        "utilidad": 5.25
+      },
+      {
+        "label": "FY2023",
+        "revenue": 49.74,
+        "utilidad": 9.03
+      },
+      {
+        "label": "FY2024",
+        "revenue": 55.75,
+        "utilidad": 9.27
+      },
+      {
+        "label": "FY2025",
+        "revenue": 59.4,
+        "utilidad": 10.31
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 36.2,
+        "operativo": 16.6,
+        "neto": 20.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 30.6,
+        "operativo": 10.4,
+        "neto": 12.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 36,
+        "operativo": 20.5,
+        "neto": 18.2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 35.5,
+        "operativo": 20.4,
+        "neto": 16.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 32.7,
+        "operativo": 17.7,
+        "neto": 17.4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "3.69B USD",
+        "nota": "FY2025: 3.69B en recompras, acelerado vs FY2024 (1.80B); EPS CAGR ~20% desde 2021"
+      },
+      {
+        "label": "Dividendos",
+        "value": "1.51B USD",
+        "nota": "Dividendo creciente 30+ anos; DPS FY2025 ~3.88 USD; yield ~1.2%"
+      },
+      {
+        "label": "Capex",
+        "value": "~0.3B USD",
+        "nota": "Negocio asset-light; capex minimo en tecnologia e infraestructura"
+      },
+      {
+        "label": "M&A",
+        "value": "~0.5B USD",
+        "nota": "Adquisiciones bolt-on en mercados emergentes y expansion Life Asia"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CB TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Combined Ratio",
+        "~89%",
+        "~96%",
+        "Por encima del sector - excelencia en suscripcion"
+      ],
+      [
+        "Margen Operativo",
+        "17.7%",
+        "~10%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+6.5%",
+        "~6%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "10.8x",
+        "~13x",
+        "Prima moderada justificada por calidad"
+      ],
+      [
+        "ROIC",
+        "10.9%",
+        "~8%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Chubb muestra salud financiera robusta: FCF positivo, margen neto estable y balance solido con Deuda Neta/EBITDA de 1.2x.",
+    "analisis": "Los incendios de California de enero 2025 generaron ~1.5B en perdidas brutas; el reaseguro y la diversificacion limitaron el impacto neto. El Q1 2026 confirma la resiliencia con net income de 2.32B vs. 1.33B en Q1 2025 (+74%). El combined ratio historico de 85-90% es una de las mejores metricas del sector global. Las recompras aceleradas a 3.69B en FY2025 senalan confianza de la directiva en la valoracion.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+6.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "32.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "17.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "17.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-21.2%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "13.53B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Combined ratio de clase mundial",
+      "impact": "Alto",
+      "evidence": "Combined ratio ~89% en FY2025 a pesar de wildfires CA (~1.5B brutas); historicamente mantiene 85-90% vs. industria 95-98%.",
+      "context": "Un combined ratio sub-100% significa que CB gana en suscripcion antes del income de inversiones. Esta ventaja es dificil de replicar y protege el negocio en ciclos de tasas bajas."
+    },
+    {
+      "level": "green",
+      "title": "Q1 2026 excepcionalmente fuerte",
+      "impact": "Alto",
+      "evidence": "Ingresos Q1 2026: 14.77B (+10.6% YoY), Net Income atribuible a Chubb: 2.32B (+74% vs Q1 2025 de 1.33B).",
+      "context": "El rebote del Q1 2026 confirma que el impacto de los wildfires fue absorbido en FY2025. La re-aceleracion de primas y la recuperacion del income de inversiones senalan un FY2026 potencialmente record."
+    },
+    {
+      "level": "yellow",
+      "title": "Exposicion a eventos catastroficos de escala global",
+      "impact": "Medio",
+      "evidence": "CA wildfires 2025: ~1.5B brutas, ~600M netas post-reaseguro. Temporada huracanes 2024 tambien genero impactos relevantes.",
+      "context": "Aunque CB usa reaseguro agresivo con ~18B de capacidad contratada, eventos de tail risk extremo podrian exceder la cobertura disponible y generar perdidas excepcionales."
+    },
+    {
+      "level": "yellow",
+      "title": "Aumento de deuda neta en FY2025",
+      "impact": "Medio",
+      "evidence": "Deuda neta FY2025: 13.53B vs. 12.28B en FY2024 (+10.2%); recompras aceleradas de 3.69B financiadas parcialmente con deuda.",
+      "context": "El ratio Deuda Neta/EBITDA de 1.2x sigue siendo manejable para una aseguradora AAA, pero el incremento merece seguimiento. Si el ciclo de suscripcion se deteriora, el apalancamiento adicional reduce el margen de seguridad."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo climatico estructural de largo plazo",
+      "impact": "Alto",
+      "evidence": "La frecuencia de eventos catastroficos con perdidas aseguradas mayores a 5B se ha triplicado en 10 anos. Munich Re y Swiss Re proyectan incremento del 50-100% en perdidas anuales para 2050.",
+      "context": "El cambio climatico es el mayor riesgo estructural para el negocio de seguros de propiedad. CB esta reduciendo exposicion en zonas costeras y de incendio (California, Florida), lo que puede limitar el crecimiento de primas en esos segmentos de alto margen."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Chubb ejecuta una estrategia de aseguradora premium: suscripcion disciplinada en riesgos complejos y de alto valor con expansion organica en Asia para seguros de vida y P&C. La clave es priorizar rentabilidad sobre volumen. Complementa con buybacks agresivos cuando la accion cotiza con descuento vs. book value intrinseco, y con Chubb Studio (plataforma B2B de embedded insurance) para capturar canales de distribucion digital.",
+    "ventajas": "(1) Escala global unica: 54 paises, capacidad de suscribir riesgos multinacionales complejos que pocas aseguradoras pueden manejar. (2) Cultura de suscripcion excepcional: combined ratio 85-90% sostenido por mas de 20 anos. (3) Balance sheet AAA con 272B en activos y 74B en equity. (4) Marca Chubb/ACE con 130+ anos de historia. (5) Dividendo aristocrata con 30+ anos de crecimiento consecutivo.",
+    "debilidades": "(1) Exposicion inevitable a eventos catastroficos de cola larga. (2) Crecimiento de revenue moderado (~6-10%) vs. sectores de alto crecimiento. (3) Negocio intensivo en capital regulatorio. (4) Complejidad de consolidacion en 54 paises genera riesgo regulatorio y cambiario significativo.",
+    "riesgos": [
+      "Escalada del riesgo climatico: mayor frecuencia de catastrofes naturales podria elevar el combined ratio por encima de 100% en anos con multiples eventos de gran escala",
+      "Ciclo de softening de precios P&C: post-2025 el mercado podria entrar en fase de reduccion de primas, comprimiendo los margenes de suscripcion durante 2-3 anos",
+      "Riesgo de portafolio de inversiones: el portafolio de ~145B en renta fija es sensible a movimientos de tasas de interes",
+      "Competencia creciente en Asia Life: actores locales respaldados por capital de estado aumentan presion en China e Indonesia"
+    ],
+    "inversiones_estrategicas": "CB invierte en: (1) Expansion Life en Asia-Pacifico con joint ventures en China, Indonesia y Thailand; (2) Chubb Studio, plataforma digital B2B para embedded insurance via API; (3) AI para suscripcion y modelado de catastrofes; (4) Modernizacion de sistemas core en Norteamerica para reducir costos operativos."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "59.4B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "17.4%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "9.7%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "10.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+6.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Suscripcion de clase mundial** -- Combined ratio ~89% en FY2025 con wildfires incluidos; esta ventaja de underwriting genera valor independientemente del entorno de tasas y es la barrera de entrada mas dificil de replicar en seguros.",
+        "type": "pro"
+      },
+      {
+        "text": "**Q1 2026 record** -- Net income de 2.32B en Q1 2026 (+74% vs Q1 2025) y revenue de 14.77B (+10.6%); el rebote post-wildfires es mas fuerte de lo esperado y senala re-aceleracion hacia FY2026 potencialmente record.",
+        "type": "pro"
+      },
+      {
+        "text": "**Capital allocation excelente** -- Dividendo aristocrata 30+ anos; buybacks acelerados (3.69B FY2025); EPS CAGR ~20% desde 2021; negocio con capex minimo y FCF yield del 9.7%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo climatico estructural** -- La creciente frecuencia de catastrofes naturales es el mayor riesgo de largo plazo; eventos extremos podrian presionar el combined ratio y requerir aumento de reservas o reduccion de exposicion en mercados clave.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "CB reporto ingresos de 59.4B USD en FY2025 (++6.5% YoY), impulsado por primas netas en P&C comercial norteamericano y expansion en Asia Life. El Q1 2026 acelera a 14.77B (+10.6%), su mejor Q1 historico. Las primas netas ganadas representan ~75% del revenue."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El margen neto FY2025 fue de 17.4% (similar al 16.6% de FY2024). El combined ratio de ~89% en FY2025 sigue siendo superior al sector (~96%). El Q1 2026 muestra recuperacion con margen neto de 15.7%, uno de los mejores trimestrales en la historia de CB."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 12.52B USD en FY2025 (-21.2% YoY). El negocio asegurador es estructuralmente generador de caja: las primas se cobran antes de pagar siniestros, creando un float de ~145B. FCF yield del 9.7% sobre capitalizacion actual."
+      },
+      {
+        "label": "Balance",
+        "texto": "Activos totales de 272B con equity de 74B a diciembre 2025. Deuda neta de 13.53B USD; ratio Deuda Neta/EBITDA de 1.2x -- manejable para aseguradora grado AAA. El aumento de deuda neta refleja buybacks acelerados. Capital en exceso del minimo regulatorio estimado en ~10B."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "CB cotiza a 10.8x P/E Forward y 12.7x EV/EBITDA. Prima moderada vs. sector (~13x P/E) justificada por combined ratio superior en ~7pp, diversificacion global unica, y EPS CAGR de ~20% desde 2021. FCF yield del 9.7% ofrece margen de seguridad razonable."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo climatico es el principal factor estructural de largo plazo -- la creciente frecuencia de catastrofes podria presionar el combined ratio en anos adversos. A mediano plazo, un ciclo de softening de precios P&C post-2025 moderaria el crecimiento de primas. El portafolio de renta fija de ~145B es sensible a movimientos bruscos de tasas de interes."
+      }
+    ]
+  }
+}

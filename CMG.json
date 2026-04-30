@@ -1,0 +1,480 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Chipotle Mexican Grill es la cadena de restaurantes de servicio rapido premium mas exitosa de EE.UU., con mas de 3,700 restaurantes y una marca construida sobre la autenticidad de ingredientes frescos. En FY2025 reporto ingresos de 11.87B USD (+5.5% YoY) con ligera compresion de margenes vs FY2024. Q1 2026 (reportado el 22-abr) fue decepcionante: Revenue de 2.88B (-3.6% YoY), comp sales de -0.4%, reflejando debilidad del consumidor discrecional y dificultades de trafico. El CEO Brian Niccol paso a Starbucks en 2024 y la transicion de liderazgo agrega incertidumbre. La valuacion a P/E 30x forward descuenta recuperacion que aun no se ve en los numeros.",
+  "descripcion": "Chipotle opera exclusivamente en el segmento de restaurantes mexicanos fast-casual. Su modelo: restaurantes sin franquicias (100% company-owned), ingredientes frescos preparados en el restaurant (Food with Integrity), menu simple de alta personalización. El moat es la marca de confianza en calidad y el modelo economico por unidad: restaurantes de 1.0-1.5M USD de costo de construccion con AUV (Average Unit Volume) de ~3.2M USD y margenes de nivel de restaurante del 26%. El pipeline de crecimiento incluye expansion digital (Chipotlane drive-thru), expansion internacional y formato Chipotle Dine-In.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "7.55",
+        "8.63",
+        "9.87",
+        "11.25",
+        "11.87",
+        "+5.5%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "0.65",
+        "0.90",
+        "1.23",
+        "1.53",
+        "1.54",
+        "+0.1%"
+      ],
+      [
+        "Margen Neto",
+        "8.6%",
+        "10.4%",
+        "12.5%",
+        "13.6%",
+        "12.9%",
+        "-0.7pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "1.05",
+        "1.45",
+        "1.88",
+        "2.25",
+        "2.30",
+        "+2.2%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.84",
+        "0.84",
+        "1.22",
+        "1.51",
+        "1.45",
+        "-4.0%"
+      ],
+      [
+        "EPS Diluido",
+        "0.46",
+        "0.64",
+        "0.89",
+        "1.11",
+        "1.14",
+        "+2.7%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-0.82",
+        "-0.38",
+        "-0.56",
+        "-0.75",
+        "-0.35",
+        "+53.3%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "28.9x",
+      "signal": "yellow",
+      "note": "vs. QSR sector ~25x",
+      "precio_base": 32.99,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 1.14
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "30.0x",
+      "signal": "yellow",
+      "precio_base": 32.99,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 1.1
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "19.1x",
+      "signal": "yellow",
+      "precio_base": 32.99,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 2.3,
+        "shares_m": 1342.6,
+        "deuda_neta_b": -0.35
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "30.5x",
+      "signal": "yellow",
+      "precio_base": 32.99,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.45,
+        "shares_m": 1342.6
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-0.15x (caja neta)",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "34.1%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "35.1%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 7.55,
+        "utilidad": 0.65
+      },
+      {
+        "label": "FY2022",
+        "revenue": 8.63,
+        "utilidad": 0.9
+      },
+      {
+        "label": "FY2023",
+        "revenue": 9.87,
+        "utilidad": 1.23
+      },
+      {
+        "label": "FY2024",
+        "revenue": 11.25,
+        "utilidad": 1.534
+      },
+      {
+        "label": "FY2025",
+        "revenue": 11.87,
+        "utilidad": 1.536
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 32,
+        "operativo": 10.6,
+        "neto": 8.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": 31.5,
+        "operativo": 13.4,
+        "neto": 10.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 35,
+        "operativo": 15.8,
+        "neto": 12.5
+      },
+      {
+        "label": "FY2024",
+        "bruto": 35.5,
+        "operativo": 17.1,
+        "neto": 13.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 35.2,
+        "operativo": 16.3,
+        "neto": 12.9
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "2.43B USD",
+        "nota": "FY2025: shares bajaron de 1,377M a 1,343M — programa agresivo"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0B USD",
+        "nota": "CMG no paga dividendos — todo FCF va a recompras y crecimiento"
+      },
+      {
+        "label": "Capex",
+        "value": "0.67B USD",
+        "nota": "Nuevas aperturas ~315 restaurantes/año + Chipotlanes"
+      },
+      {
+        "label": "M&A",
+        "value": "0B USD",
+        "nota": "CMG crece organicamente — sin adquisiciones relevantes"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CMG TTM",
+      "QSR sector",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "35.2%",
+        "~30%",
+        "Por encima del sector fast-casual"
+      ],
+      [
+        "Margen Operativo",
+        "16.3%",
+        "~15%",
+        "En linea con lideres del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+5.5%",
+        "~5%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "30.0x",
+        "~20x",
+        "Prima de crecimiento moderada"
+      ],
+      [
+        "ROIC",
+        "35.1%",
+        "~20%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "CMG enfrenta desaceleracion de trafico en 2025-2026 pero el modelo economico por unidad sigue siendo solido",
+    "analisis": "FY2025 mostro ligera compresion de margenes: operativo de 17.1% a 16.3%, neto de 13.6% a 12.9%. El FCF cayo levemente a 1.45B por mayor capex de expansion. El Q1 2026 fue la mayor sorpresa negativa: comp sales de -0.4% vs expectativa de +3%, reflejando fatiga del consumidor en el segmento fast-casual premium. La transicion de CEO (Brian Niccol a Starbucks, octubre 2024) y la presion de precios post-inflacion pesan en el sentiment.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+5.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "35.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "16.3%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "12.9%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-4.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta 0.35B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Modelo por unidad superior: 35%+ ROIC",
+      "impact": "Alto",
+      "evidence": "AUV de ~3.2M USD con costo de construccion de 1.1-1.4M = payback de 2.5-3 anos. Margen de nivel de restaurante 26%+.",
+      "context": "El economics por restaurante de CMG es de los mejores en QSR. Cada nueva apertura genera retornos sostenidos. Pipeline de 300+ restaurantes/año por los proximos 5 anos proporciona crecimiento predecible."
+    },
+    {
+      "level": "green",
+      "title": "Balance sin deuda: caja neta de 350M USD",
+      "impact": "Medio",
+      "evidence": "CMG no tiene deuda financiera significativa. Caja neta de 350M USD post-recompras. Sin riesgo de balance.",
+      "context": "La empresa puede usar todo el FCF en recompras y expansion sin preocuparse por covenants ni riesgo de refinanciamiento. Posicion unica en el sector restaurant."
+    },
+    {
+      "level": "yellow",
+      "title": "Desaceleracion de trafico: comp sales -0.4% en Q1 2026",
+      "impact": "Alto",
+      "evidence": "Q1 2026 comp sales de -0.4% vs expectativa de +3.0%. Revenue -3.6% YoY por primer vez en anos.",
+      "context": "La debilidad del consumidor discrecional en el segmento de precio medio (~USD 12-15 por persona) es real. CMG enfrenta presion de valor vs McDonald s y otras cadenas que ofrecen promociones agresivas."
+    },
+    {
+      "level": "red",
+      "title": "Transicion de CEO y perdida de momentum de marca",
+      "impact": "Alto",
+      "evidence": "Brian Niccol (artífice del resurgimiento 2018-2024) se fue a Starbucks en oct-2024. Nuevo CEO sin track record comparable. Stock ha caido -40% desde maximos de 2024.",
+      "context": "CMG bajo la era Niccol ejecuto perfectamente: digitalizacion, Chipotlanes, menu innovacion y restauracion de confianza post-crisis de E.coli. El nuevo liderazgo aun no ha demostrado la misma capacidad de ejecucion."
+    }
+  ],
+  "score": {
+    "score": 6.8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "CMG ejecuta una estrategia de expansion selectiva con calidad: abrir 285-315 restaurantes/año (70%+ con Chipotlane), expansion internacional (Canada, Europa, Medio Oriente) y digitalizacion (ya 35%+ de ventas son digitales). La empresa busca recuperar trafico via menu innovation (birria, smash burger tests), programa de fidelidad Rewards (45M+ miembros) y mejoras en throughput (capacidad de servicio por hora).",
+    "ventajas": "Marca de autenticidad imposible de imitar facilmente — Food with Integrity resonates con millennials y Gen Z. Unit economics superior con ROIC de 35%+. Plataforma digital de 45M+ miembros que permite marketing directo y datos. Modelo sin franquicias = control total de calidad y captura de todos los margenes.",
+    "debilidades": "Dependencia de un solo concepto de comida (mexicano) sin diversificacion. Precio promedio de 13-15 USD/visita es vulnerable a consumer trade-down. Alta dependencia en EEUU (95%+ de restaurantes). Perdida de CEO fundacional crea incertidumbre de ejecucion.",
+    "riesgos": [
+      "Debilidad prolongada del consumidor discrecional que haga comp sales negativas por mas de 2-3 trimestres",
+      "Nueva crisis de seguridad alimentaria (E.coli, Norovirus) que destruya la marca de confianza en ingredientes frescos",
+      "Competencia de fast-casual de valor: Chipotle a 15 USD vs McDonald s a 8 USD con mejoras de calidad",
+      "Fracaso del nuevo CEO en replicar la ejecucion de Brian Niccol en throughput, innovacion y cultura"
+    ],
+    "inversiones_estrategicas": "Expansion de Chipotlane (formatos con drive-thru para pickup digital): 70%+ de nuevas aperturas. Programa de lealtad Rewards con 45M+ miembros activos. Inversiones en agriculture-tech para asegurar cadena de suministro de ingredientes frescos. Pilotos de nuevos formatos: Chipotle Dine-In (restaurantes mas grandes con experiencia premium)."
+  },
+  "verdict": {
+    "status": "Mantener",
+    "score": "6.8/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "11.87B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "12.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.3%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "30.0x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+5.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Unit economics superior** — AUV de 3.2M USD con costo de construccion de 1.1-1.4M genera payback en 2.5-3 anos y ROIC de 35%+, uno de los mejores del sector de restaurantes.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance impecable** — Sin deuda financiera, caja neta de 350M y FCF de 1.45B permiten expansion + recompras agresivas (2.43B en FY2025) sin estres financiero.",
+        "type": "pro"
+      },
+      {
+        "text": "**Q1 2026 decepcionante y liderazgo en transicion** — Comp sales de -0.4% vs expectativa de +3%. Perdida de CEO Brian Niccol (ahora en Starbucks) crea incertidumbre operativa. Stock -40% desde maximos.",
+        "type": "con"
+      },
+      {
+        "text": "**Valuacion premium con crecimiento desacelerado** — P/E forward de 30x descuenta recuperacion de trafico que aun no se materializa. A 20x forward (multiplo conservador QSR), precio objetivo seria ~22 USD, -33% desde niveles actuales.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 cerro con 11.87B USD (+5.5% YoY), pero la tendencia se deteriora: Q1 2026 mostro Revenue de 2.88B (-3.6% YoY) y comp sales de -0.4%, la primera lectura negativa en anos. El consumidor discrecional en el segmento premium de restaurantes enfrenta presion de precios real."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Compresion modesta: margen operativo de 17.1% a 16.3%, neto de 13.6% a 12.9% en FY2025. El margen de nivel de restaurante se mantuvo en ~26%, indicando que la presion viene de costos corporativos (G&A) y no de las operaciones de los restaurantes en si."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 1.45B USD (-4% YoY) con FCF yield de 3.3% — razonable pero no excepcional para la valuacion. El capex de 0.67B por expansion de 315 restaurantes/año es el nivel correcto para el crecimiento de largo plazo."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de 350M USD y sin deuda financiera relevante. La empresa regreso 2.43B en recompras en FY2025, reduciendo shares de 1,377M a 1,343M (-2.5%). Solidez financiera absoluta sin riesgo de balance."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A USD 32.99 y P/E forward de 30x, la valoracion descuenta una recuperacion de comp sales que aun no se ve en los numeros. A multiplos mas conservadores de QSR (20x), precio justo seria ~USD 22. La apuesta es que la marca premium y los unit economics superiores justifican la prima."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Debilidad prolongada del consumidor en segmento fast-casual premium. (2) Transicion de CEO sin ejecucion demostrada. (3) Nueva crisis de seguridad alimentaria. (4) Competencia de valor de McDonald s y otros QSR con mejoras de calidad a menor precio."
+      }
+    ]
+  }
+}

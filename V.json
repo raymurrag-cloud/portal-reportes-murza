@@ -1,0 +1,488 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Visa Inc. es la red de pagos digitales mas grande del mundo, operando la mayor infraestructura de procesamiento de pagos con mas de 4.5 trillones de transacciones anuales. En FY2025 (año fiscal Oct-Sep) reporto ingresos de 40.0B USD (+11.3% YoY) y NI de 17.5B. Q2 FY2026 (enero-marzo 2026, reportado ayer) mostro Revenue de 11.23B (+17.1% YoY) y NI de 6.02B (+31.6% YoY), con EPS de 3.14, superando expectativas del mercado. Visa es un duopolio con Mastercard: modelo asset-light con margenes operativos de 60%+ y FCF yield de 3.3%. Valuacion razonable a P/E forward 28x para la calidad del negocio.",
+  "descripcion": "Visa opera una red de procesamiento de pagos donde cobra fees por servicio (service fees, data processing fees, international transaction fees) sin asumir riesgo de credito (a diferencia de bancos emisores). El modelo es un duopolio de facto: Visa y Mastercard procesan el 90%+ de pagos con tarjeta en EE.UU. Cuenta con mas de 4.4B tarjetas activas, 130M+ comercios afiliados y procesa transacciones en 200 paises. Segmentos principales: Consumer Payments, Commercial Solutions y Value-Added Services. El growth driver es la digitalizacion del efectivo global: solo el 40% de transacciones son electronicos, dejando 60% como oportunidad.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q2 FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "24.11",
+        "29.31",
+        "32.65",
+        "35.93",
+        "40.00",
+        "11.23",
+        "+17.1%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "12.31",
+        "14.96",
+        "17.27",
+        "19.74",
+        "17.51",
+        "6.02",
+        "+31.5%"
+      ],
+      [
+        "Margen Neto",
+        "51.1%",
+        "51.0%",
+        "52.9%",
+        "54.9%",
+        "43.8%",
+        "53.6%",
+        "+5.9pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "17.91",
+        "21.61",
+        "23.00",
+        "25.60",
+        "25.99",
+        "7.70",
+        "+16.5%"
+      ],
+      [
+        "FCF (B USD)",
+        "14.92",
+        "18.55",
+        "19.92",
+        "21.54",
+        "21.77",
+        "5.80",
+        "+14.2%"
+      ],
+      [
+        "EPS Diluido",
+        "5.68",
+        "7.01",
+        "8.28",
+        "9.73",
+        "10.20",
+        "3.14",
+        "+14.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "3.53",
+        "5.38",
+        "3.93",
+        "3.03",
+        "1.56",
+        "~1.20",
+        "-48.5%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "32.8x",
+      "signal": "yellow",
+      "note": "vs. fintech/pagos ~35x",
+      "precio_base": 334.86,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 10.2
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "28.1x",
+      "signal": "yellow",
+      "precio_base": 334.86,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 11.9
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "25.4x",
+      "signal": "yellow",
+      "precio_base": 334.86,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 25.99,
+        "shares_m": 1966,
+        "deuda_neta_b": 1.56
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "30.2x",
+      "signal": "yellow",
+      "precio_base": 334.86,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 21.77,
+        "shares_m": 1966
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.06x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "47.3%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "49.8%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 24.11,
+        "utilidad": 12.31
+      },
+      {
+        "label": "FY2022",
+        "revenue": 29.31,
+        "utilidad": 14.96
+      },
+      {
+        "label": "FY2023",
+        "revenue": 32.65,
+        "utilidad": 17.27
+      },
+      {
+        "label": "FY2024",
+        "revenue": 35.93,
+        "utilidad": 19.74
+      },
+      {
+        "label": "FY2025",
+        "revenue": 40,
+        "utilidad": 17.51
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 79.5,
+        "operativo": 66,
+        "neto": 51.1
+      },
+      {
+        "label": "FY2022",
+        "bruto": 79.8,
+        "operativo": 66.9,
+        "neto": 51
+      },
+      {
+        "label": "FY2023",
+        "bruto": 80.8,
+        "operativo": 64.3,
+        "neto": 52.9
+      },
+      {
+        "label": "FY2024",
+        "bruto": 80.6,
+        "operativo": 65.7,
+        "neto": 54.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 80.5,
+        "operativo": 60,
+        "neto": 43.8
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "~16.0B USD",
+        "nota": "FY2025: shares bajaron de 2,029M a 1,966M — recompra agresiva y constante"
+      },
+      {
+        "label": "Dividendos",
+        "value": "~4.5B USD",
+        "nota": "Dividend Aristocrat con mas de 15 anos de crecimiento consecutivo"
+      },
+      {
+        "label": "Capex",
+        "value": "0.68B USD",
+        "nota": "Modelo asset-light: infraestructura de red requiere capex minimo"
+      },
+      {
+        "label": "M&A",
+        "value": "~1.5B USD",
+        "nota": "Adquisiciones en seguridad de pagos, open banking y Value-Added Services"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "V TTM",
+      "Sector fintech/pagos",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "80.5%",
+        "~65%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "60.0%",
+        "~30%",
+        "Lider absoluto por modelo asset-light"
+      ],
+      [
+        "Revenue Growth",
+        "+11.3%",
+        "~12%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "28.1x",
+        "~30x",
+        "Descuento moderado vs peers de pagos"
+      ],
+      [
+        "ROIC",
+        "49.8%",
+        "~25%",
+        "Muy por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Visa mantiene salud financiera excepcional con crecimiento constante, margenes lideres y balance casi sin deuda neta",
+    "analisis": "FY2025 mostro compresion del margen neto de 54.9% a 43.8% por cargos no recurrentes (litigios), pero el margen operativo se mantuvo en 60%. Q2 FY2026 confirma la normalizacion: margen neto de 53.6%. La deuda neta de apenas 1.56x EBITDA es casi nula. FCF de 21.77B consistente con el modelo asset-light. El crecimiento organico sigue siendo impulsado por la digitalizacion global del efectivo.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+11.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "80.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "60.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "43.8%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+1.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "1.56B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Duopolio estructural imposible de replicar",
+      "impact": "Alto",
+      "evidence": "Visa y Mastercard procesan el 90%+ de pagos con tarjeta globalmente. Red con 130M+ comercios y 4.4B tarjetas activas construida en 60+ anos.",
+      "context": "Las redes de pagos son el ejemplo mas puro de efecto de red: cada nuevo usuario hace la red mas valiosa. Nadie puede construir una red competidora en una decada — incluso big tech (Apple Pay, Google Pay) depende de Visa."
+    },
+    {
+      "level": "green",
+      "title": "Q2 FY2026 supera expectativas ampliamente",
+      "impact": "Alto",
+      "evidence": "Q2 FY2026: Rev 11.23B (+17.1% YoY), NI 6.02B (+31.6% YoY), EPS 3.14 vs consensus 2.93. Volumen de pagos +9% YoY.",
+      "context": "El crecimiento en mercados internacionales y Value-Added Services (Cybersource, Visa DPS, servicios de tokenizacion) acelera por encima del consenso, validando la estrategia mas alla de solo procesar pagos."
+    },
+    {
+      "level": "yellow",
+      "title": "Regulacion antitrust en mercados clave",
+      "impact": "Medio",
+      "evidence": "DOJ investigacion anticompetitiva en curso. Europa limita surcharges y fees de intercambio. Bloqueo de adquisicion de Plaid en 2021.",
+      "context": "El riesgo regulatorio es permanente para un duopolio. Sin embargo, Visa ha navegado estas presiones por decadas sin impacto material en el crecimiento de largo plazo."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia de sistemas de pago alternativos",
+      "impact": "Medio",
+      "evidence": "PIX en Brasil, UPI en India, Alipay/WeChat en China excluyen a Visa de mercados con >3B personas.",
+      "context": "Los sistemas de pago alternativos nacionales son la mayor amenaza de largo plazo. Sin embargo, fuera de China e India, Visa mantiene posicion dominante y en muchos mercados opera como proveedor del rail subyacente."
+    }
+  ],
+  "score": {
+    "score": 8.8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Visa expande mas alla del procesamiento basico hacia Value-Added Services: tokenizacion (12B tokens activos), Visa+ para pagos P2P, open banking via Tink (adquisicion europea), y soluciones de seguridad como Cybersource. El objetivo es capturar una mayor parte del valor de cada transaccion, no solo el fee de procesamiento basico.",
+    "ventajas": "Efecto de red bilateral mas potente del mundo: comercios aceptan Visa porque los consumidores la tienen, y viceversa. Modelo asset-light con capex de solo 0.68B sobre FCF de 21.77B. Sin riesgo de credito (los bancos emisores asumen el riesgo). Escala global con presencia en 200+ paises. Plataforma de datos con insights de billones de transacciones.",
+    "debilidades": "No tiene exposicion directa a consumidores ni productos de credito propio. Dependencia de bancos emisores para distribucion. Concentracion en EE.UU. para 40%+ de revenue. Limitaciones regulatorias de M&A (bloqueo de Plaid por DOJ).",
+    "riesgos": [
+      "Sistemas de pago nacionales (PIX, UPI, CBDC) que bypasean las redes de Visa en mercados emergentes clave",
+      "Investigacion antimonopolio DOJ y EU Commission que podria forzar cambios estructurales en fees",
+      "Disrupcion por CBDC (monedas digitales de banco central) que podrían crear rieles alternativos de pago",
+      "Presion de margen por regulacion de fees de intercambio (interchange caps) en Union Europea y mercados emergentes"
+    ],
+    "inversiones_estrategicas": "Adquisicion de Paysafe (data processing), inversion en Tink (open banking europeo), plataforma de tokenizacion con 12B+ tokens activos, Visa+ para transferencias P2P en tiempo real, y partnership con Apple Pay Later para servicios BNPL sobre la infraestructura de Visa."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.8/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "40.0B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "43.8%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.3%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "28.1x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+11.3% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Duopolio irreplicable** — Red de 130M+ comercios y 4.4B tarjetas construida en 60 anos con efectos de red bilaterales que ninguna big tech ha podido superar: Apple Pay, Google Pay, PayPal procesan SOBRE la infraestructura de Visa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margenes extraordinarios en expansion** — Margen operativo de 60%, FCF de 21.77B y ROIC de 49.8% con capex de apenas 0.68B. Q2 FY2026 confirma: NI +31.6% YoY con margen neto de 53.6%, eliminando los cargos no recurrentes de FY2025.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion razonable para la calidad** — P/E forward de 28x es un descuento vs peers de pagos (~30x) y vs el historico de Visa (32-35x). FCF yield de 3.3% con crecimiento de doble digito es atractivo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo regulatorio y sistemas alternativos** — Investigacion DOJ antimonopolio activa y sistemas de pago nacionales (PIX Brasil, UPI India) que excluyen a Visa de mercados con 3B+ personas. El duopolio es duradero pero no invulnerable.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 cerro con 40.0B USD (+11.3% YoY). Q2 FY2026 (enero-marzo) mostro 11.23B (+17.1% YoY) superando consensus de 10.9B. Volumen de pagos +9% YoY y transacciones procesadas +9%, con particular fortaleza en mercados internacionales y Value-Added Services."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen operativo FY2025 de 60.0% (uno de los mas altos en el S&P 500). El margen neto reportado de 43.8% incluyó cargos por litigios; normalizado estaria en 53-55%. Q2 FY2026 confirma: margen neto 53.6%, volviendo al rango historico."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 21.77B USD (3.3% yield sobre mkt cap). Capex de solo 0.68B refleja el modelo asset-light. La empresa retorno mas de 20B al ano via recompras y dividendos en FY2025, reduciendo shares de 2,029M a 1,966M."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de apenas 1.56B USD sobre EBITDA de 26B = 0.06x. Cash de 18.9B. Calificacion AA-/Aa3 de investment grade. Balance fortaleza absoluta que permite flexibilidad total en capital allocation."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E forward de 28.1x es razonable para un negocio de esta calidad. Historicamente Visa cotiza a 30-35x forward. El descuento actual puede reflejar preocupaciones regulatorias pero ofrece punto de entrada atractivo para largo plazo con FCF yield de 3.3% y crecimiento de 10-15% anual."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Investigacion DOJ sobre practicas anticompetitivas en pagos de debito. (2) Sistemas de pago nacionales en mercados emergentes que excluyen a Visa. (3) CBDC que podrian crear rieles de pago alternativos. (4) Regulacion de fees de intercambio en EU y otros mercados."
+      }
+    ]
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "resumen": "Microsoft es el mayor proveedor de software empresarial y servicios cloud del mundo, con tres segmentos: Intelligent Cloud (Azure), Productivity and Business Processes (Office 365, LinkedIn) y More Personal Computing. En FY2025 reporto ingresos record de 281.7B USD (+15% YoY) y utilidad neta de 101.8B USD, superando los 100B por primera vez. Azure crece al 30%+ anual, impulsando la expansion de margenes operativos hasta 45.6%. Veredicto: activo de primera calidad con valuacion exigente, compra selectiva en correcciones.",
+  "descripcion": "Microsoft opera tres segmentos: Intelligent Cloud (~43% de ingresos, liderado por Azure +30% YoY), Productivity and Business Processes (~32%, Office 365 comercial, LinkedIn, Dynamics 365), y More Personal Computing (~25%, Windows OEM, Xbox, Surface). El modelo de negocio es predominantemente suscripcion y consumo cloud con ingresos recurrentes de alta visibilidad. La posicion en IA es estrategica: Copilot integrado en todo el ecosistema y participacion en OpenAI. Mercados principales: EE.UU. ~50%, Europa ~25%, Asia-Pacifico ~15%. Moat: switching costs extremadamente altos en entornos corporativos y red de 400K+ socios certificados.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "168.1",
+        "198.3",
+        "211.9",
+        "245.1",
+        "281.7",
+        "+14.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "61.3",
+        "72.7",
+        "72.4",
+        "88.1",
+        "101.8",
+        "+15.5%"
+      ],
+      [
+        "Margen Neto (%)",
+        "36.5%",
+        "36.7%",
+        "34.1%",
+        "35.9%",
+        "36.1%",
+        "+0.2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "N/D",
+        "N/D",
+        "99.5",
+        "124.6",
+        "150.5",
+        "+20.8%"
+      ],
+      [
+        "FCF (B USD)",
+        "N/D",
+        "N/D",
+        "59.5",
+        "74.1",
+        "71.6",
+        "-3.3%"
+      ],
+      [
+        "EPS Diluido",
+        "8.05",
+        "9.65",
+        "9.68",
+        "11.80",
+        "13.64",
+        "+15.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "-55.0",
+        "-64.0",
+        "-30.6",
+        "-51.4",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "27.4x",
+      "signal": "yellow",
+      "note": "vs. sector tech ~28x",
+      "precio_base": 373.46,
+      "precio_fecha": "2025-04-01",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 13.64
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "24.1x",
+      "signal": "yellow",
+      "note": "FY2026E consenso ~15.50",
+      "precio_base": 373.46,
+      "precio_fecha": "2025-04-01",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 15.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "18.2x",
+      "signal": "yellow",
+      "note": "EV 2.74T / EBITDA 150.5B",
+      "precio_base": 373.46,
+      "precio_fecha": "2025-04-01",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 150.53,
+        "shares_m": 7465,
+        "deuda_neta_b": -51.42
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "38.9x",
+      "signal": "red",
+      "note": "FCF presionado por capex AI",
+      "precio_base": 373.46,
+      "precio_fecha": "2025-04-01",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 71.61,
+        "shares_m": 7465
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-0.34x",
+      "signal": "green",
+      "note": "Caja neta de 51.4B USD"
+    },
+    {
+      "label": "ROE",
+      "value": "33.3%",
+      "signal": "green",
+      "note": "Retorno excepcional sobre equity"
+    },
+    {
+      "label": "ROIC",
+      "value": "36.1%",
+      "signal": "green",
+      "note": "Muy por encima del WACC estimado 8%"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 168.1,
+        "utilidad": 61.3
+      },
+      {
+        "label": "FY2022",
+        "revenue": 198.3,
+        "utilidad": 72.7
+      },
+      {
+        "label": "FY2023",
+        "revenue": 211.9,
+        "utilidad": 72.4
+      },
+      {
+        "label": "FY2024",
+        "revenue": 245.1,
+        "utilidad": 88.1
+      },
+      {
+        "label": "FY2025",
+        "revenue": 281.7,
+        "utilidad": 101.8
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 68.9,
+        "operativo": 41.6,
+        "neto": 36.5
+      },
+      {
+        "label": "FY2022",
+        "bruto": 68.4,
+        "operativo": 42.1,
+        "neto": 36.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 68.9,
+        "operativo": 41.8,
+        "neto": 34.1
+      },
+      {
+        "label": "FY2024",
+        "bruto": 69.8,
+        "operativo": 44.6,
+        "neto": 35.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 68.8,
+        "operativo": 45.6,
+        "neto": 36.1
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex (AI + Cloud)",
+        "value": "64.6B USD",
+        "nota": "Duplico YoY por expansion Azure/IA"
+      },
+      {
+        "label": "Dividendos pagados",
+        "value": "24.1B USD",
+        "nota": "16 anios consecutivos de aumentos"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "18.4B USD",
+        "nota": "Reduccion gradual post-Activision"
+      },
+      {
+        "label": "FCF generado",
+        "value": "71.6B USD",
+        "nota": "OCF 136B menos capex record 64.6B"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "titulo": "MSFT vs. Pares Hyperscalers FY2025",
+    "headers": [
+      "Metrica",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "META"
+    ],
+    "rows": [
+      [
+        "Margen Operativo",
+        "45.6%",
+        "32%",
+        "11%",
+        "42%"
+      ],
+      [
+        "Crecimiento Rev. YoY",
+        "+14.9%",
+        "+12%",
+        "+11%",
+        "+19%"
+      ],
+      [
+        "EV/EBITDA",
+        "18.2x",
+        "18x",
+        "22x",
+        "20x"
+      ],
+      [
+        "ROE",
+        "33.3%",
+        "31%",
+        "22%",
+        "35%"
+      ]
+    ]
+  },
+  "deterioro": {
+    "titulo": "Monitor de Deterioro Estructural",
+    "items": [
+      {
+        "status": "ok",
+        "metrica": "Crecimiento de revenue",
+        "valor": "+14.9% YoY en FY2025, Azure +30%",
+        "nota": ""
+      },
+      {
+        "status": "ok",
+        "metrica": "Margen operativo",
+        "valor": "45.6% en FY2025, expansion 100bp vs FY2024",
+        "nota": ""
+      },
+      {
+        "status": "warn",
+        "metrica": "FCF vs OCF",
+        "valor": "FCF cayo -3.3% YoY por capex AI de 64.6B",
+        "nota": ""
+      },
+      {
+        "status": "ok",
+        "metrica": "Deuda neta",
+        "valor": "Caja neta de 51.4B USD, balance blindado",
+        "nota": ""
+      },
+      {
+        "status": "ok",
+        "metrica": "EPS crecimiento",
+        "valor": "EPS 13.64 vs 11.80 FY2024 (+15.6%)",
+        "nota": ""
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Azure: motor de crecimiento secular",
+      "impact": "Alto",
+      "evidence": "Azure crecio ~30% YoY en FY2025. Intelligent Cloud supero 105B USD en ingresos anuales.",
+      "context": "La transicion al cloud empresarial es estructural e irreversible. Azure captura gasto IT corporativo global con contratos plurianuales de alta visibilidad."
+    },
+    {
+      "level": "green",
+      "title": "Posicion dominante en IA empresarial",
+      "impact": "Alto",
+      "evidence": "Copilot integrado en Office 365. Azure OpenAI Service con mas de 65K clientes activos al cierre de FY2025.",
+      "context": "Microsoft es el unico proveedor con IA nativa en el stack completo: infra Azure, productividad Office/Teams y desarrollo GitHub Copilot. Barrera de entrada muy alta."
+    },
+    {
+      "level": "yellow",
+      "title": "Capex AI comprime FCF a corto plazo",
+      "impact": "Medio",
+      "evidence": "Capex FY2025: 64.6B USD (+45% YoY). FCF bajo a 71.6B vs 74.1B FY2024 pese a OCF record de 136B.",
+      "context": "La inversion masiva en data centers es necesaria para competir, pero el retorno del capital se verificara en 2-3 anios. Riesgo de sobreinversion si demanda AI decepciona."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion exigente en contexto macro",
+      "impact": "Medio",
+      "evidence": "P/E forward 24x, P/FCF 38.9x. El mercado descuenta crecimiento Azure 25-30% por los proximos 3 anios.",
+      "context": "Desaceleracion en Azure por debajo de 20% o retraccion multiple tecno presionaria la accion. Perfil riesgo/retorno mas asimetrico arriba de 380 USD."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo antitrust y regulacion global",
+      "impact": "Alto",
+      "evidence": "DOJ investiga practicas de bundling Teams/Office. UE continua escrutinio post-adquisicion Activision 68.7B.",
+      "context": "Fallo adverso que obligue al desempaquetamiento de productos podria erosionar margenes de Productivity. Riesgo de cola baja pero no despreciable en horizonte 3-5 anios."
+    }
+  ],
+  "score": {
+    "score": 8.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Microsoft ejecuta una estrategia de plataforma integrada: Azure como infraestructura cloud, Microsoft 365 y Dynamics 365 como software de productividad/ERP, y Copilot como capa de IA transversal. La integracion vertical entre estos productos genera switching costs extremadamente altos en entornos corporativos. La participacion en OpenAI posiciona a MSFT como el gateway de IA empresarial de facto.",
+    "ventajas": "Posicion dominante en productividad corporativa (Office 365, Teams, LinkedIn). Azure creciendo +30% YoY con economias de escala crecientes. Copilot genera monetizacion incremental sin canibalizar productos base. Red de 400K+ socios certificados y switching costs extremos. Balance con caja neta de 51.4B USD y OCF de 136B anuales.",
+    "debilidades": "Capex de IA en escala masiva (64.6B en FY2025) con retorno incierto y presion sobre FCF. Dependencia de Azure como motor de crecimiento en un mercado con competencia intensa de AWS y Google Cloud. Regulacion antimonopolio en mercados clave (Europa, potencialmente EE.UU.).",
+    "riesgos": [
+      "Principales riesgos del 10-K FY2025:",
+      "Competencia intensa de AWS y Google Cloud con guerra de precios en cloud;",
+      "Exposicion regulatoria por posicion dominante en productividad empresarial;",
+      "Riesgo de ejecucion en integracion de IA en todos los productos;",
+      "Dependencia de ciclos de inversion IT corporativo;",
+      "Ciberseguridad y brechas en infraestructura critica."
+    ],
+    "inversiones_estrategicas": "Segun el MD&A de FY2025: Intelligent Cloud crecio +19% YoY hasta 105.4B con Azure contribuyendo ~57% del segmento. Productivity and Business Processes crecio +11% hasta 90.2B impulsado por Office 365 Commercial +12% y LinkedIn +9%. More Personal Computing crecio +5% hasta 86.1B. Los margenes operativos mejoraron 100bp hasta 45.6% por economias de escala en cloud y optimizacion de costos post-2023. Management guia Azure +34-35% en constante moneda para Q1 FY2026."
+  },
+  "verdict": {
+    "status": "Mantener / Compra en Correccion",
+    "score": "8.2/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "281.7B USD"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "45.6%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.6%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "24.1x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+14.9% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Azure + IA dominante ->** Microsoft es el proveedor de nube empresarial con mayor integracion vertical: Azure crece +30% YoY y Copilot genera monetizacion incremental sin canibalizar productos existentes.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margenes en expansion ->** Margen operativo del 45.6% en FY2025 (record historico) demuestra apalancamiento operativo real. La escala cloud convierte cada dolar incremental de revenue en alto margen.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance blindado ->** Caja neta de 51.4B USD y generacion de OCF de 136B anuales da flexibilidad total para M&A, recompras y dividendos crecientes sin estres financiero.",
+        "type": "pro"
+      },
+      {
+        "text": "**Capex AI comprime FCF ->** La inversion en infraestructura AI (64.6B FY2025) genera incertidumbre sobre el retorno del capital invertido. P/FCF de 38.9x es exigente si la monetizacion de IA decepciona o se retrasa.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": "Microsoft es uno de los activos de mayor calidad en los mercados publicos globales: liderazgo estructural en cloud y IA empresarial, margenes operativos del 46%, balance con caja neta y crecimiento compuesto de doble digito en revenue y EPS. La unica reserva es la valuacion: con P/E forward de 24x y P/FCF de 39x, el mercado ya descuenta ejecucion perfecta en Azure y Copilot. Precio objetivo base: 400-420 USD en 12 meses (P/E 27x sobre EPS FY2026E de ~15.50). Entrada ideal en correcciones hacia 330-340 USD donde el perfil riesgo/retorno es asimetrico a favor.",
+  "parrafos_gratis": 14,
+  "metadata": {
+    "ticker": "MSFT",
+    "empresa": "Microsoft Corporation",
+    "fecha_reporte": "2025-04-02",
+    "fuente": "10-K FY2025 (SEC EDGAR), XBRL data.sec.gov",
+    "precio_base": 373.46,
+    "precio_fecha": "2025-04-01",
+    "moneda": "USD",
+    "fiscal_year_end": "Junio 30"
+  }
+}

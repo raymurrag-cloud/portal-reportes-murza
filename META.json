@@ -1,154 +1,513 @@
 {
-  "resumen": "Meta Platforms cerro FY2024 con revenue record de $164.5B (+21.9% YoY), margen operativo de 42.2% y FCF de $52.1B. El negocio de publicidad digital con 3.29B usuarios activos diarios es una maquina de generar caja. Sin embargo, la empresa ejecuta la mayor apuesta estrategica de su historia: $600B+ en infraestructura de IA para 2025-2028 que comprimira el FCF dramaticamente en los proximos 2-3 anos. La tesis se reduce a una sola pregunta: que tan grande sera el retorno de esa inversion.",
-
-  "descripcion": "Meta Platforms opera las redes sociales mas grandes del mundo: Facebook, Instagram, WhatsApp y Messenger, agrupadas en el segmento Family of Apps (98.7% del revenue). El modelo de negocio es publicidad digital: Meta monetiza la atencion de 3.29B personas activas diariamente con anuncios altamente personalizados. El segundo segmento, Reality Labs (Meta Quest, Ray-Ban Stories), genera solo $2.15B en revenue pero consume $17.73B en perdidas operativas anuales. Meta es el segundo mayor mercado publicitario digital del mundo, despues de Google, y comparte con este un duopolio de facto en publicidad digital a escala global.",
-
+  "parrafos_gratis": 14,
+  "resumen": "Meta Platforms cerro FY2025 con revenue record de 200.97B USD (+22.2% YoY), impulsado por la aceleracion de su plataforma publicitaria potenciada con IA. El margen operativo alcanzo 41.4% y el EBITDA llego a 101.9B USD. El FCF de 46.11B USD fue comprimido por un capex record de 69.69B destinado a infraestructura de IA. La principal tension del ciclo es la inversion masiva (guidance FY2026: 60-65B USD) frente a la caida -3.1% en utilidad neta. Veredicto: COMPRAR con conviccion — el liderazgo en IA publicitaria y el moat de red de 3.4B DAU son irreplicables a esta valuacion.",
+  "descripcion": "Meta Platforms opera el ecosistema de redes sociales mas grande del mundo: Facebook (3.3B MAU), Instagram, WhatsApp, Messenger y Threads. Los ingresos provienen ~98% de publicidad digital, basada en el dataset de comportamiento mas rico del sector y algoritmos de IA que maximizan la relevancia del anuncio. El segmento Reality Labs (Quest VR, Ray-Ban Meta, Orion AR) opera con perdidas como apuesta de largo plazo en computacion espacial. Meta AI y Llama son apuestas en IA generativa orientadas a profundizar el engagement y la monetizacion futura de WhatsApp Business. El 54% de ingresos proviene de EEUU/Canada; Asia-Pacifico y mercados emergentes crecen mas rapido con menor ARPU.",
   "tabla": {
-    "headers": ["Metrica", "2020", "2021", "2022", "2023", "2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", "85.97", "117.93", "116.61", "134.90", "164.50", "+21.9%"],
-      ["Utilidad Neta ($B)", "29.15", "39.37", "23.20", "39.10", "62.36", "+59.5%"],
-      ["Margen Neto (%)", "33.9%", "33.4%", "19.9%", "29.2%", "38.1%", "+8.9pp"],
-      ["EBITDA ($B)", "N/D", "54.72", "37.63", "57.93", "84.88", "+46.5%"],
-      ["FCF ($B)", "N/D", "N/D", "18.99", "28.20", "52.10", "+84.8%"],
-      ["EPS (GAAP)", "$10.39", "$13.77", "$8.59", "$14.87", "$23.86", "+60.5%"],
-      ["Deuda Neta ($B)", "N/D", "N/D", "N/D", "N/D", "-22.90", "N/D"]
+      [
+        "Revenue (B USD)",
+        "117.93",
+        "116.61",
+        "134.9",
+        "164.5",
+        "200.97",
+        "+22.2%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "39.37",
+        "23.2",
+        "39.1",
+        "62.36",
+        "60.46",
+        "-3%"
+      ],
+      [
+        "Margen Neto",
+        "33.4%",
+        "19.9%",
+        "29%",
+        "37.9%",
+        "30.1%",
+        "-7.8pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "54.72",
+        "37.63",
+        "57.93",
+        "84.88",
+        "101.9",
+        "+20.1%"
+      ],
+      [
+        "FCF (B USD)",
+        "39.11",
+        "19.05",
+        "43.84",
+        "54.07",
+        "46.11",
+        "-14.7%"
+      ],
+      [
+        "EPS Diluido",
+        "13.77",
+        "8.59",
+        "14.87",
+        "23.86",
+        "23.49",
+        "-1.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-16.6",
+        "-4.76",
+        "-23.47",
+        "-15.06",
+        "22.87",
+        "N/A"
+      ]
     ]
   },
-
   "kpis": [
-    { "label": "P/E Ratio", "value": "24.9x", "change": "vs. 45x promedio 2021", "signal": "yellow", "note": "forward P/E ~19x; razonable para 22% de crecimiento" },
-    { "label": "EV/EBITDA", "value": "13.3x", "signal": "green" },
-    { "label": "P/FCF", "value": "28.8x", "signal": "yellow" },
-    { "label": "Deuda/EBITDA", "value": "0.34x", "signal": "green" },
-    { "label": "ROE", "value": "28.7%", "signal": "green" },
-    { "label": "ROIC", "value": "36.7%", "signal": "green" }
+    {
+      "label": "P/E Trailing",
+      "value": "26.8x",
+      "signal": "yellow",
+      "note": "vs. sector tech ~28x",
+      "precio_base": 629.86,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 23.5
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "17.5x",
+      "signal": "green",
+      "precio_base": 629.86,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 35.97
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "16.1x",
+      "signal": "green",
+      "precio_base": 629.86,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 101.9,
+        "shares_m": 2574,
+        "deuda_neta_b": 22.87
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "35.2x",
+      "signal": "yellow",
+      "precio_base": 629.86,
+      "precio_fecha": "2026-04-10",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 46.11,
+        "shares_m": 2574
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.22x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "27.8%",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROIC",
+      "value": "29.5%",
+      "signal": "green"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "80.5%",
+      "signal": "green"
+    },
+    {
+      "label": "Margen Operativo",
+      "value": "41.4%",
+      "signal": "green"
+    },
+    {
+      "label": "FCF Yield",
+      "value": "2.8%",
+      "signal": "yellow"
+    }
   ],
-
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2020", "revenue": 85.97, "utilidad": 29.15 },
-      { "label": "2021", "revenue": 117.93, "utilidad": 39.37 },
-      { "label": "2022", "revenue": 116.61, "utilidad": 23.20 },
-      { "label": "2023", "revenue": 134.90, "utilidad": 39.10 },
-      { "label": "2024", "revenue": 164.50, "utilidad": 62.36 }
+      {
+        "label": "FY2021",
+        "revenue": 117.93,
+        "utilidad": 39.37
+      },
+      {
+        "label": "FY2022",
+        "revenue": 116.61,
+        "utilidad": 23.2
+      },
+      {
+        "label": "FY2023",
+        "revenue": 134.9,
+        "utilidad": 39.1
+      },
+      {
+        "label": "FY2024",
+        "revenue": 164.5,
+        "utilidad": 62.36
+      },
+      {
+        "label": "FY2025",
+        "revenue": 200.97,
+        "utilidad": 60.46
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
-
   "chart_margenes": {
     "data": [
-      { "label": "2020", "bruto": 73.7, "operativo": 27.0, "neto": 33.9 },
-      { "label": "2021", "bruto": 78.6, "operativo": 39.7, "neto": 33.4 },
-      { "label": "2022", "bruto": 77.7, "operativo": 24.8, "neto": 19.9 },
-      { "label": "2023", "bruto": 77.6, "operativo": 34.7, "neto": 29.2 },
-      { "label": "2024", "bruto": 79.3, "operativo": 42.2, "neto": 38.1 }
+      {
+        "label": "FY2021",
+        "bruto": 80.7,
+        "operativo": 39.6,
+        "neto": 33.4
+      },
+      {
+        "label": "FY2022",
+        "bruto": 78,
+        "operativo": 24.8,
+        "neto": 19.9
+      },
+      {
+        "label": "FY2023",
+        "bruto": 80.7,
+        "operativo": 34.7,
+        "neto": 29
+      },
+      {
+        "label": "FY2024",
+        "bruto": 81.8,
+        "operativo": 42.2,
+        "neto": 37.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 80.5,
+        "operativo": 41.4,
+        "neto": 30.1
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Bruto" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
-
   "capital_allocation": {
     "items": [
-      { "label": "Recompra de acciones", "value": "$29.75B", "nota": "segundo mayor programa de recompras del S&P 500 en FY2024; autorizacion vigente de $80.9B" },
-      { "label": "Dividendos", "value": "$5.07B", "nota": "primer dividendo en la historia de Meta, iniciado en FY2024 a $0.50/accion trimestral" },
-      { "label": "Capex FY2024", "value": "$37.26B", "nota": "22.7% del revenue; guia FY2025: $70-72B; guia FY2026: $115-135B" },
-      { "label": "Acuerdos de infraestructura AI", "value": "$44B+", "nota": "CoreWeave $14.2B, Google Cloud $10B+, Oracle $20B en negociacion; plan total $600B para 2025-2028" }
+      {
+        "label": "Capex",
+        "value": "69.69B USD",
+        "nota": "Inversion record en infraestructura de IA: data centers, servidores y redes. Guidance FY2026: 60-65B USD."
+      },
+      {
+        "label": "Recompras",
+        "value": "~32B USD",
+        "nota": "Recompra activa en FY2025. Shares diluted cayeron de 2614M a 2574M (-1.5% YoY)."
+      },
+      {
+        "label": "Dividendos",
+        "value": "~3.0B USD",
+        "nota": "Dividendo trimestral de 0.50/accion iniciado en FY2024, mantenido en FY2025. Yield ~0.3%."
+      },
+      {
+        "label": "R&D",
+        "value": "~43B USD",
+        "nota": "Incluye Reality Labs (~18B perdidas), Llama, Meta AI, sistemas Andromeda/GEM y Orion AR."
+      }
     ]
   },
-
   "comparacion_sector": {
-    "headers": ["Metrica", "Meta FY24", "Sector ref.", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "META FY2025",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Margen bruto", "79.3%", "~65%", "Por encima del sector"],
-      ["Margen operativo", "42.2%", "~25%", "Por encima del sector"],
-      ["Crecimiento revenue YoY", "+21.9%", "~12%", "Por encima del sector"],
-      ["P/E forward", "~19x", "~24x", "Descuento vs. sector"],
-      ["FCF margin FY2024", "31.7%", "~18%", "Por encima del sector"]
+      [
+        "Gross Margin",
+        "80.5%",
+        "~65%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "41.4%",
+        "~25%",
+        "Muy por encima — Year of Efficiency sostenido"
+      ],
+      [
+        "Revenue Growth YoY",
+        "+22.2%",
+        "~12%",
+        "Muy por encima — aceleracion con IA"
+      ],
+      [
+        "P/E Forward",
+        "17.5x",
+        "~25x",
+        "Descuento — valuacion atractiva"
+      ],
+      [
+        "ROIC",
+        "29.5%",
+        "~18%",
+        "Por encima — capital allocation disciplinado"
+      ]
     ]
   },
-
   "deterioro": {
-    "veredicto": "No se detecta deterioro en el negocio principal, pero el FCF se comprimira severamente en 2025-2026 por el plan de inversion en AI",
-    "analisis": "El negocio de publicidad digital de Meta esta en su mejor momento historico: margen operativo de 42.2% y FCF de $52.1B. Sin embargo, el compromiso de $70-72B en capex para FY2025 y $115-135B para FY2026 implica que el FCF podria colapsar a $20-30B en FY2025 y potencialmente ser negativo en FY2026. Este no es deterioro operativo sino una apuesta estrategica deliberada cuyo retorno es incierto en tiempo y magnitud.",
+    "veredicto": "Salud financiera solida con presion en FCF y utilidad neta por capex record — es inversion estrategica, no deterioro operativo.",
+    "analisis": "FY2025 muestra anomalia aparente: revenue +22.2% pero utilidad neta -3% YoY. La causa es el capex de 69.7B (+87% YoY) que eleva D&A y reduce FCF. El margen operativo se mantuvo en 41.4%, evidenciando que el negocio core esta sano. La deuda LT doblo a 58.7B financiando el ciclo de inversion. Presion transitoria por inversion de largo plazo, no deterioro estructural.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+21.9%", "status": "ok" },
-      { "metrica": "Margen operativo", "valor": "42.2%", "status": "ok" },
-      { "metrica": "FCF FY2024", "valor": "$52.1B (+84.8%)", "status": "ok" },
-      { "metrica": "Reality Labs perdidas", "valor": "-$17.73B", "status": "warn", "nota": "perdidas operativas aumentaron 10% YoY sin fecha clara de rentabilidad" },
-      { "metrica": "Capex guidance FY2025", "valor": "$70-72B", "status": "warn", "nota": "duplica el capex de FY2024; comprimira el FCF a ~$20-30B" },
-      { "metrica": "Capex guidance FY2026", "valor": "$115-135B", "status": "bad", "nota": "si el OCF no crece en paralelo, el FCF libre podria ser cercano a cero o negativo" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+22.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "41.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "30.1%",
+        "status": "warn",
+        "nota": "Cae 7.8pp vs FY2024 por D&A en ascenso"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-14.7%",
+        "status": "warn",
+        "nota": "FCF comprimido por capex de IA de 69.7B (+87% YoY)"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "22.87B USD",
+        "status": "warn",
+        "nota": "LTD doblo a 58.7B; ND/EBITDA en 0.22x"
+      },
+      {
+        "metrica": "EPS Diluido YoY",
+        "valor": "-1.6%",
+        "status": "warn",
+        "nota": "EPS cae con utilidad neta; recompras mitigan parcialmente"
+      }
     ]
   },
-
   "flags": [
-    { "level": "green", "title": "Maquina publicitaria con 3.29B usuarios activos diarios", "impact": "Alto", "evidence": "Family of Apps genero $87.11B de utilidad operativa en FY2024 con margen del 53.7%. Ad impressions creciendo ~20% YoY. 3.98B usuarios activos mensuales.", "context": "Meta tiene el inventario publicitario mas valioso del mundo despues de Google. Ninguna plataforma alternativa tiene la escala y los datos de comportamiento que Meta posee. El duopolio Meta-Google es una de las posiciones de mercado mas defensivas en el capitalismo moderno" },
-    { "level": "green", "title": "Recuperacion de margenes excepcional desde el minimo de FY2022", "impact": "Alto", "evidence": "Margen operativo: 24.8% (FY2022) a 42.2% (FY2024). Net income: $23.2B a $62.4B en 2 anos. 'Year of Efficiency' redujo headcount de 86,000 a 67,317.", "context": "Meta demostro que puede ajustar su estructura de costos rapidamente sin sacrificar crecimiento. La capacidad de ejecutar eficiencia operativa a escala es una ventaja competitiva en si misma" },
-    { "level": "green", "title": "Posicion financiera solida antes de la aceleracion de capex", "impact": "Alto", "evidence": "Caja neta de $22.9B (caja $81.6B, deuda total $58.7B). Deuda/EBITDA de 0.34x. OCF de $91.3B en FY2024.", "context": "Meta entra a la fase de inversion masiva en IA desde la posicion financiera mas solida de su historia. Puede financiar el plan sin necesidad de deuda adicional significativa en el corto plazo" },
-    { "level": "yellow", "title": "Primer dividendo de la historia y recompras masivas de $29.75B en FY2024", "impact": "Medio", "evidence": "Retorno total al accionista de ~$35B en FY2024. Dividendo iniciado a $0.50/accion trimestral. Autorizacion vigente de ~$80.9B.", "context": "El riesgo es que la aceleracion de capex AI reduzca o elimine estas devoluciones de capital en 2025-2026. Si el capex supera el OCF, Meta necesitaria emitir deuda o suspender buybacks" },
-    { "level": "yellow", "title": "Reality Labs: $17.73B de perdidas anuales sin horizonte de rentabilidad", "impact": "Medio", "evidence": "Reality Labs: revenue $2.15B vs. perdidas operativas $17.73B en FY2024. Perdidas crecieron 10% YoY.", "context": "Meta subsidia con $17.73B anuales una division especulativa de AR/VR. Es el mayor gasto discrecional de la empresa y el mercado no le asigna valor en la valuacion actual. Si Reality Labs se cancela, el EPS sube ~$4 de golpe" },
-    { "level": "yellow", "title": "Riesgo regulatorio: demanda FTC por monopolio y multas en Europa", "impact": "Medio", "evidence": "La FTC demando a Meta por monopolio (caso Facebook-Instagram-WhatsApp). La UE aplica multas recurrentes bajo GDPR y Digital Markets Act.", "context": "Una desinversion forzada de Instagram o WhatsApp seria el escenario de riesgo mas severo. La probabilidad es baja pero el impacto seria catastrofico para la tesis de inversion" },
-    { "level": "red", "title": "Capex de $115-135B en FY2026 podria llevar el FCF a niveles cercanos a cero", "impact": "Alto", "evidence": "Meta guio capex de $70-72B en FY2025 y $115-135B en FY2026. Si el OCF crece a $110B, el FCF seria negativo en el escenario mas agresivo de capex.", "context": "El retorno de la inversion masiva en IA no es claro en timing ni magnitud. Si la monetizacion de IA no acelera en 2026-2027, Meta habra comprometido $250B+ en FCF con retornos inciertos. Es la mayor apuesta estrategica de una empresa madura en la historia reciente de la tecnologia" }
+    {
+      "level": "green",
+      "title": "Revenue +22% YoY a 201B USD",
+      "impact": "Alto",
+      "evidence": "Ingresos de 200.97B USD en FY2025 vs 164.5B en FY2024; aceleracion desde +16% de FY2023. Ads impulsados por Reels, Meta AI y Advantage+.",
+      "context": "La aceleracion en un negocio de 200B demuestra que la IA amplia el TAM publicitario de Meta, no solo lo defiende."
+    },
+    {
+      "level": "green",
+      "title": "Margen operativo record 41.4%",
+      "impact": "Alto",
+      "evidence": "Margen operativo FY2025: 41.4% vs 42.2% en FY2024. EBITDA de 101.9B USD.",
+      "context": "La expansion de margenes sostenida confirma que el Year of Efficiency fue transformacion estructural, no recorte ciclico."
+    },
+    {
+      "level": "green",
+      "title": "Moat de red: 3.4B DAU",
+      "impact": "Alto",
+      "evidence": "Familia de apps con 3.4B+ usuarios activos diarios. Facebook 3.3B MAU; Instagram y WhatsApp crecen en mercados emergentes.",
+      "context": "Nadie puede replicar este grafo social en decadas. El dataset de comportamiento es la ventaja competitiva mas durable del sector tech."
+    },
+    {
+      "level": "yellow",
+      "title": "Capex IA de 69.7B — FCF comprimido",
+      "impact": "Medio",
+      "evidence": "Capex FY2025: 69.7B (+87% YoY vs 37.3B en FY2024). FCF cae de 54.1B a 46.1B. Guidance FY2026: 60-65B adicionales.",
+      "context": "Si monetizacion de IA tarda mas de 2 anos, FCF comprimido y D&A en ascenso presionaran EPS y multiple."
+    },
+    {
+      "level": "yellow",
+      "title": "Reality Labs: 18B perdidas anuales",
+      "impact": "Medio",
+      "evidence": "Reality Labs acumula mas de 60B en perdidas totales desde 2019. Sin fecha de breakeven visible.",
+      "context": "Apuesta de largo plazo en XR — si el mercado no escala como proyecta Zuckerberg, es capital permanentemente destruido."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo regulatorio DOJ antimonopolio",
+      "impact": "Alto",
+      "evidence": "DOJ vs Meta por adquisicion de Instagram y WhatsApp. Juicio activo en 2025-2026. Posible desinversion forzada.",
+      "context": "Una desinversion destruiria el dataset unificado que da ventaja a Meta Ads. Impacto estimado: -20% a -35% en ingresos en escenario adverso."
+    }
   ],
-
   "score": {
-    "score": 8.8,
+    "score": 8,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 9, "max": 10 },
-      { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
-      { "label": "Generacion de FCF", "score": 8, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
     ]
   },
-
   "analisis_cualitativo": {
-    "estrategia": "Meta ejecuta una doble apuesta: maximizar los ingresos publicitarios del negocio actual mientras construye la infraestructura de IA que considera esencial para la proxima decada. El plan de $600B en infraestructura para 2025-2028 incluye data centers propios, chips de silicio personalizado (MTIA) y modelos de IA de codigo abierto (Llama) que crean efectos de red en el ecosistema de desarrolladores. Zuckerberg apuesta que quien controle la infraestructura de IA controlara la distribucion de contenido y publicidad de la siguiente generacion.",
-    "ventajas": "Meta tiene tres moats entrelazados: efectos de red (3.29B personas no migran porque todos sus contactos estan en la plataforma), datos de comportamiento de usuario incomparables para targeting publicitario, y escala de distribucion que ningun competidor puede replicar. El modelo publicitario tiene pricing power real: los anunciantes pagan mas por ads de Meta porque convierten mejor gracias a los datos de primera parte. El codigo abierto de Llama es una estrategia de distribucion que convierte a Meta en la referencia del ecosistema de IA.",
-    "debilidades": "Meta es 98.7% dependiente de ingresos publicitarios, un modelo ciclico y vulnerable a recesion economica. Reality Labs consume $17B+ anuales sin fecha de retorno visible. TikTok ha erosionado el tiempo de uso entre jovenes de forma estructural. La moderacion de contenido y los riesgos reputacionales son un pasivo constante que genera multas y regulacion creciente.",
+    "estrategia": "Meta ejecuta estrategia dual: (1) monetizacion maxima del negocio publicitario via IA — Advantage+, Meta AI integrado en todas las apps, Reels y WhatsApp Business; y (2) construccion de la siguiente plataforma de computacion — AR/VR (Quest 3, Ray-Ban Meta, Orion AR) y Llama como capa de IA generativa open-weights. A corto plazo el motor es publicidad; a largo plazo la tesis es que el siguiente dispositivo personal seran gafas con IA y Meta busca ser el sistema operativo de ese dispositivo. Zuckerberg comprometio 60-65B en capex FY2026, la mayor inversion en la historia de la empresa.",
+    "ventajas": "Moat multidimensional: (1) Red de efectos con 3.4B DAU — imposible replicar el grafo social en decadas; (2) Datos de primera parte — comportamiento de 3.4B usuarios permite targeting publicitario superior post-ATT (iOS 14); (3) Escala de infraestructura — mayor inversor privado mundial en AI compute en 2025-2026; (4) Diversificacion de plataformas — si Facebook desacelera, Instagram/Reels compensa; WhatsApp Business monetiza; Meta AI y XR son la siguiente ola.",
+    "debilidades": "Reality Labs destruye >18B USD anuales sin retorno visible, subsidiado por el negocio publicitario. El modelo tiene concentracion extrema en publicidad (~98%), creando vulnerabilidad ante regulaciones de privacidad (Privacy Sandbox, CPRA, DSA). La percepcion de marca entre adolescentes debilita — TikTok domina el segmento 13-25. El D&A escalara en FY2026-2027 por capex record, presionando EPS GAAP.",
     "riesgos": [
-      "Destruccion de FCF por capex AI: si el plan de $115-135B en FY2026 no genera retornos visibles en 18-24 meses, el mercado podria castigar duramente una empresa que paso de FCF positivo de $52B a flujo cercano a cero",
-      "Riesgo regulatorio de desinversion forzada: la demanda de la FTC podria resultar en separacion de Instagram o WhatsApp, activos que representan mas del 50% del valor de Meta",
-      "Perdida de relevancia entre jovenes: TikTok y nuevas plataformas siguen erosionando el uso en el segmento 18-24 anos, el grupo demografico mas valioso para anunciantes, con impacto en la siguiente generacion de usuarios activos"
+      "Riesgo regulatorio DOJ: caso antimonopolio activo en 2025-2026 podria forzar desinversion de Instagram o WhatsApp. La fragmentacion reduciria el poder del dataset en -20% a -35% en ingresos en el peor escenario.",
+      "Riesgo de capex: La inversion de 69.7B en FY2025 y 60-65B en FY2026 requiere que retornos de IA se materialicen en 18-36 meses. Si el timeline se extiende, FCF comprimido y D&A en aumento generaran re-rating bajista.",
+      "Competencia en video corto: TikTok mantiene ventaja en engagement 13-25 anos. Una prohibicion en EEUU seria catalizador masivo para Meta; su continuidad es el principal riesgo de cuota de mercado en el demografico mas valioso.",
+      "Privacidad y regulacion: Privacy Sandbox de Google, CPRA en California y DSA en Europa podrian degradar precision del targeting y comprimir CPMs en los mercados de mayor ARPU."
     ],
-    "inversiones_estrategicas": "Meta comprometio $600B en infraestructura de IA para 2025-2028, incluyendo un data center de 2 gigawatts en Louisiana. Tiene acuerdos de infraestructura con CoreWeave ($14.2B), Google Cloud ($10B+) y negocia con Oracle ($20B). El modelo Llama de codigo abierto es su estrategia para dominar el ecosistema de desarrolladores de IA. Los anteojos Ray-Ban Stories con IA son el primer producto consumer de AR con traccion real de mercado."
+    "inversiones_estrategicas": "Capex FY2025 de 69.7B USD (+87% YoY) se destina a data centers de IA en EEUU, Europa y Asia. R&D de ~43B incluye Reality Labs (~18B de perdidas: Quest 3S, Ray-Ban Meta, Orion AR), Meta AI (Llama 3 y 4, asistente con 700M MAU) y sistemas Andromeda/GEM. Estrategia de M&A selectiva — Meta prefiere desarrollo interno. Retorno esperado segun management: 5-7x en revenue adicional en 3-5 anos por mejora en relevancia publicitaria y nuevos vectores como WhatsApp Business Premium."
   },
-
   "verdict": {
     "status": "Comprar con Conviccion",
-    "score": "8.8/10",
+    "score": "8.0/10",
     "color": "green",
     "metrics": [
-      { "label": "Revenue FY2024", "value": "$164.5B" },
-      { "label": "Margen Operativo", "value": "42.2%" },
-      { "label": "FCF Yield", "value": "3.3%" },
-      { "label": "P/E Forward", "value": "~19x" },
-      { "label": "Crecimiento Rev.", "value": "+21.9% YoY" }
+      {
+        "label": "Revenue FY2025",
+        "value": "200.97B USD"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "41.4%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.8%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "17.5x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+22.2% YoY"
+      }
     ],
     "bullets": [
-      { "text": "**Negocio sin competencia real ->** 3.29B usuarios activos diarios y $87.1B de utilidad operativa en Family of Apps. El duopolio Meta-Google en publicidad digital es una de las posiciones de mercado mas defensivas de la historia del capitalismo moderno.", "type": "pro" },
-      { "text": "**Recuperacion de margenes validada ->** de 24.8% de margen operativo en FY2022 a 42.2% en FY2024. Meta demostro que puede administrar costos sin sacrificar crecimiento cuando el contexto lo requiere.", "type": "pro" },
-      { "text": "**Valuacion razonable para el negocio actual ->** P/E forward de ~19x para un negocio creciendo al 22% con margen operativo del 42% y $22.9B de caja neta no es caro si se excluye el riesgo de capex AI.", "type": "pro" },
-      { "text": "**Apuesta AI con riesgo binario ->** capex de $70-72B en FY2025 y $115-135B en FY2026 comprimira el FCF de $52.1B a potencialmente $0 en FY2026. El retorno de esa inversion no es claro en tiempo ni magnitud.", "type": "con" }
+      {
+        "text": "**Revenue +22% a 201B USD** — Meta acelera en un negocio de 200B gracias a la IA publicitaria. Ningun competidor de esta escala crece a esta velocidad con margenes operativos del 41%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margen operativo record 41.4%** — El Year of Efficiency de 2023 fue permanente. Meta gana mas de 41 centavos por cada dolar de revenue con poder de pricing irreplicable.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva vs. crecimiento** — P/E Forward de 17.5x para una empresa que crece +22% YoY con margen >40% implica PEG ~0.8x, barato por cualquier metrica de calidad growth.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo DOJ y capex elevado** — Caso antimonopolio activo y capex de 60-65B en FY2026 son las variables criticas: riesgo estructural de desinversion y compresion de FCF a corto plazo.",
+        "type": "con"
+      }
     ]
   },
-
   "conclusion": {
     "items": [
-      { "label": "Ingresos", "texto": "Revenue de $164.5B en FY2024 (+21.9% YoY) impulsado por crecimiento de ad impressions (~20% YoY) e incremento en precio promedio por ad. Family of Apps representa el 98.7% del total con utilidad operativa de $87.1B. La guia para Q1 FY2025 apunta a $39.5-41.8B de revenue, lo que implica crecimiento del 12-17% YoY." },
-      { "label": "Margenes", "texto": "Margen bruto de 79.3% y margen operativo de 42.2%, ambos records historicos. La mejora vs FY2022 (24.8% operativo) es resultado del Year of Efficiency: reduccion de headcount de 86,000 a 67,317 empleados. Los margenes se comprimiran en FY2025-2026 cuando la depreciacion del capex AI masivo comience a impactar el P&L." },
-      { "label": "EPS", "texto": "EPS GAAP de $23.86 (+60.5% YoY), impulsado por expansion de utilidad neta ($62.36B) y recompras de $29.75B. La calidad de las ganancias es alta: el OCF de $91.3B supera ampliamente el net income de $62.36B. En FY2025-2026, el EPS podria moderarse conforme los cargos de depreciacion del capex AI masivo impacten el P&L." },
-      { "label": "Balance", "texto": "Posicion de caja neta de $22.9B (caja $81.6B menos deuda total $58.7B). Deuda/EBITDA de 0.34x, nivel conservador para una empresa de esta escala. Meta entra a la fase de inversion masiva en IA desde la posicion financiera mas solida de su historia. Podria necesitar emitir deuda adicional si el plan de capex de FY2026 excede el OCF disponible." },
-      { "label": "Generacion de caja", "texto": "FCF de $52.1B en FY2024 (+84.8% YoY) con OCF de $91.3B. Esta es probablemente la cima del FCF por varios anos: capex de $70-72B en FY2025 comprimira el FCF a ~$20-30B, y el plan de $115-135B en FY2026 podria llevar el FCF a cero o negativo. Esta compresion es temporal si la apuesta de IA genera retornos, o permanente si no lo hace." },
-      { "label": "Riesgos principales", "texto": "1) Capex AI con retorno incierto: $600B comprometidos en infraestructura para 2025-2028. Si la monetizacion no acelera en 2027, Meta habra comprometido valor masivo. 2) Riesgo regulatorio FTC: una desinversion forzada de Instagram cambiaria fundamentalmente la tesis de inversion. 3) Reality Labs: $17.73B de perdidas anuales. Zuckerberg podria incrementar esta apuesta si considera el metaverso como el futuro de la computacion personal, sin garantia de exito comercial." }
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 200.97B USD en FY2025 crece 22.2% YoY, la mayor aceleracion desde FY2021. Driver: publicidad potenciada por IA — Meta AI con 700M MAU, Reels compitiendo con TikTok y Advantage+ automatizando targeting. EEUU/Canada generan ~54% pero Asia-Pacifico crece mas rapido. WhatsApp Business y Threads son vectores adicionales en etapa temprana."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen operativo de 41.4% vs 42.2% en FY2024. La presion para FY2026 vendra del D&A en ascenso por el capex record de FY2025, elevando la base de activos depreciables en ~70B. Esto comprimira el margen neto GAAP pero no el margen operativo cash, que seguira expandiendose conforme el revenue escale sobre base de costos mas fija."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 46.11B USD en FY2025 (OCF 115.8B menos Capex 69.69B). Compresion desde 54.1B de FY2024 es puramente por capex record. Con guidance de 60-65B en FY2026, el FCF se mantendra comprimido en 50-55B, pero la base de OCF deberia superar 130B conforme revenue escale."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda LT doblo de 28.8B a 58.7B en FY2025 financiando el ciclo de capex. Caja bajo de 43.9B a 35.9B. Deuda Neta de 22.87B USD con ND/EBITDA de 0.22x — solido y manejable. Equity crece a 217.24B. ROE de 27.8% y ROIC de 29.5% muy por encima del costo de capital."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A precio de 629.86 USD/accion (P/E Forward 17.5x, EV/EBITDA 16.1x, P/FCF 35.2x, FCF Yield 2.8%), META cotiza con descuento frente a Alphabet y Microsoft considerando su tasa de crecimiento. Precio objetivo 12 meses: 700-750 USD basado en 20-21x EV/EBITDA sobre EBITDA FY2026 estimado de ~115B."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Top 3: (1) DOJ antimonopolio — veredicto en 2026 es la mayor variable binaria; desinversion de Instagram destruiria 25-30% del valor; (2) Capex de IA sin retorno visible — si FCF no recupera a 60B+ para FY2027, re-rating bajista; (3) Regulacion de privacidad — restricciones al uso de datos comprimiran CPMs en mercados de mayor ARPU."
+      }
     ]
   }
 }

@@ -1,0 +1,494 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "BBB Foods Inc. (Tiendas 3B) es el lider del modelo hard discount grocery en Mexico, con 3,346 tiendas al cierre de 2025 y revenue de Ps.78.2B MXN (US$4.4B), creciendo 36.1% YoY y 35.6% CAGR desde 2021. La perdida neta reportada de Ps.2,840M en FY2025 se explica en mas de un 100% por un gasto no-cash de Ps.2,930M en RSUs del plan de compensacion post-IPO; el negocio subyacente mantiene solidez operativa y OCF record de Ps.4,682M. A US$39, el mercado premia el hipercrecimiento con multiples exigentes que dejan poco margen ante desaceleraciones.",
+  "descripcion": "Tiendas 3B opera bajo el modelo hard discount: ~850-900 SKUs, precio minimo sostenible de mercado, y tiendas compactas en vecindarios centrales. El 58.2% de ventas es marca propia (private label), 35.9% marcas reconocidas y 5.7% productos spot. Los clientes visitan 3-4 veces por semana. El moat competitivo es su estructura de costos mas baja que supermercados tradicionales y su modelo de NWC negativo (Ps.-5,876M en 2025) que autofinancia la expansion via float de cuentas por pagar. Presencia 100% en Mexico con 3,346 tiendas y 4 centros de distribucion al cierre de FY2025.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B MXN)",
+        "23.1",
+        "32.6",
+        "44.1",
+        "57.4",
+        "78.2",
+        "+36.1%"
+      ],
+      [
+        "Utilidad Neta (B MXN)",
+        "-0.82",
+        "-0.57",
+        "-0.31",
+        "0.33",
+        "-2.84",
+        "N/A"
+      ],
+      [
+        "Margen Neto",
+        "-3.5%",
+        "-1.7%",
+        "-0.7%",
+        "+0.6%",
+        "-3.6%",
+        "-4.2pp"
+      ],
+      [
+        "EBITDA (B MXN)",
+        "0.83",
+        "1.19",
+        "1.70",
+        "2.57",
+        "0.91",
+        "-64.6%"
+      ],
+      [
+        "FCF (B MXN)",
+        "0.83",
+        "0.99",
+        "1.34",
+        "1.31",
+        "1.13",
+        "-13.7%"
+      ],
+      [
+        "EPS Diluido (MXN)",
+        "-68.06",
+        "-47.09",
+        "-25.51",
+        "2.40",
+        "-24.69",
+        "N/A"
+      ],
+      [
+        "Deuda Neta (B MXN)",
+        "N/D",
+        "0.05",
+        "0.10",
+        "-0.41",
+        "0.82",
+        "+N/A"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A",
+      "signal": "yellow",
+      "note": "EPS negativo FY2025 por RSUs no-cash",
+      "precio_base": 39,
+      "precio_fecha": "2026-04-18",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": -1.39
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "N/D",
+      "signal": "yellow",
+      "note": "Sin consensus forward disponible",
+      "precio_base": 39,
+      "precio_fecha": "2026-04-18",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 0
+      }
+    },
+    {
+      "label": "EV/EBITDA (adj.)",
+      "value": "21x",
+      "signal": "yellow",
+      "note": "Ajustado por Ps.2,930M RSUs no-cash",
+      "precio_base": 39,
+      "precio_fecha": "2026-04-18",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 0.216,
+        "shares_m": 116.735,
+        "deuda_neta_b": 0.046
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "71x",
+      "signal": "red",
+      "note": "FCF yield 1.4% -- fuerte prima de crecimiento",
+      "precio_base": 39,
+      "precio_fecha": "2026-04-18",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 0.064,
+        "shares_m": 116.735
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA (adj.)",
+      "value": "0.9x",
+      "signal": "green",
+      "note": "Balance sano; deuda neta minima"
+    },
+    {
+      "label": "ROE",
+      "value": "-68.8%",
+      "signal": "red",
+      "note": "Distorsionado por perdida contable RSUs"
+    },
+    {
+      "label": "ROIC",
+      "value": "-9.6%",
+      "signal": "red",
+      "note": "Negativo por perdida operativa reportada 2025"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B MXN",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 23.09,
+        "utilidad": -0.82
+      },
+      {
+        "label": "FY2022",
+        "revenue": 32.58,
+        "utilidad": -0.57
+      },
+      {
+        "label": "FY2023",
+        "revenue": 44.08,
+        "utilidad": -0.31
+      },
+      {
+        "label": "FY2024",
+        "revenue": 57.44,
+        "utilidad": 0.33
+      },
+      {
+        "label": "FY2025",
+        "revenue": 78.15,
+        "utilidad": -2.84
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 14.9,
+        "operativo": 1.7,
+        "neto": -3.5
+      },
+      {
+        "label": "FY2022",
+        "bruto": 15.1,
+        "operativo": 1.6,
+        "neto": -1.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 16,
+        "operativo": 1.8,
+        "neto": -0.7
+      },
+      {
+        "label": "FY2024",
+        "bruto": 16.3,
+        "operativo": 2.3,
+        "neto": 0.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 16.2,
+        "operativo": -0.9,
+        "neto": -3.6
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex",
+        "value": "Ps.3,549M MXN",
+        "nota": "574 tiendas netas y 4 centros de distribucion en 2025; capex CAGR +61% vs 2021"
+      },
+      {
+        "label": "Dividendos",
+        "value": "Ps.0",
+        "nota": "Sin dividendos historicos -- empresa en fase de expansion agresiva"
+      },
+      {
+        "label": "Recompras",
+        "value": "Ps.0",
+        "nota": "Sin programa de recompra activo"
+      },
+      {
+        "label": "M&A",
+        "value": "Ps.0",
+        "nota": "Crecimiento 100% organico; sin adquisiciones relevantes"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "TBBB TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "16.2%",
+        "~25-35% (retail MX)",
+        "Por debajo -- modelo hard discount estructural"
+      ],
+      [
+        "Margen Operativo (adj)",
+        "+5.9%",
+        "~3-6%",
+        "En linea ajustado por RSUs no-cash"
+      ],
+      [
+        "Revenue Growth",
+        "+36.1%",
+        "~5-12%",
+        "Muy por encima del sector"
+      ],
+      [
+        "EV/EBITDA adj",
+        "~21x",
+        "~12-18x (retail)",
+        "Prima justificada por crecimiento"
+      ],
+      [
+        "Deuda/EBITDA",
+        "0.9x",
+        "~1.5-3x",
+        "Por debajo -- balance mas conservador"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Negocio operativamente solido con perdida contable no recurrente por compensacion en acciones post-IPO",
+    "analisis": "La perdida neta de Ps.2,840M en 2025 se explica en ~103% por Ps.2,930M de gasto por RSUs del plan Liquidity Event, reconocidos con gradiente inverso (mayor carga en periodos iniciales). Sin este efecto, la utilidad operativa ajustada seria positiva. El FCF operativo crecio a Ps.4,682M (+24.9% YoY), validando la solidez del modelo subyacente. El margen bruto estable en ~16.2% confirma que el pricing y eficiencia operativa basica estan intactos.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+36.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "16.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo (rep.)",
+        "valor": "-0.9%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto (rep.)",
+        "valor": "-3.6%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+24.9% OCF",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Ps.0.82B MXN",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Crecimiento estructural excepcional",
+      "impact": "Alto",
+      "evidence": "Revenue CAGR 35.6% en 4 anos; 3,346 tiendas a dic-2025 vs 1,500 en dic-2021; SSS +18.3% en 2025; 825M transacciones.",
+      "context": "BBB Foods opera en el segmento mas resiliente del consumo en Mexico. Su expansion tiene amplio runway en un pais con ~130M habitantes y alta penetracion de comercio informal que puede migrar a hard discount formal."
+    },
+    {
+      "level": "green",
+      "title": "Modelo de caja autopropulsado",
+      "impact": "Alto",
+      "evidence": "NWC negativo de Ps.-5,876M en 2025 (vs Ps.-2,633M en 2024); OCF de Ps.4,682M creciendo 24.9% YoY sin deuda neta relevante.",
+      "context": "El modelo de pago a proveedores en terminos mas largos que la rotacion de inventario genera financiamiento organico gratuito para expansion -- ventaja estructural del hard discount."
+    },
+    {
+      "level": "yellow",
+      "title": "RSUs inflan costos administrativos",
+      "impact": "Medio",
+      "evidence": "Gasto por RSUs de Ps.2,930M en 2025 bajo plan Liquidity Event; reconocimiento en gradiente inverso sobre 12 trimestres eleva carga contable en 2026.",
+      "context": "Los inversores deben usar EBITDA ajustado por SBC (~Ps.3,838M) para evaluar rentabilidad real. El efecto es temporal pero presionara resultados reportados hasta ~2028."
+    },
+    {
+      "level": "yellow",
+      "title": "Gastos administrativos crecen 156% vs revenue 36%",
+      "impact": "Medio",
+      "evidence": "Admin expenses Ps.5,094M en 2025 (6.5% del revenue) vs Ps.1,987M en 2024 (3.5%). Incluye Ps.2,930M RSUs mas contratacion directiva acelerada.",
+      "context": "Sin el efecto RSUs, admin expenses serian ~Ps.2,164M (2.8% revenue) -- en realidad mejorando. Sin embargo la expansion regional exige personal directivo costoso que podria presionar si el crecimiento se desacelera."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion exigente sin margen de error",
+      "impact": "Alto",
+      "evidence": "P/FCF ~71x; EV/EBITDA adj ~21x a precio de US$39; stock +77% sobre precio de IPO (feb-2024 a ~US$22).",
+      "context": "El mercado descuenta hipercrecimiento sostenido durante anos. Cualquier desaceleracion en SSS, presion competitiva de Walmart/Bodega Aurrera o deterioro macro en Mexico podria generar re-rating significativo a la baja."
+    }
+  ],
+  "score": {
+    "score": 7,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Expansion agresiva del modelo hard discount en Mexico: apertura de ~500-600 tiendas anuales, incremento de penetracion de marca propia (ya en 58.2%), diversificacion de SKUs spot y fortalecimiento de la cadena de suministro con nuevos centros de distribucion. Post-IPO la estrategia incluye profesionalizacion del management, digitalizacion de operaciones y expansion a nuevas regiones del pais.",
+    "ventajas": "(1) First-mover en hard discount formal en Mexico con 3,346 tiendas y escala que genera ventaja en compras y logistica. (2) NWC negativo: el negocio se autofinancia con el float de cuentas por pagar. (3) Ubicacion en colonias populares con alta frecuencia de visita (3-4x/semana). (4) Private label al 58.2% mejora margenes y fideliza al cliente. (5) Bajo costo de apertura de tiendas vs supermercados tradicionales.",
+    "debilidades": "(1) Margenes brutos estructuralmente bajos (~16%) dejan poco colchon ante shocks de costos. (2) Concentracion 100% en Mexico sin diversificacion geografica. (3) Gasto en RSUs elevara costos admin en 2026-2028. (4) Sin historial largo como empresa publica (IPO feb-2024). (5) Dependencia del ritmo de apertura de tiendas para sostener crecimiento de revenue.",
+    "riesgos": [
+      "Desaceleracion del consumo mexicano por recesion o caida del empleo informal impacta SSS y trafico de clientes",
+      "Competencia de Walmart (Bodega Aurrera), OXXO y potenciales nuevos entrantes en el segmento hard discount",
+      "Presion inflacionaria en costos de transporte, energia y nomina que no puede trasladarse al precio final sin afectar el posicionamiento",
+      "Riesgo cambiario MXN/USD: depreciacion del peso afecta metricas en dolares y atractivo para inversores internacionales",
+      "Riesgo de ejecucion: apertura masiva de 500+ tiendas anuales puede generar sobrecostos, deterioro en servicio o problemas de supply chain"
+    ],
+    "inversiones_estrategicas": "En 2025 se abrieron 4 nuevos centros de distribucion y 574 tiendas netas. El capex de Ps.3,549M financio principalmente equipo de tiendas, mejoras en CDs y refrigeracion. Las lineas de credito con Santander (Ps.800M) y HSBC (Ps.1,100M) mas un prestamo sindicalizado nuevo (Ps.1,065M, no utilizado) dan flexibilidad financiera para la expansion planificada."
+  },
+  "verdict": {
+    "status": "Mantener / Acumular en correcciones",
+    "score": "7.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "Ps.78.2B MXN"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+36.1% YoY"
+      },
+      {
+        "label": "SSS Growth",
+        "value": "+18.3%"
+      },
+      {
+        "label": "OCF FY2025",
+        "value": "Ps.4,682M MXN"
+      },
+      {
+        "label": "Tiendas totales",
+        "value": "3,346"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Crecimiento excepcional ->** Revenue CAGR 35.6% en 4 anos con 3,346 tiendas y SSS +18.3% en 2025 demuestran que el modelo hard discount resuena profundamente en el consumidor mexicano.",
+        "type": "pro"
+      },
+      {
+        "text": "**Caja autopropulsada ->** NWC negativo de Ps.-5,876M y OCF de Ps.4,682M (+24.9% YoY) muestran que el negocio crece sin quemar caja operativa, financiandose con el float de proveedores.",
+        "type": "pro"
+      },
+      {
+        "text": "**Perdida contable temporal ->** La perdida neta de Ps.2,840M en FY2025 es en >100% atribuible a RSUs no-cash del plan post-IPO; el EBITDA ajustado es Ps.3,838M y el negocio operativo esta intacto.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion sin margen de error ->** P/FCF ~71x y EV/EBITDA adj ~21x descuentan anos de hipercrecimiento perfecto; cualquier tropiezo en SSS, expansion o competencia podria generar caida severa.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de Ps.78.2B MXN en FY2025 (+36.1% YoY) consolida un CAGR de 35.6% sostenido desde 2021. El crecimiento es organico y equilibrado: 574 tiendas nuevas mas SSS del 18.3% y tickets promedio subiendo 11%. La empresa proceso 825M de transacciones en 2025."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto estable en 16.2% (vs 16.3% en 2024): sano dado el modelo hard discount. Margen operativo reportado de -0.9% por RSUs no-cash de Ps.2,930M; ajustado, el margen operativo es ~+5.9%, continuando la mejora estructural historica desde 1.7% en 2021."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF record de Ps.4,682M (+24.9% YoY) demuestra la fortaleza del modelo. FCF reportado de Ps.1,133M (despues de Ps.3,549M de capex de expansion). El modelo NWC negativo genera Ps.5,876M de financiamiento organico sin costo."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta minima de Ps.820M MXN (0.9x EBITDA ajustado). Balance saneado en 2024 con fondos del IPO. Lineas de credito disponibles (Santander + HSBC = Ps.1,900M) y prestamo sindicalizado de Ps.1,065M sin utilizar dan amplia flexibilidad para el crecimiento."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A US$39 por accion (cap. de mercado ~US$4.55B), el mercado paga ~21x EV/EBITDA ajustado y ~71x P/FCF. Multiples justificables solo si el CAGR del 35% se sostiene 3-4 anos adicionales. El stock cotiza con prima de ~77% sobre el precio de IPO de feb-2024 (~US$22)."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Desaceleracion macro en Mexico puede frenar SSS. (2) Gastos admin inflados por RSUs presionaran resultados reportados en 2026-2028. (3) Competencia creciente de Bodega Aurrera y posibles entrantes internacionales de hard discount. (4) Riesgo cambiario MXN/USD para inversores en dolares. (5) Riesgo de ejecucion en apertura masiva de tiendas."
+      }
+    ]
+  }
+}

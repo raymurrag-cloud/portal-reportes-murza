@@ -1,0 +1,513 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Salesforce (CRM) es el lider mundial indiscutible en CRM cloud, con 41.5B USD en ingresos para FY2026 (+10% YoY) y una plataforma de IA agentica (Agentforce) que posiciona a la empresa para la proxima ola de automatizacion empresarial. Con margenes en expansion sostenida, FCF excepcional de 14.4B USD y disciplina de capital mejorada, CRM ofrece hoy una valuacion atractiva vs. su historia. Veredicto: Compra con conviction para inversores de largo plazo con horizonte 2-3 anos.",
+  "descripcion": "Salesforce opera la plataforma CRM cloud mas grande del mundo bajo el ecosistema Agentforce 360, que integra ventas (Sales Cloud), servicio al cliente (Service Cloud), marketing (Marketing Cloud), comercio, colaboracion (Slack), datos (Data Cloud + Informatica adquirida en nov-2025) e IA agentica. El 95% de sus ingresos son recurrentes por suscripcion, con clientes enterprise de alta fidelidad y una cartera de performance obligation pendiente de 72.4B USD (+14% YoY). Opera en un solo segmento geograficamente diverso con presencia en mas de 150 paises.",
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 41.5B USD en FY2026 con crecimiento del 9.6% YoY, impulsado por Sales Cloud, Service Cloud y la incorporacion de Informatica (~0.4B USD en el periodo). La cartera de RPO de 72.4B USD asegura visibilidad de ingresos a 2+ anos. Crecimiento historico sostenido: de 21.3B en FY2021 a 41.5B en FY2026 (CAGR ~14%)."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto de 77.7% en FY2026 (vs. 77.2% FY2025), margen operativo del 20.1% (vs. 19.0% FY2025) y margen neto del 18.0% (vs. 16.3% FY2025). La mejora sostenida refleja reestructuraciones ejecutadas, disciplina en contratacion y escala operativa. Management guia expansion adicional de margen operativo hacia 21-22% en FY2027."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 14.4B USD en FY2026 (+15.8% YoY), uno de los mas altos en software enterprise a nivel global. FCF yield del 8.5% sobre market cap actual. La empresa recompro 12.6B USD en acciones (~50M acciones) e inicio un programa de dividendos de 1.6B USD en FY2026."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 4.9B USD (moderada dado el perfil de FCF), con ratio Deuda Neta/EBITDA de 0.4x. La adquisicion de Informatica por 9.6B USD en nov-2025 aumento el apalancamiento pero es manejable. Goodwill de 57.9B USD y activos intangibles de 6.8B USD reflejan el historial M&A. Equity de 59.1B USD."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 182.96 USD, CRM cotiza a P/E TTM de 23.5x (EPS dil 7.80), P/FCF de 11.8x y EV/EBITDA de 14.6x — multiples atractivos para una empresa con margenes ~78% bruto y crecimiento de doble digito. El P/FCF de 11.8x es especialmente atractivo vs. peers de software enterprise. Precio objetivo 12 meses: 220-240 USD (+20-31%)."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Integracion y monetizacion de Informatica (9.6B en adquisicion). Adopcion de Agentforce en un mercado de IA agentica competitivo (Microsoft Copilot, ServiceNow). Presion macro sobre presupuestos IT enterprise. Riesgo cambiario con ~45% de ingresos internacionales."
+      }
+    ]
+  },
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "26.49",
+        "31.35",
+        "34.86",
+        "37.90",
+        "41.53",
+        "+9.6%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.05",
+        "0.21",
+        "4.14",
+        "6.20",
+        "7.46",
+        "+20.3%"
+      ],
+      [
+        "Margen Neto",
+        "-0.2%",
+        "0.7%",
+        "11.9%",
+        "16.3%",
+        "18.0%",
+        "+1.7pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "2.80",
+        "4.10",
+        "8.97",
+        "10.68",
+        "11.96",
+        "+12.0%"
+      ],
+      [
+        "FCF (B USD)",
+        "6.00",
+        "7.09",
+        "9.50",
+        "12.43",
+        "14.40",
+        "+15.8%"
+      ],
+      [
+        "EPS Diluido",
+        "-0.05",
+        "0.21",
+        "4.20",
+        "6.36",
+        "7.80",
+        "+22.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "2.20",
+        "1.50",
+        "-3.50",
+        "-5.60",
+        "4.87",
+        "n/a"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "23.5x",
+      "signal": "green",
+      "note": "vs. sector software ~35x",
+      "precio_base": 182.96,
+      "precio_fecha": "2026-04-07",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 7.8
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "21.0x",
+      "signal": "green",
+      "note": "EPS FWD est. ~8.71 USD",
+      "precio_base": 182.96,
+      "precio_fecha": "2026-04-07",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 8.71
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "14.6x",
+      "signal": "green",
+      "note": "historicamente cotiza 20-30x",
+      "precio_base": 182.96,
+      "precio_fecha": "2026-04-07",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 11.96,
+        "shares_m": 929,
+        "deuda_neta_b": 4.87
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "11.8x",
+      "signal": "green",
+      "note": "muy atractivo para software enterprise",
+      "precio_base": 182.96,
+      "precio_fecha": "2026-04-07",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 14.4,
+        "shares_m": 929
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.4x",
+      "signal": "green",
+      "note": "balance manejable post-Informatica"
+    },
+    {
+      "label": "ROE",
+      "value": "12.6%",
+      "signal": "yellow",
+      "note": "diluido por gran base de equity y goodwill"
+    },
+    {
+      "label": "ROIC",
+      "value": "10.2%",
+      "signal": "yellow",
+      "note": "en expansion por mejora de margenes"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2022",
+        "revenue": 26.49,
+        "utilidad": -0.05
+      },
+      {
+        "label": "FY2023",
+        "revenue": 31.35,
+        "utilidad": 0.21
+      },
+      {
+        "label": "FY2024",
+        "revenue": 34.86,
+        "utilidad": 4.14
+      },
+      {
+        "label": "FY2025",
+        "revenue": 37.9,
+        "utilidad": 6.2
+      },
+      {
+        "label": "FY2026",
+        "revenue": 41.53,
+        "utilidad": 7.46
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2022",
+        "bruto": 73.4,
+        "operativo": 2.1,
+        "neto": -0.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 74.2,
+        "operativo": 3.3,
+        "neto": 0.7
+      },
+      {
+        "label": "FY2024",
+        "bruto": 75.5,
+        "operativo": 14.4,
+        "neto": 11.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 77.2,
+        "operativo": 19,
+        "neto": 16.3
+      },
+      {
+        "label": "FY2026",
+        "bruto": 77.7,
+        "operativo": 20.1,
+        "neto": 18
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "12.6B USD",
+        "nota": "50M acciones recompradas en FY2026 — programa agresivo de retorno de capital"
+      },
+      {
+        "label": "Dividendos",
+        "value": "1.6B USD",
+        "nota": "Programa de dividendos iniciado en FY2024, ~1.68 USD/accion trimestral"
+      },
+      {
+        "label": "Capex",
+        "value": "0.6B USD",
+        "nota": "Bajo capex (1.4% de revenue) — modelo asset-light cloud"
+      },
+      {
+        "label": "M&A",
+        "value": "~9.6B USD",
+        "nota": "Adquisicion de Informatica (nov-2025) y Regrello (oct-2025) para acelerar roadmap agentico"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CRM TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "77.7%",
+        "~70-75%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "20.1%",
+        "~15-20%",
+        "En el rango alto del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+9.6%",
+        "~8-12%",
+        "En linea con sector enterprise SaaS"
+      ],
+      [
+        "EV/EBITDA",
+        "14.6x",
+        "~20-25x",
+        "Con descuento significativo vs. peers"
+      ],
+      [
+        "P/FCF",
+        "11.8x",
+        "~20-30x",
+        "Atractivo — descuento historico inusual"
+      ],
+      [
+        "ROIC",
+        "10.2%",
+        "~12-18%",
+        "Por debajo por base de goodwill alta"
+      ],
+      [
+        "FCF Margin",
+        "34.7%",
+        "~20-30%",
+        "Lider absoluto en eficiencia de caja"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Mejora estructural sostenida en todos los frentes — FCF, margenes y EPS en maximos historicos.",
+    "analisis": "Salesforce ha ejecutado una transformacion financiera notable desde FY2023: de margenes operativos de ~3% a 20%, con FCF que paso de 6B a 14.4B USD. La adquisicion de Informatica agrego apalancamiento temporal pero no compromete la tesis de inversion dado el perfil de FCF. El mayor riesgo es la integracion de Informatica y la adopcion de Agentforce en mercado AI competitivo.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+9.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "77.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "20.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "18.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+15.8%",
+        "status": "ok",
+        "nota": "FCF de 14.4B USD — lider absoluto en software enterprise"
+      },
+      {
+        "metrica": "Deuda Neta/EBITDA",
+        "valor": "0.4x",
+        "status": "ok",
+        "nota": "Incremento temporal por adquisicion Informatica"
+      },
+      {
+        "metrica": "RPO Growth",
+        "valor": "+14% YoY",
+        "status": "ok",
+        "nota": "72.4B USD en backlog — visibilidad alta de ingresos futuros"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "FCF excepcional y creciente",
+      "impact": "Alto",
+      "evidence": "FCF de 14.4B USD en FY2026 (+15.8% YoY), FCF margin del 34.7% — top 3 en software global.",
+      "context": "Permite recompras masivas (12.6B USD), dividendos y M&A sin comprometer el balance. FCF yield del 8.5% hace a CRM un generador de valor comprobado."
+    },
+    {
+      "level": "green",
+      "title": "Agentforce: posicionamiento en IA agentica",
+      "impact": "Alto",
+      "evidence": "Agentforce lanzado en Q3 FY2025, con momentum creciente en FY2026. Adquisicion de Regrello e Informatica aceleran el roadmap.",
+      "context": "La integracion de IA agentica nativa en la plataforma CRM es un diferenciador critico vs. soluciones puntuales. Data Cloud + Informatica crea la capa de datos necesaria para agentes efectivos."
+    },
+    {
+      "level": "green",
+      "title": "Backlog de 72.4B USD asegura visibilidad",
+      "impact": "Alto",
+      "evidence": "RPO total de 72.4B USD (+14% YoY), RPO corriente de 35.1B USD (+16% YoY).",
+      "context": "Con el 95% de ingresos recurrentes por suscripcion y un backlog de 1.7x los ingresos anuales, la visibilidad de crecimiento a 2+ anos es excepcional para el sector."
+    },
+    {
+      "level": "yellow",
+      "title": "Integracion de Informatica: riesgo de ejecucion",
+      "impact": "Medio",
+      "evidence": "Informatica adquirida por 9.6B USD en nov-2025, contribuyo solo 0.4B USD en FY2026. Goodwill total aumento a 57.9B USD.",
+      "context": "La integracion de grandes adquisiciones en Salesforce ha sido historicamente exitosa (Tableau, Slack), pero cada caso requiere 12-24 meses de integracion efectiva. Riesgo de dilucion de margenes a corto plazo."
+    },
+    {
+      "level": "red",
+      "title": "Competencia intensa en IA y CRM",
+      "impact": "Alto",
+      "evidence": "Microsoft Dynamics + Copilot, ServiceNow, HubSpot y nuevos entrantes verticales de IA presionan en todos los segmentos.",
+      "context": "Microsoft tiene la ventaja del ecosistema Office/Azure integrado. Si Agentforce no demuestra ROI superior en los proximos 2-3 trimestres, podria haber presion en renovaciones y expansion de cuentas."
+    }
+  ],
+  "score": {
+    "score": 7.8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Salesforce ejecuta una estrategia de plataforma unificada bajo el paraguas Agentforce 360: integrar ventas, servicio, marketing, datos e IA agentica en un solo sistema de record. La adquisicion de Informatica (data management enterprise) y Regrello (automatizacion de workflows) refuerzan la capa de datos necesaria para agentes de IA confiables. El objetivo es posicionarse como el sistema operativo de la empresa agentica — donde cada proceso de negocio es ejecutado por una combinacion de humanos y agentes de IA autonomos sobre datos unificados de Salesforce.",
+    "ventajas": "Moat principal: switching costs extremadamente altos en CRM enterprise (datos, integraciones, procesos y entrenamientos acumulados en 25 anos). Network effects del AppExchange con +7,000 aplicaciones de terceros. Marca trust en enterprise — Salesforce es sinonimo de CRM seguro y confiable. FCF margin del 34.7% demuestra poder de pricing real: 77.7% margen bruto sin reduccion significativa a pesar de mayor competencia. Backlog de 72.4B USD (~1.7x revenue anual) crea barreras practicas de salida para los clientes.",
+    "debilidades": "ROE del 12.6% relativamente bajo para una empresa de software — refleja la gran base de equity y goodwill acumulado por acquisiciones. ROIC del 10.2% en expansion pero aun por debajo de peers pure-play. Exposicion a volatilidad cambiaria con ~45% de ingresos internacionales. Crecimiento de revenue del 10% es solido pero menor al 20%+ que justificaba multiples historicos de 30-40x. Gastos de ventas y marketing de 14.3B USD (34.5% de revenue) siguen siendo altos.",
+    "riesgos": [
+      "Competencia de Microsoft: Dynamics 365 + Copilot integrado con Office 365 es la amenaza mas directa. Microsoft tiene acceso privilegiado a datos corporativos (emails, reuniones, Teams) que Salesforce no puede replicar facilmente. Impacto potencial: presion en tasas de renovacion y expansion de cuentas SME.",
+      "Adopcion de Agentforce: si la propuesta de valor de IA agentica no se materializa en mejoras de ROI medibles para clientes en 2-3 trimestres, podria haber desaceleracion en crecimiento de nuevos contratos y presion en valuacion de mercado.",
+      "Integracion de Informatica: adquisicion de 9.6B USD con complejidad tecnica significativa. Riesgo de distraccion del management, costos de integracion no previstos y churn de clientes de Informatica durante la transicion.",
+      "Presion macro sobre presupuestos IT: en entornos de tasas elevadas, los CFOs de empresa large enterprise tienden a escrutinar y diferir inversiones en nuevas plataformas SaaS. Esto podria limitar el potencial de upsell de Agentforce a corto plazo."
+    ],
+    "inversiones_estrategicas": "R&D de 5.99B USD en FY2026 (14.4% de revenue) enfocado en IA agentica, Agentforce y Data Cloud. Informatica adquirida por ~9.6B USD — trae capacidades de MDM, data cataloging y data integration criticas para la capa de datos de Agentforce. Regrello adquirido para automatizacion de workflows inter-empresariales. Capex bajo de 0.6B USD refleja el modelo cloud sobre infraestructura de AWS/Azure/GCP. Total commitment: >16B USD en innovacion organica + M&A en FY2026."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "7.8/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "41.5B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "18.0%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "8.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "21.0x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+9.6% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**FCF de 14.4B USD a P/FCF de 11.8x** — valuacion inusualmente atractiva para el lider indiscutido de CRM cloud con margenes de 78% y crecimiento de doble digito.",
+        "type": "pro"
+      },
+      {
+        "text": "**Agentforce posiciona a Salesforce para la proxima ola de IA enterprise** — la integracion nativa de agentes de IA sobre la plataforma CRM mas grande del mundo es un diferenciador dificil de replicar.",
+        "type": "pro"
+      },
+      {
+        "text": "**Backlog de 72.4B USD y 95% de ingresos recurrentes** garantizan visibilidad y estabilidad de crecimiento a 2+ anos con menor riesgo que el promedio del sector tech.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo competitivo de Microsoft Copilot** y riesgo de ejecucion en integracion de Informatica podrian moderar el crecimiento en el corto plazo y retrasar la re-expansion de multiples.",
+        "type": "con"
+      }
+    ]
+  }
+}

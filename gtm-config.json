@@ -1,0 +1,241 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-04-06 12:00:00",
+  "containerVersion": {
+    "path": "accounts/0/containers/0/versions/0",
+    "accountId": "0",
+    "containerId": "0",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/0/containers/0",
+      "accountId": "0",
+      "containerId": "0",
+      "name": "reportes.murzainversiones.com",
+      "publicId": "GTM-KC2GVFKF",
+      "usageContext": ["WEB"]
+    },
+    "builtInVariable": [
+      {"accountId": "0", "containerId": "0", "type": "PAGE_PATH", "name": "Page Path"},
+      {"accountId": "0", "containerId": "0", "type": "PAGE_URL", "name": "Page URL"},
+      {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_THRESHOLD", "name": "Scroll Depth Threshold"}
+    ],
+    "trigger": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "10",
+        "name": "Todas las paginas",
+        "type": "PAGEVIEW"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "11",
+        "name": "Navegacion SPA",
+        "type": "HISTORY_CHANGE"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "12",
+        "name": "Form Start GBM",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{_event}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "form_start_gbm"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "13",
+        "name": "Form Submit GBM",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{_event}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "form_submit_gbm"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "14",
+        "name": "Form Start Solicitud",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{_event}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "form_start_solicitud"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "15",
+        "name": "Form Submit Solicitud",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{_event}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "form_submit_solicitud"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "16",
+        "name": "Scroll Depth 50-75-90",
+        "type": "SCROLL_DEPTH",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "orCondition", "value": "false"},
+          {
+            "type": "LIST",
+            "key": "verticalThresholdsPercent",
+            "list": [
+              {"type": "TEMPLATE", "value": "50"},
+              {"type": "TEMPLATE", "value": "75"},
+              {"type": "TEMPLATE", "value": "90"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tag": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "20",
+        "name": "GA4 - Configuracion",
+        "type": "gaawc",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "measurementId", "value": "G-P2TB6Q0QCN"},
+          {"type": "BOOLEAN", "key": "sendPageView", "value": "true"}
+        ],
+        "firingTriggerId": ["10"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "21",
+        "name": "GA4 - Pageview SPA",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "page_view"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "page_path"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Page Path}}"}
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "page_location"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Page URL}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["11"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "22",
+        "name": "GA4 - Form Start GBM",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "form_start_gbm"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"}
+        ],
+        "firingTriggerId": ["12"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "23",
+        "name": "GA4 - Form Submit GBM",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "form_submit_gbm"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"}
+        ],
+        "firingTriggerId": ["13"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "24",
+        "name": "GA4 - Form Start Solicitud",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "form_start_solicitud"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"}
+        ],
+        "firingTriggerId": ["14"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "25",
+        "name": "GA4 - Form Submit Solicitud",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "form_submit_solicitud"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"}
+        ],
+        "firingTriggerId": ["15"]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "26",
+        "name": "GA4 - Scroll Depth",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "scroll"},
+          {"type": "TEMPLATE", "key": "measurementIdOverride", "value": "G-P2TB6Q0QCN"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "percent_scrolled"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Scroll Depth Threshold}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["16"]
+      }
+    ]
+  }
+}

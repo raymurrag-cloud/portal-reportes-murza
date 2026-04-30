@@ -1,0 +1,496 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Dominos Pizza (DPZ) es el operador y franquiciador de pizza mas grande del mundo, con mas de 22,100 tiendas en 90+ mercados. En FY2025 reporto ingresos de 4.94B USD (+4.9% YoY), utilidad neta de 600M USD (+3.4%) y FCF de 670M USD (+31.4%), el mejor de su historia. El modelo asset-light con >97% de tiendas franquiciadas genera royalties predecibles con capex minimo. El Q1 2026 (reportado el 27-abr-2026) muestra revenue de 699M USD (+4.3% YoY) y EPS de 4.13 USD, aunque la utilidad neta cayo -6.6% YoY por costos de reestructura y transicion de liderazgo.",
+  "descripcion": "Dominos opera bajo un modelo casi 100% franquiciado: en EE.UU. >97% de tiendas son franquiciadas; internacionalmente el 100%. Los ingresos provienen de tres segmentos: U.S. Stores (~18% del revenue en royalties y tarifas), Supply Chain (~44%, ventas de alimentos e insumos a franquiciados), e International (~10%, royalties globales). El moat de Dominos radica en su plataforma digital propietaria con >75% pedidos online, el programa Dominos Rewards con 37M+ miembros activos, y su cadena de suministro que provee ingredientes a ~75% de tiendas EE.UU. generando margen adicional. Es la pizza #1 en participacion de mercado en EE.UU. con 65+ anos de historia.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "4.12",
+        "4.36",
+        "4.48",
+        "4.71",
+        "4.94",
+        "0.699",
+        "+4.3%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "0.49",
+        "0.51",
+        "0.52",
+        "0.58",
+        "0.60",
+        "0.140",
+        "-6.7%"
+      ],
+      [
+        "Margen Neto",
+        "11.9%",
+        "11.7%",
+        "11.6%",
+        "12.3%",
+        "12.1%",
+        "20%",
+        "-2.4pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "0.79",
+        "0.85",
+        "0.90",
+        "0.97",
+        "1.04",
+        "N/D",
+        "+7.2%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.50",
+        "0.56",
+        "0.49",
+        "0.51",
+        "0.67",
+        "0.147",
+        "+31.4%"
+      ],
+      [
+        "EPS Diluido",
+        "12.60",
+        "14.13",
+        "14.99",
+        "16.91",
+        "17.86",
+        "4.13",
+        "-4.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "4.03",
+        "4.45",
+        "4.84",
+        "4.62",
+        "4.68",
+        "N/D",
+        "+1.4%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "19.1x",
+      "signal": "yellow",
+      "note": "vs. sector restaurantes ~22x",
+      "precio_base": 340.46,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 17.86
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "17.9x",
+      "signal": "yellow",
+      "precio_base": 340.46,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 19
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "15.5x",
+      "signal": "green",
+      "precio_base": 340.46,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 1.04,
+        "shares_m": 33.6,
+        "deuda_neta_b": 4.685
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "17.1x",
+      "signal": "yellow",
+      "precio_base": 340.46,
+      "precio_fecha": "2026-04-28",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 0.67,
+        "shares_m": 33.6
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "4.5x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "15.4%",
+      "signal": "yellow",
+      "note": "Equity negativo por recompras historicas"
+    },
+    {
+      "label": "ROIC",
+      "value": "92.4%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 4.12,
+        "utilidad": 0.49
+      },
+      {
+        "label": "FY2022",
+        "revenue": 4.36,
+        "utilidad": 0.51
+      },
+      {
+        "label": "FY2023",
+        "revenue": 4.48,
+        "utilidad": 0.52
+      },
+      {
+        "label": "FY2024",
+        "revenue": 4.71,
+        "utilidad": 0.58
+      },
+      {
+        "label": "FY2025",
+        "revenue": 4.94,
+        "utilidad": 0.6
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 38.6,
+        "operativo": 17.7,
+        "neto": 11.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 38.8,
+        "operativo": 17.7,
+        "neto": 11.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 38.6,
+        "operativo": 18.3,
+        "neto": 11.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 39.3,
+        "operativo": 18.7,
+        "neto": 12.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 39.9,
+        "operativo": 19.2,
+        "neto": 12.1
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "0.36B USD",
+        "nota": "FY2025; programa acumulado >8B USD historico; causa equity contable negativo de -3.9B USD"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0.24B USD",
+        "nota": "FY2025; dividendo trimestral de 1.74 USD/accion, yield ~2.0% al precio actual"
+      },
+      {
+        "label": "Capex",
+        "value": "0.12B USD",
+        "nota": "FY2025; capex bajo refleja modelo asset-light; principalmente tecnologia y centros de suministro"
+      },
+      {
+        "label": "M&A",
+        "value": "~0B USD",
+        "nota": "Sin adquisiciones significativas en FY2025; crecimiento organico via expansion de franquicias"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "DPZ TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "39.9%",
+        "~30%",
+        "Por encima del sector QSR"
+      ],
+      [
+        "Margen Operativo",
+        "19.2%",
+        "~12%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+4.9%",
+        "~4%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "17.9x",
+        "~20x",
+        "Prima moderada justificada por modelo asset-light"
+      ],
+      [
+        "ROIC",
+        "92.4%",
+        "~15%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "DPZ muestra salud financiera solida con FCF en expansion y revenue creciendo; la deuda elevada y la caida de NI en Q1 2026 son los factores a monitorear.",
+    "analisis": "El revenue de FY2025 crecio +4.9% YoY con 797 tiendas netas; el FCF salto +31% a 670M USD gracias a mejor conversion de OCF. La deuda neta de 4.69B USD representa 4.5x el EBITDA, nivel elevado pero manejable con el FCF predecible del negocio franquiciado. El Q1 2026 reportado el 27-abr-2026 muestra revenue +4.3% YoY pero utilidad neta -6.6% por costos de transicion del CEO y reestructura operativa.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+4.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "39.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "19.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "12.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+31.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "4.5x EBITDA",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "FCF record en FY2025: +31% YoY",
+      "impact": "Alto",
+      "evidence": "FCF de 670M USD en FY2025 vs 510M en FY2024; margen FCF 13.6%; mejor conversion de OCF en 5 anios",
+      "context": "La aceleracion del FCF valida la eficiencia del modelo franquiciado y la disciplina de capital de la administracion bajo Russell Weiner. Permite financiar recompras y dividendos sin comprometer el balance."
+    },
+    {
+      "level": "green",
+      "title": "Plataforma digital #1 en pizza QSR",
+      "impact": "Alto",
+      "evidence": ">75% pedidos via canales digitales en EE.UU.; 37M+ miembros en Dominos Rewards; 22,100+ tiendas globales",
+      "context": "La ventaja digital elimina comisiones de agregadores (15-30%), genera datos propietarios para personalizacion y crea fidelizacion estructural. La barrera de entrada tecnologica es un moat creciente difcil de replicar."
+    },
+    {
+      "level": "yellow",
+      "title": "Utilidad neta Q1 2026 cae -6.6% YoY",
+      "impact": "Medio",
+      "evidence": "NI Q1 2026: 139.8M (-6.6% YoY) vs 149.7M Q1 2025; EPS 4.13 vs 4.33 previo; revenue crece +4.3%",
+      "context": "La caida refleja costos de transicion del CEO y gastos de reestructura. El revenue sigue creciendo, sugiriendo que es un fenomeno temporal. La empresa mantiene guidance de crecimiento de EPS para FY2026."
+    },
+    {
+      "level": "yellow",
+      "title": "Deuda neta 4.5x EBITDA",
+      "impact": "Medio",
+      "evidence": "Deuda neta 4.69B USD (4.5x EBITDA FY2025 de 1.04B); equity contable -3.9B USD; 4.8B USD en deuda LP a dic-2025",
+      "context": "La estructura leveraged recap es deliberada y el FCF cubre el servicio de deuda con margen. Sin embargo, en entorno de tasas altas el costo de refinanciamiento puede presionar ganancias futuras."
+    },
+    {
+      "level": "red",
+      "title": "Costos laborales y competencia de delivery",
+      "impact": "Alto",
+      "evidence": "Salario minimo en California sube a 20 USD/hora; UberEats y DoorDash facilitan la competencia de dark kitchens y restaurantes independientes en entrega a domicilio",
+      "context": "Los franquiciados absorben 100% del alza de costos laborales. Si la rentabilidad de franquiciados cae significativamente, puede reducirse la apertura de nuevas tiendas e impactar los royalties de DPZ."
+    }
+  ],
+  "score": {
+    "score": 7.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Dominos ejecuta el plan Hungry for MORE con 4 pilares: (1) Most Delicious Food — mejora continua de recetas y calidad; (2) Most Loyal Customers — expandir programa de lealtad Rewards a 37M+ miembros; (3) Most Profitable Franchisees — herramientas y tecnologia para reducir costos de franquiciados; (4) Most Stores — meta de 50,000+ tiendas para 2030 desde 22,100 actuales. La estrategia digital-first y la expansion en mercados emergentes (India, LatAm) son los motores principales de crecimiento de mediano plazo.",
+    "ventajas": "(1) Escala #1 global en pizza: 22,100 tiendas generan network effects en suministro y reconocimiento de marca imposibles de replicar rapidamente. (2) Cadena de suministro propietaria: provee ~75% de tiendas EE.UU., genera margen adicional y control de calidad diferencial. (3) Plataforma digital con >75% pedidos online elimina comisiones de terceros y genera datos propietarios de clientes para personalizacion con IA. (4) Modelo de franquicias: capex minimo (~120M/ano), FCF predecible, 97% del riesgo operativo en franquiciados.",
+    "debilidades": "(1) Concentracion en categoria pizza QSR vulnerable a cambios en preferencias alimentarias y tendencias de salud. (2) Dependencia de 1,100+ franquiciados en EE.UU.; heterogeneidad en calidad de servicio y ejecucion local. (3) Equity negativo de -3.9B USD y deuda 4.5x EBITDA limitan flexibilidad ante crisis o adquisiciones. (4) Same-store-sales internacionales con presion en algunos mercados maduros como Europa.",
+    "riesgos": [
+      "Tasas de interes: 4.8B USD de deuda a largo plazo expuesta a refinanciamiento en entorno de tasas altas, lo que puede comprimir EPS y limitar recompras",
+      "Costos laborales: incremento acelerado de salario minimo en EE.UU. que reduce rentabilidad de franquiciados y frena apertura de nuevas tiendas",
+      "Competencia de delivery: UberEats, DoorDash y dark kitchens erosionan la ventaja de entrega propia en mercados urbanos clave",
+      "Desaceleracion macroeconomica global que impacte el consumo en mercados internacionales donde se concentra la expansion futura (India, LatAm, Europa)"
+    ],
+    "inversiones_estrategicas": "DPZ invierte en tecnologia de entrega autonoma (robots Nuro, drones en pruebas piloto en EE.UU.), expansion de tiendas en India (potencial >4,000 unidades vs ~2,000 actuales), modernizacion de centros de suministro para reducir costos a franquiciados, y plataforma digital con IA para personalizacion de pedidos y prediccion de demanda. El programa de lealtad Rewards es el mayor proyecto de fidelizacion del sector pizza a nivel global."
+  },
+  "verdict": {
+    "status": "Mantener / Compra Selectiva",
+    "score": "7.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "4.94B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "12.1%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "5.9%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "17.9x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+4.9% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Maquina de FCF asset-light** — El modelo 97% franquiciado genero 670M USD de FCF en FY2025 (+31% YoY) con capex de solo 120M USD; la conversion de capital es excepcional y sostenible.",
+        "type": "pro"
+      },
+      {
+        "text": "**Plataforma digital #1 en pizza** — Con >75% de pedidos online, 37M+ miembros en Rewards y tecnologia propietaria, Dominos tiene la ventaja digital mas solida del sector QSR, creando un moat creciente.",
+        "type": "pro"
+      },
+      {
+        "text": "**Expansion global con runway de una decada** — El plan Hungry for MORE apunta a 50,000+ tiendas; India (potencial 4,000+), LatAm y mercados emergentes ofrecen crecimiento de unidades por muchos anos.",
+        "type": "pro"
+      },
+      {
+        "text": "**Deuda 4.5x EBITDA y presion en Q1 2026** — La estructura de capital con 4.8B USD de deuda y equity negativo de -3.9B USD limita flexibilidad; la caida del NI -6.6% en Q1 2026 y los costos laborales son riesgos concretos a vigilar.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 4.94B USD en FY2025 crecio +4.9% YoY impulsado por apertura de 797 tiendas netas y same-store-sales positivos en EE.UU. El Q1 2026 confirma el momentum con +4.3% YoY (699M USD), aunque la temporada es de 12 semanas vs un ano completo de comparacion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto del 39.9%, operativo del 19.2% y neto del 12.1% se ubican entre los mas solidos del sector QSR pizza. La cadena de suministro propia y el modelo asset-light sostienen la expansion de margenes. Q1 2026 muestra presion temporal en margen neto (20.0% vs 22.3% previo) por costos de reestructura y transicion de liderazgo."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 670M USD en FY2025 es el record historico (+31% YoY), con margen FCF del 13.6%. El Q1 2026 genera 147M USD de FCF. La empresa retorna ~600M USD anuales a accionistas via dividendos (240M) y recompras (360M), con FCF yield del 5.9% al precio actual."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 4.69B USD representa 4.5x el EBITDA; el equity contable es negativo en -3.9B USD por el programa historico de recompras de >8B USD acumulados. La cobertura de intereses es holgada (FCF ~2.5x servicio de deuda estimado). Principal riesgo: refinanciamiento de la deuda en entorno de tasas elevadas."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "DPZ cotiza a 19.1x P/E Trailing y 17.9x P/E Forward (consensus FY2026 ~19 USD EPS). El EV/EBITDA de 15.5x es moderado para un negocio de franquicias de alta calidad. El FCF yield del 5.9% es atractivo. La prima frente al sector QSR (~20x PE) se justifica por el modelo asset-light y la calidad del FCF, aunque deja poco margen de seguridad."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Tasas de interes: 4.8B USD de deuda sensible al refinanciamiento en entorno de tasas altas; (2) costos laborales: salario minimo presiona rentabilidad de franquiciados; (3) competencia de plataformas de delivery; (4) caida de NI en Q1 2026 que podria persistir en Q2 si los costos de reestructura continuan. Vigilar guidance en el earnings call del 27-abr-2026."
+      }
+    ]
+  }
+}

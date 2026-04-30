@@ -1,0 +1,530 @@
+{
+  "resumen": "Novo Nordisk (NVO) reporto ingresos de $44.2B USD en 2025 (+6.4% YoY), una desaceleracion severa vs. el +25% de 2024, impulsada por presion de precios y perdida de liderazgo en el mercado GLP-1 de obesidad en EE.UU. frente a Eli Lilly. El margen operativo bajo de 44.2% a 41.3% y la accion cayo 48% en 2025. Lo sorprendente: a $36.75/ADR, NVO cotiza a solo 11x P/E y 7x EV/EBITDA — valuacion de empresa en declive para una compania con 81% margen bruto, $13.6B en caja neta y Ozempic generando $18B USD anuales. Nota: cifras en USD convertidas de DKK a tasa promedio aproximada.",
+  "descripcion": "Novo Nordisk A/S (fundada 1923, Dinamarca) es lider mundial en Obesidad y Diabetes care con mas de 69,500 empleados en ~80 paises y productos comercializados en ~170 paises. Sus ADRs cotizan en NYSE bajo el ticker NVO; sus acciones B en Nasdaq Copenhagen. El portafolio se divide en Obesity and Diabetes care — Ozempic (semaglutide inyectable, DKK 127B en ventas 2025), Wegovy (semaglutide, obesidad, DKK 79B), Rybelsus (semaglutide oral), Victoza, Saxenda, Tresiba e insulinas modernas y humanas — y Rare Disease: hormona del crecimiento (Norditropin) y productos para hemofilia (Esperoct, NovoEight). El moat de NVO reside en su plataforma de semaglutide (GLP-1) con 30+ anos de experiencia en la molecula, red de manufactura global propia, y acceso preferencial a pacientes a traves de programas de precio negociados. Sin embargo, en 2025 perdio el liderazgo en prescripciones semanales de GLP-1 en EE.UU. frente a tirzepatida de Eli Lilly.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue ($B USD aprox)",
+        "23.1",
+        "24.9",
+        "33.7",
+        "42.1",
+        "44.2",
+        "+6.4%"
+      ],
+      [
+        "Utilidad Neta ($B USD)",
+        "7.8",
+        "7.8",
+        "12.1",
+        "14.6",
+        "14.6",
+        "+1.4%"
+      ],
+      [
+        "Margen Neto (%)",
+        "33.9%",
+        "31.4%",
+        "36.0%",
+        "34.8%",
+        "33.1%",
+        "-1.7pp"
+      ],
+      [
+        "EBITDA ($B USD)",
+        "10.6",
+        "11.6",
+        "16.2",
+        "21.4",
+        "21.4",
+        "+0.1%"
+      ],
+      [
+        "FCF ($B USD)",
+        "4.8",
+        "8.1",
+        "9.9",
+        "(2.1)",
+        "4.0",
+        "Mejora"
+      ],
+      [
+        "EPS / ADR ($)",
+        "$1.70",
+        "$1.72",
+        "$2.70",
+        "$3.28",
+        "$3.29",
+        "+0.3%"
+      ],
+      [
+        "Caja Neta ($B USD)",
+        "(0.8)",
+        "(0.3)",
+        "(1.3)",
+        "(10.1)",
+        "(13.6)",
+        "Mejora"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E TTM",
+      "value": "11.2x",
+      "signal": "green",
+      "note": "vs. sector farma ~20-25x; min historico reciente",
+      "precio_base": 36.75,
+      "precio_fecha": "2026-03-31",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 3.29
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "10.9x",
+      "signal": "green",
+      "note": "estimado; guidance 2026 negativo presiona EPS",
+      "precio_base": 37.475,
+      "precio_fecha": "2026-04-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 3.4506
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "7.0x",
+      "signal": "green",
+      "note": "EV $150.5B / EBITDA $21.4B; infrecuente para lider GLP-1",
+      "precio_base": 36.75,
+      "precio_fecha": "2026-03-31",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 21.4,
+        "shares_m": 4465,
+        "deuda_neta_b": -13.6
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "41.0x",
+      "signal": "yellow",
+      "note": "FCF deprimido por capex masivo ($8.6B en 2025)",
+      "precio_base": 36.75,
+      "precio_fecha": "2026-03-31",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 4,
+        "shares_m": 4465
+      }
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "Caja neta",
+      "signal": "green",
+      "note": "$13.6B USD en caja neta — sin deuda neta"
+    },
+    {
+      "label": "ROE",
+      "value": "52.7%",
+      "signal": "green",
+      "note": "excepcional; comprimido vs. 70%+ historico por capitaliza base"
+    },
+    {
+      "label": "ROIC",
+      "value": "39.3%",
+      "signal": "green",
+      "note": "vs. 88.5% en 2023; dilusion por capex masivo en Catalent y manufactura"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "2021",
+        "revenue": 23.1,
+        "utilidad": 7.8
+      },
+      {
+        "label": "2022",
+        "revenue": 24.9,
+        "utilidad": 7.8
+      },
+      {
+        "label": "2023",
+        "revenue": 33.7,
+        "utilidad": 12.1
+      },
+      {
+        "label": "2024",
+        "revenue": 42.1,
+        "utilidad": 14.6
+      },
+      {
+        "label": "2025",
+        "revenue": 44.2,
+        "utilidad": 14.6
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "2021",
+        "bruto": 83.2,
+        "operativo": 41.7,
+        "neto": 33.9
+      },
+      {
+        "label": "2022",
+        "bruto": 83.9,
+        "operativo": 42.3,
+        "neto": 31.4
+      },
+      {
+        "label": "2023",
+        "bruto": 84.6,
+        "operativo": 44.2,
+        "neto": 36
+      },
+      {
+        "label": "2024",
+        "bruto": 84.7,
+        "operativo": 44.2,
+        "neto": 34.8
+      },
+      {
+        "label": "2025",
+        "bruto": 81,
+        "operativo": 41.3,
+        "neto": 33.1
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex PP&E",
+        "value": "$8.6B",
+        "nota": "Mayor en la historia de la empresa; expansion masiva de capacidad API y fill-finish para inyectables y orales"
+      },
+      {
+        "label": "Capex intangibles y M&A",
+        "value": "$4.3B",
+        "nota": "Adquisicion de Akero Therapeutics (MASH) por $4.7B; alineada con estrategia de comorbilidades de obesidad"
+      },
+      {
+        "label": "Dividendos",
+        "value": "$7.4B",
+        "nota": "DKK 11.70/accion en 2025 (+2.6%); payout ratio del 50.7% del NI reportado"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "$0.2B",
+        "nota": "Colapso vs $2.9B en 2023 y $2.0B en 2024; la empresa priorizo deuda y capex sobre recompras"
+      },
+      {
+        "label": "R&D",
+        "value": "16.8% del revenue",
+        "nota": "DKK ~52B; pipeline enfocado en obesidad, diabetes, MASH y enfermedades raras"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "NVO 2025",
+      "Sector Farma ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Bruto",
+        "81.0%",
+        "~70%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "41.3%",
+        "~20-25%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Neto",
+        "33.1%",
+        "~15-20%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue growth YoY",
+        "+6.4%",
+        "~5-8%",
+        "En linea con sector"
+      ],
+      [
+        "Deuda/EBITDA",
+        "Caja neta",
+        "~1.0-2.0x",
+        "Por encima del sector"
+      ],
+      [
+        "ROE",
+        "52.7%",
+        "~20-30%",
+        "Por encima del sector"
+      ],
+      [
+        "ROIC",
+        "39.3%",
+        "~15-20%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Deterioro operativo incipiente — margenes en compresion y crecimiento desacelerandose",
+    "analisis": "NVO muestra senal de inflexion negativa en 2025: es el primer ano en que el crecimiento de revenue baja a un digito, el margen bruto cae al 81% (vs. 84.7% en 2024) y el margen operativo baja de 44.2% a 41.3%. La causa es una combinacion de presion de precios en EE.UU. (IRA, MFN agreement), perdida de cuota de mercado GLP-1 frente a LLY, y costos de reestructuracion. El guidance 2026 de -5% a -13% revenue es la senal de deterioro mas critica.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+6.4%",
+        "status": "warn",
+        "nota": "desaceleracion severa desde +25% en 2024; guidance 2026 negativo"
+      },
+      {
+        "metrica": "Margen bruto",
+        "valor": "81.0%",
+        "status": "warn",
+        "nota": "primero que cae en 5 anos; de 84.7% en 2024 a 81.0%"
+      },
+      {
+        "metrica": "Margen operativo",
+        "valor": "41.3%",
+        "status": "warn",
+        "nota": "de 44.2% en 2024; costos de reestructuracion y R&D mas alto"
+      },
+      {
+        "metrica": "Margen neto",
+        "valor": "33.1%",
+        "status": "ok",
+        "nota": "estable; impacto fiscal contenido"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "$4.0B",
+        "status": "warn",
+        "nota": "recuperado de negativo, pero bajo vs. $9.9B en 2023 por capex masivo"
+      },
+      {
+        "metrica": "Posicion de caja neta",
+        "valor": "$13.6B",
+        "status": "ok",
+        "nota": "balance solido sin deuda neta; flexibilidad financiera maxima"
+      },
+      {
+        "metrica": "Guidance 2026",
+        "valor": "-5% a -13% en CER",
+        "status": "bad",
+        "nota": "primera vez en la historia reciente que NVO guia revenue negativo"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "red",
+      "title": "Guidance 2026 negativo — primera contraccion de revenue en anos",
+      "impact": "Alto",
+      "evidence": "Adjusted sales growth esperado de -5% a -13% en tipos de cambio constantes. Causa: acuerdo MFN con EE.UU. que reduce precios de semaglutide, perdida de exclusividad en mercados internacionales, y eliminacion de ajustes favorables gross-to-net de 2025.",
+      "context": "Esta es la razon central por la que la accion cayo 48% en 2025 (DKK 624 a DKK 325). El mercado ya descuenta una contraccion significativa. La pregunta es si el guidance es conservador o si refleja un deterioro estructural."
+    },
+    {
+      "level": "red",
+      "title": "Perdida de liderazgo GLP-1 en EE.UU. frente a Eli Lilly",
+      "impact": "Alto",
+      "evidence": "En el 20-F: Wegovy 'fue superado por un producto GLP-1 competidor en numero de prescripciones semanales totales al inicio de 2025'. Ozempic tambien perdio la posicion de lider en GLP-1 para diabetes tipo 2 frente a un competidor.",
+      "context": "Tirzepatida de LLY (mecanismo dual GIP+GLP-1) demostro mayor eficacia en ensayos head-to-head. La perdida de leadership en el mercado mas rentable del mundo (EE.UU.) es un cambio estructural, no ciclico."
+    },
+    {
+      "level": "red",
+      "title": "Acuerdo MFN y negociaciones IRA reducen precios estructuralmente",
+      "impact": "Alto",
+      "evidence": "NVO acordo con la administracion EE.UU. bajo 'Most Favoured Nations' precios reducidos para Wegovy, Ozempic y Rybelsus en Medicare Part D y Medicaid desde 2026. Los precios negociados bajo IRA entraran en vigor en 2027.",
+      "context": "La reduccion de precios en el mercado de mayor margen (EE.UU., ~55-60% de revenue) es permanente. Esto comprimira margenes de forma estructural en 2026-2027 y mas alla."
+    },
+    {
+      "level": "yellow",
+      "title": "Capex masivo con retorno de capital (ROIC) en declive",
+      "impact": "Medio",
+      "evidence": "Capex PP&E de DKK 60.1B en 2025 (+28% YoY) para expansion de manufactura. ROIC bajo de 88.5% (2023) a 39.3% (2025). La inversion en Catalent (plantas de manufactura por $11.7B) y nueva capacidad diluyeron el capital employed.",
+      "context": "El capex esta justificado por la demanda de GLP-1, pero si el revenue contrae en 2026 como guia la empresa, las nuevas plantas operaran con subutilizacion, incrementando los costos fijos por unidad."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia de farmcias de compounding y genericos GLP-1",
+      "impact": "Medio",
+      "evidence": "Farmacias de compounding introdujeron copias no aprobadas de Wegovy y Ozempic durante la escasez de 2024-2025. NVO menciona en el 20-F: 'compounding ha continuado de forma ilicita' tras resolverse la escasez.",
+      "context": "El compounding ilegal erosiono cuota de mercado y precio realizado en EE.UU. en 2025. Aunque NVO litiga activamente contra esto, el riesgo persiste y puede acentuarse conforme la molecula de semaglutide pierde exclusividad.",
+      "level2": "yellow"
+    },
+    {
+      "level": "green",
+      "title": "Valuacion en minimos historicos — P/E 11x para lider mundial GLP-1",
+      "impact": "Alto",
+      "evidence": "P/E TTM de 11.2x, EV/EBITDA de 7.0x, caja neta de $13.6B. En 2023, NVO cotizaba a 40-50x P/E. El stock cayo 48% en 2025.",
+      "context": "Si el guidance conservador de 2026 sorprende positivamente, o si semaglutide oral (Wegovy Pill, lanzado Q1 2026) gana traccion, hay upside significativo desde niveles actuales. El mercado ha precio un escenario extremadamente negativo."
+    }
+  ],
+  "score": {
+    "score": 6.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Crecimiento de revenue",
+        "score": 4,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 5,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Novo Nordisk ejecuta una estrategia de profundizacion en sus areas core: Obesidad, Diabetes y comorbilidades relacionadas (MASH, enfermedad renal, cardiovascular). Tras un periodo de expansion geografica y terapeutica agresiva (2021-2024), la empresa inicio en septiembre 2025 una transformacion organizacional, reduciendo ~9,000 empleados (de 77,349 a 69,505) para reasignar recursos hacia obesidad y diabetes. El siguiente catalizador de crecimiento es Wegovy Pill (semaglutide oral), lanzado en Q1 2026, que elimina la barrera de inyeccion y podria ampliar el mercado direccionable.",
+    "ventajas": "30+ anos de experiencia con semaglutide y la molecula GLP-1; red de manufactura propia global (ventaja diferencial vs. modelo fabless); margenes brutos de 81% y posicion de caja neta de $13.6B; liderazgo en 170 paises con portafolio de insulinas como base defensiva; pipeline de semaglutide oral (Wegovy Pill) lanzado en 2026.",
+    "debilidades": "Perdida de liderazgo GLP-1 en EE.UU. frente a tirzepatida de LLY; alta dependencia de semaglutide (Ozempic + Wegovy representan mas del 60% del revenue total); presion estructural de precios en EE.UU. por IRA y MFN; ROIC en declive por capex masivo; nuevo CEO sin historial probado en el rol.",
+    "riesgos": [
+      "Contraccion de revenue en 2026: guidance de -5% a -13% CER refleja MFN agreement, perdida de exclusividad semaglutide en mercados internacionales, y fin de ajustes favorables gross-to-net de 2025",
+      "Competencia creciente: orforglipron (GLP-1 oral de LLY, pendiente de aprobacion) podria competir directamente con Wegovy Pill de NVO si se aprueba con perfil similar",
+      "Riesgo regulatorio: los precios negociados bajo IRA entran en vigor en 2027; nuevas rondas de negociacion podrian ampliar los productos afectados",
+      "Riesgo cibernetica: NVO menciona explicitamente en el 20-F la dependencia de sistemas IT globales como riesgo material — un breach podria impactar manufactura y distribucion",
+      "Exposicion a FX: la mayoria del revenue es en USD y EUR pero NVO reporta en DKK; la depreciacion del USD/DKK reduce los ingresos reportados en DKK en ~3pp en 2026 segun guidance"
+    ],
+    "inversiones_estrategicas": "Expansion manufacturera masiva: DKK 60.1B en capex PP&E en 2025 para plantas de API y fill-finish. Adquisicion de Akero Therapeutics (DKK ~33B) para efruxifermin (EFX) como candidato lider en MASH — alineado con estrategia de comorbilidades de obesidad. Wegovy Pill (semaglutide oral, lanzado Q1 2026) como proximo motor de crecimiento. Pipeline en cardiorenal (CKD, CVD outcomes con semaglutide) y enfermedades raras."
+  },
+  "verdict": {
+    "status": "Mantener / Especulativo en recuperacion",
+    "score": "6.2/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue 2025",
+        "value": "$44.2B"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "33.1%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "~2.4%"
+      },
+      {
+        "label": "P/E TTM",
+        "value": "11.2x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+6.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Valuacion de oportunidad historica ->** P/E de 11x y EV/EBITDA de 7x para una compania con 81% margen bruto, $13.6B en caja neta y Ozempic generando ~$18B USD anuales es una anomalia rara en el sector farma de alta calidad.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance impecable como red de seguridad ->** Caja neta de $13.6B, sin deuda neta, dividendo creciente del 50% del NI y capacidad de iniciar recompras masivas si el precio sigue deprimido.",
+        "type": "pro"
+      },
+      {
+        "text": "**Wegovy Pill como catalizador de 2026 ->** Semaglutide oral lanzado en Q1 2026 elimina la barrera de inyeccion; si captura penetracion significativa en el mercado de obesidad, puede revertir la narrativa negativa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Guidance 2026 negativo es riesgo real ->** La contraccion de revenue de -5% a -13% refleja vientos en contra estructurales (MFN, perdida de exclusividad, compresion de precios) que no se resuelven en uno o dos trimestres.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $44.2B USD en 2025 (+6.4%) es el menor crecimiento de NVO en 5 anos. El driver de desaceleracion es triple: presion de precios en EE.UU. (IRA y MFN), compresion de gross-to-net por mayor uso de descuentos en canales Medicare/Medicaid, y el impacto de compounding ilegal de GLP-1s. Para 2026, NVO guia contraccion de -5% a -13% en CER — primera guidance negativa en la era de Ozempic."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto: 81.0% (vs. 84.7% en 2024), margen operativo: 41.3% (vs. 44.2%), margen neto: 33.1% (vs. 34.8%). La compresion de 3.7pp en margen bruto es la senal de deterioro mas preocupante — refleja lower net selling prices, mayores descuentos en EE.UU. y el impacto de la restructuracion. Pese a esto, NVO sigue siendo una de las farmaceuticas mas rentables del mundo."
+      },
+      {
+        "label": "FCF y Balance",
+        "texto": "FCF de $4.0B en 2025 se recupero de los -$2.1B de 2024 (que incluyeron la adquisicion de plantas Catalent por $11.7B). Sin embargo, el FCF es bajo vs. el NI de $14.6B por capex intensivo ($8.6B en PP&E). Posicion de caja neta de $13.6B — balance sin deuda neta, Deuda/EBITDA negativo. El balance es la principal fortaleza defensiva de NVO en el ciclo de presion actual."
+      },
+      {
+        "label": "Evento central 2026",
+        "texto": "La traccion de Wegovy Pill (semaglutide oral) es el evento mas importante de 2026. Lanzado en Q1 2026 en EE.UU., si logra penetracion significativa en el mercado de obesidad (que actualmente es de inyectables), podria revertir la perdida de cuota de mercado frente a tirzepatida de LLY y superar el guidance conservador. Un fracaso comercial del oral consolidaria el escenario bajista."
+      },
+      {
+        "label": "Competencia y pricing",
+        "texto": "Novo Nordisk enfrenta un ciclo competitivo adverso unico: (1) LLY con tirzepatida superior en eficacia head-to-head; (2) MFN agreement que reduce precios en Medicare desde 2026; (3) perdida de exclusividad de semaglutide en mercados internacionales; (4) compounding ilegal que erosiono share en EE.UU. Esta es una confluencia de factores negativos simultaneos, no un ciclo normal."
+      },
+      {
+        "label": "Posicion sugerida",
+        "texto": "A $36.75/ADR, NVO cotiza a valuaciones de empresa en declive pese a margenes de empresa de primera clase. Para un portafolio de largo plazo: posicion especulativa de tamano reducido (1-3%) para capturar el upside si Wegovy Pill sorprende positivamente en 2026 o si el guidance resulta excesivamente conservador. No es posicion de alta conviccion — los vientos en contra estructurales (precios, competencia de LLY) son reales. Revisar resultados Q1 y Q2 2026 antes de ampliar."
+      }
+    ]
+  }
+}

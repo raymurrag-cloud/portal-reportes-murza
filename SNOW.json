@@ -1,0 +1,507 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Snowflake (SNOW) es la plataforma de datos en la nube lider del mercado, con arquitectura multi-cloud unica que desacopla almacenamiento y computo permitiendo escalar cargas de IA sin migrar datos. Con ingresos de 4.68B USD en FY2026 (+29% YoY), mas de 10,900 clientes activos y un RPO superior a 6.9B USD, SNOW se posiciona como infraestructura esencial del ecosistema de datos e IA empresarial. El FCF de 1.12B USD (+23% YoY) valida la sostenibilidad del modelo a pesar de los margenes GAAP negativos por inversion agresiva en Cortex AI y R&D. Empresa de alta calidad con valuacion exigente — acumular en correcciones significativas.",
+  "descripcion": "Snowflake opera una plataforma de datos en la nube para almacenamiento, procesamiento y colaboracion de datos a escala empresarial. Su arquitectura desacopla almacenamiento (S3/GCS/Azure Blob) del computo, con modelo de precios por consumo (consumption-based). Opera sobre los tres hiperscaladores (AWS, Azure, GCP) de forma neutral. Productos clave: Data Cloud (almacenamiento y queries), Snowpark (data engineering Python/Java), Cortex AI (LLMs y ML nativos sin mover datos), Document AI (extraccion de documentos no estructurados), y Snowflake Marketplace (>3,000 listings de datos para compartir). Mas del 40% del Fortune 500 son clientes. El moat central es el efecto de red del Data Cloud: cuantos mas clientes comparten datos, mayor el valor de toda la plataforma para todos los participantes.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "1.22",
+        "2.07",
+        "2.81",
+        "3.63",
+        "4.68",
+        "+28.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.68",
+        "-0.80",
+        "-0.84",
+        "-1.29",
+        "-1.33",
+        "N/D"
+      ],
+      [
+        "Margen Neto",
+        "-55.7%",
+        "-38.6%",
+        "-29.9%",
+        "-35.5%",
+        "-28.4%",
+        "+7.1pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "-0.69",
+        "-0.78",
+        "-0.97",
+        "-1.27",
+        "-1.21",
+        "+4.7%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.09",
+        "0.52",
+        "0.81",
+        "0.91",
+        "1.12",
+        "+23.1%"
+      ],
+      [
+        "EPS Diluido",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "N/D"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "N/D",
+        "N/D",
+        "N/D",
+        "-0.52",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A (perdida)",
+      "signal": "yellow",
+      "note": "EPS TTM negativo (-3.95) — P/E no aplicable",
+      "precio_base": 135.47,
+      "precio_fecha": "2026-04-14",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": -3.95
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "55.7x",
+      "signal": "yellow",
+      "precio_base": 135.47,
+      "precio_fecha": "2026-04-14",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 2.43
+      }
+    },
+    {
+      "label": "EV/Revenue",
+      "value": "9.9x",
+      "signal": "green",
+      "note": "EBITDA negativo — EV/Sales mas relevante para SNOW",
+      "precio_base": 135.47,
+      "precio_fecha": "2026-04-14",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 4.68,
+        "shares_m": 346,
+        "deuda_neta_b": -0.52
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "41.8x",
+      "signal": "green",
+      "precio_base": 135.47,
+      "precio_fecha": "2026-04-14",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.12,
+        "shares_m": 346
+      }
+    },
+    {
+      "label": "Deuda Neta (B USD)",
+      "value": "-0.52B",
+      "signal": "green",
+      "note": "Convertibles 2.31B - caja 2.83B = caja neta +0.52B"
+    },
+    {
+      "label": "Margen Bruto",
+      "value": "67.3%",
+      "signal": "green"
+    },
+    {
+      "label": "Margen Operativo",
+      "value": "-30.8%",
+      "signal": "red"
+    },
+    {
+      "label": "FCF Margin",
+      "value": "23.9%",
+      "signal": "green",
+      "note": "FCF positivo en empresa con perdidas GAAP"
+    },
+    {
+      "label": "Revenue YoY",
+      "value": "+28.9%",
+      "signal": "green"
+    },
+    {
+      "label": "FCF YoY",
+      "value": "+23.1%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2022",
+        "revenue": 1.22,
+        "utilidad": -0.68
+      },
+      {
+        "label": "FY2023",
+        "revenue": 2.07,
+        "utilidad": -0.8
+      },
+      {
+        "label": "FY2024",
+        "revenue": 2.81,
+        "utilidad": -0.84
+      },
+      {
+        "label": "FY2025",
+        "revenue": 3.63,
+        "utilidad": -1.29
+      },
+      {
+        "label": "FY2026",
+        "revenue": 4.68,
+        "utilidad": -1.33
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2022",
+        "bruto": 62.3,
+        "operativo": -59,
+        "neto": -55.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 65.2,
+        "operativo": -40.6,
+        "neto": -38.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 68,
+        "operativo": -38.8,
+        "neto": -29.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 66.4,
+        "operativo": -40.2,
+        "neto": -35.5
+      },
+      {
+        "label": "FY2026",
+        "bruto": 67.3,
+        "operativo": -30.8,
+        "neto": -28.4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "R&D",
+        "value": ">1.8B USD FY2026",
+        "nota": "Superior al 38% de ingresos. Foco en Cortex AI, Snowpark Container Services y Arctic LLM. Motor principal de diferenciacion tecnologica."
+      },
+      {
+        "label": "Recompras",
+        "value": "0.87B USD FY2026",
+        "nota": "Programa activo para mitigar dilucion por SBC. En FY2025 se recompraron 1.93B USD, ritmo mas agresivo dado el precio bajo."
+      },
+      {
+        "label": "Capex",
+        "value": "0.10B USD FY2026",
+        "nota": "Capex bajo por modelo asset-light sobre infraestructura de hiperscaladores. Crece moderadamente por Snowpark Container Services."
+      },
+      {
+        "label": "M&A",
+        "value": "Selectivo",
+        "nota": "Adquisiciones de Streamlit (developer tools) y tecnologia Neeva (busqueda IA). Estrategia de feature acquisition para acelerar el roadmap de producto."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "SNOW FY2026",
+      "Cloud Data ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "67.3%",
+        "~68-72%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "-30.8%",
+        "~5-15%",
+        "Por debajo — fase de inversion agresiva en IA"
+      ],
+      [
+        "Revenue Growth",
+        "+28.9%",
+        "~15-25%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "55.7x",
+        "~40-60x",
+        "Prima por liderazgo en Data Cloud"
+      ],
+      [
+        "FCF Margin",
+        "23.9%",
+        "~15-25%",
+        "En linea — mejorando consistentemente"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance con caja neta ligera; margenes operativos negativos por inversion deliberada — FCF positivo y creciente valida la sostenibilidad del modelo",
+    "analisis": "Snowflake presenta el patron clasico de SaaS de alto crecimiento: perdidas GAAP por SBC (~1B+ USD) y opex agresivo en S&M (~35% rev) y R&D (~38% rev), pero FCF positivo y creciente. El FCF de 1.12B USD en FY2026 (+23% YoY) con margen del 23.9% confirma que el negocio genera caja real. El margen bruto en expansion hacia 67.3% y el RPO de 6.9B USD (+34% YoY) dan visibilidad de ingresos futuros. La deuda convertible de 2.31B USD es manejable vs la caja de 2.83B, resultando en caja neta positiva de +0.52B.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+28.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "67.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "-30.8%",
+        "status": "warn",
+        "nota": "Negativo por inversion en R&D y S&M — mejorando desde -59% en FY2022"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "-28.4%",
+        "status": "warn",
+        "nota": "Mejorando: -55.7% FY2022 a -28.4% FY2026"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "1.12B USD (+23% YoY)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-0.52B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Liderazgo en Data Cloud con efecto de red real",
+      "impact": "Alto",
+      "evidence": "Mas de 10,900 clientes activos; >40% del Fortune 500; RPO de 6.9B USD (+34% YoY); Snowflake Marketplace con >3,000 listings de datos compartidos; NRR ~126%.",
+      "context": "El efecto de red del Data Sharing crea switching costs elevados — cuantos mas clientes comparten datos, mas valioso el ecosistema para todos. Este moat es estructuralmente dificil de replicar por cualquier competidor."
+    },
+    {
+      "level": "green",
+      "title": "FCF positivo y creciente con caja neta",
+      "impact": "Alto",
+      "evidence": "FCF de 1.12B USD en FY2026 (+23% YoY); FCF margin del 23.9%; posicion de caja neta de +0.52B USD (caja 2.83B - convertibles 2.31B).",
+      "context": "La generacion de caja creciente valida que el modelo es sostenible. Las perdidas GAAP son por SBC y opex estrategico, no por un modelo de negocio roto. El FCF es el indicador clave para SNOW."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia de hiperscaladores con bundling agresivo",
+      "impact": "Alto",
+      "evidence": "Microsoft Fabric crece con adoption Azure; Google BigQuery con descuentos GCP; AWS Redshift en clientes mono-cloud. Presion de precios estructural especialmente en mid-market.",
+      "context": "SNOW mitiga con neutralidad multi-cloud y efecto de red. Pero para clientes enterprise con contratos Microsoft amplios, Fabric puede ofrecer valor competitivo via bundling sin diferencial tecnico suficiente."
+    },
+    {
+      "level": "yellow",
+      "title": "Dilucion elevada por Stock-Based Compensation",
+      "impact": "Medio",
+      "evidence": "SBC historicamente >25% de ingresos; en FY2026 sigue siendo >1B USD en terminos absolutos. El programa de recompra de 0.87B USD no alcanza a compensar completamente.",
+      "context": "Nuevo CEO enfocado en reducir ratio SBC/ingresos. Mejora gradual visible pero la dilucion real de accionistas persiste como factor estructural. Monitorear la evolucion del diluted share count."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion exigente con alta sensibilidad al guidance",
+      "impact": "Alto",
+      "evidence": "P/FCF de 41.8x y EV/Sales de 9.9x incluso post-correccion. Historicamente cada miss en guidance ha generado caidas de -15% a -30% intraday.",
+      "context": "El mercado precia escenario de crecimiento >25% YoY sostenido y expansion de margenes. Si Cortex AI no acelera el consumo o el NRR se deteriora por debajo del 120%, la revaluacion puede ser severa e inmediata."
+    }
+  ],
+  "score": {
+    "score": 7,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Snowflake bajo el CEO Sridhar Ramaswamy (ex-Google, desde 2024) ejecuta tres vectores: (1) consolidar liderazgo en Data Cloud con arquitectura multi-cloud neutral que elimina vendor lock-in; (2) monetizar IA via Cortex AI — LLMs y funciones de ML nativos sobre datos existentes sin necesidad de moverlos — como motor de consumo incremental sobre la base instalada; y (3) expandir el ecosistema de desarrolladores con Snowpark Container Services y Snowflake Arctic (LLM propio de alta eficiencia, open-sourced). El cambio de CEO marco un giro hacia mayor eficiencia operativa y velocidad de ejecucion en IA, con objetivo de break-even operativo en FY2028.",
+    "ventajas": "Arquitectura multi-cloud unica: el unico proveedor de datos neutral que corre sobre AWS, Azure y GCP simultaneamente, eliminando lock-in. Efecto de red del Data Sharing: con >3,000 datasets en Snowflake Marketplace, cada nuevo cliente aumenta el valor de la plataforma para todos. NRR ~126% refleja alta retencion y expansion organica en cuentas existentes. RPO de 6.9B USD (+34% YoY) da visibilidad de ingresos futuros equivalente a 1.5 anos de revenue. FCF margin del 23.9% demuestra economia del negocio superior a las perdidas GAAP.",
+    "debilidades": "Modelo consumption-based sensible a optimizacion de workloads: en recesion o cuando los clientes maduran su uso, reducen queries y el crecimiento se desacelera sin cambiar contratos. Margen operativo GAAP significativamente negativo por SBC (>1B USD) y opex en S&M y R&D. Dependencia estructural de los tres hiperscaladores como infraestructura genera un COGS estructuralmente mas alto que competidores verticalmente integrados. La competencia de Microsoft Fabric es particularmente amenazante para clientes Microsoft-first.",
+    "riesgos": [
+      "Desaceleracion del NRR por debajo de 120%: si el Net Revenue Retention cae materialmente, el modelo de crecimiento basado en expansion de cuentas existentes se deteriora. Actualmente ~126%, una caida adicional indicaria saturacion o perdida de competitividad en la expansion de la base instalada.",
+      "Competencia de Microsoft Fabric con bundling: Fabric se ofrece dentro del ecosistema Microsoft 365/Azure con descuentos de bundle. Para clientes enterprise con contratos Microsoft amplios, la propuesta de valor puede superar a SNOW sin un diferencial tecnico claro para justificar el costo adicional.",
+      "Riesgo de ejecucion en Cortex AI: si los competidores como Databricks, Google BigQuery o modelos abiertos ofrecen soluciones de IA nativa con mejor costo-eficiencia, el TAM de expansion de Cortex AI puede no materializarse al ritmo esperado, eliminando el principal catalista de la tesis FY2027+.",
+      "Optimizacion de workloads ante macro adverso: el modelo consumption-based es vulnerable en recesion — las empresas optimizan queries y reducen consumo sin cancelar contratos. Un ciclo de optimizacion generalizado puede comprimir el revenue growth materialmente en 2-3 trimestres."
+    ],
+    "inversiones_estrategicas": "R&D supera el 38% de ingresos (~1.8B USD en FY2026), con foco en Cortex AI (LLMs, Document AI, Cortex Search), Snowpark Container Services (Docker en Snowflake para MLOps), y Snowflake Arctic (LLM propio de alta eficiencia, open-sourced en 2024). El capex de 0.10B USD es bajo por el modelo asset-light. En M&A, Streamlit fue adquirido e integrado como Streamlit in Snowflake para atraer desarrolladores Python. El programa de recompra de 0.87B USD en FY2026 mitiga parcialmente la dilucion por SBC (>1B USD anuales)."
+  },
+  "verdict": {
+    "status": "Mantener / Acumular en Correccion",
+    "score": "7.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2026",
+        "value": "4.68B USD"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "67.3%"
+      },
+      {
+        "label": "FCF FY2026",
+        "value": "1.12B USD"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "55.7x"
+      },
+      {
+        "label": "Rev. Growth YoY",
+        "value": "+28.9%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Liderazgo en Data Cloud con efecto de red** — Con mas de 10,900 clientes, RPO de 6.9B USD (+34% YoY) y el unico Data Cloud neutral multi-cloud, Snowflake tiene un moat estructural que los hiperscaladores no pueden replicar sin perder su posicion competitiva.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF positivo y creciente valida el modelo** — FCF de 1.12B USD (+23% YoY) con margen del 23.9% confirma economia del negocio solida. Las perdidas GAAP son por SBC y opex estrategico, no por un modelo de negocio deficiente.",
+        "type": "pro"
+      },
+      {
+        "text": "**Cortex AI como catalista de consumo incremental** — La integracion de LLMs nativos y Document AI sobre los datos existentes de los clientes elimina la necesidad de mover datos para workloads de IA, expandiendo el TAM y el consumo por cliente sin friccion de adopcion.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion exigente con alta sensibilidad al guidance** — Con P/FCF de 41.8x y EV/Sales de 9.9x, cualquier miss en NRR, RPO o guidance puede generar caidas de -20% o mas en una sesion. Solo para inversionistas con horizonte 3-5 anos y alta tolerancia a volatilidad.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 4.68B USD en FY2026 con crecimiento del +28.9% YoY. El modelo consumption-based es visible gracias al RPO de 6.9B USD (+34% YoY) que actua como backlog contractual equivalente a 1.5 anos de revenue. Cortex AI y Document AI son los vectores de aceleracion para FY2027, con adoption rate creciendo trimestralmente en la base instalada de 10,900+ clientes."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto de 67.3% (+1.8pp YoY) refleja eficiencia del software y mejora de mix hacia productos de mayor valor. El margen operativo de -30.8% es negativo por inversion deliberada: S&M (~35% rev) y R&D (~38% rev). La mejora del margen neto de -55.7% (FY2022) a -28.4% (FY2026) confirma el camino hacia rentabilidad GAAP. Objetivo del management: break-even operativo para FY2028."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 1.12B USD (+23% YoY) con FCF margin del 23.9% — el indicador mas importante para SNOW y el que valida la tesis. El programa de recompra de 0.87B USD usa este FCF para mitigar la dilucion por SBC (>1B USD anuales), preservando el valor por accion frente a la dilucion GAAP."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja de 2.83B USD con deuda convertible de 2.31B USD (vence 2027-2029), resultando en caja neta ligera de +0.52B USD. La estructura de capital es conservadora para una empresa de crecimiento. El vencimiento de los convertibles en 2027 es manejable con la generacion de FCF actual. Sin necesidad de equity dilutivo adicional para financiar el crecimiento organico."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con precio de 135.47 USD, P/FCF de 41.8x y EV/Sales de 9.9x, SNOW cotiza con prima significativa. Esta prima se justifica si: (1) crecimiento se mantiene >25% YoY los proximos 2-3 anos, (2) Cortex AI genera aceleracion de consumo material, y (3) margenes operativos mejoran hacia positivo. Precio de acumulacion atractivo: correcciones hacia 110-120 USD representan mejor margen de seguridad para nuevas posiciones."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los tres riesgos criticos: (1) desaceleracion del NRR por debajo del 120%, indicador temprano de perdida de competitividad en expansion de cuentas existentes; (2) competencia de Microsoft Fabric con bundling agresivo en clientes enterprise Microsoft-first, que puede presionar precio y adopcion en mid-market; (3) falta de traccion de Cortex AI en ingresos incrementales FY2027, que eliminaria el principal catalista y podria generar revaluacion severa de los multiples actuales."
+      }
+    ]
+  }
+}

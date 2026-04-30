@@ -1,0 +1,489 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Brookfield Corporation (BN) es uno de los gestores de activos alternativos mas grandes del mundo, con mas de USD 1 trillon en AUM al cierre de FY2025. Opera a traves de tres negocios principales: Asset Management (73% de BAM), Wealth Solutions (seguros y rentas via BWS) y Operating Businesses (infraestructura, renovables, real estate y private equity). En FY2025 reporto ingresos consolidados de USD 75.1B, Distributable Earnings de USD 6.0B y OCF de USD 10.96B. La accion cotiza a ~7.9x EPS Forward, un descuento significativo vs peers como Blackstone y KKR que cotizan a 22-24x.",
+  "descripcion": "BN actua como holding de tres negocios complementarios: 1) Asset Management via 73% en BAM con USD 1T+ en AUM generando fees recurrentes y carried interest en renovables, infraestructura, real estate, private equity y credito. 2) Wealth Solutions via BWS con USD 143B en activos de seguros como fuente de capital perpetuo de bajo costo. 3) Operating Businesses con posiciones directas en infraestructura (BIP), renovables (BEP), private equity (BBU) y real estate. El moat proviene de escala global, relaciones con 1,000+ institucionales y track record de mas de 30 anos en activos reales a traves de multiples ciclos economicos.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "75.7",
+        "92.8",
+        "95.9",
+        "86.0",
+        "75.1",
+        "-12.7%"
+      ],
+      [
+        "NI Accionistas (B USD)",
+        "N/D",
+        "N/D",
+        "1.13",
+        "0.64",
+        "1.31",
+        "+103.9%"
+      ],
+      [
+        "Margen Neto",
+        "N/D",
+        "N/D",
+        "1.2%",
+        "0.7%",
+        "1.7%",
+        "+1.0pp"
+      ],
+      [
+        "EBITDA consol. (B USD)",
+        "N/D",
+        "N/D",
+        "30.7",
+        "27.2",
+        "31.9",
+        "+17.3%"
+      ],
+      [
+        "Distrib. Earnings (B USD)",
+        "6.28",
+        "5.23",
+        "5.40",
+        "6.27",
+        "6.01",
+        "-4.2%"
+      ],
+      [
+        "EPS Diluido (GAAP)",
+        "N/D",
+        "N/D",
+        "0.41",
+        "0.20",
+        "0.49",
+        "+145.0%"
+      ],
+      [
+        "Deuda Neta consol. (B USD)",
+        "N/D",
+        "N/D",
+        "N/D",
+        "222.0",
+        "243.4",
+        "+9.6%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "94.6x",
+      "signal": "yellow",
+      "note": "Distorsionado por IFRS — P/DE de 17x es mas relevante",
+      "precio_base": 46.36,
+      "precio_fecha": "2026-04-21",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 0.49
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "7.9x",
+      "signal": "green",
+      "precio_base": 46.36,
+      "precio_fecha": "2026-04-21",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 5.87
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "10.9x",
+      "signal": "green",
+      "note": "EV consolidado incluyendo deuda subsidiarias",
+      "precio_base": 46.36,
+      "precio_fecha": "2026-04-21",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 31.87,
+        "shares_m": 2237,
+        "deuda_neta_b": 243.4
+      }
+    },
+    {
+      "label": "P/Distrib.Earnings",
+      "value": "17.2x",
+      "signal": "yellow",
+      "note": "MCap/DE anual — metrica clave para BN",
+      "precio_base": 46.36,
+      "precio_fecha": "2026-04-21",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 6.01,
+        "shares_m": 2237
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "7.6x",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROE",
+      "value": "3.0%",
+      "signal": "yellow"
+    },
+    {
+      "label": "DE Yield (MCap)",
+      "value": "5.8%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 75.7,
+        "utilidad": 0
+      },
+      {
+        "label": "FY2022",
+        "revenue": 92.8,
+        "utilidad": 0
+      },
+      {
+        "label": "FY2023",
+        "revenue": 95.9,
+        "utilidad": 1.13
+      },
+      {
+        "label": "FY2024",
+        "revenue": 86,
+        "utilidad": 0.64
+      },
+      {
+        "label": "FY2025",
+        "revenue": 75.1,
+        "utilidad": 1.31
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "NI Accionistas"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 0,
+        "operativo": 0,
+        "neto": 0
+      },
+      {
+        "label": "FY2022",
+        "bruto": 0,
+        "operativo": 0,
+        "neto": 0
+      },
+      {
+        "label": "FY2023",
+        "bruto": 24.5,
+        "operativo": 18.1,
+        "neto": 1.2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 22.2,
+        "operativo": 20.2,
+        "neto": 0.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 38,
+        "operativo": 28.6,
+        "neto": 1.7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Distribuciones a NCI",
+        "value": "~15.5B USD",
+        "nota": "Distribuciones a socios no controlantes en subsidiarias FY2025"
+      },
+      {
+        "label": "Dividendos accionistas",
+        "value": "~0.55B USD",
+        "nota": "Dividendo comun USD 0.25/accion + preferentes USD 167M"
+      },
+      {
+        "label": "Recompras netas",
+        "value": "~0.87B USD",
+        "nota": "Recompras netas de emisiones en FY2025 (BN holding)"
+      },
+      {
+        "label": "Inversiones brutas",
+        "value": "~31.8B USD",
+        "nota": "Total inversiones en activos reales, adquisiciones y fondos PE en FY2025"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "BN TTM",
+      "Sector Ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "EV/EBITDA",
+        "10.9x",
+        "~16x (BX/KKR)",
+        "Descuento significativo vs peers"
+      ],
+      [
+        "P/E Forward",
+        "7.9x",
+        "~22x Blackstone",
+        "Descuento — mercado subestima modelo holding"
+      ],
+      [
+        "AUM",
+        ">1T USD",
+        "~1T KKR/Carlyle",
+        "En linea con top-tier alternativas"
+      ],
+      [
+        "DE Yield",
+        "5.8%",
+        "~3-4% Blackstone",
+        "Superior — mayor retorno al accionista vs precio"
+      ],
+      [
+        "Revenue Growth YoY",
+        "-12.7%",
+        "+5 a +10%",
+        "Por debajo — efecto disposiciones PE en 2024"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "BN mantiene solidez en flujos de caja distribuibles con DE before realizations +11% YoY pese a caida de revenue GAAP por disposiciones en Private Equity.",
+    "analisis": "La caida del 12.7% en revenue FY2025 es consecuencia directa de disposiciones en Private Equity (BBU) en Q3 2024, no de deterioro organico. El negocio de infraestructura y renovables crecio con solidez. Los DE before realizations crecieron +11% YoY a USD 5.39B respaldados por expansion de AUM y Wealth Solutions. El apalancamiento consolidado de 7.6x ND/EBITDA es alto pero la deuda es no-recourse al holding BN y esta respaldada por activos reales de largo plazo con contratos multianuales.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "-12.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "NI Accionistas YoY",
+        "valor": "+103.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "1.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "DE before realiz. YoY",
+        "valor": "+10.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "OCF YoY",
+        "valor": "+44.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta consolidada",
+        "valor": "243.4B USD",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "AUM supera USD 1 Trillon con fees crecientes",
+      "impact": "Alto",
+      "evidence": "AUM >USD 1T al 31-dic-2025. DE del segmento Asset Management crecieron a USD 2,767M en FY2025 (+4.6% YoY). Wealth Solutions escalo a USD 143B en activos de seguros.",
+      "context": "La escala de AUM genera fees recurrentes de alta visibilidad. Cada 100B en nuevo AUM a fee rate promedio del 1% genera USD 1B adicional en fee revenue anual. El objetivo de USD 2T en AUM tiene un camino claro via expansion en credito privado, infraestructura digital y transicion energetica."
+    },
+    {
+      "level": "green",
+      "title": "Descuento de valuacion excepcional vs peers",
+      "impact": "Alto",
+      "evidence": "BN cotiza a 7.9x P/E Forward vs Blackstone ~22x y KKR ~24x. EV/EBITDA de 10.9x vs ~16x del sector. DE Yield del 5.8% vs ~3-4% de peers.",
+      "context": "El descuento refleja la complejidad del modelo holding-IFRS vs peers bajo GAAP-as-investment-companies. A medida que el mercado reconoce el valor de los DE crecientes y el AUM de USD 1T, hay potencial de re-rating multiple de 50-100% sin cambios en fundamentales."
+    },
+    {
+      "level": "yellow",
+      "title": "Revenue GAAP en caida por disposiciones PE",
+      "impact": "Medio",
+      "evidence": "Revenue FY2025 de USD 75.1B vs USD 86.0B en FY2024 (-12.7%), por disposiciones en segmento Private Equity completadas en Q3 2024.",
+      "context": "No refleja deterioro organico. Las disposiciones generaron ganancias de capital y el NI a accionistas mas que duplico (+104% YoY). Sin embargo, la caida de revenue puede generar confusion y presion sobre la accion en el corto plazo."
+    },
+    {
+      "level": "yellow",
+      "title": "Apalancamiento consolidado alto (7.6x ND/EBITDA)",
+      "impact": "Medio",
+      "evidence": "Deuda neta consolidada de USD 243.4B (non-recourse: 245.3B, corporate: 14.3B, cash: 16.2B). ND/EBITDA de 7.6x en base consolidada.",
+      "context": "La deuda es no-recourse al holding BN. La deuda recourse real es solo USD 14.3B en corporate borrowings, respaldada por el 73% de BAM y los dividendos de subsidiarias. El riesgo de credito del holding BN es materialmente menor al numero consolidado."
+    },
+    {
+      "level": "red",
+      "title": "Refinanciamiento de USD 245B en entorno de tasas altas",
+      "impact": "Alto",
+      "evidence": "USD 245.3B en non-recourse borrowings en subsidiarias con vencimientos escalonados en 2025-2030. Corporate borrowings de USD 14.3B adicionales.",
+      "context": "Un entorno de tasas altas prolongadas eleva el costo de refinanciamiento en BPY (real estate), BEP y BIP, reduciendo retornos sobre activos y comprimiendo multiples de salida en fondos PE. Es el principal riesgo sistemico para los DE en 2025-2028."
+    }
+  ],
+  "score": {
+    "score": 7.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Escala y captacion de capital (AUM)",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue organico",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes GAAP",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance holding",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de DE y flujo al accionista",
+        "score": 9,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "BN ejecuta una estrategia de gestora de activos alternativa de escala global orientada a tres vectores: 1) Crecimiento del AUM de BAM hacia USD 2T via nuevos fondos de credito privado, infraestructura digital y transicion energetica. 2) Expansion de Wealth Solutions como fuente de capital de bajo costo para financiar inversiones en activos reales via USD 143B en activos de seguros. 3) Monetizacion disciplinada de inversiones maduras en Operating Businesses para reciclar capital hacia mayor retorno.",
+    "ventajas": "1) Escala unica de USD 1T+ en AUM con acceso a capital de los 1,000+ institucionales mas sofisticados globalmente. 2) Integracion vertical completa: capta capital (BAM) + invierte en activos reales (BIP/BEP/BBU) + distribuye retornos via DE. 3) Track record de mas de 30 anos gestionando activos reales en 30+ paises a traves de multiples ciclos economicos. 4) Wealth Solutions como fuente de capital perpetua de bajo costo con USD 143B en activos de seguros en rapido crecimiento.",
+    "debilidades": "1) EPS GAAP muy volatil y dificil de interpretar por consolidacion IFRS y ajustes de valor justo en subsidiarias. 2) Revenue GAAP decrece por disposiciones, confundiendo a inversores habituados a modelos de crecimiento lineal. 3) Complejidad estructural extrema: BN holding -> BAM -> fondos privados -> subsidiarias cotizadas. 4) Exposicion a real estate comercial via BPY bajo presion persistente por tasas altas y cambios estructurales en demanda de oficinas.",
+    "riesgos": [
+      "Tasas de interes altas prolongadas encarecen refinanciamiento de USD 245B en non-recourse debt y comprimen spreads y multiples de salida en real estate y PE",
+      "Desaceleracion en captacion de nuevos fondos si retornos historicos de infraestructura y renovables se comprimen en entorno macro adverso",
+      "Riesgo de deterioro en BPY: real estate comercial bajo presion estructural post-COVID en mercados desarrollados, impactando valuaciones y DE del segmento",
+      "Riesgo de concentracion: BAM representa el principal motor de fees; cualquier caida en AUM o en fee rates por competencia (Blackstone, KKR, Apollo) impacta directamente los DE del segmento Asset Management"
+    ],
+    "inversiones_estrategicas": "En FY2025 BN completo las adquisiciones de Colonial Pipeline, Hotwire Communications, Mantiqueira (renovables Brasil), Chemelex y Antylia. Cerro la transferencia del 4% de BAM a BWS para alinear incentivos en Wealth Solutions. Continua expansion del Brookfield Infrastructure Fund VI con meta de USD 30B+. La plataforma de credito privado via Oaktree avanza hacia USD 200B en AUM. Wealth Solutions crecio ventas de anualidades a USD 20B en FY2025."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "7.4/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "75.1B USD"
+      },
+      {
+        "label": "DE (Distrib. Earnings)",
+        "value": "6.0B USD"
+      },
+      {
+        "label": "AUM Total",
+        "value": ">1T USD"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "7.9x"
+      },
+      {
+        "label": "OCF YoY",
+        "value": "+44.8%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Descuento vs peers injustificado ->** BN cotiza a 7.9x P/E Forward y 10.9x EV/EBITDA vs Blackstone y KKR que cotizan a 22-24x, ofreciendo acceso a una gestora de USD 1T en AUM a precio de holding con descuento excepcional.",
+        "type": "pro"
+      },
+      {
+        "text": "**DE crecientes y resilientes ->** Distributable Earnings before realizations crecio +11% YoY a USD 5.4B en FY2025, respaldado por fees recurrentes de BAM y expansion de Wealth Solutions, con alta visibilidad de continuidad.",
+        "type": "pro"
+      },
+      {
+        "text": "**Wealth Solutions como diferencial competitivo ->** USD 143B en activos de seguros proporcionan capital de bajo costo perpetuo para financiar activos reales, un modelo que Blackstone y KKR no replican con la misma escala e integracion.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo de refinanciamiento en tasas altas ->** USD 245B en non-recourse borrowings en subsidiarias deben refinanciarse en entorno de tasas elevadas, comprimiendo spreads y potencialmente presionando los DE en 2025-2028.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue GAAP consolidado cayo 12.7% a USD 75.1B en FY2025 principalmente por disposiciones en Private Equity completadas en 2024. El revenue organico de infraestructura y renovables crecio con solidez. Esta caida en revenue no refleja deterioro del negocio sino reciclaje disciplinado de capital hacia inversiones de mayor retorno."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto GAAP del 1.7% es estructuralmente bajo por la consolidacion de USD 245B en deuda de subsidiarias y sus costos de interes. El margen real del negocio de Asset Management supera el 50% en terminos de fee-related earnings sobre revenue de gestion. La metrica relevante de rentabilidad es el DE yield, no el margen neto GAAP."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF consolidado crecio +44.8% YoY a USD 10.96B en FY2025. Distributable Earnings de USD 6.0B financian dividendos, recompras y reinversion. DE before realizations crecio +11% YoY a USD 5.39B, mostrando momentum organico positivo en los negocios de fees y Wealth Solutions."
+      },
+      {
+        "label": "Balance",
+        "texto": "La deuda consolidada de USD 259B es principalmente no-recourse al holding BN. La deuda recourse real (corporate borrowings) es solo USD 14.3B, respaldada por el 73% de BAM y los flujos de subsidiarias. El holding BN mantiene USD 16.2B en caja y acceso a lineas de credito corporativas adicionales."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A USD 46.36, BN cotiza a 7.9x P/E Forward y ~17x P/DE, un descuento de mas del 50% vs Blackstone (~22x). La suma de partes conservadora del 73% en BAM + Wealth Solutions + Operating Businesses sugiere un valor intrinseco materialmente superior al precio de mercado, haciendo de BN una de las mejores oportunidades de valor en gestoras de activos alternativos."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo principal es el refinanciamiento de USD 245B en non-recourse debt en entorno de tasas altas. Secundariamente: deterioro en real estate comercial (BPY), desaceleracion en captacion de nuevos fondos, y complejidad estructural que limita el universo de inversores capaces de valorar correctamente el modelo BN."
+      }
+    ]
+  }
+}

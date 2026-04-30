@@ -1,0 +1,480 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Caterpillar Inc. es el lider mundial en maquinaria de construccion, mineria e infraestructura, con mas de 100 anos de historia y una red de dealers global incomparable. En FY2025 reporto ingresos de 67.6B USD con compresion de margenes respecto al pico de FY2024 por menores volumenes en Construction Industries. El Q1 2026 reportado hoy (29-abr) mostro Revenue de 14.2B (-10% YoY) y EPS ajustado de 4.25, reflejando normalizacion ciclica. El balance es solido con FCF de 8.9B y dividendo creciente por 31 anos consecutivos.",
+  "descripcion": "Caterpillar opera en tres segmentos: Construction Industries (maquinaria para construccion e infraestructura), Resource Industries (maquinaria minera y agregados) y Energy & Transportation (motores, turbinas, locomotoras y Cat Financial). Su moat descansa en la red de 3,000+ dealers globales, la marca de confiabilidad extrema y el negocio de repuestos/servicio con margenes altos. Aproximadamente 40% de las ventas son partes y servicios de alto margen. Mas del 50% de ingresos provienen de mercados internacionales.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "50.97",
+        "59.43",
+        "67.06",
+        "64.81",
+        "67.59",
+        "+4.3%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.05",
+        "6.71",
+        "10.33",
+        "10.79",
+        "8.88",
+        "-17.7%"
+      ],
+      [
+        "Margen Neto",
+        "9.9%",
+        "11.3%",
+        "15.4%",
+        "16.6%",
+        "13.1%",
+        "-3.5pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "9.23",
+        "10.12",
+        "15.11",
+        "15.23",
+        "13.41",
+        "-12.0%"
+      ],
+      [
+        "FCF (B USD)",
+        "6.11",
+        "6.47",
+        "11.29",
+        "10.05",
+        "8.92",
+        "-11.2%"
+      ],
+      [
+        "EPS Diluido",
+        "10.26",
+        "13.84",
+        "20.12",
+        "22.05",
+        "18.81",
+        "-14.7%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "16.78",
+        "18.71",
+        "17.49",
+        "20.46",
+        "20.72",
+        "+1.3%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "43.1x",
+      "signal": "red",
+      "note": "vs. industriales ~20x",
+      "precio_base": 810.05,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 18.81
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "41.5x",
+      "signal": "red",
+      "precio_base": 810.05,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 19.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "29.7x",
+      "signal": "yellow",
+      "precio_base": 810.05,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 13.41,
+        "shares_m": 465.3,
+        "deuda_neta_b": 20.72
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "42.3x",
+      "signal": "red",
+      "precio_base": 810.05,
+      "precio_fecha": "2026-04-29",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 8.92,
+        "shares_m": 465.3
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.55x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "75.9%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "26.8%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 50.97,
+        "utilidad": 5.05
+      },
+      {
+        "label": "FY2022",
+        "revenue": 59.43,
+        "utilidad": 6.71
+      },
+      {
+        "label": "FY2023",
+        "revenue": 67.06,
+        "utilidad": 10.33
+      },
+      {
+        "label": "FY2024",
+        "revenue": 64.81,
+        "utilidad": 10.79
+      },
+      {
+        "label": "FY2025",
+        "revenue": 67.59,
+        "utilidad": 8.88
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 36,
+        "operativo": 13.5,
+        "neto": 9.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 30.8,
+        "operativo": 13.3,
+        "neto": 11.3
+      },
+      {
+        "label": "FY2023",
+        "bruto": 36,
+        "operativo": 19.3,
+        "neto": 15.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 36,
+        "operativo": 20.2,
+        "neto": 16.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 32.7,
+        "operativo": 16.5,
+        "neto": 13.1
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "5.19B USD",
+        "nota": "FY2025: shares bajaron de 478M a 465M — programa activo"
+      },
+      {
+        "label": "Dividendos",
+        "value": "~2.3B USD",
+        "nota": "Dividend Aristocrat — 31 anos de crecimiento consecutivo"
+      },
+      {
+        "label": "Capex",
+        "value": "2.82B USD",
+        "nota": "Incremento +42% YoY — electrificacion y manufactura"
+      },
+      {
+        "label": "M&A",
+        "value": "~0.5B USD",
+        "nota": "Adquisiciones selectivas en software minero y soluciones digitales"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CAT TTM",
+      "Sector industriales",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "32.7%",
+        "~35%",
+        "Ligeramente por debajo — mezcla de productos"
+      ],
+      [
+        "Margen Operativo",
+        "16.5%",
+        "~14%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+4.3%",
+        "~3%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "41.5x",
+        "~20x",
+        "Prima muy elevada vs industriales ciclicos"
+      ],
+      [
+        "ROIC",
+        "26.8%",
+        "~15%",
+        "Muy por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "CAT enfrenta normalizacion de margenes en ciclo de desaceleracion pero balance y FCF permanecen solidos",
+    "analisis": "Los margenes de FY2025 se comprimieron desde el pico de FY2024: margen operativo cayo de 20.2% a 16.5% y neto de 16.6% a 13.1%. El FCF bajo de 10.05B a 8.92B pero sigue siendo robusto. La deuda neta es manejable en 1.54x EBITDA y el efectivo mejoro a 9.98B. El ciclo post-pandemia de infraestructura se normaliza pero la empresa mantiene posicion competitiva.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+4.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "32.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "16.5%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "13.1%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-11.2%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "20.72B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Dividend Aristocrat — 31 anos consecutivos",
+      "impact": "Alto",
+      "evidence": "Dividendo creciente ininterrumpido desde 1993. Yield ~1.6% con recompras activas: shares bajaron 2.6% en FY2025.",
+      "context": "Senial de solidez financiera y disciplina de capital. Inversionistas de largo plazo valoran la predecibilidad de retornos en todos los ciclos."
+    },
+    {
+      "level": "green",
+      "title": "ROIC de 26.8% muy por encima del sector",
+      "impact": "Alto",
+      "evidence": "ROIC de 26.8% vs sector industriales ~15%. Red de 3,000+ dealers globales con barrera de entrada de decadas.",
+      "context": "Caterpillar genera valor economico real. La red de dealers y el negocio de partes con margenes altos crean ventajas estructurales duraderas."
+    },
+    {
+      "level": "yellow",
+      "title": "Normalizacion del ciclo de construccion",
+      "impact": "Medio",
+      "evidence": "Q1 2026: Revenue -10% YoY a 14.2B. Construction Industries fue el segmento mas debil. Backlog cae YoY.",
+      "context": "El ciclo post-IIJA de infraestructura se modera. Energy & Transportation (data centers, mineria) compensa parcialmente pero no en su totalidad."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion premium con riesgo ciclico elevado",
+      "impact": "Alto",
+      "evidence": "P/E forward de 41.5x vs historico de 15-20x para industriales ciclicos. FCF yield de solo 2.4%.",
+      "context": "Si los volumenes continuan cayendo en H2 2026, la valoracion actual deja poco margen de seguridad. A multiplos historicos normalizados (20x), precio objetivo seria ~$390, -52% desde niveles actuales."
+    }
+  ],
+  "score": {
+    "score": 7,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "CAT ejecuta una estrategia de servicios y digitalizacion: aumentar ingresos recurrentes de partes, servicio y soluciones digitales (Cat Command, VisionLink) para reducir la ciclicidad. La empresa invierte en electrificacion de equipos pequenos y en motores de hidrogeno para maquinaria pesada, posicionandose para regulaciones ambientales futuras.",
+    "ventajas": "Red de 3,000+ dealers globales imposible de replicar en menos de 2 decadas. Marca premium con clientes que prefieren pagar mas por confiabilidad en condiciones extremas. Negocio de partes y servicio de alto margen. Escala en manufactura con 100+ plantas globales. Financiamiento integrado via Cat Financial.",
+    "debilidades": "Alta exposicion a ciclos de construccion e inversion en infraestructura. Margenes brutos de 32-36% son moderados considerando el pricing power percibido. Dependencia de China como mercado con riesgo geopolitico. Capex creciente por electrificacion presiona el FCF libre.",
+    "riesgos": [
+      "Desaceleracion economica global que reduzca inversion en infraestructura y mineria en 2026-2027",
+      "Competencia de fabricantes chinos (XCMG, Sany) con precios 30-40% mas bajos en mercados emergentes",
+      "Transicion a electrificacion que requiere inversiones masivas y puede erosionar margenes en la proxima decada",
+      "Impacto de aranceles y guerra comercial en cadena de suministro global con 100+ plantas en 30 paises"
+    ],
+    "inversiones_estrategicas": "Inversion en Cat Digital (telematica, IoT para flotillas), acuerdo con Trimble para construccion digital, expansion de Cat Financial en mercados emergentes, y sistemas de autonomia para mineria (Cat Command con mas de 3M horas de operacion autonoma acumuladas)."
+  },
+  "verdict": {
+    "status": "Mantener",
+    "score": "7.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "67.6B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "13.1%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.4%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "41.5x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+4.3% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Moat estructural** — Red de 3,000+ dealers, marca premium y negocio de partes/servicio crean ventajas competitivas que tardan decadas en construirse y son practicamente irreplicables.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance solido y FCF resiliente** — Deuda Neta/EBITDA de 1.54x y FCF de 8.92B permiten dividendos crecientes (Aristocrat 31 anos) y recompras activas incluso en ciclos adversos.",
+        "type": "pro"
+      },
+      {
+        "text": "**Energy & Transportation como ancla secular** — Motores para data centers de IA, mineria y generacion de energia representan el catalizador de crecimiento a largo plazo que reduce la ciclicidad historica.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion premium injustificada** — P/E forward de 41.5x vs historico de 15-20x para industriales ciclicos. El Q1 2026 con -10% en revenue ya cuestiona el escenario optimista descontado en USD 810.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 cerro con 67.6B USD (+4.3% YoY). Q1 2026 mostro -10% YoY a 14.2B, con Construction Industries liderando el retroceso. Energy & Transportation crece pero no compensa totalmente la caida en maquinaria de construccion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Compresion en FY2025: margen bruto 32.7% (vs 36% en FY2024), operativo 16.5% (vs 20.2%), neto 13.1% (vs 16.6%). La normalizacion de precios y menores volumenes explican la caida, con reestructuracion de USD 300-350M esperada en 2026."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 8.92B USD (-11.2% YoY) sigue siendo robusto. El capex subio a 2.82B (+42%) por inversion en electrificacion y manufactura. CAT mantiene capacidad de retornar +7B USD al ano via dividendos y recompras."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda Neta de 20.72B USD (1.54x EBITDA) es manejable. Cat Financial opera con apalancamiento propio separado del balance industrial. Calificacion Aa3/AA-. Cash de 9.98B USD da flexibilidad operativa y financiera."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con precio de USD 810 y EPS forward de ~19.50, el P/E de 41.5x es historicamente elevado para un industrial ciclico. El mercado paga prima por servicios recurrentes y autonomia, pero a multiplos historicos normalizados (20x) el precio justo estimado seria USD 380-450."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Continuacion del ciclo de desaceleracion en construccion en 2026. (2) Competencia china ganando participacion en mercados emergentes. (3) Impacto de aranceles en cadena de suministro de 30 paises. (4) Capex creciente por transicion energetica que presiona el FCF libre."
+      }
+    ]
+  }
+}
