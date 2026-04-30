@@ -438,27 +438,27 @@ Constellation Energy opera el mayor portafolio nuclear de EE.UU. con 21 reactore
 **URL**: https://reportes.murzainversiones.com/reporte/CVNA
 **Publicado**: 2026-04-08
 
-Carvana Co. es la mayor plataforma digital de comercio de vehiculos usados en Estados Unidos, con un modelo 100% online que cubre compra, financiamiento, entrega y venta de autos sin concesionaria fisica. Tras una crisis financiera severa en 2022, ejecuto una reestructuracion que canjeo mas de 5 mil millones de dolares en deuda, y en FY2025 reporto el mejor anio de su historia: revenue de 20.3B USD (+49% YoY), utilidad neta de 1.41B USD y EBITDA record. El turnaround es real y la escala esta acelerando, aunque el apalancamiento residual y la sensibilidad a tasas de interes siguen siendo riesgos a monitorear.
+Carvana Co. es la mayor plataforma digital de comercio de vehiculos usados en Estados Unidos, con un modelo 100% online que cubre compra, financiamiento, entrega y venta de autos sin concesionaria fisica. En Q1 2026 reporto resultados record: revenue de 6.43B USD (+52% YoY), 187,393 unidades retail vendidas (+40% YoY, nuevo maximo historico) y EBITDA ajustado de 672M USD. El turnaround iniciado en 2022 esta consolidado: cuatro trimestres consecutivos de crecimiento acelerado, margenes en expansion y deuda neta manejable. La narrativa cambio de supervivencia a dominancia de mercado.
 
-Carvana opera un marketplace digital end-to-end para vehiculos usados en EE.UU. Sus fuentes de ingresos incluyen: (1) venta retail de vehiculos usados a consumidores finales, principal linea de ingresos; (2) venta wholesale de vehiculos a distribuidores y subastas via ADESA/CarOffer; (3) productos financieros: originar prestamos de auto y venderlos a instituciones (gain-on-sale); y (4) comisiones por garantias extendidas y seguros. La infraestructura logistica incluye 38+ centros de inspeccion y recondicionaliento (IRCs) y un sistema de entrega a domicilio en mas de 300 mercados. Genera valor via datos transaccionales masivos que alimentan pricing dinamico y optimizacion de inventario superiores al retail tradicional.
+Carvana opera un marketplace digital end-to-end para vehiculos usados en EE.UU. Sus fuentes de ingresos incluyen: (1) venta retail de vehiculos usados a consumidores finales, principal linea de ingresos; (2) venta wholesale de vehiculos a distribuidores y subastas via ADESA/CarOffer; (3) productos financieros: originar prestamos de auto y venderlos a instituciones (gain-on-sale); y (4) comisiones por garantias extendidas y seguros. La infraestructura logistica incluye 38+ centros de inspeccion y recondicionamiento (IRCs) y un sistema de entrega a domicilio en mas de 300 mercados. La escala de unidades vendidas (187K en un solo trimestre) acelera el flywheel de datos que alimenta pricing dinamico y optimizacion de inventario superior al retail tradicional.
 
 **Datos financieros**:
-- Revenue (B USD): 20.32 (+48.6% YoY)
-- Utilidad Neta (B USD): 1.41 (+571.4% YoY)
-- Margen Neto: 6.9% (5.4pp YoY)
-- Margen Bruto: 20.6% (-0.5pp YoY)
-- Margen Operativo: 9.3% (2.1pp YoY)
-- EPS Diluido: 6.29 (+4.7 YoY)
-- FCF (B USD): 0.89 (+0.06 YoY)
-- Deuda Neta (B USD): 2.59 (-0.99 YoY)
+- Revenue (B USD): 6.43 (+52.0% YoY)
+- Utilidad Neta (B USD): 0.41 (+87.5% YoY)
+- Margen Neto: 6.3% (+1.2pp YoY)
+- Margen Bruto: 19.8% (-2.2pp YoY)
+- Margen Operativo: 9.0% (-0.3pp YoY)
+- EPS Diluido: 1.81 (+88.5% YoY)
+- FCF (B USD): 0.06 (-0.15 YoY)
+- Deuda Neta (B USD): 2.67 (+0.08 YoY)
 
-**Valuacion**: P/E Trailing 50.9x, P/E Forward 30.8x, EV/EBITDA 34.9x, P/FCF 80.7x, Deuda Neta/EBITDA 1.2x, Market Cap 71.83B USD, EV 74.42B USD, FCF Yield 1.2%
+**Valuacion**: P/E Trailing 54.0x, P/E Forward N/A, EV/EBITDA 33.1x, P/FCF 116.5x, Deuda Neta/EBITDA 1.0x, Market Cap 86.35B USD, EV 89.02B USD, FCF Yield 0.9%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 7.2/10)
-+ Turnaround historico — FY2025 confirma que el modelo digital de CVNA es competitivo en escala: revenue +49%, utilidad neta +572% y EBITDA record en el mismo ejercicio.
-+ Apalancamiento operativo real — El margen bruto escala de 9.2% a 20.6% en 3 anios sin capex masivo, demostrando la ventaja estructural del modelo sin concesionarias fisicas.
-+ Reduccion de deuda organica — La deuda neta bajo de 6.05B USD (2022) a 2.59B USD (2025) sin emision de equity adicional; la trayectoria mejora el perfil de riesgo trimestre a trimestre.
-- Sensibilidad a tasas y valuacion exigente — El EV/EBITDA de 34.9x deja poco margen de error; cualquier deterioro por tasas altas o desaceleracion macro puede comprimir el multiple rapidamente.
+**Veredicto**: Comprar con Conviccion (Score: 7.6/10)
++ Record de unidades y revenue — 187,393 unidades retail en Q1 2026 es el maximo historico de la compania, y el revenue de 6.43B USD (+52% YoY) confirma que la aceleracion de crecimiento no esta frenando.
++ Turnaround consolidado — FY2025 mas Q1 2026 muestran cuatro trimestres consecutivos de crecimiento acelerado y expansion de EBITDA. CVNA ya no es una historia de supervivencia, es una historia de expansion de market share en un mercado de 40M vehiculos anuales.
++ Apalancamiento operativo comprobado — Margen operativo sostenido en 9.0% con revenue creciendo +52% demuestra que la escala genera eficiencia. El EBITDA ajustado de 672M en un trimestre implica un run-rate anual de ~2.7B.
+- Valuacion exigente y sensibilidad a tasas — EV/EBITDA de 33x deja poco margen de error. Tasas de interes elevadas siguen siendo el mayor riesgo macro — cualquier deterioro crediticio puede frenar el crecimiento de unidades.
 
 ---
 
