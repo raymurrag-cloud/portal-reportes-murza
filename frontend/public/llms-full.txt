@@ -771,26 +771,26 @@ Fundada en 2010 y listada en NYSE en 2021, Coupang opera la red de e-commerce ma
 **URL**: https://reportes.murzainversiones.com/reporte/MSFT
 **Publicado**: 2026-04-02
 
-Microsoft es el mayor proveedor de software empresarial y servicios cloud del mundo, con tres segmentos: Intelligent Cloud (Azure), Productivity and Business Processes (Office 365, LinkedIn) y More Personal Computing. En FY2025 reporto ingresos record de 281.7B USD (+15% YoY) y utilidad neta de 101.8B USD, superando los 100B por primera vez. Azure crece al 30%+ anual, impulsando la expansion de margenes operativos hasta 45.6%. Veredicto: activo de primera calidad con valuacion exigente, compra selectiva en correcciones.
+Microsoft reporto resultados record en Q3 FY2026 (enero-marzo 2026): ingresos de 82.9B USD (+18.3% YoY) y utilidad neta de 31.8B USD (+23.1%), superando ampliamente las estimaciones del consenso. Azure crecio 35% en moneda constante, acelerando frente al 31% de Q3 FY2025, con la demanda de IA como principal motor. El margen operativo se expande a 46.3% y el margen neto alcanza 38.3%, ambos records historicos trimestrales. Con FY2021-FY2025 como referencia anual y Q3 FY2026 como trimestre mas reciente, MSFT mantiene su condicion de activo de primera calidad con valuacion moderada post-correccion: P/E trailing 23.8x, EV/EBITDA 15.8x. Veredicto: comprar con conviccion; el ciclo de IA empresarial esta en plena aceleracion.
 
-Microsoft opera tres segmentos: Intelligent Cloud (~43% de ingresos, liderado por Azure +30% YoY), Productivity and Business Processes (~32%, Office 365 comercial, LinkedIn, Dynamics 365), y More Personal Computing (~25%, Windows OEM, Xbox, Surface). El modelo de negocio es predominantemente suscripcion y consumo cloud con ingresos recurrentes de alta visibilidad. La posicion en IA es estrategica: Copilot integrado en todo el ecosistema y participacion en OpenAI. Mercados principales: EE.UU. ~50%, Europa ~25%, Asia-Pacifico ~15%. Moat: switching costs extremadamente altos en entornos corporativos y red de 400K+ socios certificados.
+Microsoft opera tres segmentos: Intelligent Cloud (~43% de ingresos, liderado por Azure +35% YoY en Q3 FY2026), Productivity and Business Processes (~36%, Office 365 comercial, LinkedIn, Dynamics 365), y More Personal Computing (~16%, Windows OEM, Xbox, Surface). El modelo de negocio es predominantemente suscripcion y consumo cloud con ingresos recurrentes de alta visibilidad. La posicion en IA es estrategica: Copilot integrado en todo el ecosistema, Azure OpenAI Service con demanda en expansion acelerada. Mercados: EE.UU. ~50%, Europa ~25%, Asia-Pacifico ~15%. Moat: switching costs extremadamente altos en entornos corporativos, red de 400K+ socios certificados y dependencia estructural del stack Microsoft en Fortune 500.
 
 **Datos financieros**:
-- Revenue (B USD): 281.7 (+14.9% YoY)
-- Utilidad Neta (B USD): 101.8 (+15.5% YoY)
-- Margen Neto (%): 36.1% (+0.2pp YoY)
-- EBITDA (B USD): 150.5 (+20.8% YoY)
-- FCF (B USD): 71.6 (-3.3% YoY)
-- EPS Diluido: 13.64 (+15.6% YoY)
-- Deuda Neta (B USD): -51.4 (N/D YoY)
+- Revenue (B USD): 82.9 (+18.3% YoY)
+- Utilidad Neta (B USD): 31.8 (+23.1% YoY)
+- Margen Neto (%): 38.3% (+1.5pp YoY)
+- EBITDA (B USD): 49.9 (+24.1% YoY)
+- FCF (B USD): 15.8 (-22.2% YoY)
+- EPS Diluido: 4.27 (+23.4% YoY)
+- Deuda Neta (B USD): 8.2 (-41.6% YoY)
 
-**Valuacion**: P/E Trailing 27.4x, P/E Forward 24.1x, EV/EBITDA 18.2x, P/FCF 38.9x, Deuda Neta/EBITDA -0.34x, ROE 33.3%, ROIC 36.1%
+**Valuacion**: P/E Trailing 23.8x, P/E Forward 20.8x, EV/EBITDA 15.8x, P/FCF 40.8x, Deuda Neta/EBITDA 0.04x, ROE 34.4%, ROIC 35.2%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 8.2/10)
-+ Azure + IA dominante -> Microsoft es el proveedor de nube empresarial con mayor integracion vertical: Azure crece +30% YoY y Copilot genera monetizacion incremental sin canibalizar productos existentes.
-+ Margenes en expansion -> Margen operativo del 45.6% en FY2025 (record historico) demuestra apalancamiento operativo real. La escala cloud convierte cada dolar incremental de revenue en alto margen.
-+ Balance blindado -> Caja neta de 51.4B USD y generacion de OCF de 136B anuales da flexibilidad total para M&A, recompras y dividendos crecientes sin estres financiero.
-- Capex AI comprime FCF -> La inversion en infraestructura AI (64.6B FY2025) genera incertidumbre sobre el retorno del capital invertido. P/FCF de 38.9x es exigente si la monetizacion de IA decepciona o se retrasa.
+**Veredicto**: Comprar con Conviccion (Score: 8.4/10)
++ Azure AI en aceleracion -> Azure crecio 35% en Q3 FY2026, acelerando desde 31% un anio antes. La demanda de IA empresarial supera la capacidad disponible, con guia de 34-35% para Q4. No hay senales de desaceleracion del ciclo AI.
++ Margenes en expansion record -> Margen operativo 46.3% y margen neto 38.3% son records historicos trimestrales. El apalancamiento operativo del modelo SaaS+cloud se evidencia en que los ingresos crecen 18% con expansion de margenes simultanea.
++ Valuacion post-correccion atractiva -> P/E forward 20.8x y EV/EBITDA 15.8x representan la valuacion mas atractiva de MSFT en 3 anios. El mercado descuenta desaceleracion que los numeros no confirman; hay margen de seguridad en estos niveles.
+- Capex AI comprime FCF -> Capex trimestral de 30.9B (+84% YoY) genera FCF comprimido de 15.8B. El retorno de esta inversion masiva es incierto; si la monetizacion de Copilot y Azure AI no genera ARPU suficiente en FY2027-2028, la expansion de multiples sera limitada.
 
 ---
 
