@@ -1068,26 +1068,26 @@ Broadcom Inc. es un lider global en semiconductores e infraestructura de softwar
 **URL**: https://reportes.murzainversiones.com/reporte/GOOGL
 **Publicado**: 2026-03-28
 
-Alphabet (GOOGL) cerro FY2025 con ingresos record de $402.8B (+15% YoY), superando los $400B por primera vez en su historia. La utilidad neta salto 32% a $132.2B con un margen neto del 32.8%, mientras Google Cloud crecio 48% y se posiciona como motor de expansion para los proximos anos. Con $73.3B en FCF, balance ultra-solido (deuda neta negativa) y AI integrada en toda la plataforma, Alphabet presenta uno de los perfiles de calidad mas altos del mercado. Veredicto: Comprar con Conviccion.
+Alphabet (GOOGL) reporto un Q1 2026 excepcional con ingresos de $109.9B (+21.8% YoY), superando el consenso de analistas. El EPS diluido de $5.11 incluye una ganancia extraordinaria de ~$28B, llevando la utilidad neta a $62.6B. Excluyendo este elemento, el ingreso operativo de $39.7B (+29.7% YoY) y el margen operativo de 36.1% representan la calidad operativa recurrente. Google Cloud acelero a +28.4% YoY. Con precio de $378, Alphabet cotiza a 26x P/E forward, valuacion atractiva entre las Magnificent 7. Veredicto: Comprar con Conviccion.
 
-Alphabet Inc. es la compania matriz de Google, el motor de busqueda mas usado del mundo, y opera tres segmentos principales: Google Services (busqueda, YouTube, publicidad en red, suscripciones), Google Cloud (infraestructura cloud e IA para empresas) y Other Bets (proyectos moonshot como Waymo y Verily). Sus ingresos provienen mayoritariamente de publicidad digital (~73% del revenue total en 2025), con Google Cloud como segundo pilar de crecimiento acelerado. Cotiza en Nasdaq bajo los tickers GOOGL y GOOG y tiene capitalizacion de mercado de $3.32 billones.
+Alphabet Inc. es la compania matriz de Google y opera tres segmentos: Google Services (busqueda, YouTube, publicidad, suscripciones Google One), Google Cloud (infraestructura e IA para empresas) y Other Bets (Waymo, Verily). Los ingresos provienen mayoritariamente de publicidad digital (~73%), con Google Cloud como segundo motor de crecimiento. En Q1 2026, Google Search crecio +10% YoY a $50.7B, YouTube Ads +10.3% a $8.9B, Google Cloud +28.4% a $12.3B y Suscripciones +19% a $10.4B. Cotiza en Nasdaq bajo GOOGL y GOOG con capitalizacion de mercado de ~$4.6 billones.
 
 **Datos financieros**:
-- Revenue ($B): 402.8 (+15.1% YoY)
-- Utilidad Neta ($B): 132.2 (+32.0% YoY)
-- Margen Neto (%): 32.8% (+4.2pp YoY)
-- EBITDA ($B): 150.2 (+17.6% YoY)
-- FCF ($B): 73.3 (+0.7% YoY)
-- EPS Diluido (GAAP): $10.80 (+34.3% YoY)
-- Deuda Neta ($B): -$142.1 (Mejora YoY)
+- Revenue (B USD): 109.9 (+21.8% YoY)
+- Utilidad Neta (B USD): 62.6 (+81.2% YoY)
+- Margen Neto: 56.9%* (+18.6pp* YoY)
+- EBITDA (B USD): 46.2 (+33.6% YoY)
+- FCF (B USD): 10.1 (-46.6% YoY)
+- EPS Diluido: 5.11 (+81.9% YoY)
+- Deuda Neta (B USD): 39.4 (Sube YoY)
 
-**Valuacion**: P/E Trailing 29.5x, P/E Forward 23.7x, EV/EBITDA 21.7x, P/FCF 45.3x, Deuda/EBITDA 0.43x, ROE 35.7%, ROIC 31.2%
+**Valuacion**: P/E Trailing (TTM) 28.8x, P/E Forward 26.1x, EV/EBITDA 30.9x, P/FCF 63.2x, Deuda/EBITDA 0.98x, ROE 32.5%, ROIC 28.4%
 
-**Veredicto**: Comprar con Conviccion (Score: 9.0/10)
-+ AI + Cloud en aceleracion -> Google Cloud crecio 48% a $58.7B con un backlog de $242.8B; Gemini integrado en toda la plataforma posiciona a Alphabet como la empresa con mayor superficie de monetizacion de IA del mundo.
-+ Calidad financiera excepcional -> Margen neto de 32.8%, ROIC de 31.2%, deuda neta negativa de $142B y $164.7B en operating cash flow — perfil de calidad top-decil en el mercado global.
-+ Valuacion con descuento relativo -> P/E forward de 23.7x frente a ~28x del sector Big Tech y con crecimiento de EPS del 34% YoY; precio objetivo consenso de analistas $351 implica 28% de upside desde $274.
-- Riesgo antitrust y dependencia de publicidad -> Dos factores de riesgo estructural: potencial desinversion forzada por DOJ (acuerdo Apple Search) y 73% de revenue dependiente de publicidad digital, vulnerable en recesion o disrupcion por AI generativa.
+**Veredicto**: Comprar con Conviccion (Score: 8.8/10)
++ Revenue acelera y margenes en maxima historica -> +21.8% YoY con margen operativo de 36.1% confirma que la inversion en AI genera retornos operativos reales. La combinacion de crecimiento y expansion de margenes es excepcional para una empresa de $400B+ en revenue.
++ Valuacion atractiva vs. Big Tech -> P/E Forward de 26.1x vs. ~30x del sector con crecimiento de revenue acelerado. Alphabet es la unica Magnificent 7 que combina aceleracion del crecimiento con descuento de valuacion relativo.
++ Google Cloud como segundo motor estructural -> Cloud crece al 28% con backlog de $242.8B y Gemini nativo + TPUs diferencian la oferta en AI enterprise, apuntando a ser la plataforma de referencia en 2026-2027.
+- Capex masivo y deuda neta positiva -> FCF de $10.1B en Q1 y deuda neta de $39.4B son los principales riesgos. Si el retorno de la inversion de $175-185B no se materializa en crecimiento de Cloud para 2027-2028, la tesis de inversion se debilita materialmente.
 
 ---
 
