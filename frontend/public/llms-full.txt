@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-04-29
+**Actualizado**: 2026-04-30
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -983,30 +983,30 @@ Apple Inc. disenha, fabrica y comercializa dispositivos electronicos de consumo,
 
 ---
 
-### AMZN — Amazon.com Inc.
+### AMZN — Amazon.com, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/AMZN
 **Publicado**: 2026-03-30
 
-Amazon (AMZN) cerro FY2025 con resultados excepcionales: revenue de $716.9B (+12% YoY), utilidad neta de $77.7B (+29.7% YoY) y EBITDA de $145.7B, impulsados por la aceleracion de AWS (+20% YoY a $128.7B) y la expansion del margen operativo consolidado a 11.2%. El balance es solido con posicion neta de caja positiva (-$21.2B deuda neta) y ROE de 18.9%, aunque el FCF se comprime significativamente a $7.7B por un CAPEX record de $131.8B orientado a infraestructura de IA. La empresa se posiciona como el lider dominante del cloud y el e-commerce global, con AWS como el motor de rentabilidad que subsidia la expansion de nuevos mercados.
+Amazon (AMZN) reporto resultados excepcionales en Q1 2026: revenue de $181.52B (+16.6% YoY), utilidad neta de $30.26B (+76.6% YoY) y EPS diluido de $2.78 (+74.8% YoY), superando ampliamente el consenso. AWS acelero a $37.59B (+28% YoY) marcando su mayor crecimiento en 6 trimestres, mientras que Advertising alcanzo $17.24B (+24% YoY). El margen operativo se expande a 13.1% (vs. 11.8% Q1 2025) reflejando el mayor peso de segmentos de alto margen. El FCF trimestral es negativo (-$18.17B) por el CAPEX record de $44.2B orientado a infraestructura de IA, pero la posicion de caja asciende a $101.82B brindando amplia flexibilidad financiera. Amazon se consolida como el lider indiscutido del cloud e IA empresarial.
 
-Amazon.com, Inc. opera un ecosistema de negocio diversificado que abarca tres segmentos principales: e-commerce (North America e International), cloud computing (AWS) y publicidad digital. Fundada en 1994 por Jeff Bezos, cotiza en NASDAQ bajo el ticker AMZN y es una de las empresas de mayor capitalizacion bursatil del mundo. Genera ingresos a traves de ventas directas al consumidor, marketplace de terceros con comisiones, suscripciones (Prime), servicios cloud de alto margen (AWS), publicidad digital y streaming. Su modelo de negocio se basa en escala masiva, reinversion agresiva de capital y efectos de red que crean barreras de entrada elevadas en cada vertical donde compite.
+Amazon.com, Inc. opera un ecosistema de negocio diversificado con tres motores: e-commerce (North America e International), cloud computing (AWS) y publicidad digital. Fundada en 1994, cotiza en NASDAQ bajo AMZN. AWS es el segmento de mayor margen y crece a tasas de 28% YoY en Q1 2026, impulsado por la adopcion masiva de AI workloads. La publicidad digital supera $17B trimestral con margenes comparables al cloud. El e-commerce North America opera con margenes crecientes por eficiencias de fulfillment y el efecto positivo del mix. El modelo integrado de hardware propio (Trainium, Graviton), software (Bedrock, modelos Nova) e infraestructura crea una ventaja competitiva estructural en IA empresarial.
 
 **Datos financieros**:
-- Revenue ($B): 716.9 (+12.4% YoY)
-- Utilidad Neta ($B): 77.7 (+31.1% YoY)
-- Margen Neto (%): 10.9% (+1.6pp YoY)
-- EBITDA ($B): 145.7 (+20.0% YoY)
-- FCF ($B): 7.7 (-76.6% YoY)
-- EPS (GAAP): $7.17 (+29.7% YoY)
-- Deuda Neta ($B): -21.2 (N/A YoY)
+- Revenue (B USD): 181.5 (+16.6% YoY)
+- Utilidad Neta (B USD): 30.3 (+76.6% YoY)
+- Margen Neto: 16.7% (+5.4pp YoY)
+- EBITDA (B USD): 42.8 (+24.7% YoY)
+- FCF (B USD): -18.2 (N/A YoY)
+- EPS Diluido: 2.78 (+74.8% YoY)
+- Deuda Neta (B USD): 20.8 (N/A YoY)
 
-**Valuacion**: P/E Ratio 27.3x, P/E Forward 24.8x, EV/EBITDA 14.4x, P/FCF 275x, Deuda/EBITDA 0.45x, ROE 18.9%, ROIC 14.0%
+**Valuacion**: P/E Trailing 31.1x, P/E Forward 21.7x, EV/EBITDA 18.5x, P/FCF N/A, Deuda/EBITDA 0.80x, ROE 31.9%, ROIC 14.0%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.4/10)
-+ AWS como motor de valor ->  AWS genero $128.7B de revenue (+20% YoY) y $45.6B de operating income con margen del 35%, representando mas del 50% del beneficio operativo consolidado. El backlog de $244B (+40% YoY) da visibilidad excepcional a 2 anos.
-+ Expansion de margenes estructural -> El margen operativo escalo de 2.4% en 2022 a 11.2% en FY2025, y el margen neto alcanza 10.9%, reflejando el mayor peso de negocios de alto margen (AWS, publicidad) en el mix total de ingresos.
-+ Valuacion atractiva vs. historia -> Con P/E de 27.3x y EV/EBITDA de 14.4x, Amazon cotiza con descuento significativo vs. su historico (P/E >60x en 2021-2022) y comparable a peers de menor calidad, con potencial de re-rating si el FCF se recupera en 2026-2027.
-- Riesgo CAPEX -> El programa de inversion de $200B en FY2026 comprime el FCF a niveles minimos. Si la adopcion de AI workloads se retrasa o la competencia de Azure/Google intensifica la guerra de precios en cloud, el retorno sobre el capital invertido podria decepcionar y presionar el precio de la accion.
+**Veredicto**: Comprar con Conviccion (Score: 8.6/10)
++ AWS acelera a +28% YoY — La aceleracion de AWS en Q1 2026 confirma que la inversion de $131.8B en FY2025 genera retornos. Con backlog creciendo >+40% YoY y AI workloads como nuevo motor, AWS tiene visibilidad excepcional para 2026-2028.
++ Expansion de margen estructural — Margen operativo de 13.1% en Q1 2026 es nuevo maximo historico trimestral para Amazon, con EPS creciendo +74.8% YoY. El apalancamiento operativo del mix AWS+publicidad genera mejora de margenes sostenida.
++ Valuacion atractiva P/E 21.7x — Con precio de $259.80 y EPS FY2026 estimado de $12, Amazon cotiza a 21.7x forward vs. historico de >60x en 2021-2022. El descuento por FCF negativo es transitorio y el re-rating es posible en 2027-2028.
+- Riesgo CAPEX ~$200B — El programa de inversion en FY2026 mantiene el FCF en terreno negativo y exige que la adopcion de AI workloads en AWS se mantenga a ritmos de +25%+. Monitorear la tasa de crecimiento de AWS trimestral como indicador critico.
 
 ---
 
@@ -1122,26 +1122,26 @@ NVIDIA Corporation disena y vende unidades de procesamiento grafico (GPUs), sist
 **URL**: https://reportes.murzainversiones.com/reporte/META
 **Publicado**: 2026-03-27
 
-Meta Platforms cerro FY2025 con revenue record de 200.97B USD (+22.2% YoY), impulsado por la aceleracion de su plataforma publicitaria potenciada con IA. El margen operativo alcanzo 41.4% y el EBITDA llego a 101.9B USD. El FCF de 46.11B USD fue comprimido por un capex record de 69.69B destinado a infraestructura de IA. La principal tension del ciclo es la inversion masiva (guidance FY2026: 60-65B USD) frente a la caida -3.1% en utilidad neta. Veredicto: COMPRAR con conviccion — el liderazgo en IA publicitaria y el moat de red de 3.4B DAU son irreplicables a esta valuacion.
+Meta Platforms reporto Q1 2026 con revenue de 56.31B USD (+33.1% YoY), superando ampliamente estimados de ~53.5B. Utilidad neta se disparo a 26.77B USD (+60.8% YoY) con margen neto record de 47.5%. EPS de 10.44 USD mas que duplica el 6.43 de Q1 2025. Sin embargo, Meta elevo su guidance de capex para FY2026 a 125-145B USD (vs. 60-65B anterior), provocando una caida de ~9% en el precio. La narrativa se bifurca: resultados operativos extraordinarios vs. inversion en IA que comprimira FCF en los proximos 12-18 meses. Veredicto: COMPRAR con conviccion a precios post-caida — el liderazgo en IA publicitaria y 3.4B DAU son irreplicables a P/E Forward de 20x.
 
 Meta Platforms opera el ecosistema de redes sociales mas grande del mundo: Facebook (3.3B MAU), Instagram, WhatsApp, Messenger y Threads. Los ingresos provienen ~98% de publicidad digital, basada en el dataset de comportamiento mas rico del sector y algoritmos de IA que maximizan la relevancia del anuncio. El segmento Reality Labs (Quest VR, Ray-Ban Meta, Orion AR) opera con perdidas como apuesta de largo plazo en computacion espacial. Meta AI y Llama son apuestas en IA generativa orientadas a profundizar el engagement y la monetizacion futura de WhatsApp Business. El 54% de ingresos proviene de EEUU/Canada; Asia-Pacifico y mercados emergentes crecen mas rapido con menor ARPU.
 
 **Datos financieros**:
-- Revenue (B USD): 200.97 (+22.2% YoY)
-- Utilidad Neta (B USD): 60.46 (-3% YoY)
-- Margen Neto: 30.1% (-7.8pp YoY)
-- EBITDA (B USD): 101.9 (+20.1% YoY)
-- FCF (B USD): 46.11 (-14.7% YoY)
-- EPS Diluido: 23.49 (-1.6% YoY)
-- Deuda Neta (B USD): 22.87 (N/A YoY)
+- Revenue (B USD): 56.31 (+33.1% YoY)
+- Utilidad Neta (B USD): 26.77 (+60.8% YoY)
+- Margen Neto: 47.5% (+8.2pp YoY)
+- EBITDA (B USD): 28.87 (+34.6% YoY)
+- FCF (B USD): 13.23 (+19.3% YoY)
+- EPS Diluido: 10.44 (+62.4% YoY)
+- Deuda Neta (B USD): -22.43 (N/A YoY)
 
-**Valuacion**: P/E Trailing 26.8x, P/E Forward 17.5x, EV/EBITDA 16.1x, P/FCF 35.2x, Deuda Neta/EBITDA 0.22x, ROE 27.8%, ROIC 29.5%, Margen Bruto 80.5%, Margen Operativo 41.4%, FCF Yield 2.8%
+**Valuacion**: P/E Trailing 22.1x, P/E Forward 20.0x, EV/EBITDA 14.1x, P/FCF 31.9x, Deuda Neta/EBITDA 0.05x, ROE 30.6%, ROIC 29.5%, Margen Bruto 81.9%, Margen Operativo 40.6%, FCF Yield 3.1%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.0/10)
-+ Revenue +22% a 201B USD — Meta acelera en un negocio de 200B gracias a la IA publicitaria. Ningun competidor de esta escala crece a esta velocidad con margenes operativos del 41%.
-+ Margen operativo record 41.4% — El Year of Efficiency de 2023 fue permanente. Meta gana mas de 41 centavos por cada dolar de revenue con poder de pricing irreplicable.
-+ Valuacion atractiva vs. crecimiento — P/E Forward de 17.5x para una empresa que crece +22% YoY con margen >40% implica PEG ~0.8x, barato por cualquier metrica de calidad growth.
-- Riesgo DOJ y capex elevado — Caso antimonopolio activo y capex de 60-65B en FY2026 son las variables criticas: riesgo estructural de desinversion y compresion de FCF a corto plazo.
++ Revenue +33% YoY a 56.3B -- Meta acelero significativamente en Q1 2026, con utilidad neta de 26.8B (+61% YoY) y EPS de 10.44 USD. El negocio publicitario con IA esta en su mejor momento operativo.
++ Valuacion atractiva post-caida -- A 607 USD (post -9.5% post-earnings), el P/E Forward es 20x para una empresa que crece +33% con margen operativo >40%. PEG ~0.6x implica descuento significativo vs. calidad.
++ Moat de red irreplicable -- 3.4B+ DAU y dataset de comportamiento unificado entre plataformas. Nadie puede construir esto en decadas — es la ventaja competitiva mas durable del sector.
+- Capex 125-145B en FY2026 -- El salto masivo en inversion comprimira FCF en H2 2026 y FY2027. El mercado castigo esto -9.5% en apertura. El riesgo binario: si la IA no monetiza en 18-24 meses, re-rating bajista severo.
 
 ---
 
