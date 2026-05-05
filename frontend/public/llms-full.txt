@@ -906,26 +906,26 @@ Novo Nordisk A/S (fundada 1923, Dinamarca) es lider mundial en Obesidad y Diabet
 **URL**: https://reportes.murzainversiones.com/reporte/LLY
 **Publicado**: 2026-03-31
 
-Eli Lilly es la empresa farmaceutica de mayor crecimiento en el mundo gracias a su liderazgo absoluto en GLP-1 (Mounjaro/Zepbound para diabetes y obesidad) e inhibidores de CDK4/6 para cancer de mama. En FY2025 reporto ingresos de 65.2B USD (+45% YoY), utilidad neta de 20.6B (+95% YoY) y EPS diluido de 22.95, impulsados principalmente por Mounjaro (+74%) y Zepbound (lanzado en nov-2023, ya en 5.5B en 2025). Q1 2026 reportado hoy mostro Revenue de 12.7B (+45% YoY) y reafirmo guidance de FY2026. El mayor riesgo es la valuacion: P/E forward de 38.6x con expectativas ya muy elevadas.
+Eli Lilly and Company es la farmaceutica de mayor crecimiento entre las grandes de EE.UU., impulsada por tirzepatide (Mounjaro y Zepbound) en diabetes y obesidad. En FY2025 reporto ingresos de 65.2B USD (+45% YoY) y utilidad neta de 20.6B USD (+95% YoY), marcando una inflexion historica en rentabilidad. El margen bruto supera el 83%, reflejo del extraordinario poder de fijacion de precios en el mercado GLP-1. Lilly mantiene un pipeline de clase mundial con mas de 15 compuestos en fase 3, posicionandola para sostener su liderazgo mas alla de tirzepatide.
 
-Lilly opera principalmente en dos segmentos: Diabetes & Obesity (Mounjaro/tirzepatide, Zepbound, Humalog, Jardiance) y Oncologia (Verzenio/abemaciclib, Cyramza). Tirzepatide es el farmaco de mayor crecimiento en la historia de Lilly — agonista dual GIP/GLP-1 con eficacia superior a semaglutide de Novo Nordisk. La empresa invierte masivamente en capacidad de manufactura (+7.8B capex en 2025) para satisfacer la demanda insaciable de GLP-1. Pipeline incluye orforglipron (GLP-1 oral), doza (LY3437943) e inhibidores de IL-13 para dermatitis.
+Lilly opera en un unico segmento de negocios: descubrimiento, desarrollo, fabricacion y comercializacion de medicamentos. Sus principales franquicias son cardiometabolica (Mounjaro, Zepbound, Trulicity), inmunologia (Taltz, Olumiant, Omvoh), oncologia (Verzenio, Jaypirca, Inluriyo) y neurociencia (Kisunla). El moat se sustenta en patentes de composicion de materia de tirzepatide (proteccion hasta 2036), eficacia clinica diferenciada, escasez de capacidad de manufactura y una red de distribucion global. La ventaja competitiva en GLP-1 es estructural: la curva de manufactura, la evidencia clinica acumulada y la fidelidad del medico crean barreras altas para nuevos entrantes.
 
 **Datos financieros**:
-- Revenue (B USD): 65.18 (+44.7% YoY)
-- Utilidad Neta (B USD): 20.64 (+94.9% YoY)
-- Margen Neto: 31.7% (+8.2pp YoY)
-- EBITDA (B USD): 29.18 (+88.3% YoY)
-- FCF (B USD): 8.97 (+138.6% YoY)
-- EPS Diluido: 22.95 (+96.0% YoY)
-- Deuda Neta (B USD): 33.60 (+33.0% YoY)
+- Revenue (B USD): 19.80 (+45% YoY)
+- Utilidad Neta (B USD): 7.40 (+95% YoY)
+- Margen Neto: 37.4% (+8.2pp YoY)
+- EBITDA (B USD): N/A (+95% YoY)
+- FCF (B USD): 3.00 (+139% YoY)
+- EPS Diluido: 8.26 (+96% YoY)
+- Deuda Neta (B USD): 34.09 (+33% YoY)
 
-**Valuacion**: P/E Trailing 37.1x, P/E Forward 38.6x, EV/EBITDA 27.4x, P/FCF 85.3x, Deuda Neta/EBITDA 1.15x, ROE >100%, ROIC 49.3%
+**Valuacion**: P/E Trailing 43x, P/E Forward 45x, EV/EBITDA 34x, P/FCF 99x, Deuda Neta/EBITDA 1.2x, ROE 77.8%, ROIC 33.6%
 
-**Veredicto**: Mantener (Score: 8.0/10)
-+ GLP-1 monopolio clinico — Tirzepatide lidera en eficacia (SURMOUNT, SURPASS trials) con -22.5% perdida de peso vs -14.9% de semaglutide, en el mercado de obesidad estimado en 100B USD para 2030.
-+ Margenes en expansion masiva — Margen operativo de 41.7% en FY2025 vs 30.5% en FY2024. El apalancamiento operativo de los GLP-1 es estructural: costo marginal bajo con precios premium de 800-900 USD/mes.
-+ Pipeline de proxima generacion — Orforglipron (oral, sin inyeccion), LY3437943 (triple agonista) y donanemab (Alzheimer) representan la siguiente ola de crecimiento mas alla de tirzepatide inyectable.
-- Valuacion sin margen de seguridad — P/E forward de 38.6x descuenta un escenario perfecto. Competencia de semaglutide oral (Novo), presion de precios Medicare IRA y concentracion en una sola molecula hacen que el riesgo/retorno sea asimetrico a USD 851.
+**Veredicto**: Mantener con Seguimiento (Score: 8.0/10)
++ Liderazgo GLP-1 irrefutable — Tirzepatide es el estandar de cuidado en obesidad y diabetes tipo 2; sus datos de superioridad vs semaglutida en ensayos directos consolidan el moat clinico.
++ Aceleracion de margenes historica — El margen operativo salto de 18% a 39% en dos anos; la escala de Mounjaro/Zepbound todavia no ha alcanzado su pico, sugiriendo mas expansion de margen.
++ Pipeline de clase mundial — Orforglipron (GLP-1 oral), retatrutide (triple agonista) y 15+ moleculas en fase 3 extienden el runway de crecimiento a 2035+.
+- Valoracion exige ejecucion perfecta — P/E de 43x y EV/EBITDA de 34x dejan escaso margen de error; la guidance rebajada en Q1 2026 y la presion de precios del gobierno EE.UU. son catalizadores de compresion de multiplo.
 
 ---
 
