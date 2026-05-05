@@ -852,26 +852,26 @@ MercadoLibre Inc. opera el ecosistema de comercio electronico y tecnologia finan
 **URL**: https://reportes.murzainversiones.com/reporte/PLTR
 **Publicado**: 2026-04-01
 
-Palantir Technologies (PLTR) reporto ingresos de $4.48B en FY2025, crecimiento del 56% impulsado por su plataforma de IA (AIP) que conecta modelos de lenguaje grande con los datos y operaciones de sus clientes. La empresa es rentable con margen neto del 36%, FCF de $2.1B y balance sin deuda con $7.2B en activos liquidos. Sin embargo, cotiza a multiples extremos (P/E 215x, EV/EBITDA 242x) que incorporan ejecucion perfecta por mas de una decada, dejando escaso margen de error para el inversionista.
+Palantir Technologies es una empresa de software de analisis de datos y plataformas de inteligencia artificial fundada en 2003, originalmente para servir a agencias de inteligencia del gobierno de EE.UU. Con el tiempo expandio su oferta al sector comercial con plataformas como Gotham, Foundry y AIP (Artificial Intelligence Platform). En FY2025 reporto ingresos de $4.48B (+56% YoY) y su primer ano de rentabilidad GAAP plena con utilidad neta de $1.63B. En Q1 2026 los resultados se aceleraron aun mas con ingresos de $1.63B (+85% YoY) y margen neto superior al 53%, impulsados por la adopcion explosiva de AIP en el mercado comercial de EE.UU.
 
-Palantir opera cuatro plataformas de software: Gotham (defensa e inteligencia), Foundry (gestion de datos empresariales), Apollo (entrega continua de software) y AIP (inteligencia artificial generativa). Fundada en 2003, la empresa sirve a agencias gubernamentales (54% del revenue) y empresas comerciales (46%). Su tecnologia Ontology mapea datos en contexto operacional, habilitando agentes de IA en entornos seguros y regulados. En FY2025 tuvo 954 clientes activos (+34% YoY), con el 74% de ingresos en EE.UU. La plataforma AIP, lanzada en 2023, es el principal catalizador del crecimiento comercial y distingue a Palantir de otros proveedores de datos al permitir despliegue de LLMs en entornos clasificados.
+PLTR opera tres plataformas principales: Gotham (inteligencia y defensa gubernamental), Foundry (transformacion de datos empresariales) y AIP (integracion de IA/LLMs en flujos de trabajo operativos). Su moat radica en la profundidad de la integracion con los datos criticos del cliente, contratos plurianuales de alto valor y el efecto de red interno que genera datos de entrenamiento propietarios. Segmento gubernamental EE.UU. crece +45% YoY; comercial EE.UU. +71% YoY en FY2025. El ciclo de adopcion de AIP Boot Camps como canal de ventas agiliza el tiempo de cierre y aumenta la conversion.
 
 **Datos financieros**:
-- Revenue ($B): 4.48 (+56% YoY)
-- Utilidad Neta ($B): 1.63 (+254% YoY)
-- Margen Neto (%): 36.4% (+20.4pp YoY)
-- EBITDA ($B): 1.44 (+324% YoY)
-- FCF ($B): 2.10 (+84% YoY)
-- EPS GAAP: $0.68 (+240% YoY)
-- Deuda Neta ($B): -1.42 (Caja neta YoY)
+- Revenue (B USD): 1.63 (+84.7% YoY)
+- Utilidad Neta (B USD): 0.88 (+302% YoY)
+- Margen Neto: 53.7% (+37.7pp YoY)
+- EBITDA (B USD): 0.76 (+330% YoY)
+- FCF (B USD): 0.89 (+187% YoY)
+- EPS Diluido: 0.34 (+325% YoY)
+- Deuda Neta (B USD): -8.03 (N/A YoY)
 
-**Valuacion**: P/E TTM 214.5x, P/E Forward 70x, EV/EBITDA 242.0x, P/FCF 166.6x, Deuda Neta/EBITDA 0x, ROE 22.1%, ROIC 20.8%
+**Valuacion**: P/E Trailing 200x, P/E Forward 68x, EV/EBITDA 224x, P/FCF 155x, Deuda Neta/EBITDA Caja neta, ROE 21.8%, ROIC 22.8%
 
-**Veredicto**: Mantener / Comprar en Caidas (Score: 8.8/10)
-+ Mejor negocio de IA operacional -> AIP es el unico producto que conecta LLMs con datos operacionales en entornos clasificados y seguros. Moat real con switching costs altisimos via la Ontology; 954 clientes activos, crecimiento de clientes +34% YoY.
-+ Margenes en trayectoria historica -> De -34% margen neto en 2021 a +36% en 2025; FCF de $2.1B con 47% de margen. El apalancamiento operativo del modelo software se materializa de forma acelerada.
-+ Balance indestructible -> Cero deuda, $7.2B en activos liquidos, FCF positivo creciente al 84% YoY. La empresa puede financiar su expansion indefinidamente sin tocar mercados de capital.
-- Valuacion desconecta riesgo/retorno -> P/E 215x y EV/EBITDA 242x requieren ejecucion perfecta durante 10+ anos sin ningun tropiezo. FCF yield de 0.60% ofrece poco margen de seguridad; el riesgo de compresion de multiples es la mayor amenaza para el inversionista que compra hoy.
+**Veredicto**: Mantener — Alta Conviccion en el negocio, Valuacion Extrema (Score: 9/10)
++ AIP como motor secular — La plataforma de IA operacional de PLTR tiene una ventaja competitiva real; la adopcion en Q1 2026 (+85% YoY) confirma que la demanda no es hype sino contratos firmados.
++ Balance impecable — Caja neta de $8B+ (incluyendo valores negociables en Q1 2026), sin deuda, FCF de $2.1B en FY2025 y $0.89B solo en Q1 2026.
++ Inflexion de margenes — De perder dinero en 2021 a 36% de margen neto GAAP en FY2025 y 54% en Q1 2026; la apalancamiento operativo es real y se acelera.
+- Valuacion sin margen de seguridad — A 68x P/E forward y 155x P/FCF, el precio descuenta anos de ejecucion perfecta; cualquier miss podria generar caidas del 40-60%.
 
 ---
 
