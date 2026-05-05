@@ -144,17 +144,18 @@ function sendPing(payload) {
 export function initTracker(nombrePagina) {
   if (localStorage.getItem('portal_admin_token')) return () => {};
 
-  const now       = Date.now();
-  const visitorId = getVisitorId();
-  const sessionId = getSessionId();
-  const meta      = getSessionMeta();
-  let scrollMax   = 0;
+  const now        = Date.now();
+  const paginaUrl  = window.location.pathname; // capturar AHORA — en cleanup ya es la nueva ruta
+  const visitorId  = getVisitorId();
+  const sessionId  = getSessionId();
+  const meta       = getSessionMeta();
+  let scrollMax    = 0;
 
   // Ping de entrada — registra la visita inmediatamente al cargar la pagina
   sendPing({
     visitor_id:        visitorId,
     session_id:        sessionId,
-    pagina_url:        window.location.pathname,
+    pagina_url:        paginaUrl,
     pagina_titulo:     nombrePagina,
     tiempo_seg:        0,
     scroll_max:        0,
@@ -242,7 +243,7 @@ export function initTracker(nombrePagina) {
     sendBeacon({
       visitor_id:           visitorId,
       session_id:           sessionId,
-      pagina_url:           window.location.pathname,
+      pagina_url:           paginaUrl,   // URL capturada al inicio (correcta)
       pagina_titulo:        nombrePagina,
       tiempo_seg:           Math.round((Date.now() - now) / 1000),
       scroll_max:           scrollMax,
@@ -274,11 +275,12 @@ export function initTracker(nombrePagina) {
       }
     } catch {}
 
-    // Enviar beacon de esta pagina
-    sendBeacon({
+    // sendPing (fetch + keepalive) — más confiable que sendBeacon para navegación SPA.
+    // sendBeacon con Blob application/json no siempre es parseado por Express.
+    sendPing({
       visitor_id:           visitorId,
       session_id:           sessionId,
-      pagina_url:           window.location.pathname,
+      pagina_url:           paginaUrl,   // URL capturada al inicio (correcta)
       pagina_titulo:        nombrePagina,
       tiempo_seg:           Math.round((Date.now() - now) / 1000),
       scroll_max:           scrollMax,
