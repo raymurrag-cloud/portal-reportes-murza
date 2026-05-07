@@ -1,10 +1,14 @@
 import express from 'express';
 import cors from 'cors';
+import jwt from 'jsonwebtoken';
+import Anthropic from '@anthropic-ai/sdk';
 import { initDb } from './database.js';
 import authRoutes    from './routes/auth.js';
 import reportesRoutes from './routes/reportes.js';
 import adminRoutes    from './routes/admin.js';
 import earningsRoutes from './routes/earnings.js';
+
+const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const app  = express();
 const PORT = process.env.PORT || 3002;
@@ -255,6 +259,71 @@ app.get('/api/precio/:ticker', async (req, res) => {
     res.json(entry);
   } catch {
     res.status(503).json({ error: 'No se pudo obtener el precio en este momento' });
+  }
+});
+
+// ── Chat IA por reporte (freemium: 3 preguntas gratis, ilimitado con cuenta) ─
+const chatLimits = new Map(); // "ip:ticker" → { count, resetAt }
+const JWT_USER_SECRET = process.env.JWT_USER_SECRET || 'portal_user_secret_2026';
+
+app.post('/api/chat/:ticker', async (req, res) => {
+  const ticker = req.params.ticker.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  if (!ticker) return res.status(400).json({ error: 'Ticker inválido' });
+
+  const { messages } = req.body || {};
+  if (!Array.isArray(messages) || messages.length === 0)
+    return res.status(400).json({ error: 'Mensajes requeridos' });
+
+  // Verificar si usuario registrado
+  let isRegistered = false;
+  const header = req.headers.authorization;
+  if (header?.startsWith('Bearer ')) {
+    try {
+      const payload = jwt.verify(header.slice(7), JWT_USER_SECRET);
+      if (payload.role === 'user') isRegistered = true;
+    } catch (_) {}
+  }
+
+  // Rate limiting para anónimos: 3 preguntas por ticker por IP por día
+  if (!isRegistered) {
+    const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.socket.remoteAddress;
+    const key = `${ip}:${ticker}`;
+    const now = Date.now();
+    const entry = chatLimits.get(key) || { count: 0, resetAt: now + 86400000 };
+    if (now > entry.resetAt) { entry.count = 0; entry.resetAt = now + 86400000; }
+    if (entry.count >= 3) return res.status(429).json({ error: 'limite_alcanzado' });
+    entry.count++;
+    chatLimits.set(key, entry);
+  }
+
+  // Cargar reporte desde Turso
+  const { db } = await import('./database.js');
+  const { rows } = await db.execute({
+    sql: 'SELECT contenido_json, empresa FROM reportes WHERE UPPER(slug) = ? AND publicado = 1',
+    args: [ticker],
+  });
+  if (!rows.length || !rows[0].contenido_json)
+    return res.status(404).json({ error: 'Reporte no encontrado' });
+
+  const { empresa, contenido_json } = rows[0];
+
+  try {
+    const systemText = `Eres un analista financiero experto del portal Murza Inversiones. Tu funcion es responder preguntas sobre el reporte de ${empresa} (${ticker}) basandote UNICAMENTE en los datos que se te proporcionan. Responde siempre en espanol, de forma concisa y directa. Si la pregunta no tiene relacion con este reporte, indica amablemente que solo puedes responder sobre ${empresa}.
+
+Datos del reporte:
+${contenido_json}`;
+
+    const response = await anthropic.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 800,
+      system: [{ type: 'text', text: systemText, cache_control: { type: 'ephemeral' } }],
+      messages: messages.slice(-10).map(m => ({ role: m.role, content: String(m.content).slice(0, 2000) })),
+    });
+
+    res.json({ respuesta: response.content[0].text });
+  } catch (err) {
+    console.error('Chat IA error:', err.message);
+    res.status(503).json({ error: 'El analista no está disponible en este momento. Intenta de nuevo.' });
   }
 });
 

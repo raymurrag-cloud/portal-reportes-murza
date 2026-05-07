@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { api } from '../../api.js';
 import { ChartBlock, KpiBlock, ScoreBar, FlagsBlock, VerdictBlock } from './ChartBlocks.jsx';
 import ReporteRenderer from './ReporteRenderer.jsx';
+import ReporteChat from './ReporteChat.jsx';
 import { initTracker } from '../../utils/tracker.js';
 
 export default function ReportePage() {
@@ -265,6 +266,9 @@ export default function ReportePage() {
 
           )}{/* fin ternario JSON/Markdown */}
           </div>{/* /reporte-contenido-wrap */}
+
+          <ReporteChat ticker={reporte.ticker} empresa={reporte.empresa} slug={reporte.slug || slug} />
+
         </article>
 
         <footer className="portal-footer">
