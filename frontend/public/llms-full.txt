@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (52 empresas)
+## Reportes de acciones (53 empresas)
+
+### BRK.B — Berkshire Hathaway Inc. (Class B)
+**URL**: https://reportes.murzainversiones.com/reporte/BRK.B
+**Publicado**: 2026-05-11
+
+Berkshire Hathaway es el mayor conglomerado del mundo, dirigido por Warren Buffett (presidente) y Gregory Abel (CEO desde enero 2026). Opera en seguros (GEICO, Gen Re, BH Reinsurance), ferrocarril (BNSF), energia (BHE), manufactura, retail y servicios. FY2025 reporto ingresos de $371.4B con utilidad neta de $67.0B, afectada por impairments no recurrentes de $8.26B. El balance es extraordinariamente solido con $373B en caja y T-bills frente a $129B en deuda. Q1 2026 revierte con fuerza: NI +120% YoY. La accion cotiza a $479.55 a 15.4x P/E. Veredicto: mantener con conviccion.
+
+Berkshire Hathaway opera cuatro segmentos principales: (1) Seguros: GEICO (11.6% mercado auto EE.UU.), BH Primary Group y BH Reinsurance Group, generan float masivo de bajo costo para invertir; (2) BNSF, ferrocarril de carga mas grande de Norteamerica con $23.3B en ingresos; (3) Berkshire Hathaway Energy (BHE), utilities y energia renovable con $21.9B en ingresos; (4) Manufactura, Servicios y Retail, mas de 60 subsidiarias incluyendo Precision Castparts, Lubrizol, Fruit of the Loom y otros. El moat es unico: escala de capital, float de seguros de $170B+ a costo cero y portafolio de $288B en acciones blue chip. Gregory Abel asumio como CEO en enero 2026.
+
+**Datos financieros**:
+- Revenue (B USD): 93.7 (+4.4% YoY)
+- Utilidad Neta (B USD): 10.1 (+119.6% YoY)
+- Margen Neto: 10.8% (+7.5pp YoY)
+- EBITDA aprox (B USD): 14.6 (N/D YoY)
+- FCF (B USD): 5.5 (+115.5% YoY)
+- EPS Diluido (B share): 4.68 (+119.7% YoY)
+- Deuda Neta (B USD): 70.8 (-1.3% YoY)
+
+**Valuacion**: P/E Trailing 15.4x, P/E Forward 16.5x, EV/EBITDA 11.0x, P/FCF 41.3x, Deuda Neta/EBITDA 0.8x, ROE 9.3%, ROIC 4.2%
+
+**Veredicto**: Mantener con Conviccion (Score: 7.6/10)
++ Balance sin precedentes -> $373B en caja y T-bills vs $129B en deuda. Esta fortaleza permite a Abel ejecutar una adquisicion transformadora en cualquier momento, el catalizador mas potente posible.
++ Q1 2026 muy fuerte -> NI +120% YoY a $10.1B, confirmando que el deterioro de FY2025 fue por impairments no recurrentes. BNSF, GEICO y seguros aceleran bajo nuevo liderazgo.
++ Valuacion razonable -> P/E de 15.4x y EV/EBITDA de 11x para el mayor conglomerado del mundo con $1.2T en activos representa precio de entrada atractivo historicamente.
+- Crecimiento estructuralmente limitado -> Revenue flat desde FY2024. El tamano de Berkshire limita el crecimiento organico. Su valor es la asignacion de capital y el float, no el crecimiento de ingresos.
+
+---
 
 ### TSM — Taiwan Semiconductor Manufacturing Company Limited
 **URL**: https://reportes.murzainversiones.com/reporte/TSM
