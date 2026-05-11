@@ -276,26 +276,26 @@ Chipotle opera exclusivamente en el segmento de restaurantes mexicanos fast-casu
 **URL**: https://reportes.murzainversiones.com/reporte/OSCR
 **Publicado**: 2026-04-20
 
-Oscar Health (OSCR) es una empresa de tecnologia de salud que opera planes de seguro medico en el mercado individual bajo la ACA. En FY2025, los ingresos crecieron 27.5% a $11.7B impulsados por un crecimiento de miembros superior al mercado hasta 2.04 millones. Sin embargo, el MLR se deterioro 570pb a 87.4%, generando perdida operativa de $396M y perdida neta de $443M tras el unico ano rentable en FY2024. El FCF operativo se mantiene positivo en $1.06B y la caja neta asciende a $2.34B.
+Oscar Health es una empresa de tecnologia de salud que opera planes de salud ACA bajo un modelo full-stack, con ~2.0M de miembros en 2025 y una plataforma +Oscar para terceros. Tras anos de perdidas, logro rentabilidad operativa en 2024 ($57M de ingresos operativos), pero retrocedio en 2025 (-$396M) por expansion agresiva de membresía y presiones regulatorias. Q1 2026 representa un punto de inflexion excepcional: ingresos de $4.6B (+53% YoY), utilidad neta de $679M y EPS de $2.07, con MLR que mejoro dramaticamente al 69.5% vs ~85.6% en FY2025. El riesgo regulatorio (expiracion de eAPTCs, OBBBA) es el principal catalizador a monitorear para 2026.
 
-Oscar Health opera planes de salud individuales bajo la ACA en Estados Unidos, combinando tecnologia cloud-native propia con enfoque diferenciado en experiencia del miembro. Su plataforma +Oscar licencia capacidades de engagement, IA y analytics a proveedores y pagadores (B2B). En 2025 adquirio Lucie, IHC Specialty Benefits y Healthinsurance.org para expandirse al mercado ICHRA. El modelo es intensivo en capital regulatorio y altamente sensible al Medical Loss Ratio y al programa federal de ajuste de riesgo.
+Oscar Health opera exclusivamente en el mercado individual de seguros de salud ACA en EE.UU. Su modelo de negocio se basa en una plataforma tecnologica cloud-native que diferencia la experiencia del miembro, reduce costos medicos a traves de engagement proactivo y genera mejoras sostenidas en MLR. +Oscar monetiza esta tecnologia como servicio a terceros (0.6M vidas adicionales). En 2025, Oscar adquirio Lucie Inc. (plataforma ICHRA), IHC Specialty Benefits e Healthinsurance.org para diversificar. La ventaja competitiva central es tecnologia + experiencia del usuario + data propietaria de 13+ anos, permitiendo engagement clinico de alto valor que reduce costos medicos.
 
 **Datos financieros**:
-- Revenue (B USD): 11.70 (+27.5% YoY)
-- Utilidad Neta (B USD): -0.44 (N/M YoY)
-- Margen Neto: -3.8% (-4.1pp YoY)
-- EBITDA (B USD): -0.37 (N/M YoY)
-- FCF (B USD): 1.06 (+11.6% YoY)
-- EPS Diluido: -1.68 (N/M YoY)
-- Deuda Neta (B USD): -2.34 (+90.2% YoY)
+- Revenue (B USD): 4.65 (+52.6% YoY)
+- Utilidad Neta (B USD): 0.68 (+146% YoY)
+- Margen Neto: 14.6% (+13.6pp YoY)
+- EBITDA (B USD): 0.71 (+139% YoY)
+- FCF (B USD): 2.60 (+196% YoY)
+- EPS Diluido: 2.07 (+125% YoY)
+- Deuda Neta (B USD): -4.37 (N/A YoY)
 
-**Valuacion**: P/E Trailing N/A, P/E Forward N/A, EV/EBITDA N/A, P/FCF 4.1x, Deuda Neta/EBITDA Caja Neta, ROE N/A, ROIC N/A
+**Valuacion**: P/E Trailing N/A, P/E Forward 2.7x, EV/EBITDA ~78x, P/FCF 6.8x, Deuda Neta/EBITDA Caja neta, ROE 40.8%, ROIC N/A (caja neta)
 
-**Veredicto**: Especulativa — Alto Riesgo (Score: 5.2/10)
-+ Crecimiento explosivo de revenue — Revenue crecio de $1.8B en 2021 a $11.7B en 2025 (CAGR ~58%), con base de miembros de 2.04M. La plataforma tecnologica escala con costos marginales decrecientes.
-+ FCF positivo y caja neta de $2.34B — A pesar de perdidas contables, el FCF fue $1.06B por el float de primas. La caja neta otorga runway de 5+ anos sin necesidad de financiamiento externo inmediato.
-+ Opcionalidad B2B via +Oscar — La monetizacion de tecnologia a proveedores y pagadores (Campaign Builder, EDE) diversifica el modelo mas alla del riesgo de seguros puro y no esta valorada por el mercado.
-- Deterioro del MLR y riesgo regulatorio critico — El MLR de 87.4% (+570pb) revirtio la rentabilidad de FY2024. La expiracion de eAPTCs y los cambios de CMS amenazan la base de miembros en 2026. Estos factores son en gran parte exogenos y dificultan la proyeccion de retorno a la rentabilidad.
+**Veredicto**: Mantener / Especulativo (Score: 7.0/10)
++ MLR excepcional Q1 2026 -> El MLR de 69.5% es 16pp mejor que el promedio de FY2025 y supera a todos los aseguradores ACA grandes. Si se sostiene, Oscar podria generar $1.5-2B+ de NI anualizado — justificando una revaluacion significativa del precio actual de $22.
++ Valuacion de ganga vs FCF -> P/FCF de 6.8x y P/E Forward de 2.7x son anomalamente bajos. El mercado descuenta la incertidumbre regulatoria ACA, pero si la rentabilidad Q1 es estructural, Oscar esta cotizando con margen de seguridad amplio.
++ Balance tipo fortaleza -> Caja neta de $4.37B con OCF de $2.6B solo en Q1 2026. Esto elimina cualquier riesgo de ejecucion por falta de liquidez y da runway para absorber cambios regulatorios adversos.
+- Riesgo regulatorio existencial -> La expiracion de eAPTCs, el OBBBA y las nuevas reglas de elegibilidad CMS podrian reducir el mercado total direccionable del ACA en 2026-2027. Una membresía menor implica menos premiums y potencial deterioro del MLR por cambios en mix de riesgo.
 
 ---
 
