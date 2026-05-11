@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (44 empresas)
+## Reportes de acciones (45 empresas)
+
+### JPM — JPMorgan Chase & Co.
+**URL**: https://reportes.murzainversiones.com/reporte/JPM
+**Publicado**: 2026-05-11
+
+JPMorgan Chase es el banco mas grande de EE.UU. por activos (USD 4.9T), con tres segmentos: Consumer & Community Banking (CCB), Commercial & Investment Bank (CIB) y Asset & Wealth Management (AWM). En FY2025 reporto USD 182.5B en ingresos netos y USD 57.1B en utilidad neta, manteniendo un CET1 de 14.6%. En Q1 2026 acelero el crecimiento con ingresos de USD 49.8B (+10% YoY) y utilidad neta de USD 16.5B (+13%), con ROE de 19% y ROTCE de 23%, reflejando la solidez de su franquicia diversificada.
+
+JPMorganChase opera a traves de tres segmentos. CCB atiende a millones de consumidores y pequenas empresas en EE.UU. con productos de banca retail, tarjetas, hipotecas y auto. CIB (Commercial & Investment Bank) incluye banca de inversion, mercados de capitales, renta fija, renta variable, banca corporativa y servicios de tesoreria. AWM gestiona activos para clientes institucionales y de alto patrimonio a nivel global. La fortaleza competitiva de JPM radica en su escala, tecnologia (gasto de USD 17B+ anuales en tech), red de distribucion de 5,000+ sucursales, y posicion de liderazgo en banca de inversion con ~9% de market share global en fees. El Net Interest Income representa ~50% de los ingresos, con balance protegido ante ciclos de tasas.
+
+**Datos financieros**:
+- Revenue Neto (B USD): 49.8 (+10.0% YoY)
+- Utilidad Neta (B USD): 16.5 (+12.6% YoY)
+- Margen Neto: 33.1% (+0.2pp YoY)
+- PPNR (B USD): 23.0 (+14.9% YoY)
+- EPS Diluido: 5.94 (+12.3% YoY)
+- CET1 Ratio: 14.3% (-0.4pp YoY)
+- ROE: 19% (+2pp YoY)
+
+**Valuacion**: P/E Trailing 14.2x, P/E Forward 11.8x, P/Valor Libro 2.36x, ROE 17%, ROTCE 20%, ROA 1.29%, CET1 Ratio 14.6%
+
+**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
++ Fortaleza de capital estructural — CET1 del 14.3% permite retorno masivo de capital: USD 48.2B devueltos en FY2025 (recompras + dividendos), con buybacks continuos en 2026.
++ Aceleracion en Q1 2026 — Revenue +10% y NI +13% YoY superaron expectativas. ROE de 19% y ROTCE de 23% son los mejores niveles en varios anos, mostrando apalancamiento operativo del modelo.
++ Valuacion atractiva para la calidad — P/E forward de 11.8x y P/BV de 2.36x con ROE del 17-19% representan una valuacion razonable. Prima sobre peers justificada por calidad de franquicia y consistencia de resultados.
+- Riesgo de ciclo de credito — Provision elevada (USD 14.2B FY2025) y posible incremento en mora de tarjetas en escenario de desaceleracion economica son el principal riesgo a vigilar.
+
+---
 
 ### SHOP — Shopify Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/SHOP

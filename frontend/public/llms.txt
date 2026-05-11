@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (44 empresas)
+## Reportes de acciones (45 empresas)
 
+- [JPMorgan Chase & Co. (JPM)](https://reportes.murzainversiones.com/reporte/JPM): Analisis financiero completo de JPMorgan Chase (JPM): FY2025 revenue USD 182.5B, utilidad neta USD 57.1B, CET1 14.6%. Q1 2026: revenue +10% YoY, ROE 19%, EPS 5.94. Veredicto: Comprar con Conviccion.
 - [Shopify Inc. (SHOP)](https://reportes.murzainversiones.com/reporte/SHOP): Reporte financiero de Shopify (SHOP): ingresos 11.56B USD, FCF 2.0B, crecimiento +30% FY2025 y +34% Q1 2026. Analisis completo de valuacion y estrategia. Veredicto: Mantener con Sesgo Positivo.
 - [Nebius Group N.V. (NBIS)](https://reportes.murzainversiones.com/reporte/NBIS): Analisis financiero de Nebius Group (NBIS): AI cloud de pila completa, crecimiento 479% en FY2025, contratos con Microsoft y Meta. Veredicto: Especulativo — Tesis de Alto Crecimiento con Valuacion Extrema.
 - [JBS S.A. (JBS)](https://reportes.murzainversiones.com/reporte/JBS): Analisis financiero completo de JBS S.A. (JBSAY): la mayor procesadora de proteinas del mundo. Revenue 73.5B USD, valoracion, margenes y perspectivas 2025. Veredicto: Mantener / Compra Especulativa.
