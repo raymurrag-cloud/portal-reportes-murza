@@ -27,7 +27,35 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (51 empresas)
+## Reportes de acciones (52 empresas)
+
+### TSM — Taiwan Semiconductor Manufacturing Company Limited
+**URL**: https://reportes.murzainversiones.com/reporte/TSM
+**Publicado**: 2026-05-11
+
+Taiwan Semiconductor Manufacturing Company (TSMC) es la foundry mas importante del mundo, con posicion dominante en fabricacion de chips avanzados de 3nm y 2nm. En FY2025, reporto ingresos de 121.4B USD (+33.4% YoY) y utilidad neta de 54.0B USD (+48.5% YoY), impulsados por demanda de IA y HPC. Q1 2026 mostro aceleracion con ingresos de 35.9B USD (+40.6% YoY en USD) y margen neto record de 50.5%, con guia Q2 2026 de 39.0-40.2B USD.
+
+TSMC opera como foundry pura (pure-play), fabricando semiconductores para los disenadores de chips mas importantes del mundo: NVIDIA, Apple, AMD, Qualcomm, Broadcom y otros. Sus ventajas competitivas son liderazgo tecnologico en nodos avanzados (2nm, 3nm, 5nm), escala de produccion inalcanzable para competidores, y ecosistema de clientes dependientes de su tecnologia. El segmento HPC (que incluye chips de IA) supero el 50% de ingresos en 2025. La empresa opera 25+ fabs en Taiwan, EE.UU., Japon, China y Alemania (en construccion), consolidando su posicion como infraestructura critica del sector tecnologico global.
+
+**Datos financieros**:
+- Revenue (B USD): 35.90 (+33.4% YoY)
+- Utilidad Neta (B USD): 18.17 (+48.5% YoY)
+- Margen Neto: 50.5% (+4.5pp YoY)
+- EBITDA (B USD): N/D (+34.0% YoY)
+- FCF (B USD): N/D (+16.8% YoY)
+- EPS Diluido (USD/ADS): 3.49 (+48.6% YoY)
+- Deuda Neta (B USD): N/D (N/A YoY)
+
+**Valuacion**: P/E Trailing 38.8x, P/E Forward 21.0x, EV/EBITDA 24.3x, P/FCF 65.6x, Deuda Neta/EBITDA -0.78x, ROE 31.4%, ROIC 47.8%
+
+**Veredicto**: Comprar con Conviccion (Score: 8.6/10)
++ Monopolio en IA - Casi el 100% de los chips de IA (NVIDIA H100/B200, Apple M4, AMD MI300) se fabrica en TSMC; sin alternativa a corto plazo.
++ Margenes en expansion - Margen bruto de 59.9% en FY2025 y 66.2% en Q1 2026, impulsados por mezcla de productos avanzados con mayor ASP y mejor utilizacion de capacidad.
++ Balance fortaleza - Caja neta de 64.9B USD; cero riesgo de balance; capacidad de invertir 40B+ anuales en capex sin deuda significativa.
++ Valuacion atractiva en forward - P/E forward de 21x vs ROE de 31% y crecimiento de >30%; el mercado no ha incorporado totalmente el ciclo de IA.
+- Riesgo geopolitico estructural - La concentracion de capacidad critica en Taiwan representa el principal riesgo de cola para inversores internacionales.
+
+---
 
 ### CRWD — CrowdStrike Holdings, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/CRWD
