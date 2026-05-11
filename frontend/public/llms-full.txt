@@ -168,26 +168,26 @@ Dominos opera bajo un modelo casi 100% franquiciado: en EE.UU. >97% de tiendas s
 **URL**: https://reportes.murzainversiones.com/reporte/YPF
 **Publicado**: 2026-04-21
 
-YPF Sociedad Anonima es la empresa energetica integrada mas grande de Argentina, con operaciones en upstream, midstream, downstream, GNL y nuevas energias. En FY2025 reporto ingresos de 18.4B USD (-4.4% YoY) con una perdida neta de 799M impactada por un cargo de impuesto diferido no recurrente de 1.7B. El EBITDA crecio a 4.9B USD (+16.7% YoY) y la compania continua su plan de inversion de 5.1B en Vaca Muerta. Opera con valuacion atractiva de 5.2x EV/EBITDA y 7.1x P/E forward, con descuento por riesgo Argentina.
+YPF Sociedad Anonima es la principal empresa energetica de Argentina, controlada en 51% por el Estado argentino. En FY2025 reporto ingresos de US$18.4B (-4.4% vs FY2024) impactados por desinversiones de activos convencionales maduros, mientras el EBITDA crecio +16.6% hasta US$4.94B impulsado por la expansion del shale en Vaca Muerta y la reduccion de costos de lifting. En Q1 2026 la empresa acelero su momentum con ingresos de US$4.95B (+7% YoY) y EBITDA ajustado de US$1.59B (+28% YoY), marcando records en produccion shale y refinacion.
 
-YPF es la empresa energetica integrada mas grande de Argentina con mas de 100 anos de historia. Segmentos: Upstream (exploracion y produccion de crudo y gas, incluyendo el play no convencional Vaca Muerta), Downstream (5 refinerias, distribucion de combustibles en +1,600 estaciones de servicio), Midstream (transporte), LNG e Gas Integrado (licuefaccion y exportacion), y Nuevas Energias. El Estado argentino posee el 51% del capital. Vaca Muerta es el activo estrategico clave que impulsa el crecimiento de produccion y el potencial de exportacion de LNG hacia 2030+.
+YPF opera en cuatro segmentos: Upstream (exploration & produccion, 65% shale), Midstream & Downstream (refinacion, 102% utilizacion en Q1 2026), LNG & Gas Integrado, y Nuevas Energias. Su moat radica en ser el operador dominante de Vaca Muerta -la segunda reserva de shale gas y cuarta de shale oil del mundo- con acceso privilegiado a concesiones estatales, infraestructura integrada y escala operativa unica en Argentina. La estrategia YPF 4x4 prioriza eficiencia en shale, exportaciones de LNG, reduccion de deuda y descarbonizacion.
 
 **Datos financieros**:
-- Revenue (B USD): 18.45 (-4.4% YoY)
-- Utilidad Neta (B USD): -0.80 (N/A YoY)
-- Margen Neto: -4.3% (-16.7pp YoY)
-- EBITDA (B USD): 4.94 (+16.7% YoY)
-- FCF (B USD): -0.12 (-125% YoY)
-- EPS Diluido: -2.11 (N/A YoY)
-- Deuda Neta (B USD): 9.65 (-0.1% YoY)
+- Revenue (B USD): 4.95 (-4.4% YoY)
+- Utilidad Neta (B USD): 0.41 (N/A YoY)
+- Margen Neto: 8.3% (+12.8pp YoY)
+- EBITDA (B USD): 1.59 (+16.6% YoY)
+- FCF (B USD): 0.87 (N/A YoY)
+- EPS Diluido: 1.03 (N/A YoY)
+- Deuda Neta (B USD): 8.43 (+23.3% YoY)
 
-**Valuacion**: P/E Trailing N/A, P/E Forward 7.1x, EV/EBITDA 5.2x, P/FCF N/A, Deuda Neta/EBITDA 1.95x, ROE (FY2024) 23.8%, ROIC 7.1%
+**Valuacion**: P/E Trailing N/A (perdida), P/E Forward ~14x, EV/EBITDA 5.5x, P/FCF N/A, Deuda Neta/EBITDA 1.95x, ROE -7.6%, ROIC 6.2%
 
-**Veredicto**: Mantener con Sesgo Positivo (Score: 6.4/10)
-+ Vaca Muerta — activo de clase mundial — YPF es el operador dominante del mayor play de shale fuera de EE.UU., con potencial de duplicar produccion hacia 2030 y convertirse en exportador de LNG.
-+ Valuacion con descuento extremo — EV/EBITDA 5.2x y P/E forward 7.1x implican un descuento de 30-40% vs. pares energeticos emergentes; oportunidad si la macro Argentina se normaliza.
-+ EBITDA creciendo +16.7% YoY — A pesar de la perdida neta contable, el EBITDA de 4.9B demuestra que la generacion de caja operativa es solida y en mejora sostenida.
-- FCF negativo y riesgo macro Argentina — El capex record y la exposicion al riesgo soberano son los principales limitantes; la continuacion de la liberalizacion economica es el catalizador clave.
+**Veredicto**: Mantener / Comprar en debilidad (Score: 6.6/10)
++ Record en Vaca Muerta — Shale oil +34.6% YoY en FY2025; lifting cost de US$4.0/boe convierte a Vaca Muerta en activo de clase mundial competitivo vs Permian y Marcellus.
++ Momentum Q1 2026 — EBITDA +28% YoY, margen 32%, FCF positivo US$871M; confirma que FY2025 fue anio de transicion y no de deterioro estructural.
++ Valuacion atractiva — EV/EBITDA de 5.5x con potencial catalisis por proyecto LNG de exportacion (Argentina LNG, 25 Mtpa) que podria transformar el perfil de crecimiento de la empresa.
+- Riesgo Argentina — Dependencia critica del marco regulatorio y macroeconomico local. Historial de intervenciones estatales, volatilidad cambiaria y resultados contables erraticos por IFRS/fiscalidad argentina.
 
 ---
 
