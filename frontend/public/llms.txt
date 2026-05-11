@@ -2,8 +2,10 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (49 empresas)
+## Reportes de acciones (51 empresas)
 
+- [CrowdStrike Holdings, Inc. (CRWD)](https://reportes.murzainversiones.com/reporte/CRWD): Reporte financiero CrowdStrike (CRWD): ARR $5.25B +24% YoY, FCF $1.31B, caja neta $4.48B. Lider en ciberseguridad cloud-native con plataforma Falcon. Analisis FY2026. Veredicto: Mantener con Seguimiento.
+- [Airbnb Inc. (ABNB)](https://reportes.murzainversiones.com/reporte/ABNB): Analisis financiero de Airbnb (ABNB): FCF record .6B, recompras .8B, margen bruto 83%, modelo asset-light P2P. Datos FY2025 y Q1 2026. Veredicto: Comprar con Conviccion.
 - [Spotify Technology S.A. (SPOT)](https://reportes.murzainversiones.com/reporte/SPOT): Analisis financiero de Spotify Technology (SPOT): 761M MAUs, FCF 3.09B USD, margen neto 12.9% en FY2025. 20-F + Q1 2026. Veredicto: Comprar con Conviccion.
 - [Walmart Inc. (WMT)](https://reportes.murzainversiones.com/reporte/WMT): Analisis financiero completo de Walmart Inc. (WMT): revenue $713B FY2026, eCommerce +22%, publicidad digital $4.4B, estrategia omnicanal y valuacion. Veredicto: Mantener/Vigilar.
 - [Exxon Mobil Corporation (XOM)](https://reportes.murzainversiones.com/reporte/XOM): Analisis financiero de ExxonMobil (XOM): ingresos 323.9B USD, FCF 23.6B, EPS 6.70 en FY2025. Valuacion, margenes, riesgos y veredicto de inversion. Veredicto: Mantener con sesgo acumulador.

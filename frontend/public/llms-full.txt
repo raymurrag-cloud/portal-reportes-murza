@@ -27,7 +27,61 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (49 empresas)
+## Reportes de acciones (51 empresas)
+
+### CRWD — CrowdStrike Holdings, Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/CRWD
+**Publicado**: 2026-05-11
+
+CrowdStrike (CRWD) registro ingresos de $4.81B en FY2026 (+22% YoY) con ARR de $5.25B y NRR del 115%, consolidando su liderazgo en ciberseguridad basada en IA. A pesar de la presion del incidente del 19 de julio de 2024, la empresa mantiene generacion de caja robusta con FCF de $1.31B y caja neta de $4.48B. La valuacion premium (88x P/E Forward, 105x P/FCF) refleja expectativas de crecimiento sostenido del modelo SaaS recurrente.
+
+CrowdStrike Holdings es el lider en ciberseguridad cloud-native a traves de su plataforma Falcon, que integra mas de 28 modulos para endpoints, identidades, workloads en la nube, DevOps y activos de IT. Su modelo es 100% SaaS con suscripciones por endpoint y por modulo. La metrica central es el ARR que supero $5.25B en FY2026. La plataforma genera un poderoso efecto de red: cada nuevo dato enriquece el Security Cloud impulsado por IA, creando barreras de salida altas reflejadas en NRR del 115%. La estrategia land-and-expand permite captacion eficiente y expansion de wallet share en clientes existentes.
+
+**Datos financieros**:
+- Revenue (B USD): 4.81 (+21.8% YoY)
+- Utilidad Neta (B USD): -0.16 (N/M YoY)
+- Margen Neto: -3.3% (-2.8pp YoY)
+- ARR (B USD): 5.25 (+23.8% YoY)
+- FCF (B USD): 1.31 (+15.9% YoY)
+- EPS Diluido GAAP: -0.65 (N/M YoY)
+- Caja Neta (B USD): 4.48 (+25.1% YoY)
+
+**Valuacion**: P/E Forward 87.89x, P/FCF 105.34x, EV/Revenue 27.68x, FCF Yield 0.95%, Caja Neta (B USD) $4.48B, ARR Growth YoY +23.8%, NRR (Net Retention) 115%
+
+**Veredicto**: Mantener con Seguimiento (Score: 7.4/10)
++ Plataforma Falcon y ARR -- ARR de $5.25B (+24% YoY) con NRR del 115% confirma el liderazgo estructural y la alta retencion del modelo recurrente a pesar del incidente de 2024.
++ FCF solido y balance pristino -- FCF de $1.31B (margen 27%) con caja neta de $4.48B da flexibilidad total para M&A y crecimiento sin riesgo financiero.
++ Moat tecnologico via IA -- Efecto de red del Security Cloud: mas datos = mejor deteccion = mayor valor, creando un flywheel dificil de replicar por competidores.
+- Valuacion extrema -- P/FCF de 105x y P/E Forward de 88x descuentan anios de crecimiento perfecto. Cualquier desaceleracion puede comprimir el multiple agresivamente.
+
+---
+
+### ABNB — Airbnb Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/ABNB
+**Publicado**: 2026-05-11
+
+Airbnb es la plataforma global de alquileres vacacionales P2P mas grande del mundo, conectando 8M+ listados activos con viajeros en 220 paises. Modelo asset-light con margenes operativos superiores al 20% y FCF record de $4.6B en FY2025. En Q1 2026 reporto ingresos de $2.68B (+18% YoY) y EPS diluido de $0.26. La empresa genera caja estructuralmente y la devuelve via recompras agresivas ($3.8B en FY2025). Valuacion razonable a ~17.7x P/FCF con potencial de aceleracion en experiencias y crecimiento internacional.
+
+Airbnb opera un marketplace de hospedaje y experiencias P2P: los hosts listan espacios (casas completas, cuartos, botes, etc.) y guests los reservan via la app. Los ingresos provienen de comisiones de servicio al guest (~14%) y host (~3%). El modelo es genuinamente asset-light: sin propiedades propias, capex minimo, con costos operativos bajos como porcentaje de GBV. Segmento unico (hospedaje representa ~97% del revenue); las Experiences crecen pero aun son marginales. Moat triple: efecto de red bilateral (mas hosts atraen mas guests), confianza construida en 15 anos (sistema de reviews, seguros, verificaciones), y marca global premium. En FY2025: GBV ~$83B, ~500M noches reservadas, ADR ~$174.
+
+**Datos financieros**:
+- Revenue (B USD): 2.68 (+17.9% YoY)
+- Utilidad Neta (B USD): 0.16 (+3.9% YoY)
+- Margen Neto: 6.0% (-17.8pp YoY)
+- EBITDA Ajustado (B USD): N/D (+6.4% YoY)
+- FCF (B USD): 1.70 (+5.1% YoY)
+- EPS Diluido: 0.26 (+8.3% YoY)
+- Deuda Neta (B USD): -5.99 (N/D YoY)
+
+**Valuacion**: P/E Trailing 34.0x, P/E Forward 24.9x, EV/EBITDA 16.9x, P/FCF 17.7x, Deuda Neta/EBITDA -1.06x, ROE 30.2%, ROIC 20.0%
+
+**Veredicto**: Comprar con Conviccion (Score: 8.4/10)
++ Maquina de FCF a precio atractivo -- P/FCF de 17.7x para una plataforma con margen bruto 83%, caja neta $4.6B y FCF creciente es una oportunidad de entrada solida. Q1 2026 muestra reaceleracion a +18% YoY.
++ Recompras sistematicas crean valor -- $11.7B recomprado desde 2022, reduciendo acciones 12%. Con $4.6B FCF anual y balance sin deuda neta, la empresa puede sostener este ritmo 3+ anos.
++ Moat estructural e imposible de replicar -- 8M+ listados, 220 paises, 15 anos de reviews y confianza. El efecto de red bilateral y la marca global hacen casi imposible la sustitucion directa.
+- Desaceleracion de crecimiento y riesgo regulatorio -- Growth bajando de 40% a 10% YoY. Regulacion en ciudades clave puede reducir inventario y comprimir ADR en mercados premium.
+
+---
 
 ### SPOT — Spotify Technology S.A.
 **URL**: https://reportes.murzainversiones.com/reporte/SPOT
