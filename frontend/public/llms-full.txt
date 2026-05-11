@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (46 empresas)
+## Reportes de acciones (47 empresas)
+
+### XOM — Exxon Mobil Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/XOM
+**Publicado**: 2026-05-11
+
+ExxonMobil (XOM) es la mayor petrolera integrada de Estados Unidos con operaciones en upstream (petroleo y gas), energia, quimicos y productos especiales. En 2024 completo la adquisicion de Pioneer Natural Resources (~60B USD), ampliando significativamente su posicion en la cuenca Permian. En 2025 reporto ingresos de 323.9B USD y utilidad neta de 28.8B USD bajo presion por menores precios del crudo. La accion cotiza a 14.6x P/E forward con un FCF yield del 3.8%, valuacion razonable para una major petrolera con balance solido y programa agresivo de retorno de capital.
+
+ExxonMobil opera cuatro segmentos: Upstream (produccion de crudo y gas, 21.4B en ganancias 2025; produccion 4,736 Kboepd), Energy Products (refinacion y comercializacion, 7.4B ganancias 2025), Chemical Products (petroquimicos, 0.8B ganancias 2025) y Specialty Products (lubricantes y productos especiales, 2.9B ganancias 2025). La adquisicion de Pioneer en 2024 elevo la produccion en el Permian a niveles record. El moat se basa en activos de bajo costo de suministro, integracion vertical, escala global y tecnologia propietaria (8,000+ patentes activas). Adicionalmente impulsa negocios de baja emision: CCS, hidrogeno, combustibles de baja emision y datacenter de bajo carbono.
+
+**Datos financieros**:
+- Revenue (B USD): 83.2 (+2.6% YoY)
+- Utilidad Neta (B USD): 4.2 (-45.8% YoY)
+- Margen Neto: 5.0% (-4.9pp YoY)
+- EBITDA (B USD): 13.7 (- YoY)
+- FCF (B USD): 2.2 (-68.3% YoY)
+- EPS Diluido: 1.00 (-43.2% YoY)
+- Deuda Neta (B USD): 39.2 (- YoY)
+
+**Valuacion**: P/E Trailing 25.2x, P/E Forward 14.6x, EV/EBITDA 10.5x, P/FCF 26.5x, Deuda Neta/EBITDA 0.52x, ROE 11.1%, ROIC (ROCE) 9.3%
+
+**Veredicto**: Mantener con sesgo acumulador (Score: 7.0/10)
++ Permian dominance post-Pioneer — La integracion de Pioneer convirtio a XOM en el productor de shale mas grande de EE.UU. con 4,736 Kboepd en 2025, base para crecimiento hasta 5.4 M en 2030 con curvas de costo competitivas.
++ Retorno de capital de clase mundial — 37.5B USD retornados en 2025 (recompras + dividendos), 25+ anos de crecimiento de dividendos y balance con ND/EBITDA de 0.52x dan visibilidad a los pagos incluso en ciclo bajo de precios.
++ Valuacion atractiva en ciclo bajo — P/E forward de 14.6x y FCF yield de 3.8% ofrecen punto de entrada razonable para inversionistas con horizonte de 3-5 anos, asumiendo normalizacion de precios del crudo en 70-80 USD.
+- Dependencia ciclica del crudo — Q1 2026 con NI -46% YoY refleja la alta sensibilidad al precio del crudo; un ambiente de crudo bajo prolongado (60 USD) podria presionar severamente el FCF y el programa de recompras.
+
+---
 
 ### MA — Mastercard Incorporated
 **URL**: https://reportes.murzainversiones.com/reporte/MA
