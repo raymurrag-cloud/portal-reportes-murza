@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (43 empresas)
+## Reportes de acciones (44 empresas)
+
+### SHOP — Shopify Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/SHOP
+**Publicado**: 2026-05-11
+
+Shopify es la infraestructura esencial del comercio en internet, con soluciones que permiten a millones de comerciantes vender online, en tienda fisica y en todos los canales. En FY2025 reporto ingresos de 11.56B USD (+30%), FCF de 2.0B USD y generacion de caja record. Q1 2026 confirmo la aceleracion con ingresos de 3.17B (+34% YoY), impulsados por Merchant Solutions y el crecimiento de Shopify Payments. La valuacion es exigente pero refleja el liderazgo estructural en e-commerce infrastructure.
+
+Shopify opera bajo dos segmentos: Subscription Solutions (planes de suscripcion a la plataforma, 2.75B en FY2025) y Merchant Solutions (pagos, capital, envios, mercadeo y otros servicios transaccionales, 8.80B en FY2025). Su moat reside en el efecto de red de su ecosistema de apps y socios, la profundidad de sus APIs, la tasa de retencion altisima de comerciantes y su posicion como el standard de facto para e-commerce de mediana escala. Shopify Payments procesa una fraccion creciente del GMV global y constituye el motor de crecimiento de Merchant Solutions.
+
+**Datos financieros**:
+- Revenue (B USD): 3.17 (+34.3% Q YoY)
+- Utilidad Neta (B USD): -0.58 (N/M YoY)
+- Margen Neto: -18.3% (N/M YoY)
+- EBITDA (B USD): N/D (+35.1% YoY)
+- FCF (B USD): N/D (+25.0% YoY)
+- EPS Diluido: -0.45 (N/M YoY)
+- Deuda Neta (B USD): N/D (Mejora YoY)
+
+**Valuacion**: P/E Trailing 109x, P/E Forward 44x, EV/EBITDA 80x, P/FCF 63x, Deuda Neta/EBITDA -3.7x, ROE 9.1%, ROIC 10.0%
+
+**Veredicto**: Mantener con Sesgo Positivo (Score: 8.0/10)
++ Lider estructural de e-commerce - Shopify es el standard de facto para comercio unificado con mas de 14,000 apps, efecto de red profundo y costos de cambio extremadamente altos.
++ FCF record y balance impecable - FCF de 2.0B en FY2025 (+25%) con caja neta de 5.6B y sin deuda; maxima flexibilidad financiera.
++ Aceleracion de crecimiento - +30% en FY2025 y +34% en Q1 2026 demuestran que Shopify sigue ganando participacion en e-commerce global.
+- Valuacion exigente con margen de seguridad bajo - P/FCF 63x y EV/EBITDA 80x descuentan ejecucion perfecta; cualquier desaceleracion genera riesgo de rerating severo.
+
+---
 
 ### NBIS — Nebius Group N.V.
 **URL**: https://reportes.murzainversiones.com/reporte/NBIS
