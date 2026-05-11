@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (48 empresas)
+## Reportes de acciones (49 empresas)
+
+### SPOT — Spotify Technology S.A.
+**URL**: https://reportes.murzainversiones.com/reporte/SPOT
+**Publicado**: 2026-05-11
+
+Spotify Technology S.A. es el lider mundial en streaming de audio con 761 millones de MAUs y 293 millones de suscriptores Premium al Q1 2026. En FY2025 registro ingresos de 18.47B USD (+8.6% YoY en USD), margen neto de 12.9% y FCF de 3.09B USD, marcando la primera rentabilidad sostenida de su historia. La posicion de caja neta de 9.3B USD al Q1 2026 refuerza la solidez del balance. El reporte Q1 2026 confirma aceleracion: ingresos de 4.83B USD (+15.3% YoY), EPS diluido de 3.67 USD y MAUs creciendo 12% YoY.
+
+Spotify opera en dos segmentos: Premium (89% de ingresos, suscripciones de pago) y Ad-Supported (11%, financiado por publicidad). Su modelo de negocio se basa en licenciar contenido de sellos discograficos, podcasters y editores de audiolibros, mientras monetiza via suscripciones y publicidad programatica. El moat proviene de efectos de red (mayor base de artistas y usuarios), algoritmos de descubrimiento personalizados (Discover Weekly, Daily Mixes), exclusividad de contenido y costos de cambio elevados. Con 100M+ tracks, 7M+ podcasts y audiolibros en mercados selectos, Spotify es la plataforma de audio mas diversificada del mundo.
+
+**Datos financieros**:
+- Revenue (B USD): 4.83 (+8.6% YoY)
+- Utilidad Neta (B USD): 0.77 (+93.5% YoY)
+- Margen Neto: 16.0% (+5.6pp YoY)
+- EBITDA (B USD): N/A (+53.4% YoY)
+- FCF (B USD): 0.89 (+24.6% YoY)
+- EPS Diluido (USD): 3.67 (+89.3% YoY)
+- Deuda Neta (B USD): -9.32 (N/A YoY)
+
+**Valuacion**: P/E Trailing 37.1x, P/E Forward 22.5x, EV/EBITDA 32.1x, P/FCF 28.4x, Deuda Neta/EBITDA -3.5x, ROE 26.6%, ROIC 22.3%
+
+**Veredicto**: Comprar con Conviccion (Score: 8/10)
++ Inflexion de rentabilidad -- De perdidas cronicas a NI 2.38B USD en FY2025 y 0.77B USD en Q1 2026 (+221% YoY); el modelo de negocio demostro escala.
++ FCF maquina -- FCF de 3.09B USD en FY2025 (+25% YoY) y 0.89B USD en Q1 2026; caja neta de 9.3B USD elimina riesgo financiero.
++ Crecimiento de usuarios acelerado -- 761M MAU (+12% YoY) y 293M Premium (+9%); mercados emergentes y audiobooks como nuevos motores.
+- Royalties limitan margen bruto -- Techo estructural ~35-40% en margen bruto; negociaciones con majors cada 3-5 anos son riesgo recurrente.
+
+---
 
 ### WMT — Walmart Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/WMT

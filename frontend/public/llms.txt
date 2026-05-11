@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (48 empresas)
+## Reportes de acciones (49 empresas)
 
+- [Spotify Technology S.A. (SPOT)](https://reportes.murzainversiones.com/reporte/SPOT): Analisis financiero de Spotify Technology (SPOT): 761M MAUs, FCF 3.09B USD, margen neto 12.9% en FY2025. 20-F + Q1 2026. Veredicto: Comprar con Conviccion.
 - [Walmart Inc. (WMT)](https://reportes.murzainversiones.com/reporte/WMT): Analisis financiero completo de Walmart Inc. (WMT): revenue $713B FY2026, eCommerce +22%, publicidad digital $4.4B, estrategia omnicanal y valuacion. Veredicto: Mantener/Vigilar.
 - [Exxon Mobil Corporation (XOM)](https://reportes.murzainversiones.com/reporte/XOM): Analisis financiero de ExxonMobil (XOM): ingresos 323.9B USD, FCF 23.6B, EPS 6.70 en FY2025. Valuacion, margenes, riesgos y veredicto de inversion. Veredicto: Mantener con sesgo acumulador.
 - [Mastercard Incorporated (MA)](https://reportes.murzainversiones.com/reporte/MA): Analisis financiero completo de Mastercard (MA): revenue FY2025 de 32.79B (+16.4%), FCF de 17.16B, margen operativo 57.6% y Q1 2026 con +15.8% de crecimiento. Duopolio de redes de pago globales. Veredicto: Comprar con Conviccion.
