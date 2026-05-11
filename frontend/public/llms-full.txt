@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (47 empresas)
+## Reportes de acciones (48 empresas)
+
+### WMT — Walmart Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/WMT
+**Publicado**: 2026-05-11
+
+Walmart Inc. es el mayor retailer del mundo con $706.4B en ventas netas en FY2026 (enero 2026). La empresa opera mas de 10,500 tiendas bajo los segmentos Walmart U.S. ($483B), Walmart International y Sam's Club, sirviendo 270 millones de clientes semanalmente. La estrategia omnicanal con eCommerce creciendo +22% YoY impulsa participacion de mercado y nuevos flujos de ingresos como publicidad digital ($4.4B) y Walmart+. FY2026 muestra aceleracion notable: revenue +4.7%, net income +12.6% y FCF +17.9%.
+
+Walmart opera bajo tres segmentos: Walmart U.S. (68% de ventas, 4,611 tiendas), Walmart International (26%, presencia en 19 paises incluyendo Mexico via Walmex y China) y Sam's Club U.S. (6%, 600 clubes de membresia). El moat competitivo descansa en escala de compras sin rival, cadena de suministro propia, presencia fisica en comunidades suburbanas/rurales de bajo ingreso, y la creciente plataforma de publicidad digital Walmart Connect. La transicion hacia eCommerce y servicios de alto margen (advertising, marketplace, fulfillment, finanzas) reposiciona a Walmart como plataforma retail mas alla del brick-and-mortar.
+
+**Datos financieros**:
+- Revenue (B USD): 713.16 (+4.7% YoY)
+- Utilidad Neta (B USD): 21.89 (+12.6% YoY)
+- Margen Neto: 3.1% (+0.2pp YoY)
+- EBITDA (B USD): 44.03 (+4.0% YoY)
+- FCF (B USD): 14.92 (+17.9% YoY)
+- EPS Diluido: 2.73 (+13.3% YoY)
+- Deuda Neta (B USD): 27.44 (+0.48B YoY)
+
+**Valuacion**: P/E Trailing 46.7x, P/E Forward 42.2x, EV/EBITDA 23.9x, P/FCF 68.6x, Deuda Neta/EBITDA 0.62x, ROE 22%, ROIC 17.7%
+
+**Veredicto**: Mantener/Vigilar (Score: 7.2/10)
++ Escala defensiva -- Con $706B en ventas y 270M clientes semanales, Walmart es practicamente irreemplazable en el retail global. La plataforma crece en margenes altos via publicidad (+24% YoY) y membership.
++ Transformacion digital ejecutandose -- eCommerce supera 100B en GMV digital, Walmart+ acelera en membresias y el acquisition de Vizio posiciona a WMT en publicidad CTV de alto margen.
++ Balance impecable -- ND/EBITDA de 0.62x, flujo de caja operativo de 41.6B y 51 anos de incrementos de dividendo confirman la calidad crediticia y la generacion de valor para accionistas.
+- Valuacion premium exige ejecucion perfecta -- P/E forward de 42x y FCF yield de solo 1.5% dejan poco margen de error. La accion cotiza como tech company pero opera como retailer con margenes de 4.2%. Cualquier miss en eCommerce o publicidad podria comprimir multiples.
+
+---
 
 ### XOM — Exxon Mobil Corporation
 **URL**: https://reportes.murzainversiones.com/reporte/XOM
