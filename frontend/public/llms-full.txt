@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-05
+**Actualizado**: 2026-05-11
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -407,30 +407,31 @@ Alibaba opera en seis segmentos: (1) Taobao y Tmall Group — e-commerce domesti
 
 ---
 
-### CEG — Constellation Energy Group
+### CEG — Constellation Energy Corp
 **URL**: https://reportes.murzainversiones.com/reporte/CEG
 **Publicado**: 2026-04-08
 
-Constellation Energy (CEG) es el mayor productor de energia sin carbono de EE.UU., operando 21 reactores nucleares con ~33 GW de capacidad. Tras la adquisicion de Calpine en enero 2026, se convierte en el operador de gas natural mas grande del pais, creando una plataforma de energia limpia y flexible sin precedentes. Con contratos de largo plazo firmados con Microsoft, Amazon y otros hiperescaladores para suministrar electricidad a datacenters de IA, CEG esta posicionada como la infraestructura energetica de la nueva era digital. La tesis de inversion descansa en precios de electricidad estructuralmente altos y contratos Power Purchase Agreement (PPA) de largo plazo que dan visibilidad de ingresos excepcional para una utility.
+Constellation Energy (CEG) es el mayor productor de energia limpia y confiable de EE.UU., con 55 GW de capacidad tras la adquisicion de Calpine en enero 2026. En Q1 2026 reporto ingresos de $11.1B (+64% YoY), impulsados por la incorporacion de activos de gas natural y geotermicos de Calpine. El portfolio nuclear diferenciado de 24 GW posiciona a CEG como actor clave en la transicion energetica y el boom de centros de datos de IA. La deuda neta se elevo a $16.2B post-adquisicion pero el EBITDA anualizado de ~$14B mantiene la relacion Deuda/EBITDA en niveles manejables de 1.1x.
 
-Constellation Energy opera el mayor portafolio nuclear de EE.UU. con 21 reactores en 12 estados, produciendo ~170 TWh/ano de electricidad limpia. Sus segmentos incluyen generacion nuclear en PJM, Midwest, Mid-Atlantic y Texas; retail de electricidad y gas para clientes comerciales e industriales; y servicios energeticos corporativos. La empresa deriva su moat del acervo de licencias nucleares irreplazables, la ubicacion estrategica cerca de cargas industriales de alta densidad, y la base de clientes corporativos dispuestos a pagar primas por electricidad libre de carbono. Tras la adquisicion de Calpine, agrego ~50 GW de generacion a gas natural, gas de cero emision y geotermia.
+Constellation Energy opera la mayor flota nuclear de EE.UU. (24 GW en 14 plantas) mas activos de gas natural, geotermicos, hidro, eolico y solar tras la adquisicion de Calpine por ~$16.4B. Modelo de negocio dual: generacion mayorista con contratos de largo plazo (PPAs con Microsoft, Meta, Amazon) y suministro minorista a ~2.5M cuentas comerciales e industriales incluyendo 3/4 de Fortune 100. El moat de CEG radica en sus activos nucleares irreplicables que proveen electricidad 24/7 sin emisiones, en un contexto de demanda creciente por datacenters de IA.
 
 **Datos financieros**:
-- Revenue (B USD): 25.53 (+8.3% YoY)
-- Utilidad Neta (B USD): 2.32 (-38.1% YoY)
-- Margen Neto: 9.1% (-6.8pp YoY)
-- EBITDA (B USD): 5.69 (-19.3% YoY)
-- FCF (B USD): 1.29 (neg a pos YoY)
-- EPS Diluido: 7.44 (-38% YoY)
-- Deuda Neta (B USD): 3.76 (-31% YoY)
+- Revenue (B USD): 11.12 (+63.8% YoY)
+- Utilidad Neta (B USD): 1.59 (+1,248% YoY)
+- Margen Neto: 14.3% (+8.4pp YoY)
+- EBITDA (B USD): 3.53 (N/A YoY)
+- FCF (B USD): -0.85 (N/A YoY)
+- EPS Diluido: 4.49 (+1,082% YoY)
+- Deuda Neta (B USD): 16.19 (+331% YoY)
 
-**Valuacion**: P/E Trailing 36.6x, P/E Forward ~23x, EV/EBITDA 15.6x, P/FCF 65.9x, Deuda Neta/EBITDA 0.7x, ROE N/A, ROIC N/A
+**Valuacion**: P/E Trailing 40x, P/E Forward 27x, EV/EBITDA 8.7x, P/FCF 72x, Deuda Neta/EBITDA 1.1x, ROE 16%, ROIC 13%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 7.6/10)
-+ Monopolio nuclear irremplazable — 21 reactores y 33 GW de capacidad limpia es un activo que no puede replicarse en 20+ anos; ideal para contratos PPA con hiperescaladores de IA.
-+ Demanda estructural de energia limpia para IA — Contratos ya firmados con Microsoft (TMI restart) y Amazon crean visibilidad de ingresos a largo plazo con primas sobre precio spot.
-+ FCF positivo y en aceleracion — Primer ano de FCF positivo sostenido en 2025; la tendencia es claramente ascendente con Calpine aportando flujo desde 2026.
-- Riesgo de integracion Calpine y apalancamiento — La adquisicion de 16.4B eleva deuda significativamente; cualquier decepcion en sinergias o precios de energia puede comprimir el multiple rapidamente.
+**Veredicto**: Comprar con Conviccion (Score: 7.4/10)
++ Monopolio nuclear de facto — 24 GW de energia nuclear 24/7 son irreplicables; unico proveedor para la demanda de IA de los hiperescaladores mas exigentes del mundo.
++ Transformacion estructural post-Calpine — La adquisicion duplica ingresos potenciales; Q1 2026 ya muestra el poder: Revenue +64% YoY, EPS +1,082% YoY.
++ EV/EBITDA atractivo de 8.7x — Basado en EBITDA anualizado post-Calpine; por debajo del sector utilities en expansion y muy inferior a comparables de energia limpia.
++ Credito fiscal 45U — ventaja regulatoria — $800M/anio de creditos limpios bajo IRA que reducen costo efectivo de produccion nuclear a niveles ultra-competitivos.
+- Valuacion exigente y deuda elevada — P/E 40x TTM y deuda neta de $16B post-Calpine requieren ejecucion impecable; cualquier decepcion puede provocar correccion del 20-30%.
 
 ---
 
@@ -549,26 +550,26 @@ Sea Limited opera tres segmentos principales: Shopee, la plataforma de e-commerc
 **URL**: https://reportes.murzainversiones.com/reporte/PYPL
 **Publicado**: 2026-04-07
 
-PayPal Holdings es el lider global en pagos digitales con 439 millones de cuentas activas en ~200 mercados. Opera una plataforma de dos lados que conecta consumidores y comercios a traves de PayPal, Venmo y Braintree. En FY2025 reporto ingresos de 33.2B USD (+4.3% YoY) con utilidad neta de 5.2B USD (+26.0% YoY), reflejando mejora significativa en eficiencia operativa bajo el CEO Alex Chriss. A precio de 45.48 USD con P/E de solo 8.0x, el mercado descuenta riesgos competitivos de forma excesiva. La generacion de FCF de 5.6B USD y recompras agresivas de 6B+/ano ofrecen soporte de valor claro. Veredicto: Mantener con sesgo a comprar en correcciones para inversores con horizonte de 2-3 anos.
+PayPal Holdings reporto resultados del Q1 2026 con ingresos de 8.35B USD (+7.2% YoY) y un EPS GAAP diluido de 1.21 USD, superando las estimaciones del consenso. Sin embargo, el margen operativo se contrajo -1.8pp a 17.8% y la utilidad neta cayo -13.5% YoY a 1.11B USD debido a un crecimiento acelerado del gasto en transacciones y perdidas en inversiones estrategicas. El TPV alcanzo 463.96B USD (+11.2% YoY), confirmando la solidez operativa de la plataforma. La valuacion actual de 9.6x P/E forward y 8.4% FCF yield refleja el escepticismo del mercado sobre la capacidad de la empresa para sostener la expansion de margenes. La transicion estrategica hacia rentabilidad por cuenta activa y la monetizacion de Venmo son los catalizadores clave a monitorear.
 
-PayPal opera como plataforma de dos lados de pagos digitales: el segmento consumidor incluye checkout online via PayPal y Venmo, BNPL (Compra Ahora Paga Despues), crypto y P2P; el segmento comercio incluye Braintree para procesamiento unbranded de grandes empresas y Hyperwallet para pagos masivos. El revenue se genera principalmente por comisiones de transaccion sobre el Volumen Total de Pagos (TPV), con un take rate de ~1.78% en 2025. Mas del 55% de revenue proviene de EEUU. El moat central es la marca de confianza con 439M usuarios activos, la red de dos lados con efectos de red, y Braintree como motor de procesamiento B2B para clientes como Uber, Airbnb y Booking.
+PayPal Holdings opera la red de pagos digitales mas grande del mundo con 439 millones de cuentas activas al cierre de Q1 2026. Genera ingresos a traves de dos lineas: (1) Transaction revenues (90% del total): comisiones sobre el TPV procesado a traves de PayPal, Venmo y Braintree; (2) Revenues from other value added services (10%): tarifas de partnership, ingresos por intereses de cartera de credito, suscripciones y gateway fees. El take rate implicito es aproximadamente 1.62% sobre TPV. La ventaja competitiva central radica en la red de doble cara con altos switching costs, la marca PayPal como simbolo de confianza en 200+ paises y el ecosistema Venmo con 90M+ usuarios en EE.UU. La empresa transita de un modelo de crecimiento de cuentas a uno de rentabilidad por cuenta activa bajo el liderazgo de Alex Chriss (CEO desde 2023).
 
 **Datos financieros**:
-- Revenue (B USD): 33.17 (+4.3% YoY)
-- Utilidad Neta (B USD): 5.23 (+26.0% YoY)
-- Margen Neto: 15.8% (+2.7pp YoY)
-- EBITDA (B USD): 7.03 (+10.5% YoY)
-- FCF (B USD): 5.56 (-17.9% YoY)
-- EPS Diluido: 5.68 (+26.0% YoY)
-- Deuda Neta (B USD): 1.94 (-39.8% YoY)
+- Revenue (B USD): 8.35 (+7.2% YoY)
+- Utilidad Neta (B USD): 1.11 (-13.5% YoY)
+- Margen Neto (%): 13.3% (-3.2pp YoY)
+- EBITDA (B USD): 1.73 (-2.8% YoY)
+- FCF (B USD): 0.90 (-6.3% YoY)
+- EPS Diluido (GAAP): 1.21 (-6.2% YoY)
+- Deuda Neta (B USD): 3.90 (+1.3% YoY)
 
-**Valuacion**: P/E Trailing 8.0x, P/E Forward 10x, EV/EBITDA 6.2x, P/FCF 7.5x, Deuda Neta/EBITDA 0.28x, ROE 28.7%, ROIC 24.7%
+**Valuacion**: P/E Trailing 8.2x, P/E Forward 9.6x, EV/EBITDA 6.8x, P/FCF 11.9x, Deuda Neta/EBITDA 0.56x, ROE 25.8%, ROIC 8.1%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 6.6/10)
-+ Valuacion de ganga — P/E de 8.0x y FCF yield del 13.3% para un negocio con 439M usuarios activos y 33B de revenue es excesivamente barata. Las recompras agresivas de 6B+/ano amplifican el retorno por accion de forma material.
-+ Mejora operativa demostrada — Margen neto al 15.8% (+2.7pp YoY) y ROE del 28.7% demuestran que Alex Chriss genera resultados concretos de eficiencia tras anos de expansion sin disciplina de costos.
-+ Balance fortaleza maxima — Deuda neta de solo 1.94B USD con ND/EBITDA de 0.28x da flexibilidad total para continuar recompras acretivas o hacer adquisiciones estrategicas sin ningun estres financiero.
-- Riesgo de take rate estructural — La compresion por Apple Pay, Google Pay y el mix de Braintree podria continuar presionando el revenue growth incluso con mayor volumen. Es la variable critica a monitorear cada trimestre para validar o invalidar la tesis.
+**Veredicto**: Mantener (Score: 6.2/10)
++ Valuacion extrema -> P/E forward de 9.6x y FCF yield de 8.4% ofrecen un margen de seguridad significativo para inversores con horizonte de 2-3 anos; el mercado descuenta un escenario de deterioro permanente que los datos operacionales no confirman aun.
++ TPV en expansion -> 464B USD procesados en Q1 (+11.2% YoY) demuestra que la red sigue siendo el canal preferido para cientos de millones de usuarios; la infraestructura de 439M cuentas y Braintree es dificil de replicar.
++ Recompras acretivas -> La empresa ha reducido el float de 1.168B a 892M acciones (23.6% menos desde FY2021). El programa de buybacks a estos precios es intrinsecamente acretivo para el EPS por accion remanente.
+- Compresion de margenes sin senal de reversal -> El margen operativo cayo a 17.8% (-1.8pp YoY) y la utilidad neta -13.5% en Q1 2026. Hasta que la empresa demuestre mejora sostenida en take rate o costos de transaccion, el re-rating al alza es incierto.
 
 ---
 
@@ -630,26 +631,26 @@ Oracle opera tres segmentos: (1) Cloud and License (86% del revenue FY2025), que
 **URL**: https://reportes.murzainversiones.com/reporte/CVX
 **Publicado**: 2026-04-06
 
-Chevron Corporation (CVX) es una de las mayores empresas integradas de energia del mundo, con operaciones upstream y downstream en mas de 20 paises. FY2025 mostro presion por precios del petroleo mas bajos: ingresos de 189.0B USD (-6.8% YoY) y utilidad neta de 12.3B USD (-30.3%). A pesar del ciclo adverso, CVX genero FCF solido de 16.6B USD, mantuvo su dividendo por 38 ano consecutivo de incremento y ejecuto recompras por 12.1B USD. La incorporacion de Hess completada en 2025 amplia significativamente su base de activos con activos premium en Guyana. Calificacion: Mantener con sesgo comprador en correcciones.
+Chevron reporto resultados de Q1 2026 (enero-marzo 2026) con ingresos de 47.6B USD (+3.2% YoY) y utilidad neta de 2.2B USD, una caida del 36.9% frente al Q1 2025 impulsada por menores precios del petroleo y cargos puntuales (reserva legal $360M, tipo de cambio adverso $223M). El EPS GAAP fue de $1.11 vs. $2.00 en Q1 2025, aunque el EPS ajustado de $1.41 supero las estimaciones del consenso en 45%. La produccion diaria alcanzo 3.86 millones de BOE/dia, un aumento del 15% YoY por la integracion plena de activos Hess (Guyana bloque Stabroek). Con dividendo trimestral de $1.78 por accion (rendimiento ~3.9%) y recompras de $2.5B en el trimestre, Chevron mantiene su tradicion de retorno de capital. El veredicto es Mantener: negocio ciclico de alta calidad con presion en precios del crudo en el corto plazo, pero con activos de largo plazo de primer nivel.
 
-Chevron opera dos segmentos: Upstream (exploracion, produccion y transporte de crudo y gas; LNG; pipelines) y Downstream (refinacion, marketing, renovables y petroquimicos). Sus activos mas valiosos incluyen el Permian Basin en Texas, Tengizchevroil en Kazakhstan, proyectos LNG en Australia (Gorgon y Wheatstone) y tras la adquisicion de Hess en 2025, una participacion del 30% en el bloque Stabroek en Guyana. La empresa genera mas del 70% de sus ganancias en upstream, haciendo los resultados altamente sensibles al precio del crudo. Su moat central: activos irreplicables de larga vida, escala operativa global y balance conservador AA-.
+Chevron Corporation es una de las mayores empresas integradas de energia del mundo, con operaciones en exploracion y produccion (upstream), refinacion y transporte (downstream), y quimicos. Opera en mas de 180 paises con una cartera diversificada que incluye activos en el Permian Basin (lider en produccion de bajo costo en EE.UU.), Tengizchevroil (TCO) en Kazajistan con el proyecto Future Growth Project (FGP) en expansion, y tras la adquisicion de Hess Corporation completada en mid-2025 por ~54B USD, el 30% del bloque Stabroek en Guyana (reservas estimadas de 11B+ BOE, costo de levantamiento <$25/BOE). Los ingresos provienen ~65% de upstream (produccion y venta de crudo y gas) y ~35% de downstream y quimicos. La empresa cotiza en NYSE (CVX) con sede en San Ramon, California. Su historial de 36+ anos consecutivos de incremento anual del dividendo la distingue como una de las empresas energeticas de mayor calidad a nivel global.
 
 **Datos financieros**:
-- Revenue (B USD): 189.0 (-6.8% YoY)
-- Utilidad Neta (B USD): 12.3 (-30.3% YoY)
-- Margen Neto: 6.5% (-2.2pp YoY)
-- EBITDA (B USD): 40.9 (-9.7% YoY)
-- FCF (B USD): 16.6 (+10.4% YoY)
-- EPS Diluido (USD): 6.63 (-31.8% YoY)
-- Deuda Neta (B USD): 34.5 (+93.8% YoY)
+- Revenue (B USD): 47.6 (+3.2% YoY)
+- Utilidad Neta (B USD): 2.2 (-36.9% YoY)
+- Margen Neto (%): 4.6% (-3.0pp YoY)
+- EBITDA (B USD): 9.0 (+7.6% YoY)
+- FCF (B USD): -1.5 (N/D YoY)
+- EPS Diluido (GAAP): $1.11 (-44.5% YoY)
+- Deuda Neta (B USD): 40.1 (+60.4% YoY)
 
-**Valuacion**: P/E Trailing 30.0x, P/E Forward 21x (est.), EV/EBITDA 9.8x, P/FCF 22.3x, Deuda Neta/EBITDA 0.84x, ROE 7.3%, ROIC 6.0%, FCF Yield 4.5%, Dividend Yield 2.7%
+**Valuacion**: P/E Trailing 31.8x, P/E Forward 14.7x, EV/EBITDA 11.6x, P/FCF 26.4x, Deuda Neta/EBITDA 1.1x, ROE 5.9%, Dividend Yield 3.9%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 6.6/10)
-+ Guyana como catalizador secular - El bloque Stabroek con 11B+ barriles y costos menores a 35 USD/bbl es el activo de crecimiento mas valioso del sector; produccion escala hacia 1.3M BPD para 2027 generando FCF incremental significativo.
-+ Balance AA- y dividendo de 38 anos - La solidez financiera (Deuda Neta/EBITDA 0.84x) y el historial de dividendo en todos los ciclos son la fortaleza diferencial vs peers mas apalancados.
-+ P/E normalizado de 17-20x con petroleo en recuperacion - EPS podria retornar a 10-12 USD en escenario Brent 80-85 USD; el precio actual descuenta escenario pesimista, generando asimetria positiva.
-- Riesgo arbitral Guyana y sensibilidad al ciclo - La disputa con ExxonMobil sobre Stabroek y la posible caida adicional del crudo son los dos riesgos clave a monitorear; esperamos resolucion del arbitraje en 2026.
+**Veredicto**: Mantener (Score: 6.2/10)
++ Dividendo aristocrata sostenible -> Con 36+ anos de incrementos consecutivos y un rendimiento del 3.9%, el dividendo de Chevron es uno de los mas confiables del sector energetico. La empresa retorno $6.0B al accionista en Q1 2026 incluso en un trimestre de FCF reportado negativo, lo que demuestra la solidez del balance y la prioridad del capital de retorno.
++ Produccion record post-Hess -> La produccion de 3.86 MBOE/dia (+15% YoY) y los activos de Guyana (bloque Stabroek, <$25/BOE de costo) posicionan a Chevron con el mejor portafolio de crecimiento de bajo costo de su historia. A precios de crudo normalizados de $80+/bbl, el apalancamiento operativo es significativo y el FCF se recupera rapidamente.
++ Valuacion razonable en ciclo bajo -> P/E forward de 14.7x y EV/EBITDA de 11.6x ofrecen una valuacion justa para una integrada de primer nivel con activos de larga vida. El P/E trailing de 31.8x es enganoso porque refleja un trimestre de margenes comprimidos por factores ciclicos y puntuales, no la capacidad de generacion en condiciones normalizadas.
+- Ciclicalidad de precios del crudo -> La utilidad neta cayo 36.9% YoY y el EPS GAAP se redujo a la mitad en Q1 2026 por menores precios del crudo. Sin una recuperacion de Brent hacia $80+/bbl, los EPS y el FCF permanecen bajo presion durante 2026, limitando el potencial de revalorizacion en el corto plazo. El negocio es ciclico por definicion.
 
 ---
 
@@ -684,27 +685,29 @@ Netflix opera como un segmento unico: streaming de contenido (series, peliculas,
 **URL**: https://reportes.murzainversiones.com/reporte/UBER
 **Publicado**: 2026-04-06
 
-Uber Technologies (UBER) es la plataforma de movilidad y entrega bajo demanda mas grande del mundo, con presencia en mas de 70 paises. En FY2025 reporto ingresos de 52.02B USD (+18.3% YoY), ingreso operativo de 5.57B USD (+99% YoY) y FCF record de 9.76B USD (+41% YoY), consolidando su transformacion de empresa con perdidas a generadora masiva de caja. Las recompras de 6.52B USD senalan confianza maxima del management. A precio de 72.32 USD cotiza a 15.3x P/FCF y EV/EBITDA de 24.4x, con FCF yield del 6.5% — valuacion razonable para su tasa de crecimiento sostenido.
+Uber Technologies reporto resultados solidos en Q1 2026: ingresos de $13.2B (+14.5% YoY), Gross Bookings record de $53.7B (+25% YoY) y EBITDA Ajustado de $2.48B (+33% YoY). La utilidad neta GAAP fue de solo $263M debido a una perdida no operativa de ~$1.5B por revaluacion de inversiones en equity (Didi, Aurora, etc.) — no refleja el desempeno operativo real. El operating income salto +56.6% a $1.92B y el FCF alcanzo $2.29B. Con FY2021-FY2025 como referencia anual y Q1 2026 como el trimestre mas reciente, Uber consolida su transicion de empresa con perdidas a generadora de caja sostenida. Veredicto: Mantener con sesgo positivo; el modelo esta madurando rapidamente pero el riesgo de robotaxis exige monitoreo constante.
 
-Uber opera a traves de tres segmentos: Mobility (transporte bajo demanda, ~61% de revenue), Delivery (comida y productos via Uber Eats, ~37%) y Freight (logistica, ~2%). El modelo es asset-light: cobra comisiones sobre cada transaccion a conductores y restaurantes, y tarifas de servicio a usuarios. La plataforma cuenta con 170M+ usuarios activos mensuales y 7.4M+ conductores/deliverers. Los efectos de red bidireccionales constituyen el moat principal: mas oferta reduce tiempos de espera mejorando conversion, mas usuarios incrementan ingresos para conductores atrayendo mas oferta. Uber Advertising y Uber One son nuevas verticales de alto margen que amplian el moat y mejoran el mix. En autonomia vehicular, Uber eligio ser canal de distribucion de flotas AV (acuerdos con Waymo, WeRide, Avride) en lugar de desarrollar la tecnologia, reduciendo riesgo de capital y acelerando time-to-market.
+Uber Technologies opera la mayor plataforma global de movilidad y entrega bajo demanda. Sus dos segmentos principales son Mobility (viajes en auto, ~50% de Gross Bookings) y Delivery (Uber Eats, ~48%), con un segmento menor de Freight. La empresa genera ingresos como porcentaje de las transacciones brutas (take rate): toma aproximadamente 25-26% en Mobility y cerca de 19-20% en Delivery. Opera en mas de 70 paises con 199 millones de consumidores activos mensuales (MAPCs) y completo 3.6 billones de viajes en Q1 2026 (+20% YoY). La ventaja competitiva es la red de dos lados: cuantos mas conductores, menos tiempo de espera, lo que atrae mas riders, que a su vez atraen mas conductores. Uber One (50M miembros) profundiza la retencion multi-producto. EE.UU. y Canada representan ~45% de los Gross Bookings; el resto proviene de mercados internacionales de alta velocidad.
 
 **Datos financieros**:
-- Revenue (B USD): 52.02 (+18.3% YoY)
-- Op. Income (B USD): 5.57 (+98.9% YoY)
-- EBITDA Aj. (B USD): 6.28 (+78.9% YoY)
-- Utilidad Neta (B USD): 10.05 (+1.9% YoY)
-- FCF (B USD): 9.76 (+41.4% YoY)
-- EPS Diluido (USD): 4.86 (+3.8% YoY)
-- Margen Operativo: 10.7% (4.3pp YoY)
-- Margen Neto: 19.3% (-3.1pp YoY)
+- Revenue (B USD): 13.2 (+14.5% YoY)
+- Utilidad Neta GAAP (B USD): 0.26 (-85.2% YoY)
+- Utilidad Neta Adj. (B USD): 1.50 (+39.0% YoY)
+- Margen Neto GAAP (%): 2.0% (-17.3pp YoY)
+- Operating Income (B USD): 1.92 (+56.6% YoY)
+- EBITDA Ajustado (B USD): 2.48 (+33.0% YoY)
+- FCF (B USD): 2.29 (+1.6% YoY)
+- EPS Diluido GAAP: 0.13 (-84.3% YoY)
+- Gross Bookings (B USD): 53.7 (+25.0% YoY)
+- Deuda Neta (B USD): 5.0 (+43.0% YoY)
 
-**Valuacion**: Precio Actual 72.32 USD, P/E Trailing 14.9x, P/E Forward 16.7x, EV/EBITDA 24.4x, P/FCF 15.3x, FCF Yield 6.5%, ROE FY2025 43.7%, Deuda Neta/EBITDA 0.56x, FCF FY2025 9.76B USD, Op. Income FY2025 5.57B USD, Crecimiento Revenue +18.3% YoY, Recompras FY2025 6.52B USD
+**Valuacion**: P/E Trailing 16.2x, P/E Forward 23.8x, EV/EBITDA Ajustado 19.4x, P/FCF 16.4x, Deuda Neta/EBITDA 0.40x, ROE 41.4%, ROIC 18.2%
 
-**Veredicto**: Mantener / Comprar en Correccion (Score: 7.9/10)
-+ FCF de 9.76B USD y recompras de 6.52B — El modelo plataforma genera caja masiva a escala; el management retorna capital agresivamente validando la calidad y sostenibilidad del FCF.
-+ Margen operativo de 10.7% vs 6.4% en FY2024 — Expansion de 4.3pp en un solo ano demuestra apalancamiento operativo real; si revenue crece ~18% anual, los margenes operativos pueden llegar a 15-18% en 3-4 anos.
-- Calidad de utilidades: NI incluye ganancias no operacionales — El P/E normalizado sobre utilidad operativa es mas alto que el reportado; P/FCF y EV/EBITDA son las metricas de valuacion primarias recomendadas.
-- Riesgo regulatorio de conductores — La clasificacion como independientes es el riesgo existencial central; un cambio legal en EEUU incrementaria costos 20-30% y comprimeria margenes de forma estructural e irreversible.
+**Veredicto**: Mantener (Score: 7.4/10)
++ Motor operativo solido -> El EBITDA Ajustado crece +33% YoY a $2.48B y el FCF anualizado supera los $10B, demostrando que el negocio central genera caja real y creciente. La perdida GAAP de $263M es ruido contable por revaluacion de equity, no deterioro operativo.
++ Valuacion razonable -> P/FCF de 16.4x y P/E forward ~23.8x son moderados para una plataforma que crece Gross Bookings al 25% anual con apalancamiento operativo creciente. El descuento por el ruido GAAP puede ser oportunidad de entrada.
++ Plataforma en escala -> 199M MAPCs, 3.6B trips en Q1, 50M miembros de Uber One y expansion en mercados emergentes refuerzan el efecto de red cada trimestre. La alianza con Waymo posiciona a Uber como capa de distribucion del futuro autonomo.
+- Riesgo AV y take rate -> Los robotaxis de Waymo, BYD y Tesla Robotaxi podrian erosionar el take rate de Mobility a largo plazo. En el corto plazo, la compresion del take rate en mercados internacionales requiere monitoreo. El desenlace del ecosistema AV es la variable critica para la tesis de inversion.
 
 ---
 
@@ -739,31 +742,26 @@ Tesla opera en tres segmentos: Automotriz (EVs — Model 3/Y/S/X/Cybertruck/Cybe
 **URL**: https://reportes.murzainversiones.com/reporte/CPNG
 **Publicado**: 2026-04-06
 
-Coupang (CPNG) es la plataforma de e-commerce dominante en Corea del Sur, comparable al Amazon coreano. Con ingresos de $34.5B en 2025 (+14% YoY), la empresa mantiene un crecimiento sostenido, aunque enfrenta presiones en margenes netos debido a inversiones en Farfetch y nuevas geografias. El segmento Product Commerce es altamente rentable (margen adj. EBITDA del 7.2%), compensado por las perdidas del segmento Developing Offerings.
+Coupang reporto resultados de Q1 2026 marcados por una perdida operativa de 242M USD y una perdida neta de 266M USD, impactados por los costos asociados al incidente de datos ocurrido en Q4 2025 y la consecuente erosion de membresias WOW. El revenue crecio 7.5% YoY hasta 8,504M USD, acelerando modestamente frente al ritmo de FY2025, pero los margenes se comprimieron drasticamente: el margen bruto cayo 229bp y el margen operativo colapso de +1.95% a -2.85%. La buena noticia es que la recuperacion de membresias avanza -- cerca del 80% de las perdidas revertidas para abril 2026 -- y la posicion de caja neta se mantiene solida en +905M USD. Veredicto: Mantener con cautela mientras se confirma normalizacion operativa en Q2 2026.
 
-Fundada en 2010 y listada en NYSE en 2021, Coupang opera la red de e-commerce mas grande de Corea del Sur con 24.6 millones de clientes activos. Su ventaja competitiva central es Rocket Delivery: entrega gratuita al dia siguiente para millones de productos, posible gracias a su infraestructura logistica end-to-end completamente integrada. La empresa ha expandido su ecosistema hacia delivery de restaurantes (Eats), streaming (Play), fintech y moda de lujo (Farfetch). En 2025 reporto ingresos de $34.5B con margen adj. EBITDA del 4.3%, aunque un incidente de datos en noviembre 2025 y el programa de compensacion de $1.2B en vouchers representa un riesgo relevante para 2026.
+Coupang es el mayor operador de e-commerce de Corea del Sur, con operaciones secundarias en Taiwan y presencia en el segmento de lujo via Farfetch (adquirido en 2024). Opera bajo dos segmentos: Product Commerce (e-commerce, Rocket Delivery, Rocket Fresh para alimentos) y Developing Offerings (Coupang Eats, Coupang Play streaming, Coupang Pay y Taiwan). La membresia WOW es el eje de monetizacion y fidelizacion de la plataforma, con entregas al dia siguiente como diferenciador central. El modelo de ingresos combina ventas directas de productos, comisiones de marketplace y servicios de suscripcion. Mercado principal: Corea del Sur (~90% de revenue); expansion en curso hacia Taiwan.
 
 **Datos financieros**:
-- Ingresos (B): $34.5 (+14.1% YoY)
-- Ganancia Bruta (B): $10.1 (+14.9% YoY)
-- Margen Bruto: 29.4% (+0.2pp YoY)
-- Ing. Operativo (B): $0.47 (+8.5% YoY)
-- Margen Operativo: 1.4% (0pp YoY)
-- Utilidad Neta (B): $0.21 (+224% YoY)
-- Margen Neto: 0.6% (+0.4pp YoY)
-- Adj. EBITDA (B): $1.49 (+8.4% YoY)
-- FCF (B): $0.53 (-48% YoY)
-- Clientes Activos (M): 24.6 (+7.9% YoY)
+- Revenue (B USD): 8.5 (+7.5% YoY)
+- Utilidad Neta (B USD): -0.27 (N/D YoY)
+- Margen Neto (%): -3.1% (-4.6pp YoY)
+- EBITDA (B USD): -0.10 (N/D YoY)
+- FCF (B USD): -0.11 (N/D YoY)
+- EPS Diluido: -0.15 (N/D YoY)
+- Deuda Neta (B USD): -0.91 (-57.7% YoY)
 
-**Valuacion**: Precio $19.36, P/E Forward 35.8x, Market Cap $35.9B, Ingresos 2025 $34.5B, Margen Bruto 29.4%, Margen Neto 0.6%, Adj. EBITDA $1.49B, FCF 2025 $0.53B, Caja Neta $5.67B, P/Ventas 1.04x, EV/EBITDA 20.3x, ROE 2025 2.4%, Clientes Activos 24.6M
+**Valuacion**: P/E Trailing N/A, P/E Forward 79x, EV/Revenue 0.9x, P/FCF N/A, Deuda Neta/EBITDA -0.9x, ROE 4.8%, ROA 1.3%
 
-**Veredicto**: MANTENER / ACUMULAR EN CAIDAS (Score: 6.4/10)
-- Lider indiscutible del e-commerce en Korea con 24.6M clientes activos y ventajas logisticas unicas
-- Balance muy solido con $5.67B de caja neta — sin riesgo de solvencia
-- Crecimiento de ingresos sostenido (+14% USD, +18% moneda constante)
-- Margen neto de solo 0.6% — la rentabilidad neta sostenida sigue siendo el principal catalizador pendiente
-- Incidente de datos noviembre 2025: programa de vouchers $1.2B reducira ingresos en 2026
-- Valuacion atractiva a 1.0x ventas vs peers de e-commerce que cotizan 4-6x ventas
+**Veredicto**: Mantener (Score: 5.8/10)
++ Revenue resiste el shock -> A pesar del incidente de datos y la perdida masiva de membresias WOW, el revenue crecio 7.5% YoY en Q1 2026 hasta 8,504M USD. La infraestructura de Rocket Delivery y el liderazgo de mercado en Corea mantienen el top-line intacto, confirmando la resiliencia del modelo subyacente.
++ Recuperacion de membresias avanza -> El 80% de las membresias WOW perdidas fue recuperado para abril 2026. Si Q2 2026 refleja normalizacion del margen bruto hacia el rango 29-30%, el impacto del incidente se confirmara como transitorio y el escenario de EPS FY2026 de $0.22 se vuelve factible.
+- Margenes en colapso: riesgo de transicion -> El margen operativo se derrumbo de +1.95% a -2.85% YoY (-480bp) y el FCF viro a negativo. Coupang nunca tuvo margenes amplios y un trimestre perdidoso revela la fragilidad del modelo ante shocks externos. Hasta que Q2 2026 confirme recuperacion, la incertidumbre de rentabilidad es el riesgo dominante.
+- P/E forward de 79x no tiene sustento si margenes no se normalizan -> Con precio a $17.38 y EPS 2026E de $0.22, el multiplo forward es extremadamente elevado y asume normalizacion total en H2 2026. Si las estimaciones se revisan a la baja, hay riesgo de multiple contraction severo sobre un precio ya deprimido (-49% desde maximos de 52 semanas).
 
 ---
 
@@ -798,26 +796,26 @@ Microsoft opera tres segmentos: Intelligent Cloud (~43% de ingresos, liderado po
 **URL**: https://reportes.murzainversiones.com/reporte/SNDK
 **Publicado**: 2026-04-02
 
-SanDisk (SNDK) es lider global en almacenamiento NAND flash, separada de Western Digital en febrero 2025 como empresa publica independiente. Opera en mercados de Cloud, Client y Consumer con fuerte recuperacion del margen bruto (7% en FY2023 a 30% en FY2025). Sin embargo, la utilidad neta es negativa por goodwill impairment no-cash de $1.83B. La valuacion de mercado (~$102B) implica expectativas muy altas de recuperacion futura. Recuperacion operativa dramatica en margen bruto (+23pp en 2 anos) y crecimiento de ingresos +10.5% YoY. El catalizador principal es el segmento Cloud (principalmente SSDs para centros de datos con IA), que crecio 195% YoY. Sin embargo, las perdidas netas y la valuacion elevada requieren cautela.
+SanDisk reporto resultados historicos en Q3 FY2026 (enero-marzo 2026): ingresos de 5.95B USD (+251% YoY) y utilidad neta de 3.61B USD (EPS diluido GAAP $23.03), aplastando la guia de la propia empresa de $12-$14 EPS por un margen del 60%. La empresa liquido toda su deuda a largo plazo y acumulo 3.74B USD en caja, cerrando el trimestre libre de deuda por primera vez. La transformacion de NAND commodity a proveedor de storage AI de alto margen se refleja en un margen bruto GAAP de 78.4% (+55.8pp YoY). Con un backlog contractual de 42B USD en acuerdos de suministro plurianuales que cubren mas de un tercio de los envios estimados de FY2027, el ciclo ya no depende exclusivamente del spot. Veredicto: transformacion estructural en curso; la ciclicidad historica del NAND esta siendo reemplazada por visibilidad de ingresos a largo plazo.
 
-SanDisk es lider en almacenamiento flash NAND, separada de Western Digital en febrero 2025. Desarrolla y fabrica dispositivos y soluciones de almacenamiento para mercados Cloud, Client y Consumer. Su portfolio incluye SSDs enterprise, tarjetas de memoria, USB flash drives y soluciones embebidas para OEMs. Moat: JV estrategica con Kioxia para manufactura BiCS NAND, marca SanDisk globalmente reconocida, cartera de patentes y relaciones establecidas con hyperscalers y OEMs. Post-separacion de WDC, estrategia enfocada en flash puro con mayor flexibilidad de capital.
+SanDisk Corporation (CIK 0002023554, Nasdaq: SNDK) es el fabricante puro de NAND flash y SSDs resultante del spinoff de Western Digital completado en 2024-2025. Opera en tres segmentos: Data Center (enterprise SSDs TLC de alto rendimiento para AI inference y training, 24.7% del revenue en Q3 FY2026), Edge (SSDs cliente para PCs, laptops y dispositivos, 61.6%) y Consumer (tarjetas y drives retail, 13.8%). El modelo de negocio evoluciona desde ventas spot en mercado ciclico hacia contratos NBM (New Business Model) de largo plazo con clientes hyperscaler que incluyen garantias financieras y precios indexados. Clientes: grandes cloud providers (AWS, Google, Microsoft, Meta), fabricantes de PCs y canales retail. Competidores: Samsung, SK Hynix, Micron. Ano fiscal termina en junio (ultimo viernes de junio). La empresa mantiene fabricacion propia en JV con Kioxia (Yokkaichi, Japon) y se beneficia directamente de la demanda de almacenamiento para modelos de IA y centros de datos de proxima generacion.
 
 **Datos financieros**:
-- Revenue (B USD): 7.36 (+10.5% YoY)
-- Utilidad Bruta (B USD): 2.21 (+106.5% YoY)
-- Margen Bruto: 30.1% (+14.0pp YoY)
-- EBITDA Ajustado (B USD): 0.61 (N/D YoY)
-- FCF (B USD): -0.12 (N/D YoY)
-- EPS GAAP Diluido: -11.24 (N/D YoY)
-- Deuda Neta (B USD): 0.37 (N/D YoY)
+- Revenue (B USD): 5.95 (+251.0% YoY)
+- Utilidad Neta (B USD): 3.61 (N/A (vs -1.93B) YoY)
+- Margen Neto (%): 60.8% (+74.8pp YoY)
+- EBITDA (B USD): 4.15 (N/A (positivo) YoY)
+- FCF (B USD): 2.99 (N/A (positivo) YoY)
+- EPS Diluido: 23.03 (N/A (vs -13.33) YoY)
+- Deuda Neta (B USD): -3.74 (N/A (net cash) YoY)
 
-**Valuacion**: P/E Trailing N/A, P/E Forward 9.5x, EV/EBITDA (adj) 169x, P/FCF N/A, Margen Bruto 30.1%, Margen Operativo -18.7%, Margen Neto -22.3%, ROE -65.6%, ROIC (adj.) 12.4%, Deuda Neta / EBITDA 0.6x
+**Valuacion**: P/E Trailing 41.4x, P/E Forward 9.4x, EV/EBITDA 10.7x, P/FCF 15.8x, Deuda Neta/EBITDA 0.0x, ROE 52.5%, ROA 40.2%
 
-**Veredicto**: Especulativo — Alta Valuacion (Score: 4.2/10)
-+ Recuperacion operativa real — El margen bruto paso de 7.1% a 30.1% en 2 anos, una de las recuperaciones mas rapidas en la historia del sector NAND. El segmento Cloud crece +195% YoY impulsado por SSDs para IA.
-+ Catalizador estructural IA — La demanda de SSDs enterprise para centros de datos de IA es un mega-trend secular. SanDisk tiene posicion privilegiada via su JV con Kioxia.
-- Valuacion extrema sin soporte — Market cap de 102B con perdidas netas, sin historial independiente y EV/EBITDA de 169x. El mercado ya descuenta un escenario perfecto de recuperacion que requiere 2-3 anos de ejecucion impecable.
-- Riesgo ciclico y competitivo — El mercado NAND es altamente ciclico. Samsung y SK Hynix tienen mayor escala integrada. Un deterioro del ciclo puede revertir rapidamente los avances de margen.
+**Veredicto**: Mantener con Seguimiento Activo (Score: 7.6/10)
++ Transformacion estructural verificada -> De -1.93B de perdida neta a +3.61B de ganancia en el mismo trimestre de un ano a otro. El margen bruto GAAP de 78.4% no es puntual: es el resultado de contratos NBM premium que reemplazan ventas spot. El backlog de 42B con garantias de 11B le da visibilidad que la empresa nunca tuvo antes.
++ Valuacion atractiva en terminos forward -> Con P/E forward de 9.4x basado en la guia de Q4 FY2026 ($30-33 EPS) y un balance neto en caja de 3.74B, la empresa cotiza a multiples bajos para la tasa de crecimiento y el perfil de margen actual. El P/FCF de 15.8x es notablemente bajo para una empresa generando 50% de FCF margin.
++ Balance transformado: cero deuda, buyback de 6B -> Elimino toda la deuda LT en 9 meses y autorizo recompra por 6B USD. Este nivel de confianza ejecutiva en la generacion sostenida de caja es inusual en la industria de memoria, historicamente ciclica y propensa a destruir capital en fases de expansion.
+- Ciclicidad NAND como riesgo estructural irresuelto -> Tres de los cuatro anos fiscales previos cerraron con perdidas. El superciclo AI puede durar 2-4 anos adicionales, pero el mercado NAND tiene historia de colapsos abruptos de precios. Los contratos NBM mitigan pero no eliminan el riesgo; un ciclo completo bajista como empresa independiente aun no ha sido probado.
 
 ---
 
@@ -825,26 +823,26 @@ SanDisk es lider en almacenamiento flash NAND, separada de Western Digital en fe
 **URL**: https://reportes.murzainversiones.com/reporte/MELI
 **Publicado**: 2026-04-01
 
-MercadoLibre reporto Revenue FY2025 de $28.89B (+39% YoY), EBITDA de $4.02B y Operating Cash Flow de $12.12B. La empresa consolida su posicion como el ecosistema tecnologico dominante de America Latina, con Mercado Pago superando al marketplace como principal generador de revenue. La valuacion de 43.6x P/E sobre un crecimiento de +39% y un FCF yield del 12.9% representa una propuesta de valor atractiva para inversores de largo plazo.
+MercadoLibre reporto resultados excepcionales en Q1 2026: ingresos de $8.845B (+49% YoY), GMV de $19.0B (+42%) y TPV de $87.2B (+50%), confirmando la posicion dominante del ecosistema en America Latina. La compresion de margenes es deliberada: el margen operativo cayo a 6.9% (-600bps YoY) por inversion masiva en shipping gratuito en Brasil, expansion agresiva de la cartera de credito (+87% a $14.6B) y construccion de ventajas competitivas en logistica y 1P. El FCF ajustado fue -$56M porque ~$1.9B se destino a crecimiento del libro de credito, no por debilidad operativa. Veredicto: Mantener con Sesgo Positivo; el negocio sigue compuesto a tasas extraordinarias, pero la compresion de margenes exige monitoreo trimestral.
 
-MercadoLibre Inc. opera el ecosistema de comercio electronico y tecnologia financiera mas grande de America Latina, con presencia en 18 paises y 100M+ de usuarios activos. Sus cinco verticales principales son: Marketplace (GMV con comision variable), Mercado Pago (procesamiento de pagos y billetera digital con TPV $200B+), Mercado Credito (origina prestamos a compradores, vendedores y consumidores usando datos del ecosistema), Mercado Envios (red logistica 1P y 3PL con entrega same-day en principales ciudades) y Mercado Ads (publicidad digital sobre la base de datos del marketplace). La ventaja competitiva central es el flywheel de datos: cada interaccion refuerza los demas segmentos y aumenta el switching cost del usuario.
+MercadoLibre opera el ecosistema de ecommerce y fintech mas grande de America Latina, con presencia en Argentina, Brasil, Mexico, Chile, Colombia, Peru y otros paises. Sus cinco pilares son: Mercado Libre (marketplace con 84M de compradores activos unicos, 722M items vendidos en Q1 2026), Mercado Pago (pagos digitales con $87.2B de TPV en Q1 2026, 83M MAUs fintech), Mercado Credito (cartera de credito de $14.6B incluyendo $6.6B en tarjetas), Mercado Envios (logistica propia con fulfillment acelerado) y Mercado Ads (publicidad digital +63% FX-neutral en Q1 2026). El modelo genera ingresos por comisiones de marketplace, procesamiento de pagos, intereses del libro de credito, logistica y publicidad. Brasil representa aproximadamente el 60% del negocio, Mexico ~20% y Argentina el resto de LATAM.
 
 **Datos financieros**:
-- Revenue ($B): 28.89 (+39% YoY)
-- Utilidad Neta ($B): 2 (+4.7% YoY)
-- Margen Neto (%): 6.9% (-2.3pp YoY)
-- EBITDA ($B): 4.02 (+23.7% YoY)
-- FCF ($B): 11.22 (N/D YoY)
-- EPS ($): 39.45 (+4.7% YoY)
-- Deuda Neta ($B): 5.52 (N/D YoY)
+- Revenue (B USD): 8.85 (+49.0% YoY)
+- Utilidad Neta (B USD): 0.42 (-15.6% YoY)
+- Margen Neto (%): 4.7% (-3.6pp YoY)
+- EBITDA (B USD): 0.86 (-9.3% YoY)
+- FCF Ajustado (B USD): -0.06 (N/D YoY)
+- EPS Diluido: 8.23 (-15.5% YoY)
+- Deuda Neta (B USD): 6.25 (+102.9% YoY)
 
-**Valuacion**: P/E Trailing 43.6x, P/E Forward 39.6x, EV/EBITDA 23.1x, P/FCF 7.8x, FCF Yield 12.9%, Margen Bruto 44.5%, Margen Neto 6.9%, Deuda/EBITDA 1.4x
+**Valuacion**: P/E Trailing 49.4x, P/E Forward 43.5x, EV/EBITDA 25.7x, P/FCF (FY2025) 8.8x, Deuda Neta/EBITDA 1.59x, ROE (anualizado) 22.9%, ROA (anualizado) 3.6%
 
-**Veredicto**: Mantener con Sesgo Positivo (Score: 7.4/10)
-+ Liderazgo LATAM inexpugnable -> MELI domina el e-commerce en Brasil, Mexico y Argentina con mas del 60% del GMV regional. La red de logistica propia (Mercado Envios), la billetera digital (Mercado Pago) y el credito embebido (Mercado Credito) crean costos de cambio que Amazon y Shopee no han podido superar en 5 anos de competencia directa.
-+ Flywheel fintech en punto de inflexion -> Mercado Pago supero al marketplace como contribuidor de revenue por primera vez en FY2025. El OCF de $12.1B (+53% YoY) refleja la generacion de caja del negocio financiero en plena madurez. El potencial de un spin-off o re-rating de Mercado Pago como fintech independiente es el catalizador de mayor valor no reflejado en el precio actual.
-+ Valuacion razonable dado el perfil de crecimiento -> A 43.6x P/E TTM sobre una empresa con +39% de crecimiento y FCF yield del 12.9%, el PEG ratio esta por debajo de 1.5x — punto de entrada atractivo en una empresa con moat comprobado y runway de expansion en fintech aun no descontado.
-- Riesgo cambiario LATAM no eliminable -> La exposicion a Argentina (inflacion ~100%+), Brasil y Mexico introduce volatilidad estructural en los resultados en USD. Una devaluacion simultanea en los 3 mercados principales puede comprimir el revenue reportado incluso con crecimiento operativo real solido. Requiere horizonte de largo plazo (3-5 anos) para que los catalizadores se materialicen.
+**Veredicto**: Mantener con Sesgo Positivo (Score: 8.1/10)
++ Flywheel en maxima aceleracion -> Revenue +49%, GMV +42%, TPV +50%, items sold +47%, fintech MAUs +29% -- todo el ecosistema acelera simultaneamente. Brasil GMV +38% FX-neutral con items sold +56% confirma que la inversion en free shipping funciona. No hay empresa de $95B de market cap creciendo al 49% en ningun mercado.
++ Fintech de $14.6B construyendo el banco digital de LATAM -> La tarjeta de credito a $6.6B (+104% YoY) con NIMAL de 17.8% es el activo mas subvalorado de MELI. Los bancos tradicionales de LATAM cotizan a 1-2x precio/libro; el negocio fintech de MELI merece una valuacion separada significativamente mayor.
++ AI como multiplicador de velocidad de ejecucion -> 31,000 empleados en Claude Cowork con productividad de ingenieros 7-10x superior es una ventaja competitiva que ningun competidor local puede replicar en el corto plazo. Esto contendra el crecimiento de costos futuros y acelera el roadmap de producto.
+- Compresion de margenes sin fecha de recuperacion -> El margen operativo de 6.9% es el mas bajo desde FY2021 y la gerencia no ha dado guia explicita de recuperacion. A P/E forward de 43.5x, el mercado necesita ver recuperacion de margenes en H2 2026 o el multiplo se convierte en una trampa de valoracion.
 
 ---
 
@@ -879,26 +877,26 @@ PLTR opera tres plataformas principales: Gotham (inteligencia y defensa gubernam
 **URL**: https://reportes.murzainversiones.com/reporte/NVO
 **Publicado**: 2026-03-31
 
-Novo Nordisk (NVO) reporto ingresos de $44.2B USD en 2025 (+6.4% YoY), una desaceleracion severa vs. el +25% de 2024, impulsada por presion de precios y perdida de liderazgo en el mercado GLP-1 de obesidad en EE.UU. frente a Eli Lilly. El margen operativo bajo de 44.2% a 41.3% y la accion cayo 48% en 2025. Lo sorprendente: a $36.75/ADR, NVO cotiza a solo 11x P/E y 7x EV/EBITDA — valuacion de empresa en declive para una compania con 81% margen bruto, $13.6B en caja neta y Ozempic generando $18B USD anuales. Nota: cifras en USD convertidas de DKK a tasa promedio aproximada.
+Novo Nordisk reporto resultados del Q1 2026 (enero-marzo 2026) que superaron las expectativas del consenso: ventas reportadas de DKK 96.8 mil millones (~$15.2B USD, +32% YoY), impulsadas por el lanzamiento historico del Wegovy pill oral y el crecimiento sostenido de Obesity care (+22% a CER). La utilidad neta alcanzo ~$7.6B USD y el EPS diluido ADR de $1.04 supero el consenso de $0.87 en 19%. La empresa elevo su guidance 2026 (ajustado a -4/-12% a CER, mejora frente al -5/-13% previo) respaldada por la fortaleza del GLP-1 oral. Con un margen bruto ajustado de 80.6% y un ROE de 71%, NVO sigue siendo el lider farmaceutico en obesidad/diabetes, aunque enfrenta presion de precios en EE.UU. y competencia creciente de Eli Lilly. Veredicto: Mantener con sesgo positivo; el lanzamiento del Wegovy pill redefine el mercado de obesidad oral y el descuento de valuacion actual (P/E 13x) es historicamente atractivo.
 
-Novo Nordisk A/S (fundada 1923, Dinamarca) es lider mundial en Obesidad y Diabetes care con mas de 69,500 empleados en ~80 paises y productos comercializados en ~170 paises. Sus ADRs cotizan en NYSE bajo el ticker NVO; sus acciones B en Nasdaq Copenhagen. El portafolio se divide en Obesity and Diabetes care — Ozempic (semaglutide inyectable, DKK 127B en ventas 2025), Wegovy (semaglutide, obesidad, DKK 79B), Rybelsus (semaglutide oral), Victoza, Saxenda, Tresiba e insulinas modernas y humanas — y Rare Disease: hormona del crecimiento (Norditropin) y productos para hemofilia (Esperoct, NovoEight). El moat de NVO reside en su plataforma de semaglutide (GLP-1) con 30+ anos de experiencia en la molecula, red de manufactura global propia, y acceso preferencial a pacientes a traves de programas de precio negociados. Sin embargo, en 2025 perdio el liderazgo en prescripciones semanales de GLP-1 en EE.UU. frente a tirzepatida de Eli Lilly.
+Novo Nordisk A/S es la empresa farmaceutica danesa lider global en tratamientos para diabetes y obesidad, operando bajo el ticker NVO (ADR) en NYSE y NOVO B en Copenhagen. Sus ingresos provienen de tres segmentos: (1) Obesity Care (~45% del total), liderado por Wegovy inyectable y el Wegovy pill oral lanzado en enero 2026; (2) Diabetes Care (~48%), dominado por Ozempic (semaglutide inyectable) y Rybelsus (oral); y (3) Rare Disease/Biopharm (~7%), con hemofilia y hormonas de crecimiento. La empresa reporta en coronas danesas (DKK) bajo IFRS y publica resultados trimestrales como 6-K y anuales como 20-F ante la SEC. La ventaja competitiva reside en su moat farmaceutico en GLP-1 (semaglutide): dos decadas de I+D, capacidad de manufactura biologica sin igual, y una red de 47,000+ empleados con presencia en mas de 170 paises. Cifras en USD convertidas desde DKK usando tipo de cambio implicito del reporte oficial (~6.37 DKK/USD para Q1 2026).
 
 **Datos financieros**:
-- Revenue ($B USD aprox): 44.2 (+6.4% YoY)
-- Utilidad Neta ($B USD): 14.6 (+1.4% YoY)
-- Margen Neto (%): 33.1% (-1.7pp YoY)
-- EBITDA ($B USD): 21.4 (+0.1% YoY)
-- FCF ($B USD): 4.0 (Mejora YoY)
-- EPS / ADR ($): $3.29 (+0.3% YoY)
-- Caja Neta ($B USD): (13.6) (Mejora YoY)
+- Revenue (B USD): 15.2 (+32% YoY)
+- Revenue adj. ex-340B (B USD): 11.0 (-4% CER YoY)
+- Utilidad Neta (B USD): 7.6 (~0% vs Q1 2025 YoY)
+- Margen Bruto adj. (%): 80.6% (-40bps YoY)
+- FCF (B USD): N/D (N/D YoY)
+- EPS Diluido ADR (USD): 1.04 (+13% vs Q1 2025 $0.92 YoY)
+- Deuda Neta (B USD): -3.0 (N/D YoY)
 
-**Valuacion**: P/E TTM 11.2x, P/E Forward 10.9x, EV/EBITDA 7.0x, P/FCF 41.0x, Deuda/EBITDA Caja neta, ROE 52.7%, ROIC 39.3%
+**Valuacion**: P/E Trailing 10.9x, P/E Forward 13.3x, EV/EBITDA 8.4x, P/FCF 24.1x, Deuda Neta/EBITDA 0.83x, ROE 71.4%, ROA 19.3%
 
-**Veredicto**: Mantener / Especulativo en recuperacion (Score: 6.2/10)
-+ Valuacion de oportunidad historica -> P/E de 11x y EV/EBITDA de 7x para una compania con 81% margen bruto, $13.6B en caja neta y Ozempic generando ~$18B USD anuales es una anomalia rara en el sector farma de alta calidad.
-+ Balance impecable como red de seguridad -> Caja neta de $13.6B, sin deuda neta, dividendo creciente del 50% del NI y capacidad de iniciar recompras masivas si el precio sigue deprimido.
-+ Wegovy Pill como catalizador de 2026 -> Semaglutide oral lanzado en Q1 2026 elimina la barrera de inyeccion; si captura penetracion significativa en el mercado de obesidad, puede revertir la narrativa negativa.
-- Guidance 2026 negativo es riesgo real -> La contraccion de revenue de -5% a -13% refleja vientos en contra estructurales (MFN, perdida de exclusividad, compresion de precios) que no se resuelven en uno o dos trimestres.
+**Veredicto**: Mantener (Score: 8.1/10)
++ Wegovy pill: nueva categoria -> El oral semaglutide debuto con $355M en Q1 2026 y 1.3M de prescripciones — el lanzamiento de GLP-1 oral mas rapido en la historia. Con mas de 400M de personas con obesidad en EE.UU. y Europa sin acceso actual, el mercado oral supera al inyectable en potencial. Este producto redefine la trayectoria de crecimiento de largo plazo de NVO.
++ Valuacion de descuento historico -> P/E forward 13.3x y EV/EBITDA 8.4x son multiples inconsistentes con ROE de 71%, margen bruto del 80% y liderazgo en el mercado farmaceutico de mayor crecimiento global. La caida de -40% desde el pico de 2024 crea una asimetria de riesgo/retorno favorable para el inversor de largo plazo dispuesto a esperar el re-rating.
++ Pipeline post-2026 con alta conviction -> CagriSema (datos Phase 3 esperados 2H2026) podria superar al Wegovy inyectable con -22% de peso corporal en Phase 2. Nuevas indicaciones (MASLD, ERC, insuficiencia cardiaca) amplian el mercado total de semaglutide mas alla de obesidad y diabetes, potencialmente duplicando el pool de pacientes elegibles.
+- IRA + LLY oral: presion doble en 2026-2027 -> El Inflation Reduction Act comprime precios de Ozempic en Medicare desde 2027; Eli Lilly entra al mercado oral de obesidad con Foundayo en abril 2026. Estos dos factores crean vientos en contra estructurales que limitan la re-expansion de multiples en el corto plazo y justifican Mantener vs Comprar con Conviccion hasta ver data de Q2 2026 en escala del oral.
 
 ---
 
@@ -933,26 +931,26 @@ Lilly opera en un unico segmento de negocios: descubrimiento, desarrollo, fabric
 **URL**: https://reportes.murzainversiones.com/reporte/AMD
 **Publicado**: 2026-03-30
 
-Advanced Micro Devices (AMD) cerro FY2024 con revenue de $25.8B (+14% YoY) impulsado por un crecimiento explosivo del segmento Data Center (+94%), que ya representa el 49% de los ingresos totales. A pesar de la contraccion severa en Gaming (-58%), el balance financiero mejoro notablemente con FCF de $2.4B y deuda neta negativa (posicion de caja neta). Con los resultados FY2025 ya publicados ($34.6B de revenue, EPS GAAP $2.65), AMD esta en trayectoria de crecimiento acelerado en IA y centros de datos, aunque cotiza a valuaciones exigentes.
+AMD reporto resultados record en Q1 2026 (enero-marzo 2026): ingresos de $10.25B (+38% YoY) y utilidad neta GAAP de $1.38B (+95% YoY), superando las estimaciones del consenso en ambas lineas. El segmento Data Center alcanzo $5.78B (+57% YoY), impulsado por GPU Instinct MI300 y procesadores EPYC Turin, consolidando a AMD como el retador mas serio de NVIDIA en infraestructura de IA. El EPS Non-GAAP fue $1.37 (+43% YoY), con un margen FCF record del 25% sobre revenue. La guia Q2 2026 de $11.2B implica crecimiento YoY del 46%, senalizando que el ciclo de demanda de IA continua acelerando. Veredicto: oportunidad de crecimiento con valuacion exigente; la tesis depende de la ejecucion sostenida en Data Center frente a NVIDIA.
 
-Advanced Micro Devices (AMD) es un disenador de semiconductores fabless fundado en 1969 con sede en Santa Clara, California, que cotiza en NASDAQ. La empresa disena y comercializa microprocesadores (CPU), unidades de procesamiento grafico (GPU), FPGAs y circuitos integrados para centros de datos, PCs, consolas de videojuegos y aplicaciones embebidas. Sus ingresos provienen de cuatro segmentos: Data Center (EPYC CPUs e Instinct MI300 GPUs para IA), Client (Ryzen CPUs para PCs), Gaming (GPUs Radeon y chips para consolas Sony/Microsoft), y Embedded (FPGAs y SoCs Xilinx para mercados industriales y aeroespaciales). AMD compite directamente con Intel en CPUs y con NVIDIA en GPUs para IA, siendo el mayor rival de ambos en sus respectivos mercados.
+Advanced Micro Devices opera cuatro segmentos: Data Center (~56% de ingresos en Q1 2026, GPU Instinct + EPYC), Client (~28%, procesadores Ryzen para PCs), Gaming (~7%, GPU Radeon + chips para consolas), y Embedded (~9%, SoC para aplicaciones industriales y automotriz). El modelo de negocio es semiconductor de diseno puro (fabless): AMD disena los chips y los fabrica a traves de TSMC. La apuesta estrategica central es la plataforma ROCm para IA y los GPU Instinct MI300X/MI325X como alternativa a los GPU H100/H200 de NVIDIA en centros de datos. AMD cotiza en NASDAQ (ticker: AMD) y compite directamente con Intel en CPU y con NVIDIA en GPU para IA.
 
 **Datos financieros**:
-- Revenue ($B): 34.64 (+34.3% YoY)
-- Utilidad Neta ($B): 4.34 (+164.6% YoY)
-- Margen Neto (%): 12.5% (+6.1pp YoY)
-- EBITDA ($B): 6.69 (+55.9% YoY)
-- FCF ($B): 5.52 (+129.0% YoY)
-- EPS GAAP: $2.65 (+165.0% YoY)
-- Deuda Neta ($B): -7.33 (N/A YoY)
+- Revenue (B USD): 10.25 (+38.0% YoY)
+- Utilidad Neta (B USD): 1.38 (+95.1% YoY)
+- Margen Neto (%): 13.5% (+7.1pp YoY)
+- EBITDA (B USD): 2.23 (+68.9% YoY)
+- FCF (B USD): 2.57 (+N/D YoY)
+- EPS Diluido (GAAP): 0.84 (+90.9% YoY)
+- Deuda Neta (B USD): -9.12 (N/D YoY)
 
-**Valuacion**: P/E Ratio 77x, P/E Forward 30x, EV/EBITDA 51.3x, P/FCF 60.8x, Deuda/EBITDA 0.40x, ROE 2.8%, ROIC 2.8%
+**Valuacion**: P/E Trailing (GAAP) 157.8x, P/E Forward (Non-GAAP) 62.7x, EV/EBITDA (TTM) 102.3x, P/FCF (TTM) 103.8x, Deuda Neta/EBITDA -1.36x, ROE (anualizado Q1 2026) 8.6%, Margen FCF Q1 2026 25.0%
 
-**Veredicto**: Mantener / Vigilar (Score: 6.4/10)
-+ Data Center como motor principal -> El segmento crecio +94% en FY2024 hasta $12.6B y +32% adicional en FY2025 hasta $16.6B. Los chips Instinct MI300X para IA generativa son adoptados por hyperscalers como Meta, Microsoft y Oracle, y AMD aspira a >$5B en revenue solo de GPUs de IA en 2024, meta que supero.
-+ Balance solido con caja neta -> Deuda/EBITDA de solo 0.40x y posicion de caja neta de $3.4B al cierre FY2024 ($7.3B en FY2025). AMD tiene plena flexibilidad para recompras agresivas, R&D y potenciales adquisiciones sin comprometer su solidez financiera.
-+ Recuperacion de FCF acelerada -> Free Cash Flow paso de $1.12B en FY2023 a $2.41B en FY2024 y $5.52B en FY2025, una multiplicacion por casi 5x en dos anos. La conversion de ingresos a caja libre mejora estructuralmente con la escala en Data Center.
-- Riesgo principal: valuacion exigente y brecha con NVIDIA -> P/E trailing de 100x a $100/accion descuenta un escenario perfecto. Cualquier desaceleracion en adopcion de MI300/MI350 o retraso en ROCm podria comprimir el multiple agresivamente. NVIDIA mantiene >80% de cuota en GPUs para IA con un foso de software (CUDA) de 10+ años de profundidad.
+**Veredicto**: Mantener / Acumular en correcciones (Score: 7.2/10)
++ Data Center IA en aceleracion -> Revenue de Data Center $5.78B (+57% YoY) en Q1 2026 confirma que AMD gana cuota real en GPU para IA. La guia Q2 de $11.2B implica +46% YoY, senializando que el ciclo no ha alcanzado su pico. EPYC Turin y Instinct MI325X son productos tecnicamente competitivos con alta demanda de hyperscalers incluyendo Microsoft, Meta, Google y Oracle.
++ FCF record y balance impecable -> FCF Q1 2026 de $2.57B es record historico trimestral con margen del 25%. Caja neta de $9.12B y deuda neta negativa dan a AMD flexibilidad total para invertir en la proxima generacion de GPU (MI350/MI400) sin presion financiera. El modelo fabless mantiene bajo el capex estructural.
++ Expansion de margenes sostenida -> Margen bruto GAAP mejoro a 53% en Q1 2026 (+3pp YoY), margen operativo a 14.4% (+3.6pp) y margen neto a 13.5% (+4pp). La guia Q2 eleva el Non-GAAP a 56%, indicando que el mix hacia Data Center de mayor valor sigue mejorando la estructura de costos.
+- Valuacion exigente con CUDA como riesgo central -> P/E Forward Non-GAAP de 62.7x descuenta ejecucion perfecta durante 2026-2028. El moat de NVIDIA en software (CUDA, 15+ anos de ecosistema) es la barrera mas dificil de derribar para AMD. Cualquier trimestre con miss de estimados o aceleracion de NVIDIA en Blackwell/Rubin podria generar correcciones de 20-30% desde los niveles actuales.
 
 ---
 
