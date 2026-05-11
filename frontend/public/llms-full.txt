@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (45 empresas)
+## Reportes de acciones (46 empresas)
+
+### MA — Mastercard Incorporated
+**URL**: https://reportes.murzainversiones.com/reporte/MA
+**Publicado**: 2026-05-11
+
+Mastercard es el segundo mayor operador de redes de pago globales, procesando mas de 175,000 millones de transacciones anuales en mas de 210 paises. Su modelo de negocio como intermediario tecnologico sin asumir riesgo crediticio genera margenes estructuralmente elevados (margen operativo ~57.6%) y un FCF de $17.16B en FY2025. Con crecimiento de revenue del +16.4% y EPS del +18.9%, MA ejecuta consistentemente a doble digito apoyado en la expansion del gasto global con tarjeta, el crecimiento de pagos cross-border y la monetizacion de servicios de valor agregado. La accion cotiza con prima respecto al mercado, justificada por su posicion de duopolio junto a Visa.
+
+Mastercard opera la red de pagos electronicos Mastercard/Maestro/Cirrus que conecta emisores (bancos), adquirentes y comercios. Sus ingresos provienen de (1) Payment Network: comisiones de switching, evaluaciones sobre GDV (~$10.6T en 2025) y transacciones cross-border; y (2) Value-Added Services & Solutions: ciberseguridad, datos y analytics, servicios de lealtad, procesamiento y open banking. La red cuenta con +3.4B tarjetas activas. El moat es el efecto de red bilateral: cuantos mas emisores y comercios adoptan Mastercard, mas valioso es el ecosistema para todos. MA no emite tarjetas ni extiende credito, eliminando el riesgo de credito de su modelo. El duopolio global con Visa crea barreras de entrada practicamente infranqueables.
+
+**Datos financieros**:
+- Revenue (B USD): 8.40 (+16.4% YoY)
+- Utilidad Neta (B USD): 3.88 (+16.3% YoY)
+- Margen Neto: 46.2% (+0.0pp YoY)
+- EBITDA (B USD): 5.21 (+21.6% YoY)
+- FCF (B USD): 2.66 (+19.9% YoY)
+- EPS Diluido: 4.35 (+18.9% YoY)
+- Deuda Neta (B USD): ND (-15.1% YoY)
+
+**Valuacion**: P/E Trailing 30.1x, P/E Forward 26.9x, EV/EBITDA 22.9x, P/FCF 26.3x, Deuda Neta/EBITDA 0.38x, ROE 193%, ROIC 96%
+
+**Veredicto**: Comprar con Conviccion (Score: 9.0/10)
++ Duopolio irrompible -> Mastercard y Visa controlan >90% del mercado global de pagos con tarjeta. El efecto de red bilateral de 3.4B tarjetas y 100M+ puntos de aceptacion hace practicamente imposible la entrada de nuevos competidores a escala global.
++ Crecimiento compuesto sostenido -> Revenue crece +16% YoY en FY2025 y Q1 2026 confirma la tendencia (+15.8%). EPS crece +18.9% YoY gracias a expansion de margenes y recompras. El historial muestra 15+ anos de crecimiento de doble digito.
++ Maquina de FCF sin capital intensivo -> FCF de $17.16B en FY2025 (+20% YoY) con capex de solo $490M (1.5% del revenue). La compania devolvio $17.6B a accionistas en 2025. La generacion de caja es estructuralmente superior a cualquier banco con riesgo de credito.
+- Regulacion e interchange como riesgo latente -> La Credit Card Competition Act en EE.UU. y regulaciones de interchange en 12+ paises globalmente podrian comprimir las economics de la red. El duopolio de Mastercard/Visa atrae escrutinio regulatorio creciente.
+
+---
 
 ### JPM — JPMorgan Chase & Co.
 **URL**: https://reportes.murzainversiones.com/reporte/JPM
