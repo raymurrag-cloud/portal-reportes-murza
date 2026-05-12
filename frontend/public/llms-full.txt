@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-11
+**Actualizado**: 2026-05-12
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -27,7 +27,144 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (53 empresas)
+## Reportes de acciones (58 empresas)
+
+### GS — Goldman Sachs Group Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/GS
+**Publicado**: 2026-05-12
+
+Goldman Sachs Group Inc. (GS) es el banco de inversion mas reconocido del mundo, con liderazgo global en asesoria de M&A, mercados de capitales, trading de renta fija y variable, y gestion de activos. En FY2025 registro net revenues de $58.28B (+8.9% YoY) y utilidad neta de $17.18B (+20.3% YoY), con EPS diluido de $51.32, superando ampliamente el ciclo de contraccion de 2023. El ROE de 13.7% refleja una recuperacion solida post-estrategia Marcus. Veredicto: mantener con sesgo positivo ante el ciclo favorable de banking y trading.
+
+Goldman Sachs opera en tres segmentos: Global Banking & Markets (banca de inversion, FICC, equities y origination), Asset & Wealth Management (fondos alternativos, gestion patrimonial), y Platform Solutions (tarjetas de credito, prestamos al consumo en reduccion). El modelo de negocio de GS se distingue por su capacidad para capturar fees en transacciones de alto valor (IPOs, M&A, debt issuance) y por sus operaciones de trading que generan ingresos en mercados volatiles. A diferencia de bancos comerciales, la metrica primaria es el ROE sobre equity, no el margen bruto. GS compite directamente con JPMorgan, Morgan Stanley, Bank of America Merrill Lynch y boutiques de elite como Evercore y Lazard en advisory.
+
+**Datos financieros**:
+- Revenue (B USD): 58.28 (+8.9% YoY)
+- Utilidad Neta (B USD): 17.18 (+20.3% YoY)
+- Margen Neto: 29.5% (+2.8pp YoY)
+- EBITDA (B USD): 19.36 (+16.1% YoY)
+- FCF (B USD)*: -47.21 (n/a YoY)
+- EPS Diluido: 51.32 (+26.6% YoY)
+- Deuda Neta (B USD): 121.24 (+100.2% YoY)
+
+**Valuacion**: P/E Trailing 18.1x, P/E Forward 16.9x, EV/EBITDA 21.5x, P/Book 2.36x, Deuda/EBITDA 6.3x, ROE 13.7%, ROIC 7.0%
+
+**Veredicto**: Mantener (Score: 7.6/10)
++ Liderazgo en IB en ciclo favorable -> Con la reapertura del mercado de M&A y ECM post-2023, GS captura fees premium; el revenue y EPS de FY2025 establecen nuevos records post-pandemia.
++ Retorno de capital record -> $12.36B en recompras en FY2025 reducen el share count al ritmo mas rapido en anos, amplificando el EPS per share y creando valor acelerado para accionistas de largo plazo.
++ AWM en crecimiento estrategico -> La expansion en alternativos y wealth management de alto margen diversifica los revenues hacia fuentes mas estables y reduce la dependencia del ciclo de trading.
+- Ciclicidad y valuacion premium -> A 18.1x P/E trailing y 2.36x P/Book, GS cotiza con prima sobre peers bancarios; una contraccion del ciclo de IB o endurecimiento regulatorio podrian comprimir multiples y afectar el ROE objetivo de >15%.
+
+---
+
+### MCD — McDonald's Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/MCD
+**Publicado**: 2026-05-12
+
+McDonald's opera el mayor sistema de restaurantes del mundo con mas de 40,000 ubicaciones en 100+ paises, bajo un modelo ~95% franquiciado. Los ingresos reportados (~$26B) representan solo royalties, rentas y ventas de restaurantes propios, mientras las ventas del sistema superan los $130B. En FY2024 el revenue crecio +1.7% YoY pero las utilidades cayeron -2.9% afectadas por el brote de E. coli en Q4 que impacto las ventas comparables en EEUU; el modelo de franquicia sigue generando maquinaria de FCF con margenes operativos superiores al 45%.
+
+McDonald's Corporation es el operador de la cadena de restaurantes de comida rapida mas grande del mundo por ingresos. Con mas de 40,000 restaurantes en 100+ paises, aproximadamente el 95% son franquicias. Los ingresos reportados (~$26B en FY2024) incluyen: royalties y rentas de franquiciados + ventas directas de restaurantes operados por la empresa. Las ventas del sistema completo (system-wide sales) superan los $125B. El modelo franquiciado genera margenes operativos de 45%+ y FCF consistente. Dividend Aristocrat con 46+ anos consecutivos de crecimiento de dividendo.
+
+**Datos financieros**:
+- Revenue ($B): 25.92 (+1.7% YoY)
+- Utilidad Neta ($B): 8.22 (-2.9% YoY)
+- Margen Neto (%): 31.7% (-1.5pp YoY)
+- EBITDA ($B): 13.81 (+1.4% YoY)
+- FCF ($B): 6.67 (-8.0% YoY)
+- EPS (GAAP): 11.39 (-1.5% YoY)
+- Deuda Neta ($B): 37.34 (+7.4% YoY)
+
+**Valuacion**: P/E Ratio 24.4x, P/E Forward 22.8x, EV/EBITDA 17.2x, P/FCF 30.1x, Deuda/EBITDA 2.7x, FCF Yield 3.3%, ROE N/M
+
+**Veredicto**: Mantener (Score: 7.5/10)
++ Maquina de FCF por franquicia -> El modelo ~95% franquiciado genera $6.67B de FCF incluso en un ano con E. coli y presion en consumidor. Los margenes operativos de 45%+ son estructurales, no ciclicos.
++ Marca global invulnerable -> 40,000+ ubicaciones en 100+ paises con reconocimiento de marca instantaneo. La diversificacion geografica amortigua recesiones regionales y proporciona crecimiento por mercados emergentes.
++ Dividend Aristocrat con 46+ anos -> Dividendo creciente desde 1976 respaldado por FCF predecible. El yield de ~2.4% con crecimiento anual de ~9-10% es atractivo para inversores de largo plazo.
+- Presion en consumidor 2024-2025 -> Las ventas comparables en EEUU estuvieron bajo presion en 2024 por percepcion de precios altos. La recuperacion con plataformas de valor es correcta pero tomara 2-3 trimestres en normalizarse.
+
+---
+
+### BLK — BlackRock Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/BLK
+**Publicado**: 2026-05-12
+
+BlackRock es el mayor gestor de activos del mundo con mas de $11.5 billones en AUM, respaldado por su plataforma iShares de ETFs y el sistema de gestion de riesgo Aladdin. En FY2024 registro ingresos de $20.41B (+14.3% YoY), utilidad neta de $6.37B (+15.8%) y EPS GAAP de $42.01, reflejando expansion de margenes y crecimiento organico sostenido. El modelo capital-light, con margenes operativos superiores al 37%, y las adquisiciones estrategicas en mercados privados (GIP, HPS, Preqin) consolidan a BLK como una de las franquicias financieras mas solidas del mundo: veredicto COMPRAR CON CONVICCION.
+
+BlackRock, Inc. es el mayor gestor de activos del mundo, con mas de $11.5 trillones en activos bajo administracion al cierre de 2024. Fundada en 1988 y con sede en Nueva York, BlackRock ofrece gestion de inversiones en renta fija, renta variable, multi-activos y alternativos para clientes institucionales, minoristas y soberanos en todo el mundo. Su plataforma iShares es el mayor proveedor de ETFs a nivel global. La tecnologia Aladdin (Asset, Liability, Debt and Derivative Investment Network) es utilizada por mas del 7% de los activos financieros globales y genera ingresos recurrentes de tecnologia. El modelo de negocio capital-light basa sus ingresos en comisiones de gestion sobre AUM, lo que genera altos margenes y elevada conversion de caja. Las adquisiciones de Global Infrastructure Partners (GIP), HPS Investment Partners y Preqin en 2024-2025 aceleran la expansion en mercados privados.
+
+**Datos financieros**:
+- Revenue ($B): 20.41 (+14.3% YoY)
+- Utilidad Neta ($B): 6.37 (+15.8% YoY)
+- Margen Neto (%): 31.2% (+0.4pp YoY)
+- EBITDA ($B): 7.84 (+19.9% YoY)
+- FCF ($B): 4.7 (+22.7% YoY)
+- EPS (GAAP): 42.01 (+15.1% YoY)
+- Deuda Neta ($B): -0.45 (-0.37B YoY)
+
+**Valuacion**: P/E Ratio 27.3x, P/E Forward 17.9x, EV/EBITDA 22.5x, P/FCF 35.8x, Deuda/EBITDA 1.57x, ROE 11.9%, ROIC 9.2%
+
+**Veredicto**: Comprar con Conviccion (Score: 8.5/10)
++ Monopolio de facto en ETFs -> iShares con >$4T en AUM y 37% de market share global crea una barrera de entrada basada en liquidez, marca y primero en moverse que es practicamente imposible de replicar en una decada.
++ Aladdin stickiness -> La plataforma de riesgo procesa $21T en activos de clientes externos con tasas de retencion del 95%+. Genera ingresos de tecnologia recurrentes que crecen a doble digito independientemente del ciclo de mercado.
++ Expansion en mercados privados -> Las adquisiciones de GIP, HPS y Preqin transforman a BlackRock en el unico gestor de activos con capacidades de primer nivel en infraestructura, credito privado, ETFs pasivos y tecnologia de riesgo simultaneamente.
++ Crecimiento acelerado de EPS -> EPS GAAP de $42.01 en FY2024 (+15.1% YoY) y estimado forward de $60.66 implican un crecimiento de EPS del 44% en el proximo ejercicio segun consenso de analistas, que refleja sinergias de las adquisiciones.
+- Dependencia de mercados financieros -> Si los mercados caen 20%, el AUM y los ingresos caen proporcionalmente. En FY2022 el revenue cayo 7.7% por la caida de mercados. La expansion en alternativos mitiga pero no elimina este riesgo.
+- P/FCF elevado de 35.8x -> El P/FCF actual refleja expectativas de crecimiento muy optimistas que deben materializarse. Si las sinergias de las adquisiciones tardan o los mercados corrigen, la valoracion actual deja poco margen de seguridad.
+
+---
+
+### UNH — UnitedHealth Group Incorporated
+**URL**: https://reportes.murzainversiones.com/reporte/UNH
+**Publicado**: 2026-05-12
+
+UnitedHealth Group es la empresa de salud mas grande del mundo por ingresos, con ~$400B en revenue en FY2024 y un modelo unico que combina seguros de salud (UnitedHealthcare) con servicios de salud integrados (Optum). FY2024 fue un ano de presion excepcional: el ciberataque a Change Healthcare causo disrupciones masivas en claims processing, y el Medical Loss Ratio se elevatero impactando la rentabilidad del segmento asegurador. Con EPS GAAP de $15.51 (-35% YoY) y net income de $14.4B, el resultado puntual deteriora la foto anual, pero el negocio estructural permanece intacto. Veredicto: Mantener — empresa de calidad con viento en contra transitorio y FCF de $20.7B, pero con riesgos regulatorios y de MLR a monitorear.
+
+UnitedHealth Group opera a traves de dos segmentos principales. UnitedHealthcare es el mayor asegurador de salud de EE.UU., con mas de 50 millones de miembros cubiertos en planes comerciales, Medicare Advantage, Medicaid y beneficios globales. Optum es la unidad de servicios de salud y representa +50% del operating income: incluye OptumRx (pharmacy benefit management, tercer mayor PBM de EE.UU.), OptumHealth (atencion primaria y clinicas), y OptumInsight (analisis de datos, tecnologia y servicios de revenue cycle). La ventaja competitiva central reside en la integracion vertical: UNH canaliza clientes del seguro a servicios Optum, creando un flywheel de data clinica, menores costos y mejor experiencia. El revenue de Optum (~$230B incluyendo las operaciones internas) supero al de la division de seguros en 2024, consolidando la transformacion del modelo de negocio.
+
+**Datos financieros**:
+- Revenue ($B): 400.28 (+7.7% YoY)
+- Utilidad Neta ($B): 14.41 (-35.6% YoY)
+- Margen Neto (%): 3.6% (-2.4pp YoY)
+- EBITDA ($B): 36.39 (+0.2% YoY)
+- FCF ($B): 20.7 (-19.4% YoY)
+- EPS (GAAP): $15.51 (-35.0% YoY)
+- Deuda Neta ($B): 50.87 (+41.1% YoY)
+
+**Valuacion**: P/E Trailing 29.4x, P/E Forward 18.8x, EV/EBITDA 11.1x, P/FCF 17.1x, Deuda Neta/EBITDA 1.40x, ROE 12.2%, ROIC 16.2%
+
+**Veredicto**: Mantener (Score: 7.5/10)
++ Modelo dual UHC + Optum -> La integracion vertical de seguros y servicios de salud crea un moat casi inexpugnable: datos clinicos, escala en PBM y atencion primaria posicionan a UNH como el operador de salud mas completo de EE.UU., con Optum creciendo a mayor velocidad y mejor margen que el segmento asegurador.
++ FCF masivo y retorno consistente -> Incluso en el peor ano operativo de la decada ($20.7B FCF), UNH recompro $9B en acciones y pago $7.5B en dividendos. La disciplina de capital allocation en contextos adversos es una senal de calidad del management y solidez estructural del negocio.
++ Valuacion atractiva post-shock -> P/E Forward de 18.8x y EV/EBITDA de 11.1x representan descuentos significativos vs el sector salud y el mercado en general, compensando parcialmente los riesgos de MLR y regulacion. El mercado ya precio el impacto de Change Healthcare.
+- MLR y riesgo regulatorio persisten -> Si el Medical Loss Ratio no se normaliza en 2025 o si CMS reduce adicionalmente los reembolsos de Medicare Advantage, el EPS forward de $20.75 estaria en riesgo. La muerte del CEO en 2024 y el escrutinio politico al modelo integrado de UNH agregan incertidumbre que justifica un multiple de descuento.
+
+---
+
+### BAC — Bank of America Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/BAC
+**Publicado**: 2026-05-12
+
+Bank of America reporto ingresos de $105.9B en FY2024 (+3.0% YoY) con utilidad neta de $27.0B y EPS diluido de $3.19. El banco mantiene solida rentabilidad con ROE de 10.6% y una base de depositos de $1.9 trillion, aunque la compresion del NIM y la ciclicidad bancaria representan riesgos en un entorno de tasas a la baja. Veredicto: Mantener con sesgo positivo a largo plazo por escala inigualable y diversificacion de ingresos.
+
+Bank of America Corporation es el segundo banco mas grande de Estados Unidos por activos totales (~$3.3 trillion) y el mayor en banca de consumo. Opera a traves de cuatro segmentos: Consumer Banking (cuentas corrientes, hipotecas, tarjetas), Global Wealth and Investment Management con Merrill Lynch (~$4.2T en activos bajo gestion), Global Banking (prestamos corporativos, banca de inversion) y Global Markets (trading de renta fija, acciones y derivados). Su red incluye mas de 3,700 sucursales y 15,000 cajeros en EEUU.
+
+**Datos financieros**:
+- Revenue ($B): 105.86 (+3.0% YoY)
+- Utilidad Neta ($B): 26.97 (+2.5% YoY)
+- Margen Neto (%): 25.5% (-0.1pp YoY)
+- EBITDA ($B): 41.23 (+5.8% YoY)
+- FCF ($B): -12.71 (n/a YoY)
+- EPS (GAAP): 3.19 (+4.6% YoY)
+- Deuda Neta ($B): -6.83 (n/m YoY)
+
+**Valuacion**: P/E Ratio 12.6x, P/E Forward 10.0x, EV/EBITDA 8.2x, P/FCF 8.7x, Deuda/EBITDA -0.2x, ROE 10.6%, ROA 0.93%
+
+**Veredicto**: Mantener (Score: 7.0/10)
++ Escala inigualable -> Con $3.3T en activos y la mayor base de depositos consumer de EEUU, BAC tiene ventajas competitivas estructurales que se traducen en costo de fondeo bajo y poder de distribucion sin rival.
++ Merrill Lynch wealth management -> El segmento GWIM con $4.2T en activos gestionados genera ingresos por comisiones estables y de alta calidad, diversificando los ingresos del ciclo de tasas de interes.
++ Valuacion atractiva y capital return -> Con P/E forward de 10x y $22.6B devueltos al accionista en FY2024 (recompras + dividendos), BAC ofrece propuesta de valor solida para inversores de largo plazo.
+- Ciclicidad bancaria y sensibilidad a tasas -> El principal riesgo es la combinacion de compresion de NIM en entorno de tasas bajas y el potencial aumento de provision en una recesion, lo que puede presionar ganancias en 2025-2026.
+
+---
 
 ### BRK.B — Berkshire Hathaway Inc. (Class B)
 **URL**: https://reportes.murzainversiones.com/reporte/BRK.B
