@@ -517,13 +517,22 @@ function TickerSelect({ value, onChange, opciones, label, excludes }) {
 /* ── Pagina principal ────────────────────────────────────────────────────── */
 const MAX_EMPRESAS = 3;
 
+const SECCIONES = [
+  { key: 'financieros', label: 'Financieros Clave' },
+  { key: 'valuacion',   label: 'Valuacion y Multiples' },
+  { key: 'score',       label: 'Quality Score' },
+  { key: 'fortalezas',  label: 'Fortalezas' },
+  { key: 'riesgos',     label: 'Riesgos y Cautelas' },
+  { key: 'tesis',       label: 'Tesis de Inversion' },
+];
+
 export default function CompararPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [todosReportes, setTodosReportes] = useState([]);
   const [seleccionados, setSeleccionados] = useState(['', '', '']);
-  const [datos, setDatos] = useState([null, null, null]);
-  const [loading, setLoading] = useState([false, false, false]);
-  const [tabMobile, setTabMobile] = useState(0);
+  const [resultado, setResultado] = useState([]); // [{ ticker, reporte, json }]
+  const [cargando, setCargando] = useState(false);
+  const [error, setError] = useState('');
   const userToken = localStorage.getItem('portal_user_token');
 
   // Cargar lista de tickers disponibles
@@ -534,77 +543,73 @@ export default function CompararPage() {
     }).catch(() => {});
   }, []);
 
-  // Leer tickers de la URL al cargar
+  // Leer tickers de la URL al cargar y disparar comparacion
   useEffect(() => {
     const t = searchParams.get('t');
     if (t) {
-      const tickers = t.split(',').slice(0, MAX_EMPRESAS).map(s => s.trim().toUpperCase());
+      const tickers = t.split(',').slice(0, MAX_EMPRESAS).map(s => s.trim().toUpperCase()).filter(Boolean);
       const nuevos = ['', '', ''];
       tickers.forEach((tk, i) => { nuevos[i] = tk; });
       setSeleccionados(nuevos);
+      // Auto-cargar si vienen por URL
+      ejecutarComparacion(tickers);
     }
   }, []);
 
-  // Actualizar URL cuando cambian los seleccionados
-  useEffect(() => {
-    const activos = seleccionados.filter(Boolean);
-    if (activos.length > 0) {
-      setSearchParams({ t: activos.join(',') }, { replace: true });
-    }
-  }, [seleccionados]);
-
-  // Cargar datos de cada empresa seleccionada
-  useEffect(() => {
-    const token = localStorage.getItem('portal_user_token');
-    seleccionados.forEach(async (ticker, i) => {
-      if (!ticker) {
-        setDatos(prev => { const n = [...prev]; n[i] = null; return n; });
-        return;
-      }
-      setLoading(prev => { const n = [...prev]; n[i] = true; return n; });
-      try {
-        // slug va en mayúsculas tal como está en la BD (QCOM, MU, SNDK)
-        const r = token
-          ? await api.getReporteCompleto(ticker)
-          : await api.getReporte(ticker);
-        const jsonData = r.contenido_json
-          ? (typeof r.contenido_json === 'string' ? JSON.parse(r.contenido_json) : r.contenido_json)
-          : null;
-        setDatos(prev => { const n = [...prev]; n[i] = { reporte: r, json: jsonData }; return n; });
-      } catch {
-        setDatos(prev => { const n = [...prev]; n[i] = null; return n; });
-      } finally {
-        setLoading(prev => { const n = [...prev]; n[i] = false; return n; });
-      }
-    });
-  }, [seleccionados.join(',')]);
-
   const cambiarSeleccion = (idx, ticker) => {
     setSeleccionados(prev => {
-      const n = [...prev];
-      n[idx] = ticker;
-      return n;
+      const n = [...prev]; n[idx] = ticker; return n;
     });
-    if (idx === 0) setTabMobile(0);
-    else if (idx === 1) setTabMobile(0);
+    // Limpiar resultado previo al cambiar seleccion
+    setResultado([]);
+    setError('');
   };
 
-  const activos = seleccionados.map((tk, i) => ({ ticker: tk, idx: i, data: datos[i], loading: loading[i] }))
-    .filter(e => e.ticker);
+  const ejecutarComparacion = async (tickersParam) => {
+    const tickers = (tickersParam || seleccionados).filter(Boolean);
+    if (tickers.length < 2) {
+      setError('Selecciona al menos 2 empresas para comparar.');
+      return;
+    }
+    setError('');
+    setCargando(true);
+    setResultado([]);
 
-  const nColumnas = activos.length || 1;
+    // Actualizar URL
+    setSearchParams({ t: tickers.join(',') }, { replace: true });
 
-  /* ── Secciones del comparador ── */
-  const SECCIONES = [
-    { key: 'financieros', label: 'Financieros Clave' },
-    { key: 'valuacion',   label: 'Valuacion y Multiples' },
-    { key: 'score',       label: 'Quality Score' },
-    { key: 'fortalezas',  label: 'Fortalezas' },
-    { key: 'riesgos',     label: 'Riesgos y Cautelas' },
-    { key: 'tesis',       label: 'Tesis de Inversion' },
-  ];
+    try {
+      const token = localStorage.getItem('portal_user_token');
+      const promesas = tickers.map(ticker =>
+        (token ? api.getReporteCompleto(ticker) : api.getReporte(ticker))
+          .then(r => {
+            let json = null;
+            if (r.contenido_json) {
+              json = typeof r.contenido_json === 'string'
+                ? JSON.parse(r.contenido_json)
+                : r.contenido_json;
+            }
+            return { ticker, reporte: r, json };
+          })
+          .catch(() => ({ ticker, reporte: null, json: null }))
+      );
 
-  const empresasActivas = activos.filter(e => e.data);
+      const resultados = await Promise.all(promesas);
+      const validos = resultados.filter(r => r.json !== null);
+
+      if (validos.length === 0) {
+        setError('No se pudieron cargar los datos. Intenta de nuevo.');
+      } else {
+        setResultado(validos);
+      }
+    } catch {
+      setError('Error al cargar los datos. Intenta de nuevo.');
+    } finally {
+      setCargando(false);
+    }
+  };
+
+  const empresasActivas = resultado;
 
   return (
     <>
@@ -681,153 +686,126 @@ export default function CompararPage() {
             ))}
           </div>
 
-          {activos.length > 0 && (
-            <div style={{ marginTop: 10, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              <span style={{ fontSize: 11, color: 'var(--text-muted)', alignSelf: 'center' }}>Comparte esta comparacion:</span>
+          {/* ── Boton Comparar ── */}
+          <div style={{ marginTop: 16, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+            <button
+              onClick={() => ejecutarComparacion()}
+              disabled={cargando || seleccionados.filter(Boolean).length < 2}
+              style={{
+                padding: '11px 28px', borderRadius: 9, fontSize: 14, fontWeight: 700,
+                background: seleccionados.filter(Boolean).length < 2 ? 'var(--border)' : 'var(--gold-dark)',
+                color: seleccionados.filter(Boolean).length < 2 ? 'var(--text-muted)' : '#fff',
+                border: 'none', cursor: seleccionados.filter(Boolean).length < 2 ? 'not-allowed' : 'pointer',
+                fontFamily: 'inherit', transition: 'opacity 0.15s',
+                opacity: cargando ? 0.7 : 1,
+              }}
+            >
+              {cargando ? 'Cargando...' : 'Comparar empresas'}
+            </button>
+
+            {empresasActivas.length > 0 && (
               <button
                 onClick={() => { navigator.clipboard?.writeText(window.location.href); }}
                 style={{
-                  fontSize: 11, padding: '4px 12px', borderRadius: 6,
-                  background: 'var(--gold-pale)', color: 'var(--gold-dark)',
-                  border: '1px solid var(--gold-pale)', cursor: 'pointer', fontFamily: 'inherit',
+                  fontSize: 12, padding: '8px 16px', borderRadius: 8,
+                  background: 'var(--surface)', color: 'var(--gold-dark)',
+                  border: '1px solid var(--border)', cursor: 'pointer', fontFamily: 'inherit',
                   fontWeight: 600,
                 }}
               >
                 Copiar enlace
               </button>
+            )}
+          </div>
+
+          {error && (
+            <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 8, background: 'rgba(220,38,38,.08)', border: '1px solid rgba(220,38,38,.2)', color: RED, fontSize: 13 }}>
+              {error}
             </div>
           )}
         </section>
 
         {/* ── Estado vacío ── */}
-        {activos.length === 0 && (
+        {!cargando && empresasActivas.length === 0 && !error && (
           <section style={{ padding: '40px 48px', maxWidth: 1200, margin: '0 auto', width: '100%', textAlign: 'center' }}>
             <div style={{ fontSize: 40, marginBottom: 12 }}>⚖</div>
             <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--text)', marginBottom: 8 }}>
-              Selecciona al menos 2 empresas para comparar
+              Selecciona al menos 2 empresas y presiona "Comparar"
             </div>
             <div style={{ fontSize: 13, color: 'var(--text-muted)' }}>
-              Usa los selectores de arriba para elegir las empresas que quieres analizar lado a lado.
+              Puedes buscar por ticker (AAPL, NVDA) o por nombre de empresa.
             </div>
           </section>
         )}
 
+        {/* ── Cargando ── */}
+        {cargando && (
+          <section style={{ padding: '60px 48px', maxWidth: 1200, margin: '0 auto', width: '100%', textAlign: 'center' }}>
+            <div style={{ fontSize: 13, color: 'var(--text-muted)' }}>Cargando datos de {seleccionados.filter(Boolean).join(', ')}...</div>
+          </section>
+        )}
+
         {/* ── Cuerpo de comparacion ── */}
-        {activos.length > 0 && (
+        {empresasActivas.length > 0 && (
           <section style={{ padding: '0 48px 60px', maxWidth: 1200, margin: '0 auto', width: '100%' }}>
 
-            {/* ── Tabs mobile ── */}
-            {empresasActivas.length > 1 && (
-              <div style={{
-                display: 'none',
-                '@media (maxWidth: 640px)': { display: 'flex' },
-              }} className="comparar-tabs-mobile">
-                {empresasActivas.map((e, i) => (
-                  <button
-                    key={e.ticker}
-                    onClick={() => setTabMobile(i)}
-                    style={{
-                      flex: 1, padding: '10px 8px', fontSize: 13, fontWeight: tabMobile === i ? 700 : 500,
-                      background: tabMobile === i ? 'var(--gold-pale)' : 'var(--surface)',
-                      color: tabMobile === i ? 'var(--gold-dark)' : 'var(--text-muted)',
-                      border: '1px solid var(--border)',
-                      borderBottom: tabMobile === i ? '2px solid var(--gold-dark)' : '1px solid var(--border)',
-                      cursor: 'pointer', fontFamily: 'inherit',
-                      borderRadius: i === 0 ? '8px 0 0 0' : i === empresasActivas.length - 1 ? '0 8px 0 0' : 0,
-                    }}
-                  >
-                    {e.ticker}
-                  </button>
-                ))}
-              </div>
-            )}
-
             {/* ── Headers de empresa ── */}
-            {empresasActivas.some(e => e.data) && (
+            {empresasActivas.length > 0 && (
               <div style={{
                 display: 'grid',
                 gridTemplateColumns: `repeat(${empresasActivas.filter(e => e.data).length}, 1fr)`,
                 gap: 12,
                 marginBottom: 4,
               }}>
-                {empresasActivas.map(e => {
-                  if (!e.data) return null;
-                  return (
-                    <CompanyCard
-                      key={e.ticker}
-                      reporte={e.data.reporte}
-                      json={e.data.json}
-                      section="header"
-                      nEmp={nColumnas}
-                    />
-                  );
-                })}
+                {empresasActivas.map(e => (
+                  <CompanyCard
+                    key={e.ticker}
+                    reporte={e.reporte}
+                    json={e.json}
+                    section="header"
+                    nEmp={empresasActivas.length}
+                  />
+                ))}
               </div>
             )}
 
             {/* Descripcion */}
-            {empresasActivas.some(e => e.data?.json?.descripcion) && (
+            {empresasActivas.some(e => e.json?.descripcion) && (
               <>
                 <SectionTitle label="Descripcion del Negocio" />
                 <div style={{
                   display: 'grid',
-                  gridTemplateColumns: `repeat(${empresasActivas.filter(e => e.data).length}, 1fr)`,
+                  gridTemplateColumns: `repeat(${empresasActivas.length}, 1fr)`,
                   gap: 12, marginBottom: 4,
                 }}>
-                  {empresasActivas.map(e => {
-                    if (!e.data) return null;
-                    return (
-                      <CompanyCard key={e.ticker} reporte={e.data.reporte} json={e.data.json} section="descripcion" />
-                    );
-                  })}
+                  {empresasActivas.map(e => (
+                    <CompanyCard key={e.ticker} reporte={e.reporte} json={e.json} section="descripcion" />
+                  ))}
                 </div>
               </>
             )}
 
             {/* Secciones genericas */}
-            {SECCIONES.map(sec => {
-              const tieneData = empresasActivas.some(e => e.data?.json);
-              if (!tieneData) return null;
-              return (
-                <div key={sec.key}>
-                  <SectionTitle label={sec.label} />
-                  <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: `repeat(${empresasActivas.filter(e => e.data).length}, 1fr)`,
-                    gap: 12, marginBottom: 4,
-                  }}>
-                    {empresasActivas.map(e => {
-                      if (!e.data) return null;
-                      if (loading[e.idx]) return (
-                        <div key={e.ticker} style={{
-                          background: 'var(--surface)', border: '1px solid var(--border)',
-                          borderRadius: 10, padding: '20px 16px',
-                          color: 'var(--text-muted)', fontSize: 12,
-                        }}>
-                          Cargando...
-                        </div>
-                      );
-                      return (
-                        <CompanyCard
-                          key={e.ticker}
-                          reporte={e.data.reporte}
-                          json={e.data.json}
-                          section={sec.key}
-                          nEmp={empresasActivas.length}
-                        />
-                      );
-                    })}
-                  </div>
+            {SECCIONES.map(sec => (
+              <div key={sec.key}>
+                <SectionTitle label={sec.label} />
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: `repeat(${empresasActivas.length}, 1fr)`,
+                  gap: 12, marginBottom: 4,
+                }}>
+                  {empresasActivas.map(e => (
+                    <CompanyCard
+                      key={e.ticker}
+                      reporte={e.reporte}
+                      json={e.json}
+                      section={sec.key}
+                      nEmp={empresasActivas.length}
+                    />
+                  ))}
                 </div>
-              );
-            })}
-
-            {/* Loading inicial */}
-            {activos.some(e => e.loading && !e.data) && (
-              <div style={{ textAlign: 'center', padding: '40px 0', color: 'var(--text-muted)', fontSize: 13 }}>
-                Cargando datos...
               </div>
-            )}
+            ))}
 
             {/* CTA ver reportes completos */}
             {empresasActivas.length > 0 && (
@@ -849,7 +827,7 @@ export default function CompararPage() {
                   {empresasActivas.map(e => (
                     <Link
                       key={e.ticker}
-                      to={`/reporte/${(e.data?.reporte?.slug || e.ticker).toLowerCase()}`}
+                      to={`/reporte/${e.reporte?.slug || e.ticker}`}
                       style={{
                         padding: '8px 16px', borderRadius: 8,
                         background: 'var(--surface)', border: '1px solid var(--border)',
