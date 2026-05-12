@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
@@ -365,35 +365,151 @@ function verdictColor(c) {
   return c === 'green' ? GREEN : c === 'red' ? RED : AMBER;
 }
 
-/* ── Selector de empresa ─────────────────────────────────────────────────── */
+/* ── Selector de empresa con búsqueda ───────────────────────────────────── */
 function TickerSelect({ value, onChange, opciones, label, excludes }) {
-  const disponibles = opciones.filter(o => !excludes.includes(o.ticker) || o.ticker === value);
+  const [query, setQuery]   = useState('');
+  const [open, setOpen]     = useState(false);
+  const [focused, setFocused] = useState(false);
+  const wrapRef = useRef(null);
+
+  const seleccionada = opciones.find(o => o.ticker === value);
+
+  const disponibles = opciones.filter(o => {
+    if (excludes.includes(o.ticker) && o.ticker !== value) return false;
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return o.ticker.toLowerCase().includes(q) || o.empresa.toLowerCase().includes(q);
+  });
+
+  // Cerrar dropdown al hacer click fuera
+  useEffect(() => {
+    const handler = e => {
+      if (wrapRef.current && !wrapRef.current.contains(e.target)) {
+        setOpen(false);
+        setQuery('');
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const seleccionar = (ticker) => {
+    onChange(ticker);
+    setOpen(false);
+    setQuery('');
+  };
+
+  const limpiar = (e) => {
+    e.stopPropagation();
+    onChange('');
+    setQuery('');
+    setOpen(false);
+  };
+
+  const borderColor = focused ? 'var(--gold-dark)' : 'var(--border)';
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 4, minWidth: 0 }}>
+    <div ref={wrapRef} style={{ display: 'flex', flexDirection: 'column', gap: 4, minWidth: 0, position: 'relative' }}>
       <label style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
         {label}
       </label>
-      <select
-        value={value}
-        onChange={e => onChange(e.target.value)}
+
+      {/* Input / chip de seleccionada */}
+      <div
         style={{
+          display: 'flex', alignItems: 'center', gap: 6,
+          background: 'var(--surface)',
+          border: `1px solid ${borderColor}`,
+          borderRadius: 8, padding: '7px 10px',
+          cursor: 'text', transition: 'border-color 0.15s',
+          minHeight: 38,
+        }}
+        onClick={() => { setOpen(true); }}
+      >
+        {seleccionada && !open ? (
+          <>
+            <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--gold-dark)', flexShrink: 0 }}>
+              {seleccionada.ticker}
+            </span>
+            <span style={{ fontSize: 12, color: 'var(--text-muted)', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {seleccionada.empresa}
+            </span>
+            <button
+              onClick={limpiar}
+              style={{
+                background: 'none', border: 'none', cursor: 'pointer',
+                color: 'var(--text-muted)', fontSize: 16, lineHeight: 1,
+                padding: '0 2px', flexShrink: 0, fontFamily: 'inherit',
+              }}
+              title="Quitar empresa"
+            >
+              ×
+            </button>
+          </>
+        ) : (
+          <input
+            autoFocus={open}
+            value={query}
+            onChange={e => { setQuery(e.target.value); setOpen(true); }}
+            onFocus={() => { setFocused(true); setOpen(true); }}
+            onBlur={() => setFocused(false)}
+            placeholder={seleccionada ? seleccionada.ticker : 'Busca ticker o empresa...'}
+            style={{
+              border: 'none', outline: 'none', background: 'transparent',
+              fontSize: 13, color: 'var(--text)', fontFamily: 'inherit',
+              flex: 1, minWidth: 0,
+            }}
+          />
+        )}
+      </div>
+
+      {/* Dropdown de resultados */}
+      {open && (
+        <div style={{
+          position: 'absolute', top: '100%', left: 0, right: 0, zIndex: 100,
           background: 'var(--surface)',
           border: '1px solid var(--border)',
           borderRadius: 8,
-          padding: '8px 12px',
-          fontSize: 14,
-          color: 'var(--text)',
-          fontWeight: value ? 600 : 400,
-          cursor: 'pointer',
-          outline: 'none',
-          fontFamily: 'inherit',
-        }}
-      >
-        <option value="">-- Seleccionar --</option>
-        {disponibles.map(o => (
-          <option key={o.ticker} value={o.ticker}>{o.ticker} — {o.empresa}</option>
-        ))}
-      </select>
+          boxShadow: '0 8px 24px rgba(28,20,16,.15)',
+          maxHeight: 260, overflowY: 'auto',
+          marginTop: 4,
+        }}>
+          {disponibles.length === 0 ? (
+            <div style={{ padding: '12px 14px', fontSize: 12, color: 'var(--text-muted)' }}>
+              Sin resultados para "{query}"
+            </div>
+          ) : (
+            disponibles.map(o => {
+              const estaSeleccionada = o.ticker === value;
+              return (
+                <div
+                  key={o.ticker}
+                  onMouseDown={e => { e.preventDefault(); seleccionar(o.ticker); }}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 10,
+                    padding: '9px 14px', cursor: 'pointer',
+                    background: estaSeleccionada ? 'var(--gold-pale)' : 'transparent',
+                    borderBottom: '1px solid var(--border)',
+                    transition: 'background 0.1s',
+                  }}
+                  onMouseEnter={e => { if (!estaSeleccionada) e.currentTarget.style.background = 'rgba(181,135,42,.06)'; }}
+                  onMouseLeave={e => { if (!estaSeleccionada) e.currentTarget.style.background = 'transparent'; }}
+                >
+                  <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--gold-dark)', width: 52, flexShrink: 0 }}>
+                    {o.ticker}
+                  </span>
+                  <span style={{ fontSize: 12, color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {o.empresa}
+                  </span>
+                  {estaSeleccionada && (
+                    <span style={{ marginLeft: 'auto', fontSize: 11, color: 'var(--gold-dark)', flexShrink: 0 }}>✓</span>
+                  )}
+                </div>
+              );
+            })
+          )}
+        </div>
+      )}
     </div>
   );
 }
