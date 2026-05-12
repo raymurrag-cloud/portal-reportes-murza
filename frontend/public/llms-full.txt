@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (65 empresas)
+## Reportes de acciones (66 empresas)
+
+### QCOM — Qualcomm Incorporated
+**URL**: https://reportes.murzainversiones.com/reporte/QCOM
+**Publicado**: 2026-05-12
+
+Qualcomm (QCOM) es el lider mundial en semiconductores para dispositivos moviles, con una posicion practicamente irremplazable en modems 5G y SoCs Snapdragon. En FY2025 el revenue crecio +13.7% a $44.3B impulsado por QCT, aunque el ingreso neto cayo a $5.5B por una carga fiscal extraordinaria de $5.7B (CAMT) que distorsiona los comparables. La generacion de caja es robusta: FCF de $12.8B (+14.9% YoY) y la diversificacion hacia automotive e IoT va tomando forma. A $207/accion, la valuacion es razonable en P/E forward de 21.8x considerando el catalogo de crecimiento en AI on-device y autos.
+
+Qualcomm opera en tres segmentos: QCT (chips Snapdragon para smartphones, autos, IoT - 85% del revenue), QTL (licencias de patentes 5G/4G - 15% del revenue) y QSI (inversiones estrategicas). El moat de QTL es uno de los mas duraderos en tech: licencias obligatorias sobre estandares de comunicacion celular que generan royalties predecibles. En QCT, la arquitectura Snapdragon domina el segmento premium Android (Samsung, Xiaomi, OPPO) y Apple sigue siendo un cliente significativo. La diversificacion a automotive (Snapdragon Digital Chassis) y AI on-device representa el principal vector de crecimiento secular a partir de FY2026.
+
+**Datos financieros**:
+- Revenue (B USD): 10.60 (+13.7% YoY)
+- Utilidad Neta (B USD): 7.37* (-45.4%** YoY)
+- Margen Neto: 69.5%* (-13.5pp YoY)
+- EBITDA (B USD): 2.51 (+18.5% YoY)
+- FCF (B USD): n/d (+14.9% YoY)
+- EPS Diluido: 6.88* (-44.1%** YoY)
+- Deuda Neta (B USD): 9.34 (+37.0% YoY)
+
+**Valuacion**: P/E Trailing 41.4x, P/E Forward 21.8x, EV/EBITDA 16.6x, P/FCF 17.4x, Deuda Neta/EBITDA 0.67x, ROE 26.1%, ROIC 34.0%
+
+**Veredicto**: Comprar con Conviccion (Score: 7.4/10)
++ Moat de licencias + FCF record -- QTL genera royalties con margen >70% sobre estandares de comunicacion irrenunciables. El FCF de $12.8B (+15% YoY) financia recompras masivas y un dividendo creciente, creando retorno al accionista de doble digito sin necesitar credito.
++ Valuacion descomprimida por distorsion fiscal -- El P/E trailing de 41x no refleja la realidad operativa; el cargo de $5.7B por CAMT fue no recurrente. En FY2026 el EPS normalizado converge a ~$9.50 lo que situa el P/E forward en 21.8x, por debajo del sector.
++ Catalogo de crecimiento en automotive e IA on-device -- $45B en design wins de automotive con 25+ OEMs y la NPU de Snapdragon como pieza clave del ciclo de actualizacion de smartphones AI posicionan a QCOM para crecer por encima del mercado en FY2026-2028.
+- Riesgo China + modem Apple -- El ~50% de revenue expuesto a China es el principal riesgo binario. Si Apple logra igualar el rendimiento de su modem in-house para iPhone 17 o 18, QCOM podria perder $7-8B de revenue QCT sin reemplazo inmediato.
+
+---
 
 ### NKE — Nike Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/NKE
