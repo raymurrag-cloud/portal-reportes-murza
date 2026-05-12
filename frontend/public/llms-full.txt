@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (64 empresas)
+## Reportes de acciones (65 empresas)
+
+### NKE — Nike Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/NKE
+**Publicado**: 2026-05-12
+
+Nike Inc. (NKE) es la marca de calzado y ropa deportiva numero uno del mundo, con ingresos de $46.3B en FY2025. La empresa atraviesa un reset estrategico profundo: bajo el CEO John Donahoe (2020-2024), Nike sobre-indexo el canal directo al consumidor (DTC) y redujo sus partnerships con retailers clave, danando su reach de distribucion. En octubre 2024, el veterano Elliott Hill regreso como CEO para revertir este error. FY2025 fue el ano mas dificil en decadas: revenue -9.8% YoY, margenes operativos al 8%, y la accion en minimos historicos recientes. Sin embargo, Q3 FY2026 muestra estabilizacion del revenue, el balance es solido, y a 13.9x P/E TTM el mercado ya descuenta el peor escenario.
+
+Nike Inc. disenya, desarrolla y comercializa calzado atletico, ropa y equipo deportivo globalmente. Segmentos geograficos: Norteamerica (~43% revenue), Europa/Oriente Medio/Africa (~27%), China (~14%), Asia Pacifico y Latam (~11%), mas Nike Direct (~40% DTC). Opera con Nike Brand (que incluye Jordan Brand ~$7B+) y Converse (~$2B). Ventaja competitiva central: marca construida en 50 anos con atletas icono (LeBron, Ronaldo, Woods), innovaciones de producto (Air Max, Flyknit, React) y ecosistema digital Nike Direct con 160M+ miembros. Canal wholesale (Foot Locker, Dicks Sporting Goods, JD Sports) fue reducido bajo Donahoe y se esta reactivando bajo Hill.
+
+**Datos financieros**:
+- Revenue (B USD): 11.28 (-9.8% YoY)
+- Utilidad Neta (B USD): 2.04 (-43.5% YoY)
+- Margen Neto: 18.1% (-4.1pp YoY)
+- EBITDA (B USD): N/D (-37.0% YoY)
+- FCF (B USD): N/D (-50.6% YoY)
+- EPS Diluido: 1.38 (-42.1% YoY)
+- Deuda Neta (B USD): N/D (+1.46B YoY)
+
+**Valuacion**: P/E Trailing 13.9x, P/E Forward 13.2x, EV/EBITDA 14.2x, P/FCF 19.3x, Deuda Neta/EBITDA 0.11x, ROE 24.4%, ROIC 22.3%
+
+**Veredicto**: Mantener/Considerar (Score: 6.4/10)
++ Marca #1 global - moat de 50 anos -> Jordan Brand, iconos culturales y 160M+ miembros en Nike Direct son activos que no se replican. A 13.9x P/E TTM el mercado ya descuenta anos de debilidad.
++ Elliott Hill es la persona correcta -> 32 anos en Nike, conoce cada cuenta de distribucion. Su agenda de regreso al wholesale ya muestra primeras senales positivas en Q3 FY2026.
++ Balance solido + dividendo de 22 anos -> Deuda neta de $0.50B, FCF de $3.27B incluso en el peor ano, dividendo $1.40/accion (3.3% yield) dan tiempo al reset sin riesgo de balance.
+- Reset tarda 2-3 anos - ejecucion no garantizada -> Recuperacion depende de retailers reexpandiendo cuentas, China no deteriorando, y Nike recuperando relevancia en running vs On/Hoka.
+
+---
 
 ### KO — The Coca-Cola Company
 **URL**: https://reportes.murzainversiones.com/reporte/KO

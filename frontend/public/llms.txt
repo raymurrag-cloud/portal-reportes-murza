@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (64 empresas)
+## Reportes de acciones (65 empresas)
 
+- [Nike Inc. (NKE)](https://reportes.murzainversiones.com/reporte/NKE): Analisis financiero de Nike (NKE): reset estrategico bajo Elliott Hill, revenue FY2025, FCF, margenes y veredicto de inversion. Veredicto: Mantener/Considerar.
 - [The Coca-Cola Company (KO)](https://reportes.murzainversiones.com/reporte/KO): Analisis financiero de Coca-Cola (KO): marca global #1, dividend aristocrat 62 anos, pricing power, FCF, margenes y veredicto Murza Inversiones. Veredicto: Mantener.
 - [Starbucks Corporation (SBUX)](https://reportes.murzainversiones.com/reporte/SBUX): Analisis financiero de Starbucks (SBUX): turnaround Niccol, Back to Starbucks, revenue, FCF, margenes y veredicto. Veredicto: Mantener.
 - [Intuitive Surgical Inc. (ISRG)](https://reportes.murzainversiones.com/reporte/ISRG): Analisis financiero de Intuitive Surgical (ISRG): monopolio da Vinci, revenue recurrente, FCF, margenes y veredicto de inversion. Veredicto: Mantener con Conviccion.
