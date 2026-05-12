@@ -250,13 +250,13 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         <div style={{ fontSize: 10, color: 'var(--text-muted)', fontWeight: 700, letterSpacing: '0.06em', marginBottom: 4 }}>
           PERIODO: {periodo}
         </div>
-        <MetricRow label="Revenue" value={getLastVal(rows, 0)} yoy={getYoY(rows, 0)} />
-        <MetricRow label="Margen Bruto" value={getLastMargenBruto(json.chart_margenes)} />
-        <MetricRow label="Margen Neto" value={getLastVal(rows, 2)} yoy={getYoY(rows, 2)} />
-        <MetricRow label="EBITDA" value={getLastVal(rows, 3)} yoy={getYoY(rows, 3)} />
-        <MetricRow label="FCF" value={getLastVal(rows, 4)} yoy={getYoY(rows, 4)} />
-        <MetricRow label="EPS Diluido" value={getLastVal(rows, 5)} yoy={getYoY(rows, 5)} />
-        <MetricRow label="Deuda Neta" value={getLastVal(rows, 6)} />
+        <MetricRow label={rows[0]?.[0] || 'Revenue'} value={getLastVal(rows, 0)} yoy={getYoY(rows, 0)} />
+        <MetricRow label="Margen Bruto (%)" value={getLastMargenBruto(json.chart_margenes)} />
+        <MetricRow label={rows[2]?.[0] || 'Margen Neto'} value={getLastVal(rows, 2)} yoy={getYoY(rows, 2)} />
+        <MetricRow label={rows[3]?.[0] || 'EBITDA'} value={getLastVal(rows, 3)} yoy={getYoY(rows, 3)} />
+        <MetricRow label={rows[4]?.[0] || 'FCF'} value={getLastVal(rows, 4)} yoy={getYoY(rows, 4)} />
+        <MetricRow label={rows[5]?.[0] || 'EPS Diluido'} value={getLastVal(rows, 5)} yoy={getYoY(rows, 5)} />
+        <MetricRow label={rows[6]?.[0] || 'Deuda Neta'} value={getLastVal(rows, 6)} />
       </div>
     );
   }
