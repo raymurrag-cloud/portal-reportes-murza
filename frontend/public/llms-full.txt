@@ -711,26 +711,26 @@ Oscar Health opera exclusivamente en el mercado individual de seguros de salud A
 **URL**: https://reportes.murzainversiones.com/reporte/AXP
 **Publicado**: 2026-04-20
 
-American Express (AXP) es la marca de pagos premium mas reconocida del mundo, con 175 anos de historia y un modelo integrado unico que conecta directamente a tarjetahabientes de alto poder adquisitivo con comercios. En FY2025 reporto ingresos netos de 72.2B USD (+9.5% YoY) y EPS diluido de 15.38 (+9.8% YoY), consolidando seis anos consecutivos de crecimiento de doble digito en revenue. El veredicto: AXP opera con ventaja competitiva estructural -- su red propietaria closed-loop y su base de clientes premium generan margenes superiores y baja sensibilidad al ciclo. A 15.7x P/E forward, la valuacion es atractiva frente a su historico y al sector financiero.
+American Express (AXP) reporto ingresos netos record de $65.95B en FY2024 (+9.0% YoY) y utilidad neta de $10.13B (+21.0%), con EPS diluido de $14.01 (+25.0%). La combinacion de red cerrada propietaria, base de tarjetahabientes premium, crecimiento sostenido en gasto de viajes y entretenimiento y recompras agresivas genera una maquina de creacion de valor dificil de replicar. A 15.6x P/E forward con EPS forward de $20.11, la valuacion es atractiva frente a su historial y la calidad del negocio. Veredicto: Comprar con Conviccion.
 
-American Express opera un modelo de pagos integrado de extremo a extremo con cuatro segmentos: U.S. Consumer Services (USCS), Commercial Services (CS), International Card Services (ICS) y Global Merchant & Network Services (GMNS). A diferencia de Visa/Mastercard, AXP actua como emisor, adquirente y red de pagos simultaneamente (closed-loop), lo que le da acceso a datos transaccionales completos en ambos extremos. Sus ingresos provienen de: descuentos de comercios (la mayor fuente), ingresos por intereses sobre prestamos, comisiones anuales de tarjetas premium (Platinum, Centurion) y servicios de red. El moat reside en su base de clientes de altos ingresos que gastan mas y presentan menor riesgo crediticio, las membresias de cuotas anuales elevadas con alta retencion, y el ecosistema de beneficios (lounges, hoteles, restaurantes) que genera lealtad estructural. International Card Services y el segmento de millennials/GenZ representan los principales vectores de crecimiento secular.
+American Express opera un modelo de pagos integrado de red cerrada (closed-loop) unico en la industria. A diferencia de Visa y Mastercard, AXP actua simultaneamente como emisor de tarjetas, adquirente de comercios y operador de red de pagos, lo que le otorga control total sobre datos de transacciones en ambos extremos del mercado. Sus ingresos provienen de: discount revenues (comisiones al comercio por cada transaccion), net card fees (membresias anuales premium de hasta $695), ingresos netos por intereses sobre su cartera de credito propia, y otros servicios. La base de tarjetahabientes se caracteriza por altos ingresos, mayor gasto en viajes y entretenimiento (T&E) y menor morosidad vs el mercado masivo. Es el mayor holding de Berkshire Hathaway de Warren Buffett con ~20% del capital.
 
 **Datos financieros**:
-- Revenue (B USD): 18.9 (+9.5% YoY)
-- Utilidad Neta (B USD): 2.97 (+6.9% YoY)
-- Margen Neto: 15.7% (-0.4pp YoY)
-- EBITDA (B USD): -- (+6.3% YoY)
-- FCF (B USD): -- (+31.9% YoY)
-- EPS Diluido: 4.28 (+9.8% YoY)
-- Deuda Neta (B USD): -- (+14.1% YoY)
+- Revenue ($B): 65.95 (+9.0% YoY)
+- Utilidad Neta ($B): 10.13 (+21.0% YoY)
+- Margen Neto (%): 15.4% (+1.6pp YoY)
+- EBITDA ($B): 14.57 (+19.8% YoY)
+- FCF ($B): 12.14 (-28.6% YoY)
+- EPS (GAAP): 14.01 (+25.0% YoY)
+- Deuda Neta ($B): 9.08 (+614.2% YoY)
 
-**Valuacion**: P/E Trailing 20.5x, P/E Forward 15.7x, EV/EBITDA 14.5x, P/FCF 13.5x, Deuda Neta/EBITDA 2.8x, ROE 32.4%, ROIC 15.2%
+**Valuacion**: P/E Ratio 19.6x, P/E Forward 15.6x, EV/EBITDA 15.3x, P/FCF 17.6x, Deuda/EBITDA 3.4x, ROE 33.5%, ROIC ~18%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
-+ Closed-loop inigualable -> El modelo integrado emisor-adquirente-red genera datos superiores, menor fraude y pricing power estructural que ninguna fintech o banco puede replicar facilmente.
-+ Valuacion atractiva -> P/E forward de 15.7x con FCF yield del 7.4% y ROE del 32.4% es una combinacion rara en el sector. El mercado subestima la calidad de los ingresos por cuotas anuales recurrentes.
-+ Momentum acelerado en 2026 -> Q1 2026 muestra aceleracion: revenue +11.4% YoY y EPS +17.6% YoY. El segmento de clientes menores de 35 anos crece doble digito, asegurando el pipeline de tarjetahabientes premium de la proxima decada.
-- Riesgo macro-arancelario -> Una recesion inducida por aranceles podria comprimir el gasto discrecional premium y afectar el billed business internacional. Monitorear write-off rates trimestralmente.
+**Veredicto**: Comprar con Conviccion (Score: 8.5/10)
++ Red cerrada -> Modelo unico que captura valor en ambos lados del mercado de pagos con datos propietarios que ninguna otra red puede replicar, generando discount rates superiores y lealtad estructural.
++ Clientela premium -> Base de tarjetahabientes de alto poder adquisitivo genera menor morosidad, mayor gasto por cuenta y justifica membresias de hasta $695/ano con alta retencion.
++ Maquina de recompras -> 15% reduccion de acciones en 4 anos amplifica el EPS dramaticamente. EPS CAGR del 39% desde FY2020. FCF >$12B sostiene el programa.
+- Ciclicidad crediticia -> Gasto en T&E es discrecional y la cartera de credito propia eleva el riesgo en recesiones. En 2020 los ingresos cayeron 17% y pueden volver a hacerlo.
 
 ---
 
