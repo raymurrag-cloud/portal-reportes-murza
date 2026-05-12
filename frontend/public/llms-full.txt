@@ -27,7 +27,119 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (58 empresas)
+## Reportes de acciones (62 empresas)
+
+### ISRG — Intuitive Surgical Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/ISRG
+**Publicado**: 2026-05-12
+
+Intuitive Surgical es el monopolio de facto en cirugia robotica asistida, con su sistema da Vinci dominando mas del 80% de los principales centros hospitalarios de EEUU y una base instalada de 11,106 sistemas a fin de 2025. El modelo razor-and-blade genera ingresos recurrentes de alta calidad: instrumentos y accesorios representan el 60% del revenue total y crecen automaticamente con la expansion de la base instalada. En FY2025 la empresa reporto ingresos de $10.1B (+21% YoY), FCF de $2.49B (+90% YoY) y balance sin deuda con caja neta de $3.4B, consolidando su posicion como una de las empresas de tecnologia medica mas solidas del mercado.
+
+Intuitive Surgical disena, fabrica y comercializa el sistema de cirugia robotica da Vinci, utilizado en mas de 70 tipos de procedimientos clinicos en mas de 70 paises. El modelo de negocio funciona como razor-and-blade: la venta o arrendamiento de sistemas crea una base instalada que genera ventas recurrentes de instrumentos, accesorios y servicios a lo largo de la vida util del sistema. La empresa tambien opera Ion, plataforma de broncoscopia robotica para diagnostico de cancer de pulmon, con 995 sistemas instalados y crecimiento del 51% en procedimientos en 2025. Con 3.15 millones de procedimientos da Vinci realizados en 2025 (+18% YoY) y utilization rates en mejora, combina poder de fijacion de precios, switching costs elevados y expansion geografica activa en Europa, Asia y Latinoamerica.
+
+**Datos financieros**:
+- Revenue (B USD): 2.77 (+20.5% YoY)
+- Utilidad Neta (B USD): 0.82 (+23.3% YoY)
+- Margen Neto: 29.7% (+0.6pp YoY)
+- EBITDA (B USD): N/A (+26.7% YoY)
+- FCF (B USD): N/A (+90.1% YoY)
+- EPS Diluido: 2.28 (+22.6% YoY)
+- Deuda Neta (B USD): N/A (Caja neta YoY)
+
+**Valuacion**: P/E Trailing 55.2x, P/E Forward 43.4x, EV/EBITDA 42.4x, P/FCF 61.9x, Deuda Neta/EBITDA Caja neta, ROE 16%, ROIC 17.7%
+
+**Veredicto**: Mantener con Conviccion (Score: 9.0/10)
++ Monopolio cirugia robotica — Base instalada de 11,106 sistemas da Vinci con switching costs estructurales. Ninguna competencia ha logrado escala comparable despues de 25 anios.
++ Modelo recurrente razor-blade — Instrumentos y accesorios $6.02B (+19% YoY) crecen automaticamente con cada nuevo sistema instalado, creando visibilidad de ingresos inigualable en medtech.
++ FCF explosion — FCF de $2.49B en FY2025 (+90% YoY) con capex normalizado. Balance sin deuda con caja neta $3.4B y conversion de utilidad a caja excepcional.
+- Valuacion premium extrema — P/E 55x trailing y EV/EBITDA 42x no permiten margen de error. Cualquier miss en procedimientos o entrada exitosa de competencia puede comprimir el multiplo severamente.
+
+---
+
+### NOW — ServiceNow Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/NOW
+**Publicado**: 2026-05-12
+
+ServiceNow (NOW) es la plataforma de flujos de trabajo digitales mas adoptada en el mundo enterprise, con ingresos de 10.98B USD en FY2024 (+22.4% YoY) impulsados en un ~95% por suscripciones de alta recurrencia. La integracion de Now Assist (IA generativa sobre GPT-4 y modelos propios) activa un nuevo ciclo de upsell en su base instalada de mas de 8,100 clientes, incluyendo mas del 85% del Fortune 500. Con FCF de 3.42B USD, balance neto positivo (caja neta de 0.81B USD) y margenes brutos del 79%, NOW representa uno de los modelos de negocio de mas alta calidad en software enterprise — aunque cotiza a un multiple exigente que requiere ejecucion impecable.
+
+ServiceNow opera una plataforma cloud de gestion de flujos de trabajo (workflow automation) para empresas Fortune 500. Su nucleo es IT Service Management (ITSM), desde el cual expande hacia HR Service Delivery, Customer Service Management, Financial Services Operations y Security Operations. La plataforma Now Platform conecta todos los departamentos bajo un unico sistema de registro. Now Assist, su suite de IA generativa, esta integrada en todos los flujos y habilita agentes autonomos para resolucion de incidentes, autoservicio de empleados y automatizacion de aprobaciones. El modelo de revenue es ~95% suscripcion anual (Annual Contract Value), con clientes que gastan mas cada ano via expansion de modulos — Net Revenue Retention superior al 120% historicamente. Mas de 1,900 clientes con ACV mayor a 1M USD y mas de 100 clientes con ACV mayor a 10M USD. Fiscal year termina el 31 de diciembre.
+
+**Datos financieros**:
+- Revenue (B USD): 10.98 (+22.4% YoY)
+- Utilidad Neta (B USD): 1.43 (-17.3% YoY)
+- Margen Neto: 13.0% (-6.3pp YoY)
+- EBITDA (B USD): 2.47 (+38.8% YoY)
+- FCF (B USD): 3.42 (+26.5% YoY)
+- EPS Diluido (GAAP): 1.37 (-18.5% YoY)
+- Deuda Neta (B USD): -0.81 (Mejor YoY)
+
+**Valuacion**: P/E Trailing 53.2x, P/E Forward 21.4x, EV/EBITDA 36.9x, P/FCF 27.3x, Deuda/EBITDA -0.33x, ROE 16.5%, ROIC 12.3%
+
+**Veredicto**: Comprar con Conviccion (Score: 9.0/10)
++ Plataforma de flujos criticos -> Mas del 85% del Fortune 500 ya es cliente, con switching costs structuralmente altos — la plataforma es infraestructura digital inamovible para los CIOs.
++ IA genera nuevo ciclo de upsell -> Now Assist activa expansion de ARPU en la base instalada existente sin costo incremental de adquisicion — el modelo de monetizacion de IA mas eficiente en enterprise software.
++ FCF compounding de alta calidad -> FCF crece al 30% CAGR desde FY2020, con margen del 31% en FY2024 — la caja se genera antes que la utilidad contable gracias al modelo de prepago SaaS.
+- Valuacion exigente post-caida -> A $89 (vs. maximo de $211), el mercado ya descontó una parte del exceso de valuacion, pero el P/E TTM de 53x deja poco margen de error ante cualquier ajuste en guidance.
+
+---
+
+### JNJ — Johnson & Johnson
+**URL**: https://reportes.murzainversiones.com/reporte/JNJ
+**Publicado**: 2026-05-12
+
+Johnson & Johnson (JNJ) es un conglomerado de salud de primer nivel que opera en dos segmentos: Innovative Medicine (pharma) y MedTech. Tras el spin-off de Kenvue (segmento consumer: Band-Aid, Tylenol, Neutrogena) en agosto de 2023, JNJ es una empresa enfocada en pharma de alto margen y dispositivos medicos, con ingresos FY2024 de $88.8B (+4.3% vs FY2023) y FCF de $19.8B. Dividend aristocrat con 60+ anos de incrementos consecutivos de dividendo; el principal riesgo a corto plazo es la erosion de Stelara por biosimilares en 2025.
+
+Johnson & Johnson es una de las empresas de salud mas grandes del mundo. Post spin-off de Kenvue (agosto 2023), opera exclusivamente en dos segmentos: Innovative Medicine (pharma: Darzalex oncologia de rapido crecimiento, Stelara inmunologia, Tremfya, Erleada, Carvykti CAR-T) y MedTech (ortopedia, cirugia cardiovascular via Shockwave Medical, electrofisiologia, vision). La compania mantiene calificacion crediticia AAA, genera FCF consistente superior a $19B anuales, y ha incrementado su dividendo cada ano desde 1963 -- mas de 60 anos consecutivos de crecimiento de dividendo.
+
+**Datos financieros**:
+- Revenue ($B)*: 88.82 (+4.3% YoY)
+- Utilidad Neta ($B)**: 14.07 (-60.0% YoY)
+- Margen Neto (%): 15.8% (-25.5pp YoY)
+- Gross Profit ($B)***: 61.35 (+4.7% YoY)
+- Margen Bruto (%): 69.1% (+0.3pp YoY)
+- EBITDA ($B): 28.59 (-3.1% YoY)
+- FCF ($B): 19.84 (+8.7% YoY)
+- EPS GAAP: 5.79 (-57.8% YoY)
+- Deuda Neta ($B): 8.3 (+51.2% YoY)
+
+**Valuacion**: P/E Trailing (Adj) 26.3x, P/E Forward 17.9x, EV/EBITDA 19.8x, P/FCF 27.5x, Deuda/EBITDA 0.29x, ROE 26.4%, ROIC 17.4%
+
+**Veredicto**: Mantener (Score: 7.5/10)
++ Pipeline oncologico --> Darzalex $11B+ y creciendo +19% YoY, Carvykti CAR-T en expansion: JNJ tiene uno de los pipelines de mayor calidad en la industria farmaceutica global.
++ Balance AAA + dividendo indestructible --> Net Debt/EBITDA de 0.29x, caja $24B, y 60+ anos de incrementos consecutivos de dividendo proporcionan una base de retorno solida independientemente de la cotizacion.
++ MedTech cardiovascular en expansion --> La adquisicion de Shockwave Medical posiciona a JNJ como lider en litotripsia intravascular. Electrofisiologia con ablacion cardiaca es un mercado de alto crecimiento secular.
+- Stelara cliff + litigios talco --> La perdida de exclusividad de Stelara (~$6.5B ya en FY2024, vs $10B en FY2023) sera el mayor headwind de FY2025-2026. Los litigios talco agregan incertidumbre al flujo de caja disponible.
+
+---
+
+### SCHW — Charles Schwab Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/SCHW
+**Publicado**: 2026-05-12
+
+Charles Schwab reporto ingresos de $19.61B en FY2024 (+4.1% YoY), con utilidad neta de $5.94B (+17.2%) y EPS diluido de $2.99 (+17.7%), evidenciando una solida recuperacion tras la presion por cash sorting en 2022-2023. Con $9.8 trillones en activos de clientes y liderazgo en brokerage retail en EEUU, Schwab cotiza a 22.8x forward earnings — valuacion razonable para su franquicia dominante y modelo de negocios diversificado.
+
+The Charles Schwab Corporation es el mayor broker de retail en Estados Unidos, con aproximadamente $9.8 trillones en activos bajo custodia (AUC) a finales de 2024. Su modelo de ingresos combina net interest revenue (el componente mas grande), comisiones de trading eliminadas en 2019 (zero-commission), tarifas de administracion de activos y honorarios de cuentas bancarias de deposito. Adquirio TD Ameritrade en octubre 2020 por $22B, casi duplicando su escala de clientes y plataforma tecnologica. El ingreso neto por intereses representa mas del 60% de los ingresos y es altamente sensible a las tasas de interes, lo que explica la caida de revenue en 2023 por el fenomeno de cash sorting (clientes moviendo efectivo a fondos del mercado monetario cuando subieron las tasas). Opera con dos segmentos: Investor Services y Advisor Services, sirviendo a inversores individuales y asesores financieros independientes respectivamente.
+
+**Datos financieros**:
+- Revenue ($B): 19.61 (+4.1% YoY)
+- Utilidad Neta ($B): 5.94 (+17.2% YoY)
+- Margen Neto (%): 30.3% (+3.4pp YoY)
+- EBITDA ($B): 8.61 (+19.9% YoY)
+- FCF ($B): 2.05 (-89.1% YoY)
+- EPS (GAAP): 2.99 (+17.7% YoY)
+- Deuda Neta ($B): -19.65 (n/a YoY)
+
+**Valuacion**: P/E Ratio 29.9x, P/E Forward 22.8x, EV/EBITDA 16.8x, P/FCF 80.0x, Deuda/EBITDA 2.61x, ROE 13.3%, ROIC 15.4%
+
+**Veredicto**: Mantener / Acumular en debilidad (Score: 7.0/10)
++ Escala dominante e irreplicable -> Con $9.8 trillones en AUC y 35M+ cuentas, Schwab opera en una liga propia. La escala permite ofrecer zero-commission mientras genera spreads masivos sobre efectivo de clientes.
++ Recuperacion post cash sorting bien encaminada -> EPS +17.7% YoY, margen neto mejoro 3.4pp a 30.3% en FY2024. La normalizacion de depositos bancarios y recortes de tasas apuntan a crecimiento adicional en FY2025.
++ Integracion TDA completada genera plataforma clase mundial -> La migracion tecnologica de 15M+ cuentas completada en mayo 2024 elimina el riesgo de ejecucion. Las sinergias operativas se materializaran con mas fuerza en FY2025-2026.
++ Balance solido con posicion de caja neta -> $42.1B en caja vs $22.4B en deuda LP = posicion neta de caja de $19.7B. Deuda/EBITDA de 2.61x manejable para institucion financiera.
+- Sensibilidad a tasas es riesgo bilateral -> La compania es altamente sensitiva al ciclo de tasas. Recortes benefician el retorno de depositos, pero bajas rapidas de tasas comprimen el net interest margin estructuralmente.
+- Valuacion no barata -> A 22.8x forward P/E y 16.8x EV/EBITDA, el mercado ya descuenta parte de la recuperacion. FCF yield de 1.2% es bajo en terminos absolutos, aunque refleja volatilidad estructural del OCF en empresas financieras.
+
+---
 
 ### GS — Goldman Sachs Group Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/GS

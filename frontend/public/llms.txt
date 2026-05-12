@@ -2,8 +2,12 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (58 empresas)
+## Reportes de acciones (62 empresas)
 
+- [Intuitive Surgical Inc. (ISRG)](https://reportes.murzainversiones.com/reporte/ISRG): Analisis financiero de Intuitive Surgical (ISRG): monopolio da Vinci, revenue recurrente, FCF, margenes y veredicto de inversion. Veredicto: Mantener con Conviccion.
+- [ServiceNow Inc. (NOW)](https://reportes.murzainversiones.com/reporte/NOW): Analisis financiero de ServiceNow (NOW): SaaS enterprise, revenue, FCF, margenes y veredicto de inversion. Veredicto: Comprar con Conviccion.
+- [Johnson & Johnson (JNJ)](https://reportes.murzainversiones.com/reporte/JNJ): Analisis financiero de Johnson & Johnson (JNJ): pharma + medtech, Darzalex, FCF, dividendo y veredicto. Veredicto: Mantener.
+- [Charles Schwab Corporation (SCHW)](https://reportes.murzainversiones.com/reporte/SCHW): Analisis financiero de Charles Schwab (SCHW): revenue, EPS, activos de clientes, margenes y veredicto. Veredicto: Mantener / Acumular en debilidad.
 - [Goldman Sachs Group Inc. (GS)](https://reportes.murzainversiones.com/reporte/GS): Analisis financiero de Goldman Sachs (GS): revenue, EPS, ROE, FCF, valuacion y veredicto de inversion. FY2025. Veredicto: Mantener.
 - [McDonald's Corporation (MCD)](https://reportes.murzainversiones.com/reporte/MCD): Analisis financiero de McDonald's (MCD): modelo franquicia, FCF, margenes y veredicto de inversion. Veredicto: Mantener.
 - [BlackRock Inc. (BLK)](https://reportes.murzainversiones.com/reporte/BLK): Analisis financiero de BlackRock (BLK): AUM $10T+, revenue, EPS, margenes y veredicto de inversion. Veredicto: Comprar con Conviccion.
