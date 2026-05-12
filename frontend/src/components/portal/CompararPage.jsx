@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
@@ -554,30 +554,29 @@ export default function CompararPage() {
   }, [seleccionados]);
 
   // Cargar datos de cada empresa seleccionada
-  const cargarReporte = useCallback(async (ticker, idx) => {
-    if (!ticker) {
-      setDatos(prev => { const n = [...prev]; n[idx] = null; return n; });
-      return;
-    }
-    setLoading(prev => { const n = [...prev]; n[idx] = true; return n; });
-    try {
-      const slug = ticker.toLowerCase();
-      const r = userToken
-        ? await api.getReporteCompleto(slug)
-        : await api.getReporte(slug);
-      const jsonData = r.contenido_json
-        ? (typeof r.contenido_json === 'string' ? JSON.parse(r.contenido_json) : r.contenido_json)
-        : null;
-      setDatos(prev => { const n = [...prev]; n[idx] = { reporte: r, json: jsonData }; return n; });
-    } catch {
-      setDatos(prev => { const n = [...prev]; n[idx] = null; return n; });
-    } finally {
-      setLoading(prev => { const n = [...prev]; n[idx] = false; return n; });
-    }
-  }, [userToken]);
-
   useEffect(() => {
-    seleccionados.forEach((tk, i) => cargarReporte(tk, i));
+    const token = localStorage.getItem('portal_user_token');
+    seleccionados.forEach(async (ticker, i) => {
+      if (!ticker) {
+        setDatos(prev => { const n = [...prev]; n[i] = null; return n; });
+        return;
+      }
+      setLoading(prev => { const n = [...prev]; n[i] = true; return n; });
+      try {
+        // slug va en mayúsculas tal como está en la BD (QCOM, MU, SNDK)
+        const r = token
+          ? await api.getReporteCompleto(ticker)
+          : await api.getReporte(ticker);
+        const jsonData = r.contenido_json
+          ? (typeof r.contenido_json === 'string' ? JSON.parse(r.contenido_json) : r.contenido_json)
+          : null;
+        setDatos(prev => { const n = [...prev]; n[i] = { reporte: r, json: jsonData }; return n; });
+      } catch {
+        setDatos(prev => { const n = [...prev]; n[i] = null; return n; });
+      } finally {
+        setLoading(prev => { const n = [...prev]; n[i] = false; return n; });
+      }
+    });
   }, [seleccionados.join(',')]);
 
   const cambiarSeleccion = (idx, ticker) => {
