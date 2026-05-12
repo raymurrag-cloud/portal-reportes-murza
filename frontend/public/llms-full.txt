@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (62 empresas)
+## Reportes de acciones (63 empresas)
+
+### SBUX — Starbucks Corporation
+**URL**: https://reportes.murzainversiones.com/reporte/SBUX
+**Publicado**: 2026-05-12
+
+Starbucks Corporation reporto ingresos de $37.18B en FY2025 (+2.8% YoY), pero la utilidad neta se contrajo 50% a $1.86B por costos de reestructuracion y deterioro de margenes operativos. El margen operativo cayo de 15.0% a 7.9%, impulsado por cierres de 627 tiendas, inversiones laborales y deleverage. CEO Brian Niccol ejecuta la estrategia Back to Starbucks con enfoque en experiencia en tienda, simplificacion de menu y renovacion del portfolio. La tesis de inversion es un turnaround — los proximos 2-3 anos determinaran si Niccol puede replicar en SBUX el exito que tuvo en Chipotle.
+
+Starbucks Corporation opera la mayor cadena de cafeterias del mundo con mas de 40,000 tiendas en 88 paises. El modelo combina tiendas operadas directamente (North America e International) con tiendas licenciadas. Starbucks Rewards cuenta con mas de 34 millones de miembros activos en EE.UU., generando mas del 53% de las ventas en tiendas de EE.UU. El moat del negocio es la marca global, la plataforma digital de lealtad y la escala operativa. La compania enfrenta un turnaround bajo CEO Brian Niccol (desde sep 2024), quien implementa Back to Starbucks para recuperar trafico y margenes.
+
+**Datos financieros**:
+- Revenue (B USD): 37.18 (+2.8% YoY)
+- Utilidad Neta (B USD): 1.86 (-50.5% YoY)
+- Margen Neto: 5.0% (-5.4pp YoY)
+- EBITDA (B USD): 4.71 (-32.7% YoY)
+- FCF (B USD): 2.44 (-26.5% YoY)
+- EPS Diluido: 1.63 (-50.8% YoY)
+- Deuda Neta (B USD): 12.85 (+4.6% YoY)
+
+**Valuacion**: P/E Trailing 65.4x, P/E Forward 44.4x, EV/EBITDA 28.5x, P/FCF 49.7x, Deuda Neta/EBITDA 2.73x, FCF Yield 2.0%, ROE N/M
+
+**Veredicto**: Mantener (Score: 6.0/10)
++ Niccol y Rewards son activos diferenciadores -> El CEO tiene track record probado en turnaround y la plataforma de 34M miembros es irremplazable. Si el playbook de Chipotle funciona, el upside es sustancial desde niveles actuales.
++ FCF robusto a pesar del turnaround -> $2.44B de FCF en el peor ano operativo demuestra la resiliencia estructural del modelo. Con menores costos de reestructuracion en FY2026, el FCF deberia recuperar a $3.5-4B.
++ Marca global con escala y moat de lealtad -> 40,000+ tiendas, reconocimiento global y el programa de lealtad mas grande en QSR son moats duraderos que ningun competidor puede replicar rapidamente.
+- Valuacion exigente en etapa critica -> A 44x P/E forward y 28.5x EV/EBITDA, el mercado ya precio parte del exito del turnaround. Si la recuperacion de margenes se retrasa, el riesgo a la baja desde $106 es significativo.
+
+---
 
 ### ISRG — Intuitive Surgical Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/ISRG
