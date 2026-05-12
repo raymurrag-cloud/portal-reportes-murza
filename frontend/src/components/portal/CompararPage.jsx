@@ -529,7 +529,7 @@ export default function CompararPage() {
   // Cargar lista de tickers disponibles
   useEffect(() => {
     api.getReportes().then(list => {
-      const filtered = list.filter(r => r.tipo !== 'etf' && r.publicado);
+      const filtered = (Array.isArray(list) ? list : []).filter(r => r.tipo !== 'etf');
       setTodosReportes(filtered);
     }).catch(() => {});
   }, []);
