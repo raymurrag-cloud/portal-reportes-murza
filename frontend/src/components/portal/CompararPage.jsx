@@ -143,6 +143,29 @@ function SectionTitle({ label }) {
   );
 }
 
+/* ── Etiqueta de empresa dentro de cada card ─────────────────────────────── */
+function TickerLabel({ reporte }) {
+  const col = '#B5872A';
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', gap: 6,
+      paddingBottom: 9, marginBottom: 9,
+      borderBottom: '1px solid var(--border)',
+    }}>
+      <span style={{
+        fontSize: 11, fontWeight: 800, color: col,
+        background: 'rgba(181,135,42,.10)', borderRadius: 5,
+        padding: '2px 7px', letterSpacing: '0.05em',
+      }}>
+        {reporte?.ticker}
+      </span>
+      <span style={{ fontSize: 11, color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        {reporte?.empresa}
+      </span>
+    </div>
+  );
+}
+
 /* ── CompanyCard — columna completa de una empresa ───────────────────────── */
 function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
   if (!json) return null;
@@ -210,6 +233,7 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         borderRadius: 10, padding: '14px 16px',
         fontSize: 12, color: 'var(--text-secondary)', lineHeight: 1.6,
       }}>
+        <TickerLabel reporte={reporte} />
         {desc.length > 220 ? desc.slice(0, 220) + '...' : desc}
       </div>
     );
@@ -222,6 +246,7 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         background: 'var(--surface)', border: '1px solid var(--border)',
         borderRadius: 10, padding: '12px 14px',
       }}>
+        <TickerLabel reporte={reporte} />
         <div style={{ fontSize: 10, color: 'var(--text-muted)', fontWeight: 700, letterSpacing: '0.06em', marginBottom: 4 }}>
           PERIODO: {periodo}
         </div>
@@ -267,6 +292,7 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         background: 'var(--surface)', border: '1px solid var(--border)',
         borderRadius: 10, padding: '12px 14px',
       }}>
+        <TickerLabel reporte={reporte} />
         <KpiLine kpi={forward}  label="P/E Forward" />
         <KpiLine kpi={trailing} label="P/E Trailing" />
         <KpiLine kpi={pfcf}     label="P/FCF" />
@@ -288,6 +314,7 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         background: 'var(--surface)', border: '1px solid var(--border)',
         borderRadius: 10, padding: '14px 16px',
       }}>
+        <TickerLabel reporte={reporte} />
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
           <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>Score General</span>
           <span style={{ fontSize: 20, fontWeight: 800, color: col }}>{score}<span style={{ fontSize: 13, fontWeight: 400, color: 'var(--text-muted)' }}>/{max}</span></span>
@@ -307,10 +334,13 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
 
   if (section === 'fortalezas') {
     const greens = (json.flags || []).filter(f => f.level === 'green');
-    if (!greens.length) return <div style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic', padding: '8px 0' }}>Sin fortalezas registradas.</div>;
     return (
-      <div>
-        {greens.map((f, i) => <FlagMini key={i} flag={f} />)}
+      <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 10, padding: '12px 14px' }}>
+        <TickerLabel reporte={reporte} />
+        {greens.length === 0
+          ? <div style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic' }}>Sin fortalezas registradas.</div>
+          : greens.map((f, i) => <FlagMini key={i} flag={f} />)
+        }
       </div>
     );
   }
@@ -318,13 +348,16 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
   if (section === 'riesgos') {
     const reds    = (json.flags || []).filter(f => f.level === 'red');
     const yellows = (json.flags || []).filter(f => f.level === 'yellow');
-    if (!reds.length && !yellows.length) return (
-      <div style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic', padding: '8px 0' }}>Sin riesgos registrados.</div>
-    );
     return (
-      <div>
-        {reds.map((f, i)    => <FlagMini key={`r${i}`} flag={f} />)}
-        {yellows.map((f, i) => <FlagMini key={`y${i}`} flag={f} />)}
+      <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 10, padding: '12px 14px' }}>
+        <TickerLabel reporte={reporte} />
+        {reds.length === 0 && yellows.length === 0
+          ? <div style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic' }}>Sin riesgos registrados.</div>
+          : <>
+              {reds.map((f, i)    => <FlagMini key={`r${i}`} flag={f} />)}
+              {yellows.map((f, i) => <FlagMini key={`y${i}`} flag={f} />)}
+            </>
+        }
       </div>
     );
   }
@@ -337,6 +370,7 @@ function CompanyCard({ reporte, json, section, tabActivo, nEmp }) {
         background: 'var(--surface)', border: '1px solid var(--border)',
         borderRadius: 10, padding: '14px 16px',
       }}>
+        <TickerLabel reporte={reporte} />
         {bullets.map((b, i) => {
           const tipo = b.type || 'neutral';
           const col2 = tipo === 'pro' ? GREEN : tipo === 'con' ? RED : AMBER;
@@ -753,7 +787,7 @@ export default function CompararPage() {
             {empresasActivas.length > 0 && (
               <div style={{
                 display: 'grid',
-                gridTemplateColumns: `repeat(${empresasActivas.filter(e => e.data).length}, 1fr)`,
+                gridTemplateColumns: `repeat(${empresasActivas.length}, 1fr)`,
                 gap: 12,
                 marginBottom: 4,
               }}>
