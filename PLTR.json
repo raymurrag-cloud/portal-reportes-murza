@@ -1,6 +1,7 @@
 {
-  "resumen": "Palantir Technologies (PLTR) reporto ingresos de $4.48B en FY2025, crecimiento del 56% impulsado por su plataforma de IA (AIP) que conecta modelos de lenguaje grande con los datos y operaciones de sus clientes. La empresa es rentable con margen neto del 36%, FCF de $2.1B y balance sin deuda con $7.2B en activos liquidos. Sin embargo, cotiza a multiples extremos (P/E 215x, EV/EBITDA 242x) que incorporan ejecucion perfecta por mas de una decada, dejando escaso margen de error para el inversionista.",
-  "descripcion": "Palantir opera cuatro plataformas de software: Gotham (defensa e inteligencia), Foundry (gestion de datos empresariales), Apollo (entrega continua de software) y AIP (inteligencia artificial generativa). Fundada en 2003, la empresa sirve a agencias gubernamentales (54% del revenue) y empresas comerciales (46%). Su tecnologia Ontology mapea datos en contexto operacional, habilitando agentes de IA en entornos seguros y regulados. En FY2025 tuvo 954 clientes activos (+34% YoY), con el 74% de ingresos en EE.UU. La plataforma AIP, lanzada en 2023, es el principal catalizador del crecimiento comercial y distingue a Palantir de otros proveedores de datos al permitir despliegue de LLMs en entornos clasificados.",
+  "parrafos_gratis": 14,
+  "resumen": "Palantir Technologies es una empresa de software de analisis de datos y plataformas de inteligencia artificial fundada en 2003, originalmente para servir a agencias de inteligencia del gobierno de EE.UU. Con el tiempo expandio su oferta al sector comercial con plataformas como Gotham, Foundry y AIP (Artificial Intelligence Platform). En FY2025 reporto ingresos de $4.48B (+56% YoY) y su primer ano de rentabilidad GAAP plena con utilidad neta de $1.63B. En Q1 2026 los resultados se aceleraron aun mas con ingresos de $1.63B (+85% YoY) y margen neto superior al 53%, impulsados por la adopcion explosiva de AIP en el mercado comercial de EE.UU.",
+  "descripcion": "PLTR opera tres plataformas principales: Gotham (inteligencia y defensa gubernamental), Foundry (transformacion de datos empresariales) y AIP (integracion de IA/LLMs en flujos de trabajo operativos). Su moat radica en la profundidad de la integracion con los datos criticos del cliente, contratos plurianuales de alto valor y el efecto de red interno que genera datos de entrenamiento propietarios. Segmento gubernamental EE.UU. crece +45% YoY; comercial EE.UU. +71% YoY en FY2025. El ciclo de adopcion de AIP Boot Camps como canal de ventas agiliza el tiempo de cierre y aumenta la conversion.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -9,107 +10,112 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
       [
-        "Revenue ($B)",
+        "Revenue (B USD)",
         "1.54",
         "1.91",
         "2.23",
         "2.87",
         "4.48",
-        "+56%"
+        "1.63",
+        "+84.7%"
       ],
       [
-        "Utilidad Neta ($B)",
+        "Utilidad Neta (B USD)",
         "-0.52",
         "-0.37",
         "0.21",
         "0.46",
         "1.63",
-        "+254%"
+        "0.88",
+        "+302%"
       ],
       [
-        "Margen Neto (%)",
+        "Margen Neto",
         "-33.8%",
         "-19.4%",
         "9.4%",
         "16.0%",
         "36.4%",
-        "+20.4pp"
+        "53.7%",
+        "+37.7pp"
       ],
       [
-        "EBITDA ($B)",
+        "EBITDA (B USD)",
         "-0.40",
         "-0.14",
         "0.15",
         "0.34",
         "1.44",
-        "+324%"
+        "0.76",
+        "+330%"
       ],
       [
-        "FCF ($B)",
+        "FCF (B USD)",
         "0.32",
         "0.18",
         "0.70",
         "1.14",
         "2.10",
-        "+84%"
+        "0.89",
+        "+187%"
       ],
       [
-        "EPS GAAP",
-        "-$0.26",
-        "-$0.18",
-        "$0.10",
-        "$0.20",
-        "$0.68",
-        "+240%"
+        "EPS Diluido",
+        "-0.26",
+        "-0.18",
+        "0.10",
+        "0.20",
+        "0.68",
+        "0.34",
+        "+325%"
       ],
       [
-        "Deuda Neta ($B)",
+        "Deuda Neta (B USD)",
         "-2.29",
         "-2.60",
         "-0.83",
         "-2.10",
         "-1.42",
-        "Caja neta"
+        "-8.03",
+        "N/A"
       ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E TTM",
-      "value": "214.5x",
-      "change": "vs. software growth ~40-80x",
+      "label": "P/E Trailing",
+      "value": "200x",
       "signal": "red",
-      "note": "valuacion extrema — requiere crecimiento sostenido 25%+ por 10+ anos",
-      "precio_base": 146.28,
-      "precio_fecha": "2026-03-31",
+      "note": "Prima extrema por hype de IA",
+      "precio_base": 135.7,
+      "precio_fecha": "2026-05-05",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 0.682
+        "valor": 0.68
       }
     },
     {
       "label": "P/E Forward",
-      "value": "70x",
+      "value": "68x",
       "signal": "red",
-      "note": "dato no disponible; consenso de mercado estima ~100-120x para FY2026",
-      "precio_base": 130.39,
-      "precio_fecha": "2026-04-09",
+      "precio_base": 135.7,
+      "precio_fecha": "2026-05-05",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 1.8614
+        "valor": 2
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "242.0x",
+      "value": "224x",
       "signal": "red",
-      "note": "vs. sector enterprise software ~30-50x",
-      "precio_base": 146.28,
-      "precio_fecha": "2026-03-31",
+      "precio_base": 135.7,
+      "precio_fecha": "2026-05-05",
       "fundamento": {
         "tipo": "ev_ebitda",
         "ebitda_b": 1.44,
@@ -119,11 +125,10 @@
     },
     {
       "label": "P/FCF",
-      "value": "166.6x",
+      "value": "155x",
       "signal": "red",
-      "note": "FCF yield solo 0.60%",
-      "precio_base": 146.28,
-      "precio_fecha": "2026-03-31",
+      "precio_base": 135.7,
+      "precio_fecha": "2026-05-05",
       "fundamento": {
         "tipo": "p_fcf",
         "fcf_b": 2.1,
@@ -132,21 +137,18 @@
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "0x",
-      "signal": "green",
-      "note": "sin deuda; $7.2B en activos liquidos incluyendo $5.75B en valores negociables"
+      "value": "Caja neta",
+      "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "22.1%",
-      "signal": "green",
-      "note": "vs. sector software ~15-20%; equity en rapida expansion"
+      "value": "21.8%",
+      "signal": "yellow"
     },
     {
       "label": "ROIC",
-      "value": "20.8%",
-      "signal": "green",
-      "note": "capital invertido minimo por modelo 100% software sin activos fijos"
+      "value": "22.8%",
+      "signal": "green"
     }
   ],
   "chart_ingresos": {
@@ -240,111 +242,99 @@
   "capital_allocation": {
     "items": [
       {
-        "label": "Compensacion en acciones (SBC)",
-        "value": "~$0.9B",
-        "nota": "FY2025: diferencia entre OI GAAP ($1.41B) y OI ajustado ($2.3B). Principal transferencia de valor de accionistas a empleados. Share count crecio +18% en 4 anos (2027M a 2391M)."
+        "label": "Recompras",
+        "value": "0.07B USD",
+        "nota": "Recompras modestas en FY2025; compensacion con stock-based comp elevada ($1.37B en FY2025)"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "$0.07B",
-        "nota": "Minima — la empresa recompra menos de lo que diluye via SBC, resultando en expansion neta del share count cada ano."
+        "label": "Dividendos",
+        "value": "0B USD",
+        "nota": "Sin dividendos historicos; toda la caja se retiene para crecimiento y I+D"
       },
       {
         "label": "Capex",
-        "value": "$0.03B",
-        "nota": "0.7% del revenue — modelo 100% software sin manufactura ni infraestructura fisica propia. La empresa no necesita invertir en activos fijos."
+        "value": "0.03B USD",
+        "nota": "Modelo asset-light; capex minimo refleja plataforma de software puro"
       },
       {
-        "label": "Inversiones en valores",
-        "value": "$5.75B",
-        "nota": "Cartera de valores negociables y equity en startups de IA. Genera ingresos no operativos relevantes pero puede crear volatilidad en resultados trimestrales."
+        "label": "M&A",
+        "value": "~0B USD",
+        "nota": "PLTR no ha realizado adquisiciones significativas; crecimiento 100% organico"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "PLTR FY25",
-      "Software growth ref.",
+      "PLTR TTM",
+      "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
-        "Gross margin",
+        "Gross Margin",
         "82.4%",
-        "~65-75%",
+        "~70%",
         "Por encima del sector"
       ],
       [
-        "Margen operativo",
+        "Margen Operativo",
         "31.5%",
-        "~10-25%",
+        "~20%",
         "Por encima del sector"
       ],
       [
-        "Revenue growth YoY",
+        "Revenue Growth",
         "+56%",
-        "~15-30%",
-        "Por encima del sector"
+        "~15%",
+        "Muy por encima del sector"
       ],
       [
-        "P/E TTM",
-        "214x",
-        "~40-80x",
-        "Por encima del sector"
+        "P/E Forward",
+        "68x",
+        "~30x",
+        "Prima significativa vs. sector"
       ],
       [
         "ROIC",
-        "20.8%",
-        "~15-25%",
-        "En linea con sector"
-      ],
-      [
-        "Deuda/EBITDA",
-        "0x",
-        "~0-0.5x",
+        "22.8%",
+        "~15%",
         "Por encima del sector"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "No hay deterioro operativo — mejora acelerada en todos los indicadores",
-    "analisis": "La transicion de perdidas a rentabilidad creciente es consistente: de -34% margen neto en 2021 a +36% en 2025. La aceleracion del revenue de 29% (FY2024) a 56% (FY2025) es impulsada por AIP y contratos de defensa. El unico riesgo de deterioro es la brecha entre metricas GAAP y ajustadas por la magnitud del SBC, que diluye valor a accionistas aunque no aparece en el P&L.",
+    "veredicto": "PLTR presenta fundamentos excepcionales con aceleracion en 2025-2026; el unico riesgo es la valuacion extrema.",
+    "analisis": "La empresa ha logrado una inflexion historica en rentabilidad con margenes GAAP que se expanden rapidamente. El crecimiento de revenue en FY2025 (+56%) y Q1 2026 (+85%) refleja la adopcion masiva de AIP. Sin deuda, con caja neta de $8B+ incluyendo valores negociables en Q1 2026, el balance es impecable. La unica bandera de riesgo es la valuacion: a 68x P/E forward, cualquier desaceleracion en crecimiento podria generar una contraccion de multiplo severa.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+56%",
+        "valor": "+56.1%",
         "status": "ok"
       },
       {
-        "metrica": "Margen bruto",
+        "metrica": "Margen Bruto",
         "valor": "82.4%",
         "status": "ok"
       },
       {
-        "metrica": "Margen operativo",
+        "metrica": "Margen Operativo",
         "valor": "31.5%",
         "status": "ok"
       },
       {
-        "metrica": "Margen neto",
+        "metrica": "Margen Neto",
         "valor": "36.4%",
         "status": "ok"
       },
       {
-        "metrica": "FCF conversion",
-        "valor": "47% del revenue",
+        "metrica": "FCF YoY",
+        "valor": "+84.2%",
         "status": "ok"
       },
       {
-        "metrica": "SBC vs. revenue",
-        "valor": "~20%",
-        "status": "warn",
-        "nota": "compensacion en acciones diluye accionistas; mejorando pero aun elevada vs. peers"
-      },
-      {
-        "metrica": "Deuda LT",
-        "valor": "$0",
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta $1.42B",
         "status": "ok"
       }
     ]
@@ -352,49 +342,42 @@
   "flags": [
     {
       "level": "green",
-      "title": "Aceleracion de revenue impulsada por AIP",
+      "title": "Aceleracion de AIP — Motor de crecimiento secular",
       "impact": "Alto",
-      "evidence": "Revenue +56% YoY en FY2025 vs. +29% en FY2024 — aceleracion del crecimiento. 954 clientes activos (desde 711, +34%). US commercial revenue +75% YoY. Top 20 clientes: $93.9M promedio (+45% YoY).",
-      "context": "AIP posiciona a Palantir como la capa de operacionalizacion de IA para empresas y gobiernos — un mercado en explosion. La capacidad de conectar LLMs con datos operacionales en entornos seguros es un diferenciador critico que sus competidores no pueden replicar facilmente."
+      "evidence": "Q1 2026: revenue +85% YoY a $1.63B; US Commercial +71% en FY2025; AIP Boot Camps generan pipeline calificado en dias",
+      "context": "La adopcion de AIP por empresas del Fortune 500 y agencias gubernamentales esta en fase temprana. El modelo de boot camps reduce el ciclo de ventas de meses a semanas, permitiendo escalar cuentas nuevas rapidamente."
     },
     {
       "level": "green",
-      "title": "Balance con caja neta y cero deuda",
-      "impact": "Medio",
-      "evidence": "Cash $1.42B + valores negociables $5.75B = $7.17B en activos liquidos. Long-term debt: $0. Deuda neta: -$1.42B. Equity: $7.39B (+47.7% YoY).",
-      "context": "Balance indestructible que permite sobrevivir cualquier contraccion de mercado, financiar expansion agresiva sin tocar mercados de deuda y eventualmente devolver capital a escala. Sin riesgo de refinanciamiento."
-    },
-    {
-      "level": "green",
-      "title": "Expansion de margenes rapida y consistente",
+      "title": "Caja neta fortisima — Balance sin riesgo",
       "impact": "Alto",
-      "evidence": "Margen neto: de -34% (2021) a -19% (2022) a +9% (2023) a +16% (2024) a +36% (2025). Margen bruto en maximos de 82.4%. FCF margin del 47%.",
-      "context": "El apalancamiento operativo del modelo software se esta materializando. Cada dolar adicional de revenue cae directamente al resultado. La calidad de ganancias es alta: FCF de $2.1B representa el 129% del net income GAAP."
+      "evidence": "Q1 2026: efectivo + valores negociables = $8.03B; sin deuda de largo plazo desde siempre",
+      "context": "La posicion de caja permite a PLTR invertir agresivamente en producto e I+D sin presion de capital, y podria usar la liquidez para recompras o consolidacion del mercado si los multiplos se normalizan."
     },
     {
       "level": "yellow",
-      "title": "SBC eleva el costo real del crecimiento",
+      "title": "Stock-Based Compensation elevada — Dilucion continua",
       "impact": "Medio",
-      "evidence": "OI GAAP $1.41B vs. OI adj. $2.3B: diferencia de ~$0.9B en SBC anual. Share count crecio de 2,027M (2021) a 2,391M (2025) = +18% de dilucion en 4 anos.",
-      "context": "Si eres inversor a largo plazo en PLTR, parte de tu retorno es erosionado por la compensacion en acciones. La empresa esta mejorando el ratio pero la dilucion sigue siendo relevante y debe considerarse al calcular el retorno real."
+      "evidence": "FY2025 SBC = $1.37B (~30.6% del revenue); shares outstanding crecen consistentemente ano a ano",
+      "context": "La SBC es el mecanismo principal de retencion de talento en PLTR. Si bien es comun en tech, el nivel absoluto implica que el FCF GAAP sobreestima el valor para el accionista. Hay que ajustar FCF por SBC para una valoracion mas conservadora."
     },
     {
       "level": "yellow",
-      "title": "Valuacion extrema incorpora decada de ejecucion perfecta",
-      "impact": "Alto",
-      "evidence": "P/E 214x, EV/EBITDA 242x, P/FCF 167x. FCF yield de solo 0.60%. Para que PLTR a $146 sea una buena inversion en 10 anos asumiendo P/E de 40x al final, earnings deben crecer al 22% anual compuesto durante toda la decada.",
-      "context": "El riesgo no es el negocio — es la valoracion. Cualquier desaceleracion en el crecimiento, cambio de multiples por tasas o tropiezo en contratos podria generar caidas del 40-70% sin que cambie ningun fundamental del negocio."
+      "title": "Dependencia del gobierno EE.UU. — Riesgo de presupuesto federal",
+      "impact": "Medio",
+      "evidence": "Segmento gobierno EE.UU. representa ~40% del revenue total en FY2025; contratos DOGE/DOD son criticos",
+      "context": "Los recortes presupuestarios federales o cambios en prioridades de defensa podrian impactar el segmento gubernamental. Sin embargo, PLTR tiene contratos plurianuales y es clasificado como infraestructura critica en varios programas."
     },
     {
       "level": "red",
-      "title": "Riesgo de recorte en contratos de gobierno",
+      "title": "Valuacion extrema — Sin margen de seguridad",
       "impact": "Alto",
-      "evidence": "54% del revenue proviene de clientes gubernamentales. Palantir es vulnerable a cambios en prioridades de gasto de defensa e inteligencia. El propio filing advierte: 'large government customers are subject to budget uncertainties and changes in timing and spending priorities'.",
-      "context": "El gobierno de EE.UU. es el cliente mas importante de Palantir. Un freeze de contratos del Departamento de Defensa, recortes presupuestales o cambios en prioridades de inteligencia impactarian directamente el revenue — este riesgo no se puede modelar con precision y es el mayor riesgo binario del negocio."
+      "evidence": "P/E Forward 68x, EV/EBITDA 224x, P/FCF 155x al precio actual de $135.70",
+      "context": "PLTR cotiza con una prima de 'software de IA' que descuenta anos de crecimiento perfecto. Cualquier miss de guidance, desaceleracion macro o rotacion sectorial podria generar una caida del 40-60% sin cambio en los fundamentales subyacentes."
     }
   ],
   "score": {
-    "score": 8.8,
+    "score": 9,
     "max": 10,
     "items": [
       {
@@ -409,7 +392,7 @@
       },
       {
         "label": "Calidad de margenes",
-        "score": 8,
+        "score": 9,
         "max": 10
       },
       {
@@ -425,20 +408,20 @@
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Palantir ejecuta una estrategia de plataforma unica: construye el sistema operativo de las decisiones para organizaciones criticas — gobiernos, ejercitos, hospitales, empresas industriales. AIP, lanzada en 2023, convierte a Palantir en la capa de orquestacion de IA generativa en entornos seguros, conectando LLMs de terceros (OpenAI, Anthropic, Meta) con datos operacionales reales via la Ontology. La estrategia de bootcamps (demos en dias, no meses) acelera el ciclo de ventas comercial. El objetivo a largo plazo es ser la capa de IA de facto para los ejercitos y empresas mas importantes del mundo occidental.",
-    "ventajas": "1) Ontology como barrera de entrada — anos de mapeo de datos y procesos de cada cliente crean switching costs altisimos; reemplazar Palantir equivale a redisenar los procesos operativos de la organizacion. 2) Acceso privilegiado a entornos clasificados — unico proveedor con capacidad de desplegar LLMs en redes airgapped de defensa e inteligencia, barrera que ningun competidor puede escalar facilmente. 3) AIP en entornos seguros — diferenciador critico vs. Microsoft Azure AI o Google Vertex que no operan en entornos clasificados de alta seguridad. 4) Modelo de delivery agil — Apollo permite actualizaciones diarias en cualquier entorno (cloud, on-premise, clasificado), diferenciador vs. incumbentes como Oracle o SAP.",
-    "debilidades": "1) Ciclo de ventas largo y variable — grandes contratos gubernamentales tardan 12-24 meses en cerrarse, generando revenue volatil dificil de predecir. 2) Alta dependencia de pocos clientes clave — top 20 clientes generan $93.9M promedio; perder 2-3 de ellos impacta materialmente. 3) SBC elevada como porcentaje de revenue — la cultura de compensacion en acciones diluye al accionista ano a ano. 4) Reputacion dependiente del CEO — Alex Karp tiene perfil publico divisivo; comentarios politicos frecuentes crean riesgo reputacional con clientes corporativos.",
+    "estrategia": "PLTR ejecuta una estrategia de plataforma de IA operacional donde el diferenciador no es el modelo de lenguaje sino la capacidad de conectar datos criticos del negocio con flujos de decision. AIP (Artificial Intelligence Platform) actua como capa de orquestacion que integra LLMs de terceros (OpenAI, Anthropic, etc.) con los sistemas de datos existentes del cliente via Foundry o Gotham. La estrategia de AIP Boot Camps — talleres intensivos de 5 dias donde PLTR lleva un equipo de ingenieros al cliente — comprime el tiempo de demostracion de valor de meses a dias, acelerando el ciclo de ventas y la tasa de conversion. En el segmento gubernamental, PLTR esta posicionado como el software de IA de facto para las fuerzas armadas de EE.UU. con contratos MAVEN Smart System (ejercito), MVP (espacial) y crecientes contratos con aliados de la OTAN.",
+    "ventajas": "1) Integracion profunda: el costo de salida para un cliente que usa PLTR en operaciones criticas es extremadamente alto, generando retension >95%. 2) Red de datos propietarios: cada implementacion genera datos de entrenamiento que mejoran los modelos de PLTR, creando un flywheel de mejora continua. 3) Posicion regulatoria unica: PLTR tiene autorizaciones de seguridad que pocas empresas poseen, siendo practicamente el unico proveedor calificado para ciertos contratos de defensa e inteligencia. 4) Modelo asset-light: capex minimo ($30M en FY2025) con margenes brutos del 82% permiten conversion de revenue a FCF muy eficiente.",
+    "debilidades": "1) SBC masiva (~31% del revenue en FY2025) que diluye al accionista y sobreestima el FCF real. 2) Ciclo de ventas complejo y largo en enterprise que limita la velocidad de expansion en nuevas cuentas. 3) Dependencia de un numero relativamente pequeno de contratos gubernamentales de alto valor. 4) Capacidad limitada de monetizar por API o por consumo — modelo de licencia de plataforma dificulta la escala tipo SaaS puro.",
     "riesgos": [
-      "Recorte de contratos federales: el gobierno de EE.UU. representa una fraccion significativa del 54% gubernamental; cualquier freeze o renegociacion de contratos con DoD, USIC o agencias de salud impactaria directamente el revenue",
-      "Desaceleracion post-boom de AIP: la aceleracion de 56% en FY2025 puede reflejar early adopters; si la tasa de nuevos contratos cae en FY2026, el mercado descontaria agresivamente dado el multiple actual",
-      "Competencia de BigTech en IA empresarial: Microsoft (Azure AI + Copilot), Google (Vertex AI), Amazon (Bedrock) tienen presupuestos de R&D superiores y relaciones preexistentes con clientes corporativos que podrian capturar el mercado comercial",
-      "Compresion de multiples: a P/E 214x, una normalizacion a 50x (aun premium vs. mercado) implicaria caida del 77% del precio sin cambiar ninguno de los fundamentales del negocio — el riesgo de re-rating es asimetrico"
+      "Desaceleracion del gasto federal de EE.UU. en IA/defensa impactaria ~40% del revenue total",
+      "Competencia de hyperscalers (AWS, Azure, GCP) que ofrecen capacidades similares integradas con su nube a menor costo",
+      "Contraccion de multiplos de valuacion si el crecimiento se desacelera por debajo del 40% anual",
+      "Riesgo de concentracion: los 20 principales clientes representan una porcion desproporcionada del revenue"
     ],
-    "inversiones_estrategicas": "R&D concentrado en AIP (expansion de capacidades agentiales y evaluacion de workflows de IA en produccion), Ontology (profundidad de integracion de datos operacionales), y Apollo (expansion a entornos de edge computing e IoT industrial). Expansion de bootcamps como canal de adquisicion comercial de bajo costo y ciclo rapido. Alianzas con defense primes para integrar AIP en sistemas de armas. Cartera de inversiones de $5.75B en valores y equity de startups de IA para mantener proximidad al ecosistema y generar retornos no operativos."
+    "inversiones_estrategicas": "PLTR continua invirtiendo en AIP como el vector de crecimiento principal. En 2025-2026 lanzo AIP for Defense (integracion con sistemas de comando y control del pentagono), AIP for Healthcare (FDA-cleared workflows), y AIP Enterprise para Fortune 500. La empresa no hace M&A pero si alianzas estrategicas con Microsoft (Azure integration) y Oracle (cloud gov). El programa de SPARC (Special Projects and Classified Research) es otro vector de crecimiento en contratos de inteligencia clasificados."
   },
   "verdict": {
-    "status": "Mantener / Comprar en Caidas",
-    "score": "8.8/10",
+    "status": "Mantener — Alta Conviccion en el negocio, Valuacion Extrema",
+    "score": "9/10",
     "color": "yellow",
     "metrics": [
       {
@@ -451,11 +434,11 @@
       },
       {
         "label": "FCF Yield",
-        "value": "0.60%"
+        "value": "0.65%"
       },
       {
-        "label": "P/E TTM",
-        "value": "214.5x"
+        "label": "P/E Forward",
+        "value": "68x"
       },
       {
         "label": "Crecimiento Rev.",
@@ -464,19 +447,19 @@
     ],
     "bullets": [
       {
-        "text": "**Mejor negocio de IA operacional ->** AIP es el unico producto que conecta LLMs con datos operacionales en entornos clasificados y seguros. Moat real con switching costs altisimos via la Ontology; 954 clientes activos, crecimiento de clientes +34% YoY.",
+        "text": "**AIP como motor secular** — La plataforma de IA operacional de PLTR tiene una ventaja competitiva real; la adopcion en Q1 2026 (+85% YoY) confirma que la demanda no es hype sino contratos firmados.",
         "type": "pro"
       },
       {
-        "text": "**Margenes en trayectoria historica ->** De -34% margen neto en 2021 a +36% en 2025; FCF de $2.1B con 47% de margen. El apalancamiento operativo del modelo software se materializa de forma acelerada.",
+        "text": "**Balance impecable** — Caja neta de $8B+ (incluyendo valores negociables en Q1 2026), sin deuda, FCF de $2.1B en FY2025 y $0.89B solo en Q1 2026.",
         "type": "pro"
       },
       {
-        "text": "**Balance indestructible ->** Cero deuda, $7.2B en activos liquidos, FCF positivo creciente al 84% YoY. La empresa puede financiar su expansion indefinidamente sin tocar mercados de capital.",
+        "text": "**Inflexion de margenes** — De perder dinero en 2021 a 36% de margen neto GAAP en FY2025 y 54% en Q1 2026; la apalancamiento operativo es real y se acelera.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion desconecta riesgo/retorno ->** P/E 215x y EV/EBITDA 242x requieren ejecucion perfecta durante 10+ anos sin ningun tropiezo. FCF yield de 0.60% ofrece poco margen de seguridad; el riesgo de compresion de multiples es la mayor amenaza para el inversionista que compra hoy.",
+        "text": "**Valuacion sin margen de seguridad** — A 68x P/E forward y 155x P/FCF, el precio descuenta anos de ejecucion perfecta; cualquier miss podria generar caidas del 40-60%.",
         "type": "con"
       }
     ]
@@ -485,27 +468,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $4.48B en FY2025 representa el mayor salto porcentual en la historia moderna de Palantir (+56% YoY vs. +29% en FY2024). El crecimiento fue impulsado por AIP en el segmento comercial US (+75% YoY) y la expansion de contratos gubernamentales. La empresa tiene 954 clientes activos, con los top 20 generando $93.9M promedio anuales (+45% YoY). El 74% del revenue proviene de EE.UU.; 54% de gobierno y 46% de sector comercial."
+        "texto": "FY2025 revenue de $4.48B (+56% YoY) represento una aceleracion significativa vs el +29% de FY2024, impulsada por AIP. Q1 2026 continua la tendencia con $1.63B (+85% YoY), lo que sugiere un run rate anual de $6.5B+ para FY2026. El segmento US Commercial es el de mayor crecimiento (+71% en FY2025) y consolida la tesis de que PLTR no es solo una empresa de gobierno."
       },
       {
         "label": "Margenes",
-        "texto": "Margen bruto: 82.4% (vs. 80.1% FY2024). Margen operativo GAAP: 31.5% (vs. 10.8%). Margen neto: 36.4% (vs. 16.0%). La expansion de 20pp en margen neto en un solo ano es extraordinaria para una empresa de su tamano. En terminos ajustados (excluido SBC), el margen operativo es de 51.3%. La diferencia de ~20pp entre GAAP y ajustado refleja ~$0.9B en compensacion en acciones anual, el costo real de retener talento en Silicon Valley."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS GAAP de $0.68 en FY2025 (+240% vs. $0.20 en FY2024). Primera vez que Palantir reporta EPS positivo por dos anos consecutivos con aceleracion significativa. EPS calculado desde XBRL: net income $1.63B / diluted shares 2391.2M = $0.682. El share count ha crecido de 2027M (2021) a 2391M (2025) = +18% de dilucion en 4 anos por SBC neto de recompras."
-      },
-      {
-        "label": "Balance",
-        "texto": "Activos liquidos: cash $1.42B + valores negociables $5.75B = $7.17B. Deuda a largo plazo: $0. Equity de accionistas: $7.39B (vs. $5.00B en 2024, +47.7% YoY). Deuda neta: -$1.42B (caja neta). El balance no tiene vulnerabilidades — es una fortaleza absoluta que protege contra cualquier escenario adverso, incluyendo periodos prolongados de contraccion en contratos gubernamentales."
+        "texto": "El margen bruto se expandio a 82.4% en FY2025 (vs 80.1% en FY2024), reflejando el poder de fijacion de precios de la plataforma. El margen operativo GAAP salto a 31.5% (vs 10.8% en FY2024), y el margen neto GAAP a 36.4% (vs 16.0%), demostrando un apalancamiento operativo excepcional. En Q1 2026 el margen neto GAAP supero el 53%."
       },
       {
         "label": "Generacion de caja",
-        "texto": "Operating cash flow: $2.13B (+85% YoY). Capex: $0.03B (modelo pure software). FCF: $2.10B, margen del 47% sobre revenue. La conversion de utilidades en caja es de alta calidad: FCF representa el 129% del net income GAAP, superior al 100% porque la deprecializacion no refleja el costo real del negocio. El FCF yield de 0.60% es bajo hoy, pero si el FCF crece al 50%+ anual, se normaliza rapidamente."
+        "texto": "FCF de $2.10B en FY2025 (+84% YoY) confirma que el modelo de negocio es altamente generador de efectivo. Sin embargo, ajustando por SBC de $1.37B, el FCF economico real es de ~$0.73B, lo que implica un P/FCF ajustado de ~444x — una perspectiva mas conservadora de la valuacion real."
+      },
+      {
+        "label": "Balance",
+        "texto": "Posicion de caja neta de $1.42B en efectivo + $5.75B en valores negociables al cierre de FY2025 ($8.03B total en Q1 2026). Sin deuda de largo plazo. La empresa es financieramente invulnerable y podria sobrevivir anos sin generar un solo dolar de revenue."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $135.70/accion (mercap $324.5B), PLTR cotiza a 68x P/E forward ($2.00 EPS estimado) y 155x P/FCF. Incluso asumiendo un crecimiento del 50% anual por 5 anos consecutivos y expansion de margenes al 40%, el retorno esperado es modesto para el nivel de riesgo asumido. La accion es un activo de calidad excepcional a un precio que requiere ejecucion perfecta."
       },
       {
         "label": "Riesgos principales",
-        "texto": "1) Valuacion: P/E 215x y EV/EBITDA 242x requieren ejecucion impecable por una decada — cualquier desaceleracion o multiple compresion podria generar caidas del 50-75% sin deterioro fundamental. 2) Concentracion gubernamental: 54% del revenue depende de contratos con agencias federales sujetos a ciclos presupuestales y decisiones politicas imprevisibles. 3) SBC como dilution real: los accionistas cargan con ~$0.9B+ anuales en compensacion en acciones que erosiona su participacion aunque no aparece como 'costo' en el P/E basico."
+        "texto": "El principal riesgo no es el negocio sino la valuacion. A 68x P/E forward, una desaceleracion del crecimiento al 30% (aun excepcional) podria comprimir el multiplo a 40-45x y generar una caida del 35-40% sin ninguna deterioro en los fundamentales. Adicionalmente, la SBC elevada (~31% del revenue) diluye continuamente a los accionistas existentes, y la dependencia del gasto federal de EE.UU. en IA/defensa expone ~40% del revenue a decisiones presupuestarias politicas."
       }
     ]
   }

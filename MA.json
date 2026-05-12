@@ -1,0 +1,505 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Mastercard es el segundo mayor operador de redes de pago globales, procesando mas de 175,000 millones de transacciones anuales en mas de 210 paises. Su modelo de negocio como intermediario tecnologico sin asumir riesgo crediticio genera margenes estructuralmente elevados (margen operativo ~57.6%) y un FCF de $17.16B en FY2025. Con crecimiento de revenue del +16.4% y EPS del +18.9%, MA ejecuta consistentemente a doble digito apoyado en la expansion del gasto global con tarjeta, el crecimiento de pagos cross-border y la monetizacion de servicios de valor agregado. La accion cotiza con prima respecto al mercado, justificada por su posicion de duopolio junto a Visa.",
+  "descripcion": "Mastercard opera la red de pagos electronicos Mastercard/Maestro/Cirrus que conecta emisores (bancos), adquirentes y comercios. Sus ingresos provienen de (1) Payment Network: comisiones de switching, evaluaciones sobre GDV (~$10.6T en 2025) y transacciones cross-border; y (2) Value-Added Services & Solutions: ciberseguridad, datos y analytics, servicios de lealtad, procesamiento y open banking. La red cuenta con +3.4B tarjetas activas. El moat es el efecto de red bilateral: cuantos mas emisores y comercios adoptan Mastercard, mas valioso es el ecosistema para todos. MA no emite tarjetas ni extiende credito, eliminando el riesgo de credito de su modelo. El duopolio global con Visa crea barreras de entrada practicamente infranqueables.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "18.88",
+        "22.24",
+        "25.10",
+        "28.17",
+        "32.79",
+        "8.40",
+        "+16.4%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "8.69",
+        "9.93",
+        "11.20",
+        "12.87",
+        "14.97",
+        "3.88",
+        "+16.3%"
+      ],
+      [
+        "Margen Neto",
+        "46.0%",
+        "44.6%",
+        "44.6%",
+        "45.7%",
+        "45.7%",
+        "46.2%",
+        "+0.0pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "10.81",
+        "13.01",
+        "14.81",
+        "16.48",
+        "20.04",
+        "5.21",
+        "+21.6%"
+      ],
+      [
+        "FCF (B USD)",
+        "9.06",
+        "10.75",
+        "11.61",
+        "14.31",
+        "17.16",
+        "2.66",
+        "+19.9%"
+      ],
+      [
+        "EPS Diluido",
+        "8.76",
+        "10.22",
+        "11.83",
+        "13.89",
+        "16.52",
+        "4.35",
+        "+18.9%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "5.28",
+        "6.89",
+        "5.81",
+        "9.04",
+        "7.68",
+        "ND",
+        "-15.1%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "30.1x",
+      "signal": "yellow",
+      "note": "vs. sector financiero 18x; prima por calidad del negocio",
+      "precio_base": 497.81,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 16.52
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "26.9x",
+      "signal": "yellow",
+      "note": "Consenso EPS 2026 ~$18.5e",
+      "precio_base": 497.81,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 18.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "22.9x",
+      "signal": "yellow",
+      "precio_base": 497.81,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 20.04,
+        "shares_m": 906,
+        "deuda_neta_b": 7.68
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "26.3x",
+      "signal": "yellow",
+      "precio_base": 497.81,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 17.16,
+        "shares_m": 906
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.38x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "193%",
+      "signal": "green",
+      "note": "Inflado por buybacks masivos (equity contable bajo)"
+    },
+    {
+      "label": "ROIC",
+      "value": "96%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 18.88,
+        "utilidad": 8.69
+      },
+      {
+        "label": "FY2022",
+        "revenue": 22.24,
+        "utilidad": 9.93
+      },
+      {
+        "label": "FY2023",
+        "revenue": 25.1,
+        "utilidad": 11.2
+      },
+      {
+        "label": "FY2024",
+        "revenue": 28.17,
+        "utilidad": 12.87
+      },
+      {
+        "label": "FY2025",
+        "revenue": 32.79,
+        "utilidad": 14.97
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 78.2,
+        "operativo": 53.4,
+        "neto": 46
+      },
+      {
+        "label": "FY2022",
+        "bruto": 79.3,
+        "operativo": 55.1,
+        "neto": 44.6
+      },
+      {
+        "label": "FY2023",
+        "bruto": 80.1,
+        "operativo": 55.8,
+        "neto": 44.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 80.8,
+        "operativo": 55.3,
+        "neto": 45.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 81.2,
+        "operativo": 57.6,
+        "neto": 45.7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "11.73B USD",
+        "nota": "FY2025; reduccion de shares de 927M a 906M; ~$17.6B devueltos en total incluyendo dividendos"
+      },
+      {
+        "label": "Dividendos",
+        "value": "2.76B USD",
+        "nota": "FY2025; dividendo creciendo consistentemente ~12% CAGR"
+      },
+      {
+        "label": "Capex",
+        "value": "0.49B USD",
+        "nota": "FY2025; bajo capex (1.5% de revenue); negocio asset-light"
+      },
+      {
+        "label": "M&A",
+        "value": "~1.5B USD",
+        "nota": "Adquisiciones selectivas en VAS: ciberseguridad, open banking, datos"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "MA TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "81.2%",
+        "~55%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "57.6%",
+        "~28%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+16.4%",
+        "~8%",
+        "Muy por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "26.9x",
+        "~18x",
+        "Prima justificada por calidad"
+      ],
+      [
+        "ROIC",
+        "96%",
+        "~15%",
+        "Clase mundial — duopolio de red"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Mastercard muestra salud financiera excepcional: crecimiento acelerado, margenes en expansion y FCF record en FY2025.",
+    "analisis": "Revenue crecio +16.4% en FY2025 y Q1 2026 confirma aceleracion (+15.8% YoY). El margen operativo subio a 57.6% (vs 55.3% en 2024) y el FCF alcanzo $17.16B. La deuda neta se redujo de $9.04B a $7.68B a pesar de devolver $17.6B a accionistas. No hay senales de deterioro; los riesgos son exogenos (regulacion, macro).",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+16.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "57.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "45.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+19.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "7.68B USD",
+        "status": "ok"
+      },
+      {
+        "metrica": "EPS YoY",
+        "valor": "+18.9%",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Duopolio global de pagos — moat estructural",
+      "impact": "Alto",
+      "evidence": "MA y Visa controlan >90% del mercado global de pagos con tarjeta. Red de 3.4B tarjetas, +100M puntos de aceptacion. Switching costs extremadamente altos para issuers y acquirers.",
+      "context": "La posicion de duopolio es practicamente irreplicable. El costo de construir una red equivalente es de decenas de miles de millones y requiere decadas de desarrollo. Esto asegura poder de fijacion de precios sostenido."
+    },
+    {
+      "level": "green",
+      "title": "Expansion de VAS acelera crecimiento y mejora mix",
+      "impact": "Alto",
+      "evidence": "Value-Added Services contribuye ~40% del revenue en 2025 (vs ~30% en 2020). Incluye ciberseguridad, datos y analytics, open banking y servicios de lealtad. Crecimiento superior a payment network.",
+      "context": "La estrategia de diversificar mas alla del switching puro reduce la ciclicalidad y mejora los margenes. Servicios como Mastercard Intelligence y Nudata tienen pricing power independiente del volumen de transacciones."
+    },
+    {
+      "level": "green",
+      "title": "Cross-border como motor de crecimiento premium",
+      "impact": "Alto",
+      "evidence": "Transacciones cross-border crecieron +10% YoY en FY2025 con tasas de comision 3-5x superiores a transacciones domesticas. Recuperacion del turismo y comercio e-commerce global sostienen el momentum.",
+      "context": "El segmento cross-border es el de mayor rentabilidad para MA. Con el turismo global aun por recuperar niveles pre-COVID en algunos mercados, hay runway adicional de crecimiento."
+    },
+    {
+      "level": "yellow",
+      "title": "Regulacion global de interchange — presion estructural",
+      "impact": "Medio",
+      "evidence": "UE, Australia, India, Mexico y otros mercados regulan activamente las tasas de intercambio. En 2025, MA enfrento nuevas revisiones regulatorias en 12+ jurisdicciones. La Credit Card Competition Act sigue activa en el Congreso de EE.UU.",
+      "context": "Aunque MA no cobra directamente el interchange, la regulacion puede reducir el incentivo de los bancos a promover tarjetas Mastercard. Un cambio regulatorio adverso en EE.UU. seria el mayor riesgo individual."
+    },
+    {
+      "level": "yellow",
+      "title": "Nuevos competidores en pagos digitales y A2A",
+      "impact": "Medio",
+      "evidence": "Account-to-account (A2A) payments crecen en mercados como Brasil (PIX), India (UPI) y Europa (Open Banking). Wallets digitales de Big Tech escalan globalmente.",
+      "context": "Aunque MA se ha adaptado integrando estos sistemas como socios o facilitadores, la desintermediacion directa donde el consumidor paga A2A sin pasar por la red MA es un riesgo de largo plazo."
+    },
+    {
+      "level": "red",
+      "title": "Litigios de interchange en EE.UU. — contingencia multimillonaria",
+      "impact": "Alto",
+      "evidence": "MA y Visa llegaron a un acuerdo de $197M en 2024 con comercios sobre interchange fees, pero nuevas demandas han sido presentadas. Provision for litigation en Q1 2026 fue de $151M en un solo trimestre.",
+      "context": "Los litigios de interchange son recurrentes. Si el acuerdo de 2024 es rechazado por tribunales y se va a juicio, la exposicion puede escalar a miles de millones. No amenaza la solvencia pero genera volatilidad y desvio de capital."
+    }
+  ],
+  "score": {
+    "score": 9,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Mastercard ejecuta su estrategia en tres vectores: (1) Hacer crecer el core: expanding la aceptacion de su red, aumentando la penetracion de pagos electronicos en mercados emergentes (Africa, Asia-Pacifico) y capturando mas volumen de efectivo. (2) Diversificar con VAS: monetizar los datos de transacciones con servicios de ciberseguridad (Ethoca, RiskRecon), analytics (Test & Learn), open banking (Aiia, Finicity) y lealtad. (3) Nuevos flujos de pago: B2B payments via Mastercard Track, pagos gubernamentales, disbursements y real-time payments via integraciones con redes locales de A2A.",
+    "ventajas": "Red de efectos bilaterales con 3.4B+ tarjetas y 100M+ puntos de aceptacion. Marca global de alta confianza. Modelo asset-light sin riesgo de credito. Duopolio de hecho con Visa con barreras economicas y regulatorias. Suite creciente de VAS con alta rentabilidad marginal. Historial de 15+ anos de crecimiento de EPS de doble digito.",
+    "debilidades": "Concentracion geografica: ~47% del revenue proviene de EE.UU. y Europa, regiones con mayor escrutinio regulatorio. Dependencia de bancos emisores para promover tarjetas MA. Equity contable bajo historicamente por agresivos buybacks. El crecimiento de VAS ha requerido adquisiciones costosas.",
+    "riesgos": [
+      "Regulacion adversa de interchange en EE.UU.: Credit Card Competition Act podria erosionar el ecosistema de recompensas que incentiva uso de tarjetas premium",
+      "Desintermediacion por redes A2A (PIX, UPI, RTP) que bypasean la red de Mastercard en mercados clave",
+      "Litigios de interchange: contingencias multimillonarias recurrentes en EE.UU. y Europa",
+      "Desaceleracion macroeconomica global: el volumen de transacciones y cross-border son sensibles al ciclo economico y turismo",
+      "Riesgo geopolitico: restricciones en Rusia (ya ejecutadas), posibles restricciones en China u otros mercados"
+    ],
+    "inversiones_estrategicas": "Adquisicion de Aiia (open banking, Nordics) y Finicity (datos financieros, EE.UU.) refuerzan estrategia de open banking. RiskRecon (ciberseguridad) y NuData (biometria conductual) fortalecen el portfolio de VAS de seguridad. Inversiones en fintechs emergentes via Mastercard Start Path. Asociaciones con Pix (Brasil), UPI (India) y otras redes de A2A para mantenerse relevante en ecosistemas de pago alternativos."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "9.0/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "32.8B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "45.7%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.8%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "26.9x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+16.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Duopolio irrompible ->** Mastercard y Visa controlan >90% del mercado global de pagos con tarjeta. El efecto de red bilateral de 3.4B tarjetas y 100M+ puntos de aceptacion hace practicamente imposible la entrada de nuevos competidores a escala global.",
+        "type": "pro"
+      },
+      {
+        "text": "**Crecimiento compuesto sostenido ->** Revenue crece +16% YoY en FY2025 y Q1 2026 confirma la tendencia (+15.8%). EPS crece +18.9% YoY gracias a expansion de margenes y recompras. El historial muestra 15+ anos de crecimiento de doble digito.",
+        "type": "pro"
+      },
+      {
+        "text": "**Maquina de FCF sin capital intensivo ->** FCF de $17.16B en FY2025 (+20% YoY) con capex de solo $490M (1.5% del revenue). La compania devolvio $17.6B a accionistas en 2025. La generacion de caja es estructuralmente superior a cualquier banco con riesgo de credito.",
+        "type": "pro"
+      },
+      {
+        "text": "**Regulacion e interchange como riesgo latente ->** La Credit Card Competition Act en EE.UU. y regulaciones de interchange en 12+ paises globalmente podrian comprimir las economics de la red. El duopolio de Mastercard/Visa atrae escrutinio regulatorio creciente.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $32.79B en FY2025, +16.4% YoY, con aceleracion confirmada en Q1 2026 (+15.8%). El crecimiento es impulsado por expansion del volumen de GDV (+15% local currency), cross-border (+10%) y VAS (~40% del mix). La trayectoria de los ultimos 5 anos muestra un CAGR de revenue del ~11.7%."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen operativo del 57.6% en FY2025, expansion de 230 bps vs 2024. Margen neto estable ~45.7%. La naturaleza asset-light del negocio genera margenes estructuralmente superiores al sector financiero. Q1 2026 muestra margen neto de 46.2%, ligera mejora."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $17.16B en FY2025 (+19.9% YoY). Deuda Neta reducida a $7.68B. La compania devolvio $17.6B en recompras y dividendos en 2025. FCF yield del 3.8% al precio actual refleja la prima de valuacion por calidad del negocio."
+      },
+      {
+        "label": "Balance",
+        "texto": "LTD de $18.25B con Deuda Neta/EBITDA de solo 0.38x, balance saludable a pesar del agresivo programa de buybacks. El equity contable positivo ($7.75B) tras anos de recompras masivas demuestra la extraordinaria generacion de valor. Rating de credito A+ (S&P)."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E trailing 30.1x y forward 26.9x. EV/EBITDA 22.9x. P/FCF 26.3x. La prima respecto al mercado es justificada por el duopolio estructural, el crecimiento consistente de doble digito y la excepcional calidad de las ganancias. En terminos historicos, MA ha cotizado entre 25-35x forward EPS."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo regulatorio de interchange en EE.UU. (Credit Card Competition Act) es el principal riesgo de largo plazo. Los litigios de interchange son recurrentes ($151M provision en Q1 2026). La desintermediacion por redes A2A en mercados emergentes es un riesgo estructural de largo plazo. La desaceleracion macroeconomica afectaria el volumen de transacciones y el cross-border."
+      }
+    ]
+  }
+}

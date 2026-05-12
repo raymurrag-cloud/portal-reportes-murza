@@ -1,6 +1,7 @@
 {
-  "resumen": "MercadoLibre reporto Revenue FY2025 de $28.89B (+39% YoY), EBITDA de $4.02B y Operating Cash Flow de $12.12B. La empresa consolida su posicion como el ecosistema tecnologico dominante de America Latina, con Mercado Pago superando al marketplace como principal generador de revenue. La valuacion de 43.6x P/E sobre un crecimiento de +39% y un FCF yield del 12.9% representa una propuesta de valor atractiva para inversores de largo plazo.",
-  "descripcion": "MercadoLibre Inc. opera el ecosistema de comercio electronico y tecnologia financiera mas grande de America Latina, con presencia en 18 paises y 100M+ de usuarios activos. Sus cinco verticales principales son: Marketplace (GMV con comision variable), Mercado Pago (procesamiento de pagos y billetera digital con TPV $200B+), Mercado Credito (origina prestamos a compradores, vendedores y consumidores usando datos del ecosistema), Mercado Envios (red logistica 1P y 3PL con entrega same-day en principales ciudades) y Mercado Ads (publicidad digital sobre la base de datos del marketplace). La ventaja competitiva central es el flywheel de datos: cada interaccion refuerza los demas segmentos y aumenta el switching cost del usuario.",
+  "parrafos_gratis": 14,
+  "resumen": "MercadoLibre reporto resultados excepcionales en Q1 2026: ingresos de $8.845B (+49% YoY), GMV de $19.0B (+42%) y TPV de $87.2B (+50%), confirmando la posicion dominante del ecosistema en America Latina. La compresion de margenes es deliberada: el margen operativo cayo a 6.9% (-600bps YoY) por inversion masiva en shipping gratuito en Brasil, expansion agresiva de la cartera de credito (+87% a $14.6B) y construccion de ventajas competitivas en logistica y 1P. El FCF ajustado fue -$56M porque ~$1.9B se destino a crecimiento del libro de credito, no por debilidad operativa. Veredicto: Mantener con Sesgo Positivo; el negocio sigue compuesto a tasas extraordinarias, pero la compresion de margenes exige monitoreo trimestral.",
+  "descripcion": "MercadoLibre opera el ecosistema de ecommerce y fintech mas grande de America Latina, con presencia en Argentina, Brasil, Mexico, Chile, Colombia, Peru y otros paises. Sus cinco pilares son: Mercado Libre (marketplace con 84M de compradores activos unicos, 722M items vendidos en Q1 2026), Mercado Pago (pagos digitales con $87.2B de TPV en Q1 2026, 83M MAUs fintech), Mercado Credito (cartera de credito de $14.6B incluyendo $6.6B en tarjetas), Mercado Envios (logistica propia con fulfillment acelerado) y Mercado Ads (publicidad digital +63% FX-neutral en Q1 2026). El modelo genera ingresos por comisiones de marketplace, procesamiento de pagos, intereses del libro de credito, logistica y publicidad. Brasil representa aproximadamente el 60% del negocio, Mexico ~20% y Argentina el resto de LATAM.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -9,144 +10,151 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
       [
-        "Revenue ($B)",
-        1.38,
-        10.78,
-        15.11,
-        20.78,
-        28.89,
-        "+39%"
+        "Revenue (B USD)",
+        "7.07",
+        "10.78",
+        "15.11",
+        "20.78",
+        "28.89",
+        "8.85",
+        "+49.0%"
       ],
       [
-        "Utilidad Neta ($B)",
-        -0.03,
-        0.48,
-        0.99,
-        1.91,
-        2,
-        "+4.7%"
+        "Utilidad Neta (B USD)",
+        "0.08",
+        "0.48",
+        "0.99",
+        "1.91",
+        "2.00",
+        "0.42",
+        "-15.6%"
       ],
       [
         "Margen Neto (%)",
-        "-2.2%",
+        "1.2%",
         "4.5%",
-        "6.6%",
+        "6.5%",
         "9.2%",
         "6.9%",
-        "-2.3pp"
+        "4.7%",
+        "-3.6pp"
       ],
       [
-        "EBITDA ($B)",
-        0.65,
-        1.47,
-        2.73,
-        3.25,
-        4.02,
-        "+23.7%"
+        "EBITDA (B USD)",
+        "0.65",
+        "1.47",
+        "2.73",
+        "3.25",
+        "4.02",
+        "0.86",
+        "-9.3%"
       ],
       [
-        "FCF ($B)",
-        0.39,
-        2.49,
-        4.63,
-        0,
-        11.22,
+        "FCF Ajustado (B USD)",
+        "0.36",
+        "2.48",
+        "4.63",
+        "7.06",
+        "10.77",
+        "-0.06",
         "N/D"
       ],
       [
-        "EPS ($)",
-        "N/D",
-        9.54,
-        19.53,
-        37.67,
-        39.45,
-        "+4.7%"
+        "EPS Diluido",
+        "1.67",
+        "9.53",
+        "19.46",
+        "37.69",
+        "39.40",
+        "8.23",
+        "-15.5%"
       ],
       [
-        "Deuda Neta ($B)",
-        0.93,
-        2.85,
-        1.94,
-        3.08,
-        5.52,
-        "N/D"
+        "Deuda Neta (B USD)",
+        "0.93",
+        "2.85",
+        "1.94",
+        "3.08",
+        "5.52",
+        "6.25",
+        "+102.9%"
       ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "43.6x",
+      "value": "49.4x",
       "signal": "red",
-      "note": "vs. sector e-comm ~35x",
-      "precio_base": 1718.97,
-      "precio_fecha": "2026-04-01",
+      "note": "EPS TTM $37.89; alto por compresion de margenes en inversion",
+      "precio_base": 1870.01,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 39.45
+        "valor": 37.89
       }
     },
     {
       "label": "P/E Forward",
-      "value": "39.6x",
+      "value": "43.5x",
       "signal": "red",
-      "note": "estimado consenso",
-      "precio_base": 1718.97,
-      "precio_fecha": "2026-04-01",
+      "note": "FY2026E consenso ~$43 EPS; refleja expectativa de recuperacion de margenes",
+      "precio_base": 1870.01,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 43.39
+        "valor": 43.0
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "23.1x",
+      "value": "25.7x",
       "signal": "yellow",
-      "precio_base": 1718.97,
-      "precio_fecha": "2026-04-01",
+      "note": "EV $101.1B / EBITDA TTM $3.93B; prima por hipercrecimiento LATAM",
+      "precio_base": 1870.01,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 4.02,
+        "ebitda_b": 3.93,
         "shares_m": 50.7,
-        "deuda_neta_b": 5.52
+        "deuda_neta_b": 6.25
       }
     },
     {
-      "label": "P/FCF",
-      "value": "7.8x",
+      "label": "P/FCF (FY2025)",
+      "value": "8.8x",
       "signal": "green",
-      "note": "FCF incluye fintech ops",
-      "precio_base": 1718.97,
-      "precio_fecha": "2026-04-01",
+      "note": "FY2025 FCF $10.77B; capacidad generadora de caja es enorme cuando no expande credito",
+      "precio_base": 1870.01,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 11.22,
+        "fcf_b": 10.77,
         "shares_m": 50.7
       }
     },
     {
-      "label": "FCF Yield",
-      "value": "12.9%",
-      "signal": "green"
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.59x",
+      "signal": "green",
+      "note": "Nivel manejable considerando la escala del negocio fintech"
     },
     {
-      "label": "Margen Bruto",
-      "value": "44.5%",
-      "signal": "green"
+      "label": "ROE (anualizado)",
+      "value": "22.9%",
+      "signal": "yellow",
+      "note": "Comprimido por inversion deliberada; FY2024 fue 44%"
     },
     {
-      "label": "Margen Neto",
-      "value": "6.9%",
-      "signal": "yellow"
-    },
-    {
-      "label": "Deuda/EBITDA",
-      "value": "1.4x",
-      "signal": "yellow"
+      "label": "ROA (anualizado)",
+      "value": "3.6%",
+      "signal": "yellow",
+      "note": "Baja por tamano del balance fintech ($46.9B activos vs $8.8B ingresos trimestrales)"
     }
   ],
   "chart_ingresos": {
@@ -154,8 +162,8 @@
     "data": [
       {
         "label": "FY2021",
-        "revenue": 1.38,
-        "utilidad": -0.03
+        "revenue": 7.07,
+        "utilidad": 0.08
       },
       {
         "label": "FY2022",
@@ -175,7 +183,12 @@
       {
         "label": "FY2025",
         "revenue": 28.89,
-        "utilidad": 2
+        "utilidad": 2.0
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 8.85,
+        "utilidad": 0.42
       }
     ],
     "series": [
@@ -193,9 +206,9 @@
     "data": [
       {
         "label": "FY2021",
-        "bruto": 42.8,
-        "operativo": 31.9,
-        "neto": -2.2
+        "bruto": 42.5,
+        "operativo": 6.2,
+        "neto": 1.2
       },
       {
         "label": "FY2022",
@@ -207,7 +220,7 @@
         "label": "FY2023",
         "bruto": 50.2,
         "operativo": 14.6,
-        "neto": 6.6
+        "neto": 6.5
       },
       {
         "label": "FY2024",
@@ -220,6 +233,12 @@
         "bruto": 44.5,
         "operativo": 11.1,
         "neto": 6.9
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 43.7,
+        "operativo": 6.9,
+        "neto": 4.7
       }
     ],
     "series": [
@@ -240,131 +259,176 @@
   "capital_allocation": {
     "items": [
       {
-        "label": "Operating Cash Flow",
-        "value": "$12.12B",
-        "nota": "Incluye operaciones fintech (Mercado Pago y Mercado Credito)"
+        "label": "Expansion cartera de credito (Q1 2026)",
+        "value": "~$1.9B USD",
+        "nota": "La cartera de credito escalo a $14.6B (+87% YoY). La expansion de ~$1.9B en el trimestre consume el OCF operativo y convierte el FCF ajustado en -$56M. Es inversion estrategica, no deterioro."
       },
       {
-        "label": "Capex",
-        "value": "$0.9B",
-        "nota": "Modelo asset-light; principal inversion en infraestructura logistica y tecnologica"
+        "label": "Capex fisico (Q1 2026)",
+        "value": "$271M USD",
+        "nota": "Capex de infraestructura logistica, data centers y tecnologia. Anualizado implica ~$1.1B, en linea con FY2025 ($1.34B)."
       },
       {
-        "label": "FCF",
-        "value": "$11.22B",
-        "nota": "FCF yield aproximado del 12.9% sobre market cap actual"
+        "label": "Free Shipping Brasil",
+        "value": "Subsidio deliberado",
+        "nota": "La inversion en envio gratuito en Brasil comprime margen bruto (-300bps YoY) pero acelera GMV Brasil +38% FX-neutral con items sold +56%. Estrategia de market share."
+      },
+      {
+        "label": "Recompras de acciones (Q1 2026)",
+        "value": "Minimas",
+        "nota": "MELI no tiene programa significativo de recompra; prioriza reinversion en crecimiento organico sobre retorno de capital."
       },
       {
         "label": "Dividendos",
-        "value": "No paga",
-        "nota": "Toda la caja se reinvierte en crecimiento organico y expansiones geograficas"
-      },
-      {
-        "label": "Deuda Neta",
-        "value": "$5.52B",
-        "nota": "Deuda principalmente relacionada con el negocio fintech; aceptable para el modelo"
+        "value": "$0",
+        "nota": "No paga dividendos. Toda la caja se reinvierte en expansion del ecosistema."
       }
     ]
   },
   "comparacion_sector": {
+    "titulo": "MELI vs. Pares Ecommerce/Fintech LATAM y Global Q1 2026",
     "headers": [
       "Metrica",
-      "MELI FY25",
-      "AMZN ref.",
-      "SE ref.",
-      "Posicion"
+      "MELI",
+      "AMZN",
+      "SE (Sea Ltd)",
+      "PAGS (PagSeguro)"
     ],
     "rows": [
       [
-        "Revenue Growth YoY",
-        "+39%",
-        "~11%",
-        "~26%",
-        "Lider en LATAM"
-      ],
-      [
-        "Margen Bruto",
-        "44.5%",
-        "~49%",
-        "~40%",
-        "En expansion"
+        "Crecimiento Rev. YoY",
+        "+49%",
+        "~9%",
+        "~15%",
+        "~8%"
       ],
       [
         "Margen Operativo",
-        "11.1%",
+        "6.9%",
         "~11%",
-        "~7%",
-        "En linea"
-      ],
-      [
-        "P/E Trailing",
-        "43.6x",
-        "~40x",
-        "N/D",
-        "Premium justificado"
+        "~6%",
+        "~18%"
       ],
       [
         "EV/EBITDA",
-        "23.1x",
+        "25.7x",
+        "~19x",
         "~22x",
-        "~30x",
-        "Razonable"
+        "~6x"
+      ],
+      [
+        "GMV Growth YoY",
+        "+42%",
+        "N/D",
+        "~15%",
+        "N/A"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Sin deterioro operativo. Revenue y EBITDA en records historicos con expansion de margenes en FY2025.",
-    "analisis": "MELI acelero su crecimiento de ingresos a +39% YoY en FY2025 vs +38% en FY2024, con EBITDA creciendo de $3.25B a $4.02B (+23.7%). El margen bruto mejoro de 46.1% a 44.5%. La unica area de monitoreo es el margen neto (6.9%) que refleja la etapa de inversion en el negocio fintech. La deuda neta de $5.52B es manejable dado el nivel de generacion de caja."
+    "veredicto": "Los margenes se comprimen deliberadamente por inversion estrategica, no es deterioro estructural. Sin embargo, la velocidad de compresion requiere que el inversionista monitoree cuando MELI cambia de modo inversion a modo cosecha de margenes.",
+    "analisis": "En Q1 2026 el margen operativo cayo 600bps YoY a 6.9%, el menor nivel desde 2021. La causa es triple: (1) free shipping en Brasil que acelera GMV pero reduce margen bruto, (2) expansion de la cartera de credito que requiere provisiones por riesgo crediticio y costo de fondeo, y (3) inversion en fulfillment y 1P. El FCF reportado es positivo ($1.804B) pero el FCF ajustado, que excluye los ~$1.9B de expansion del libro de credito, es -$56M. Este ajuste es el dato mas importante del trimestre: MELI esta decidiendo comprometer toda su caja operativa al crecimiento del negocio fintech, que ya genera $14.6B en cartera activa con NIMAL de 17.8%. La calidad crediticia se mantiene estable (NPL 15-90 dias en 8.0% estable YoY).",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+49% en Q1 2026, aceleracion excepcional desde +38% en Q1 2025",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "43.7% en Q1 2026, -300bps YoY por free shipping Brasil y mix fintech",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "6.9% en Q1 2026, -600bps YoY; punto mas bajo desde FY2021",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "4.7% en Q1 2026, -360bps YoY; EPS -15.5% YoY pese a +49% revenue",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF Ajustado",
+        "valor": "-$56M en Q1 2026 porque ~$1.9B se destino a expansion de cartera de credito",
+        "status": "warn"
+      },
+      {
+        "metrica": "Calidad Crediticia",
+        "valor": "NPL 15-90 dias 8.0% estable YoY; NIMAL comprimido a 17.8% (-490bps) por mayor costo de fondeo",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "$6.25B, +103% YoY; crece por expansion del negocio fintech, no por problemas operativos",
+        "status": "warn"
+      }
+    ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Crecimiento de Revenue +39% YoY",
+      "title": "Hipercrecimiento sostenido: +49% revenue, +42% GMV, +50% TPV",
       "impact": "Alto",
-      "evidence": "Revenue FY2025: $28.89B vs $20.78B en FY2024; aceleracion vs +38% en FY2024",
-      "context": "MELI mantiene hipercrecimiento a escala de ~$30B de revenue, lo que es excepcional entre empresas tecnologicas globales. Refleja la baja penetracion del e-commerce y los pagos digitales en LATAM."
+      "evidence": "Revenue Q1 2026 de $8.845B (+49% YoY). GMV $19.0B (+42%). TPV $87.2B (+50%). Items sold 722M (+47%). Acquiring TPV $55.9B (+39%). Brasil GMV +38% FX-neutral con items sold +56%, acelerando frente a trimestres anteriores.",
+      "context": "MELI crece a tasas que ninguna empresa de su escala ($95B market cap) logra en mercados desarrollados. La simultaneidad de aceleracion en ecommerce y fintech confirma que el efecto flywheel funciona: mas compradores generan mas pagos, mas pagos generan datos para credito, el credito fideliza usuarios que compran mas. Brasil en particular muestra reaceleracion en items sold (+56%) que sugiere que la inversion en free shipping esta logrando su objetivo."
     },
     {
       "level": "green",
-      "title": "OCF de $12.1B — flujo de caja extraordinario",
+      "title": "Ecosistema fintech de $14.6B: cartera de credito de clase mundial",
       "impact": "Alto",
-      "evidence": "Operating Cash Flow FY2025: $12.12B, vs $7.92B en FY2024; OCF margin del 42%",
-      "context": "La combinacion del marketplace y Mercado Pago/Credito genera flujos de caja sustanciales. El FCF yield del 12.9% sobre market cap es altamente atractivo para una empresa de este perfil de crecimiento."
+      "evidence": "Cartera total de credito $14.6B (+87% YoY). Tarjeta de credito $6.6B (+104%). Fintech MAUs 83M (+29%). NPL 15-90 dias estable en 8.0% YoY. NIMAL de 17.8% (menor por mayor fondeo, pero aun excepcional vs bancos tradicionales LATAM que operan al 10-14%).",
+      "context": "El negocio de credito de MELI es el activo mas subvalorado del ecosistema. Con $14.6B en cartera y NIMAL de 17.8%, genera ingresos financieros netos de ~$2.6B anualizados. La tarjeta de credito con +104% YoY esta capturando el gasto de los usuarios fuera del marketplace, convirtiendo a MELI en banco digital. La expansion de esta cartera es la principal razon del FCF ajustado negativo en Q1, y tambien la inversion con mayor retorno esperado."
     },
     {
       "level": "green",
-      "title": "Mercado Pago como motor de crecimiento",
-      "impact": "Alto",
-      "evidence": "TPV de Mercado Pago supero $200B anualizados; primera vez que fintech supera marketplace en contribucion de revenue",
-      "context": "Mercado Pago tiene el potencial de ser separado o revaluado como fintech independiente con un multiple superior. La base de depositos de Mercado Fondo fondea el negocio de credito a bajo costo."
+      "title": "AI y productividad: 31,000 empleados usando Claude Cowork, ingenieros 7-10x mas productivos",
+      "impact": "Medio",
+      "evidence": "Mencionado en el 8-K de Q1 2026: 31,000 empleados adoptaron Claude Cowork como herramienta de trabajo. Headcount +8% YoY con productividad de ingenieros 7-10x mayor por AI. Lanzaron busqueda con LLM-powered en el marketplace.",
+      "context": "La adopcion masiva de AI en toda la organizacion es un diferenciador competitivo critico. Si los ingenieros producen 7-10x mas con el mismo headcount, MELI puede ejecutar su roadmap de producto y tecnologia a velocidad que competidores locales no pueden igualar. Esto tambien contendra el crecimiento de costos de personal en proximos anos, creando apalancamiento operativo cuando decida moderar la inversion."
     },
     {
       "level": "yellow",
-      "title": "Margen Neto del 6.9% — etapa de inversion",
+      "title": "Compresion de margenes deliberada pero profunda: -600bps operativo YoY",
+      "impact": "Alto",
+      "evidence": "Margen operativo 6.9% en Q1 2026 vs 12.9% en Q1 2025. Margen bruto 43.7% vs 46.7%. EPS diluido $8.23 vs $9.74 (-15.5% YoY) pese a +49% de revenue. FCF ajustado -$56M.",
+      "context": "La compresion de margenes es real aunque explicable. El riesgo para el inversionista es temporal: si MELI decide moderar la inversion en free shipping o en expansion de credito, los margenes pueden recuperarse rapidamente (como demostro FY2022-2023 cuando paso de 6.2% a 14.6% operativo en 2 anios). La pregunta es el timing. La gerencia no ha dado guia explicita de cuando comenzara la cosecha de margenes, lo que genera incertidumbre en el modelo de valoracion."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF ajustado -$56M: distincion critica entre FCF reportado y ajustado",
+      "impact": "Alto",
+      "evidence": "FCF reportado Q1 2026: +$1.804B (OCF $2.075B - Capex $271M). FCF ajustado (excluye expansion cartera credito de ~$1.949B): -$56M. El 8-K presenta ambas cifras con la distincion explicitamente.",
+      "context": "Este es el dato mas importante del trimestre para no malinterpretar la salud financiera. El FCF reportado de $1.8B parece solido, pero MELI eligio desplegar $1.9B adicionales en crecimiento del libro de credito. Es una decision de asignacion de capital, no de generacion de caja. Si el inversionista usa solo el FCF reportado, sobreestima la caja disponible. Si usa solo el FCF ajustado, subestima la capacidad estructural del negocio. La verdad esta en el medio: MELI genera caja real pero la esta reinvirtiendo agresivamente."
+    },
+    {
+      "level": "yellow",
+      "title": "Mexico: reforma fiscal como headwind temporal",
       "impact": "Medio",
-      "evidence": "Net income FY2025: $2B sobre revenue de $28.89B; margen vs 9.2% en FY2024",
-      "context": "El margen neto moderado refleja la inversion deliberada en expansion geografica y el crecimiento del portafolio de credito. A medida que Mercado Credito madura, los margenes deberian expandirse."
+      "evidence": "Mexico crecio +28% FX-neutral en Q1 2026 (solido pero menor que Brasil +38% y Argentina +41%). La reforma fiscal mexicana genera un headwind temporal que la gerencia menciono en la call.",
+      "context": "Mexico es el segundo mercado de MELI y tiene potencial de ser el de mayor crecimiento en los proximos 3-5 anios dado el nivel de penetracion actual. El impacto de la reforma fiscal es transitorio. Sin embargo, Mexico es tambien el mercado donde Amazon tiene mayor presencia relativa en LATAM, por lo que la capacidad de MELI para invertir en Mexico mientras defiende margenes globales sera relevante."
     },
     {
       "level": "red",
-      "title": "Exposicion macro LATAM",
+      "title": "Riesgo cambiario: 60%+ del negocio en BRL y ARS con alta volatilidad",
       "impact": "Alto",
-      "evidence": "Argentina, Brasil y Mexico representan ~85% del revenue; exposicion directa a inflacion, devaluacion y ciclos politicos",
-      "context": "Las devaluaciones del peso argentino y la volatilidad del BRL pueden distorsionar materialmente los resultados reportados en USD. Es el riesgo principal no operativo para el inversionista extranjero."
+      "evidence": "Brasil representa ~60% del GMV. Argentina opera en economia con inflacion estructuralmente alta. La diferencia entre crecimiento FX-neutral (+55% TPV) y USD (+50% TPV) implica un headwind cambiario de ~500bps en Q1 2026.",
+      "context": "El riesgo FX es el riesgo de cola mas dificil de gestionar para MELI. Una devaluacion significativa del BRL comprime los resultados en USD aunque el negocio operativo en moneda local siga creciendo. El inversionista en USD debe tener presente que parte del retorno de MELI depende de la estabilidad macroeconomica de Brasil, algo fuera del control de la empresa."
     }
   ],
   "score": {
-    "score": 7.4,
+    "score": 8.1,
     "max": 10,
     "items": [
       {
         "label": "Poder de fijacion de precios",
-        "score": 7,
+        "score": 9,
         "max": 10
       },
       {
         "label": "Crecimiento de revenue",
-        "score": 9,
+        "score": 10,
         "max": 10
       },
       {
@@ -379,65 +443,66 @@
       },
       {
         "label": "Generacion de FCF",
-        "score": 8,
+        "score": 7,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "MercadoLibre opera el ecosistema de comercio electronico y tecnologia financiera mas grande de America Latina, con presencia en 18 paises. Su estrategia se basa en el flywheel de datos: cada transaccion en el marketplace genera datos que mejoran Mercado Pago, que a su vez fondea Mercado Credito, que retiene mas usuarios en el ecosistema. Los segmentos clave son: Marketplace (GMV con take rate), Mercado Pago (TPV con fee), Mercado Credito (portafolio de prestamos con spread), Mercado Envios (logistica 1P y 3PL) y Mercado Ads.",
-    "ventajas": "Posicion dominante en e-commerce LATAM con mas del 60% del GMV regional. Mercado Pago con TPV 00B+ y base de depositos creciente (Mercado Fondo). Datos propietarios de 100M+ usuarios activos que mejoran el scoring crediticio de Mercado Credito y el targeting de Mercado Ads. Barrera regulatoria: licencias financieras en 18 paises dificiles de replicar para nuevos entrantes.",
-    "debilidades": "Margen neto del MercadoLibre reporto Revenue FY2025 de $28.89B (+39% YoY), EBITDA de $4.02B y Operating Cash Flow de $12.12B. La empresa consolida su posicion como el ecosistema tecnologico dominante de America Latina, con Mercado Pago superando al marketplace como principal generador de revenue. La valuacion de 43.6x P/E sobre un crecimiento de +39% y un FCF yield del 12.9% representa una propuesta de valor atractiva para inversores de largo plazo. relativamente bajo vs. peers globales — refleja la etapa de inversion en el negocio fintech. Concentracion geografica: Brasil ~55% del GMV expone al ciclo economico brasileno. Deuda neta de .5B relacionada principalmente con el fondeo del portafolio de credito.",
+    "estrategia": "MELI ejecuta una estrategia de plataforma integrada (flywheel) que conecta ecommerce, logistica, pagos, credito y publicidad en un ecosistema cerrado. La inversion deliberada de Q1 2026 apunta a tres objetivos: (1) dominar el mercado brasileno con free shipping que eleva la frecuencia de compra, (2) escalar la tarjeta de credito MELI a $10B+ en un mercado donde los bancos tradicionales cobran tasas del 200-300% anual, y (3) construir ventajas logisticas insuperables que hagan el fulfillment propio mas rapido y barato que cualquier alternativa. La integracion de AI (31K empleados en Claude Cowork, busqueda LLM-powered) acelera la ejecucion de este roadmap. Cross-border trade desde China +68% FX-neutral indica que MELI esta capturando el flujo de productos chinos hacia LATAM, ampliando el catalogo sin inventario propio.",
+    "ventajas": "Moat de red en LATAM practicamente insuperable: 84M compradores activos, 83M MAUs fintech, red logistica propia y datos de credito unicos en la region. El negocio de publicidad digital (+63% FX-neutral) es el margen mas alto del ecosistema y crece acelerado porque los vendedores no tienen alternativa mas efectiva que anunciarse donde estan sus compradores. La tarjeta de credito MELI compite con bancos locales con ventaja de datos. La escala del TPV ($87.2B) crea un foso economico en pagos que ningun competidor local puede replicar. Argentina y Brasil son mercados donde MELI lleva ventaja de 20 anios.",
+    "debilidades": "Compresion de margenes sin guia clara de recuperacion crea incertidumbre en modelos de valoracion. Riesgo de credito en LATAM: la cartera de $14.6B con NPL del 8% implica provision significativa; una recesion en Brasil podria elevar considerablemente las perdidas. Concentracion geografica: Brasil es ~60% del negocio. Sin dividendos ni recompras, el retorno al accionista depende 100% de la apreciacion del precio. Competencia creciente de Amazon en Mexico y Brasil.",
     "riesgos": [
-      "Macroeconomia LATAM: inflacion en Argentina (100%+) y devaluaciones del BRL/MXN comprimen el revenue reportado en USD incluso con crecimiento operativo real solido.",
-      "Competencia global acelerada: Amazon con Prime y logistica propia, Shopee con subsidio de precios y Shein/Temu atacan el mercado masivo; ninguno ha podido superar a MELI en 5 anos pero la presion en margenes es real.",
-      "Riesgo regulatorio fintech: multiples licencias en jurisdicciones con marcos cambiantes (Banco Central de Brasil, reguladores argentinos). Un cambio regulatorio adverso podria limitar el crecimiento de Mercado Credito.",
-      "Deterioro crediticio: en un escenario de recesion regional simultanea, el NPL de Mercado Credito podria elevarse por encima de los niveles actuales y requerir provisiones adicionales que compriman el margen neto.",
-      "Concentracion de management: Pedro Arnt y el equipo fundador han sido clave en la ejecucion; una transicion de liderazgo en medio de la expansion fintech seria un riesgo de ejecucion."
+      "Deterioro de calidad crediticia: NPL por encima del 10-11% implicaria provisiones que consumirian todo el margen operativo",
+      "Desaceleracion en Brasil por factores macro (inflacion, tasas Selic, desempleo) que reduzcan el GMV en el mercado mas grande",
+      "Devaluacion del BRL o ARS que comprima los resultados reportados en USD sin deterioro del negocio operativo",
+      "Competencia de Amazon en Mexico y Brasil con inversion en logistica y Prime que iguale la propuesta de valor de MELI",
+      "Riesgo regulatorio: cambios en regulacion fintech en Brasil o Mexico que limiten el crecimiento del libro de credito",
+      "Reforma fiscal Mexico generando headwind transitorio en el segundo mercado de MELI"
     ],
-    "inversiones_estrategicas": "MELI invierte en expansion de Mercado Envios (centros de distribucion propios en Brasil y Mexico), tecnologia de credito (machine learning para scoring con datos del ecosistema), infraestructura de Mercado Pago (POS fisicos, QR payments, cuenta remunerada) y expansion geografica en mercados secundarios como Chile, Colombia y Peru."
+    "inversiones_estrategicas": "Q1 2026 es un trimestre de inversion intensa: free shipping en Brasil para acelerar GMV (items sold +56%), expansion de $1.9B en cartera de credito (tarjeta +104%), fulfillment propio para reducir tiempos de entrega. La adopcion de AI en 31,000 empleados con productividad 7-10x en ingenieria sugiere que el retorno de la inversion en tecnologia sera significativo en proximos anios. Cross-border trade desde China +68% FX-neutral posiciona a MELI como el canal de importacion mas eficiente en LATAM, ampliando el TAM sin costo de inventario."
   },
   "verdict": {
     "status": "Mantener con Sesgo Positivo",
-    "score": "7.4/10",
+    "score": "8.1/10",
     "color": "yellow",
     "metrics": [
       {
-        "label": "Revenue FY2025",
-        "value": "$28.89B"
+        "label": "Revenue Q1 2026",
+        "value": "$8.85B +49%"
       },
       {
-        "label": "Crecimiento YoY",
-        "value": "+39%"
+        "label": "GMV Q1 2026",
+        "value": "$19.0B +42%"
       },
       {
-        "label": "Margen Neto",
-        "value": "6.9%"
+        "label": "Margen Operativo",
+        "value": "6.9% (-600bps)"
       },
       {
-        "label": "FCF Yield",
-        "value": "12.9%"
+        "label": "P/E Forward FY2026E",
+        "value": "43.5x"
       },
       {
-        "label": "P/E Forward",
-        "value": "39.6x"
+        "label": "Cartera Credito",
+        "value": "$14.6B +87%"
       }
     ],
     "bullets": [
       {
-        "text": "**Liderazgo LATAM inexpugnable ->** MELI domina el e-commerce en Brasil, Mexico y Argentina con mas del 60% del GMV regional. La red de logistica propia (Mercado Envios), la billetera digital (Mercado Pago) y el credito embebido (Mercado Credito) crean costos de cambio que Amazon y Shopee no han podido superar en 5 anos de competencia directa.",
+        "text": "**Flywheel en maxima aceleracion ->** Revenue +49%, GMV +42%, TPV +50%, items sold +47%, fintech MAUs +29% -- todo el ecosistema acelera simultaneamente. Brasil GMV +38% FX-neutral con items sold +56% confirma que la inversion en free shipping funciona. No hay empresa de $95B de market cap creciendo al 49% en ningun mercado.",
         "type": "pro"
       },
       {
-        "text": "**Flywheel fintech en punto de inflexion ->** Mercado Pago supero al marketplace como contribuidor de revenue por primera vez en FY2025. El OCF de $12.1B (+53% YoY) refleja la generacion de caja del negocio financiero en plena madurez. El potencial de un spin-off o re-rating de Mercado Pago como fintech independiente es el catalizador de mayor valor no reflejado en el precio actual.",
+        "text": "**Fintech de $14.6B construyendo el banco digital de LATAM ->** La tarjeta de credito a $6.6B (+104% YoY) con NIMAL de 17.8% es el activo mas subvalorado de MELI. Los bancos tradicionales de LATAM cotizan a 1-2x precio/libro; el negocio fintech de MELI merece una valuacion separada significativamente mayor.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion razonable dado el perfil de crecimiento ->** A 43.6x P/E TTM sobre una empresa con +39% de crecimiento y FCF yield del 12.9%, el PEG ratio esta por debajo de 1.5x — punto de entrada atractivo en una empresa con moat comprobado y runway de expansion en fintech aun no descontado.",
+        "text": "**AI como multiplicador de velocidad de ejecucion ->** 31,000 empleados en Claude Cowork con productividad de ingenieros 7-10x superior es una ventaja competitiva que ningun competidor local puede replicar en el corto plazo. Esto contendra el crecimiento de costos futuros y acelera el roadmap de producto.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo cambiario LATAM no eliminable ->** La exposicion a Argentina (inflacion ~100%+), Brasil y Mexico introduce volatilidad estructural en los resultados en USD. Una devaluacion simultanea en los 3 mercados principales puede comprimir el revenue reportado incluso con crecimiento operativo real solido. Requiere horizonte de largo plazo (3-5 anos) para que los catalizadores se materialicen.",
+        "text": "**Compresion de margenes sin fecha de recuperacion ->** El margen operativo de 6.9% es el mas bajo desde FY2021 y la gerencia no ha dado guia explicita de recuperacion. A P/E forward de 43.5x, el mercado necesita ver recuperacion de margenes en H2 2026 o el multiplo se convierte en una trampa de valoracion.",
         "type": "con"
       }
     ]
@@ -445,26 +510,29 @@
   "conclusion": {
     "items": [
       {
-        "label": "Crecimiento de Revenue",
-        "texto": "MercadoLibre reporto Revenue FY2025 de 8.89B (+39% YoY), acelerando respecto al +38% de FY2024. Este hipercrecimiento a escala de ~0B de revenue es excepcional entre empresas tecnologicas globales y refleja la baja penetracion del e-commerce (14%) y pagos digitales en LATAM, region con 700M+ de personas y clase media en expansion."
+        "label": "Ingresos",
+        "texto": "Q1 2026 entrego $8.845B (+49% YoY), la tasa de crecimiento mas alta en los ultimos cuatro trimestres. El crecimiento es organico y diversificado: GMV +42%, TPV +50%, Ads +63% FX-neutral, cartera de credito +87%. Los cinco pilares del ecosistema crecen en doble digito alto o triple digito. Revenue FY2025 fue $28.89B, mas que triplicando el FY2021 de $7.07B en cuatro anios."
       },
       {
-        "label": "Mercado Pago como catalizador",
-        "texto": "Mercado Pago supero al marketplace como principal contribuidor de revenue en FY2025 por primera vez. Con TPV superando 00B anualizados y una base creciente de depositos en Mercado Fondo, el negocio fintech tiene el potencial de ser separado o revaluado con un multiple de fintech puro (15-25x revenue) versus el multiple de e-commerce que hoy descuenta el mercado."
+        "label": "Margenes",
+        "texto": "El margen operativo de 6.9% en Q1 2026 es el dato mas preocupante en terminos de apariencia, pero el menos preocupante en terminos de diagnostico. La compresion es voluntaria: free shipping en Brasil, expansion de cartera de credito y construccion de fulfillment. El precedente historico es solido: MELI paso de 6.2% operativo en FY2021 a 14.6% en FY2023 cuando decidio cosechar los margenes. El margen bruto de 43.7% (-300bps YoY) es la senal mas importante a monitorear: si no se estabiliza en H2 2026, indica que el free shipping se esta convirtiendo en costo estructural."
       },
       {
-        "label": "Generacion de Caja",
-        "texto": "El Operating Cash Flow de 2.12B en FY2025 (+53% YoY) y el FCF yield del ~12.9% sobre el market cap actual representan una propuesta de valor atractiva. A diferencia de muchos peers de alto crecimiento, MELI genera caja masiva hoy — no en un futuro hipotetico."
+        "label": "EPS",
+        "texto": "EPS diluido de $8.23 en Q1 2026 vs $9.74 en Q1 2025 (-15.5% YoY). Esta es la compresion que genera preocupacion en el mercado: revenue crece 49% pero EPS cae 16%. La explicacion es aritmetica: las provisiones de credito, el costo de free shipping y el capex de logistica consumen el incremento de revenue antes de llegar al resultado neto. EPS TTM es $37.89. Para que el EPS se recupere, MELI necesita moderar la inversion o que el margen del negocio de credito compense la presion en ecommerce."
       },
       {
-        "label": "Riesgos y Horizonte",
-        "texto": "El riesgo principal — macro LATAM y exposicion cambiaria — es estructural y no eliminable. Requiere horizonte de largo plazo (3-5 anos) para que los catalizadores (expansion de margenes, re-rating fintech) se materialicen. Posicion de tamano moderado recomendada como holding estructural, no como trade de corto plazo."
+        "label": "Balance",
+        "texto": "Deuda neta de $6.25B al 31-mar-2026, de la cual la mayoria es deuda estructural del negocio fintech (fondeo de la cartera de credito de $14.6B). Equity de $7.28B. Total assets de $46.9B, en gran parte cartera de credito e inversiones. Deuda Neta/EBITDA de 1.59x es manejable. El balance se endeuda porque el negocio fintech requiere fondeo de la cartera -- es la misma logica que un banco. No es una senal de debilidad sino de expansion del modelo de negocio."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "La distincion FCF reportado vs FCF ajustado es la lectura mas importante del trimestre. FCF reportado +$1.804B (OCF $2.075B - Capex $271M). FCF ajustado -$56M porque $1.949B se destino a expansion de cartera de credito. En FY2025, cuando no habia esa expansion agresiva, el FCF fue $10.77B -- a solo 8.8x market cap. La capacidad generadora de caja del negocio subyacente es excepcional; el compromiso actual es inversion estrategica voluntaria, no necesidad."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los tres riesgos a monitorear son: (1) Calidad crediticia -- NPL estable al 8% hoy pero con $14.6B en cartera, un deterioro de 200bps en NPL podria representar $290M+ en provisiones adicionales que eliminen el resultado neto. (2) FX -- una devaluacion del BRL de 20% comprimiria los resultados en USD en proporcion similar al peso de Brasil en el negocio. (3) Timing de recuperacion de margenes -- si el mercado no ve evidencia de recuperacion en H2 2026, el multiplo podria comprimir y la accion underperform pese a un negocio operativo excelente."
       }
     ]
-  },
-  "parrafos_gratis": 14,
-  "documento_fuente": "10-K FY2025 (meli-20251231.htm)",
-  "fecha_publicacion": "2026-04-01",
-  "divisa": "USD",
-  "link_reporte": "https://reportes.murzainversiones.com/reporte/MELI"
+  }
 }

@@ -1,0 +1,491 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "CrowdStrike (CRWD) registro ingresos de $4.81B en FY2026 (+22% YoY) con ARR de $5.25B y NRR del 115%, consolidando su liderazgo en ciberseguridad basada en IA. A pesar de la presion del incidente del 19 de julio de 2024, la empresa mantiene generacion de caja robusta con FCF de $1.31B y caja neta de $4.48B. La valuacion premium (88x P/E Forward, 105x P/FCF) refleja expectativas de crecimiento sostenido del modelo SaaS recurrente.",
+  "descripcion": "CrowdStrike Holdings es el lider en ciberseguridad cloud-native a traves de su plataforma Falcon, que integra mas de 28 modulos para endpoints, identidades, workloads en la nube, DevOps y activos de IT. Su modelo es 100% SaaS con suscripciones por endpoint y por modulo. La metrica central es el ARR que supero $5.25B en FY2026. La plataforma genera un poderoso efecto de red: cada nuevo dato enriquece el Security Cloud impulsado por IA, creando barreras de salida altas reflejadas en NRR del 115%. La estrategia land-and-expand permite captacion eficiente y expansion de wallet share en clientes existentes.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "1.45",
+        "2.24",
+        "3.06",
+        "3.95",
+        "4.81",
+        "+21.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.23",
+        "-0.18",
+        "0.07",
+        "-0.02",
+        "-0.16",
+        "N/M"
+      ],
+      [
+        "Margen Neto",
+        "-15.9%",
+        "-8.0%",
+        "2.3%",
+        "-0.5%",
+        "-3.3%",
+        "-2.8pp"
+      ],
+      [
+        "ARR (B USD)",
+        "N/D",
+        "N/D",
+        "3.65",
+        "4.24",
+        "5.25",
+        "+23.8%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.46",
+        "0.70",
+        "0.99",
+        "1.13",
+        "1.31",
+        "+15.9%"
+      ],
+      [
+        "EPS Diluido GAAP",
+        "-1.03",
+        "-0.79",
+        "0.30",
+        "-0.06",
+        "-0.65",
+        "N/M"
+      ],
+      [
+        "Caja Neta (B USD)",
+        "1.26",
+        "1.72",
+        "2.64",
+        "3.58",
+        "4.48",
+        "+25.1%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Forward",
+      "value": "87.89x",
+      "signal": "red",
+      "note": "Prima alta; sector ~35x",
+      "precio_base": 542.26,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 6.17
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "105.34x",
+      "signal": "red",
+      "precio_base": 542.26,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.31,
+        "shares_m": 254.5
+      }
+    },
+    {
+      "label": "EV/Revenue",
+      "value": "27.68x",
+      "signal": "red",
+      "precio_base": 542.26,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 4.81,
+        "shares_m": 254.5,
+        "deuda_neta_b": -4.48
+      }
+    },
+    {
+      "label": "FCF Yield",
+      "value": "0.95%",
+      "signal": "yellow",
+      "precio_base": 542.26,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 1.31,
+        "shares_m": 254.5
+      }
+    },
+    {
+      "label": "Caja Neta (B USD)",
+      "value": "$4.48B",
+      "signal": "green"
+    },
+    {
+      "label": "ARR Growth YoY",
+      "value": "+23.8%",
+      "signal": "green"
+    },
+    {
+      "label": "NRR (Net Retention)",
+      "value": "115%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2022",
+        "revenue": 1.45,
+        "utilidad": -0.23
+      },
+      {
+        "label": "FY2023",
+        "revenue": 2.24,
+        "utilidad": -0.18
+      },
+      {
+        "label": "FY2024",
+        "revenue": 3.06,
+        "utilidad": 0.07
+      },
+      {
+        "label": "FY2025",
+        "revenue": 3.95,
+        "utilidad": -0.02
+      },
+      {
+        "label": "FY2026",
+        "revenue": 4.81,
+        "utilidad": -0.16
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2022",
+        "bruto": 73.8,
+        "operativo": -9.7,
+        "neto": -15.9
+      },
+      {
+        "label": "FY2023",
+        "bruto": 73.2,
+        "operativo": -8.5,
+        "neto": -8
+      },
+      {
+        "label": "FY2024",
+        "bruto": 75.2,
+        "operativo": -0.7,
+        "neto": 2.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 74.9,
+        "operativo": -3,
+        "neto": -0.5
+      },
+      {
+        "label": "FY2026",
+        "bruto": 74.6,
+        "operativo": -6,
+        "neto": -3.3
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "$0B",
+        "nota": "No tiene programa de recompras activo"
+      },
+      {
+        "label": "Dividendos",
+        "value": "$0B",
+        "nota": "No paga dividendos; reinversion total en crecimiento"
+      },
+      {
+        "label": "Capex",
+        "value": "$0.30B",
+        "nota": "~6.2% de ingresos; principalmente infraestructura cloud y R&D"
+      },
+      {
+        "label": "M&A",
+        "value": "~$0.3-0.5B/anio",
+        "nota": "Adquisiciones estrategicas en IA, identidades y datos (Bionic, Flow Security)"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "CRWD TTM",
+      "Sector Cyber",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "74.6%",
+        "~65-70%",
+        "Por encima del sector"
+      ],
+      [
+        "FCF Margin",
+        "27.2%",
+        "~15%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+21.8%",
+        "~15%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "87.9x",
+        "~35-40x",
+        "Prima significativa vs sector"
+      ],
+      [
+        "NRR",
+        "115%",
+        "~105-110%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Modelo de negocio solido con fuerte generacion de caja libre, aunque el GAAP reporta perdidas por SBC elevado y el incidente de julio 2024 presiona margenes y ciclos de venta",
+    "analisis": "El incidente del 19 de julio 2024 genero litigios, descuentos y ciclos de venta mas largos. Sin embargo, el ARR crecio 24% y el NRR se mantiene en 115%. La empresa genera $1.31B en FCF, pero el GAAP incluye $1.10B en SBC que distorsiona el resultado neto. El margen operativo GAAP se deterioro a -6% en FY2026 vs -3% en FY2025 por costos del incidente y mayor inversion en go-to-market.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+21.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "ARR Growth",
+        "valor": "+23.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "NRR",
+        "valor": "115%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "74.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo GAAP",
+        "valor": "-6.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto GAAP",
+        "valor": "-3.3%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+15.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Caja Neta",
+        "valor": "+$4.48B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "ARR $5.25B y NRR 115%",
+      "impact": "Alto",
+      "evidence": "ARR crecio 24% YoY a $5.25B con NRR de 115%, demostrando alta retencion y expansion de clientes a pesar del incidente de julio 2024.",
+      "context": "NRR sostenido por encima del 110% es indicador de excelente salud del modelo SaaS recurrente."
+    },
+    {
+      "level": "green",
+      "title": "FCF $1.31B con margen del 27%",
+      "impact": "Alto",
+      "evidence": "Free Cash Flow de $1.31B en FY2026 (+15.9% YoY) con margen FCF del 27.2%, muy superior al promedio del sector (~15%).",
+      "context": "Caja neta de $4.48B da flexibilidad total para M&A y absorber impacto del incidente sin riesgo de solvencia."
+    },
+    {
+      "level": "yellow",
+      "title": "Incidente julio 2024 genera presion en ventas y litigios",
+      "impact": "Medio",
+      "evidence": "Falla en actualizacion del sensor Falcon causo crashes en sistemas Windows. Se reportan ciclos de venta elongados, descuentos y gastos legales en curso.",
+      "context": "La empresa tomo medidas correctivas y mantiene altas tasas de retencion, pero el churn diferido puede manifestarse en FY2027."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion extrema: P/FCF 105x y P/E Forward 88x",
+      "impact": "Alto",
+      "evidence": "Con precio de $542, P/FCF = 105x y P/E Forward = 88x. La accion descuenta crecimiento acelerado perfecto por 5-7 anios.",
+      "context": "La valuacion solo se justifica si CRWD mantiene ARR growth >20% y migra hacia rentabilidad GAAP estructural. Cualquier miss puede comprimir 30-40%."
+    }
+  ],
+  "score": {
+    "score": 7.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes (FCF)",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Riesgo de valuacion",
+        "score": 3,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "CrowdStrike ejecuta una estrategia de plataforma unica (Falcon) con mas de 28 modulos que abordan endpoints, identidades, cloud workloads, IT hygiene y datos. La estrategia land-and-expand permite adquirir clientes con un modulo basico y expandir el ARPU via upsell de modulos adicionales. El objetivo es convertirse en el sistema operativo de la ciberseguridad empresarial impulsado por IA.",
+    "ventajas": "(1) Efecto de red del Security Cloud: cada nuevo cliente y evento enriquece el modelo de IA. (2) Arquitectura cloud-native con sensor unico ligero que elimina friccion de despliegue. (3) Brand premium en el mercado enterprise. (4) Alta retention (NRR 115%) con barreras de salida elevadas. (5) Posicion dominante en Gartner Magic Quadrant para endpoint protection.",
+    "debilidades": "(1) Valuacion extrema deja poco margen de error. (2) El incidente de julio 2024 genero desconfianza en un sector donde la confiabilidad es critica. (3) SBC masivo (22.9% de ingresos) diluye a accionistas. (4) Margenes GAAP negativos estructuralmente. (5) Competencia creciente de Microsoft Defender y Palo Alto Networks.",
+    "riesgos": [
+      "Consolidacion del sector: Microsoft Defender incluido en Windows puede sustituir soluciones de endpoint en el segmento SMB",
+      "Secuelas del incidente julio 2024: posibles nuevos churn de clientes y settlements de litigios en FY2027",
+      "Desaceleracion del ARR si los ciclos de venta siguen elongados post-incidente",
+      "Riesgo de valuacion ante cualquier miss en guia de crecimiento: multiple compression del 30-40% posible"
+    ],
+    "inversiones_estrategicas": "M&A en identidades y seguridad de datos (Bionic, Flow Security, Next-Gen SIEM). Inversion en AI/ML para deteccion autonoma de amenazas. Expansion de Falcon Flex (modelo de licenciamiento flexible post-incidente). Falcon Funds para inversiones en startups estrategicas de ciberseguridad."
+  },
+  "verdict": {
+    "status": "Mantener con Seguimiento",
+    "score": "7.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2026",
+        "value": "$4.81B"
+      },
+      {
+        "label": "ARR",
+        "value": "$5.25B"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "0.95%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "87.89x"
+      },
+      {
+        "label": "Crecimiento ARR",
+        "value": "+23.8% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Plataforma Falcon y ARR** -- ARR de $5.25B (+24% YoY) con NRR del 115% confirma el liderazgo estructural y la alta retencion del modelo recurrente a pesar del incidente de 2024.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF solido y balance pristino** -- FCF de $1.31B (margen 27%) con caja neta de $4.48B da flexibilidad total para M&A y crecimiento sin riesgo financiero.",
+        "type": "pro"
+      },
+      {
+        "text": "**Moat tecnologico via IA** -- Efecto de red del Security Cloud: mas datos = mejor deteccion = mayor valor, creando un flywheel dificil de replicar por competidores.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion extrema** -- P/FCF de 105x y P/E Forward de 88x descuentan anios de crecimiento perfecto. Cualquier desaceleracion puede comprimir el multiple agresivamente.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Ingresos de $4.81B en FY2026 (+21.8% YoY) y ARR de $5.25B (+23.8% YoY). La empresa supero guias y demostro resistencia post-incidente de julio 2024. NRR de 115% indica alta retencion y expansion de clientes existentes."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto GAAP estable en 74.6%. Margen operativo GAAP de -6.0% deteriorado por costos del incidente y alta inversion en SBC. En terminos no-GAAP (ajustando $1.10B de SBC), los margenes son positivos y en expansion."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $1.31B (+15.9% YoY) con margen FCF del 27.2%, muy superior al promedio del sector. La empresa convierte eficientemente el crecimiento en caja libre a pesar de las perdidas GAAP."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de $4.48B ($5.23B de caja vs $0.75B de deuda). El balance es pristino. La principal preocupacion es el SBC de $1.10B (22.9% de ingresos) como factor de dilucion estructural."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con precio a $542, la accion cotiza a 105x FCF y 88x P/E Forward. La prima refleja expectativas de ARR >20% y expansion de margenes. El punto de entrada es extremo y limita el upside a corto plazo."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Secuelas del incidente julio 2024 en FY2027 (churn diferido, litigios). (2) Alta dilucion por SBC del 22.9% de ingresos. (3) Competencia de Microsoft en SMB. (4) Riesgo de multiple compression ante cualquier miss en guia de ARR o margenes."
+      }
+    ]
+  }
+}

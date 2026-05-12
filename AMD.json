@@ -1,175 +1,194 @@
 {
-  "resumen": "Advanced Micro Devices (AMD) cerro FY2024 con revenue de $25.8B (+14% YoY) impulsado por un crecimiento explosivo del segmento Data Center (+94%), que ya representa el 49% de los ingresos totales. A pesar de la contraccion severa en Gaming (-58%), el balance financiero mejoro notablemente con FCF de $2.4B y deuda neta negativa (posicion de caja neta). Con los resultados FY2025 ya publicados ($34.6B de revenue, EPS GAAP $2.65), AMD esta en trayectoria de crecimiento acelerado en IA y centros de datos, aunque cotiza a valuaciones exigentes.",
-  "descripcion": "Advanced Micro Devices (AMD) es un disenador de semiconductores fabless fundado en 1969 con sede en Santa Clara, California, que cotiza en NASDAQ. La empresa disena y comercializa microprocesadores (CPU), unidades de procesamiento grafico (GPU), FPGAs y circuitos integrados para centros de datos, PCs, consolas de videojuegos y aplicaciones embebidas. Sus ingresos provienen de cuatro segmentos: Data Center (EPYC CPUs e Instinct MI300 GPUs para IA), Client (Ryzen CPUs para PCs), Gaming (GPUs Radeon y chips para consolas Sony/Microsoft), y Embedded (FPGAs y SoCs Xilinx para mercados industriales y aeroespaciales). AMD compite directamente con Intel en CPUs y con NVIDIA en GPUs para IA, siendo el mayor rival de ambos en sus respectivos mercados.",
+  "parrafos_gratis": 14,
+  "resumen": "AMD reporto resultados record en Q1 2026 (enero-marzo 2026): ingresos de $10.25B (+38% YoY) y utilidad neta GAAP de $1.38B (+95% YoY), superando las estimaciones del consenso en ambas lineas. El segmento Data Center alcanzo $5.78B (+57% YoY), impulsado por GPU Instinct MI300 y procesadores EPYC Turin, consolidando a AMD como el retador mas serio de NVIDIA en infraestructura de IA. El EPS Non-GAAP fue $1.37 (+43% YoY), con un margen FCF record del 25% sobre revenue. La guia Q2 2026 de $11.2B implica crecimiento YoY del 46%, senalizando que el ciclo de demanda de IA continua acelerando. Veredicto: oportunidad de crecimiento con valuacion exigente; la tesis depende de la ejecucion sostenida en Data Center frente a NVIDIA.",
+  "descripcion": "Advanced Micro Devices opera cuatro segmentos: Data Center (~56% de ingresos en Q1 2026, GPU Instinct + EPYC), Client (~28%, procesadores Ryzen para PCs), Gaming (~7%, GPU Radeon + chips para consolas), y Embedded (~9%, SoC para aplicaciones industriales y automotriz). El modelo de negocio es semiconductor de diseno puro (fabless): AMD disena los chips y los fabrica a traves de TSMC. La apuesta estrategica central es la plataforma ROCm para IA y los GPU Instinct MI300X/MI325X como alternativa a los GPU H100/H200 de NVIDIA en centros de datos. AMD cotiza en NASDAQ (ticker: AMD) y compite directamente con Intel en CPU y con NVIDIA en GPU para IA.",
   "tabla": {
     "headers": [
       "Metrica",
-      "2021",
-      "2022",
-      "2023",
-      "2024",
-      "2025",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
       [
-        "Revenue ($B)",
+        "Revenue (B USD)",
         "16.43",
         "23.60",
         "22.68",
         "25.79",
         "34.64",
-        "+34.3%"
+        "10.25",
+        "+38.0%"
       ],
       [
-        "Utilidad Neta ($B)",
+        "Utilidad Neta (B USD)",
         "3.16",
         "1.32",
         "0.85",
         "1.64",
         "4.34",
-        "+164.6%"
+        "1.38",
+        "+95.1%"
       ],
       [
         "Margen Neto (%)",
         "19.2%",
-        "5.6%",
+        "5.5%",
         "3.8%",
         "6.4%",
         "12.5%",
-        "+6.1pp"
+        "13.5%",
+        "+7.1pp"
       ],
       [
-        "EBITDA ($B)",
-        "4.06",
-        "4.81",
+        "EBITDA (B USD)",
+        "4.11",
+        "5.53",
         "3.85",
-        "4.29",
-        "6.69",
-        "+55.9%"
+        "4.96",
+        "6.70",
+        "2.23",
+        "+68.9%"
       ],
       [
-        "FCF ($B)",
+        "FCF (B USD)",
         "3.22",
         "3.12",
         "1.12",
         "2.41",
-        "5.52",
-        "+129.0%"
+        "6.70",
+        "2.57",
+        "+N/D"
       ],
       [
-        "EPS GAAP",
-        "$2.57",
-        "$0.84",
-        "$0.53",
-        "$1.00",
-        "$2.65",
-        "+165.0%"
+        "EPS Diluido (GAAP)",
+        "2.57",
+        "0.84",
+        "0.53",
+        "1.01",
+        "2.67",
+        "0.84",
+        "+90.9%"
       ],
       [
-        "Deuda Neta ($B)",
-        "-3.30",
-        "-3.39",
-        "-3.30",
-        "-3.41",
-        "-7.33",
-        "N/A"
+        "Deuda Neta (B USD)",
+        "-2.95",
+        "-2.99",
+        "-2.77",
+        "-2.92",
+        "-6.71",
+        "-9.12",
+        "N/D"
       ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "77x",
+      "label": "P/E Trailing (GAAP)",
+      "value": "157.8x",
       "signal": "red",
-      "note": "vs. sector semiconductores ~35-40x; premium elevado a 77x TTM",
-      "precio_base": 205,
-      "precio_fecha": "Mar-2026",
+      "note": "EPS TTM GAAP $2.67; distorsionado por amort. intangibles Xilinx ~$2.2B/anio",
+      "precio_base": 421.39,
+      "precio_fecha": "2026-05-06",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 2.65
+        "valor": 2.67
       }
     },
     {
-      "label": "P/E Forward",
-      "value": "30x",
-      "signal": "yellow",
-      "note": "FY2026e EPS consenso .76; compresion significativa vs trailing",
-      "precio_base": 205,
-      "precio_fecha": "Mar-2026",
+      "label": "P/E Forward (Non-GAAP)",
+      "value": "62.7x",
+      "signal": "red",
+      "note": "EPS FY2026E consenso Non-GAAP $6.72; descuenta ejecucion perfecta",
+      "precio_base": 421.39,
+      "precio_fecha": "2026-05-06",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 6.76
+        "valor": 6.72
       }
     },
     {
-      "label": "EV/EBITDA",
-      "value": "51.3x",
-      "signal": "yellow",
-      "note": "EV ~42B / EBITDA FY2025 .69B; premium vs sector ~20x"
+      "label": "EV/EBITDA (TTM)",
+      "value": "102.3x",
+      "signal": "red",
+      "note": "EV ~$686B / EBITDA TTM $6.7B; premium de IA extremo",
+      "precio_base": 421.39,
+      "precio_fecha": "2026-05-06",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 6.70,
+        "shares_m": 1650,
+        "deuda_neta_b": -9.12
+      }
     },
     {
-      "label": "P/FCF",
-      "value": "60.8x",
-      "signal": "yellow",
-      "note": "FCF FY2025 .52B; mejora sustancial vs 2024",
-      "precio_base": 205,
-      "precio_fecha": "Mar-2026",
+      "label": "P/FCF (TTM)",
+      "value": "103.8x",
+      "signal": "red",
+      "note": "FCF TTM $6.7B; record historico; margen FCF Q1 2026 del 25%",
+      "precio_base": 421.39,
+      "precio_fecha": "2026-05-06",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 5.52,
-        "shares_m": 1637
+        "fcf_b": 6.70,
+        "shares_m": 1650
       }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "0.40x",
-      "change": "Deuda LT $1.72B / EBITDA $4.29B FY2024",
+      "label": "Deuda Neta/EBITDA",
+      "value": "-1.36x",
       "signal": "green",
-      "note": "Balance muy conservador; posicion de caja neta positiva de $3.4B"
+      "note": "Caja neta $9.12B; balance solido sin presion financiera"
     },
     {
-      "label": "ROE",
-      "value": "2.8%",
-      "change": "vs 1.5% FY2023",
+      "label": "ROE (anualizado Q1 2026)",
+      "value": "8.6%",
       "signal": "yellow",
-      "note": "Distorsionado por $43.8B en goodwill e intangibles (adquisicion Xilinx $49B en 2022)"
+      "note": "Net income $1.38B x4 / Equity $64.5B; limitado por goodwill Xilinx $43B"
     },
     {
-      "label": "ROIC",
-      "value": "2.8%",
-      "change": "Net Income $1.64B / Capital invertido $59.3B",
-      "signal": "yellow",
-      "note": "Bajo por base de activos inflada por Xilinx; ROIC sobre capital tangible seria ~22%"
+      "label": "Margen FCF Q1 2026",
+      "value": "25.0%",
+      "signal": "green",
+      "note": "Record historico trimestral; FCF $2.57B sobre revenue $10.25B"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
       {
-        "label": "2021",
+        "label": "FY2021",
         "revenue": 16.43,
         "utilidad": 3.16
       },
       {
-        "label": "2022",
-        "revenue": 23.6,
+        "label": "FY2022",
+        "revenue": 23.60,
         "utilidad": 1.32
       },
       {
-        "label": "2023",
+        "label": "FY2023",
         "revenue": 22.68,
         "utilidad": 0.85
       },
       {
-        "label": "2024",
+        "label": "FY2024",
         "revenue": 25.79,
         "utilidad": 1.64
       },
       {
-        "label": "2025",
+        "label": "FY2025",
         "revenue": 34.64,
         "utilidad": 4.34
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 10.25,
+        "utilidad": 1.38
       }
     ],
     "series": [
@@ -186,34 +205,40 @@
   "chart_margenes": {
     "data": [
       {
-        "label": "2021",
+        "label": "FY2021",
         "bruto": 48.3,
         "operativo": 22.2,
         "neto": 19.2
       },
       {
-        "label": "2022",
+        "label": "FY2022",
         "bruto": 44.9,
         "operativo": 5.4,
-        "neto": 5.6
+        "neto": 5.5
       },
       {
-        "label": "2023",
+        "label": "FY2023",
         "bruto": 46.1,
         "operativo": 1.8,
         "neto": 3.8
       },
       {
-        "label": "2024",
-        "bruto": 49.3,
+        "label": "FY2024",
+        "bruto": 49.4,
         "operativo": 7.4,
         "neto": 6.4
       },
       {
-        "label": "2025",
+        "label": "FY2025",
         "bruto": 49.5,
         "operativo": 10.7,
         "neto": 12.5
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 52.8,
+        "operativo": 14.4,
+        "neto": 13.5
       }
     ],
     "series": [
@@ -234,267 +259,225 @@
   "capital_allocation": {
     "items": [
       {
+        "label": "Free Cash Flow (Q1 2026)",
+        "value": "2.57B USD",
+        "nota": "Record historico trimestral; FCF margin del 25% de revenue. OCF $2.96B menos Capex $389M"
+      },
+      {
+        "label": "Capex (Q1 2026)",
+        "value": "389M USD",
+        "nota": "Capex controlado; AMD es fabless -- mayor inversion es en I+D, no en manufactura propia. Capex FY2025 fue $1.01B (2.9% del revenue)"
+      },
+      {
         "label": "Recompra de acciones",
-        "value": "$1.59B",
-        "nota": "FY2024: $862M en recompras + $728M en retenciones por equity awards. Programa de $6B autorizado en agosto 2022, ~$4.1B restante al cierre FY2024"
+        "value": "Sin recompras materiales Q1 2026",
+        "nota": "AMD tiene programa de recompra de $6B autorizado; prioridad actual es reinvertir en I+D para roadmap MI350/MI400 y ROCm"
       },
       {
-        "label": "Dividendos",
-        "value": "$0",
-        "nota": "AMD no paga dividendos. La empresa reinvierte todo el capital en R&D y crecimiento organico"
-      },
-      {
-        "label": "Capex",
-        "value": "$636M",
-        "nota": "2.5% del revenue FY2024. Capex moderado — modelo fabless sin fabricas propias; AMD usa TSMC para produccion"
-      },
-      {
-        "label": "M&A / Adquisiciones",
-        "value": "$0 en FY2024",
-        "nota": "Sin adquisiciones en FY2024. Ultimo hito: adquisicion de Xilinx por $49B completada en febrero 2022 (FPGAs, Embedded). En 2022 tambien adquirio Pensando Systems ($1.9B) para DPUs/networking"
+        "label": "Caja neta total al 28-mar-2026",
+        "value": "12.35B USD",
+        "nota": "Cash $5.59B + inversiones CP $6.76B = $12.35B vs deuda total $3.22B. Balance record en la historia de AMD"
       }
     ]
   },
   "comparacion_sector": {
+    "titulo": "AMD vs. Pares Semiconductores IA (Q1 2026 / Mas reciente)",
     "headers": [
       "Metrica",
-      "AMD FY2024",
-      "Sector ref.",
-      "Posicion relativa"
+      "AMD",
+      "NVDA",
+      "INTC",
+      "QCOM"
     ],
     "rows": [
       [
-        "Gross margin",
-        "49.3%",
-        "~50%",
-        "En linea con sector"
+        "Crecimiento Rev. YoY",
+        "+38%",
+        "~69%",
+        "~-1%",
+        "~17%"
       ],
       [
-        "Margen operativo",
-        "7.4%",
-        "~20%",
-        "Por debajo del sector"
+        "Margen Bruto (GAAP)",
+        "53%",
+        "~73%",
+        "~39%",
+        "~56%"
       ],
       [
-        "Revenue growth YoY",
-        "+13.7%",
-        "~12%",
-        "Por encima del sector"
+        "Margen Operativo (GAAP)",
+        "14.4%",
+        "~62%",
+        "Negativo",
+        "~27%"
       ],
       [
-        "P/E forward (base $100)",
-        "37.7x",
-        "~35x",
-        "En linea con sector"
-      ],
-      [
-        "Deuda/EBITDA",
-        "0.40x",
-        "~1.5x",
-        "Por encima del sector"
-      ],
-      [
-        "ROIC",
-        "2.8%",
-        "~15%",
-        "Por debajo del sector"
+        "Deuda Neta / EBITDA",
+        "-1.4x",
+        "~-11x",
+        "~2x",
+        "~1x"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Tendencia de mejora en FY2024 tras punto minimo en FY2023",
-    "analisis": "Despues de un deterioro significativo en FY2022-2023 (margenes operativos de 5.4% y 1.8% respectivamente vs 22.2% en FY2021), AMD inicio una recuperacion en FY2024 impulsada por Data Center. El principal deterioro estructural es Gaming (-58% revenue en FY2024), compensado por el crecimiento explosivo en Data Center (+94%). Los resultados FY2025 ya publicados confirman la aceleracion de la recuperacion con margen operativo de 10.7% y FCF de $5.5B.",
+    "veredicto": "AMD muestra aceleracion financiera consistente en Q1 2026: records historicos en revenue, FCF y margen neto GAAP confirman mejora estructural. No hay deterioro detectable -- todos los indicadores clave mejoran YoY.",
+    "analisis": "Q1 2026 es el trimestre con mayor revenue en la historia de AMD ($10.25B), el mayor FCF trimestral ($2.57B) y la mayor expansion de margenes brutos GAAP desde antes de la fusion con Xilinx. El margen operativo GAAP de 14.4% duplica el de Q1 2025 (10.8%). La deuda neta negativa de $9.12B es record absoluto. El unico punto de vigilancia es que los margenes Non-GAAP crecen mas lentamente que el revenue, lo que sugiere que el costo del mix Data Center/GPU es estructuralmente mas alto que el promedio del portafolio.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+13.7%",
+        "valor": "+38% en Q1 2026 ($10.25B vs $7.44B Q1 2025); aceleracion vs +24% crecimiento en FY2025",
         "status": "ok"
       },
       {
-        "metrica": "Margen bruto",
-        "valor": "49.3% (+3.2pp YoY)",
+        "metrica": "Margen Bruto GAAP",
+        "valor": "53% en Q1 2026, expansion desde 50% en Q1 2025 (+3pp YoY)",
         "status": "ok"
       },
       {
-        "metrica": "Margen operativo",
-        "valor": "7.4% vs 1.8% FY2023",
+        "metrica": "Margen Operativo GAAP",
+        "valor": "14.4% en Q1 2026, expansion desde 10.8% en Q1 2025 (+3.6pp YoY)",
         "status": "ok"
       },
       {
-        "metrica": "FCF conversion",
-        "valor": "$2.41B (9% del revenue)",
+        "metrica": "Margen Neto GAAP",
+        "valor": "13.5% en Q1 2026, expansion desde 9.5% en Q1 2025 (+4.0pp YoY)",
         "status": "ok"
       },
       {
-        "metrica": "Segmento Gaming",
-        "valor": "-58% revenue YoY ($2.6B vs $6.2B)",
-        "status": "bad"
-      },
-      {
-        "metrica": "Segmento Embedded",
-        "valor": "-33% revenue YoY ($3.6B vs $5.3B)",
-        "status": "warn"
-      },
-      {
-        "metrica": "Deuda LT",
-        "valor": "$1.72B; posicion caja neta $3.4B",
+        "metrica": "FCF trimestral",
+        "valor": "$2.57B en Q1 2026, record historico; margen FCF 25% de revenue",
         "status": "ok"
       },
       {
-        "metrica": "ROE",
-        "valor": "2.8% (distorsionado por goodwill Xilinx)",
-        "status": "warn"
+        "metrica": "Deuda Neta",
+        "valor": "-$9.12B en Q1 2026, caja neta record; mejora desde -$6.71B en FY2025",
+        "status": "ok"
       }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Data Center: crecimiento explosivo liderado por IA",
+      "title": "Data Center IA: crecimiento +57% YoY sostenido",
       "impact": "Alto",
-      "evidence": "Data Center revenue: $12.6B en FY2024 (+94% YoY) vs $6.5B en FY2023; representa el 49% del total de ingresos",
-      "context": "El chip Instinct MI300X posiciona a AMD como el principal rival de NVIDIA en GPUs para entrenamiento e inferencia de IA. Clientes como Microsoft, Meta y Oracle ya despliegan MI300 a escala"
+      "evidence": "Segmento Data Center alcanzo $5.78B en Q1 2026, +57% YoY, representando el 56% del revenue total. GPU Instinct MI300X/MI325X con fuerte demanda de hyperscalers incluyendo Microsoft, Meta, Google y Oracle. EPYC Turin (CPU) expandiendo cuota en servidores x86.",
+      "context": "El crecimiento del 57% en Data Center confirma que AMD ha ganado cuota real en el mercado de GPU para IA. La guia Q2 2026 de $11.2B (+46% YoY) con margen bruto Non-GAAP del 56% indica que la expansion de margenes acompana al crecimiento. Lisa Su menciono en el earnings call que los envios de chips para Meta comenzaran en H2 2026, abriendo un nuevo vector de crecimiento."
     },
     {
       "level": "green",
-      "title": "Balance conservador con posicion de caja neta",
-      "impact": "Medio",
-      "evidence": "Deuda LT $1.72B vs caja+inversiones $5.13B al cierre FY2024. Deuda/EBITDA de solo 0.40x",
-      "context": "AMD tiene flexibilidad financiera total para invertir en R&D, recompras o adquisiciones sin estres de deuda"
-    },
-    {
-      "level": "green",
-      "title": "FCF acelera: $2.41B en FY2024 y $5.52B en FY2025",
+      "title": "FCF record y posicion de caja neta historica",
       "impact": "Alto",
-      "evidence": "FCF FY2024: $2.41B (+115% YoY vs $1.12B FY2023). FCF FY2025: $5.52B (+129% YoY)",
-      "context": "La conversion de ingresos a caja libre esta mejorando estructuralmente; FCF yield de 9% sobre revenue en FY2024 y 16% en FY2025"
+      "evidence": "FCF Q1 2026 de $2.57B es record historico trimestral, con margen FCF del 25%. Caja neta total de $12.35B vs deuda $3.22B. FCF FY2025 fue $6.70B, cuadruplicando el de FY2024.",
+      "context": "La combinacion de alta generacion de caja con bajo capex (fabless) posiciona a AMD para reinvertir en I+D de la proxima generacion de GPU (MI350, MI400) y eventualmente retornar capital a accionistas. La solidez del balance elimina riesgo financiero en el contexto de un ciclo de inversion de IA intensivo en la industria."
     },
     {
       "level": "yellow",
-      "title": "Valuacion exigente en trailing P/E de 100x",
+      "title": "Margen operativo GAAP bajo vs. NVDA por amortizacion de intangibles",
+      "impact": "Medio",
+      "evidence": "Margen operativo GAAP Q1 2026: 14.4%. Amortizacion de intangibles Q1 2026: $551M (intangibles post-adquisicion Xilinx 2022). NVDA opera con margen operativo GAAP ~62% en periodos comparables.",
+      "context": "La diferencia de margen vs NVIDIA es en parte estructural (AMD tiene base de costos mas alta y menor escala en GPU) y en parte contable (amortizacion de intangibles de ~$2.2B anuales por Xilinx reduciran el GAAP hasta ~2028). El Non-GAAP operativo del 24.8% en Q1 2026 es mas representativo. El gap con NVIDIA refleja una diferencia genuina de escala y poder de fijacion de precios en GPU de IA."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion premium extrema exige ejecucion perfecta",
       "impact": "Alto",
-      "evidence": "P/E trailing @$100 = 100x (EPS GAAP FY2024: $1.00). P/E forward con FY2025 real: 37.7x",
-      "context": "La valuacion descuenta un crecimiento acelerado sostenido. Cualquier desaceleracion en Data Center podria generar una compresion multiple significativa"
-    },
-    {
-      "level": "yellow",
-      "title": "Colapso del segmento Gaming (-58% en FY2024)",
-      "impact": "Medio",
-      "evidence": "Gaming revenue: $2.6B en FY2024 vs $6.2B en FY2023 (-58%). Operating income: $290M vs $971M en FY2023",
-      "context": "El declive refleja menores ventas de chips a consolas (Sony PS5, Microsoft Xbox) en ciclo de vida maduro. AMD no tiene posicion dominante en GPUs discretas de consumo frente a NVIDIA"
-    },
-    {
-      "level": "yellow",
-      "title": "Segmento Embedded en contraccion por segundo año consecutivo",
-      "impact": "Medio",
-      "evidence": "Embedded revenue: $3.6B FY2024 vs $5.3B FY2023 (-33%) vs $4.6B FY2022. Acumula caida desde peak FY2022",
-      "context": "El mercado industrial y de telecomunicaciones atraviesa un ciclo de digestion de inventarios post-COVID. La recuperacion en FY2025 ($3.45B) muestra estabilizacion pero no regresa a niveles peak"
-    },
-    {
-      "level": "yellow",
-      "title": "Margen operativo GAAP significativamente inferior al non-GAAP",
-      "impact": "Medio",
-      "evidence": "Margen operativo GAAP FY2024: 7.4% vs non-GAAP: 23.8%. Diferencia de $4.2B en ajustes (principalmente amortizacion de intangibles Xilinx)",
-      "context": "AMD amortiza ~$1.7B/año en intangibles de Xilinx hasta ~2030. El margen GAAP seguira deprimido vs comparables; inversores deben usar metricas ajustadas con cautela"
+      "evidence": "P/E Forward Non-GAAP de 62.7x y EV/EBITDA de 102x a precio de cierre del 6-may-2026 ($421.39). El stock subio +18.6% el dia del reporte. Para justificar el precio con P/E de 30x en 2028, AMD necesita EPS Non-GAAP ~$14 (vs $6.72E FY2026).",
+      "context": "La valuacion descuenta un escenario de ejecucion perfecta: que AMD sostenga +40% de crecimiento en Data Center durante 2026-2027, expanda margenes Non-GAAP por encima del 56% y no pierda cuota frente a NVIDIA cuando lance Blackwell Ultra y Rubin. Cualquier trimestre con miss de guia puede generar caidas abruptas dado el multiple exigente."
     },
     {
       "level": "red",
-      "title": "Competencia de NVIDIA en GPUs para IA: brecha tecnologica persistente",
+      "title": "Competencia NVIDIA: ecosistema CUDA es el moat mas dificil de derribar",
       "impact": "Alto",
-      "evidence": "NVIDIA mantiene >80% de cuota en GPUs para data centers de IA. AMD captura ~5-8% con MI300X. NVIDIA H100/H200/B200 superan en ecosistema de software (CUDA) y performance",
-      "context": "El ecosistema CUDA de NVIDIA tiene 10+ años de ventaja. AMD invierte fuertemente en ROCm pero la adopcion es fragmentada. Un retraso en MI400 o deterioro en adopcion de ROCm podria limitar el crecimiento en Data Center"
+      "evidence": "NVIDIA controla >80% del mercado de GPU para IA. Ecosistema CUDA tiene 15+ anos de ventaja de software y millones de modelos entrenados. AMD MI300X tiene specs de hardware competitivos pero ROCm (alternativa a CUDA) sigue en madurez inferior.",
+      "context": "El riesgo central de la tesis AMD en IA no es el hardware sino el software. Los desarrolladores de IA eligen plataformas por el ecosistema, no solo por el chip. Si NVIDIA lanza Blackwell Ultra a pleno ritmo en H2 2026 y Rubin en 2027 manteniendo la ventaja de software, AMD podria ver presion en precios y cuota incluso con buen hardware. Este es el riesgo de cola mas importante para el inversionista de largo plazo."
     }
   ],
   "score": {
-    "score": 6.4,
+    "score": 7.2,
     "max": 10,
     "items": [
       {
         "label": "Poder de fijacion de precios",
         "score": 7,
-        "max": 10,
-        "nota": "AMD puede fijar precios premium en EPYC y MI300 frente a Intel/NVIDIA donde tiene ventajas de precio-rendimiento, pero NVIDIA domina en GPUs de IA lo que limita su poder de pricing en ese segmento"
+        "max": 10
       },
       {
         "label": "Crecimiento de revenue",
-        "score": 8,
-        "max": 10,
-        "nota": "Revenue FY2024: +13.7% YoY; FY2025: +34.3% YoY. Data Center crecio 94% en FY2024 y 32% en FY2025. Trayectoria de crecimiento superior al sector"
+        "score": 9,
+        "max": 10
       },
       {
         "label": "Calidad de margenes",
-        "score": 5,
-        "max": 10,
-        "nota": "Margen bruto GAAP del 49.3% es competitivo, pero el margen operativo GAAP del 7.4% esta muy por debajo del non-GAAP (23.8%) y de peers como NVIDIA (55%+). La amortizacion de Xilinx deprime los numeros GAAP hasta ~2030"
+        "score": 6,
+        "max": 10
       },
       {
         "label": "Solidez del balance",
         "score": 8,
-        "max": 10,
-        "nota": "Deuda/EBITDA 0.40x, posicion de caja neta de $3.4B, sin vencimientos significativos de deuda de corto plazo. Balance entre los mas conservadores del sector semiconductores"
+        "max": 10
       },
       {
         "label": "Generacion de FCF",
-        "score": 6,
-        "max": 10,
-        "nota": "FCF FY2024: $2.41B (9% del revenue). FCF FY2025 acelerado a $5.52B (16% del revenue). La mejora es notable pero aun inferior al 25-30% de FCF margin que genera NVIDIA"
+        "score": 8,
+        "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "AMD ejecuta una estrategia de tres pilares: (1) escalar su presencia en Data Center con EPYC CPUs y Instinct GPUs para cargas de trabajo de IA/HPC, (2) mantener y expandir su participacion en el mercado de PCs con la familia Ryzen, y (3) recuperar el segmento Embedded a medida que el ciclo de inventarios se normaliza. La empresa apuesta fuertemente en el software ROCm para reducir la dependencia del ecosistema CUDA de NVIDIA, y en el roadmap de silicio con EPYC Turin (gen 5) e Instinct MI325X/MI350 para mantenerse competitiva en el ciclo de producto de 12-18 meses.",
-    "ventajas": "AMD tiene tres ventajas competitivas claras: (1) liderazgo en arquitectura x86 de alta eficiencia con EPYC que supera en TCO (costo total de propiedad) a Intel Xeon en cargas cloud, ganando cuota de mercado de forma sostenida en Azure, AWS y Google Cloud; (2) modelo fabless en TSMC que le da acceso a los procesos de fabricacion mas avanzados (TSMC N3E/N2) sin capex de manufactura; y (3) portafolio diversificado post-Xilinx que incluye FPGAs, adaptadores de red y SoCs, reduciendo la dependencia de ciclos de CPU/GPU. La relacion precio-rendimiento del MI300X vs H100 es un diferenciador real en inferencia de IA a escala.",
-    "debilidades": "Las principales debilidades son: (1) el ecosistema de software ROCm sigue siendo inferior a CUDA de NVIDIA en soporte de frameworks, herramientas y base de desarrolladores, lo que frena la adopcion del MI300X; (2) AMD no tiene presencia significativa en el mercado de GPUs discretas de consumo (gaming) donde NVIDIA domina con RTX 4000/5000; (3) los margenes GAAP siguen deprimidos por la amortizacion de intangibles de Xilinx (~$1.7B/año hasta ~2030); y (4) la dependencia exclusiva de TSMC como fabricante implica riesgo de capacidad y geopolitico.",
+    "estrategia": "AMD ejecuta una estrategia de dos vectores: (1) desafiar a Intel en CPU de servidores con EPYC Turin (5ta generacion, 192 cores), capitalizando la ventaja de proceso de TSMC N3/N4 en eficiencia energetica, y (2) convertirse en la segunda plataforma de GPU para IA con Instinct MI300X/MI325X y la proxima generacion MI350/MI400. La estrategia de software ROCm Open-Source busca reducir la barrera del ecosistema CUDA mediante integraciones con PyTorch, JAX y los frameworks mas usados en IA. En Q1 2026, la guia de Q2 de $11.2B (+46% YoY) y el comentario de Lisa Su sobre que la CPU:GPU ratio en Data Center llegara a 1:1 indican que AMD ve una oportunidad estructural de largo plazo en infraestructura de IA.",
+    "ventajas": "Acceso a TSMC de ultima generacion (N3/N4) para GPUs de alta densidad. EPYC Turin tiene la mejor performance/watt del mercado en cargas de trabajo de servidor. Posicion de caja neta de $9.12B permite invertir en I+D sin restriccion financiera. Modelo fabless elimina el riesgo de capacidad manufacturera propia. Diversificacion en cuatro segmentos reduce dependencia de un solo mercado.",
+    "debilidades": "Ecosistema de software (ROCm) significativamente menos maduro que CUDA de NVIDIA. Margen bruto GAAP de 53% vs 73% de NVIDIA refleja menor poder de fijacion de precios en GPU de IA. Segmento Gaming en contraccion estructural por salida del negocio de consolas semi-custom. Dependencia total de TSMC como unico fabricante de chips avanzados introduce riesgo de concentracion geopolitica.",
     "riesgos": [
-      "Concentracion en TSMC: AMD fabrica el 100% de sus chips en TSMC (Taiwan). Un conflicto en el Estrecho de Taiwan, un fallo de capacidad o un desastre natural podria interrumpir totalmente la produccion. NVIDIA y Apple tienen el mismo riesgo",
-      "Brecha de ecosistema vs NVIDIA CUDA: Si AMD no cierra la brecha en software ROCm en los proximos 2-3 años, el mercado de GPUs para IA podria consolidarse permanentemente en NVIDIA, limitando el TAM de AMD en el segmento mas rentable",
-      "Ciclo de inventarios en Embedded: El segmento Embedded (Xilinx) represento $5.3B en FY2022 y cayo a $3.6B en FY2024. Un segundo ciclo de digestion o desaceleracion en manufactura inteligente podria prolongar la presion sobre este segmento",
-      "Restricciones de exportacion a China: Las regulaciones del BIS (EE.UU.) limitan la venta de chips de IA avanzados a China. AMD ha tenido que desarrollar versiones 'reducidas' (MI308) para el mercado chino, lo que reduce el ASP y el TAM direccionable",
-      "Presion de Intel con Arrow Lake/Panther Lake: Aunque AMD gano cuota en servidores, Intel sigue siendo el lider en CPUs para PCs corporativos y tiene incentivos para recuperar terreno en ambos mercados con inversiones masivas en su proceso de fabricacion propio (Intel 18A)"
+      "Ejecucion tecnica de NVIDIA en Blackwell Ultra/Rubin que mantenga el gap de performance en modelos grandes de lenguaje",
+      "Desaceleracion en el gasto de capex de hyperscalers en infraestructura de IA (riesgo macro de 2027)",
+      "Limitaciones de suministro en TSMC N3 que afecten el ramp de GPU Instinct de nueva generacion",
+      "Presiones de precio en Data Center si NVIDIA reduce precios para defender cuota de mercado",
+      "Riesgo geopolitico: restricciones de exportacion de chips a China (segmento relevante para AMD)"
     ],
-    "inversiones_estrategicas": "AMD invirtio $636M en Capex en FY2024 (2.5% del revenue) enfocado en infraestructura de diseño y laboratorios de validacion. En R&D invirtio $5.9B en FY2024 (22.9% del revenue), el mayor gasto de R&D en la historia de la empresa. Las inversiones clave incluyen: el desarrollo del chip Instinct MI350 (arquitectura CDNA4, TSMC N3) esperado para 2025, la plataforma EPYC Turin (Zen 5, 192 cores), y la expansion del ecosistema ROCm con soporte nativo para PyTorch, TensorFlow y ONNX. Post-Xilinx, AMD tambien invierte en integrar las capacidades FPGA con GPU en soluciones heterogeneas para edge computing e inferencia eficiente."
+    "inversiones_estrategicas": "En Q1 2026, AMD reporto que el segmento Data Center crece al 57% YoY con demand visibility de GPU Instinct hacia H2 2026. La empresa guia Q2 2026 revenue de $11.2B con margen Non-GAAP del 56% (+100bp vs Q1). Lisa Su menciono en el earnings call que el mercado de servidores crecera mas del 35% y que AMD espera que la ratio CPU:GPU llegue a 1:1 en centros de datos modernos, lo que representa una oportunidad estructural para EPYC. Los envios de chips para Meta estan previstos para la segunda mitad de 2026. La pipeline de MI350 (H2 2026E) y MI400 (2027E) mantiene el roadmap de GPU anual alineado con el de NVIDIA."
   },
   "verdict": {
-    "status": "Mantener / Vigilar",
-    "score": "6.4/10",
+    "status": "Mantener / Acumular en correcciones",
+    "score": "7.2/10",
     "color": "yellow",
     "metrics": [
       {
-        "label": "Revenue TTM (FY2024)",
-        "value": "$25.8B"
+        "label": "Revenue Q1 2026",
+        "value": "10.25B USD"
       },
       {
-        "label": "Margen Neto GAAP",
-        "value": "6.4%"
+        "label": "Margen Operativo GAAP",
+        "value": "14.4%"
       },
       {
-        "label": "FCF Yield (@$100)",
-        "value": "1.5%"
+        "label": "FCF Margin Q1 2026",
+        "value": "25.0%"
       },
       {
-        "label": "P/E Forward (FY2025 real)",
-        "value": "37.7x"
+        "label": "P/E Forward Non-GAAP",
+        "value": "62.7x"
       },
       {
-        "label": "Crecimiento Rev. YoY",
-        "value": "+13.7% FY2024 / +34.3% FY2025"
+        "label": "Crecimiento Rev.",
+        "value": "+38% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Data Center como motor principal ->** El segmento crecio +94% en FY2024 hasta $12.6B y +32% adicional en FY2025 hasta $16.6B. Los chips Instinct MI300X para IA generativa son adoptados por hyperscalers como Meta, Microsoft y Oracle, y AMD aspira a >$5B en revenue solo de GPUs de IA en 2024, meta que supero.",
+        "text": "**Data Center IA en aceleracion ->** Revenue de Data Center $5.78B (+57% YoY) en Q1 2026 confirma que AMD gana cuota real en GPU para IA. La guia Q2 de $11.2B implica +46% YoY, senializando que el ciclo no ha alcanzado su pico. EPYC Turin y Instinct MI325X son productos tecnicamente competitivos con alta demanda de hyperscalers incluyendo Microsoft, Meta, Google y Oracle.",
         "type": "pro"
       },
       {
-        "text": "**Balance solido con caja neta ->** Deuda/EBITDA de solo 0.40x y posicion de caja neta de $3.4B al cierre FY2024 ($7.3B en FY2025). AMD tiene plena flexibilidad para recompras agresivas, R&D y potenciales adquisiciones sin comprometer su solidez financiera.",
+        "text": "**FCF record y balance impecable ->** FCF Q1 2026 de $2.57B es record historico trimestral con margen del 25%. Caja neta de $9.12B y deuda neta negativa dan a AMD flexibilidad total para invertir en la proxima generacion de GPU (MI350/MI400) sin presion financiera. El modelo fabless mantiene bajo el capex estructural.",
         "type": "pro"
       },
       {
-        "text": "**Recuperacion de FCF acelerada ->** Free Cash Flow paso de $1.12B en FY2023 a $2.41B en FY2024 y $5.52B en FY2025, una multiplicacion por casi 5x en dos anos. La conversion de ingresos a caja libre mejora estructuralmente con la escala en Data Center.",
+        "text": "**Expansion de margenes sostenida ->** Margen bruto GAAP mejoro a 53% en Q1 2026 (+3pp YoY), margen operativo a 14.4% (+3.6pp) y margen neto a 13.5% (+4pp). La guia Q2 eleva el Non-GAAP a 56%, indicando que el mix hacia Data Center de mayor valor sigue mejorando la estructura de costos.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo principal: valuacion exigente y brecha con NVIDIA ->** P/E trailing de 100x a $100/accion descuenta un escenario perfecto. Cualquier desaceleracion en adopcion de MI300/MI350 o retraso en ROCm podria comprimir el multiple agresivamente. NVIDIA mantiene >80% de cuota en GPUs para IA con un foso de software (CUDA) de 10+ años de profundidad.",
+        "text": "**Valuacion exigente con CUDA como riesgo central ->** P/E Forward Non-GAAP de 62.7x descuenta ejecucion perfecta durante 2026-2028. El moat de NVIDIA en software (CUDA, 15+ anos de ecosistema) es la barrera mas dificil de derribar para AMD. Cualquier trimestre con miss de estimados o aceleracion de NVIDIA en Blackwell/Rubin podria generar correcciones de 20-30% desde los niveles actuales.",
         "type": "con"
       }
     ]
@@ -503,27 +486,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "AMD reporto revenue de $25.8B en FY2024 (+13.7% YoY) y $34.6B en FY2025 (+34.3% YoY). El crecimiento esta impulsado exclusivamente por Data Center (+94% en FY2024, +32% en FY2025), que ya representa el 49% y 48% del total respectivamente. Los segmentos Gaming y Embedded contrajeron significativamente en FY2024, aunque Gaming muestra signos de estabilizacion en FY2025 (+50% a $3.9B). El perfil de ingresos se esta transformando hacia una empresa de infraestructura de IA y centros de datos."
+        "texto": "Q1 2026 entrego $10.25B (+38% YoY), el mayor trimestre en la historia de AMD. El motor es Data Center ($5.78B, +57% YoY) que ya representa el 56% del revenue total. Client ($2.89B, +26%) y Embedded ($873M, +6%) acompanan el crecimiento, mientras Gaming ($720M, +11%) muestra estabilizacion. La guia Q2 de $11.2B implica +46% YoY, acelerando desde el +38% de Q1, con revenue anualizado que superaria $42B si el ritmo se mantiene."
       },
       {
         "label": "Margenes",
-        "texto": "El margen bruto GAAP mejoro de 46.1% (FY2023) a 49.3% (FY2024) y 49.5% (FY2025), reflejando mejor mix de productos con mayor contribution de Data Center. El margen operativo GAAP se recupera desde el minimo de 1.8% (FY2023) hacia 7.4% (FY2024) y 10.7% (FY2025), pero sigue siendo artificialmente bajo por la amortizacion anual de ~$1.7-2.3B en intangibles de la adquisicion de Xilinx. El margen operativo non-GAAP de 23.8% en FY2024 y 22.5% en FY2025 refleja mejor la rentabilidad operativa real del negocio."
-      },
-      {
-        "label": "EPS",
-        "texto": "El EPS GAAP diluido fue $1.00 en FY2024 (+89% vs $0.53 en FY2023) y $2.65 en FY2025 (+165% YoY). La recuperacion es notable pero el EPS GAAP sigue deprimido vs el non-GAAP ($3.31 FY2024, $4.17 FY2025) por la amortizacion de intangibles. El pico historico fue $2.57 en FY2021 (antes de Xilinx). Con el EPS GAAP de $2.65 en FY2025, AMD finalmente supero su mejor año historico pre-Xilinx. La calidad de las ganancias mejora: el ratio FCF/Net Income paso de 1.3x (FY2023) a 1.5x (FY2024) y 1.3x (FY2025)."
-      },
-      {
-        "label": "Balance",
-        "texto": "El balance de AMD es conservador y saludable. La deuda total era $1.72B al cierre FY2024 (vs $2.47B en FY2023), con Deuda/EBITDA de 0.40x. La posicion de caja neta era positiva en $3.4B en FY2024 y $7.3B en FY2025. El current ratio era 2.6x en FY2024. El unico riesgo de balance es el $43.8B en goodwill e intangibles de Xilinx, que deprime el ROE y ROIC sobre activos totales. En base a capital tangible, los retornos son significativamente superiores."
+        "texto": "Margen bruto GAAP de 53% en Q1 2026, el mas alto desde antes de la fusion con Xilinx; expansion de +3pp YoY. Margen operativo GAAP de 14.4% (+3.6pp YoY) y margen neto de 13.5% (+4pp YoY). La diferencia entre GAAP y Non-GAAP (~10pp en margen operativo) se debe principalmente a los $551M de amortizacion de intangibles trimestral por la adquisicion de Xilinx, que continuara hasta ~2028. El Non-GAAP operativo del 24.8% en Q1 2026 refleja mejor la rentabilidad economica real."
       },
       {
         "label": "Generacion de caja",
-        "texto": "La generacion de FCF es el indicador mas alentador del perfil financiero de AMD. Desde el minimo de $1.12B en FY2023, el FCF se recupero a $2.41B en FY2024 y $5.52B en FY2025, impulsado por mayor rentabilidad en Data Center y control de Capex (modelo fabless). El Capex de $636M en FY2024 (2.5% del revenue) confirma el bajo requerimiento de capital fijo del modelo fabless. La conversion de revenue a FCF mejoro del 5% (FY2023) al 9% (FY2024) y 16% (FY2025)."
+        "texto": "OCF Q1 2026 de $2.96B y FCF record de $2.57B (margen 25%). Capex de solo $389M confirma la ventaja del modelo fabless. La caja neta total de $12.35B (cash + ST investments) vs deuda de $3.22B da una posicion neta de $9.12B, la mayor en la historia de la empresa. FCF FY2025 fue $6.70B, cuadruplicando los $2.41B de FY2024."
+      },
+      {
+        "label": "Balance",
+        "texto": "Equity de $64.46B al 28-mar-2026. Total deuda $3.22B (corriente $874M + LP $2.35B). Deuda neta negativa de $9.12B indica posicion de caja neta record. El balance es uno de los mas solidos del sector semiconductor fuera de NVIDIA. No hay riesgo de refinanciamiento ni presion de liquidez en ningun escenario razonable."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $421.39 (cierre 6-may-2026, post-rally +18.6%), AMD cotiza a P/E Trailing GAAP de 157.8x y P/E Forward Non-GAAP de 62.7x. Estos multiples solo se justifican si AMD sostiene +40% de crecimiento en Data Center durante 2026-2028 y expande margenes Non-GAAP por encima del 58-60%. En correcciones del 25-30% la valuacion se vuelve mas atractiva para el inversionista de largo plazo con horizonte de 3-5 anios."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Los tres riesgos mas importantes a monitorear son: (1) la brecha de ecosistema de software ROCm vs CUDA de NVIDIA, que determina la capacidad de AMD de retener y expandir cuota en GPUs para IA — si ROCm no alcanza paridad funcional en 2025-2026, el momentum podria revertirse; (2) las restricciones de exportacion a China, que eliminan un mercado potencial significativo para Instinct GPU y fuerzan el desarrollo de SKUs de menor margen; y (3) la concentracion de manufactura en TSMC Taiwan, con riesgo geopolitico no cuantificable que afecta a toda la industria fabless."
+        "texto": "El riesgo mas relevante es el ecosistema CUDA de NVIDIA, que representa una barrera de adopcion de software que el hardware de AMD no puede superar de forma inmediata. La madurez de ROCm es el factor critico a monitorear. Adicionalmente: (1) potencial desaceleracion del gasto de capex de hyperscalers post-2026, (2) restricciones de exportacion de chips a China, (3) limitaciones de suministro en TSMC N3 para GPU de nueva generacion, y (4) riesgo de compresion de multiples si el crecimiento decepciona en un solo trimestre."
       }
     ]
   }

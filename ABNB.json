@@ -1,0 +1,506 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Airbnb es la plataforma global de alquileres vacacionales P2P mas grande del mundo, conectando 8M+ listados activos con viajeros en 220 paises. Modelo asset-light con margenes operativos superiores al 20% y FCF record de $4.6B en FY2025. En Q1 2026 reporto ingresos de $2.68B (+18% YoY) y EPS diluido de $0.26. La empresa genera caja estructuralmente y la devuelve via recompras agresivas ($3.8B en FY2025). Valuacion razonable a ~17.7x P/FCF con potencial de aceleracion en experiencias y crecimiento internacional.",
+  "descripcion": "Airbnb opera un marketplace de hospedaje y experiencias P2P: los hosts listan espacios (casas completas, cuartos, botes, etc.) y guests los reservan via la app. Los ingresos provienen de comisiones de servicio al guest (~14%) y host (~3%). El modelo es genuinamente asset-light: sin propiedades propias, capex minimo, con costos operativos bajos como porcentaje de GBV. Segmento unico (hospedaje representa ~97% del revenue); las Experiences crecen pero aun son marginales. Moat triple: efecto de red bilateral (mas hosts atraen mas guests), confianza construida en 15 anos (sistema de reviews, seguros, verificaciones), y marca global premium. En FY2025: GBV ~$83B, ~500M noches reservadas, ADR ~$174.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "5.99",
+        "8.40",
+        "9.92",
+        "11.10",
+        "12.24",
+        "2.68",
+        "+17.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.35",
+        "1.89",
+        "4.79",
+        "2.65",
+        "2.51",
+        "0.16",
+        "+3.9%"
+      ],
+      [
+        "Margen Neto",
+        "-5.8%",
+        "22.5%",
+        "48.3%",
+        "23.8%",
+        "20.5%",
+        "6.0%",
+        "-17.8pp"
+      ],
+      [
+        "EBITDA Ajustado (B USD)",
+        "0.51",
+        "1.84",
+        "N/D",
+        "4.04",
+        "4.30",
+        "N/D",
+        "+6.4%"
+      ],
+      [
+        "FCF (B USD)",
+        "2.28",
+        "3.41",
+        "3.85",
+        "4.48",
+        "4.61",
+        "1.70",
+        "+5.1%"
+      ],
+      [
+        "EPS Diluido",
+        "-0.56",
+        "2.79",
+        "7.24",
+        "4.11",
+        "4.03",
+        "0.26",
+        "+8.3%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-4.07",
+        "-5.39",
+        "-4.88",
+        "-4.87",
+        "-4.56",
+        "-5.99",
+        "N/D"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "34.0x",
+      "signal": "yellow",
+      "note": "vs. sector Internet ~30x",
+      "precio_base": 137.05,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.03
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "24.9x",
+      "signal": "yellow",
+      "note": "est. EPS fwd ~$5.50",
+      "precio_base": 137.05,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 5.5
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "16.9x",
+      "signal": "green",
+      "note": "EBITDA Ajustado $4.3B",
+      "precio_base": 137.05,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 4.297,
+        "shares_m": 595,
+        "deuda_neta_b": -4.56
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "17.7x",
+      "signal": "green",
+      "note": "FCF $4.6B FY2025",
+      "precio_base": 137.05,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 4.613,
+        "shares_m": 595
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-1.06x",
+      "signal": "green",
+      "note": "Caja neta de $4.6B"
+    },
+    {
+      "label": "ROE",
+      "value": "30.2%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "20.0%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 5.99,
+        "utilidad": -0.35
+      },
+      {
+        "label": "FY2022",
+        "revenue": 8.4,
+        "utilidad": 1.89
+      },
+      {
+        "label": "FY2023",
+        "revenue": 9.92,
+        "utilidad": 4.79
+      },
+      {
+        "label": "FY2024",
+        "revenue": 11.1,
+        "utilidad": 2.65
+      },
+      {
+        "label": "FY2025",
+        "revenue": 12.24,
+        "utilidad": 2.51
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 69.3,
+        "operativo": 7.2,
+        "neto": -5.8
+      },
+      {
+        "label": "FY2022",
+        "bruto": 81.4,
+        "operativo": 21.4,
+        "neto": 22.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 82.8,
+        "operativo": 15.3,
+        "neto": 48.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 83.1,
+        "operativo": 23,
+        "neto": 23.8
+      },
+      {
+        "label": "FY2025",
+        "bruto": 82.9,
+        "operativo": 20.8,
+        "neto": 20.5
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "$3.79B (FY2025)",
+        "nota": "$1.06B en Q1 2026. Total $11.7B recomprado desde 2022. Reduccion de ~12% de acciones desde IPO."
+      },
+      {
+        "label": "Dividendos",
+        "value": "$0",
+        "nota": "Sin dividendos. 100% del FCF via recompras y posicion de caja."
+      },
+      {
+        "label": "Capex",
+        "value": "$33M (FY2025)",
+        "nota": "Capex minimo: 0.27% del revenue. Modelo asset-light sin necesidad de infraestructura fisica."
+      },
+      {
+        "label": "M&A",
+        "value": "~$53M (FY2023)",
+        "nota": "Adquisicion menor en 2023. No hay grandes compras en 2024-2025; estrategia organica."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "ABNB TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "82.9%",
+        "~55% (OTAs)",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "20.8%",
+        "~15% (OTAs)",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+10.2%",
+        "~8% (viajes online)",
+        "Ligeramente por encima"
+      ],
+      [
+        "P/E Forward",
+        "24.9x",
+        "~20x (OTAs)",
+        "Prima moderada justificada"
+      ],
+      [
+        "ROIC",
+        "20.0%",
+        "~15% (OTAs)",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance solido con caja neta de $4.6B y FCF creciente. Sin senales de deterioro estructural.",
+    "analisis": "ABNB mantiene margenes brutos >82% consistentes desde 2022, con FCF creciendo de $3.4B a $4.6B en 3 anos. El margen neto de 2023 fue artificialmente alto por un beneficio fiscal unico de $2.7B. La desaceleracion de NI en 2024-2025 refleja normalizacion y mayor reinversion en producto y marketing. La deuda neta negativa y el FCF yield de 5.7% sobre market cap respaldan solidez financiera.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+10.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "82.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "20.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "20.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+$129M (+2.9%)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-$4.6B (caja neta)",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "FCF record y maquina de caja",
+      "impact": "Alto",
+      "evidence": "FCF $4.61B en FY2025, margen FCF 38%. P/FCF de 17.7x es atractivo para plataforma de este perfil.",
+      "context": "El modelo asset-light genera caja de manera estructural sin necesidad de capex intensivo. FCF crece ~20% anual promedio 2022-2025."
+    },
+    {
+      "level": "green",
+      "title": "Recompras agresivas y sistematicas",
+      "impact": "Alto",
+      "evidence": "$3.79B recomprado en FY2025, $1.06B en Q1 2026. Acciones reducidas de 680M (2022) a 595M (Q1 2026).",
+      "context": "Con caja neta de $4.6B y FCF anual de $4.6B, la empresa puede sostener este ritmo de recompras por anos sin comprometer el balance."
+    },
+    {
+      "level": "green",
+      "title": "Moat de red bilateral con 8M+ listados",
+      "impact": "Alto",
+      "evidence": "500M+ noches reservadas en FY2025. 8M+ listados activos en 220 paises. ADR sostenido en $174.",
+      "context": "La barrera de entrada es el inventario de listados y la confianza de 15 anos. Un nuevo competidor necesitaria replicar ambos lados del mercado simultaneamente."
+    },
+    {
+      "level": "yellow",
+      "title": "Desaceleracion de crecimiento de revenue",
+      "impact": "Medio",
+      "evidence": "Revenue YoY: +40% (2022), +18% (2023), +12% (2024), +10% (2025). Q1 2026: +18% sugiere reaceleracion.",
+      "context": "La base crece pero el ritmo baja. Airbnb apuesta a Experiences y mercados emergentes para mantener growth. Q1 2026 muestra aceleracion estacional positiva."
+    },
+    {
+      "level": "yellow",
+      "title": "Riesgo regulatorio en ciudades clave",
+      "impact": "Medio",
+      "evidence": "NYC bano alquileres corto plazo en 2023. Varias ciudades europeas imponen restricciones.",
+      "context": "La regulacion fragmentada por ciudad/pais genera incertidumbre estructural. Airbnb ha adaptado su modelo en mercados restringidos pero el riesgo de nuevas restricciones persiste."
+    },
+    {
+      "level": "red",
+      "title": "Competencia creciente de Booking y VRBO",
+      "impact": "Medio",
+      "evidence": "Booking Holdings expande agresivamente alquileres vacacionales. Expedia (VRBO) refuerza su posicion.",
+      "context": "ABNB lidera en brand awareness y host loyalty, pero el mercado de alquileres vacacionales se fragmenta. La ventaja de precio sobre hoteles se comprime con la normalizacion post-COVID."
+    }
+  ],
+  "score": {
+    "score": 8.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 9,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Airbnb ejecuta tres vectores de crecimiento: (1) expansion de listados en mercados sub-penetrados (Asia, Latinoamerica, Africa); (2) relanzamiento de Experiences con nuevas categorias y anfitriones de alto perfil; (3) monetizacion incremental via co-hosting, servicios premium y publicidad nativa. La empresa tambien invierte en IA para matching host-guest y pricing dinamico para hosts.",
+    "ventajas": "Efecto de red bilateral: 8M+ listados y >500M noches/ano hacen que cualquier nuevo entrante necesite anos para alcanzar masa critica. Brand global con reconocimiento en 220 paises. Modelo asset-light con margenes brutos de 83% imposibles de replicar por cadenas hoteleras. Sistema de reviews y confianza acumulados en 15 anos. Capital discipline: FCF yield ~5.7% con recompras sistematicas.",
+    "debilidades": "Revenue concentrado en hospedaje (97%+). Dependencia de viajes discrecionales ciclicos. Sin dividendo. Crecimiento de Experiences lento. Regulacion creciente en ciudades densas.",
+    "riesgos": [
+      "Regulacion municipal masiva en ciudades clave (NYC, Barcelona, Amsterdam) que limite listados disponibles",
+      "Recesion economica o caida del turismo discrecional que comprima GBV y revenue",
+      "Perdida de cuota ante Booking.com o nuevos entrantes con subsidios de precio",
+      "Disputas con gobiernos sobre impuestos de hospedaje y responsabilidad de plataforma en mercados clave"
+    ],
+    "inversiones_estrategicas": "IA para pricing dinamico de hosts. Expansion de Co-Hosting para monetizar hosts ocasionales. Relanzamiento de Experiences con nuevas categorias. Programa Airbnb Media Network en fase beta."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.4/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "$12.2B"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "20.5%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "5.7%"
+      },
+      {
+        "label": "P/FCF",
+        "value": "17.7x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+10.2% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Maquina de FCF a precio atractivo** -- P/FCF de 17.7x para una plataforma con margen bruto 83%, caja neta $4.6B y FCF creciente es una oportunidad de entrada solida. Q1 2026 muestra reaceleracion a +18% YoY.",
+        "type": "pro"
+      },
+      {
+        "text": "**Recompras sistematicas crean valor** -- $11.7B recomprado desde 2022, reduciendo acciones 12%. Con $4.6B FCF anual y balance sin deuda neta, la empresa puede sostener este ritmo 3+ anos.",
+        "type": "pro"
+      },
+      {
+        "text": "**Moat estructural e imposible de replicar** -- 8M+ listados, 220 paises, 15 anos de reviews y confianza. El efecto de red bilateral y la marca global hacen casi imposible la sustitucion directa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Desaceleracion de crecimiento y riesgo regulatorio** -- Growth bajando de 40% a 10% YoY. Regulacion en ciudades clave puede reducir inventario y comprimir ADR en mercados premium.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $12.24B en FY2025 (+10.2% YoY), con reaceleracion en Q1 2026 a +18% YoY ($2.68B). La empresa crece consistentemente desde la recuperacion post-COVID, con GBV de ~$83B. El crecimiento es organico y no depende de adquisiciones."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto estable en ~83% -- uno de los mas altos en el sector de viajes. Margen operativo de 20.8% en FY2025 vs 23% en FY2024, comprimido por mayor inversion en producto (+14%) y marketing (+20%). Margen neto normalizado ~20-24% excluyendo el beneficio fiscal unico de 2023."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF record de $4.61B en FY2025 (margen 38%), superando la utilidad neta GAAP de $2.51B. El FCF supera consistentemente el NI porque el modelo captura servicios por adelantado. Q1 2026: OCF de $1.71B. La empresa devuelve el 100% via recompras -- $3.79B en FY2025, $1.06B en Q1 2026."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de $4.56B al FY2025 (efectivo $6.56B + inversiones $4.45B = $11.01B vs deuda $2.00B). Al Q1 2026 la empresa emitio $2.48B en nuevos bonos a largo plazo y repago $2.0B de la deuda anterior. Balance solido sin covenant risk. Deuda/EBITDA negativa."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/FCF de 17.7x y EV/EBITDA de 16.9x son atractivos para el perfil de la empresa. P/E TTM de 34x se normaliza a ~25x usando EPS forward estimado de ~$5.50. FCF yield de 5.7% sobre market cap de $81.5B es competitivo vs treasuries al 4.3%. La prima sobre otras OTAs (Booking ~20x P/FCF) se justifica por el modelo mas asset-light y la marca."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "(1) Regulacion municipal creciente que limite listados en ciudades premium. (2) Desaceleracion del turismo discrecional en escenario recesivo. (3) Intensificacion de competencia de Booking.com y VRBO. (4) Impacto de nuevas regulaciones fiscales sobre plataformas de economia colaborativa."
+      }
+    ]
+  }
+}

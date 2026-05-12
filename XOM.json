@@ -1,0 +1,512 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "ExxonMobil (XOM) es la mayor petrolera integrada de Estados Unidos con operaciones en upstream (petroleo y gas), energia, quimicos y productos especiales. En 2024 completo la adquisicion de Pioneer Natural Resources (~60B USD), ampliando significativamente su posicion en la cuenca Permian. En 2025 reporto ingresos de 323.9B USD y utilidad neta de 28.8B USD bajo presion por menores precios del crudo. La accion cotiza a 14.6x P/E forward con un FCF yield del 3.8%, valuacion razonable para una major petrolera con balance solido y programa agresivo de retorno de capital.",
+  "descripcion": "ExxonMobil opera cuatro segmentos: Upstream (produccion de crudo y gas, 21.4B en ganancias 2025; produccion 4,736 Kboepd), Energy Products (refinacion y comercializacion, 7.4B ganancias 2025), Chemical Products (petroquimicos, 0.8B ganancias 2025) y Specialty Products (lubricantes y productos especiales, 2.9B ganancias 2025). La adquisicion de Pioneer en 2024 elevo la produccion en el Permian a niveles record. El moat se basa en activos de bajo costo de suministro, integracion vertical, escala global y tecnologia propietaria (8,000+ patentes activas). Adicionalmente impulsa negocios de baja emision: CCS, hidrogeno, combustibles de baja emision y datacenter de bajo carbono.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "285.6",
+        "413.7",
+        "334.7",
+        "339.2",
+        "323.9",
+        "83.2",
+        "+2.6%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "23.0",
+        "55.7",
+        "36.0",
+        "33.7",
+        "28.8",
+        "4.2",
+        "-45.8%"
+      ],
+      [
+        "Margen Neto",
+        "8.1%",
+        "13.5%",
+        "10.8%",
+        "9.9%",
+        "8.9%",
+        "5.0%",
+        "-4.9pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "49.0",
+        "98.5",
+        "69.6",
+        "69.8",
+        "63.0",
+        "13.7",
+        "-"
+      ],
+      [
+        "FCF (B USD)",
+        "36.1",
+        "58.4",
+        "33.5",
+        "30.7",
+        "23.6",
+        "2.2",
+        "-68.3%"
+      ],
+      [
+        "EPS Diluido",
+        "5.39",
+        "13.26",
+        "8.89",
+        "7.84",
+        "6.70",
+        "1.00",
+        "-43.2%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "46.2",
+        "17.4",
+        "10.0",
+        "18.7",
+        "32.9",
+        "39.2",
+        "-"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "25.2x",
+      "signal": "yellow",
+      "note": "TTM EPS 5.94 (Q2-Q4 2025 + Q1 2026)",
+      "precio_base": 149.68,
+      "precio_fecha": "2026-05-07",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 5.94
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "14.6x",
+      "signal": "green",
+      "note": "vs. sector ~13x",
+      "precio_base": 149.68,
+      "precio_fecha": "2026-05-07",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 10.22
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "10.5x",
+      "signal": "green",
+      "note": "vs. majors ~8-11x",
+      "precio_base": 149.68,
+      "precio_fecha": "2026-05-07",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 63,
+        "shares_m": 4179,
+        "deuda_neta_b": 32.86
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "26.5x",
+      "signal": "yellow",
+      "note": "FCF deprimido por alto capex Pioneer",
+      "precio_base": 149.68,
+      "precio_fecha": "2026-05-07",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 23.61,
+        "shares_m": 4179
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.52x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "11.1%",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROIC (ROCE)",
+      "value": "9.3%",
+      "signal": "yellow"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 285.6,
+        "utilidad": 23
+      },
+      {
+        "label": "FY2022",
+        "revenue": 413.7,
+        "utilidad": 55.7
+      },
+      {
+        "label": "FY2023",
+        "revenue": 334.7,
+        "utilidad": 36
+      },
+      {
+        "label": "FY2024",
+        "revenue": 339.2,
+        "utilidad": 33.7
+      },
+      {
+        "label": "FY2025",
+        "revenue": 323.9,
+        "utilidad": 28.8
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 18.5,
+        "operativo": 10.5,
+        "neto": 8.1
+      },
+      {
+        "label": "FY2022",
+        "bruto": 26.5,
+        "operativo": 19.5,
+        "neto": 13.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 24,
+        "operativo": 14.5,
+        "neto": 10.8
+      },
+      {
+        "label": "FY2024",
+        "bruto": 22,
+        "operativo": 13.3,
+        "neto": 9.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 20.5,
+        "operativo": 11.4,
+        "neto": 8.9
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "20.3B USD",
+        "nota": "FY2025 — programa robusto post-Pioneer; 19.6B en 2024"
+      },
+      {
+        "label": "Dividendos",
+        "value": "17.2B USD",
+        "nota": "FY2025 — 25+ anos de incrementos consecutivos; dividendo trimestral $0.99/accion"
+      },
+      {
+        "label": "Capex",
+        "value": "28.4B USD",
+        "nota": "FY2025 — inversiones record incluyendo integracion Pioneer; plan 27-29B en 2026"
+      },
+      {
+        "label": "M&A",
+        "value": "~60B USD",
+        "nota": "Adquisicion Pioneer Natural Resources completada en mayo 2024"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "XOM TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Neto",
+        "8.9%",
+        "~8-12%",
+        "En linea con sector"
+      ],
+      [
+        "Margen Operativo",
+        "11.4%",
+        "~10-15%",
+        "En linea con sector"
+      ],
+      [
+        "Revenue Growth",
+        "-4.5% YoY",
+        "~-5% sector",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "14.6x",
+        "~13x",
+        "Ligera prima por calidad"
+      ],
+      [
+        "ROIC",
+        "9.3%",
+        "~8-12%",
+        "En linea con sector"
+      ],
+      [
+        "Deuda Neta/EBITDA",
+        "0.52x",
+        "~0.8-1.5x",
+        "Balance mas solido que peers"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance solido con presion ciclica en margenes — expansion de capex post-Pioneer reduce FCF transitoriamente",
+    "analisis": "ExxonMobil muestra deterioro ciclico por caida en precios del crudo y gas en 2025, con revenue -4.5% y NI -14.4% YoY. El FCF cayo 23% principalmente por el alto capex post-integracion Pioneer. Sin embargo, el balance permanece fuerte con ND/EBITDA de 0.52x, permitiendo mantener el programa de retorno de capital. Q1 2026 muestra impacto adicional por precios de crudo debiles, con NI -45.8% YoY, aunque la produccion continua creciendo.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "-4.5%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "20.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "11.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "8.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-23.1%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "32.9B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Lider del Permian post-Pioneer",
+      "impact": "Alto",
+      "evidence": "Produccion total 4,736 Kboepd en 2025 (+9.3% YoY); Permian llego a record con Pioneer integrado; plan de crecimiento hasta 5.4 Mboepd para 2030.",
+      "context": "La adquisicion de Pioneer convirtio a XOM en el productor dominante de la cuenca mas rentable de EE.UU., con curvas de oferta de bajo costo que soportan FCF incluso en entornos de precio bajo."
+    },
+    {
+      "level": "green",
+      "title": "Retorno de capital consistente",
+      "impact": "Alto",
+      "evidence": "37.5B USD retornados a accionistas en 2025 (recompras 20.3B + dividendos 17.2B); 25+ anos de crecimiento de dividendos consecutivos.",
+      "context": "La disciplina de retorno de capital de XOM es de clase mundial. El buyback agresivo reduce el float y sostiene el EPS en ciclos bajistas de precios."
+    },
+    {
+      "level": "green",
+      "title": "Balance conservador para una mega-cap energetica",
+      "impact": "Medio",
+      "evidence": "Deuda Neta/EBITDA de 0.52x; ratio deuda/capital 14% — entre los mas bajos de las majors integradas.",
+      "context": "La solidez del balance permite a XOM mantener el dividendo y las recompras incluso en escenarios de crudo a 50 USD/barril, diferenciandola de competidores mas apalancados."
+    },
+    {
+      "level": "yellow",
+      "title": "Presion de margenes por expansion de capex",
+      "impact": "Medio",
+      "evidence": "Capex subio a 28.4B en 2025 vs 24.3B en 2024; FCF bajo a 23.6B; FCF yield de 3.8%.",
+      "context": "La inversion en integracion Pioneer y nuevos proyectos comprime el FCF a corto plazo. Se espera normalizacion del capex en 2027-2028 con mejora de FCF."
+    },
+    {
+      "level": "yellow",
+      "title": "Q1 2026 debil: NI -46% YoY",
+      "impact": "Medio",
+      "evidence": "Q1 2026: NI de 4.18B vs 7.71B en Q1 2025; EPS 1.00 vs 1.76; NM de 5.0%; presion por precio del crudo ~70 USD/barril.",
+      "context": "Los resultados de Q1 2026 reflejan precios del crudo significativamente mas bajos. El consenso espera recuperacion en la segunda mitad del ano si el crudo se estabiliza en 70-75 USD."
+    },
+    {
+      "level": "red",
+      "title": "Dependencia ciclica del precio del crudo",
+      "impact": "Alto",
+      "evidence": "Correlacion directa: WTI a 80 USD genera EBITDA ~70B; a 60 USD genera EBITDA ~45B. En 2025 el crudo promedió ~72 USD vs ~77 en 2024.",
+      "context": "Una caida sostenida del crudo a 60 USD o menos presionaria severamente el FCF y pondria en riesgo el nivel actual de recompras. La transicion energetica global es un riesgo estructural de largo plazo."
+    }
+  ],
+  "score": {
+    "score": 7,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Estrategia de bajo costo estructural: XOM prioriza activos con el menor costo de suministro del sector (Permian, Guyana, Qatar). La adquisicion de Pioneer consolida esta estrategia para el decenio 2025-2035. Paralelamente invierte en oportunidades de baja emision (CCS, hidrogeno) para preparar el portfolio para la transicion energetica sin sacrificar retornos actuales.",
+    "ventajas": "1) Posicion dominante en el Permian con Pioneer integrado y curvas de oferta competitivas. 2) Integracion vertical desde upstream hasta quimicos y especialidades que suaviza la volatilidad del crudo. 3) Balance de grado investment grade mas solido que peers (ND/EBITDA 0.52x). 4) Track record de 25+ anos de crecimiento de dividendos. 5) Cartera de proyectos de crecimiento en Guyana (Stabroek) con retornos de >30% a 35 USD/barril.",
+    "debilidades": "1) Alta exposicion ciclica al precio del crudo y gas natural. 2) Transicion energetica reduce la demanda estructural de largo plazo. 3) FCF comprimido por ciclo de alto capex post-Pioneer. 4) Segment de Chemical Products bajo presion por sobreoferta global. 5) Exposicion geopolitica en operaciones internacionales.",
+    "riesgos": [
+      "Caida sostenida del precio del crudo por debajo de 60 USD/barril — reduce FCF dramaticamente y amenaza el programa de recompras",
+      "Aceleracion de la transicion energetica — reduccion de demanda estructural de petroleo mas rapida de lo esperado",
+      "Riesgo de integracion Pioneer — sinergias y produccion pueden demorar vs. proyecciones originales",
+      "Regulacion medioambiental creciente — nuevos costos de carbon, impuestos a ganancias extraordinarias o restricciones a permisos en EE.UU.",
+      "Riesgo geopolitico — operaciones en 50+ paises expone a expropiaciones, sanciones o disrupciones operativas"
+    ],
+    "inversiones_estrategicas": "Proyecto Yellowtail en Guyana (Stabroek): 4ta etapa de desarrollo, 250,000 bpd adicionales para 2026-2027 con breakeven de <35 USD/barril. Planta de metanol-a-olefinas en China (joint venture). Proyectos de captura de carbono en el Golfo de Mexico con capacidad de 100M toneladas/ano para 2030. Expansion de produccion de litio en Arkansas. Datacenter de bajo carbono en conjunto con operadores de IA para energia 24/7 sin emisiones."
+  },
+  "verdict": {
+    "status": "Mantener con sesgo acumulador",
+    "score": "7.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "323.9B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "8.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.8%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "14.6x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "-4.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Permian dominance post-Pioneer** — La integracion de Pioneer convirtio a XOM en el productor de shale mas grande de EE.UU. con 4,736 Kboepd en 2025, base para crecimiento hasta 5.4 M en 2030 con curvas de costo competitivas.",
+        "type": "pro"
+      },
+      {
+        "text": "**Retorno de capital de clase mundial** — 37.5B USD retornados en 2025 (recompras + dividendos), 25+ anos de crecimiento de dividendos y balance con ND/EBITDA de 0.52x dan visibilidad a los pagos incluso en ciclo bajo de precios.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva en ciclo bajo** — P/E forward de 14.6x y FCF yield de 3.8% ofrecen punto de entrada razonable para inversionistas con horizonte de 3-5 anos, asumiendo normalizacion de precios del crudo en 70-80 USD.",
+        "type": "pro"
+      },
+      {
+        "text": "**Dependencia ciclica del crudo** — Q1 2026 con NI -46% YoY refleja la alta sensibilidad al precio del crudo; un ambiente de crudo bajo prolongado (60 USD) podria presionar severamente el FCF y el programa de recompras.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue cayo -4.5% a 323.9B USD en FY2025 por menores precios del crudo y gas. Q1 2026 muestra leve recuperacion en volumen (+2.6% YoY en revenue) pero fuerte presion en rentabilidad por precios debiles. La produccion record de 4,736 Kboepd demuestra el exito operativo de la integracion Pioneer."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto de 8.9% en 2025, comprimido desde 13.5% en el pico de 2022. El margen operativo de 11.4% refleja el apalancamiento operativo natural de las majors petroleras al ciclo de precios. El segmento Upstream sigue siendo el motor: 21.4B de ganancias con ROCE del 10.2%; Energy Products sorprendio positivamente con 7.4B en 2025 (+84% YoY por mejora en margenes de refinacion)."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 23.6B en 2025 (-23% YoY) bajo por capex elevado post-Pioneer (28.4B). El OCF se mantuvo robusto en 52.0B. En Q1 2026 el FCF fue solo 2.2B por alto capex de 6.5B y menor OCF de 8.7B. La compania mantiene plan de capex de 27-29B para 2026, con normalizacion esperada hacia 2027-2028 que mejoraria el FCF."
+      },
+      {
+        "label": "Balance",
+        "texto": "Balance muy solido para una empresa de su escala. Deuda neta de 32.9B con ND/EBITDA de 0.52x y ratio deuda/capital de solo 14%. La deuda a Q1 2026 subio a 47.7B total (incluyendo CP) pero refleja refinanciamiento normal. Cash de 8.4B al final de Q1 2026. El balance le permite mantener dividendos y recompras incluso a precios bajos de crudo."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 149.68 USD, XOM cotiza a 14.6x P/E forward (EPS consenso ~10.22 para 2026), que asume recuperacion de precios del crudo. EV/EBITDA de 10.5x esta en linea con el rango historico de 8-12x para majors integradas. FCF yield de 3.8% es modesto pero mejoraria materialmente si el crudo vuelve a 75-80 USD. La accion ha caido ~15% desde maximos de 2024 creando una entrada mas atractiva."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo principal es un ciclo prolongado de precios bajos de crudo (60 USD o menos) que presionaria el FCF y el programa de recompras. La transicion energetica es un riesgo estructural de largo plazo aunque XOM esta posicionando su portfolio para ello. La integracion Pioneer debe entregar las sinergias prometidas. Regulacion medioambiental creciente podria incrementar costos operativos."
+      }
+    ]
+  }
+}

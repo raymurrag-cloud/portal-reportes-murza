@@ -1,475 +1,256 @@
 {
-  "resumen": "Alphabet (GOOGL) cerro FY2025 con ingresos record de $402.8B (+15% YoY), superando los $400B por primera vez en su historia. La utilidad neta salto 32% a $132.2B con un margen neto del 32.8%, mientras Google Cloud crecio 48% y se posiciona como motor de expansion para los proximos anos. Con $73.3B en FCF, balance ultra-solido (deuda neta negativa) y AI integrada en toda la plataforma, Alphabet presenta uno de los perfiles de calidad mas altos del mercado. Veredicto: Comprar con Conviccion.",
-  "descripcion": "Alphabet Inc. es la compania matriz de Google, el motor de busqueda mas usado del mundo, y opera tres segmentos principales: Google Services (busqueda, YouTube, publicidad en red, suscripciones), Google Cloud (infraestructura cloud e IA para empresas) y Other Bets (proyectos moonshot como Waymo y Verily). Sus ingresos provienen mayoritariamente de publicidad digital (~73% del revenue total en 2025), con Google Cloud como segundo pilar de crecimiento acelerado. Cotiza en Nasdaq bajo los tickers GOOGL y GOOG y tiene capitalizacion de mercado de $3.32 billones.",
+  "parrafos_gratis": 14,
+  "resumen": "Alphabet (GOOGL) reporto un Q1 2026 excepcional con ingresos de $109.9B (+21.8% YoY), superando el consenso de analistas. El EPS diluido de $5.11 incluye una ganancia extraordinaria de ~$28B, llevando la utilidad neta a $62.6B. Excluyendo este elemento, el ingreso operativo de $39.7B (+29.7% YoY) y el margen operativo de 36.1% representan la calidad operativa recurrente. Google Cloud acelero a +28.4% YoY. Con precio de $378, Alphabet cotiza a 26x P/E forward, valuacion atractiva entre las Magnificent 7. Veredicto: Comprar con Conviccion.",
+  "descripcion": "Alphabet Inc. es la compania matriz de Google y opera tres segmentos: Google Services (busqueda, YouTube, publicidad, suscripciones Google One), Google Cloud (infraestructura e IA para empresas) y Other Bets (Waymo, Verily). Los ingresos provienen mayoritariamente de publicidad digital (~73%), con Google Cloud como segundo motor de crecimiento. En Q1 2026, Google Search crecio +10% YoY a $50.7B, YouTube Ads +10.3% a $8.9B, Google Cloud +28.4% a $12.3B y Suscripciones +19% a $10.4B. Cotiza en Nasdaq bajo GOOGL y GOOG con capitalizacion de mercado de ~$4.6 billones.",
   "tabla": {
-    "headers": [
-      "Metrica",
-      "2021",
-      "2022",
-      "2023",
-      "2024",
-      "2025",
-      "Var. YoY"
-    ],
+    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Q1 2026", "Var. YoY"],
     "rows": [
-      [
-        "Revenue ($B)",
-        "257.6",
-        "282.8",
-        "307.4",
-        "350.0",
-        "402.8",
-        "+15.1%"
-      ],
-      [
-        "Utilidad Neta ($B)",
-        "76.0",
-        "60.0",
-        "73.8",
-        "100.1",
-        "132.2",
-        "+32.0%"
-      ],
-      [
-        "Margen Neto (%)",
-        "29.5%",
-        "21.2%",
-        "24.0%",
-        "28.6%",
-        "32.8%",
-        "+4.2pp"
-      ],
-      [
-        "EBITDA ($B)",
-        "89.0",
-        "88.3",
-        "96.2",
-        "127.7",
-        "150.2",
-        "+17.6%"
-      ],
-      [
-        "FCF ($B)",
-        "67.0",
-        "60.0",
-        "69.5",
-        "72.8",
-        "73.3",
-        "+0.7%"
-      ],
-      [
-        "EPS Diluido (GAAP)",
-        "$5.61",
-        "$4.56",
-        "$5.80",
-        "$8.04",
-        "$10.80",
-        "+34.3%"
-      ],
-      [
-        "Deuda Neta ($B)",
-        "-$121.0",
-        "-$119.7",
-        "-$130.1",
-        "-$118.0",
-        "-$142.1",
-        "Mejora"
-      ]
+      ["Revenue (B USD)", "257.6", "282.8", "307.4", "350.0", "402.8", "109.9", "+21.8%"],
+      ["Utilidad Neta (B USD)", "76.0", "60.0", "73.8", "100.1", "132.2", "62.6", "+81.2%"],
+      ["Margen Neto", "29.5%", "21.2%", "24.0%", "28.6%", "32.8%", "56.9%*", "+18.6pp*"],
+      ["EBITDA (B USD)", "87.9", "85.1", "96.2", "127.7", "150.2", "46.2", "+33.6%"],
+      ["FCF (B USD)", "67.0", "60.0", "69.5", "72.8", "73.3", "10.1", "-46.6%"],
+      ["EPS Diluido", "5.61", "4.56", "5.80", "8.04", "10.81", "5.11", "+81.9%"],
+      ["Deuda Neta (B USD)", "-5.5", "-7.1", "-11.1", "-11.5", "18.4", "39.4", "Sube"]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Trailing",
-      "value": "29.5x",
-      "change": "vs. ~28x hace 1 ano",
+      "label": "P/E Trailing (TTM)",
+      "value": "28.8x",
       "signal": "yellow",
-      "note": "vs. sector ~30x",
-      "precio_base": 318.84,
-      "precio_fecha": "2026-04-09",
-      "fundamento": {
-        "tipo": "eps_ttm",
-        "valor": 10.82
-      }
+      "note": "TTM EPS $13.11 incluye ganancia extraordinaria Q1 2026",
+      "precio_base": 378.09,
+      "precio_fecha": "2026-04-30",
+      "fundamento": { "tipo": "eps_ttm", "valor": 13.11 }
     },
     {
       "label": "P/E Forward",
-      "value": "23.7x",
+      "value": "26.1x",
       "signal": "yellow",
-      "precio_base": 318.76,
-      "precio_fecha": "2026-04-09",
-      "fundamento": {
-        "tipo": "eps_fwd",
-        "valor": 13.4297
-      }
+      "note": "vs. sector Big Tech ~30x - descuento relativo",
+      "precio_base": 378.09,
+      "precio_fecha": "2026-04-30",
+      "fundamento": { "tipo": "eps_fwd", "valor": 14.50 }
     },
     {
       "label": "EV/EBITDA",
-      "value": "21.7x",
+      "value": "30.9x",
       "signal": "yellow",
-      "note": "premium justificado por crecimiento"
+      "note": "EV calculado con ND FY2025 y precio actual"
     },
     {
       "label": "P/FCF",
-      "value": "45.3x",
-      "signal": "yellow",
-      "note": "capex elevado comprime FCF yield"
+      "value": "63.2x",
+      "signal": "red",
+      "note": "Capex masivo comprime FCF - temporal por inversion en IA",
+      "precio_base": 378.09,
+      "precio_fecha": "2026-04-30",
+      "fundamento": { "tipo": "p_fcf", "fcf_b": 73.27, "shares_m": 12088 }
     },
     {
       "label": "Deuda/EBITDA",
-      "value": "0.43x",
+      "value": "0.98x",
       "signal": "green",
-      "note": "balance ultra-solido"
+      "note": "Aumento por financiamiento de capex de IA - aun conservador"
     },
     {
       "label": "ROE",
-      "value": "35.7%",
+      "value": "32.5%",
       "signal": "green",
-      "note": "consistentemente alto"
+      "note": "Basado en FY2025; consistentemente alto"
     },
     {
       "label": "ROIC",
-      "value": "31.2%",
+      "value": "28.4%",
       "signal": "green",
-      "note": "muy por encima del WACC"
+      "note": "Muy por encima del WACC estimado de ~8%"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {
-        "label": "2021",
-        "revenue": 257.6,
-        "utilidad": 76
-      },
-      {
-        "label": "2022",
-        "revenue": 282.8,
-        "utilidad": 60
-      },
-      {
-        "label": "2023",
-        "revenue": 307.4,
-        "utilidad": 73.8
-      },
-      {
-        "label": "2024",
-        "revenue": 350,
-        "utilidad": 100.1
-      },
-      {
-        "label": "2025",
-        "revenue": 402.8,
-        "utilidad": 132.2
-      }
+      { "label": "FY2021", "revenue": 257.6, "utilidad": 76.0 },
+      { "label": "FY2022", "revenue": 282.8, "utilidad": 60.0 },
+      { "label": "FY2023", "revenue": 307.4, "utilidad": 73.8 },
+      { "label": "FY2024", "revenue": 350.0, "utilidad": 100.1 },
+      { "label": "FY2025", "revenue": 402.8, "utilidad": 132.2 },
+      { "label": "Q1 2026", "revenue": 109.9, "utilidad": 62.6 }
     ],
     "series": [
-      {
-        "key": "revenue",
-        "name": "Revenue"
-      },
-      {
-        "key": "utilidad",
-        "name": "Utilidad Neta"
-      }
+      { "key": "revenue", "name": "Revenue" },
+      { "key": "utilidad", "name": "Utilidad Neta" }
     ]
   },
   "chart_margenes": {
     "data": [
-      {
-        "label": "2021",
-        "bruto": 56.9,
-        "operativo": 30.6,
-        "neto": 29.5
-      },
-      {
-        "label": "2022",
-        "bruto": 55.4,
-        "operativo": 26.5,
-        "neto": 21.2
-      },
-      {
-        "label": "2023",
-        "bruto": 56.6,
-        "operativo": 27.4,
-        "neto": 24
-      },
-      {
-        "label": "2024",
-        "bruto": 58.2,
-        "operativo": 32.1,
-        "neto": 28.6
-      },
-      {
-        "label": "2025",
-        "bruto": 59.7,
-        "operativo": 32,
-        "neto": 32.8
-      }
+      { "label": "FY2021", "bruto": 56.9, "operativo": 30.6, "neto": 29.5 },
+      { "label": "FY2022", "bruto": 55.4, "operativo": 26.5, "neto": 21.2 },
+      { "label": "FY2023", "bruto": 56.6, "operativo": 27.4, "neto": 24.0 },
+      { "label": "FY2024", "bruto": 58.2, "operativo": 32.1, "neto": 28.6 },
+      { "label": "FY2025", "bruto": 59.7, "operativo": 32.0, "neto": 32.8 },
+      { "label": "Q1 2026", "bruto": 62.4, "operativo": 36.1, "neto": 36.1 }
     ],
     "series": [
-      {
-        "key": "bruto",
-        "name": "Margen Bruto"
-      },
-      {
-        "key": "operativo",
-        "name": "Margen Operativo"
-      },
-      {
-        "key": "neto",
-        "name": "Margen Neto"
-      }
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
     ]
   },
   "capital_allocation": {
     "items": [
       {
         "label": "Recompra de acciones",
-        "value": "$45.7B",
-        "nota": "en 2025; $62.2B en 2024 — programa activo y consistente"
+        "value": "$45.7B FY2025",
+        "nota": "programa activo y consistente - $62.2B en FY2024"
       },
       {
         "label": "Dividendos",
-        "value": "$10.0B",
-        "nota": "primer dividendo iniciado en 2024; yield ~0.5% actual"
+        "value": "$10.1B FY2025",
+        "nota": "primer dividendo iniciado en 2024; yield ~0.4% al precio actual de $378"
       },
       {
         "label": "Capex",
-        "value": "$91.4B",
-        "nota": "22.7% del revenue — inversion masiva en IA e infraestructura cloud; guia 2026: $175-185B"
+        "value": "$91.5B FY2025 / $35.7B Q1 2026",
+        "nota": "guia 2026: $175-185B - inversion masiva en centros de datos de IA y TPUs"
       },
       {
         "label": "R&D",
-        "value": "$61.1B",
-        "nota": "15.2% del revenue; crecio 24% YoY — mayor apuesta en IA del sector"
+        "value": "$61.1B FY2025",
+        "nota": "15.2% del revenue - financia Gemini, DeepMind, TPUs y Google Cloud AI"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": [
-      "Metrica",
-      "GOOGL FY2025",
-      "Sector (Big Tech ref.)",
-      "Posicion relativa"
-    ],
+    "headers": ["Metrica", "GOOGL Q1 2026", "Sector (Big Tech ref.)", "Posicion relativa"],
     "rows": [
-      [
-        "Gross margin",
-        "59.7%",
-        "~58%",
-        "Por encima del sector"
-      ],
-      [
-        "Margen operativo",
-        "32.0%",
-        "~28%",
-        "Por encima del sector"
-      ],
-      [
-        "Revenue growth YoY",
-        "+15.1%",
-        "~12%",
-        "Por encima del sector"
-      ],
-      [
-        "P/E forward",
-        "23.7x",
-        "~28x",
-        "Descuento vs. sector"
-      ],
-      [
-        "ROIC",
-        "31.2%",
-        "~22%",
-        "Por encima del sector"
-      ],
-      [
-        "Deuda/EBITDA",
-        "0.43x",
-        "~1.5x",
-        "Por encima del sector"
-      ]
+      ["Gross Margin", "62.4%", "~58%", "Por encima del sector"],
+      ["Margen Operativo", "36.1%", "~28%", "Por encima del sector"],
+      ["Revenue Growth YoY", "+21.8%", "~14%", "Por encima del sector"],
+      ["P/E Forward", "26.1x", "~30x", "Descuento vs. sector"],
+      ["ROIC", "28.4%", "~22%", "Por encima del sector"],
+      ["Cloud Growth", "+28.4%", "AWS ~17%, Azure ~35%", "En linea, por debajo de Azure"]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo significativo",
-    "analisis": "Alphabet muestra expansion de margenes en 2025 respecto a 2024: el margen neto sube a 32.8% desde 28.6% y el EBITDA crece 17.6%. El unico elemento a monitorear es el FCF, que crecio solo 0.7% YoY a pesar del fuerte crecimiento en utilidades, debido al capex record de $91.4B. La deuda largo plazo escalo de $10.9B a $46.5B pero la posicion de caja neta sigue siendo fuertemente positiva en $142.1B.",
+    "veredicto": "Expansion operativa sostenida; FCF comprimido por capex masivo de IA",
+    "analisis": "El margen operativo de 36.1% en Q1 2026 es nueva maxima historica trimestral, +5.5pp YoY. Revenue crece +21.8% YoY. El FCF de $10.1B se ve afectado por capex record de $35.7B solo en el trimestre. La deuda neta cambio a positiva ($39.4B) por emision de deuda para financiar capex. No hay deterioro operativo real.",
     "items": [
-      {
-        "metrica": "Revenue YoY",
-        "valor": "+15.1%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Margen operativo",
-        "valor": "32.0%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Margen neto",
-        "valor": "32.8% (+4.2pp)",
-        "status": "ok"
-      },
-      {
-        "metrica": "FCF YoY",
-        "valor": "+0.7%",
-        "status": "warn",
-        "nota": "Capex de $91.4B limita crecimiento del FCF en el corto plazo"
-      },
-      {
-        "metrica": "Deuda LT",
-        "valor": "$46.5B (+327% YoY)",
-        "status": "warn",
-        "nota": "Aumento significativo pero caja neta sigue positiva en $142B"
-      },
-      {
-        "metrica": "ROE / ROIC",
-        "valor": "35.7% / 31.2%",
-        "status": "ok"
-      }
+      { "metrica": "Revenue YoY", "valor": "+21.8%", "status": "ok" },
+      { "metrica": "Margen Bruto", "valor": "62.4% (+2.7pp YoY)", "status": "ok" },
+      { "metrica": "Margen Operativo", "valor": "36.1% (+5.5pp YoY)", "status": "ok" },
+      { "metrica": "Margen Neto GAAP", "valor": "56.9%* (incl. ganancia extraord.)", "status": "warn" },
+      { "metrica": "FCF Q1 2026", "valor": "$10.1B (-46.6% YoY)", "status": "warn" },
+      { "metrica": "Deuda Neta", "valor": "$39.4B (vs -$11.5B FY2024)", "status": "warn" }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Dominio en busqueda con AI Mode",
+      "title": "Revenue acelera: +21.8% YoY, el mejor en 2 anos",
       "impact": "Alto",
-      "evidence": "Google Search crecio 13.4% YoY a $224.5B en 2025; AI Overviews supera 1.5B usuarios activos mensuales",
-      "context": "La integracion de IA en busqueda refuerza el moat central y eleva el tiempo de interaccion y monetizacion por query"
+      "evidence": "Revenue Q1 2026 de $109.9B supero consenso. Google Search +10% a $50.7B, Cloud +28.4% a $12.3B, Suscripciones +19% a $10.4B.",
+      "context": "La aceleracion del crecimiento en todas las lineas confirma que la inversion en IA genera retornos reales y no solo narrativa corporativa."
     },
     {
       "level": "green",
-      "title": "Google Cloud en hipercrecimiento",
+      "title": "Margen operativo de 36.1%: nueva maxima historica trimestral",
       "impact": "Alto",
-      "evidence": "Cloud crecio 48% YoY a $58.7B en 2025; RPO (backlog) de $242.8B (+160% YoY)",
-      "context": "La aceleracion en Cloud convierte a Alphabet en competidor directo de AWS y Azure con ventaja diferencial en modelos Gemini propios"
+      "evidence": "Margen operativo Q1 2026 de 36.1% vs 30.6% en Q1 2025 (+5.5pp YoY). Margen bruto de 62.4%.",
+      "context": "La expansion de margenes a pesar del crecimiento en capex y R&D demuestra el apalancamiento operativo estructural del modelo de negocio."
     },
     {
       "level": "green",
-      "title": "Balance fortress con caja neta positiva",
+      "title": "Google Cloud: +28.4% YoY con backlog de $242.8B",
       "impact": "Alto",
-      "evidence": "Deuda neta negativa de $142.1B; Deuda/EBITDA de solo 0.43x; $30.7B en cash + $170B+ en inversiones liquidas",
-      "context": "Maxima flexibilidad financiera para M&A, buybacks, capex e inversiones en AI sin restricciones de balance"
+      "evidence": "Google Cloud Q1 2026: $12.3B (+28.4% YoY). Backlog de $242.8B garantiza visibilidad multianual de ingresos.",
+      "context": "Con Gemini nativo y chips TPU propios, Google Cloud se diferencia de AWS y Azure en AI nativa, capturando contratos enterprise de alta rentabilidad."
     },
     {
       "level": "green",
-      "title": "Expansion de margenes sostenida",
-      "impact": "Alto",
-      "evidence": "Margen neto de 32.8% en 2025 vs 21.2% en 2022 — recuperacion total y nueva maxima historica",
-      "context": "El programa de eficiencia operativa (recorte de costos 2023-2024) sigue generando apalancamiento operativo positivo"
+      "title": "Caja sube a $38.1B pese al capex record del trimestre",
+      "impact": "Medio",
+      "evidence": "Caja de $38.1B (+$7.4B vs FY2025 fin de ano). OCF de $45.8B (+26.7% YoY) confirma generacion operativa de caja excepcional.",
+      "context": "La emision de deuda a ~5% para financiar infraestructura de IA con retornos esperados de 15-25% es una decision racional de asignacion de capital."
     },
     {
       "level": "yellow",
-      "title": "Capex disparado en 2025 y guia 2026 aun mayor",
+      "title": "Capex de $35.7B en un solo trimestre comprime FCF",
       "impact": "Medio",
-      "evidence": "Capex $91.4B en 2025 (+74% YoY); guia 2026: $175-185B — potencial compresion de FCF",
-      "context": "La inversion masiva en infraestructura de AI es estrategicamente correcta pero presiona el FCF yield en el corto plazo; si los retornos de la inversion tardan, el mercado podria penalizarlo"
+      "evidence": "FCF Q1 2026 de $10.1B vs $19.0B en Q1 2025 (-46.6%). Capex de $35.7B es nivel record en un trimestre para Alphabet.",
+      "context": "La inversion es estrategicamente justificada pero comprime el FCF yield a niveles minimos. Si los retornos de infraestructura tardan, el mercado podria penalizar."
     },
     {
       "level": "yellow",
-      "title": "YouTube Ads por debajo de expectativas en Q4 2025",
+      "title": "Ganancia extraordinaria de ~$28B infla NI y EPS del Q1",
       "impact": "Medio",
-      "evidence": "YouTube Q4 2025: $11.38B vs $11.84B estimado por analistas; crecimiento de 9% YoY vs >15% en trimestres anteriores",
-      "context": "Desaceleracion en publicidad de video frente a competencia de TikTok y Amazon Ads; requiere monitoreo en 2026"
+      "evidence": "NI GAAP de $62.6B vs OI de $39.7B — diferencia de ~$23B por ingreso financiero no recurrente.",
+      "context": "El EPS de $5.11 no es representativo de la rentabilidad recurrente. Q2 2026 mostrara normalizacion de EPS que no indica deterioro operativo."
     },
     {
       "level": "yellow",
-      "title": "Riesgo regulatorio antitrust global",
+      "title": "Riesgo antitrust: DOJ busca desinversion de Chrome",
       "impact": "Medio",
-      "evidence": "DOJ demanda para forzar desinversion de Chrome y Play Store; regulacion de la EU bajo DMA activa; multiples investigaciones en curso",
-      "context": "Una sentencia adversa podria forzar cambios estructurales en el modelo de distribucion de busqueda (acuerdos con Apple y OEMs por $26B anuales)"
+      "evidence": "DOJ avanza con demanda para forzar desinversion de Chrome; acuerdo de busqueda con Apple (~$26B/ano) bajo riesgo regulatorio.",
+      "context": "Una sentencia adversa podria alterar el modelo de distribucion de Search y reducir el trfico cautivo que sustenta el 50%+ del revenue publicitario."
     },
     {
       "level": "red",
-      "title": "Dependencia estructural de publicidad digital",
-      "impact": "Alto",
-      "evidence": "~73% del revenue total proviene de publicidad en 2025; exposicion directa a ciclos economicos y reduccion de presupuestos publicitarios",
-      "context": "En una recesion o desaceleracion del gasto publicitario global, Alphabet sufriria contraccion simultanea de Search y YouTube, los dos pilares de ingresos"
+      "title": "Deuda neta positiva por primera vez: $39.4B",
+      "impact": "Medio",
+      "evidence": "Deuda neta sube a $39.4B en Q1 2026 vs -$11.5B en FY2024. LTD sube de $49B a $77.5B en 18 meses.",
+      "context": "Alphabet pierde su estatus historico de empresa sin deuda neta. Si el retorno del capex de IA decepciona, el perfil de riesgo cambia estructuralmente."
     }
   ],
   "score": {
-    "score": 9,
+    "score": 8.8,
     "max": 10,
     "items": [
-      {
-        "label": "Poder de fijacion de precios",
-        "score": 9,
-        "max": 10
-      },
-      {
-        "label": "Crecimiento de revenue",
-        "score": 9,
-        "max": 10
-      },
-      {
-        "label": "Calidad de margenes",
-        "score": 9,
-        "max": 10
-      },
-      {
-        "label": "Solidez del balance",
-        "score": 10,
-        "max": 10
-      },
-      {
-        "label": "Generacion de FCF",
-        "score": 8,
-        "max": 10
-      }
+      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 10, "max": 10 },
+      { "label": "Calidad de margenes", "score": 9, "max": 10 },
+      { "label": "Solidez del balance", "score": 8, "max": 10 },
+      { "label": "Generacion de FCF", "score": 8, "max": 10 }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Alphabet ejecuta una estrategia de 'full-stack AI': integra Gemini en todos sus productos (Search, Cloud, Workspace, Android, YouTube), desarrolla chips TPU propios para reducir dependencia de NVIDIA, y expande Google Cloud como plataforma IA de referencia para empresas. El CEO Sundar Pichai describio 2025 como el ano de 'construir, probar y lanzar productos mas rapido que nunca', con enfasis en eficiencia computacional y monetizacion de AI a escala.",
-    "ventajas": "Moat de datos inigualable: 15+ anos de datos de busqueda, mapas, YouTube, Gmail y Android crean una ventaja competitiva estructural imposible de replicar. Distribucion global: Google Search tiene mas del 90% de cuota de mercado en busqueda web. Ecosistema cerrado: Android (3B+ dispositivos) y Chrome (65%+ del browser market) garantizan flujo de trfico cautivo. Modelos Gemini propios eliminan dependencia de terceros en IA y dan ventaja de costo en Cloud. TPUs propias reducen costo de inferencia vs. competidores que dependen de GPUs externas.",
-    "debilidades": "Google Cloud sigue siendo #3 detras de AWS y Azure con ~12% de cuota de mercado, aunque crece mas rapido que ambos. YouTube ha perdido terreno en video corto frente a TikTok entre audiencias jovenes. Other Bets (Waymo, Verily) consume capital con retornos aun inciertos. La dependencia de publicidad hace el modelo vulnerable a cambios en privacidad (fin de cookies de terceros) y a la competencia de plataformas como Amazon Ads.",
+    "estrategia": "Alphabet ejecuta su estrategia de full-stack AI con Gemini integrado en todos los productos. En Q1 2026, AI Overviews supera 1.5B usuarios activos mensuales y el volumen de busquedas con AI crece a doble digito. La guia de capex de $175-185B para 2026 refleja inversion sin precedentes en centros de datos, chips TPU y capacidad Cloud. Waymo expande su servicio de robotaxi. La estrategia apunta a ser el proveedor de AI de referencia para consumidores y empresas globales.",
+    "ventajas": "Moat de datos inigualable con 15+ anos de datos de busqueda, mapas, YouTube y Android. Distribucion global con 90%+ cuota de mercado en busqueda web. Modelos Gemini propios eliminan dependencia de terceros en AI. Chips TPU reducen costo de inferencia. Google Cloud con backlog de $242.8B garantiza visibilidad multianual. Ecosistema cerrado: Android (3B+ dispositivos) + Chrome (65% del browser market) garantizan flujo de trfico estructural.",
+    "debilidades": "Google Cloud sigue en numero 3 por cuota de mercado (~12%) detras de AWS y Azure. YouTube pierde terreno en video corto vs TikTok entre usuarios jovenes. La dependencia de publicidad (73%+ del revenue) mantiene vulnerabilidad a ciclos economicos. Other Bets consume $1-2B en losses operativos por trimestre. El aumento de deuda cambia el perfil de riesgo financiero por primera vez en la historia de la empresa.",
     "riesgos": [
-      "Riesgo antitrust: el DOJ busca desinversion de Chrome y posibles cambios en acuerdos de distribucion con Apple (~$26B anuales en riesgo); una sentencia adversa podria fragmentar el moat de busqueda",
-      "Disrupcion por AI en busqueda: ChatGPT/Perplexity y asistentes de AI generativa podrian capturar queries de alto valor si el usuario migra a respuestas directas sin ads, erosionando el CPM de Search",
-      "Rentabilidad de capex masivo: si los $175-185B de capex guiados para 2026 no generan retornos de Cloud y AI en los proximos 2-3 anos, el mercado podria reclasificar a Alphabet como 'capex-heavy' con descuento de valoracion"
+      "Riesgo antitrust DOJ: sentencia de desinversion de Chrome o cambios en acuerdos de default search con Apple ($26B/ano) podrian fragmentar el moat de busqueda y reducir revenue de Search en 5-10%",
+      "Capex masivo sin retornos inmediatos: si los $175-185B de capex en 2026 no generan retornos de Cloud y AI en los proximos 2-3 anos, el FCF yield permanecera comprimido y el mercado reclasificara a Alphabet como capex-heavy",
+      "Disrupcion en busqueda por AI generativa: ChatGPT y Perplexity podrian capturar queries de alto valor si el usuario migra a respuestas directas sin ads, erosionando el CPM estructural de Search",
+      "Normalizacion de ganancias: el EPS de Q2 2026+ volvera a niveles recurrentes de ~$2.80-3.00 sin la ganancia one-time de Q1, lo que puede decepcionar a inversores que extrapolen el resultado"
     ],
-    "inversiones_estrategicas": "Capex de $91.4B en 2025 y guia de $175-185B en 2026, enfocado en centros de datos para IA, infraestructura de Cloud y desarrollo de chips TPU. Waymo ha lanzado servicio comercial de robotaxi en San Francisco y Phoenix, con expansion a mas ciudades. R&D de $61.1B en 2025 financia DeepMind, Google Brain, desarrollo de Gemini Ultra/Pro y nuevas capacidades de agentes AI. En M&A, la empresa mantiene un perfil conservador dado el escrutinio regulatorio, prefiriendo adquisiciones de talento y tecnologia puntuales."
+    "inversiones_estrategicas": "Capex de $35.7B en Q1 2026 y guia de $175-185B para 2026 completo, enfocado en centros de datos para AI, infraestructura Cloud y chips TPU propios. Waymo expande operaciones comerciales de robotaxi. R&D sostenido financia DeepMind, Gemini Ultra y agentes AI. La emision de deuda a esta escala es primera vez en la historia de Alphabet, reflejando confianza de la direccion en el retorno de la inversion."
   },
   "verdict": {
     "status": "Comprar con Conviccion",
-    "score": "9.0/10",
+    "score": "8.8/10",
     "color": "green",
     "metrics": [
-      {
-        "label": "Revenue FY2025",
-        "value": "$402.8B"
-      },
-      {
-        "label": "Margen Neto",
-        "value": "32.8%"
-      },
-      {
-        "label": "FCF Yield",
-        "value": "~2.2%"
-      },
-      {
-        "label": "P/E Forward",
-        "value": "23.7x"
-      },
-      {
-        "label": "Crecimiento Rev.",
-        "value": "+15.1% YoY"
-      }
+      { "label": "Revenue Q1 2026", "value": "$109.9B" },
+      { "label": "Margen Operativo", "value": "36.1%" },
+      { "label": "Crecimiento Rev.", "value": "+21.8% YoY" },
+      { "label": "P/E Forward", "value": "26.1x" },
+      { "label": "Google Cloud", "value": "+28.4% YoY" }
     ],
     "bullets": [
       {
-        "text": "**AI + Cloud en aceleracion ->** Google Cloud crecio 48% a $58.7B con un backlog de $242.8B; Gemini integrado en toda la plataforma posiciona a Alphabet como la empresa con mayor superficie de monetizacion de IA del mundo.",
+        "text": "**Revenue acelera y margenes en maxima historica ->** +21.8% YoY con margen operativo de 36.1% confirma que la inversion en AI genera retornos operativos reales. La combinacion de crecimiento y expansion de margenes es excepcional para una empresa de $400B+ en revenue.",
         "type": "pro"
       },
       {
-        "text": "**Calidad financiera excepcional ->** Margen neto de 32.8%, ROIC de 31.2%, deuda neta negativa de $142B y $164.7B en operating cash flow — perfil de calidad top-decil en el mercado global.",
+        "text": "**Valuacion atractiva vs. Big Tech ->** P/E Forward de 26.1x vs. ~30x del sector con crecimiento de revenue acelerado. Alphabet es la unica Magnificent 7 que combina aceleracion del crecimiento con descuento de valuacion relativo.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion con descuento relativo ->** P/E forward de 23.7x frente a ~28x del sector Big Tech y con crecimiento de EPS del 34% YoY; precio objetivo consenso de analistas $351 implica 28% de upside desde $274.",
+        "text": "**Google Cloud como segundo motor estructural ->** Cloud crece al 28% con backlog de $242.8B y Gemini nativo + TPUs diferencian la oferta en AI enterprise, apuntando a ser la plataforma de referencia en 2026-2027.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo antitrust y dependencia de publicidad ->** Dos factores de riesgo estructural: potencial desinversion forzada por DOJ (acuerdo Apple Search) y 73% de revenue dependiente de publicidad digital, vulnerable en recesion o disrupcion por AI generativa.",
+        "text": "**Capex masivo y deuda neta positiva ->** FCF de $10.1B en Q1 y deuda neta de $39.4B son los principales riesgos. Si el retorno de la inversion de $175-185B no se materializa en crecimiento de Cloud para 2027-2028, la tesis de inversion se debilita materialmente.",
         "type": "con"
       }
     ]
@@ -478,27 +259,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Alphabet supero $400B en revenue por primera vez en FY2025 ($402.8B, +15.1% YoY), impulsado por Google Search (+13.4% a $224.5B), Google Cloud (+48% a $58.7B) y suscripciones (+19% a $48B). La diversificacion de ingresos avanza: Cloud ya representa el 14.6% del total vs. 7.5% en 2021, reduciendo gradualmente la dependencia de publicidad."
+        "texto": "Alphabet reporto $109.9B en Q1 2026 (+21.8% YoY), el crecimiento mas rapido en dos anos. Google Search +10% a $50.7B, Cloud +28.4% a $12.3B, YouTube Ads +10.3% a $8.9B y Suscripciones +19% a $10.4B. La aceleracion en todas las lineas simultaneamente es una senal de fortaleza estructural."
       },
       {
         "label": "Margenes",
-        "texto": "Los margenes alcanzan niveles record historicos: margen bruto 59.7%, margen operativo 32.0% y margen neto 32.8%. La expansion de margenes desde el minimo de 2022 (neto 21.2%) refleja el impacto del programa de eficiencia operativa y el apalancamiento operativo positivo del modelo. El margen operativo de Cloud mejoro significativamente, contribuyendo al mix favorable."
+        "texto": "El margen bruto de 62.4% y el margen operativo de 36.1% son nuevas maximas historicas trimestrales. El margen neto GAAP de 56.9% incluye ganancia extraordinaria de ~$28B y no es representativo de la rentabilidad recurrente. El dato limpio es el 36.1% operativo, que confirma expansion sostenida vs 32% de FY2025."
       },
       {
         "label": "EPS",
-        "texto": "EPS diluido GAAP alcanzo $10.80 en FY2025, un crecimiento de 34.3% YoY sobre $8.04 en 2024. La combinacion de crecimiento de utilidades (+32%) y reduccion de acciones via buybacks ($45.7B en recompras) amplifico el crecimiento del EPS. Desde 2021 ($5.61), el EPS casi se duplico en 4 anos."
+        "texto": "EPS diluido GAAP de $5.11 en Q1 2026 incluye la ganancia extraordinaria. El EPS operativo normalizado es aproximadamente $2.40-2.60, en linea con el crecimiento organico del 30%+ en ingresos operativos. Los inversores deben usar el EPS normalizado para proyecciones de FY2026."
       },
       {
         "label": "Balance",
-        "texto": "Balance de fortaleza excepcional: deuda neta negativa de $142.1B (mas caja que deuda), Deuda/EBITDA de solo 0.43x y current ratio de 2.01x. El aumento de deuda LP a $46.5B (vs $10.9B en 2024) esta relacionado con el financiamiento del capex masivo de IA, pero la posicion de caja sigue siendo dominante. Shareholders equity aumento a $415.3B."
+        "texto": "Caja de $38.1B (+$7.4B vs FY2025). LTD sube a $77.5B por emision de bonos para financiar capex. Primer trimestre con deuda neta positiva de $39.4B. El Deuda/EBITDA TTM de ~0.9x sigue siendo conservador. El mayor cambio estructural del balance en la historia reciente de Alphabet."
       },
       {
         "label": "Generacion de caja",
-        "texto": "Operating cash flow record de $164.7B (+31.5% YoY). FCF de $73.3B relativamente estable vs $72.8B en 2024, afectado por el capex de $91.4B (+74% YoY). La conversion de utilidad neta a FCF (~55%) es temporalmente menor por el ciclo de inversion masiva en AI; se espera normalizacion cuando el capex madure en retornos de Cloud. Buybacks de $45.7B y dividendos de $10B completan el retorno de capital."
+        "texto": "FCF de $10.1B en Q1 2026 vs $19.0B en Q1 2025 (-46.6%). El capex de $35.7B en el trimestre es la causa — nivel record en un solo trimestre. El OCF de $45.8B (+26.7% YoY) confirma generacion operativa de caja de clase mundial. El FCF bajo es una decision estrategica, no deterioro operativo."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Tres riesgos a monitorear: (1) Resultado del caso antitrust DOJ — una sentencia de desinversion de Chrome o cambios en acuerdos de default search con Apple podrian erosionar el moat de busqueda; (2) Capex de $175-185B guiado para 2026 — si los retornos de IA tardan en materializarse, el FCF yield se comprimira aun mas; (3) Disrupcion en busqueda por AI generativa — aunque Google lidera con AI Overviews (1.5B MAU), el modelo de monetizacion de busqueda AI aun esta evolucionando y podria alterar el CPM estructural."
+        "texto": "Cuatro riesgos clave: (1) DOJ antitrust y desinversion potencial de Chrome; (2) ROI del capex masivo de $175B+ en 2026 si los retornos no se materializan para 2027-2028; (3) Normalizacion del EPS en Q2 2026+ sin la ganancia one-time; (4) Escalada de deuda si la empresa continua emitiendo bonos para capex en 2027, cambiando materialmente el perfil de riesgo financiero."
       }
     ]
   }

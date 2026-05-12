@@ -1,0 +1,493 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "JPMorgan Chase es el banco mas grande de EE.UU. por activos (USD 4.9T), con tres segmentos: Consumer & Community Banking (CCB), Commercial & Investment Bank (CIB) y Asset & Wealth Management (AWM). En FY2025 reporto USD 182.5B en ingresos netos y USD 57.1B en utilidad neta, manteniendo un CET1 de 14.6%. En Q1 2026 acelero el crecimiento con ingresos de USD 49.8B (+10% YoY) y utilidad neta de USD 16.5B (+13%), con ROE de 19% y ROTCE de 23%, reflejando la solidez de su franquicia diversificada.",
+  "descripcion": "JPMorganChase opera a traves de tres segmentos. CCB atiende a millones de consumidores y pequenas empresas en EE.UU. con productos de banca retail, tarjetas, hipotecas y auto. CIB (Commercial & Investment Bank) incluye banca de inversion, mercados de capitales, renta fija, renta variable, banca corporativa y servicios de tesoreria. AWM gestiona activos para clientes institucionales y de alto patrimonio a nivel global. La fortaleza competitiva de JPM radica en su escala, tecnologia (gasto de USD 17B+ anuales en tech), red de distribucion de 5,000+ sucursales, y posicion de liderazgo en banca de inversion con ~9% de market share global en fees. El Net Interest Income representa ~50% de los ingresos, con balance protegido ante ciclos de tasas.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue Neto (B USD)",
+        "121.7",
+        "128.7",
+        "158.1",
+        "177.6",
+        "182.5",
+        "49.8",
+        "+10.0%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "48.3",
+        "37.7",
+        "49.6",
+        "58.5",
+        "57.1",
+        "16.5",
+        "+12.6%"
+      ],
+      [
+        "Margen Neto",
+        "39.7%",
+        "29.3%",
+        "31.3%",
+        "32.9%",
+        "31.3%",
+        "33.1%",
+        "+0.2pp"
+      ],
+      [
+        "PPNR (B USD)",
+        "50.3",
+        "52.6",
+        "71.2",
+        "78.4",
+        "86.8",
+        "23.0",
+        "+14.9%"
+      ],
+      [
+        "EPS Diluido",
+        "16.42",
+        "12.84",
+        "17.22",
+        "20.90",
+        "21.16",
+        "5.94",
+        "+12.3%"
+      ],
+      [
+        "CET1 Ratio",
+        "13.1%",
+        "15.0%",
+        "15.0%",
+        "15.7%",
+        "14.6%",
+        "14.3%",
+        "-0.4pp"
+      ],
+      [
+        "ROE",
+        "15%",
+        "12%",
+        "16%",
+        "17%",
+        "17%",
+        "19%",
+        "+2pp"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "14.2x",
+      "signal": "green",
+      "note": "vs. sector bancario ~11x",
+      "precio_base": 300,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 21.16
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "11.8x",
+      "signal": "green",
+      "note": "EPS FY2026e ~25.50",
+      "precio_base": 300,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 25.5
+      }
+    },
+    {
+      "label": "P/Valor Libro",
+      "value": "2.36x",
+      "signal": "yellow",
+      "note": "BVPS USD 126.99",
+      "precio_base": 300,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "p_bv",
+        "bvps": 126.99
+      }
+    },
+    {
+      "label": "ROE",
+      "value": "17%",
+      "signal": "green",
+      "note": "Q1 2026: 19%"
+    },
+    {
+      "label": "ROTCE",
+      "value": "20%",
+      "signal": "green",
+      "note": "Q1 2026: 23%"
+    },
+    {
+      "label": "ROA",
+      "value": "1.29%",
+      "signal": "green",
+      "note": "Q1 2026: 1.41%"
+    },
+    {
+      "label": "CET1 Ratio",
+      "value": "14.6%",
+      "signal": "green",
+      "note": "Bien por encima del 11.5% requerido"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 121.65,
+        "utilidad": 48.33
+      },
+      {
+        "label": "FY2022",
+        "revenue": 128.7,
+        "utilidad": 37.68
+      },
+      {
+        "label": "FY2023",
+        "revenue": 158.1,
+        "utilidad": 49.55
+      },
+      {
+        "label": "FY2024",
+        "revenue": 177.56,
+        "utilidad": 58.47
+      },
+      {
+        "label": "FY2025",
+        "revenue": 182.45,
+        "utilidad": 57.05
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue Neto"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 39.7,
+        "operativo": 41.4,
+        "neto": 39.7
+      },
+      {
+        "label": "FY2022",
+        "bruto": 29.3,
+        "operativo": 40.9,
+        "neto": 29.3
+      },
+      {
+        "label": "FY2023",
+        "bruto": 31.3,
+        "operativo": 45.1,
+        "neto": 31.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 32.9,
+        "operativo": 44.1,
+        "neto": 32.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 31.3,
+        "operativo": 47.6,
+        "neto": 31.3
+      }
+    ],
+    "series": [
+      {
+        "key": "operativo",
+        "name": "Margen PPNR/Revenue"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras FY2025",
+        "value": "31.6B USD",
+        "nota": "USD 31.59B en recompras, record para JPM"
+      },
+      {
+        "label": "Dividendos FY2025",
+        "value": "16.6B USD",
+        "nota": "Dividendo trimestral USD 1.40/accion"
+      },
+      {
+        "label": "Total Retorno Capital FY2025",
+        "value": "48.2B USD",
+        "nota": "~6% yield sobre market cap"
+      },
+      {
+        "label": "Capex Tecnologia",
+        "value": "~17B USD",
+        "nota": "Inversion en tecnologia e infraestructura digital"
+      },
+      {
+        "label": "M&A",
+        "value": "Selectivo",
+        "nota": "Adquisicion de First Republic completada 2023"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "JPM TTM",
+      "Peers (BAC/C/WFC)",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Revenue YoY",
+        "+2.8%",
+        "0-5%",
+        "En linea con grandes bancos"
+      ],
+      [
+        "Margen Neto",
+        "31.3%",
+        "~18-28%",
+        "Por encima del sector"
+      ],
+      [
+        "ROE",
+        "17%",
+        "~10-14%",
+        "Lider sectorial"
+      ],
+      [
+        "CET1 Ratio",
+        "14.6%",
+        "~11-13%",
+        "Capital excess vs. peers"
+      ],
+      [
+        "P/E Forward",
+        "11.8x",
+        "~8-11x",
+        "Prima justificada por calidad"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "JPMorganChase mantiene finanzas solidas con capital excedente y crecimiento acelerado en Q1 2026",
+    "analisis": "El banco reporto FY2025 con leve caida de utilidad neta (-2.4% YoY) por mayor provision de credito (+USD 4.4B en reservas), pero el PPNR crecio +10.7%. En Q1 2026 la tendencia se revirtio con NI +12.6% YoY, demostrando la resiliencia del modelo. El CET1 de 14.3% en Q1 2026 ofrece amplio colchon de capital y capacidad continua de retorno a accionistas.",
+    "items": [
+      {
+        "metrica": "Revenue YoY (Q1 2026)",
+        "valor": "+10.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto (Q1 2026)",
+        "valor": "33.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "ROE (Q1 2026)",
+        "valor": "19%",
+        "status": "ok"
+      },
+      {
+        "metrica": "CET1 Ratio",
+        "valor": "14.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Provision Credito FY2025",
+        "valor": "USD 14.2B (+55% YoY)",
+        "status": "warn"
+      },
+      {
+        "metrica": "NI YoY FY2025",
+        "valor": "-2.4%",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Capital fortress: CET1 14.3% con exceso estructural",
+      "impact": "Alto",
+      "evidence": "CET1 de 14.3% en Q1 2026 vs. requisito regulatorio de ~11.5%. Exceso de ~USD 80B que financia recompras masivas.",
+      "context": "JPM mantiene el mayor colchon de capital de los grandes bancos de EE.UU., permitiendo USD 31.6B en recompras en FY2025 y buybacks continuos en 2026."
+    },
+    {
+      "level": "green",
+      "title": "Q1 2026: aceleracion de crecimiento con ROE 19%",
+      "impact": "Alto",
+      "evidence": "Revenue +10% YoY a USD 49.8B. NI +12.6% a USD 16.5B. EPS USD 5.94 (+12.3%). ROE 19%, ROTCE 23%.",
+      "context": "El primer trimestre de 2026 supero expectativas del mercado impulsado por mayor NII (+9%), fuerte actividad en mercados de capitales y crecimiento en tarjetas de credito."
+    },
+    {
+      "level": "yellow",
+      "title": "Provision para perdidas crediticias en aumento",
+      "impact": "Medio",
+      "evidence": "FY2025: USD 14.2B en provision (+USD 4.4B en reservas adicionales). Net charge-offs USD 9.8B, up USD 1.2B.",
+      "context": "El incremento de reservas refleja precaucion ante el ciclo de credito, especialmente en Consumer (tarjetas). Sin embargo, la calidad del portafolio comercial permanece solida y el Firmwide NCO ratio de ~1.3% sigue siendo manejable."
+    },
+    {
+      "level": "yellow",
+      "title": "Riesgo regulatorio: Basel III Endgame",
+      "impact": "Medio",
+      "evidence": "Basel III Endgame y GSIB surcharges podrian incrementar requisitos de capital en 50-100bps adicionales.",
+      "context": "La implementacion de Basel III Endgame sigue en debate regulatorio en EE.UU. JPM tiene buffer suficiente, pero la incertidumbre sobre el tamano final del incremento de RWA limita el ritmo de buybacks."
+    },
+    {
+      "level": "red",
+      "title": "Sensibilidad macro: provision podria escalar en recesion",
+      "impact": "Alto",
+      "evidence": "Provision FY2025 = USD 14.2B. En recesion, historicamente provision puede duplicarse o triplicarse.",
+      "context": "Como banco G-SIB, JPM esta expuesto a deterioro macroeconomico que incrementaria provision, afectaria fee income de IB y comprimeria spreads. La diversificacion de negocios actua como amortiguador pero no elimina el riesgo ciclico."
+    }
+  ],
+  "score": {
+    "score": 8.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios y moat competitivo",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de ingresos",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de capital y balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Rentabilidad ROE/ROTCE",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Valuacion relativa",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "JPMorganChase ejecuta una estrategia de fortress balance sheet combinada con inversion masiva en tecnologia (USD 17B+ anuales). La firma busca ser el banco principal de cada cliente en consumer, commercial e institutional banking. La escala le permite competir en todos los segmentos: desde cuentas de cheques hasta IPOs de mega-cap, con cross-selling como motor de rentabilidad. La estrategia de capital es retornar el exceso a accionistas via dividendos crecientes y recompras, mientras mantiene CET1 bien por encima del minimo regulatorio.",
+    "ventajas": "Escala incomparable (USD 4.9T en activos, 5,000+ sucursales, presencia en 100+ paises). Diversificacion entre consumer, commercial e investment banking actua como hedge natural. Liderazgo en IB (top-3 en fees globales). Eficiencia operativa con overhead ratio del 52-54%. Inversion tecnologica que reduce costo marginal de servicio. Marca J.P. Morgan de clase mundial en banca de inversion y wealth management.",
+    "debilidades": "Tamano implica mayor scrutinio regulatorio y requisitos de capital mas altos (GSIB surcharge). Exposicion a ciclos de credito en consumer (tarjetas, auto). La complejidad operativa limita flexibilidad vs. fintechs. Dependencia de tasas de interes para NII (~50% de revenue).",
+    "riesgos": [
+      "Incremento de provision por deterioro credito en consumer (tarjetas, hipotecas) si hay recesion",
+      "Cambios regulatorios adversos: Basel III Endgame, stress capital buffer incrementos",
+      "Compresion de NIM si la Fed recorta tasas agresivamente",
+      "Riesgo de contraparte en derivados y exposicion de mercado en CIB ante volatilidad extrema"
+    ],
+    "inversiones_estrategicas": "USD 17B+ anuales en tecnologia e infraestructura digital incluyendo AI, cloud y ciberseguridad. Expansion internacional selectiva en Europa (JPMSE en Frankfurt) y Asia. Crecimiento organico en AWM con lanzamiento de nuevos productos de inversion. Post-adquisicion First Republic (2023), integracion de cartera hipotecaria y clientes premium en wealth management. Exploracion activa de AI generativa para reducir costos operativos y mejorar experiencia del cliente."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.2/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue Q1 2026",
+        "value": "49.8B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "33.1%"
+      },
+      {
+        "label": "ROE (Q1 2026)",
+        "value": "19%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "11.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+10% YoY (Q1)"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Fortaleza de capital estructural** — CET1 del 14.3% permite retorno masivo de capital: USD 48.2B devueltos en FY2025 (recompras + dividendos), con buybacks continuos en 2026.",
+        "type": "pro"
+      },
+      {
+        "text": "**Aceleracion en Q1 2026** — Revenue +10% y NI +13% YoY superaron expectativas. ROE de 19% y ROTCE de 23% son los mejores niveles en varios anos, mostrando apalancamiento operativo del modelo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva para la calidad** — P/E forward de 11.8x y P/BV de 2.36x con ROE del 17-19% representan una valuacion razonable. Prima sobre peers justificada por calidad de franquicia y consistencia de resultados.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo de ciclo de credito** — Provision elevada (USD 14.2B FY2025) y posible incremento en mora de tarjetas en escenario de desaceleracion economica son el principal riesgo a vigilar.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue neto de USD 182.5B en FY2025 (+2.8% YoY) acelerado a USD 49.8B en Q1 2026 (+10% YoY), impulsado por mayor NII (+9%) y fuerte actividad en mercados de capitales. La diversificacion entre NII y non-interest revenue protege el top-line ante diferentes entornos de tasa."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto del 31.3% en FY2025 y 33.1% en Q1 2026. El PPNR de USD 86.8B en FY2025 y USD 23B en Q1 2026 refleja eficiencia operativa (overhead ratio 52-54%), con apalancamiento operativo positivo: revenue crece mas rapido que gastos."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "Para bancos, el OCF contable no es directamente comparable a empresas industriales. La metrica relevante es el capital generado: JPM produjo exceso de capital suficiente para devolver USD 48.2B en FY2025 (record), incluyendo USD 31.6B en recompras, con CET1 aun en 14.3% en Q1 2026."
+      },
+      {
+        "label": "Balance",
+        "texto": "Balance de USD 4.9T con CET1 del 14.3% (Q1 2026), muy por encima del minimo regulatorio. LTD de USD 435B fondea activos de largo plazo. Equity de USD 364B. El fortress balance sheet es una ventaja competitiva real: permite absorber shocks y capturar cuota de mercado en crisis."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E forward de 11.8x y P/BV de 2.36x con ROE del 17-19% representan una valuacion atractiva. La recompra masiva de acciones (2.1% del float en FY2025) es un catalizador positivo adicional para EPS. Precio objetivo consensus en USD 285-320 respalda el nivel actual (~USD 300)."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El principal riesgo es un incremento de perdidas crediticias en un escenario recesivo, especialmente en tarjetas de credito y prestamos al consumidor. El riesgo regulatorio (Basel III Endgame) podria limitar recompras. La sensibilidad de NII a recortes de tasa de la Fed es material: ~USD 2-3B de NII por cada 25bps de recorte. Riesgo de mercado en CIB ante volatilidad extrema."
+      }
+    ]
+  }
+}

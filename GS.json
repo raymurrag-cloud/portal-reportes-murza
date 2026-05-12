@@ -1,0 +1,498 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Goldman Sachs Group Inc. (GS) es el banco de inversion mas reconocido del mundo, con liderazgo global en asesoria de M&A, mercados de capitales, trading de renta fija y variable, y gestion de activos. En FY2025 registro net revenues de $58.28B (+8.9% YoY) y utilidad neta de $17.18B (+20.3% YoY), con EPS diluido de $51.32, superando ampliamente el ciclo de contraccion de 2023. El ROE de 13.7% refleja una recuperacion solida post-estrategia Marcus. Veredicto: mantener con sesgo positivo ante el ciclo favorable de banking y trading.",
+  "descripcion": "Goldman Sachs opera en tres segmentos: Global Banking & Markets (banca de inversion, FICC, equities y origination), Asset & Wealth Management (fondos alternativos, gestion patrimonial), y Platform Solutions (tarjetas de credito, prestamos al consumo en reduccion). El modelo de negocio de GS se distingue por su capacidad para capturar fees en transacciones de alto valor (IPOs, M&A, debt issuance) y por sus operaciones de trading que generan ingresos en mercados volatiles. A diferencia de bancos comerciales, la metrica primaria es el ROE sobre equity, no el margen bruto. GS compite directamente con JPMorgan, Morgan Stanley, Bank of America Merrill Lynch y boutiques de elite como Evercore y Lazard en advisory.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "59.34",
+        "47.37",
+        "46.25",
+        "53.51",
+        "58.28",
+        "+8.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "21.64",
+        "11.26",
+        "8.52",
+        "14.28",
+        "17.18",
+        "+20.3%"
+      ],
+      [
+        "Margen Neto",
+        "36.5%",
+        "23.8%",
+        "18.4%",
+        "26.7%",
+        "29.5%",
+        "+2.8pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "23.66",
+        "13.72",
+        "13.38",
+        "16.67",
+        "19.36",
+        "+16.1%"
+      ],
+      [
+        "FCF (B USD)*",
+        "1.63",
+        "4.96",
+        "-14.91",
+        "-15.30",
+        "-47.21",
+        "n/a"
+      ],
+      [
+        "EPS Diluido",
+        "59.45",
+        "30.06",
+        "22.87",
+        "40.54",
+        "51.32",
+        "+26.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-6.95",
+        "5.31",
+        "0.30",
+        "60.54",
+        "121.24",
+        "+100.2%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "18.1x",
+      "signal": "green",
+      "note": "vs bancos globales ~13-16x; premium por liderazgo IB",
+      "precio_base": 929.78,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 51.32
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "16.9x",
+      "signal": "green",
+      "precio_base": 929.78,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 55
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "21.5x",
+      "signal": "yellow",
+      "precio_base": 929.78,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 19.36,
+        "shares_m": 317.6,
+        "deuda_neta_b": 121.24
+      }
+    },
+    {
+      "label": "P/Book",
+      "value": "2.36x",
+      "signal": "yellow",
+      "note": "vs sector bancario ~1.5x; refleja ROE superior al promedio",
+      "precio_base": 929.78,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 17.18,
+        "shares_m": 317.6
+      }
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "6.3x",
+      "signal": "yellow",
+      "note": "Normal para banco de inversion; funding mayormente institucional"
+    },
+    {
+      "label": "ROE",
+      "value": "13.7%",
+      "signal": "green",
+      "note": "Recuperacion desde 7.3% en 2023; objetivo interno >15%"
+    },
+    {
+      "label": "ROIC",
+      "value": "7.0%",
+      "signal": "yellow",
+      "note": "Metrica complementaria; ROE es el KPI primario para bancos"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 59.34,
+        "utilidad": 21.64
+      },
+      {
+        "label": "FY2022",
+        "revenue": 47.37,
+        "utilidad": 11.26
+      },
+      {
+        "label": "FY2023",
+        "revenue": 46.25,
+        "utilidad": 8.52
+      },
+      {
+        "label": "FY2024",
+        "revenue": 53.51,
+        "utilidad": 14.28
+      },
+      {
+        "label": "FY2025",
+        "revenue": 58.28,
+        "utilidad": 17.18
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Net Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 36.5,
+        "operativo": 36.5,
+        "neto": 36.5
+      },
+      {
+        "label": "FY2022",
+        "bruto": 23.8,
+        "operativo": 23.8,
+        "neto": 23.8
+      },
+      {
+        "label": "FY2023",
+        "bruto": 18.4,
+        "operativo": 18.4,
+        "neto": 18.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 26.7,
+        "operativo": 26.7,
+        "neto": 26.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 29.5,
+        "operativo": 29.5,
+        "neto": 29.5
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras de acciones",
+        "value": "$12.36B",
+        "nota": "Record en FY2025; reduccion de shares del 7% interanual, de 333.6M a 317.6M shares"
+      },
+      {
+        "label": "Dividendos pagados",
+        "value": "$5.28B ($14/accion)",
+        "nota": "Dividendo por accion de $14 en FY2025, crecimiento del 22% vs FY2024 ($11.5)"
+      },
+      {
+        "label": "Capex",
+        "value": "$2.06B",
+        "nota": "Inversion discreta vs peers; enfocada en tecnologia, plataformas digitales y modernizacion de infraestructura"
+      },
+      {
+        "label": "Desinversion Marcus",
+        "value": "Completada",
+        "nota": "Reduccion del negocio de consumo y enfoque en GBM y AWM de alto margen; liberacion de capital hacia actividades core"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "GS FY2025",
+      "Sector bancario ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "ROE",
+        "13.7%",
+        "~10-12%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Neto",
+        "29.5%",
+        "~18-25%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Trailing",
+        "18.1x",
+        "~12-16x",
+        "Prima del 15-20% justificada por liderazgo IB"
+      ],
+      [
+        "P/Book",
+        "2.36x",
+        "~1.2-1.8x",
+        "Premium consistente con historial de ROE superior"
+      ],
+      [
+        "Revenue Growth (YoY)",
+        "+8.9%",
+        "~3-6%",
+        "Por encima del sector; IB reactivado"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Sin deterioro operativo significativo; recuperacion estructural en curso desde el piso de 2023",
+    "analisis": "Tras el maximo ciclico de 2021 y la contraccion de 2022-2023 por caida en IB fees y el impacto de las provisiones de Marcus, GS ha revertido la tendencia negativa. El revenue de FY2025 de $58.28B supera el nivel pre-pandemia y el EPS de $51.32 establece un nuevo record. La deuda neta crecio sustancialmente por expansion del balance en trading y financiamiento, pero es estructural en bancos de inversion.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+8.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "29.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "EPS YoY",
+        "valor": "+26.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "ROE",
+        "valor": "13.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF Reportado*",
+        "valor": "-$47.21B (normal para IB)",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "$121.24B",
+        "status": "warn"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Liderazgo indiscutible en banca de inversion",
+      "impact": "Alto",
+      "evidence": "Posicion consistente en top 3 global de M&A advisory, ECM y DCM; fees de advisory impulsaron el crecimiento de revenue en GBM durante FY2025",
+      "context": "La marca Goldman Sachs genera pricing power en mandatos de alto valor. Las grandes corporaciones y soberanos prefieren GS para sus transacciones criticas, lo que genera un pipeline recurrente dificil de replicar por competidores."
+    },
+    {
+      "level": "green",
+      "title": "Expansion en Asset & Wealth Management de alto margen",
+      "impact": "Alto",
+      "evidence": "AWM genera comisiones de gestion estables sobre mas de $3T de activos bajo gestion; crecimiento en alternativos (private equity, credit, real estate)",
+      "context": "La estrategia de diversificar hacia gestion de activos reduce la dependencia de revenues ciclicos de trading y banking, mejorando la calidad y predictibilidad de los ingresos a largo plazo."
+    },
+    {
+      "level": "green",
+      "title": "Retorno agresivo de capital a accionistas",
+      "impact": "Alto",
+      "evidence": "$12.36B en recompras en FY2025 (4.2% del market cap); reduccion del share count de 345.8M en 2023 a 317.6M en 2025 (-8.2%)",
+      "context": "Con balance fuerte y superavit de capital sobre requerimientos regulatorios, GS puede sostener buybacks elevados que amplifican el crecimiento del EPS per share, creando valor acelerado para accionistas."
+    },
+    {
+      "level": "yellow",
+      "title": "Ciclicidad estructural del negocio de trading y banking",
+      "impact": "Medio",
+      "evidence": "Revenue cayo de $59.34B en 2021 a $46.25B en 2023 (-22%); las fees de IB son altamente sensibles a tasas de interes, volatilidad y apetito de riesgo corporativo",
+      "context": "El modelo de negocio de GS esta expuesto a ciclos economicos, cambios en politica monetaria y eventos sistemicos. Inversionistas deben considerar el perfil ciclico al determinar el punto de entrada optimo."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF contable negativo propio de un banco de inversion",
+      "impact": "Bajo",
+      "evidence": "OCF de -$45.15B en FY2025 refleja incrementos en activos de trading y prestamos en el balance, no deterioro del negocio subyacente",
+      "context": "Para instituciones financieras, el FCF en el sentido tradicional no es la metrica de rentabilidad relevante. Los inversores deben usar ROE, ROTE y distribucion de dividendos como proxies de generacion de valor."
+    },
+    {
+      "level": "red",
+      "title": "Exposicion regulatoria y capital requirements en aumento",
+      "impact": "Medio",
+      "evidence": "Requisitos de capital bajo Basel III Endgame y stress tests de la Fed; incremento del CET1 requerido puede limitar buybacks y expansion del balance",
+      "context": "GS, como SIFI (Systemically Important Financial Institution), enfrenta regulacion mas estricta. Cambios en los requisitos de capital pueden reducir la capacidad de retorno de capital y afectar el ROE estructural objetivo de >15%."
+    }
+  ],
+  "score": {
+    "score": 7.6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "GS ejecuta un pivot estrategico post-Marcus: abandono del negocio de banca al consumo masivo que genero mas de $3B en perdidas acumuladas, para concentrarse en Global Banking & Markets y Asset & Wealth Management donde tiene ventajas competitivas estructurales. El CEO David Solomon refocused la firma en institucionales de alto valor, ultra-high-net-worth individuals y alternativos. La estrategia de one Goldman Sachs unifica las capacidades de banking, markets y wealth para clientes premium, generando mas revenue por relacion.",
+    "ventajas": "Marca premium con poder de pricing en transacciones de alto valor. Red global de relaciones con CEOs, CFOs, fondos soberanos y family offices. Talento de elite concentrado en una firma con cultura de excelencia meritocratica. Experiencia en mercados emergentes, derivados complejos y estructuracion. Plataforma tecnologica de trading (Marquee) que ofrece soluciones propietarias a clientes institucionales.",
+    "debilidades": "Alta dependencia del ciclo de M&A y mercados de capitales para IB fees. Cultura de alto riesgo que historicamente genero controversia regulatoria. Dificultad para retener talento mid-senior en mercado competitivo con hedge funds y PE. El negocio de AWM alternativo requiere capital y tiempo para escalar versus competidores establecidos como Blackstone o Apollo.",
+    "riesgos": [
+      "Recesion economica o credito freeze: una contraccion severa reduciria significativamente los fees de M&A, IPOs y bond issuance, afectando el 50%+ del revenue",
+      "Cambios regulatorios en Basel III Endgame: requisitos de capital adicionales podrian limitar el apalancamiento, reducir el ROE estructural y restringir los buybacks",
+      "Litigios y sanciones regulatorias: GS tiene historial de multas millonarias; nuevas investigaciones podrian generar provisiones extraordinarias",
+      "Competencia de boutiques y plataformas digitales: la fragmentacion del mercado de advisory amenaza el market share en ciertos segmentos"
+    ],
+    "inversiones_estrategicas": "GS invierte en Marquee, su plataforma digital para clientes institucionales que ofrece analytics, trading y acceso a productos estructurados. Expansion en credito privado a traves de su plataforma de alternativos en AWM, donde compite con Apollo y Ares. Inversiones en tecnologia de IA para trading algoritmico y eficiencia operacional. Asociaciones con companias de tecnologia financiera para ampliar el alcance en wealth management sin la exposicion al consumo masivo de Marcus."
+  },
+  "verdict": {
+    "status": "Mantener",
+    "score": "7.6/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "$58.28B"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "29.5%"
+      },
+      {
+        "label": "ROE",
+        "value": "13.7%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "16.9x"
+      },
+      {
+        "label": "EPS Growth YoY",
+        "value": "+26.6%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Liderazgo en IB en ciclo favorable ->** Con la reapertura del mercado de M&A y ECM post-2023, GS captura fees premium; el revenue y EPS de FY2025 establecen nuevos records post-pandemia.",
+        "type": "pro"
+      },
+      {
+        "text": "**Retorno de capital record ->** $12.36B en recompras en FY2025 reducen el share count al ritmo mas rapido en anos, amplificando el EPS per share y creando valor acelerado para accionistas de largo plazo.",
+        "type": "pro"
+      },
+      {
+        "text": "**AWM en crecimiento estrategico ->** La expansion en alternativos y wealth management de alto margen diversifica los revenues hacia fuentes mas estables y reduce la dependencia del ciclo de trading.",
+        "type": "pro"
+      },
+      {
+        "text": "**Ciclicidad y valuacion premium ->** A 18.1x P/E trailing y 2.36x P/Book, GS cotiza con prima sobre peers bancarios; una contraccion del ciclo de IB o endurecimiento regulatorio podrian comprimir multiples y afectar el ROE objetivo de >15%.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "GS alcanzo net revenues de $58.28B en FY2025 (+8.9% YoY), impulsado por la recuperacion del mercado de IB fees (M&A, ECM, DCM) y por revenues record en FICC y equities. Es el nivel mas alto desde el pico de FY2021 ($59.34B), confirmando que la empresa ha superado el bache de 2022-2023 causado por la contraccion del ciclo de banca de inversion."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El margen neto de 29.5% en FY2025 (vs 26.7% en FY2024 y el minimo de 18.4% en FY2023) refleja el apalancamiento operativo del modelo: costos fijos relativamente estables mientras los revenues crecen. Para un banco de inversion sin COGS tradicional, el margen neto es la metrica de eficiencia mas relevante, y GS opera en el tercil superior de su peer group."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "El OCF negativo (-$45.15B en FY2025) es caracteristico de bancos de inversion que incrementan su balance de trading. GS financio $12.36B en recompras y $5.28B en dividendos ($17.64B total a accionistas) con capital propio y acceso privilegiado a mercados de deuda institucional. El criterio relevante para evaluar liquidez es el capital Tier 1, no el FCF contable."
+      },
+      {
+        "label": "Balance",
+        "texto": "La deuda neta de $121.24B refleja la estructura normal de un banco que fondea activos de trading con deuda de mercado. El equity crece de $116.91B (2023) a $124.97B (2025). La relacion capital/activos cumple con Basel III y GS supera historicamente los stress tests de la Fed. La reduccion del balance de Marcus libero capital para actividades de mayor rentabilidad."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $929.78 por accion, GS cotiza a 18.1x P/E trailing (EPS $51.32) y ~16.9x P/E forward (EPS estimado ~$55). La prima sobre peers bancarios (~12-16x) esta parcialmente justificada por el ROE superior (13.7% vs ~10% sector) y el liderazgo en IB. El P/Book de 2.36x implica que el mercado paga premium por el capital intangible de la franquicia."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los tres riesgos criticos son: (1) Ciclicidad del IB: una recesion o freeze de credito puede reducir revenue en 15-25% como ocurrio en 2022-2023; (2) Regulacion Basel III Endgame: incrementos en requisitos de capital limitan el ROE estructural y los buybacks; (3) Riesgo reputacional y litigios: GS tiene historial de sanciones millonarias que pueden afectar la confianza de clientes y el costo de capital."
+      }
+    ]
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Taiwan Semiconductor Manufacturing Company (TSMC) es la foundry mas importante del mundo, con posicion dominante en fabricacion de chips avanzados de 3nm y 2nm. En FY2025, reporto ingresos de 121.4B USD (+33.4% YoY) y utilidad neta de 54.0B USD (+48.5% YoY), impulsados por demanda de IA y HPC. Q1 2026 mostro aceleracion con ingresos de 35.9B USD (+40.6% YoY en USD) y margen neto record de 50.5%, con guia Q2 2026 de 39.0-40.2B USD.",
+  "descripcion": "TSMC opera como foundry pura (pure-play), fabricando semiconductores para los disenadores de chips mas importantes del mundo: NVIDIA, Apple, AMD, Qualcomm, Broadcom y otros. Sus ventajas competitivas son liderazgo tecnologico en nodos avanzados (2nm, 3nm, 5nm), escala de produccion inalcanzable para competidores, y ecosistema de clientes dependientes de su tecnologia. El segmento HPC (que incluye chips de IA) supero el 50% de ingresos en 2025. La empresa opera 25+ fabs en Taiwan, EE.UU., Japon, China y Alemania (en construccion), consolidando su posicion como infraestructura critica del sector tecnologico global.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "56.84",
+        "75.35",
+        "69.51",
+        "91.02",
+        "121.42",
+        "35.90",
+        "+33.4%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "21.36",
+        "33.84",
+        "27.36",
+        "36.40",
+        "54.04",
+        "18.17",
+        "+48.5%"
+      ],
+      [
+        "Margen Neto",
+        "37.6%",
+        "44.9%",
+        "39.4%",
+        "40.0%",
+        "44.5%",
+        "50.5%",
+        "+4.5pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "36.44",
+        "50.04",
+        "46.74",
+        "62.42",
+        "83.65",
+        "N/D",
+        "+34.0%"
+      ],
+      [
+        "FCF (B USD)",
+        "-1.78",
+        "-1.04",
+        "9.39",
+        "27.37",
+        "31.96",
+        "N/D",
+        "+16.8%"
+      ],
+      [
+        "EPS Diluido (USD/ADS)",
+        "4.12",
+        "6.52",
+        "5.28",
+        "7.02",
+        "10.43",
+        "3.49",
+        "+48.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-18.0",
+        "-14.0",
+        "-34.4",
+        "-44.1",
+        "-64.9",
+        "N/D",
+        "N/A"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "38.8x",
+      "signal": "yellow",
+      "note": "vs. semis 25x",
+      "precio_base": 404.54,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 10.43
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "21.0x",
+      "signal": "green",
+      "note": "impulsado por expansion IA",
+      "precio_base": 404.54,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 19.29
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "24.3x",
+      "signal": "yellow",
+      "precio_base": 404.54,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 83.65,
+        "shares_m": 5186,
+        "deuda_neta_b": -64.89
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "65.6x",
+      "signal": "red",
+      "note": "Capex intensivo - FCF bajo vs. ganancias",
+      "precio_base": 404.54,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 31.96,
+        "shares_m": 5186
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-0.78x",
+      "signal": "green",
+      "note": "Caja neta de 64.9B USD"
+    },
+    {
+      "label": "ROE",
+      "value": "31.4%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "47.8%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 56.84,
+        "utilidad": 21.36
+      },
+      {
+        "label": "FY2022",
+        "revenue": 75.35,
+        "utilidad": 33.84
+      },
+      {
+        "label": "FY2023",
+        "revenue": 69.51,
+        "utilidad": 27.36
+      },
+      {
+        "label": "FY2024",
+        "revenue": 91.02,
+        "utilidad": 36.4
+      },
+      {
+        "label": "FY2025",
+        "revenue": 121.42,
+        "utilidad": 54.04
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 53.5,
+        "operativo": 42.4,
+        "neto": 37.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": 56.1,
+        "operativo": 47.4,
+        "neto": 44.9
+      },
+      {
+        "label": "FY2023",
+        "bruto": 54.4,
+        "operativo": 42.6,
+        "neto": 39.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 56.1,
+        "operativo": 45.7,
+        "neto": 40
+      },
+      {
+        "label": "FY2025",
+        "bruto": 59.9,
+        "operativo": 50.8,
+        "neto": 44.5
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Dividendos",
+        "value": "14.9B USD",
+        "nota": "NT 466.8B pagados en FY2025; dividendo creciente consistente"
+      },
+      {
+        "label": "Capex",
+        "value": "40.6B USD",
+        "nota": "Inversion record en FY2025: expansion 2nm/3nm, Fab 21 AZ, Fab 22, Fab 23 JP"
+      },
+      {
+        "label": "Recompras",
+        "value": "Minimas",
+        "nota": "Buybacks esporadicos - priorizan capex e I+D sobre recompras masivas"
+      },
+      {
+        "label": "I+D",
+        "value": "7.9B USD",
+        "nota": "NT 246.4B en FY2025 (+20.7% YoY), enfocado en 10A, 14A, 16A (angstrom)"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "TSM TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "59.9%",
+        "~45%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "50.8%",
+        "~30%",
+        "Liderazgo claro en eficiencia"
+      ],
+      [
+        "Revenue Growth",
+        "+33.4%",
+        "~15%",
+        "Muy por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "21x",
+        "~22x",
+        "En linea con semiconductores avanzados"
+      ],
+      [
+        "ROIC",
+        "47.8%",
+        "~20%",
+        "Muy por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "TSMC muestra salud financiera excepcional con margenes en maximos historicos y aceleracion en Q1 2026.",
+    "analisis": "Los margenes bruto (59.9%) y operativo (50.8%) en FY2025 son records para la empresa, impulsados por mayor capacidad de 3nm y 2nm con precios premium. Q1 2026 supero expectativas con margen neto de 50.5% y guia Q2 de 39-40.2B USD. El unico punto de atencion es el FCF bajo relativo a ganancias por el ciclo de capex intensivo para globalizacion de fabs.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+33.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "59.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "50.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "44.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+16.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-64.9B USD (caja neta)",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Monopolio tecnologico en chips avanzados",
+      "impact": "Alto",
+      "evidence": "74% de wafer revenue de 7nm y mas avanzados en Q1 2026; unica empresa con 2nm en volumen en 2025",
+      "context": "Apple, NVIDIA y AMD no tienen alternativa a TSMC para sus chips de mayor desempeno - genera pricing power estructural e irreemplazable"
+    },
+    {
+      "level": "green",
+      "title": "Aceleracion de IA impulsa crecimiento secular",
+      "impact": "Alto",
+      "evidence": "HPC >50% de ingresos en 2025; Q1 2026 +40.6% YoY en USD; guia Q2 de 39-40.2B USD",
+      "context": "La carrera por chips de IA (H100, B200, custom ASICs) se fabrica casi exclusivamente en TSMC - demanda estructuralmente superior a oferta"
+    },
+    {
+      "level": "yellow",
+      "title": "Ciclo de capex intensivo comprime FCF",
+      "impact": "Medio",
+      "evidence": "Capex FY2025 de 40.6B (33.4% de revenue); P/FCF de 65.6x vs P/E forward de 21x",
+      "context": "TSMC invierte masivamente en fabs globales (Arizona, Japon, Alemania). El FCF mejorara cuando esas fabs maduren en 2026-2028"
+    },
+    {
+      "level": "yellow",
+      "title": "Riesgo geopolitico Taiwan-China",
+      "impact": "Alto",
+      "evidence": "Taiwan sede del 90%+ de capacidad avanzada; tensiones EE.UU.-China en aumento; Section 301 y 232 en curso",
+      "context": "El Acuerdo EE.UU.-Taiwan (ene 2026) reduce riesgo arancelario; expansion en AZ y JP mitiga concentracion geografica pero no la elimina"
+    },
+    {
+      "level": "red",
+      "title": "Concentracion en clientes top 5",
+      "impact": "Medio",
+      "evidence": "Apple ~25% de revenues, NVIDIA ~15%; los 5 mayores clientes representan ~60%+ de ingresos",
+      "context": "Si Apple o NVIDIA diversifican capacidad o reducen ordenes, el impacto seria material - aunque la barrera tecnologica lo hace improbable a corto plazo"
+    }
+  ],
+  "score": {
+    "score": 8.6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "TSMC sigue la estrategia de foundry pura iniciada en 1987 por Morris Chang: fabricar para todos sin competir con sus clientes. La empresa lidera la carrera a nodos avanzados (2nm en volumen en 2025, 16A para 2026) y expande globalmente con fabs en Arizona (Fab 21 operativa), Japon (Fab 23 operativa), Alemania (Fab 24 en construccion) y posible segunda fab en Arizona. El CHIPS Act de EE.UU. provee hasta 6.6B en subsidios directos para las fabs en Arizona, reduciendo el costo de la expansion global.",
+    "ventajas": "Monopolio tecnico en nodos avanzados de 3nm y 2nm (Samsung e Intel 4 anios atras); escala de 17M+ wafers anuales inalcanzable para competidores; ecosistema de 534 clientes dependientes; curva de aprendizaje acumulada de 38 anios; relaciones profundas con proveedores de equipos (ASML, Applied Materials); modelo pure-play que no compite con clientes.",
+    "debilidades": "Capex intensivo (33%+ de revenues) que limita FCF libre; concentracion geografica en Taiwan con riesgo geopolitico; ciclo semiconductor inherente con posibles down-cycles; alta dependencia de ASML para EUV; costos operativos en EE.UU. y Europa 3-4x mas altos que Taiwan.",
+    "riesgos": [
+      "Escalacion militar en Taiwan que interrumpa produccion - riesgo de cola extremo pero no nulo",
+      "Regulaciones de exportacion adicionales que limiten ventas a China (~12% de revenues en 2024)",
+      "Down-cycle semiconductor si demanda de IA decepciona o inventarios se normalizan en 2026-2027",
+      "Avances tecnologicos de Samsung Foundry o Intel 18A que erosionen diferencial competitivo en nodos futuros"
+    ],
+    "inversiones_estrategicas": "TSMC invirtio NT 1,272.4B (40.6B USD) en capex en 2025, principalmente en expansion de capacidad de 2nm y 3nm en Taiwan, completacion de Fab 21 Phase 2 en Arizona, Fab 23 en Kumamoto Japon (operativa, 28nm especialidad), y Fab 24 en Dresden Alemania (ESMC joint venture con Infineon, NXP, Bosch). Para 2026, TSMC guio capex de entre 38-42B USD anuales, con foco en 16A (angstrom) y expansion global."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8.6/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "121.4B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "44.5%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "21x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+33.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Monopolio en IA** - Casi el 100% de los chips de IA (NVIDIA H100/B200, Apple M4, AMD MI300) se fabrica en TSMC; sin alternativa a corto plazo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Margenes en expansion** - Margen bruto de 59.9% en FY2025 y 66.2% en Q1 2026, impulsados por mezcla de productos avanzados con mayor ASP y mejor utilizacion de capacidad.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance fortaleza** - Caja neta de 64.9B USD; cero riesgo de balance; capacidad de invertir 40B+ anuales en capex sin deuda significativa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva en forward** - P/E forward de 21x vs ROE de 31% y crecimiento de >30%; el mercado no ha incorporado totalmente el ciclo de IA.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo geopolitico estructural** - La concentracion de capacidad critica en Taiwan representa el principal riesgo de cola para inversores internacionales.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "TSMC crecio +33.4% YoY en FY2025 a 121.4B USD, con aceleracion en Q1 2026 (+40.6% YoY en USD a 35.9B). La guia para Q2 2026 de 39.0-40.2B USD implica un ritmo anualizado de ~155B+, mostrando que la demanda de IA sigue muy por encima de expectativas."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El margen bruto alcanzo 59.9% en FY2025 (vs 56.1% en 2024) y 66.2% en Q1 2026, impulsado por mayor participacion de tecnologias avanzadas (74% de revenue en Q1 2026), pricing power y eficiencias de costos. El margen operativo de 58.1% en Q1 2026 es de clase mundial."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "El FCF de FY2025 fue 31.96B USD (+16.8% YoY), con OCF de 72.5B y capex de 40.6B. El FCF yield bajo (1.5%) refleja el ciclo de inversion agresivo en fabs globales; se espera expansion significativa de FCF cuando las fabs en Arizona y Japon alcancen plena capacidad en 2026-2028."
+      },
+      {
+        "label": "Balance",
+        "texto": "TSMC mantiene caja neta de 64.9B USD (cash + marketable securities de 97.8B vs deuda total de 32.9B). La empresa emitio NT 86.9B en bonos en 2025 a tasas favorables para financiar capex, con ratio Deuda Neta/EBITDA de -0.78x - de los balances mas solidos en semiconductores."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "El P/E trailing de 38.8x luce elevado, pero el P/E forward de 21x refleja expectativa de crecimiento significativo de EPS en 2026 (EPS forward de 19.29/ADS vs 10.43/ADS en FY2025). Para una empresa con ROIC de 47.8%, moat irrompible a corto plazo y crecimiento de >30%, el multiplo forward es razonable o incluso atractivo."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El principal riesgo es la concentracion geopolitica en Taiwan: cualquier escalacion significativa en el estrecho de Taiwan tendria impacto catastrofico en los mercados globales de semiconductores. Adicionalmente, la alta dependencia de clientes concentrados (Apple ~25%, NVIDIA ~15%), las restricciones de exportacion a China, y el eventual down-cycle cuando la demanda de IA se normalice son riesgos a monitorear."
+      }
+    ]
+  }
+}

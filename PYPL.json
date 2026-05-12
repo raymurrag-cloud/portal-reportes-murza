@@ -1,7 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "PayPal Holdings es el lider global en pagos digitales con 439 millones de cuentas activas en ~200 mercados. Opera una plataforma de dos lados que conecta consumidores y comercios a traves de PayPal, Venmo y Braintree. En FY2025 reporto ingresos de 33.2B USD (+4.3% YoY) con utilidad neta de 5.2B USD (+26.0% YoY), reflejando mejora significativa en eficiencia operativa bajo el CEO Alex Chriss. A precio de 45.48 USD con P/E de solo 8.0x, el mercado descuenta riesgos competitivos de forma excesiva. La generacion de FCF de 5.6B USD y recompras agresivas de 6B+/ano ofrecen soporte de valor claro. Veredicto: Mantener con sesgo a comprar en correcciones para inversores con horizonte de 2-3 anos.",
-  "descripcion": "PayPal opera como plataforma de dos lados de pagos digitales: el segmento consumidor incluye checkout online via PayPal y Venmo, BNPL (Compra Ahora Paga Despues), crypto y P2P; el segmento comercio incluye Braintree para procesamiento unbranded de grandes empresas y Hyperwallet para pagos masivos. El revenue se genera principalmente por comisiones de transaccion sobre el Volumen Total de Pagos (TPV), con un take rate de ~1.78% en 2025. Mas del 55% de revenue proviene de EEUU. El moat central es la marca de confianza con 439M usuarios activos, la red de dos lados con efectos de red, y Braintree como motor de procesamiento B2B para clientes como Uber, Airbnb y Booking.",
+  "resumen": "PayPal Holdings reporto resultados del Q1 2026 con ingresos de 8.35B USD (+7.2% YoY) y un EPS GAAP diluido de 1.21 USD, superando las estimaciones del consenso. Sin embargo, el margen operativo se contrajo -1.8pp a 17.8% y la utilidad neta cayo -13.5% YoY a 1.11B USD debido a un crecimiento acelerado del gasto en transacciones y perdidas en inversiones estrategicas. El TPV alcanzo 463.96B USD (+11.2% YoY), confirmando la solidez operativa de la plataforma. La valuacion actual de 9.6x P/E forward y 8.4% FCF yield refleja el escepticismo del mercado sobre la capacidad de la empresa para sostener la expansion de margenes. La transicion estrategica hacia rentabilidad por cuenta activa y la monetizacion de Venmo son los catalizadores clave a monitorear.",
+  "descripcion": "PayPal Holdings opera la red de pagos digitales mas grande del mundo con 439 millones de cuentas activas al cierre de Q1 2026. Genera ingresos a traves de dos lineas: (1) Transaction revenues (90% del total): comisiones sobre el TPV procesado a traves de PayPal, Venmo y Braintree; (2) Revenues from other value added services (10%): tarifas de partnership, ingresos por intereses de cartera de credito, suscripciones y gateway fees. El take rate implicito es aproximadamente 1.62% sobre TPV. La ventaja competitiva central radica en la red de doble cara con altos switching costs, la marca PayPal como simbolo de confianza en 200+ paises y el ecosistema Venmo con 90M+ usuarios en EE.UU. La empresa transita de un modelo de crecimiento de cuentas a uno de rentabilidad por cuenta activa bajo el liderazgo de Alex Chriss (CEO desde 2023).",
   "tabla": {
     "headers": [
       "Metrica",
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,7 +21,8 @@
         "29.77",
         "31.80",
         "33.17",
-        "+4.3%"
+        "8.35",
+        "+7.2%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -29,16 +31,18 @@
         "4.25",
         "4.15",
         "5.23",
-        "+26.0%"
+        "1.11",
+        "-13.5%"
       ],
       [
-        "Margen Neto",
+        "Margen Neto (%)",
         "16.4%",
         "8.8%",
         "14.3%",
         "13.1%",
         "15.8%",
-        "+2.7pp"
+        "13.3%",
+        "-3.2pp"
       ],
       [
         "EBITDA (B USD)",
@@ -47,7 +51,8 @@
         "6.10",
         "6.36",
         "7.03",
-        "+10.5%"
+        "1.73",
+        "-2.8%"
       ],
       [
         "FCF (B USD)",
@@ -56,16 +61,18 @@
         "4.22",
         "6.77",
         "5.56",
-        "-17.9%"
+        "0.90",
+        "-6.3%"
       ],
       [
-        "EPS Diluido",
-        "3.57",
-        "2.13",
-        "3.96",
-        "4.18",
+        "EPS Diluido (GAAP)",
+        "N/D",
+        "N/D",
+        "N/D",
+        "N/D",
         "5.68",
-        "+26.0%"
+        "1.21",
+        "-6.2%"
       ],
       [
         "Deuda Neta (B USD)",
@@ -74,18 +81,19 @@
         "0.60",
         "3.22",
         "1.94",
-        "-39.8%"
+        "3.90",
+        "+1.3%"
       ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "8.0x",
+      "value": "8.2x",
       "signal": "green",
-      "note": "vs. sector pagos ~20x",
-      "precio_base": 45.48,
-      "precio_fecha": "2026-04-06",
+      "note": "vs. sector ~20x; descuento significativo",
+      "precio_base": 46.65,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "eps_ttm",
         "valor": 5.68
@@ -93,54 +101,60 @@
     },
     {
       "label": "P/E Forward",
-      "value": "10x",
+      "value": "9.6x",
       "signal": "green",
-      "precio_base": 45.48,
-      "precio_fecha": "2026-04-06",
+      "note": "EPS GAAP annualizado Q1 2026",
+      "precio_base": 46.65,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 4.5
+        "valor": 4.84
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "6.2x",
+      "value": "6.8x",
       "signal": "green",
-      "precio_base": 45.48,
-      "precio_fecha": "2026-04-06",
+      "note": "EBITDA annualizado Q1 2026",
+      "precio_base": 46.65,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 7.03,
+        "ebitda_b": 6.9,
         "shares_m": 920,
-        "deuda_neta_b": 1.94
+        "deuda_neta_b": 3.9
       }
     },
     {
       "label": "P/FCF",
-      "value": "7.5x",
+      "value": "11.9x",
       "signal": "green",
-      "precio_base": 45.48,
-      "precio_fecha": "2026-04-06",
+      "note": "FCF yield 8.4%",
+      "precio_base": 46.65,
+      "precio_fecha": "2026-05-07",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 5.56,
+        "fcf_b": 3.61,
         "shares_m": 920
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "0.28x",
-      "signal": "green"
+      "value": "0.56x",
+      "signal": "green",
+      "note": "Balance muy solido"
     },
     {
       "label": "ROE",
-      "value": "28.7%",
-      "signal": "green"
+      "value": "25.8%",
+      "signal": "green",
+      "note": "FY2025"
     },
     {
       "label": "ROIC",
-      "value": "24.7%",
-      "signal": "yellow"
+      "value": "8.1%",
+      "signal": "yellow",
+      "note": "Presion por expansion de capex y deuda"
     }
   ],
   "chart_ingresos": {
@@ -170,6 +184,11 @@
         "label": "FY2025",
         "revenue": 33.17,
         "utilidad": 5.23
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 8.35,
+        "utilidad": 1.11
       }
     ],
     "series": [
@@ -187,33 +206,39 @@
     "data": [
       {
         "label": "FY2021",
-        "bruto": 55.9,
+        "bruto": 46.3,
         "operativo": 16.8,
         "neto": 16.4
       },
       {
         "label": "FY2022",
-        "bruto": 53.3,
+        "bruto": 44.7,
         "operativo": 14,
         "neto": 8.8
       },
       {
         "label": "FY2023",
-        "bruto": 57.3,
+        "bruto": 46.1,
         "operativo": 16.9,
         "neto": 14.3
       },
       {
         "label": "FY2024",
-        "bruto": 57.5,
+        "bruto": 46.8,
         "operativo": 16.8,
         "neto": 13.1
       },
       {
         "label": "FY2025",
-        "bruto": 58,
+        "bruto": 47.1,
         "operativo": 18.3,
         "neto": 15.8
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 50.1,
+        "operativo": 17.8,
+        "neto": 13.3
       }
     ],
     "series": [
@@ -236,22 +261,22 @@
       {
         "label": "Recompras",
         "value": "6.05B USD",
-        "nota": "Recompras agresivas 2024-2025 — share count baja de 1,168M a 920M en 4 anos (-21%), altamente acretivas con P/E bajo"
+        "nota": "FY2025: 6.05B en recompras. Q1 2026: aproximadamente 1.51B (34M acciones recompradas)"
       },
       {
         "label": "Dividendos",
         "value": "0.13B USD",
-        "nota": "Inicio de dividendo trimestral en 2025 — senalizacion positiva de confianza en FCF sostenible"
+        "nota": "FY2025: primer dividendo en historia de PYPL (0.22 USD/accion); Q1 2026 continuando"
       },
       {
         "label": "Capex",
-        "value": "0.85B USD",
-        "nota": "Inversion en infraestructura cloud, seguridad y plataforma — 2.6% de revenue, nivel conservador"
+        "value": "0.23B USD",
+        "nota": "Q1 2026: 231M de capex (2.8% de revenue). FY2025: 850M"
       },
       {
         "label": "M&A",
-        "value": "Selectivo",
-        "nota": "Estrategia de crecimiento organico — vendio Happy Returns a UPS en 2024, foco en pagos core"
+        "value": "~0.13B USD",
+        "nota": "Q1 2026: una adquisicion por 134M en efectivo; sin operaciones M&A grandes en horizonte inmediato"
       }
     ]
   },
@@ -259,115 +284,117 @@
     "headers": [
       "Metrica",
       "PYPL TTM",
-      "Sector ref.",
+      "Sector Fintech",
       "Posicion relativa"
     ],
     "rows": [
       [
         "Margen Bruto",
-        "58.0%",
-        "~55-65%",
-        "En linea con sector pagos"
+        "~47%",
+        "~55%",
+        "Por debajo del sector (modelo de pagos tiene tx costs altos)"
       ],
       [
         "Margen Operativo",
         "18.3%",
-        "~15-25%",
-        "En linea — expansion positiva en 2025"
+        "~22%",
+        "Por debajo del sector; tendencia mejorando"
       ],
       [
         "Revenue Growth",
-        "+4.3%",
-        "~8-15%",
-        "Por debajo del sector — madurez relativa"
+        "+7.2% YoY",
+        "~15%",
+        "Por debajo del crecimiento sectorial"
       ],
       [
-        "P/E Trailing",
-        "8.0x",
-        "~20-25x",
-        "Descuento 60% vs pares — valuacion atractiva"
+        "P/E Forward",
+        "9.6x",
+        "~25x",
+        "Descuento significativo; refleja escepticismo sobre crecimiento"
       ],
       [
-        "ROIC",
-        "24.7%",
-        "~15-25%",
-        "Por encima de muchos pares del sector pagos"
+        "ROE",
+        "25.8%",
+        "~20%",
+        "Por encima del sector en retorno sobre equity"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Salud financiera solida con recuperacion de margenes notable en FY2025 — sin deterioro estructural visible",
-    "analisis": "PayPal recupero su margen neto al 15.8% en 2025 desde 13.1% en 2024, impulsado por disciplina de costos bajo Alex Chriss. El FCF baja vs 2024 (5.56B vs 6.77B) por mayor capex puntual, pero sigue siendo robusto. La deuda neta se redujo a 1.94B con ND/EBITDA de 0.28x, uno de los balances mas solidos del sector fintech.",
+    "veredicto": "Deterioro moderado en margenes y utilidad neta en Q1 2026 vs Q1 2025, con revenue creciendo pero presionado por costos de transaccion.",
+    "analisis": "El revenue crecio +7.2% YoY impulsado por TPV (+11.2%), pero los costos de transaccion crecieron mas rapido (+12.4% implicito), comprimiendo el margen operativo -1.8pp. La caida en utilidad neta (-13.5%) fue amplificada por perdidas en inversiones estrategicas vs ganancias en el periodo previo. El FCF tambien cae -6.3% aunque el nivel absoluto sigue siendo saludable. La deuda neta aumento marginalmente (+1.3%) pero el ratio Deuda Neta/EBITDA se mantiene bajo en 0.56x.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+4.3%",
-        "status": "warn",
-        "nota": "Crecimiento por debajo de competidores fintech que crecen 8-15%"
+        "valor": "+7.2%",
+        "status": "ok"
       },
       {
-        "metrica": "Margen Bruto",
-        "valor": "58.0%",
+        "metrica": "Margen Bruto (proxy)",
+        "valor": "50.1%",
         "status": "ok"
       },
       {
         "metrica": "Margen Operativo",
-        "valor": "18.3%",
-        "status": "ok",
-        "nota": "Expansion de 220bp vs FY2024 — tendencia positiva"
+        "valor": "17.8% (-1.8pp YoY)",
+        "status": "warn"
       },
       {
         "metrica": "Margen Neto",
-        "valor": "15.8%",
-        "status": "ok",
-        "nota": "Recuperacion desde 13.1% en 2024"
+        "valor": "13.3% (-3.2pp YoY)",
+        "status": "warn"
       },
       {
         "metrica": "FCF YoY",
-        "valor": "-17.9%",
-        "status": "warn",
-        "nota": "Baja vs record 2024 por capex — nivel absoluto sigue siendo sano"
+        "valor": "-6.3%",
+        "status": "warn"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "1.94B USD",
-        "status": "ok",
-        "nota": "ND/EBITDA 0.28x — balance muy conservador"
+        "valor": "3.90B (+marginal)",
+        "status": "ok"
       }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Valuacion extremadamente barata",
+      "title": "Valuacion en minimos historicos",
       "impact": "Alto",
-      "evidence": "P/E trailing de 8.0x con FCF yield del 13.3% — empresa generando 5.6B USD de FCF libre anualmente a precio de mercado actual.",
-      "context": "Para un negocio con 439M usuarios activos y dominancia en checkout digital, esta valuacion descuenta un escenario de destruccion de valor que los fundamentales actuales no reflejan. Prima de riesgo excesiva."
+      "evidence": "P/E forward de 9.6x y EV/EBITDA de 6.8x, ambos en el rango mas bajo en la historia de la empresa publica.",
+      "context": "El mercado descuenta un escenario de estancamiento permanente. Cualquier recuperacion de margenes o aceleracion de crecimiento podria actuar como catalizador poderoso de revalorizacion."
     },
     {
       "level": "green",
-      "title": "Recompras masivas acretivas de valor",
+      "title": "TPV +11% y red de 439M cuentas",
       "impact": "Alto",
-      "evidence": "Share count reducido de 1,168M a 920M en 4 anos (-21%). Gasto de 6.05B USD en recompras en 2024 y 2025 cada uno.",
-      "context": "Con P/E bajo y FCF alto, cada dolar de recompra es altamente acretivo. El EPS crece materialmente mas rapido que el net income absoluto, generando valor para accionistas restantes."
+      "evidence": "TPV de 464B USD en Q1 2026 (+11.2% YoY); 439M active accounts; 6,475M transacciones procesadas.",
+      "context": "El volumen de pagos sigue en expansion robusta. La red de 439M cuentas activas y la infraestructura de Braintree para grandes comercios son activos dificiles de replicar."
     },
     {
       "level": "yellow",
-      "title": "Crecimiento de revenue desacelerado",
+      "title": "Compresion de margenes por costos de transaccion",
       "impact": "Medio",
-      "evidence": "Revenue crece +4.3% en FY2025 vs 8-15% de competidores fintech. CAGR 2021-2025 de 6.9%. Take rate comprimido a 1.78%.",
-      "context": "La perdida de share en checkout ante Apple Pay, Google Pay y wallets nativas de grandes retailers es el riesgo central que mantiene el multiplo deprimido. Fastlane es la respuesta estrategica pero aun no mueve la aguja."
+      "evidence": "Transaction expense crecio de 3.70B a 4.17B (+12.4%) mientras revenue crecio solo +7.2%. Margen operativo: 17.8% vs 19.6% en Q1 2025.",
+      "context": "El mix de productos hacia transacciones de mayor costo y la competencia de Stripe/Adyen presionan el take rate efectivo. La direccion debe demostrar mejora en H2 2026."
+    },
+    {
+      "level": "yellow",
+      "title": "Crecimiento de cuentas activas casi estancado",
+      "impact": "Medio",
+      "evidence": "Active accounts: 439M (+0.7% YoY). Payment transactions per account: 58.7 (-1.2% YoY).",
+      "context": "La empresa ya no puede crecer por volumen de cuentas; la apuesta es aumentar revenue por cuenta. Si el engagement por usuario no mejora, el modelo de crecimiento de largo plazo queda en duda."
     },
     {
       "level": "red",
-      "title": "Presion competitiva estructural en checkout",
+      "title": "Caida en utilidad neta y EPS GAAP",
       "impact": "Alto",
-      "evidence": "Apple Pay con 750M+ transacciones/mes globales en 2024. Grandes retailers eliminando PayPal de checkout. Take rate baja de 2.0%+ historico a 1.78% en 2025.",
-      "context": "Cada 10bp de caida en take rate equivale a ~330M USD de revenue perdido a escala actual. La tendencia de compresion por el mix Braintree (bajo margen) y la competencia de wallets nativas es estructural, no ciclica."
+      "evidence": "Net income Q1 2026: 1.11B (-13.5% YoY). EPS GAAP: 1.21 USD (-6.2% YoY). Perdidas en inversiones estrategicas de ~95M.",
+      "context": "El mercado castigo la accion en premarket pese al beat de consenso. La diferencia entre EPS GAAP (1.21) y Non-GAAP (1.34) revela el peso de compensacion en acciones y cargos de reestructura."
     }
   ],
   "score": {
-    "score": 6.6,
+    "score": 6.2,
     "max": 10,
     "items": [
       {
@@ -382,7 +409,7 @@
       },
       {
         "label": "Calidad de margenes",
-        "score": 7,
+        "score": 6,
         "max": 10
       },
       {
@@ -392,64 +419,65 @@
       },
       {
         "label": "Generacion de FCF",
-        "score": 7,
+        "score": 6,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Bajo el CEO Alex Chriss (desde sep-2023), PayPal ejecuta una transformacion en tres fases: (1) estabilizar el negocio core con disciplina de costos y eficiencia operativa, (2) reinventar la experiencia del consumidor con checkout personalizado via Fastlane y PayPal Everywhere, y (3) expandir Braintree como plataforma de procesamiento unbranded para grandes empresas. La estrategia de AI se centra en personalizar ofertas con cashback inteligente y reducir friccion en checkout. Venmo apuesta por monetizacion via debit card, BNPL y servicios financieros adicionales para su base de 90M+ usuarios en EEUU.",
-    "ventajas": "La marca PayPal es sinonimo de confianza en pagos digitales para 439M usuarios activos globalmente. La red de dos lados genera efectos de red: mas comercios atraen consumidores y viceversa. Venmo tiene penetracion unica en millennials de EEUU con 90M+ cuentas. Braintree sirve a grandes plataformas como Uber, Airbnb y Booking como procesador unbranded. El moat de datos transaccionales historicos permite modelos de riesgo crediticio superiores para BNPL y personalizacion de ofertas con mayor conversion que competidores sin ese historial.",
-    "debilidades": "Desaceleracion del revenue growth (+4.3% vs peers 10-15%) refleja perdida gradual de participacion en checkout online. La compresion del take rate de 2.0%+ a 1.78% senala presion de precios creciente. Venmo no logra la monetizacion esperada — mayoria de transferencias P2P siguen siendo gratuitas. La transicion a plataforma de pagos independiente plena aun no genera el crecimiento premium que justificaria expansion de multiplo de vuelta a niveles historicos.",
+    "estrategia": "Bajo el liderazgo de Alex Chriss (CEO desde sep-2023), PayPal ejecuta una transformacion de tres pilares: (1) Branded Checkout: recuperar la experiencia de pago nativa de PayPal y reducir dependencia de Braintree unbranded que crece con margenes menores; (2) Venmo Monetization: convertir la app social de pagos en plataforma de ingresos via debit card, credit card, pay-with-Venmo y publicidad contextual; (3) Fastlane: checkout de un clic para merchants sin cuenta PayPal, compitiendo directamente con Apple Pay y Google Pay.",
+    "ventajas": "Red de doble cara con 439M consumidores y millones de comercios integrados con alto switching cost. Marca global de confianza en 200+ paises. Infraestructura Braintree para grandes plataformas de e-commerce. Datos de 6,475M transacciones/trimestre para publicidad y gestion de riesgo crediticio. Balance solido con Deuda Neta/EBITDA de 0.56x y programa agresivo de buybacks que reduce el float.",
+    "debilidades": "Take rate en declive estructural: TPV crece mas rapido que ingresos. Crecimiento de active accounts casi nulo (+0.7% YoY): el modelo de expansion por usuarios llego a su limite. Competencia intensa de Stripe, Apple Pay, Google Pay, Affirm y Adyen. Exposicion cambiaria del 42% de revenue fuera de EE.UU. Cargos de reestructura recurrentes generan ruido en EPS GAAP vs Non-GAAP.",
     "riesgos": [
-      "Competencia Apple Pay/Google Pay: La integracion nativa en iOS/Android reduce friccion vs PayPal, erosionando checkout share — ya visible en compresion del take rate de 2.0%+ a 1.78% en 2025.",
-      "Compresion estructural de take rate: Cada 10bp de caida representa ~330M USD de revenue perdido. El mix creciente de Braintree (bajo margen) y presion competitiva sugieren continuacion de esta tendencia en el tiempo.",
-      "Riesgo regulatorio global: PayPal opera en ~200 mercados bajo regimenes de licencias de dinero electronico, AML/KYC y regulacion de credito. Cambios en EU (PSD3), India o China pueden afectar operaciones y generar multas materiales.",
-      "Monetizacion de Venmo estancada: Con 90M+ usuarios pero conversion a productos pagos baja, si no logra monetizar via debit card y servicios financieros adicionales, el activo pierde valor estrategico frente a CashApp y Zelle que crecen mas rapido."
+      "Presion regulatoria global en pagos digitales y uso de datos, particularmente en la UE con nuevos requisitos de licenciamiento",
+      "Aceleracion del take rate compression si Apple Pay, Google Pay o wallets de BigTech capturan mayor share en branded checkout",
+      "Ciclo de credito adverso que deteriore la cartera de loans receivable (6.7B en creditos netos) ante desaceleracion economica",
+      "Litigacion activa: demanda Darcy Securities Action (feb-2026) por presuntas declaraciones materialmente falsas sobre el periodo 2025",
+      "Ejecucion deficiente en Venmo Monetization: la plataforma aun no genera ingresos significativos vs su base de usuarios"
     ],
-    "inversiones_estrategicas": "Capex de 0.85B USD en FY2025 (2.6% revenue) destinado a infraestructura cloud, seguridad y modernizacion de plataforma tecnologica. R&D concentrado en AI/ML para deteccion de fraude avanzada, personalizacion de checkout (Fastlane lanzado 2024 — checkout en 1 clic para comercios participantes) y modelos de riesgo para BNPL. La compania vendio Happy Returns a UPS en 2024 reforzando foco en pagos core. Sin grandes adquisiciones en pipeline — estrategia prioriza retorno de capital via recompras masivas sobre crecimiento inorganico."
+    "inversiones_estrategicas": "Fastlane en expansion con retailers en 2026 como alternativa de checkout de un clic sin cuenta PayPal. PayPal Advertising: plataforma publicitaria basada en datos transaccionales con potencial de alto margen incremental. Stablecoin PYUSD para pagos internacionales y DeFi. Adquisicion de 134M en Q1 2026 enfocada en capacidades tecnologicas. Venmo Credit Card y Debit Card via partnerships con instituciones financieras reguladas."
   },
   "verdict": {
-    "status": "Mantener / Compra en Correccion",
-    "score": "6.6/10",
+    "status": "Mantener",
+    "score": "6.2/10",
     "color": "yellow",
     "metrics": [
       {
-        "label": "Revenue FY2025",
-        "value": "33.2B USD"
+        "label": "Revenue Q1 2026",
+        "value": "8.35B USD"
       },
       {
-        "label": "Margen Neto",
-        "value": "15.8%"
+        "label": "Margen Operativo",
+        "value": "17.8%"
       },
       {
         "label": "FCF Yield",
-        "value": "13.3%"
+        "value": "8.4%"
       },
       {
-        "label": "P/E Trailing",
-        "value": "8.0x"
+        "label": "P/E Forward",
+        "value": "9.6x"
       },
       {
-        "label": "Crecimiento Rev.",
-        "value": "+4.3% YoY"
+        "label": "TPV YoY",
+        "value": "+11.2%"
       }
     ],
     "bullets": [
       {
-        "text": "**Valuacion de ganga** — P/E de 8.0x y FCF yield del 13.3% para un negocio con 439M usuarios activos y 33B de revenue es excesivamente barata. Las recompras agresivas de 6B+/ano amplifican el retorno por accion de forma material.",
+        "text": "**Valuacion extrema ->** P/E forward de 9.6x y FCF yield de 8.4% ofrecen un margen de seguridad significativo para inversores con horizonte de 2-3 anos; el mercado descuenta un escenario de deterioro permanente que los datos operacionales no confirman aun.",
         "type": "pro"
       },
       {
-        "text": "**Mejora operativa demostrada** — Margen neto al 15.8% (+2.7pp YoY) y ROE del 28.7% demuestran que Alex Chriss genera resultados concretos de eficiencia tras anos de expansion sin disciplina de costos.",
+        "text": "**TPV en expansion ->** 464B USD procesados en Q1 (+11.2% YoY) demuestra que la red sigue siendo el canal preferido para cientos de millones de usuarios; la infraestructura de 439M cuentas y Braintree es dificil de replicar.",
         "type": "pro"
       },
       {
-        "text": "**Balance fortaleza maxima** — Deuda neta de solo 1.94B USD con ND/EBITDA de 0.28x da flexibilidad total para continuar recompras acretivas o hacer adquisiciones estrategicas sin ningun estres financiero.",
+        "text": "**Recompras acretivas ->** La empresa ha reducido el float de 1.168B a 892M acciones (23.6% menos desde FY2021). El programa de buybacks a estos precios es intrinsecamente acretivo para el EPS por accion remanente.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo de take rate estructural** — La compresion por Apple Pay, Google Pay y el mix de Braintree podria continuar presionando el revenue growth incluso con mayor volumen. Es la variable critica a monitorear cada trimestre para validar o invalidar la tesis.",
+        "text": "**Compresion de margenes sin senal de reversal ->** El margen operativo cayo a 17.8% (-1.8pp YoY) y la utilidad neta -13.5% en Q1 2026. Hasta que la empresa demuestre mejora sostenida en take rate o costos de transaccion, el re-rating al alza es incierto.",
         "type": "con"
       }
     ]
@@ -458,27 +486,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de 33.17B USD en FY2025 (+4.3% YoY) muestra crecimiento solido en terminos absolutos pero desaceleracion relativa vs fintech peers. El crecimiento es impulsado por mayor TPV y monetizacion de Venmo, parcialmente compensado por compresion del take rate. La trayectoria de 25.4B a 33.2B en 4 anos refleja negocio robusto y maduro con CAGR del 6.9%."
+        "texto": "Revenue de 8.35B USD en Q1 2026 crece +7.2% YoY, impulsado por TPV de 464B (+11.2%) y crecimiento en revenues de servicios de valor agregado (+10% YoY). El crecimiento es positivo pero modesto para una empresa de pagos digitales en mercado en expansion."
       },
       {
         "label": "Margenes",
-        "texto": "Expansion de margen neto del 13.1% al 15.8% (+2.7pp) y margen operativo del 16.8% al 18.3% (+2.2pp) en 2025 son las mejoras mas importantes del ejercicio. La iniciativa de eficiencia de Alex Chriss elimino costos estructurales y el apalancamiento operativo comienza a materializarse con fuerza real."
+        "texto": "El margen operativo cayo a 17.8% (-1.8pp YoY) y el margen neto a 13.3% (-3.2pp YoY) en Q1 2026, impactados por crecimiento acelerado de costos de transaccion (+12.4%) y perdidas en inversiones estrategicas. La tendencia de FY2025 de expansion de margenes se interrumpio en Q1 2026."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de 5.56B USD en 2025 (vs 6.77B en 2024) baja por mayor capex puntual pero sigue siendo excepcional con FCF yield del 13.3% a precio actual. La compania genera mas caja de la que necesita operativamente y la devuelve via recompras (6B+/ano). OCF de 6.42B confirma alta calidad de earnings y conversion."
+        "texto": "FCF de 0.90B USD en Q1 2026 (-6.3% YoY). OCF de 1.13B. El nivel absoluto sigue siendo saludable pero la trayectoria YoY es negativa. Anualizado, el FCF de aproximadamente 3.6B implica un FCF yield atractivo de 8.4% al precio actual."
       },
       {
         "label": "Balance",
-        "texto": "Deuda neta de 1.94B USD con ND/EBITDA de 0.28x — uno de los balances mas conservadores del sector fintech. Caja de 8.05B USD proporciona cushion significativo. La compania tiene capacidad total para acelerar recompras o ejecutar adquisiciones estrategicas sin ningun riesgo de balance."
+        "texto": "Deuda Neta de 3.90B USD con ratio Deuda Neta/EBITDA de solo 0.56x. La empresa mantiene 6.98B en cash con 10.88B en deuda a largo plazo a tasas fijas. Balance solido que no genera riesgo de solvencia en el horizonte visible."
       },
       {
         "label": "Valuacion",
-        "texto": "A 45.48 USD (6-abr-2026), PYPL cotiza a P/E trailing de 8.0x y EV/EBITDA de 6.2x — descuento del 50-60% vs pares del sector pagos. Si el take rate se estabiliza y los margenes continuan expandiendo, el upside de re-rating es sustancial. Precio objetivo conservador: 60-70 USD en 18-24 meses manteniendo FCF y margenes actuales."
+        "texto": "A 46.65 USD por accion, PYPL cotiza a 9.6x P/E forward, 6.8x EV/EBITDA y FCF yield de 8.4%. Multiples que sugieren que el mercado descuenta estancamiento o deterioro estructural. Las recompras a estos niveles son intrinsecamente acretivas pero dependen de que la empresa revierta la compresion de margenes."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Dos riesgos dominan la tesis: (1) compresion adicional del take rate por Apple Pay/Google Pay que podria llevar el revenue growth a territorio cercano a cero, y (2) fracaso de Fastlane/PayPal Everywhere para recuperar checkout share de forma material. Si ambos se materializan simultaneamente, la tesis de valor se debilitaria de forma significativa."
+        "texto": "Los principales riesgos son: (1) compresion estructural del take rate por competencia de Apple Pay, Google Pay y Stripe; (2) incapacidad de monetizar Venmo a escala; (3) cartera de credito de 6.7B expuesta al ciclo economico; (4) litigacion activa Darcy Securities Action; y (5) riesgo regulatorio en multiples jurisdicciones."
       }
     ]
   }

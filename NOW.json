@@ -1,0 +1,235 @@
+{
+  "parrafos_gratis": 9,
+  "resumen": "ServiceNow (NOW) es la plataforma de flujos de trabajo digitales mas adoptada en el mundo enterprise, con ingresos de 10.98B USD en FY2024 (+22.4% YoY) impulsados en un ~95% por suscripciones de alta recurrencia. La integracion de Now Assist (IA generativa sobre GPT-4 y modelos propios) activa un nuevo ciclo de upsell en su base instalada de mas de 8,100 clientes, incluyendo mas del 85% del Fortune 500. Con FCF de 3.42B USD, balance neto positivo (caja neta de 0.81B USD) y margenes brutos del 79%, NOW representa uno de los modelos de negocio de mas alta calidad en software enterprise — aunque cotiza a un multiple exigente que requiere ejecucion impecable.",
+  "descripcion": "ServiceNow opera una plataforma cloud de gestion de flujos de trabajo (workflow automation) para empresas Fortune 500. Su nucleo es IT Service Management (ITSM), desde el cual expande hacia HR Service Delivery, Customer Service Management, Financial Services Operations y Security Operations. La plataforma Now Platform conecta todos los departamentos bajo un unico sistema de registro. Now Assist, su suite de IA generativa, esta integrada en todos los flujos y habilita agentes autonomos para resolucion de incidentes, autoservicio de empleados y automatizacion de aprobaciones. El modelo de revenue es ~95% suscripcion anual (Annual Contract Value), con clientes que gastan mas cada ano via expansion de modulos — Net Revenue Retention superior al 120% historicamente. Mas de 1,900 clientes con ACV mayor a 1M USD y mas de 100 clientes con ACV mayor a 10M USD. Fiscal year termina el 31 de diciembre.",
+  "tabla": {
+    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "rows": [
+      ["Revenue (B USD)", "4.52", "5.90", "7.25", "8.97", "10.98", "+22.4%"],
+      ["Utilidad Neta (B USD)", "0.12", "0.23", "0.33", "1.73", "1.43", "-17.3%"],
+      ["Margen Neto", "2.7%", "3.9%", "4.6%", "19.3%", "13.0%", "-6.3pp"],
+      ["EBITDA (B USD)", "0.66", "1.03", "1.15", "1.78", "2.47", "+38.8%"],
+      ["FCF (B USD)", "1.20", "1.80", "2.17", "2.70", "3.42", "+26.5%"],
+      ["EPS Diluido (GAAP)", "0.63", "0.23", "0.32", "1.68", "1.37", "-18.5%"],
+      ["Deuda Neta (B USD)", "-0.48", "-0.25", "0.02", "-0.41", "-0.81", "Mejor"]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "53.2x",
+      "signal": "yellow",
+      "note": "vs. SaaS enterprise promedio ~40x — premium justificado por calidad",
+      "precio_base": 89.42,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 1.68
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "21.4x",
+      "signal": "green",
+      "note": "EPS FWD FY2026 est. ~4.18 USD — descuento vs. trailing",
+      "precio_base": 89.42,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 4.18
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "36.9x",
+      "signal": "yellow",
+      "note": "premium a sector; historicamente cotiza 40-60x"
+    },
+    {
+      "label": "P/FCF",
+      "value": "27.3x",
+      "signal": "yellow",
+      "note": "FCF yield ~3.7% — razonable para la calidad del activo",
+      "precio_base": 89.42,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 3.415,
+        "shares_m": 1042
+      }
+    },
+    {
+      "label": "Deuda/EBITDA",
+      "value": "-0.33x",
+      "signal": "green",
+      "note": "Posicion de caja neta — balance pristino"
+    },
+    {
+      "label": "ROE",
+      "value": "16.5%",
+      "signal": "green",
+      "note": "en expansion sostenida con mejora de margenes operativos"
+    },
+    {
+      "label": "ROIC",
+      "value": "12.3%",
+      "signal": "green",
+      "note": "creciendo conforme el apalancamiento operativo se materializa"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {"label": "2020", "revenue": 4.52, "utilidad": 0.12},
+      {"label": "2021", "revenue": 5.90, "utilidad": 0.23},
+      {"label": "2022", "revenue": 7.25, "utilidad": 0.33},
+      {"label": "2023", "revenue": 8.97, "utilidad": 1.73},
+      {"label": "2024", "revenue": 10.98, "utilidad": 1.43}
+    ],
+    "series": [
+      {"key": "revenue", "name": "Revenue"},
+      {"key": "utilidad", "name": "Utilidad Neta"}
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {"label": "2020", "bruto": 78.1, "operativo": -0.4, "neto": 2.7},
+      {"label": "2021", "bruto": 77.1, "operativo": 4.4, "neto": 3.9},
+      {"label": "2022", "bruto": 78.3, "operativo": 4.9, "neto": 4.6},
+      {"label": "2023", "bruto": 78.6, "operativo": 8.5, "neto": 19.3},
+      {"label": "2024", "bruto": 79.2, "operativo": 12.4, "neto": 13.0}
+    ],
+    "series": [
+      {"key": "bruto", "name": "Margen Bruto"},
+      {"key": "operativo", "name": "Margen Operativo"},
+      {"key": "neto", "name": "Margen Neto"}
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {"label": "Sin dividendo", "value": "N/A", "nota": "Reinvierte capital en crecimiento organico, R&D e IA (Now Assist, Project Arc)"},
+      {"label": "Recompra de acciones", "value": "~$1.5B FY2024", "nota": "Programa sistematico de buybacks para compensar dilusion por stock-based compensation"},
+      {"label": "M&A estrategico", "value": "Selectivo", "nota": "Adquisiciones puntuales para expandir capacidad IA: Element AI, Hitch Works, Swarm64 — enfoque en IP, no en revenue inorganico"}
+    ]
+  },
+  "comparacion_sector": {
+    "headers": ["Metrica", "NOW FY2024", "SaaS Enterprise Promedio", "Posicion relativa"],
+    "rows": [
+      ["Gross Margin", "79.2%", "~72%", "Por encima del sector"],
+      ["Net Revenue Retention", "~125%", "~110%", "Por encima del sector"],
+      ["Operating Margin (GAAP)", "12.4%", "~8%", "Por encima del sector"],
+      ["Revenue Growth YoY", "+22.4%", "~15%", "Por encima del sector"],
+      ["FCF Margin", "31.1%", "~18%", "Lider de categoria"]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "No se detecta deterioro estructural — expansion de margenes consistente y FCF en aceleracion",
+    "analisis": "El margen neto FY2024 (13.0%) es inferior al FY2023 (19.3%) pero el FY2023 incluia beneficios fiscales no recurrentes por activacion de impuestos diferidos. El indicador limpio a seguir es el margen operativo GAAP: paso de 0.0% en FY2020 a 12.4% en FY2024 — expansion de 1,240 puntos base en 4 anos. El FCF crece de forma consistente y acelerada: +25.6% en FY2024. No hay senales de deterioro en retention, ARR growth ni en la calidad del backlog (cRPO creciendo >20% YoY).",
+    "items": [
+      {"metrica": "Revenue YoY", "valor": "+22.4%", "status": "ok"},
+      {"metrica": "Gross Margin", "valor": "79.2%", "status": "ok"},
+      {"metrica": "Operating Margin", "valor": "12.4%", "status": "ok"},
+      {"metrica": "FCF Margin", "valor": "31.1%", "status": "ok"},
+      {"metrica": "Net Debt", "valor": "-$0.81B (caja neta)", "status": "ok"}
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Plataforma de flujos criticos en mas del 85% del Fortune 500",
+      "impact": "Alto",
+      "evidence": "Mas de 8,100 clientes totales; mas de 1,900 con ACV superior a 1M USD; mas de 100 con ACV superior a 10M USD",
+      "context": "La densidad en el Fortune 500 crea un efecto de red: los CIOs que ya usan Now Platform son los que aprueban el budget de IA en sus empresas — ventaja estructural para la adopcion de Now Assist sin nuevo ciclo de ventas"
+    },
+    {
+      "level": "green",
+      "title": "Now Assist IA genera upsell en clientes existentes sin costo de adquisicion",
+      "impact": "Alto",
+      "evidence": "Now Assist disponible en ITSM, HR, CSM y ITSM+HR bundles desde Q3 2023; adoption en mas de 1,000 clientes en primer ano",
+      "context": "El modelo land-and-expand de ServiceNow es particularmente efectivo con IA: el cliente ya paga la plataforma, la IA es un modulo adicional que aumenta ARPU sin requerir nuevo contrato base — similar al modelo de Microsoft con Copilot pero con switching costs mas altos"
+    },
+    {
+      "level": "green",
+      "title": "FCF de alta calidad — 31% de margen en FY2024",
+      "impact": "Alto",
+      "evidence": "FCF de 3.42B USD en FY2024 sobre 10.98B USD de revenue; CAGR FCF de +30% en 4 anos (desde 1.20B en FY2020)",
+      "context": "La alta conversion de EBITDA a FCF (>138%) refleja el modelo de prepago de clientes SaaS: ServiceNow cobra antes de entregar el servicio, generando caja estructuralmente superior a su utilidad contable"
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion premium exige ejecucion impecable — poca tolerancia al error",
+      "impact": "Medio",
+      "evidence": "P/E TTM de 53x a $89.42; las acciones cayeron -55% desde su maximo de $211 en 2025 por desaceleracion percibida en guidance",
+      "context": "Una empresa de esta calidad merece un premium, pero a estos multiples cualquier revision a la baja del guidance o desaceleracion en ARR growth puede desencadenar correcciones severas — como se vio en el ajuste de 2025"
+    }
+  ],
+  "score": {
+    "score": 9.0,
+    "max": 10,
+    "items": [
+      {"label": "Poder de fijacion de precios", "score": 9, "max": 10},
+      {"label": "Crecimiento de revenue", "score": 9, "max": 10},
+      {"label": "Calidad de margenes", "score": 9, "max": 10},
+      {"label": "Solidez del balance", "score": 9, "max": 10},
+      {"label": "Generacion de FCF", "score": 9, "max": 10}
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "ServiceNow ejecuta una estrategia de plataforma horizontal: comenzar en ITSM (donde tiene liderazgo inatacable) y expandir a todos los departamentos que necesiten automatizar flujos de aprobacion, solicitud, resolucion e integracion. Now Assist convierte la plataforma en un sistema de IA agentica capaz de resolver incidentes sin intervencion humana, procesar solicitudes de empleados en segundos y generar respostas automaticas en servicio al cliente. La alianza con NVIDIA (Project Helix) y la integracion con modelos open-source y propietarios posiciona a NOW para ofrecer IA enterprise sin dependencia de un solo proveedor de LLMs.",
+    "ventajas": "Switching costs estructuralmente altos: migrar de ServiceNow implica re-entrenar equipos, re-configurar integraciones con SAP/Oracle/Workday y perder el historial de incidentes que alimenta los modelos de IA. Plataforma horizontal con mas de 100 integraciones nativas. Net Revenue Retention >120% historicamente: los clientes gastan mas cada ano. Base de clientes Fortune 500 con ciclos de venta largos pero contratos plurianuales de alto valor.",
+    "debilidades": "Margenes operativos GAAP todavia por debajo de peers de mas larga trayectoria como Oracle o SAP. Stock-based compensation elevada (~$1.2B en FY2024) que diluye accionistas. Dependencia del gasto corporativo en IT — en recesiones profundas los budgets se comprimen incluso en software critico.",
+    "riesgos": [
+      "Desaceleracion en gasto enterprise IT en escenario de recesion prolongada",
+      "Competencia de Microsoft Power Platform con integracion nativa en Microsoft 365/Azure",
+      "Valuacion exigente con poca tolerancia a revisiones a la baja del guidance",
+      "Concentracion geografica: ~55% de revenue en Norte America"
+    ],
+    "inversiones_estrategicas": "Now Assist (IA generativa integrada en todos los flujos); Project Arc (agentes autonomos para operaciones IT sin intervencion humana); alianza NVIDIA Project Helix para IA on-premise y soberana; expansion en sector publico y defensa (verticalizacion de la plataforma)"
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "9.0/10",
+    "color": "green",
+    "metrics": [
+      {"label": "Revenue TTM", "value": "$10.98B"},
+      {"label": "Gross Margin", "value": "79.2%"},
+      {"label": "FCF Margin", "value": "31.1%"},
+      {"label": "P/E Forward", "value": "21.4x"},
+      {"label": "Crecimiento Rev.", "value": "+22.4% YoY"}
+    ],
+    "bullets": [
+      {"text": "**Plataforma de flujos criticos ->** Mas del 85% del Fortune 500 ya es cliente, con switching costs structuralmente altos — la plataforma es infraestructura digital inamovible para los CIOs.", "type": "pro"},
+      {"text": "**IA genera nuevo ciclo de upsell ->** Now Assist activa expansion de ARPU en la base instalada existente sin costo incremental de adquisicion — el modelo de monetizacion de IA mas eficiente en enterprise software.", "type": "pro"},
+      {"text": "**FCF compounding de alta calidad ->** FCF crece al 30% CAGR desde FY2020, con margen del 31% en FY2024 — la caja se genera antes que la utilidad contable gracias al modelo de prepago SaaS.", "type": "pro"},
+      {"text": "**Valuacion exigente post-caida ->** A $89 (vs. maximo de $211), el mercado ya descontó una parte del exceso de valuacion, pero el P/E TTM de 53x deja poco margen de error ante cualquier ajuste en guidance.", "type": "con"}
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 10.98B USD en FY2024, crecimiento del 22.4% YoY desde 8.97B en FY2023. El CAGR de revenue 2020-2024 es del 24.9%, consistente y sin desaceleracion material. La visibilidad de ingresos es excepcional: el Remaining Performance Obligation (RPO) supera los 20B USD, con mas de 9B USD de current RPO exigible en los proximos 12 meses. La composicion del revenue es ~95% suscripcion y ~5% servicios profesionales."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto del 79.2% en FY2024 (vs. 78.6% FY2023), margen operativo GAAP del 12.4% (vs. 8.5% FY2023) y margen neto del 13.0%. El salto en utilidad neta del FY2023 (19.3% de margen) fue puntual por activacion de impuestos diferidos no recurrentes. La tendencia estructural es de expansion de margen operativo — de -0.4% en FY2020 a +12.4% en FY2024 conforme el apalancamiento operativo del modelo SaaS se materializa."
+      },
+      {
+        "label": "EPS",
+        "texto": "EPS GAAP diluido de 1.37 USD en FY2024 vs. 1.68 USD en FY2023 (caida por ausencia del beneficio fiscal puntual del FY2023). La EPS no refleja la calidad real del negocio — la diferencia entre EPS GAAP y EPS non-GAAP es de ~6-7 USD en FY2024 por stock-based compensation. Los analistas proyectan EPS GAAP de ~4.18 USD para FY2026, implicando un P/E forward de 21.4x a precios actuales — significativamente mas atractivo que el P/E trailing."
+      },
+      {
+        "label": "Balance",
+        "texto": "Posicion de caja neta de 810M USD al cierre de FY2024 (2.30B USD de cash menos 1.49B USD de deuda a largo plazo). La deuda es un bono convertible de 1.5B USD con vencimiento en 2030 y tasa baja — no hay presion de refinanciamiento. Equity de 9.61B USD. El balance refleja la solidez financiera de una empresa que genera caja muy por encima de sus necesidades de inversion organica."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 3.42B USD en FY2024 (+26.5% YoY), equivalente a un margen de FCF del 31.1%. La conversion de EBITDA a FCF supera el 138% gracias al modelo de prepago de clientes SaaS (deferred revenue elevado). El FCF se destina principalmente a recompra de acciones (~1.5B USD en FY2024) para compensar la dilusion por SBC, y al balance para fondear adquisiciones estrategicas de capacidades IA."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Valuacion exigente (P/E TTM 53x) que penaliza cualquier guia conservadora o desaceleracion, como se vio con la caida del -55% desde maximos de 2025. Competencia creciente de Microsoft Power Platform integrada en el ecosistema 365 que ya tiene penetracion en las mismas empresas. Concentracion geografica en Norte America (~55% de revenue). Stock-based compensation alta que erosiona el EPS GAAP y diluye al accionista en ~1.5% anual."
+      }
+    ]
+  }
+}

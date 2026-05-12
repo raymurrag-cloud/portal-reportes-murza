@@ -1,0 +1,503 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Berkshire Hathaway es el mayor conglomerado del mundo, dirigido por Warren Buffett (presidente) y Gregory Abel (CEO desde enero 2026). Opera en seguros (GEICO, Gen Re, BH Reinsurance), ferrocarril (BNSF), energia (BHE), manufactura, retail y servicios. FY2025 reporto ingresos de $371.4B con utilidad neta de $67.0B, afectada por impairments no recurrentes de $8.26B. El balance es extraordinariamente solido con $373B en caja y T-bills frente a $129B en deuda. Q1 2026 revierte con fuerza: NI +120% YoY. La accion cotiza a $479.55 a 15.4x P/E. Veredicto: mantener con conviccion.",
+  "descripcion": "Berkshire Hathaway opera cuatro segmentos principales: (1) Seguros: GEICO (11.6% mercado auto EE.UU.), BH Primary Group y BH Reinsurance Group, generan float masivo de bajo costo para invertir; (2) BNSF, ferrocarril de carga mas grande de Norteamerica con $23.3B en ingresos; (3) Berkshire Hathaway Energy (BHE), utilities y energia renovable con $21.9B en ingresos; (4) Manufactura, Servicios y Retail, mas de 60 subsidiarias incluyendo Precision Castparts, Lubrizol, Fruit of the Loom y otros. El moat es unico: escala de capital, float de seguros de $170B+ a costo cero y portafolio de $288B en acciones blue chip. Gregory Abel asumio como CEO en enero 2026.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "276.2",
+        "302.0",
+        "364.5",
+        "371.4",
+        "371.4",
+        "93.7",
+        "+4.4%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "89.9",
+        "-22.8",
+        "96.2",
+        "89.0",
+        "67.0",
+        "10.1",
+        "+119.6%"
+      ],
+      [
+        "Margen Neto",
+        "32.6%",
+        "-7.5%",
+        "26.4%",
+        "24.0%",
+        "18.0%",
+        "10.8%",
+        "+7.5pp"
+      ],
+      [
+        "EBITDA aprox (B USD)",
+        "115.4",
+        "10.8",
+        "109.7",
+        "128.4",
+        "101.0",
+        "14.6",
+        "N/D"
+      ],
+      [
+        "FCF (B USD)",
+        "26.2",
+        "21.9",
+        "29.8",
+        "11.6",
+        "25.0",
+        "5.5",
+        "+115.5%"
+      ],
+      [
+        "EPS Diluido (B share)",
+        "40.88",
+        "-10.46",
+        "44.27",
+        "41.27",
+        "31.04",
+        "4.68",
+        "+119.7%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "65.0",
+        "70.0",
+        "75.0",
+        "80.4",
+        "77.2",
+        "70.8",
+        "-1.3%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "15.4x",
+      "signal": "green",
+      "note": "vs conglomerados ~18x",
+      "precio_base": 479.55,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 31.04
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "16.5x",
+      "signal": "green",
+      "precio_base": 479.55,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 29.06
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "11.0x",
+      "signal": "green",
+      "precio_base": 479.55,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 101,
+        "shares_m": 2157,
+        "deuda_neta_b": 77.2
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "41.3x",
+      "signal": "yellow",
+      "precio_base": 479.55,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 25.04,
+        "shares_m": 2157
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.8x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "9.3%",
+      "signal": "yellow"
+    },
+    {
+      "label": "ROIC",
+      "value": "4.2%",
+      "signal": "yellow"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 276.2,
+        "utilidad": 89.9
+      },
+      {
+        "label": "FY2022",
+        "revenue": 302,
+        "utilidad": -22.8
+      },
+      {
+        "label": "FY2023",
+        "revenue": 364.5,
+        "utilidad": 96.2
+      },
+      {
+        "label": "FY2024",
+        "revenue": 371.4,
+        "utilidad": 89
+      },
+      {
+        "label": "FY2025",
+        "revenue": 371.4,
+        "utilidad": 67
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 32.6,
+        "operativo": 16,
+        "neto": 32.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": -7.5,
+        "operativo": 4.2,
+        "neto": -7.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 26.4,
+        "operativo": 12.4,
+        "neto": 26.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 24,
+        "operativo": 15.5,
+        "neto": 24
+      },
+      {
+        "label": "FY2025",
+        "bruto": 18,
+        "operativo": 11.7,
+        "neto": 18
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "2.92B USD",
+        "nota": "Recompras reducidas en FY2025 reflejando valuacion mas cara. Acumulando caja para oportunidades futuras transformadoras."
+      },
+      {
+        "label": "Dividendos",
+        "value": "0 USD",
+        "nota": "Berkshire no paga dividendos desde 1967. Distribucion via recompras y reinversion en negocios operativos y portafolio."
+      },
+      {
+        "label": "Capex",
+        "value": "20.93B USD",
+        "nota": "Principalmente BNSF y BHE para infraestructura ferroviaria y energia renovable. Aumento 10.3% YoY en FY2025."
+      },
+      {
+        "label": "M&A",
+        "value": "~1.07B USD",
+        "nota": "FY2025 adquisiciones modestas. En Q1 2026 se acelero a $9.69B netos. Record de $373B en caja para oportunidades transformadoras."
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "BRK.B TTM",
+      "Sector Conglomerados",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Neto",
+        "18.0%",
+        "~12%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo Core",
+        "11.7%",
+        "~10%",
+        "Ligeramente por encima"
+      ],
+      [
+        "Revenue Growth",
+        "0.0%",
+        "~5%",
+        "Por debajo del sector"
+      ],
+      [
+        "P/E Forward",
+        "16.5x",
+        "~18x",
+        "Descuento atractivo"
+      ],
+      [
+        "ROIC",
+        "4.2%",
+        "~8%",
+        "Por debajo vs conglomerados enfocados"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance ultra-solido; utilidad neta presionada por impairments no recurrentes, no por deterioro operativo",
+    "analisis": "Los ingresos operativos core (excluyendo ganancias de inversion) se mantienen robustos con $44.5B despues de impuestos en FY2025. La caida de utilidad neta (-24.8%) refleja impairment de $8.26B en Kraft Heinz y Occidental y menores ganancias realizadas, no deterioro del negocio. GEICO mejoro significativamente su rentabilidad, BNSF registro record de eficiencia, BHE se recupero de los wildfire accruals. Q1 2026 revierte con fuerza (+120% NI).",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+0.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "18.0%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo Core",
+        "valor": "11.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+115.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "77.2B USD",
+        "status": "ok"
+      },
+      {
+        "metrica": "Caja + T-Bills",
+        "valor": "373.3B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Balance sin precedentes en la historia corporativa",
+      "impact": "Alto",
+      "evidence": "Caja + T-Bills de $373B vs deuda de $129B. Posicion neta de liquidez de $244B, record absoluto historico.",
+      "context": "Proporciona a Abel la capacidad de ejecutar adquisiciones de $50-100B+ en cualquier momento, un arma estrategica sin igual en la historia corporativa moderna."
+    },
+    {
+      "level": "green",
+      "title": "Q1 2026 confirma fortaleza operativa",
+      "impact": "Alto",
+      "evidence": "Revenue +4.4% YoY a $93.7B. NI shareholders $10.1B vs $4.6B en Q1 2025 (+119.6%). EPS B $4.68 vs $2.13.",
+      "context": "El trimestre confirma que el descenso de FY2025 fue puntual por impairments no recurrentes. Los negocios operativos aceleran bajo Gregory Abel."
+    },
+    {
+      "level": "green",
+      "title": "GEICO completo su turnaround de rentabilidad",
+      "impact": "Medio",
+      "evidence": "GEICO underwriting profit $6.82B FY2025. Ratio combinado 84.7%. Premiums written +5.3% YoY a $45.2B.",
+      "context": "Tras anos de perdidas, GEICO se transforma en una maquina de ganancias. Mantiene tercer lugar en mercado auto EE.UU. con 11.6% de participacion."
+    },
+    {
+      "level": "yellow",
+      "title": "Transicion de liderazgo post-Buffett",
+      "impact": "Medio",
+      "evidence": "Warren Buffett (94 anos) se retiro como CEO en enero 2026. Gregory Abel asumio como CEO por primera vez en la historia de Berkshire.",
+      "context": "Buffett sigue como presidente y su filosofia impregna la cultura. El riesgo existe pero la estructura descentralizada y la bench de management mitigan el impacto."
+    },
+    {
+      "level": "yellow",
+      "title": "Revenue estructuralmente estancado",
+      "impact": "Medio",
+      "evidence": "Revenue FY2024 vs FY2025: $371.43B vs $371.44B. BNSF y BHE son segmentos maduros con crecimiento limitado.",
+      "context": "Berkshire no es un negocio de crecimiento. Su valor esta en la asignacion de capital y el float de seguros, no en el crecimiento de revenue."
+    },
+    {
+      "level": "red",
+      "title": "Pasivos de PacifiCorp por incendios forestales",
+      "impact": "Alto",
+      "evidence": "BHE/PacifiCorp enfrenta litigacion activa en Oregon y California. Ya registro accruals significativos en FY2023-2025 por wildfire liabilities.",
+      "context": "El monto potencial de sentencias adversas podria ser de $5-15B+. Es el riesgo contingente mas importante del holding actualmente."
+    }
+  ],
+  "score": {
+    "score": 7.6,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Berkshire opera bajo un modelo de asignacion de capital disciplinada: adquirir negocios con moats duraderos a precios razonables y, mientras espera, acumular float de seguros que invierte en T-bills y acciones de alta calidad. Con Gregory Abel como CEO, la estrategia se mantiene intacta. El foco inmediato es desplegar el record de $334B en caja de manera disciplinada en adquisiciones transformadoras o recompras si la accion cae a niveles atractivos.",
+    "ventajas": "Float de seguros de $170B+ a costo cero o negativo; balance de $1.2T con $373B en liquidez; portafolio de $288B en acciones blue chip; reputacion como comprador preferido permite adquisiciones sin proceso competitivo; estructura descentralizada con excelentes managers en subsidiarias; GEICO y BNSF son franquicias con moats regulatorios y de escala; calificacion AAA efectiva sin necesidad de mercados de deuda.",
+    "debilidades": "Tamano implica que solo mega-adquisiciones pueden mover la aguja; crecimiento de revenue historicamente bajo; ROIC bajo vs empresas mas enfocadas; BHE tiene liabilities de incendios forestales en PacifiCorp; dependencia de pocas personas clave; la diversificacion extrema puede diluir retornos; no paga dividendos lo que excluye a ciertos inversionistas.",
+    "riesgos": [
+      "Transicion de liderazgo: primera vez que un CEO no-Buffett opera Berkshire en decadas. Aunque mitigado estructuralmente, es un riesgo real de cambio cultural y en decision-making de asignacion de capital.",
+      "Concentracion del portafolio: Apple representa ~29% del portafolio de $288B. Una caida severa de Apple afectaria materialmente el patrimonio reportado y las ganancias de inversion.",
+      "Pasivos por incendios forestales BHE/PacifiCorp: litigacion activa en Oregon y California con potencial de miles de millones en sentencias adversas en los proximos anos.",
+      "Ciclo de seguros: la compresion del ciclo duro puede reducir la rentabilidad de underwriting de GEICO, BHRG y BH Primary en proximos periodos.",
+      "Tasas de interes: un entorno de tasas bajas reduciria significativamente el ingreso del portafolio de T-bills de $321B. Ya visible en FY2025 con caida de $1.2B en ingreso de inversiones YoY."
+    ],
+    "inversiones_estrategicas": "El portafolio de renta variable incluye Apple (~$84B), Bank of America (~$34B), American Express (~$29B), Coca-Cola (~$25B), Chevron (~$13B) y Occidental (~$13B). En FY2025 registro impairment de $8.26B sobre Kraft Heinz y Occidental (metodo de participacion). En Q1 2026, adquirio negocios por $9.69B netos de caja, la mayor actividad de M&A en anos recientes. La posicion record de caja sugiere que Abel prepara una adquisicion significativa o espera una caida del mercado."
+  },
+  "verdict": {
+    "status": "Mantener con Conviccion",
+    "score": "7.6/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "371.4B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "18.0%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "25.0B USD"
+      },
+      {
+        "label": "P/E Trailing",
+        "value": "15.4x"
+      },
+      {
+        "label": "Crecimiento Q1 2026",
+        "value": "+4.4% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Balance sin precedentes ->** $373B en caja y T-bills vs $129B en deuda. Esta fortaleza permite a Abel ejecutar una adquisicion transformadora en cualquier momento, el catalizador mas potente posible.",
+        "type": "pro"
+      },
+      {
+        "text": "**Q1 2026 muy fuerte ->** NI +120% YoY a $10.1B, confirmando que el deterioro de FY2025 fue por impairments no recurrentes. BNSF, GEICO y seguros aceleran bajo nuevo liderazgo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion razonable ->** P/E de 15.4x y EV/EBITDA de 11x para el mayor conglomerado del mundo con $1.2T en activos representa precio de entrada atractivo historicamente.",
+        "type": "pro"
+      },
+      {
+        "text": "**Crecimiento estructuralmente limitado ->** Revenue flat desde FY2024. El tamano de Berkshire limita el crecimiento organico. Su valor es la asignacion de capital y el float, no el crecimiento de ingresos.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $371.4B en FY2025 practicamente identico a FY2024. Insurance & Other crece modestamente, BNSF y RUE se mantienen estables. En Q1 2026, revenue de $93.7B representa +4.4% YoY con aceleracion en Insurance & Other y en Railroad/Utilities."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto de 18.0% en FY2025 vs 24.0% en FY2024 refleja impairment de $8.26B y menores ganancias de inversion realizadas, no deterioro operativo. Los margenes core se mantienen solidos: GEICO ratio combinado 84.7%, BNSF opera con alta eficiencia, BHE recuperandose de wildfire accruals."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $25.0B en FY2025 (+115% vs 2024) con OCF fuerte de $45.97B. El OCF bajo de 2024 ($30.59B) fue atipico. CapEx de $20.93B enfocado en infraestructura de largo plazo de BNSF y BHE. Q1 2026 genera FCF de $5.45B (ritmo anualizado de ~$22B)."
+      },
+      {
+        "label": "Balance",
+        "texto": "Balance extraordinario: $1.22T en activos, $719.7B en patrimonio. Caja + T-bills de $373.3B contra deuda de $129.1B crea posicion neta de liquidez de $244B, record absoluto. Sin riesgo de refinanciamiento. Calificacion AAA efectiva."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $479.55, Berkshire cotiza a P/E de 15.4x (FY2025) y EV/EBITDA de 11x. El descuento de Berkshire frente al S&P500 se explica por su estructura de holding. Precio/valor en libros de ~1.44x esta en el rango donde Berkshire historicamente ha recomprado acciones agresivamente."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Tres riesgos prioritarios: (1) Transicion de CEO post-Buffett por primera vez en 60 anos; (2) Pasivos de PacifiCorp/BHE por incendios forestales con potencial de $5-15B+ en sentencias; (3) Concentracion en Apple (~29% del portafolio de equities). El riesgo de tasas bajas impactaria los $12B+ anuales de ingreso del portafolio de T-bills."
+      }
+    ]
+  }
+}

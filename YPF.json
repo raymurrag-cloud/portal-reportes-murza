@@ -1,7 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "YPF Sociedad Anonima es la empresa energetica integrada mas grande de Argentina, con operaciones en upstream, midstream, downstream, GNL y nuevas energias. En FY2025 reporto ingresos de 18.4B USD (-4.4% YoY) con una perdida neta de 799M impactada por un cargo de impuesto diferido no recurrente de 1.7B. El EBITDA crecio a 4.9B USD (+16.7% YoY) y la compania continua su plan de inversion de 5.1B en Vaca Muerta. Opera con valuacion atractiva de 5.2x EV/EBITDA y 7.1x P/E forward, con descuento por riesgo Argentina.",
-  "descripcion": "YPF es la empresa energetica integrada mas grande de Argentina con mas de 100 anos de historia. Segmentos: Upstream (exploracion y produccion de crudo y gas, incluyendo el play no convencional Vaca Muerta), Downstream (5 refinerias, distribucion de combustibles en +1,600 estaciones de servicio), Midstream (transporte), LNG e Gas Integrado (licuefaccion y exportacion), y Nuevas Energias. El Estado argentino posee el 51% del capital. Vaca Muerta es el activo estrategico clave que impulsa el crecimiento de produccion y el potencial de exportacion de LNG hacia 2030+.",
+  "resumen": "YPF Sociedad Anonima es la principal empresa energetica de Argentina, controlada en 51% por el Estado argentino. En FY2025 reporto ingresos de US$18.4B (-4.4% vs FY2024) impactados por desinversiones de activos convencionales maduros, mientras el EBITDA crecio +16.6% hasta US$4.94B impulsado por la expansion del shale en Vaca Muerta y la reduccion de costos de lifting. En Q1 2026 la empresa acelero su momentum con ingresos de US$4.95B (+7% YoY) y EBITDA ajustado de US$1.59B (+28% YoY), marcando records en produccion shale y refinacion.",
+  "descripcion": "YPF opera en cuatro segmentos: Upstream (exploration & produccion, 65% shale), Midstream & Downstream (refinacion, 102% utilizacion en Q1 2026), LNG & Gas Integrado, y Nuevas Energias. Su moat radica en ser el operador dominante de Vaca Muerta -la segunda reserva de shale gas y cuarta de shale oil del mundo- con acceso privilegiado a concesiones estatales, infraestructura integrada y escala operativa unica en Argentina. La estrategia YPF 4x4 prioriza eficiencia en shale, exportaciones de LNG, reduccion de deuda y descarbonizacion.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,34 +21,38 @@
         "17.31",
         "19.29",
         "18.45",
+        "4.95",
         "-4.4%"
       ],
       [
         "Utilidad Neta (B USD)",
-        "0.02",
+        "0.03",
         "2.23",
-        "-1.28",
-        "2.39",
-        "-0.80",
+        "-1.31",
+        "2.35",
+        "-0.83",
+        "0.41",
         "N/A"
       ],
       [
         "Margen Neto",
-        "0.1%",
+        "0.2%",
         "11.9%",
-        "-7.4%",
-        "12.4%",
-        "-4.3%",
-        "-16.7pp"
+        "-7.6%",
+        "12.2%",
+        "-4.5%",
+        "8.3%",
+        "+12.8pp"
       ],
       [
         "EBITDA (B USD)",
         "3.77",
         "5.29",
-        "2.03",
+        "4.31",
         "4.24",
         "4.94",
-        "+16.7%"
+        "1.59",
+        "+16.6%"
       ],
       [
         "FCF (B USD)",
@@ -56,36 +61,39 @@
         "0.24",
         "0.48",
         "-0.12",
-        "-125%"
+        "0.87",
+        "N/A"
       ],
       [
         "EPS Diluido",
-        "0.04",
-        "5.70",
+        "0.07",
+        "5.67",
         "-3.35",
         "5.99",
         "-2.11",
+        "1.03",
         "N/A"
       ],
       [
         "Deuda Neta (B USD)",
-        "7.63",
-        "8.31",
-        "9.80",
-        "9.66",
+        "6.77",
+        "6.32",
+        "7.07",
+        "7.82",
         "9.65",
-        "-0.1%"
+        "8.43",
+        "+23.3%"
       ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "N/A",
-      "signal": "yellow",
-      "note": "Perdida neta en FY2025 por impuesto diferido",
-      "precio_base": 40.98,
-      "precio_fecha": "2026-04-18",
+      "value": "N/A (perdida)",
+      "signal": "red",
+      "note": "FY2025 neto negativo; normalizado ~10x sobre EBITDA",
+      "precio_base": 44.93,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "eps_ttm",
         "valor": -2.11
@@ -93,55 +101,60 @@
     },
     {
       "label": "P/E Forward",
-      "value": "7.1x",
-      "signal": "green",
-      "note": "vs. sector emergentes ~10x",
-      "precio_base": 40.98,
-      "precio_fecha": "2026-04-18",
+      "value": "~14x",
+      "signal": "yellow",
+      "note": "EPS Q1 2026 anualizado ~3.2x; sector ~12x",
+      "precio_base": 44.93,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 5.76
+        "valor": 3.2
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "5.2x",
+      "value": "5.5x",
       "signal": "green",
-      "precio_base": 40.98,
-      "precio_fecha": "2026-04-18",
+      "note": "vs peers integradas LatAm ~5-7x",
+      "precio_base": 44.93,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "ev_ebitda",
         "ebitda_b": 4.944,
-        "shares_m": 391.95,
+        "shares_m": 393.3,
         "deuda_neta_b": 9.648
       }
     },
     {
       "label": "P/FCF",
       "value": "N/A",
-      "signal": "yellow",
-      "precio_base": 40.98,
-      "precio_fecha": "2026-04-18",
+      "signal": "red",
+      "note": "FCF negativo FY2025; Q1 2026 FCF positivo US$871M",
+      "precio_base": 44.93,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "p_fcf",
         "fcf_b": -0.118,
-        "shares_m": 391.95
+        "shares_m": 393.3
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
       "value": "1.95x",
-      "signal": "yellow"
+      "signal": "yellow",
+      "note": "mejorando en Q1 2026: 1.57x seg. empresa"
     },
     {
-      "label": "ROE (FY2024)",
-      "value": "23.8%",
-      "signal": "green"
+      "label": "ROE",
+      "value": "-7.6%",
+      "signal": "red",
+      "note": "impactado por perdida contable FY2025"
     },
     {
       "label": "ROIC",
-      "value": "7.1%",
-      "signal": "yellow"
+      "value": "6.2%",
+      "signal": "yellow",
+      "note": "normalizado; shale genera retornos +15% a largo plazo"
     }
   ],
   "chart_ingresos": {
@@ -150,7 +163,7 @@
       {
         "label": "FY2021",
         "revenue": 13.68,
-        "utilidad": 0.02
+        "utilidad": 0.03
       },
       {
         "label": "FY2022",
@@ -160,17 +173,17 @@
       {
         "label": "FY2023",
         "revenue": 17.31,
-        "utilidad": -1.28
+        "utilidad": -1.31
       },
       {
         "label": "FY2024",
         "revenue": 19.29,
-        "utilidad": 2.39
+        "utilidad": 2.35
       },
       {
         "label": "FY2025",
         "revenue": 18.45,
-        "utilidad": -0.8
+        "utilidad": -0.83
       }
     ],
     "series": [
@@ -190,11 +203,11 @@
         "label": "FY2021",
         "bruto": 22.3,
         "operativo": 5.1,
-        "neto": 0.1
+        "neto": 0.2
       },
       {
         "label": "FY2022",
-        "bruto": 27,
+        "bruto": 27.1,
         "operativo": 13.2,
         "neto": 11.9
       },
@@ -202,19 +215,19 @@
         "label": "FY2023",
         "bruto": 20,
         "operativo": -7.2,
-        "neto": -7.4
+        "neto": -7.6
       },
       {
         "label": "FY2024",
         "bruto": 27.9,
         "operativo": 7.7,
-        "neto": 12.4
+        "neto": 12.2
       },
       {
         "label": "FY2025",
         "bruto": 27.6,
         "operativo": 9.4,
-        "neto": -4.3
+        "neto": -4.5
       }
     ],
     "series": [
@@ -236,23 +249,23 @@
     "items": [
       {
         "label": "Capex",
-        "value": "5.1B USD",
-        "nota": "Inversion record en Vaca Muerta upstream y desarrollo no convencional — pico del ciclo de inversion"
-      },
-      {
-        "label": "Dividendos",
-        "value": "~0 USD",
-        "nota": "Sin dividendos significativos en FY2025 dado la perdida neta; historial de dividendos bajos"
+        "value": "5.08B USD",
+        "nota": "FY2025; 58% dirigido a upstream shale Vaca Muerta"
       },
       {
         "label": "Recompras",
-        "value": "10M USD",
-        "nota": "Recompra de acciones propias por 10M en FY2025"
+        "value": "0.01B USD",
+        "nota": "Minimo; empresa prioriza deuda y capex"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0B USD",
+        "nota": "Sin dividendos en efectivo FY2025"
       },
       {
         "label": "M&A",
-        "value": "~0.8B USD",
-        "nota": "Adquisicion de activos (767M neto de caja) para fortalecer portfolio upstream"
+        "value": "0.77B USD",
+        "nota": "Adquisiciones FY2025 neto de caja; incluye Refinor 100%"
       }
     ]
   },
@@ -267,44 +280,38 @@
       [
         "Gross Margin",
         "27.6%",
-        "~35%",
-        "Debajo del sector integrado global"
+        "~30-35%",
+        "Ligeramente por debajo del sector"
       ],
       [
-        "Margen EBITDA",
-        "26.8%",
-        "~30%",
-        "En linea con pares emergentes"
+        "Margen Operativo",
+        "9.4%",
+        "~10-15%",
+        "En linea con peers LatAm"
       ],
       [
         "Revenue Growth",
-        "-4.4%",
-        "~+5%",
-        "Por debajo del sector"
-      ],
-      [
-        "P/E Forward",
-        "7.1x",
-        "~10x",
-        "Descuento por riesgo Argentina"
+        "-4.4% YoY",
+        "~-5% a +5%",
+        "En linea; impacto desinversiones voluntarias"
       ],
       [
         "EV/EBITDA",
-        "5.2x",
-        "~7x",
-        "Descuento significativo"
+        "5.5x",
+        "~5-8x",
+        "Atractivo frente a peers integradas"
       ],
       [
-        "Deuda Neta/EBITDA",
-        "1.95x",
-        "~1.5x",
-        "Ligeramente elevado"
+        "ROIC",
+        "6.2%",
+        "~8-12%",
+        "Recuperandose; shale mejora retornos"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Balance manejable pero FCF negativo en FY2025 por capex record en Vaca Muerta — ciclo de inversion pico",
-    "analisis": "YPF reporto perdida neta en FY2025 principalmente por cargos de impuesto diferido (1.7B) no recurrentes. El EBITDA crecio +16.7% YoY a 4.9B indicando mejora operativa subyacente. El FCF fue negativo (-118M) por capex de 5.1B en el pico de inversion en Vaca Muerta. La deuda neta se mantiene estable en ~9.6B con ND/EBITDA de 1.95x, manejable dado el perfil de activos de largo plazo.",
+    "veredicto": "YPF mantiene solidez operativa con EBITDA creciente, aunque la perdida contable FY2025 refleja efecto impositivo diferido, no deterioro operacional",
+    "analisis": "El resultado neto negativo de FY2025 (-US$799M) fue causado principalmente por un cargo de impuesto diferido de US$1.709B, no por perdidas operacionales reales; el EBITDA crecio +16.6% y el Q1 2026 mostro recuperacion total con NI de US$409M. La deuda neta aumento a US$9.65B pero el ratio leverage mejoro a 1.57x en Q1 2026 segun guidance de la empresa. El FCF negativo en FY2025 refleja capex de expansion en Vaca Muerta que genera valor de largo plazo.",
     "items": [
       {
         "metrica": "Revenue YoY",
@@ -317,23 +324,23 @@
         "status": "ok"
       },
       {
-        "metrica": "Margen EBITDA",
-        "valor": "26.8%",
+        "metrica": "Margen Operativo",
+        "valor": "9.4%",
         "status": "ok"
       },
       {
         "metrica": "Margen Neto",
-        "valor": "-4.3%",
-        "status": "bad"
+        "valor": "-4.5% (efecto fiscal)",
+        "status": "warn"
       },
       {
         "metrica": "FCF YoY",
-        "valor": "-118M (vs +477M)",
-        "status": "bad"
+        "valor": "Negativo (-0.12B)",
+        "status": "warn"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "9.65B",
+        "valor": "9.65B (+23%)",
         "status": "warn"
       }
     ]
@@ -341,52 +348,57 @@
   "flags": [
     {
       "level": "green",
-      "title": "Vaca Muerta — activo de clase mundial en pleno desarrollo",
+      "title": "Liderazgo en Vaca Muerta con record de produccion shale",
       "impact": "Alto",
-      "evidence": "Produccion no convencional en crecimiento sostenido; uno de los mayores plays de shale del mundo; capex de 5.1B en FY2025 consolida posicion dominante",
-      "context": "Vaca Muerta posiciona a YPF como empresa de crecimiento a largo plazo con potencial exportador de LNG que aun no esta reflejado en la valuacion"
+      "evidence": "Shale oil +34.6% YoY en FY2025; 65% de produccion total es shale. Lifting cost shale hub: US$4.0/boe en Q1 2026 (top decil mundial). Produccion shale Q1 2026: 205.4 kbbl/d (+39% YoY).",
+      "context": "Vaca Muerta es la segunda formacion de shale gas y cuarta de shale oil del mundo. YPF tiene posicion dominante con concesiones decadales y ventaja operacional de escala."
     },
     {
       "level": "green",
-      "title": "Valuacion con descuento extremo vs. fundamentals",
+      "title": "EBITDA Q1 2026 en US$1.59B (+28% YoY): momentum operacional fuerte",
       "impact": "Alto",
-      "evidence": "EV/EBITDA 5.2x y P/E forward 7.1x — descuento de 30-40% vs. pares energeticos emergentes",
-      "context": "El descuento refleja riesgo Argentina, no deterioro operativo; la normalizacion macro bajo Milei puede ser catalizador de re-rating"
+      "evidence": "Adj. EBITDA Q1 2026: US$1.594B, margen 32% (vs 27% en Q1 2025). Revenue Q1 2026: US$4.946B (+7% YoY). FCF Q1 2026: US$871M positivo tras anio de FCF negativo.",
+      "context": "La aceleracion del Q1 2026 valida la tesis de que FY2025 fue un anio de transicion con cargo fiscal extraordinario, no deterioro estructural."
     },
     {
       "level": "yellow",
-      "title": "Capex masivo comprime FCF en ciclo de inversion pico",
+      "title": "Perdida contable FY2025 por cargo fiscal diferido atipico",
       "impact": "Medio",
-      "evidence": "FCF negativo -118M en FY2025 tras capex de 5.1B; FCF estructuralmente positivo antes del pico (1.75B en 2021)",
-      "context": "El capex elevado es transitorio; se espera generacion creciente de FCF cuando la produccion de Vaca Muerta alcance escala plena"
+      "evidence": "Cargo de impuesto diferido US$1.709B en FY2025 genero perdida neta de US$799M pese a utilidad pre-impuesto de US$910M. EPS -2.11 vs +5.99 en FY2024.",
+      "context": "El efecto es contable/fiscal, no operacional. Sin ese cargo, la utilidad neta hubiera sido ~US$700-800M. Historial de volatilidad en NI por efectos cambiarios y fiscales en Argentina."
     },
     {
       "level": "yellow",
-      "title": "Perdida neta por impuesto diferido no recurrente",
+      "title": "Deuda neta creciente: US$9.65B; aumento en leverage para financiar capex shale",
       "impact": "Medio",
-      "evidence": "Cargo de impuesto diferido de 1.7B en FY2025 vs. credito de 1.4B en FY2024 — volatilidad tipica IFRS en alta inflacion",
-      "context": "La perdida neta de -799M no refleja el desempeno operativo real; EBITDA de 4.9B demuestra la capacidad de generacion de caja"
+      "evidence": "Deuda neta paso de US$7.82B (FY2024) a US$9.65B (FY2025). Prestamos NC+C: US$10.58B. Net Leverage Ratio mejoro a 1.57x en Q1 2026 desde 1.95x en FY2025.",
+      "context": "El aumento de deuda financia Capex de US$5.08B/anio en Vaca Muerta con retornos esperados superiores al costo de capital. Perfil de vencimientos manejable con acceso a mercados internacionales."
     },
     {
       "level": "red",
-      "title": "Riesgo macro Argentina — regulacion y tipo de cambio",
+      "title": "Riesgo soberano Argentina: dependencia del entorno macro/regulatorio local",
       "impact": "Alto",
-      "evidence": "Mas del 95% de operaciones en Argentina; expuesto a devaluacion, controles de cambio, regulacion de precios y politica energetica",
-      "context": "El gobierno inicio liberalizacion cambiaria en abr-2025; riesgo regulatorio persistente pero decreciente bajo gobierno Milei"
+      "evidence": "51% estatal; precios locales de combustibles regulados; controles cambiarios historicos; volatilidad peso argentino. 80%+ de operaciones en Argentina.",
+      "context": "El gobierno Milei ha avanzado en desregulacion y alineacion de precios al mercado internacional, lo cual es positivo para YPF. Sin embargo, el riesgo de reversiones politicas persiste y el costo de financiamiento refleja riesgo pais."
     }
   ],
   "score": {
-    "score": 6,
+    "score": 6.6,
     "max": 10,
     "items": [
       {
-        "label": "Calidad de activos (Vaca Muerta)",
-        "score": 9,
+        "label": "Poder de fijacion de precios",
+        "score": 6,
         "max": 10
       },
       {
-        "label": "Generacion de FCF",
-        "score": 4,
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
         "max": 10
       },
       {
@@ -395,33 +407,27 @@
         "max": 10
       },
       {
-        "label": "Riesgo pais y regulatorio",
-        "score": 4,
-        "max": 10
-      },
-      {
-        "label": "Crecimiento de revenue",
+        "label": "Generacion de FCF",
         "score": 7,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "YPF ejecuta un plan estrategico centrado en el desarrollo masivo de Vaca Muerta. El objetivo es duplicar la produccion de hidrocarburos no convencionales hacia 2030, convertirse en exportador neto de LNG y consolidar posicion en energia renovable. La compania invierte en infraestructura critica para capturar el upside del recurso. Bajo el gobierno Milei se avanza hacia mayor liberalizacion del sector energetico.",
-    "ventajas": "Acceso privilegiado a Vaca Muerta como operador dominante (+50% de la produccion de la formacion). Infraestructura integrada unica en Argentina con 5 refinerias y +1,600 estaciones de servicio. Escala de operaciones y conocimiento geologico insustituible. Respaldo estatal implicito (estado posee 51%). Capacidad de ser exportador de LNG a escala mundial.",
-    "debilidades": "Alta exposicion al riesgo Argentina (inflacion, tipo de cambio, regulacion). FCF negativo durante el pico de capex. Perdida neta por cargos contables no recurrentes volatiliza los resultados. Costo de financiamiento elevado por riesgo pais. Margen neto inconsistente entre ejercicios.",
+    "estrategia": "YPF ejecuta su plan YPF 4x4 centrado en: (1) expansion agresiva de shale en Vaca Muerta para alcanzar 400 kbbl/d de petroleo en 2027, (2) desarrollo de LNG para exportacion (proyecto Argentina LNG con TotalEnergies, Shell, Pan American Energy), (3) reduccion de deuda neta y mejora de leverage, (4) descarbonizacion con meta de menos 10 kg CO2e/boe para 2030. La desinversion de activos convencionales maduros (plan de optimizacion) libera capital para shale de alto retorno.",
+    "ventajas": "Posicion dominante en Vaca Muerta (32% produccion petroleo Argentina, 27% gas), infraestructura integrada upstream-midstream-downstream, lifting cost shale de US$4.0/boe top decil mundial, refinacion con 102% utilizacion, red de distribucion de combustibles en Argentina, escala operativa unica, y respaldo estatal que facilita acceso a concesiones y financiamiento. La empresa tiene la menor curva de costos en shale no convencional fuera de EE.UU.",
+    "debilidades": "Control estatal limita flexibilidad de precios y estructura de capital; dependencia critica del entorno macro argentino (inflacion, tipo de cambio, controles); FCF estructuralmente negativo mientras capex supere OCF en fase de expansion; volatilidad en resultados contables por efectos IFRS, impuesto diferido y conversion de moneda. Margen neto altamente variable por impacto fiscal.",
     "riesgos": [
-      "Deterioro macroeconomico en Argentina — devaluacion e inflacion pueden impactar costos en pesos y repatriacion de dividendos",
-      "Cambios regulatorios en precios de combustibles o controles de exportacion que reduzcan la rentabilidad del upstream",
-      "Volatilidad en precio del Brent — la caida de 14.5% en 2025 redujo revenue; cada 10 USD/bbl impacta aprox. 500-700M en EBITDA",
-      "Demora en proyectos de LNG y exportacion — dependencia de infraestructura portuaria y oleoductos para capturar valor",
-      "Riesgo de deuda — 10.6B de deuda total con vencimientos que requieren refinanciamiento continuo a tasas elevadas"
+      "Reversión de politicas de desregulacion de precios de combustibles en Argentina ante ciclo electoral",
+      "Caida sostenida del precio del crudo Brent por debajo de US$55/bbl comprometeria retornos de inversiones en shale",
+      "Restricciones cambiarias o default soberano que limite acceso a dolares para servicio de deuda (US$10.58B)",
+      "Demoras en ejecucion del proyecto LNG para exportacion que aplace monetizacion del gas de Vaca Muerta"
     ],
-    "inversiones_estrategicas": "Proyecto Argentina LNG para exportacion (capacidad objetivo 25 MTPA para 2030+). Expansion del gasoducto Nestor Kirchner y oleoductos. Desarrollo acelerado de Vaca Muerta con 5.1B USD de capex en FY2025. Adquisicion de activos por 767M USD en FY2025 fortaleciendo portfolio upstream."
+    "inversiones_estrategicas": "Capex FY2025 de US$5.08B: 58% upstream shale, 27% downstream/refinacion, resto midstream y nuevas energias. Adquisicion del 100% de Refinor (refineria en Salta) en 2025. Plan 2026: capex estimado en rango similar, con crecimiento de produccion shale oil +20% YoY previsto. Proyecto LNG Argentina: 25 Mtpa capacidad, primer tren previsto 2029-2030, con TotalEnergies y Shell como socios."
   },
   "verdict": {
-    "status": "Mantener con Sesgo Positivo",
-    "score": "6.4/10",
+    "status": "Mantener / Comprar en debilidad",
+    "score": "6.6/10",
     "color": "yellow",
     "metrics": [
       {
@@ -429,37 +435,37 @@
         "value": "18.45B USD"
       },
       {
-        "label": "EBITDA TTM",
+        "label": "EBITDA FY25",
         "value": "4.94B USD"
       },
       {
-        "label": "FCF TTM",
-        "value": "-0.12B USD"
-      },
-      {
-        "label": "P/E Forward",
-        "value": "7.1x"
-      },
-      {
         "label": "EV/EBITDA",
-        "value": "5.2x"
+        "value": "5.5x"
+      },
+      {
+        "label": "Net Leverage",
+        "value": "1.57x (Q1 2026)"
+      },
+      {
+        "label": "Crecimiento EBITDA",
+        "value": "+16.6% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Vaca Muerta — activo de clase mundial** — YPF es el operador dominante del mayor play de shale fuera de EE.UU., con potencial de duplicar produccion hacia 2030 y convertirse en exportador de LNG.",
+        "text": "**Record en Vaca Muerta** — Shale oil +34.6% YoY en FY2025; lifting cost de US$4.0/boe convierte a Vaca Muerta en activo de clase mundial competitivo vs Permian y Marcellus.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion con descuento extremo** — EV/EBITDA 5.2x y P/E forward 7.1x implican un descuento de 30-40% vs. pares energeticos emergentes; oportunidad si la macro Argentina se normaliza.",
+        "text": "**Momentum Q1 2026** — EBITDA +28% YoY, margen 32%, FCF positivo US$871M; confirma que FY2025 fue anio de transicion y no de deterioro estructural.",
         "type": "pro"
       },
       {
-        "text": "**EBITDA creciendo +16.7% YoY** — A pesar de la perdida neta contable, el EBITDA de 4.9B demuestra que la generacion de caja operativa es solida y en mejora sostenida.",
+        "text": "**Valuacion atractiva** — EV/EBITDA de 5.5x con potencial catalisis por proyecto LNG de exportacion (Argentina LNG, 25 Mtpa) que podria transformar el perfil de crecimiento de la empresa.",
         "type": "pro"
       },
       {
-        "text": "**FCF negativo y riesgo macro Argentina** — El capex record y la exposicion al riesgo soberano son los principales limitantes; la continuacion de la liberalizacion economica es el catalizador clave.",
+        "text": "**Riesgo Argentina** — Dependencia critica del marco regulatorio y macroeconomico local. Historial de intervenciones estatales, volatilidad cambiaria y resultados contables erraticos por IFRS/fiscalidad argentina.",
         "type": "con"
       }
     ]
@@ -468,27 +474,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de 18.45B USD en FY2025 (-4.4% YoY), afectado por la caida del Brent (-14.5% en 2025). La tendencia de mediano plazo muestra crecimiento desde 13.7B en 2021, reflejando el aumento de produccion no convencional en Vaca Muerta."
+        "texto": "Revenue FY2025 de US$18.45B (-4.4% YoY) refleja desinversiones de activos convencionales en el plan de optimizacion de portafolio, no caida de demanda. Q1 2026 recupero el crecimiento con US$4.95B (+7% YoY), principalmente por precios internacionales mas altos desde marzo y record de exportaciones."
       },
       {
         "label": "Margenes",
-        "texto": "Margen bruto estable en 27.6% (similar a 27.9% en FY2024). Margen operativo de 9.4% mejora vs. 7.7% en FY2024. Margen neto negativo (-4.3%) distorsionado por cargo de impuesto diferido de 1.7B; el EBITDA margin de 26.8% refleja mejor la salud operativa."
+        "texto": "Margen bruto estable en 27.6% (FY2025). EBITDA ajustado crecio +16.6% a US$4.94B, impulsado por la sustancial reduccion del lifting cost shale (-42% YoY en Q1 2026) y record de procesamiento en refinacion. El margen neto negativo de FY2025 (-4.5%) se debe exclusivamente a un cargo de impuesto diferido de US$1.7B de naturaleza contable."
       },
       {
         "label": "Generacion de caja",
-        "texto": "OCF solido de 4.96B USD pero FCF negativo de -118M por capex de 5.1B en el pico del ciclo de inversion en Vaca Muerta. La compania invierte por encima de su generacion de caja en el corto plazo para capturar el upside del activo no convencional."
+        "texto": "OCF solido de US$4.96B en FY2025. FCF negativo (-US$118M) por capex de expansion en Vaca Muerta de US$5.08B que genera valor de largo plazo. Q1 2026 mostro FCF positivo de US$871M, validando la generacion de caja cuando el ciclo de capex se normaliza."
       },
       {
         "label": "Balance",
-        "texto": "Deuda neta de 9.65B USD con ND/EBITDA de 1.95x — manejable pero elevado. Total assets de 29.4B y equity de 11.0B. La compania mantiene 933M en caja. Los vencimientos requieren refinanciamiento regular en contexto de tasas elevadas."
+        "texto": "Deuda neta de US$9.65B al cierre de FY2025, con Net Leverage Ratio de 1.95x que mejoro a 1.57x en Q1 2026. La deuda financia capex productivo en shale. Equity de US$10.81B. El acceso al mercado de capitales internacional se mantiene con emisiones regulares de bonos."
       },
       {
         "label": "Valuacion",
-        "texto": "Con EV/EBITDA de 5.2x y P/E forward de 7.1x, YPF cotiza con un descuento significativo vs. pares energeticos emergentes (~7x EV/EBITDA, ~10x P/E). El descuento refleja el riesgo Argentina y puede ser una oportunidad ante la normalizacion macro bajo el gobierno Milei."
+        "texto": "Con EV/EBITDA de 5.5x, YPF cotiza con descuento vs peers integradas latinoamericanas (5-8x) y globales (6-10x). El descuento refleja el riesgo soberano argentino. Un re-rating hacia 6-7x EV/EBITDA implicaria precio objetivo de US$55-70, potencial upside del 22-56% desde US$44.93."
       },
       {
         "label": "Riesgos principales",
-        "texto": "(1) Riesgo macro Argentina: inflacion, tipo de cambio y regulacion; (2) precio del Brent en 68 USD/bbl en 2025 vs. 80 en 2024 impacto revenue; (3) ejecucion del plan de capex y demora en proyectos de LNG; (4) refinanciamiento de deuda a tasas elevadas."
+        "texto": "Los riesgos clave son: (1) reversiones de politica de precios de combustibles en Argentina, (2) caida de petroleo por debajo de US$55/bbl que comprometeria retornos shale, (3) restricciones cambiarias que dificulten el servicio de deuda en dolares, y (4) demoras en el proyecto LNG de exportacion que es el principal catalizador de largo plazo."
       }
     ]
   }

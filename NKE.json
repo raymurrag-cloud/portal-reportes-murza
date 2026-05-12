@@ -1,0 +1,502 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Nike Inc. (NKE) es la marca de calzado y ropa deportiva numero uno del mundo, con ingresos de $46.3B en FY2025. La empresa atraviesa un reset estrategico profundo: bajo el CEO John Donahoe (2020-2024), Nike sobre-indexo el canal directo al consumidor (DTC) y redujo sus partnerships con retailers clave, danando su reach de distribucion. En octubre 2024, el veterano Elliott Hill regreso como CEO para revertir este error. FY2025 fue el ano mas dificil en decadas: revenue -9.8% YoY, margenes operativos al 8%, y la accion en minimos historicos recientes. Sin embargo, Q3 FY2026 muestra estabilizacion del revenue, el balance es solido, y a 13.9x P/E TTM el mercado ya descuenta el peor escenario.",
+  "descripcion": "Nike Inc. disenya, desarrolla y comercializa calzado atletico, ropa y equipo deportivo globalmente. Segmentos geograficos: Norteamerica (~43% revenue), Europa/Oriente Medio/Africa (~27%), China (~14%), Asia Pacifico y Latam (~11%), mas Nike Direct (~40% DTC). Opera con Nike Brand (que incluye Jordan Brand ~$7B+) y Converse (~$2B). Ventaja competitiva central: marca construida en 50 anos con atletas icono (LeBron, Ronaldo, Woods), innovaciones de producto (Air Max, Flyknit, React) y ecosistema digital Nike Direct con 160M+ miembros. Canal wholesale (Foot Locker, Dicks Sporting Goods, JD Sports) fue reducido bajo Donahoe y se esta reactivando bajo Hill.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q3 FY26",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        44.54,
+        46.71,
+        51.22,
+        51.36,
+        46.31,
+        11.28,
+        "-9.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        5.73,
+        6.05,
+        5.07,
+        5.7,
+        3.22,
+        2.04,
+        "-43.5%"
+      ],
+      [
+        "Margen Neto",
+        "12.9%",
+        "13.0%",
+        "9.9%",
+        "11.1%",
+        "7.0%",
+        "18.1%",
+        "-4.1pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        7.68,
+        7.39,
+        6.62,
+        7.11,
+        4.48,
+        "N/D",
+        "-37.0%"
+      ],
+      [
+        "FCF (B USD)",
+        5.97,
+        4.43,
+        4.87,
+        6.62,
+        3.27,
+        "N/D",
+        "-50.6%"
+      ],
+      [
+        "EPS Diluido",
+        3.56,
+        3.75,
+        3.23,
+        3.73,
+        2.16,
+        1.38,
+        "-42.1%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        -0.48,
+        0.85,
+        1.49,
+        -0.96,
+        0.5,
+        "N/D",
+        "+1.46B"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "13.9x",
+      "signal": "green",
+      "note": "vs. sector apparel ~22x - descuento historico",
+      "precio_base": 42.39,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 3.04
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "13.2x",
+      "signal": "green",
+      "precio_base": 42.39,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 3.2
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "14.2x",
+      "signal": "yellow",
+      "precio_base": 42.39,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 4.48,
+        "shares_m": 1487.6,
+        "deuda_neta_b": 0.5
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "19.3x",
+      "signal": "yellow",
+      "precio_base": 42.39,
+      "precio_fecha": "2026-05-12",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 3.27,
+        "shares_m": 1487.6
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.11x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "24.4%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "22.3%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 44.54,
+        "utilidad": 5.73
+      },
+      {
+        "label": "FY2022",
+        "revenue": 46.71,
+        "utilidad": 6.05
+      },
+      {
+        "label": "FY2023",
+        "revenue": 51.22,
+        "utilidad": 5.07
+      },
+      {
+        "label": "FY2024",
+        "revenue": 51.36,
+        "utilidad": 5.7
+      },
+      {
+        "label": "FY2025",
+        "revenue": 46.31,
+        "utilidad": 3.22
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 44.8,
+        "operativo": 15.6,
+        "neto": 12.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 46,
+        "operativo": 14.3,
+        "neto": 13
+      },
+      {
+        "label": "FY2023",
+        "bruto": 43.5,
+        "operativo": 11.6,
+        "neto": 9.9
+      },
+      {
+        "label": "FY2024",
+        "bruto": 44.6,
+        "operativo": 12.3,
+        "neto": 11.1
+      },
+      {
+        "label": "FY2025",
+        "bruto": 42.7,
+        "operativo": 8,
+        "neto": 7
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Dividendos",
+        "value": "~$2.1B anual",
+        "nota": "$1.40/accion anualizados - 22+ anos de crecimiento consecutivo del dividendo"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "$3.0B en FY2025",
+        "nota": "Share count reducido de 1,610M (FY22) a 1,488M (FY25)"
+      },
+      {
+        "label": "Capex",
+        "value": "$0.43B en FY2025",
+        "nota": "Inversion reducida vs $0.97B en FY2023 - refleja menor expansion DTC"
+      },
+      {
+        "label": "M&A",
+        "value": "Minimo historico",
+        "nota": "Nike rara vez hace adquisiciones grandes - foco en marca organica y R&D interno"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "NKE FY2025",
+      "Sector Apparel",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "42.7%",
+        "~35-38%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "8.0%",
+        "~10-12%",
+        "Por debajo - reset en progreso"
+      ],
+      [
+        "Revenue Growth",
+        "-9.8%",
+        "~2-5%",
+        "Por debajo - efecto reset DTC"
+      ],
+      [
+        "ROIC",
+        "22.3%",
+        "~12-15%",
+        "Significativamente por encima"
+      ],
+      [
+        "P/E Forward",
+        "13.2x",
+        "~18-22x",
+        "Descuento notable vs peers"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Deterioro operativo temporal - errores estrategicos bajo Donahoe; reset bajo Hill en progreso desde oct-2024",
+    "analisis": "FY2025 fue el peor ano operativo de Nike en mas de una decada. La sobre-inversion en DTC a expensas del wholesale destruyo volumen y eficiencia. Los gastos de SGA se mantuvieron elevados ($16.1B) mientras el revenue cayo $5B, comprimiendo drasticamente los margenes. Q3 FY2026 muestra estabilizacion del revenue (+0.1% YoY) aunque la utilidad neta sigue bajo presion por restructuracion.",
+    "items": [
+      {
+        "metrica": "Revenue YoY FY2025",
+        "valor": "-9.8%",
+        "status": "bad"
+      },
+      {
+        "metrica": "Margen Bruto FY2025",
+        "valor": "42.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo FY2025",
+        "valor": "8.0%",
+        "status": "bad"
+      },
+      {
+        "metrica": "FCF YoY FY2025",
+        "valor": "-50.6%",
+        "status": "bad"
+      },
+      {
+        "metrica": "Deuda Neta/EBITDA",
+        "valor": "0.11x",
+        "status": "ok"
+      },
+      {
+        "metrica": "Rev Q3 FY2026 YoY",
+        "valor": "+0.1%",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Marca #1 global en calzado deportivo - moat intangible de 50 anos",
+      "impact": "Alto",
+      "evidence": "Brand value $30-50B+ por Brand Finance y Kantar. Dominancia en basketball (Jordan Brand ~$7B) y lifestyle. Air Max y Jordan son iconos culturales con demanda inelastica.",
+      "context": "El moat de marca protege a Nike en periodos de debilidad operativa. El consumidor global asocia aspiracion atletica con Nike - eso no cambia en 2-3 anos de mal management."
+    },
+    {
+      "level": "green",
+      "title": "Elliott Hill - CEO veterano de 32 anos revierte error estrategico",
+      "impact": "Alto",
+      "evidence": "Hill dirigio operaciones en Europa y Norteamerica por tres decadas. Regreso en oct-2024. Ya reactivando cuentas Foot Locker, reduciendo inventario, refocalizando en Jordan y running.",
+      "context": "El error de Donahoe fue estructural pero reversible. Hill conoce cada cuenta de distribucion y atleta. La ejecucion tomara 2-3 anos pero el rumbo es correcto."
+    },
+    {
+      "level": "green",
+      "title": "Balance solido + dividendo creciente por 22+ anos",
+      "impact": "Medio",
+      "evidence": "Deuda neta $0.50B vs EBITDA $4.48B (0.11x). Dividendo $1.40/accion anualizados - yield 3.3%. FCF de $3.27B en FY2025 cubre dividendos y recompras.",
+      "context": "Incluso en el peor ano operativo reciente, Nike genero $3.27B de FCF - evidencia de la fortaleza del modelo asset-light. El balance da tiempo al reset."
+    },
+    {
+      "level": "yellow",
+      "title": "Revenue decline FY2025 - reset DTC costo $5B de ingresos",
+      "impact": "Alto",
+      "evidence": "Revenue cayo de $51.4B (FY2024) a $46.3B (FY2025), -9.8%. Margen operativo colapso de 12.3% a 8.0%. Canal digital perdio momentum sin soporte del wholesale.",
+      "context": "La recuperacion depende de que retailers re-expandan cuentas Nike - proceso que toma 12-24 meses. FY2026 puede seguir bajo presion de transicion antes de normalizarse."
+    },
+    {
+      "level": "yellow",
+      "title": "China bajo presion - competencia local y sensibilidad geopolitica",
+      "impact": "Medio",
+      "evidence": "China ~14% del revenue (~$6.5B). Anta Sports y Li-Ning ganan share en value y performance. Preferencias nacionalistas de consumidores jovenes chinos presionan marcas occidentales.",
+      "context": "China fue motor de crecimiento para Nike en los 2010s. Ese rol esta en cuestion. Un deterioro adicional afectaria margenes dado el alto valor del mercado chino."
+    },
+    {
+      "level": "yellow",
+      "title": "On Running y Hoka ganan share en running premium",
+      "impact": "Medio",
+      "evidence": "On Running (ONON) y Hoka (DECK) crecen a doble digito consecutivo en running performance - segmento donde Nike antes era hegemonica. Nike perdio relevancia mientras se enfocaba en DTC y lifestyle.",
+      "context": "Este es el riesgo de largo plazo mas significativo. Nike debe recuperar credibilidad en running tecnico con Vaporfly y Alphafly. Si no lo hace, pierde al runner serio - consumidor anchor del segmento."
+    }
+  ],
+  "score": {
+    "score": 6.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 3,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Reset bajo Elliott Hill: (1) reactivar wholesale con Foot Locker, DSW, JD Sports, Nordstrom; (2) reinvertir en innovacion de calzado performance en running y basketball; (3) simplificar portfolio - menos SKUs, mas enfoque en iconos; (4) reconstruir momentum Jordan Brand en North America; (5) reducir dependencia de promociones que erosionaron la premiumness durante el reset de inventario FY2023-2024.",
+    "ventajas": "Marca global inigualable con 50 anos de construccion. Jordan Brand es negocio de $7B+ en si mismo. Contratos con los mejores atletas del mundo. Nike Direct con 160M+ miembros - data de consumidor sin rival. Pricing power historicamente demostrado. Capacidad de reinvencion como lo demostro el boom del streetwear en los 2010s.",
+    "debilidades": "Sobre-inversion en DTC bajo Donahoe destruyo relaciones con socios de distribucion criticos. SGA inflado ($16B+) con estructura de costos que no se ajusto al menor revenue. China debilidad estructural creciente. Perdida de relevancia en running tecnico frente a On Running y Hoka.",
+    "riesgos": [
+      "China puede deteriorarse mas por competencia de Anta/Li-Ning y tension geopolitica",
+      "On Running y Hoka continuan ganando share en running performance",
+      "Ejecucion del reset de Hill mas lenta de lo esperado - retailers lentos en reactivar cuentas",
+      "Recesion en EE.UU. afecta gasto discrecional en calzado premium $120-200+"
+    ],
+    "inversiones_estrategicas": "R&D en calzado performance (Vaporfly y Alphafly para running; nuevas generaciones Air Max). Plataforma digital Nike Direct con inversion en personalizacion y SNKRS App. Reinversion en marketing de marca con atletas post-reset. Infraestructura supply chain para reducir lead times y mejorar fill rates con retailers."
+  },
+  "verdict": {
+    "status": "Mantener/Considerar",
+    "score": "6.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "$46.3B"
+      },
+      {
+        "label": "Margen Bruto FY25",
+        "value": "42.7%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "5.2%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "13.2x"
+      },
+      {
+        "label": "Revenue FY25 YoY",
+        "value": "-9.8%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Marca #1 global - moat de 50 anos ->** Jordan Brand, iconos culturales y 160M+ miembros en Nike Direct son activos que no se replican. A 13.9x P/E TTM el mercado ya descuenta anos de debilidad.",
+        "type": "pro"
+      },
+      {
+        "text": "**Elliott Hill es la persona correcta ->** 32 anos en Nike, conoce cada cuenta de distribucion. Su agenda de regreso al wholesale ya muestra primeras senales positivas en Q3 FY2026.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance solido + dividendo de 22 anos ->** Deuda neta de $0.50B, FCF de $3.27B incluso en el peor ano, dividendo $1.40/accion (3.3% yield) dan tiempo al reset sin riesgo de balance.",
+        "type": "pro"
+      },
+      {
+        "text": "**Reset tarda 2-3 anos - ejecucion no garantizada ->** Recuperacion depende de retailers reexpandiendo cuentas, China no deteriorando, y Nike recuperando relevancia en running vs On/Hoka.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue FY2025 fue $46.31B (-9.8% YoY) - el peor desempeno anual en mas de una decada. La causa fue estructural: reduccion del wholesale bajo Donahoe sin compensacion del DTC. Q3 FY2026 muestra estabilizacion con $11.28B (+0.1% YoY) - primera senal de que el piso podria haberse alcanzado."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto FY2025 de 42.7% (vs 44.6% FY2024) y margen operativo al 8.0% (vs 12.3% FY2024). La presion vino de menor apalancamiento de costos fijos con revenue cayendo y SGA que no se ajusto. La recuperacion de margenes depende del apalancamiento operativo cuando el revenue suba."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $3.27B en FY2025 (vs $6.62B en FY2024) - caida del 50.6%. Sin embargo, Nike mantuvo FCF positivo incluso en este entorno, cubriendo dividendos ($2.1B) y parte de recompras ($3.0B). FCF yield actual de 5.2% sobre precio actual."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de $0.50B con EBITDA de $4.48B - ratio de 0.11x, uno de los mas conservadores del sector. Nike tiene capacidad de aguantar el periodo de transicion y continuar retornando capital. El dividendo esta seguro; las recompras se ralentizaron correctamente en FY2025."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $42.39, Nike cotiza a 13.9x P/E TTM y 13.2x P/E Forward (FY2026e) vs promedio historico de 25-35x. EV/EBITDA de 14.2x vs historico 20-30x. La tesis contrarian: si Hill recupera margenes al 10-14% en FY2027-2028, a un P/E de 20x el upside seria del 40-80% desde precios actuales."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "China puede deteriorarse mas por competencia local y tension geopolitica. On Running y Hoka siguen ganando share en running performance. El reset puede tomar mas tiempo si retailers no expanden cuentas. Una recesion en EE.UU. afecta el gasto en calzado premium. Estos riesgos justifican la posicion de mantener/considerar en vez de comprar con conviccion."
+      }
+    ]
+  }
+}

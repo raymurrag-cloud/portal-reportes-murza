@@ -1,0 +1,501 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Spotify Technology S.A. es el lider mundial en streaming de audio con 761 millones de MAUs y 293 millones de suscriptores Premium al Q1 2026. En FY2025 registro ingresos de 18.47B USD (+8.6% YoY en USD), margen neto de 12.9% y FCF de 3.09B USD, marcando la primera rentabilidad sostenida de su historia. La posicion de caja neta de 9.3B USD al Q1 2026 refuerza la solidez del balance. El reporte Q1 2026 confirma aceleracion: ingresos de 4.83B USD (+15.3% YoY), EPS diluido de 3.67 USD y MAUs creciendo 12% YoY.",
+  "descripcion": "Spotify opera en dos segmentos: Premium (89% de ingresos, suscripciones de pago) y Ad-Supported (11%, financiado por publicidad). Su modelo de negocio se basa en licenciar contenido de sellos discograficos, podcasters y editores de audiolibros, mientras monetiza via suscripciones y publicidad programatica. El moat proviene de efectos de red (mayor base de artistas y usuarios), algoritmos de descubrimiento personalizados (Discover Weekly, Daily Mixes), exclusividad de contenido y costos de cambio elevados. Con 100M+ tracks, 7M+ podcasts y audiolibros en mercados selectos, Spotify es la plataforma de audio mas diversificada del mundo.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "11.44",
+        "12.35",
+        "14.32",
+        "17.01",
+        "18.47",
+        "4.83",
+        "+8.6%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-0.04",
+        "-0.45",
+        "-0.58",
+        "1.23",
+        "2.38",
+        "0.77",
+        "+93.5%"
+      ],
+      [
+        "Margen Neto",
+        "-0.4%",
+        "-3.7%",
+        "-4.0%",
+        "7.3%",
+        "12.9%",
+        "16.0%",
+        "+5.6pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "0.12",
+        "-0.54",
+        "-0.31",
+        "1.61",
+        "2.47",
+        "N/A",
+        "+53.4%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.07",
+        "-0.20",
+        "0.73",
+        "2.48",
+        "3.09",
+        "0.89",
+        "+24.6%"
+      ],
+      [
+        "EPS Diluido (USD)",
+        "-0.20",
+        "-2.32",
+        "-2.95",
+        "5.97",
+        "11.30",
+        "3.67",
+        "+89.3%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-2.72",
+        "-2.32",
+        "-2.81",
+        "-6.41",
+        "-8.61",
+        "-9.32",
+        "N/A"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "37.1x",
+      "signal": "yellow",
+      "note": "vs. sector tech ~28x",
+      "precio_base": 419.5,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 11.3
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "22.5x",
+      "signal": "green",
+      "note": "crecimiento EPS justifica prima",
+      "precio_base": 419.5,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 18.665
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "32.1x",
+      "signal": "yellow",
+      "note": "expansion de margenes como catalizador",
+      "precio_base": 419.5,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 2.47,
+        "shares_m": 209.3,
+        "deuda_neta_b": -8.61
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "28.4x",
+      "signal": "green",
+      "note": "FCF yield 3.5% con crecimiento",
+      "precio_base": 419.5,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 3.09,
+        "shares_m": 209.3
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-3.5x",
+      "signal": "green",
+      "note": "caja neta = 9.3B USD"
+    },
+    {
+      "label": "ROE",
+      "value": "26.6%",
+      "signal": "green",
+      "note": "primera rentabilidad sostenida"
+    },
+    {
+      "label": "ROIC",
+      "value": "22.3%",
+      "signal": "green",
+      "note": "sobre capital total (equity+deuda)"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 11.44,
+        "utilidad": -0.04
+      },
+      {
+        "label": "FY2022",
+        "revenue": 12.35,
+        "utilidad": -0.45
+      },
+      {
+        "label": "FY2023",
+        "revenue": 14.32,
+        "utilidad": -0.58
+      },
+      {
+        "label": "FY2024",
+        "revenue": 17.01,
+        "utilidad": 1.23
+      },
+      {
+        "label": "FY2025",
+        "revenue": 18.47,
+        "utilidad": 2.38
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 15.5,
+        "operativo": -0.4,
+        "neto": -0.4
+      },
+      {
+        "label": "FY2022",
+        "bruto": 19.3,
+        "operativo": -5.6,
+        "neto": -3.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 25.6,
+        "operativo": -3.4,
+        "neto": -4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 30.1,
+        "operativo": 8.7,
+        "neto": 7.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 32,
+        "operativo": 12.8,
+        "neto": 12.9
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "0.47B USD",
+        "nota": "768K acciones recompradas en FY2025 (510M USD); programa de 1B USD ampliado en jul-2025"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0B USD",
+        "nota": "No paga dividendos; reinvierte en crecimiento"
+      },
+      {
+        "label": "Capex",
+        "value": "0.07B USD",
+        "nota": "Modelo asset-light; capex minimo de solo 61M EUR en FY2025"
+      },
+      {
+        "label": "M&A",
+        "value": "~0.01B USD",
+        "nota": "Actividad de adquisiciones minima; foco en crecimiento organico"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "SPOT TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "32%",
+        "~45%",
+        "Por debajo (royalties presionan margen)"
+      ],
+      [
+        "Margen Operativo",
+        "12.8%",
+        "~15%",
+        "En mejora acelerada desde negativo"
+      ],
+      [
+        "Revenue Growth",
+        "+8.6% YoY",
+        "~10%",
+        "En linea con sector media/streaming"
+      ],
+      [
+        "P/E Forward",
+        "22.5x",
+        "~25x",
+        "Prima razonable por crecimiento de margenes"
+      ],
+      [
+        "ROIC",
+        "22.3%",
+        "~18%",
+        "Por encima del sector; asset-light"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Empresa saludable en fase de expansion de margenes y primera rentabilidad sostenida",
+    "analisis": "Spotify completo una transformacion de empresa con perdidas cronicas a generador de caja con FCF de 3.09B USD en FY2025. El margen bruto escalo de 15.5% en 2021 a 32% en 2025 y continua mejorando en Q1 2026 (33%). La posicion de caja neta de 9.3B USD elimina riesgo de balance. El unico riesgo estructural es la dependencia de royalties (68% del costo) que limita expansion adicional del margen bruto.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+8.6% USD (+10% EUR)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "32.0% (+1.9pp YoY)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "12.8% (+4.1pp YoY)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "12.9% (+5.6pp YoY)",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+24.6% (3.09B USD)",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-8.61B USD (caja neta)",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Primera rentabilidad sostenida e inflexion de margenes",
+      "impact": "Alto",
+      "evidence": "Margen neto 12.9% FY2025 vs -4.0% FY2023; FCF 3.09B USD; NI 2.38B USD. Q1 2026 acelera: NI 0.77B USD (+221% YoY).",
+      "context": "Resultado de disciplina de costos (layoffs 2023-2024), optimizacion de podcasts y crecimiento de marketplace programs que reducen royalties efectivos."
+    },
+    {
+      "level": "green",
+      "title": "Crecimiento de MAU y suscriptores Premium acelerandose",
+      "impact": "Alto",
+      "evidence": "761M MAU (+12% YoY) y 293M Premium (+9% YoY) al Q1 2026. Supera guia de 689M MAU del FY2025.",
+      "context": "Expansion en mercados emergentes (LatAm, Asia) y nuevas categorias (audiobooks, video podcasts) impulsan adiccion de usuarios."
+    },
+    {
+      "level": "yellow",
+      "title": "Margen bruto acotado por estructura de royalties",
+      "impact": "Medio",
+      "evidence": "Cost of revenue = 68% de ingresos en FY2025; margen bruto 32% vs ~45%+ de plataformas de software.",
+      "context": "Negociaciones con majors (Universal, Sony, Warner) cada 3-5 anos. Programas de marketplace compensan parcialmente pero el techo de margen bruto es ~40% en largo plazo."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion exigente con EV/EBITDA de 32x",
+      "impact": "Medio",
+      "evidence": "P/E trailing 37.1x, EV/EBITDA 32.1x al precio de 419.5 USD. FCF yield de 3.5%.",
+      "context": "La valuacion esta sostenida por expansion de margenes y crecimiento de EPS (89% YoY). P/E forward 22.5x es razonable si EPS 2026e se cumple. Riesgo si el crecimiento se desacelera."
+    },
+    {
+      "level": "red",
+      "title": "Concentracion en 3 majors discograficas (poder de negociacion)",
+      "impact": "Alto",
+      "evidence": "Universal Music, Sony Music y Warner Music representan mas del 50% del contenido. Renegociacion adversa podria presionar margen bruto 3-5pp.",
+      "context": "En 2021 Universal renegocio terminos mas favorables para si. El Spotify Partner Program y la expansion de podcasts/audiolibros son estrategias de diversificacion, pero la dependencia persiste."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Spotify busca convertirse en la plataforma de audio definitiva expandiendo mas alla de la musica hacia podcasts, audiolibros y video. La estrategia de dos caras (freemium) maximiza el alcance total mientras convierte usuarios gratuitos a Premium. El modelo de marketplace (herramientas para artistas, royalties negociados) busca mejorar margenes estructuralmente. Geograficamente expande en mercados emergentes de alto crecimiento donde la penetracion de streaming es baja.",
+    "ventajas": "1) Red de 100M+ tracks y 7M+ podcasts que crea ventaja de contenido insuperable. 2) Algoritmos de descubrimiento personalizados (machine learning sobre 761M usuarios) son el moat tecnologico principal. 3) Marca global reconocida en 184 paises. 4) Costos de cambio via playlists y habitos de escucha. 5) Modelo freemium que reduce barrera de entrada y maximiza base de datos.",
+    "debilidades": "1) Margen bruto acotado por royalties (techo ~40%). 2) Dependencia de infraestructura cloud (AWS, Google Cloud). 3) Competencia de plataformas con ecosistemas integrados (Apple Music, YouTube Music, Amazon Music). 4) Deficit acumulado historico (ya casi eliminado en Q1 2026).",
+    "riesgos": [
+      "Renegociacion desfavorable de licencias con majors discograficas que presione margen bruto 3-5pp",
+      "Expansion de Apple Music/YouTube Music con integracion de hardware y bundling que erode market share",
+      "Regulacion de datos en UE (GDPR) y nuevas leyes de derechos de autor que aumenten costos de compliance",
+      "Desaceleracion del crecimiento de MAU en mercados maduros sin compensacion suficiente de emergentes"
+    ],
+    "inversiones_estrategicas": "Spotify Partner Program: herramientas para artistas con royalties flexibles que mejoran margenes. Expansion de audiobooks en select markets (500K titulos). Video podcasts como nueva categoria de engagement. Recompra de acciones de 1B USD ampliada en julio 2025. Expansion geografica continua a 184 paises."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "8/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "18.47B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "12.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "22.5x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+8.6% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Inflexion de rentabilidad** -- De perdidas cronicas a NI 2.38B USD en FY2025 y 0.77B USD en Q1 2026 (+221% YoY); el modelo de negocio demostro escala.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF maquina** -- FCF de 3.09B USD en FY2025 (+25% YoY) y 0.89B USD en Q1 2026; caja neta de 9.3B USD elimina riesgo financiero.",
+        "type": "pro"
+      },
+      {
+        "text": "**Crecimiento de usuarios acelerado** -- 761M MAU (+12% YoY) y 293M Premium (+9%); mercados emergentes y audiobooks como nuevos motores.",
+        "type": "pro"
+      },
+      {
+        "text": "**Royalties limitan margen bruto** -- Techo estructural ~35-40% en margen bruto; negociaciones con majors cada 3-5 anos son riesgo recurrente.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue FY2025 de 18.47B USD (+8.6% YoY en USD, +10% en EUR), impulsado por crecimiento de suscriptores Premium y ARPU. Q1 2026 acelera a 4.83B USD (+15.3% YoY en USD). Premium representa 89% del mix de ingresos con crecimiento estable."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El margen bruto escalo de 15.5% en FY2021 a 32.0% en FY2025 y 33.0% en Q1 2026, reflejo de optimizacion de portfolio de podcasts, marketplace programs y apalancamiento operativo. El margen operativo llego a 12.8% en FY2025 vs -3.4% en FY2023."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 3.09B USD en FY2025 y 0.89B USD en Q1 2026. OCF crece de 680M EUR en FY2023 a 2,933M EUR en FY2025. El capex es minimo (61M EUR FY2025), confirmando el modelo asset-light."
+      },
+      {
+        "label": "Balance",
+        "texto": "Posicion de caja neta de 9.3B USD al Q1 2026 (cash+STinv de 8.75B EUR, sin deuda tras repago de Exchangeable Notes en Q1 2026). Equity de 8.0B EUR. Balance solido sin riesgo de refinanciamiento."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E forward 22.5x y P/FCF 28.4x al precio de 419.5 USD. EV/EBITDA de 32.1x es exigente pero justificado por expansion de margenes y crecimiento de EPS (+89% YoY en FY2025). Si EPS 2026e de 18.67 USD se cumple, el P/E forward es atractivo vs peers."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Concentracion en 3 majors discograficas que pueden renegociar royalties al alza. Competencia de plataformas con ecosistemas integrados (Apple, Google, Amazon). Desaceleracion de MAU en mercados maduros. Riesgo regulatorio europeo en datos y derechos de autor."
+      }
+    ]
+  }
+}

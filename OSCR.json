@@ -1,7 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "Oscar Health (OSCR) es una empresa de tecnologia de salud que opera planes de seguro medico en el mercado individual bajo la ACA. En FY2025, los ingresos crecieron 27.5% a $11.7B impulsados por un crecimiento de miembros superior al mercado hasta 2.04 millones. Sin embargo, el MLR se deterioro 570pb a 87.4%, generando perdida operativa de $396M y perdida neta de $443M tras el unico ano rentable en FY2024. El FCF operativo se mantiene positivo en $1.06B y la caja neta asciende a $2.34B.",
-  "descripcion": "Oscar Health opera planes de salud individuales bajo la ACA en Estados Unidos, combinando tecnologia cloud-native propia con enfoque diferenciado en experiencia del miembro. Su plataforma +Oscar licencia capacidades de engagement, IA y analytics a proveedores y pagadores (B2B). En 2025 adquirio Lucie, IHC Specialty Benefits y Healthinsurance.org para expandirse al mercado ICHRA. El modelo es intensivo en capital regulatorio y altamente sensible al Medical Loss Ratio y al programa federal de ajuste de riesgo.",
+  "resumen": "Oscar Health es una empresa de tecnologia de salud que opera planes de salud ACA bajo un modelo full-stack, con ~2.0M de miembros en 2025 y una plataforma +Oscar para terceros. Tras anos de perdidas, logro rentabilidad operativa en 2024 ($57M de ingresos operativos), pero retrocedio en 2025 (-$396M) por expansion agresiva de membresía y presiones regulatorias. Q1 2026 representa un punto de inflexion excepcional: ingresos de $4.6B (+53% YoY), utilidad neta de $679M y EPS de $2.07, con MLR que mejoro dramaticamente al 69.5% vs ~85.6% en FY2025. El riesgo regulatorio (expiracion de eAPTCs, OBBBA) es el principal catalizador a monitorear para 2026.",
+  "descripcion": "Oscar Health opera exclusivamente en el mercado individual de seguros de salud ACA en EE.UU. Su modelo de negocio se basa en una plataforma tecnologica cloud-native que diferencia la experiencia del miembro, reduce costos medicos a traves de engagement proactivo y genera mejoras sostenidas en MLR. +Oscar monetiza esta tecnologia como servicio a terceros (0.6M vidas adicionales). En 2025, Oscar adquirio Lucie Inc. (plataforma ICHRA), IHC Specialty Benefits e Healthinsurance.org para diversificar. La ventaja competitiva central es tecnologia + experiencia del usuario + data propietaria de 13+ anos, permitiendo engagement clinico de alto valor que reduce costos medicos.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,7 +21,8 @@
         "5.86",
         "9.18",
         "11.70",
-        "+27.5%"
+        "4.65",
+        "+52.6%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -29,7 +31,8 @@
         "-0.27",
         "0.03",
         "-0.44",
-        "N/M"
+        "0.68",
+        "+146%"
       ],
       [
         "Margen Neto",
@@ -38,7 +41,8 @@
         "-4.6%",
         "0.3%",
         "-3.8%",
-        "-4.1pp"
+        "14.6%",
+        "+13.6pp"
       ],
       [
         "EBITDA (B USD)",
@@ -47,7 +51,8 @@
         "-0.20",
         "0.09",
         "-0.37",
-        "N/M"
+        "0.71",
+        "+139%"
       ],
       [
         "FCF (B USD)",
@@ -56,16 +61,18 @@
         "-0.30",
         "0.95",
         "1.06",
-        "+11.6%"
+        "2.60",
+        "+196%"
       ],
       [
         "EPS Diluido",
         "-3.18",
         "-2.87",
         "-1.22",
-        "0.11",
-        "-1.68",
-        "N/M"
+        "0.10",
+        "-1.69",
+        "2.07",
+        "+125%"
       ],
       [
         "Deuda Neta (B USD)",
@@ -74,7 +81,8 @@
         "-1.57",
         "-1.23",
         "-2.34",
-        "+90.2%"
+        "-4.37",
+        "N/A"
       ]
     ]
   },
@@ -82,65 +90,68 @@
     {
       "label": "P/E Trailing",
       "value": "N/A",
-      "signal": "red",
-      "note": "Perdida neta en FY2025",
-      "precio_base": 16.44,
-      "precio_fecha": "2026-04-20",
+      "signal": "yellow",
+      "note": "EPS TTM negativo — empresa en transicion",
+      "precio_base": 22,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": -1.68
+        "valor": -0.11
       }
     },
     {
       "label": "P/E Forward",
-      "value": "N/A",
-      "signal": "red",
-      "precio_base": 16.44,
-      "precio_fecha": "2026-04-20",
+      "value": "2.7x",
+      "signal": "green",
+      "note": "Basado en Q1 2026 anualizado ($8.28)",
+      "precio_base": 22,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 0
+        "valor": 8.28
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "N/A",
+      "value": "~78x",
       "signal": "red",
-      "precio_base": 16.44,
-      "precio_fecha": "2026-04-20",
+      "note": "EBITDA TTM aun minimo — distorsionado",
+      "precio_base": 22,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": -0.37,
-        "shares_m": 262.4,
-        "deuda_neta_b": -2.34
+        "ebitda_b": 0.037,
+        "shares_m": 329.75,
+        "deuda_neta_b": -4.37
       }
     },
     {
       "label": "P/FCF",
-      "value": "4.1x",
+      "value": "6.8x",
       "signal": "green",
-      "precio_base": 16.44,
-      "precio_fecha": "2026-04-20",
+      "note": "FCF FY2025 $1.06B / Market Cap $7.25B",
+      "precio_base": 22,
+      "precio_fecha": "2026-05-11",
       "fundamento": {
         "tipo": "p_fcf",
         "fcf_b": 1.06,
-        "shares_m": 262.4
+        "shares_m": 329.75
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "Caja Neta",
+      "value": "Caja neta",
       "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "N/A",
-      "signal": "red"
+      "value": "40.8%",
+      "signal": "green"
     },
     {
       "label": "ROIC",
-      "value": "N/A",
-      "signal": "red"
+      "value": "N/A (caja neta)",
+      "signal": "yellow"
     }
   ],
   "chart_ingresos": {
@@ -187,25 +198,25 @@
     "data": [
       {
         "label": "FY2021",
-        "bruto": 11.4,
+        "bruto": 6.4,
         "operativo": -29.3,
         "neto": -31
       },
       {
         "label": "FY2022",
-        "bruto": 14.1,
+        "bruto": 10.4,
         "operativo": -14.9,
         "neto": -15.4
       },
       {
         "label": "FY2023",
-        "bruto": 16.9,
+        "bruto": 20.8,
         "operativo": -4.1,
         "neto": -4.6
       },
       {
         "label": "FY2024",
-        "bruto": 20.2,
+        "bruto": 20.1,
         "operativo": 0.7,
         "neto": 0.3
       },
@@ -219,7 +230,7 @@
     "series": [
       {
         "key": "bruto",
-        "name": "Margen Bruto (100%-MLR)"
+        "name": "Margen Bruto"
       },
       {
         "key": "operativo",
@@ -235,98 +246,98 @@
     "items": [
       {
         "label": "Recompras",
-        "value": "~0 USD",
-        "nota": "Sin programa de recompras activo; foco en preservar capital regulatorio"
+        "value": "$0B",
+        "nota": "No realiza recompras — fase de crecimiento"
       },
       {
         "label": "Dividendos",
-        "value": "0 USD",
-        "nota": "No paga dividendos"
+        "value": "$0B",
+        "nota": "Sin dividendos — reinvierte en expansion"
       },
       {
         "label": "Capex",
-        "value": "~40M USD",
-        "nota": "Capex tecnologico bajo; modelo asset-light sobre AWS y Google Cloud"
+        "value": "$0.04B",
+        "nota": "Capex minimo — modelo asset-light (cloud)"
       },
       {
         "label": "M&A",
-        "value": "~50M USD",
-        "nota": "Adquisiciones ICHRA en 2025: Lucie, IHC Specialty Benefits, Healthinsurance.org"
+        "value": "~$0.1B",
+        "nota": "Lucie Inc., IHC Specialty Benefits, Healthinsurance.org en 2025"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "OSCR TTM",
+      "OSCR TTM/Q1",
       "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
-        "MLR (Medical Loss Ratio)",
-        "87.4%",
-        "~84-87%",
-        "Por encima del sector (desfavorable)"
+        "MLR (Q1 2026)",
+        "69.5%",
+        "~85-88%",
+        "Significativamente mejor que sector"
       ],
       [
-        "SGA Expense Ratio",
-        "17.5%",
-        "~15-18%",
-        "En linea con sector"
-      ],
-      [
-        "Revenue Growth",
-        "+27.5%",
+        "Revenue Growth (Q1 YoY)",
+        "+52.6%",
         "~5-10%",
         "Muy por encima del sector"
       ],
       [
         "P/FCF",
-        "4.1x",
-        "~15-25x",
-        "Valuacion baja refleja riesgo operativo"
+        "6.8x",
+        "~15-20x",
+        "Valuacion atractiva vs sector"
       ],
       [
-        "Margen Neto",
-        "-3.8%",
-        "~2-5%",
-        "Por debajo del sector"
+        "P/E Forward",
+        "2.7x",
+        "~15-20x",
+        "Extremadamente bajo — refleja incertidumbre"
+      ],
+      [
+        "Posicion de caja",
+        "Caja neta $4.37B",
+        "Variable",
+        "Balance mas solido que pares"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Regresion significativa en FY2025: reversion a perdidas tras el unico ano rentable (FY2024), impulsada por deterioro del MLR de 570pb y ajuste de riesgo desfavorable.",
-    "analisis": "El MLR escalo a 87.4% desde 81.7% por mayor morbilidad del mercado y ajuste de riesgo neto adverso. A pesar del fuerte crecimiento de ingresos (+27.5%) y miembros (+21.8%), la perdida operativa fue -$396M. El FCF operativo permanece positivo ($1.06B) por el float de primas; la caja neta de $2.34B otorga runway. Sin embargo, el capital estatutario en exceso cayo de $734M a $315M sobre el minimo requerido.",
+    "veredicto": "Balance solido, rentabilidad en transformacion acelerada — Q1 2026 cambia el panorama",
+    "analisis": "FY2025 mostro retroceso en margenes (-3.8% neto vs +0.3% en 2024) por expansion agresiva y presiones regulatorias. Sin embargo, Q1 2026 rompe ese patron con NI de $679M y MLR de 69.5%, sugiriendo que el modelo de eficiencia operativa se esta materializando. El balance es el punto mas fuerte: $4.8B de caja y solo $0.43B de deuda.",
     "items": [
       {
-        "metrica": "Revenue YoY",
-        "valor": "+27.5%",
+        "metrica": "Revenue Q1 YoY",
+        "valor": "+52.6%",
         "status": "ok"
       },
       {
-        "metrica": "MLR",
-        "valor": "87.4% (+570pb)",
-        "status": "bad"
+        "metrica": "Margen Bruto Q1 2026",
+        "valor": "30.5%",
+        "status": "ok"
       },
       {
-        "metrica": "Margen Operativo",
-        "valor": "-3.4%",
-        "status": "bad"
+        "metrica": "Margen Operativo Q1 2026",
+        "valor": "15.2%",
+        "status": "ok"
       },
       {
-        "metrica": "Margen Neto",
-        "valor": "-3.8%",
-        "status": "bad"
+        "metrica": "Margen Neto Q1 2026",
+        "valor": "14.6%",
+        "status": "ok"
       },
       {
-        "metrica": "FCF YoY",
-        "valor": "+$110M (+11.6%)",
+        "metrica": "FCF FY2025",
+        "valor": "$1.06B",
         "status": "ok"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "Caja Neta $2.34B",
+        "valor": "Caja neta $4.37B",
         "status": "ok"
       }
     ]
@@ -334,118 +345,131 @@
   "flags": [
     {
       "level": "green",
-      "title": "FCF positivo y caja neta robusta",
+      "title": "MLR Q1 2026 en minimo historico",
       "impact": "Alto",
-      "evidence": "FCF $1.06B en FY2025; caja neta $2.34B (cash $2.77B vs deuda $0.43B). Capital estatutario cumple requisitos regulatorios en todos los estados.",
-      "context": "El float de primas genera cash operativo real incluso con perdida contable. El runway financiero es suficiente para absorber 2-3 anos de perdidas al nivel de FY2025 sin necesidad de capital externo inmediato."
+      "evidence": "Medical Loss Ratio de 69.5% en Q1 2026 vs 85.6% en FY2025 — mejora de 16pp en un trimestre.",
+      "context": "El MLR bajo es el indicador clave de eficiencia en salud. Un MLR de 69.5% es excepcional vs el promedio del sector (~85%). Sugiere que la tecnologia de Oscar esta generando ahorro medico real y que la composicion del riesgo mejoro significativamente."
+    },
+    {
+      "level": "green",
+      "title": "Crecimiento explosivo de revenue",
+      "impact": "Alto",
+      "evidence": "Q1 2026: $4.65B (+52.6% YoY). FY2025: $11.7B (+27.5% YoY). 5 anos consecutivos de crecimiento >20%.",
+      "context": "Oscar crece a ritmos de empresa de software siendo un asegurador — la combinacion de expansion geografica, ICHRA y +Oscar como fuentes adicionales de ingresos respalda la trayectoria de crecimiento."
+    },
+    {
+      "level": "green",
+      "title": "Balance tipo fortaleza",
+      "impact": "Medio",
+      "evidence": "Caja neta de $4.37B al Q1 2026 ($4.8B caja, $0.43B deuda). OCF de $2.6B en Q1 solo.",
+      "context": "La posicion de caja permite financiar expansion sin deuda, absorber volatilidad regulatoria y potencialmente retornar capital o hacer adquisiciones estrategicas."
     },
     {
       "level": "yellow",
-      "title": "Crecimiento de miembros excepcional pero dependiente de eAPTCs",
+      "title": "Riesgo regulatorio ACA — eAPTCs y OBBBA",
       "impact": "Alto",
-      "evidence": "2.04M miembros en FY2025 (+21.8% YoY). Los eAPTCs expiraron a finales de 2025 sin renovacion confirmada para 2026. Guidance de membership 2026 no publicado al momento del filing.",
-      "context": "La expansion de membership fue parcialmente impulsada por la accesibilidad economica que generan los subsidios federales. Su expiracion podria reducir la base de miembros elegibles y presionar el modelo de crecimiento."
+      "evidence": "Los eAPTCs expiraron en 2025. El OBBBA (firmado jul-2025) limita elegibilidad de subsidios y añade verificacion. CMS reporto caida en enrollment para 2026 OEP.",
+      "context": "Oscar depende casi 100% del mercado individual ACA. Una contraccion del mercado por menor acceso a subsidios podria reducir la base de miembros en 2026-2027 y presionar el crecimiento de revenue."
+    },
+    {
+      "level": "yellow",
+      "title": "Historial de margenes negativos",
+      "impact": "Medio",
+      "evidence": "4 de los ultimos 5 anos con NI negativo. FY2025: -$443M a pesar de revenue record.",
+      "context": "Q1 2026 sugiere un cambio estructural, pero hay que verificar si la mejora del MLR se mantiene en Q2-Q4 2026, donde la utilizacion medica tipicamente es mas alta. Un solo trimestre excepcional no garantiza rentabilidad anual sostenida."
     },
     {
       "level": "red",
-      "title": "Deterioro severo del MLR — reversion a perdidas operativas",
+      "title": "Membresía en contraccion para 2026",
       "impact": "Alto",
-      "evidence": "MLR 87.4% FY2025 vs 81.7% FY2024. Gastos medicos $10.02B (+37% YoY) superaron el crecimiento de primas (+28%). Perdida operativa -$396M vs ganancia de $57M en FY2024.",
-      "context": "El deterioro refleja mayor morbilidad promedio del mercado y ajuste de riesgo neto desfavorable — factores sistemicos fuera del control de Oscar. Si el MLR no normaliza a ~82-84% en 2026, el modelo financiero se torna insostenible sin capital adicional."
-    },
-    {
-      "level": "red",
-      "title": "Incertidumbre regulatoria ACA — Program Integrity Rules y fin de eAPTCs",
-      "impact": "Alto",
-      "evidence": "CMS impuso reglas de verificacion de elegibilidad mas estrictas, OEPs mas cortos y suspension de ciertos SEPs. Litigio activo (City of Columbus vs. Kennedy) mantiene suspendidas varias disposiciones. eAPTCs expiraron en diciembre 2025.",
-      "context": "Cambios en APTCs, SEPs y procesos de elegibilidad pueden reducir materialmente el enrollment en 2026 y 2027. El entorno politico actual es adverso al mercado ACA, incrementando el riesgo normativo de largo plazo."
+      "evidence": "Oscar reporto ~2.0M miembros a dic-2025. La guia y datos CMS sugieren reduccion de membresía en 2026 OEP por expiracion de eAPTCs y cambios regulatorios.",
+      "context": "Menos miembros implica menos premiums. Si la caida de membresía supera el gain en eficiencia (MLR), los ingresos totales podrian estancarse o caer en H2 2026, afectando la tesis de rentabilidad anual."
     }
   ],
   "score": {
-    "score": 5.2,
+    "score": 7,
     "max": 10,
     "items": [
       {
         "label": "Poder de fijacion de precios",
-        "score": 5,
+        "score": 6,
         "max": 10
       },
       {
         "label": "Crecimiento de revenue",
-        "score": 8,
+        "score": 9,
         "max": 10
       },
       {
         "label": "Calidad de margenes",
-        "score": 3,
+        "score": 6,
         "max": 10
       },
       {
         "label": "Solidez del balance",
-        "score": 7,
+        "score": 9,
         "max": 10
       },
       {
         "label": "Generacion de FCF",
-        "score": 3,
+        "score": 7,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Oscar Health busca escalar su plataforma tecnologica de seguros de salud en el mercado ACA, diferenciandose por experiencia del miembro y tecnologia propia. Simultaneamente monetiza su IP via +Oscar (B2B) y diversifica hacia ICHRA con las adquisiciones de 2025. El modelo apunta a la rentabilidad sostenida via escala: a mayor membresia, mejor spread entre primas y costos fijos de tecnologia y SG&A.",
-    "ventajas": "Plataforma tecnologica cloud-native diferenciada construida en 13 anos. NPS superior a competidores tradicionales. Base de datos enriquecida de comportamiento de salud de 2M+ miembros. Posicion de caja neta que da flexibilidad financiera. Crecimiento organico de miembros consistentemente por encima del mercado. Opcion de valor B2B via +Oscar aun no valorada por el mercado.",
-    "debilidades": "Alta sensibilidad al MLR y al programa federal de ajuste de riesgo. Sin poder directo de fijacion de precios (sujeto a regulacion ACA). Dependencia de subsidios gubernamentales (eAPTCs). Capital estatutario con menor excedente tras FY2025. Historial de perdidas recurrente con solo un ano de utilidad (FY2024).",
+    "estrategia": "Oscar compite en el mercado individual ACA con un modelo tech-first: plataforma cloud propia, engagement digital del miembro, y navegacion de la atencion medica para reducir utilizacion innecesaria. La estrategia es escalar membresía hasta superar el umbral de rentabilidad operativa sostenida, monetizar la plataforma via +Oscar para terceros, y diversificar hacia ICHRA. Las adquisiciones de 2025 (Lucie, IHC, Healthinsurance.org) refuerzan el ecosistema de distribucion sin depender exclusivamente del marketplace federal.",
+    "ventajas": "1) Plataforma tecnologica propia (cloud-native) que reduce costos operativos vs aseguradores tradicionales; 2) 13+ anos de datos de miembros que alimentan algoritmos de engagement clinico; 3) Marca reconocida en el mercado individual con NPS elevado; 4) +Oscar como revenue stream incremental con ~0.6M vidas cliente; 5) Balance solido ($4.8B caja) que permite absorber volatilidad regulatoria y financiar crecimiento.",
+    "debilidades": "1) Concentracion de ~100% en un solo canal (mercado individual ACA) — alta dependencia regulatoria; 2) Historial de 4/5 anos con perdidas — profitability anual sostenida aun no probada; 3) Sin poder de fijacion de precios real (premiums aprobados por reguladores estatales y federales); 4) Escala aun pequena vs UnitedHealth ($372B rev), Humana, Elevance; 5) Modelo EBITDA historicamente negativo hace valuacion tradicional dificil.",
     "riesgos": [
-      "Expiracion de eAPTCs sin renovacion: potencial contraccion de 20-30% en membership accesible en 2026",
-      "Persistencia del MLR elevado sobre 85%: si no normaliza, la perdida operativa se profundiza y el capital estatutario se erosiona",
-      "Cambios regulatorios CMS (Program Integrity Rules, OEPs cortos): reduccion estructural del enrollment",
-      "Necesidad de inyecciones de capital a subsidiarias si el capital estatutario cae por debajo del minimo requerido",
-      "Competencia de UnitedHealth (Medicaid), Centene y Molina con mayor escala en el mercado ACA"
+      "Expiracion de eAPTCs y OBBBA: reduccion del mercado direccionable podria disminuir membresía en 2026-2027 y presionar revenue",
+      "Volatilidad del MLR: mejora del Q1 2026 podria revertirse en trimestres de mayor utilizacion — H2 suele tener mayor consumo medico",
+      "Cambios en risk adjustment: el programa federal de risk adjustment puede generar transferencias negativas inesperadas que impacten el MLR reportado",
+      "Competencia de incumbentes tech (UnitedHealth/Optum, Cigna) que estan digitalizando sus operaciones y pueden replicar el modelo de Oscar con mayor escala"
     ],
-    "inversiones_estrategicas": "Adquisiciones 2025 para ICHRA: Lucie (plataforma direct enrollment), IHC Specialty Benefits (brokerage), Healthinsurance.org (educacion). Desarrollo de +Oscar como plataforma B2B de tecnologia de salud con Campaign Builder e IA. Infraestructura cloud distribuida en AWS multi-zona para reducir costos IT a largo plazo."
+    "inversiones_estrategicas": "Adquisicion de Lucie Inc. (plataforma ICHRA CMS-aprobada) posiciona a Oscar en el mercado de employer-sponsored via ICHRA, que podria ser un canal de crecimiento significativo. Healthinsurance.org aporta generacion de leads directos. IHC Specialty Benefits diversifica a productos suplementarios. El Capex es minimo ($40M en FY2025) — la inversion es principalmente en talento de ingenieria y crecimiento organico de la plataforma."
   },
   "verdict": {
-    "status": "Especulativa — Alto Riesgo",
-    "score": "5.2/10",
-    "color": "red",
+    "status": "Mantener / Especulativo",
+    "score": "7.0/10",
+    "color": "yellow",
     "metrics": [
       {
-        "label": "Revenue TTM",
-        "value": "11.70B USD"
+        "label": "Revenue Q1 2026",
+        "value": "$4.65B"
       },
       {
-        "label": "Margen Neto",
-        "value": "-3.8%"
-      },
-      {
-        "label": "FCF Yield",
-        "value": "24.6%"
+        "label": "Margen Neto Q1",
+        "value": "14.6%"
       },
       {
         "label": "P/FCF",
-        "value": "4.1x"
+        "value": "6.8x"
       },
       {
-        "label": "Crecimiento Rev.",
-        "value": "+27.5% YoY"
+        "label": "P/E Forward",
+        "value": "2.7x"
+      },
+      {
+        "label": "Crecimiento Rev. Q1",
+        "value": "+52.6% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Crecimiento explosivo de revenue** — Revenue crecio de $1.8B en 2021 a $11.7B en 2025 (CAGR ~58%), con base de miembros de 2.04M. La plataforma tecnologica escala con costos marginales decrecientes.",
+        "text": "**MLR excepcional Q1 2026 ->** El MLR de 69.5% es 16pp mejor que el promedio de FY2025 y supera a todos los aseguradores ACA grandes. Si se sostiene, Oscar podria generar $1.5-2B+ de NI anualizado — justificando una revaluacion significativa del precio actual de $22.",
         "type": "pro"
       },
       {
-        "text": "**FCF positivo y caja neta de $2.34B** — A pesar de perdidas contables, el FCF fue $1.06B por el float de primas. La caja neta otorga runway de 5+ anos sin necesidad de financiamiento externo inmediato.",
+        "text": "**Valuacion de ganga vs FCF ->** P/FCF de 6.8x y P/E Forward de 2.7x son anomalamente bajos. El mercado descuenta la incertidumbre regulatoria ACA, pero si la rentabilidad Q1 es estructural, Oscar esta cotizando con margen de seguridad amplio.",
         "type": "pro"
       },
       {
-        "text": "**Opcionalidad B2B via +Oscar** — La monetizacion de tecnologia a proveedores y pagadores (Campaign Builder, EDE) diversifica el modelo mas alla del riesgo de seguros puro y no esta valorada por el mercado.",
+        "text": "**Balance tipo fortaleza ->** Caja neta de $4.37B con OCF de $2.6B solo en Q1 2026. Esto elimina cualquier riesgo de ejecucion por falta de liquidez y da runway para absorber cambios regulatorios adversos.",
         "type": "pro"
       },
       {
-        "text": "**Deterioro del MLR y riesgo regulatorio critico** — El MLR de 87.4% (+570pb) revirtio la rentabilidad de FY2024. La expiracion de eAPTCs y los cambios de CMS amenazan la base de miembros en 2026. Estos factores son en gran parte exogenos y dificultan la proyeccion de retorno a la rentabilidad.",
+        "text": "**Riesgo regulatorio existencial ->** La expiracion de eAPTCs, el OBBBA y las nuevas reglas de elegibilidad CMS podrian reducir el mercado total direccionable del ACA en 2026-2027. Una membresía menor implica menos premiums y potencial deterioro del MLR por cambios en mix de riesgo.",
         "type": "con"
       }
     ]
@@ -454,27 +478,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $11.7B en FY2025 representa crecimiento de 27.5% YoY, impulsado por 21.8% mas miembros (2.04M). CAGR de 4 anos de ~58%, excepcional para el sector de seguros de salud. El pipeline 2026 enfrenta vientos en contra por la expiracion de eAPTCs y cambios en enrollment."
+        "texto": "Oscar crece a tasas extraordinarias: +52.6% YoY en Q1 2026 ($4.65B) y CAGR de ~58% desde 2021. La expansion geografica, el crecimiento de membresía y el launch de ICHRA soportan el crecimiento de largo plazo, aunque la contraccion del mercado ACA en 2026 OEP podria moderar el ritmo en H2 2026."
       },
       {
         "label": "Margenes",
-        "texto": "MLR de 87.4% en FY2025 vs 81.7% en 2024 es la principal preocupacion operativa. Margen operativo de -3.4% y margen neto de -3.8%. La mejora tendencial de 2021-2024 fue interrumpida por mayor morbilidad de mercado y ajuste de riesgo adverso. El SG&A ratio mejoro a 17.5% desde 19.1%, demostrando apalancamiento operativo en la base de costos fijos."
+        "texto": "Q1 2026 es un punto de inflexion critico: margen neto de 14.6% y MLR de 69.5% vs margenes negativos historicos. La mejora refleja mejor composicion de riesgo de la membresía y ganancias de eficiencia tecnologica. El reto es validar esta mejora en Q2-Q4 2026, donde la utilizacion medica es estacionalmente mayor."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de $1.06B (+11.6% YoY) es el dato mas constructivo del ejercicio y contradice la narrativa de deterioro puro. El float de primas genera liquidez operativa real incluso con perdida contable. OCF de $1.09B confirma la calidad del modelo de caja. FCF yield de 24.6% es extraordinariamente alto para cualquier sector."
+        "texto": "FCF de $2.6B en Q1 2026 solo (OCF $2.62B - Capex ~$17M) es excepcionalmente alto, impulsado en parte por el ciclo de cobro de premiums. El FCF anualizado sera menor pero sigue siendo una posicion de caja muy solida para una empresa de $7.25B de market cap."
       },
       {
         "label": "Balance",
-        "texto": "Caja neta de $2.34B (cash $2.77B vs deuda LT $0.43B). Capital estatutario combinado de $1.0B cumple requisitos regulatorios en todos los estados. El exceso sobre el minimo requerido bajo de $734M a $315M en FY2025, senalizando menor colchon ante escenarios adversos adicionales."
+        "texto": "Caja neta de $4.37B — el balance es el activo mas solido de Oscar. Sin deuda relevante ($0.43B), la empresa puede financiar expansion, soportar regulacion adversa y potencialmente realizar recompras o dividendos en el futuro. No hay riesgo de solvencia."
       },
       {
         "label": "Valuacion",
-        "texto": "A $16.44, OSCR cotiza a 4.1x P/FCF — extraordinariamente bajo si el FCF es sostenible. EV de $1.97B vs revenue de $11.7B implica EV/Revenue de 0.17x. P/E no aplica por perdidas. La valuacion descuenta alta probabilidad de deterioro adicional del MLR y contraccion de membership en 2026. Solo atractiva para inversores con tolerancia alta al riesgo."
+        "texto": "La accion cotiza a $22 — un 75-80% por debajo de sus maximos historicos. P/E Forward de 2.7x (si Q1 se repite) y P/FCF de 6.8x son multiples que no reflejan la calidad del Q1 2026. El descuento se debe al riesgo regulatorio y al historial de perdidas. Es una valuacion de opcionalidad: si la rentabilidad se confirma en 2-3 trimestres, el upside es significativo."
       },
       {
         "label": "Riesgos principales",
-        "texto": "1) Expiracion eAPTCs sin renovacion amenaza el crecimiento de membership en 2026. 2) Si el MLR no normaliza a ~82-84%, las perdidas operativas se profundizan y el capital estatutario se erosiona hacia el minimo regulatorio. 3) Cambios de CMS (Program Integrity Rules, OEPs cortos) pueden limitar enrollment estructuralmente. 4) Dependencia del ajuste de riesgo federal introduce volatilidad fuera del control de la empresa."
+        "texto": "El riesgo numero uno es la contraccion del mercado ACA por el OBBBA y la expiracion de eAPTCs, que reduciria membresía y presionaria revenue en 2026-2027. El segundo riesgo es la reversibilidad de la mejora del MLR: si la utilizacion medica de H2 2026 es alta, el margen neto anual podria volver a terreno negativo. Tercero: cambios en risk adjustment federales podrian generar transferencias negativas inesperadas."
       }
     ]
   }

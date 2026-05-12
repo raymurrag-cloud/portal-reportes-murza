@@ -1,61 +1,136 @@
 {
-  "resumen": "Amazon (AMZN) cerro FY2025 con resultados excepcionales: revenue de $716.9B (+12% YoY), utilidad neta de $77.7B (+29.7% YoY) y EBITDA de $145.7B, impulsados por la aceleracion de AWS (+20% YoY a $128.7B) y la expansion del margen operativo consolidado a 11.2%. El balance es solido con posicion neta de caja positiva (-$21.2B deuda neta) y ROE de 18.9%, aunque el FCF se comprime significativamente a $7.7B por un CAPEX record de $131.8B orientado a infraestructura de IA. La empresa se posiciona como el lider dominante del cloud y el e-commerce global, con AWS como el motor de rentabilidad que subsidia la expansion de nuevos mercados.",
-  "descripcion": "Amazon.com, Inc. opera un ecosistema de negocio diversificado que abarca tres segmentos principales: e-commerce (North America e International), cloud computing (AWS) y publicidad digital. Fundada en 1994 por Jeff Bezos, cotiza en NASDAQ bajo el ticker AMZN y es una de las empresas de mayor capitalizacion bursatil del mundo. Genera ingresos a traves de ventas directas al consumidor, marketplace de terceros con comisiones, suscripciones (Prime), servicios cloud de alto margen (AWS), publicidad digital y streaming. Su modelo de negocio se basa en escala masiva, reinversion agresiva de capital y efectos de red que crean barreras de entrada elevadas en cada vertical donde compite.",
+  "parrafos_gratis": 14,
+  "resumen": "Amazon (AMZN) reporto resultados excepcionales en Q1 2026: revenue de $181.52B (+16.6% YoY), utilidad neta de $30.26B (+76.6% YoY) y EPS diluido de $2.78 (+74.8% YoY), superando ampliamente el consenso. AWS acelero a $37.59B (+28% YoY) marcando su mayor crecimiento en 6 trimestres, mientras que Advertising alcanzo $17.24B (+24% YoY). El margen operativo se expande a 13.1% (vs. 11.8% Q1 2025) reflejando el mayor peso de segmentos de alto margen. El FCF trimestral es negativo (-$18.17B) por el CAPEX record de $44.2B orientado a infraestructura de IA, pero la posicion de caja asciende a $101.82B brindando amplia flexibilidad financiera. Amazon se consolida como el lider indiscutido del cloud e IA empresarial.",
+  "descripcion": "Amazon.com, Inc. opera un ecosistema de negocio diversificado con tres motores: e-commerce (North America e International), cloud computing (AWS) y publicidad digital. Fundada en 1994, cotiza en NASDAQ bajo AMZN. AWS es el segmento de mayor margen y crece a tasas de 28% YoY en Q1 2026, impulsado por la adopcion masiva de AI workloads. La publicidad digital supera $17B trimestral con margenes comparables al cloud. El e-commerce North America opera con margenes crecientes por eficiencias de fulfillment y el efecto positivo del mix. El modelo integrado de hardware propio (Trainium, Graviton), software (Bedrock, modelos Nova) e infraestructura crea una ventaja competitiva estructural en IA empresarial.",
   "tabla": {
-    "headers": ["Metrica", "2021", "2022", "2023", "2024", "2025", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", "469.8", "514.0", "574.8", "638.0", "716.9", "+12.4%"],
-      ["Utilidad Neta ($B)", "33.4", "-2.7", "30.4", "59.2", "77.7", "+31.1%"],
-      ["Margen Neto (%)", "7.1%", "-0.5%", "5.3%", "9.3%", "10.9%", "+1.6pp"],
-      ["EBITDA ($B)", "59.3", "54.2", "85.5", "121.4", "145.7", "+20.0%"],
-      ["FCF ($B)", "-14.7", "-16.9", "32.2", "32.9", "7.7", "-76.6%"],
-      ["EPS (GAAP)", "$3.24", "-$0.27", "$2.90", "$5.53", "$7.17", "+29.7%"],
-      ["Deuda Neta ($B)", "12.5", "13.3", "-15.1", "-26.2", "-21.2", "N/A"]
+      [
+        "Revenue (B USD)",
+        "469.8",
+        "514.0",
+        "574.8",
+        "638.0",
+        "716.9",
+        "181.5",
+        "+16.6%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "33.4",
+        "-2.7",
+        "30.4",
+        "59.2",
+        "77.7",
+        "30.3",
+        "+76.6%"
+      ],
+      [
+        "Margen Neto",
+        "7.1%",
+        "-0.5%",
+        "5.3%",
+        "9.3%",
+        "10.8%",
+        "16.7%",
+        "+5.4pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "59.3",
+        "54.2",
+        "85.5",
+        "121.4",
+        "145.7",
+        "42.8",
+        "+24.7%"
+      ],
+      [
+        "FCF (B USD)",
+        "-9.1",
+        "-16.9",
+        "32.2",
+        "32.9",
+        "7.7",
+        "-18.2",
+        "N/A"
+      ],
+      [
+        "EPS Diluido",
+        "3.24",
+        "-0.27",
+        "2.90",
+        "5.53",
+        "7.17",
+        "2.78",
+        "+74.8%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "14.3",
+        "16.7",
+        "-6.2",
+        "-20.8",
+        "-18.0",
+        "20.8",
+        "N/A"
+      ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "27.3x",
-      "change": "vs. ~60x hace 2 anos",
-      "signal": "green",
-      "note": "vs. sector tech ~28x",
-      "precio_base": 196.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "eps_ttm", "valor": 7.17 }
+      "label": "P/E Trailing",
+      "value": "31.1x",
+      "signal": "yellow",
+      "note": "EPS TTM $8.36 (Q2-Q4 2025 + Q1 2026)",
+      "precio_base": 259.8,
+      "precio_fecha": "Abr-2026",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 8.36
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "24.8x",
+      "value": "21.7x",
       "signal": "green",
-      "note": "EPS FY2026 consenso ~$7.90",
-      "precio_base": 196.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "eps_fwd", "valor": 7.90 }
+      "note": "EPS FY2026 consenso ~$12.00",
+      "precio_base": 259.8,
+      "precio_fecha": "Abr-2026",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 12
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "14.4x",
-      "signal": "green",
-      "note": "EV ~$2.1T / EBITDA $145.7B"
+      "value": "18.5x",
+      "signal": "yellow",
+      "note": "EV ~$2.85T / EBITDA TTM $154.2B"
     },
     {
       "label": "P/FCF",
-      "value": "275x",
+      "value": "N/A",
       "signal": "yellow",
-      "note": "FCF comprimido por CAPEX AI $131.8B",
-      "precio_base": 196.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "p_fcf", "fcf_b": 7.7, "shares_m": 10827 }
+      "note": "FCF TTM negativo por CAPEX AI record"
     },
     {
       "label": "Deuda/EBITDA",
-      "value": "0.45x",
+      "value": "0.80x",
       "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "18.9%",
+      "value": "31.9%",
       "signal": "green"
     },
     {
@@ -67,29 +142,100 @@
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2021", "revenue": 469.8, "utilidad": 33.4 },
-      { "label": "2022", "revenue": 514.0, "utilidad": -2.7 },
-      { "label": "2023", "revenue": 574.8, "utilidad": 30.4 },
-      { "label": "2024", "revenue": 638.0, "utilidad": 59.2 },
-      { "label": "2025", "revenue": 716.9, "utilidad": 77.7 }
+      {
+        "label": "FY2021",
+        "revenue": 469.8,
+        "utilidad": 33.4
+      },
+      {
+        "label": "FY2022",
+        "revenue": 514,
+        "utilidad": -2.7
+      },
+      {
+        "label": "FY2023",
+        "revenue": 574.8,
+        "utilidad": 30.4
+      },
+      {
+        "label": "FY2024",
+        "revenue": 638,
+        "utilidad": 59.2
+      },
+      {
+        "label": "FY2025",
+        "revenue": 716.9,
+        "utilidad": 77.7
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 181.5,
+        "utilidad": 30.3
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "2021", "bruto": 42.0, "operativo": 5.3, "neto": 7.1 },
-      { "label": "2022", "bruto": 43.8, "operativo": 2.4, "neto": -0.5 },
-      { "label": "2023", "bruto": 47.0, "operativo": 6.4, "neto": 5.3 },
-      { "label": "2024", "bruto": 48.9, "operativo": 10.8, "neto": 9.3 },
-      { "label": "2025", "bruto": 50.3, "operativo": 11.2, "neto": 10.9 }
+      {
+        "label": "FY2021",
+        "bruto": 42,
+        "operativo": 5.3,
+        "neto": 7.1
+      },
+      {
+        "label": "FY2022",
+        "bruto": 43.8,
+        "operativo": 2.4,
+        "neto": -0.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 47,
+        "operativo": 6.4,
+        "neto": 5.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 48.9,
+        "operativo": 10.8,
+        "neto": 9.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": 50.3,
+        "operativo": 11.2,
+        "neto": 10.8
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 51.5,
+        "operativo": 13.1,
+        "neto": 16.7
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Bruto" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
@@ -97,181 +243,286 @@
       {
         "label": "Recompra de acciones",
         "value": "$0B",
-        "nota": "Amazon no realizo recompras en FY2025. Historial minimo de buybacks vs. pares."
+        "nota": "Amazon no realizo recompras significativas en FY2025 ni Q1 2026. Historial minimo de buybacks vs. pares del sector tech."
       },
       {
         "label": "Dividendos",
         "value": "$0B",
-        "nota": "Amazon no paga dividendos. Toda la caja se reinvierte en crecimiento."
+        "nota": "Amazon no paga dividendos. Toda la caja se reinvierte en crecimiento organico e infraestructura."
       },
       {
         "label": "Capex total",
-        "value": "$131.8B",
-        "nota": "18.4% del revenue. Mayoria orientada a infraestructura AWS e IA (chips Trainium/Graviton, data centers)."
+        "value": "$44.2B (Q1 2026)",
+        "nota": "CAPEX record de $44.2B en Q1 2026 solo, equivalente al 24.4% del revenue trimestral. Orientado a infraestructura AWS, data centers de IA y chips Trainium/Graviton. CAPEX guiado para FY2026: ~$200B."
       },
       {
         "label": "M&A / Adquisiciones",
         "value": "Menor escala",
-        "nota": "Adquisicion de Perceive (IA edge computing) y MX Player (streaming India) en 2024. Acuerdo iRobot cancelado ($94M breakup fee recibido)."
+        "nota": "Enfoque en inversion organica en infraestructura de IA. Inversion en Anthropic ($4B+) asegura acceso preferencial a modelos Claude para AWS Bedrock."
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "AMZN FY25", "Sector Cloud/Tech ref.", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "AMZN Q1 2026",
+      "Sector Cloud/Tech ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Gross margin", "50.3%", "~45-55%", "En linea con sector"],
-      ["Margen operativo", "11.2%", "~8-12%", "Por encima del sector"],
-      ["Revenue growth YoY", "+12.4%", "~8-10%", "Por encima del sector"],
-      ["EV/EBITDA", "14.4x", "~15-20x", "Por encima del sector (descuento)"],
-      ["ROIC", "14.0%", "~10-12%", "Por encima del sector"],
-      ["Deuda/EBITDA", "0.45x", "~1-2x", "Por encima del sector"]
+      [
+        "Gross Margin",
+        "51.5%",
+        "~45-55%",
+        "En linea con sector"
+      ],
+      [
+        "Margen Operativo",
+        "13.1%",
+        "~8-12%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth YoY",
+        "+16.6%",
+        "~8-12%",
+        "Por encima del sector"
+      ],
+      [
+        "EV/EBITDA",
+        "18.5x",
+        "~15-22x",
+        "En linea con sector"
+      ],
+      [
+        "ROIC",
+        "14.0%",
+        "~10-12%",
+        "Por encima del sector"
+      ],
+      [
+        "Deuda/EBITDA",
+        "0.80x",
+        "~1-2x",
+        "Por encima del sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo significativo. El FCF negativo es transitorio por CAPEX estrategico.",
-    "analisis": "Amazon muestra mejora sostenida en margenes operativos y netos durante 2023-2025, con EBITDA creciendo 20% YoY. La unica metrica que retrocede es el FCF (-76.6% YoY) pero se explica por la decision estrategica de invertir $131.8B en infraestructura de IA y AWS, no por deterioro del negocio. El balance permanece solido con posicion neta de caja y deuda en minimos relativos vs. EBITDA.",
+    "veredicto": "No se detecta deterioro operativo. La expansion de margenes en Q1 2026 es la mas fuerte en la historia reciente de la empresa.",
+    "analisis": "Amazon Q1 2026 muestra aceleracion en todas las metricas operativas: revenue +16.6%, margen operativo 13.1% (nuevo maximo trimestral), EPS +74.8% YoY. La unica metrica negativa es el FCF (-$18.17B) que se explica por la decision estrategica de invertir $44.2B en CAPEX de IA en un solo trimestre, no por deterioro del negocio subyacente.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+12.4%", "status": "ok" },
-      { "metrica": "Margen operativo", "valor": "11.2% vs. 10.8%", "status": "ok" },
-      { "metrica": "Margen neto", "valor": "10.9% vs. 9.3%", "status": "ok" },
-      { "metrica": "EBITDA YoY", "valor": "+20.0%", "status": "ok" },
-      { "metrica": "FCF", "valor": "$7.7B vs. $32.9B", "status": "warn", "nota": "Compresion por CAPEX AI record $131.8B. No indica deterioro operativo." },
-      { "metrica": "Deuda LT", "valor": "$65.6B", "status": "ok" },
-      { "metrica": "EPS diluido", "valor": "$7.17 vs. $5.53", "status": "ok" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+16.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "51.5% vs. ~50.8% Q1 2025",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "13.1% vs. 11.8% Q1 2025",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "16.7% vs. 11.0% Q1 2025",
+        "status": "ok"
+      },
+      {
+        "metrica": "EPS YoY",
+        "valor": "+74.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "-$18.17B vs. -$8.0B Q1 2025",
+        "status": "warn",
+        "nota": "Compresion por CAPEX AI record $44.2B en un trimestre. No indica deterioro operativo."
+      },
+      {
+        "metrica": "Deuda LT",
+        "valor": "$122.6B (incluye leases)",
+        "status": "warn",
+        "nota": "Incremento por financiamiento de infraestructura. Caja $101.8B compensa parcialmente."
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "AWS acelera a 20% YoY con backlog de $244B",
+      "title": "AWS acelera a +28% YoY — mayor crecimiento en 6 trimestres",
       "impact": "Alto",
-      "evidence": "AWS revenue $128.7B FY2025 (+20% YoY) y operating income $45.6B con margen ~35%. Backlog +40% YoY.",
-      "context": "AWS es el motor de rentabilidad de Amazon y captura la ola de IA empresarial. La visibilidad de ingresos a 2 anos es excepcional."
+      "evidence": "AWS revenue $37.59B en Q1 2026 (+28% YoY vs. +20% en FY2025). Operating income AWS estimado con margen >40%.",
+      "context": "La aceleracion de AWS confirma que la inversion de $131.8B en CAPEX FY2025 genera retornos. La ola de AI workloads empresariales favorece a AWS por integracion con Bedrock, Trainium y modelos Claude."
     },
     {
       "level": "green",
-      "title": "Expansion de margenes sostenida: operativo al 11.2%",
+      "title": "Advertising +24% YoY — tercer motor de alto margen",
       "impact": "Alto",
-      "evidence": "Margen operativo paso de 2.4% (2022) a 11.2% (2025). Margen bruto en maximo historico de 50.3%.",
-      "context": "La mejora estructural de margenes refleja el mayor peso de AWS y publicidad de alto margen dentro del mix de ingresos."
+      "evidence": "Advertising Services $17.24B en Q1 2026 (+24% YoY). Crece por encima de Meta (+22%) y Alphabet (+10%) en el trimestre.",
+      "context": "La publicidad de Amazon opera con margenes comparables a AWS (~50%+) y se beneficia de datos de primera parte de 300M+ clientes. Su crecimiento sostenido diversifica el mix de rentabilidad."
     },
     {
       "level": "green",
-      "title": "Balance solido con posicion neta de caja positiva",
-      "impact": "Medio",
-      "evidence": "Caja $86.8B vs. deuda LT $65.6B = posicion neta de caja +$21.2B. Deuda/EBITDA en 0.45x.",
-      "context": "Amazon tiene capacidad financiera plena para sostener el CAPEX de $200B planificado para 2026 sin riesgo de balance."
+      "title": "Margen operativo 13.1% — nuevo maximo historico trimestral",
+      "impact": "Alto",
+      "evidence": "Margen operativo de 13.1% en Q1 2026 vs. 11.8% en Q1 2025. Margen bruto de 51.5%.",
+      "context": "La expansion refleja el mayor peso de AWS y publicidad (>50% del beneficio operativo). La tendencia es estructuralmente positiva y continuara en 2026-2027."
     },
     {
       "level": "green",
-      "title": "Publicidad digital consolidada como tercer motor de ingresos",
-      "impact": "Medio",
-      "evidence": "Advertising services supera $56B en FY2024, creciendo a doble digito sostenido dentro del segmento North America.",
-      "context": "La publicidad opera con margenes similares a AWS y diversifica el mix de rentabilidad mas alla del cloud."
+      "title": "EPS +74.8% YoY — calidad de ganancias excepcional",
+      "impact": "Alto",
+      "evidence": "EPS diluido $2.78 en Q1 2026 vs. $1.59 en Q1 2025. Utilidad neta $30.26B (+76.6% YoY).",
+      "context": "El crecimiento de EPS supera ampliamente el consenso de analistas (~$1.87). El P/E Forward de 21.7x basado en EPS FY2026 estimado de $12 es atractivo para el nivel de crecimiento."
     },
     {
       "level": "yellow",
-      "title": "FCF comprimido a $7.7B por CAPEX record de $131.8B",
+      "title": "FCF negativo por CAPEX record de $44.2B en Q1 2026",
       "impact": "Medio",
-      "evidence": "FCF cayo de $32.9B (FY2024) a $7.7B (FY2025). Capex anunciado para 2026: ~$200B.",
-      "context": "El P/FCF de 275x es extremo y la recuperacion del FCF depende de que los retornos de la inversion en IA se materialicen en 2026-2028."
+      "evidence": "FCF de -$18.17B en Q1 2026 (OCF $26.03B - CAPEX $44.2B). FCF TTM negativo (-$2.5B).",
+      "context": "Amazon tiene caja de $101.82B para financiar el programa sin riesgo de balance a corto plazo. La recuperacion del FCF depende de que los retornos de la inversion en IA se materialicen en 2027-2028."
     },
     {
       "level": "yellow",
-      "title": "CAPEX de $200B para 2026 requiere ejecucion impecable",
+      "title": "CAPEX de ~$200B en FY2026 — la mayor apuesta en historia corporativa",
       "impact": "Medio",
-      "evidence": "Guidance de $200B en capex para FY2026, equivalente al 28% del revenue actual. Es el mayor programa de inversion en la historia de la empresa.",
-      "context": "Si la demanda de AI workloads no crece al ritmo esperado, el exceso de capacidad podria comprimir retornos y destruir valor."
+      "evidence": "Con $44.2B solo en Q1 2026, el run rate anualizado supera $176B. Guia de management apunta a ~$200B para el ano completo.",
+      "context": "Si la demanda de AI workloads no crece al ritmo esperado, el exceso de capacidad podria comprimir retornos por 3-5 anos. Es el principal riesgo de destruccion de valor a largo plazo."
     },
     {
       "level": "yellow",
       "title": "Riesgo regulatorio: juicio FTC programado para octubre 2026",
       "impact": "Medio",
-      "evidence": "La FTC tiene programado para octubre 13, 2026 el juicio por caso antimonopolio contra Amazon en e-commerce.",
-      "context": "Un fallo adverso podria requerir cambios estructurales en el marketplace o limitar practicas de precios y logistica."
-    },
-    {
-      "level": "yellow",
-      "title": "Competencia intensa de Azure y Google Cloud en IA",
-      "impact": "Medio",
-      "evidence": "87% de empresas usan multi-cloud. Microsoft Azure y Google Cloud compiten agresivamente en AI workloads con modelos propios.",
-      "context": "La ventaja de AWS en cloud generica podria comprimirse si los clientes diversifican AI workloads hacia competidores con modelos mas avanzados."
+      "evidence": "La FTC tiene programado para octubre 2026 el juicio por caso antimonopolio contra Amazon en e-commerce y marketplace.",
+      "context": "Un fallo adverso podria requerir cambios estructurales en el marketplace o limitar practicas de precios y logistica, afectando el segmento North America ($426B de revenue)."
     },
     {
       "level": "red",
-      "title": "FCF negativo en escenario de sobrecapacidad de IA",
+      "title": "FCF podria permanecer negativo todo FY2026 con CAPEX ~$200B",
       "impact": "Alto",
-      "evidence": "Con $200B de CAPEX en 2026 y FCF actual de $7.7B, cualquier retraso en adopcion de AI workloads podria llevar el FCF a terreno negativo.",
-      "context": "Es el principal riesgo de destruccion de valor a corto plazo. Los inversores deben monitorear la tasa de crecimiento de AWS en 2026 como indicador anticipado."
+      "evidence": "Con CAPEX guiado de $200B y OCF TTM de ~$145B, el FCF FY2026 seria negativo por $55B+ si el OCF no crece significativamente.",
+      "context": "Es el principal riesgo de valuacion a corto plazo. Los inversores deben monitorear la tasa de crecimiento de AWS trimestral como indicador critico de si el CAPEX genera demanda incremental suficiente."
     }
   ],
   "score": {
-    "score": 8.4,
+    "score": 8.6,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 8, "max": 10 },
-      { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
-      { "label": "Generacion de FCF", "score": 7, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Amazon ejecuta una estrategia de plataforma multi-sided que utiliza el e-commerce de alto volumen como motor de adquisicion de clientes y datos, AWS como generador de caja de alto margen, y publicidad digital como monetizacion incremental del trafico. A largo plazo, la apuesta estrategica central es convertirse en la infraestructura de IA preferida para empresas globales a traves de AWS Bedrock, chips propios Trainium y Graviton, y modelos Nova. El CAPEX de $200B para 2026 es la mayor inversion en la historia corporativa de Amazon y refleja la conviccion de la gerencia de que la ventana de liderazgo en IA cloud se define en los proximos 2-3 anos.",
-    "ventajas": "El moat de Amazon descansa en cuatro pilares: (1) AWS con 13 anos de ventaja tecnologica y $244B de backlog garantizado, (2) red de logistica propia de 1 millon de robots en 300 instalaciones con economia de escala inalcanzable para competidores, (3) efectos de red del marketplace con 300M+ de clientes activos y 2M+ de vendedores terceros que se retroalimentan, y (4) ecosistema Prime con 200M+ suscriptores globales que anclan comportamiento de consumo. La integracion vertical del hardware (chips), software (modelos IA) e infraestructura (data centers) en AWS es una barrera tecnologica creciente.",
-    "debilidades": "El segmento Internacional continua siendo el punto debil con margen operativo de apenas 2.9% ($4.7B sobre $161.9B de revenue) tras anos de perdidas. Amazon carece de un modelo de lenguaje (LLM) propio de primer nivel comparable a GPT-4 o Gemini, dependiendo de partnerships con Anthropic y terceros para cubrir ese gap. La dependencia del consumidor discrecional en North America e-commerce lo expone mas que AWS a ciclos economicos adversos.",
+    "estrategia": "Amazon ejecuta una estrategia de plataforma multi-sided que utiliza el e-commerce de alto volumen como motor de adquisicion de clientes y datos, AWS como generador de caja de alto margen, y publicidad digital como monetizacion incremental del trafico. En Q1 2026, la aceleracion de AWS a +28% YoY confirma que la apuesta central es convertirse en la infraestructura de IA preferida para empresas globales. El CAPEX de ~$200B en FY2026 es la mayor inversion en la historia corporativa de Amazon y refleja la conviccion de que la ventana de liderazgo en AI cloud se define en los proximos 2-3 anos.",
+    "ventajas": "El moat de Amazon descansa en cuatro pilares: (1) AWS con 13 anos de ventaja tecnologica, backlog de >+40% YoY y aceleracion a +28% en Q1 2026 capturando la ola de AI workloads; (2) red de logistica propia de 1 millon de robots en 300 instalaciones con economia de escala inalcanzable; (3) efectos de red del marketplace con 300M+ clientes activos y 2M+ vendedores terceros; y (4) publicidad digital con datos de primera parte de comportamiento de compra real. La integracion vertical de hardware (Trainium, Graviton), software (Bedrock, modelos Nova) e infraestructura en AWS es una barrera tecnologica creciente.",
+    "debilidades": "El segmento Internacional continua siendo el punto debil con margenes operativos por debajo de North America. Amazon no tiene un LLM propio de primer nivel comparable a GPT-4o o Gemini Ultra, dependiendo de partnerships con Anthropic para cubrir ese gap. La deuda a largo plazo de $122.6B (incluyendo leases) es significativa aunque la caja de $101.8B mitiga el riesgo inmediato.",
     "riesgos": [
-      "CAPEX de $200B en FY2026 en un entorno de posible enfriamiento de la demanda de AI workloads podria generar exceso de capacidad y destruir FCF por 2-3 anos",
-      "Juicio antimonopolio FTC programado para octubre 2026 con potencial de restricciones estructurales al marketplace o practicas logisticas",
-      "Intensificacion de la guerra de precios en cloud con Azure y Google Cloud, que podrian comprimir margenes de AWS si Amazon reduce precios para defender cuota",
-      "Riesgo macro: desaceleracion del consumo en EEUU afecta el segmento North America ($426B de revenue) que opera con margenes inferiores al 7%",
-      "Riesgo cambiario en International ($161.9B de revenue): fortaleza del dolar reduce ingresos reportados"
+      "CAPEX de ~$200B en FY2026 podria resultar en FCF negativo de $50B+ si el OCF no crece suficientemente, destruyendo valor en escenario de adopcion de AI mas lenta de lo esperado",
+      "Juicio antimonopolio FTC programado para octubre 2026 con potencial de restricciones estructurales al marketplace o practicas logisticas que afecten el segmento North America",
+      "Intensificacion de competencia en cloud: Microsoft Azure crece >+30% con Copilot y Google Cloud >+28% con Gemini, potencialmente comprimiendo la cuota de AWS en AI workloads de nueva generacion",
+      "Riesgo macro: desaceleracion del consumo en EEUU afecta el segmento North America que opera con margenes inferiores al 10% frente a AWS y publicidad",
+      "Riesgo de ejecucion: el programa de $200B en infraestructura requiere escalar capacidad de chips, data centers y personal de ingenieria a ritmos sin precedente historico"
     ],
-    "inversiones_estrategicas": "Amazon invirtio $131.8B en capex FY2025, la mayoria dirigida a infraestructura de AWS incluyendo data centers para AI workloads, chips propios Trainium3 (optimizados para LLMs) y Graviton (compute general), y la plataforma Amazon Bedrock para acceso a multiples modelos de IA. En paralelo, la inversion en robotica de fulfillment supero 1 millon de unidades en 300 instalaciones. La adquisicion de Perceive fortalece capacidades de IA en edge computing para dispositivos Amazon. La inversion en Anthropic (estimada en $4B+) asegura acceso preferencial a modelos Claude de ultima generacion para integracion en AWS."
+    "inversiones_estrategicas": "Amazon invirtio $44.2B en CAPEX en Q1 2026 solo, orientado a infraestructura de AWS incluyendo data centers para AI workloads, chips propios Trainium3 y Graviton4, y la expansion de capacidad de Amazon Bedrock. La inversion en Anthropic ($4B+ comprometidos) asegura acceso preferencial a modelos Claude de ultima generacion para integracion en AWS Bedrock como alternativa diferenciada frente a Azure OpenAI."
   },
   "verdict": {
     "status": "Comprar con Conviccion",
-    "score": "8.4/10",
+    "score": "8.6/10",
     "color": "green",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$716.9B" },
-      { "label": "Margen Neto", "value": "10.9%" },
-      { "label": "FCF Yield", "value": "0.4%" },
-      { "label": "P/E Forward", "value": "24.8x" },
-      { "label": "Crecimiento Rev.", "value": "+12.4% YoY" }
+      {
+        "label": "Revenue Q1 2026",
+        "value": "$181.5B"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "13.1%"
+      },
+      {
+        "label": "AWS Growth",
+        "value": "+28% YoY"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "21.7x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+16.6% YoY"
+      }
     ],
     "bullets": [
-      { "text": "**AWS como motor de valor -> ** AWS genero $128.7B de revenue (+20% YoY) y $45.6B de operating income con margen del 35%, representando mas del 50% del beneficio operativo consolidado. El backlog de $244B (+40% YoY) da visibilidad excepcional a 2 anos.", "type": "pro" },
-      { "text": "**Expansion de margenes estructural ->** El margen operativo escalo de 2.4% en 2022 a 11.2% en FY2025, y el margen neto alcanza 10.9%, reflejando el mayor peso de negocios de alto margen (AWS, publicidad) en el mix total de ingresos.", "type": "pro" },
-      { "text": "**Valuacion atractiva vs. historia ->** Con P/E de 27.3x y EV/EBITDA de 14.4x, Amazon cotiza con descuento significativo vs. su historico (P/E >60x en 2021-2022) y comparable a peers de menor calidad, con potencial de re-rating si el FCF se recupera en 2026-2027.", "type": "pro" },
-      { "text": "**Riesgo CAPEX ->** El programa de inversion de $200B en FY2026 comprime el FCF a niveles minimos. Si la adopcion de AI workloads se retrasa o la competencia de Azure/Google intensifica la guerra de precios en cloud, el retorno sobre el capital invertido podria decepcionar y presionar el precio de la accion.", "type": "con" }
+      {
+        "text": "**AWS acelera a +28% YoY** — La aceleracion de AWS en Q1 2026 confirma que la inversion de $131.8B en FY2025 genera retornos. Con backlog creciendo >+40% YoY y AI workloads como nuevo motor, AWS tiene visibilidad excepcional para 2026-2028.",
+        "type": "pro"
+      },
+      {
+        "text": "**Expansion de margen estructural** — Margen operativo de 13.1% en Q1 2026 es nuevo maximo historico trimestral para Amazon, con EPS creciendo +74.8% YoY. El apalancamiento operativo del mix AWS+publicidad genera mejora de margenes sostenida.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva P/E 21.7x** — Con precio de $259.80 y EPS FY2026 estimado de $12, Amazon cotiza a 21.7x forward vs. historico de >60x en 2021-2022. El descuento por FCF negativo es transitorio y el re-rating es posible en 2027-2028.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo CAPEX ~$200B** — El programa de inversion en FY2026 mantiene el FCF en terreno negativo y exige que la adopcion de AI workloads en AWS se mantenga a ritmos de +25%+. Monitorear la tasa de crecimiento de AWS trimestral como indicador critico.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Amazon crecio revenue un 12.4% YoY en FY2025 hasta $716.9B, con aceleracion en AWS (+20%) e Internacional (+13%). El crecimiento es organico y diversificado entre tres segmentos complementarios. Los proximos drivers son la adopcion de AI workloads en AWS, la expansion internacional de Prime y el crecimiento de publicidad digital dentro del ecosistema."
+        "texto": "Amazon acelero revenue a +16.6% YoY en Q1 2026 hasta $181.52B, la mayor tasa de crecimiento desde Q1 2022. Los tres motores principales se aceleran simultaneamente: AWS +28% ($37.59B), Advertising +24% ($17.24B) y e-commerce North America. La aceleracion simultanea de todos los segmentos demuestra la solidez estructural del modelo de negocio."
       },
       {
         "label": "Margenes",
-        "texto": "La expansion de margenes es el tema mas relevante de los ultimos 3 anos. El margen bruto llego a 50.3% (maximo historico), el operativo a 11.2% y el neto a 10.9%. La tendencia es estructuralmente positiva por el mayor peso de AWS (margen ~35%) y publicidad (~50%+) en el mix vs. e-commerce de menor margen. Se espera continuacion de esta tendencia en 2026-2027."
+        "texto": "Q1 2026 registra el margen operativo mas alto en la historia trimestral de Amazon: 13.1%. El margen neto de 16.7% refleja el apalancamiento operativo y el mayor peso de AWS y publicidad. La tendencia de expansion de margenes iniciada en 2023 se acelera y se espera que el margen operativo FY2026 supere el 13%."
       },
       {
         "label": "EPS",
-        "texto": "El EPS GAAP diluido aumento 29.7% YoY a $7.17 en FY2025, acumulando un crecimiento de mas del 120% desde los $3.24 de FY2021. La calidad de las ganancias es alta: son respaldadas por flujo operativo de $139.5B. El consenso para FY2026 estima ~$7.90, un crecimiento modesto del 10% que podria ser conservador si los margenes siguen expandiendose."
+        "texto": "El EPS diluido de $2.78 en Q1 2026 supera ampliamente el consenso (~$1.87) y representa +74.8% YoY. El EPS TTM es de $8.36. Con EPS FY2026 estimado de ~$12, el P/E Forward de 21.7x es el mas bajo en la historia reciente de la empresa en relacion a su tasa de crecimiento."
       },
       {
         "label": "Balance",
-        "texto": "El balance es una fortaleza: caja de $86.8B supera la deuda de largo plazo de $65.6B, generando una posicion neta de caja de $21.2B. Deuda/EBITDA en 0.45x y ROE de 18.9% reflejan un negocio altamente rentable sobre equity creciente. La solidez del balance da flexibilidad total para financiar el programa de CAPEX de $200B en 2026."
+        "texto": "La posicion de caja asciende a $101.82B en Q1 2026, nivel record que proporciona flexibilidad para financiar el CAPEX de $200B en FY2026. La deuda a largo plazo de $122.6B resulta en deuda neta de $20.8B, manejable con Deuda/EBITDA de 0.80x. El balance es robusto."
       },
       {
         "label": "Generacion de caja",
-        "texto": "El OCF de $139.5B es record y crece 20% YoY, demostrando la potencia de generacion de caja del modelo de negocio. Sin embargo, el FCF se comprimio a $7.7B (-76.6%) por el CAPEX record de $131.8B. Con $200B de CAPEX guiado para 2026, el FCF seguira bajo presion. La normalizacion del FCF es el catalizador clave para el precio de la accion en 2027-2028."
+        "texto": "El OCF trimestral de $26.03B es solido pero el FCF de -$18.17B por el CAPEX record de $44.2B mantiene el FCF TTM negativo (-$2.5B). Con $200B de CAPEX guiado para FY2026, el FCF permanecera bajo presion todo el ano. La normalizacion del FCF es el catalizador de re-rating para 2027-2028."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Los tres riesgos prioritarios son: (1) CAPEX de $200B en 2026 podria no generar los retornos esperados si la adopcion de AI cloud se retrasa, llevando el FCF a terreno negativo; (2) el juicio antimonopolio FTC en octubre 2026 podria imponer restricciones estructurales al marketplace; y (3) competencia creciente de Microsoft Azure y Google Cloud en AI workloads podria erosionar la ventaja de cuota de mercado de AWS. Estos riesgos son monitoreables y no estructurales, pero justifican disciplina en el precio de entrada."
+        "texto": "Los tres riesgos prioritarios post Q1 2026: (1) el CAPEX de ~$200B podria resultar en FCF negativo de $50B+ si la demanda de AI crece mas lento de lo esperado; (2) el juicio FTC en octubre 2026 podria imponer restricciones al marketplace; y (3) la competencia de Azure y Google Cloud en AI workloads podria erosionar la ventaja de cuota de AWS. Los tres son monitoreables y no estructurales para la tesis central."
       }
     ]
   }

@@ -1,0 +1,487 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Walmart Inc. es el mayor retailer del mundo con $706.4B en ventas netas en FY2026 (enero 2026). La empresa opera mas de 10,500 tiendas bajo los segmentos Walmart U.S. ($483B), Walmart International y Sam's Club, sirviendo 270 millones de clientes semanalmente. La estrategia omnicanal con eCommerce creciendo +22% YoY impulsa participacion de mercado y nuevos flujos de ingresos como publicidad digital ($4.4B) y Walmart+. FY2026 muestra aceleracion notable: revenue +4.7%, net income +12.6% y FCF +17.9%.",
+  "descripcion": "Walmart opera bajo tres segmentos: Walmart U.S. (68% de ventas, 4,611 tiendas), Walmart International (26%, presencia en 19 paises incluyendo Mexico via Walmex y China) y Sam's Club U.S. (6%, 600 clubes de membresia). El moat competitivo descansa en escala de compras sin rival, cadena de suministro propia, presencia fisica en comunidades suburbanas/rurales de bajo ingreso, y la creciente plataforma de publicidad digital Walmart Connect. La transicion hacia eCommerce y servicios de alto margen (advertising, marketplace, fulfillment, finanzas) reposiciona a Walmart como plataforma retail mas alla del brick-and-mortar.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "572.75",
+        "611.29",
+        "648.13",
+        "680.99",
+        "713.16",
+        "+4.7%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "13.67",
+        "11.68",
+        "15.51",
+        "19.44",
+        "21.89",
+        "+12.6%"
+      ],
+      [
+        "Margen Neto",
+        "2.4%",
+        "1.9%",
+        "2.4%",
+        "2.9%",
+        "3.1%",
+        "+0.2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "36.60",
+        "31.37",
+        "38.87",
+        "42.32",
+        "44.03",
+        "+4.0%"
+      ],
+      [
+        "FCF (B USD)",
+        "11.08",
+        "11.98",
+        "15.12",
+        "12.66",
+        "14.92",
+        "+17.9%"
+      ],
+      [
+        "EPS Diluido",
+        "1.62",
+        "1.42",
+        "1.91",
+        "2.41",
+        "2.73",
+        "+13.3%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "22.91",
+        "30.22",
+        "29.71",
+        "26.96",
+        "27.44",
+        "+0.48B"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "46.7x",
+      "signal": "red",
+      "note": "Prima elevada vs. sector ~22x",
+      "precio_base": 127.59,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 2.73
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "42.2x",
+      "signal": "red",
+      "precio_base": 127.59,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 3.02
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "23.9x",
+      "signal": "yellow",
+      "precio_base": 127.59,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 44.03,
+        "shares_m": 8022,
+        "deuda_neta_b": 27.44
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "68.6x",
+      "signal": "red",
+      "precio_base": 127.59,
+      "precio_fecha": "2026-05-11",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 14.92,
+        "shares_m": 8022
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.62x",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "22%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "17.7%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2022",
+        "revenue": 572.75,
+        "utilidad": 13.67
+      },
+      {
+        "label": "FY2023",
+        "revenue": 611.29,
+        "utilidad": 11.68
+      },
+      {
+        "label": "FY2024",
+        "revenue": 648.13,
+        "utilidad": 15.51
+      },
+      {
+        "label": "FY2025",
+        "revenue": 680.99,
+        "utilidad": 19.44
+      },
+      {
+        "label": "FY2026",
+        "revenue": 713.16,
+        "utilidad": 21.89
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2022",
+        "bruto": 25.1,
+        "operativo": 4.5,
+        "neto": 2.4
+      },
+      {
+        "label": "FY2023",
+        "bruto": 24.1,
+        "operativo": 3.3,
+        "neto": 1.9
+      },
+      {
+        "label": "FY2024",
+        "bruto": 24.4,
+        "operativo": 4.2,
+        "neto": 2.4
+      },
+      {
+        "label": "FY2025",
+        "bruto": 24.9,
+        "operativo": 4.3,
+        "neto": 2.9
+      },
+      {
+        "label": "FY2026",
+        "bruto": 24.9,
+        "operativo": 4.2,
+        "neto": 3.1
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "8.09B USD",
+        "nota": "Record en FY2026; programa acelerado de buybacks post-split 3:1 (Feb 2024)"
+      },
+      {
+        "label": "Dividendos",
+        "value": "7.51B USD",
+        "nota": "51 anos consecutivos de incremento de dividendo; yield ~0.9%"
+      },
+      {
+        "label": "Capex",
+        "value": "26.64B USD",
+        "nota": "Inversion en nueva capacidad de supply chain automatizada, stores y tecnologia AI"
+      },
+      {
+        "label": "M&A",
+        "value": "~2.3B USD",
+        "nota": "Acquisition de Vizio (Feb 2024) para publicidad CTV; resto en integracion organica"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "WMT TTM",
+      "Sector Retail",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "24.9%",
+        "~28%",
+        "Por debajo (modelo EDLP de bajo precio)"
+      ],
+      [
+        "Margen Operativo",
+        "4.2%",
+        "~5.5%",
+        "En linea (escala compensa)"
+      ],
+      [
+        "Revenue Growth",
+        "+4.7%",
+        "~3.5%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "42x",
+        "~22x",
+        "Prima alta; refleja rerating hacia plataforma"
+      ],
+      [
+        "ROIC",
+        "17.7%",
+        "~12%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Walmart muestra salud financiera robusta con aceleracion de rentabilidad en FY2026.",
+    "analisis": "Revenue crece de forma constante (+4.7% FY2026), net income acelera (+12.6%) y FCF se recupera significativamente (+17.9% a 14.9B). El balance es solido con ND/EBITDA de 0.62x y equity en maximo historico de 99.6B. El margen operativo se mantiene estable en 4.2% mientras que el mix hacia publicidad y servicios mejora el margen neto al 3.1% (maximo en 5 anos).",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+4.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "24.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "4.2%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "3.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+17.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "27.4B (+0.5B)",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Lider absoluto en retail con moat de escala inigualable",
+      "impact": "Alto",
+      "evidence": "706B en ventas netas; 270M clientes por semana; poder de compra sin rival con proveedores; eCommerce +22% YoY a mas de 100B en GMV digital.",
+      "context": "La escala de Walmart genera barreras de entrada estructurales. La combinacion de presencia fisica (10,500+ stores) y crecimiento digital crea una ventaja omnicanal que Amazon o Target no pueden replicar facilmente."
+    },
+    {
+      "level": "green",
+      "title": "Publicidad digital en expansion exponencial",
+      "impact": "Alto",
+      "evidence": "Walmart Connect genero ~4.4B en ingresos publicitarios en FY2026 (+24% YoY). Acquisition de Vizio amplia superficie de datos para publicidad CTV con 18M SmartTV activos.",
+      "context": "La plataforma de advertising es un negocio de alto margen similar a Amazon Advertising que mejora el mix de rentabilidad y reposiciona a WMT mas alla del retail puro. Con 270M clientes, los datos de compra son activos premium."
+    },
+    {
+      "level": "yellow",
+      "title": "Presion de tariffs y costos de importacion en FY2027",
+      "impact": "Alto",
+      "evidence": "~25-30% de productos importados de China. Escalada arancelaria 2025-2026 podria presionar margen bruto 30-80bps en FY2027. WMT ya absorbio parte en FY2026.",
+      "context": "Walmart tiene mayor capacidad que competidores para absorber tariffs via diversificacion de proveedores, supplier negotiations y private label, pero el impacto completo de los nuevos aranceles de 2025 se reflejaria en FY2027."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion elevada refleja rerating pero limita upside",
+      "impact": "Medio",
+      "evidence": "P/E forward 42x vs. sector retail 22x. La accion ya incorpora el escenario optimista de transformacion digital y plataforma.",
+      "context": "WMT cotiza con prima significativa respecto a su historia y al sector. Para justificar el precio actual se requiere aceleracion sostenida de eCommerce, publicidad y servicios de alto margen. Cualquier decepcion en guidance presionaria la accion."
+    },
+    {
+      "level": "red",
+      "title": "Capex masivo comprime FCF yield al 1.5%",
+      "impact": "Medio",
+      "evidence": "Capex de 26.6B en FY2026 (3.7% de revenue, record historico). FCF yield de solo 1.5% sobre market cap de 1T.",
+      "context": "La inversion en automatizacion de supply chain, nuevas tiendas y tecnologia AI es estrategicamente necesaria, pero genera un FCF yield muy bajo para una empresa en un sector maduro. El retorno sobre estas inversiones es la clave para justificar la valuacion actual."
+    }
+  ],
+  "score": {
+    "score": 7.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Walmart ejecuta una estrategia de transformacion de retailer tradicional a plataforma omnicanal y de servicios. Los tres pilares son: (1) crecimiento omnicanal integrando 10,500+ tiendas con eCommerce, pickup/delivery en 8,400+ ubicaciones (2) expansion del ecosistema de alto margen: publicidad Walmart Connect, marketplace de terceros, fulfillment services, servicios financieros (3) automatizacion de supply chain con IA para reducir costos operativos. La membresia Walmart+ es el eje de fidelizacion.",
+    "ventajas": "Escala de compras sin rival (poder de negociacion con proveedores), red de tiendas fisicas como centros de fulfillment de ultima milla, datos de compra de 270M clientes semanales como activo publicitario, precio de estante sistematicamente bajo (EDLC/EDLP), presencia geografica dominante en comunidades de ingreso bajo-medio en EE.UU. y mercados emergentes (Mexico, India, Africa), y dividendo Dividend Aristocrat con 51 anos de incrementos consecutivos.",
+    "debilidades": "Margenes netos y brutos estructuralmente bajos vs. competidores pure-play, alta intensidad de capital (Capex record de 26.6B), exposicion a rotacion de personal en sector retail, dependencia de consumidor sensible al precio en entornos recesivos, y complejidad de integracion tecnologica en organizacion de 2.1M empleados.",
+    "riesgos": [
+      "Escalada de tariffs (China/Asia): presion de 30-80bps en margen bruto en FY2027 con aranceles de 25-145% sobre importaciones",
+      "Desaceleracion del consumidor en EE.UU.: deterioro en el segmento de ingreso medio-bajo afectaria ticket y mix de producto",
+      "Intensificacion competitiva en eCommerce: Amazon sigue siendo lider digital; Target y Costco compiten en sus nichos; TikTok Shop emergiendo",
+      "Ejecucion de capex: la inversion de 26.6B anual requiere retornos medibles; automatizacion de supply chain podria tener sobrecostos o retrasos"
+    ],
+    "inversiones_estrategicas": "Vizio acquisition (~2.3B, completada Feb 2024): expande Walmart Connect a publicidad CTV con 18M SmartTV activos. Automatizacion de supply chain (centros de distribucion robotizados): reduccion de costos operativos proyectada. India (Flipkart/PhonePe): mayor retailer de India por GMV; PhonePe con 600M+ usuarios en pagos digitales. China (JD.com stake): exposicion al mayor mercado retail del mundo. Sam's Club expansion: plan de 30 nuevos clubes anuales aprobado para EE.UU."
+  },
+  "verdict": {
+    "status": "Mantener/Vigilar",
+    "score": "7.2/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "713B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "3.1%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "42x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+4.7% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Escala defensiva** -- Con $706B en ventas y 270M clientes semanales, Walmart es practicamente irreemplazable en el retail global. La plataforma crece en margenes altos via publicidad (+24% YoY) y membership.",
+        "type": "pro"
+      },
+      {
+        "text": "**Transformacion digital ejecutandose** -- eCommerce supera 100B en GMV digital, Walmart+ acelera en membresias y el acquisition de Vizio posiciona a WMT en publicidad CTV de alto margen.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance impecable** -- ND/EBITDA de 0.62x, flujo de caja operativo de 41.6B y 51 anos de incrementos de dividendo confirman la calidad crediticia y la generacion de valor para accionistas.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion premium exige ejecucion perfecta** -- P/E forward de 42x y FCF yield de solo 1.5% dejan poco margen de error. La accion cotiza como tech company pero opera como retailer con margenes de 4.2%. Cualquier miss en eCommerce o publicidad podria comprimir multiples.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de 713B USD en FY2026 crece +4.7% YoY, acelerando tanto en el segmento U.S. (comp sales +4.3%) como en eCommerce (+22% YoY). La diversificacion geografica (Walmart International representa 24% de ventas) reduce dependencia del ciclo americano."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto estable en 24.9%; margen operativo de 4.2% se mantiene en niveles de FY2024. El margen neto mejora a 3.1% (maximo en 5 anos) gracias a mayor contribucion de publicidad y servicios de alto margen, y un tax rate favorable de 24.4%."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 14.9B en FY2026 (+17.9% YoY) y OCF record de 41.6B. El alto Capex de 26.6B comprime la conversion de FCF pero es inversion estrategica en automatizacion. Walmart devolvio 15.6B a accionistas via dividendos (7.5B) y recompras (8.1B) en FY2026."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 27.4B (ND/EBITDA 0.62x) en nivel muy manejable. Equity a record de 99.6B. El balance permite financiar el ambicioso plan de Capex y M&A sin estres financiero. Investment grade rating BBB+/Aa2."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con P/E forward de 42x, WMT cotiza con prima de 90% sobre el sector retail promedio. Esta valuacion refleja el rerating de plataforma y el crecimiento de publicidad, pero limita el upside desde niveles actuales. El precio de $127.59 incorpora un escenario bastante optimista de aceleracion de margenes."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los principales catalizadores negativos son: (1) tariffs de importacion que presionan margen bruto en FY2027, (2) desaceleracion del consumidor americano en entorno de tasas altas, (3) competencia creciente en eCommerce de Amazon y TikTok Shop, y (4) ejecucion del Capex masivo sin garantia de retorno en tiempos esperados."
+      }
+    ]
+  }
+}

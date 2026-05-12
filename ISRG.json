@@ -1,0 +1,502 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Intuitive Surgical es el monopolio de facto en cirugia robotica asistida, con su sistema da Vinci dominando mas del 80% de los principales centros hospitalarios de EEUU y una base instalada de 11,106 sistemas a fin de 2025. El modelo razor-and-blade genera ingresos recurrentes de alta calidad: instrumentos y accesorios representan el 60% del revenue total y crecen automaticamente con la expansion de la base instalada. En FY2025 la empresa reporto ingresos de $10.1B (+21% YoY), FCF de $2.49B (+90% YoY) y balance sin deuda con caja neta de $3.4B, consolidando su posicion como una de las empresas de tecnologia medica mas solidas del mercado.",
+  "descripcion": "Intuitive Surgical disena, fabrica y comercializa el sistema de cirugia robotica da Vinci, utilizado en mas de 70 tipos de procedimientos clinicos en mas de 70 paises. El modelo de negocio funciona como razor-and-blade: la venta o arrendamiento de sistemas crea una base instalada que genera ventas recurrentes de instrumentos, accesorios y servicios a lo largo de la vida util del sistema. La empresa tambien opera Ion, plataforma de broncoscopia robotica para diagnostico de cancer de pulmon, con 995 sistemas instalados y crecimiento del 51% en procedimientos en 2025. Con 3.15 millones de procedimientos da Vinci realizados en 2025 (+18% YoY) y utilization rates en mejora, combina poder de fijacion de precios, switching costs elevados y expansion geografica activa en Europa, Asia y Latinoamerica.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        5.71,
+        6.22,
+        7.12,
+        8.35,
+        10.06,
+        2.77,
+        "+20.5%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        1.7,
+        1.32,
+        1.8,
+        2.32,
+        2.86,
+        0.82,
+        "+23.3%"
+      ],
+      [
+        "Margen Neto",
+        "29.8%",
+        "21.2%",
+        "25.3%",
+        "27.8%",
+        "28.4%",
+        "29.7%",
+        "+0.6pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        2.13,
+        1.93,
+        2.17,
+        2.81,
+        3.56,
+        "N/A",
+        "+26.7%"
+      ],
+      [
+        "FCF (B USD)",
+        1.75,
+        0.96,
+        0.75,
+        1.31,
+        2.49,
+        "N/A",
+        "+90.1%"
+      ],
+      [
+        "EPS Diluido",
+        4.66,
+        3.65,
+        5.03,
+        6.42,
+        7.87,
+        2.28,
+        "+22.6%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        -1.29,
+        -1.58,
+        -2.75,
+        -2.03,
+        -3.37,
+        "N/A",
+        "Caja neta"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "55.2x",
+      "signal": "yellow",
+      "note": "vs medtech ~30x",
+      "precio_base": 434.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 7.87
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "43.4x",
+      "signal": "yellow",
+      "note": "FY2026 estimado",
+      "precio_base": 434.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 10
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "42.4x",
+      "signal": "yellow",
+      "precio_base": 434.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 3.56,
+        "shares_m": 355.1,
+        "deuda_neta_b": -3.37
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "61.9x",
+      "signal": "yellow",
+      "precio_base": 434.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 2.49,
+        "shares_m": 355.1
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "Caja neta",
+      "signal": "green"
+    },
+    {
+      "label": "ROE",
+      "value": "16%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "17.7%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 5.71,
+        "utilidad": 1.7
+      },
+      {
+        "label": "FY2022",
+        "revenue": 6.22,
+        "utilidad": 1.32
+      },
+      {
+        "label": "FY2023",
+        "revenue": 7.12,
+        "utilidad": 1.8
+      },
+      {
+        "label": "FY2024",
+        "revenue": 8.35,
+        "utilidad": 2.32
+      },
+      {
+        "label": "FY2025",
+        "revenue": 10.06,
+        "utilidad": 2.86
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 69.4,
+        "operativo": 31.9,
+        "neto": 29.8
+      },
+      {
+        "label": "FY2022",
+        "bruto": 67.5,
+        "operativo": 25.4,
+        "neto": 21.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 66.4,
+        "operativo": 24.9,
+        "neto": 25.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 67.4,
+        "operativo": 28.1,
+        "neto": 27.8
+      },
+      {
+        "label": "FY2025",
+        "bruto": 66,
+        "operativo": 29.3,
+        "neto": 28.4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Caja neta",
+        "value": "$3.4B",
+        "nota": "Balance sin deuda. Caja y equivalentes de $3.37B vs. cero deuda de largo plazo al 31-dic-2025"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "$2.3B",
+        "nota": "Recompras ejecutadas en FY2025, manteniendo el saldo de acciones estable en ~355M con dilution bajo control"
+      },
+      {
+        "label": "Capex y I+D",
+        "value": "$0.54B capex",
+        "nota": "Reduccion en capex FY2025 tras pico en FY2023-2024. R+D intensivo para da Vinci 5 e Ion bronchoscopy"
+      },
+      {
+        "label": "Sin dividendos",
+        "value": "$0",
+        "nota": "Toda la generacion de caja se destina a reinversion organica y recompras de acciones — modelo de crecimiento puro"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "ISRG FY2025",
+      "Medtech sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "66.0%",
+        "~45-55%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "29.3%",
+        "~15-20%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Neto",
+        "28.4%",
+        "~10-15%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+20.5%",
+        "~5-8%",
+        "Muy por encima del sector"
+      ],
+      [
+        "ROE",
+        "16.0%",
+        "~12-15%",
+        "En linea con sector"
+      ],
+      [
+        "ROIC",
+        "17.7%",
+        "~10-12%",
+        "Por encima del sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "No se detecta deterioro — aceleracion en todas las metricas clave en FY2025",
+    "analisis": "Revenue, FCF, EBITDA y EPS muestran crecimiento acelerado en FY2025 vs FY2024. El FCF casi duplico YoY (+90%) por reduccion de capex tras el ciclo de inversion en da Vinci 5. Los margenes se mantienen estables y el balance tiene caja neta creciente. El unico punto de atencion es la valuacion premium que requiere ejecucion consistente.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+20.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "66.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "29.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "28.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+90.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "Caja neta $3.4B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Monopolio de facto en cirugia robotica",
+      "impact": "Alto",
+      "evidence": "Base instalada de 11,106 sistemas da Vinci en +70 paises. Presente en >80% de los principales centros de EEUU con cirugia minima invasion. 3.15M procedimientos en FY2025 (+18% YoY)",
+      "context": "Una vez instalado un sistema da Vinci, los hospitales compran exclusivamente instrumentos y accesorios ISRG. El costo de switch incluye reentrenamiento de cirujanos, recertificacion y perdida de curva de aprendizaje — moat operativo casi imposible de romper en el corto plazo."
+    },
+    {
+      "level": "green",
+      "title": "Modelo razor-and-blade con 60% de revenue recurrente",
+      "impact": "Alto",
+      "evidence": "Instrumentos y accesorios $6.02B en FY2025 (+19% YoY). Cada nuevo sistema instalado representa una anualidad recurrente de ingresos a lo largo de 10-15 anios de vida util",
+      "context": "A medida que la base instalada crece, el revenue recurrente aumenta de forma estructural incluso si las ventas de sistemas fluctuan. Este flywheel hace que el crecimiento de ingresos sea predecible y de alta calidad."
+    },
+    {
+      "level": "green",
+      "title": "Balance sin deuda con caja neta de $3.4B",
+      "impact": "Medio",
+      "evidence": "Cero deuda de largo plazo. Cash $3.37B al 31-dic-2025. FCF $2.49B en FY2025. Ingresos por intereses sobre posicion de caja en entorno de tasas elevadas",
+      "context": "La solidez del balance otorga flexibilidad estrategica para M+A, expansiones o recompras sin presion financiera. ISRG puede absorber un entorno regulatorio adverso o ciclo de inversion sin riesgo de solvencia."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion premium extrema sin margen de error",
+      "impact": "Medio",
+      "evidence": "P/E trailing 55x, EV/EBITDA 42x, P/FCF 62x. La valuacion descuenta crecimiento sostenido de 15-20% por varios anios sin interrupciones",
+      "context": "Cualquier desaceleracion en procedimientos, entrada exitosa de competencia o cambio regulatorio puede comprimir el multiplo severamente. La prima refleja la calidad del negocio pero limita el upside desde niveles actuales."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia emergente de Medtronic Hugo y Johnson Ottava",
+      "impact": "Medio",
+      "evidence": "Hugo de Medtronic aprobado en Europa para procedimientos selectos. Ottava de J+J en ensayos clinicos avanzados en EEUU con financiamiento ilimitado",
+      "context": "Aunque ninguno ha logrado traccion significativa frente a da Vinci, la presion podria limitar precios en nuevas instalaciones. ISRG responde con da Vinci 5 y programa de actualizacion in-situ para defender la base instalada."
+    }
+  ],
+  "score": {
+    "score": 9,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 10,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "ISRG ejecuta una estrategia de plataforma multisistema: da Vinci domina cirugia general, ginecologia y urologia; Ion ataca el mercado de diagnostico de cancer de pulmon con 51% de crecimiento en procedimientos en FY2025; y da Vinci 5 moderniza la base instalada con capacidades mejoradas de haptica y datos en tiempo real. La expansion internacional es el principal motor de crecimiento, con mercados como China via JV con Shanghai Electric, India y Latinoamerica en etapas tempranas.",
+    "ventajas": "Monopolio de facto con mas de 30 anios de datos clinicos acumulados. Switching costs estructurales enormes. Red global de servicio tecnico propietaria con 11,106 sistemas en campo. Propiedad intelectual amplia con miles de patentes activas. Modelo financiero autocatalizable: mas sistemas generan mas revenue recurrente que financia I+D para reforzar la ventaja tecnologica.",
+    "debilidades": "Concentracion en un solo sistema principal (da Vinci ~95% revenue). Dependencia de aprobaciones regulatorias para nuevas indicaciones. Ciclos de venta de capital largos y sensibles al presupuesto hospitalario. Ion aun no es material en revenue total. Valuacion extrema que no permite errores de ejecucion.",
+    "riesgos": [
+      "Competencia de Medtronic Hugo y Johnson Ottava ganando aprobaciones regulatorias y participacion en nuevas instalaciones",
+      "Regulacion FDA o CMS limitando indicaciones aprobadas o reduciendo reembolsos para procedimientos roboticos",
+      "Desaceleracion del crecimiento de procedimientos si la recuperacion post-pandemia se normaliza",
+      "Riesgo China: JV con Shanghai Electric sujeto a restricciones de exportacion tecnologica EEUU-China"
+    ],
+    "inversiones_estrategicas": "Da Vinci 5 — nueva generacion con mejoras hapticas y conectividad de datos en tiempo real, 870 sistemas colocados en FY2025. Ion bronchoscopy — 144,100 procedimientos FY2025 (+51% YoY), 995 sistemas instalados. Expansion China bajo JV con Shanghai Electric. Programa de actualizacion in-situ de sistemas existentes para defender y monetizar la base instalada."
+  },
+  "verdict": {
+    "status": "Mantener con Conviccion",
+    "score": "9.0/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "$10.1B"
+      },
+      {
+        "label": "Gross Margin",
+        "value": "66.0%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.6%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "43.4x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+20.5% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Monopolio cirugia robotica** — Base instalada de 11,106 sistemas da Vinci con switching costs estructurales. Ninguna competencia ha logrado escala comparable despues de 25 anios.",
+        "type": "pro"
+      },
+      {
+        "text": "**Modelo recurrente razor-blade** — Instrumentos y accesorios $6.02B (+19% YoY) crecen automaticamente con cada nuevo sistema instalado, creando visibilidad de ingresos inigualable en medtech.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF explosion** — FCF de $2.49B en FY2025 (+90% YoY) con capex normalizado. Balance sin deuda con caja neta $3.4B y conversion de utilidad a caja excepcional.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion premium extrema** — P/E 55x trailing y EV/EBITDA 42x no permiten margen de error. Cualquier miss en procedimientos o entrada exitosa de competencia puede comprimir el multiplo severamente.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue FY2025 de $10.1B, crecimiento del 21% YoY impulsado por 3.15M procedimientos da Vinci (+18%) y $6.02B en instrumentos y accesorios (+19%). Q1 2026 continua con $2.77B (+23% YoY vs Q1 2025), confirmando aceleracion del crecimiento."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto del 66% y margen operativo del 29.3% en FY2025, estables y significativamente por encima del sector medtech. El margen neto del 28.4% es excepcional para una empresa con ciclos de capital intensivos."
+      },
+      {
+        "label": "EPS",
+        "texto": "EPS diluido de $7.87 en FY2025 (+22.6% YoY). Q1 2026 reporto EPS de $2.28 (+18.8% vs Q1 2025), en trayectoria para FY2026 estimado de ~$10 por accion. Crecimiento consistente con base ampliada de ingresos recurrentes."
+      },
+      {
+        "label": "Balance",
+        "texto": "Cero deuda de largo plazo. Caja de $3.37B al 31-dic-2025. Balance fortaleza que permite M+A oportunista, recompras y absorber entornos regulatorios adversos sin riesgo de solvencia."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de $2.49B en FY2025 (+90% YoY) tras normalizacion del capex post inversion en da Vinci 5. OCF de $3.03B con capex de $0.54B. FCF yield del 1.6% sobre market cap actual de $154B."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Valuacion con poco margen de error (P/E 55x). Competencia emergente de Hugo y Ottava sin escala aun pero bien financiada. Regulacion FDA sobre nuevas indicaciones. Riesgo China por restricciones tecnologicas. Concentracion en EEUU (~60% revenue) sujeta a cambios en reembolso Medicare/Medicaid."
+      }
+    ]
+  }
+}

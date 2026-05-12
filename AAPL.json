@@ -1,266 +1,505 @@
 {
-  "resumen": "Apple Inc. (AAPL) cerro su ano fiscal 2025 (terminado el 27 de septiembre de 2025) con ingresos record de $416.2 mil millones, un crecimiento del 6.4% interanual impulsado por el crecimiento de Servicios (+13.5%) y un repunte en iPhone (+4.2%). La utilidad neta escalo un 19.5% hasta $112.0 mil millones con margen neto del 26.9%, el mas alto en cinco anos, reflejo de la mejora en mix hacia segmentos de mayor margen. El balance muestra una posicion de caja neta de $33.8 mil millones tras recompras de acciones por $96.7 mil millones, consolidando a Apple como una de las maquinas de generacion de efectivo mas eficientes del mercado.",
-  "descripcion": "Apple Inc. disenha, fabrica y comercializa dispositivos electronicos de consumo, software y servicios digitales a escala global. Su ecosistema integra hardware (iPhone, Mac, iPad, Apple Watch, AirPods), plataformas de software (iOS, macOS, watchOS) y un segmento de Servicios de alto margen que incluye App Store, Apple Music, iCloud, Apple TV+ y pagos digitales. La empresa genera ingresos a traves de ventas directas (tiendas propias y online) e indirectas (operadores y distribuidores), con un 40% directo y 60% indirecto segun su 10-K FY2025. Cotiza en NASDAQ bajo el ticker AAPL y es la empresa de mayor capitalizacion bursatil del mundo con un valor aproximado de $3.2 billones en marzo de 2026.",
+  "parrafos_gratis": 14,
+  "resumen": "Apple Inc. es la empresa de mayor capitalizacion bursatil del mundo, con ingresos de 416.2B USD en FY2025 (+6.4% YoY) y una utilidad neta record de 112.0B USD (+19.5%). Su modelo de negocio combina hardware premium (iPhone, Mac, iPad, Wearables) con un ecosistema de servicios de alto margen (App Store, iCloud, Apple TV+) que ya representa el 26.2% de los ingresos con margen bruto del 75.4%. El Q2 FY2026 muestra aceleracion clara: revenue +16.6% YoY y EPS +21.8%. El veredicto es Mantener/Acumular en caidas: negocio excepcional pero valoracion de 34x P/E forward implica precio de perfeccion sin margen de seguridad.",
+  "descripcion": "Apple opera en cinco categorias: iPhone (50.4% de ingresos, +4% YoY), Mac (8.1%, +12%), iPad (6.7%, +5%), Wearables/Accesorios (8.6%, -4%) y Servicios (26.2%, +14%). Geograficamente: Americas 42.9%, Europe 26.7%, Greater China 15.5% (-4% YoY), Japan 6.9% y Asia Pacifico 8.1%. El moat de Apple descansa en el ecosistema cerrado iOS/macOS, la marca premium global, la integracion vertical con Apple Silicon y la base instalada de 2.4B dispositivos activos que monetiza via servicios con margenes del 75%. El segmento Servicios es el principal motor de expansion de margenes y valoracion futura.",
   "tabla": {
-    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q2 FY2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", "365.8", "394.3", "383.3", "391.0", "416.2", "+6.4%"],
-      ["Utilidad Neta ($B)", "94.7", "99.8", "97.0", "93.7", "112.0", "+19.5%"],
-      ["Margen Neto (%)", "25.9%", "25.3%", "25.3%", "24.0%", "26.9%", "+2.9pp"],
-      ["EBITDA ($B)", "119.4", "130.5", "125.8", "134.6", "144.8", "+7.6%"],
-      ["FCF ($B)", "92.9", "111.4", "99.6", "108.8", "98.8", "-9.2%"],
-      ["EPS GAAP Diluido", "$5.61", "$6.11", "$6.13", "$6.09", "$7.46", "+22.5%"],
-      ["Deuda Neta ($B)", "-65.8", "-49.1", "-51.0", "-50.0", "-33.8", "+32.4%"]
+      [
+        "Revenue (B USD)",
+        "365.8",
+        "394.3",
+        "383.3",
+        "391.0",
+        "416.2",
+        "111.2",
+        "+16.6%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "94.7",
+        "99.8",
+        "97.0",
+        "93.7",
+        "112.0",
+        "29.6",
+        "+19.4%"
+      ],
+      [
+        "Margen Neto",
+        "25.9%",
+        "25.3%",
+        "25.3%",
+        "23.9%",
+        "26.9%",
+        "26.6%",
+        "-0.3pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "120.2",
+        "130.5",
+        "125.8",
+        "134.7",
+        "144.7",
+        "N/A",
+        "+7.4%"
+      ],
+      [
+        "FCF (B USD)",
+        "93.0",
+        "111.4",
+        "99.6",
+        "108.8",
+        "98.8",
+        "N/A",
+        "-9.2%"
+      ],
+      [
+        "EPS Diluido",
+        "5.61",
+        "6.11",
+        "6.13",
+        "6.08",
+        "7.46",
+        "2.01",
+        "+21.8%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "74.2",
+        "75.3",
+        "65.3",
+        "55.8",
+        "42.4",
+        "N/A",
+        "-24.1%"
+      ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "28.8x",
-      "change": "vs. ~27x hace 1 ano",
-      "signal": "yellow",
-      "note": "vs. sector tech ~25x",
-      "precio_base": 215.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "eps_ttm", "valor": 7.46 }
+      "label": "P/E Trailing",
+      "value": "38.1x",
+      "signal": "red",
+      "note": "vs. sector tech ~28x",
+      "precio_base": 283.93,
+      "precio_fecha": "2026-05-05",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 7.46
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "25.3x",
-      "change": "EPS est. FY2026 $8.51",
-      "signal": "yellow",
-      "precio_base": 215.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "eps_fwd", "valor": 8.51 }
+      "value": "34.3x",
+      "signal": "red",
+      "note": "EPS FY2026e consenso ~8.27",
+      "precio_base": 283.93,
+      "precio_fecha": "2026-05-05",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 8.27
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "22.0x",
-      "signal": "yellow"
+      "value": "29.7x",
+      "signal": "red",
+      "precio_base": 283.93,
+      "precio_fecha": "2026-05-05",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 144.75,
+        "shares_m": 15004.7,
+        "deuda_neta_b": 42.39
+      }
     },
     {
       "label": "P/FCF",
-      "value": "32.6x",
-      "signal": "yellow",
-      "precio_base": 215.00,
-      "precio_fecha": "Mar-2026",
-      "fundamento": { "tipo": "p_fcf", "fcf_b": 98.8, "shares_m": 15000 }
+      "value": "43.1x",
+      "signal": "red",
+      "precio_base": 283.93,
+      "precio_fecha": "2026-05-05",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 98.77,
+        "shares_m": 15004.7
+      }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "0.68x",
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.29x",
       "signal": "green"
     },
     {
       "label": "ROE",
       "value": "152%",
-      "signal": "green"
+      "signal": "green",
+      "note": "Elevado por programa de recompras sistematicas"
     },
     {
       "label": "ROIC",
-      "value": "67%",
+      "value": "97%",
       "signal": "green"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "FY2021", "revenue": 365.8, "utilidad": 94.7 },
-      { "label": "FY2022", "revenue": 394.3, "utilidad": 99.8 },
-      { "label": "FY2023", "revenue": 383.3, "utilidad": 97.0 },
-      { "label": "FY2024", "revenue": 391.0, "utilidad": 93.7 },
-      { "label": "FY2025", "revenue": 416.2, "utilidad": 112.0 }
+      {
+        "label": "FY2021",
+        "revenue": 365.82,
+        "utilidad": 94.68
+      },
+      {
+        "label": "FY2022",
+        "revenue": 394.33,
+        "utilidad": 99.8
+      },
+      {
+        "label": "FY2023",
+        "revenue": 383.29,
+        "utilidad": 97
+      },
+      {
+        "label": "FY2024",
+        "revenue": 391.04,
+        "utilidad": 93.74
+      },
+      {
+        "label": "FY2025",
+        "revenue": 416.16,
+        "utilidad": 112.01
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "FY2021", "bruto": 41.8, "operativo": 29.8, "neto": 25.9 },
-      { "label": "FY2022", "bruto": 43.3, "operativo": 30.3, "neto": 25.3 },
-      { "label": "FY2023", "bruto": 44.1, "operativo": 29.8, "neto": 25.3 },
-      { "label": "FY2024", "bruto": 46.2, "operativo": 31.5, "neto": 24.0 },
-      { "label": "FY2025", "bruto": 46.9, "operativo": 32.0, "neto": 26.9 }
+      {
+        "label": "FY2021",
+        "bruto": 41.8,
+        "operativo": 29.8,
+        "neto": 25.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": 43.3,
+        "operativo": 30.3,
+        "neto": 25.3
+      },
+      {
+        "label": "FY2023",
+        "bruto": 44.1,
+        "operativo": 29.8,
+        "neto": 25.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 46.2,
+        "operativo": 31.5,
+        "neto": 23.9
+      },
+      {
+        "label": "FY2025",
+        "bruto": 46.9,
+        "operativo": 32,
+        "neto": 26.9
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Bruto" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
-        "label": "Recompra de acciones",
-        "value": "$96.7B",
-        "nota": "Reduccion de ~400M acciones en FY2025; $700B+ recomprado en los ultimos 5 anos"
+        "label": "Recompras",
+        "value": "90.7B USD",
+        "nota": "Mayor programa de recompras del mundo. FY2025: 90.7B. Reduccion de shares del 2.7% anual promedio en 5 anios. FY2026: 106B adicionales aprobados."
       },
       {
         "label": "Dividendos",
-        "value": "$15.4B",
-        "nota": "Yield aproximado del 0.48% al precio de $215; incremento consecutivo por 13 anos"
+        "value": "15.4B USD",
+        "nota": "Dividendo creciente por 13 anios consecutivos. Yield actual ~0.5%. Crecimiento de dividendo ~5% anual."
       },
       {
         "label": "Capex",
-        "value": "$12.7B",
-        "nota": "3.1% del revenue; orientado a infraestructura de data centers y chip design"
+        "value": "12.7B USD",
+        "nota": "Incremento del 34% YoY en FY2025 por inversion en infraestructura de Apple Intelligence (data centers y servidores propios para procesamiento de IA)."
       },
       {
-        "label": "M&A / Adquisiciones",
-        "value": "~$1-2B",
-        "nota": "Apple mantiene su historial de adquisiciones pequenas y tecnologicas; sin mega-deal en FY2025"
+        "label": "M&A",
+        "value": "~1-3B USD",
+        "nota": "Apple prefiere adquisiciones tecnologicas pequenas (startups de IA, IP de semiconductores). Sin grandes M&A en FY2025."
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "AAPL FY25", "Sector Tech ref.", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "AAPL TTM",
+      "Sector Tech ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Gross Margin", "46.9%", "~40%", "Por encima del sector"],
-      ["Margen Operativo", "32.0%", "~22%", "Por encima del sector"],
-      ["Revenue Growth YoY", "+6.4%", "~8%", "En linea con sector"],
-      ["P/E Forward", "25.3x", "~24x", "En linea con sector"],
-      ["ROIC", "~67%", "~18%", "Por encima del sector"]
+      [
+        "Gross Margin",
+        "46.9%",
+        "~38%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "32.0%",
+        "~24%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+6.4%",
+        "~12%",
+        "Por debajo del sector"
+      ],
+      [
+        "P/E Forward",
+        "34.3x",
+        "~28x",
+        "Prima de 22% vs sector"
+      ],
+      [
+        "ROIC",
+        "97%",
+        "~25%",
+        "Muy por encima del sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo significativo; los margenes alcanzan maximos historicos en FY2025",
-    "analisis": "Apple mejoro sus margenes bruto, operativo y neto en FY2025 respecto a FY2024, con el margen neto en 26.9% siendo el mas alto del periodo FY2021-FY2025. El unico punto de atencion es la caida del FCF un 9.2% por mayor Capex ($12.7B vs. $9.4B), aunque el nivel absoluto de $98.8B sigue siendo extraordinario. La posicion de caja neta se redujo de $50B a $33.8B por el volumen de recompras, lo cual es una decision de capital intencional y no una senal de estres financiero.",
+    "veredicto": "Apple esta en excelente salud financiera con margenes en expansion y balance solido.",
+    "analisis": "FY2025 fue un anio record en utilidad neta (+19.5%) y margen neto (26.9%). El FCF cayo 9.2% por mayor capex en infraestructura de IA, pero sigue siendo excepcional en 98.8B. La deuda neta continua reduciendose sistematicamente desde 130B en 2019 hasta 42.4B hoy. La unica senal de alerta es el FCF YoY negativo y la caida en China (-4% en FY2025).",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+6.4%", "status": "ok" },
-      { "metrica": "Margen Bruto", "valor": "46.9% (+0.7pp)", "status": "ok" },
-      { "metrica": "Margen Operativo", "valor": "32.0% (+0.5pp)", "status": "ok" },
-      { "metrica": "Margen Neto", "valor": "26.9% (+2.9pp)", "status": "ok" },
-      { "metrica": "FCF YoY", "valor": "$98.8B (-9.2%)", "status": "warn", "nota": "Caida por aumento de Capex; nivel absoluto sigue siendo excepcional" },
-      { "metrica": "Deuda Neta", "valor": "-$33.8B (caja neta)", "status": "ok" },
-      { "metrica": "Cobertura de intereses", "valor": ">10x estimado", "status": "ok" },
-      { "metrica": "Greater China Revenue", "valor": "$64.4B (-3.9%)", "status": "warn", "nota": "Unica geografia con caida interanual; presion competitiva de Huawei" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+6.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "46.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "32.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "26.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-9.2%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "42.4B (decreciente)",
+        "status": "ok"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Servicios supera los $100 mil millones anuales",
+      "title": "Motor de Servicios imparable",
       "impact": "Alto",
-      "evidence": "Services revenue FY2025: $109.16B, crecimiento de +13.5% YoY; ya representa el 26.2% del revenue total",
-      "context": "Los Servicios tienen margenes brutos estimados del 75%+, muy superiores al 36% de Productos. Su creciente participacion en el mix mejora structuralmente los margenes consolidados y reduce la dependencia del ciclo de iPhone."
+      "evidence": "Servicios crece +14% YoY a 109.2B con margen bruto del 75.4%. Ya es el 26.2% de ingresos totales.",
+      "context": "Cada dispositivo Apple vendido expande la base instalada que monetiza servicios. El flywheel es autoreforzante. Cada 1pp de mix hacia Servicios expande el margen bruto consolidado ~28 bps."
     },
     {
       "level": "green",
-      "title": "Margenes en maximos historicos con ROE extraordinario",
+      "title": "Maquina de retorno al accionista",
       "impact": "Alto",
-      "evidence": "Margen neto 26.9% en FY2025 (mejor del periodo FY2021-FY2025); ROE de 152% impulsado por recompras masivas",
-      "context": "La combinacion de expansion de margenes y reduccion agresiva de acciones genera un crecimiento de EPS (+22.5% YoY) muy superior al crecimiento de revenue (+6.4%), creando valor sostenido para el accionista."
-    },
-    {
-      "level": "green",
-      "title": "Balance solido con $132.4 mil millones en caja e inversiones",
-      "impact": "Medio",
-      "evidence": "Caja neta de $33.8B (deuda total $98.7B vs. caja e inversiones $132.4B); Deuda/EBITDA de apenas 0.68x",
-      "context": "Apple tiene capacidad financiera para sostener recompras masivas, incrementar dividendos y hacer adquisiciones sin estresar el balance. La deuda es de largo plazo y a tasas favorables."
+      "evidence": "90.7B en recompras + 15.4B en dividendos = 106.1B retornados en FY2025, equivalente al 107% del FCF generado.",
+      "context": "Apple puede reducir su share count 2-3% por anio de forma sostenida. EPS crecio 22.7% en FY2025 vs revenue de 6.4%, la diferencia son las recompras. 106B aprobados para FY2026."
     },
     {
       "level": "yellow",
-      "title": "Dependencia de iPhone: 50.4% del revenue total",
+      "title": "Apple Intelligence como catalizador en prueba",
       "impact": "Medio",
-      "evidence": "iPhone genero $209.6B en FY2025 (50.4% del total); crecimiento moderado de +4.2% YoY",
-      "context": "Aunque Services crece rapidamente, iPhone sigue siendo el motor principal. Una contraccion del ciclo de smartphones o perdida de cuota en mercados emergentes podria impactar materialmente los resultados consolidados."
+      "evidence": "Q2 FY2026: revenue +16.6% YoY, la mayor tasa en 6 trimestres. iPhone en Americas y Europa mostrando aceleracion.",
+      "context": "Si Apple Intelligence genera un superciclo de actualizacion de iPhone sostenido en FY2026-27, el crecimiento podria acelerarse a 10-12%, justificando la valoracion. Si decepciona, el multiplo de 34x es vulnerable."
     },
     {
       "level": "yellow",
-      "title": "Caida en Greater China: -3.9% YoY",
+      "title": "Debilidad estructural en China",
       "impact": "Medio",
-      "evidence": "Revenue de Greater China cayo de $66.95B a $64.38B en FY2025; unica geografia con desempenho negativo",
-      "context": "La presion competitiva de Huawei y otras marcas locales, sumada a las tensiones geopoliticas entre EE.UU. y China, representa un riesgo estructural para el segundo mercado mas importante de Apple."
-    },
-    {
-      "level": "yellow",
-      "title": "Valuacion premium con FCF yield comprimido",
-      "impact": "Medio",
-      "evidence": "P/FCF de 32.6x y EV/EBITDA de 22x al precio de $215; FCF yield del 3.1%",
-      "context": "La valuacion implica que el mercado ya descuenta escenarios de crecimiento optimistas en Servicios e IA. Cualquier desaceleracion en Services o un ciclo de iPhone debil podria comprimir multiples."
+      "evidence": "Greater China cayo -4% en FY2025 (tras -8% en FY2024). Representa 15.5% de ingresos con tendencia negativa.",
+      "context": "Competencia de Huawei, regulacion gubernamental favoreciendo marcas locales y potencial impacto de aranceles de represalia crean viento en contra estructural en China."
     },
     {
       "level": "red",
-      "title": "FCF cayo 9.2% en FY2025 con Capex en maximos de 5 anos",
-      "impact": "Medio",
-      "evidence": "FCF FY2025: $98.8B vs. $108.8B en FY2024 (-9.2%); Capex sube a $12.7B desde $9.4B (+34.6%)",
-      "context": "Si el Capex acelerado relacionado con infraestructura de IA no genera retornos visibles en los proximos 2-3 anos, la conversion de utilidades a caja libre podria deteriorarse. Es el principal riesgo financiero a monitorear."
+      "title": "Valuacion exige ejecucion perfecta",
+      "impact": "Alto",
+      "evidence": "P/E Forward de 34.3x con revenue creciendo al 6.4%. PEG implicito de ~5x vs 1-2x razonable para el sector.",
+      "context": "A 284 USD el mercado descuenta aceleracion significativa via IA y Servicios. Cualquier decepcion en earnings o guidance puede provocar correccion de 15-25%."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo arancelario critico",
+      "impact": "Alto",
+      "evidence": "~90% de produccion en China/Asia. Aranceles ya impactaron: margen de Productos cayo de 37.2% a 36.8% en FY2025.",
+      "context": "Apple diversifica a India y Vietnam pero es proceso de 5-10 anios. Escalada arancelaria puede comprimir margenes adicional 100-300 bps y elevar precios al consumidor."
     }
   ],
   "score": {
-    "score": 8.4,
+    "score": 8,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 9, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 7, "max": 10 },
-      { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 9, "max": 10 },
-      { "label": "Generacion de FCF", "score": 8, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Apple ejecuta una estrategia de ecosistema cerrado (walled garden) donde cada dispositivo y servicio refuerza el engagement del usuario y eleva los costos de cambio. La prioridad estrategica de mediano plazo es convertir su base instalada de 2.2 mil millones de dispositivos activos en suscriptores de servicios de alto margen (Apple Intelligence, iCloud+, Apple TV+, Apple Arcade, Apple Pay). Paralelamente, invierte en silicon propio (serie M y A) para diferenciarse en rendimiento y eficiencia energetica, eliminando dependencia de terceros y capturando mayor valor en la cadena.",
-    "ventajas": "El moat de Apple descansa en cuatro pilares: (1) ecosistema integrado que genera efectos de red entre dispositivos y servicios con switching costs muy elevados; (2) marca premium con pricing power excepcional demostrado por margenes brutos del 46.9%; (3) capacidad de diseno de chips in-house (Apple Silicon) que le da ventajas de rendimiento y control de costos; (4) base instalada de 2.2 mil millones de dispositivos activos que actua como una maquinaria de distribucion para Servicios. Su relacion con la base de usuarios es de alta fidelidad y duracion.",
-    "debilidades": "Apple exhibe tres debilidades estructurales: (1) dependencia excesiva de iPhone (50.4% del revenue) con ciclos de reemplazo cada vez mas largos; (2) exposicion a Greater China (15.5% del revenue) bajo riesgo geopolitico creciente y competencia agresiva de Huawei; (3) retraso relativo en Inteligencia Artificial generativa respecto a Google y Microsoft — Apple Intelligence llego tarde y su adopcion masiva aun esta por demostrarse. La innovacion disruptiva en nuevas categorias (Vision Pro) tiene aun impacto de revenue marginal.",
+    "estrategia": "Apple ejecuta una estrategia de plataforma cerrada premium: domina el extremo de lujo del mercado de smartphones y usa esa base instalada (2.4B dispositivos activos) como palanca para monetizar servicios de alto margen. Apple Intelligence (IA generativa integrada en iOS/macOS) es la gran apuesta para el proximo superciclo de actualizaciones. Paralelamente expande Servicios con meta implicita de 35-40% de ingresos en 5 anios y reduce exposicion geopolitica a China via manufactura en India y Vietnam.",
+    "ventajas": "Ecosistema cerrado con costos de cambio muy altos (lock-in); marca premium global con pricing power demostrado (iPhone Pro a 1,199 USD mantiene demanda); integracion vertical con Apple Silicon que da ventaja en rendimiento y margen; base de 2.4B dispositivos activos generando ingresos recurrentes de Servicios; balance con 47B en caja y 100B+ en marketable securities.",
+    "debilidades": "Concentracion en iPhone (50% de ingresos) crea vulnerabilidad ciclica; dependencia de cadena de suministro concentrada en China/Asia (90% de produccion); debilidad en China con caida de share a manos de Huawei; crecimiento de ingresos moderado (6.4% en FY2025) vs expectativas del mercado que paga 34x forward; rezago en IA generativa de nube vs Google, Microsoft y Meta.",
     "riesgos": [
-      "Riesgo regulatorio: investigaciones antimonopolio en EE.UU., UE y mercados asiaticos sobre App Store, pagos y interoperabilidad podrían forzar cambios en el modelo de comisiones de Servicios",
-      "Riesgo geopolitico China: escalada de tensiones comerciales podria afectar manufactura (Foxconn/TSMC en Taiwan) y acceso al mercado chino simultáneamente",
-      "Riesgo competitivo IA: si Apple Intelligence no logra diferenciacion percibida frente a Android con Google Gemini, podría perder cuota en el segmento premium de smartphones",
-      "Riesgo de concentracion de manufactura: ~90% de la produccion sigue en Asia; diversificacion a India avanza pero toma años y eleva costos"
+      "Aranceles EE.UU.-China que eleven costos de manufactura y compriman margenes de Productos 200-400 bps adicionales",
+      "Apple Intelligence decepciona como catalizador de ventas y el crecimiento de iPhone regresa a zona de 0-3% anual",
+      "Regulacion antimonopolio en App Store (Europa DMA activa; EE.UU. en litigio) que obligue a abrir el ecosistema y erosione margenes de Servicios 300-500 bps",
+      "Caida acelerada en China por represalias comerciales o regulacion gubernamental que excluya servicios de Apple",
+      "Cambio de paradigma hacia AR/VR o IA ambient donde Apple Vision Pro aun no ha probado escala comercial"
     ],
-    "inversiones_estrategicas": "El aumento de Capex a $12.7B en FY2025 (+34.6% vs. FY2024) esta orientado principalmente a infraestructura de data centers para soportar Apple Intelligence y procesamiento on-device de IA. R&D alcanzó $34.5B en FY2025 (+10.1% YoY), con foco en Apple Silicon de siguiente generacion, realidad espacial (Vision Pro iteraciones) e IA privada (Private Cloud Compute). La expansion de manufactura en India con Foxconn es una inversion de largo plazo para diversificar riesgo geopolitico."
+    "inversiones_estrategicas": "Apple Intelligence: modelos propios en dispositivo y partnership con OpenAI para ChatGPT en Siri. Apple Silicon: chips M4 y A18 Pro lideran benchmarks de eficiencia energetica. Apple Vision Pro: plataforma de computacion espacial a 3,499 USD. Expansion de manufactura en India (iPhone 16 y 17 ya producidos ahi) y Vietnam. Inversion en data centers propios para IA (capex +34% en FY2025)."
   },
   "verdict": {
-    "status": "Mantener con Sesgo Positivo",
-    "score": "8.4/10",
-    "color": "green",
+    "status": "Mantener / Acumular en caidas",
+    "score": "8.0/10",
+    "color": "yellow",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$416.2B" },
-      { "label": "Margen Neto", "value": "26.9%" },
-      { "label": "FCF Yield", "value": "3.1%" },
-      { "label": "P/E Forward", "value": "25.3x" },
-      { "label": "Crecimiento Rev.", "value": "+6.4% YoY" }
+      {
+        "label": "Revenue TTM",
+        "value": "416.2B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "26.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.3%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "34.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+6.4% FY25 / +16.6% Q2 FY26"
+      }
     ],
     "bullets": [
-      { "text": "**Servicios como motor de margenes ->** El segmento Services supero $109B en FY2025 (+13.5% YoY) y representa el 26.2% del revenue con margenes brutos estimados del 75%+, mejorando structuralmente el perfil de rentabilidad de toda la empresa.", "type": "pro" },
-      { "text": "**EPS creciendo 3x mas rapido que el revenue ->** El EPS diluido GAAP salto 22.5% a $7.46 mientras el revenue crecio 6.4%, gracias a la expansion de margenes y $96.7B en recompras que reducen el denominador de acciones sistematicamente.", "type": "pro" },
-      { "text": "**Balance de grado superior con Deuda/EBITDA de 0.68x ->** La posicion de caja neta de $33.8B y una razon deuda/EBITDA de apenas 0.68x otorgan a Apple flexibilidad financiera maxima para sostener el programa de retorno de capital sin comprometer inversiones estrategicas.", "type": "pro" },
-      { "text": "**Valuacion exigente con FCF en caida ->** El P/FCF de 32.6x y EV/EBITDA de 22x dejan poco margen de seguridad; la caida del FCF un 9.2% en FY2025 por mayor Capex y la dependencia en que Apple Intelligence justifique la valuacion premium son los riesgos mas relevantes en el horizonte de 12 meses.", "type": "con" }
+      {
+        "text": "**Ecosistema y Servicios sin rival** — 2.4B dispositivos activos y Servicios creciendo al 14% con margenes del 75% hacen de Apple una maquina de valor compuesto con ventajas competitivas estructurales que ningun competidor puede replicar en menos de una decada.",
+        "type": "pro"
+      },
+      {
+        "text": "**Maquina de recompras masivas** — 90.7B en recompras en FY2025 y 106B aprobados para FY2026 reducen shares sistematicamente, amplificando el crecimiento de EPS (22.7%) incluso con revenue moderado (6.4%).",
+        "type": "pro"
+      },
+      {
+        "text": "**Aceleracion en Q2 FY2026** — Revenue +16.6% YoY y EPS +21.8% sugieren que Apple Intelligence esta catalizando un ciclo de actualizacion de iPhone que podria mantenerse en doble digito en FY2026.",
+        "type": "pro"
+      },
+      {
+        "text": "**Sin margen de seguridad a 284 USD** — P/E de 38x trailing y 34x forward con FCF yield del 2.3% implica pagar por perfeccion. Los riesgos arancelarios y regulatorios son reales y asimetricos: el upside esta descontado, el downside ante una decepcion puede ser de 15-25%.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Apple alcanzo ingresos record de $416.2 mil millones en FY2025 (+6.4% YoY), superando el pico anterior de FY2022 ($394.3B). El crecimiento fue impulsado por Servicios (+13.5%), iPhone (+4.2%) y Mac (+12.4%), mientras Wearables (-3.6%) y Greater China (-3.9%) fueron los puntos debiles. La trayectoria de ingresos muestra recuperacion solida tras la leve contraccion de FY2023."
+        "texto": "FY2025 cerro con 416.2B (+6.4% YoY), record absoluto. iPhone crece 4% a 209.6B; Mac +12% a 33.7B; Servicios lidera con +14% a 109.2B. Q2 FY2026 acelera a +16.6% YoY (111.2B), la mejor tasa en 6 trimestres, senal de que Apple Intelligence comienza a impactar el ciclo de actualizacion."
       },
       {
         "label": "Margenes",
-        "texto": "Los tres niveles de margen mejoraron en FY2025: bruto 46.9% (+0.7pp), operativo 32.0% (+0.5pp) y neto 26.9% (+2.9pp), con el margen neto siendo el mejor del periodo quinquenal analizado. La expansion refleja el creciente peso de Servicios en el mix y eficiencia operativa. La tendencia de expansion de margenes es uno de los activos mas valiosos del perfil financiero de Apple."
-      },
-      {
-        "label": "EPS",
-        "texto": "El EPS diluido GAAP avanzo 22.5% a $7.46 en FY2025, el mayor salto porcentual del periodo analizado. Esta aceleracion vs. el crecimiento de revenue (+6.4%) refleja el doble efecto de expansion de margenes y reduccion del denominador de acciones via recompras. El consenso de analistas proyecta un EPS forward de ~$8.51 para FY2026, implicando crecimiento adicional del 14%."
-      },
-      {
-        "label": "Balance",
-        "texto": "Apple mantiene un balance de fortaleza excepcional con $132.4 mil millones en caja e inversiones, deuda total de $98.7B (mayoritariamente a largo plazo) y una posicion de caja neta de $33.8B. La razon Deuda/EBITDA de 0.68x es uno de los ratios mas bajos del sector tech de gran capitalizacion. El patrimonio neto es artificialmente bajo ($73.7B) por el volumen acumulado de recompras de acciones, pero esto refleja eficiencia de capital, no debilidad."
+        "texto": "Margen bruto FY2025 de 46.9% (record historico), impulsado por el mix hacia Servicios (margen bruto 75.4%). Margen neto de 26.9%, tambien record. Q2 FY2026 muestra margen bruto de 49.3%, superior al anual, anticipando expansion adicional en FY2026."
       },
       {
         "label": "Generacion de caja",
-        "texto": "El flujo de caja libre de $98.8B en FY2025, aunque cayo 9.2% por el aumento de Capex a $12.7B, sigue siendo uno de los FCF absolutos mas altos de cualquier empresa global. La conversion de utilidad neta a FCF fue del 88%, senhal de calidad de ganancias. El programa de retorno de capital ($96.7B en recompras + $15.4B en dividendos = $112.1B) supero el FCF generado, financiado con la caja existente."
+        "texto": "FCF de 98.8B en FY2025, caida de 9.2% por mayor capex en infraestructura de Apple Intelligence (+34% YoY). La capacidad estructural de generar 100-115B de FCF anual es sostenida y financia el programa de retorno al accionista mas grande del mercado (106B en FY2025)."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 42.4B, reducida desde el pico de 130B en 2019. Apple mantiene 47B en caja y mas de 100B en marketable securities. Balance con capacidad de apalancamiento total para una adquisicion transformadora si la estrategia lo requiriera."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 283.93 USD, Apple cotiza a 38.1x P/E trailing y 34.3x forward. EV/EBITDA de 29.7x. Estas valoraciones son justificables solo si Apple Intelligence genera aceleracion sostenida a 10-12% de revenue en FY2026-27 y Servicios alcanza 35-40% de ingresos en 5 anios. El FCF yield del 2.3% ofrece poco colchon."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Los tres riesgos prioritarios a monitorear son: (1) adopcion y monetizacion de Apple Intelligence — si no logra diferenciacion clara, la valuacion premium de 25.3x EPS forward es dificil de sostener; (2) deterioro en Greater China — la caida del 3.9% en FY2025 podria profundizarse si las tensiones comerciales escalan o Huawei consolida recuperacion; (3) riesgo regulatorio en App Store y Servicios — cualquier cambio forzado en el modelo de comisiones podria impactar el segmento de mayor margen de la empresa."
+        "texto": "Aranceles EE.UU.-China son el riesgo #1 de corto plazo (90% de produccion en Asia, margen de Productos ya comprimido en FY2025). Regulacion de App Store en Europa y EE.UU. amenaza el margen de Servicios de largo plazo. La caida en China puede acelerarse con represalias comerciales. La valoracion exigente crea asimetria negativa: upside descontado, downside ante decepciones severo."
       }
     ]
-  },
-  "parrafos_gratis": 14,
-  "documento_fuente": "Form 10-K FY2025 — Periodo terminado el 27 de septiembre de 2025",
-  "fecha_publicacion": "31 de octubre de 2025",
-  "divisa": "USD",
-  "link_reporte": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+  }
 }

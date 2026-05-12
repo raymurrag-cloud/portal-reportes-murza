@@ -1,444 +1,295 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "SanDisk (SNDK) es lider global en almacenamiento NAND flash, separada de Western Digital en febrero 2025 como empresa publica independiente. Opera en mercados de Cloud, Client y Consumer con fuerte recuperacion del margen bruto (7% en FY2023 a 30% en FY2025). Sin embargo, la utilidad neta es negativa por goodwill impairment no-cash de $1.83B. La valuacion de mercado (~$102B) implica expectativas muy altas de recuperacion futura. Recuperacion operativa dramatica en margen bruto (+23pp en 2 anos) y crecimiento de ingresos +10.5% YoY. El catalizador principal es el segmento Cloud (principalmente SSDs para centros de datos con IA), que crecio 195% YoY. Sin embargo, las perdidas netas y la valuacion elevada requieren cautela.",
-  "descripcion": "SanDisk es lider en almacenamiento flash NAND, separada de Western Digital en febrero 2025. Desarrolla y fabrica dispositivos y soluciones de almacenamiento para mercados Cloud, Client y Consumer. Su portfolio incluye SSDs enterprise, tarjetas de memoria, USB flash drives y soluciones embebidas para OEMs. Moat: JV estrategica con Kioxia para manufactura BiCS NAND, marca SanDisk globalmente reconocida, cartera de patentes y relaciones establecidas con hyperscalers y OEMs. Post-separacion de WDC, estrategia enfocada en flash puro con mayor flexibilidad de capital.",
+  "resumen": "SanDisk reporto resultados historicos en Q3 FY2026 (enero-marzo 2026): ingresos de 5.95B USD (+251% YoY) y utilidad neta de 3.61B USD (EPS diluido GAAP $23.03), aplastando la guia de la propia empresa de $12-$14 EPS por un margen del 60%. La empresa liquido toda su deuda a largo plazo y acumulo 3.74B USD en caja, cerrando el trimestre libre de deuda por primera vez. La transformacion de NAND commodity a proveedor de storage AI de alto margen se refleja en un margen bruto GAAP de 78.4% (+55.8pp YoY). Con un backlog contractual de 42B USD en acuerdos de suministro plurianuales que cubren mas de un tercio de los envios estimados de FY2027, el ciclo ya no depende exclusivamente del spot. Veredicto: transformacion estructural en curso; la ciclicidad historica del NAND esta siendo reemplazada por visibilidad de ingresos a largo plazo.",
+  "descripcion": "SanDisk Corporation (CIK 0002023554, Nasdaq: SNDK) es el fabricante puro de NAND flash y SSDs resultante del spinoff de Western Digital completado en 2024-2025. Opera en tres segmentos: Data Center (enterprise SSDs TLC de alto rendimiento para AI inference y training, 24.7% del revenue en Q3 FY2026), Edge (SSDs cliente para PCs, laptops y dispositivos, 61.6%) y Consumer (tarjetas y drives retail, 13.8%). El modelo de negocio evoluciona desde ventas spot en mercado ciclico hacia contratos NBM (New Business Model) de largo plazo con clientes hyperscaler que incluyen garantias financieras y precios indexados. Clientes: grandes cloud providers (AWS, Google, Microsoft, Meta), fabricantes de PCs y canales retail. Competidores: Samsung, SK Hynix, Micron. Ano fiscal termina en junio (ultimo viernes de junio). La empresa mantiene fabricacion propia en JV con Kioxia (Yokkaichi, Japon) y se beneficia directamente de la demanda de almacenamiento para modelos de IA y centros de datos de proxima generacion.",
   "tabla": {
     "headers": [
       "Metrica",
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q3 FY2026",
       "Var. YoY"
     ],
     "rows": [
-      [
-        "Revenue (B USD)",
-        "6.09",
-        "6.66",
-        "7.36",
-        "+10.5%"
-      ],
-      [
-        "Utilidad Bruta (B USD)",
-        "0.43",
-        "1.07",
-        "2.21",
-        "+106.5%"
-      ],
-      [
-        "Margen Bruto",
-        "7.1%",
-        "16.1%",
-        "30.1%",
-        "+14.0pp"
-      ],
-      [
-        "EBITDA Ajustado (B USD)",
-        "N/D",
-        "N/D",
-        "0.61",
-        "N/D"
-      ],
-      [
-        "FCF (B USD)",
-        "-0.93",
-        "N/D",
-        "-0.12",
-        "N/D"
-      ],
-      [
-        "EPS GAAP Diluido",
-        "N/D",
-        "N/D",
-        "-11.24",
-        "N/D"
-      ],
-      [
-        "Deuda Neta (B USD)",
-        "N/D",
-        "N/D",
-        "0.37",
-        "N/D"
-      ]
+      ["Revenue (B USD)", "6.09", "6.66", "7.36", "5.95", "+251.0%"],
+      ["Utilidad Neta (B USD)", "-2.14", "-0.67", "-1.64", "3.61", "N/A (vs -1.93B)"],
+      ["Margen Neto (%)", "-35.2%", "-10.1%", "-22.3%", "60.8%", "+74.8pp"],
+      ["EBITDA (B USD)", "-1.59", "-0.24", "-1.21", "4.15", "N/A (positivo)"],
+      ["FCF (B USD)", "-0.93", "-0.48", "-0.12", "2.99", "N/A (positivo)"],
+      ["EPS Diluido", "-14.78", "-4.63", "-11.32", "23.03", "N/A (vs -13.33)"],
+      ["Deuda Neta (B USD)", "N/D", "0.00", "0.37", "-3.74", "N/A (net cash)"]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "N/A",
-      "signal": "red",
-      "note": "EPS negativo (-11.24 USD)",
-      "precio_base": 701.59,
-      "precio_fecha": "2026-04-02",
+      "value": "41.4x",
+      "signal": "yellow",
+      "note": "EPS TTM $28.71 (Q4FY25 + Q1-Q3FY26); valuacion comprimiendo rapido",
+      "precio_base": 1189.0,
+      "precio_fecha": "2026-05-01",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": -11.24
+        "valor": 28.71
       }
     },
     {
       "label": "P/E Forward",
-      "value": "9.5x",
+      "value": "9.4x",
       "signal": "green",
-      "note": "No disponible",
-      "precio_base": 851.9,
-      "precio_fecha": "2026-04-09",
+      "note": "Asumiendo Q4FY26 guide midpoint $31.50 EPS anualizados; altamente atractivo",
+      "precio_base": 1189.0,
+      "precio_fecha": "2026-05-01",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 90.0868
+        "valor": 126.0
       }
     },
     {
-      "label": "EV/EBITDA (adj)",
-      "value": "169x",
-      "signal": "red",
-      "note": "EBITDA ajustado excl. goodwill impairment"
+      "label": "EV/EBITDA",
+      "value": "10.7x",
+      "signal": "green",
+      "note": "EV ~182.7B / EBITDA Q3 anualizado ~17B; bajo para la tasa de crecimiento",
+      "precio_base": 1189.0,
+      "precio_fecha": "2026-05-01",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 17.0,
+        "shares_m": 157,
+        "deuda_neta_b": -3.74
+      }
     },
     {
       "label": "P/FCF",
-      "value": "N/A",
-      "signal": "red",
-      "note": "FCF negativo (-0.12B USD)"
+      "value": "15.8x",
+      "signal": "green",
+      "note": "FCF YTD 9mo anualizado 5.88B / MktCap 186.7B; generacion de caja excepcional",
+      "precio_base": 1189.0,
+      "precio_fecha": "2026-05-01",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 5.88,
+        "shares_m": 157
+      }
     },
     {
-      "label": "Margen Bruto",
-      "value": "30.1%",
-      "signal": "yellow",
-      "note": "Recuperacion desde 7.1% en FY2023"
-    },
-    {
-      "label": "Margen Operativo",
-      "value": "-18.7%",
-      "signal": "red",
-      "note": "GAAP incl. goodwill impairment 1.83B"
-    },
-    {
-      "label": "Margen Neto",
-      "value": "-22.3%",
-      "signal": "red"
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.0x",
+      "signal": "green",
+      "note": "Libre de deuda; caja neta de 3.74B USD"
     },
     {
       "label": "ROE",
-      "value": "-65.6%",
-      "signal": "red"
-    },
-    {
-      "label": "ROIC (adj.)",
-      "value": "12.4%",
-      "signal": "yellow",
-      "note": "Excl. goodwill impairment"
-    },
-    {
-      "label": "Deuda Neta / EBITDA",
-      "value": "0.6x",
+      "value": "52.5%",
       "signal": "green",
-      "note": "EBITDA ajustado"
+      "note": "Annualizado YTD FY2026; recuperacion dramatica vs negativo en FY2025"
+    },
+    {
+      "label": "ROA",
+      "value": "40.2%",
+      "signal": "green",
+      "note": "Annualizado YTD FY2026; eficiencia de activos sobresaliente"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {
-        "label": "FY2023",
-        "revenue": 6.09,
-        "utilidad": -1.8
-      },
-      {
-        "label": "FY2024",
-        "revenue": 6.66,
-        "utilidad": -1.1
-      },
-      {
-        "label": "FY2025",
-        "revenue": 7.36,
-        "utilidad": -1.64
-      }
+      {"label": "FY2023", "revenue": 6.09, "utilidad": -2.14},
+      {"label": "FY2024", "revenue": 6.66, "utilidad": -0.67},
+      {"label": "FY2025", "revenue": 7.36, "utilidad": -1.64},
+      {"label": "Q3 FY2026", "revenue": 5.95, "utilidad": 3.61}
     ],
     "series": [
-      {
-        "key": "revenue",
-        "name": "Revenue"
-      },
-      {
-        "key": "utilidad",
-        "name": "Utilidad Neta"
-      }
+      {"key": "revenue", "name": "Revenue"},
+      {"key": "utilidad", "name": "Utilidad Neta"}
     ]
   },
   "chart_margenes": {
     "data": [
-      {
-        "label": "FY2023",
-        "bruto": 7.1,
-        "operativo": null,
-        "neto": null
-      },
-      {
-        "label": "FY2024",
-        "bruto": 16.1,
-        "operativo": null,
-        "neto": null
-      },
-      {
-        "label": "FY2025",
-        "bruto": 30.1,
-        "operativo": 6.1,
-        "neto": -22.3
-      }
+      {"label": "FY2023", "bruto": 7.1, "operativo": -33.4, "neto": -35.2},
+      {"label": "FY2024", "bruto": 16.1, "operativo": -7.0, "neto": -10.1},
+      {"label": "FY2025", "bruto": 30.1, "operativo": -18.7, "neto": -22.3},
+      {"label": "Q3 FY2026", "bruto": 78.4, "operativo": 69.1, "neto": 60.8}
     ],
     "series": [
-      {
-        "key": "bruto",
-        "name": "Margen Bruto"
-      },
-      {
-        "key": "operativo",
-        "name": "Margen Operativo (adj.)"
-      },
-      {
-        "key": "neto",
-        "name": "Margen Neto"
-      }
+      {"key": "bruto", "name": "Margen Bruto"},
+      {"key": "operativo", "name": "Margen Operativo"},
+      {"key": "neto", "name": "Margen Neto"}
     ]
   },
   "capital_allocation": {
     "items": [
       {
-        "label": "Capex FY2025",
-        "value": "0.20B USD",
-        "nota": "Manufactura y R&D"
+        "label": "Recompra de acciones autorizada (Q3 FY2026)",
+        "value": "6,000M USD",
+        "nota": "Programa de buyback de 6B sin fecha de vencimiento anunciado junto a earnings Q3; primer programa significativo como empresa independiente"
       },
       {
-        "label": "Dividendos",
-        "value": "No aplica",
-        "nota": "Empresa no paga dividendos - retiene capital para operaciones"
+        "label": "Repago de deuda (YTD FY2026)",
+        "value": "1,849M USD",
+        "nota": "Liquido el 100% de su deuda a largo plazo durante los primeros 9 meses de FY2026; el termino del prestamo de 650M fue el ultimo pago en Q3"
       },
       {
-        "label": "Recompras",
-        "value": "N/D",
-        "nota": "Empresa recien independizada (feb 2025)"
+        "label": "Capex YTD (9 meses FY2026)",
+        "value": "134M USD",
+        "nota": "Capex modesto: SanDisk opera su fabricacion NAND en JV con Kioxia (Yokkaichi, Japon); el capex de expansion de fab lo comparte con el socio"
       },
       {
-        "label": "Prioridad",
-        "value": "Inversion tecnologica + reduccion de deuda",
-        "nota": "Tecnologia NAND, recuperacion de rentabilidad operativa"
-      },
-      {
-        "label": "JV Kioxia",
-        "value": "Activo estrategico",
-        "nota": "Financia parte de la capacidad de manufactura NAND"
+        "label": "FCF generado YTD (9 meses FY2026)",
+        "value": "4,411M USD",
+        "nota": "FCF margin YTD del 39% sobre revenue YTD de 11.28B; Q3 standalone FCF $2,993M a margen del 50.3%"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": [
-      "Empresa",
-      "EV/EBITDA",
-      "Margen Neto",
-      "Crec. YoY",
-      "Posicion vs. SNDK"
-    ],
+    "titulo": "SNDK vs. Pares Semiconductores de Memoria (Q3 FY2026 reciente)",
+    "headers": ["Metrica", "SNDK", "Micron (MU)", "Samsung Semicon", "SK Hynix"],
     "rows": [
-      [
-        "SNDK",
-        "169x (adj.)",
-        "-22.3%",
-        "+10.5%",
-        "Valuacion extrema vs. fundamentos"
-      ],
-      [
-        "MU (Micron)",
-        "9.2x",
-        "+12.5%",
-        "+35%",
-        "Mas barato con mejor rentabilidad"
-      ],
-      [
-        "WDC",
-        "8.5x",
-        "+5.2%",
-        "+42%",
-        "Mas barato, mayor crecimiento"
-      ]
+      ["Margen Bruto (trim. reciente)", "78.4%", "~38%", "~46%", "~60%"],
+      ["Crecimiento Rev. YoY", "+251%", "~38%", "~45%", "~42%"],
+      ["Modelo de precios", "NBM largo plazo", "Spot + contratos", "Spot dominante", "Spot + HBM premium"],
+      ["Exposicion AI storage", "Alta (enterprise SSD)", "Alta (HBM + NAND)", "Alta (HBM)", "Alta (HBM lider)"]
     ]
   },
   "deterioro": {
-    "veredicto": "Recuperacion operativa real pero rentabilidad GAAP negativa por goodwill impairment",
-    "analisis": "El margen bruto paso de 7.1% a 30.1% en 2 anos — recuperacion historica. Sin embargo el goodwill impairment de $1.83B distorsiona las metricas GAAP de rentabilidad. El FCF casi alcanzo el break-even (-$0.12B vs. -$0.93B en FY2023).",
+    "veredicto": "No hay deterioro; SanDisk atraviesa una de las transformaciones mas espectaculares en la historia del sector de semiconductores. Los margenes, la generacion de caja y el balance mejoraron dramaticamente en cada metrica YoY.",
+    "analisis": "Q3 FY2026 representa un quiebre estructural: la empresa pasa de perder 1.93B USD un ano atras a ganar 3.61B USD en el mismo trimestre. El margen bruto GAAP salta de 22.5% a 78.4% en doce meses. La deuda se elimina por completo. La caja salta de 1.48B a 3.74B. El backlog contractual de 42B USD con garantias financieras superiores a 11B reduce materialmente el riesgo de ciclicidad que domino los tres anos previos de perdidas.",
     "items": [
-      {
-        "metrica": "Margen Bruto",
-        "valor": "30.0%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Margen Operativo (adj.)",
-        "valor": "6.1%",
-        "status": "warn"
-      },
-      {
-        "metrica": "Margen Neto",
-        "valor": "-22.3%",
-        "status": "bad"
-      },
-      {
-        "metrica": "FCF",
-        "valor": "-0.12B USD",
-        "status": "warn"
-      },
-      {
-        "metrica": "Deuda Neta / EBITDA (adj)",
-        "valor": "0.6x",
-        "status": "ok"
-      },
-      {
-        "metrica": "Crecimiento YoY",
-        "valor": "10.5%",
-        "status": "ok"
-      },
-      {
-        "metrica": "ROE",
-        "valor": "-65.6%",
-        "status": "bad"
-      },
-      {
-        "metrica": "ROIC (adj.)",
-        "valor": "12.4%",
-        "status": "warn"
-      }
+      {"metrica": "Revenue YoY", "valor": "+251% en Q3 FY2026; supera guia de $4.4-4.8B con $5.95B", "status": "ok"},
+      {"metrica": "Margen Bruto", "valor": "78.4% GAAP en Q3 FY2026 vs 22.5% en Q3 FY2025 (+55.8pp)", "status": "ok"},
+      {"metrica": "Margen Operativo", "valor": "69.1% en Q3 FY2026 vs -111% en Q3 FY2025", "status": "ok"},
+      {"metrica": "Margen Neto", "valor": "60.8% en Q3 FY2026 vs -114% en Q3 FY2025", "status": "ok"},
+      {"metrica": "FCF", "valor": "2,993M standalone en Q3 FY2026 vs negativo un ano atras", "status": "ok"},
+      {"metrica": "Deuda", "valor": "Cero deuda a largo plazo; net cash 3.74B al cierre de Q3 FY2026", "status": "ok"}
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Recuperacion de margen bruto record",
+      "title": "Transformacion de margenes: commodity a premium AI",
       "impact": "Alto",
-      "evidence": "Margen bruto de 7.1% (FY2023) a 30.1% (FY2025), +23pp en 2 anos.",
-      "context": "Indica pricing power recuperado y mejora de mix hacia SSDs enterprise de mayor valor."
+      "evidence": "Margen bruto GAAP 78.4% en Q3 FY2026 vs 7.1% en FY2023. Margen neto 60.8% en un solo trimestre. En un ano: de -1.93B de perdida neta a +3.61B de ganancia.",
+      "context": "El diferencial de margen entre NAND enterprise TLC para AI y NAND commodity spot puede ser de 50-70 puntos porcentuales. SanDisk esta capturando ese diferencial de forma estructural a traves de los contratos NBM de largo plazo. Si esta tendencia se mantiene en FY2027, el modelo financiero es irreconocible respecto al de 2023-2025."
     },
     {
       "level": "green",
-      "title": "Cloud +195% YoY — catalizador IA",
+      "title": "Backlog de 42B USD reduce la ciclicidad historica",
       "impact": "Alto",
-      "evidence": "Segmento Cloud crecio de 0.33B a 0.96B en FY2025, impulsado por SSDs para data centers de IA.",
-      "context": "El mercado de SSDs enterprise para IA es el de mayor crecimiento en el sector de almacenamiento."
+      "evidence": "Cinco contratos NBM con clientes hyperscaler acumulan garantias financieras superiores a 11B USD y un valor minimo contractual total de 42B. Los contratos cubren mas de un tercio de los envios estimados de FY2027. Prepagos de 400M USD ya en balance.",
+      "context": "La volatilidad de precios NAND en mercado spot puede ser del 50-80% en ciclos de 12-18 meses. Un backlog contractual de esta magnitud actua como amortiguador ante bajadas de precios spot. Para el inversionista, esto transforma el perfil de riesgo de SNDK de empresa ciclica pura a empresa semi-recurrente con visibilidad de revenue plurianual."
+    },
+    {
+      "level": "green",
+      "title": "Balance blindado: caja neta 3.74B y cero deuda",
+      "impact": "Alto",
+      "evidence": "Al 3-abril-2026: caja $3,735M, deuda a largo plazo $0, equity $13,777M, activos totales $17,075M. Repago de toda la deuda LT en 9 meses de FY2026. Buyback de 6B autorizado.",
+      "context": "Una empresa que hasta hace un ano tenia perdidas operativas de -1.4B y deuda de 1.85B ahora dispone de 3.74B en caja y FCF de 4.4B YTD. La rapidez del desapalancamiento es inusual y refleja la calidad del flujo de caja generado por los contratos NBM premium."
     },
     {
       "level": "yellow",
-      "title": "Goodwill impairment no-cash 1.83B",
+      "title": "Concentracion de clientes hyperscaler: riesgo de renegociacion",
       "impact": "Medio",
-      "evidence": "Impairment de goodwill en FY2025 que distorsiona utilidad neta y ROE.",
-      "context": "Item no-cash que no afecta el flujo de efectivo operativo pero pesa en metricas GAAP."
+      "evidence": "Los contratos NBM de 42B provienen de un numero reducido de clientes cloud. Q4FY26 guia $7.75-8.25B implica que 1-2 clientes representan probablemente mas del 30% del revenue.",
+      "context": "Si un hyperscaler reduce pedidos, renegocia precios o desarrolla NAND propio, el impacto en revenue es desproporcionado. Esta concentracion es el riesgo operativo mas relevante a monitorear en los proximos 4-6 trimestres."
     },
     {
       "level": "yellow",
-      "title": "FCF casi break-even",
+      "title": "Historia financiera corta como empresa independiente",
       "impact": "Medio",
-      "evidence": "FCF de -0.12B en FY2025 vs. -0.93B en FY2023 — mejora sostenida.",
-      "context": "El FCF positivo es el proximo hito critico para validar la tesis de recuperacion."
+      "evidence": "SNDK cotiza como empresa independiente desde 2024. Solo existen 2 anos completos (FY2024 y FY2025) de reportes anuales propios en SEC. FY2023 refleja operaciones consolidadas como parte de Western Digital.",
+      "context": "La ausencia de historial financiero independiente dificulta construir modelos de largo plazo. Los inversores no cuentan con datos de como la empresa gestiona por si sola un ciclo bajista completo del mercado NAND. La experiencia del equipo directivo mitiga pero no elimina este riesgo."
     },
     {
       "level": "red",
-      "title": "Valuacion de 102B desconectada de fundamentos",
+      "title": "Ciclicidad estructural del mercado NAND: oversupply como riesgo de cola",
       "impact": "Alto",
-      "evidence": "Market cap de 102B con perdidas netas y sin historial independiente (separada feb 2025).",
-      "context": "El mercado descuenta un escenario perfecto de recuperacion que no esta garantizado."
-    },
-    {
-      "level": "red",
-      "title": "Perdidas netas persistentes",
-      "impact": "Alto",
-      "evidence": "Utilidad neta de -1.64B en FY2025 (EPS -11.24). ROE de -65.6%.",
-      "context": "La rentabilidad GAAP sigue siendo negativa, limitando el universo de inversores institucionales."
+      "evidence": "NAND registra ciclos de boom-bust con duracion promedio de 18-36 meses. FY2023 y FY2025 fueron anos de perdidas masivas para SNDK con margenes brutos de 7% y 30%. El superciclo actual es impulsado por AI, pero los ciclos anteriores generaron contraccion de precios spot del 40-70%.",
+      "context": "Si la demanda de AI storage desacelera o si Samsung, SK Hynix y Micron expanden capacidad agresivamente, el precio spot NAND puede colapsar. Los contratos de 42B protegen parcialmente, pero el revenue sin contratos (consumer y edge spot) puede caer materialmente. El inversionista debe monitorear inventarios de la industria y los planes de capex de Samsung."
     }
   ],
   "score": {
-    "score": 4.2,
+    "score": 7.6,
     "max": 10,
     "items": [
-      {
-        "label": "Crecimiento de revenue",
-        "score": 6,
-        "max": 10
-      },
-      {
-        "label": "Calidad de margenes",
-        "score": 3,
-        "max": 10
-      },
-      {
-        "label": "Generacion de FCF",
-        "score": 2,
-        "max": 10
-      },
-      {
-        "label": "Solidez del balance",
-        "score": 5,
-        "max": 10
-      },
-      {
-        "label": "Riesgo de valuacion",
-        "score": 1,
-        "max": 10
-      }
+      {"label": "Poder de fijacion de precios", "score": 8, "max": 10},
+      {"label": "Crecimiento de revenue", "score": 10, "max": 10},
+      {"label": "Calidad de margenes", "score": 9, "max": 10},
+      {"label": "Solidez del balance", "score": 9, "max": 10},
+      {"label": "Generacion de FCF", "score": 10, "max": 10},
+      {"label": "Visibilidad y ciclicidad", "score": 6, "max": 10},
+      {"label": "Historial como empresa independiente", "score": 4, "max": 10}
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "La recuperacion de margenes de SNDK es una de las mas rapidas en la historia reciente del sector NAND: el margen bruto paso de 7.1% a 30.1% en solo 2 anos. El catalizador estructural es la demanda de SSDs enterprise para centros de datos con IA, donde el segmento Cloud crecio 195% YoY. El FCF casi alcanzo el break-even. Sin embargo, la valuacion de ~$102B es extremadamente elevada para una empresa con perdidas netas y sin historial independiente. La tesis bull requiere que SNDK alcance margenes operativos sostenidos del 15-20%+ en los proximos 2-3 anos para justificar el precio actual.",
-    "ventajas": "JV estrategica con Kioxia para manufactura BiCS NAND de siguiente generacion. Marca SanDisk globalmente reconocida en consumer y OEM. Cartera de patentes en flash storage. Crecimiento explosivo en SSDs enterprise para IA (+195% YoY en Cloud). Post-separacion, mayor agilidad para partnerships y asignacion de capital.",
-    "debilidades": "Sin historial como empresa independiente (separada feb 2025). Perdidas netas persistentes y goodwill impairment de 1.83B. Dependencia del ciclo NAND de alta volatilidad. Menor escala integrada vs. Samsung y SK Hynix. EV/EBITDA ajustado de 169x refleja expectativas muy elevadas.",
+    "estrategia": "SanDisk ejecuta una estrategia de premiumizacion del NAND: alejarse del mercado spot ciclico y apalancar la demanda de AI storage para firmar contratos NBM de largo plazo con precios indexados y garantias financieras. El objetivo declarado es que los contratos de largo plazo representen la mayoria del revenue de Data Center en FY2027. Paralelamente, mantiene el segmento Edge (client SSDs) y Consumer como fuentes de volumen, pero con menor prioridad estrategica. La inversion en capacidad se realiza principalmente a traves del JV con Kioxia en Japon, lo que limita el capex propio y maximiza el FCF.",
+    "ventajas": "Tecnologia NAND de clase mundial heredada de la era Western Digital con decadas de I+D. Capacidad de manufactura propia via JV Kioxia con economias de escala. Primero en firmar contratos NBM de largo plazo con hyperscalers, creando barreras de entrada al establecer relaciones contractuales plurianuales. Margen bruto de 78% en Q3 FY2026 confirma diferenciacion real en enterprise SSD vs competidores que venden commodity. Balance limpio con 3.74B en caja para financiar el buyback de 6B y posibles adquisiciones.",
+    "debilidades": "Historia corta como empresa independiente (2 anos de reportes propios): el equipo directivo debe demostrar que puede gestionar el proximo ciclo bajista de forma autonoma. Concentracion de clientes: los contratos NBM dependen de un numero reducido de hyperscalers. El segmento Edge (61% del revenue) sigue siendo mas ciclico y expuesto al mercado PC que no esta en superciclo. Dependencia del JV con Kioxia para manufactura implica riesgos geopoliticos.",
     "riesgos": [
-      "Perdidas netas persistentes y goodwill impairment de $1.83B en FY2025",
-      "Valuacion de ~$102B desconectada de fundamentos actuales de rentabilidad",
-      "Ciclicidad extrema del mercado NAND",
-      "Competencia de Samsung y SK Hynix con mayor escala integrada",
-      "Sin historial como empresa independiente (separada feb 2025)"
+      "Desaceleracion de inversion en infraestructura AI por parte de hyperscalers si los retornos de AI decepcionan",
+      "Expansion agresiva de capacidad NAND por Samsung o SK Hynix que colapsa precios spot y presiona el revenue Edge y Consumer no contractual",
+      "Renegociacion o cancelacion de contratos NBM si la demanda del cliente cae o si la tecnologia evoluciona",
+      "Riesgo geopolitico: JV de manufactura con Kioxia en Japon expuesto a restricciones de exportacion de semiconductores",
+      "Riesgo de ejecucion del buyback de 6B a precios de 1,000-1,400 USD por accion: si el ciclo se revierte, la asignacion de capital puede resultar destructiva de valor"
     ],
-    "inversiones_estrategicas": "Inversion de 0.20B en Capex FY2025 para manufactura y R&D. JV con Kioxia como vehiculo de inversion en capacidad NAND de siguiente generacion. Enfoque en SSDs enterprise y cloud como segmento de alto crecimiento y margenes."
+    "inversiones_estrategicas": "Q3 FY2026 fue transformacional en capital allocation: (1) Repago del ultimo tramo de deuda (650M term loan), dejando el balance libre de deuda por primera vez. (2) Anuncio del buyback de 6B USD sin fecha de vencimiento, senalizando confianza en la generacion de caja sostenida. (3) Acumulacion de caja de 3.74B como buffer estrategico. (4) Recepcion de 400M USD en prepagos de clientes NBM ya reflejados en balance. El Q4 FY2026 guidance de 7.75-8.25B de revenue implica aceleracion adicional del +30-39% secuencial."
   },
   "verdict": {
-    "status": "Especulativo — Alta Valuacion",
-    "score": "4.2/10",
-    "color": "red",
+    "status": "Mantener con Seguimiento Activo",
+    "score": "7.6/10",
+    "color": "yellow",
     "metrics": [
-      {
-        "label": "Revenue FY2025",
-        "value": "7.36B USD"
-      },
-      {
-        "label": "Margen Bruto",
-        "value": "30.1%"
-      },
-      {
-        "label": "FCF",
-        "value": "-0.12B USD"
-      },
-      {
-        "label": "EV/EBITDA (adj.)",
-        "value": "169x"
-      },
-      {
-        "label": "Crecimiento Rev.",
-        "value": "+10.5% YoY"
-      }
+      {"label": "Revenue Q3 FY2026", "value": "5.95B USD"},
+      {"label": "Margen Bruto", "value": "78.4%"},
+      {"label": "FCF Yield (anualiz.)", "value": "3.1%"},
+      {"label": "P/E Forward", "value": "9.4x"},
+      {"label": "Crecimiento Rev.", "value": "+251% YoY"}
     ],
     "bullets": [
       {
-        "text": "**Recuperacion operativa real** — El margen bruto paso de 7.1% a 30.1% en 2 anos, una de las recuperaciones mas rapidas en la historia del sector NAND. El segmento Cloud crece +195% YoY impulsado por SSDs para IA.",
+        "text": "**Transformacion estructural verificada ->** De -1.93B de perdida neta a +3.61B de ganancia en el mismo trimestre de un ano a otro. El margen bruto GAAP de 78.4% no es puntual: es el resultado de contratos NBM premium que reemplazan ventas spot. El backlog de 42B con garantias de 11B le da visibilidad que la empresa nunca tuvo antes.",
         "type": "pro"
       },
       {
-        "text": "**Catalizador estructural IA** — La demanda de SSDs enterprise para centros de datos de IA es un mega-trend secular. SanDisk tiene posicion privilegiada via su JV con Kioxia.",
+        "text": "**Valuacion atractiva en terminos forward ->** Con P/E forward de 9.4x basado en la guia de Q4 FY2026 ($30-33 EPS) y un balance neto en caja de 3.74B, la empresa cotiza a multiples bajos para la tasa de crecimiento y el perfil de margen actual. El P/FCF de 15.8x es notablemente bajo para una empresa generando 50% de FCF margin.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion extrema sin soporte** — Market cap de 102B con perdidas netas, sin historial independiente y EV/EBITDA de 169x. El mercado ya descuenta un escenario perfecto de recuperacion que requiere 2-3 anos de ejecucion impecable.",
-        "type": "con"
+        "text": "**Balance transformado: cero deuda, buyback de 6B ->** Elimino toda la deuda LT en 9 meses y autorizo recompra por 6B USD. Este nivel de confianza ejecutiva en la generacion sostenida de caja es inusual en la industria de memoria, historicamente ciclica y propensa a destruir capital en fases de expansion.",
+        "type": "pro"
       },
       {
-        "text": "**Riesgo ciclico y competitivo** — El mercado NAND es altamente ciclico. Samsung y SK Hynix tienen mayor escala integrada. Un deterioro del ciclo puede revertir rapidamente los avances de margen.",
+        "text": "**Ciclicidad NAND como riesgo estructural irresuelto ->** Tres de los cuatro anos fiscales previos cerraron con perdidas. El superciclo AI puede durar 2-4 anos adicionales, pero el mercado NAND tiene historia de colapsos abruptos de precios. Los contratos NBM mitigan pero no eliminan el riesgo; un ciclo completo bajista como empresa independiente aun no ha sido probado.",
         "type": "con"
       }
     ]
   },
-  "conclusion": "SanDisk es una historia de recuperacion ciclica acelerada en el mercado NAND con un catalizador real en IA. Los fundamentos operativos mejoran significativamente (margen bruto +23pp en 2 anos, Cloud +195% YoY, FCF casi break-even), pero la valuacion actual de 102B implica expectativas excepcionales que el mercado ya descuenta. Solo para inversores con alta tolerancia al riesgo y horizonte de 2-3 anos. Stop-loss conceptual si el margen bruto retrocede por debajo del 25%."
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Q3 FY2026 entrego 5.95B USD (+251% YoY), superando la guia de 4.4-4.8B en 24%. El YTD de 9 meses acumula 11.28B. El revenue de Data Center salto 233% secuencialmente impulsado por SSDs TLC enterprise para workloads de AI. La guia de Q4 FY2026 de 7.75-8.25B implica aceleracion adicional de +30-39% secuencial. Revenue FY2025 anual fue de 7.36B; en solo un trimestre Q3 FY2026 genero el 81% de ese total anual."
+      },
+      {
+        "label": "Margenes",
+        "texto": "El salto de margen bruto de 22.5% a 78.4% en un ano es historico para cualquier empresa de hardware. El margen operativo paso de -111% a 69.1% y el margen neto de -114% a 60.8% en el mismo periodo. Esta expansion refleja el diferencial de precio entre NAND enterprise premium (contratos NBM) y NAND commodity spot, amplificado por el apalancamiento operativo con opex relativamente fijo (7.5% del revenue en Q3 FY2026)."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF YTD (9 meses FY2026): 4,545M USD. FCF YTD: 4,411M USD. Q3 standalone FCF: 2,993M USD a margen del 50.3% (compania reporta FCF ajustado de 2,955M a margen de 49.7%). La empresa genero mas FCF en un trimestre que en todos los anos previos combinados como entidad independiente. El capex es minimo (134M en 9 meses) gracias al modelo JV con Kioxia."
+      },
+      {
+        "label": "Balance",
+        "texto": "Al 3-abril-2026: caja 3.74B, deuda LT cero, equity 13.78B, activos 17.08B. Deuda neta negativa (net cash) de -3.74B. Buyback de 6B autorizado. La transformacion del balance en 12 meses es de las mas rapidas en el sector: de 1.85B de deuda neta a 3.74B de caja neta. El balance es ahora una fortaleza con capacidad para ejecutar el buyback completo con el FCF proyectado de FY2027."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E trailing 41.4x (EPS TTM $28.71), P/E forward ~9.4x (anualizado Q4 guide midpoint $31.50), P/FCF 15.8x. La brecha entre trailing y forward refleja la velocidad del cambio fundamental. Un P/E forward de 9-15x para una empresa con 78% de margen bruto y 251% de crecimiento es potencialmente bajo si los contratos NBM prueban su durabilidad en FY2027."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Ciclicidad estructural del NAND: si los precios spot colapsan o la demanda AI desacelera, los segmentos Edge y Consumer (75% del revenue Q3) se comprimen drasticamente. Concentracion de clientes en los contratos de 42B. Riesgo geopolitico de la fabricacion en Japon via JV Kioxia. Historia corta de 2 anos como empresa independiente sin haber atravesado un ciclo bajista completo de forma autonoma."
+      }
+    ]
+  }
 }

@@ -1,0 +1,494 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "The Coca-Cola Company es el gigante defensivo de las bebidas globales, presente en mas de 200 paises con mas de 62 anos consecutivos incrementando su dividendo y respaldado por Warren Buffett como su mayor inversion individual via Berkshire Hathaway. Su modelo asset-light basado en la venta de concentrado a embotelladoras genera margenes brutos superiores al 60% con bajo requerimiento de capital. FY2025 mostro una fuerte recuperacion con utilidad neta de 13.1B (+23% YoY) y EBITDA de 14.8B (+34% YoY), reafirmando el poder de fijacion de precios y la solidez del negocio subyacente.",
+  "descripcion": "The Coca-Cola Company (KO) es la empresa de bebidas mas reconocida del mundo por valor de marca. Opera via un modelo de negocio unico: vende concentrado y jarabe a mas de 900 embotelladoras independientes que producen y distribuyen los productos en 200+ paises. Este modelo asset-light genera margenes brutos superiores al 60% y minimiza el capex. El portafolio de 500+ marcas incluye Coca-Cola, Sprite, Fanta, Dasani, Minute Maid, smartwater, BodyArmor, Costa Coffee y una participacion en Monster Beverage. Revenue reportado FY2025: 47.9B (sistema total 90B+). Dividend Aristocrat con 62+ anos de incrementos consecutivos desde 1963. Mayor inversion individual de Warren Buffett via Berkshire Hathaway (~9% del capital).",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        38.66,
+        43,
+        45.75,
+        47.06,
+        47.94,
+        "+1.9%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        9.77,
+        9.54,
+        10.71,
+        10.63,
+        13.11,
+        "+23.3%"
+      ],
+      [
+        "Margen Neto",
+        "25.3%",
+        "22.2%",
+        "23.4%",
+        "22.6%",
+        "27.3%",
+        "+4.7pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        11.76,
+        12.17,
+        12.44,
+        11.07,
+        14.81,
+        "+33.8%"
+      ],
+      [
+        "FCF (B USD)",
+        11.26,
+        9.53,
+        9.75,
+        4.74,
+        5.3,
+        "+11.8%"
+      ],
+      [
+        "EPS Diluido",
+        2.25,
+        2.19,
+        2.47,
+        2.47,
+        3.04,
+        "+23.1%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        29.77,
+        27.26,
+        28.14,
+        24.67,
+        25.23,
+        "+2.3%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "25.2x",
+      "signal": "yellow",
+      "note": "vs staples ~22x",
+      "precio_base": 80.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 3.18
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "23.0x",
+      "signal": "yellow",
+      "precio_base": 80.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 3.48
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "25.0x",
+      "signal": "yellow",
+      "precio_base": 80.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 14.81,
+        "shares_m": 4302,
+        "deuda_neta_b": 25.23
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "65.0x",
+      "signal": "yellow",
+      "precio_base": 80.07,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 5.3,
+        "shares_m": 4302
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "1.7x",
+      "signal": "green"
+    },
+    {
+      "label": "Dividend Yield",
+      "value": "2.5%",
+      "signal": "green"
+    },
+    {
+      "label": "ROIC",
+      "value": "21.9%",
+      "signal": "green"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 38.66,
+        "utilidad": 9.77
+      },
+      {
+        "label": "FY2022",
+        "revenue": 43,
+        "utilidad": 9.54
+      },
+      {
+        "label": "FY2023",
+        "revenue": 45.75,
+        "utilidad": 10.71
+      },
+      {
+        "label": "FY2024",
+        "revenue": 47.06,
+        "utilidad": 10.63
+      },
+      {
+        "label": "FY2025",
+        "revenue": 47.94,
+        "utilidad": 13.11
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 60.3,
+        "operativo": 26.7,
+        "neto": 25.3
+      },
+      {
+        "label": "FY2022",
+        "bruto": 58.1,
+        "operativo": 25.4,
+        "neto": 22.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": 59.5,
+        "operativo": 24.7,
+        "neto": 23.4
+      },
+      {
+        "label": "FY2024",
+        "bruto": 61.1,
+        "operativo": 21.2,
+        "neto": 22.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 61.6,
+        "operativo": 28.7,
+        "neto": 27.3
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Dividendos",
+        "value": "2.04 USD/accion anual",
+        "nota": "62+ anos de incrementos consecutivos. 8.78B pagados en FY2025"
+      },
+      {
+        "label": "Capex moderado",
+        "value": "2.1B USD FY2025",
+        "nota": "Modelo concentrate asset-light requiere bajo capex vs. embotelladoras"
+      },
+      {
+        "label": "Recompra de acciones",
+        "value": "0.75B USD FY2025",
+        "nota": "Buybacks disciplinados. Prioridad es dividendo y crecimiento organico"
+      },
+      {
+        "label": "M&A selectivo",
+        "value": "Ongoing",
+        "nota": "Costa Coffee integracion, BodyArmor expansion, participacion Monster Beverage"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "KO FY2025",
+      "Consumer Staples",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "61.6%",
+        "~35%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "28.7%",
+        "~15%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Dividend Yield",
+        "2.5%",
+        "~2.2%",
+        "Por encima del sector"
+      ],
+      [
+        "ROIC",
+        "21.9%",
+        "~12%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+1.9%",
+        "~3%",
+        "En linea con sector"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Sin deterioro estructural. FY2025 muestra recuperacion fuerte en margenes tras ajustes FY2024",
+    "analisis": "KO reporto en FY2024 utilidad operativa comprimida por items no recurrentes y gastos de reestructura, pero FY2025 recupero plenamente con margen operativo de 28.7% vs 21.2% en FY2024. El negocio subyacente permanece solido. FCF se vio impactado por cambios en capital de trabajo y mayor capex de crecimiento.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+1.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "61.6%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "28.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "27.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+11.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "25.2B USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Marca #1 global en bebidas. Moat intangible multigeneracional",
+      "impact": "Alto",
+      "evidence": "Brand value estimado en 80B+, presente en 200+ paises, 2.2B de 65B servings diarios mundiales",
+      "context": "La marca Coca-Cola ha sido construida durante 139 anos de marketing consistente y distribucion global. Es virtualmente imposible de replicar. Ninguna nueva empresa puede construir esta presencia en mercados emergentes y desarrollados simultaneamente."
+    },
+    {
+      "level": "green",
+      "title": "Poder de precio demostrado. Incrementos consistentes por encima de inflacion",
+      "impact": "Alto",
+      "evidence": "Organic revenue growth sostenido por pricing positivo en multiples ejercicios consecutivos, margen bruto mayor al 60%",
+      "context": "KO ha demostrado capacidad de aumentar precios sin perder volumen significativo, gracias a la lealtad de marca y la posicion de liderazgo en la categoria. Este pricing power es el mayor activo financiero de la empresa."
+    },
+    {
+      "level": "green",
+      "title": "Dividend Aristocrat 62+ anos. La renta mas confiable del mercado americano",
+      "impact": "Medio",
+      "evidence": "Dividendo incrementado cada ano desde 1963. Pago de 2.04 USD/accion en 2025, yield 2.5%",
+      "context": "En entornos de incertidumbre macroeconomica, KO es un refugio clasico. Su historial de dividendos es virtualmente inigualable en el S&P 500, lo que lo convierte en piedra angular de portafolios de renta."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF comprimido en FY2024-2025 vs. historico. Capex creciente y cambios en capital de trabajo",
+      "impact": "Medio",
+      "evidence": "FCF FY2025: 5.3B vs. 9.75B en FY2023. P/FCF de 65x vs. historico de 30-35x",
+      "context": "KO incremento inversiones en capacidad de produccion y enfrento movimientos en capital de trabajo. Historicamente, el FCF normalizado deberia estar en el rango de 9-10B cuando la inversion se estabilice en los proximos 2-3 anos."
+    },
+    {
+      "level": "yellow",
+      "title": "Vientos de frente por fortaleza del dolar. Impacto en revenue reportado USD",
+      "impact": "Medio",
+      "evidence": "Revenue reportado en USD crecio solo +1.9% YoY en FY2025 vs. organic growth positivo subyacente",
+      "context": "KO genera mas del 60% de su revenue fuera de EE.UU. La fortaleza del USD penaliza la traduccion contable pero no afecta la competitividad del negocio subyacente ni los flujos locales."
+    },
+    {
+      "level": "yellow",
+      "title": "Litigio IRS por Transfer Pricing. Riesgo de liability significativo",
+      "impact": "Medio",
+      "evidence": "Disputa con el IRS sobre precios de transferencia que podria resultar en impuestos e intereses adicionales significativos",
+      "context": "KO esta en apelacion de un fallo del Tax Court que le impondria impuestos adicionales significativos. Es el mayor riesgo de balance sheet de la empresa actualmente."
+    }
+  ],
+  "score": {
+    "score": 8.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "KO ejecuta una estrategia de premiumizacion y diversificacion de portafolio mas alla del cola tradicional. Las adquisiciones de Costa Coffee (2019, 5.1B) y BodyArmor (2021, 5.6B), mas la participacion estrategica en Monster Beverage, posicionan a KO en las categorias de mayor crecimiento: cafe, hidratacion deportiva premium y bebidas energeticas. La estrategia omnicanal integra retail, foodservice, ecommerce y vending, mientras la expansion en mercados emergentes captura crecimiento de clase media global.",
+    "ventajas": "1) Marca global #1 en bebidas construida en 139 anos de marketing consistente. 2) Sistema de distribucion unico via 900+ embotelladoras que cubre virtualmente todo el mundo. 3) Pricing power demostrado por decadas. 4) Modelo asset-light basado en concentrado con margenes brutos superiores al 60%. 5) Respaldo de Berkshire Hathaway como accionista estable de largo plazo.",
+    "debilidades": "Crecimiento de volumen lento en mercados desarrollados. FCF comprimido en 2024-2025 vs. historico. Alta exposicion a tipo de cambio por mas del 60% de revenue fuera de EE.UU. Valuacion premium que limita el upside de corto plazo. Integracion de Costa Coffee y BodyArmor todavia en proceso de optimizacion.",
+    "riesgos": [
+      "Expansion de sugar taxes y regulaciones de salud en mercados clave",
+      "Fortaleza persistente del USD que comprime revenue y EPS reportados",
+      "Perdida de cuota ante competencia de PepsiCo, bebidas energeticas y opciones premium locales",
+      "Litigio fiscal IRS Transfer Pricing. Potencial liability significativo si falla en apelaciones"
+    ],
+    "inversiones_estrategicas": "Costa Coffee: integracion global con 4000+ tiendas propias y expansion via ready-to-drink. BodyArmor: lider en hidratacion deportiva premium, competidor directo de Gatorade. Monster Beverage: participacion estrategica en lider de bebidas energeticas. Topo Chico: expansion del segmento agua mineral premium. Inversiones en infraestructura digital y capacidad productiva en mercados emergentes."
+  },
+  "verdict": {
+    "status": "Mantener",
+    "score": "8.2/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "47.9B USD"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "61.6%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "23.0x"
+      },
+      {
+        "label": "Dividend Yield",
+        "value": "2.5%"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Marca #1 global bebidas. Moat multigeneracional inigualable ->** La marca Coca-Cola es el activo intangible mas valioso del mundo en bebidas, con presencia en 200+ paises y 2.2B servings diarios. Este moat tardo 139 anos en construirse y es practicamente indestructible.",
+        "type": "pro"
+      },
+      {
+        "text": "**Pricing power demostrado por 60+ anos ->** KO ha demostrado capacidad sistematica de aumentar precios por encima de la inflacion sin sacrificar volumen. Margen bruto FY2025 de 61.6% lo confirma.",
+        "type": "pro"
+      },
+      {
+        "text": "**Dividend Aristocrat 62+ anos. Renta mas confiable del S&P 500 ->** Con mas de seis decadas de incrementos consecutivos del dividendo, KO es la referencia de confiabilidad de renta para portafolios conservadores e institucionales.",
+        "type": "pro"
+      },
+      {
+        "text": "**Respaldo Buffett y valuacion premium ->** La validacion de Berkshire es solida, pero KO cotiza a 23x earnings forward y P/FCF de 65x. Valuacion elevada que limita el upside para nuevos inversores vs. alternativas del sector.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "KO reporto revenue FY2025 de 47.94B (+1.9% YoY). El crecimiento reportado en USD es modesto debido a los vientos de frente cambiarios, pero el crecimiento organico es positivo y sostenido. El modelo concentrate permite a KO capturar pricing sin asumir el riesgo de volumen de las embotelladoras."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto FY2025 de 61.6%, margen operativo 28.7% y margen neto 27.3%. Una recuperacion notable vs FY2024 que habia sido impactado por items no recurrentes y gastos de reestructura. Los margenes de KO son significativamente superiores al promedio del sector consumer staples."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF FY2025 de 5.3B mejoro +11.8% vs FY2024 (4.74B), pero permanece muy por debajo del historico de 9-11B (FY2021-FY2023). La compresion del FCF refleja mayor capex estrategico (2.1B) e inversiones en capital de trabajo. Normalizandose la inversion, el FCF deberia recuperar niveles de 8-10B en los proximos 2-3 anos."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 25.2B con ratio Deuda/EBITDA de 1.7x. Nivel conservador y bien manejado para una empresa de su escala. KO mantiene calificacion crediticia de investment grade solida. La caja de 10.3B provee amplia liquidez operativa."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "KO cotiza a 25.2x P/E TTM y 23.0x P/E Forward, con P/FCF de 65x (elevado por FCF transitoriamente comprimido). El EV/EBITDA de 25x esta por encima del promedio historico y del sector. La valuacion refleja el premium de calidad que el mercado otorga al moat y al dividendo, pero limita el upside de corto plazo para nuevos inversores."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "1) Litigio IRS por Transfer Pricing con potencial liability significativo. 2) Fortaleza persistente del USD que penaliza la traduccion de earnings en mercados emergentes. 3) Expansion de sugar taxes en mercados clave. 4) FCF por debajo del historico durante el ciclo de inversion actual. 5) Presion competitiva en hidratacion deportiva y bebidas energeticas."
+      }
+    ]
+  }
+}

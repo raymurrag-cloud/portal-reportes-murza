@@ -1,494 +1,243 @@
 {
-  "parrafos_gratis": 14,
-  "resumen": "American Express (AXP) es la marca de pagos premium mas reconocida del mundo, con 175 anos de historia y un modelo integrado unico que conecta directamente a tarjetahabientes de alto poder adquisitivo con comercios. En FY2025 reporto ingresos netos de 72.2B USD (+9.5% YoY) y EPS diluido de 15.38 (+9.8% YoY), consolidando seis anos consecutivos de crecimiento de doble digito en revenue. El veredicto: AXP opera con ventaja competitiva estructural -- su red propietaria closed-loop y su base de clientes premium generan margenes superiores y baja sensibilidad al ciclo. A 15.7x P/E forward, la valuacion es atractiva frente a su historico y al sector financiero.",
-  "descripcion": "American Express opera un modelo de pagos integrado de extremo a extremo con cuatro segmentos: U.S. Consumer Services (USCS), Commercial Services (CS), International Card Services (ICS) y Global Merchant & Network Services (GMNS). A diferencia de Visa/Mastercard, AXP actua como emisor, adquirente y red de pagos simultaneamente (closed-loop), lo que le da acceso a datos transaccionales completos en ambos extremos. Sus ingresos provienen de: descuentos de comercios (la mayor fuente), ingresos por intereses sobre prestamos, comisiones anuales de tarjetas premium (Platinum, Centurion) y servicios de red. El moat reside en su base de clientes de altos ingresos que gastan mas y presentan menor riesgo crediticio, las membresias de cuotas anuales elevadas con alta retencion, y el ecosistema de beneficios (lounges, hoteles, restaurantes) que genera lealtad estructural. International Card Services y el segmento de millennials/GenZ representan los principales vectores de crecimiento secular.",
+  "parrafos_gratis": 9,
+  "resumen": "American Express (AXP) reporto ingresos netos record de $65.95B en FY2024 (+9.0% YoY) y utilidad neta de $10.13B (+21.0%), con EPS diluido de $14.01 (+25.0%). La combinacion de red cerrada propietaria, base de tarjetahabientes premium, crecimiento sostenido en gasto de viajes y entretenimiento y recompras agresivas genera una maquina de creacion de valor dificil de replicar. A 15.6x P/E forward con EPS forward de $20.11, la valuacion es atractiva frente a su historial y la calidad del negocio. Veredicto: Comprar con Conviccion.",
+  "descripcion": "American Express opera un modelo de pagos integrado de red cerrada (closed-loop) unico en la industria. A diferencia de Visa y Mastercard, AXP actua simultaneamente como emisor de tarjetas, adquirente de comercios y operador de red de pagos, lo que le otorga control total sobre datos de transacciones en ambos extremos del mercado. Sus ingresos provienen de: discount revenues (comisiones al comercio por cada transaccion), net card fees (membresias anuales premium de hasta $695), ingresos netos por intereses sobre su cartera de credito propia, y otros servicios. La base de tarjetahabientes se caracteriza por altos ingresos, mayor gasto en viajes y entretenimiento (T&E) y menor morosidad vs el mercado masivo. Es el mayor holding de Berkshire Hathaway de Warren Buffett con ~20% del capital.",
   "tabla": {
-    "headers": [
-      "Metrica",
-      "FY2021",
-      "FY2022",
-      "FY2023",
-      "FY2024",
-      "FY2025",
-      "Q1 2026",
-      "Var. YoY"
-    ],
+    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
     "rows": [
-      [
-        "Revenue (B USD)",
-        "42.4",
-        "52.9",
-        "60.5",
-        "65.9",
-        "72.2",
-        "18.9",
-        "+9.5%"
-      ],
-      [
-        "Utilidad Neta (B USD)",
-        "8.06",
-        "7.51",
-        "8.37",
-        "10.13",
-        "10.83",
-        "2.97",
-        "+6.9%"
-      ],
-      [
-        "Margen Neto",
-        "19.0%",
-        "14.2%",
-        "13.8%",
-        "15.4%",
-        "15.0%",
-        "15.7%",
-        "-0.4pp"
-      ],
-      [
-        "EBITDA (B USD)",
-        "15.1",
-        "13.5",
-        "14.5",
-        "17.5",
-        "18.6",
-        "--",
-        "+6.3%"
-      ],
-      [
-        "FCF (B USD)",
-        "13.1",
-        "19.2",
-        "17.0",
-        "12.1",
-        "16.0",
-        "--",
-        "+31.9%"
-      ],
-      [
-        "EPS Diluido",
-        "10.02",
-        "9.85",
-        "11.21",
-        "14.01",
-        "15.38",
-        "4.28",
-        "+9.8%"
-      ],
-      [
-        "Deuda Neta (B USD)",
-        "37.4",
-        "37.1",
-        "40.8",
-        "46.3",
-        "52.8",
-        "--",
-        "+14.1%"
-      ]
+      ["Revenue ($B)", 36.09, 42.38, 52.86, 60.52, 65.95, "+9.0%"],
+      ["Utilidad Neta ($B)", 3.13, 8.06, 7.51, 8.37, 10.13, "+21.0%"],
+      ["Margen Neto (%)", "8.7%", "19.0%", "14.2%", "13.8%", "15.4%", "+1.6pp"],
+      ["EBITDA ($B)", 5.84, 12.39, 11.22, 12.16, 14.57, "+19.8%"],
+      ["FCF ($B)", 4.11, 13.09, 19.23, 17.00, 12.14, "-28.6%"],
+      ["EPS (GAAP)", 3.77, 10.02, 9.85, 11.21, 14.01, "+25.0%"],
+      ["Deuda Neta ($B)", 9.98, 16.64, 8.66, 1.27, 9.08, "+614.2%"]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Trailing",
-      "value": "20.5x",
-      "signal": "green",
-      "note": "vs. sector financiero ~14x; premium justificada por modelo",
-      "precio_base": 315.9,
-      "precio_fecha": "2026-04-28",
-      "fundamento": {
-        "tipo": "eps_ttm",
-        "valor": 15.38
-      }
+      "label": "P/E Ratio",
+      "value": "19.6x",
+      "signal": "yellow",
+      "note": "vs pagos historico ~20x",
+      "precio_base": 313.57,
+      "precio_fecha": "May-2026",
+      "fundamento": {"tipo": "eps_ttm", "valor": 16.01}
     },
     {
       "label": "P/E Forward",
-      "value": "15.7x",
+      "value": "15.6x",
       "signal": "green",
-      "note": "vs. sector ~12x; atractivo a este nivel",
-      "precio_base": 315.9,
-      "precio_fecha": "2026-04-28",
-      "fundamento": {
-        "tipo": "eps_fwd",
-        "valor": 20.11
-      }
+      "precio_base": 313.57,
+      "precio_fecha": "May-2026",
+      "fundamento": {"tipo": "eps_fwd", "valor": 20.11}
     },
     {
       "label": "EV/EBITDA",
-      "value": "14.5x",
-      "signal": "yellow",
-      "note": "incluye deuda por depositos bancarios estructurales",
-      "precio_base": 315.9,
-      "precio_fecha": "2026-04-28",
-      "fundamento": {
-        "tipo": "ev_ebitda",
-        "ebitda_b": 18.55,
-        "shares_m": 682,
-        "deuda_neta_b": 52.83
-      }
+      "value": "15.3x",
+      "signal": "yellow"
     },
     {
       "label": "P/FCF",
-      "value": "13.5x",
+      "value": "17.6x",
       "signal": "green",
-      "note": "FCF yield del 7.4% -- muy atractivo",
-      "precio_base": 315.9,
-      "precio_fecha": "2026-04-28",
-      "fundamento": {
-        "tipo": "p_fcf",
-        "fcf_b": 16.01,
-        "shares_m": 682
-      }
+      "precio_base": 313.57,
+      "precio_fecha": "May-2026",
+      "fundamento": {"tipo": "p_fcf", "fcf_b": 12.14, "shares_m": 682.33}
     },
     {
-      "label": "Deuda Neta/EBITDA",
-      "value": "2.8x",
-      "signal": "yellow",
-      "note": "elevado por naturaleza bancaria -- manejable"
+      "label": "Deuda/EBITDA",
+      "value": "3.4x",
+      "signal": "yellow"
     },
     {
       "label": "ROE",
-      "value": "32.4%",
+      "value": "33.5%",
       "signal": "green"
     },
     {
       "label": "ROIC",
-      "value": "15.2%",
+      "value": "~18%",
       "signal": "green"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {
-        "label": "FY2021",
-        "revenue": 42.38,
-        "utilidad": 8.06
-      },
-      {
-        "label": "FY2022",
-        "revenue": 52.86,
-        "utilidad": 7.51
-      },
-      {
-        "label": "FY2023",
-        "revenue": 60.52,
-        "utilidad": 8.37
-      },
-      {
-        "label": "FY2024",
-        "revenue": 65.95,
-        "utilidad": 10.13
-      },
-      {
-        "label": "FY2025",
-        "revenue": 72.23,
-        "utilidad": 10.83
-      }
+      {"label": "2020", "revenue": 36.09, "utilidad": 3.13},
+      {"label": "2021", "revenue": 42.38, "utilidad": 8.06},
+      {"label": "2022", "revenue": 52.86, "utilidad": 7.51},
+      {"label": "2023", "revenue": 60.52, "utilidad": 8.37},
+      {"label": "2024", "revenue": 65.95, "utilidad": 10.13}
     ],
     "series": [
-      {
-        "key": "revenue",
-        "name": "Revenue"
-      },
-      {
-        "key": "utilidad",
-        "name": "Utilidad Neta"
-      }
+      {"key": "revenue", "name": "Revenue"},
+      {"key": "utilidad", "name": "Utilidad Neta"}
     ]
   },
   "chart_margenes": {
     "data": [
-      {
-        "label": "FY2021",
-        "bruto": null,
-        "operativo": 25.2,
-        "neto": 19
-      },
-      {
-        "label": "FY2022",
-        "bruto": null,
-        "operativo": 21.9,
-        "neto": 14.2
-      },
-      {
-        "label": "FY2023",
-        "bruto": null,
-        "operativo": 21.6,
-        "neto": 13.8
-      },
-      {
-        "label": "FY2024",
-        "bruto": null,
-        "operativo": 23.5,
-        "neto": 15.4
-      },
-      {
-        "label": "FY2025",
-        "bruto": null,
-        "operativo": 23.2,
-        "neto": 15
-      }
+      {"label": "2020", "bruto": 0, "operativo": 11.9, "neto": 8.7},
+      {"label": "2021", "bruto": 0, "operativo": 25.2, "neto": 19.0},
+      {"label": "2022", "bruto": 0, "operativo": 18.1, "neto": 14.2},
+      {"label": "2023", "bruto": 0, "operativo": 17.4, "neto": 13.8},
+      {"label": "2024", "bruto": 0, "operativo": 19.5, "neto": 15.4}
     ],
     "series": [
-      {
-        "key": "operativo",
-        "name": "Margen Operativo"
-      },
-      {
-        "key": "neto",
-        "name": "Margen Neto"
-      }
+      {"key": "bruto", "name": "Margen Bruto"},
+      {"key": "operativo", "name": "Margen Operativo"},
+      {"key": "neto", "name": "Margen Neto"}
     ]
   },
   "capital_allocation": {
     "items": [
       {
-        "label": "Recompras",
-        "value": "5.8B USD",
-        "nota": "FY2025 -- reduccion de shares del 2% anual sostenida"
+        "label": "Dividendos",
+        "value": "$2.80/accion anual",
+        "nota": "Cuatro pagos trimestrales de $0.70/accion en FY2024. Rendimiento de dividendo ~0.9% al precio actual, con mas de 30 anos de pagos ininterrumpidos."
       },
       {
-        "label": "Dividendos",
-        "value": "2.3B USD",
-        "nota": "FY2025 -- yield ~1.1%; crecimiento de dividendo 17% YoY"
+        "label": "Recompra de acciones",
+        "value": "~$6.4B en FY2024",
+        "nota": "AXP redujo sus acciones diluidas de 736M en FY2023 a 713M en FY2024, una reduccion del 3.1%. La recompra sistematica ha reducido el conteo de acciones de 806M en FY2020, amplificando significativamente el crecimiento del EPS."
       },
       {
         "label": "Capex",
-        "value": "2.4B USD",
-        "nota": "FY2025 -- inversiones en plataforma tecnologica y red"
-      },
-      {
-        "label": "M&A",
-        "value": "~0.5B USD",
-        "nota": "adquisiciones selectivas en tecnologia de pagos y loyalty"
+        "value": "$1.91B",
+        "nota": "Principalmente inversiones en tecnologia, infraestructura digital y plataformas de fidelizacion. Representa el 2.9% de los ingresos, nivel conservador para una empresa de servicios financieros con escala global."
       }
     ]
   },
   "comparacion_sector": {
-    "headers": [
-      "Metrica",
-      "AXP TTM",
-      "Sector ref.",
-      "Posicion relativa"
-    ],
+    "headers": ["Metrica", "AXP FY2024", "Sector pagos", "Posicion relativa"],
     "rows": [
-      [
-        "Margen Operativo",
-        "23.2%",
-        "~18%",
-        "Por encima del sector"
-      ],
-      [
-        "Margen Neto",
-        "15.0%",
-        "~12%",
-        "Por encima del sector"
-      ],
-      [
-        "Revenue Growth",
-        "+9.5%",
-        "~5%",
-        "Por encima del sector"
-      ],
-      [
-        "P/E Forward",
-        "15.7x",
-        "~12x",
-        "Prima moderada justificada"
-      ],
-      [
-        "ROE",
-        "32.4%",
-        "~14%",
-        "Muy por encima del sector"
-      ]
+      ["Net Margin", "15.4%", "~22%", "Por debajo por cartera de credito propia"],
+      ["ROE", "33.5%", "~35%", "En linea con lideres del sector"],
+      ["P/E Forward", "15.6x", "~22x", "Descuento vs Visa/Mastercard por riesgo crediticio"],
+      ["Revenue Growth YoY", "+9.0%", "~7%", "Por encima del promedio del sector"],
+      ["EPS Growth YoY", "+25.0%", "~12%", "Muy por encima gracias a buybacks y leverage operativo"]
     ]
   },
   "deterioro": {
-    "veredicto": "Balance financiero solido con crecimiento consistente y FCF robusto en FY2025.",
-    "analisis": "AXP reporto revenue de 72.2B USD (+9.5% YoY) y FCF de 16.0B USD (+31.9% YoY) en FY2025. Los margenes operativos se mantienen estables en 23%+. El aumento en deuda neta refleja el crecimiento de la cartera de prestamos y depositos, propio de su naturaleza bancaria, no una presion crediticia. Q1 2026 confirma la aceleracion: revenue +11.4% YoY y EPS +17.6% YoY.",
+    "veredicto": "No se detecta deterioro operativo significativo",
+    "analisis": "Los fundamentos de AXP muestran aceleracion en FY2024: revenue crecio 9% YoY, utilidad neta sube 21% y EPS diluido crece 25% gracias a la combinacion de crecimiento organico y recompras agresivas. El FCF cae 28.6% pero esto refleja mayor acumulacion de cartera de credito (expansion del negocio bancario), no deterioro operativo estructural. El EBITDA crece 19.8% y los margenes se expanden 1.6pp.",
     "items": [
-      {
-        "metrica": "Revenue YoY",
-        "valor": "+9.5%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Margen Operativo",
-        "valor": "23.2%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Margen Neto",
-        "valor": "15.0%",
-        "status": "ok"
-      },
-      {
-        "metrica": "FCF YoY",
-        "valor": "+31.9%",
-        "status": "ok"
-      },
-      {
-        "metrica": "EPS YoY",
-        "valor": "+9.8%",
-        "status": "ok"
-      },
-      {
-        "metrica": "Deuda Neta/EBITDA",
-        "valor": "2.8x",
-        "status": "warn"
-      }
+      {"metrica": "Revenue YoY", "valor": "+9.0%", "status": "ok"},
+      {"metrica": "Net Income", "valor": "$10.13B", "status": "ok"},
+      {"metrica": "EPS YoY", "valor": "+25.0%", "status": "ok"},
+      {"metrica": "EBITDA YoY", "valor": "+19.8%", "status": "ok"},
+      {"metrica": "Net Margin", "valor": "15.4%", "status": "ok"},
+      {"metrica": "FCF YoY", "valor": "-28.6%", "status": "warn"}
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Modelo closed-loop inigualable",
+      "title": "Red cerrada con ventaja estructural doble",
       "impact": "Alto",
-      "evidence": "AXP controla emisor, adquirente y red -- unica empresa del sector con este modelo. Datos transaccionales en ambos extremos permiten targeting superior y menor fraude.",
-      "context": "Este moat es practicamente imposible de replicar a escala. Visa y Mastercard no pueden competir directamente sin perder a sus bancos emisores."
+      "evidence": "AXP actua como emisor y adquirente simultaneamente, controlando toda la cadena de valor del pago. Esto le permite capturar datos propietarios de gasto de ambos lados del mercado, negociar directamente con comercios y ofrecer beneficios diferenciados que justifican membresias anuales de hasta $695.",
+      "context": "Visa y Mastercard operan redes abiertas sin riesgo de credito; AXP asume ese riesgo pero retiene mas valor por transaccion. Su discount rate promedio es ~2.3%, superior al ~1.8% de competidores de red abierta. Esta ventaja de datos es estructuralmente inimitable."
     },
     {
       "level": "green",
-      "title": "Aceleracion en Q1 2026",
+      "title": "Motor de EPS amplificado por recompras",
       "impact": "Alto",
-      "evidence": "Revenue Q1 2026: 18.9B USD (+11.4% YoY). EPS Q1 2026: 4.28 (+17.6% YoY) -- aceleracion frente al +9.8% de FY2025.",
-      "context": "Confirma que el momentum de gasto premium y la expansion internacional continuan, desafiando el contexto macro de incertidumbre arancelaria."
+      "evidence": "AXP ha reducido su conteo de acciones de 806M en FY2020 a 682M actualmente (-15%). EPS paso de $3.77 a $14.01 en 4 anos, un CAGR ~39%, muy superior al crecimiento de la utilidad neta.",
+      "context": "Con FCF superior a $12B y balance solido, AXP tiene capacidad sostenida de recompras por varios anos. El P/E forward de 15.6x con crecimiento de EPS >20% implica un PEG ratio atractivo inferior a 1.0x."
     },
     {
       "level": "green",
-      "title": "FCF yield del 7.4%",
+      "title": "Crecimiento de gasto T&E supera niveles pre-pandemia",
       "impact": "Alto",
-      "evidence": "FCF FY2025 de 16.0B USD sobre market cap de 215B -- yield del 7.4%. Buybacks de 5.8B + dividendos de 2.3B = 8.1B retornado a accionistas.",
-      "context": "FCF yield del 7.4% con P/E forward de 15.7x ofrece una combinacion atractiva de valuacion y retorno de capital en el sector financiero premium."
+      "evidence": "El gasto en viajes y entretenimiento (T&E) de los tarjetahabientes de AXP supero los niveles de 2019 y sigue creciendo por encima del promedio de la industria. Billings totales superan $1.6 trillones anuales.",
+      "context": "El perfil demografico premium de la base de AXP (Millennials y Gen Z de altos ingresos) impulsa esta tendencia de manera secular. La reactivacion del turismo internacional post-COVID sigue siendo un viento de cola estructural."
     },
     {
       "level": "yellow",
-      "title": "Exposicion macro a gasto discrecional premium",
+      "title": "Exposicion a ciclo economico en gasto discrecional",
       "impact": "Medio",
-      "evidence": "41% del billed business proviene de small/mid-size companies; clientes premium son sensibles a recesion o deterioro del empleo ejecutivo.",
-      "context": "En recesiones profundas, el gasto de tarjetahabientes premium cae, aunque historicamente menos que el segmento masivo. El management indica baja morosidad actual."
+      "evidence": "Los ingresos por descuento dependen del volumen de gasto de los tarjetahabientes. En FY2020, los ingresos cayeron de $43.7B (FY2019) a $36.1B por la pandemia, una contraccion del 17%.",
+      "context": "En recesiones, el gasto discrecional en viajes, restaurantes y entretenimiento se comprime. Sin embargo, el perfil premium de la base de AXP amortigua las caidas vs emisores de tarjetas subprime, y la recuperacion post-ciclo suele ser rapida."
     },
     {
-      "level": "red",
-      "title": "Riesgo arancelario y desaceleracion global",
+      "level": "yellow",
+      "title": "Riesgo de morosidad en expansion de cartera de credito",
       "impact": "Medio",
-      "evidence": "Tariffs de EE.UU. pueden afectar comercio internacional -- segmento ICS y GMNS combinan ~30% del revenue. Desaceleracion en Europa y Asia podria presionar billed business.",
-      "context": "AXP tiene exposicion geografica relevante. Una desaceleracion sostenida del comercio global impactaria el revenue de merchant services y las transacciones cross-border."
+      "evidence": "La deuda neta salto de $1.27B en FY2023 a $9.08B en FY2024 reflejando mayor fondeo para expansion de la cartera de prestamos. El FCF cayo $4.86B YoY en parte por este efecto.",
+      "context": "Historicamente, la base premium de AXP tiene tasas de morosidad 30-40% menores que la industria. Sin embargo, la expansion hacia segmentos mas jovenes y productos BNPL podria incrementar el riesgo crediticio si el ciclo se deteriora."
     }
   ],
   "score": {
-    "score": 8.2,
+    "score": 8.5,
     "max": 10,
     "items": [
-      {
-        "label": "Poder de fijacion de precios",
-        "score": 9,
-        "max": 10
-      },
-      {
-        "label": "Crecimiento de revenue",
-        "score": 8,
-        "max": 10
-      },
-      {
-        "label": "Calidad de margenes",
-        "score": 8,
-        "max": 10
-      },
-      {
-        "label": "Solidez del balance",
-        "score": 7,
-        "max": 10
-      },
-      {
-        "label": "Generacion de FCF",
-        "score": 9,
-        "max": 10
-      }
+      {"label": "Poder de fijacion de precios", "score": 9, "max": 10},
+      {"label": "Crecimiento de revenue", "score": 8, "max": 10},
+      {"label": "Calidad de margenes", "score": 8, "max": 10},
+      {"label": "Solidez del balance", "score": 7, "max": 10},
+      {"label": "Generacion de FCF", "score": 8, "max": 10},
+      {"label": "Ventaja competitiva (moat)", "score": 9, "max": 10},
+      {"label": "Retorno al accionista", "score": 9, "max": 10}
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "AXP ejecuta una estrategia de premiumizacion centrada en captar y retener a la generacion millennial y GenZ de altos ingresos. Las cuotas anuales de tarjetas premium (Platinum: 695 USD/ano, Gold: 325 USD/ano) generan ingresos recurrentes con alta retencion. El management prioriza el crecimiento de nuevos cuentahabientes menores de 35 anos que eventualmente se convierten en los tarjetahabientes de mayor gasto. Paralelamente, el segmento de Small Business es un motor clave con herramientas de gestion de gastos y capital de trabajo que crean stickiness. Internacional (ICS y GMNS) representa el mayor vector de crecimiento secular con penetracion aun baja en mercados como India, Latinoamerica y Sudeste Asiatico.",
-    "ventajas": "1) Red closed-loop propietaria: control total del flujo de datos, menores costos de fraude y mejor pricing para comercios premium. 2) Base de clientes de altos ingresos: menor tasa de default (~2% vs 4-5% industria), mayor gasto por tarjeta. 3) Ecosistema de beneficios (Centurion Lounges, hotel collection, dining access): crea switching costs altisimos y justifica cuotas premium. 4) Brand equity global de 175 anos: asociado a status, confianza y servicio. 5) Programa de rewards Membership Rewards con alto engagement y alta retencion.",
-    "debilidades": "1) Dependencia del gasto discrecional premium -- vulnerable a recesiones profundas. 2) Menor penetracion en ecommerce vs Visa/Mastercard que dominan el volumen de bajo ticket. 3) Aceptacion de comercios aun inferior a Visa/Mastercard en algunos mercados emergentes. 4) Modelo bancario implica regulacion de capital y supervision de la Fed como Bank Holding Company.",
+    "estrategia": "AXP ejecuta una estrategia de premiumizacion sostenida: incrementar el valor de sus membresias (Platinum, Centurion, Business Platinum) con beneficios aspiracionales, atraer a Millennials y Gen Z de altos ingresos como nueva generacion de tarjetahabientes, expandir la red de aceptacion de comercios globalmente (ahora en paridad con Visa/Mastercard en mercados clave), y monetizar su ventaja de datos propietarios para ofrecer beneficios hiper-personalizados que justifican altas membresias anuales.",
+    "ventajas": "Red cerrada con control total sobre datos de transacciones de ambos lados del mercado. Marca aspiracional con >175 anos de historia que genera lealtad excepcional. Net Promoter Score consistentemente mas alto que competidores. Capacidad de fijar discount rates superiores a la industria (~2.3% vs ~1.8%). Base de tarjetahabientes con altos ingresos genera menor morosidad y mayor gasto por cuenta. Warren Buffett como avalista de largo plazo con ~20% del capital.",
+    "debilidades": "Modelo hibrido (red + banco) implica mayor complejidad regulatoria y de capital vs Visa/Mastercard. El riesgo de credito reduce multiples de valoracion vs pure-play networks. Menor penetracion en mercados emergentes donde redes locales dominan. Costos de beneficios de tarjetas premium crecen con inflacion de viajes y entretenimiento.",
     "riesgos": [
-      "Desaceleracion del consumo premium en EE.UU. ante incertidumbre macro y potencial recesion por aranceles",
-      "Aumento en tasas de morosidad si el empleo ejecutivo y el segmento HNWI se deteriora",
-      "Presion regulatoria del CFPB sobre cuotas de intercambio y tasas de interes en tarjetas de credito",
-      "Competencia creciente de fintechs premium (Chase Sapphire, Apple Card) por el segmento millennial de altos ingresos"
+      "Recesion severa comprime gasto discrecional en T&E",
+      "Ciclo crediticio adverso aumenta provisiones y reduce utilidad neta",
+      "Competencia de Visa/Mastercard con productos premium y co-brand",
+      "Regulacion de interchange fees en mercados clave (UE, India, Australia)",
+      "Penetracion de wallets digitales y BNPL en segmento joven",
+      "Riesgo de concentracion: ~20% de billings en categoria T&E"
     ],
-    "inversiones_estrategicas": "AXP invierte consistentemente en su plataforma tecnologica (2.4B capex FY2025) para reforzar la experiencia digital del tarjetahabiente, expandir su presencia en pagos B2B (American Express @ Work) y desarrollar capacidades de IA generativa para personalizacion y prevencion de fraude. El programa de Centurion Lounges se expande agresivamente con mas de 40 globalmente como diferenciador fisico. Los partnerships con Delta Air Lines y Marriott Bonvoy son anclas del ecosistema de beneficios que refuerzan la retencion."
+    "inversiones_estrategicas": "AXP invierte ~$1.9B anuales en capex, principalmente en: (1) modernizacion de plataformas tecnologicas y APIs para integracion con socios fintech, (2) herramientas de analisis de datos para personalizar ofertas y beneficios con IA, (3) expansion de la red de aceptacion en mercados emergentes de Asia y Latinoamerica, (4) desarrollo de productos de pago B2B para comercios y empresas."
   },
   "verdict": {
     "status": "Comprar con Conviccion",
-    "score": "8.2/10",
+    "score": "8.5/10",
     "color": "green",
     "metrics": [
-      {
-        "label": "Revenue FY2025",
-        "value": "72.2B USD"
-      },
-      {
-        "label": "Margen Neto",
-        "value": "15.0%"
-      },
-      {
-        "label": "FCF Yield",
-        "value": "7.4%"
-      },
-      {
-        "label": "P/E Forward",
-        "value": "15.7x"
-      },
-      {
-        "label": "Crecimiento Rev.",
-        "value": "+9.5% YoY"
-      }
+      {"label": "Revenue TTM", "value": "$65.95B"},
+      {"label": "Margen Neto", "value": "15.4%"},
+      {"label": "FCF Yield", "value": "5.7%"},
+      {"label": "P/E Forward", "value": "15.6x"},
+      {"label": "Crecimiento Rev.", "value": "+9.0% YoY"},
+      {"label": "EPS CAGR 4Y", "value": "+39%"}
     ],
     "bullets": [
-      {
-        "text": "**Closed-loop inigualable ->** El modelo integrado emisor-adquirente-red genera datos superiores, menor fraude y pricing power estructural que ninguna fintech o banco puede replicar facilmente.",
-        "type": "pro"
-      },
-      {
-        "text": "**Valuacion atractiva ->** P/E forward de 15.7x con FCF yield del 7.4% y ROE del 32.4% es una combinacion rara en el sector. El mercado subestima la calidad de los ingresos por cuotas anuales recurrentes.",
-        "type": "pro"
-      },
-      {
-        "text": "**Momentum acelerado en 2026 ->** Q1 2026 muestra aceleracion: revenue +11.4% YoY y EPS +17.6% YoY. El segmento de clientes menores de 35 anos crece doble digito, asegurando el pipeline de tarjetahabientes premium de la proxima decada.",
-        "type": "pro"
-      },
-      {
-        "text": "**Riesgo macro-arancelario ->** Una recesion inducida por aranceles podria comprimir el gasto discrecional premium y afectar el billed business internacional. Monitorear write-off rates trimestralmente.",
-        "type": "con"
-      }
+      {"text": "**Red cerrada ->** Modelo unico que captura valor en ambos lados del mercado de pagos con datos propietarios que ninguna otra red puede replicar, generando discount rates superiores y lealtad estructural.", "type": "pro"},
+      {"text": "**Clientela premium ->** Base de tarjetahabientes de alto poder adquisitivo genera menor morosidad, mayor gasto por cuenta y justifica membresias de hasta $695/ano con alta retencion.", "type": "pro"},
+      {"text": "**Maquina de recompras ->** 15% reduccion de acciones en 4 anos amplifica el EPS dramaticamente. EPS CAGR del 39% desde FY2020. FCF >$12B sostiene el programa.", "type": "pro"},
+      {"text": "**Ciclicidad crediticia ->** Gasto en T&E es discrecional y la cartera de credito propia eleva el riesgo en recesiones. En 2020 los ingresos cayeron 17% y pueden volver a hacerlo.", "type": "con"}
     ]
   },
   "conclusion": {
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de 72.2B USD en FY2025 (+9.5% YoY) y 18.9B USD en Q1 2026 (+11.4% YoY) muestran aceleracion sostenida. El crecimiento es multidimensional: expansion de base de tarjetahabientes, aumento del gasto por cuenta, crecimiento de comisiones anuales y expansion internacional."
+        "texto": "AXP genero $65.95B en ingresos netos en FY2024, un incremento del 9.0% YoY y del 83% vs FY2020. El crecimiento es organico y diversificado: discount revenues crecen con el volumen de gasto, las membresias premium suben por incrementos de precio y adicion de nuevos tarjetahabientes, y los ingresos por intereses crecen con la expansion de la cartera de credito. El CAGR de ingresos 2020-2024 es ~16.3% anual."
       },
       {
         "label": "Margenes",
-        "texto": "Margen operativo estable en 23%+ y margen neto del 15.0% en FY2025. La compression marginal de margen neto vs FY2021 (19%) refleja la inversion agresiva en adquisicion de clientes y expansion de beneficios, que es el motor de crecimiento a largo plazo y no un deterioro estructural."
+        "texto": "El margen neto mejoro de 13.8% en FY2023 a 15.4% en FY2024, el mejor nivel desde el pico de FY2021. El margen operativo fue 19.5%, reflejando el leverage operativo del modelo de red cerrada donde los costos fijos se diluyen con el crecimiento del volumen. FY2020 fue el piso de margenes por la pandemia con 8.7%; la recuperacion y expansion posterior valida la resiliencia del modelo."
       },
       {
-        "label": "Generacion de caja",
-        "texto": "FCF de 16.0B USD en FY2025 (+31.9% YoY) con FCF yield del 7.4% sobre la capitalizacion de mercado actual. AXP retorno 8.1B USD a accionistas en FY2025 (buybacks + dividendos), equivalente al 50% del FCF. El programa de recompras reduce el share count 2% anual, amplificando el EPS."
+        "label": "EPS",
+        "texto": "El EPS diluido de $14.01 en FY2024 representa un crecimiento del 25.0% YoY y un CAGR del ~39% desde FY2020. La combinacion de crecimiento de utilidad neta (+21%) y reduccion del conteo de acciones (3.1% en FY2024 solo) explica la amplificacion. El EPS TTM incluyendo Q1 2025 es $16.01. El P/E forward de 15.6x con EPS forward de $20.11 implica un PEG inferior a 1.0x, inusualmente bajo para una franquicia de esta calidad."
       },
       {
         "label": "Balance",
-        "texto": "La deuda neta de 52.8B USD es alta en terminos absolutos pero tipica de su modelo bancario -- fondea la cartera de prestamos con depositos. El ratio ND/EBITDA de 2.8x esta en zona amarilla pero manejable dado el acceso a mercados de capital y la estabilidad de sus fuentes de fondeo. La Fed supervisa la adecuacion de capital."
+        "texto": "La deuda de largo plazo de $49.7B es alta en terminos absolutos pero es la estructura normal de un modelo banco-red que financia su cartera de credito con deuda. La deuda neta subio a $9.08B en FY2024 desde $1.27B en FY2023, reflejando mayor originacion de prestamos. El patrimonio neto es $30.26B con ROE del 33.5%, excepcional para el sector financiero. La solidez del balance es respaldada por la calificacion crediticia investment grade de AXP."
       },
       {
-        "label": "Valuacion",
-        "texto": "A 315.9 USD por accion, AXP cotiza a 15.7x EPS forward (20.11 USD estimado) y 13.5x FCF. Frente al sector financiero a 12x y a su promedio historico de 20x P/E, la valuacion es atractiva. Q1 2026 con EPS de 4.28 (+17.6% YoY) valida la trayectoria hacia los estimados de consenso para FY2026."
+        "label": "Generacion de caja",
+        "texto": "El FCF (OpCF - Capex) fue $12.14B en FY2024, por debajo de los $17.0B de FY2023. La caida refleja mayor inversion en cartera de credito (aumenta activos y reduce OpCF contablemente) y un incremento de capex a $1.91B. La generacion de caja operativa bruta es mas que suficiente para sostener dividendos (~$2B/ano), recompras (~$6.4B) y crecimiento organico simultaneamente. FCF yield de 5.7% sobre market cap es atractivo."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Los cuatro riesgos clave son: (1) desaceleracion del consumo premium ante recesion inducida por aranceles, (2) aumento en morosidad si el mercado laboral executive se deteriora, (3) presion regulatoria del CFPB sobre interchange fees y tasas de interes en tarjetas de credito, y (4) competencia creciente en el segmento premium millennial por parte de Chase Sapphire y fintechs como Apple Card."
+        "texto": "El principal riesgo de corto plazo es un deterioro del ciclo crediticio que incremente provisiones y comprima la utilidad neta. En el mediano plazo, el riesgo regulatorio sobre interchange fees en mercados como UE o Australia podria presionar los discount revenues. La competencia de Visa y Mastercard en el segmento premium con productos co-brand es un riesgo estructural permanente. Sin embargo, el moat de datos, marca y red cerrada de AXP es uno de los mas duraderos en servicios financieros globales."
       }
     ]
   }

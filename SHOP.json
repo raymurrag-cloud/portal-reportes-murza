@@ -1,0 +1,500 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Shopify es la infraestructura esencial del comercio en internet, con soluciones que permiten a millones de comerciantes vender online, en tienda fisica y en todos los canales. En FY2025 reporto ingresos de 11.56B USD (+30%), FCF de 2.0B USD y generacion de caja record. Q1 2026 confirmo la aceleracion con ingresos de 3.17B (+34% YoY), impulsados por Merchant Solutions y el crecimiento de Shopify Payments. La valuacion es exigente pero refleja el liderazgo estructural en e-commerce infrastructure.",
+  "descripcion": "Shopify opera bajo dos segmentos: Subscription Solutions (planes de suscripcion a la plataforma, 2.75B en FY2025) y Merchant Solutions (pagos, capital, envios, mercadeo y otros servicios transaccionales, 8.80B en FY2025). Su moat reside en el efecto de red de su ecosistema de apps y socios, la profundidad de sus APIs, la tasa de retencion altisima de comerciantes y su posicion como el standard de facto para e-commerce de mediana escala. Shopify Payments procesa una fraccion creciente del GMV global y constituye el motor de crecimiento de Merchant Solutions.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "4.61",
+        "5.60",
+        "7.06",
+        "8.88",
+        "11.56",
+        "3.17",
+        "+34.3% Q"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "2.91",
+        "-3.46",
+        "0.13",
+        "2.02",
+        "1.23",
+        "-0.58",
+        "N/M"
+      ],
+      [
+        "Margen Neto",
+        "63%",
+        "-62%",
+        "1.8%",
+        "22.7%",
+        "10.6%",
+        "-18.3%",
+        "N/M"
+      ],
+      [
+        "EBITDA (B USD)",
+        "0.27",
+        "-0.73",
+        "-1.35",
+        "1.11",
+        "1.50",
+        "N/D",
+        "+35.1%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.50",
+        "-0.19",
+        "0.90",
+        "1.60",
+        "2.00",
+        "N/D",
+        "+25.0%"
+      ],
+      [
+        "EPS Diluido",
+        "2.29",
+        "-2.73",
+        "0.10",
+        "1.55",
+        "0.94",
+        "-0.45",
+        "N/M"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "0.92",
+        "0.92",
+        "0.00",
+        "-5.56",
+        "N/D",
+        "Mejora"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "109x",
+      "signal": "red",
+      "note": "NI distorsionado por ajustes no-cash",
+      "precio_base": 102.54,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 0.94
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "44x",
+      "signal": "red",
+      "note": "vs. sector 35x",
+      "precio_base": 102.54,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 2.32
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "80x",
+      "signal": "red",
+      "precio_base": 102.54,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 1.5,
+        "shares_m": 1219.6,
+        "deuda_neta_b": -5.564
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "63x",
+      "signal": "red",
+      "precio_base": 102.54,
+      "precio_fecha": "2026-05-09",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 2,
+        "shares_m": 1219.6
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "-3.7x",
+      "signal": "green",
+      "note": "Caja neta de 5.6B USD"
+    },
+    {
+      "label": "ROE",
+      "value": "9.1%",
+      "signal": "yellow",
+      "note": "Deprimido por NI no-cash"
+    },
+    {
+      "label": "ROIC",
+      "value": "10.0%",
+      "signal": "yellow",
+      "note": "En expansion estructural"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 4.61,
+        "utilidad": 2.91
+      },
+      {
+        "label": "FY2022",
+        "revenue": 5.6,
+        "utilidad": -3.46
+      },
+      {
+        "label": "FY2023",
+        "revenue": 7.06,
+        "utilidad": 0.13
+      },
+      {
+        "label": "FY2024",
+        "revenue": 8.88,
+        "utilidad": 2.02
+      },
+      {
+        "label": "FY2025",
+        "revenue": 11.56,
+        "utilidad": 1.23
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 54,
+        "operativo": 6,
+        "neto": 63
+      },
+      {
+        "label": "FY2022",
+        "bruto": 49,
+        "operativo": -15,
+        "neto": -62
+      },
+      {
+        "label": "FY2023",
+        "bruto": 50,
+        "operativo": -20,
+        "neto": 2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 50,
+        "operativo": 12,
+        "neto": 23
+      },
+      {
+        "label": "FY2025",
+        "bruto": 48,
+        "operativo": 13,
+        "neto": 11
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "~0.2B USD",
+        "nota": "Programa limitado; enfocado en dilucion por SBC"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0 USD",
+        "nota": "No paga dividendos; reinvierte en crecimiento"
+      },
+      {
+        "label": "Capex",
+        "value": "0.03B USD",
+        "nota": "Asset-light: solo 0.3% de ingresos en FY2025"
+      },
+      {
+        "label": "M&A",
+        "value": "Estrategico",
+        "nota": "Vendio logistics businesses en 2023 para refocus en core platform"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "SHOP TTM",
+      "Sector e-commerce ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "48%",
+        "~40-55%",
+        "En linea con lideres de plataforma"
+      ],
+      [
+        "Margen Operativo",
+        "13%",
+        "~10-20%",
+        "En expansion, por debajo de su potencial"
+      ],
+      [
+        "Revenue Growth",
+        "+30%",
+        "~15-20%",
+        "Por encima del sector - aceleracion en 2025"
+      ],
+      [
+        "P/E Forward",
+        "44x",
+        "~30-40x",
+        "Prima significativa por liderazgo"
+      ],
+      [
+        "ROIC",
+        "10%",
+        "~12-18%",
+        "Por debajo de peers como AMZN/MSFT en software"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Salud financiera solida: balance impecable, FCF record y aceleracion de ingresos en 2025-2026.",
+    "analisis": "El NI GAAP en FY2025 cayo a 1.23B (vs 2.02B en FY2024) principalmente por perdidas no-cash en inversiones de equity de 316M y mayor SBC. El FCF operativo de 2.0B es la metrica mas relevante y crece 25% YoY. La eliminacion de la deuda convertible y la posicion de caja neta de 5.6B refuerzan la solidez del balance.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+30.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "48%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "12.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto (GAAP)",
+        "valor": "10.6%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+25% a 2.0B",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-5.6B (caja neta)",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Aceleracion de ingresos sostenida",
+      "impact": "Alto",
+      "evidence": "Rev +30% FY2025, Q1 2026 +34% YoY a 3.17B USD",
+      "context": "Shopify esta ganando participacion de mercado en e-commerce global, impulsado por expansion internacional, Shopify Payments y el auge del D2C. La tasa de crecimiento se acelero en 2025 despues de la reestructuracion de 2023."
+    },
+    {
+      "level": "green",
+      "title": "FCF record y balance impecable",
+      "impact": "Alto",
+      "evidence": "FCF 2.0B en FY2025, caja neta de 5.6B, deuda convertible pagada",
+      "context": "La conversion de ingresos a FCF mejora consistentemente. Con caja neta y sin deuda estructural, Shopify tiene maxima flexibilidad para M&A, recompras o expansion."
+    },
+    {
+      "level": "yellow",
+      "title": "Compresion de margen bruto por mix",
+      "impact": "Medio",
+      "evidence": "Margen bruto bajo de 54% (2021) a 48% (2025)",
+      "context": "El crecimiento de Merchant Solutions que tiene menores margenes que Subscription Solutions diluye el mix. Tendencia estructural aunque Shopify Payments mejora su rentabilidad al escalar."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion exigente requiere ejecucion perfecta",
+      "impact": "Alto",
+      "evidence": "P/FCF 63x, EV/EBITDA 80x, P/E forward 44x",
+      "context": "La accion descuenta crecimiento sostenido de 25-30% por varios anos. Cualquier desaceleracion puede generar rerating significativo."
+    },
+    {
+      "level": "red",
+      "title": "NI GAAP distorsionado por volatilidad de inversiones",
+      "impact": "Medio",
+      "evidence": "Perdidas en equity investments de 316M en FY2025 vs ganancias de 853M en FY2024",
+      "context": "Shopify mantiene inversiones en startups de e-commerce como Affirm, Global-E y Klaviyo. La volatilidad de estos activos distorsiona el NI GAAP y genera perdida neta en Q1 2026."
+    }
+  ],
+  "score": {
+    "score": 8,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Shopify se posiciona como la infraestructura del comercio unificado, conectando ventas online, tienda fisica, redes sociales, mercados y canales emergentes como IA. La estrategia 2025-2026 se centra en: expansion internacional via Shopify Markets, penetracion enterprise con Commerce Components, profundizacion de servicios financieros (Shopify Capital supero 5B en prestamos acumulados) e integracion de IA en toda la plataforma con Shopify Magic.",
+    "ventajas": "El moat de Shopify es multidimensional: efecto de red del ecosistema con mas de 14,000 apps de terceros y millones de comerciantes, costo de cambio extremadamente alto al migrar toda la operacion, datos unicos sobre GMV que mejoran Payments y Capital, y posicion como standard de facto para mid-market e-commerce global con APIs que son el referente de la industria.",
+    "debilidades": "La compresion de margen bruto por el mix de Merchant Solutions es una tendencia estructural. El ROIC y ROE son modestos dado el tamano del balance de equity. La dependencia de GMV global hace a Shopify vulnerable a desaceleraciones del consumo. La competencia de Amazon, TikTok Shop y Walmart puede presionar el GMV de los comerciantes.",
+    "riesgos": [
+      "Desaceleracion del consumo global que impacte el GMV y los ingresos por transaccion de Merchant Solutions",
+      "Intensificacion de competencia de TikTok Shop, Amazon y plataformas sociales que capten GMV de comerciantes actuales",
+      "Riesgo regulatorio en fintech y pagos (Shopify Capital, Shopify Payments) en multiples jurisdicciones",
+      "Volatilidad de inversiones en equity de startups que distorsiona NI GAAP y puede generar perdidas significativas",
+      "Rerating de valuacion ante cualquier miss de revenue growth dado el multiplo exigente (EV/EBITDA 80x)"
+    ],
+    "inversiones_estrategicas": "Shopify invierte fuertemente en IA (Shopify Magic, Sidekick AI assistant), expansion de servicios financieros, y en enterprise a traves de Commerce Components By Shopify para retailers de gran formato. La venta del negocio de logistica en 2023 libero recursos para refocalizarse en el core de plataforma de mayor margen."
+  },
+  "verdict": {
+    "status": "Mantener con Sesgo Positivo",
+    "score": "8.0/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue TTM",
+        "value": "11.56B USD"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "2.0B USD"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "1.6%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "44x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+34% Q1 2026 YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Lider estructural de e-commerce** - Shopify es el standard de facto para comercio unificado con mas de 14,000 apps, efecto de red profundo y costos de cambio extremadamente altos.",
+        "type": "pro"
+      },
+      {
+        "text": "**FCF record y balance impecable** - FCF de 2.0B en FY2025 (+25%) con caja neta de 5.6B y sin deuda; maxima flexibilidad financiera.",
+        "type": "pro"
+      },
+      {
+        "text": "**Aceleracion de crecimiento** - +30% en FY2025 y +34% en Q1 2026 demuestran que Shopify sigue ganando participacion en e-commerce global.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion exigente con margen de seguridad bajo** - P/FCF 63x y EV/EBITDA 80x descuentan ejecucion perfecta; cualquier desaceleracion genera riesgo de rerating severo.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 con 11.56B USD (+30% YoY), Q1 2026 acelero a 3.17B (+34%). Merchant Solutions representa 76% de ingresos y crece mas rapido que Subscriptions."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto del 48%, margen operativo mejorado a 12.7%. El margen neto GAAP del 10.6% esta distorsionado por perdidas en inversiones de equity de 316M."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 2.0B en FY2025 (+25% YoY) con conversion de OCF excepcional. Asset-light extremo con capex de solo 30M. FCF yield del 1.6%."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja neta de 5.6B USD, deuda convertible pagada en 2025. Equity de 13.5B. Balance sin estres financiero."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E forward 44x, EV/EBITDA 80x, P/FCF 63x: premium significativo que requiere crecimiento de revenue de 25%+ por 3-5 anos adicionales para justificarse."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Desaceleracion del GMV global, competencia de TikTok Shop y Amazon, volatilidad de inversiones equity, y riesgo de rerating si el crecimiento cae por debajo del 20%."
+      }
+    ]
+  }
+}

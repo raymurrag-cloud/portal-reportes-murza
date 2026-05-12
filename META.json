@@ -1,6 +1,6 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "Meta Platforms cerro FY2025 con revenue record de 200.97B USD (+22.2% YoY), impulsado por la aceleracion de su plataforma publicitaria potenciada con IA. El margen operativo alcanzo 41.4% y el EBITDA llego a 101.9B USD. El FCF de 46.11B USD fue comprimido por un capex record de 69.69B destinado a infraestructura de IA. La principal tension del ciclo es la inversion masiva (guidance FY2026: 60-65B USD) frente a la caida -3.1% en utilidad neta. Veredicto: COMPRAR con conviccion — el liderazgo en IA publicitaria y el moat de red de 3.4B DAU son irreplicables a esta valuacion.",
+  "resumen": "Meta Platforms reporto Q1 2026 con revenue de 56.31B USD (+33.1% YoY), superando ampliamente estimados de ~53.5B. Utilidad neta se disparo a 26.77B USD (+60.8% YoY) con margen neto record de 47.5%. EPS de 10.44 USD mas que duplica el 6.43 de Q1 2025. Sin embargo, Meta elevo su guidance de capex para FY2026 a 125-145B USD (vs. 60-65B anterior), provocando una caida de ~9% en el precio. La narrativa se bifurca: resultados operativos extraordinarios vs. inversion en IA que comprimira FCF en los proximos 12-18 meses. Veredicto: COMPRAR con conviccion a precios post-caida — el liderazgo en IA publicitaria y 3.4B DAU son irreplicables a P/E Forward de 20x.",
   "descripcion": "Meta Platforms opera el ecosistema de redes sociales mas grande del mundo: Facebook (3.3B MAU), Instagram, WhatsApp, Messenger y Threads. Los ingresos provienen ~98% de publicidad digital, basada en el dataset de comportamiento mas rico del sector y algoritmos de IA que maximizan la relevancia del anuncio. El segmento Reality Labs (Quest VR, Ray-Ban Meta, Orion AR) opera con perdidas como apuesta de largo plazo en computacion espacial. Meta AI y Llama son apuestas en IA generativa orientadas a profundizar el engagement y la monetizacion futura de WhatsApp Business. El 54% de ingresos proviene de EEUU/Canada; Asia-Pacifico y mercados emergentes crecen mas rapido con menor ARPU.",
   "tabla": {
     "headers": [
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,7 +21,8 @@
         "134.9",
         "164.5",
         "200.97",
-        "+22.2%"
+        "56.31",
+        "+33.1%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -29,7 +31,8 @@
         "39.1",
         "62.36",
         "60.46",
-        "-3%"
+        "26.77",
+        "+60.8%"
       ],
       [
         "Margen Neto",
@@ -38,7 +41,8 @@
         "29%",
         "37.9%",
         "30.1%",
-        "-7.8pp"
+        "47.5%",
+        "+8.2pp"
       ],
       [
         "EBITDA (B USD)",
@@ -47,7 +51,8 @@
         "57.93",
         "84.88",
         "101.9",
-        "+20.1%"
+        "28.87",
+        "+34.6%"
       ],
       [
         "FCF (B USD)",
@@ -56,7 +61,8 @@
         "43.84",
         "54.07",
         "46.11",
-        "-14.7%"
+        "13.23",
+        "+19.3%"
       ],
       [
         "EPS Diluido",
@@ -65,7 +71,8 @@
         "14.87",
         "23.86",
         "23.49",
-        "-1.6%"
+        "10.44",
+        "+62.4%"
       ],
       [
         "Deuda Neta (B USD)",
@@ -74,6 +81,7 @@
         "-23.47",
         "-15.06",
         "22.87",
+        "-22.43",
         "N/A"
       ]
     ]
@@ -81,61 +89,59 @@
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "26.8x",
+      "value": "22.1x",
       "signal": "yellow",
       "note": "vs. sector tech ~28x",
-      "precio_base": 629.86,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 606.71,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 23.5
+        "valor": 27.49
       }
     },
     {
       "label": "P/E Forward",
-      "value": "17.5x",
+      "value": "20.0x",
       "signal": "green",
-      "precio_base": 629.86,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 606.71,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 35.97
+        "valor": 30.39
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "16.1x",
+      "value": "14.1x",
       "signal": "green",
-      "precio_base": 629.86,
-      "precio_fecha": "2026-04-10",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 101.9,
-        "shares_m": 2574,
-        "deuda_neta_b": 22.87
+        "ebitda_b": 109.3,
+        "shares_m": 2540,
+        "deuda_neta_b": 5.59
       }
     },
     {
       "label": "P/FCF",
-      "value": "35.2x",
+      "value": "31.9x",
       "signal": "yellow",
-      "precio_base": 629.86,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 606.71,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 46.11,
-        "shares_m": 2574
+        "fcf_b": 48.25,
+        "shares_m": 2540
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "0.22x",
+      "value": "0.05x",
       "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "27.8%",
-      "signal": "yellow"
+      "value": "30.6%",
+      "signal": "green"
     },
     {
       "label": "ROIC",
@@ -144,17 +150,17 @@
     },
     {
       "label": "Margen Bruto",
-      "value": "80.5%",
+      "value": "81.9%",
       "signal": "green"
     },
     {
       "label": "Margen Operativo",
-      "value": "41.4%",
+      "value": "40.6%",
       "signal": "green"
     },
     {
       "label": "FCF Yield",
-      "value": "2.8%",
+      "value": "3.1%",
       "signal": "yellow"
     }
   ],
@@ -185,6 +191,11 @@
         "label": "FY2025",
         "revenue": 200.97,
         "utilidad": 60.46
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 56.31,
+        "utilidad": 26.77
       }
     ],
     "series": [
@@ -229,6 +240,12 @@
         "bruto": 80.5,
         "operativo": 41.4,
         "neto": 30.1
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 81.9,
+        "operativo": 40.6,
+        "neto": 47.5
       }
     ],
     "series": [
@@ -250,22 +267,22 @@
     "items": [
       {
         "label": "Capex",
-        "value": "69.69B USD",
-        "nota": "Inversion record en infraestructura de IA: data centers, servidores y redes. Guidance FY2026: 60-65B USD."
+        "value": "18.99B USD (Q1 2026)",
+        "nota": "Guidance FY2026 elevado drasticamente a 125-145B USD (vs. 60-65B anterior). Meta planea emision de bonos de 20-25B para financiar infraestructura de IA."
       },
       {
         "label": "Recompras",
-        "value": "~32B USD",
-        "nota": "Recompra activa en FY2025. Shares diluted cayeron de 2614M a 2574M (-1.5% YoY)."
+        "value": "~32B USD (FY2025)",
+        "nota": "Recompra activa en FY2025. Shares diluted en Q1 2026: 2,564M vs 2,590M en Q1 2025 (-1.0% YoY)."
       },
       {
         "label": "Dividendos",
-        "value": "~3.0B USD",
+        "value": "~3.0B USD (FY2025)",
         "nota": "Dividendo trimestral de 0.50/accion iniciado en FY2024, mantenido en FY2025. Yield ~0.3%."
       },
       {
         "label": "R&D",
-        "value": "~43B USD",
+        "value": "~43B USD (FY2025)",
         "nota": "Incluye Reality Labs (~18B perdidas), Llama, Meta AI, sistemas Andromeda/GEM y Orion AR."
       }
     ]
@@ -273,34 +290,34 @@
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "META FY2025",
+      "META Q1 2026",
       "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
         "Gross Margin",
-        "80.5%",
+        "81.9%",
         "~65%",
         "Por encima del sector"
       ],
       [
         "Margen Operativo",
-        "41.4%",
+        "40.6%",
         "~25%",
-        "Muy por encima — Year of Efficiency sostenido"
+        "Muy por encima — eficiencia operativa sostenida"
       ],
       [
         "Revenue Growth YoY",
-        "+22.2%",
+        "+33.1%",
         "~12%",
-        "Muy por encima — aceleracion con IA"
+        "Muy por encima — aceleracion con IA publicitaria"
       ],
       [
         "P/E Forward",
-        "17.5x",
+        "20.0x",
         "~25x",
-        "Descuento — valuacion atractiva"
+        "Descuento — valuacion atractiva post-caida"
       ],
       [
         "ROIC",
@@ -311,73 +328,73 @@
     ]
   },
   "deterioro": {
-    "veredicto": "Salud financiera solida con presion en FCF y utilidad neta por capex record — es inversion estrategica, no deterioro operativo.",
-    "analisis": "FY2025 muestra anomalia aparente: revenue +22.2% pero utilidad neta -3% YoY. La causa es el capex de 69.7B (+87% YoY) que eleva D&A y reduce FCF. El margen operativo se mantuvo en 41.4%, evidenciando que el negocio core esta sano. La deuda LT doblo a 58.7B financiando el ciclo de inversion. Presion transitoria por inversion de largo plazo, no deterioro estructural.",
+    "veredicto": "Salud operativa excepcional en Q1 2026 — el unico riesgo real es el salto en capex guidance a 125-145B USD para FY2026, que comprimira FCF durante 2-3 anos.",
+    "analisis": "Q1 2026 muestra aceleracion genuina: revenue +33% y utilidad neta +61% YoY. El margen neto de 47.5% es record historico, impulsado por alto ingreso financiero sobre la caja de 81B USD. El margen operativo de 40.6% confirma eficiencia operativa. El capex de 18.99B en Q1 2026 anualiza a ~76B — bien por debajo del guidance de 125-145B para el ano completo, lo que implica una aceleracion masiva de gasto en H2 2026. Esto comprimira FCF significativamente pero es inversion estrategica, no deterioro operativo.",
     "items": [
       {
-        "metrica": "Revenue YoY",
-        "valor": "+22.2%",
+        "metrica": "Revenue YoY Q1",
+        "valor": "+33.1%",
         "status": "ok"
       },
       {
-        "metrica": "Margen Operativo",
-        "valor": "41.4%",
+        "metrica": "Margen Operativo Q1",
+        "valor": "40.6%",
         "status": "ok"
       },
       {
-        "metrica": "Margen Neto",
-        "valor": "30.1%",
-        "status": "warn",
-        "nota": "Cae 7.8pp vs FY2024 por D&A en ascenso"
+        "metrica": "Margen Neto Q1",
+        "valor": "47.5%",
+        "status": "ok",
+        "nota": "Record historico — incluye alto ingreso financiero sobre caja de 81B USD"
       },
       {
-        "metrica": "FCF YoY",
-        "valor": "-14.7%",
-        "status": "warn",
-        "nota": "FCF comprimido por capex de IA de 69.7B (+87% YoY)"
+        "metrica": "FCF Q1 YoY",
+        "valor": "+19.3%",
+        "status": "ok",
+        "nota": "FCF de 13.23B vs 11.09B Q1 2025 — crecimiento saludable este trimestre"
       },
       {
-        "metrica": "Deuda Neta",
-        "valor": "22.87B USD",
+        "metrica": "Capex guidance FY2026",
+        "valor": "125-145B USD",
         "status": "warn",
-        "nota": "LTD doblo a 58.7B; ND/EBITDA en 0.22x"
+        "nota": "Salto masivo desde 60-65B anterior — comprimira FCF en H2 2026 y FY2027"
       },
       {
-        "metrica": "EPS Diluido YoY",
-        "valor": "-1.6%",
-        "status": "warn",
-        "nota": "EPS cae con utilidad neta; recompras mitigan parcialmente"
+        "metrica": "Deuda Neta Q1 2026",
+        "valor": "-22.43B (net cash)",
+        "status": "ok",
+        "nota": "Usando total cash 81.18B vs LT Debt 58.75B — posicion de caja neta"
       }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Revenue +22% YoY a 201B USD",
+      "title": "Revenue +33% YoY a 56.3B USD en Q1 2026",
       "impact": "Alto",
-      "evidence": "Ingresos de 200.97B USD en FY2025 vs 164.5B en FY2024; aceleracion desde +16% de FY2023. Ads impulsados por Reels, Meta AI y Advantage+.",
-      "context": "La aceleracion en un negocio de 200B demuestra que la IA amplia el TAM publicitario de Meta, no solo lo defiende."
+      "evidence": "Revenue Q1 2026 de 56.31B USD vs 42.31B en Q1 2025 (+33.1% YoY). Superacion de estimados de ~53.5B. Aceleracion desde +22.2% de FY2025 completo.",
+      "context": "La aceleracion a 33% en un negocio de 200B+ anuales demuestra que la IA amplifica el TAM publicitario. Reels, Meta AI con 700M+ MAU y Advantage+ son los drivers identificados."
     },
     {
       "level": "green",
-      "title": "Margen operativo record 41.4%",
+      "title": "Utilidad Neta +61% YoY — margen record 47.5%",
       "impact": "Alto",
-      "evidence": "Margen operativo FY2025: 41.4% vs 42.2% en FY2024. EBITDA de 101.9B USD.",
-      "context": "La expansion de margenes sostenida confirma que el Year of Efficiency fue transformacion estructural, no recorte ciclico."
+      "evidence": "Utilidad neta Q1 2026: 26.77B USD vs 16.64B Q1 2025. Margen neto de 47.5% es record historico trimestral.",
+      "context": "Combinacion de palanca operativa con alto ingreso financiero sobre caja de 81B USD. Confirma que el Year of Efficiency fue transformacion estructural — no recorte ciclico."
     },
     {
       "level": "green",
-      "title": "Moat de red: 3.4B DAU",
+      "title": "Moat de red: 3.4B+ DAU inamovible",
       "impact": "Alto",
       "evidence": "Familia de apps con 3.4B+ usuarios activos diarios. Facebook 3.3B MAU; Instagram y WhatsApp crecen en mercados emergentes.",
       "context": "Nadie puede replicar este grafo social en decadas. El dataset de comportamiento es la ventaja competitiva mas durable del sector tech."
     },
     {
       "level": "yellow",
-      "title": "Capex IA de 69.7B — FCF comprimido",
-      "impact": "Medio",
-      "evidence": "Capex FY2025: 69.7B (+87% YoY vs 37.3B en FY2024). FCF cae de 54.1B a 46.1B. Guidance FY2026: 60-65B adicionales.",
-      "context": "Si monetizacion de IA tarda mas de 2 anos, FCF comprimido y D&A en ascenso presionaran EPS y multiple."
+      "title": "Capex FY2026 elevado a 125-145B USD",
+      "impact": "Alto",
+      "evidence": "Meta elevo guidance de capex FY2026 de 60-65B a 125-145B USD en el reporte del 29-abr-2026. Q1 solo gasto 18.99B, implicando aceleracion masiva en H2 2026. Planea emision de bonos por 20-25B USD.",
+      "context": "Si los retornos de IA no se materializan en 18-24 meses, el FCF permanecera comprimido y la deuda se elevara significativamente. El mercado castigo la accion -9.5% por este anuncio."
     },
     {
       "level": "yellow",
@@ -405,12 +422,12 @@
       },
       {
         "label": "Crecimiento de revenue",
-        "score": 9,
+        "score": 10,
         "max": 10
       },
       {
         "label": "Calidad de margenes",
-        "score": 8,
+        "score": 9,
         "max": 10
       },
       {
@@ -420,22 +437,22 @@
       },
       {
         "label": "Generacion de FCF",
-        "score": 7,
+        "score": 6,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Meta ejecuta estrategia dual: (1) monetizacion maxima del negocio publicitario via IA — Advantage+, Meta AI integrado en todas las apps, Reels y WhatsApp Business; y (2) construccion de la siguiente plataforma de computacion — AR/VR (Quest 3, Ray-Ban Meta, Orion AR) y Llama como capa de IA generativa open-weights. A corto plazo el motor es publicidad; a largo plazo la tesis es que el siguiente dispositivo personal seran gafas con IA y Meta busca ser el sistema operativo de ese dispositivo. Zuckerberg comprometio 60-65B en capex FY2026, la mayor inversion en la historia de la empresa.",
-    "ventajas": "Moat multidimensional: (1) Red de efectos con 3.4B DAU — imposible replicar el grafo social en decadas; (2) Datos de primera parte — comportamiento de 3.4B usuarios permite targeting publicitario superior post-ATT (iOS 14); (3) Escala de infraestructura — mayor inversor privado mundial en AI compute en 2025-2026; (4) Diversificacion de plataformas — si Facebook desacelera, Instagram/Reels compensa; WhatsApp Business monetiza; Meta AI y XR son la siguiente ola.",
-    "debilidades": "Reality Labs destruye >18B USD anuales sin retorno visible, subsidiado por el negocio publicitario. El modelo tiene concentracion extrema en publicidad (~98%), creando vulnerabilidad ante regulaciones de privacidad (Privacy Sandbox, CPRA, DSA). La percepcion de marca entre adolescentes debilita — TikTok domina el segmento 13-25. El D&A escalara en FY2026-2027 por capex record, presionando EPS GAAP.",
+    "estrategia": "Meta ejecuta estrategia dual: (1) monetizacion maxima del negocio publicitario via IA — Advantage+, Meta AI integrado en todas las apps, Reels y WhatsApp Business; y (2) construccion de la siguiente plataforma de computacion — AR/VR (Quest 3, Ray-Ban Meta, Orion AR) y Llama como capa de IA generativa open-weights. En Q1 2026 la aceleracion publicitaria quedo demostrada con +33% de revenue. El capex elevado a 125-145B en FY2026 refleja que Meta apuesta a que la ventana de liderazgo en AI compute es estrecha y hay que ganar ahora.",
+    "ventajas": "Moat multidimensional: (1) Red de efectos con 3.4B DAU — imposible replicar el grafo social en decadas; (2) Datos de primera parte — comportamiento de 3.4B usuarios permite targeting publicitario superior post-ATT; (3) Escala de infraestructura — mayor inversor privado mundial en AI compute en 2025-2026; (4) Diversificacion de plataformas — si Facebook desacelera, Instagram/Reels compensa; WhatsApp Business monetiza; Meta AI crece a 700M+ MAU.",
+    "debilidades": "Reality Labs destruye >18B USD anuales sin retorno visible. El modelo tiene concentracion extrema en publicidad (~98%), creando vulnerabilidad ante regulaciones de privacidad. El capex de 125-145B en FY2026 comprimira FCF durante 2-3 anos. La percepcion de marca entre adolescentes debilita — TikTok domina el segmento 13-25.",
     "riesgos": [
+      "Riesgo de capex masivo: El salto de guidance de 60-65B a 125-145B en FY2026 duplica la inversion. Si los retornos de IA se retrasan mas de 2 anos, el FCF comprimido y la deuda creciente generaran re-rating bajista severo.",
       "Riesgo regulatorio DOJ: caso antimonopolio activo en 2025-2026 podria forzar desinversion de Instagram o WhatsApp. La fragmentacion reduciria el poder del dataset en -20% a -35% en ingresos en el peor escenario.",
-      "Riesgo de capex: La inversion de 69.7B en FY2025 y 60-65B en FY2026 requiere que retornos de IA se materialicen en 18-36 meses. Si el timeline se extiende, FCF comprimido y D&A en aumento generaran re-rating bajista.",
-      "Competencia en video corto: TikTok mantiene ventaja en engagement 13-25 anos. Una prohibicion en EEUU seria catalizador masivo para Meta; su continuidad es el principal riesgo de cuota de mercado en el demografico mas valioso.",
-      "Privacidad y regulacion: Privacy Sandbox de Google, CPRA en California y DSA en Europa podrian degradar precision del targeting y comprimir CPMs en los mercados de mayor ARPU."
+      "Competencia en video corto: TikTok mantiene ventaja en engagement 13-25 anos. Una prohibicion en EEUU seria catalizador masivo para Meta; su continuidad es el principal riesgo de cuota de mercado.",
+      "Privacidad y regulacion: Privacy Sandbox, CPRA en California y DSA en Europa podrian degradar precision del targeting y comprimir CPMs en los mercados de mayor ARPU."
     ],
-    "inversiones_estrategicas": "Capex FY2025 de 69.7B USD (+87% YoY) se destina a data centers de IA en EEUU, Europa y Asia. R&D de ~43B incluye Reality Labs (~18B de perdidas: Quest 3S, Ray-Ban Meta, Orion AR), Meta AI (Llama 3 y 4, asistente con 700M MAU) y sistemas Andromeda/GEM. Estrategia de M&A selectiva — Meta prefiere desarrollo interno. Retorno esperado segun management: 5-7x en revenue adicional en 3-5 anos por mejora en relevancia publicitaria y nuevos vectores como WhatsApp Business Premium."
+    "inversiones_estrategicas": "Capex FY2026 guidance de 125-145B USD (mas del doble que FY2025 de 69.7B) se destina a data centers de IA en EEUU, Europa y Asia. Meta planea emision de bonos de 20-25B para financiar parte de esta expansion. R&D incluye Reality Labs (~18B de perdidas anuales), Meta AI (Llama 4, asistente con 700M+ MAU) y sistemas Andromeda/GEM. La tesis de management: ser el lider indiscutible en AI compute para publicidad y agentes de IA antes de que la ventana de ventaja se cierre."
   },
   "verdict": {
     "status": "Comprar con Conviccion",
@@ -443,41 +460,41 @@
     "color": "green",
     "metrics": [
       {
-        "label": "Revenue FY2025",
-        "value": "200.97B USD"
+        "label": "Revenue Q1 2026",
+        "value": "56.31B USD"
       },
       {
         "label": "Margen Operativo",
-        "value": "41.4%"
+        "value": "40.6%"
       },
       {
-        "label": "FCF Yield",
-        "value": "2.8%"
+        "label": "FCF Yield LTM",
+        "value": "3.1%"
       },
       {
         "label": "P/E Forward",
-        "value": "17.5x"
+        "value": "20.0x"
       },
       {
-        "label": "Crecimiento Rev.",
-        "value": "+22.2% YoY"
+        "label": "Crecimiento Rev. Q1",
+        "value": "+33.1% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Revenue +22% a 201B USD** — Meta acelera en un negocio de 200B gracias a la IA publicitaria. Ningun competidor de esta escala crece a esta velocidad con margenes operativos del 41%.",
+        "text": "**Revenue +33% YoY a 56.3B** -- Meta acelero significativamente en Q1 2026, con utilidad neta de 26.8B (+61% YoY) y EPS de 10.44 USD. El negocio publicitario con IA esta en su mejor momento operativo.",
         "type": "pro"
       },
       {
-        "text": "**Margen operativo record 41.4%** — El Year of Efficiency de 2023 fue permanente. Meta gana mas de 41 centavos por cada dolar de revenue con poder de pricing irreplicable.",
+        "text": "**Valuacion atractiva post-caida** -- A 607 USD (post -9.5% post-earnings), el P/E Forward es 20x para una empresa que crece +33% con margen operativo >40%. PEG ~0.6x implica descuento significativo vs. calidad.",
         "type": "pro"
       },
       {
-        "text": "**Valuacion atractiva vs. crecimiento** — P/E Forward de 17.5x para una empresa que crece +22% YoY con margen >40% implica PEG ~0.8x, barato por cualquier metrica de calidad growth.",
+        "text": "**Moat de red irreplicable** -- 3.4B+ DAU y dataset de comportamiento unificado entre plataformas. Nadie puede construir esto en decadas — es la ventaja competitiva mas durable del sector.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo DOJ y capex elevado** — Caso antimonopolio activo y capex de 60-65B en FY2026 son las variables criticas: riesgo estructural de desinversion y compresion de FCF a corto plazo.",
+        "text": "**Capex 125-145B en FY2026** -- El salto masivo en inversion comprimira FCF en H2 2026 y FY2027. El mercado castigo esto -9.5% en apertura. El riesgo binario: si la IA no monetiza en 18-24 meses, re-rating bajista severo.",
         "type": "con"
       }
     ]
@@ -486,27 +503,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de 200.97B USD en FY2025 crece 22.2% YoY, la mayor aceleracion desde FY2021. Driver: publicidad potenciada por IA — Meta AI con 700M MAU, Reels compitiendo con TikTok y Advantage+ automatizando targeting. EEUU/Canada generan ~54% pero Asia-Pacifico crece mas rapido. WhatsApp Business y Threads son vectores adicionales en etapa temprana."
+        "texto": "Revenue Q1 2026 de 56.31B USD crece 33.1% YoY, aceleracion notable desde +22.2% de FY2025. Driver: publicidad potenciada por IA — Meta AI con 700M+ MAU, Reels creciendo y Advantage+ automatizando targeting. El TTM revenue supera 214.96B USD. La guia de revenue para Q2 2026 apunta a 52.5-55.5B USD, implicando crecimiento sostenido aunque ligeramente desacelerado por estacionalidad."
       },
       {
         "label": "Margenes",
-        "texto": "Margen operativo de 41.4% vs 42.2% en FY2024. La presion para FY2026 vendra del D&A en ascenso por el capex record de FY2025, elevando la base de activos depreciables en ~70B. Esto comprimira el margen neto GAAP pero no el margen operativo cash, que seguira expandiendose conforme el revenue escale sobre base de costos mas fija."
+        "texto": "Margen operativo Q1 2026: 40.6% vs 41.5% en Q1 2025 (-0.9pp). El margen neto de 47.5% es record historico impulsado por alto ingreso financiero sobre caja de 81B USD. La presion en margenes operativos vendra en H2 2026 cuando el capex masivo eleve la base de activos depreciables. El margen bruto de 81.9% sigue expandiendose, confirmando el pricing power del negocio publicitario."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de 46.11B USD en FY2025 (OCF 115.8B menos Capex 69.69B). Compresion desde 54.1B de FY2024 es puramente por capex record. Con guidance de 60-65B en FY2026, el FCF se mantendra comprimido en 50-55B, pero la base de OCF deberia superar 130B conforme revenue escale."
+        "texto": "FCF Q1 2026 de 13.23B USD (+19.3% YoY) con OCF de 32.23B y capex de 18.99B. El LTM FCF es ~48.3B. Con guidance de 125-145B en capex FY2026, y Q1 solo gastando 18.99B, el capex se acelerara masivamente en Q2-Q4 2026. FCF anual para FY2026 podria comprimirse a 20-30B si el capex se distribuye uniformemente. Esta es la variable critica que presiona la tesis."
       },
       {
         "label": "Balance",
-        "texto": "Deuda LT doblo de 28.8B a 58.7B en FY2025 financiando el ciclo de capex. Caja bajo de 43.9B a 35.9B. Deuda Neta de 22.87B USD con ND/EBITDA de 0.22x — solido y manejable. Equity crece a 217.24B. ROE de 27.8% y ROIC de 29.5% muy por encima del costo de capital."
+        "texto": "Balance robusto con total cash de 81.18B USD y LT Debt de 58.75B — net cash de 22.43B. Equity crece a 243.68B. Meta planea emision de bonos de 20-25B para financiar parte del capex de 125-145B. ND/EBITDA LTM de ~0.05x — incluso con la emision de deuda, el balance permanece manageable. ROE LTM ~30.6%."
       },
       {
         "label": "Valuacion",
-        "texto": "A precio de 629.86 USD/accion (P/E Forward 17.5x, EV/EBITDA 16.1x, P/FCF 35.2x, FCF Yield 2.8%), META cotiza con descuento frente a Alphabet y Microsoft considerando su tasa de crecimiento. Precio objetivo 12 meses: 700-750 USD basado en 20-21x EV/EBITDA sobre EBITDA FY2026 estimado de ~115B."
+        "texto": "A precio de 606.71 USD/accion post-caida (P/E Trailing 22.1x, P/E Forward 20.0x, EV/EBITDA 14.1x, P/FCF LTM 31.9x, FCF Yield 3.1%), META cotiza con descuento historico frente a su calidad. El target de consenso de 833 USD implica +37% de upside. La caida de 9.5% por el capex guidance es una oportunidad para inversionistas de largo plazo con horizonte de 3+ anos."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Top 3: (1) DOJ antimonopolio — veredicto en 2026 es la mayor variable binaria; desinversion de Instagram destruiria 25-30% del valor; (2) Capex de IA sin retorno visible — si FCF no recupera a 60B+ para FY2027, re-rating bajista; (3) Regulacion de privacidad — restricciones al uso de datos comprimiran CPMs en mercados de mayor ARPU."
+        "texto": "Top 3 actualizado: (1) Capex 125-145B FY2026 -- si FCF no se recupera a 60B+ para FY2027, re-rating bajista; la ejecucion de esta inversion masiva es la variable critica para 2026-2027; (2) DOJ antimonopolio -- veredicto en 2026 es la mayor variable binaria; desinversion de Instagram destruiria 25-30% del valor; (3) Monetizacion de IA -- la tesis requiere que el retorno sobre el capex de IA se materialice en publicidad y nuevos vectores en 18-24 meses."
       }
     ]
   }

@@ -1,35 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "Carvana Co. es la mayor plataforma digital de comercio de vehiculos usados en Estados Unidos, con un modelo 100% online que cubre compra, financiamiento, entrega y venta de autos sin concesionaria fisica. Tras una crisis financiera severa en 2022, ejecuto una reestructuracion que canjeo mas de 5 mil millones de dolares en deuda, y en FY2025 reporto el mejor anio de su historia: revenue de 20.3B USD (+49% YoY), utilidad neta de 1.41B USD y EBITDA record. El turnaround es real y la escala esta acelerando, aunque el apalancamiento residual y la sensibilidad a tasas de interes siguen siendo riesgos a monitorear.",
-  "descripcion": "Carvana opera un marketplace digital end-to-end para vehiculos usados en EE.UU. Sus fuentes de ingresos incluyen: (1) venta retail de vehiculos usados a consumidores finales, principal linea de ingresos; (2) venta wholesale de vehiculos a distribuidores y subastas via ADESA/CarOffer; (3) productos financieros: originar prestamos de auto y venderlos a instituciones (gain-on-sale); y (4) comisiones por garantias extendidas y seguros. La infraestructura logistica incluye 38+ centros de inspeccion y recondicionaliento (IRCs) y un sistema de entrega a domicilio en mas de 300 mercados. Genera valor via datos transaccionales masivos que alimentan pricing dinamico y optimizacion de inventario superiores al retail tradicional.",
-  "conclusion": {
-    "items": [
-      {
-        "label": "Ingresos",
-        "texto": "CVNA reporto en FY2025 el mayor revenue de su historia: 20.32B USD, crecimiento del 48.6% YoY impulsado por mayor volumen de unidades retail y la integracion plena de ADESA en el canal wholesale. La trayectoria es positiva en todos los trimestres."
-      },
-      {
-        "label": "Margenes",
-        "texto": "La expansion de margenes es la historia central del turnaround. Margen bruto en 20.6%, margen operativo en 9.3% y margen neto en 6.9%, los tres maximos historicos de la compania. La tendencia de expansion es sostenida desde 2022."
-      },
-      {
-        "label": "Generacion de caja",
-        "texto": "FCF positivo por tercer anio consecutivo (0.89B USD). La conversion de EBITDA a FCF es modesta (~42%) por el pago de intereses, pero la tendencia es de mejora progresiva conforme la deuda se amortiza."
-      },
-      {
-        "label": "Balance",
-        "texto": "La deuda neta de 2.59B USD es manejable relativamente al EBITDA actual (ratio 1.2x) y continua descendiendo. La reestructuracion de 2023 fue exitosa; el riesgo de refinanciamiento a mediano plazo es real pero no inmediato."
-      },
-      {
-        "label": "Valuacion",
-        "texto": "A 320 USD por accion, CVNA cotiza con un EV/EBITDA de 34.9x, prima significativa sobre el sector automotriz que refleja expectativas de crecimiento acelerado. El P/E trailing de 50.9x es alto pero la base historica de EPS es distorsionada. La valuacion requiere ejecucion impecable."
-      },
-      {
-        "label": "Riesgos principales",
-        "texto": "Los tres riesgos a monitorear: (1) tasas de interes, que impactan directamente demanda y margen financiero; (2) vencimientos de deuda 2025-2028 y capacidad de refinanciar a tasas aceptables; (3) aceleracion competitiva de CarMax y AutoNation en canales digitales."
-      }
-    ]
-  },
+  "resumen": "Carvana Co. es la mayor plataforma digital de comercio de vehiculos usados en Estados Unidos, con un modelo 100% online que cubre compra, financiamiento, entrega y venta de autos sin concesionaria fisica. En Q1 2026 reporto resultados record: revenue de 6.43B USD (+52% YoY), 187,393 unidades retail vendidas (+40% YoY, nuevo maximo historico) y EBITDA ajustado de 672M USD. El turnaround iniciado en 2022 esta consolidado: cuatro trimestres consecutivos de crecimiento acelerado, margenes en expansion y deuda neta manejable. La narrativa cambio de supervivencia a dominancia de mercado.",
+  "descripcion": "Carvana opera un marketplace digital end-to-end para vehiculos usados en EE.UU. Sus fuentes de ingresos incluyen: (1) venta retail de vehiculos usados a consumidores finales, principal linea de ingresos; (2) venta wholesale de vehiculos a distribuidores y subastas via ADESA/CarOffer; (3) productos financieros: originar prestamos de auto y venderlos a instituciones (gain-on-sale); y (4) comisiones por garantias extendidas y seguros. La infraestructura logistica incluye 38+ centros de inspeccion y recondicionamiento (IRCs) y un sistema de entrega a domicilio en mas de 300 mercados. La escala de unidades vendidas (187K en un solo trimestre) acelera el flywheel de datos que alimenta pricing dinamico y optimizacion de inventario superior al retail tradicional.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -38,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -48,7 +21,8 @@
         "10.77",
         "13.67",
         "20.32",
-        "+48.6%"
+        "6.43",
+        "+52.0%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -57,7 +31,8 @@
         "0.45",
         "0.21",
         "1.41",
-        "+571.4%"
+        "0.41",
+        "+87.5%"
       ],
       [
         "Margen Neto",
@@ -66,7 +41,8 @@
         "4.2%",
         "1.5%",
         "6.9%",
-        "5.4pp"
+        "6.3%",
+        "+1.2pp"
       ],
       [
         "Margen Bruto",
@@ -75,7 +51,8 @@
         "16.0%",
         "21.1%",
         "20.6%",
-        "-0.5pp"
+        "19.8%",
+        "-2.2pp"
       ],
       [
         "Margen Operativo",
@@ -84,7 +61,8 @@
         "-0.7%",
         "7.2%",
         "9.3%",
-        "2.1pp"
+        "9.0%",
+        "-0.3pp"
       ],
       [
         "EPS Diluido",
@@ -93,7 +71,8 @@
         "2.24",
         "1.59",
         "6.29",
-        "+4.7"
+        "1.81",
+        "+88.5%"
       ],
       [
         "FCF (B USD)",
@@ -102,7 +81,8 @@
         "0.72",
         "0.83",
         "0.89",
-        "+0.06"
+        "0.06",
+        "-0.15"
       ],
       [
         "Deuda Neta (B USD)",
@@ -111,79 +91,81 @@
         "4.65",
         "3.58",
         "2.59",
-        "-0.99"
+        "2.67",
+        "+0.08"
       ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "50.9x",
+      "value": "54.0x",
       "signal": "yellow",
-      "note": "Primer anio con EPS material positivo — base historica distorsionada",
-      "precio_base": 320.22,
-      "precio_fecha": "2026-04-07",
+      "note": "EPS LTM 7.13 USD — base historica en expansion tras turnaround",
+      "precio_base": 384.97,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 6.29
+        "valor": 7.13
       }
     },
     {
       "label": "P/E Forward",
-      "value": "30.8x",
+      "value": "N/A",
       "signal": "yellow",
-      "note": "Consenso apunta a 30-40x para FY2026 segun estimados de mercado",
-      "precio_base": 328.06,
-      "precio_fecha": "2026-04-09",
+      "note": "Consenso aun sin consolidar para FY2026 — CVNA usa EBITDA ajustado como metrica guia; EPS GAAP distorsionado por estructura de capital",
+      "precio_base": 384.97,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 10.6434
+        "valor": 10
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "34.9x",
+      "value": "33.1x",
       "signal": "yellow",
-      "precio_base": 320.22,
-      "precio_fecha": "2026-04-07",
+      "precio_base": 384.97,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 2.13,
+        "ebitda_b": 2.69,
         "shares_m": 224.3,
-        "deuda_neta_b": 2.59
+        "deuda_neta_b": 2.67
       }
     },
     {
       "label": "P/FCF",
-      "value": "80.7x",
-      "signal": "yellow",
-      "precio_base": 320.22,
-      "precio_fecha": "2026-04-07",
+      "value": "116.5x",
+      "signal": "red",
+      "note": "FCF LTM comprimido por mayor capex en Q1 2026 — no representativo del FCF normalizado anual",
+      "precio_base": 384.97,
+      "precio_fecha": "2026-04-30",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 0.89,
+        "fcf_b": 0.741,
         "shares_m": 224.3
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "1.2x",
+      "value": "1.0x",
       "signal": "green"
     },
     {
       "label": "Market Cap",
-      "value": "71.83B USD",
+      "value": "86.35B USD",
       "signal": "yellow"
     },
     {
       "label": "EV",
-      "value": "74.42B USD",
+      "value": "89.02B USD",
       "signal": "yellow"
     },
     {
       "label": "FCF Yield",
-      "value": "1.2%",
-      "signal": "yellow"
+      "value": "0.9%",
+      "signal": "red"
     }
   ],
   "chart_ingresos": {
@@ -213,6 +195,11 @@
         "label": "FY2025",
         "revenue": 20.32,
         "utilidad": 1.41
+      },
+      {
+        "label": "Q1 2026",
+        "revenue": 6.43,
+        "utilidad": 0.41
       }
     ],
     "series": [
@@ -257,6 +244,12 @@
         "bruto": 20.6,
         "operativo": 9.3,
         "neto": 6.9
+      },
+      {
+        "label": "Q1 2026",
+        "bruto": 19.8,
+        "operativo": 9,
+        "neto": 6.3
       }
     ],
     "series": [
@@ -278,141 +271,141 @@
     "items": [
       {
         "label": "Capex",
-        "value": "0.15B USD",
-        "nota": "Inversion disciplinada en IRCs y tecnologia de plataforma; el modelo asset-light mantiene capex bajo (0.7% del revenue) vs. dealers tradicionales"
+        "value": "0.05B USD (Q1 2026)",
+        "nota": "Capex de 51M USD en Q1 2026 (+89% YoY vs 27M en Q1 2025) — aceleracion de inversion en capacidad de IRCs e infraestructura logistica para soportar crecimiento de volumen record"
       },
       {
         "label": "Recompras",
         "value": "0 USD",
-        "nota": "Sin programa activo de recompra — prioridad es reduccion de deuda y reinversion en crecimiento organico"
+        "nota": "Sin programa activo de recompra — prioridad es crecimiento organico y reduccion de deuda residual"
       },
       {
         "label": "Dividendos",
         "value": "0 USD",
-        "nota": "Sin dividendos — empresa en fase de consolidacion del turnaround y aceleracion de escala"
+        "nota": "Sin dividendos — empresa en fase de consolidacion de liderazgo de mercado y expansion de margenes"
       },
       {
         "label": "Reduccion de Deuda",
         "value": "Activa",
-        "nota": "Deuda neta bajo de 6.05B en 2022 a 2.59B en 2025 (-57%); la reestructuracion de 2023 canjeo ~9B en valor nominal a descuento significativo"
+        "nota": "Deuda neta bajo de 6.05B en 2022 a 2.67B en Q1 2026 (-56%); reestructuracion de 2023 y generacion organica de caja reducen el apalancamiento"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "CVNA FY2025",
+      "CVNA Q1 2026",
       "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
         "Gross Margin",
-        "20.6%",
+        "19.8%",
         "~14-18%",
         "Por encima — modelo digital elimina costos de concesionaria fisica"
       ],
       [
         "Margen Operativo",
-        "9.3%",
+        "9.0%",
         "~2-5%",
         "Por encima del retail automotriz tradicional"
       ],
       [
         "Revenue Growth YoY",
-        "+48.6%",
+        "+52%",
         "~5-10%",
-        "Muy por encima — aceleracion de escala post-turnaround"
+        "Muy por encima — aceleracion de escala historica"
       ],
       [
         "EV/EBITDA",
-        "34.9x",
+        "33.1x",
         "~8-12x",
-        "Prima elevada justificada por crecimiento acelerado"
+        "Prima elevada justificada por crecimiento excepcional"
       ],
       [
         "Deuda Neta/EBITDA",
-        "1.2x",
+        "1.0x",
         "~1-3x",
-        "Por encima — riesgo residual con trayectoria descendente"
+        "En rango saludable — trayectoria descendente"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Mejora financiera historica en FY2025: revenue +49%, utilidad neta +572% y EBITDA record confirman que el turnaround es sostenible.",
-    "analisis": "Carvana logro en FY2025 la mejor combinacion de metricas de su historia. El margen bruto escala a 20.6%, el margen operativo alcanza 9.3% y la utilidad neta supera 1.4B USD por primera vez. El FCF sigue siendo positivo por tercer anio consecutivo aunque la conversion de EBITDA a FCF es modesta por el pago de intereses. La deuda neta continua reduciendose organicamente.",
+    "veredicto": "Q1 2026 confirma aceleracion excepcional: 187K unidades record, revenue +52% y EBITDA ajustado de 672M en un solo trimestre — el turnaround evoluciona a dominancia.",
+    "analisis": "El margen bruto retrocedio 2.2pp YoY a 19.8% por mix de mayor volumen wholesale y costos de inventario, pero el EBITDA ajustado de 672M confirma la solidez operativa. El FCF del trimestre fue modesto (56M) por mayor capex (+89% YoY), consistente con inversion en crecimiento de capacidad. La deuda neta subio ligeramente a 2.67B por mayor capex, no por deterioro operativo.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+48.6%",
+        "valor": "+52.0%",
         "status": "ok"
       },
       {
         "metrica": "Margen Bruto",
-        "valor": "20.6%",
+        "valor": "19.8%",
         "status": "ok"
       },
       {
         "metrica": "Margen Operativo",
-        "valor": "9.3%",
+        "valor": "9.0%",
         "status": "ok"
       },
       {
         "metrica": "Margen Neto",
-        "valor": "6.9%",
+        "valor": "6.3%",
         "status": "ok"
       },
       {
-        "metrica": "FCF YoY",
-        "valor": "+0.06B USD",
-        "status": "ok",
-        "nota": "Tercer anio positivo — conversion modesta por intereses de deuda"
+        "metrica": "FCF Trimestral",
+        "valor": "0.056B USD",
+        "status": "warn",
+        "nota": "Comprimido por mayor capex de crecimiento; no deterioro estructural"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "2.59B USD",
-        "status": "warn",
-        "nota": "Descendiendo desde 6.05B en 2022 pero aun por encima de la media sectorial"
+        "valor": "2.67B USD",
+        "status": "ok",
+        "nota": "Ligero aumento por capex; trayectoria de largo plazo descendente"
       }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Turnaround historico confirmado en FY2025",
+      "title": "Nuevo record de unidades: 187,393 en Q1 2026",
       "impact": "Alto",
-      "evidence": "Revenue de 20.32B USD (+49% YoY), utilidad neta de 1.41B USD (+572% YoY) y EBITDA record — maximos historicos en todos los indicadores principales.",
-      "context": "El turnaround ya no es una tesis: es un hecho operativo documentado con tres anios consecutivos de FCF positivo y expansion de margenes sostenida."
+      "evidence": "187,393 unidades retail vendidas en Q1 2026 (+40% YoY), superando el record previo. A este ritmo anualizado, CVNA supera 750K unidades en FY2026.",
+      "context": "El mercado total de vehiculos usados en EE.UU. es de ~40M unidades anuales — CVNA tiene menos del 2% de penetracion, lo que implica una pista de crecimiento extensa sin saturacion a la vista."
     },
     {
       "level": "green",
-      "title": "Apalancamiento operativo del modelo digital demostrado",
+      "title": "Revenue +52% YoY: crecimiento se acelera, no desacelera",
       "impact": "Alto",
-      "evidence": "Margen bruto paso de 9.2% (nadir 2022) a 20.6% (FY2025); el SG&A como % de revenue cayo de mas del 30% a menos del 12% en el mismo periodo.",
-      "context": "Sin red de concesionarias fisicas, el costo marginal por unidad adicional es sustancialmente inferior al retail tradicional, permitiendo escalar con mejora de margenes."
+      "evidence": "Revenue de 6.43B USD en Q1 2026 vs 4.23B en Q1 2025. Es el trimestre de mayor crecimiento porcentual desde la recuperacion post-reestructuracion.",
+      "context": "El crecimiento esta impulsado tanto por precio (GPU en expansion) como por volumen, indicando que no hay sacrificio de margen para ganar share — patron de crecimiento de alta calidad."
     },
     {
       "level": "yellow",
-      "title": "Conversion de EBITDA a FCF limitada por intereses",
+      "title": "Margen bruto retrocede 2.2pp a 19.8% por mix wholesale",
       "impact": "Medio",
-      "evidence": "EBITDA estimado de 2.13B USD pero FCF de solo 0.89B USD — la diferencia refleja mas de 1B en pagos de intereses anuales sobre la deuda reestructurada.",
-      "context": "La calidad del FCF mejorara progresivamente conforme se reduce la deuda neta, pero el gasto de intereses seguira siendo material hasta 2027-2028."
+      "evidence": "Gross margin de 19.8% en Q1 2026 vs 22.0% en Q1 2025. Mayor volumen wholesale y costos de inventario diluyeron el margen consolidado.",
+      "context": "El retroceso de margen bruto es compensado por apalancamiento de SG&A: el margen operativo se sostiene en 9.0%. Si el mix retail mejora en proximos trimestres, el margen bruto deberia recuperar niveles de 20-22%."
     },
     {
       "level": "red",
-      "title": "Sensibilidad estructural a tasas de interes",
+      "title": "Sensibilidad estructural a tasas de interes persiste",
       "impact": "Alto",
-      "evidence": "El 60%+ de las ventas retail son financiadas; tasas altas encarecen el credito para compradores y comprimen el gain-on-sale del portafolio de prestamos.",
-      "context": "Un ciclo prolongado de tasas elevadas puede frenar el crecimiento de unidades y reducir el margen financiero, los dos principales motores del turnaround."
+      "evidence": "Mas del 60% de las ventas retail son financiadas. Tasas de autos usados siguen en niveles altos (7-8%), encareciendo pagos mensuales para compradores.",
+      "context": "Un ciclo prolongado de tasas elevadas puede limitar el crecimiento de unidades y comprimir el gain-on-sale. CVNA ejecuta excepcionalmente bien a pesar de este viento en contra — si las tasas bajan, el upside es considerable."
     }
   ],
   "score": {
-    "score": 7.2,
+    "score": 7.6,
     "max": 10,
     "items": [
       {
         "label": "Poder de fijacion de precios",
-        "score": 7,
+        "score": 8,
         "max": 10
       },
       {
@@ -427,7 +420,7 @@
       },
       {
         "label": "Solidez del balance",
-        "score": 5,
+        "score": 6,
         "max": 10
       },
       {
@@ -438,59 +431,87 @@
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "La estrategia de Carvana post-turnaround se centra en crecer rentablemente via: (1) expansion de GPU (ganancia por unidad), con objetivo de superar los 7,000 USD por unidad entre retail y wholesale combinados; (2) escala de unidades vendidas aprovechando el inventario ADESA y la red de IRCs ya amortizada; (3) expansion del segmento financiero con mayor originate-and-sell de prestamos propios; y (4) eficiencia logistica para reducir costo de inspeccion y entrega por unidad mediante IA y optimizacion de rutas. El mercado objetivo es el ~2% de penetracion digital actual en un mercado de 40M+ vehiculos usados anuales en EE.UU.",
-    "ventajas": "El moat de Carvana es un flywheel de datos: millones de transacciones generan modelos de pricing superiores, lo que atrae mas compradores y vendedores, generando mas datos. La plataforma integrada (compra-inspeccion-financiamiento-seguro-entrega) es dificil de replicar para dealers legacy que operan con sistemas fragmentados. Los IRCs son barreras logisticas tangibles. El NPS consistentemente mayor a 80 refleja una experiencia de cliente diferenciada. La capacidad de originar y monetizar prestamos in-house agrega un margen financiero no disponible para e-commerce puro.",
-    "debilidades": "La deuda residual de 4.92B USD genera un gasto de intereses anual que limita la conversion de EBITDA a FCF. La empresa es estructuralmente dependiente del mercado de credito automotriz. La concentracion en mercados suburbanos de EE.UU. limita la escala en ciudades densas donde la logistica de entrega es mas compleja y costosa. El negocio wholesale via ADESA tiene menor margen y mayor volatilidad.",
+    "estrategia": "Post-turnaround, Carvana ejecuta en tres ejes: (1) crecimiento de unidades via expansion de mercados y reduccion de lead times de entrega — target de 1M+ unidades anuales en horizonte de 3-5 anios; (2) expansion de GPU (ganancia por unidad) a traves de mejor mix de financiamiento, garantias y complementarios; y (3) eficiencia operativa via IA para pricing dinamico, inspeccion automatizada en IRCs y optimizacion de logistica. El mercado objetivo sigue siendo el ~2% de penetracion actual en un pool de 40M vehiculos usados anuales en EE.UU.",
+    "ventajas": "El moat de CVNA es un flywheel de datos: millones de transacciones generan modelos de pricing superiores, que atraen mas compradores y vendedores, que generan mas datos. La plataforma integrada (compra-inspeccion-financiamiento-seguro-entrega) es dificil de replicar para dealers legacy con sistemas fragmentados. Los IRCs son barreras logisticas tangibles y ya amortizadas. El NPS sostenidamente mayor a 80 refleja una experiencia de cliente diferenciada. La red ADESA agrega capacidad wholesale que ninguno de los pure-play digitales tiene.",
+    "debilidades": "El gasto de intereses anual (>1B USD) limita la conversion de EBITDA a FCF libre. La empresa es estructuralmente dependiente del mercado de credito automotriz. La concentracion en mercados suburbanos limita la escala en ciudades densas. El margen bruto Q1 2026 mostro ligero retroceso por mix wholesale — si este segmento crece desproporcionadamente, comprimira el margen consolidado.",
     "riesgos": [
-      "Riesgo de tasas de interes: tasas altas reducen la demanda de vehiculos financiados y comprimen los spreads del segmento financiero, que aporta mas del 20% del margen bruto; una reversion del ciclo de tasas es el catalizador negativo mas relevante.",
-      "Riesgo de refinanciamiento: la deuda reestructurada tiene vencimientos a mediano plazo (2025-2028 en su mayoria); si los mercados de credito se endurecen, refinanciar a tasas aceptables puede elevar el gasto de intereses y presionar el FCF.",
-      "Riesgo competitivo: CarMax esta acelerando su plataforma omnicanal y AutoNation Digital gana share — si el diferencial de experiencia se reduce, CVNA pierde pricing power en el segmento retail y debe competir mas por precio.",
-      "Riesgo macro: una recesion reduce el acceso al credito automotriz para compradores subprime/near-prime y puede depreciar el valor del inventario de vehiculos usados, generando perdidas por valuacion."
+      "Riesgo de tasas de interes: tasas altas encarecen el credito para compradores y comprimen los spreads del gain-on-sale; es el catalizador negativo mas importante para el modelo de negocio.",
+      "Riesgo de refinanciamiento: deuda neta de 2.67B con vencimientos a mediano plazo; si los mercados de credito se endurecen, el refinanciamiento puede elevar el gasto de intereses.",
+      "Riesgo competitivo: CarMax acelera su plataforma omnicanal y AutoNation Digital gana share — si el diferencial de experiencia se reduce, CVNA pierde pricing power.",
+      "Riesgo macro: una recesion reduce el acceso al credito automotriz para compradores subprime/near-prime y puede depreciar el inventario de vehiculos usados, generando perdidas por valuacion."
     ],
-    "inversiones_estrategicas": "El Capex de FY2025 (0.15B USD) es intencionalmente bajo, reflejando el modelo asset-light post-ADESA. La adquisicion de ADESA en 2022 (2.2B USD) entrego 56 ubicaciones fisicas para operaciones wholesale y fortalecio el segmento B2B via CarOffer. En tecnologia, CVNA invierte en IA para pricing dinamico de inventario en tiempo real, machine learning para aprobacion de prestamos y optimizacion de rutas de entrega."
+    "inversiones_estrategicas": "El capex de Q1 2026 (51M USD, +89% YoY) refleja aceleracion de inversion en capacidad de IRCs y mejoras tecnologicas para soportar el crecimiento de 187K unidades trimestrales. La adquisicion de ADESA en 2022 (2.2B USD) sigue entregando valor via 56 ubicaciones para operaciones wholesale. En tecnologia, CVNA invierte activamente en IA para pricing dinamico en tiempo real, machine learning para aprobacion de prestamos y optimizacion de rutas de entrega."
   },
   "verdict": {
-    "status": "Mantener / Compra en Correccion",
-    "score": "7.2/10",
-    "color": "yellow",
+    "status": "Comprar con Conviccion",
+    "score": "7.6/10",
+    "color": "green",
     "metrics": [
       {
-        "label": "Revenue FY2025",
-        "value": "20.32B USD"
+        "label": "Revenue Q1 2026",
+        "value": "6.43B USD"
       },
       {
-        "label": "Margen Bruto",
-        "value": "20.6%"
+        "label": "Unidades vendidas",
+        "value": "187,393 (+40%)"
       },
       {
-        "label": "FCF FY2025",
-        "value": "0.89B USD"
+        "label": "EBITDA Ajust. Q1",
+        "value": "672M USD"
       },
       {
         "label": "EV/EBITDA",
-        "value": "34.9x"
+        "value": "33.1x"
       },
       {
         "label": "Crecimiento Rev.",
-        "value": "+48.6% YoY"
+        "value": "+52% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Turnaround historico** — FY2025 confirma que el modelo digital de CVNA es competitivo en escala: revenue +49%, utilidad neta +572% y EBITDA record en el mismo ejercicio.",
+        "text": "**Record de unidades y revenue** — 187,393 unidades retail en Q1 2026 es el maximo historico de la compania, y el revenue de 6.43B USD (+52% YoY) confirma que la aceleracion de crecimiento no esta frenando.",
         "type": "pro"
       },
       {
-        "text": "**Apalancamiento operativo real** — El margen bruto escala de 9.2% a 20.6% en 3 anios sin capex masivo, demostrando la ventaja estructural del modelo sin concesionarias fisicas.",
+        "text": "**Turnaround consolidado** — FY2025 mas Q1 2026 muestran cuatro trimestres consecutivos de crecimiento acelerado y expansion de EBITDA. CVNA ya no es una historia de supervivencia, es una historia de expansion de market share en un mercado de 40M vehiculos anuales.",
         "type": "pro"
       },
       {
-        "text": "**Reduccion de deuda organica** — La deuda neta bajo de 6.05B USD (2022) a 2.59B USD (2025) sin emision de equity adicional; la trayectoria mejora el perfil de riesgo trimestre a trimestre.",
+        "text": "**Apalancamiento operativo comprobado** — Margen operativo sostenido en 9.0% con revenue creciendo +52% demuestra que la escala genera eficiencia. El EBITDA ajustado de 672M en un trimestre implica un run-rate anual de ~2.7B.",
         "type": "pro"
       },
       {
-        "text": "**Sensibilidad a tasas y valuacion exigente** — El EV/EBITDA de 34.9x deja poco margen de error; cualquier deterioro por tasas altas o desaceleracion macro puede comprimir el multiple rapidamente.",
+        "text": "**Valuacion exigente y sensibilidad a tasas** — EV/EBITDA de 33x deja poco margen de error. Tasas de interes elevadas siguen siendo el mayor riesgo macro — cualquier deterioro crediticio puede frenar el crecimiento de unidades.",
         "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Q1 2026 entrego 6.43B USD de revenue (+52% YoY), nuevo record trimestral. Las 187,393 unidades vendidas (+40% YoY) representan el mayor volumen de la historia de la compania. A este ritmo, FY2026 podria superar 27B USD en revenue."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto de 19.8% (vs 22.0% en Q1 2025, -2.2pp) por mayor mix wholesale y costos de inventario. Sin embargo, el margen operativo se sostiene en 9.0% por eficiencia en SG&A. El EBITDA ajustado de 672M en el trimestre confirma la solidez operativa."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF de 56M USD en Q1 2026 (vs 205M en Q1 2025), comprimido principalmente por mayor capex de crecimiento (51M vs 27M). El OCF de 107M refleja la estacionalidad de Q1 y mayor inversion en inventario. La tendencia de FCF anualizada sigue siendo positiva."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 2.67B USD al cierre de Q1 2026 (vs 2.59B en FY2025), ligero incremento por capex de crecimiento. Ratio Deuda Neta/EBITDA de 1.0x — el mejor nivel desde la reestructuracion. Cash de 2.41B USD provee amplia liquidez operativa."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 384.97 USD por accion, CVNA cotiza a 33.1x EV/EBITDA (run-rate anualizado) y 54x P/E trailing. El mercado esta pagando por la vision de CVNA como el Amazon del retail automotriz. La ejecucion impecable de Q1 2026 justifica la prima, pero la valuacion requiere ejecucion perfecta."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Los tres riesgos a monitorear: (1) tasas de interes — impactan directamente demanda y margen financiero; (2) retroceso de margen bruto si el mix wholesale sigue creciendo desproporcionadamente; (3) vencimientos de deuda a mediano plazo y capacidad de refinanciar a tasas razonables."
       }
     ]
   }
