@@ -108,6 +108,23 @@ export default function ReportePage() {
           <Link to="/" className="portal-logo-link">
             <img src="/murza-logo.png" alt="Murza Inversiones" className="portal-logo" />
           </Link>
+          <nav style={{ display: 'flex', gap: 2 }}>
+            <Link to="/" style={{ padding: '6px 14px', borderRadius: 8, fontSize: 14, color: 'var(--text-muted)', fontWeight: 500, textDecoration: 'none' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
+              Reportes
+            </Link>
+            <Link to="/earnings" style={{ padding: '6px 14px', borderRadius: 8, fontSize: 14, color: 'var(--text-muted)', fontWeight: 500, textDecoration: 'none' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
+              Earnings
+            </Link>
+            <Link to={`/comparar?t=${reporte?.ticker || ''}`} style={{ padding: '6px 14px', borderRadius: 8, fontSize: 14, color: 'var(--text-muted)', fontWeight: 500, textDecoration: 'none' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
+              Comparar
+            </Link>
+          </nav>
           <div className="portal-header-right">
             {userToken
               ? <button className="btn-ghost-sm" onClick={() => { localStorage.removeItem('portal_user_token'); window.location.reload(); }}>Cerrar sesión</button>

@@ -8,6 +8,7 @@ import ReportePage        from './components/portal/ReportePage.jsx';
 import RegistroPage       from './components/portal/RegistroPage.jsx';
 import LoginPage          from './components/portal/LoginPage.jsx';
 import EarningsCalendar   from './components/portal/EarningsCalendar.jsx';
+import CompararPage       from './components/portal/CompararPage.jsx';
 
 // Admin
 import AdminLogin           from './components/admin/AdminLogin.jsx';
@@ -33,6 +34,7 @@ export default function App() {
       {/* Portal público */}
       <Route path="/"              element={<HomePage />} />
       <Route path="/earnings"      element={<EarningsCalendar />} />
+      <Route path="/comparar"     element={<CompararPage />} />
       <Route path="/reporte/:slug" element={<ReportePage />} />
       <Route path="/registro"      element={<RegistroPage />} />
       <Route path="/login"         element={<LoginPage />} />
