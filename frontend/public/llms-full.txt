@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-12
+**Actualizado**: 2026-05-14
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -661,26 +661,26 @@ Shopify opera bajo dos segmentos: Subscription Solutions (planes de suscripcion 
 **URL**: https://reportes.murzainversiones.com/reporte/NBIS
 **Publicado**: 2026-04-28
 
-Nebius Group N.V. (NBIS) es una plataforma global de AI cloud de pila completa, fundada como spinoff independiente de Yandex en 2024. Opera centros de datos con GPUs de ultima generacion en Europa y EE.UU., ofreciendo infraestructura de computo, almacenamiento y servicios gestionados para entrenar y ejecutar modelos de IA a escala. En FY2025 reporto ingresos de USD 529.8M, un crecimiento del 479% YoY, respaldado por contratos estrategicos a largo plazo con Microsoft y Meta. La empresa aun genera perdidas operativas por su agresiva inversion en infraestructura (capex de USD 4.1B en 2025), pero logro OCF positivo de USD 401.9M gracias a anticipos de clientes.
+Nebius Group N.V. (NBIS) es una plataforma global de AI cloud de pila completa, cotizada en Nasdaq, que ofrece infraestructura GPU de alto rendimiento, software propio y servicios gestionados para el ciclo completo de IA. La empresa escalo revenues un 479% en FY2025 (a 530M USD) y un 684% adicional en Q1 2026 (399M USD en un solo trimestre), impulsada por contratos estrategicos a largo plazo con Microsoft y Meta. Opera a perdida operativa mientras expande su capacidad global agresivamente, pero reporto Adjusted EBITDA positivo por primera vez en Q1 2026 (129.5M USD). El balance es solido con 9.3B USD en caja post-Q1, aunque la deuda convertible asciende a 8.4B USD. La valuacion de premium extremo (~50B USD market cap vs 529M USD revenue FY2025) descuenta un hiperescenario de crecimiento.
 
-Nebius Group opera tres segmentos: (1) Nebius AI Cloud, nucleo del negocio, plataforma full-stack con GPUs NVIDIA de ultima generacion, almacenamiento y software propio, genera el 91% de ingresos; (2) TripleTen, edtech de reentrenamiento tech principalmente en EE.UU. y Latam, 10% de ingresos; (3) Avride, vehiculos autonomos con contribucion marginal. El moat se basa en infraestructura disenada in-house, partnerships exclusivos con NVIDIA para first-to-deploy nuevas GPUs, y contratos plurianuales con hiperescaladores. La empresa tambien posee participaciones estrategicas en ClickHouse y Toloka.
+Nebius es una plataforma AI cloud de pila completa fundada sobre el expertise tecnico de Yandex (desinvertida en 2024). Opera tres segmentos: (1) Nebius AI Cloud — GPU clusters, storage, redes y software propietario para entrenamiento e inferencia a escala; (2) Avride — tecnologia de conduccion autonoma; (3) TripleTen — plataforma edtech de reskilling tech. Nebius AI Cloud genero 480M de los 530M de revenue total en FY2025 (+603% YoY). La empresa posee data centers propios en Finlandia, Francia, Islandia, UK e Israel, y opera clusters GPU en EE.UU. Su moat se basa en hardware disenado in-house, relacion preferencial con NVIDIA para GPUs de ultima generacion, y contratos a largo plazo con hyperscalers como Microsoft y Meta. En Q1 2026 anuncio 1.2 GW adicional de potencia y tierra en Pennsylvania para un nuevo AI factory propio.
 
 **Datos financieros**:
-- Revenue (M USD): 529.8 (+479% YoY)
-- Utilidad Neta (M USD): 9.8 (N/M YoY)
-- Margen Bruto: 68.6% (+16pp YoY)
-- EBITDA (M USD): -193.8 (Mejora YoY)
-- FCF (M USD): -3,664.1 (-240% YoY)
-- EPS Diluido (cont.): 0.04 (N/M YoY)
-- Deuda Neta (M USD): 449.6 (N/A YoY)
+- Revenue (B USD): 0.399 (+684% YoY)
+- Utilidad Neta (B USD): 0.621 (n/m YoY)
+- Margen Neto: +155.7% (n/m YoY)
+- EBITDA Ajustado (B USD): 0.130 (n/m YoY)
+- FCF (B USD): (0.215) (n/m YoY)
+- EPS Diluido: 2.11 (n/m YoY)
+- Deuda Neta (B USD): (0.87) (n/m YoY)
 
-**Valuacion**: P/E Trailing 4401x, P/E Forward N/A, EV/Revenue 2025 85x, P/FCF N/A, Deuda Neta/EBITDA N/A, ROE 0.2%, Margen Bruto 68.6%
+**Valuacion**: P/E Trailing 87x, P/E Forward N/M, EV/Revenue TTM 24x, P/FCF N/M, Deuda Neta/EBITDA N/M, ROE 0.2%, ROIC N/M
 
-**Veredicto**: Especulativo — Tesis de Alto Crecimiento con Valuacion Extrema (Score: 6.6/10)
-+ Crecimiento exponencial validado — 479% YoY con contratos Microsoft y Meta que aseguran visibilidad de ingresos a 5 anos; deferred revenue de USD 1.6B es un activo oculto en el balance.
-+ Moat tecnologico en construccion — Plataforma full-stack propia (hardware y software), first-to-deploy GPUs NVIDIA de nueva generacion; herencia I+D de Yandex es diferencial real.
-+ Expansion de margen bruto explosiva — De negativo en 2023 a 68.6% en 2025 en solo 2 anos; confirma apalancamiento operativo conforme escala la infraestructura.
-- Valuacion extrema y ejecucion perfecta requerida — EV/Revenue de 85x implica anos de crecimiento sostenido; cualquier tropiezo en AI adoption, competencia o financiamiento puede generar correcciones del 50% o mas.
+**Veredicto**: Especulativo — Solo para inversores con alta tolerancia al riesgo (Score: 6.2/10)
++ Velocidad de escala sin precedentes -> Revenue de 0 a 399M por trimestre en menos de 3 anos, con contratos hyperscaler de 5 anos que aseguran visibilidad masiva (deferred revenue de 4.8B al 31-mar-2026).
++ Primer EBITDA positivo -> Adjusted EBITDA de 129.5M en Q1 2026 es el primer punto de inflexion que demuestra que el modelo de negocio genera margen real a medida que la capacidad se llena.
++ Posicionamiento estructural en AI cloud -> Hardware in-house + relacion preferencial NVIDIA + caja de 9.3B + 1.2 GW nuevo en Pennsylvania posicionan a Nebius como el rival mas cercano a escala de hyperscaler en AI cloud puro.
+- Valuacion extrema y FCF negativo -> Con market cap de 50B sobre 530M de revenue anual y FCF de (3.7B) en FY2025, la accion descuenta el escenario mas optimista posible — cualquier tropiezo puede comprimir el multiple dramaticamente.
 
 ---
 
