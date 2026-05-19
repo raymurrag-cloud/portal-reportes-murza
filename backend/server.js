@@ -22,6 +22,7 @@ app.use('/api/admin',    adminRoutes);
 app.use('/api/earnings', earningsRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
+app.get('/api/ping',   (_, res) => res.json({ ok: true }));
 
 // ── Resend (email via HTTPS) ───────────────────────────────────────────────
 async function enviarEmail({ to, subject, text }) {
