@@ -1012,26 +1012,26 @@ Visa opera una red de procesamiento de pagos donde cobra fees por servicio (serv
 **URL**: https://reportes.murzainversiones.com/reporte/BABA
 **Publicado**: 2026-04-09
 
-Alibaba Group es el mayor conglomerado tecnologico de China: lider en comercio electronico (Taobao, Tmall), computacion en la nube (Alibaba Cloud con IA Qwen), logistica (Cainiao) y entretenimiento digital (Youku). Reporta bajo IFRS via 20-F ante la SEC; ejercicio fiscal cierra el 31 de marzo. FY2025 muestra recuperacion de margen neto (9.9% vs 6.3% FY2024) con FCF de 20B USD y caja neta de 52.5B USD, pero ingresos practicamente planos (-0.8% YoY en USD). Veredicto: Mantener con sesgo comprador en correcciones — valuacion en minimos historicos, pero riesgo regulatorio chino y competencia de PDD son estructurales.
+Alibaba Group es el mayor conglomerado tecnologico de China: lider en comercio electronico (Taobao, Tmall), computacion en la nube (Alibaba Cloud con IA Qwen), logistica (Cainiao) y entretenimiento digital (Youku). Reporta bajo IFRS via 20-F ante la SEC; ejercicio fiscal cierra el 31 de marzo. FY2026 muestra aceleracion de revenue a 148.4B USD (+8.1% YoY), pero EBITDA GAAP cayo por un salto masivo en capex de IA y cargos no recurrentes en la linea operativa. El margen neto es 10.1%. Veredicto: Mantener con sesgo comprador -- la tesis de Alibaba Cloud y IA avanza, pero la compresion de FCF en FY2026 requiere confirmar retorno sobre el capex antes de incrementar posicion.
 
-Alibaba opera en seis segmentos: (1) Taobao y Tmall Group — e-commerce domestico China, 900M+ consumidores activos; (2) AIDC — AliExpress, Lazada, Trendyol, crece +22% YoY; (3) Alibaba Cloud Intelligence — IaaS/PaaS/SaaS con modelo de IA Qwen, +13% YoY; (4) Cainiao Smart Logistics — red de entrega y almacenaje; (5) Local Services — Ele.me y Amap; (6) Digital Media — Youku streaming. El moat central es el ecosistema cerrado con efectos de red de doble cara en China con 25 anos de historia. La estructura VIE es el vehiculo legal para inversores extranjeros; ADRs en NYSE no representan propiedad directa de activos chinos.
+Alibaba opera en seis segmentos: (1) Taobao y Tmall Group -- e-commerce domestico China, 900M+ consumidores activos; (2) AIDC -- AliExpress, Lazada, Trendyol, crece +22% YoY; (3) Alibaba Cloud Intelligence -- IaaS/PaaS/SaaS con modelo de IA Qwen, lider en inferencia China; (4) Cainiao Smart Logistics -- red de entrega y almacenaje; (5) Local Services -- Ele.me y Amap; (6) Digital Media -- Youku streaming. En FY2026 la empresa acelero el capex en infraestructura de IA (~60B CNY), comprimiendo el FCF pero posicionando a Alibaba Cloud para monetizar modelos Qwen en el mercado enterprise chino. La estructura VIE es el vehiculo legal para inversores extranjeros; ADRs en NYSE no representan propiedad directa de activos chinos.
 
 **Datos financieros**:
-- Revenue (B USD): 129.3 (-0.8% YoY)
-- Utilidad Neta (B USD): 12.8 (56.1% YoY)
-- Margen Neto: 9.9% (1.3pp YoY)
-- EBITDA (B USD): 25.0 (-12.6% YoY)
-- FCF (B USD): 20.0 (9.3% YoY)
-- EPS Diluido (USD): 5.82 (74.3% YoY)
-- Deuda Neta (B USD): -52.5 (N/D YoY)
+- Revenue (B USD): 148.4 (+8.1% YoY)
+- Utilidad Neta (B USD): 15.0 (-16.2% YoY)
+- Margen Neto: 10.1% (-2.9pp YoY)
+- EBITDA (B USD): 11.0 (-52.8% YoY)
+- FCF (B USD): 1.5 (-92.5% YoY)
+- EPS Diluido (USD): 6.65 (-9.4% YoY)
+- Deuda Neta (B USD): 4.8 (N/D YoY)
 
-**Valuacion**: P/E Trailing 21.8x, P/E Forward 16.7x, EV/EBITDA 9.1x, P/FCF 14.0x, Deuda Neta/EBITDA -2.1x, ROE 7.4%, ROIC 9.5%
+**Valuacion**: P/E Trailing 20.2x, P/E Forward 14.5x, EV/EBITDA 27.7x, P/FCF N/M, Deuda Neta/EBITDA -0.5x, ROE 9.8%, ROIC 3.8%
 
-**Veredicto**: Mantener / Compra en Correccion (Score: 6.4/10)
-+ Valuacion en minimos historicos — P/E 21.8x y EV/EBITDA 9.1x incorporan escenario de declive; cualquier mejora macro china o estabilizacion regulatoria genera reexpansion de multiplos de 30-50%.
-+ Fortaleza de balance excepcional — Caja neta de 52.5B USD (40% del market cap) financia recompras agresivas que reducen el float y sustenta FCF yield de 7.2%.
-+ Alibaba Cloud + IA Qwen — Modelo Qwen top-3 mundial; si Cloud escala a margenes del 15%+ el segmento vale mas de 100B USD de forma independiente, sin pagar nada por e-commerce.
-- Riesgo regulatorio y geopolitico estructural — El gobierno chino puede intervenir sin aviso; la estructura VIE no da derechos reales sobre activos chinos; conflicto EEUU-China podria cortar acceso a chips para IA.
+**Veredicto**: Mantener / Compra en Correccion (Score: 6.6/10)
++ Revenue acelerando -- +8.1% YoY en FY2026 vs -0.8% en FY2025; Alibaba Cloud y AIDC lideran con crecimientos de ~35% y +22% respectivamente, confirmando la pivotacion hacia IA.
++ IA y Cloud -- Tesis validandose -- Modelo Qwen top-3 global, Cloud lider en inferencia enterprise China. El capex masivo de FY2026 construye la infraestructura que deberia generar retorno en FY2027-2028.
++ Valuacion atractiva en Forward -- P/E forward de 14.5x con consenso EPS 9.23 USD/ADS implica recompresion de margenes. Liquidez total de 50B USD protege el balance.
+- FCF colapso en FY2026 -- De 20B a 1.5B USD por capex de IA masivo; el riesgo regulatorio chino y la estructura VIE son riesgos permanentes que justifican descuento estructural.
 
 ---
 
