@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-14
+**Actualizado**: 2026-05-20
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -1151,20 +1151,20 @@ Marvell es un disenador fabless de semiconductores con tres segmentos principale
 **URL**: https://reportes.murzainversiones.com/reporte/SE
 **Publicado**: 2026-04-07
 
-Sea Limited (NYSE: SE) es el mayor conglomerado digital de Asia-Pacifico, con presencia dominante en e-commerce (Shopee), servicios financieros digitales (Monee) y entretenimiento digital (Garena). En FY2025, la compania alcanzo un punto de inflexion: revenue de 22.9B USD (+36.4% YoY), net income de 1.6B USD (vs. 0.45B en FY2024) y FCF de 4.5B USD. Con balance de caja neta de ~9B USD y momentum en los tres segmentos, SE representa una tesis de growth a valuacion razonable en mercados emergentes de alta expansion.
+Sea Limited (NYSE: SE) es el mayor conglomerado digital de Asia-Pacifico, con presencia dominante en e-commerce (Shopee), servicios financieros digitales (Monee) y entretenimiento digital (Garena). En Q1 2026, la compania reporto revenue de 7.1B USD (+46.6% YoY), net income de 438M USD (+6.7% YoY) y adj. EBITDA de 1.03B USD (primera vez superando 1B). Con caja neta de ~8.6B USD y momentum en los tres segmentos, SE representa una tesis de growth a valuacion razonable en mercados emergentes de alta expansion.
 
 Sea Limited opera tres segmentos principales: Shopee, la plataforma de e-commerce mas grande de SEA y Taiwan con GMV de 127.4B USD en FY2025 (+26.8% YoY) y 13.9B pedidos; Monee (antes SeaMoney), el brazo fintech con portafolio de prestamos de 9.2B USD y revenue de 3.8B USD (+60.1% YoY); y Garena, la division de gaming con Free Fire como titulo estrella, 633M usuarios activos trimestrales y adj. EBITDA margin del 56.1% sobre bookings. La empresa opera principalmente en Indonesia, Tailandia, Vietnam, Filipinas, Malasia, Singapur, Taiwan y Brasil.
 
 **Datos financieros**:
-- Revenue (B USD): 22.94 (+36.4% YoY)
-- Utilidad Neta (B USD): 1.61 (+259.7% YoY)
-- Margen Neto: 7.0% (+4.3pp YoY)
-- Adj EBITDA (B USD): 3.44 (+75.2% YoY)
-- FCF (B USD): 4.51 (+65.2% YoY)
-- EPS Diluido: 2.52 (+240.5% YoY)
-- Deuda Neta (B USD): -9.01 (N/D YoY)
+- Revenue (B USD): 7.10 (+46.6% YoY)
+- Utilidad Neta (B USD): 0.44 (+6.7% YoY)
+- Margen Neto: 6.2% (-2.3pp YoY)
+- Adj EBITDA (B USD): 1.03 (+9.3% YoY)
+- FCF (B USD): 0.92 (+46.1% YoY)
+- EPS Diluido: 0.67 (+3.1% YoY)
+- Deuda Neta (B USD): -8.58 (N/D YoY)
 
-**Valuacion**: P/E Trailing 34.1x, P/E Forward 17x, EV/EBITDA 12.5x, P/FCF 11.5x, Caja Neta / EBITDA 2.6x caja, ROE 12.8%, ROIC 40.1%
+**Valuacion**: P/E Trailing 34.3x, P/E Forward 17.2x, EV/EBITDA 11.6x, P/FCF 15.4x, Caja Neta / EBITDA 2.1x caja, ROE 12.8%, ROIC 40.1%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.0/10)
 + Punto de inflexion de rentabilidad — Shopee paso de EBITDA de 155M a 880M USD en un ano (+465%), confirmando que el modelo de e-commerce en SEA es altamente lucrativo a escala. La trayectoria de margenes solo esta comenzando.
