@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const LIMITE_GRATIS = 3;
 const BASE_URL = import.meta.env.VITE_API_URL || '/api';
@@ -104,7 +106,26 @@ export default function ReporteChat({ ticker, empresa, slug }) {
             )}
             {mensajes.map((m, i) => (
               <div key={i} className={`chat-msg chat-msg-${m.role}`}>
-                {m.content}
+                {m.role === 'assistant' ? (
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ children }) => <p style={{ margin: '0 0 8px 0' }}>{children}</p>,
+                      strong: ({ children }) => <strong style={{ fontWeight: 700 }}>{children}</strong>,
+                      h1: ({ children }) => <p style={{ fontWeight: 700, fontSize: '1em', margin: '10px 0 4px 0' }}>{children}</p>,
+                      h2: ({ children }) => <p style={{ fontWeight: 700, fontSize: '1em', margin: '10px 0 4px 0' }}>{children}</p>,
+                      h3: ({ children }) => <p style={{ fontWeight: 700, fontSize: '1em', margin: '8px 0 4px 0' }}>{children}</p>,
+                      ul: ({ children }) => <ul style={{ margin: '4px 0 8px 0', paddingLeft: 18 }}>{children}</ul>,
+                      ol: ({ children }) => <ol style={{ margin: '4px 0 8px 0', paddingLeft: 18 }}>{children}</ol>,
+                      li: ({ children }) => <li style={{ marginBottom: 3 }}>{children}</li>,
+                      code: ({ inline, children }) => inline
+                        ? <code style={{ background: 'rgba(0,0,0,.08)', borderRadius: 3, padding: '1px 4px', fontSize: '0.9em' }}>{children}</code>
+                        : <pre style={{ background: 'rgba(0,0,0,.06)', borderRadius: 6, padding: '8px 10px', overflowX: 'auto', margin: '6px 0' }}><code>{children}</code></pre>,
+                    }}
+                  >
+                    {m.content}
+                  </ReactMarkdown>
+                ) : m.content}
               </div>
             ))}
             {cargando && (
