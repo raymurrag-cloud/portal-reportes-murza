@@ -1721,26 +1721,26 @@ Alphabet Inc. es la compania matriz de Google y opera tres segmentos: Google Ser
 **URL**: https://reportes.murzainversiones.com/reporte/NVDA
 **Publicado**: 2026-03-28
 
-NVIDIA (NVDA) reporto ingresos record de $130.5B en FY2025, un crecimiento de +114% interanual impulsado por la demanda explosiva de GPUs para inteligencia artificial y centros de datos. Con un margen neto de 55.8% y un free cash flow de $60.9B, NVIDIA es la empresa mas rentable del sector tecnologico. El balance es solido con deuda neta negativa de -$34.7B (mas caja que deuda). Veredicto: Comprar con Conviccion.
+NVIDIA Corporation es el lider mundial en computacion acelerada e infraestructura de inteligencia artificial a escala de centro de datos. En el ano fiscal 2026 (cerrado el 25 de enero de 2026), la empresa reporto ingresos de USD 215.9 mil millones (+65% YoY) y utilidad neta de USD 120.1 mil millones (+65% YoY), impulsados por la adopcion masiva de su arquitectura Blackwell. Q1 FY2027 (periodo al 26 de abril de 2026) entrego USD 81.6B en revenue (+85% YoY), confirmando que el momentum se mantiene intacto. Con posicion neta de caja de USD 2.1B y FCF de USD 96.7B en FY2026, NVDA es una de las mejores generadoras de caja del mundo.
 
-NVIDIA Corporation disena y vende unidades de procesamiento grafico (GPUs), sistemas de computo acelerado y software relacionado. Sus principales segmentos son Data Center (plataformas de IA, supercomputacion) y Gaming (GPUs para consumidores). La empresa genera ingresos principalmente a traves de ventas de hardware (chips H100, H200, Blackwell B200) a hiperescaladores como Microsoft, Amazon, Google y Meta, asi como a empresas de computacion en la nube y gobiernos. Fundada en 1993 y domiciliada en Santa Clara, California, cotiza en el NASDAQ bajo el ticker NVDA. Con una participacion de mercado superior al 80% en GPUs para IA, NVIDIA ha establecido un moat tecnologico y ecosistema de software (CUDA) virtualmente imposible de replicar en el corto plazo.
+NVIDIA opera dos segmentos: Compute & Networking (~88% de ingresos en FY2026), que incluye GPUs para Data Center (H100, Blackwell GB300/NVL72), redes InfiniBand y Spectrum-X, DPUs y software CUDA/AI Enterprise; y Graphics (~12%), con GPUs GeForce para gaming y soluciones de visualizacion profesional. El moat se basa en el ecosistema CUDA con millones de desarrolladores, la arquitectura Blackwell codisenada para AI a escala de data center, relaciones profundas con todos los hyperscalers (Microsoft, Google, Amazon, Meta) y fabricantes de modelos de AI, y mas de USD 76.7 mil millones invertidos en I+D desde su fundacion en 1993.
 
 **Datos financieros**:
-- Revenue ($B): 130.5 (+114% YoY)
-- Utilidad Neta ($B): 72.9 (+145% YoY)
-- Margen Neto (%): 55.8% (+7.0pp YoY)
-- EBITDA ($B): 83.7 (+146% YoY)
-- FCF ($B): 60.9 (+125% YoY)
-- EPS GAAP (split-adj): $2.94 (+147% YoY)
-- Deuda Neta ($B): -34.7 (Mejora YoY)
+- Revenue (B USD): 81.6 (+65% YoY)
+- Utilidad Neta (B USD): 58.4 (+65% YoY)
+- Margen Neto: 71.5% (-0.2pp YoY)
+- EBITDA (B USD): ND (+60% YoY)
+- FCF (B USD): ND (+59% YoY)
+- EPS Diluido: ND (+67% YoY)
+- Deuda Neta (B USD): ND (Mejora YoY)
 
-**Valuacion**: P/E Trailing 37.5x, P/E Forward 16.5x, EV/EBITDA 30.2x, P/FCF 42.1x, Deuda/EBITDA 0.09x, ROE 101.5%, ROIC 126.3%
+**Valuacion**: P/E Trailing 45.6x, P/E Forward 51.4x, EV/EBITDA 40.7x, P/FCF 56.2x, Deuda Neta/EBITDA -0.02x, ROE 173%, ROIC 162%
 
-**Veredicto**: Comprar con Conviccion (Score: 9.4/10)
-+ Monopolio de IA con moat inexpugnable -> CUDA tiene 20+ anos de adopcion; >80% cuota de mercado en GPUs para IA; revenue Data Center de $115B en FY2025 (+142% YoY).
-+ Margenes en maximos historicos -> Margen neto de 55.8% y operativo de 62.4%, imposibles de alcanzar por cualquier competidor de semiconductores. FCF de $60.9B en un solo ano.
-+ Balance fortaleza -> Deuda neta negativa de -$34.7B; $43.2B en caja; Debt/EBITDA de 0.09x; $33.7B devueltos a accionistas en recompras en FY2025.
-- Riesgo de ciclo y competencia -> 88% del revenue concentrado en Data Center; si el ciclo de inversion en IA desacelera o competidores (AMD, chips propios de hiperescaladores) ganan traccion, el premium de valuacion podria comprimirse significativamente.
+**Veredicto**: Mantener con Sesgo Positivo (Score: 8.6/10)
++ Liderazgo irrefutable en AI compute -> NVDA controla el mercado de GPUs para entrenamiento e inferencia. CUDA con millones de desarrolladores crea un moat que tomara anos en erosionarse. Revenue Q1 FY2027 crecio +85% YoY a USD 81.6B, superando expectativas.
++ Maquina de generacion de caja -> FCF de USD 96.7B en FY2026 y USD 62.6B en caja y valores negociables. La empresa financia USD 40B en recompras, USD 17.5B en inversiones estrategicas y USD 6B en capex sin necesidad de deuda.
++ Recuperacion de margenes verificada -> Gross margin en Q1 FY2027 = 74.9% y operating margin = 65.6%, confirmando que el impacto por el cargo H20 de USD 4.5B en FY2026 fue transitorio. Los fundamentos del negocio estan intactos.
+- Riesgo regulatorio y valuacion exigente -> Las restricciones de exportacion de EE.UU. (H20, H200 con arancel 25%) son el riesgo mas inmediato. La valuacion de 51x P/E forward descuenta hipercrecimiento sostenido y deja poco margen ante cualquier decepcion en AI spending.
 
 ---
 
