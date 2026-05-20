@@ -1729,10 +1729,10 @@ NVIDIA opera dos segmentos: Compute & Networking (~88% de ingresos en FY2026), q
 - Revenue (B USD): 81.6 (+65% YoY)
 - Utilidad Neta (B USD): 58.4 (+65% YoY)
 - Margen Neto: 71.5% (-0.2pp YoY)
-- EBITDA (B USD): ND (+60% YoY)
-- FCF (B USD): ND (+59% YoY)
-- EPS Diluido: ND (+67% YoY)
-- Deuda Neta (B USD): ND (Mejora YoY)
+- EBITDA (B USD): 54.5 (+145% YoY)
+- FCF (B USD): 48.6 (+86% YoY)
+- EPS Diluido: 2.39 (+214% YoY)
+- Deuda Neta (B USD): -5.8 (Mejora YoY)
 
 **Valuacion**: P/E Trailing 45.6x, P/E Forward 51.4x, EV/EBITDA 40.7x, P/FCF 56.2x, Deuda Neta/EBITDA -0.02x, ROE 173%, ROIC 162%
 
