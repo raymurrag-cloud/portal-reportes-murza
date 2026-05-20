@@ -1232,26 +1232,26 @@ ASML disena, fabrica y vende sistemas de litografia fotonica para fabricantes de
 **URL**: https://reportes.murzainversiones.com/reporte/ORCL
 **Publicado**: 2026-04-07
 
-Oracle Corporation (ORCL) es el lider mundial en software de base de datos empresarial y uno de los principales proveedores de cloud infrastructure (OCI). Con ingresos de 57.4B USD en FY2025 (+8.4% YoY) y margen neto de 21.7%, Oracle combina un negocio de software legacy altamente rentable con crecimiento acelerado en cloud. La transicion hacia OCI y la demanda de infraestructura para IA posicionan a Oracle como uno de los principales beneficiarios del capex de hiperscaladores. El stock merece atencion como posicion de largo plazo con catalizador estructural claro.
+Oracle Corporation (ORCL) reporto su Q3 FY2026 (trimestre diciembre 2025 - febrero 2026) con revenue de 17.19B USD, un crecimiento de +21.7% YoY — la tasa mas alta en anos impulsada por Oracle Cloud Infrastructure (OCI) que crece >50% YoY como alternativa AI a AWS y Azure. Los margenes operativos se expanden al 31.8%. El FCF es negativo en -11.49B por una inversion masiva en datacenter AI de 18.64B este trimestre, pero el backlog de contratos supera 130B. La accion cotiza a 184 USD con P/E Forward de 22.9x — atractiva para inversores con horizonte de 2-3 anos si la demanda AI se materializa en los contratos firmados.
 
 Oracle opera tres segmentos: (1) Cloud and License (86% del revenue FY2025), que incluye Oracle Cloud Services (OCA + OCI) y licencias de software con soporte — el segmento de mayor margen. (2) Hardware (7% del revenue), que vende servidores Exadata en declive estructural. (3) Services (7%), consultoria e implementacion. Oracle Database es el estandar enterprise para OLTP mission-critical con mas del 40% de cuota de mercado y switching costs de anos. OCI crece a mas del 50% YoY impulsado por contratos GPU con OpenAI, xAI y otros actores de IA generativa. La adquisicion de Cerner (2022, 28B) anade una vertical de salud digital. Presencia global con mas del 50% del revenue en Americas.
 
 **Datos financieros**:
-- Revenue (B USD): 57.4 (+8.4% YoY)
-- Utilidad Neta (B USD): 12.4 (+18.8% YoY)
-- Margen Neto: 21.7% (+1.9pp YoY)
-- EBITDA (B USD): 23.2 (+16.6% YoY)
-- FCF (B USD): -0.4 (N/D YoY)
-- EPS Diluido: 4.43 (+16.6% YoY)
-- Deuda Neta (B USD): 77.2 (N/D YoY)
+- Revenue (B USD): 17.19 (+21.7% YoY)
+- Utilidad Neta (B USD): 3.72 (+26.7% YoY)
+- Margen Neto: 21.6% (+0.8pp YoY)
+- EBITDA (B USD): 7.03 (+22.7% YoY)
+- FCF (B USD): -11.49 (N/D YoY)
+- EPS Diluido: 1.27 (N/D YoY)
+- Deuda Neta (B USD): 123.7 (+60.1% YoY)
 
-**Valuacion**: P/E Trailing 32.9x, P/E Forward 29.3x, EV/EBITDA 20.9x, P/FCF (normalizado) 40.4x, Deuda Neta/EBITDA 3.3x, ROE >100%, ROIC 20.3%, FCF Yield Negativo FY2025
+**Valuacion**: P/E Trailing 33.1x, P/E Forward 22.9x, EV/EBITDA 25.1x, P/FCF (normalizado) 52.4x, Deuda Neta/EBITDA 4.8x, ROE 58%, ROIC 20.3%, FCF Yield Negativo (capex OCI)
 
-**Veredicto**: Compra con Conviccion en Correcciones (Score: 7.6/10)
-+ Backlog IA superior a 130B USD — Contratos multianual con OpenAI, xAI y Meta para GPU clusters en OCI dan visibilidad de revenue de 3-5 anos con alta certeza de ejecucion; es el catalizador mas potente del sector cloud.
-+ Moat de database irrompible — Oracle Database con mas del 40% de cuota en OLTP enterprise y switching costs de anos garantiza cash flow predecible y creciente que financia la expansion en OCI sin depender del exito inmediato del cloud.
-+ Expansion de margenes sostenida — Margen neto sube de 19.8% a 21.7% YoY y margen operativo de 29.0% a 30.8%; el mix de cloud de mayor margen compensa el capex intensivo, senalando apalancamiento operativo positivo.
-- Deuda neta 77B y FCF negativo — El nivel de deuda post-Cerner y el capex record en OCI convirtieron el FCF en negativo en FY2025; si OCI no escala al ritmo proyectado en FY2026-2027, el perfil financiero se deteriora y el multiple se comprime.
+**Veredicto**: Compra con Conviccion en Correcciones (Score: 7.8/10)
++ Aceleracion AI cloud -> Revenue crece +21.7% YoY en Q3 FY2026 a 17.19B, impulsado por OCI que supera estimados. Backlog de contratos >130B da visibilidad multianual.
++ P/E Forward atractivo -> A 22.9x EPS Forward de 8.03, la valuacion descuenta el potencial de expansion de margenes. El EPS forward implica +44% de crecimiento vs TTM.
++ Moat de base de datos -> 400,000 empresas en Oracle DB con costos de cambio extremos genera revenue recurrente de alto margen y financian la inversion en OCI.
+- Deuda y capex record -> Net Debt/EBITDA de 4.8x y FCF negativo por capex de AI de 18.6B en Q3 solo limitan upside a corto plazo; el riesgo es real si demanda AI defrauda.
 
 ---
 
@@ -1667,20 +1667,20 @@ Costco Wholesale Corporation es el segundo retailer mas grande del mundo por ing
 **URL**: https://reportes.murzainversiones.com/reporte/AVGO
 **Publicado**: 2026-03-28
 
-Broadcom (AVGO) cerro FY2025 con revenue record de $63.9B (+24% YoY), impulsado por la explosion de la inteligencia artificial y la plena integracion de VMware. Con FCF de $26.9B (margen 42%) y EBITDA ajustado de $43B, es una de las generadoras de caja mas poderosas del sector tech. El momentum en semiconductores de IA con revenue +74% YoY en Q4 FY2025 y guidance de doblar en Q1 FY2026 posiciona a Broadcom como proveedor critico de custom silicon para los principales hyperscalers del mundo.
+Broadcom (AVGO) reporto Q1 FY2026 con revenue de $19.3B (+29.5% YoY), superando el guidance de $19.1B dado en el earnings call de FY2025. El segmento de semiconductores de IA continua como principal motor con AI revenue de $4.1B solo en el trimestre. FCF de $8.0B en el trimestre y margen neto de 38.1% confirman la trayectoria de expansion. El momentum se mantiene con guidance Q2 FY2026 de $20.5B (+27% YoY).
 
 Broadcom Inc. es un lider global en semiconductores e infraestructura de software con dos segmentos: Semiconductor Solutions ($36.9B en FY2025) e Infrastructure Software ($27.0B). En semiconductores disena XPUs custom para IA usados por Google, Meta y Apple, ademas de chips de red, almacenamiento y conectividad. Tras la adquisicion de VMware por $61B en noviembre 2023, el segmento de software ofrece soluciones de virtualizacion, multi-cloud y seguridad a las principales empresas Fortune 500. El modelo de negocio combina altos margenes brutos (68%), revenue recurrente en software y un moat defensivo en custom silicon de alto volumen. El CEO Hock Tan ha ejecutado esta estrategia de 'adquirir, integrar y optimizar' durante 15 anos con retornos superiores de forma consistente.
 
 **Datos financieros**:
-- Revenue ($B): 63.89 (+23.9% YoY)
-- Utilidad Neta ($B): 23.13 (+311.6% YoY)
-- Margen Neto (%): 36.2% (+25.3pp YoY)
-- EBITDA ($B): 34.26 (+46.0% YoY)
-- FCF ($B): 26.91 (+38.6% YoY)
-- EPS (GAAP): $4.77 (+287.8% YoY)
-- Deuda Neta ($B): 48.96 (-15.9% YoY)
+- Revenue ($B): 19.31 (+29.5% YoY)
+- Utilidad Neta ($B): 7.35 (+33.5% YoY)
+- Margen Neto (%): 38.1% (+1.2pp YoY)
+- EBITDA ($B): 10.68 (+27.2% YoY)
+- FCF ($B): 8.01 (+33.2% YoY)
+- EPS (GAAP): $1.50 (+31.6% YoY)
+- Deuda Neta ($B): 51.88 (+5.9% YoY)
 
-**Valuacion**: P/E Trailing 69.3x, P/E Forward 19.9x, EV/EBITDA 39.7x, P/FCF ~31x, Deuda/EBITDA 1.43x, ROE 33.4%, ROIC 21.3%
+**Valuacion**: P/E Trailing 81.7x, P/E Forward ~63x, EV/EBITDA ~49x, P/FCF ~64x, Deuda/EBITDA 1.21x, Gross Margin Q1 68.1%, FCF Yield 1.6%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.4/10)
 + IA semiconductor dominance: Custom XPUs para Google, Meta y Apple con revenue +74% YoY en Q4; guidance Q1 FY2026 de $8.2B en AI solo, doblando YoY.
@@ -1775,20 +1775,20 @@ Meta Platforms opera el ecosistema de redes sociales mas grande del mundo: Faceb
 **URL**: https://reportes.murzainversiones.com/reporte/ADBE
 **Publicado**: 2026-03-26
 
-Adobe Inc. es el lider global en software creativo y de experiencia digital con una base de ARR de $25.2B y el 96.4% de sus ingresos por suscripcion recurrente. En FY2025 (terminado el 28 de noviembre de 2025) registro revenue record de $23.77B (+11% YoY), FCF de $9.85B (+25% YoY), margen bruto de 89.3% y EPS GAAP de $16.70 (+35% YoY). Veredicto: empresa de calidad excepcional que cotiza con un descuento historico del 63% respecto a su P/E promedio de 10 anos y del 56% frente al sector software.
+Adobe Inc. (ADBE) es el lider mundial en software creativo y de experiencias digitales, con tres segmentos: Creative Cloud, Document Cloud y Experience Cloud. En Q1 FY2027 (dic 2025 - feb 2026), Adobe reporto revenue de $6.40B (+12% YoY), FCF de $2.92B (+19% YoY) y EPS GAAP de $6.06 (+46% YoY, beat de +11.2% vs estimado $5.46), reflejando la fortaleza de su modelo subscription y la aceleracion de la adopcion de herramientas AI (Firefly, AI Assistant). La posicion neta de caja de $0.95B y la valuacion de 12.3x forward earnings representan un punto de entrada atractivo vs. historico de 25-30x.
 
 Adobe opera en tres segmentos: Digital Media (Creative Cloud + Acrobat/Document Cloud, ~75% de ingresos), Digital Experience (Adobe Experience Cloud, marketing enterprise) y Publishing & Advertising. El modelo es 96.4% suscripcion recurrente, con ARR de $25.2B creciendo al 11.5% anual. Productos como Photoshop, Illustrator, Premiere, Acrobat y Adobe Experience Platform son estandares de facto en sus categorias con switching costs estructuralmente altos. Los modelos de IA Firefly estan entrenados en contenido licenciado propio, diferenciando a Adobe en compliance corporativo frente a competidores como OpenAI y Google. Revenue internacional representa ~40% del total. A partir de Q1 FY2026 consolida sus tres segmentos en uno solo para reflejar cambios en su estrategia de reporte. Cotiza en NASDAQ desde 1986, componente del S&P 500.
 
 **Datos financieros**:
-- Revenue ($B): 23.8 (+11% YoY)
-- Utilidad Neta ($B): 7.1 (+28% YoY)
-- Margen Neto (%): 30% (+4.2pp YoY)
-- EBITDA ($B): 9.5 (+16% YoY)
-- FCF ($B): 9.9 (+25% YoY)
-- EPS (GAAP): $16.70 (+35% YoY)
-- Deuda Neta ($B): 0.8 (N/D YoY)
+- Revenue ($B): 6.40 (+12.0% YoY)
+- Utilidad Neta ($B): 1.89 (+4.3% YoY)
+- Margen Neto (%): 29.5% (-2.2pp YoY)
+- EBITDA ($B): 2.59 (+8.9% YoY)
+- FCF ($B): 2.92 (+18.9% YoY)
+- EPS (GAAP): $6.06 (+46.4% YoY)
+- Deuda Neta ($B): -0.95 (N/D YoY)
 
-**Valuacion**: P/E Trailing 13.3x, P/E Forward 8.7x, EV/EBITDA 10.9x, P/FCF ~12x, Deuda/EBITDA 0.65x, ROE 58.77%, ROIC 62.91%
+**Valuacion**: P/E Trailing 15x, P/E Forward 12.3x, EV/EBITDA 9.8x, P/FCF 8.8x, Deuda/EBITDA Caja neta, ROE 58.77%, ROIC 62.91%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.8/10)
 + FCF maquina de efectivo -> $9.85B en FCF con margen del 41.4%, creciendo al 25% anual. Adobe esta entre las 5 empresas de software que mas caja generan en el mundo, con visibilidad garantizada por $25.2B en ARR recurrente.
@@ -1807,15 +1807,16 @@ Micron Technology (MU) entra en el superciclo de ganancias mas potente de su his
 Micron Technology es el mayor fabricante de semiconductores de memoria de EE.UU. y el tercero a nivel mundial. Disena, fabrica y vende: DRAM de alto rendimiento (principal motor de crecimiento via HBM), NAND Flash (almacenamiento no volatil) y SSDs empresariales. HBM (High Bandwidth Memory) es el segmento de mayor margen, integrado en GPUs NVIDIA y aceleradores de AI. Opera como IDM (Integrated Device Manufacturer) con fabricas en EE.UU., Taiwan y Japon. El CHIPS Act otorgo a Micron $6.1B para expandir produccion DRAM en Boise, Idaho, siendo la unica empresa de memoria de escala con manufactura domestica en EE.UU.
 
 **Datos financieros**:
-- Revenue ($B): 37.4 (+48.8% YoY)
-- Utilidad Neta ($B): 8.5 (+998% YoY)
-- Margen Neto (%): 22.8% (+19.7pp YoY)
-- EBITDA ($B): 18.1 (+99.1% YoY)
-- FCF ($B): 1.7 (+1,278% YoY)
-- EPS (GAAP): $7.59 (+984% YoY)
-- Deuda Neta ($B): 4.4 (-25.4% YoY)
+- Revenue ($B): 23.86 (+196.3% YoY)
+- Utilidad Neta ($B): 13.79 (+770.8% YoY)
+- Margen Neto (%): 57.8% (+38.1pp YoY)
+- Margen Bruto (%): 74.4% (+37.6pp YoY)
+- EBITDA ($B): 18.42 (+378.2% YoY)
+- FCF ($B): 5.52 (N/A YoY)
+- EPS (GAAP): $12.07 (+756.0% YoY)
+- Deuda Neta ($B): -4.35 (N/A YoY)
 
-**Valuacion**: P/E Ratio 15.1x, P/E Forward 9.2x, EV/EBITDA 9.8x, P/FCF 35.5x, Deuda Neta/EBITDA 0.26x, ROE 38%, ROIC 35%
+**Valuacion**: P/E Ratio 33.8x, P/E Forward 20.3x, EV/EBITDA 28.6x, P/FCF 79.4x, Deuda Neta/EBITDA -0.15x, ROE 38%, ROIC 35%
 
 **Veredicto**: Comprar con Conviccion (Score: 8.4/10)
 + HBM sold out 2026 -> Toda la capacidad HBM esta vendida para 2026 con contratos a precio fijo con NVIDIA y hyperscalers; sin riesgo de precio en el corto plazo para el segmento de mayor margen con margenes brutos del 75%.
