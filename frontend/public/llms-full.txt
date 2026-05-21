@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-20
+**Actualizado**: 2026-05-21
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -27,7 +27,35 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (66 empresas)
+## Reportes de acciones (67 empresas)
+
+### SPCX — Space Exploration Technologies Corp (SpaceX)
+**URL**: https://reportes.murzainversiones.com/reporte/SPCX
+**Publicado**: 2026-05-21
+
+SpaceX presento su S-1 el 20-may-2026 con IPO previsto el 12-jun-2026 a precio estimado de ~$175/accion (valuacion ~$1.75T). La compania reporto revenue de $18.67B en FY2025 (+33% YoY) impulsado por Starlink (8.9M suscriptores al cierre 2025, 10.3M en Q1 2026), pero registro perdida neta de $4.94B por el agresivo programa R&D de Starship ($3B solo en 2025) y la expansion del cluster de IA xAI. El Adj. EBITDA fue $6.58B (+23% YoY), reflejando alta rentabilidad en Connectivity parcialmente absorbida por perdidas en el segmento AI.
+
+SpaceX opera tres segmentos: Space (lanzamientos comerciales y gubernamentales, Falcon 9/Heavy, Starship, $4.09B revenue FY2025), Connectivity (Starlink broadband LEO, $11.39B revenue FY2025, 8.9M suscriptores promedio, margen operativo 39%) y AI (xAI+X Holdings, $3.20B revenue FY2025, en expansion agresiva). La ventaja competitiva es la integracion vertical unica: disenan, fabrican, lanzan y operan sus propios cohetes y satelites. Con >80% del mass-to-orbit global desde 2023 y 99%+ tasa de exito, el moat tecnico en acceso espacial es formidable. La estructura de acciones super-voting (Musk controla ~79% votos con ~42% equity) y el perfil de perdidas GAAP son los principales riesgos de gobernanza y valoracion.
+
+**Datos financieros**:
+- Revenue (B USD): 18.67 (+33.2% YoY)
+- Utilidad Neta (B USD): -4.94 (Negativa YoY)
+- Margen Neto: -26.4% (-32pp YoY)
+- Adj. EBITDA (B USD): 6.58 (+23.1% YoY)
+- FCF (B USD): -13.95 (Negativo YoY)
+- EPS Diluido: -1.69 (Negativo YoY)
+- Deuda Neta (B USD): 4.36 (-46.0% YoY)
+
+**Valuacion**: P/E Trailing N/A, P/E Forward N/A, EV/EBITDA 257x, P/FCF N/A, Deuda Neta/EBITDA 0.7x, ROE -192%, ROIC N/A
+
+**Veredicto**: Especular con Cautela (Score: 6.4/10)
++ Moat espacial inexpugnable — >80% del mass-to-orbit mundial, 170 lanzamientos/ano, tasa de exito >99%. Barrera de entrada que cuesta decadas y cientos de miles de millones replicar.
++ Starlink: maquina de cash generation — Adj. EBITDA Connectivity de $7.17B en FY2025 con 10.3M suscriptores. Con Starship, el costo por satelite colapsa y el margen se expande aun mas.
++ Crecimiento exponencial documentado — Revenue de $10.4B (2023) a $18.7B (2025): +80% en 2 anos. La trayectoria es validada, no especulativa.
+- Valuacion extrema sin FCF positivo — A 257x EV/EBITDA y FCF de -$13.95B, el precio del IPO descuenta perfeccion en la ejecucion de Starship, Starlink y xAI — todo simultaneamente.
+- Riesgo Musk y gobernanza — Control del 79% del voto por un CEO con 5 empresas paralelas y transacciones intra-grupo con xAI y X Holdings.
+
+---
 
 ### QCOM — Qualcomm Incorporated
 **URL**: https://reportes.murzainversiones.com/reporte/QCOM
