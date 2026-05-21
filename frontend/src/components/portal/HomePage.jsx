@@ -89,8 +89,23 @@ export default function HomePage() {
   const [loading, setLoading]             = useState(true);
   const [busqueda, setBusqueda]           = useState('');
   const [resultados, setResultados]       = useState(null); // null = sin busqueda
+  const [dropdownVisible, setDropdownVisible] = useState(false);
   const navigate = useNavigate();
   const solicitudRef = useRef(null);
+  const searchRef    = useRef(null);
+
+  const dropdownResultados = busqueda.trim().length > 0
+    ? todosReportes.filter(r =>
+        r.ticker.toUpperCase().includes(busqueda.trim().toUpperCase()) ||
+        r.empresa.toUpperCase().includes(busqueda.trim().toUpperCase())
+      ).slice(0, 8)
+    : [];
+
+  const irAReporte = (r) => {
+    setBusqueda('');
+    setDropdownVisible(false);
+    navigate(`/reporte/${r.slug}`);
+  };
 
   // Prospecto GBM
   const [gbm, setGbm]           = useState({ nombre: '', telefono: '', correo: '', valor_portafolio: '' });
@@ -160,11 +175,13 @@ export default function HomePage() {
       )].sort()
     : [];
 
-  // Cerrar dropdown al click fuera
+  // Cerrar dropdowns al click fuera
   useEffect(() => {
     const handler = (e) => {
       if (sectorRef.current && !sectorRef.current.contains(e.target))
         setSectorAbierto(false);
+      if (searchRef.current && !searchRef.current.contains(e.target))
+        setDropdownVisible(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
@@ -356,15 +373,42 @@ export default function HomePage() {
           <h1>Analisis financiero profesional</h1>
           <p>Resumen de reportes fundamentales de empresas publicas.</p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-            <form className="buscador" onSubmit={buscar} style={{ margin: 0, minWidth: 420, maxWidth: 520 }}>
-              <input
-                value={busqueda}
-                onChange={e => setBusqueda(e.target.value)}
-                placeholder="Busca por ticker o empresa: AAPL, Tesla, AMZN..."
-                className="buscador-input"
-              />
-              <button type="submit" className="btn-primary">Buscar</button>
-            </form>
+            <div ref={searchRef} style={{ position: 'relative', margin: 0, minWidth: 420, maxWidth: 520, flex: '1 1 420px' }}>
+              <form className="buscador" onSubmit={buscar} style={{ margin: 0 }}>
+                <input
+                  value={busqueda}
+                  onChange={e => { setBusqueda(e.target.value); setDropdownVisible(true); }}
+                  onFocus={() => setDropdownVisible(true)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' && dropdownResultados.length > 0) { e.preventDefault(); irAReporte(dropdownResultados[0]); }
+                    if (e.key === 'Escape') { setBusqueda(''); setDropdownVisible(false); }
+                  }}
+                  placeholder="Busca por ticker o empresa: AAPL, Tesla, AMZN..."
+                  className="buscador-input"
+                />
+                <button type="submit" className="btn-primary">Buscar</button>
+              </form>
+              {dropdownVisible && dropdownResultados.length > 0 && (
+                <div style={{
+                  position: 'absolute', top: 'calc(100% + 6px)', left: 0, right: 0,
+                  background: 'var(--bg-card, #fffdf7)', border: '1px solid var(--border-color, #e0d5c0)',
+                  borderRadius: 10, boxShadow: '0 8px 24px rgba(0,0,0,.12)', zIndex: 1000, overflow: 'hidden',
+                }}>
+                  {dropdownResultados.map(r => (
+                    <div key={r.slug} onClick={() => irAReporte(r)}
+                      style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 16px', cursor: 'pointer', borderBottom: '1px solid var(--border-color, #f0e8d5)' }}
+                      onMouseEnter={e => e.currentTarget.style.background = 'var(--gold-pale, #fdf6e3)'}
+                      onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+                      <span style={{ fontWeight: 700, fontSize: 13, color: 'var(--gold-dark)', minWidth: 52 }}>{r.ticker}</span>
+                      <span style={{ fontSize: 13, color: 'var(--text-primary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flex: 1 }}>{r.empresa}</span>
+                      {r.tipo === 'etf' && (
+                        <span style={{ fontSize: 10, fontWeight: 700, color: '#3D6B3D', background: 'rgba(106,140,106,.13)', border: '1px solid rgba(106,140,106,.28)', borderRadius: 4, padding: '1px 6px', flexShrink: 0 }}>ETF</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
             <button
               type="button"
               onClick={() => setShowSolicitudInline(v => !v)}
