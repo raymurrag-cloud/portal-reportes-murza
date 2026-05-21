@@ -75,7 +75,8 @@ export default function ReportePage() {
   if (error)   return <div className="portal-page"><div className="error-state">Reporte no encontrado.</div></div>;
 
   const esJson    = reporte.es_json && reporte.contenido_json;
-  const jsonData  = esJson ? JSON.parse(reporte.contenido_json) : null;
+  let jsonData = null;
+  try { if (esJson) jsonData = JSON.parse(reporte.contenido_json); } catch (_) {}
   const esEtf     = jsonData?.tipo === 'etf';
   const contenido = reporte.completo ? reporte.contenido_md : reporte.contenido_preview;
 

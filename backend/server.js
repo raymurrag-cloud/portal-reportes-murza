@@ -392,7 +392,7 @@ app.get('/llms.txt', async (req, res) => {
 app.get('/llms-full.txt', async (req, res) => {
   const { db } = await import('./database.js');
   const { rows } = await db.execute({
-    sql: `SELECT ticker, empresa, slug, meta_descripcion, contenido_json, tipo, updated_at
+    sql: `SELECT ticker, empresa, slug, meta_descripcion, contenido_json, tipo, created_at, updated_at
           FROM reportes WHERE publicado = 1 ORDER BY updated_at DESC`,
     args: [],
   });
