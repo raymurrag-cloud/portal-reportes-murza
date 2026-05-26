@@ -360,26 +360,26 @@ Goldman Sachs opera en tres segmentos: Global Banking & Markets (banca de invers
 **URL**: https://reportes.murzainversiones.com/reporte/MCD
 **Publicado**: 2026-05-12
 
-McDonald's opera el mayor sistema de restaurantes del mundo con mas de 40,000 ubicaciones en 100+ paises, bajo un modelo ~95% franquiciado. Los ingresos reportados (~$26B) representan solo royalties, rentas y ventas de restaurantes propios, mientras las ventas del sistema superan los $130B. En FY2024 el revenue crecio +1.7% YoY pero las utilidades cayeron -2.9% afectadas por el brote de E. coli en Q4 que impacto las ventas comparables en EEUU; el modelo de franquicia sigue generando maquinaria de FCF con margenes operativos superiores al 45%.
+McDonald's Corporation es el mayor operador y franquiciador de restaurantes de comida rapida del mundo, con mas de 45,000 ubicaciones en mas de 100 paises. En FY2025 reporto ingresos de $26.9B (+3.7% YoY), margen operativo de 46.1% y EPS diluido de $11.95 (+4.9%), sostenidos por el modelo casi puro de franquicias (~95% del total). La accion cotiza a 23.4x EPS TTM, valuacion razonable para un negocio con FCF de $7.2B y poder de fijacion de precios probado. El Q1 2026 mostro aceleracion con ingresos de $6.5B (+9.4% YoY) y EPS de $2.78 (+7%), senales positivas para el resto del ejercicio.
 
-McDonald's Corporation es el operador de la cadena de restaurantes de comida rapida mas grande del mundo por ingresos. Con mas de 40,000 restaurantes en 100+ paises, aproximadamente el 95% son franquicias. Los ingresos reportados (~$26B en FY2024) incluyen: royalties y rentas de franquiciados + ventas directas de restaurantes operados por la empresa. Las ventas del sistema completo (system-wide sales) superan los $125B. El modelo franquiciado genera margenes operativos de 45%+ y FCF consistente. Dividend Aristocrat con 46+ anos consecutivos de crecimiento de dividendo.
+McDonald's genera ingresos por dos vias: royalties y rentas de restaurantes franquiciados (principal fuente, ~61% del total en 2025) y ventas directas de restaurantes propios (~36%). Sus tres segmentos son EE.UU. (mayor contribuidor), Mercados Internacionales Operados (UK, Alemania, Francia, Canada, Australia) y Mercados Internacionales con Licencia. El moat proviene de la marca global, la red de bienes raices de primer nivel, el sistema operativo estandarizado y el poder de negociacion con proveedores a escala masiva. La estrategia Accelerating the Arches se enfoca en menu basico, marketing digital, modernizacion de restaurantes y expansion de unidades.
 
 **Datos financieros**:
-- Revenue ($B): 25.92 (+1.7% YoY)
-- Utilidad Neta ($B): 8.22 (-2.9% YoY)
-- Margen Neto (%): 31.7% (-1.5pp YoY)
-- EBITDA ($B): 13.81 (+1.4% YoY)
-- FCF ($B): 6.67 (-8.0% YoY)
-- EPS (GAAP): 11.39 (-1.5% YoY)
-- Deuda Neta ($B): 37.34 (+7.4% YoY)
+- Revenue (B USD): 6.52 (+3.7% YoY)
+- Utilidad Neta (B USD): 1.98 (+4.1% YoY)
+- Margen Neto: 30.4% (+0.1pp YoY)
+- EBITDA (B USD): N/D (+5.7% YoY)
+- FCF (B USD): N/D (+7.8% YoY)
+- EPS Diluido: 2.78 (+4.9% YoY)
+- Deuda Neta (B USD): N/D (+5.0% YoY)
 
-**Valuacion**: P/E Ratio 24.4x, P/E Forward 22.8x, EV/EBITDA 17.2x, P/FCF 30.1x, Deuda/EBITDA 2.7x, FCF Yield 3.3%, ROE N/M
+**Valuacion**: P/E Trailing 23.4x, P/E Forward 22.3x, EV/EBITDA 18.6x, P/FCF 27.8x, Deuda Neta/EBITDA 3.1x, ROE N/M, ROIC 26.0%
 
-**Veredicto**: Mantener (Score: 7.5/10)
-+ Maquina de FCF por franquicia -> El modelo ~95% franquiciado genera $6.67B de FCF incluso en un ano con E. coli y presion en consumidor. Los margenes operativos de 45%+ son estructurales, no ciclicos.
-+ Marca global invulnerable -> 40,000+ ubicaciones en 100+ paises con reconocimiento de marca instantaneo. La diversificacion geografica amortigua recesiones regionales y proporciona crecimiento por mercados emergentes.
-+ Dividend Aristocrat con 46+ anos -> Dividendo creciente desde 1976 respaldado por FCF predecible. El yield de ~2.4% con crecimiento anual de ~9-10% es atractivo para inversores de largo plazo.
-- Presion en consumidor 2024-2025 -> Las ventas comparables en EEUU estuvieron bajo presion en 2024 por percepcion de precios altos. La recuperacion con plataformas de valor es correcta pero tomara 2-3 trimestres en normalizarse.
+**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
++ Maquina de FCF comprobada -> Con $7.2B de FCF en FY2025 y 47 anos aumentando dividendos, MCD ofrece un ingreso pasivo creciente respaldado por uno de los modelos de negocio mas resilientes del planeta.
++ Margen operativo de clase mundial -> 46.1% de margen operativo, imposible de replicar para competidores, surge del modelo franquiciador que transforma costos fijos en ingresos de alta calidad y predecibles.
++ Aceleracion visible en Q1 2026 -> Ingresos +9.4% y EPS +7% en el primer trimestre confirman que la estrategia digital y de valor esta funcionando, con ventas comparables positivas en todos los segmentos.
+- Deuda neta de $39.2B (3.1x EBITDA) -> Aunque manejable con el flujo de caja actual, la alta deuda limita flexibilidad ante un entorno de tasas altas prolongado y reduce el margen de seguridad en una recesion severa.
 
 ---
 
