@@ -818,26 +818,26 @@ BN actua como holding de tres negocios complementarios: 1) Asset Management via 
 **URL**: https://reportes.murzainversiones.com/reporte/CAT
 **Publicado**: 2026-04-21
 
-Caterpillar Inc. es el lider mundial en maquinaria de construccion, mineria e infraestructura, con mas de 100 anos de historia y una red de dealers global incomparable. En FY2025 reporto ingresos de 67.6B USD con compresion de margenes respecto al pico de FY2024 por menores volumenes en Construction Industries. El Q1 2026 reportado hoy (29-abr) mostro Revenue de 14.2B (-10% YoY) y EPS ajustado de 4.25, reflejando normalizacion ciclica. El balance es solido con FCF de 8.9B y dividendo creciente por 31 anos consecutivos.
+Caterpillar Inc. reporto en FY2025 ingresos de $67.6B (+4.3% YoY), aunque la utilidad neta cayo 17.7% a $8.9B y el margen operativo se comprimo de 20.2% a 16.5% por mayores costos de produccion y normalizacion post-ciclo. El FCF disminuyo 11.2% a $8.9B, pero Q1 2026 mostro una fuerte recuperacion con ingresos +22.2% y EPS +30.2% interanual. La accion cotiza con valuaciones elevadas: P/E TTM de 48x y EV/EBITDA de 33x, justificadas parcialmente por el ciclo de infraestructura global, la transicion energetica y la demanda de mineria.
 
-Caterpillar opera en tres segmentos: Construction Industries (maquinaria para construccion e infraestructura), Resource Industries (maquinaria minera y agregados) y Energy & Transportation (motores, turbinas, locomotoras y Cat Financial). Su moat descansa en la red de 3,000+ dealers globales, la marca de confiabilidad extrema y el negocio de repuestos/servicio con margenes altos. Aproximadamente 40% de las ventas son partes y servicios de alto margen. Mas del 50% de ingresos provienen de mercados internacionales.
+Caterpillar es el lider mundial en equipos de construccion y mineria, motores diesel e industriales, y locomotoras diesel-electricas. Opera tres segmentos reportables: Construction Industries (maquinaria para infraestructura y edificacion), Resource Industries (equipos de mineria superficial y subterranea, canteras) y Power & Energy (turbinas industriales, motores de gas natural, equipo de energia). Complementa su oferta con Financial Products (financiamiento Cat Financial e Insurance). Su moat radica en la red de distribuidores independientes mas grande del mundo, el ciclo de reposicion de refacciones y servicios post-venta de alto margen, la marca Cat como estandar de la industria y la capacidad de financiamiento integrado.
 
 **Datos financieros**:
-- Revenue (B USD): 67.59 (+4.3% YoY)
-- Utilidad Neta (B USD): 8.88 (-17.7% YoY)
-- Margen Neto: 13.1% (-3.5pp YoY)
-- EBITDA (B USD): 13.41 (-12.0% YoY)
-- FCF (B USD): 8.92 (-11.2% YoY)
-- EPS Diluido: 18.81 (-14.7% YoY)
-- Deuda Neta (B USD): 20.72 (+1.3% YoY)
+- Revenue (B USD): 17.42 (+22.2% YoY)
+- Utilidad Neta (B USD): 2.55 (+27.2% YoY)
+- Margen Neto: 14.6% (+1.5pp YoY)
+- EBITDA (B USD): 3.66 (+28.4% YoY)
+- FCF (B USD): 1.14 (N/A YoY)
+- EPS Diluido: 5.47 (+30.2% YoY)
+- Deuda Neta (B USD): 26.63 (N/A YoY)
 
-**Valuacion**: P/E Trailing 43.1x, P/E Forward 41.5x, EV/EBITDA 29.7x, P/FCF 42.3x, Deuda Neta/EBITDA 1.55x, ROE 75.9%, ROIC 26.8%
+**Valuacion**: P/E Trailing 48x, EV/EBITDA 33x, P/FCF 47x, Deuda Neta/EBITDA 1.55x, ROE 41.7%, ROIC 20.8%, FCF Yield 2.1%
 
-**Veredicto**: Mantener (Score: 7.0/10)
-+ Moat estructural — Red de 3,000+ dealers, marca premium y negocio de partes/servicio crean ventajas competitivas que tardan decadas en construirse y son practicamente irreplicables.
-+ Balance solido y FCF resiliente — Deuda Neta/EBITDA de 1.54x y FCF de 8.92B permiten dividendos crecientes (Aristocrat 31 anos) y recompras activas incluso en ciclos adversos.
-+ Energy & Transportation como ancla secular — Motores para data centers de IA, mineria y generacion de energia representan el catalizador de crecimiento a largo plazo que reduce la ciclicidad historica.
-- Valuacion premium injustificada — P/E forward de 41.5x vs historico de 15-20x para industriales ciclicos. El Q1 2026 con -10% en revenue ya cuestiona el escenario optimista descontado en USD 810.
+**Veredicto**: Mantener con Cautela (Score: 7.0/10)
++ Moat estructural insuperable -- La red global de dealers de Cat, los ingresos recurrentes de partes/servicios y el financiamiento integrado crean ventajas competitivas que ningun competidor puede replicar rapidamente.
++ Recuperacion visible en Q1 2026 -- Revenue +22% y EPS +30% YoY en Q1 2026 confirman que el ciclo descendente de FY2025 fue transitorio; Resource Industries y Power & Energy lideran la aceleracion.
++ Capital allocation disciplinado -- Mas de 30 anos de dividendos crecientes, recompras por $5.2B en 2025 y reduccion de acciones del 14% en 4 anos reflejan gestion orientada al accionista.
+- Valuacion exigente al precio actual -- P/E TTM 48x, EV/EBITDA 33x y FCF yield de 2.1% dejan escaso margen de seguridad; cualquier decepcion ciclica podria provocar una re-rating significativa a la baja.
 
 ---
 
