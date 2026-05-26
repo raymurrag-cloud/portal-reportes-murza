@@ -1013,26 +1013,26 @@ Oscar Health opera exclusivamente en el mercado individual de seguros de salud A
 **URL**: https://reportes.murzainversiones.com/reporte/AXP
 **Publicado**: 2026-04-20
 
-American Express (AXP) reporto ingresos netos record de $65.95B en FY2024 (+9.0% YoY) y utilidad neta de $10.13B (+21.0%), con EPS diluido de $14.01 (+25.0%). La combinacion de red cerrada propietaria, base de tarjetahabientes premium, crecimiento sostenido en gasto de viajes y entretenimiento y recompras agresivas genera una maquina de creacion de valor dificil de replicar. A 15.6x P/E forward con EPS forward de $20.11, la valuacion es atractiva frente a su historial y la calidad del negocio. Veredicto: Comprar con Conviccion.
+American Express es una plataforma global de pagos premium con red integrada de emisor y adquirente que genera ventajas competitivas dificiles de replicar. En FY2025 reporto revenues de $72.2B (+9.5% YoY) y utilidad neta record de $10.8B (+6.9%), con EPS de $15.56 (+9.5%). La compania opera en cuatro segmentos: USCS, Commercial Services, International Card Services y GMNS, con gasto de tarjetahabientes como motor principal. A $310 la accion cotiza a ~18x P/E forward, una valuacion atractiva dado su ROIC de 35.8% y crecimiento consistente.
 
-American Express opera un modelo de pagos integrado de red cerrada (closed-loop) unico en la industria. A diferencia de Visa y Mastercard, AXP actua simultaneamente como emisor de tarjetas, adquirente de comercios y operador de red de pagos, lo que le otorga control total sobre datos de transacciones en ambos extremos del mercado. Sus ingresos provienen de: discount revenues (comisiones al comercio por cada transaccion), net card fees (membresias anuales premium de hasta $695), ingresos netos por intereses sobre su cartera de credito propia, y otros servicios. La base de tarjetahabientes se caracteriza por altos ingresos, mayor gasto en viajes y entretenimiento (T&E) y menor morosidad vs el mercado masivo. Es el mayor holding de Berkshire Hathaway de Warren Buffett con ~20% del capital.
+American Express genera ingresos a traves de descuentos de comercio (discount revenue, su mayor fuente), intereses sobre prestamos a tarjetahabientes, comisiones anuales de tarjeta y servicios de red para emisores terceros. Su modelo integrado de emisor-adquirente le da acceso a datos en ambos extremos de la transaccion, diferenciandola de redes como Visa/Mastercard. Atiende consumidores premium, pequenas empresas y corporativos globales. Las cuatro unidades de negocio son: U.S. Consumer Services (tarjetas consumer USA), Commercial Services (tarjetas corporativas/PYME), International Card Services (tarjetas fuera de EE.UU.) y Global Merchant and Network Services (red y adquisicion de comercios). Su moat se basa en el efecto de red, la marca premium y la base de tarjetahabientes de alto gasto.
 
 **Datos financieros**:
-- Revenue ($B): 65.95 (+9.0% YoY)
-- Utilidad Neta ($B): 10.13 (+21.0% YoY)
-- Margen Neto (%): 15.4% (+1.6pp YoY)
-- EBITDA ($B): 14.57 (+19.8% YoY)
-- FCF ($B): 12.14 (-28.6% YoY)
-- EPS (GAAP): 14.01 (+25.0% YoY)
-- Deuda Neta ($B): 9.08 (+614.2% YoY)
+- Revenue (B USD): 18.91 (+9.5% YoY)
+- Utilidad Neta (B USD): 2.97 (+6.9% YoY)
+- Margen Neto: 15.7% (+-0.4pp YoY)
+- EBITDA (B USD): N/D (+5.4% YoY)
+- FCF (B USD): 2.65 (+31.8% YoY)
+- EPS Diluido: 4.28 (+9.5% YoY)
+- Deuda Neta (B USD): 5.00 (-5.3% YoY)
 
-**Valuacion**: P/E Ratio 19.6x, P/E Forward 15.6x, EV/EBITDA 15.3x, P/FCF 17.6x, Deuda/EBITDA 3.4x, ROE 33.5%, ROIC ~18%
+**Valuacion**: P/E Trailing 19.9x, P/E Forward 18.3x, EV/EBITDA 10.8x, P/FCF 13.5x, Deuda Neta/EBITDA 0.41x, ROE 32.4%, ROIC 35.8%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.5/10)
-+ Red cerrada -> Modelo unico que captura valor en ambos lados del mercado de pagos con datos propietarios que ninguna otra red puede replicar, generando discount rates superiores y lealtad estructural.
-+ Clientela premium -> Base de tarjetahabientes de alto poder adquisitivo genera menor morosidad, mayor gasto por cuenta y justifica membresias de hasta $695/ano con alta retencion.
-+ Maquina de recompras -> 15% reduccion de acciones en 4 anos amplifica el EPS dramaticamente. EPS CAGR del 39% desde FY2020. FCF >$12B sostiene el programa.
-- Ciclicidad crediticia -> Gasto en T&E es discrecional y la cartera de credito propia eleva el riesgo en recesiones. En 2020 los ingresos cayeron 17% y pueden volver a hacerlo.
+**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
++ Valuacion atractiva vs calidad -> A ~18x P/E forward y ~10.8x EV/EBITDA, AXP cotiza con descuento vs la calidad del negocio (ROIC 35.8%, ROE 32%) y vs su historico de 20-25x.
++ Crecimiento de EPS compuesto -> Revenue crecio 70% en 5 anos, EPS de $10.20 a $15.56 (+53%), con recompras sistematicas que aceleran el crecimiento por accion. El flywheel es autosostenible.
++ Moat de red integrada -> La posicion como emisor-adquirente-red en una misma entidad es replicable por muy pocos. Millennials/Gen Z en aceleracion garantizan crecimiento de largo plazo.
+- Sensibilidad ciclica y regulatoria -> Una recesion o cambios en interchange fees podrian presionar revenues y rentabilidad; el estatus de BHC limita flexibilidad en distribucion de capital.
 
 ---
 
