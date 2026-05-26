@@ -759,30 +759,31 @@ Nebius es una plataforma AI cloud de pila completa fundada sobre el expertise te
 
 ---
 
-### JBS — JBS S.A.
+### JBS — JBS N.V.
 **URL**: https://reportes.murzainversiones.com/reporte/JBS
 **Publicado**: 2026-04-28
 
-JBS S.A. es la mayor procesadora de proteinas animales del mundo, con operaciones en carne vacuna, porcina, aves y derivados en mas de 20 paises. Cotiza en la B3 de Brasil (JBSS3) y como ADR en NYSE (JBSAY). En FY2024 reporto ingresos de USD 73.5B con recuperacion notable del margen neto tras el dificil FY2023. La empresa opera bajo un modelo de integracion vertical con marcas globales como Swift, Pilgrim Pride, Primo Foods y Seara.
+JBS S.A. es la mayor procesadora de proteinas animales del mundo, con operaciones en carne vacuna, aves, cerdo, cordero y pescado en mas de 180 paises. En FY2024 genero ingresos de USD 77.2B con EBITDA ajustado de USD 7.2B y recupero rentabilidad con margen neto del 2.5%. Cotiza en NYSE como JBS N.V. con valuacion atractiva de 7.9x P/E y 6.1x EV/EBITDA, con FCF yield del 20%.
 
-JBS opera cuatro segmentos principales: JBS Beef North America (30% revenue), Pilgrim Pride Corp-PPC (aves, 22%), JBS Brazil (vacuno/porcino/aves, 20%) y JBS International (Europa/Australia/Oceania, 28%). Su moat se sustenta en escala operativa sin precedente, integracion vertical desde granjas hasta retail, y un portafolio de marcas premium en multiples proteinas. Opera mas de 400 plantas de procesamiento.
+JBS opera 7 segmentos: Brazil, Seara, Beef North America, Pork USA, Pilgrims Pride, Australia y Otros. Su moat se basa en escala operativa incomparable (#1 carne bovina global, #1 aves global, #2 cerdo global), diversificacion en 180 paises, marcas Swift, Seara, Friboi y Pilgrim, y capacidad logistica global. En 2025 completo reestructuracion hacia JBS N.V. con listado NYSE.
 
 **Datos financieros**:
-- Revenue (B USD): 75.2 (+2.3% YoY)
-- Utilidad Neta (B USD): 2.10 (+15.4% YoY)
-- Margen Neto: 2.8% (+0.3pp YoY)
-- EBITDA (B USD): 7.8 (+8.3% YoY)
-- FCF (B USD): 1.6 (+14.3% YoY)
-- EPS Diluido: 0.89 (+15.6% YoY)
-- Deuda Neta (B USD): 14.5 (-1.4% YoY)
+- Revenue (B USD): ~88.3 (+5.8% YoY)
+- Utilidad Neta (B USD): ~4.0 (+NM YoY)
+- Margen Neto: ~4.5% (+2.7pp YoY)
+- EBITDA Adj. (B USD): ~9.0 (+108% YoY)
+- FCF (B USD): ~3.5 (+213% YoY)
+- EPS Diluido: ~1.68 (+NM YoY)
+- Deuda Neta (B USD): ~13.0 (-0.7B YoY)
 
-**Valuacion**: P/E Trailing 9.7x, P/E Forward 7.1x, EV/EBITDA 8.7x, P/FCF 33.3x, Deuda Neta/EBITDA 1.9x, ROE 15.2%, ROIC 13.5%
+**Valuacion**: P/E Trailing 7.9x, P/E Forward 7.6x, EV/EBITDA 6.1x, P/FCF 5.0x, Deuda Neta/EBITDA 1.9x, ROE 24.2%, ROIC ~12%
 
-**Veredicto**: Mantener / Compra Especulativa (Score: 6.4/10)
-+ Lider global con escala unica -- Ninguna empresa rivaliza con los 73.5B USD de revenue y presencia en 20+ paises. La escala genera eficiencias que los competidores no pueden replicar.
-+ Catalizador claro: relisting NYSE -- El proceso de listado primario en NYSE podria eliminar el descuento ADR (~20-30%) y atraer capital institucional, desbloqueando valor significativo.
-+ Recuperacion del ciclo ganadero -- El ciclo en EE.UU. normaliza en 2025-2026, lo que impulsara margenes de JBS Beef North America, el segmento mas rentable historicamente.
-- Deuda neta de 14.7B USD -- En escenarios adversos, el servicio de deuda consume buena parte del FCF. Es el principal riesgo financiero estructural.
+**Veredicto**: Comprar con Conviccion (Score: 7.2/10)
++ Valuacion de ganga - Con P/E de 7.9x y EV/EBITDA de 6.1x, JBS cotiza con descuento del 50%+ frente a peers globales de alimentos y ofrece FCF yield del 20%, creando perfil de retorno asimetrico excepcional.
++ Liderazgo estructural en proteinas - JBS es la empresa #1 global en carne bovina y aves por capacidad. Escala inexpugnable consolidada con mas de 20 anos de adquisiciones estrategicas y USD 19B+ de deuda total como reflejo de la escala alcanzada.
++ Recovery de EBITDA y FCF confirmado - EBITDA ajustado se duplico a USD 7.2B en FY2024 vs USD 3.5B en FY2023, con FCF de USD 2.75B que permite reduccion acelerada de deuda y mayor retorno de capital en 2025-2026.
++ Reestructuracion a NYSE como catalizador - Listado como JBS N.V. en NYSE abre la accion a capital institucional americano antes excluido, y puede ser catalizador para re-rating del multiplo hacia sector.
+- Riesgo ciclico y de gobernanza - Los margenes son inherentemente ciclicos (margen neto entre -0.2% y 5.9% en 4 anos) y el historial de la familia Batista requiere prima de riesgo permanente que puede limitar re-rating del multiplo.
 
 ---
 
