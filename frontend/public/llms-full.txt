@@ -246,30 +246,30 @@ Intuitive Surgical disena, fabrica y comercializa el sistema de cirugia robotica
 
 ---
 
-### NOW — ServiceNow Inc.
+### NOW — ServiceNow, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/NOW
 **Publicado**: 2026-05-12
 
-ServiceNow (NOW) es la plataforma de flujos de trabajo digitales mas adoptada en el mundo enterprise, con ingresos de 10.98B USD en FY2024 (+22.4% YoY) impulsados en un ~95% por suscripciones de alta recurrencia. La integracion de Now Assist (IA generativa sobre GPT-4 y modelos propios) activa un nuevo ciclo de upsell en su base instalada de mas de 8,100 clientes, incluyendo mas del 85% del Fortune 500. Con FCF de 3.42B USD, balance neto positivo (caja neta de 0.81B USD) y margenes brutos del 79%, NOW representa uno de los modelos de negocio de mas alta calidad en software enterprise — aunque cotiza a un multiple exigente que requiere ejecucion impecable.
+ServiceNow es la plataforma empresarial de referencia para la automatizacion de workflows con IA, con mas de 8100 clientes y 98% de tasa de renovacion. En FY2025 reporto ingresos de 13.28B USD (+21% YoY), FCF de 4.57B (+34%) y un RPO de 28.2B (+27%). La empresa esta en plena transicion hacia ser el sistema operativo de IA para las empresas globales, con agentic AI como principal catalizador de crecimiento. La valuacion a 20x P/E Forward (non-GAAP) refleja credito al crecimiento sostenido del 20% con expansion de margenes.
 
-ServiceNow opera una plataforma cloud de gestion de flujos de trabajo (workflow automation) para empresas Fortune 500. Su nucleo es IT Service Management (ITSM), desde el cual expande hacia HR Service Delivery, Customer Service Management, Financial Services Operations y Security Operations. La plataforma Now Platform conecta todos los departamentos bajo un unico sistema de registro. Now Assist, su suite de IA generativa, esta integrada en todos los flujos y habilita agentes autonomos para resolucion de incidentes, autoservicio de empleados y automatizacion de aprobaciones. El modelo de revenue es ~95% suscripcion anual (Annual Contract Value), con clientes que gastan mas cada ano via expansion de modulos — Net Revenue Retention superior al 120% historicamente. Mas de 1,900 clientes con ACV mayor a 1M USD y mas de 100 clientes con ACV mayor a 10M USD. Fiscal year termina el 31 de diciembre.
+ServiceNow opera en un solo segmento de suscripciones de software en la nube. Su plataforma cubre cuatro areas: Technology (ITSM, ITOM, AIOps), CRM and Industry (ventas, servicio al cliente, verticales), Core Business (RRHH, Legal, Finanzas) y Creator and Other (low-code). El 97% de ingresos son recurrentes. La empresa tiene 603 clientes con ACV mayor a 5M USD. El moat central es la base de datos CMDB unica y el efecto de red de workflows interconectados que hace muy costoso el churning.
 
 **Datos financieros**:
-- Revenue (B USD): 10.98 (+22.4% YoY)
-- Utilidad Neta (B USD): 1.43 (-17.3% YoY)
-- Margen Neto: 13.0% (-6.3pp YoY)
-- EBITDA (B USD): 2.47 (+38.8% YoY)
-- FCF (B USD): 3.42 (+26.5% YoY)
-- EPS Diluido (GAAP): 1.37 (-18.5% YoY)
-- Deuda Neta (B USD): -0.81 (Mejor YoY)
+- Revenue (B USD): 3.77 (+20.9% YoY)
+- Utilidad Neta (B USD): 0.47 (+22.4% YoY)
+- Margen Neto: 12.5% (+0.2pp YoY)
+- EBITDA (B USD): 0.76 (+33.3% YoY)
+- FCF (B USD): 1.53 (+33.6% YoY)
+- EPS Diluido: 0.45 (+21.9% YoY)
+- Deuda Neta (B USD): -2.22 (-- YoY)
 
-**Valuacion**: P/E Trailing 53.2x, P/E Forward 21.4x, EV/EBITDA 36.9x, P/FCF 27.3x, Deuda/EBITDA -0.33x, ROE 16.5%, ROIC 12.3%
+**Valuacion**: P/E Trailing (GAAP) 60.6x, P/E Forward (Non-GAAP) 20.1x, EV/EBITDA (GAAP) 40.5x, P/FCF 23.2x, Deuda Neta/EBITDA -0.87x, ROE (GAAP) 13.5%, ROIC (GAAP) 13.1%
 
-**Veredicto**: Comprar con Conviccion (Score: 9.0/10)
-+ Plataforma de flujos criticos -> Mas del 85% del Fortune 500 ya es cliente, con switching costs structuralmente altos — la plataforma es infraestructura digital inamovible para los CIOs.
-+ IA genera nuevo ciclo de upsell -> Now Assist activa expansion de ARPU en la base instalada existente sin costo incremental de adquisicion — el modelo de monetizacion de IA mas eficiente en enterprise software.
-+ FCF compounding de alta calidad -> FCF crece al 30% CAGR desde FY2020, con margen del 31% en FY2024 — la caja se genera antes que la utilidad contable gracias al modelo de prepago SaaS.
-- Valuacion exigente post-caida -> A $89 (vs. maximo de $211), el mercado ya descontó una parte del exceso de valuacion, pero el P/E TTM de 53x deja poco margen de error ante cualquier ajuste en guidance.
+**Veredicto**: Comprar con Conviccion (Score: 8.2/10)
++ Motor de FCF imparable -> FCF de 4.57B (+34% YoY) con margen del 34.4%, el nivel mas alto en la historia de la empresa, demostrando apalancamiento operativo real.
++ Visibilidad excepcional -> RPO de 28.2B USD (+27%) y 98% de renovacion garantizan predictibilidad para los proximos 2+ anos, sin dependencia excesiva de nuevas ventas.
++ Valuacion atractiva vs crecimiento -> P/E Forward non-GAAP de 20.1x con crecimiento del 20%+, ratio PEG menor a 1.0x, posiciona a NOW como una de las empresas SaaS mas eficientes por precio de crecimiento.
+- Riesgo competitivo de IA -> Microsoft y Salesforce integran capacidades similares de agentic AI; el mercado de workflows podra fragmentarse si NOW no mantiene su ventaja tecnica de plataforma unica.
 
 ---
 
