@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (68 empresas)
+## Reportes de acciones (69 empresas)
+
+### FLY — Firefly Aerospace Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/FLY
+**Publicado**: 2026-05-26
+
+Firefly Aerospace es una empresa de tecnologia espacial y defensa que provee soluciones de lanzamiento y naves espaciales a clientes de seguridad nacional, gobierno y comercio. En 2025, primer ano completo post-IPO, logro crecimiento de revenue del 163% impulsado por la adquisicion de SciTec y la exitosa mision Blue Ghost. Aunque la empresa sigue siendo pre-rentable con perdidas netas de 298M USD, tiene 893M USD en caja y backlog creciente. La valuacion implica una apuesta de alto riesgo sobre la consolidacion del mercado de lanzamiento espacial.
+
+Firefly opera dos segmentos: Launch (cohete Alpha operativo, Eclipse en desarrollo) y Spacecraft Solutions (naves lunares Blue Ghost, procesamiento de datos satelitales via SciTec adquirida en oct-2025). Alpha es el unico cohete orbital clase 1,000 kg de fabricacion estadounidense. Blue Ghost 1 fue el primer aterrizaje lunar comercial exitoso (2025). Clientes principales: NASA, Departamento de Defensa y clientes comerciales. Revenue de Q1 2026 de 80.9M USD ya supera casi cualquier trimestre historico, pero las perdidas operativas siguen acelerando por R&D en Eclipse y SG&A post-IPO.
+
+**Datos financieros**:
+- Revenue (M USD): 80.9 (+163% YoY)
+- Utilidad Neta (M USD): -96.7 (-29% YoY)
+- Margen Bruto: 21.6% (+37.9pp YoY)
+- EBITDA (M USD): N/D (N/D YoY)
+- FCF (M USD): N/D (N/D YoY)
+- EPS Diluido: -0.60 (N/D YoY)
+- Deuda Neta (M USD): -524.8 (N/D YoY)
+
+**Valuacion**: P/E Trailing N/A, P/E Forward N/A, EV/Revenue 54x, P/Revenue 58x, Caja Neta/MC Neta +604M USD, ROE -25.1%, ROIC N/A
+
+**Veredicto**: Especulativo — Solo para tolerancia alta al riesgo (Score: 4.8/10)
++ Crecimiento explosivo -> Revenue +163% en FY2025 y +45% en Q1 2026 YoY, con margen bruto recuperando. La adquisicion de SciTec multiplico el mercado potencial.
++ Mision lunar exitosa -> Blue Ghost Mission 1 posiciona a Firefly como lider unico en alunizajes comerciales, con ventaja competitiva dificil de replicar para contratos NASA/DoD.
+- Perdidas masivas sin horizonte claro -> FCF de -238M anuales con runway de ~2.5 anos. Rentabilidad depende de que Eclipse vuele, se escale Alpha y SciTec se integre — tres riesgos de ejecucion simultaneos.
+- Valuacion de fe, no de fundamentos -> P/Revenue de 58x descuenta un escenario perfecto. Solo para inversores con tolerancia alta al riesgo y horizonte de 5+ anos.
+
+---
 
 ### RKLB — Rocket Lab USA Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/RKLB
