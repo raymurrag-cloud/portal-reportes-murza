@@ -2,7 +2,7 @@
 ## Contenido completo para sistemas de IA
 
 **URL**: https://reportes.murzainversiones.com
-**Actualizado**: 2026-05-21
+**Actualizado**: 2026-05-26
 **Idioma**: Espanol | **Cobertura**: Mexico y Latinoamerica
 
 ---
@@ -27,7 +27,34 @@ Portal independiente de analisis fundamental de empresas publicas de EE.UU. Repo
 
 ---
 
-## Reportes de acciones (67 empresas)
+## Reportes de acciones (68 empresas)
+
+### RKLB — Rocket Lab USA Inc.
+**URL**: https://reportes.murzainversiones.com/reporte/RKLB
+**Publicado**: 2026-05-26
+
+Rocket Lab es una empresa espacial integral con operaciones en lanzamiento orbital y sistemas espaciales. Con Electron como cohete lider en el mercado de pequenos satelites (segundo mas lanzado en 2025), y un backlog creciente en Space Systems que incluye el contrato SDA por 816M USD firmado en diciembre 2025, la empresa transita hacia escala con revenue de 601M en FY2025 (+37% YoY). Los margenes brutos mejoran sistematicamente hasta 38.2% en Q1 2026. La empresa sigue en etapa pre-rentabilidad mientras invierte en Neutron, su cohete de clase media con primer lanzamiento objetivo en Q4 2026. Con caja neta de ~870M USD, el balance aguanta el ciclo de inversion. Perfil especulativo de alto potencial.
+
+Rocket Lab opera en dos segmentos: Launch Services (cohete Electron small-class ~300kg a LEO, 75 misiones exitosas, complejos en Nueva Zelanda y Virginia) y Space Systems (naves completas, componentes criticos como reaction wheels, star trackers, solar panels, baterias, radios y software de control, adquiridos via Sinclair Interplanetary, Planetary Systems, SolAero, ASI y GEOST). En desarrollo: Neutron, cohete reutilizable de clase media (13,000kg LEO) para constelaciones y gobierno, primer lanzamiento Q4 2026. La ventaja competitiva central es la integracion vertical unica en el ecosistema de pequenos y medianos satelites.
+
+**Datos financieros**:
+- Revenue (M USD): 200 (+63% YoY)
+- Utilidad Neta (M USD): -45 (+26% YoY)
+- Margen Bruto: 38.2% (+9.5pp YoY)
+- Margen Neto: -22.5% (+10.5pp YoY)
+- EBITDA (M USD): -48 (N/A YoY)
+- FCF (M USD): N/D (N/A YoY)
+- EPS Diluido: -0.07 (+42% YoY)
+
+**Valuacion**: P/E Trailing N/A, P/E Forward N/A, P/S Revenue 143x, P/FCF N/A, Caja Neta +870M USD, ROE -11.6%, Margen Bruto TTM 35%
+
+**Veredicto**: Mantener / Especulativo (Score: 6.2/10)
++ Crecimiento explosivo -> Revenue Q1 2026 de 200M (+63% YoY) y contrato SDA de 816M dan visibilidad solida. La trayectoria de margen bruto (38% en Q1 2026) sugiere que el punto de inflexion hacia EBITDA positivo se acerca en 2027-2028.
++ Integracion vertical unica -> Ningun competidor ofrece lanzamiento propio + manufactura de naves + componentes criticos en el mercado de pequenos y medianos satelites. Esta posicion defensible justifica una prima de valuacion sobre competidores de un solo segmento.
++ Balance aguanta el ciclo -> Con ~1.1B en liquidez y deuda minima de 37M, la empresa tiene runway para completar Neutron sin emergencia financiera. El ATM de 445M en Q1 2026 fue preventivo y bien ejecutado.
+- Riesgo Neutron + Valuacion extrema -> La accion cotiza a ~143x revenue sobre una empresa sin rentabilidad. El retraso de Neutron ya ocurrio; otro retraso o fallo tecnico comprimira multiples severamente. Solo apto para inversores especulativos con horizonte 3-5 anos y tolerancia alta al riesgo.
+
+---
 
 ### SPCX — Space Exploration Technologies Corp (SpaceX)
 **URL**: https://reportes.murzainversiones.com/reporte/SPCX

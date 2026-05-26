@@ -2,8 +2,9 @@
 
 > Portal independiente de analisis fundamental de empresas publicas de EE.UU. Reportes basados en datos reales de filings 10-K y 10-Q oficiales de la SEC (API XBRL de EDGAR). Incluye tablas financieras de 5 anos, ratios de valuacion en tiempo real, graficas, deteccion de deterioro, red flags, Quality Score 1-10 y veredicto de inversion. Acceso libre. En espanol para Mexico y Latinoamerica.
 
-## Reportes de acciones (67 empresas)
+## Reportes de acciones (68 empresas)
 
+- [Rocket Lab USA Inc. (RKLB)](https://reportes.murzainversiones.com/reporte/RKLB): Analisis financiero de Rocket Lab (RKLB): revenue 601M FY2025 +37%, margen bruto 38%, caja neta 870M, Neutron Q4 2026. Score 6.2/10. Veredicto: Mantener / Especulativo.
 - [Space Exploration Technologies Corp (SpaceX) (SPCX)](https://reportes.murzainversiones.com/reporte/SPCX): Analisis completo del S-1 de SpaceX: revenue $18.67B (+33%), Starlink 10.3M suscriptores, IPO a $175/accion valuacion $1.75T. Riesgos y oportunidades del lanzamiento mas grande de 2026. Veredicto: Especular con Cautela.
 - [Qualcomm Incorporated (QCOM)](https://reportes.murzainversiones.com/reporte/QCOM): Analisis financiero de Qualcomm (QCOM): revenue record de 44.3B en FY2025, FCF de 12.8B, moat de licencias 5G y expansion en automotive e IA on-device. Veredicto: Comprar con Conviccion.
 - [Nike Inc. (NKE)](https://reportes.murzainversiones.com/reporte/NKE): Analisis financiero de Nike (NKE): reset estrategico bajo Elliott Hill, revenue FY2025, FCF, margenes y veredicto de inversion. Veredicto: Mantener/Considerar.
