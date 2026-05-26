@@ -196,26 +196,25 @@ Coca-Cola opera a traves de dos segmentos: operaciones de concentrado (venta de 
 **URL**: https://reportes.murzainversiones.com/reporte/SBUX
 **Publicado**: 2026-05-12
 
-Starbucks Corporation reporto ingresos de $37.18B en FY2025 (+2.8% YoY), pero la utilidad neta se contrajo 50% a $1.86B por costos de reestructuracion y deterioro de margenes operativos. El margen operativo cayo de 15.0% a 7.9%, impulsado por cierres de 627 tiendas, inversiones laborales y deleverage. CEO Brian Niccol ejecuta la estrategia Back to Starbucks con enfoque en experiencia en tienda, simplificacion de menu y renovacion del portfolio. La tesis de inversion es un turnaround — los proximos 2-3 anos determinaran si Niccol puede replicar en SBUX el exito que tuvo en Chipotle.
+Starbucks Corporation (SBUX) es la cadena de cafeterias mas grande del mundo con mas de 40,900 ubicaciones en 86 paises. FY2025 fue un ano de transicion bajo la estrategia Back to Starbucks del CEO Brian Niccol: los ingresos crecieron +2.8% a 37.2B USD, pero el margen operativo se contrajo 710 pbs a 7.9% por reestructuracion y reinversion en personal. Con cotizacion de 101 USD, la accion descuenta una recuperacion de margenes significativa; el catalizador clave es la restauracion de trafico en tiendas.
 
-Starbucks Corporation opera la mayor cadena de cafeterias del mundo con mas de 40,000 tiendas en 88 paises. El modelo combina tiendas operadas directamente (North America e International) con tiendas licenciadas. Starbucks Rewards cuenta con mas de 34 millones de miembros activos en EE.UU., generando mas del 53% de las ventas en tiendas de EE.UU. El moat del negocio es la marca global, la plataforma digital de lealtad y la escala operativa. La compania enfrenta un turnaround bajo CEO Brian Niccol (desde sep 2024), quien implementa Back to Starbucks para recuperar trafico y margenes.
+Starbucks opera en tres segmentos: North America (74% de ingresos), International (21%) y Channel Development (5%). El negocio se divide entre tiendas propias y licenciadas, con la marca como moat central. En FY2025 cerro 627 tiendas en Norteamerica como parte de la reestructuracion. En Q2 FY2026 los ingresos crecieron +8.8% YoY a 9.5B USD con margen operativo de 8.7%, senalando mejora progresiva. La Global Coffee Alliance con Nestle genera regalias de alto margen. China (~10% del negocio) es el mayor riesgo geografico.
 
 **Datos financieros**:
-- Revenue (B USD): 37.18 (+2.8% YoY)
-- Utilidad Neta (B USD): 1.86 (-50.5% YoY)
-- Margen Neto: 5.0% (-5.4pp YoY)
-- EBITDA (B USD): 4.71 (-32.7% YoY)
-- FCF (B USD): 2.44 (-26.5% YoY)
-- EPS Diluido: 1.63 (-50.8% YoY)
-- Deuda Neta (B USD): 12.85 (+4.6% YoY)
+- Revenue (B USD): 9.53 (+8.8% YoY)
+- Utilidad Neta (B USD): 0.51 (+33.1% YoY)
+- Margen Neto: 5.4% (+0.4pp YoY)
+- EBITDA (B USD): N/D (-32.7% YoY)
+- FCF (B USD): N/D (-26.5% YoY)
+- EPS Diluido: 0.45 (+32.4% YoY)
+- Deuda Neta (B USD): 13.55 (+4.6% YoY)
 
-**Valuacion**: P/E Trailing 65.4x, P/E Forward 44.4x, EV/EBITDA 28.5x, P/FCF 49.7x, Deuda Neta/EBITDA 2.73x, FCF Yield 2.0%, ROE N/M
+**Valuacion**: P/E Trailing 77x, P/E Forward 42x, EV/EBITDA 27x, P/FCF 47x, Deuda Neta/EBITDA 2.7x, ROE N/A, ROIC 10.4%
 
-**Veredicto**: Mantener (Score: 6.0/10)
-+ Niccol y Rewards son activos diferenciadores -> El CEO tiene track record probado en turnaround y la plataforma de 34M miembros es irremplazable. Si el playbook de Chipotle funciona, el upside es sustancial desde niveles actuales.
-+ FCF robusto a pesar del turnaround -> $2.44B de FCF en el peor ano operativo demuestra la resiliencia estructural del modelo. Con menores costos de reestructuracion en FY2026, el FCF deberia recuperar a $3.5-4B.
-+ Marca global con escala y moat de lealtad -> 40,000+ tiendas, reconocimiento global y el programa de lealtad mas grande en QSR son moats duraderos que ningun competidor puede replicar rapidamente.
-- Valuacion exigente en etapa critica -> A 44x P/E forward y 28.5x EV/EBITDA, el mercado ya precio parte del exito del turnaround. Si la recuperacion de margenes se retrasa, el riesgo a la baja desde $106 es significativo.
+**Veredicto**: Mantener (Score: 5.8/10)
++ Recuperacion visible -> Q2 FY2026 mostro +8.8% en ingresos y +33% en utilidad neta YoY; si la tendencia se mantiene el EPS FY2026 podria acercarse a 2.40-2.60 USD.
++ Marca con moat profundo -> 40,900 tiendas globales, Starbucks Rewards y la alianza con Nestle generan ventajas competitivas duraderas que ningun competidor puede replicar rapidamente a escala.
+- Valuacion exigente -> A 42x P/E forward y 27x EV/EBITDA el mercado ya descuenta una recuperacion exitosa; si la ejecucion decepciona o China sigue deteriorandose el precio tiene espacio considerable a la baja.
 
 ---
 
