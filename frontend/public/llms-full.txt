@@ -949,30 +949,30 @@ BBB Foods opera Tiendas 3B, cadena de grocery hard discount en Mexico con 850-90
 
 ---
 
-### CMG — Chipotle Mexican Grill Inc.
+### CMG — Chipotle Mexican Grill, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/CMG
 **Publicado**: 2026-04-20
 
-Chipotle Mexican Grill es la cadena de restaurantes de servicio rapido premium mas exitosa de EE.UU., con mas de 3,700 restaurantes y una marca construida sobre la autenticidad de ingredientes frescos. En FY2025 reporto ingresos de 11.87B USD (+5.5% YoY) con ligera compresion de margenes vs FY2024. Q1 2026 (reportado el 22-abr) fue decepcionante: Revenue de 2.88B (-3.6% YoY), comp sales de -0.4%, reflejando debilidad del consumidor discrecional y dificultades de trafico. El CEO Brian Niccol paso a Starbucks en 2024 y la transicion de liderazgo agrega incertidumbre. La valuacion a P/E 30x forward descuenta recuperacion que aun no se ve en los numeros.
+Chipotle Mexican Grill es la cadena de restaurantes fast-casual mexicana mas grande de EE.UU., con 4,042 restaurantes al cierre de 2025. Su modelo sin franquicias, margen operativo del 16.3% y balance sin deuda lo distinguen del sector. En 2025, el revenue crecio 5.4% a $11.93B pero comp sales cayeron 1.7% y el Q1 2026 mostro fuerte compresion de margenes (-17% en ingreso operativo YoY), lo que explica la caida del 45% en el precio desde su maximo de 52 semanas. A los precios actuales, CMG cotiza a 23.6x utilidades forward, descontando parte del deterioro pero asumiendo recuperacion de trafico en H2 2026.
 
-Chipotle opera exclusivamente en el segmento de restaurantes mexicanos fast-casual. Su modelo: restaurantes sin franquicias (100% company-owned), ingredientes frescos preparados en el restaurant (Food with Integrity), menu simple de alta personalización. El moat es la marca de confianza en calidad y el modelo economico por unidad: restaurantes de 1.0-1.5M USD de costo de construccion con AUV (Average Unit Volume) de ~3.2M USD y margenes de nivel de restaurante del 26%. El pipeline de crecimiento incluye expansion digital (Chipotlane drive-thru), expansion internacional y formato Chipotle Dine-In.
+Chipotle opera un unico segmento de restaurantes de comida casual de servicio rapido bajo el nombre Chipotle Mexican Grill. El menu incluye burritos, bowls, tacos, quesadillas y ensaladas con ingredientes frescos. El modelo es company-owned (sin franquicias en EE.UU.), lo que otorga control total de la experiencia. Diferenciador clave: Food with Integrity (ingredientes responsablemente obtenidos, sin aditivos artificiales). Chipotlane (drive-through digital) esta en el 80% de las nuevas aperturas; el canal digital representa 36.7% de las ventas. Opera en EE.UU. (97% del revenue), Canada, Reino Unido, Europa y Medio Oriente via socios.
 
 **Datos financieros**:
-- Revenue (B USD): 11.87 (+5.5% YoY)
-- Utilidad Neta (B USD): 1.54 (+0.1% YoY)
-- Margen Neto: 12.9% (-0.7pp YoY)
-- EBITDA (B USD): 2.30 (+2.2% YoY)
-- FCF (B USD): 1.45 (-4.0% YoY)
-- EPS Diluido: 1.14 (+2.7% YoY)
-- Deuda Neta (B USD): -0.35 (+53.3% YoY)
+- Revenue (B USD): 3.09 (+5.5% YoY)
+- Utilidad Neta (B USD): 0.30 (+0.7% YoY)
+- Margen Neto: 9.8% (-0.6pp YoY)
+- EBITDA (B USD): 0.49 (+2.2% YoY)
+- FCF (B USD): 0.47 (-4.0% YoY)
+- EPS Diluido: 0.23 (+3.6% YoY)
+- Deuda Neta (B USD): -0.87 (N/A YoY)
 
-**Valuacion**: P/E Trailing 28.9x, P/E Forward 30.0x, EV/EBITDA 19.1x, P/FCF 30.5x, Deuda Neta/EBITDA -0.15x (caja neta), ROE 34.1%, ROIC 35.1%
+**Valuacion**: P/E Trailing 29.5x, P/E Forward 23.6x, EV/EBITDA 18.6x, P/FCF 29.7x, Deuda Neta/EBITDA Caja Neta, ROE 54.4%, ROIC 58.7%
 
 **Veredicto**: Mantener (Score: 6.8/10)
-+ Unit economics superior — AUV de 3.2M USD con costo de construccion de 1.1-1.4M genera payback en 2.5-3 anos y ROIC de 35%+, uno de los mejores del sector de restaurantes.
-+ Balance impecable — Sin deuda financiera, caja neta de 350M y FCF de 1.45B permiten expansion + recompras agresivas (2.43B en FY2025) sin estres financiero.
-- Q1 2026 decepcionante y liderazgo en transicion — Comp sales de -0.4% vs expectativa de +3%. Perdida de CEO Brian Niccol (ahora en Starbucks) crea incertidumbre operativa. Stock -40% desde maximos.
-- Valuacion premium con crecimiento desacelerado — P/E forward de 30x descuenta recuperacion de trafico que aun no se materializa. A 20x forward (multiplo conservador QSR), precio objetivo seria ~22 USD, -33% desde niveles actuales.
++ Balance impecable y ROIC >50% -> Cero deuda neta, 2.43B en recompras en 2025 y ROIC del 58.7% demuestran la calidad estructural del modelo a largo plazo.
++ Chipotlane como motor estructural -> 80% de nuevas aperturas con drive-through digital y 36.7% de ventas digitales posicionan a CMG para capturar conveniencia vs. competidores.
++ Valuacion comprimida vs historico -> A 23.6x P/E forward (vs. 40-55x en peak) el mercado ya descuenta deterioro; si el trafico se estabiliza en H2 2026 hay re-rating significativo.
+- Compresion de margenes en 2026 -> Q1 2026 con OI -17% YoY y comp sales guiadas cerca de cero sugieren que el EPS forward de 1.36 puede ser optimista si costos laborales no ceden.
 
 ---
 
