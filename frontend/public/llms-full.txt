@@ -385,32 +385,30 @@ McDonald's Corporation es el operador de la cadena de restaurantes de comida rap
 
 ---
 
-### BLK — BlackRock Inc.
+### BLK — BlackRock, Inc.
 **URL**: https://reportes.murzainversiones.com/reporte/BLK
 **Publicado**: 2026-05-12
 
-BlackRock es el mayor gestor de activos del mundo con mas de $11.5 billones en AUM, respaldado por su plataforma iShares de ETFs y el sistema de gestion de riesgo Aladdin. En FY2024 registro ingresos de $20.41B (+14.3% YoY), utilidad neta de $6.37B (+15.8%) y EPS GAAP de $42.01, reflejando expansion de margenes y crecimiento organico sostenido. El modelo capital-light, con margenes operativos superiores al 37%, y las adquisiciones estrategicas en mercados privados (GIP, HPS, Preqin) consolidan a BLK como una de las franquicias financieras mas solidas del mundo: veredicto COMPRAR CON CONVICCION.
+BlackRock es la mayor gestora de activos del mundo con $14 billones de AUM a diciembre de 2025. Con la adquisicion de GIP (oct 2024) y HPS (jul 2025), transformo su mezcla de negocios hacia mercados privados y credito alternativo, lo que explica la expansion de ingresos de $20.4B a $24.2B en FY2025. La utilidad neta se contrajo a $5.55B (vs $6.37B en 2024) por los costos de integracion y la amortizacion de intangibles de las adquisiciones. El balance es solido con deuda neta de solo $1.3B frente a un EBITDA de $7.35B; la valuacion de 30x P/E trailing refleja una prima por el posicionamiento dominante, aunque la presion de margenes es el principal riesgo a monitorear.
 
-BlackRock, Inc. es el mayor gestor de activos del mundo, con mas de $11.5 trillones en activos bajo administracion al cierre de 2024. Fundada en 1988 y con sede en Nueva York, BlackRock ofrece gestion de inversiones en renta fija, renta variable, multi-activos y alternativos para clientes institucionales, minoristas y soberanos en todo el mundo. Su plataforma iShares es el mayor proveedor de ETFs a nivel global. La tecnologia Aladdin (Asset, Liability, Debt and Derivative Investment Network) es utilizada por mas del 7% de los activos financieros globales y genera ingresos recurrentes de tecnologia. El modelo de negocio capital-light basa sus ingresos en comisiones de gestion sobre AUM, lo que genera altos margenes y elevada conversion de caja. Las adquisiciones de Global Infrastructure Partners (GIP), HPS Investment Partners y Preqin en 2024-2025 aceleran la expansion en mercados privados.
+BlackRock opera tres segmentos principales: gestion de activos (investment advisory y administration fees, la mayoria de los ingresos), tecnologia financiera (plataforma Aladdin para gestion de riesgo e inversiones, ~$1.6B en fees) y mercados privados (infraestructura via GIP, credito alternativo via HPS). La empresa administra ETFs iShares (lider global), fondos de pension, soberanos y minoristas en mas de 100 paises. Su moat combina economias de escala en indices/ETFs, el ecosistema Aladdin con mas de 300 firmas institucionales como clientes cautivos y el prestigio de marca que atrae flujos netos positivos incluso en entornos adversos.
 
 **Datos financieros**:
-- Revenue ($B): 20.41 (+14.3% YoY)
-- Utilidad Neta ($B): 6.37 (+15.8% YoY)
-- Margen Neto (%): 31.2% (+0.4pp YoY)
-- EBITDA ($B): 7.84 (+19.9% YoY)
-- FCF ($B): 4.7 (+22.7% YoY)
-- EPS (GAAP): 42.01 (+15.1% YoY)
-- Deuda Neta ($B): -0.45 (-0.37B YoY)
+- Revenue (B USD): 6.70 (+18.7% YoY)
+- Utilidad Neta (B USD): 2.21 (-12.9% YoY)
+- Margen Neto: 33.0% (-8.3pp YoY)
+- EBITDA (B USD): 2.81 (-6.2% YoY)
+- FCF (B USD): N/D (-24.5% YoY)
+- EPS Diluido: 14.06 (-16.0% YoY)
+- Deuda Neta (B USD): 2.91 (N/D YoY)
 
-**Valuacion**: P/E Ratio 27.3x, P/E Forward 17.9x, EV/EBITDA 22.5x, P/FCF 35.8x, Deuda/EBITDA 1.57x, ROE 11.9%, ROIC 9.2%
+**Valuacion**: P/E Trailing 30.5x, P/E Forward 19.2x, EV/EBITDA 24.3x, P/FCF 49.9x, Deuda Neta/EBITDA 0.18x, ROE 9.9%, ROIC 9.6%
 
-**Veredicto**: Comprar con Conviccion (Score: 8.5/10)
-+ Monopolio de facto en ETFs -> iShares con >$4T en AUM y 37% de market share global crea una barrera de entrada basada en liquidez, marca y primero en moverse que es practicamente imposible de replicar en una decada.
-+ Aladdin stickiness -> La plataforma de riesgo procesa $21T en activos de clientes externos con tasas de retencion del 95%+. Genera ingresos de tecnologia recurrentes que crecen a doble digito independientemente del ciclo de mercado.
-+ Expansion en mercados privados -> Las adquisiciones de GIP, HPS y Preqin transforman a BlackRock en el unico gestor de activos con capacidades de primer nivel en infraestructura, credito privado, ETFs pasivos y tecnologia de riesgo simultaneamente.
-+ Crecimiento acelerado de EPS -> EPS GAAP de $42.01 en FY2024 (+15.1% YoY) y estimado forward de $60.66 implican un crecimiento de EPS del 44% en el proximo ejercicio segun consenso de analistas, que refleja sinergias de las adquisiciones.
-- Dependencia de mercados financieros -> Si los mercados caen 20%, el AUM y los ingresos caen proporcionalmente. En FY2022 el revenue cayo 7.7% por la caida de mercados. La expansion en alternativos mitiga pero no elimina este riesgo.
-- P/FCF elevado de 35.8x -> El P/FCF actual refleja expectativas de crecimiento muy optimistas que deben materializarse. Si las sinergias de las adquisiciones tardan o los mercados corrigen, la valoracion actual deja poco margen de seguridad.
+**Veredicto**: Mantener con sesgo positivo (Score: 7.8/10)
++ Moat de escala irrompible -- Con $14T en AUM e iShares liderando ETFs globalmente, las ventajas de costo son irreplicables; cada dolar adicional de AUM genera fee revenue casi sin costo marginal, creando expansion de margenes secular.
++ Transformacion hacia mercados privados -- GIP y HPS agregan $260B+ en AUM con fee rates 3-5x superiores a ETFs; si la integracion es exitosa, el mix shift mejorara el revenue por dolar de AUM de forma estructural en los proximos 3-5 anos.
++ Aladdin como negocio semi-independiente -- La plataforma genera $1.6B+ en tech services revenue con alto margen y switching costs; representa un optionality significativo que el mercado no siempre valora explicitamente.
+- Presion de margenes y dilucion en transicion -- La amortizacion de intangibles de HPS (~$5.7B) y la emision de acciones comprimeran EPS y ROE durante 2025-2027; el P/FCF de ~50x requiere confirmacion de sinergias para justificarse.
 
 ---
 
