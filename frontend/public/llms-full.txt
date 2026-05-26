@@ -445,26 +445,26 @@ UnitedHealth Group opera a traves de dos segmentos principales. UnitedHealthcare
 **URL**: https://reportes.murzainversiones.com/reporte/BAC
 **Publicado**: 2026-05-12
 
-Bank of America reporto ingresos de $105.9B en FY2024 (+3.0% YoY) con utilidad neta de $27.0B y EPS diluido de $3.19. El banco mantiene solida rentabilidad con ROE de 10.6% y una base de depositos de $1.9 trillion, aunque la compresion del NIM y la ciclicidad bancaria representan riesgos en un entorno de tasas a la baja. Veredicto: Mantener con sesgo positivo a largo plazo por escala inigualable y diversificacion de ingresos.
+Bank of America es uno de los bancos mas grandes del mundo, con activos totales de 3.4 billones de dolares y presencia en consumo, banca corporativa, gestion de patrimonio y mercados globales. En FY2025 reporto ingresos de 113.1 mil millones (+6.8% YoY) y utilidad neta de 30.5 mil millones (+13.1% YoY), impulsado por expansion en ingresos por intereses netos y crecimiento en wealth management. El banco cotiza a 10.3x P/E forward con ROE de 10.6% y ROTCE de 14.2%, ofreciendo valuacion atractiva frente a sus pares y dividendo creciente del 2.2%.
 
-Bank of America Corporation es el segundo banco mas grande de Estados Unidos por activos totales (~$3.3 trillion) y el mayor en banca de consumo. Opera a traves de cuatro segmentos: Consumer Banking (cuentas corrientes, hipotecas, tarjetas), Global Wealth and Investment Management con Merrill Lynch (~$4.2T en activos bajo gestion), Global Banking (prestamos corporativos, banca de inversion) y Global Markets (trading de renta fija, acciones y derivados). Su red incluye mas de 3,700 sucursales y 15,000 cajeros en EEUU.
+Bank of America opera a traves de cuatro segmentos: Consumer Banking (cuentas, tarjetas, hipotecas), Global Wealth & Investment Management (Merrill Lynch + Private Bank con 4.0T en activos de clientes), Global Banking (prestamos corporativos, banca de inversion) y Global Markets (trading FICC y equities). La escala del banco otorga ventajas de costo significativas: depositos de bajo costo de 2.0 billones, red de 3,800+ sucursales y 15,000+ cajeros. Su fosa competitiva se basa en la escala de depositos, fidelizacion multiproducto y liderazgo en banca de inversion institucional.
 
 **Datos financieros**:
-- Revenue ($B): 105.86 (+3.0% YoY)
-- Utilidad Neta ($B): 26.97 (+2.5% YoY)
-- Margen Neto (%): 25.5% (-0.1pp YoY)
-- EBITDA ($B): 41.23 (+5.8% YoY)
-- FCF ($B): -12.71 (n/a YoY)
-- EPS (GAAP): 3.19 (+4.6% YoY)
-- Deuda Neta ($B): -6.83 (n/m YoY)
+- Revenue (B USD): 30.27 (+6.8% YoY)
+- Utilidad Neta (B USD): 8.58 (+13.1% YoY)
+- Margen Neto: 28.3% (+1.5pp YoY)
+- EBITDA (B USD): N/D (+10.9% YoY)
+- FCF (B USD): N/D (+14.3% YoY)
+- EPS Diluido: 1.11 (+19.4% YoY)
+- Deuda LP (B USD): N/D (+12.2% YoY)
 
-**Valuacion**: P/E Ratio 12.6x, P/E Forward 10.0x, EV/EBITDA 8.2x, P/FCF 8.7x, Deuda/EBITDA -0.2x, ROE 10.6%, ROA 0.93%
+**Valuacion**: P/E Trailing 12.9x, P/E Forward 10.3x, EV/EBITDA 10.0x, P/FCF 12.6x, P/Book 1.3x, ROE 10.6%, ROTCE 14.2%
 
-**Veredicto**: Mantener (Score: 7.0/10)
-+ Escala inigualable -> Con $3.3T en activos y la mayor base de depositos consumer de EEUU, BAC tiene ventajas competitivas estructurales que se traducen en costo de fondeo bajo y poder de distribucion sin rival.
-+ Merrill Lynch wealth management -> El segmento GWIM con $4.2T en activos gestionados genera ingresos por comisiones estables y de alta calidad, diversificando los ingresos del ciclo de tasas de interes.
-+ Valuacion atractiva y capital return -> Con P/E forward de 10x y $22.6B devueltos al accionista en FY2024 (recompras + dividendos), BAC ofrece propuesta de valor solida para inversores de largo plazo.
-- Ciclicidad bancaria y sensibilidad a tasas -> El principal riesgo es la combinacion de compresion de NIM en entorno de tasas bajas y el potencial aumento de provision en una recesion, lo que puede presionar ganancias en 2025-2026.
+**Veredicto**: Comprar con Conviccion (Score: 7.2/10)
++ Valuacion muy atractiva -> A 10.3x P/E forward y 1.3x P/Book, BAC cotiza con descuento frente a su historial y pares. El mercado subestima la capacidad de expansion del ROTCE hacia el 15-16% objetivo.
++ Momentum en NII y earnings -> NII crece +7.1% en 2025 y +9.0% en Q1 2026 por repricing de activos. EPS subio 19.4% en 2025 y Q1 2026 mostro EPS de 1.11 vs 0.89 (+24.7%).
++ Devolucion de capital record -> Recompras de 21.4B en 2025 con CET1 del 11.8%. El banco tiene capacidad de continuar reduciendo share count en 2026.
+- Brecha de rentabilidad vs pares -> ROTCE del 14.2% vs JPMorgan ~25% y eficiencia 61.65% reflejan ventaja competitiva menor. La convergencia al objetivo del 15-16% es el principal riesgo de ejecucion.
 
 ---
 
