@@ -277,28 +277,26 @@ ServiceNow opera una plataforma cloud de gestion de flujos de trabajo (workflow 
 **URL**: https://reportes.murzainversiones.com/reporte/JNJ
 **Publicado**: 2026-05-12
 
-Johnson & Johnson (JNJ) es un conglomerado de salud de primer nivel que opera en dos segmentos: Innovative Medicine (pharma) y MedTech. Tras el spin-off de Kenvue (segmento consumer: Band-Aid, Tylenol, Neutrogena) en agosto de 2023, JNJ es una empresa enfocada en pharma de alto margen y dispositivos medicos, con ingresos FY2024 de $88.8B (+4.3% vs FY2023) y FCF de $19.8B. Dividend aristocrat con 60+ anos de incrementos consecutivos de dividendo; el principal riesgo a corto plazo es la erosion de Stelara por biosimilares en 2025.
+Johnson & Johnson es uno de los conglomerados de salud mas grandes del mundo, con operaciones en Medicamentos Innovadores (Oncologia, Inmunologia, Neurociencia) y MedTech (dispositivos medicos). Con ingresos de 94.2B USD en FY2025 y un historial de 62 anos consecutivos de incremento de dividendo, JNJ representa una de las empresas de healthcare mas resilientes del mercado. La accion cotiza a 230.68 USD con un P/E forward de 21.8x y FCF yield de 3.5%, ofreciendo una combinacion de crecimiento y estabilidad atractiva para inversionistas a largo plazo.
 
-Johnson & Johnson es una de las empresas de salud mas grandes del mundo. Post spin-off de Kenvue (agosto 2023), opera exclusivamente en dos segmentos: Innovative Medicine (pharma: Darzalex oncologia de rapido crecimiento, Stelara inmunologia, Tremfya, Erleada, Carvykti CAR-T) y MedTech (ortopedia, cirugia cardiovascular via Shockwave Medical, electrofisiologia, vision). La compania mantiene calificacion crediticia AAA, genera FCF consistente superior a $19B anuales, y ha incrementado su dividendo cada ano desde 1963 -- mas de 60 anos consecutivos de crecimiento de dividendo.
+JNJ opera en dos segmentos: Innovative Medicine (~65% de ingresos) con productos lideres como DARZALEX (mieloma multiple), TREMFYA, ERLEADA y CARVYKTI; y MedTech (~35%) en cirugia, ortopedia y cardiovascular. Tras la escision de Kenvue en 2023, JNJ se enfoca en medicamentos de alto margen y dispositivos medicos de alto valor. La empresa cuenta con un pipeline de mas de 90 moleculas en desarrollo y una posicion dominante en hematologia y oncologia. Su modelo de negocio diversificado, con exposicion a mas de 175 paises, proporciona resiliencia ante ciclos economicos y moat estructural por patentes, escala regulatoria y fuerza comercial global.
 
 **Datos financieros**:
-- Revenue ($B)*: 88.82 (+4.3% YoY)
-- Utilidad Neta ($B)**: 14.07 (-60.0% YoY)
-- Margen Neto (%): 15.8% (-25.5pp YoY)
-- Gross Profit ($B)***: 61.35 (+4.7% YoY)
-- Margen Bruto (%): 69.1% (+0.3pp YoY)
-- EBITDA ($B): 28.59 (-3.1% YoY)
-- FCF ($B): 19.84 (+8.7% YoY)
-- EPS GAAP: 5.79 (-57.8% YoY)
-- Deuda Neta ($B): 8.3 (+51.2% YoY)
+- Revenue (B USD): 24.06 (+6.0% YoY)
+- Utilidad Neta (B USD): 5.24 (+90.5% YoY)
+- Margen Neto: 21.8% (+12.7pp YoY)
+- EBITDA (B USD): N/D (+15.8% YoY)
+- FCF (B USD): 1.47 (-0.7% YoY)
+- EPS Diluido: 2.14 (+90.5% YoY)
+- Deuda Neta (B USD): N/D (+161.8% YoY)
 
-**Valuacion**: P/E Trailing (Adj) 26.3x, P/E Forward 17.9x, EV/EBITDA 19.8x, P/FCF 27.5x, Deuda/EBITDA 0.29x, ROE 26.4%, ROIC 17.4%
+**Valuacion**: P/E Trailing 20.9x, P/E Forward 21.8x, EV/EBITDA 17.6x, P/FCF 28.4x, Deuda Neta/EBITDA 0.7x, ROE 35.0%, ROIC 20.4%
 
-**Veredicto**: Mantener (Score: 7.5/10)
-+ Pipeline oncologico --> Darzalex $11B+ y creciendo +19% YoY, Carvykti CAR-T en expansion: JNJ tiene uno de los pipelines de mayor calidad en la industria farmaceutica global.
-+ Balance AAA + dividendo indestructible --> Net Debt/EBITDA de 0.29x, caja $24B, y 60+ anos de incrementos consecutivos de dividendo proporcionan una base de retorno solida independientemente de la cotizacion.
-+ MedTech cardiovascular en expansion --> La adquisicion de Shockwave Medical posiciona a JNJ como lider en litotripsia intravascular. Electrofisiologia con ablacion cardiaca es un mercado de alto crecimiento secular.
-- Stelara cliff + litigios talco --> La perdida de exclusividad de Stelara (~$6.5B ya en FY2024, vs $10B en FY2023) sera el mayor headwind de FY2025-2026. Los litigios talco agregan incertidumbre al flujo de caja disponible.
+**Veredicto**: Comprar con Conviccion (Score: 7.8/10)
++ DARZALEX + pipeline oncologia - Motor de crecimiento sostenible con DARZALEX en 11B USD creciendo 20% YoY y CARVYKTI en escala acelerada. El portafolio reduce dependencia de un producto y da visibilidad a 5+ anos.
++ Balance AAA + Dividend King - Con 62 anos de incremento de dividendo y ND/EBITDA de 0.7x, JNJ combina retorno de capital disciplinado con flexibilidad financiera para M&A estrategico.
++ Valuacion razonable - A 20.9x P/E trailing y 3.5% FCF yield, JNJ cotiza con descuento respecto a su premium historico. El FCF yield supera el treasury de 10 anos, ofreciendo margen de seguridad real.
+- Litigio de talco + erosion STELARA - El riesgo legal podria generar evento de cola negativo si se rechaza el plan Chapter 11. Combinado con caida de STELARA en 2026-2027, el EPS forward podria revisarse a la baja.
 
 ---
 
