@@ -331,26 +331,26 @@ Schwab opera dos segmentos: Investor Services (brokerage retail, advisory, banki
 **URL**: https://reportes.murzainversiones.com/reporte/GS
 **Publicado**: 2026-05-12
 
-Goldman Sachs Group Inc. (GS) es el banco de inversion mas reconocido del mundo, con liderazgo global en asesoria de M&A, mercados de capitales, trading de renta fija y variable, y gestion de activos. En FY2025 registro net revenues de $58.28B (+8.9% YoY) y utilidad neta de $17.18B (+20.3% YoY), con EPS diluido de $51.32, superando ampliamente el ciclo de contraccion de 2023. El ROE de 13.7% refleja una recuperacion solida post-estrategia Marcus. Veredicto: mantener con sesgo positivo ante el ciclo favorable de banking y trading.
+Goldman Sachs (GS) es la institucion financiera global lider con 156 anos de historia, especializada en banca de inversion, intermediacion de mercados y gestion de activos. En 2025 genero ingresos netos de 58.3B USD y utilidad neta de 17.2B USD, su segundo mejor resultado historico. La firma se beneficia de mercados de capitales activos, un ciclo de M&A en recuperacion y la expansion sostenida de Asset & Wealth Management. El P/E forward de ~17x es atractivo para una firma de esta calidad con momentum de crecimiento de EPS del +26.6% YoY en 2025.
 
-Goldman Sachs opera en tres segmentos: Global Banking & Markets (banca de inversion, FICC, equities y origination), Asset & Wealth Management (fondos alternativos, gestion patrimonial), y Platform Solutions (tarjetas de credito, prestamos al consumo en reduccion). El modelo de negocio de GS se distingue por su capacidad para capturar fees en transacciones de alto valor (IPOs, M&A, debt issuance) y por sus operaciones de trading que generan ingresos en mercados volatiles. A diferencia de bancos comerciales, la metrica primaria es el ROE sobre equity, no el margen bruto. GS compite directamente con JPMorgan, Morgan Stanley, Bank of America Merrill Lynch y boutiques de elite como Evercore y Lazard en advisory.
+Goldman Sachs opera en tres segmentos: Global Banking & Markets (IB advisory, underwriting, FICC, Equities), Asset & Wealth Management (gestion de fondos, banca privada, incentive fees) y Platform Solutions (tarjetas Apple Card en transicion). GBM es el motor principal con revenues de ~40B en 2025. La firma tiene presencia global en todos los grandes centros financieros y sirve a corporaciones, gobiernos, instituciones financieras y clientes de alto patrimonio. Su ventaja competitiva es su red de relaciones institucionales, talento humano de primer nivel y reputacion como advisor en las transacciones mas complejas del mundo.
 
 **Datos financieros**:
-- Revenue (B USD): 58.28 (+8.9% YoY)
-- Utilidad Neta (B USD): 17.18 (+20.3% YoY)
-- Margen Neto: 29.5% (+2.8pp YoY)
-- EBITDA (B USD): 19.36 (+16.1% YoY)
-- FCF (B USD)*: -47.21 (n/a YoY)
-- EPS Diluido: 51.32 (+26.6% YoY)
-- Deuda Neta (B USD): 121.24 (+100.2% YoY)
+- Revenue Neto (B USD): 17.2 (+9.0% YoY)
+- Utilidad Neta (B USD): 5.6 (+20.3% YoY)
+- Margen Neto: 32.6% (+2.8pp YoY)
+- EBITDA (B USD): N/D (+15.3% YoY)
+- FCF ajustado (B USD): 5.6 (+20.3% YoY)
+- EPS Diluido: 17.55 (+26.6% YoY)
+- Deuda LT (B USD): N/D (+17.7% YoY)
 
-**Valuacion**: P/E Trailing 18.1x, P/E Forward 16.9x, EV/EBITDA 21.5x, P/Book 2.36x, Deuda/EBITDA 6.3x, ROE 13.7%, ROIC 7.0%
+**Valuacion**: P/E Trailing 19.2x, P/E Forward 17.0x, EV/EBITDA 14.4x, P/NI (FCF proxy) 17.0x, Capital CET1 14.3%, ROE 15.0%, ROIC 15.2%
 
-**Veredicto**: Mantener (Score: 7.6/10)
-+ Liderazgo en IB en ciclo favorable -> Con la reapertura del mercado de M&A y ECM post-2023, GS captura fees premium; el revenue y EPS de FY2025 establecen nuevos records post-pandemia.
-+ Retorno de capital record -> $12.36B en recompras en FY2025 reducen el share count al ritmo mas rapido en anos, amplificando el EPS per share y creando valor acelerado para accionistas de largo plazo.
-+ AWM en crecimiento estrategico -> La expansion en alternativos y wealth management de alto margen diversifica los revenues hacia fuentes mas estables y reduce la dependencia del ciclo de trading.
-- Ciclicidad y valuacion premium -> A 18.1x P/E trailing y 2.36x P/Book, GS cotiza con prima sobre peers bancarios; una contraccion del ciclo de IB o endurecimiento regulatorio podrian comprimir multiples y afectar el ROE objetivo de >15%.
+**Veredicto**: Comprar con Conviccion (Score: 7.6/10)
++ Franchise premium defensible -> GS tiene una posicion de mercado en banca de inversion que ninguna firma puede replicar en una decada. El retorno del ciclo M&A y el boom en Equities post-2023 impulsan earnings a nuevos maximos historicos.
++ Buybacks acelerados amplian EPS -> 12.4B recomprados en 2025 (-5.7% shares YoY) convierte el crecimiento de NI en crecimiento de EPS amplificado. Con CET1 del 14.3%, hay capital excedente para continuar el programa.
++ Q1 2026 confirma momentum sostenido -> EPS de 17.55 en Q1 (+24.3% YoY) y revenue de 17.2B (+13.9% YoY) confirman que la recuperacion es estructural. El backlog de IB sigue creciendo segun management.
+- Riesgo ciclico material -> GS es un barometro de Wall Street; una recesion puede reducir revenues 20-25% rapidamente como en 2022-2023. Inversionistas deben tolerar alta volatilidad intraciclica.
 
 ---
 
