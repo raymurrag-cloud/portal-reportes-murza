@@ -412,26 +412,26 @@ BlackRock opera tres segmentos principales: gestion de activos (investment advis
 **URL**: https://reportes.murzainversiones.com/reporte/UNH
 **Publicado**: 2026-05-12
 
-UnitedHealth Group es la empresa de salud mas grande del mundo por ingresos, con ~$400B en revenue en FY2024 y un modelo unico que combina seguros de salud (UnitedHealthcare) con servicios de salud integrados (Optum). FY2024 fue un ano de presion excepcional: el ciberataque a Change Healthcare causo disrupciones masivas en claims processing, y el Medical Loss Ratio se elevatero impactando la rentabilidad del segmento asegurador. Con EPS GAAP de $15.51 (-35% YoY) y net income de $14.4B, el resultado puntual deteriora la foto anual, pero el negocio estructural permanece intacto. Veredicto: Mantener — empresa de calidad con viento en contra transitorio y FCF de $20.7B, pero con riesgos regulatorios y de MLR a monitorear.
+UnitedHealth Group es el mayor operador de seguros de salud y servicios clinicos de EE.UU., con dos negocios complementarios: UnitedHealthcare (49M+ miembros) y Optum (servicios clinicos, analytics y farmacia). En FY2025 los ingresos crecieron +11.8% a 447.6B USD, pero la utilidad neta cayo -16.3% a 12.1B por un MCR elevado (>89%), cargos de reestructuracion de 2.5B y reservas adicionales del ciberataque de Change Healthcare. La accion cotiza a 379 USD con P/E forward de 12.8x, el menor en mas de una decada, ofreciendo un punto de entrada asimetrico para inversores con horizonte de 2-3 anos y tolerancia al riesgo regulatorio.
 
-UnitedHealth Group opera a traves de dos segmentos principales. UnitedHealthcare es el mayor asegurador de salud de EE.UU., con mas de 50 millones de miembros cubiertos en planes comerciales, Medicare Advantage, Medicaid y beneficios globales. Optum es la unidad de servicios de salud y representa +50% del operating income: incluye OptumRx (pharmacy benefit management, tercer mayor PBM de EE.UU.), OptumHealth (atencion primaria y clinicas), y OptumInsight (analisis de datos, tecnologia y servicios de revenue cycle). La ventaja competitiva central reside en la integracion vertical: UNH canaliza clientes del seguro a servicios Optum, creando un flywheel de data clinica, menores costos y mejor experiencia. El revenue de Optum (~$230B incluyendo las operaciones internas) supero al de la division de seguros en 2024, consolidando la transformacion del modelo de negocio.
+UnitedHealth opera cuatro segmentos: Optum Health (atencion medica basada en valor, 50k+ medicos propios), Optum Insight (analytics clinico y tecnologia de salud, incluye Change Healthcare), Optum Rx (PBM con 90M+ vidas), y UnitedHealthcare (seguros comerciales, Medicare Advantage y Medicaid). El modelo integrado verticalmente captura margen en cada eslabon del ciclo de salud: asegurar, proveer, analizar y dispensar. Los ingresos de primas representan ~80% del total. En 2026 realiza reestructuracion para concentrarse en negocios de mayor ROIC.
 
 **Datos financieros**:
-- Revenue ($B): 400.28 (+7.7% YoY)
-- Utilidad Neta ($B): 14.41 (-35.6% YoY)
-- Margen Neto (%): 3.6% (-2.4pp YoY)
-- EBITDA ($B): 36.39 (+0.2% YoY)
-- FCF ($B): 20.7 (-19.4% YoY)
-- EPS (GAAP): $15.51 (-35.0% YoY)
-- Deuda Neta ($B): 50.87 (+41.1% YoY)
+- Revenue (B USD): 111.7 (+11.8% YoY)
+- Utilidad Neta (B USD): 6.28 (-16.3% YoY)
+- Margen Neto: 5.6% (-0.9pp YoY)
+- EBITDA (B USD): 10.1 (-35.9% YoY)
+- FCF (B USD): 8.15 (-22.3% YoY)
+- EPS Diluido: 6.90 (-14.7% YoY)
+- Deuda Neta (B USD): 43.4 (1.9% YoY)
 
-**Valuacion**: P/E Trailing 29.4x, P/E Forward 18.8x, EV/EBITDA 11.1x, P/FCF 17.1x, Deuda Neta/EBITDA 1.40x, ROE 12.2%, ROIC 16.2%
+**Valuacion**: P/E Trailing 28.6x, P/E Forward 12.8x, EV/EBITDA 16.8x, P/FCF 21.4x, Deuda Neta/EBITDA 2.06x, ROE 12%, ROIC 13.4%
 
-**Veredicto**: Mantener (Score: 7.5/10)
-+ Modelo dual UHC + Optum -> La integracion vertical de seguros y servicios de salud crea un moat casi inexpugnable: datos clinicos, escala en PBM y atencion primaria posicionan a UNH como el operador de salud mas completo de EE.UU., con Optum creciendo a mayor velocidad y mejor margen que el segmento asegurador.
-+ FCF masivo y retorno consistente -> Incluso en el peor ano operativo de la decada ($20.7B FCF), UNH recompro $9B en acciones y pago $7.5B en dividendos. La disciplina de capital allocation en contextos adversos es una senal de calidad del management y solidez estructural del negocio.
-+ Valuacion atractiva post-shock -> P/E Forward de 18.8x y EV/EBITDA de 11.1x representan descuentos significativos vs el sector salud y el mercado en general, compensando parcialmente los riesgos de MLR y regulacion. El mercado ya precio el impacto de Change Healthcare.
-- MLR y riesgo regulatorio persisten -> Si el Medical Loss Ratio no se normaliza en 2025 o si CMS reduce adicionalmente los reembolsos de Medicare Advantage, el EPS forward de $20.75 estaria en riesgo. La muerte del CEO en 2024 y el escrutinio politico al modelo integrado de UNH agregan incertidumbre que justifica un multiple de descuento.
+**Veredicto**: Mantener con Sesgo Positivo (Score: 6.4/10)
++ Valuacion historicamente baja -> A 12.8x P/E forward y 4.7% FCF yield, el mercado no esta pagando por la franquicia de Optum ni por la recuperacion del MCR. El descuento del 30% frente al historico ofrece asimetria positiva para inversores de largo plazo.
++ Escala y modelo integrado irreplicables -> 447B USD en ingresos, 49M asegurados y 90M vidas en Optum Rx crean una posicion competitiva que ningun nuevo entrante puede construir en menos de una decada.
++ Q1 2026 muestra estabilizacion -> EPS de 6.90 con ingresos +2.0% YoY y FCF de 8.15B indica que los cargos extraordinarios de 2025 no se repetiran, sentando base para recuperacion de margenes en H2 2026.
+- Riesgo regulatorio y legal material -> La investigacion del DOJ y la presion bipartidista sobre Medicare Advantage y PBMs representan el mayor riesgo de re-rating negativo permanente.
 
 ---
 
