@@ -169,26 +169,26 @@ Nike Inc. disenya, desarrolla y comercializa calzado atletico, ropa y equipo dep
 **URL**: https://reportes.murzainversiones.com/reporte/KO
 **Publicado**: 2026-05-12
 
-The Coca-Cola Company es el gigante defensivo de las bebidas globales, presente en mas de 200 paises con mas de 62 anos consecutivos incrementando su dividendo y respaldado por Warren Buffett como su mayor inversion individual via Berkshire Hathaway. Su modelo asset-light basado en la venta de concentrado a embotelladoras genera margenes brutos superiores al 60% con bajo requerimiento de capital. FY2025 mostro una fuerte recuperacion con utilidad neta de 13.1B (+23% YoY) y EBITDA de 14.8B (+34% YoY), reafirmando el poder de fijacion de precios y la solidez del negocio subyacente.
+The Coca-Cola Company (KO) reporto ingresos de 47.94 mil millones USD en FY2025, un incremento de 1.9% vs FY2024, impulsado por fijacion de precios positiva. La utilidad neta salto 23.3% a 13.11B gracias a ganancias no operativas y una mejora de margen operativo al 28.7%. El FCF fue de 5.3B, y la empresa genero Q1 2026 con revenue de 12.47B (+12.1% YoY) y EPS diluido de 0.91. KO mantiene su posicion como la marca de bebidas mas reconocida del mundo con presencia en mas de 200 paises.
 
-The Coca-Cola Company (KO) es la empresa de bebidas mas reconocida del mundo por valor de marca. Opera via un modelo de negocio unico: vende concentrado y jarabe a mas de 900 embotelladoras independientes que producen y distribuyen los productos en 200+ paises. Este modelo asset-light genera margenes brutos superiores al 60% y minimiza el capex. El portafolio de 500+ marcas incluye Coca-Cola, Sprite, Fanta, Dasani, Minute Maid, smartwater, BodyArmor, Costa Coffee y una participacion en Monster Beverage. Revenue reportado FY2025: 47.9B (sistema total 90B+). Dividend Aristocrat con 62+ anos de incrementos consecutivos desde 1963. Mayor inversion individual de Warren Buffett via Berkshire Hathaway (~9% del capital).
+Coca-Cola opera a traves de dos segmentos: operaciones de concentrado (venta de concentrados y jarabes a embotelladoras) y operaciones de producto terminado. Sus marcas clave incluyen Coca-Cola, Sprite, Fanta, Coca-Cola Zero Sugar, Dasani, Powerade, Minute Maid y Monster Energy (participacion). El moat se basa en marca global extraordinaria, red de distribucion de ~3,000 socios embotelladores, pricing power estructural y presencia en mas de 200 paises y territorios. KO genera ~2.2B de los 65B de porciones de bebidas consumidas diariamente en el mundo.
 
 **Datos financieros**:
-- Revenue (B USD): 47.94 (+1.9% YoY)
-- Utilidad Neta (B USD): 13.11 (+23.3% YoY)
-- Margen Neto: 27.3% (+4.7pp YoY)
-- EBITDA (B USD): 14.81 (+33.8% YoY)
-- FCF (B USD): 5.3 (+11.8% YoY)
-- EPS Diluido: 3.04 (+23.1% YoY)
-- Deuda Neta (B USD): 25.23 (+2.3% YoY)
+- Revenue (B USD): 12.47 (+12.1% YoY)
+- Utilidad Neta (B USD): 3.92 (+17.8% YoY)
+- Margen Neto: 31.4% (+8.8pp YoY)
+- EBITDA (B USD): N/D (+33.8% YoY)
+- FCF (B USD): N/D (+11.8% YoY)
+- EPS Diluido: 0.91 (+23.6% YoY)
+- Deuda Neta (B USD): N/D (+2.6% YoY)
 
-**Valuacion**: P/E Trailing 25.2x, P/E Forward 23.0x, EV/EBITDA 25.0x, P/FCF 65.0x, Deuda Neta/EBITDA 1.7x, Dividend Yield 2.5%, ROIC 21.9%
+**Valuacion**: P/E Trailing 26.5x, P/E Forward 25.2x, EV/EBITDA 25.1x, P/FCF 65.5x, Deuda Neta/EBITDA 1.7x, ROE 50%, ROIC 21%
 
-**Veredicto**: Mantener (Score: 8.2/10)
-+ Marca #1 global bebidas. Moat multigeneracional inigualable -> La marca Coca-Cola es el activo intangible mas valioso del mundo en bebidas, con presencia en 200+ paises y 2.2B servings diarios. Este moat tardo 139 anos en construirse y es practicamente indestructible.
-+ Pricing power demostrado por 60+ anos -> KO ha demostrado capacidad sistematica de aumentar precios por encima de la inflacion sin sacrificar volumen. Margen bruto FY2025 de 61.6% lo confirma.
-+ Dividend Aristocrat 62+ anos. Renta mas confiable del S&P 500 -> Con mas de seis decadas de incrementos consecutivos del dividendo, KO es la referencia de confiabilidad de renta para portafolios conservadores e institucionales.
-- Respaldo Buffett y valuacion premium -> La validacion de Berkshire es solida, pero KO cotiza a 23x earnings forward y P/FCF de 65x. Valuacion elevada que limita el upside para nuevos inversores vs. alternativas del sector.
+**Veredicto**: Mantener con Sesgo Positivo (Score: 7.4/10)
++ Marca y pricing power -- KO lleva 63 anos consecutivos aumentando dividendo; la marca Coca-Cola es practicamente insustituible con +2.2B porciones/dia en el mundo.
++ Aceleracion en Q1 2026 -- Revenue +12.1% YoY y EPS diluido 0.91 vs 0.77 senalan momentum positivo que puede revaluar la accion.
++ Margenes en recuperacion -- Margen operativo de 28.7% en FY2025 vs 21.2% en FY2024, con EBITDA de 14.81B (+33.8%); la empresa recupero su rentabilidad operativa structural.
+- Riesgo IRS -- El litigio fiscal de ~9.5B USD con el IRS es el riesgo principal: un fallo adverso impactaria la caja disponible para dividendos y recompras en los proximos 2-3 anos.
 
 ---
 
