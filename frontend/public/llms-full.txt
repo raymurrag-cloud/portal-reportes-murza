@@ -300,32 +300,30 @@ JNJ opera en dos segmentos: Innovative Medicine (~65% de ingresos) con productos
 
 ---
 
-### SCHW — Charles Schwab Corporation
+### SCHW — The Charles Schwab Corporation
 **URL**: https://reportes.murzainversiones.com/reporte/SCHW
 **Publicado**: 2026-05-12
 
-Charles Schwab reporto ingresos de $19.61B en FY2024 (+4.1% YoY), con utilidad neta de $5.94B (+17.2%) y EPS diluido de $2.99 (+17.7%), evidenciando una solida recuperacion tras la presion por cash sorting en 2022-2023. Con $9.8 trillones en activos de clientes y liderazgo en brokerage retail en EEUU, Schwab cotiza a 22.8x forward earnings — valuacion razonable para su franquicia dominante y modelo de negocios diversificado.
+Charles Schwab es la mayor firma de corretaje e inversion de Estados Unidos con 11.9 trillones en activos de clientes y 38.5 millones de cuentas activas. En FY2025 registro un desempeno excepcional: ingresos de 23.9 mil millones (+22% YoY), utilidad neta de 8.9 mil millones (+49%), y EPS diluido de 4.65 (+56%). La empresa consolida su moat como plataforma integrada de brokerage-banca-asset management con altas barreras de entrada y costos de cambio elevados. Valuacion atractiva con P/E forward de 16x y FCF yield del 5.4%, combinada con momentum operativo sostenido. Veredicto: Comprar con Conviccion.
 
-The Charles Schwab Corporation es el mayor broker de retail en Estados Unidos, con aproximadamente $9.8 trillones en activos bajo custodia (AUC) a finales de 2024. Su modelo de ingresos combina net interest revenue (el componente mas grande), comisiones de trading eliminadas en 2019 (zero-commission), tarifas de administracion de activos y honorarios de cuentas bancarias de deposito. Adquirio TD Ameritrade en octubre 2020 por $22B, casi duplicando su escala de clientes y plataforma tecnologica. El ingreso neto por intereses representa mas del 60% de los ingresos y es altamente sensible a las tasas de interes, lo que explica la caida de revenue en 2023 por el fenomeno de cash sorting (clientes moviendo efectivo a fondos del mercado monetario cuando subieron las tasas). Opera con dos segmentos: Investor Services y Advisor Services, sirviendo a inversores individuales y asesores financieros independientes respectivamente.
+Schwab opera dos segmentos: Investor Services (brokerage retail, advisory, banking para individuos y planes de retiro) y Advisor Services (custodia y soporte para RIAs independientes). El modelo genera ingresos por tres fuentes principales: net interest revenue (49% en 2025), asset management fees (27%), y trading revenue (17%). El moat central es el efecto red: con 39.1 millones de cuentas activas y 11.9T en activos, Schwab es la plataforma de infraestructura financiera preferida tanto por clientes retail como por 15,000+ RIAs. La escala permite ofrecer zero-commission trading, tasas competitivas y acceso a productos propios (Schwab Funds, ETFs), reforzando la ventaja vs competidores de menor tamano.
 
 **Datos financieros**:
-- Revenue ($B): 19.61 (+4.1% YoY)
-- Utilidad Neta ($B): 5.94 (+17.2% YoY)
-- Margen Neto (%): 30.3% (+3.4pp YoY)
-- EBITDA ($B): 8.61 (+19.9% YoY)
-- FCF ($B): 2.05 (-89.1% YoY)
-- EPS (GAAP): 2.99 (+17.7% YoY)
-- Deuda Neta ($B): -19.65 (n/a YoY)
+- Revenue (B USD): 6.48 (+22% YoY)
+- Utilidad Neta (B USD): 2.48 (+49% YoY)
+- Margen Neto: 38.3% (+6.7pp YoY)
+- EBITDA (B USD): N/D (+69% YoY)
+- FCF (B USD): N/D (+327% YoY)
+- EPS Diluido: 1.37 (+56% YoY)
+- Deuda Neta (B USD): N/D (Mejor YoY)
 
-**Valuacion**: P/E Ratio 29.9x, P/E Forward 22.8x, EV/EBITDA 16.8x, P/FCF 80.0x, Deuda/EBITDA 2.61x, ROE 13.3%, ROIC 15.4%
+**Valuacion**: P/E Trailing 19.3x, P/E Forward 16.0x, EV/EBITDA 15.3x, P/FCF 18.5x, Deuda Neta/EBITDA -1.97x, ROE 21%, ROIC 34.6%
 
-**Veredicto**: Mantener / Acumular en debilidad (Score: 7.0/10)
-+ Escala dominante e irreplicable -> Con $9.8 trillones en AUC y 35M+ cuentas, Schwab opera en una liga propia. La escala permite ofrecer zero-commission mientras genera spreads masivos sobre efectivo de clientes.
-+ Recuperacion post cash sorting bien encaminada -> EPS +17.7% YoY, margen neto mejoro 3.4pp a 30.3% en FY2024. La normalizacion de depositos bancarios y recortes de tasas apuntan a crecimiento adicional en FY2025.
-+ Integracion TDA completada genera plataforma clase mundial -> La migracion tecnologica de 15M+ cuentas completada en mayo 2024 elimina el riesgo de ejecucion. Las sinergias operativas se materializaran con mas fuerza en FY2025-2026.
-+ Balance solido con posicion de caja neta -> $42.1B en caja vs $22.4B en deuda LP = posicion neta de caja de $19.7B. Deuda/EBITDA de 2.61x manejable para institucion financiera.
-- Sensibilidad a tasas es riesgo bilateral -> La compania es altamente sensitiva al ciclo de tasas. Recortes benefician el retorno de depositos, pero bajas rapidas de tasas comprimen el net interest margin estructuralmente.
-- Valuacion no barata -> A 22.8x forward P/E y 16.8x EV/EBITDA, el mercado ya descuenta parte de la recuperacion. FCF yield de 1.2% es bajo en terminos absolutos, aunque refleja volatilidad estructural del OCF en empresas financieras.
+**Veredicto**: Comprar con Conviccion (Score: 8.4/10)
++ Recuperacion estructural ejecutada -> Schwab completo la transicion de un modelo dependiente de cash sweeps costosos: NII +28%, margen pre-tax 47.9% (vs 33.9% en 2023). La mejora es estructural, no ciclica.
++ Plataforma de escala imbatible -> 11.9T en AUC, 38.5M cuentas y 15,000+ RIAs crean un moat de red que ningun competidor puede replicar. Core net new assets de 519B (+42%) confirma que el growth flywheel esta activo.
++ Valuacion atractiva para la calidad -> P/E forward de 16x, P/FCF de 18.5x y FCF yield de 5.4% ofrecen punto de entrada razonable para una compania con ROIC del 35%. Q1 2026 confirma momentum: revenue +16%, EPS +38%.
+- Riesgo de tasas y regulacion -> Recortes agresivos de la Fed comprimiran NII (49% del revenue). Regulacion Basel III podria limitar recompras. Monitoreo trimestral obligatorio de guidance de NII y postura regulatoria.
 
 ---
 
