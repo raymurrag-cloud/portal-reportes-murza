@@ -66,4 +66,10 @@ export const api = {
 
   // Earnings (fechas dinámicas desde Turso)
   getEarnings: () => req('GET', '/earnings'),
+
+  // Noticias
+  getNoticias:      (params = {}) => {
+    const qs = new URLSearchParams(params).toString();
+    return req('GET', `/noticias${qs ? `?${qs}` : ''}`);
+  },
 };

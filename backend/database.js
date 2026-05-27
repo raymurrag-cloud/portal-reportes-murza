@@ -154,5 +154,26 @@ export async function initDb() {
     args: [],
   });
 
+  // Tabla de noticias (actualizada diariamente por el agente)
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS noticias (
+      id            INTEGER PRIMARY KEY AUTOINCREMENT,
+      ticker        TEXT NOT NULL,
+      titulo        TEXT NOT NULL,
+      resumen       TEXT NOT NULL,
+      fuente        TEXT,
+      url           TEXT,
+      fecha_noticia TEXT NOT NULL,
+      impacto       TEXT DEFAULT 'neutral',
+      created_at    TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now')),
+      updated_at    TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`,
+    args: [],
+  });
+  try {
+    await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_noticias_ticker ON noticias(ticker)`, args: [] });
+    await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_noticias_fecha  ON noticias(fecha_noticia)`, args: [] });
+  } catch {}
+
   console.log('✅ Base de datos lista (Turso)');
 }

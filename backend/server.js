@@ -6,7 +6,8 @@ import { initDb } from './database.js';
 import authRoutes    from './routes/auth.js';
 import reportesRoutes from './routes/reportes.js';
 import adminRoutes    from './routes/admin.js';
-import earningsRoutes from './routes/earnings.js';
+import earningsRoutes  from './routes/earnings.js';
+import noticiasRoutes  from './routes/noticias.js';
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -19,7 +20,8 @@ app.use(express.json({ limit: '5mb' }));
 app.use('/api/auth',     authRoutes);
 app.use('/api/reportes', reportesRoutes);
 app.use('/api/admin',    adminRoutes);
-app.use('/api/earnings', earningsRoutes);
+app.use('/api/earnings',  earningsRoutes);
+app.use('/api/noticias',  noticiasRoutes);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 app.get('/api/ping',   (_, res) => res.json({ ok: true }));
