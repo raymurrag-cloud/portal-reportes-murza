@@ -82,9 +82,11 @@ function NoticiaRow({ noticia }) {
             to={`/reporte/${noticia.ticker}`}
             onClick={e => e.stopPropagation()}
             style={{
-              fontSize: 10, fontWeight: 800, letterSpacing: '0.07em',
-              color: 'var(--gold)', flexShrink: 0,
-              textDecoration: 'none',
+              fontSize: 12, fontWeight: 800, letterSpacing: '0.06em',
+              color: 'var(--gold)', background: 'rgba(160,128,64,0.12)',
+              border: '1px solid rgba(160,128,64,0.30)', borderRadius: 5,
+              padding: '2px 7px', flexShrink: 0,
+              textDecoration: 'none', lineHeight: 1,
             }}
           >
             {noticia.ticker}
