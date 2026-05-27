@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { api } from '../../api.js';
@@ -53,54 +53,68 @@ function ImpactoBadge({ impacto }) {
   );
 }
 
-// ── Componente: Tarjeta de noticia ────────────────────────────────────────────
-function NoticiaCard({ noticia }) {
+// ── Componente: Fila de noticia (feed compacto) ───────────────────────────────
+const DOT = { positivo: '#16A34A', negativo: '#DC2626', neutral: '#A08040' };
+
+function NoticiaRow({ noticia }) {
+  const [abierto, setAbierto] = useState(false);
+  const color = DOT[noticia.impacto] || DOT.neutral;
+
   return (
-    <div style={{
-      background: 'var(--card-bg)',
-      border: '1px solid var(--border)',
-      borderRadius: 12,
-      padding: '16px 20px',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 10,
-      transition: 'border-color 0.15s',
-    }}
-    onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--gold-dim)'}
-    onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
+    <div
+      onClick={() => setAbierto(a => !a)}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '3px 1fr',
+        gap: '0 14px',
+        padding: '10px 0',
+        cursor: 'pointer',
+        borderBottom: '1px solid var(--border)',
+      }}
     >
-      {/* Fila superior: ticker + impacto */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-        <Link
-          to={`/reporte/${noticia.ticker}`}
-          style={{
-            fontSize: 11, fontWeight: 800, letterSpacing: '0.06em',
-            color: 'var(--gold)', background: 'rgba(160,128,64,0.12)',
-            border: '1px solid rgba(160,128,64,0.25)', borderRadius: 6,
-            padding: '2px 8px', textDecoration: 'none',
-          }}
-        >
-          {noticia.ticker}
-        </Link>
-        <ImpactoBadge impacto={noticia.impacto} />
-      </div>
+      {/* Barra de color lateral */}
+      <div style={{ background: color, borderRadius: 2, alignSelf: 'stretch', minHeight: 18 }} />
 
-      {/* Título */}
-      <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text)', lineHeight: 1.4 }}>
-        {noticia.titulo}
-      </div>
-
-      {/* Resumen */}
-      <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.7 }}>
-        {noticia.resumen}
-      </div>
-
-      {/* Fuentes — solo cita, nunca link externo */}
-      {noticia.fuente && (
-        <div style={{ fontSize: 11, color: 'var(--text-faint)', fontStyle: 'italic', marginTop: 2 }}>
-          Fuente: {noticia.fuente}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+        {/* Línea principal: ticker + título + chevron */}
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+          <Link
+            to={`/reporte/${noticia.ticker}`}
+            onClick={e => e.stopPropagation()}
+            style={{
+              fontSize: 10, fontWeight: 800, letterSpacing: '0.07em',
+              color: 'var(--gold)', flexShrink: 0,
+              textDecoration: 'none',
+            }}
+          >
+            {noticia.ticker}
+          </Link>
+          <span style={{
+            fontSize: 13, fontWeight: 600, color: 'var(--text)', lineHeight: 1.4,
+            flex: 1,
+          }}>
+            {noticia.titulo}
+          </span>
+          <span style={{
+            fontSize: 11, color: 'var(--text-faint)', flexShrink: 0,
+            transform: abierto ? 'rotate(180deg)' : 'none',
+            transition: 'transform 0.15s',
+            lineHeight: 1,
+          }}>▾</span>
         </div>
-      )}
+
+        {/* Resumen expandible */}
+        {abierto && (
+          <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.7, paddingTop: 4 }}>
+            {noticia.resumen}
+            {noticia.fuente && (
+              <span style={{ display: 'block', fontSize: 11, color: 'var(--text-faint)', fontStyle: 'italic', marginTop: 6 }}>
+                Fuente: {noticia.fuente}
+              </span>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -286,7 +300,7 @@ export default function NoticiasPage() {
         )}
 
         {!loading && porFecha.map(([fecha, items]) => (
-          <div key={fecha} style={{ marginBottom: 40 }}>
+          <div key={fecha} style={{ marginBottom: 28 }}>
             {/* Encabezado de fecha */}
             <div style={{
               display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16,
@@ -304,9 +318,9 @@ export default function NoticiasPage() {
               </div>
             </div>
 
-            {/* Grid de tarjetas */}
-            <div style={{ display: 'grid', gap: 12 }}>
-              {items.map(n => <NoticiaCard key={n.id} noticia={n} />)}
+            {/* Feed compacto */}
+            <div>
+              {items.map(n => <NoticiaRow key={n.id} noticia={n} />)}
             </div>
           </div>
         ))}
