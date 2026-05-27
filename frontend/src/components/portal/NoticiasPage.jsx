@@ -122,7 +122,7 @@ function NoticiaRow({ noticia }) {
 }
 
 // ── Página principal ──────────────────────────────────────────────────────────
-const NAV_LINK = { padding: '6px 14px', borderRadius: 8, fontSize: 14, color: 'var(--text-muted)', fontWeight: 500, textDecoration: 'none' };
+const NAV_LINK = { padding: '6px 11px', borderRadius: 8, fontSize: 13, color: 'var(--text-muted)', fontWeight: 500, textDecoration: 'none' };
 
 export default function NoticiasPage() {
   const [noticias, setNoticias] = useState([]);
@@ -203,6 +203,11 @@ export default function NoticiasPage() {
           </Link>
           <Link to="/noticias" style={{ ...NAV_LINK, color: 'var(--gold)', fontWeight: 700 }}>
             Noticias
+          </Link>
+          <Link to="/comparar" style={NAV_LINK}
+            onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
+            Comparar
           </Link>
           <Link to="/blog" style={NAV_LINK}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
