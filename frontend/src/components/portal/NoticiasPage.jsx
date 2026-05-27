@@ -83,42 +83,23 @@ function NoticiaCard({ noticia }) {
           {noticia.ticker}
         </Link>
         <ImpactoBadge impacto={noticia.impacto} />
-        {noticia.fuente && (
-          <span style={{ fontSize: 11, color: 'var(--text-faint)', marginLeft: 'auto' }}>
-            {noticia.fuente}
-          </span>
-        )}
       </div>
 
       {/* Título */}
       <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text)', lineHeight: 1.4 }}>
-        {noticia.url ? (
-          <a href={noticia.url} target="_blank" rel="noopener noreferrer"
-            style={{ color: 'inherit', textDecoration: 'none' }}
-            onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
-            onMouseLeave={e => e.currentTarget.style.color = 'inherit'}
-          >
-            {noticia.titulo}
-          </a>
-        ) : noticia.titulo}
+        {noticia.titulo}
       </div>
 
       {/* Resumen */}
-      <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.6 }}>
+      <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.7 }}>
         {noticia.resumen}
       </div>
 
-      {/* Footer: link fuente */}
-      {noticia.url && (
-        <a href={noticia.url} target="_blank" rel="noopener noreferrer"
-          style={{
-            fontSize: 12, color: 'var(--gold)', fontWeight: 600,
-            textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4,
-            alignSelf: 'flex-start',
-          }}
-        >
-          Leer nota completa →
-        </a>
+      {/* Fuentes — solo cita, nunca link externo */}
+      {noticia.fuente && (
+        <div style={{ fontSize: 11, color: 'var(--text-faint)', fontStyle: 'italic', marginTop: 2 }}>
+          Fuente: {noticia.fuente}
+        </div>
       )}
     </div>
   );
