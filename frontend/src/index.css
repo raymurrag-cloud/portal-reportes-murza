@@ -119,6 +119,8 @@ img { max-width: 100%; }
 .portal-logo       { height: 34px; object-fit: contain; }
 .portal-logo-link  { display: flex; align-items: center; }
 .portal-header-right { display: flex; align-items: center; gap: 10px; }
+.portal-header nav   { display: flex; gap: 2px; flex-shrink: 1; min-width: 0; overflow: visible; }
+.portal-header nav a { white-space: nowrap; }
 .portal-header .btn-ghost-sm { color: var(--text-muted); border-color: var(--border); }
 .portal-header .btn-ghost-sm:hover { border-color: var(--gold); color: var(--gold-dark); }
 .portal-footer {

@@ -662,6 +662,7 @@ export default function CompararPage() {
           <nav style={{ display: 'flex', gap: 2 }}>
             <NavLink to="/">Reportes</NavLink>
             <NavLink to="/earnings">Earnings</NavLink>
+            <NavLink to="/noticias">Noticias</NavLink>
             <NavLink to="/comparar" active>Comparar</NavLink>
             <NavLink to="/blog">Blog</NavLink>
           </nav>
