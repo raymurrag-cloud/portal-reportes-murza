@@ -175,5 +175,63 @@ export async function initDb() {
     await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_noticias_fecha  ON noticias(fecha_noticia)`, args: [] });
   } catch {}
 
+  // Tablas del portafolio IB Paper Trading
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS ib_trades (
+      id           INTEGER PRIMARY KEY AUTOINCREMENT,
+      trade_id     TEXT UNIQUE,
+      symbol       TEXT NOT NULL,
+      description  TEXT,
+      asset_cat    TEXT,
+      trade_date   TEXT NOT NULL,
+      datetime     TEXT,
+      buy_sell     TEXT NOT NULL,
+      quantity     REAL NOT NULL,
+      price        REAL NOT NULL,
+      proceeds     REAL,
+      commission   REAL,
+      net_cash     REAL,
+      cost_basis   REAL,
+      realized_pl  REAL,
+      open_close   TEXT,
+      currency     TEXT DEFAULT 'USD',
+      exchange     TEXT,
+      note         TEXT,
+      created_at   TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`, args: [],
+  });
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS ib_positions (
+      id             INTEGER PRIMARY KEY AUTOINCREMENT,
+      symbol         TEXT NOT NULL UNIQUE,
+      description    TEXT,
+      asset_cat      TEXT,
+      quantity       REAL NOT NULL,
+      mark_price     REAL,
+      position_value REAL,
+      open_price     REAL,
+      cost_basis     REAL,
+      unrealized_pl  REAL,
+      pct_nav        REAL,
+      side           TEXT,
+      open_datetime  TEXT,
+      currency       TEXT DEFAULT 'USD',
+      report_date    TEXT,
+      updated_at     TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`, args: [],
+  });
+  await db.execute({
+    sql: `CREATE TABLE IF NOT EXISTS ib_nav (
+      id          INTEGER PRIMARY KEY AUTOINCREMENT,
+      report_date TEXT UNIQUE,
+      total_nav   REAL,
+      cash        REAL,
+      stock       REAL,
+      created_at  TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%S','now'))
+    )`, args: [],
+  });
+  try { await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_ib_trades_date ON ib_trades(trade_date)`, args: [] }); } catch {}
+  try { await db.execute({ sql: `CREATE INDEX IF NOT EXISTS idx_ib_trades_symbol ON ib_trades(symbol)`, args: [] }); } catch {}
+
   console.log('✅ Base de datos lista (Turso)');
 }

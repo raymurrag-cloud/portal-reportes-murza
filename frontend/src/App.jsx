@@ -11,6 +11,7 @@ import EarningsCalendar   from './components/portal/EarningsCalendar.jsx';
 import CompararPage       from './components/portal/CompararPage.jsx';
 import BlogPage           from './components/portal/BlogPage.jsx';
 import NoticiasPage       from './components/portal/NoticiasPage.jsx';
+import PortafolioPage     from './components/portal/PortafolioPage.jsx';
 
 // Admin
 import AdminLogin           from './components/admin/AdminLogin.jsx';
@@ -37,6 +38,7 @@ export default function App() {
       <Route path="/"              element={<HomePage />} />
       <Route path="/earnings"      element={<EarningsCalendar />} />
       <Route path="/noticias"      element={<NoticiasPage />} />
+      <Route path="/portafolio"    element={<PortafolioPage />} />
       <Route path="/comparar"     element={<CompararPage />} />
       <Route path="/blog"          element={<BlogPage />} />
       <Route path="/reporte/:slug" element={<ReportePage />} />
