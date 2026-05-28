@@ -6,6 +6,73 @@ import { api } from '../../api.js';
 
 const BASE = import.meta.env.VITE_API_URL || 'https://portal-reportes-murza.onrender.com';
 
+function parseIbXml(xmlText) {
+  function num(v) { const n = parseFloat(v); return isNaN(n) ? null : n; }
+  function parseDate(s) {
+    if (!s || s.length < 8) return null;
+    return `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}`;
+  }
+  function parseDateTime(s) {
+    if (!s) return null;
+    const [d, t] = s.split(';');
+    const date = parseDate(d);
+    if (!date) return null;
+    return t?.length >= 6 ? `${date} ${t.slice(0,2)}:${t.slice(2,4)}:${t.slice(4,6)}` : date;
+  }
+
+  const doc = new DOMParser().parseFromString(xmlText, 'text/xml');
+
+  const trades = Array.from(doc.querySelectorAll('Trade'))
+    .filter(t => !t.getAttribute('levelOfDetail') || t.getAttribute('levelOfDetail') === 'EXECUTION')
+    .map(t => ({
+      trade_id:    t.getAttribute('tradeID'),
+      symbol:      t.getAttribute('symbol'),
+      description: t.getAttribute('description'),
+      asset_cat:   t.getAttribute('assetCategory'),
+      trade_date:  parseDate(t.getAttribute('tradeDate')),
+      datetime:    parseDateTime(t.getAttribute('dateTime')),
+      buy_sell:    t.getAttribute('buySell'),
+      quantity:    num(t.getAttribute('quantity')),
+      price:       num(t.getAttribute('tradePrice')),
+      proceeds:    num(t.getAttribute('proceeds')),
+      commission:  num(t.getAttribute('ibCommission')),
+      net_cash:    num(t.getAttribute('netCash')),
+      cost_basis:  num(t.getAttribute('costBasis')),
+      realized_pl: num(t.getAttribute('realizedPL')),
+      open_close:  t.getAttribute('openCloseIndicator'),
+      currency:    t.getAttribute('currency') || 'USD',
+      exchange:    t.getAttribute('exchange'),
+    }));
+
+  const positions = Array.from(doc.querySelectorAll('OpenPosition')).map(p => ({
+    symbol:         p.getAttribute('symbol'),
+    description:    p.getAttribute('description'),
+    asset_cat:      p.getAttribute('assetCategory'),
+    quantity:       num(p.getAttribute('quantity')),
+    mark_price:     num(p.getAttribute('markPrice')),
+    position_value: num(p.getAttribute('positionValue')),
+    open_price:     num(p.getAttribute('openPrice')),
+    cost_basis:     num(p.getAttribute('costBasisPrice')),
+    unrealized_pl:  num(p.getAttribute('unrealizedPnL')),
+    pct_nav:        num(p.getAttribute('percentOfNAV')),
+    side:           p.getAttribute('side'),
+    open_datetime:  parseDateTime(p.getAttribute('openDateTime')),
+    currency:       p.getAttribute('currency') || 'USD',
+    report_date:    parseDate(p.getAttribute('reportDate')),
+  }));
+
+  const totalEl = Array.from(doc.querySelectorAll('NetAssetValue'))
+    .find(n => n.getAttribute('assetCategory') === 'Total');
+  const nav = totalEl ? {
+    report_date: parseDate(totalEl.getAttribute('reportDate')) || new Date().toISOString().slice(0,10),
+    total_nav:   num(totalEl.getAttribute('total')),
+    cash:        num(totalEl.getAttribute('cash')),
+    stock:       num(totalEl.getAttribute('stock')),
+  } : null;
+
+  return { trades, positions, nav };
+}
+
 const NAV_LINK = {
   padding: '6px 14px', borderRadius: 8, fontSize: 14, fontWeight: 500,
   color: 'var(--text-muted)', textDecoration: 'none', background: 'none',
@@ -549,11 +616,14 @@ export default function PortafolioPage() {
                     setSyncing(true);
                     setSyncMsg('Procesando XML...');
                     try {
-                      const xml = await file.text();
-                      const r = await fetch(`${BASE}/api/portafolio/upload-xml`, {
+                      const xmlText = await file.text();
+                      const parsed = parseIbXml(xmlText);
+                      if (!parsed.trades.length && !parsed.positions.length)
+                        throw new Error('El archivo no contiene trades ni posiciones de IB');
+                      const r = await fetch(`${BASE}/api/portafolio/upload-data`, {
                         method: 'POST',
-                        headers: { 'Content-Type': 'text/plain', 'Authorization': `Bearer ${adminToken}` },
-                        body: xml,
+                        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
+                        body: JSON.stringify(parsed),
                       });
                       const data = await r.json();
                       if (data.error) setSyncMsg(`Error: ${data.error}`);

@@ -259,6 +259,72 @@ router.post('/sync', authAdmin, async (req, res) => {
   }
 });
 
+// POST /api/portafolio/upload-data  (admin) — recibe datos ya parseados del XML (desde el browser)
+router.post('/upload-data', authAdmin, async (req, res) => {
+  const { trades: tradeDocs, positions: posDocs, nav: navDoc } = req.body || {};
+  if (!Array.isArray(tradeDocs) && !Array.isArray(posDocs))
+    return res.status(400).json({ error: 'trades o positions requeridos' });
+
+  let tradesIn = 0;
+  for (const t of (tradeDocs || [])) {
+    if (!t.symbol) continue;
+    try {
+      const r = await db.execute({
+        sql: `INSERT OR IGNORE INTO ib_trades
+          (trade_id,symbol,description,asset_cat,trade_date,datetime,buy_sell,
+           quantity,price,proceeds,commission,net_cash,cost_basis,realized_pl,
+           open_close,currency,exchange)
+          VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+        args: [
+          t.trade_id||null, t.symbol, t.description||null, t.asset_cat||null,
+          t.trade_date, t.datetime, t.buy_sell,
+          t.quantity, t.price, t.proceeds, t.commission, t.net_cash,
+          t.cost_basis, t.realized_pl, t.open_close||null,
+          t.currency||'USD', t.exchange||null,
+        ],
+      });
+      if (r.rowsAffected > 0) tradesIn++;
+    } catch {}
+  }
+
+  let posUp = 0;
+  for (const p of (posDocs || [])) {
+    if (!p.symbol) continue;
+    await db.execute({
+      sql: `INSERT INTO ib_positions
+        (symbol,description,asset_cat,quantity,mark_price,position_value,
+         open_price,cost_basis,unrealized_pl,pct_nav,side,open_datetime,
+         currency,report_date,updated_at)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,strftime('%Y-%m-%d %H:%M:%S','now'))
+        ON CONFLICT(symbol) DO UPDATE SET
+          quantity=excluded.quantity, mark_price=excluded.mark_price,
+          position_value=excluded.position_value, open_price=excluded.open_price,
+          cost_basis=excluded.cost_basis, unrealized_pl=excluded.unrealized_pl,
+          pct_nav=excluded.pct_nav, side=excluded.side,
+          open_datetime=excluded.open_datetime, report_date=excluded.report_date,
+          updated_at=strftime('%Y-%m-%d %H:%M:%S','now')`,
+      args: [
+        p.symbol, p.description||null, p.asset_cat||null,
+        p.quantity, p.mark_price, p.position_value,
+        p.open_price, p.cost_basis, p.unrealized_pl,
+        p.pct_nav, p.side||null, p.open_datetime,
+        p.currency||'USD', p.report_date,
+      ],
+    });
+    posUp++;
+  }
+
+  if (navDoc?.report_date) {
+    await db.execute({
+      sql: `INSERT OR IGNORE INTO ib_nav (report_date,total_nav,cash,stock) VALUES (?,?,?,?)`,
+      args: [navDoc.report_date, navDoc.total_nav, navDoc.cash, navDoc.stock],
+    });
+  }
+
+  res.json({ ok: true, trades: tradesIn, positions: posUp,
+    message: `${tradesIn} trades nuevos, ${posUp} posiciones actualizadas` });
+});
+
 // POST /api/portafolio/upload-xml  (admin) — procesa XML descargado manualmente de IB
 router.post('/upload-xml', authAdmin, express.text({ limit: '30mb', type: '*/*' }), async (req, res) => {
   const xml = typeof req.body === 'string' ? req.body : (req.body?.xml || '');
