@@ -470,21 +470,31 @@ export default function PortafolioPage() {
         if (r.status === 'fulfilled' && r.value?.precio) infoMap[p.symbol] = r.value;
       });
 
-      const enriched = rawPositions.map(p => {
-        const info = infoMap[p.symbol];
-        if (!info) return p;
-        const qty = Math.abs(p.quantity || 0);
-        const unrealized = (info.precio - (p.open_price || 0)) * qty;
-        return {
-          ...p,
-          mark_price:     info.precio,
-          position_value: info.precio * qty,
-          unrealized_pl:  unrealized,
-          description:    info.nombre || p.description,
-        };
-      });
+      // Enriquecer con precio y nombre de Yahoo Finance, filtrar posiciones cerradas
+      const enriched = rawPositions
+        .filter(p => Math.abs(p.quantity || 0) > 0)
+        .map(p => {
+          const info = infoMap[p.symbol];
+          if (!info) return p;
+          const qty = Math.abs(p.quantity || 0);
+          const unrealized = (info.precio - (p.open_price || 0)) * qty;
+          return {
+            ...p,
+            mark_price:     info.precio,
+            position_value: info.precio * qty,
+            unrealized_pl:  unrealized,
+            description:    info.nombre || p.description,
+          };
+        });
 
-      setPositions(enriched);
+      // Calcular % de portafolio con precios en vivo
+      const totalVal = enriched.reduce((s, p) => s + (p.position_value || 0), 0);
+      const withPct = enriched.map(p => ({
+        ...p,
+        pct_nav: totalVal > 0 ? (p.position_value / totalVal) * 100 : null,
+      }));
+
+      setPositions(withPct);
       setSummary(posR.summary || null);
       setTrades(tradeR.trades || []);
       setTotalTrades(tradeR.total || 0);
