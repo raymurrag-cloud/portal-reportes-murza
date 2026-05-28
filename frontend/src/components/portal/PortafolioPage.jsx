@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine, Cell, Legend } from 'recharts';
 import { api } from '../../api.js';
 
 const BASE = import.meta.env.VITE_API_URL || '/api';
@@ -92,6 +92,35 @@ function fmtDate(s) {
   if (!s) return '—';
   const d = new Date(s + (s.length === 10 ? 'T12:00:00' : ''));
   return d.toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+const CAPITAL_INICIAL = 1_000_000;
+
+const SECTOR_MAP = {
+  AAPL:'Tecnología', MSFT:'Tecnología', NVDA:'Tecnología', META:'Tecnología',
+  MU:'Tecnología', AMD:'Tecnología', GOOGL:'Tecnología', GOOG:'Tecnología',
+  TSM:'Tecnología', AVGO:'Tecnología', ORCL:'Tecnología', CRM:'Tecnología',
+  ADBE:'Tecnología', QCOM:'Tecnología', INTC:'Tecnología', NOW:'Tecnología',
+  AMZN:'Consumo discrecional', TSLA:'Consumo discrecional', MELI:'Consumo discrecional',
+  SHOP:'Consumo discrecional', BABA:'Consumo discrecional', ABNB:'Consumo discrecional',
+  COST:'Consumo básico', WMT:'Consumo básico', KO:'Consumo básico', MCD:'Consumo básico',
+  JPM:'Financiero', BAC:'Financiero', V:'Financiero', MA:'Financiero',
+  GS:'Financiero', BRK:'Financiero', AXP:'Financiero', BLK:'Financiero',
+  LLY:'Salud', JNJ:'Salud', UNH:'Salud', NVO:'Salud',
+  XOM:'Energía', CVX:'Energía', CEG:'Energía',
+  NFLX:'Comunicación', SPOT:'Comunicación',
+  PLTR:'Tecnología', CRWD:'Tecnología', SNOW:'Tecnología',
+};
+const SECTOR_COLORS = {
+  'Tecnología':'#6366f1','Consumo discrecional':'#f59e0b','Consumo básico':'#10b981',
+  'Financiero':'#3b82f6','Salud':'#ec4899','Energía':'#f97316',
+  'Comunicación':'#8b5cf6','Otros':'#6b7280',
+};
+
+function fmtPct2(n, showSign = true) {
+  if (n == null) return '—';
+  const sign = showSign && n >= 0 ? '+' : '';
+  return `${sign}${n.toFixed(2)}%`;
 }
 
 // ─── Summary card ────────────────────────────────────────────────────────────
@@ -347,6 +376,94 @@ function TradesTab({ trades, total, adminToken, onRefresh }) {
   );
 }
 
+// ─── Análisis tab ────────────────────────────────────────────────────────────
+function AnalisisTab({ positions, stats }) {
+  if (!stats) return (
+    <div style={{ textAlign: 'center', padding: 48, color: 'var(--text-muted)' }}>
+      Cargando estadísticas...
+    </div>
+  );
+
+  // Sector allocation
+  const sectorMap = {};
+  positions.forEach(p => {
+    const s = SECTOR_MAP[p.symbol] || 'Otros';
+    sectorMap[s] = (sectorMap[s] || 0) + (p.position_value || 0);
+  });
+  const totalVal = Object.values(sectorMap).reduce((a, b) => a + b, 0);
+  const sectorData = Object.entries(sectorMap)
+    .map(([s, v]) => ({ sector: s, pct: totalVal > 0 ? (v / totalVal * 100) : 0, valor: v }))
+    .sort((a, b) => b.pct - a.pct);
+
+  const plColor = n => n == null ? 'var(--text)' : n >= 0 ? '#16A34A' : '#DC2626';
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
+
+      {/* Stats grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12 }}>
+        {[
+          { label: 'Total operaciones', value: stats.total_trades },
+          { label: 'Con P&L registrado', value: stats.trades_con_pl },
+          { label: 'Win rate', value: stats.win_rate != null ? `${stats.win_rate.toFixed(1)}%` : '—' },
+          { label: 'Ganancia promedio', value: stats.avg_ganancia_usd != null ? fmt$(stats.avg_ganancia_usd, 0) : '—', color: '#16A34A' },
+          { label: 'Pérdida promedio', value: stats.avg_perdida_usd != null ? fmt$(stats.avg_perdida_usd, 0) : '—', color: '#DC2626' },
+          { label: 'P&L realizado total', value: fmt$(stats.total_realizado_usd, 0), color: plColor(stats.total_realizado_usd) },
+        ].map(({ label, value, color }) => (
+          <div key={label} style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 10, padding: '14px 16px' }}>
+            <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: 'var(--text-faint)', textTransform: 'uppercase', marginBottom: 4 }}>{label}</div>
+            <div style={{ fontSize: 20, fontWeight: 700, color: color || 'var(--text)', fontFamily: "'Georgia', serif" }}>{value}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Sector allocation */}
+      <div>
+        <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 14, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+          Concentración por sector
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {sectorData.map(({ sector, pct, valor }) => (
+            <div key={sector}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4, fontSize: 13 }}>
+                <span style={{ color: 'var(--text)', fontWeight: 500 }}>{sector}</span>
+                <span style={{ color: 'var(--text-muted)' }}>{fmt$(valor, 0)} · {pct.toFixed(1)}%</span>
+              </div>
+              <div style={{ height: 8, borderRadius: 4, background: 'var(--border)', overflow: 'hidden' }}>
+                <div style={{ height: '100%', width: `${pct}%`, borderRadius: 4, background: SECTOR_COLORS[sector] || SECTOR_COLORS['Otros'], transition: 'width 0.6s ease' }} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Best & worst trades */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+        {[
+          { title: 'Mejores trades', trades: stats.best_trades, color: '#16A34A' },
+          { title: 'Peores trades', trades: stats.worst_trades, color: '#DC2626' },
+        ].map(({ title, trades, color }) => (
+          <div key={title}>
+            <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 10, letterSpacing: '0.06em', textTransform: 'uppercase' }}>{title}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {(trades || []).map((t, i) => (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 8, padding: '10px 14px' }}>
+                  <div>
+                    <span style={{ fontFamily: 'monospace', fontWeight: 700, fontSize: 13, color: 'var(--text)' }}>{t.symbol}</span>
+                    <span style={{ marginLeft: 8, fontSize: 11, color: 'var(--text-faint)' }}>{t.trade_date}</span>
+                  </div>
+                  <span style={{ fontWeight: 700, fontSize: 14, color }}>{t.realized_pl >= 0 ? '+' : ''}{fmt$(t.realized_pl, 0)}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  );
+}
+
 // ─── Chat ─────────────────────────────────────────────────────────────────────
 function ChatTab() {
   const [messages, setMessages] = useState([
@@ -440,24 +557,27 @@ function ChatTab() {
 
 // ─── Página principal ─────────────────────────────────────────────────────────
 export default function PortafolioPage() {
-  const [tab, setTab]           = useState('posiciones');
+  const [tab, setTab]             = useState('posiciones');
   const [positions, setPositions] = useState([]);
-  const [summary, setSummary]   = useState(null);
-  const [trades, setTrades]     = useState([]);
+  const [summary, setSummary]     = useState(null);
+  const [trades, setTrades]       = useState([]);
   const [totalTrades, setTotalTrades] = useState(0);
-  const [navData, setNavData]   = useState([]);
-  const [loading, setLoading]   = useState(true);
-  const [syncing, setSyncing]   = useState(false);
-  const [syncMsg, setSyncMsg]   = useState('');
+  const [navData, setNavData]     = useState([]);
+  const [stats, setStats]         = useState(null);
+  const [chartData, setChartData] = useState([]);
+  const [loading, setLoading]     = useState(true);
+  const [syncing, setSyncing]     = useState(false);
+  const [syncMsg, setSyncMsg]     = useState('');
   const adminToken = localStorage.getItem('portal_admin_token');
 
   async function loadData() {
     setLoading(true);
     try {
-      const [posR, tradeR, navR] = await Promise.all([
+      const [posR, tradeR, navR, statsR] = await Promise.all([
         fetch(`${BASE}/portafolio/positions`).then(r => r.json()),
-        fetch(`${BASE}/portafolio/trades?limit=100`).then(r => r.json()),
+        fetch(`${BASE}/portafolio/trades?limit=200`).then(r => r.json()),
         fetch(`${BASE}/portafolio/nav`).then(r => r.json()),
+        fetch(`${BASE}/portafolio/stats`).then(r => r.json()).catch(() => null),
       ]);
 
       const rawPositions = posR.positions || [];
@@ -502,6 +622,29 @@ export default function PortafolioPage() {
       setTrades(tradeR.trades || []);
       setTotalTrades(tradeR.total || 0);
       setNavData(navR.nav || []);
+      if (statsR && !statsR.error) setStats(statsR);
+
+      // Gráfica NAV vs S&P 500
+      const navRows = navR.nav || [];
+      if (navRows.length >= 2) {
+        const desde = navRows[0].report_date;
+        const spyR = await fetch(`/api/historico/SPY?desde=${desde}`).then(r => r.json()).catch(() => null);
+        const spyMap = {};
+        (spyR?.series || []).forEach(d => { spyMap[d.fecha] = d.precio; });
+        const spyInicial = spyR?.series?.[0]?.precio;
+
+        const merged = navRows.map(n => {
+          const portPct = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
+          const spyPrecio = spyMap[n.report_date];
+          const spyPct = spyInicial && spyPrecio ? ((spyPrecio - spyInicial) / spyInicial * 100) : null;
+          return {
+            fecha:     n.report_date.slice(5),
+            portafolio: parseFloat(portPct.toFixed(2)),
+            sp500:      spyPct != null ? parseFloat(spyPct.toFixed(2)) : null,
+          };
+        });
+        setChartData(merged);
+      }
     } catch {}
     setLoading(false);
   }
@@ -570,37 +713,90 @@ export default function PortafolioPage() {
           </p>
         </div>
 
-        {/* Summary cards */}
-        {!loading && summary && (
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginBottom: 36 }}>
-            <SummaryCard
-              label="Valor de la cuenta"
-              value={fmt$(summary.total_nav)}
-              sub={summary.report_date ? `Al ${fmtDate(summary.report_date)}` : null}
-            />
-            <SummaryCard
-              label="Efectivo"
-              value={fmt$(summary.cash)}
-              sub="Disponible"
-            />
-            <SummaryCard
-              label="P&L No Realizado"
-              value={fmt$(summary.unrealized_pl, 2)}
-              color={plColor(summary.unrealized_pl)}
-              sub="Posiciones abiertas"
-            />
-            <SummaryCard
-              label="Posiciones"
-              value={positions.length}
-              sub={`${totalTrades} operaciones historicas`}
-            />
-          </div>
-        )}
-        {loading && (
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginBottom: 36 }}>
-            {[1,2,3,4].map(i => (
-              <div key={i} style={{ flex: '1 1 180px', minWidth: 160, height: 90, background: 'var(--card-bg)', borderRadius: 12, border: '1px solid var(--border)', animation: 'pulse 1.5s infinite' }} />
-            ))}
+        {/* ── Cards de rendimiento ──────────────────────────────────────────── */}
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 28 }}>
+          {[
+            {
+              label: 'Retorno total',
+              value: stats?.retorno_total_pct != null ? fmtPct2(stats.retorno_total_pct) : '—',
+              sub: stats?.retorno_total_usd != null ? `${fmt$(stats.retorno_total_usd, 0)} desde $1M` : 'Capital inicial: $1,000,000',
+              color: stats?.retorno_total_pct >= 0 ? '#16A34A' : '#DC2626',
+              big: true,
+            },
+            {
+              label: 'YTD',
+              value: stats?.ytd_pct != null ? fmtPct2(stats.ytd_pct) : '—',
+              sub: 'Este año',
+              color: stats?.ytd_pct >= 0 ? '#16A34A' : '#DC2626',
+            },
+            {
+              label: 'Último mes',
+              value: stats?.mensual_pct != null ? fmtPct2(stats.mensual_pct) : '—',
+              sub: '30 días',
+              color: stats?.mensual_pct >= 0 ? '#16A34A' : '#DC2626',
+            },
+            {
+              label: 'Win rate',
+              value: stats?.win_rate != null ? `${stats.win_rate.toFixed(1)}%` : '—',
+              sub: `${stats?.trades_con_pl || 0} trades con P&L`,
+              color: 'var(--text)',
+            },
+            {
+              label: 'NAV actual',
+              value: stats?.nav_actual != null ? fmt$(stats.nav_actual, 0) : (summary?.total_nav ? fmt$(summary.total_nav, 0) : '—'),
+              sub: 'Valor de la cuenta',
+              color: 'var(--text)',
+            },
+            {
+              label: 'P&L realizado',
+              value: stats?.total_realizado_usd != null ? fmt$(stats.total_realizado_usd, 0) : '—',
+              sub: 'Ganancias cerradas',
+              color: stats?.total_realizado_usd >= 0 ? '#16A34A' : '#DC2626',
+            },
+          ].map(({ label, value, sub, color, big }) => (
+            <div key={label} style={{
+              background: 'var(--card-bg)', border: '1px solid var(--border)',
+              borderRadius: 12, padding: '16px 20px', flex: big ? '2 1 220px' : '1 1 150px', minWidth: 140,
+            }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: 'var(--text-faint)', textTransform: 'uppercase', marginBottom: 4 }}>{label}</div>
+              <div style={{ fontSize: big ? 28 : 22, fontWeight: 700, color, fontFamily: "'Georgia', serif", letterSpacing: '-0.02em' }}>{value}</div>
+              {sub && <div style={{ fontSize: 11, color: 'var(--text-faint)', marginTop: 2 }}>{sub}</div>}
+            </div>
+          ))}
+        </div>
+
+        {/* ── Gráfica NAV vs S&P 500 ───────────────────────────────────────── */}
+        {chartData.length >= 2 && (
+          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '20px 20px 10px', marginBottom: 28 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+              <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                Rendimiento vs S&P 500
+              </div>
+              <div style={{ display: 'flex', gap: 16, fontSize: 12 }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                  <span style={{ width: 12, height: 3, background: '#A08040', display: 'inline-block', borderRadius: 2 }} />
+                  <span style={{ color: 'var(--text-muted)' }}>Murza</span>
+                </span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                  <span style={{ width: 12, height: 3, background: '#6366f1', display: 'inline-block', borderRadius: 2 }} />
+                  <span style={{ color: 'var(--text-muted)' }}>S&P 500</span>
+                </span>
+              </div>
+            </div>
+            <ResponsiveContainer width="100%" height={200}>
+              <LineChart data={chartData}>
+                <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
+                <XAxis dataKey="fecha" tick={{ fill: 'var(--text-faint)', fontSize: 10 }} axisLine={false} tickLine={false} interval="preserveStartEnd" />
+                <YAxis tick={{ fill: 'var(--text-faint)', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`} />
+                <ReferenceLine y={0} stroke="var(--border)" strokeDasharray="4 4" />
+                <Tooltip
+                  contentStyle={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }}
+                  formatter={(v, name) => [`${v >= 0 ? '+' : ''}${v.toFixed(2)}%`, name === 'portafolio' ? 'Murza' : 'S&P 500']}
+                />
+                <Line type="monotone" dataKey="portafolio" stroke="#A08040" strokeWidth={2} dot={false} />
+                <Line type="monotone" dataKey="sp500" stroke="#6366f1" strokeWidth={1.5} dot={false} strokeDasharray="4 4" />
+              </LineChart>
+            </ResponsiveContainer>
           </div>
         )}
 
@@ -622,6 +818,7 @@ export default function PortafolioPage() {
           {[
             { key: 'posiciones', label: `Posiciones (${positions.length})` },
             { key: 'historial',  label: `Historial (${totalTrades})` },
+            { key: 'analisis',   label: 'Análisis' },
             { key: 'chat',       label: 'Chat IA' },
           ].map(({ key, label }) => (
             <button key={key} onClick={() => setTab(key)} style={{
@@ -696,6 +893,7 @@ export default function PortafolioPage() {
         {tab === 'historial' && (
           <TradesTab trades={trades} total={totalTrades} adminToken={adminToken} onRefresh={loadData} />
         )}
+        {tab === 'analisis' && <AnalisisTab positions={positions} stats={stats} />}
         {tab === 'chat' && <ChatTab />}
       </div>
     </div>
