@@ -162,7 +162,7 @@ function PositionsTab({ positions, summary, navData }) {
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
             <thead>
               <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                {['Ticker', 'Nombre', 'Acciones', 'Entrada', 'Precio actual', 'P&L $', 'P&L %', '% Portafolio'].map(h => (
+                {['Ticker', 'Nombre', 'Acciones', 'Entrada', 'Precio actual', 'Valor total', 'P&L $', 'P&L %', '% Portafolio'].map(h => (
                   <th key={h} style={{ padding: '10px 12px', textAlign: h === 'Ticker' || h === 'Nombre' ? 'left' : 'right', fontWeight: 700, fontSize: 11, color: 'var(--text-faint)', textTransform: 'uppercase', letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>
                     {h}
                   </th>
@@ -192,6 +192,9 @@ function PositionsTab({ positions, summary, navData }) {
                     </td>
                     <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 600, color: 'var(--text)' }}>
                       {fmt$(p.mark_price, 2)}
+                    </td>
+                    <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 700, color: 'var(--text)' }}>
+                      {fmt$(p.position_value)}
                     </td>
                     <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 700, color }}>
                       {pl >= 0 ? '+' : ''}{fmt$(pl, 2)}
