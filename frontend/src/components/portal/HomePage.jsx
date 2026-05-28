@@ -329,7 +329,7 @@ export default function HomePage() {
             <Link
               to="/"
               style={{
-                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
                 color: 'var(--gold-dark)', fontWeight: 600,
                 background: 'var(--gold-pale)',
                 textDecoration: 'none',
@@ -340,7 +340,7 @@ export default function HomePage() {
             <Link
               to="/earnings"
               style={{
-                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
                 color: 'var(--text-muted)', fontWeight: 500,
                 textDecoration: 'none', transition: 'all 0.15s',
               }}
@@ -352,7 +352,7 @@ export default function HomePage() {
             <Link
               to="/noticias"
               style={{
-                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
                 color: 'var(--text-muted)', fontWeight: 500,
                 textDecoration: 'none', transition: 'all 0.15s',
               }}
@@ -364,7 +364,7 @@ export default function HomePage() {
             <Link
               to="/comparar"
               style={{
-                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
                 color: 'var(--text-muted)', fontWeight: 500,
                 textDecoration: 'none', transition: 'all 0.15s',
               }}
@@ -376,7 +376,7 @@ export default function HomePage() {
             <Link
               to="/blog"
               style={{
-                padding: '6px 14px', borderRadius: 8, fontSize: 14,
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
                 color: 'var(--text-muted)', fontWeight: 500,
                 textDecoration: 'none', transition: 'all 0.15s',
               }}
@@ -384,6 +384,18 @@ export default function HomePage() {
               onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}
             >
               Blog
+            </Link>
+            <Link
+              to="/portafolio"
+              style={{
+                padding: '6px 11px', borderRadius: 8, fontSize: 13,
+                color: 'var(--text-muted)', fontWeight: 500,
+                textDecoration: 'none', transition: 'all 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}
+            >
+              Portafolio
             </Link>
           </nav>
           <div className="portal-header-right">

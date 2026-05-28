@@ -665,6 +665,7 @@ export default function CompararPage() {
             <NavLink to="/noticias">Noticias</NavLink>
             <NavLink to="/comparar" active>Comparar</NavLink>
             <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/portafolio">Portafolio</NavLink>
           </nav>
           <div className="portal-header-right">
             {userToken
