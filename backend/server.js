@@ -16,7 +16,7 @@ const app  = express();
 const PORT = process.env.PORT || 3002;
 
 app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5174' }));
-app.use(express.json({ limit: '5mb' }));
+app.use(express.json({ limit: '20mb' }));
 
 app.use('/api/auth',     authRoutes);
 app.use('/api/reportes', reportesRoutes);

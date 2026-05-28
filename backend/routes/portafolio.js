@@ -259,6 +259,86 @@ router.post('/sync', authAdmin, async (req, res) => {
   }
 });
 
+// POST /api/portafolio/upload-xml  (admin) — procesa XML descargado manualmente de IB
+router.post('/upload-xml', authAdmin, async (req, res) => {
+  const { xml } = req.body || {};
+  if (!xml || typeof xml !== 'string' || xml.length < 100)
+    return res.status(400).json({ error: 'XML inválido o vacío' });
+  if (!xml.includes('FlexQuery') && !xml.includes('FlexStatement'))
+    return res.status(400).json({ error: 'El archivo no parece ser un XML de IB Flex' });
+
+  try {
+    // Trades
+    const trades = parseElements(xml, 'Trade');
+    let tradesIn = 0;
+    for (const t of trades) {
+      if (t.levelOfDetail && t.levelOfDetail !== 'EXECUTION') continue;
+      try {
+        const r = await db.execute({
+          sql: `INSERT OR IGNORE INTO ib_trades
+            (trade_id,symbol,description,asset_cat,trade_date,datetime,buy_sell,
+             quantity,price,proceeds,commission,net_cash,cost_basis,realized_pl,
+             open_close,currency,exchange)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+          args: [
+            t.tradeID||null, t.symbol, t.description||null, t.assetCategory||null,
+            parseDate(t.tradeDate), parseDateTime(t.dateTime),
+            t.buySell, num(t.quantity), num(t.tradePrice),
+            num(t.proceeds), num(t.ibCommission), num(t.netCash),
+            num(t.costBasis), num(t.realizedPL), t.openCloseIndicator||null,
+            t.currency||'USD', t.exchange||null,
+          ],
+        });
+        if (r.rowsAffected > 0) tradesIn++;
+      } catch {}
+    }
+
+    // Posiciones
+    const positions = parseElements(xml, 'OpenPosition');
+    let posUp = 0;
+    for (const p of positions) {
+      await db.execute({
+        sql: `INSERT INTO ib_positions
+          (symbol,description,asset_cat,quantity,mark_price,position_value,
+           open_price,cost_basis,unrealized_pl,pct_nav,side,open_datetime,
+           currency,report_date,updated_at)
+          VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,strftime('%Y-%m-%d %H:%M:%S','now'))
+          ON CONFLICT(symbol) DO UPDATE SET
+            quantity=excluded.quantity, mark_price=excluded.mark_price,
+            position_value=excluded.position_value, open_price=excluded.open_price,
+            cost_basis=excluded.cost_basis, unrealized_pl=excluded.unrealized_pl,
+            pct_nav=excluded.pct_nav, side=excluded.side,
+            open_datetime=excluded.open_datetime, report_date=excluded.report_date,
+            updated_at=strftime('%Y-%m-%d %H:%M:%S','now')`,
+        args: [
+          p.symbol, p.description||null, p.assetCategory||null,
+          num(p.quantity), num(p.markPrice), num(p.positionValue),
+          num(p.openPrice), num(p.costBasisPrice), num(p.unrealizedPnL),
+          num(p.percentOfNAV), p.side||null, parseDateTime(p.openDateTime),
+          p.currency||'USD', parseDate(p.reportDate),
+        ],
+      });
+      posUp++;
+    }
+
+    // NAV
+    const navItems = parseElements(xml, 'NetAssetValue');
+    const total = navItems.find(n => n.assetCategory === 'Total');
+    if (total) {
+      const date = parseDate(total.reportDate) || new Date().toISOString().slice(0,10);
+      await db.execute({
+        sql: `INSERT OR IGNORE INTO ib_nav (report_date,total_nav,cash,stock) VALUES (?,?,?,?)`,
+        args: [date, num(total.total), num(total.cash), num(total.stock)],
+      });
+    }
+
+    res.json({ ok: true, trades: tradesIn, positions: posUp,
+      message: `${tradesIn} trades nuevos, ${posUp} posiciones actualizadas` });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // PATCH /api/portafolio/trades/:id/note  (admin)
 router.patch('/trades/:id/note', authAdmin, async (req, res) => {
   const { note } = req.body || {};

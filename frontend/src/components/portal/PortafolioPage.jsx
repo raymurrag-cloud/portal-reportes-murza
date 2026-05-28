@@ -535,31 +535,37 @@ export default function PortafolioPage() {
                   {syncMsg}
                 </span>
               )}
-              <button
-                disabled={syncing}
-                onClick={async () => {
-                  setSyncing(true);
-                  setSyncMsg('Conectando con IB...');
-                  try {
-                    const r = await fetch(`${BASE}/api/portafolio/sync`, {
-                      method: 'POST',
-                      headers: { 'Authorization': `Bearer ${adminToken}` },
-                    });
-                    const data = await r.json();
-                    if (data.error) setSyncMsg(`Error: ${data.error}`);
-                    else { setSyncMsg(data.message); await loadData(); }
-                  } catch (e) {
-                    setSyncMsg(`Error: ${e.message}`);
-                  }
-                  setSyncing(false);
-                }}
-                style={{
-                  padding: '6px 14px', borderRadius: 8, border: '1px solid var(--border)',
-                  background: 'var(--card-bg)', color: syncing ? 'var(--text-faint)' : 'var(--gold)',
-                  fontSize: 12, fontWeight: 600, cursor: syncing ? 'not-allowed' : 'pointer',
-                }}>
-                {syncing ? 'Sincronizando...' : 'Sync IB'}
-              </button>
+              {/* Upload XML de IB */}
+              <label style={{
+                padding: '6px 14px', borderRadius: 8, border: '1px solid var(--border)',
+                background: 'var(--card-bg)', color: syncing ? 'var(--text-faint)' : 'var(--gold)',
+                fontSize: 12, fontWeight: 600, cursor: syncing ? 'not-allowed' : 'pointer',
+              }}>
+                {syncing ? 'Importando...' : 'Subir XML de IB'}
+                <input type="file" accept=".xml" style={{ display: 'none' }} disabled={syncing}
+                  onChange={async (e) => {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    setSyncing(true);
+                    setSyncMsg('Procesando XML...');
+                    try {
+                      const xml = await file.text();
+                      const r = await fetch(`${BASE}/api/portafolio/upload-xml`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
+                        body: JSON.stringify({ xml }),
+                      });
+                      const data = await r.json();
+                      if (data.error) setSyncMsg(`Error: ${data.error}`);
+                      else { setSyncMsg(data.message); await loadData(); }
+                    } catch (err) {
+                      setSyncMsg(`Error: ${err.message}`);
+                    }
+                    setSyncing(false);
+                    e.target.value = '';
+                  }}
+                />
+              </label>
             </div>
           )}
         </div>
