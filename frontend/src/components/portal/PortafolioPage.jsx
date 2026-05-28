@@ -377,6 +377,8 @@ export default function PortafolioPage() {
   const [totalTrades, setTotalTrades] = useState(0);
   const [navData, setNavData]   = useState([]);
   const [loading, setLoading]   = useState(true);
+  const [syncing, setSyncing]   = useState(false);
+  const [syncMsg, setSyncMsg]   = useState('');
   const adminToken = localStorage.getItem('portal_admin_token');
 
   async function loadData() {
@@ -527,21 +529,36 @@ export default function PortafolioPage() {
 
           {/* Botón sync (admin) */}
           {adminToken && (
-            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10 }}>
+              {syncMsg && (
+                <span style={{ fontSize: 12, color: syncMsg.startsWith('Error') ? '#DC2626' : '#16A34A' }}>
+                  {syncMsg}
+                </span>
+              )}
               <button
+                disabled={syncing}
                 onClick={async () => {
-                  await fetch(`${BASE}/api/portafolio/sync`, {
-                    method: 'POST',
-                    headers: { 'Authorization': `Bearer ${adminToken}` },
-                  });
-                  setTimeout(loadData, 8000);
+                  setSyncing(true);
+                  setSyncMsg('Conectando con IB...');
+                  try {
+                    const r = await fetch(`${BASE}/api/portafolio/sync`, {
+                      method: 'POST',
+                      headers: { 'Authorization': `Bearer ${adminToken}` },
+                    });
+                    const data = await r.json();
+                    if (data.error) setSyncMsg(`Error: ${data.error}`);
+                    else { setSyncMsg(data.message); await loadData(); }
+                  } catch (e) {
+                    setSyncMsg(`Error: ${e.message}`);
+                  }
+                  setSyncing(false);
                 }}
                 style={{
                   padding: '6px 14px', borderRadius: 8, border: '1px solid var(--border)',
-                  background: 'var(--card-bg)', color: 'var(--gold)', fontSize: 12, fontWeight: 600,
-                  cursor: 'pointer',
+                  background: 'var(--card-bg)', color: syncing ? 'var(--text-faint)' : 'var(--gold)',
+                  fontSize: 12, fontWeight: 600, cursor: syncing ? 'not-allowed' : 'pointer',
                 }}>
-                Sync IB
+                {syncing ? 'Sincronizando...' : 'Sync IB'}
               </button>
             </div>
           )}

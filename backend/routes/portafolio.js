@@ -120,18 +120,140 @@ Responde en espanol. Usa los datos reales del portafolio para responder pregunta
   }
 });
 
+// ── Helpers de sync IB ───────────────────────────────────────────────────────
+function parseElements(xml, tagName) {
+  const results = [];
+  const re = new RegExp(`<${tagName}\\b([^>]*)(?:\\s*/?>|>)`, 'g');
+  let m;
+  while ((m = re.exec(xml)) !== null) {
+    const attrs = {};
+    const attrRe = /(\w+)="([^"]*)"/g;
+    let a;
+    while ((a = attrRe.exec(m[1])) !== null) attrs[a[1]] = a[2];
+    results.push(attrs);
+  }
+  return results;
+}
+function parseDate(s) {
+  if (!s || s.length < 8) return null;
+  return `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}`;
+}
+function parseDateTime(s) {
+  if (!s) return null;
+  const [d, t] = s.split(';');
+  const date = parseDate(d);
+  if (!date) return null;
+  return t?.length >= 6 ? `${date} ${t.slice(0,2)}:${t.slice(2,4)}:${t.slice(4,6)}` : date;
+}
+function num(v) { const n = parseFloat(v); return isNaN(n) ? null : n; }
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+async function fetchFlexXML() {
+  const token   = process.env.IB_FLEX_TOKEN;
+  const queryId = process.env.IB_FLEX_QUERY_ID;
+  if (!token || !queryId) throw new Error('IB_FLEX_TOKEN o IB_FLEX_QUERY_ID no configurados en Render');
+
+  const r1  = await fetch(`https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest?t=${token}&q=${queryId}&v=3`);
+  const xml1 = await r1.text();
+  const refCode = xml1.match(/<ReferenceCode>(\d+)<\/ReferenceCode>/)?.[1];
+  const baseUrl = xml1.match(/<Url>([^<]+)<\/Url>/)?.[1] || 'https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement';
+  const status  = xml1.match(/<Status>(\w+)<\/Status>/)?.[1];
+  if (!refCode || status !== 'Success') {
+    const msg = xml1.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || xml1.slice(0, 300);
+    throw new Error(`IB error: ${msg}`);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    await sleep(i === 0 ? 6000 : 3000);
+    const r2  = await fetch(`${baseUrl}?q=${queryId}&t=${token}&v=3&ReferenceCode=${refCode}`);
+    const xml2 = await r2.text();
+    if (xml2.includes('<FlexQueryResponse')) return xml2;
+    const err = xml2.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || '';
+    if (!err.includes('generation in progress')) throw new Error(`IB error: ${err}`);
+  }
+  throw new Error('Timeout: IB no entregó el statement');
+}
+
 // POST /api/portafolio/sync  (admin)
 router.post('/sync', authAdmin, async (req, res) => {
   try {
-    const { spawn } = await import('child_process');
-    const backendDir = new URL('..', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
-    const proc = spawn('node', ['sync_ib.mjs'], {
-      cwd: backendDir,
-      env: { ...process.env },
-      detached: true, stdio: 'ignore',
-    });
-    proc.unref();
-    res.json({ ok: true, message: 'Sync iniciado en background' });
+    const xml = await fetchFlexXML();
+
+    // Trades
+    const trades = parseElements(xml, 'Trade');
+    let tradesIn = 0;
+    for (const t of trades) {
+      if (t.levelOfDetail && t.levelOfDetail !== 'EXECUTION') continue;
+      try {
+        const r = await db.execute({
+          sql: `INSERT OR IGNORE INTO ib_trades
+            (trade_id,symbol,description,asset_cat,trade_date,datetime,buy_sell,
+             quantity,price,proceeds,commission,net_cash,cost_basis,realized_pl,
+             open_close,currency,exchange)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+          args: [
+            t.tradeID||null, t.symbol, t.description||null, t.assetCategory||null,
+            parseDate(t.tradeDate), parseDateTime(t.dateTime),
+            t.buySell, num(t.quantity), num(t.tradePrice),
+            num(t.proceeds), num(t.ibCommission), num(t.netCash),
+            num(t.costBasis), num(t.realizedPL), t.openCloseIndicator||null,
+            t.currency||'USD', t.exchange||null,
+          ],
+        });
+        if (r.rowsAffected > 0) tradesIn++;
+      } catch {}
+    }
+
+    // Posiciones
+    const positions = parseElements(xml, 'OpenPosition');
+    let posUp = 0;
+    for (const p of positions) {
+      await db.execute({
+        sql: `INSERT INTO ib_positions
+          (symbol,description,asset_cat,quantity,mark_price,position_value,
+           open_price,cost_basis,unrealized_pl,pct_nav,side,open_datetime,
+           currency,report_date,updated_at)
+          VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,strftime('%Y-%m-%d %H:%M:%S','now'))
+          ON CONFLICT(symbol) DO UPDATE SET
+            quantity=excluded.quantity, mark_price=excluded.mark_price,
+            position_value=excluded.position_value, open_price=excluded.open_price,
+            cost_basis=excluded.cost_basis, unrealized_pl=excluded.unrealized_pl,
+            pct_nav=excluded.pct_nav, side=excluded.side,
+            open_datetime=excluded.open_datetime, report_date=excluded.report_date,
+            updated_at=strftime('%Y-%m-%d %H:%M:%S','now')`,
+        args: [
+          p.symbol, p.description||null, p.assetCategory||null,
+          num(p.quantity), num(p.markPrice), num(p.positionValue),
+          num(p.openPrice), num(p.costBasisPrice), num(p.unrealizedPnL),
+          num(p.percentOfNAV), p.side||null, parseDateTime(p.openDateTime),
+          p.currency||'USD', parseDate(p.reportDate),
+        ],
+      });
+      posUp++;
+    }
+
+    // NAV
+    const navItems = parseElements(xml, 'NetAssetValue');
+    const total = navItems.find(n => n.assetCategory === 'Total');
+    if (total) {
+      const date = parseDate(total.reportDate) || new Date().toISOString().slice(0,10);
+      await db.execute({
+        sql: `INSERT OR IGNORE INTO ib_nav (report_date,total_nav,cash,stock) VALUES (?,?,?,?)`,
+        args: [date, num(total.total), num(total.cash), num(total.stock)],
+      });
+    } else {
+      const cashItems = parseElements(xml, 'CashReportCurrency');
+      const base = cashItems.find(c => c.currency === 'BASE_SUMMARY') || cashItems[0];
+      if (base) {
+        const date = new Date().toISOString().slice(0,10);
+        await db.execute({
+          sql: `INSERT OR IGNORE INTO ib_nav (report_date,total_nav,cash,stock) VALUES (?,?,?,?)`,
+          args: [date, num(base.endingCash), num(base.endingCash), null],
+        });
+      }
+    }
+
+    res.json({ ok: true, trades: tradesIn, positions: posUp, message: `${tradesIn} trades nuevos, ${posUp} posiciones actualizadas` });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
