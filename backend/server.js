@@ -262,7 +262,7 @@ app.get('/api/precio/:ticker', async (req, res) => {
     const data = await r.json();
     const meta = data?.chart?.result?.[0]?.meta;
     if (!meta?.regularMarketPrice) throw new Error('Sin precio');
-    const entry = { ticker, precio: meta.regularMarketPrice, moneda: meta.currency || 'USD', timestamp: Date.now() };
+    const entry = { ticker, precio: meta.regularMarketPrice, moneda: meta.currency || 'USD', nombre: meta.shortName || meta.longName || null, timestamp: Date.now() };
     precioCache.set(ticker, entry);
     res.json(entry);
   } catch {

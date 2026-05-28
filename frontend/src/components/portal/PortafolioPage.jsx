@@ -464,18 +464,24 @@ export default function PortafolioPage() {
       const priceResults = await Promise.allSettled(
         stocks.map(p => fetch(`${BASE}/precio/${p.symbol}`).then(r => r.json()))
       );
-      const priceMap = {};
+      const infoMap = {};
       stocks.forEach((p, i) => {
         const r = priceResults[i];
-        if (r.status === 'fulfilled' && r.value?.precio) priceMap[p.symbol] = r.value.precio;
+        if (r.status === 'fulfilled' && r.value?.precio) infoMap[p.symbol] = r.value;
       });
 
       const enriched = rawPositions.map(p => {
-        const livePrice = priceMap[p.symbol];
-        if (!livePrice) return p;
+        const info = infoMap[p.symbol];
+        if (!info) return p;
         const qty = Math.abs(p.quantity || 0);
-        const unrealized = (livePrice - (p.open_price || 0)) * qty;
-        return { ...p, mark_price: livePrice, position_value: livePrice * qty, unrealized_pl: unrealized };
+        const unrealized = (info.precio - (p.open_price || 0)) * qty;
+        return {
+          ...p,
+          mark_price:     info.precio,
+          position_value: info.precio * qty,
+          unrealized_pl:  unrealized,
+          description:    info.nombre || p.description,
+        };
       });
 
       setPositions(enriched);
