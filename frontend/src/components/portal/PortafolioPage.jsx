@@ -552,8 +552,8 @@ export default function PortafolioPage() {
                       const xml = await file.text();
                       const r = await fetch(`${BASE}/api/portafolio/upload-xml`, {
                         method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
-                        body: JSON.stringify({ xml }),
+                        headers: { 'Content-Type': 'text/plain', 'Authorization': `Bearer ${adminToken}` },
+                        body: xml,
                       });
                       const data = await r.json();
                       if (data.error) setSyncMsg(`Error: ${data.error}`);

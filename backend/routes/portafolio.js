@@ -260,11 +260,11 @@ router.post('/sync', authAdmin, async (req, res) => {
 });
 
 // POST /api/portafolio/upload-xml  (admin) — procesa XML descargado manualmente de IB
-router.post('/upload-xml', authAdmin, async (req, res) => {
-  const { xml } = req.body || {};
-  if (!xml || typeof xml !== 'string' || xml.length < 100)
+router.post('/upload-xml', authAdmin, express.text({ limit: '30mb', type: '*/*' }), async (req, res) => {
+  const xml = typeof req.body === 'string' ? req.body : (req.body?.xml || '');
+  if (!xml || xml.length < 100)
     return res.status(400).json({ error: 'XML inválido o vacío' });
-  if (!xml.includes('FlexQuery') && !xml.includes('FlexStatement'))
+  if (!xml.includes('Flex') && !xml.includes('Trade') && !xml.includes('Position'))
     return res.status(400).json({ error: 'El archivo no parece ser un XML de IB Flex' });
 
   try {
