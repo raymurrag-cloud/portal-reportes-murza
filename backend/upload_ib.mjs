@@ -135,23 +135,38 @@ async function main() {
   }
   const token = loginData.token;
   console.log('Autenticado. Subiendo datos...');
-  console.log(`  NAV histórico: ${parsed.navHistory?.length || 0} días`);
 
-  // Upload
+  // Upload trades + positions (sin navHistory para no timeout)
+  const { navHistory, ...mainData } = parsed;
   const res = await fetch(`${PORTAL_URL}/api/portafolio/upload-data`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-    body: JSON.stringify(parsed),
+    body: JSON.stringify(mainData),
   });
-  const data = await res.json();
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch { throw new Error(`HTTP ${res.status} — Respuesta inválida: ${text.slice(0,300)}`); }
+  if (data.error) { console.error('Error:', data.error); process.exit(1); }
+  console.log(`✓ ${data.message}`);
 
-  if (data.error) {
-    console.error('Error:', data.error);
-    process.exit(1);
+  // Upload NAV histórico en chunks de 20 para no saturar Turso
+  if (navHistory?.length) {
+    process.stdout.write(`Importando NAV histórico (${navHistory.length} días)... `);
+    const CHUNK = 20;
+    let imported = 0;
+    for (let i = 0; i < navHistory.length; i += CHUNK) {
+      const chunk = navHistory.slice(i, i + CHUNK);
+      const r2 = await fetch(`${PORTAL_URL}/api/portafolio/upload-data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+        body: JSON.stringify({ trades: [], positions: [], navHistory: chunk }),
+      });
+      const t2 = await r2.text();
+      try { const d2 = JSON.parse(t2); imported += d2.nav_history || 0; } catch {}
+    }
+    console.log(`${imported} días nuevos importados`);
   }
 
-  console.log(`✓ ${data.message}`);
-  if (data.nav_history) console.log(`✓ ${data.nav_history} días de NAV histórico importados`);
   console.log(`Portal actualizado: https://reportes.murzainversiones.com/portafolio`);
 }
 
