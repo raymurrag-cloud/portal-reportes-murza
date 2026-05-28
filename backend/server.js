@@ -15,7 +15,10 @@ const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 const app  = express();
 const PORT = process.env.PORT || 3002;
 
-app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5174' }));
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(',').map(s => s.trim())
+  : ['http://localhost:5174', 'http://localhost:5173', 'https://reportes.murzainversiones.com'];
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json({ limit: '20mb' }));
 
 app.use('/api/auth',     authRoutes);
