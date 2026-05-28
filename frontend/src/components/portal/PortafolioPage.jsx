@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { api } from '../../api.js';
 
-const BASE = import.meta.env.VITE_API_URL || 'https://portal-reportes-murza.onrender.com';
+const BASE = import.meta.env.VITE_API_URL || '/api';
 
 function parseIbXml(xmlText) {
   function num(v) { const n = parseFloat(v); return isNaN(n) ? null : n; }
@@ -221,7 +221,7 @@ function TradesTab({ trades, total, adminToken, onRefresh }) {
 
   async function saveNote(id) {
     setSaving(true);
-    await fetch(`${BASE}/api/portafolio/trades/${id}/note`, {
+    await fetch(`${BASE}/portafolio/trades/${id}/note`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
       body: JSON.stringify({ note: noteVal }),
@@ -363,7 +363,7 @@ function ChatTab() {
     setInput('');
     setLoading(true);
     try {
-      const r = await fetch(`${BASE}/api/portafolio/chat`, {
+      const r = await fetch(`${BASE}/portafolio/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMessages.filter(m => m.role !== 'assistant' || newMessages.indexOf(m) > 0) }),
@@ -452,9 +452,9 @@ export default function PortafolioPage() {
     setLoading(true);
     try {
       const [posR, tradeR, navR] = await Promise.all([
-        fetch(`${BASE}/api/portafolio/positions`).then(r => r.json()),
-        fetch(`${BASE}/api/portafolio/trades?limit=100`).then(r => r.json()),
-        fetch(`${BASE}/api/portafolio/nav`).then(r => r.json()),
+        fetch(`${BASE}/portafolio/positions`).then(r => r.json()),
+        fetch(`${BASE}/portafolio/trades?limit=100`).then(r => r.json()),
+        fetch(`${BASE}/portafolio/nav`).then(r => r.json()),
       ]);
       setPositions(posR.positions || []);
       setSummary(posR.summary || null);
@@ -625,7 +625,7 @@ export default function PortafolioPage() {
                       const parsed = parseIbXml(xmlText);
                       if (!parsed.trades.length && !parsed.positions.length)
                         throw new Error('El archivo no contiene trades ni posiciones de IB');
-                      const r = await fetch(`${BASE}/api/portafolio/upload-data`, {
+                      const r = await fetch(`${BASE}/portafolio/upload-data`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
                         body: JSON.stringify(parsed),
