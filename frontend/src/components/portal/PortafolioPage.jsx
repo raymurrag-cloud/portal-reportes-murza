@@ -595,6 +595,11 @@ export default function PortafolioPage() {
           ))}
 
           {/* Botón sync (admin) */}
+          {!adminToken && (
+            <a href="/admin" style={{ marginLeft: 'auto', fontSize: 11, color: 'var(--text-faint)', textDecoration: 'none' }}>
+              Admin
+            </a>
+          )}
           {adminToken && (
             <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10 }}>
               {syncMsg && (
