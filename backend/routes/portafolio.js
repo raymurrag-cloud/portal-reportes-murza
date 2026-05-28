@@ -321,8 +321,85 @@ router.post('/upload-data', authAdmin, async (req, res) => {
     });
   }
 
-  res.json({ ok: true, trades: tradesIn, positions: posUp,
+  // NAV histórico desde EquitySummaryByReportDateInBase
+  const navHistory = req.body?.navHistory || [];
+  let navHistoryCount = 0;
+  for (const n of navHistory) {
+    if (!n.report_date || n.total_nav == null) continue;
+    try {
+      const r = await db.execute({
+        sql: `INSERT OR IGNORE INTO ib_nav (report_date, total_nav, cash, stock) VALUES (?,?,?,?)`,
+        args: [n.report_date, n.total_nav, n.cash ?? null, n.stock ?? null],
+      });
+      if (r.rowsAffected > 0) navHistoryCount++;
+    } catch {}
+  }
+
+  res.json({ ok: true, trades: tradesIn, positions: posUp, nav_history: navHistoryCount,
     message: `${tradesIn} trades nuevos, ${posUp} posiciones actualizadas` });
+});
+
+// GET /api/portafolio/stats  — métricas de rendimiento
+router.get('/stats', async (req, res) => {
+  const CAPITAL_INICIAL = 1_000_000;
+  try {
+    const navRes = await db.execute({ sql: `SELECT report_date, total_nav FROM ib_nav ORDER BY report_date ASC`, args: [] });
+    const navRows = navRes.rows;
+    const navActual = navRows.length ? navRows[navRows.length - 1].total_nav : null;
+
+    const retornoTotalPct = navActual ? ((navActual - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100) : null;
+
+    const hoy = new Date();
+    const inicioAnio = `${hoy.getFullYear()}-01-01`;
+    const navInicioAnio = navRows.find(n => n.report_date >= inicioAnio);
+    const ytdPct = navActual && navInicioAnio
+      ? ((navActual - navInicioAnio.total_nav) / navInicioAnio.total_nav * 100) : null;
+
+    const hace30 = new Date(hoy); hace30.setDate(hace30.getDate() - 30);
+    const navHace30 = navRows.find(n => n.report_date >= hace30.toISOString().slice(0,10));
+    const mensualPct = navActual && navHace30
+      ? ((navActual - navHace30.total_nav) / navHace30.total_nav * 100) : null;
+
+    const hace1y = new Date(hoy); hace1y.setFullYear(hace1y.getFullYear() - 1);
+    const navHace1y = navRows.find(n => n.report_date >= hace1y.toISOString().slice(0,10));
+    const anualPct = navActual && navHace1y
+      ? ((navActual - navHace1y.total_nav) / navHace1y.total_nav * 100) : null;
+
+    const tradesRes = await db.execute({
+      sql: `SELECT realized_pl, symbol, trade_date, buy_sell, quantity, price FROM ib_trades WHERE realized_pl IS NOT NULL AND realized_pl != 0 ORDER BY realized_pl DESC`,
+      args: [],
+    });
+    const tradeRows = tradesRes.rows;
+    const gains = tradeRows.map(t => t.realized_pl);
+    const ganadores = gains.filter(p => p > 0);
+    const perdedores = gains.filter(p => p < 0);
+    const winRate = gains.length ? (ganadores.length / gains.length * 100) : null;
+    const totalRealizado = gains.reduce((s, p) => s + p, 0);
+    const avgGanancia = ganadores.length ? ganadores.reduce((s,p)=>s+p,0)/ganadores.length : null;
+    const avgPerdida = perdedores.length ? perdedores.reduce((s,p)=>s+p,0)/perdedores.length : null;
+
+    const totalTradesRes = await db.execute({ sql: `SELECT COUNT(*) as n FROM ib_trades`, args: [] });
+
+    res.json({
+      capital_inicial:    CAPITAL_INICIAL,
+      nav_actual:         navActual,
+      retorno_total_pct:  retornoTotalPct,
+      retorno_total_usd:  navActual ? navActual - CAPITAL_INICIAL : null,
+      ytd_pct:            ytdPct,
+      mensual_pct:        mensualPct,
+      anual_pct:          anualPct,
+      total_trades:       totalTradesRes.rows[0].n,
+      trades_con_pl:      gains.length,
+      win_rate:           winRate,
+      total_realizado_usd: totalRealizado,
+      avg_ganancia_usd:   avgGanancia,
+      avg_perdida_usd:    avgPerdida,
+      best_trades:        tradeRows.slice(0, 3),
+      worst_trades:       tradeRows.slice(-3).reverse(),
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
 });
 
 // POST /api/portafolio/upload-xml  (admin) — procesa XML descargado manualmente de IB

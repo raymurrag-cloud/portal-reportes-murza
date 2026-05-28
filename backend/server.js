@@ -270,6 +270,40 @@ app.get('/api/precio/:ticker', async (req, res) => {
   }
 });
 
+// ── Historial de precios (para gráfica vs S&P 500) ────────────────────────
+const historicoCache = new Map();
+const HIST_TTL = 60 * 60 * 1000;
+
+app.get('/api/historico/:ticker', async (req, res) => {
+  const ticker = req.params.ticker.toUpperCase().replace(/[^A-Z0-9.^-]/g, '');
+  const desde  = req.query.desde || '2025-01-01';
+  const key    = `${ticker}:${desde}`;
+
+  const cached = historicoCache.get(key);
+  if (cached && Date.now() - cached.ts < HIST_TTL) return res.json({ ...cached.data, cached: true });
+
+  try {
+    const p1  = Math.floor(new Date(desde).getTime() / 1000);
+    const p2  = Math.floor(Date.now() / 1000);
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&period1=${p1}&period2=${p2}`;
+    const r   = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' } });
+    const raw = await r.json();
+    const result = raw?.chart?.result?.[0];
+    if (!result) throw new Error('Sin datos');
+    const ts = result.timestamp || [];
+    const closes = result.indicators?.quote?.[0]?.close || [];
+    const series = ts.map((t, i) => ({
+      fecha:  new Date(t * 1000).toISOString().slice(0, 10),
+      precio: closes[i] ? Math.round(closes[i] * 100) / 100 : null,
+    })).filter(d => d.precio != null);
+    const data = { ticker, desde, series };
+    historicoCache.set(key, { data, ts: Date.now() });
+    res.json(data);
+  } catch {
+    res.status(503).json({ error: 'No se pudo obtener el historico' });
+  }
+});
+
 // ── Chat IA por reporte (freemium: 3 preguntas gratis, ilimitado con cuenta) ─
 const chatLimits = new Map(); // "ip:ticker" → { count, resetAt }
 const JWT_USER_SECRET = process.env.JWT_USER_SECRET || 'portal_user_secret_2026';
