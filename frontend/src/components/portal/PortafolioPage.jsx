@@ -181,18 +181,28 @@ function PositionsTab({ positions, summary, navData }) {
         </div>
       )}
 
-      {/* Tabla */}
+      {/* Tabla — sin scroll horizontal, todo en pantalla */}
       {positions.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '48px 24px', color: 'var(--text-muted)', fontSize: 15 }}>
           Sin posiciones abiertas actualmente.
         </div>
       ) : (
-        <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+        <div>
+          <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed' }}>
+            <colgroup>
+              <col style={{ width: '18%' }} /> {/* Empresa */}
+              <col style={{ width: '10%' }} /> {/* Acciones */}
+              <col style={{ width: '12%' }} /> {/* Entrada */}
+              <col style={{ width: '12%' }} /> {/* Precio */}
+              <col style={{ width: '14%' }} /> {/* Valor total */}
+              <col style={{ width: '14%' }} /> {/* P&L $ */}
+              <col style={{ width: '10%' }} /> {/* P&L % */}
+              <col style={{ width: '10%' }} /> {/* % Port. */}
+            </colgroup>
             <thead>
               <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                {['Ticker', 'Nombre', 'Acciones', 'Entrada', 'Precio actual', 'Valor total', 'P&L $', 'P&L %', '% Portafolio'].map(h => (
-                  <th key={h} style={{ padding: '10px 12px', textAlign: h === 'Ticker' || h === 'Nombre' ? 'left' : 'right', fontWeight: 700, fontSize: 11, color: 'var(--text-faint)', textTransform: 'uppercase', letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>
+                {['Empresa', 'Acciones', 'Entrada', 'Precio', 'Valor total', 'P&L $', 'P&L %', '% Port.'].map((h, i) => (
+                  <th key={h} style={{ padding: '8px 10px', textAlign: i === 0 ? 'left' : 'right', fontWeight: 700, fontSize: 10, color: 'var(--text-faint)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     {h}
                   </th>
                 ))}
@@ -207,31 +217,30 @@ function PositionsTab({ positions, summary, navData }) {
                   <tr key={p.id} style={{ borderBottom: '1px solid var(--border)', transition: 'background 0.1s' }}
                     onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-alt)'}
                     onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
-                    <td style={{ padding: '12px 12px', fontWeight: 700, color: 'var(--text)', fontFamily: 'monospace', fontSize: 13 }}>
-                      {p.symbol}
+                    {/* Ticker + Nombre juntos */}
+                    <td style={{ padding: '10px 10px' }}>
+                      <div style={{ fontWeight: 700, color: 'var(--text)', fontFamily: 'monospace', fontSize: 13 }}>{p.symbol}</div>
+                      <div style={{ fontSize: 11, color: 'var(--text-faint)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{p.description || ''}</div>
                     </td>
-                    <td style={{ padding: '12px 12px', color: 'var(--text-muted)', maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {p.description || '—'}
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, color: 'var(--text)' }}>
+                      {Math.abs(p.quantity).toLocaleString()}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', color: 'var(--text)' }}>
-                      {p.quantity}
-                    </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', color: 'var(--text-muted)' }}>
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, color: 'var(--text-muted)' }}>
                       {fmt$(p.open_price, 2)}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 600, color: 'var(--text)' }}>
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
                       {fmt$(p.mark_price, 2)}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 700, color: 'var(--text)' }}>
-                      {fmt$(p.position_value)}
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, fontWeight: 700, color: 'var(--text)' }}>
+                      {fmt$(p.position_value, 0)}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 700, color }}>
-                      {pl >= 0 ? '+' : ''}{fmt$(pl, 2)}
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, fontWeight: 700, color }}>
+                      {pl >= 0 ? '+' : ''}{fmt$(pl, 0)}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', fontWeight: 700, color }}>
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, fontWeight: 700, color }}>
                       {plPct != null ? fmtPct(plPct) : '—'}
                     </td>
-                    <td style={{ padding: '12px 12px', textAlign: 'right', color: 'var(--text-muted)' }}>
+                    <td style={{ padding: '10px 10px', textAlign: 'right', fontSize: 13, color: 'var(--text-muted)' }}>
                       {p.pct_nav ? `${p.pct_nav.toFixed(1)}%` : '—'}
                     </td>
                   </tr>
@@ -564,8 +573,12 @@ export default function PortafolioPage() {
   const [totalTrades, setTotalTrades] = useState(0);
   const [navData, setNavData]     = useState([]);
   const [stats, setStats]         = useState(null);
-  const [chartData, setChartData] = useState([]);
-  const [loading, setLoading]     = useState(true);
+  const [chartData, setChartData]   = useState([]);
+  const [allChartData, setAllChartData] = useState([]);
+  const [spyMap, setSpyMap]         = useState({});
+  const [spyInicial, setSpyInicial] = useState(null);
+  const [chartPeriod, setChartPeriod] = useState('Todo');
+  const [loading, setLoading]       = useState(true);
   const [syncing, setSyncing]     = useState(false);
   const [syncMsg, setSyncMsg]     = useState('');
   const adminToken = localStorage.getItem('portal_admin_token');
@@ -629,24 +642,48 @@ export default function PortafolioPage() {
       if (navRows.length >= 2) {
         const desde = navRows[0].report_date;
         const spyR = await fetch(`/api/historico/SPY?desde=${desde}`).then(r => r.json()).catch(() => null);
-        const spyMap = {};
-        (spyR?.series || []).forEach(d => { spyMap[d.fecha] = d.precio; });
-        const spyInicial = spyR?.series?.[0]?.precio;
+        const newSpyMap = {};
+        (spyR?.series || []).forEach(d => { newSpyMap[d.fecha] = d.precio; });
+        const newSpyInicial = spyR?.series?.[0]?.precio;
+        setSpyMap(newSpyMap);
+        setSpyInicial(newSpyInicial);
 
-        const merged = navRows.map(n => {
-          const portPct = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
-          const spyPrecio = spyMap[n.report_date];
-          const spyPct = spyInicial && spyPrecio ? ((spyPrecio - spyInicial) / spyInicial * 100) : null;
-          return {
-            fecha:     n.report_date.slice(5),
-            portafolio: parseFloat(portPct.toFixed(2)),
-            sp500:      spyPct != null ? parseFloat(spyPct.toFixed(2)) : null,
-          };
+        const buildChart = (rows, spMap, spInit) => rows.map(n => {
+          const portPct  = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
+          const spyPrecio = spMap[n.report_date];
+          const spyPct   = spInit && spyPrecio ? ((spyPrecio - spInit) / spInit * 100) : null;
+          return { fecha: n.report_date.slice(5), portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
         });
-        setChartData(merged);
+
+        const all = buildChart(navRows, newSpyMap, newSpyInicial);
+        setAllChartData(all);
+        setChartData(all);
       }
     } catch {}
     setLoading(false);
+  }
+
+  function applyPeriod(period, all, spMap, spInit, navRows) {
+    const hoy = new Date();
+    const cuts = { '1S': 7, '1M': 30, '3M': 90, '6M': 180, '1A': 365 };
+    const days = cuts[period];
+    if (!days || !all?.length) { setChartData(all || []); return; }
+
+    const cutDate = new Date(hoy); cutDate.setDate(cutDate.getDate() - days);
+    const cutStr  = cutDate.toISOString().slice(0, 10);
+    const filteredNav = (navRows || []).filter(n => n.report_date >= cutStr);
+    if (!filteredNav.length) { setChartData(all); return; }
+
+    // Re-normalizar el S&P desde el primer punto del período
+    const firstDate = filteredNav[0].report_date;
+    const newSpyInit = spMap[firstDate] || spInit;
+    const filtered = filteredNav.map(n => {
+      const portPct   = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
+      const spyPrecio = spMap[n.report_date];
+      const spyPct    = newSpyInit && spyPrecio ? ((spyPrecio - newSpyInit) / newSpyInit * 100) : null;
+      return { fecha: n.report_date.slice(5), portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
+    });
+    setChartData(filtered);
   }
 
   useEffect(() => { loadData(); }, []);
@@ -768,19 +805,36 @@ export default function PortafolioPage() {
         {/* ── Gráfica NAV vs S&P 500 ───────────────────────────────────────── */}
         {chartData.length >= 2 && (
           <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '20px 20px 10px', marginBottom: 28 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-              <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                Rendimiento vs S&P 500
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                  Rendimiento vs S&P 500
+                </div>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                  <span style={{ width: 10, height: 3, background: '#A08040', display: 'inline-block', borderRadius: 2 }} />
+                  <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Murza</span>
+                </span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                  <span style={{ width: 10, height: 3, background: '#6366f1', display: 'inline-block', borderRadius: 2, borderTop: '2px dashed #6366f1' }} />
+                  <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>S&P 500</span>
+                </span>
               </div>
-              <div style={{ display: 'flex', gap: 16, fontSize: 12 }}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{ width: 12, height: 3, background: '#A08040', display: 'inline-block', borderRadius: 2 }} />
-                  <span style={{ color: 'var(--text-muted)' }}>Murza</span>
-                </span>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{ width: 12, height: 3, background: '#6366f1', display: 'inline-block', borderRadius: 2 }} />
-                  <span style={{ color: 'var(--text-muted)' }}>S&P 500</span>
-                </span>
+              {/* Botones de período */}
+              <div style={{ display: 'flex', gap: 4 }}>
+                {['1S', '1M', '3M', '6M', '1A', 'Todo'].map(p => (
+                  <button key={p} onClick={() => {
+                    setChartPeriod(p);
+                    applyPeriod(p, allChartData, spyMap, spyInicial, navData);
+                  }} style={{
+                    padding: '3px 10px', borderRadius: 6, fontSize: 11, fontWeight: 600,
+                    border: `1px solid ${chartPeriod === p ? 'var(--gold)' : 'var(--border)'}`,
+                    background: chartPeriod === p ? 'rgba(160,128,64,0.12)' : 'transparent',
+                    color: chartPeriod === p ? 'var(--gold)' : 'var(--text-muted)',
+                    cursor: 'pointer',
+                  }}>
+                    {p}
+                  </button>
+                ))}
               </div>
             </div>
             <ResponsiveContainer width="100%" height={200}>
