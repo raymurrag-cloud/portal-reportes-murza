@@ -630,7 +630,10 @@ export default function PortafolioPage() {
                         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` },
                         body: JSON.stringify(parsed),
                       });
-                      const data = await r.json();
+                      const rawText = await r.text();
+                      let data;
+                      try { data = JSON.parse(rawText); }
+                      catch { throw new Error(`HTTP ${r.status} — respuesta no-JSON: ${rawText.slice(0, 300)}`); }
                       if (data.error) setSyncMsg(`Error: ${data.error}`);
                       else { setSyncMsg(data.message); await loadData(); }
                     } catch (err) {
