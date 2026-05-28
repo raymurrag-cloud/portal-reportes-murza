@@ -456,7 +456,29 @@ export default function PortafolioPage() {
         fetch(`${BASE}/portafolio/trades?limit=100`).then(r => r.json()),
         fetch(`${BASE}/portafolio/nav`).then(r => r.json()),
       ]);
-      setPositions(posR.positions || []);
+
+      const rawPositions = posR.positions || [];
+
+      // Precios en tiempo real de Yahoo Finance para acciones
+      const stocks = rawPositions.filter(p => p.asset_cat === 'STK' || !p.asset_cat);
+      const priceResults = await Promise.allSettled(
+        stocks.map(p => fetch(`${BASE}/precio/${p.symbol}`).then(r => r.json()))
+      );
+      const priceMap = {};
+      stocks.forEach((p, i) => {
+        const r = priceResults[i];
+        if (r.status === 'fulfilled' && r.value?.precio) priceMap[p.symbol] = r.value.precio;
+      });
+
+      const enriched = rawPositions.map(p => {
+        const livePrice = priceMap[p.symbol];
+        if (!livePrice) return p;
+        const qty = Math.abs(p.quantity || 0);
+        const unrealized = (livePrice - (p.open_price || 0)) * qty;
+        return { ...p, mark_price: livePrice, position_value: livePrice * qty, unrealized_pl: unrealized };
+      });
+
+      setPositions(enriched);
       setSummary(posR.summary || null);
       setTrades(tradeR.trades || []);
       setTotalTrades(tradeR.total || 0);
