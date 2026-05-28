@@ -648,14 +648,16 @@ export default function PortafolioPage() {
         setSpyMap(newSpyMap);
         setSpyInicial(newSpyInicial);
 
-        const buildChart = (rows, spMap, spInit) => rows.map(n => {
-          const portPct  = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
+        // Normalizar ambas líneas desde el primer día → ambas arrancan en 0%
+        const buildChart = (rows, spMap, spInit, navInit) => rows.map(n => {
+          const portPct   = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
           const spyPrecio = spMap[n.report_date];
-          const spyPct   = spInit && spyPrecio ? ((spyPrecio - spInit) / spInit * 100) : null;
-          return { fecha: n.report_date.slice(5), portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
+          const spyPct    = spInit && spyPrecio ? ((spyPrecio - spInit) / spInit * 100) : null;
+          return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
         });
 
-        const all = buildChart(navRows, newSpyMap, newSpyInicial);
+        const navInit = navRows[0]?.total_nav;
+        const all = buildChart(navRows, newSpyMap, newSpyInicial, navInit);
         setAllChartData(all);
         setChartData(all);
       }
@@ -674,14 +676,15 @@ export default function PortafolioPage() {
     const filteredNav = (navRows || []).filter(n => n.report_date >= cutStr);
     if (!filteredNav.length) { setChartData(all); return; }
 
-    // Re-normalizar el S&P desde el primer punto del período
-    const firstDate = filteredNav[0].report_date;
+    // Re-normalizar ambas líneas desde el primer punto del período → ambas en 0%
+    const firstDate  = filteredNav[0].report_date;
+    const navInit    = filteredNav[0].total_nav;
     const newSpyInit = spMap[firstDate] || spInit;
     const filtered = filteredNav.map(n => {
-      const portPct   = ((n.total_nav - CAPITAL_INICIAL) / CAPITAL_INICIAL * 100);
+      const portPct   = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
       const spyPrecio = spMap[n.report_date];
       const spyPct    = newSpyInit && spyPrecio ? ((spyPrecio - newSpyInit) / newSpyInit * 100) : null;
-      return { fecha: n.report_date.slice(5), portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
+      return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
     });
     setChartData(filtered);
   }
@@ -840,11 +843,23 @@ export default function PortafolioPage() {
             <ResponsiveContainer width="100%" height={200}>
               <LineChart data={chartData}>
                 <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="fecha" tick={{ fill: 'var(--text-faint)', fontSize: 10 }} axisLine={false} tickLine={false} interval="preserveStartEnd" />
+                <XAxis
+                  dataKey="fecha"
+                  tick={{ fill: 'var(--text-faint)', fontSize: 10 }}
+                  axisLine={false} tickLine={false}
+                  interval={Math.max(1, Math.floor(chartData.length / 6))}
+                  tickFormatter={v => {
+                    const d = new Date(v + 'T12:00:00');
+                    const mes = d.toLocaleDateString('es-MX', { month: 'short' });
+                    const anio = String(d.getFullYear()).slice(2);
+                    return `${mes.charAt(0).toUpperCase() + mes.slice(1, 3)} '${anio}`;
+                  }}
+                />
                 <YAxis tick={{ fill: 'var(--text-faint)', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`} />
                 <ReferenceLine y={0} stroke="var(--border)" strokeDasharray="4 4" />
                 <Tooltip
                   contentStyle={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }}
+                  labelFormatter={v => { const d = new Date(v + 'T12:00:00'); return d.toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' }); }}
                   formatter={(v, name) => [`${v >= 0 ? '+' : ''}${v.toFixed(2)}%`, name === 'portafolio' ? 'Murza' : 'S&P 500']}
                 />
                 <Line type="monotone" dataKey="portafolio" stroke="#A08040" strokeWidth={2} dot={false} />

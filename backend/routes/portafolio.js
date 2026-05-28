@@ -40,19 +40,38 @@ router.get('/trades', async (req, res) => {
     const offset = parseInt(req.query.offset || '0');
     const symbol = req.query.symbol?.toUpperCase() || null;
 
-    let sql  = `SELECT * FROM ib_trades`;
-    const args = [];
-    if (symbol) { sql += ` WHERE symbol = ?`; args.push(symbol); }
-    sql += ` ORDER BY trade_date DESC, datetime DESC LIMIT ? OFFSET ?`;
-    args.push(limit, offset);
-
+    // Deduplicar: agrupar por símbolo+fecha+lado+precio, sumar cantidades y P&L
+    const where  = symbol ? `WHERE symbol = ?` : '';
+    const sql = `
+      SELECT
+        MIN(id) as id, symbol, MIN(description) as description,
+        MIN(asset_cat) as asset_cat, trade_date,
+        MIN(datetime) as datetime, buy_sell,
+        SUM(ABS(quantity)) as quantity,
+        AVG(price) as price,
+        SUM(ABS(proceeds)) as proceeds,
+        SUM(commission) as commission,
+        SUM(net_cash) as net_cash,
+        SUM(cost_basis) as cost_basis,
+        SUM(realized_pl) as realized_pl,
+        MIN(open_close) as open_close,
+        MIN(currency) as currency,
+        MIN(exchange) as exchange,
+        MIN(note) as note
+      FROM ib_trades
+      ${where}
+      GROUP BY symbol, trade_date, buy_sell, ROUND(price, 2)
+      ORDER BY trade_date DESC, datetime DESC
+      LIMIT ? OFFSET ?`;
+    const args = symbol ? [symbol, limit, offset] : [limit, offset];
     const { rows } = await db.execute({ sql, args });
-    const total = await db.execute({
-      sql: symbol
-        ? `SELECT COUNT(*) as n FROM ib_trades WHERE symbol = ?`
-        : `SELECT COUNT(*) as n FROM ib_trades`,
-      args: symbol ? [symbol] : [],
-    });
+
+    const countSql = `
+      SELECT COUNT(*) as n FROM (
+        SELECT 1 FROM ib_trades ${where}
+        GROUP BY symbol, trade_date, buy_sell, ROUND(price, 2)
+      )`;
+    const total = await db.execute({ sql: countSql, args: symbol ? [symbol] : [] });
     res.json({ trades: rows, total: total.rows[0].n, limit, offset });
   } catch (e) {
     res.status(500).json({ error: e.message });
