@@ -6,7 +6,7 @@ title Murza Inversiones — CPG Sync
 set CPG_DIR=C:\IBGateway
 
 :: Contraseña del portal admin
-set ADMIN_PASS=
+set ADMIN_PASS=Portal2026
 
 :: ──────────────────────────────────────────────────────────────────────────
 
@@ -16,7 +16,7 @@ if "%ADMIN_PASS%"=="" (
   exit /b 1
 )
 
-if not exist "%CPG_DIR%\gateway\bin\run.bat" (
+if not exist "%CPG_DIR%\bin\run.bat" (
   echo ERROR: No se encontro el CPG en %CPG_DIR%
   echo Descargalo de: https://www.interactivebrokers.com/en/trading/ib-api.php
   pause
@@ -24,7 +24,7 @@ if not exist "%CPG_DIR%\gateway\bin\run.bat" (
 )
 
 echo Iniciando IB Client Portal Gateway ^(paper trading^)...
-start "IB Gateway" cmd /k "cd /d %CPG_DIR% && gateway\bin\run.bat paper"
+start "IB Gateway" cmd /k "cd /d %CPG_DIR% && bin\run.bat root\conf.yaml"
 
 echo Esperando 15 segundos para que inicie el gateway...
 timeout /t 15 /nobreak >nul

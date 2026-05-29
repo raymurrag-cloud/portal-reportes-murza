@@ -1,0 +1,514 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Rocket Lab es una empresa espacial integral con operaciones en lanzamiento orbital y sistemas espaciales. Con Electron como cohete lider en el mercado de pequenos satelites (segundo mas lanzado en 2025), y un backlog creciente en Space Systems que incluye el contrato SDA por 816M USD firmado en diciembre 2025, la empresa transita hacia escala con revenue de 601M en FY2025 (+37% YoY). Los margenes brutos mejoran sistematicamente hasta 38.2% en Q1 2026. La empresa sigue en etapa pre-rentabilidad mientras invierte en Neutron, su cohete de clase media con primer lanzamiento objetivo en Q4 2026. Con caja neta de ~870M USD, el balance aguanta el ciclo de inversion. Perfil especulativo de alto potencial.",
+  "descripcion": "Rocket Lab opera en dos segmentos: Launch Services (cohete Electron small-class ~300kg a LEO, 75 misiones exitosas, complejos en Nueva Zelanda y Virginia) y Space Systems (naves completas, componentes criticos como reaction wheels, star trackers, solar panels, baterias, radios y software de control, adquiridos via Sinclair Interplanetary, Planetary Systems, SolAero, ASI y GEOST). En desarrollo: Neutron, cohete reutilizable de clase media (13,000kg LEO) para constelaciones y gobierno, primer lanzamiento Q4 2026. La ventaja competitiva central es la integracion vertical unica en el ecosistema de pequenos y medianos satelites.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (M USD)",
+        "60",
+        "210",
+        "241",
+        "438",
+        "601",
+        "200",
+        "+63%"
+      ],
+      [
+        "Utilidad Neta (M USD)",
+        "-116",
+        "-139",
+        "-175",
+        "-185",
+        "-196",
+        "-45",
+        "+26%"
+      ],
+      [
+        "Margen Bruto",
+        "0%",
+        "9.5%",
+        "20.8%",
+        "27.3%",
+        "35.0%",
+        "38.2%",
+        "+9.5pp"
+      ],
+      [
+        "Margen Neto",
+        "-193%",
+        "-66%",
+        "-73%",
+        "-42%",
+        "-33%",
+        "-22.5%",
+        "+10.5pp"
+      ],
+      [
+        "EBITDA (M USD)",
+        "-88",
+        "-111",
+        "-154",
+        "-160",
+        "-184",
+        "-48",
+        "N/A"
+      ],
+      [
+        "FCF (M USD)",
+        "-103",
+        "-151",
+        "-147",
+        "-118",
+        "-323",
+        "N/D",
+        "N/A"
+      ],
+      [
+        "EPS Diluido",
+        "-0.26",
+        "-0.29",
+        "-0.36",
+        "-0.37",
+        "-0.38",
+        "-0.07",
+        "+42%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A",
+      "signal": "yellow",
+      "note": "Empresa con perdidas netas",
+      "precio_base": 142.285,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": null
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "N/A",
+      "signal": "yellow",
+      "note": "Sin estimado positivo disponible",
+      "precio_base": 142.285,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": null
+      }
+    },
+    {
+      "label": "P/S Revenue",
+      "value": "143x",
+      "signal": "red",
+      "note": "Alto — hiper-crecimiento pre-profit",
+      "precio_base": 142.285,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": -0.18,
+        "shares_m": 605.4,
+        "deuda_neta_b": -0.87
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "N/A",
+      "signal": "red",
+      "note": "FCF negativo — inversion en Neutron",
+      "precio_base": 142.285,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": -0.32,
+        "shares_m": 605.4
+      }
+    },
+    {
+      "label": "Caja Neta",
+      "value": "+870M USD",
+      "signal": "green",
+      "note": "Posicion de caja neta solida post-ATM"
+    },
+    {
+      "label": "ROE",
+      "value": "-11.6%",
+      "signal": "red",
+      "note": "Perdidas sobre equity de 1.72B"
+    },
+    {
+      "label": "Margen Bruto TTM",
+      "value": "35%",
+      "signal": "yellow",
+      "note": "Mejora 0% FY2021 -> 35% FY2025"
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "M USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 60,
+        "utilidad": -116
+      },
+      {
+        "label": "FY2022",
+        "revenue": 210,
+        "utilidad": -139
+      },
+      {
+        "label": "FY2023",
+        "revenue": 241,
+        "utilidad": -175
+      },
+      {
+        "label": "FY2024",
+        "revenue": 438,
+        "utilidad": -185
+      },
+      {
+        "label": "FY2025",
+        "revenue": 601,
+        "utilidad": -196
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": 0,
+        "operativo": -167,
+        "neto": -193
+      },
+      {
+        "label": "FY2022",
+        "bruto": 9.5,
+        "operativo": -66.7,
+        "neto": -66.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 20.8,
+        "operativo": -75,
+        "neto": -72.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 27.3,
+        "operativo": -43.2,
+        "neto": -42.2
+      },
+      {
+        "label": "FY2025",
+        "bruto": 35,
+        "operativo": -38.3,
+        "neto": -32.6
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex FY2025",
+        "value": "160M USD",
+        "nota": "Infraestructura Neutron y expansion manufactura"
+      },
+      {
+        "label": "I+D FY2025",
+        "value": "~200M USD",
+        "nota": "Desarrollo Neutron y nuevos componentes espaciales"
+      },
+      {
+        "label": "Recompras",
+        "value": "0",
+        "nota": "Empresa en fase de inversion — no recompras"
+      },
+      {
+        "label": "Dividendos",
+        "value": "0",
+        "nota": "No paga dividendos — capital se reinvierte"
+      },
+      {
+        "label": "ATM Equity Q1 2026",
+        "value": "445M USD",
+        "nota": "Emision preventiva para financiar Neutron"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "RKLB TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Bruto",
+        "35.0%",
+        "~45% aeroespacial",
+        "Por debajo — aun en escala"
+      ],
+      [
+        "Revenue Growth",
+        "+37% YoY",
+        "~8-12%",
+        "Muy por encima"
+      ],
+      [
+        "FCF Margin",
+        "-54%",
+        "~8-15%",
+        "Negativo — inversion en crecimiento"
+      ],
+      [
+        "P/S Forward",
+        "~48x est.",
+        "~3-5x Aero",
+        "Prima extrema por crecimiento"
+      ],
+      [
+        "Backlog/Revenue",
+        "~5x est.",
+        "~2-3x",
+        "Visibilidad superior"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Empresa en crecimiento acelerado y pre-rentabilidad con mejora sistematica de margenes",
+    "analisis": "Revenue crece 37% en FY2025 y 63% en Q1 2026. El margen bruto mejora 7.7pp en FY2025 y sigue acelerando en Q1 2026 (38.2%). La perdida operativa se mantiene alta por I+D de Neutron (~80M por trimestre). FCF negativo se profundizo en FY2025 por aceleracion de capex en infraestructura Neutron. Balance solido con 1.1B en liquidez post-ATM.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+37% FY25 / +63% Q1 2026",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "35.0% FY25 / 38.2% Q1 26",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "-38.3% FY25 / -28.0% Q1 26",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "-32.6% FY25 / -22.5% Q1 26",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF",
+        "valor": "-323M FY25 — capex Neutron",
+        "status": "warn"
+      },
+      {
+        "metrica": "Caja Neta",
+        "valor": "+870M USD",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Crecimiento de revenue explosivo",
+      "impact": "Alto",
+      "evidence": "Revenue Q1 2026: 200M (+63% vs Q1 2025 de 123M). FY2025: 601M (+37%). Contrato SDA Tranche 3 de 816M firmado en dic-2025.",
+      "context": "El momentum combina mas lanzamientos Electron con contratos satelitales gubernamentales de gran escala. La cadencia de monetizacion del backlog da visibilidad alta para 2026-2028."
+    },
+    {
+      "level": "green",
+      "title": "Expansion sistematica de margen bruto",
+      "impact": "Alto",
+      "evidence": "Margen bruto: 0% FY2021 -> 9.5% FY2022 -> 20.8% FY2023 -> 27.3% FY2024 -> 35.0% FY2025 -> 38.2% Q1 2026.",
+      "context": "La mejora refleja mayor utilizacion de manufactura propia y mayor peso de contratos de sistemas espaciales de alto margen. Trayectoria hacia EBITDA positivo en 2027-2028 si se mantiene."
+    },
+    {
+      "level": "green",
+      "title": "Balance solido y caja neta",
+      "impact": "Medio",
+      "evidence": "Caja + valores negociables ~1.1B al Q1 2026. Deuda residual 37M post-conversion. ATM de 445M ejecutado en Q1 2026.",
+      "context": "Runway suficiente para completar Neutron sin emergencia financiera. La empresa no necesita financiarse a corto plazo bajo escenario base."
+    },
+    {
+      "level": "yellow",
+      "title": "Retraso en Neutron por falla tecnica",
+      "impact": "Alto",
+      "evidence": "Falla en prueba de calificacion del tanque de primera etapa en enero 2026. Primer lanzamiento retrasado a Q4 2026.",
+      "context": "Neutron es el principal catalizador de re-rating. Cada retraso pospone el acceso al mercado de constelaciones grandes. Los desarrollos de cohetes nuevos inherentemente conllevan riesgos adicionales."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion extrema requiere ejecucion perfecta",
+      "impact": "Alto",
+      "evidence": "Market cap ~86B sobre revenue FY2025 de 601M (P/S ~143x). Descuenta revenue de 3-5B para 2028-2029.",
+      "context": "Sin margen de seguridad. Cualquier decepcion en Neutron, perdida de contratos o deterioro en mercado de lanzamientos puede comprimir multiples severamente."
+    },
+    {
+      "level": "red",
+      "title": "FCF profundamente negativo",
+      "impact": "Medio",
+      "evidence": "FCF FY2025: -323M (vs -118M FY2024). Capex FY2025: 160M. I+D Q1 2026: 80.5M en un trimestre.",
+      "context": "La empresa quema caja a ritmo alto. Si Neutron se retrasa mas, el runway de 1.1B puede requerir nueva emision de acciones con dilucion adicional sobre los ~605M actuales."
+    }
+  ],
+  "score": {
+    "score": 6.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 4,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 4,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Rocket Lab ejecuta una estrategia de integracion vertical del ecosistema espacial: ser el proveedor end-to-end desde componentes de nave hasta lanzamiento y operaciones en orbita. Electron establece cash flow y credibilidad. Neutron expande el TAM a constelaciones grandes y misiones gubernamentales de clase media. Space Systems captura el ciclo completo de valor de cada satelite.",
+    "ventajas": "(1) Unico proveedor comercial con cohete propio + manufactura de naves completas + componentes criticos en satelites pequenos y medianos. (2) Track record: 75 misiones Electron exitosas, segundo cohete mas lanzado en 2025. (3) Contratos gubernamentales de largo plazo (SDA, NRO) con visibilidad de revenue. (4) Integracion vertical reduce dependencia de proveedores y mejora margenes estructuralmente.",
+    "debilidades": "(1) Sin rentabilidad neta ni FCF positivo. (2) Concentracion en gobierno de EE.UU. crea riesgo de recorte presupuestario. (3) Neutron aun no probado. (4) Diluciones frecuentes via equity para financiar el ciclo de inversion.",
+    "riesgos": [
+      "Retraso adicional de Neutron mas alla de Q4 2026 — fallo tecnico o de infraestructura",
+      "Recorte en gasto espacial del gobierno de EE.UU. — riesgo politico y presupuestario",
+      "Competencia de SpaceX en clase media y nuevos entrantes en clase pequena",
+      "Dilucion accionaria adicional si el runway de 1.1B no alcanza para completar Neutron",
+      "Fallo en mision critica de Electron que dane reputacion y pipeline de clientes"
+    ],
+    "inversiones_estrategicas": "Neutron es la inversion central con ~500M comprometidos hasta 2026. GEOST (agosto 2025) expande capacidad en sistemas opticos para gobierno. Campus de manufactura en Virginia para contratos de constelaciones. Centro de desarrollo de motores Archimedes (ADC) en Carolina del Norte completa la cadena de manufactura de propulsion para Neutron."
+  },
+  "verdict": {
+    "status": "Mantener / Especulativo",
+    "score": "6.2/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue Q1 2026",
+        "value": "200M USD"
+      },
+      {
+        "label": "Margen Bruto",
+        "value": "38.2%"
+      },
+      {
+        "label": "Caja Neta",
+        "value": "~870M USD"
+      },
+      {
+        "label": "Revenue Growth",
+        "value": "+63% YoY Q1"
+      },
+      {
+        "label": "FCF",
+        "value": "Negativo"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Crecimiento explosivo** -> Revenue Q1 2026 de 200M (+63% YoY) y contrato SDA de 816M dan visibilidad solida. La trayectoria de margen bruto (38% en Q1 2026) sugiere que el punto de inflexion hacia EBITDA positivo se acerca en 2027-2028.",
+        "type": "pro"
+      },
+      {
+        "text": "**Integracion vertical unica** -> Ningun competidor ofrece lanzamiento propio + manufactura de naves + componentes criticos en el mercado de pequenos y medianos satelites. Esta posicion defensible justifica una prima de valuacion sobre competidores de un solo segmento.",
+        "type": "pro"
+      },
+      {
+        "text": "**Balance aguanta el ciclo** -> Con ~1.1B en liquidez y deuda minima de 37M, la empresa tiene runway para completar Neutron sin emergencia financiera. El ATM de 445M en Q1 2026 fue preventivo y bien ejecutado.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo Neutron + Valuacion extrema** -> La accion cotiza a ~143x revenue sobre una empresa sin rentabilidad. El retraso de Neutron ya ocurrio; otro retraso o fallo tecnico comprimira multiples severamente. Solo apto para inversores especulativos con horizonte 3-5 anos y tolerancia alta al riesgo.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue alcanza 601M en FY2025 (+37%) y 200M en Q1 2026 (+63% YoY). El backlog impulsado por contratos SDA de 816M y expansion de Electron sugiere que 1B USD de revenue anual es alcanzable en 2026."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen bruto mejora de 0% en FY2021 a 38% en Q1 2026 — tendencia clara y sostenida. El margen operativo sigue negativo (-28% en Q1 2026) por el peso de I+D de Neutron (~80M por trimestre). Mejora de ~10pp anuales en margen neto indica progreso real hacia rentabilidad."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF negativo a -323M en FY2025 por aceleracion de capex en infraestructura Neutron (160M en FY2025 vs 70M en FY2024). La quema de caja es intencional y temporal; el hito de Neutron es el catalizador para la inflexion de FCF hacia positivo."
+      },
+      {
+        "label": "Balance",
+        "texto": "Caja + valores negociables ~1.1B al Q1 2026 post-ATM de 445M. Deuda residual de solo 37M post-conversion mayoritaria. Posicion de caja neta de ~870M da tranquilidad para completar el ciclo de inversion."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "La accion cotiza a ~143x revenue FY2025 con market cap de ~86B — descuenta exito total de Neutron y revenue de 3-5B para 2028-2029. No hay margen de seguridad; cada decepcion operativa o de timeline sera severamente castigada por el mercado."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "El riesgo central es el timeline de Neutron: ya sufrio falla tecnica en enero 2026 con retraso a Q4 2026. Un segundo retraso mayor, recorte en presupuesto espacial de EE.UU. o fallo en Electron podrian impactar el precio severamente dada la valuacion extrema."
+      }
+    ]
+  }
+}

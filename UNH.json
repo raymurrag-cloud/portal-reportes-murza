@@ -1,247 +1,492 @@
 {
-  "resumen": "UnitedHealth Group es la empresa de salud mas grande del mundo por ingresos, con ~$400B en revenue en FY2024 y un modelo unico que combina seguros de salud (UnitedHealthcare) con servicios de salud integrados (Optum). FY2024 fue un ano de presion excepcional: el ciberataque a Change Healthcare causo disrupciones masivas en claims processing, y el Medical Loss Ratio se elevatero impactando la rentabilidad del segmento asegurador. Con EPS GAAP de $15.51 (-35% YoY) y net income de $14.4B, el resultado puntual deteriora la foto anual, pero el negocio estructural permanece intacto. Veredicto: Mantener — empresa de calidad con viento en contra transitorio y FCF de $20.7B, pero con riesgos regulatorios y de MLR a monitorear.",
-  "descripcion": "UnitedHealth Group opera a traves de dos segmentos principales. UnitedHealthcare es el mayor asegurador de salud de EE.UU., con mas de 50 millones de miembros cubiertos en planes comerciales, Medicare Advantage, Medicaid y beneficios globales. Optum es la unidad de servicios de salud y representa +50% del operating income: incluye OptumRx (pharmacy benefit management, tercer mayor PBM de EE.UU.), OptumHealth (atencion primaria y clinicas), y OptumInsight (analisis de datos, tecnologia y servicios de revenue cycle). La ventaja competitiva central reside en la integracion vertical: UNH canaliza clientes del seguro a servicios Optum, creando un flywheel de data clinica, menores costos y mejor experiencia. El revenue de Optum (~$230B incluyendo las operaciones internas) supero al de la division de seguros en 2024, consolidando la transformacion del modelo de negocio.",
+  "parrafos_gratis": 14,
+  "resumen": "UnitedHealth Group es el mayor operador de seguros de salud y servicios clinicos de EE.UU., con dos negocios complementarios: UnitedHealthcare (49M+ miembros) y Optum (servicios clinicos, analytics y farmacia). En FY2025 los ingresos crecieron +11.8% a 447.6B USD, pero la utilidad neta cayo -16.3% a 12.1B por un MCR elevado (>89%), cargos de reestructuracion de 2.5B y reservas adicionales del ciberataque de Change Healthcare. La accion cotiza a 379 USD con P/E forward de 12.8x, el menor en mas de una decada, ofreciendo un punto de entrada asimetrico para inversores con horizonte de 2-3 anos y tolerancia al riesgo regulatorio.",
+  "descripcion": "UnitedHealth opera cuatro segmentos: Optum Health (atencion medica basada en valor, 50k+ medicos propios), Optum Insight (analytics clinico y tecnologia de salud, incluye Change Healthcare), Optum Rx (PBM con 90M+ vidas), y UnitedHealthcare (seguros comerciales, Medicare Advantage y Medicaid). El modelo integrado verticalmente captura margen en cada eslabon del ciclo de salud: asegurar, proveer, analizar y dispensar. Los ingresos de primas representan ~80% del total. En 2026 realiza reestructuracion para concentrarse en negocios de mayor ROIC.",
   "tabla": {
-    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", 257.14, 287.6, 324.16, 371.62, 400.28, "+7.7%"],
-      ["Utilidad Neta ($B)", 15.4, 17.29, 20.12, 22.38, 14.41, "-35.6%"],
-      ["Margen Neto (%)", "6.0%", "6.0%", "6.2%", "6.0%", "3.6%", "-2.4pp"],
-      ["EBITDA ($B)", 25.3, 27.07, 31.84, 36.33, 36.39, "+0.2%"],
-      ["FCF ($B)", 20.12, 19.89, 23.41, 25.68, 20.7, "-19.4%"],
-      ["EPS (GAAP)", "$16.03", "$18.08", "$21.18", "$23.86", "$15.51", "-35.0%"],
-      ["Deuda Neta ($B)", 25.36, 23.25, 33.39, 36.04, 50.87, "+41.1%"]
+      [
+        "Revenue (B USD)",
+        "287.6",
+        "324.2",
+        "371.6",
+        "400.3",
+        "447.6",
+        "111.7",
+        "+11.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "17.29",
+        "20.12",
+        "22.38",
+        "14.41",
+        "12.06",
+        "6.28",
+        "-16.3%"
+      ],
+      [
+        "Margen Neto",
+        "6%",
+        "6.2%",
+        "6%",
+        "3.6%",
+        "2.7%",
+        "5.6%",
+        "-0.9pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "27.1",
+        "31.8",
+        "36.3",
+        "36.4",
+        "23.3",
+        "10.1",
+        "-35.9%"
+      ],
+      [
+        "FCF (B USD)",
+        "19.9",
+        "23.4",
+        "25.7",
+        "20.7",
+        "16.1",
+        "8.15",
+        "-22.3%"
+      ],
+      [
+        "EPS Diluido",
+        "18.08",
+        "21.18",
+        "23.86",
+        "15.51",
+        "13.23",
+        "6.90",
+        "-14.7%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "21.0",
+        "31.1",
+        "32.8",
+        "47.0",
+        "48.0",
+        "43.4",
+        "1.9%"
+      ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "29.4x",
-      "signal": "red",
-      "note": "Elevado por EPS deprimido en 2024 — efecto puntual",
-      "precio_base": 390.16,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "eps_ttm", "valor": 13.26 }
+      "value": "28.6x",
+      "signal": "yellow",
+      "note": "vs. sector 20x; distorsionado por cargos extraordinarios",
+      "precio_base": 379,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 13.23
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "18.8x",
-      "signal": "yellow",
-      "note": "vs sector salud ~20x — descuento moderado",
-      "precio_base": 390.16,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "eps_fwd", "valor": 20.75 }
+      "value": "12.8x",
+      "signal": "green",
+      "note": "descuento historico; minimo desde 2012",
+      "precio_base": 379,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 29.5
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "11.1x",
-      "signal": "green",
-      "note": "Atractivo para empresa de esta escala y calidad"
+      "value": "16.8x",
+      "signal": "yellow",
+      "precio_base": 379,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 23.32,
+        "shares_m": 906,
+        "deuda_neta_b": 47.95
+      }
     },
     {
       "label": "P/FCF",
-      "value": "17.1x",
-      "signal": "green",
-      "note": "FCF yield de 5.8% — solido para inversor de largo plazo",
-      "precio_base": 390.16,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "p_fcf", "fcf_b": 20.7, "shares_m": 908.1 }
+      "value": "21.4x",
+      "signal": "yellow",
+      "precio_base": 379,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 16.08,
+        "shares_m": 906
+      }
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "1.40x",
-      "signal": "green",
-      "note": "Balance solido pese al aumento de deuda en 2024"
+      "value": "2.06x",
+      "signal": "yellow"
     },
     {
       "label": "ROE",
-      "value": "12.2%",
-      "signal": "yellow",
-      "note": "Presionado por el impacto no recurrente de 2024"
+      "value": "12%",
+      "signal": "yellow"
     },
     {
       "label": "ROIC",
-      "value": "16.2%",
-      "signal": "green",
-      "note": "Indica creacion de valor por encima del costo de capital"
+      "value": "13.4%",
+      "signal": "yellow"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2020", "revenue": 257.14, "utilidad": 15.4 },
-      { "label": "2021", "revenue": 287.6, "utilidad": 17.29 },
-      { "label": "2022", "revenue": 324.16, "utilidad": 20.12 },
-      { "label": "2023", "revenue": 371.62, "utilidad": 22.38 },
-      { "label": "2024", "revenue": 400.28, "utilidad": 14.41 }
+      {
+        "label": "FY2021",
+        "revenue": 287.6,
+        "utilidad": 17.29
+      },
+      {
+        "label": "FY2022",
+        "revenue": 324.2,
+        "utilidad": 20.12
+      },
+      {
+        "label": "FY2023",
+        "revenue": 371.6,
+        "utilidad": 22.38
+      },
+      {
+        "label": "FY2024",
+        "revenue": 400.3,
+        "utilidad": 14.41
+      },
+      {
+        "label": "FY2025",
+        "revenue": 447.6,
+        "utilidad": 12.06
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "2020", "bruto": 8.7, "operativo": 8.7, "neto": 6.0 },
-      { "label": "2021", "bruto": 8.3, "operativo": 8.3, "neto": 6.0 },
-      { "label": "2022", "bruto": 8.8, "operativo": 8.8, "neto": 6.2 },
-      { "label": "2023", "bruto": 8.7, "operativo": 8.7, "neto": 6.0 },
-      { "label": "2024", "bruto": 8.1, "operativo": 8.1, "neto": 3.6 }
+      {
+        "label": "FY2021",
+        "bruto": null,
+        "operativo": 8.3,
+        "neto": 6
+      },
+      {
+        "label": "FY2022",
+        "bruto": null,
+        "operativo": 8.8,
+        "neto": 6.2
+      },
+      {
+        "label": "FY2023",
+        "bruto": null,
+        "operativo": 8.7,
+        "neto": 6
+      },
+      {
+        "label": "FY2024",
+        "bruto": null,
+        "operativo": 8.1,
+        "neto": 3.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": null,
+        "operativo": 4.2,
+        "neto": 2.7
+      }
     ],
     "series": [
-      { "key": "bruto", "name": "Margen Operativo (proxy)" },
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
+        "label": "Recompras",
+        "value": "5.6B USD",
+        "nota": "FY2025: 5.55B recomprados a precios deprimidos"
+      },
+      {
         "label": "Dividendos",
-        "value": "$8.18/accion anual",
-        "nota": "Dividendos pagados en FY2024: $7.53B. Crecimiento consecutive de dividendo por mas de 14 anos. Tasa de crecimiento CAGR de ~15% en los ultimos 5 anos."
+        "value": "~3.0B USD",
+        "nota": "Dividendo creciente; yield ~2.1% a precio actual"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "$9.0B",
-        "nota": "UNH recompro aproximadamente $9.0B en acciones propias en FY2024, reduciendo el share count de 924M a 915M. Historial consistente: $4.25B en 2020, $5.0B en 2021, $7.0B en 2022."
+        "label": "Capex",
+        "value": "3.6B USD",
+        "nota": "Inversiones en tecnologia clinica y expansion Optum"
       },
       {
-        "label": "M&A Optum expansion",
-        "value": "Ongoing",
-        "nota": "Adquisiciones estrategicas en servicios de salud: LHC Group (home health), Genoptix, DaVita Medical Group. Optum Health opera mas de 2,200 empleados clinicos y 90,000 proveedores afiliados. La estrategia prioriza integracion vertical sobre crecimiento organico."
+        "label": "M&A",
+        "value": "~1.0B USD",
+        "nota": "Foco en desinversiones estrategicas en FY2025; menor M&A"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "UNH FY2024", "Sector salud", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "UNH TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Net Margin", "3.6%", "~5-7%", "Presionado por evento Change Healthcare — estructuralmente ~6%"],
-      ["ROE", "12.2%", "~15%", "Transitoriamente por debajo — normalizacion esperada en 2025-2026"],
-      ["Revenue Growth", "+7.7%", "~5-8%", "En linea con el sector, por encima del promedio de aseguradoras"],
-      ["EV/EBITDA", "11.1x", "~14-18x", "Descuento atractivo considerando la escala y calidad del negocio"],
-      ["FCF/Revenue", "5.2%", "~4-6%", "Solida generacion de caja incluso en un ano adverso"]
+      [
+        "Margen Operativo",
+        "4.2%",
+        "~5-8%",
+        "Temporalmente deprimido por cargos extraordinarios"
+      ],
+      [
+        "Margen Neto",
+        "2.7%",
+        "~3-5%",
+        "Por debajo del historico propio"
+      ],
+      [
+        "Revenue Growth",
+        "+11.8%",
+        "~6-10%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "12.8x",
+        "~16-18x",
+        "Descuento del 25-30% frente a pares"
+      ],
+      [
+        "ROIC",
+        "13.4%",
+        "~12-15%",
+        "En linea con el sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "Deterioro puntual en FY2024 por ciberataque Change Healthcare y presion de MLR",
-    "analisis": "El FY2024 de UNH fue impactado por dos factores extraordinarios: (1) el ciberataque a Change Healthcare en febrero 2024, la mayor plataforma de procesamiento de claims de salud en EE.UU., causo disrupciones masivas en pagos a proveedores, con costos de respuesta y perdidas estimadas en $3.1-3.5B antes de impuestos. UNH asumio el costo de adelantar pagos a hospitales y medicos afectados. (2) El MLR se elevo por costos medicos mas altos de lo esperado en Medicare Advantage y por el backlog de claims diferidos por el ciberataque que se procesaron concentradamente en la segunda mitad del ano. El negocio estructural — Optum, diversificacion de ingresos, FCF — permanece intacto. El EPS normalizado (excluyendo Change Healthcare) hubiera sido aproximadamente $23-24, consistente con la trayectoria historica.",
+    "veredicto": "Salud financiera presionada en 2025 por factores extraordinarios; negocio operativo con escala solida",
+    "analisis": "La caida de margenes en FY2025 responde a tres factores: (1) MCR superior al 89% por underpricing en Medicare Advantage y mayor utilizacion post-COVID, (2) cargos de reestructuracion de 2.5B USD en Q4 2025 relacionados con racionalizacion de activos, y (3) reservas adicionales de 799M por el ciberataque de Change Healthcare. Q1 2026 muestra estabilizacion con EPS de 6.90 y FCF de 8.15B.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+7.7%", "status": "ok" },
-      { "metrica": "EBITDA YoY", "valor": "+0.2%", "status": "ok" },
-      { "metrica": "FCF FY2024", "valor": "$20.7B", "status": "warn" },
-      { "metrica": "Net Income YoY", "valor": "-35.6%", "status": "warn" },
-      { "metrica": "MLR 2024", "valor": "~66%", "status": "warn" },
-      { "metrica": "Deuda Neta YoY", "valor": "+41.1%", "status": "warn" },
-      { "metrica": "Operating Income YoY", "valor": "-0.2%", "status": "ok" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+11.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "4.2%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "2.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-22.3%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "47.9B USD",
+        "status": "warn"
+      },
+      {
+        "metrica": "EPS YoY",
+        "valor": "-14.7%",
+        "status": "warn"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Modelo dual UHC + Optum genera diversificacion unica y ventaja competitiva duradera",
+      "title": "Escala y liderazgo de mercado",
       "impact": "Alto",
-      "evidence": "Optum genero mas del 50% del operating income con margenes superiores a UnitedHealthcare. OptumRx procesa mas de 1.5B recetas anuales. OptumHealth atiende a mas de 4M pacientes en atencion primaria.",
-      "context": "La integracion vertical crea barreras de entrada casi insuperables: UNH tiene acceso a datos clinicos, farmaceuticos y financieros que ningun competidor puede replicar. A medida que Optum crece, el mix de ingresos mejora hacia margenes mas altos y mas estables."
+      "evidence": "447.6B USD en ingresos FY2025, 49M+ miembros asegurados, 90M+ vidas en Optum Rx.",
+      "context": "La escala crea barreras de entrada imposibles de replicar y poder de negociacion con hospitales, medicos y fabricantes farmaceuticos, protegiendo margenes a largo plazo."
     },
     {
       "level": "green",
-      "title": "FCF masivo y retorno de capital consistente al accionista",
+      "title": "Optum: motor de alta calidad",
       "impact": "Alto",
-      "evidence": "FCF de $20.7B en FY2024 (incluso en el peor ano de la decada). Dividendo creciente por 14+ anos consecutivos. Recompras de $9.0B en 2024. Total shareholder return superior al sector en 10 anos.",
-      "context": "La generacion de caja permite financiar acquisiciones, dividendos y recompras simultaneamente sin estresar el balance (Deuda Neta/EBITDA de 1.4x). UNH ha retornado mas de $140B a accionistas desde 2010."
+      "evidence": "Optum genera ingresos operativos sostenibles con margenes superiores al segmento de seguros puro.",
+      "context": "A diferencia de un asegurador puro, Optum actua como proveedor de servicios con contratos B2B, reduciendo la exposicion ciclica al MCR de seguros."
+    },
+    {
+      "level": "yellow",
+      "title": "Valuacion en minimos historicos",
+      "impact": "Medio",
+      "evidence": "P/E forward de 12.8x vs historico de 18-22x; descuento del 25-30% frente a su rango historico.",
+      "context": "Una normalizacion del MCR podria generar re-rating hacia precio objetivo de 470-530 USD en 2-3 anos."
     },
     {
       "level": "red",
-      "title": "Ciberataque Change Healthcare 2024 — mayor impacto operativo en la historia de la empresa",
+      "title": "Riesgo regulatorio y DOJ",
       "impact": "Alto",
-      "evidence": "El ataque de ransomware en febrero 2024 interrumpio el procesamiento de $6B+ en claims diarios. Costo total estimado: $3.1-3.5B antes de impuestos, incluyendo $1.5B+ en adelantos a proveedores y $300M+ en costos tecnologicos de respuesta.",
-      "context": "Si bien el impacto fue puntual y no recurrente, expuso la concentracion de riesgo operativo en infraestructura critica de salud. UNH es ahora objetivo de investigaciones del Congreso y reguladores sobre la concentracion de mercado en health IT. El costo reputacional y regulatorio puede persistir en 2025-2026."
+      "evidence": "DOJ investiga practicas de Medicare Advantage; Congreso presiona para reformar la industria y los PBMs.",
+      "context": "Cambios en reembolsos de Medicare Advantage o restricciones a integracion vertical podrian impactar materialmente los earnings de forma estructural."
     },
     {
-      "level": "yellow",
-      "title": "Medical Loss Ratio bajo presion en 2024 — riesgo de persistencia en Medicare Advantage",
+      "level": "red",
+      "title": "MCR elevado y guia recortada",
       "impact": "Alto",
-      "evidence": "MLR estimado ~66% en 2024 vs 65.1% en 2023 y 65.0% en 2022. Los costos medicos en Medicare Advantage excedieron las proyecciones actuariales, un patron que afecto a todo el sector (CVS/Aetna, Humana). CMS redujo los reembolsos de Medicare Advantage en 2024.",
-      "context": "Si el MLR no se normaliza en 2025-2026, el segmento UnitedHealthcare enfrentaria presion sostenida en margenes. UNH ha respondido con aumentos de primas y ajustes en beneficios para 2025. El mercado espera EPS de $20.75 para FY2025, que implica una normalizacion significativa."
-    },
-    {
-      "level": "yellow",
-      "title": "Incremento significativo de deuda neta en 2024",
-      "impact": "Medio",
-      "evidence": "Deuda neta paso de $36.0B en FY2023 a $50.9B en FY2024 (+41%), con deuda total combinada de $76.2B. El aumento refleja parcialmente el financiamiento de adelantos de claims por Change Healthcare y refinanciamiento.",
-      "context": "A pesar del incremento, el ratio Deuda/EBITDA de 1.4x sigue siendo manejable para una empresa del tamano de UNH. El FCF de $20.7B proporciona cobertura para reducir deuda organicamente en 2-3 anos."
+      "evidence": "MCR en FY2025 supero el 89% vs historico de 83-85%. Guidance FY2026 recortado multiples veces.",
+      "context": "Si el MCR no se normaliza a 85-87% en 2026-2027, la recuperacion de EPS sera mas lenta y los multiples podrian permanecer deprimidos."
     }
   ],
   "score": {
-    "score": 7.5,
+    "score": 6.4,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 8, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 8, "max": 10 },
-      { "label": "Calidad de margenes", "score": 6, "max": 10 },
-      { "label": "Solidez del balance", "score": 7, "max": 10 },
-      { "label": "Generacion de FCF", "score": 8, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 6,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "UNH ejecuta una estrategia de integracion vertical en salud: combina la distribucion masiva de UnitedHealthcare con los servicios de alto margen de Optum. El objetivo a largo plazo es capturar una mayor proporcion del gasto total en salud de EE.UU. (~$5T) a traves de la cadena de valor completa: seguros, farmacia, atencion primaria, salud del comportamiento, y analisis de datos clinicos. La adquisicion de LHC Group (home health) y la expansion de clinicas de atencion primaria de OptumHealth apuntan a capturar el segmento de atencion domiciliaria, de alto crecimiento por el envejecimiento de la poblacion.",
-    "ventajas": "Escala dominante con 50M+ miembros asegurados. Modelo integrado vertical unico en el mercado. OptumRx procesa 1.5B+ recetas anuales — ventaja de escala en PBM. Data clinica de decenas de millones de pacientes genera ventajas en pricing actuarial y gestion de costos. Posicion de liderazgo en Medicare Advantage, el segmento de mayor crecimiento en salud gubernamental EE.UU. Red de 90,000+ proveedores afiliados a Optum Health.",
-    "debilidades": "Exposicion a cambios en reembolsos de Medicare Advantage por decisiones de CMS. MLR volatile cuando los costos medicos sorprenden al alza. Dependencia de infraestructura de IT critica (evidenciada por Change Healthcare). Escrutinio antimonopolio creciente por la escala del modelo integrado. Margenes netos bajos (~6%) tipicos del sector asegurador, limitando el upside en valuacion vs empresas de tecnologia.",
+    "estrategia": "UnitedHealth ejecuta una estrategia de integracion vertical del ecosistema de salud: asegurar al paciente (UnitedHealthcare), gestionar su atencion clinica (Optum Health), analizar datos (Optum Insight) y dispensar medicamentos (Optum Rx). En 2026 realiza reestructuracion para concentrarse en negocios de mayor ROIC y desinvertir activos de bajo margen.",
+    "ventajas": "1) Escala imbatible con 447B USD en ingresos y poder de negociacion unico frente a proveedores. 2) Optum como flywheel de datos clinicos con acceso a informacion de salud de 100M+ americanos. 3) Integracion vertical que reduce friccion y costo del sistema, aumentando lealtad de empleadores y gobierno. 4) Dividendo creciente por mas de 10 anos consecutivos.",
+    "debilidades": "1) Alta exposicion a Medicare Advantage (~30% de ingresos), sujeta a cambios de reembolso gubernamental. 2) MCR cronicamente elevado post-COVID. 3) Liderazgo en transicion post-CEO reduce capacidad de ejecucion de corto plazo. 4) Presion politica bipartidista sobre PBMs y aseguradoras.",
     "riesgos": [
-      "Regulacion gubernamental en pricing de seguros y Medicare Advantage — CMS puede reducir reembolsos",
-      "MLR volatile por pandemias, enfermedades emergentes o cambios en patrones de utilizacion medica",
-      "Ciberataques adicionales a infraestructura critica de salud",
-      "Investigaciones antimonopolio por la concentracion de mercado en seguros + servicios + PBM",
-      "Cambios estructurales en la Ley de Cuidado de Salud Asequible (ACA) o Medicare"
+      "Cambios en reembolsos de Medicare Advantage por CMS que compriman margenes del segmento Medicare y Retirement",
+      "Resultado adverso en investigacion del DOJ sobre practicas anticompetitivas en Medicare Advantage",
+      "Nueva legislacion que limite la integracion vertical entre aseguradoras y proveedores de salud",
+      "MCR que no se normalice a niveles historicos de 84-86% en 2026-2027, manteniendo EPS deprimido"
     ],
-    "inversiones_estrategicas": "UNH invierte >$4B anuales en tecnologia y analisis de datos, posicionando a Optum Insight como el mayor proveedor de analisis clinicos en EE.UU. La expansion de OptumHealth en atencion primaria (Value-Based Care) busca alinear incentivos: en lugar de pagar por visitas, UNH paga por resultados de salud. Esta transicion a value-based care es el principal driver de mejora de margenes a largo plazo, ya que reduce utilizacion innecesaria y mejora outcomes. La muerte del CEO Brian Thompson en diciembre 2024 creo incertidumbre en el liderazgo, aunque la empresa nombro a Andrew Witty como CEO con experiencia probada en el sector."
+    "inversiones_estrategicas": "Desinversion de activos de bajo margen en Optum Health por 568M netos en Q4 2025. Consolidacion en Optum Rx post-Change Healthcare. Expansion de Optum Insight para analytics de salud con IA. Recompra de 5.55B en acciones en FY2025 aprovechando precios deprimidos. Contribucion de 400M al United Health Foundation en Q1 2026."
   },
   "verdict": {
-    "status": "Mantener",
-    "score": "7.5/10",
+    "status": "Mantener con Sesgo Positivo",
+    "score": "6.4/10",
     "color": "yellow",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$400.3B" },
-      { "label": "Margen Neto", "value": "3.6%" },
-      { "label": "FCF Yield", "value": "5.8%" },
-      { "label": "P/E Forward", "value": "18.8x" },
-      { "label": "MLR 2024", "value": "~66%" }
+      {
+        "label": "Revenue FY2025",
+        "value": "447.6B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "2.7%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "4.7%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "12.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+11.8% YoY"
+      }
     ],
     "bullets": [
-      { "text": "**Modelo dual UHC + Optum ->** La integracion vertical de seguros y servicios de salud crea un moat casi inexpugnable: datos clinicos, escala en PBM y atencion primaria posicionan a UNH como el operador de salud mas completo de EE.UU., con Optum creciendo a mayor velocidad y mejor margen que el segmento asegurador.", "type": "pro" },
-      { "text": "**FCF masivo y retorno consistente ->** Incluso en el peor ano operativo de la decada ($20.7B FCF), UNH recompro $9B en acciones y pago $7.5B en dividendos. La disciplina de capital allocation en contextos adversos es una senal de calidad del management y solidez estructural del negocio.", "type": "pro" },
-      { "text": "**Valuacion atractiva post-shock ->** P/E Forward de 18.8x y EV/EBITDA de 11.1x representan descuentos significativos vs el sector salud y el mercado en general, compensando parcialmente los riesgos de MLR y regulacion. El mercado ya precio el impacto de Change Healthcare.", "type": "pro" },
-      { "text": "**MLR y riesgo regulatorio persisten ->** Si el Medical Loss Ratio no se normaliza en 2025 o si CMS reduce adicionalmente los reembolsos de Medicare Advantage, el EPS forward de $20.75 estaria en riesgo. La muerte del CEO en 2024 y el escrutinio politico al modelo integrado de UNH agregan incertidumbre que justifica un multiple de descuento.", "type": "con" }
+      {
+        "text": "**Valuacion historicamente baja ->** A 12.8x P/E forward y 4.7% FCF yield, el mercado no esta pagando por la franquicia de Optum ni por la recuperacion del MCR. El descuento del 30% frente al historico ofrece asimetria positiva para inversores de largo plazo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Escala y modelo integrado irreplicables ->** 447B USD en ingresos, 49M asegurados y 90M vidas en Optum Rx crean una posicion competitiva que ningun nuevo entrante puede construir en menos de una decada.",
+        "type": "pro"
+      },
+      {
+        "text": "**Q1 2026 muestra estabilizacion ->** EPS de 6.90 con ingresos +2.0% YoY y FCF de 8.15B indica que los cargos extraordinarios de 2025 no se repetiran, sentando base para recuperacion de margenes en H2 2026.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo regulatorio y legal material ->** La investigacion del DOJ y la presion bipartidista sobre Medicare Advantage y PBMs representan el mayor riesgo de re-rating negativo permanente.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $400.3B en FY2024 (+7.7% YoY) confirma la consistencia del crecimiento de UNH incluso en el ano mas desafiante de la empresa. En los ultimos 5 anos, la empresa crecio revenue de $257B a $400B — una expansion de $143B en terminos absolutos, reflejo de la escala y la diversificacion del modelo de negocio entre UnitedHealthcare y Optum."
+        "texto": "Revenue de 447.6B USD en FY2025, +11.8% YoY, impulsado por crecimiento de primas en UnitedHealthcare y expansion de Optum Rx. El crecimiento organico sigue siendo robusto a pesar del entorno adverso."
       },
       {
         "label": "Margenes",
-        "texto": "El margen neto cayo de 6.0% en FY2023 a 3.6% en FY2024, impulsado por los costos extraordinarios de Change Healthcare (~$3.1-3.5B) y el aumento del MLR. El margen operativo se mantuvo mas estable en 8.1% (vs 8.7% en 2023), sugiriendo que el impacto fue concentrado en items por debajo de la linea operativa. La normalizacion a margenes historicos del 6%+ depende de la estabilizacion del MLR y la ausencia de eventos extraordinarios en 2025."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS GAAP de $15.51 en FY2024 (-35% YoY) refleja el impacto combinado de Change Healthcare y la presion de costos medicos. El mercado proyecta una recuperacion a $20.75 en FY2025, que implicaria un rebote de +34% en EPS — una mejora significativa que debe monitorearse en los reportes trimestrales de 2025. El EPS normalizado (excluyendo Change Healthcare) hubiera sido ~$23-24."
-      },
-      {
-        "label": "Balance",
-        "texto": "La deuda neta aumento de $36.0B a $50.9B (+41% YoY), el mayor incremento en la historia reciente de la empresa. Sin embargo, el ratio Deuda Neta/EBITDA de 1.4x sigue siendo conservador para una empresa de esta escala y FCF. El patrimonio total alcanza $98.3B, proporcionando una base solida. La estructura de capital permite financiar el crecimiento organico e inorganico de Optum sin tension financiera."
+        "texto": "Margen neto de 2.7% y operativo de 4.2%, por debajo del historico de 5-6% neto. La causa principal es el MCR elevado (>89%), cargos de reestructuracion de 2.5B y costos del ciberataque de 799M en Q4 2025."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de $20.7B en FY2024 (-19.4% vs $25.7B en 2023) se compara favorablemente con el deterioro del 35.6% en net income, evidenciando que el negocio generador de caja esta mas sano que la utilidad contable sugiere. El FCF yield de 5.8% al precio actual ($390) es atractivo para un inversor de largo plazo. El Capex de $3.5B ($0.5B mas que 2023) refleja inversion continua en infraestructura de Optum."
+        "texto": "FCF de 16.1B USD en FY2025, -22.3% YoY, aun robusto en terminos absolutos. Q1 2026 muestra FCF de 8.15B, sugiriendo recuperacion. La empresa mantiene capacidad de pagar dividendos y recomprar acciones."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de 47.9B USD (2.06x EBITDA), manejable pero con menos margen que en 2023. Caja de 24.4B proporciona liquidez adecuada. El perfil de vencimientos es escalonado sin presion inmediata de refinanciamiento."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 379 USD, UNH cotiza a 12.8x P/E forward, el nivel mas bajo desde 2012. Una normalizacion a 16-18x forward con EPS de 29.50 implicaria precio objetivo de 472-531 USD, +25-40% de upside potencial en 2-3 anos."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Tres riesgos merecen atencion en 2025-2026: (1) Persistencia del MLR elevado en Medicare Advantage — si los costos medicos siguen sorprendiendo al alza, la recuperacion de EPS sera mas lenta de lo esperado. (2) Impacto regulatorio de Change Healthcare — las investigaciones del Congreso y el DOJ podrian derivar en multas o restricciones operativas. (3) Liderazgo post-Brian Thompson — aunque Andrew Witty asumio el rol de CEO con credenciales solidas, la transicion en el liderazgo de una empresa tan compleja como UNH implica riesgo de ejecucion en el corto plazo."
+        "texto": "1) MCR que persista por encima de 87% en 2026-2027. 2) Resultado adverso del DOJ. 3) Cambios en reembolsos Medicare Advantage. 4) Incertidumbre sobre liderazgo ejecutivo. Acumular gradualmente con horizonte de 2-3 anos."
       }
     ]
-  },
-  "parrafos_gratis": 9
+  }
 }

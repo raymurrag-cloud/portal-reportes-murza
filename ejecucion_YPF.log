@@ -1,0 +1,83 @@
+=== REPORTE YPF ===
+node:fs:440
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\c\Users\murra\portal-reportes\temp_YPF_sec.txt'
+    at Object.readFileSync (node:fs:440:20)
+    at [eval]:1:23
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:446:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:444:60)
+    at evalFunction (node:internal/process/execution:279:30)
+    at evalTypeScript (node:internal/process/execution:291:3)
+    at node:internal/main/eval_string:74:3 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\c\\Users\\murra\\portal-reportes\\temp_YPF_sec.txt'
+}
+
+Node.js v22.22.0
+CIK: 
+CIK found: 0000904851
+[WARN] Concepto 'rev' no encontrado — verificar manualmente
+[WARN] Concepto 'ni' no encontrado — verificar manualmente
+[WARN] Concepto 'eps' no encontrado — verificar manualmente
+[WARN] Concepto 'gp' no encontrado — verificar manualmente
+[WARN] Concepto 'oi' no encontrado — verificar manualmente
+[WARN] Concepto 'da' no encontrado — verificar manualmente
+[WARN] Concepto 'ocf' no encontrado — verificar manualmente
+[WARN] Concepto 'capex' no encontrado — verificar manualmente
+[WARN] Concepto 'cash' no encontrado — verificar manualmente
+[WARN] Concepto 'ltd' no encontrado — verificar manualmente
+[WARN] Concepto 'sh' no encontrado — verificar manualmente
+[WARN] Concepto 'repo' no encontrado — verificar manualmente
+[WARN] Concepto 'div' no encontrado — verificar manualmente
+{}
+XBRL done
+node:fs:440
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\c\Users\murra\portal-reportes\temp_YPF_price.txt'
+    at Object.readFileSync (node:fs:440:20)
+    at [eval]:2:23
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:446:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:444:60)
+    at evalFunction (node:internal/process/execution:279:30)
+    at evalTypeScript (node:internal/process/execution:291:3)
+    at node:internal/main/eval_string:74:3 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\c\\Users\\murra\\portal-reportes\\temp_YPF_price.txt'
+}
+
+Node.js v22.22.0
+PRICE_DATA: 
+Submissions size: 166939
+node:fs:440
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'C:\c\Users\murra\portal-reportes\temp_YPF_submissions.txt'
+    at Object.readFileSync (node:fs:440:20)
+    at [eval]:2:34
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:446:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:444:60)
+    at evalFunction (node:internal/process/execution:279:30)
+    at evalTypeScript (node:internal/process/execution:291:3)
+    at node:internal/main/eval_string:74:3 {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\c\\Users\\murra\\portal-reportes\\temp_YPF_submissions.txt'
+}
+
+Node.js v22.22.0

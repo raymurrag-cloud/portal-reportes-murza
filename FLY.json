@@ -1,0 +1,172 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Firefly Aerospace es una empresa de tecnologia espacial y defensa que provee soluciones de lanzamiento y naves espaciales a clientes de seguridad nacional, gobierno y comercio. En 2025, primer ano completo post-IPO, logro crecimiento de revenue del 163% impulsado por la adquisicion de SciTec y la exitosa mision Blue Ghost. Aunque la empresa sigue siendo pre-rentable con perdidas netas de 298M USD, tiene 893M USD en caja y backlog creciente. La valuacion implica una apuesta de alto riesgo sobre la consolidacion del mercado de lanzamiento espacial.",
+  "descripcion": "Firefly opera dos segmentos: Launch (cohete Alpha operativo, Eclipse en desarrollo) y Spacecraft Solutions (naves lunares Blue Ghost, procesamiento de datos satelitales via SciTec adquirida en oct-2025). Alpha es el unico cohete orbital clase 1,000 kg de fabricacion estadounidense. Blue Ghost 1 fue el primer aterrizaje lunar comercial exitoso (2025). Clientes principales: NASA, Departamento de Defensa y clientes comerciales. Revenue de Q1 2026 de 80.9M USD ya supera casi cualquier trimestre historico, pero las perdidas operativas siguen acelerando por R&D en Eclipse y SG&A post-IPO.",
+  "tabla": {
+    "headers": ["Metrica","FY2021","FY2022","FY2023","FY2024","FY2025","Q1 2026","Var. YoY"],
+    "rows": [
+      ["Revenue (M USD)","N/D","N/D","55.2","60.8","159.9","80.9","+163%"],
+      ["Utilidad Neta (M USD)","N/D","N/D","-135.5","-231.1","-298.3","-96.7","-29%"],
+      ["Margen Bruto","N/D","N/D","48.2%","-18.7%","19.2%","21.6%","+37.9pp"],
+      ["EBITDA (M USD)","N/D","N/D","-127.2","-196.9","-237.5","N/D","N/D"],
+      ["FCF (M USD)","N/D","N/D","-170.7","-190.3","-237.7","N/D","N/D"],
+      ["EPS Diluido","N/D","N/D","-13.05","-20.74","-4.83","-0.60","N/D"],
+      ["Deuda Neta (M USD)","N/D","N/D","N/D","N/D","-604.0","-524.8","N/D"]
+    ]
+  },
+  "kpis": [
+    { "label": "P/E Trailing", "value": "N/A", "signal": "red", "note": "Empresa pre-rentable", "precio_base": 57.68, "precio_fecha": "2026-05-26", "fundamento": {"tipo": "eps_ttm", "valor": -4.83} },
+    { "label": "P/E Forward",  "value": "N/A", "signal": "red", "note": "Sin guidance de EPS positivo", "precio_base": 57.68, "precio_fecha": "2026-05-26", "fundamento": {"tipo": "eps_fwd", "valor": 0} },
+    { "label": "EV/Revenue",   "value": "54x", "signal": "red", "note": "Valuacion de alto crecimiento pre-rentable", "precio_base": 57.68, "precio_fecha": "2026-05-26", "fundamento": {"tipo": "ev_ebitda", "ebitda_b": -0.238, "shares_m": 160.1, "deuda_neta_b": -0.604} },
+    { "label": "P/Revenue",    "value": "58x", "signal": "red", "note": "Market cap 9.2B vs revenue TTM 160M", "precio_base": 57.68, "precio_fecha": "2026-05-26", "fundamento": {"tipo": "p_fcf", "fcf_b": -0.238, "shares_m": 160.1} },
+    { "label": "Caja Neta/MC", "value": "Neta +604M USD", "signal": "green" },
+    { "label": "ROE",  "value": "-25.1%", "signal": "red" },
+    { "label": "ROIC", "value": "N/A", "signal": "red" }
+  ],
+  "chart_ingresos": {
+    "unit": "M USD",
+    "data": [
+      {"label": "FY2021", "revenue": 0, "utilidad": 0},
+      {"label": "FY2022", "revenue": 0, "utilidad": 0},
+      {"label": "FY2023", "revenue": 55.2, "utilidad": -135.5},
+      {"label": "FY2024", "revenue": 60.8, "utilidad": -231.1},
+      {"label": "FY2025", "revenue": 159.9, "utilidad": -298.3}
+    ],
+    "series": [{"key": "revenue", "name": "Revenue"}, {"key": "utilidad", "name": "Utilidad Neta"}]
+  },
+  "chart_margenes": {
+    "data": [
+      {"label": "FY2021", "bruto": 0, "operativo": 0, "neto": 0},
+      {"label": "FY2022", "bruto": 0, "operativo": 0, "neto": 0},
+      {"label": "FY2023", "bruto": 48.2, "operativo": -238.8, "neto": -245.3},
+      {"label": "FY2024", "bruto": -18.7, "operativo": -344.6, "neto": -380.2},
+      {"label": "FY2025", "bruto": 19.2, "operativo": -163.1, "neto": -186.6}
+    ],
+    "series": [{"key": "bruto", "name": "Margen Bruto"}, {"key": "operativo", "name": "Margen Operativo"}, {"key": "neto", "name": "Margen Neto"}]
+  },
+  "capital_allocation": {
+    "items": [
+      {"label": "R&D", "value": "200M USD (FY2025)", "nota": "Principalmente Eclipse (cohete mediano) y mejoras Alpha Block II"},
+      {"label": "Capex", "value": "32.8M USD (FY2025)", "nota": "Infraestructura de manufactura y plataformas de lanzamiento"},
+      {"label": "Adquisicion SciTec", "value": "547M USD (oct-2025)", "nota": "Procesamiento de datos satelitales — integracion en curso"},
+      {"label": "Recompras / Dividendos", "value": "0", "nota": "Empresa pre-rentable sin retorno al accionista via dividendos"}
+    ]
+  },
+  "comparacion_sector": {
+    "headers": ["Metrica","FLY TTM","Sector ref. espacial","Posicion relativa"],
+    "rows": [
+      ["Revenue YoY","+163%","~30-50% (RKLB)","Muy por encima — efecto SciTec"],
+      ["Margen Bruto","19.2%","~25-30% (RKLB)","Por debajo del sector"],
+      ["Margen Operativo","-163%","-50 a -80% (comparables)","Mas negativo por SG&A post-IPO"],
+      ["P/Revenue","58x","20-40x (RKLB ~20x)","Prima elevada vs comparables"],
+      ["Caja Neta","604M USD","Variable","Posicion robusta para su tamano"]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Empresa en fase de crecimiento acelerado con perdidas en aumento — caja de 893M cubre ~2.5 anos de runway al ritmo actual",
+    "analisis": "El margen bruto recupero en FY2025 (19.2%) despues del deterioro de FY2024 (-18.7%), senal positiva de mejora en mix de negocio. Sin embargo, el SG&A se disparo 258% en Q1 2026 por costos de SciTec, stock-based comp y estructura de empresa publica. El FCF de -238M en FY2025 requiere monitoreo constante. La caja neta de 604M da visibilidad hasta ~2028.",
+    "items": [
+      {"metrica": "Revenue YoY", "valor": "+163%", "status": "ok"},
+      {"metrica": "Margen Bruto", "valor": "19.2%", "status": "warn"},
+      {"metrica": "Margen Operativo", "valor": "-163%", "status": "bad"},
+      {"metrica": "Margen Neto", "valor": "-187%", "status": "bad"},
+      {"metrica": "FCF", "valor": "-238M USD", "status": "bad"},
+      {"metrica": "Caja Neta", "valor": "+604M USD", "status": "ok"}
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Crecimiento de revenue explosivo",
+      "impact": "Alto",
+      "evidence": "Revenue +163% YoY en FY2025 a 159.9M USD; Q1 2026 en 80.9M USD (+45% YoY), ritmo anualizado ~324M.",
+      "context": "Si mantiene este ritmo, Firefly podria alcanzar escala operativa mucho antes de lo esperado. La adquisicion de SciTec multiplico el mercado potencial en datos satelitales."
+    },
+    {
+      "level": "green",
+      "title": "Primera mision lunar comercial exitosa",
+      "impact": "Alto",
+      "evidence": "Blue Ghost Mission 1 completada exitosamente en 2025 — primera empresa comercial en lograr alunizaje suave.",
+      "context": "Posiciona a Firefly como lider en exploracion lunar comercial con ventaja de primer movedor. NASA y DoD incrementan contratos con empresas de confianza probada."
+    },
+    {
+      "level": "yellow",
+      "title": "Margen bruto en recuperacion fragil",
+      "impact": "Medio",
+      "evidence": "Margen bruto de 19.2% en FY2025 y 21.6% en Q1 2026, vs -18.7% en FY2024.",
+      "context": "La mejora es real pero depende de volumen en contratos Spacecraft Solutions de alto margen. Un retraso en misiones puede revertir rapidamente."
+    },
+    {
+      "level": "yellow",
+      "title": "Alta concentracion de clientes",
+      "impact": "Medio",
+      "evidence": "Top 5 clientes = 86% del revenue FY2025; top 5 backlog = 81% del backlog total.",
+      "context": "Cambios en prioridades de NASA o DoD, o perdida de un cliente clave, podrian impactar materialmente los ingresos."
+    },
+    {
+      "level": "red",
+      "title": "Perdidas operativas acelerando",
+      "impact": "Alto",
+      "evidence": "Perdida neta 298M en FY2025 vs 231M en FY2024; FCF -238M. Q1 2026: -97M en un solo trimestre.",
+      "context": "Con runway de ~2.5 anos al ritmo actual, Firefly necesitara nuevos ingresos o financiamiento antes de FY2028 para evitar dilucion."
+    },
+    {
+      "level": "red",
+      "title": "Valuacion extrema en empresa pre-rentable",
+      "impact": "Alto",
+      "evidence": "Market cap 9.2B USD vs revenue TTM 160M USD = P/Revenue 58x. EV/Revenue 54x.",
+      "context": "La valuacion implica un escenario de crecimiento muy agresivo. Cualquier decepcion en launches o contratos podria desencadenar caidas severas del precio."
+    }
+  ],
+  "score": {
+    "score": 4.8,
+    "max": 10,
+    "items": [
+      {"label": "Poder de fijacion de precios", "score": 5, "max": 10},
+      {"label": "Crecimiento de revenue", "score": 9, "max": 10},
+      {"label": "Calidad de margenes", "score": 2, "max": 10},
+      {"label": "Solidez del balance", "score": 6, "max": 10},
+      {"label": "Generacion de FCF", "score": 2, "max": 10}
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Firefly busca convertirse en la empresa de infraestructura espacial de ciclo completo para clientes de defensa y gobierno: cohete Alpha (1,000 kg, ya operativo), Eclipse (mediano, primer vuelo ~2027), naves lunares Blue Ghost, y procesamiento de datos satelitales via SciTec. El modelo es crear un ecosistema de mision completa donde Launch + Spacecraft + Data se vendan como paquete integrado a agencias gubernamentales y clientes comerciales.",
+    "ventajas": "(1) Unico cohete orbital clase 1,000 kg fabricado en EE.UU. (Alpha), ventaja regulatoria para contratos DoD. (2) Primer aterrizaje lunar comercial exitoso — diferenciador unico con NASA. (3) Tecnologia patentada de motor tap-off cycle con menor numero de piezas y mayor confiabilidad. (4) IPO reciente deja caja neta de 604M USD para financiar desarrollo de Eclipse y SciTec.",
+    "debilidades": "Empresa pre-rentable con perdidas acelerando; alta concentracion en pocos clientes gubernamentales; SG&A disparado post-IPO y post-SciTec; integracion de SciTec en curso con riesgo de ejecucion; Eclipse aun sin fecha confirmada de primer lanzamiento comercial.",
+    "riesgos": [
+      "Agotamiento de caja si no logra rentabilidad o financiamiento adicional antes de FY2028",
+      "Retrasos en programa Eclipse que impidan capturar mercado de cohetes medianos antes de competidores",
+      "Perdida de contratos clave del DoD ante cambio de politica de adquisiciones o recortes en presupuesto de defensa espacial",
+      "Fracaso en lanzamiento Alpha que destruya confianza de clientes y paralice el backlog",
+      "Competencia de SpaceX (Falcon 9) y Rocket Lab (Neutron) con mayor historial operativo y escala"
+    ]
+  },
+  "verdict": {
+    "status": "Especulativo — Solo para tolerancia alta al riesgo",
+    "score": "4.8/10",
+    "color": "red",
+    "metrics": [
+      {"label": "Revenue TTM", "value": "160M USD"},
+      {"label": "Margen Bruto", "value": "19.2%"},
+      {"label": "FCF", "value": "-238M USD"},
+      {"label": "P/Revenue", "value": "58x"},
+      {"label": "Crecimiento Rev.", "value": "+163% YoY"}
+    ],
+    "bullets": [
+      {"text": "**Crecimiento explosivo ->** Revenue +163% en FY2025 y +45% en Q1 2026 YoY, con margen bruto recuperando. La adquisicion de SciTec multiplico el mercado potencial.", "type": "pro"},
+      {"text": "**Mision lunar exitosa ->** Blue Ghost Mission 1 posiciona a Firefly como lider unico en alunizajes comerciales, con ventaja competitiva dificil de replicar para contratos NASA/DoD.", "type": "pro"},
+      {"text": "**Perdidas masivas sin horizonte claro ->** FCF de -238M anuales con runway de ~2.5 anos. Rentabilidad depende de que Eclipse vuele, se escale Alpha y SciTec se integre — tres riesgos de ejecucion simultaneos.", "type": "con"},
+      {"text": "**Valuacion de fe, no de fundamentos ->** P/Revenue de 58x descuenta un escenario perfecto. Solo para inversores con tolerancia alta al riesgo y horizonte de 5+ anos.", "type": "con"}
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {"label": "Ingresos", "texto": "Revenue crecio 163% en FY2025 a 159.9M USD, impulsado por SciTec (adquirida oct-2025) y Blue Ghost Mission 1. Q1 2026 en 80.9M USD (+45% YoY), ritmo anualizado ~324M."},
+      {"label": "Margenes", "texto": "Margen bruto recupero a 19.2% en FY2025 desde -18.7% en FY2024, y continua mejorando en Q1 2026 (21.6%). Margen operativo sigue profundamente negativo (-163%) por R&D en Eclipse y SG&A post-IPO."},
+      {"label": "Generacion de caja", "texto": "FCF de -238M en FY2025 y -97M en Q1 2026. La caja neta de 604M USD da runway de aproximadamente 2.5 anos al ritmo de quemado actual. Sin nueva financiacion o aumento de ingresos, necesitara capital antes de FY2028."},
+      {"label": "Balance", "texto": "Caja solida de 893M USD (cash + ST inversiones FY2025) vs deuda de 289M. Goodwill de 450M post-SciTec es significativo y sujeto a riesgo de impairment si la integracion no cumple expectativas."},
+      {"label": "Valuacion", "texto": "Market cap de 9.2B USD implica P/Revenue de 58x y EV/Revenue de 54x. La valuacion solo se justifica si Firefly escala a 1B+ de revenue en 3-4 anos con margenes crecientes — escenario posible pero altamente incierto."},
+      {"label": "Riesgos principales", "texto": "(1) Runway de caja limitado si el crecimiento decepciona. (2) Competencia de SpaceX y Rocket Lab con mayor escala. (3) Riesgo de fracaso en lanzamiento Alpha. (4) Integracion de SciTec y desarrollo de Eclipse son apuestas simultaneas con capital finito."}
+    ]
+  }
+}

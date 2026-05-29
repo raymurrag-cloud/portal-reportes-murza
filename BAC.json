@@ -1,141 +1,491 @@
 {
-  "resumen": "Bank of America reporto ingresos de $105.9B en FY2024 (+3.0% YoY) con utilidad neta de $27.0B y EPS diluido de $3.19. El banco mantiene solida rentabilidad con ROE de 10.6% y una base de depositos de $1.9 trillion, aunque la compresion del NIM y la ciclicidad bancaria representan riesgos en un entorno de tasas a la baja. Veredicto: Mantener con sesgo positivo a largo plazo por escala inigualable y diversificacion de ingresos.",
-  "descripcion": "Bank of America Corporation es el segundo banco mas grande de Estados Unidos por activos totales (~$3.3 trillion) y el mayor en banca de consumo. Opera a traves de cuatro segmentos: Consumer Banking (cuentas corrientes, hipotecas, tarjetas), Global Wealth and Investment Management con Merrill Lynch (~$4.2T en activos bajo gestion), Global Banking (prestamos corporativos, banca de inversion) y Global Markets (trading de renta fija, acciones y derivados). Su red incluye mas de 3,700 sucursales y 15,000 cajeros en EEUU.",
+  "parrafos_gratis": 14,
+  "resumen": "Bank of America es uno de los bancos mas grandes del mundo, con activos totales de 3.4 billones de dolares y presencia en consumo, banca corporativa, gestion de patrimonio y mercados globales. En FY2025 reporto ingresos de 113.1 mil millones (+6.8% YoY) y utilidad neta de 30.5 mil millones (+13.1% YoY), impulsado por expansion en ingresos por intereses netos y crecimiento en wealth management. El banco cotiza a 10.3x P/E forward con ROE de 10.6% y ROTCE de 14.2%, ofreciendo valuacion atractiva frente a sus pares y dividendo creciente del 2.2%.",
+  "descripcion": "Bank of America opera a traves de cuatro segmentos: Consumer Banking (cuentas, tarjetas, hipotecas), Global Wealth & Investment Management (Merrill Lynch + Private Bank con 4.0T en activos de clientes), Global Banking (prestamos corporativos, banca de inversion) y Global Markets (trading FICC y equities). La escala del banco otorga ventajas de costo significativas: depositos de bajo costo de 2.0 billones, red de 3,800+ sucursales y 15,000+ cajeros. Su fosa competitiva se basa en la escala de depositos, fidelizacion multiproducto y liderazgo en banca de inversion institucional.",
   "tabla": {
-    "headers": ["Metrica","FY2020","FY2021","FY2022","FY2023","FY2024","Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", 85.53, 89.11, 94.95, 102.77, 105.86, "+3.0%"],
-      ["Utilidad Neta ($B)", 17.89, 31.98, 27.53, 26.31, 26.97, "+2.5%"],
-      ["Margen Neto (%)", "20.9%", "35.9%", "29.0%", "25.6%", "25.5%", "-0.1pp"],
-      ["EBITDA ($B)", 32.16, 31.28, 35.49, 38.98, 41.23, "+5.8%"],
-      ["FCF ($B)", 34.49, -10.79, -10.03, 41.18, -12.71, "n/a"],
-      ["EPS (GAAP)", 1.87, 3.57, 3.19, 3.05, 3.19, "+4.6%"],
-      ["Deuda Neta ($B)", -117.53, -68.10, 45.78, -30.87, -6.83, "n/m"]
+      [
+        "Revenue (B USD)",
+        "89.11",
+        "94.95",
+        "102.77",
+        "105.86",
+        "113.10",
+        "30.27",
+        "+6.8%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "31.98",
+        "27.53",
+        "26.31",
+        "26.97",
+        "30.51",
+        "8.58",
+        "+13.1%"
+      ],
+      [
+        "Margen Neto",
+        "35.9%",
+        "29.0%",
+        "25.6%",
+        "25.5%",
+        "27.0%",
+        "28.3%",
+        "+1.5pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "46.5",
+        "41.6",
+        "39.6",
+        "41.2",
+        "45.7",
+        "N/D",
+        "+10.9%"
+      ],
+      [
+        "FCF (B USD)",
+        "30.38",
+        "26.01",
+        "24.87",
+        "25.66",
+        "29.32",
+        "N/D",
+        "+14.3%"
+      ],
+      [
+        "EPS Diluido",
+        "3.57",
+        "3.19",
+        "2.98",
+        "3.19",
+        "3.81",
+        "1.11",
+        "+19.4%"
+      ],
+      [
+        "Deuda LP (B USD)",
+        "280.12",
+        "275.98",
+        "302.20",
+        "283.28",
+        "317.82",
+        "N/D",
+        "+12.2%"
+      ]
     ]
   },
   "kpis": [
-    {"label":"P/E Ratio","value":"12.6x","signal":"yellow","note":"vs bancos ~11-13x","precio_base":50.635,"precio_fecha":"May-2026","fundamento":{"tipo":"eps_ttm","valor":4.03}},
-    {"label":"P/E Forward","value":"10.0x","signal":"green","precio_base":50.635,"precio_fecha":"May-2026","fundamento":{"tipo":"eps_fwd","valor":5.04}},
-    {"label":"EV/EBITDA","value":"8.2x","signal":"yellow"},
-    {"label":"P/FCF","value":"8.7x","signal":"green","precio_base":50.635,"precio_fecha":"May-2026","fundamento":{"tipo":"p_fcf","fcf_b":41.18,"shares_m":7096.59}},
-    {"label":"Deuda/EBITDA","value":"-0.2x","signal":"green"},
-    {"label":"ROE","value":"10.6%","signal":"yellow"},
-    {"label":"ROA","value":"0.93%","signal":"yellow"}
+    {
+      "label": "P/E Trailing",
+      "value": "12.9x",
+      "signal": "green",
+      "note": "vs. grandes bancos ~13x",
+      "precio_base": 51.955,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.03
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "10.3x",
+      "signal": "green",
+      "note": "descuento vs sector financiero",
+      "precio_base": 51.955,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 5.05
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "10.0x",
+      "signal": "green",
+      "precio_base": 51.955,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 45.7,
+        "shares_m": 7096.6,
+        "deuda_neta_b": 85.97
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "12.6x",
+      "signal": "green",
+      "precio_base": 51.955,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 29.32,
+        "shares_m": 7096.6
+      }
+    },
+    {
+      "label": "P/Book",
+      "value": "1.3x",
+      "signal": "green",
+      "note": "historial pre-GFC: 1.5-2.0x"
+    },
+    {
+      "label": "ROE",
+      "value": "10.6%",
+      "signal": "yellow",
+      "note": "mejorando; objetivo 15%+ en 2026"
+    },
+    {
+      "label": "ROTCE",
+      "value": "14.2%",
+      "signal": "yellow",
+      "note": "vs. JPM ~25%; gap cerrando"
+    }
   ],
   "chart_ingresos": {
-    "unit":"B USD",
-    "data":[
-      {"label":"2020","revenue":85.53,"utilidad":17.89},
-      {"label":"2021","revenue":89.11,"utilidad":31.98},
-      {"label":"2022","revenue":94.95,"utilidad":27.53},
-      {"label":"2023","revenue":102.77,"utilidad":26.31},
-      {"label":"2024","revenue":105.86,"utilidad":26.97}
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2021",
+        "revenue": 89.11,
+        "utilidad": 31.98
+      },
+      {
+        "label": "FY2022",
+        "revenue": 94.95,
+        "utilidad": 27.53
+      },
+      {
+        "label": "FY2023",
+        "revenue": 102.77,
+        "utilidad": 26.31
+      },
+      {
+        "label": "FY2024",
+        "revenue": 105.86,
+        "utilidad": 26.97
+      },
+      {
+        "label": "FY2025",
+        "revenue": 113.1,
+        "utilidad": 30.51
+      }
     ],
-    "series":[{"key":"revenue","name":"Revenue"},{"key":"utilidad","name":"Utilidad Neta"}]
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
   },
   "chart_margenes": {
-    "data":[
-      {"label":"2020","bruto":20.9,"operativo":35.4,"neto":20.9},
-      {"label":"2021","bruto":35.9,"operativo":33.0,"neto":35.9},
-      {"label":"2022","bruto":29.0,"operativo":35.3,"neto":29.0},
-      {"label":"2023","bruto":25.6,"operativo":35.9,"neto":25.6},
-      {"label":"2024","bruto":25.5,"operativo":36.9,"neto":25.5}
+    "data": [
+      {
+        "label": "FY2021",
+        "bruto": null,
+        "operativo": null,
+        "neto": 35.9
+      },
+      {
+        "label": "FY2022",
+        "bruto": null,
+        "operativo": null,
+        "neto": 29
+      },
+      {
+        "label": "FY2023",
+        "bruto": null,
+        "operativo": null,
+        "neto": 25.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": null,
+        "operativo": null,
+        "neto": 25.5
+      },
+      {
+        "label": "FY2025",
+        "bruto": null,
+        "operativo": null,
+        "neto": 27
+      }
     ],
-    "series":[{"key":"bruto","name":"Margen Bruto"},{"key":"operativo","name":"Margen Operativo"},{"key":"neto","name":"Margen Neto"}]
+    "series": [
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
   },
   "capital_allocation": {
-    "items":[
-      {"label":"Dividendos","value":"$1.04/accion","nota":"Dividendo anual declarado en FY2024, crecimiento sostenido desde $0.72 en 2020. Yield aproximado de 2.1% al precio actual."},
-      {"label":"Recompra de acciones","value":"$13.1B","nota":"Recompras en FY2024, acelerando vs $4.6B en FY2023. El conteo de acciones cayo de 8,651M en 2020 a 7,097M en 2024, destruyendo ~18% del float."},
-      {"label":"Dividendos totales","value":"$9.5B","nota":"Total pagado en dividendos en FY2024, incluyendo preferentes. Payout ratio conservador para un banco sistematicamente importante."},
-      {"label":"Capital total retornado","value":"~$22.6B","nota":"Suma de recompras y dividendos en FY2024, representando ~84% de la utilidad neta."}
+    "items": [
+      {
+        "label": "Recompras",
+        "value": "21.4B USD",
+        "nota": "Record historico en FY2025; 858M acciones recompradas"
+      },
+      {
+        "label": "Dividendos",
+        "value": "4.0B USD",
+        "nota": "Dividendo de 1.08/accion en 2025; yield 2.2%"
+      },
+      {
+        "label": "Capex",
+        "value": "~3.5B USD",
+        "nota": "Inversiones en tecnologia, sucursales y digital"
+      },
+      {
+        "label": "M&A",
+        "value": "No material",
+        "nota": "Enfoque organico; sin adquisiciones relevantes en 2025"
+      }
     ]
   },
   "comparacion_sector": {
-    "headers":["Metrica","BAC FY2024","Sector bancario US","Posicion relativa"],
-    "rows":[
-      ["Net Margin","25.5%","~20-28%","En linea con grandes bancos"],
-      ["ROE","10.6%","~10-15%","Por debajo de JPMorgan (~17%) pero estable"],
-      ["ROA","0.93%","~1.0-1.2%","Ligeramente por debajo del promedio"],
-      ["P/E Forward","10.0x","~9-12x","Valuacion atractiva vs historico"],
-      ["P/Valor en libros","1.31x","~1.0-1.8x","Prima moderada sobre libro"],
-      ["Eficiencia","~63%","~55-65%","Margen de mejora vs peers"],
-      ["NIM","~1.9%","~2.5-3.0%","Presionado por sensibilidad a tasas"]
+    "headers": [
+      "Metrica",
+      "BAC TTM",
+      "Sector (grandes bancos)",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Margen Neto",
+        "27.0%",
+        "~25-30%",
+        "En linea con sector"
+      ],
+      [
+        "ROE",
+        "10.6%",
+        "~12-15%",
+        "Por debajo de lideres"
+      ],
+      [
+        "ROTCE",
+        "14.2%",
+        "~15-18%",
+        "Acercandose al nivel del sector"
+      ],
+      [
+        "P/E Forward",
+        "10.3x",
+        "~10-12x",
+        "Valuacion atractiva"
+      ],
+      [
+        "Eficiencia",
+        "61.6%",
+        "~55-65%",
+        "Mejorando, objetivo menor 60%"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto":"No se detecta deterioro operativo significativo",
-    "analisis":"Bank of America mostro resiliencia en FY2024 con crecimiento modesto pero consistente en revenue (+3.0%) y utilidad neta (+2.5%). El NII bajo ligeramente de $56.9B a $56.1B reflejando presion en margenes por anticipacion de recortes de tasas Fed, pero fue compensado por mayor ingreso no-financiero (+8.6%). El programa de recompras se acelero significativamente. El banco mantiene solida capitalizacion con CET1 >11% y sin deterioro en calidad crediticia.",
-    "items":[
-      {"metrica":"Revenue YoY","valor":"+3.0%","status":"ok"},
-      {"metrica":"Net Income YoY","valor":"+2.5%","status":"ok"},
-      {"metrica":"EPS YoY","valor":"+4.6%","status":"ok"},
-      {"metrica":"NII YoY","valor":"-1.5%","status":"warn"},
-      {"metrica":"Noninterest Income YoY","valor":"+8.6%","status":"ok"},
-      {"metrica":"EBITDA YoY","valor":"+5.8%","status":"ok"},
-      {"metrica":"Noninterest Expense YoY","valor":"+1.5%","status":"ok"},
-      {"metrica":"ROE","valor":"10.6%","status":"ok"}
+    "veredicto": "Banco en recuperacion de rentabilidad con balance solido y momentum claro en NII y fees.",
+    "analisis": "BAC mostro mejora visible en 2025: ROE mejoro de 9.5% a 10.6%, ROTCE de 12.9% a 14.2%, EPS +19.4%. Q1 2026 confirma la tendencia con rev +7.2% YoY y ROE 11.95%. El nivel de deuda largo plazo es elevado pero normal para una institucion de deposito de esta escala.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+6.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "27.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Eficiencia",
+        "valor": "61.65%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto Q1 2026",
+        "valor": "28.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+14.3%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda LP YoY",
+        "valor": "+12.2%",
+        "status": "warn"
+      }
     ]
   },
-  "flags":[
-    {"level":"green","title":"Liderazgo en depositos consumer en EEUU","impact":"Alto","evidence":"Base de depositos de ~$1.9 trillion, mayor banco consumer del pais con mas de 69 millones de clientes y 3,700+ sucursales","context":"La escala de BAC en depositos crea un costo de fondeo estructuralmente bajo y barreras de entrada practicamente insuperables para competidores."},
-    {"level":"green","title":"Merrill Lynch como ventaja competitiva en wealth management","impact":"Alto","evidence":"Segmento GWIM con ~$4.2 trillion en activos bajo gestion, generando ingresos estables por comisiones independientes del ciclo de tasas","context":"Merrill Lynch diversifica los ingresos hacia comisiones de gestion de patrimonio, reduciendo dependencia del margen de interes y aportando estabilidad en ciclos de tasas bajas."},
-    {"level":"green","title":"Aceleracion de recompras de acciones","impact":"Medio","evidence":"$13.1B en recompras en FY2024 vs $4.6B en FY2023, reduciendo el share count a 7,097M desde 8,651M en 2020","context":"El programa agresivo de capital return refleja confianza de la directiva en la solidez del balance y genera crecimiento de EPS por reduccion del denominador."},
-    {"level":"yellow","title":"Sensibilidad negativa a reduccion de tasas de interes","impact":"Medio","evidence":"NII bajo -1.5% en FY2024 a $56.1B anticipando recortes de la Fed; BAC tiene un book de depositos de bajo costo que se reprecia al bajar tasas","context":"A diferencia de JPMorgan, BAC tiene mayor sensibilidad negativa a tasas bajas debido a su portafolio de bonos a largo plazo adquirido en 2020-2021 con rendimientos bajos."},
-    {"level":"yellow","title":"Eficiencia operativa por mejorar vs peers","impact":"Medio","evidence":"Efficiency ratio ~63% vs JPMorgan ~52%, indicando mayor costo por cada dolar de ingreso generado","context":"La escala de BAC deberia permitir mayor apalancamiento operativo; la directiva ha guiado reduccion del efficiency ratio como prioridad estrategica 2025-2026."},
-    {"level":"red","title":"Riesgo de morosidad en un escenario recesivo","impact":"Alto","evidence":"Provision para perdidas crediticias de $1.5B en FY2024, pero podria aumentar 3-5x en recesion severa como ocurrio en 2020 ($11.3B)","context":"Como el mayor banco consumer de EEUU, BAC tiene la mayor exposicion directa al ciclo economico del consumidor americano, incluyendo tarjetas de credito, hipotecas y prestamos al consumo."}
+  "flags": [
+    {
+      "level": "green",
+      "title": "Expansion sostenida de NII",
+      "impact": "Alto",
+      "evidence": "NII subio de 56.1B en 2024 a 60.1B en 2025 (+7.1%), y en Q1 2026 a 15.7B (+9.0% YoY). Repricing de activos fijos sigue beneficiando al banco.",
+      "context": "El NII es el motor principal de rentabilidad de BAC. La sensibilidad positiva a tasas y el repricing de la cartera de bonos y prestamos generara expansiones adicionales en los proximos trimestres."
+    },
+    {
+      "level": "green",
+      "title": "Generacion de capital y retorno al accionista",
+      "impact": "Alto",
+      "evidence": "Recompras record de 21.4B en 2025 y dividendo de 1.08/accion. CET1 ratio al 11.8% por encima del requerimiento regulatorio.",
+      "context": "La robustez del capital permite un programa agresivo de buybacks que reduce el share count y eleva el EPS. El banco tiene capacidad de continuar devolviendo capital en 2026."
+    },
+    {
+      "level": "yellow",
+      "title": "Brecha de ROTCE vs pares",
+      "impact": "Medio",
+      "evidence": "ROTCE de 14.2% vs JPMorgan ~25% y Wells Fargo ~15%. Ratio de eficiencia de 61.65% limita la generacion de rentabilidad.",
+      "context": "BAC comprometio un objetivo de ROTCE del 15-16% para 2026. El cierre de esta brecha es el principal catalizador de revaluacion."
+    },
+    {
+      "level": "yellow",
+      "title": "Sensibilidad al ciclo crediticio",
+      "impact": "Medio",
+      "evidence": "Provision para perdidas crediticias de 5.7B en 2025. Tarjetas y prestamos al consumidor representan riesgo en deterioro macro.",
+      "context": "La calidad de activos es solida actualmente con NCO ratio ~0.5%, pero desempleo elevado o recesion podria elevar provisiones y comprimir margenes."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo regulatorio y litigios",
+      "impact": "Alto",
+      "evidence": "BAC enfrenta revision regulatoria continua, requerimientos Basel III endgame, y litigios heredados (representaciones hipotecarias, AML).",
+      "context": "Los costos legales y regulatorios son una carga estructural. Un cambio adverso en requisitos de capital podria limitar recompras."
+    }
   ],
-  "score":{
-    "score":7.0,
-    "max":10,
-    "items":[
-      {"label":"Poder de fijacion de precios","score":7,"max":10},
-      {"label":"Crecimiento de revenue","score":6,"max":10},
-      {"label":"Calidad de margenes","score":7,"max":10},
-      {"label":"Solidez del balance","score":8,"max":10},
-      {"label":"Generacion de FCF","score":6,"max":10},
-      {"label":"Retorno al accionista","score":8,"max":10},
-      {"label":"Posicion competitiva","score":8,"max":10}
+  "score": {
+    "score": 7.2,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
     ]
   },
-  "analisis_cualitativo":{
-    "estrategia":"Bank of America ejecuta una estrategia de Responsible Growth centrada en cuatro pilares: (1) crecer en consumer banking a traves de su red digital con 57M+ usuarios de banca movil, (2) expandir Merrill Lynch hacia clientes affluent y UHNW, (3) escalar Global Banking y Markets aprovechando relaciones corporativas de largo plazo, y (4) mantener disciplina de capital con retornos consistentes al accionista. La transformacion digital es central: BAC procesa mas del 80% de transacciones digitalmente, reduciendo costos operativos.",
-    "ventajas":"Escala inigualable en depositos consumer (~$1.9T), red de 3,700 sucursales y 15,000 ATMs, marca Merrill Lynch en wealth management con $4.2T AUM, franquicia de banca de inversion top-5 global, tecnologia propietaria (plataforma Erica con 32M+ usuarios de IA conversacional), costo de fondeo estructuralmente bajo vs bancos regionales, y diversificacion geografica con presencia en 35+ paises.",
-    "debilidades":"Mayor sensibilidad a tasas bajas vs peers (portafolio de bonos HTM acumulado en 2020-2021), efficiency ratio mas alto que JPMorgan indicando potencial de optimizacion de costos, menor retorno sobre activos (ROA 0.93%) vs pares como JPMorgan (~1.3%), y exposicion significativa al ciclo de consumo americano.",
-    "riesgos":["Recesion en EEUU aumentaria morosidad en tarjetas, hipotecas y prestamos comerciales con potencial provision de $8-12B","Reduccion agresiva de tasas Fed comprimira NII adicional en 2025-2026 dado portafolio de activos de largo plazo","Regulacion bancaria mas estricta (Basilea III Endgame) podria requerir capital adicional limitando recompras","Competencia de fintechs y neobancos en segmento consumer, especialmente en depositos de alto rendimiento","Riesgo operacional y cibernetico inherente a la escala de operaciones globales"],
-    "inversiones_estrategicas":"BAC invierte ~$12-13B anuales en tecnologia, siendo el mayor inversor en tech del sector bancario. Iniciativas clave: expansion de centros financieros en mercados de alto crecimiento, plataforma de banca digital con IA (Erica), consolidacion de sistemas legados para reducir costos, y expansion de capacidades en banca de inversion para competir con Goldman Sachs y Morgan Stanley en M&A y mercados de capitales."
-  },
-  "verdict":{
-    "status":"Mantener",
-    "score":"7.0/10",
-    "color":"yellow",
-    "metrics":[
-      {"label":"Revenue TTM","value":"$109.6B"},
-      {"label":"Margen Neto","value":"25.5%"},
-      {"label":"FCF Yield","value":"11.5%"},
-      {"label":"P/E Forward","value":"10.0x"},
-      {"label":"ROE","value":"10.6%"}
+  "analisis_cualitativo": {
+    "estrategia": "BAC ejecuta una estrategia de banco universal centrada en ser el banco principal de sus clientes: captando depositos de bajo costo, cruzando servicios (tarjetas, hipotecas, inversion, wealth management) y expandiendo en banca corporativa y mercados. La iniciativa Responsible Growth prioriza crecimiento organico, disciplina de costos y digitalizacion con 57M de clientes digitales activos y 35M+ usuarios moviles.",
+    "ventajas": "Escala de depositos de 2.0 billones con bajo costo de fondeo; franquicia Merrill Lynch con 4.0T en activos de clientes; presencia en Top 3 global de banca de inversion; 3,800 sucursales y 15,000 cajeros generan captacion organica; 57M clientes digitales activos con alta fidelizacion.",
+    "debilidades": "ROTCE rezagado vs. JPMorgan (~25%) y Goldman Sachs; ratio de eficiencia 61.65% indica margen de mejora en costos; exposicion elevada a tasas en cartera de valores de 925B; mayor exposicion a consumo masivo que peers mas rentables.",
+    "riesgos": [
+      "Recesion o alto desempleo que eleve provisiones crediticias y deteriore calidad de activos",
+      "Compression de NII si la Fed recorta tasas mas agresivamente de lo esperado en 2026",
+      "Incremento en requerimientos de capital Basel III endgame que limite recompras y dividendos",
+      "Litigios y sanciones regulatorias (AML, representaciones hipotecarias) con impacto en costos"
     ],
-    "bullets":[
-      {"text":"**Escala inigualable ->** Con $3.3T en activos y la mayor base de depositos consumer de EEUU, BAC tiene ventajas competitivas estructurales que se traducen en costo de fondeo bajo y poder de distribucion sin rival.","type":"pro"},
-      {"text":"**Merrill Lynch wealth management ->** El segmento GWIM con $4.2T en activos gestionados genera ingresos por comisiones estables y de alta calidad, diversificando los ingresos del ciclo de tasas de interes.","type":"pro"},
-      {"text":"**Valuacion atractiva y capital return ->** Con P/E forward de 10x y $22.6B devueltos al accionista en FY2024 (recompras + dividendos), BAC ofrece propuesta de valor solida para inversores de largo plazo.","type":"pro"},
-      {"text":"**Ciclicidad bancaria y sensibilidad a tasas ->** El principal riesgo es la combinacion de compresion de NIM en entorno de tasas bajas y el potencial aumento de provision en una recesion, lo que puede presionar ganancias en 2025-2026.","type":"con"}
+    "inversiones_estrategicas": "BAC invierte ~7.5B/ano en tecnologia: modernizacion de core banking, expansion de CashPro para clientes corporativos, Erica (asistente IA con 2B+ interacciones), y ciberseguridad. En wealth management, la integracion de Merrill Lynch genera venta cruzada de creditos a clientes de alto patrimonio. En mercados, expansion en credito privado responde a la oportunidad post-SVB."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "7.2/10",
+    "color": "green",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "113.1B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "27.0%"
+      },
+      {
+        "label": "ROTCE",
+        "value": "14.2%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "10.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+6.8% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Valuacion muy atractiva ->** A 10.3x P/E forward y 1.3x P/Book, BAC cotiza con descuento frente a su historial y pares. El mercado subestima la capacidad de expansion del ROTCE hacia el 15-16% objetivo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Momentum en NII y earnings ->** NII crece +7.1% en 2025 y +9.0% en Q1 2026 por repricing de activos. EPS subio 19.4% en 2025 y Q1 2026 mostro EPS de 1.11 vs 0.89 (+24.7%).",
+        "type": "pro"
+      },
+      {
+        "text": "**Devolucion de capital record ->** Recompras de 21.4B en 2025 con CET1 del 11.8%. El banco tiene capacidad de continuar reduciendo share count en 2026.",
+        "type": "pro"
+      },
+      {
+        "text": "**Brecha de rentabilidad vs pares ->** ROTCE del 14.2% vs JPMorgan ~25% y eficiencia 61.65% reflejan ventaja competitiva menor. La convergencia al objetivo del 15-16% es el principal riesgo de ejecucion.",
+        "type": "con"
+      }
     ]
   },
-  "conclusion":{
-    "items":[
-      {"label":"Ingresos","texto":"Bank of America genero $105.9B en ingresos totales en FY2024, con crecimiento moderado del +3.0% impulsado principalmente por el aumento del ingreso no-financiero (+8.6% a $49.8B) que compensa la ligera baja del NII (-1.5% a $56.1B). El revenue TTM se ubica en $109.6B segun datos de mercado, reflejando momentum positivo en banca de inversion y trading."},
-      {"label":"Margenes","texto":"El margen neto se mantiene estable en 25.5% (FY2024) vs 25.6% (FY2023), mientras el margen operativo mejoro ligeramente a 36.9% vs 35.9%. La eficiencia en control de gastos no-financieros (+1.5% a $66.8B) frente a un crecimiento de ingresos del +3.0% genera apalancamiento operativo positivo, aunque el efficiency ratio ~63% aun contrasta con el ~52% de JPMorgan."},
-      {"label":"EPS","texto":"El EPS diluido de $3.19 en FY2024 representa un crecimiento del +4.6% vs FY2023 ($3.05), beneficiado tanto por la mejora en utilidad neta (+2.5%) como por la reduccion del share count via recompras. El EPS TTM es $4.03 segun Yahoo Finance, y el consenso de analistas estima un EPS forward de $5.04 para los proximos 12 meses, implicando un P/E forward de 10x altamente atractivo."},
-      {"label":"Balance","texto":"El balance muestra solidez con deuda neta negativa (-$6.8B, es decir mas cash que deuda LP), aunque esto es peculiar para un banco donde el cash incluye reservas regulatorias. La deuda LP de $283.3B es ampliamente sostenible con EBITDA de $41.2B (ratio 6.9x). El CET1 ratio supera el 11%, por encima del minimo regulatorio, y las perdidas no realizadas en el portafolio HTM se han reducido significativamente desde el pico de 2022-2023."},
-      {"label":"Generacion de caja","texto":"El flujo de caja operativo para bancos es inherentemente volatile: $38.0B en FY2020, -$7.2B en FY2021-2022 por aumento de prestamos, $45.0B en FY2023, y -$8.8B en FY2024. Esta volatilidad refleja cambios en el libro de prestamos y no deterioro operativo. El flujo de caja libre convencional no aplica directamente; la mejor metrica de generacion de valor es la utilidad neta de ~$27B y el capital devuelto de ~$22.6B en FY2024."},
-      {"label":"Riesgos principales","texto":"Los tres riesgos principales a monitorear son: (1) compresion del NIM si la Fed reduce tasas agresivamente en 2025-2026, dado el portafolio de activos de largo plazo adquirido con rendimientos bajos; (2) deterioro crediticio en un escenario de desaceleracion economica, dado que BAC es el mayor prestamista al consumidor americano; y (3) mayor regulacion de capital bajo Basilea III Endgame que podria reducir la capacidad de recompras. Un cuarto riesgo emergente es la competencia de fintechs en depositos de alto rendimiento que presiona el costo de fondeo estructuralmente bajo de BAC."}
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "FY2025 con ingresos de 113.1B (+6.8% YoY) impulsado por NII de 60.1B (+7.1%) y noninterest income de 53.0B (+6.4%). Q1 2026 confirma el momentum: 30.3B (+7.2% YoY)."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Margen neto mejoro de 25.5% en 2024 a 27.0% en 2025, con eficiencia operativa de 61.65%. Q1 2026 eficiencia en 61.22%, avanzando hacia el objetivo del 60%."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "FCF aproximado de 29.3B en 2025 (+14.3% YoY). Recompras de 21.4B (record) y dividendos de 4.0B demuestran capacidad solida de generar y devolver capital."
+      },
+      {
+        "label": "Balance",
+        "texto": "Activos totales de 3.41 billones, depositos de 2.02 billones, equity de 303B. CET1 del 11.8% solido. Deuda LP aumento a 317.8B (+12.2%) para financiar crecimiento de activos."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 10.3x P/E forward y 1.3x P/Book, BAC esta barato historicamente y vs pares. Re-rating hacia 12-13x P/E forward implicaria precio objetivo de 60-65 USD por accion."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Recesion o desempleo elevado que incremente provisiones; recortes agresivos de tasas que compriman NII; requerimientos regulatorios de capital que limiten buybacks; litigios heredados."
+      }
     ]
-  },
-  "parrafos_gratis": 9,
-  "ticker": "BAC",
-  "empresa": "Bank of America Corporation",
-  "updated_at": "2026-05-12",
-  "fecha_reporte": "2025-01-16"
+  }
 }

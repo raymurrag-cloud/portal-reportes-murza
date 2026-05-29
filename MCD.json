@@ -1,231 +1,472 @@
 {
-  "ticker": "MCD",
-  "empresa": "McDonald's Corporation",
-  "updated_at": "2026-05-12",
-  "fecha_reporte": "2025-02-05",
-  "resumen": "McDonald's opera el mayor sistema de restaurantes del mundo con mas de 40,000 ubicaciones en 100+ paises, bajo un modelo ~95% franquiciado. Los ingresos reportados (~$26B) representan solo royalties, rentas y ventas de restaurantes propios, mientras las ventas del sistema superan los $130B. En FY2024 el revenue crecio +1.7% YoY pero las utilidades cayeron -2.9% afectadas por el brote de E. coli en Q4 que impacto las ventas comparables en EEUU; el modelo de franquicia sigue generando maquinaria de FCF con margenes operativos superiores al 45%.",
-  "descripcion": "McDonald's Corporation es el operador de la cadena de restaurantes de comida rapida mas grande del mundo por ingresos. Con mas de 40,000 restaurantes en 100+ paises, aproximadamente el 95% son franquicias. Los ingresos reportados (~$26B en FY2024) incluyen: royalties y rentas de franquiciados + ventas directas de restaurantes operados por la empresa. Las ventas del sistema completo (system-wide sales) superan los $125B. El modelo franquiciado genera margenes operativos de 45%+ y FCF consistente. Dividend Aristocrat con 46+ anos consecutivos de crecimiento de dividendo.",
+  "parrafos_gratis": 14,
+  "resumen": "McDonald's Corporation es el mayor operador y franquiciador de restaurantes de comida rapida del mundo, con mas de 45,000 ubicaciones en mas de 100 paises. En FY2025 reporto ingresos de $26.9B (+3.7% YoY), margen operativo de 46.1% y EPS diluido de $11.95 (+4.9%), sostenidos por el modelo casi puro de franquicias (~95% del total). La accion cotiza a 23.4x EPS TTM, valuacion razonable para un negocio con FCF de $7.2B y poder de fijacion de precios probado. El Q1 2026 mostro aceleracion con ingresos de $6.5B (+9.4% YoY) y EPS de $2.78 (+7%), senales positivas para el resto del ejercicio.",
+  "descripcion": "McDonald's genera ingresos por dos vias: royalties y rentas de restaurantes franquiciados (principal fuente, ~61% del total en 2025) y ventas directas de restaurantes propios (~36%). Sus tres segmentos son EE.UU. (mayor contribuidor), Mercados Internacionales Operados (UK, Alemania, Francia, Canada, Australia) y Mercados Internacionales con Licencia. El moat proviene de la marca global, la red de bienes raices de primer nivel, el sistema operativo estandarizado y el poder de negociacion con proveedores a escala masiva. La estrategia Accelerating the Arches se enfoca en menu basico, marketing digital, modernizacion de restaurantes y expansion de unidades.",
   "tabla": {
-    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", 19.21, 23.22, 23.18, 25.49, 25.92, "+1.7%"],
-      ["Utilidad Neta ($B)", 4.73, 7.55, 6.18, 8.47, 8.22, "-2.9%"],
-      ["Margen Neto (%)", "24.6%", "32.5%", "26.6%", "33.2%", "31.7%", "-1.5pp"],
-      ["EBITDA ($B)", 9.08, 12.22, 11.24, 13.62, 13.81, "+1.4%"],
-      ["FCF ($B)", 4.62, 7.10, 5.49, 7.25, 6.67, "-8.0%"],
-      ["EPS (GAAP)", 6.31, 10.04, 8.33, 11.56, 11.39, "-1.5%"],
-      ["Deuda Neta ($B)", 33.99, 30.91, 33.32, 34.77, 37.34, "+7.4%"]
+      [
+        "Revenue (B USD)",
+        "23.22",
+        "23.18",
+        "25.49",
+        "25.92",
+        "26.89",
+        "6.52",
+        "+3.7%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "7.55",
+        "6.18",
+        "8.47",
+        "8.22",
+        "8.56",
+        "1.98",
+        "+4.1%"
+      ],
+      [
+        "Margen Neto",
+        "32.5%",
+        "26.7%",
+        "33.2%",
+        "31.7%",
+        "31.8%",
+        "30.4%",
+        "+0.1pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "10.69",
+        "9.74",
+        "12.03",
+        "12.16",
+        "12.85",
+        "N/D",
+        "+5.7%"
+      ],
+      [
+        "FCF (B USD)",
+        "7.10",
+        "5.49",
+        "7.26",
+        "6.67",
+        "7.19",
+        "N/D",
+        "+7.8%"
+      ],
+      [
+        "EPS Diluido",
+        "8.66",
+        "8.33",
+        "11.56",
+        "11.39",
+        "11.95",
+        "2.78",
+        "+4.9%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "30.91",
+        "33.32",
+        "34.77",
+        "37.34",
+        "39.20",
+        "N/D",
+        "+5.0%"
+      ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "24.4x",
-      "signal": "yellow",
-      "note": "vs QSR sector ~22x",
-      "precio_base": 277.745,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "eps_ttm", "valor": 11.39 }
+      "label": "P/E Trailing",
+      "value": "23.4x",
+      "signal": "green",
+      "note": "vs. sector QSR ~25x",
+      "precio_base": 279.2,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 11.95
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "22.8x",
-      "signal": "yellow",
-      "precio_base": 277.745,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "eps_fwd", "valor": 12.20 }
+      "value": "22.3x",
+      "signal": "green",
+      "precio_base": 279.2,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 12.5
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "17.2x",
-      "signal": "yellow"
+      "value": "18.6x",
+      "signal": "yellow",
+      "precio_base": 279.2,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 12.85,
+        "shares_m": 716.4,
+        "deuda_neta_b": 39.2
+      }
     },
     {
       "label": "P/FCF",
-      "value": "30.1x",
+      "value": "27.8x",
       "signal": "yellow",
-      "precio_base": 277.745,
-      "precio_fecha": "May-2026",
-      "fundamento": { "tipo": "p_fcf", "fcf_b": 6.67, "shares_m": 721.9 }
+      "precio_base": 279.2,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 7.19,
+        "shares_m": 716.4
+      }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "2.7x",
+      "label": "Deuda Neta/EBITDA",
+      "value": "3.1x",
       "signal": "yellow"
-    },
-    {
-      "label": "FCF Yield",
-      "value": "3.3%",
-      "signal": "green"
     },
     {
       "label": "ROE",
       "value": "N/M",
       "signal": "yellow"
+    },
+    {
+      "label": "ROIC",
+      "value": "26.0%",
+      "signal": "green"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      { "label": "2020", "revenue": 19.21, "utilidad": 4.73 },
-      { "label": "2021", "revenue": 23.22, "utilidad": 7.55 },
-      { "label": "2022", "revenue": 23.18, "utilidad": 6.18 },
-      { "label": "2023", "revenue": 25.49, "utilidad": 8.47 },
-      { "label": "2024", "revenue": 25.92, "utilidad": 8.22 }
+      {
+        "label": "FY2021",
+        "revenue": 23.22,
+        "utilidad": 7.55
+      },
+      {
+        "label": "FY2022",
+        "revenue": 23.18,
+        "utilidad": 6.18
+      },
+      {
+        "label": "FY2023",
+        "revenue": 25.49,
+        "utilidad": 8.47
+      },
+      {
+        "label": "FY2024",
+        "revenue": 25.92,
+        "utilidad": 8.22
+      },
+      {
+        "label": "FY2025",
+        "revenue": 26.89,
+        "utilidad": 8.56
+      }
     ],
     "series": [
-      { "key": "revenue", "name": "Revenue" },
-      { "key": "utilidad", "name": "Utilidad Neta" }
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      { "label": "2020", "bruto": 0, "operativo": 38.1, "neto": 24.6 },
-      { "label": "2021", "bruto": 0, "operativo": 44.6, "neto": 32.5 },
-      { "label": "2022", "bruto": 0, "operativo": 40.4, "neto": 26.6 },
-      { "label": "2023", "bruto": 0, "operativo": 45.7, "neto": 33.2 },
-      { "label": "2024", "bruto": 0, "operativo": 45.2, "neto": 31.7 }
+      {
+        "label": "FY2021",
+        "bruto": 60.8,
+        "operativo": 44.6,
+        "neto": 32.5
+      },
+      {
+        "label": "FY2022",
+        "bruto": 59,
+        "operativo": 40.4,
+        "neto": 26.7
+      },
+      {
+        "label": "FY2023",
+        "bruto": 56.8,
+        "operativo": 45.7,
+        "neto": 33.2
+      },
+      {
+        "label": "FY2024",
+        "bruto": 56.4,
+        "operativo": 45.2,
+        "neto": 31.7
+      },
+      {
+        "label": "FY2025",
+        "bruto": 57.1,
+        "operativo": 46.1,
+        "neto": 31.8
+      }
     ],
     "series": [
-      { "key": "operativo", "name": "Margen Operativo" },
-      { "key": "neto", "name": "Margen Neto" }
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
-        "label": "Dividendos",
-        "value": "$6.68/accion anual",
-        "nota": "Dividend Aristocrat con 46+ anos consecutivos de crecimiento. Pago total ~$4.87B en FY2024."
+        "label": "Recompras",
+        "value": "2.06B USD",
+        "nota": "Reduccion de shares en curso; total acumulado en 5 anos ~12B USD"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "$2.82B en FY2024",
-        "nota": "Programa agresivo de buybacks que reduce el float. Acciones diluidas bajaron de ~800M en 2015 a ~722M en 2024."
+        "label": "Dividendos",
+        "value": "5.12B USD",
+        "nota": "Dividendo anual ~$7.25/accion; 47 anos consecutivos de aumento"
       },
       {
         "label": "Capex",
-        "value": "$2.77B en FY2024",
-        "nota": "Principalmente renovacion de restaurantes, tecnologia de cocina y expansion selectiva. Capex crecio +17.7% YoY."
+        "value": "3.37B USD",
+        "nota": "Principalmente apertura de nuevas unidades y modernizacion de restaurantes"
+      },
+      {
+        "label": "M&A",
+        "value": "~0.1B USD",
+        "nota": "Adquisiciones menores de franquiciados; no hay grandes M&A planeadas"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "MCD FY2024", "QSR sector", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "MCD TTM",
+      "Sector QSR ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Operating Margin", "45.2%", "~18-22%", "Muy por encima  -  modelo franquicia"],
-      ["Net Margin", "31.7%", "~8-12%", "Muy por encima del sector"],
-      ["FCF Yield", "3.3%", "~3-5%", "En linea con el sector"],
-      ["EV/EBITDA", "17.2x", "~15-20x", "Valoracion premium justificada"],
-      ["Deuda/EBITDA", "2.7x", "~2-3x", "Apalancamiento manejable y estructural"]
+      [
+        "Margen Bruto",
+        "57.1%",
+        "~40-55%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "46.1%",
+        "~20-30%",
+        "Muy por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+3.7%",
+        "~3-5%",
+        "En linea con sector"
+      ],
+      [
+        "P/E Forward",
+        "22.3x",
+        "~22-26x",
+        "En linea con pares"
+      ],
+      [
+        "ROIC",
+        "26.0%",
+        "~15-20%",
+        "Por encima del sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "Presion puntual en comp sales por E. coli en Q4 2024  -  tendencia de largo plazo solida",
-    "analisis": "El brote de E. coli vinculado a cebollas en hamburguesas Quarter Pounder impacto negativamente las ventas comparables en EEUU en octubre 2024, generando un trimestre debil. El revenue crecio solo +1.7% YoY y la utilidad neta bajo -2.9% por mayores costos. La tendencia estructural de largo plazo sigue siendo positiva: el modelo franquiciado produce margenes operativos de 45%+ y FCF robusto de $6.67B en un ano afectado.",
+    "veredicto": "MCD muestra salud financiera solida con mejoras de margen; la unica preocupacion es la deuda neta alta (~3.1x EBITDA).",
+    "analisis": "En FY2025 todos los indicadores de rentabilidad mejoraron vs 2024: margen operativo +0.9pp, FCF +7.8% y EPS +4.9%. La deuda neta crece moderadamente pero se maneja con flujo de caja operativo de $10.6B. El Q1 2026 confirma la aceleracion con crecimiento de ingresos de 9.4% YoY impulsado por mejora en ventas comparables globales.",
     "items": [
-      { "metrica": "Revenue YoY", "valor": "+1.7%", "status": "ok" },
-      { "metrica": "US Comp Sales Q4 2024", "valor": "-1.3%", "status": "warn" },
-      { "metrica": "Net Income YoY", "valor": "-2.9%", "status": "warn" },
-      { "metrica": "FCF FY2024", "valor": "$6.67B", "status": "ok" },
-      { "metrica": "Operating Margin", "valor": "45.2%", "status": "ok" },
-      { "metrica": "Deuda Neta", "valor": "$37.34B (+7.4%)", "status": "warn" }
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+3.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "46.1%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "31.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+7.8%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta/EBITDA",
+        "valor": "3.1x",
+        "status": "warn"
+      },
+      {
+        "metrica": "EPS YoY",
+        "valor": "+4.9%",
+        "status": "ok"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Modelo franquicia genera FCF predecible y margenes de 45%+",
+      "title": "Modelo franquiciador de alta eficiencia",
       "impact": "Alto",
-      "evidence": "Operating Income de $11.71B sobre revenue de $25.92B = margen operativo del 45.2%. Franchise revenues representan ~$15B con margenes superiores al 80%.",
-      "context": "El modelo de franquicia es altamente escalable: McD cobra royalties (% de ventas) y renta de las ubicaciones, con minima exposicion a costos laborales y de alimentos. Esto genera un negocio de flujo de caja excepcional independientemente del ciclo economico."
+      "evidence": "Margen operativo del 46.1% en FY2025; franchised margins de 84.2% sobre ingresos franquiciados de $16.5B.",
+      "context": "El modelo de franquicias amortigua la ciclicidad del consumo y genera flujos de caja predecibles y crecientes. Es una de las maquinas de generacion de caja mas estables del S&P 500."
     },
     {
       "level": "green",
-      "title": "Dividend Aristocrat con 46+ anos de crecimiento consecutivo",
-      "impact": "Medio",
-      "evidence": "Dividendo de $6.68/accion en FY2024 (+9.8% vs FY2023). Pago total de dividendos ~$4.87B en FY2024.",
-      "context": "McDonald's ha incrementado su dividendo cada ano desde 1976. La solidez del FCF ($6.67B en FY2024, incluso en ano debil) garantiza la continuidad del dividendo. Yield actual ~2.4% al precio actual."
+      "title": "FCF solido y retorno al accionista",
+      "impact": "Alto",
+      "evidence": "FCF de $7.19B en FY2025; dividendos de $5.12B + recompras de $2.06B = $7.18B total retornado.",
+      "context": "MCD ha aumentado su dividendo durante 47 anos consecutivos (Dividend King), generando un ingreso pasivo predecible para inversionistas a largo plazo."
     },
     {
       "level": "green",
-      "title": "Presencia global en 100+ paises como diversificacion geografica",
+      "title": "Aceleracion en Q1 2026",
       "impact": "Medio",
-      "evidence": "Mas de 40,000 restaurantes en mercados desarrollados y emergentes. Los segmentos internacionales representan ~60% del operating income.",
-      "context": "La diversificacion geografica protege contra recesiones regionales. IOM (International Operated Markets) y IDL (International Developmental Licensed) aportan crecimiento diferenciado al de EEUU."
+      "evidence": "Ingresos Q1 2026 de $6.52B (+9.4% YoY); EPS $2.78 (+7%); ventas comparables positivas en todos los segmentos.",
+      "context": "La aceleracion supero expectativas y sugiere que la estrategia de valor (meal deals, digital) esta generando tracion real en un entorno de presion al consumidor."
     },
     {
       "level": "yellow",
-      "title": "Presion en consumidor de bajos ingresos  -  value perception critica",
-      "impact": "Alto",
-      "evidence": "Comp sales en EEUU fueron negativas en 2024. Percepcion de precios altos vs competidores como Wendy's y Taco Bell. Lanzamiento de McValue menu para recuperar trafico.",
-      "context": "McDonald's subio precios agresivamente post-COVID (+20%+ acumulado 2021-2023), lo que alejo al consumidor de menores ingresos. La estrategia de recuperacion con plataformas de valor es correcta pero toma tiempo en materializarse en comp sales positivas."
+      "title": "Deuda neta elevada",
+      "impact": "Medio",
+      "evidence": "Deuda neta de $39.2B = 3.1x EBITDA; patrimonio negativo ($-1.8B) por recompras agresivas acumuladas.",
+      "context": "La deuda es manejable dado el flujo de caja operativo estable de $10.6B, pero limita la flexibilidad ante choques macroeconomicos severos o alza sostenida de tasas."
     },
     {
       "level": "yellow",
-      "title": "Brote E. coli Q4 2024  -  impacto transitorio pero costoso en reputacion",
+      "title": "Presion en ventas comparables",
       "impact": "Medio",
-      "evidence": "Cebollas contaminadas en Quarter Pounder causaron ~90 casos reportados en EEUU. Comp sales cayeron -1.3% en Q4 2024 en EEUU.",
-      "context": "Resuelto  -  la cadena retiro el producto afectado rapidamente. El impacto fue puntual y las ventas se estan recuperando en 2025. Historicamente McDonald's ha superado crisis similares (crisis BSE 1990s, Super Size Me, etc.)."
+      "evidence": "En 2024 las ventas comparables globales cayeron -0.1% por primera vez en anos; recuperacion moderada en 2025.",
+      "context": "La inflacion alimentaria y la presion al consumidor de ingresos bajos representan un riesgo de corto plazo, aunque la recuperacion en Q1 2026 es alentadora."
     },
     {
-      "level": "yellow",
-      "title": "Deuda neta elevada por buybacks agresivos",
+      "level": "red",
+      "title": "Riesgo regulatorio y laboral en EE.UU.",
       "impact": "Medio",
-      "evidence": "Deuda neta de $37.34B (+7.4% YoY). Equity negativo de -$3.8B en balance. Deuda/EBITDA de 2.7x.",
-      "context": "La deuda de McDonald's es estructural e intencional: la empresa emite deuda para financiar buybacks y dividendos, aprovechando su flujo de caja predecible para optimizar el capital. No es una senial de alerta siempre que el FCF se mantenga robusto. Rating crediticio de BBB+/Baa1."
+      "evidence": "Incremento de salario minimo en California y otros estados; costos laborales presionan margenes de restaurantes propios.",
+      "context": "Aunque MCD mitiga este riesgo via franquicias, los cambios regulatorios laborales pueden incrementar costos operativos y presionar a los franquiciados, impactando royalties."
     }
   ],
   "score": {
-    "score": 7.5,
+    "score": 7.8,
     "max": 10,
     "items": [
-      { "label": "Poder de fijacion de precios", "score": 8, "max": 10 },
-      { "label": "Crecimiento de revenue", "score": 6, "max": 10 },
-      { "label": "Calidad de margenes", "score": 9, "max": 10 },
-      { "label": "Solidez del balance", "score": 5, "max": 10 },
-      { "label": "Generacion de FCF", "score": 9, "max": 10 }
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "McDonald's ejecuta una estrategia de tres pilares: (1) Acelerar arcos digitales  -  MyMcDonald's Rewards supera los 150M usuarios activos y representa +40% de ventas digitales en mercados maduros; (2) Maximizar el sistema de franquicia con renovaciones de restaurantes (PACE, Experience of the Future) para mejorar el throughput y la experiencia; (3) Explorar nuevas plataformas de crecimiento como CosMc's (bebidas de especialidad para competir con Starbucks) y el segmento de desayunos. La estrategia de valor (McValue, $5 Meal Deal) busca reconectar con el consumidor sensible al precio.",
-    "ventajas": "Modelo franquicia de altisimo margen con ~95% de ubicaciones operadas por franquiciados, generando ingresos de royalties altamente predecibles. Marca global reconocida en practicamente todos los mercados. Escala sin igual para negociacion con proveedores y marketing. Plataforma digital MyMcDonald's con 150M+ usuarios como moat tecnologico en construccion. Dividend Aristocrat con historial de 46+ anos.",
-    "debilidades": "Deuda neta muy elevada ($37.34B) resultado de decadas de buybacks y refranchising. Alta sensibilidad a la percepcion de valor del consumidor de menores ingresos en EEUU. Costos laborales en alza por regulaciones estatales y federales (California $20/hr para fast food). Margen neto puede verse comprimido por los intereses de la deuda si suben las tasas.",
+    "estrategia": "La estrategia Accelerating the Arches prioriza tres pilares: (1) maximizar el menu basico (Big Mac, McFlurry, McNuggets) con innovacion de Limited Time Offers; (2) acelerar la experiencia digital via app, loyalty program y kioscos; (3) expandir la red con enfoque en mercados emergentes y drive-thru. Para 2025-2027 la empresa planea abrir ~2,200 nuevas unidades anuales.",
+    "ventajas": "Marca global reconocida en >100 paises, red de bienes raices de primer nivel con mas de 45,000 ubicaciones estrategicas, sistema operativo estandarizado con playbook probado en 80+ anos, escala de compras que otorga ventaja de costo con proveedores, programa de loyalty con >175M miembros activos y datos de consumidores como activo estrategico creciente.",
+    "debilidades": "Exposicion a fluctuaciones de monedas extranjeras (mas del 60% de ingresos fuera de EE.UU.), deuda neta alta que limita flexibilidad de capital, dependencia del consumo de ingresos medios-bajos que lo hace vulnerable en recesiones, e imagen publica sujeta a criticas de salud, medio ambiente y laborales.",
     "riesgos": [
-      "Presion sostenida en consumidor de menores ingresos en EEUU por inflacion acumulada",
-      "Competencia de fast casual (Chipotle, Shake Shack) que atrae al segmento de mayores ingresos",
-      "Incrementos de salario minimo en EEUU que presionan a franquiciados y reducen apertura de nuevas tiendas",
-      "Riesgo geopolitico en mercados internacionales (MCD salio de Rusia en 2022)",
-      "Nuevos brotes de contaminacion alimentaria con mayor escrutinio post-2024"
+      "Presion al consumidor de ingresos bajos en EE.UU. y Europa que reduzca frecuencia de visitas",
+      "Fortalecimiento del USD que impacte negativamente los ingresos reportados en dolares",
+      "Incremento de costos laborales y alimentarios que comprima margenes de franquiciados y presione royalties",
+      "Competencia agresiva de cadenas de fast-casual (Chipotle, Shake Shack) y de entrega a domicilio que erosione cuota de mercado"
     ],
-    "inversiones_estrategicas": "MyMcDonald's Rewards (plataforma de lealtad con 150M+ usuarios activos), automatizacion de cocinas y kioscos digitales para reducir costos laborales, CosMc's (nueva cadena de bebidas de especialidad para competir con Starbucks en snacks y bebidas premium), renovacion del portafolio de bienes raices y restaurantes bajo PACE (Plan to Win), y expansion en mercados emergentes como India y China via socios licenciados."
+    "inversiones_estrategicas": "MCD invierte en tecnologia digital (kioscos, app, sistema de pedidos anticipados), modernizacion de restaurantes (Experience of the Future), expansion en mercados de alto crecimiento como India, China y Africa, y desarrollo de opciones de menu mas saludables para mantener relevancia con nuevas generaciones."
   },
   "verdict": {
-    "status": "Mantener",
-    "score": "7.5/10",
-    "color": "yellow",
+    "status": "Comprar con Conviccion",
+    "score": "7.8/10",
+    "color": "green",
     "metrics": [
-      { "label": "Revenue TTM", "value": "$25.92B" },
-      { "label": "Operating Margin", "value": "45.2%" },
-      { "label": "FCF Yield", "value": "3.3%" },
-      { "label": "P/E Forward", "value": "22.8x" },
-      { "label": "Dividendo", "value": "$6.68/accion" }
+      {
+        "label": "Revenue TTM",
+        "value": "26.9B USD"
+      },
+      {
+        "label": "Margen Operativo",
+        "value": "46.1%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.6%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "22.3x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+3.7% YoY"
+      }
     ],
     "bullets": [
       {
-        "text": "**Maquina de FCF por franquicia ->** El modelo ~95% franquiciado genera $6.67B de FCF incluso en un ano con E. coli y presion en consumidor. Los margenes operativos de 45%+ son estructurales, no ciclicos.",
+        "text": "**Maquina de FCF comprobada ->** Con $7.2B de FCF en FY2025 y 47 anos aumentando dividendos, MCD ofrece un ingreso pasivo creciente respaldado por uno de los modelos de negocio mas resilientes del planeta.",
         "type": "pro"
       },
       {
-        "text": "**Marca global invulnerable ->** 40,000+ ubicaciones en 100+ paises con reconocimiento de marca instantaneo. La diversificacion geografica amortigua recesiones regionales y proporciona crecimiento por mercados emergentes.",
+        "text": "**Margen operativo de clase mundial ->** 46.1% de margen operativo, imposible de replicar para competidores, surge del modelo franquiciador que transforma costos fijos en ingresos de alta calidad y predecibles.",
         "type": "pro"
       },
       {
-        "text": "**Dividend Aristocrat con 46+ anos ->** Dividendo creciente desde 1976 respaldado por FCF predecible. El yield de ~2.4% con crecimiento anual de ~9-10% es atractivo para inversores de largo plazo.",
+        "text": "**Aceleracion visible en Q1 2026 ->** Ingresos +9.4% y EPS +7% en el primer trimestre confirman que la estrategia digital y de valor esta funcionando, con ventas comparables positivas en todos los segmentos.",
         "type": "pro"
       },
       {
-        "text": "**Presion en consumidor 2024-2025 ->** Las ventas comparables en EEUU estuvieron bajo presion en 2024 por percepcion de precios altos. La recuperacion con plataformas de valor es correcta pero tomara 2-3 trimestres en normalizarse.",
+        "text": "**Deuda neta de $39.2B (3.1x EBITDA) ->** Aunque manejable con el flujo de caja actual, la alta deuda limita flexibilidad ante un entorno de tasas altas prolongado y reduce el margen de seguridad en una recesion severa.",
         "type": "con"
       }
     ]
@@ -234,29 +475,28 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $25.92B en FY2024, crecimiento modesto de +1.7% YoY reflejando presion en comp sales de EEUU (brote E. coli Q4) compensada parcialmente por crecimiento en mercados internacionales. El revenue reportado es solo la porcion de franquicias (royalties + renta) mas ventas de restaurantes propios; las ventas del sistema completo superan los $125B, lo que ilustra la escala real del negocio."
+        "texto": "Revenue de $26.9B en FY2025 (+3.7% YoY), acelerando a +9.4% en Q1 2026. El modelo franquiciador genera royalties y rentas crecientes con minima exposicion a costos operativos directos."
       },
       {
         "label": "Margenes",
-        "texto": "Margenes operativos del 45.2% en FY2024  -  entre los mas altos del sector de restaurantes a nivel mundial. El modelo de franquicia es el principal driver: los ingresos de franquicias (~$15B) tienen margenes superiores al 80% porque McDonald's no incurre en costos de alimentos ni laborales de esas ubicaciones. El margen neto se comprimio ligeramente a 31.7% (-1.5pp YoY) por mayores costos de intereses y el impacto del E. coli."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS diluido de $11.39 en FY2024, una caida de -1.5% vs $11.56 en FY2023. La reduccion fue impulsada por menores utilidades (-2.9% en net income) parcialmente compensada por la reduccion del float via buybacks (~722M acciones dilutadas). El P/E forward de 22.8x (asumiendo consenso de $12.20 para FY2025) es razonable para una compania de esta calidad y estabilidad."
-      },
-      {
-        "label": "Balance",
-        "texto": "Deuda neta de $37.34B es elevada pero estructural e intencional. McDonald's utiliza su capacidad de emision de deuda a tasas bajas (rating BBB+) para financiar buybacks y dividendos, optimizando el retorno sobre el capital. El equity negativo (-$3.8B) no es una senial de alerta sino el resultado de decadas de recompras agresivas. La razon Deuda/EBITDA de 2.7x es manejable dado el FCF predecible del modelo franquiciado."
+        "texto": "Margen operativo del 46.1% y margen neto del 31.8%, ambos mejorando YoY. El franchised margin del 84.2% es una de las metricas mas solidas en el sector de restaurantes a nivel global."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de $6.67B en FY2024, incluso en un ano debil con brote de E. coli. El FCF cubre ampliamente los dividendos ($4.87B) y parte de los buybacks ($2.82B). La conversion de Op CF a FCF es alta (~70%). El EBITDA de $13.81B confirma la robustez del negocio subyacente. La reduccion de FCF (-8% YoY) se explica por el mayor capex (+17.7%) relacionado con renovaciones de restaurantes."
+        "texto": "OCF de $10.6B y FCF de $7.2B en FY2025 (+7.8% YoY). MCD retorno $7.2B a accionistas via dividendos y recompras, practicamente equivalente al FCF total generado."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de $39.2B (3.1x EBITDA) y patrimonio negativo de $-1.8B por recompras acumuladas. La posicion es manejable pero requiere monitoreo ante entornos de tasas altas sostenidas."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $279 por accion, MCD cotiza a 22.3x EPS forward, 18.6x EV/EBITDA y 27.8x P/FCF. Para un negocio con margenes de clase mundial y crecimiento predecible, la valuacion es razonable con un leve descuento vs maximos historicos."
       },
       {
         "label": "Riesgos principales",
-        "texto": "Los tres riesgos mas relevantes para 2025-2026 son: (1) recuperacion lenta de comp sales en EEUU si el consumidor de bajos ingresos sigue bajo presion inflacionaria; (2) incrementos de costos laborales por regulaciones estatales que afecten la rentabilidad de los franquiciados y reduzcan las aperturas de nuevas tiendas; (3) posible deterioro del rating crediticio si la deuda neta sigue creciendo y las tasas se mantienen elevadas, encareciendo el servicio de deuda. El brote de E. coli es un riesgo residual puntual, ya resuelto."
+        "texto": "Presion al consumidor de bajos ingresos que reduzca visitas, apreciacion del USD que impacte ingresos internacionales, incremento de costos laborales regulatorios, y competencia creciente de fast-casual y plataformas de entrega."
       }
     ]
-  },
-  "parrafos_gratis": 9
+  }
 }

@@ -1,14 +1,16 @@
 {
-  "resumen": "Costco Wholesale (COST) reporto ingresos totales record de $275.2B en FY2025 (+8.1% YoY), con utilidad neta de $8.1B y FCF de $7.8B, ambos maximos historicos. El modelo unico de membresias genera $5.3B en fees anuales que representan ~66% de toda la utilidad neta, respaldado por 81 millones de miembros con renovacion del 92.3% en EE.UU. La mayor debilidad no es operativa sino de valuacion: a 51x P/E, el precio descuenta anos de crecimiento perfecto sin margen de seguridad.",
+  "parrafos_gratis": 14,
+  "resumen": "Costco Wholesale (COST) reporto ingresos de $69.6B en Q2 FY2026 (+9.2% YoY), con utilidad neta de $2.035B (+13.8%) y EPS de $4.58 (+13.9%), superando las estimaciones del consenso de $4.55. El modelo de membresias mantiene su fortaleza con 82.5 millones de miembros y renovacion del 92.6% en EE.UU. La posicion de caja neta alcanzo $11.7B, nivel record historico. A un P/E TTM de 56x, la valuacion sigue siendo el principal punto de tension para inversores orientados al valor.",
   "descripcion": "Costco Wholesale Corporation es el segundo retailer mas grande del mundo por ingresos, operando 914 warehouses en 14 paises al cierre de FY2025 (agosto 2025). Su modelo cobra membresias anuales ($65 Gold Star / $130 Executive) para acceder a productos seleccionados a precios ultra-competitivos, con un markup maximo del 15% en merchandise. Los $5.3B en ingresos de membresias son practicamente pura ganancia y representan el verdadero motor de rentabilidad. La linea propia Kirkland Signature representa ~25-30% del revenue y actua como diferenciador que ninguna competencia puede replicar facilmente. Con una tasa de renovacion global del 89.8%, Costco ha construido uno de los ecosistemas de lealtad de cliente mas solidos del retail global.",
   "tabla": {
     "headers": [
       "Metrica",
-      "2021",
-      "2022",
-      "2023",
-      "2024",
-      "2025",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q2 FY2026",
       "Var. YoY"
     ],
     "rows": [
@@ -19,7 +21,8 @@
         "242.3",
         "254.5",
         "275.2",
-        "+8.1%"
+        "69.6",
+        "+9.2%"
       ],
       [
         "Utilidad Neta ($B)",
@@ -28,7 +31,8 @@
         "6.3",
         "7.4",
         "8.1",
-        "+9.9%"
+        "2.04",
+        "+13.8%"
       ],
       [
         "Margen Neto (%)",
@@ -37,7 +41,8 @@
         "2.60%",
         "2.90%",
         "2.94%",
-        "+0.04pp"
+        "2.92%",
+        "+0.11pp"
       ],
       [
         "EBITDA ($B)",
@@ -46,7 +51,8 @@
         "10.2",
         "11.5",
         "12.8",
-        "+11.2%"
+        "3.20",
+        "+11.7%"
       ],
       [
         "FCF ($B)",
@@ -55,24 +61,27 @@
         "6.7",
         "6.6",
         "7.8",
-        "+18.2%"
+        "1.71",
+        "N/A"
       ],
       [
-        "EPS (GAAP)",
-        "$11.27",
-        "$13.14",
-        "$14.16",
-        "$16.56",
-        "$18.21",
-        "+10.0%"
+        "EPS Diluido",
+        "11.27",
+        "13.14",
+        "14.16",
+        "16.56",
+        "18.21",
+        "4.58",
+        "+13.9%"
       ],
       [
         "Deuda Neta ($B)",
-        "-2.0",
-        "-2.0",
-        "-6.4",
-        "-3.0",
+        "-3.7",
+        "-2.8",
+        "-6.2",
+        "-5.2",
         "-7.1",
+        "-11.7",
         "Mejora"
       ]
     ]
@@ -80,43 +89,58 @@
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "53.6x",
-      "change": "vs. ~47x hace 1 ano",
+      "value": "56.4x",
+      "change": "vs. ~53x hace 6 meses",
       "signal": "red",
       "note": "vs. sector retail ~20x",
-      "precio_base": 1033.2,
-      "precio_fecha": "2026-04-09",
+      "precio_base": 1084.62,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 19.27
+        "valor": 19.23
       }
     },
     {
       "label": "P/E Forward",
-      "value": "46x",
+      "value": "46.4x",
       "signal": "red",
-      "precio_base": 1033.73,
-      "precio_fecha": "2026-04-09",
+      "precio_base": 1084.62,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 22.4661
+        "valor": 23.4
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "31.7x",
-      "signal": "yellow"
+      "value": "36.6x",
+      "signal": "yellow",
+      "precio_base": 1084.62,
+      "precio_fecha": "2026-05-20",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 12.812,
+        "shares_m": 443.2,
+        "deuda_neta_b": -11.7
+      }
     },
     {
       "label": "P/FCF",
-      "value": "48.0x",
-      "signal": "yellow"
+      "value": "70.4x",
+      "signal": "red",
+      "precio_base": 1084.62,
+      "precio_fecha": "2026-05-20",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 6.828,
+        "shares_m": 443.2
+      }
     },
     {
       "label": "Deuda/EBITDA",
       "value": "0.0x",
       "signal": "green",
-      "note": "Caja neta de $7.1B"
+      "note": "Caja neta de $11.7B"
     },
     {
       "label": "ROE",
@@ -133,29 +157,34 @@
     "unit": "B USD",
     "data": [
       {
-        "label": "2021",
+        "label": "FY2021",
         "revenue": 195.9,
         "utilidad": 5
       },
       {
-        "label": "2022",
+        "label": "FY2022",
         "revenue": 227,
         "utilidad": 5.8
       },
       {
-        "label": "2023",
+        "label": "FY2023",
         "revenue": 242.3,
         "utilidad": 6.3
       },
       {
-        "label": "2024",
+        "label": "FY2024",
         "revenue": 254.5,
         "utilidad": 7.4
       },
       {
-        "label": "2025",
+        "label": "FY2025",
         "revenue": 275.2,
         "utilidad": 8.1
+      },
+      {
+        "label": "Q2 FY2026",
+        "revenue": 69.6,
+        "utilidad": 2.04
       }
     ],
     "series": [
@@ -172,34 +201,40 @@
   "chart_margenes": {
     "data": [
       {
-        "label": "2021",
+        "label": "FY2021",
         "bruto": 12.88,
         "operativo": 3.42,
         "neto": 2.56
       },
       {
-        "label": "2022",
+        "label": "FY2022",
         "bruto": 12.15,
         "operativo": 3.43,
         "neto": 2.58
       },
       {
-        "label": "2023",
+        "label": "FY2023",
         "bruto": 12.26,
         "operativo": 3.35,
         "neto": 2.6
       },
       {
-        "label": "2024",
+        "label": "FY2024",
         "bruto": 12.61,
         "operativo": 3.65,
         "neto": 2.9
       },
       {
-        "label": "2025",
+        "label": "FY2025",
         "bruto": 12.84,
         "operativo": 3.77,
         "neto": 2.94
+      },
+      {
+        "label": "Q2 FY2026",
+        "bruto": 13,
+        "operativo": 3.74,
+        "neto": 2.92
       }
     ],
     "series": [
@@ -221,57 +256,57 @@
     "items": [
       {
         "label": "Dividendos regulares",
-        "value": "$2.2B",
-        "nota": "$4.64/share anual FY2025; yield 0.53%"
+        "value": "$0.57B",
+        "nota": "$1.16/share en Q2 FY2026; yield ~0.42% al precio actual"
       },
       {
-        "label": "Dividendo especial (FY2024)",
+        "label": "Dividendo especial (historico)",
         "value": "$7.2B",
-        "nota": "$15/share pagado dic-2023; segundo especial en 3 anos"
+        "nota": "$15/share pagado dic-2023; proximo especial posible FY2026-2027 dado caja neta record de $11.7B"
       },
       {
         "label": "Recompra de acciones",
-        "value": "$903M",
-        "nota": "FY2025; recompras modestas, share count esencialmente plano desde 2021"
+        "value": "~$0.25B",
+        "nota": "Q2 FY2026 estimado; programa continuo pero modesto dado el premium de valuacion"
       },
       {
         "label": "Capex",
-        "value": "$5.5B",
-        "nota": "2.0% del revenue; 23 nuevos warehouses en FY2025; acelerando YoY"
+        "value": "$1.3B",
+        "nota": "Q2 FY2026; $2.8B acumulado H1 FY2026; aceleracion de aperturas de warehouses globales"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "COST FY2025",
+      "COST Q2 FY2026",
       "Sector retail",
       "Posicion relativa"
     ],
     "rows": [
       [
         "Gross margin",
-        "12.8%",
+        "~13.0%",
         "~22%",
         "En linea con modelo"
       ],
       [
         "Margen operativo",
-        "3.77%",
+        "3.74%",
         "~5%",
         "En linea con modelo"
       ],
       [
         "Revenue growth YoY",
-        "+8.1%",
+        "+9.2%",
         "~4%",
         "Por encima del sector"
       ],
       [
         "P/E forward",
-        "46x",
+        "46.4x",
         "~18x",
-        "Premium vs. sector"
+        "Prima extrema vs. sector"
       ],
       [
         "ROIC",
@@ -282,40 +317,39 @@
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo significativo",
-    "analisis": "Costco muestra aceleracion en todas las metricas clave en FY2025: revenue +8.1%, EBITDA +11.2%, FCF +18.2%, EPS +10.0%. Los margenes operativos mejoraron a 3.77% (mejor nivel en 5 anos) y la tasa de renovacion de membresias se mantiene sobre 89% global. El unico punto de atencion es la aceleracion del Capex hacia $5.5B, que debe traducirse en membership growth sostenido.",
+    "veredicto": "Aceleracion operativa sostenida; sin senales de deterioro en Q2 FY2026",
+    "analisis": "Q2 FY2026 muestra aceleracion en todas las metricas clave: revenue +9.2%, NI +13.8%, EPS +13.9%. Los margenes operativos mejoran a 3.74% y la posicion de caja neta alcanzo un record de $11.7B. El comparable sales growth de +7.4% supera ampliamente al sector. No hay indicadores de presion en renovacion de membresias ni en el volumen por warehouse.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+8.1%",
+        "valor": "+9.2%",
         "status": "ok"
       },
       {
         "metrica": "Margen operativo",
-        "valor": "3.77%",
+        "valor": "3.74%",
         "status": "ok"
       },
       {
-        "metrica": "FCF conversion",
-        "valor": "96.8%",
+        "metrica": "Comparable sales",
+        "valor": "+7.4%",
         "status": "ok"
       },
       {
-        "metrica": "Renovacion membresias US/CA",
-        "valor": "92.3%",
+        "metrica": "EPS growth",
+        "valor": "+13.9%",
         "status": "ok"
       },
       {
-        "metrica": "Deuda LT",
-        "valor": "$5.7B",
-        "status": "ok",
-        "nota": "Caja neta de $7.1B; posicion financiera sin estres"
+        "metrica": "Caja neta",
+        "valor": "$11.7B",
+        "status": "ok"
       },
       {
         "metrica": "Capex/Revenue",
-        "valor": "2.0%",
+        "valor": "~1.9%",
         "status": "warn",
-        "nota": "Capex sube a $5.5B (+16.7% YoY); requiere que las nuevas aperturas generen membership esperado"
+        "nota": "Capex acelerado; requiere membership growth sostenido para generar ROI proyectado"
       }
     ]
   },
@@ -425,24 +459,24 @@
     "color": "yellow",
     "metrics": [
       {
-        "label": "Revenue TTM",
-        "value": "$275.2B"
+        "label": "Revenue Q2 FY2026",
+        "value": "$69.6B"
       },
       {
         "label": "Margen Neto",
-        "value": "2.94%"
+        "value": "2.92%"
       },
       {
-        "label": "FCF Yield",
-        "value": "1.8%"
+        "label": "FCF Yield (anual.)",
+        "value": "1.4%"
       },
       {
         "label": "P/E Forward",
-        "value": "46.2x"
+        "value": "46.4x"
       },
       {
         "label": "Crecimiento Rev.",
-        "value": "+8.1% YoY"
+        "value": "+9.2% YoY"
       }
     ],
     "bullets": [

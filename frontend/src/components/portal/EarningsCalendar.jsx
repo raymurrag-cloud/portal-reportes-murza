@@ -557,18 +557,6 @@ export default function EarningsCalendar() {
             >
               Blog
             </Link>
-            <Link
-              to="/portafolio"
-              style={{
-                padding: '6px 11px', borderRadius: 8, fontSize: 13,
-                color: 'var(--text-muted)', fontWeight: 500,
-                textDecoration: 'none', transition: 'all 0.15s',
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}
-            >
-              Portafolio
-            </Link>
           </nav>
           <div className="portal-header-right">
             <Link to="/login" className="btn-ghost-sm">Iniciar sesion</Link>

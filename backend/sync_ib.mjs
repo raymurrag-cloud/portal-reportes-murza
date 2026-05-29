@@ -54,37 +54,56 @@ function num(v) { const n = parseFloat(v); return isNaN(n) ? null : n; }
 
 async function fetchFlexStatement() {
   const sendUrl = `https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest?t=${IB_TOKEN}&q=${IB_QUERY_ID}&v=3`;
-  console.log('📡 Solicitando statement a IB...');
-  const r1 = await fetch(sendUrl);
-  const xml1 = await r1.text();
 
-  const refMatch = xml1.match(/<ReferenceCode>(\d+)<\/ReferenceCode>/);
-  const urlMatch = xml1.match(/<Url>([^<]+)<\/Url>/);
-  const statusMatch = xml1.match(/<Status>(\w+)<\/Status>/);
+  // Reintenta SendRequest hasta 5 veces (IB a veces tarda en estar listo)
+  let refCode = null;
+  for (let attempt = 0; attempt < 5; attempt++) {
+    if (attempt > 0) {
+      console.log(`  ⏳ Reintentando SendRequest en 15 segundos... (intento ${attempt + 1}/5)`);
+      await sleep(15000);
+    }
+    console.log('📡 Solicitando statement a IB...');
+    const r1 = await fetch(sendUrl);
+    const xml1 = await r1.text();
+    console.log(`  📥 SendRequest respuesta: ${xml1.slice(0, 300)}`);
 
-  if (!refMatch || statusMatch?.[1] !== 'Success') {
-    const errMsg = xml1.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || xml1;
-    throw new Error(`IB SendRequest error: ${errMsg}`);
+    const refMatch   = xml1.match(/<ReferenceCode>(\d+)<\/ReferenceCode>/);
+    const statusMatch = xml1.match(/<Status>(\w+)<\/Status>/);
+    const errMsg     = xml1.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || '';
+
+    if (refMatch && statusMatch?.[1] === 'Success') {
+      refCode = refMatch[1];
+      break;
+    }
+    // "could not be generated" = transitorio, reintentar
+    if (errMsg.toLowerCase().includes('try again') || errMsg.toLowerCase().includes('could not')) {
+      console.log(`  ⚠️  IB no listo: ${errMsg}`);
+      continue;
+    }
+    throw new Error(`IB SendRequest error: ${errMsg || xml1.slice(0, 200)}`);
   }
-
-  const refCode = refMatch[1];
-  const baseUrl = urlMatch?.[1] || 'https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement';
+  if (!refCode) throw new Error('IB no pudo generar el statement después de 5 intentos');
   console.log(`✅ ReferenceCode: ${refCode} — esperando statement...`);
 
-  for (let i = 0; i < 8; i++) {
-    await sleep(i === 0 ? 5000 : 3000);
-    const getUrl = `${baseUrl}?q=${IB_QUERY_ID}&t=${IB_TOKEN}&v=3&ReferenceCode=${refCode}`;
+  const getBaseUrl = 'https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement';
+  for (let i = 0; i < 10; i++) {
+    await sleep(i === 0 ? 8000 : 5000);
+    const getUrl = `${getBaseUrl}?t=${IB_TOKEN}&v=3&q=${IB_QUERY_ID}&ReferenceCode=${refCode}`;
+    console.log(`  ⏳ Intento ${i + 1}/10...`);
     const r2 = await fetch(getUrl);
     const xml2 = await r2.text();
+    console.log(`  📥 Respuesta IB: ${xml2.slice(0, 300)}`);
     if (xml2.includes('<FlexQueryResponse')) return xml2;
-    const status2 = xml2.match(/<Status>(\w+)<\/Status>/)?.[1];
-    if (status2 === 'Warn' || status2 === 'Fail') {
-      const err = xml2.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || '';
-      if (!err.includes('generation in progress')) throw new Error(`IB error: ${err}`);
+    const errCode = xml2.match(/<ErrorCode>(\d+)<\/ErrorCode>/)?.[1] || '';
+    const errMsg  = xml2.match(/<ErrorMessage>([^<]+)<\/ErrorMessage>/)?.[1] || '';
+    // 1019 = generation in progress, reintentar siempre en errores transitorios
+    if (errCode === '1019' || errMsg.toLowerCase().includes('progress') || errMsg.toLowerCase().includes('invalid')) {
+      console.log(`  ⏳ No listo aún (${errCode}: ${errMsg}), reintentando...`);
+      continue;
     }
-    console.log(`  ⏳ Intento ${i + 1}/8 — esperando...`);
+    throw new Error(`IB error ${errCode}: ${errMsg || xml2.slice(0, 200)}`);
   }
-  throw new Error('Timeout: IB no entregó el statement después de 8 intentos');
+  throw new Error('Timeout: IB no entregó el statement después de 10 intentos');
 }
 
 async function syncTrades(xml) {

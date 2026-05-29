@@ -1,0 +1,146 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Nebius Group N.V. (NBIS) es una plataforma global de AI cloud de pila completa, cotizada en Nasdaq, que ofrece infraestructura GPU de alto rendimiento, software propio y servicios gestionados para el ciclo completo de IA. La empresa escalo revenues un 479% en FY2025 (a 530M USD) y un 684% adicional en Q1 2026 (399M USD en un solo trimestre), impulsada por contratos estrategicos a largo plazo con Microsoft y Meta. Opera a perdida operativa mientras expande su capacidad global agresivamente, pero reporto Adjusted EBITDA positivo por primera vez en Q1 2026 (129.5M USD). El balance es solido con 9.3B USD en caja post-Q1, aunque la deuda convertible asciende a 8.4B USD. La valuacion de premium extremo (~50B USD market cap vs 529M USD revenue FY2025) descuenta un hiperescenario de crecimiento.",
+  "descripcion": "Nebius es una plataforma AI cloud de pila completa fundada sobre el expertise tecnico de Yandex (desinvertida en 2024). Opera tres segmentos: (1) Nebius AI Cloud — GPU clusters, storage, redes y software propietario para entrenamiento e inferencia a escala; (2) Avride — tecnologia de conduccion autonoma; (3) TripleTen — plataforma edtech de reskilling tech. Nebius AI Cloud genero 480M de los 530M de revenue total en FY2025 (+603% YoY). La empresa posee data centers propios en Finlandia, Francia, Islandia, UK e Israel, y opera clusters GPU en EE.UU. Su moat se basa en hardware disenado in-house, relacion preferencial con NVIDIA para GPUs de ultima generacion, y contratos a largo plazo con hyperscalers como Microsoft y Meta. En Q1 2026 anuncio 1.2 GW adicional de potencia y tierra en Pennsylvania para un nuevo AI factory propio.",
+  "tabla": {
+    "headers": ["Metrica","FY2023","FY2024","FY2025","Q1 2026","Var. YoY"],
+    "rows": [
+      ["Revenue (B USD)","0.010","0.092","0.530","0.399","+684%"],
+      ["Utilidad Neta (B USD)","(0.299)","(0.352)","0.010","0.621","n/m"],
+      ["Margen Neto","-3051%","-385%","+1.8%","+155.7%","n/m"],
+      ["EBITDA Ajustado (B USD)","(0.256)","(0.323)","(0.194)","0.130","n/m"],
+      ["FCF (B USD)","(0.305)","(1.077)","(3.664)","(0.215)","n/m"],
+      ["EPS Diluido","(0.81)","(1.25)","0.33","2.11","n/m"],
+      ["Deuda Neta (B USD)","0","0","0.43","(0.87)","n/m"]
+    ]
+  },
+  "kpis": [
+    { "label": "P/E Trailing", "value": "87x", "signal": "red", "note": "Incluye 599M USD ganancia no operativa por revaluacion de ClickHouse", "precio_base": 225.32, "precio_fecha": "May-2026", "fundamento": { "tipo": "eps_ttm", "valor": 2.59 } },
+    { "label": "P/E Forward", "value": "N/M", "signal": "red", "note": "EPS forward negativo — empresa en modo inversion", "precio_base": 225.32, "precio_fecha": "May-2026", "fundamento": { "tipo": "eps_fwd", "valor": -0.267 } },
+    { "label": "EV/Revenue TTM", "value": "24x", "signal": "red", "note": "EV ~50B vs revenue run-rate ~2B USD", "precio_base": 225.32, "precio_fecha": "May-2026", "fundamento": { "tipo": "ev_ebitda", "ebitda_b": 0.516, "shares_m": 220.4, "deuda_neta_b": 0.425 } },
+    { "label": "P/FCF", "value": "N/M", "signal": "red", "note": "FCF negativo — capex masivo de expansion", "precio_base": 225.32, "precio_fecha": "May-2026", "fundamento": { "tipo": "p_fcf", "fcf_b": -3.664, "shares_m": 220.4 } },
+    { "label": "Deuda Neta/EBITDA", "value": "N/M", "signal": "red" },
+    { "label": "ROE", "value": "0.2%", "signal": "yellow" },
+    { "label": "ROIC", "value": "N/M", "signal": "red" }
+  ],
+  "chart_ingresos": {
+    "unit": "M USD",
+    "data": [
+      { "label": "FY2023", "revenue": 9.8, "utilidad": -299.0 },
+      { "label": "FY2024", "revenue": 91.5, "utilidad": -352.0 },
+      { "label": "FY2025", "revenue": 529.8, "utilidad": 9.8 },
+      { "label": "Q1 2026", "revenue": 399.0, "utilidad": 621.2 }
+    ],
+    "series": [
+      { "key": "revenue", "name": "Revenue" },
+      { "key": "utilidad", "name": "Utilidad Neta" }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      { "label": "FY2023", "bruto": -100.0, "operativo": -2916.3, "neto": -3051.0 },
+      { "label": "FY2024", "bruto": 52.2, "operativo": -436.7, "neto": -384.7 },
+      { "label": "FY2025", "bruto": 68.6, "operativo": -115.5, "neto": 1.8 },
+      { "label": "Q1 2026", "bruto": 74.0, "operativo": -32.1, "neto": 155.7 }
+    ],
+    "series": [
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      { "label": "Capex FY2025", "value": "4.1B USD", "nota": "Compra de servidores GPU y construccion de data centers propios en 5 nuevos sites globales" },
+      { "label": "Capex Q1 2026", "value": "2.5B USD", "nota": "Aceleracion masiva del buildout — run-rate de ~10B USD anualizados" },
+      { "label": "Financiamiento 2025", "value": "5.1B USD", "nota": "4.2B en notas convertibles + 700M equity offering + 100M SAFE" },
+      { "label": "Financiamiento Q1 2026", "value": "6.3B USD", "nota": "4.3B en notas convertibles + 2.0B en warrants pre-financiados" },
+      { "label": "Dividendos", "value": "0", "nota": "No paga dividendos — toda la caja va a reinversion de capacidad" },
+      { "label": "M&A", "value": "~0.2B USD", "nota": "Adquisicion de Tavily (AI agentic search) feb-2026; stakes en ClickHouse y Toloka" }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": ["Metrica", "NBIS TTM", "Peers AI Cloud", "Posicion relativa"],
+    "rows": [
+      ["Gross Margin", "68.6%", "~40-55%", "Por encima del sector"],
+      ["Revenue Growth YoY", "+479% FY25 / +684% Q1", "+200-400% pares", "En linea con hipercrecimiento"],
+      ["EV/Revenue", "24x run-rate", "~20-40x AI infra", "Premium justificado por contratos"],
+      ["Margen Operativo", "-115.5%", "Negativo", "Similar a pares en inversion masiva"],
+      ["Adj EBITDA Q1 2026", "Positivo (130M)", "N/D pares publicos", "Primer positivo — adelante de expectativas"]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "No hay deterioro operativo — el negocio escala geometricamente aunque el FCF es profundamente negativo por diseno.",
+    "analisis": "Nebius esta en modo hiperinversion. El revenue crecio de 9.8M (FY2023) a 530M (FY2025) y 399M en un solo trimestre (Q1 2026). Los margenes brutos mejoran consistentemente (68.6% FY2025 vs 52.2% FY2024). El Adjusted EBITDA fue positivo por primera vez en Q1 2026 (129.5M), senalando que el core business es rentable a nivel de contribucion. El FCF negativo es estructural hasta que madure la capacidad instalada.",
+    "items": [
+      { "metrica": "Revenue YoY", "valor": "+479% FY25 / +684% Q1", "status": "ok" },
+      { "metrica": "Margen Bruto", "valor": "68.6% FY25 / 74% Q1", "status": "ok" },
+      { "metrica": "Margen Operativo GAAP", "valor": "-115.5%", "status": "warn" },
+      { "metrica": "Adj EBITDA Q1 2026", "valor": "+129.5M", "status": "ok" },
+      { "metrica": "FCF FY2025", "valor": "(3.7B USD)", "status": "bad" },
+      { "metrica": "Deuda Neta", "valor": "0.43B USD", "status": "ok" }
+    ]
+  },
+  "flags": [
+    { "level": "green", "title": "Contratos hyperscaler MSFT + Meta a 5 anos", "impact": "Alto", "evidence": "Deferred revenue Q1 2026 = 4.8B USD (vs 1.6B en dic-2025 — salto de +3.2B en un trimestre), reflejando advances ya cobrados de Microsoft y Meta.", "context": "Esta deferred revenue representa ingresos contractuales ya cobrados que se reconoceran en trimestres futuros, dando visibilidad sin precedentes al revenue de los proximos 5 anos." },
+    { "level": "green", "title": "Adj EBITDA positivo por primera vez — Q1 2026", "impact": "Alto", "evidence": "Adjusted EBITDA Q1 2026: 129.5M USD vs (53.7M) en Q1 2025 — punto de inflexion que demuestra modelo de negocio viable.", "context": "La inflexion a EBITDA positivo a esta velocidad de crecimiento confirma que la empresa puede generar margen real a medida que la capacidad se llena." },
+    { "level": "green", "title": "Relacion preferencial con NVIDIA", "impact": "Alto", "evidence": "Nebius es consistentemente uno de los primeros en desplegar la ultima generacion de chips NVIDIA GPU; hardware disenado in-house reduce TCO para el cliente.", "context": "En un mercado donde el acceso a GPU de ultima generacion es el cuello de botella, esta relacion preferencial funciona como moat de acceso a infraestructura." },
+    { "level": "green", "title": "Caja record de 9.3B USD post-Q1 2026", "impact": "Alto", "evidence": "Caja y equivalentes al 31-mar-2026: 9.3B USD — despues de invertir 2.5B en capex en el trimestre.", "context": "Nebius recaudo +6.3B en Q1 2026, dandole runway mas que suficiente para ejecutar su plan de expansion sin riesgo de liquidez en el horizonte de 2-3 anos." },
+    { "level": "yellow", "title": "Opinion adversa sobre control interno (SOX)", "impact": "Medio", "evidence": "PwC emitio opinion adversa sobre los controles internos (ICFR) al 31-dic-2025 en el primer 20-F como empresa independiente.", "context": "Es comun en empresas recien reorganizadas. No implica fraude, pero es una bandera de gobierno corporativo que inversores institucionales monitorean." },
+    { "level": "yellow", "title": "Deuda convertible de 8.4B USD con potencial dilutivo", "impact": "Medio", "evidence": "Deuda non-current Q1 2026: 8.4B en notas convertibles a 1.0%-3.0%; warrants pre-financiados pendientes de conversion.", "context": "El costo de deuda es bajo, pero la conversion podria diluir el float significativamente. La estructura de capital es compleja con multiples instrumentos pendientes." },
+    { "level": "yellow", "title": "Concentracion en contratos hyperscaler", "impact": "Medio", "evidence": "Los contratos con Microsoft y Meta representan la mayor parte del salto en deferred revenue (+3.2B en Q1 2026).", "context": "Si uno de estos contratos se renegociara, el impacto en revenue reconocido seria material. La empresa diversifica activamente hacia AI natives y enterprises." },
+    { "level": "red", "title": "Valuacion extrema — 94x revenue FY2025", "impact": "Alto", "evidence": "Market cap ~50B vs revenue FY2025 de 530M = 94x revenue. Vs run-rate Q1 2026 (~1.6B) = 31x forward revenue.", "context": "La valuacion descuenta escenarios de tipo hyperscaler en 3-5 anos. Cualquier desaceleracion o retraso en data centers puede comprimir dramaticamente el multiple." },
+    { "level": "red", "title": "FCF negativo profundo — capex de 2.5B por trimestre", "impact": "Alto", "evidence": "FCF FY2025: (3.7B); capex Q1 2026: 2.5B. La empresa depende de acceso continuo a mercados de capital.", "context": "Si las condiciones de financiamiento se deterioran, el plan de crecimiento se ve amenazado. El OCF positivo incluye advances de clientes — el FCF operativo real es negativo." }
+  ],
+  "score": {
+    "score": 6.2,
+    "max": 10,
+    "items": [
+      { "label": "Poder de fijacion de precios", "score": 7, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 10, "max": 10 },
+      { "label": "Calidad de margenes", "score": 5, "max": 10 },
+      { "label": "Solidez del balance", "score": 6, "max": 10 },
+      { "label": "Generacion de FCF", "score": 3, "max": 10 }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "Nebius apuesta a convertirse en la alternativa nativa de AI a los hyperscalers construyendo infraestructura GPU de alta densidad disenable in-house con software propio integrado. La estrategia de corto plazo es firmar contratos a largo plazo con AI hyperscalers (MSFT, Meta) para financiar la expansion, y luego diversificar hacia AI natives, startups y enterprises. La adquisicion de Tavily (agentic search) apunta a subir en el stack hacia servicios de mayor valor. El anuncio de 1.2 GW en Pennsylvania senala ambicion de construir AI factories propios a escala de hyperscaler.",
+    "ventajas": "Hardware disenable in-house permite mayor eficiencia energetica y menor TCO. Relacion preferencial con NVIDIA garantiza acceso temprano a GPU de ultima generacion. Contratos MSFT + Meta proveen visibilidad de revenue a 5 anos (deferred revenue 4.8B). Team tecnico heredado de Yandex con experiencia en infraestructura a escala. Caja de 9.3B post-Q1 financia el buildout sin depender de mercados en el corto plazo.",
+    "debilidades": "Empresa muy joven como entidad independiente (2024-) con controles internos en construccion (opinion adversa SOX). FCF profundamente negativo por anos. Alta dependencia de capital externo. Competencia de hyperscalers con recursos ilimitados. Base de clientes concentrada en pocos contratos grandes.",
+    "riesgos": [
+      "Desaceleracion tecnologica: modelos AI mas eficientes podrian reducir la demanda de infraestructura GPU masiva y afectar contratos a largo plazo.",
+      "Riesgo de ejecucion en buildout: securing land, power y componentes es complejo y cualquier retraso afecta el cumplimiento de contratos con MSFT/Meta.",
+      "Riesgo de capital: si los mercados se cierran o encarecen, la empresa que consume cash masivamente enfrentaria restricciones de crecimiento severas.",
+      "Riesgo regulatorio y geopolitico: como empresa europea con origen en Yandex, enfrenta escrutinio regulatorio en multiples jurisdicciones y posible escepticismo de clientes."
+    ],
+    "inversiones_estrategicas": "Capex de 4.1B USD en FY2025 y 2.5B en Q1 2026 para expansion de data centers globales. Adquisicion de Tavily (agentic AI search) en feb-2026. Stakes en ClickHouse y Toloka. Anuncio de 1.2 GW de potencia + tierra en Pennsylvania para AI factory propio."
+  },
+  "verdict": {
+    "status": "Especulativo — Solo para inversores con alta tolerancia al riesgo",
+    "score": "6.2/10",
+    "color": "yellow",
+    "metrics": [
+      { "label": "Revenue Q1 2026", "value": "399M USD" },
+      { "label": "Adj EBITDA Q1", "value": "130M USD" },
+      { "label": "Deferred Revenue", "value": "4.8B USD" },
+      { "label": "Caja", "value": "9.3B USD" },
+      { "label": "Rev. Growth YoY", "value": "+684%" }
+    ],
+    "bullets": [
+      { "text": "**Velocidad de escala sin precedentes ->** Revenue de 0 a 399M por trimestre en menos de 3 anos, con contratos hyperscaler de 5 anos que aseguran visibilidad masiva (deferred revenue de 4.8B al 31-mar-2026).", "type": "pro" },
+      { "text": "**Primer EBITDA positivo ->** Adjusted EBITDA de 129.5M en Q1 2026 es el primer punto de inflexion que demuestra que el modelo de negocio genera margen real a medida que la capacidad se llena.", "type": "pro" },
+      { "text": "**Posicionamiento estructural en AI cloud ->** Hardware in-house + relacion preferencial NVIDIA + caja de 9.3B + 1.2 GW nuevo en Pennsylvania posicionan a Nebius como el rival mas cercano a escala de hyperscaler en AI cloud puro.", "type": "pro" },
+      { "text": "**Valuacion extrema y FCF negativo ->** Con market cap de 50B sobre 530M de revenue anual y FCF de (3.7B) en FY2025, la accion descuenta el escenario mas optimista posible — cualquier tropiezo puede comprimir el multiple dramaticamente.", "type": "con" }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      { "label": "Ingresos", "texto": "Revenue escalo de 9.8M (FY2023) a 529.8M (FY2025) y 399M en Q1 2026 (+684% YoY), impulsado por Nebius AI Cloud (+603% FY2025). Los contratos con Microsoft y Meta generaron un salto de 3.2B en deferred revenue en Q1 2026, garantizando visibilidad de ingresos a 5 anos." },
+      { "label": "Margenes", "texto": "Margen bruto mejoro de 52.2% (FY2024) a 68.6% (FY2025) y 74% en Q1 2026. El margen operativo GAAP es negativo (-115.5% FY2025) por D&A (418M) y SBC (83M), pero el Adjusted EBITDA fue positivo por primera vez en Q1 2026 (129.5M)." },
+      { "label": "Generacion de caja", "texto": "OCF de continuing operations positivo en FY2025 (401.9M) incluyendo 1.6B en advances de clientes. FCF es (3.7B) en FY2025 y (0.2B) en Q1 2026. La empresa destruye FCF por diseno mientras construye capacidad — la generacion real dependera de que el capex se modere." },
+      { "label": "Balance", "texto": "Caja de 9.3B al 31-mar-2026 post-recaudacion de 6.3B en Q1. Deuda non-current de 8.4B en convertibles a 1-3%. Net cash neto de Q1 es positivo (0.87B). Balance solido a corto plazo, estructura de capital compleja con convertibles y warrants pendientes." },
+      { "label": "Valuacion", "texto": "Market cap de ~50B sobre revenue FY2025 de 530M = 94x revenue. Con run-rate Q1 2026 (~1.6B anualizado) el multiplo baja a 31x. El mercado descuenta 5-10B de revenue en 3-5 anos — posible pero con alta incertidumbre de ejecucion." },
+      { "label": "Riesgos principales", "texto": "Los 4 riesgos criticos son: (1) valuacion que deja cero margen de error; (2) FCF negativo masivo y dependencia de mercados de capital; (3) concentracion en contratos MSFT/Meta; y (4) opinion adversa sobre controles internos (SOX). Avances en modelos AI mas eficientes podrian reducir la demanda de GPU compute a largo plazo." }
+    ]
+  }
+}

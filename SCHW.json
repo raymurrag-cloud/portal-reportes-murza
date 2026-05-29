@@ -1,256 +1,501 @@
 {
-  "ticker": "SCHW",
-  "empresa": "The Charles Schwab Corporation",
-  "updated_at": "2026-05-12",
-  "fecha_reporte": "2025-02-26",
-  "resumen": "Charles Schwab reporto ingresos de $19.61B en FY2024 (+4.1% YoY), con utilidad neta de $5.94B (+17.2%) y EPS diluido de $2.99 (+17.7%), evidenciando una solida recuperacion tras la presion por cash sorting en 2022-2023. Con $9.8 trillones en activos de clientes y liderazgo en brokerage retail en EEUU, Schwab cotiza a 22.8x forward earnings — valuacion razonable para su franquicia dominante y modelo de negocios diversificado.",
-  "descripcion": "The Charles Schwab Corporation es el mayor broker de retail en Estados Unidos, con aproximadamente $9.8 trillones en activos bajo custodia (AUC) a finales de 2024. Su modelo de ingresos combina net interest revenue (el componente mas grande), comisiones de trading eliminadas en 2019 (zero-commission), tarifas de administracion de activos y honorarios de cuentas bancarias de deposito. Adquirio TD Ameritrade en octubre 2020 por $22B, casi duplicando su escala de clientes y plataforma tecnologica. El ingreso neto por intereses representa mas del 60% de los ingresos y es altamente sensible a las tasas de interes, lo que explica la caida de revenue en 2023 por el fenomeno de cash sorting (clientes moviendo efectivo a fondos del mercado monetario cuando subieron las tasas). Opera con dos segmentos: Investor Services y Advisor Services, sirviendo a inversores individuales y asesores financieros independientes respectivamente.",
+  "parrafos_gratis": 14,
+  "resumen": "Charles Schwab es la mayor firma de corretaje e inversion de Estados Unidos con 11.9 trillones en activos de clientes y 38.5 millones de cuentas activas. En FY2025 registro un desempeno excepcional: ingresos de 23.9 mil millones (+22% YoY), utilidad neta de 8.9 mil millones (+49%), y EPS diluido de 4.65 (+56%). La empresa consolida su moat como plataforma integrada de brokerage-banca-asset management con altas barreras de entrada y costos de cambio elevados. Valuacion atractiva con P/E forward de 16x y FCF yield del 5.4%, combinada con momentum operativo sostenido. Veredicto: Comprar con Conviccion.",
+  "descripcion": "Schwab opera dos segmentos: Investor Services (brokerage retail, advisory, banking para individuos y planes de retiro) y Advisor Services (custodia y soporte para RIAs independientes). El modelo genera ingresos por tres fuentes principales: net interest revenue (49% en 2025), asset management fees (27%), y trading revenue (17%). El moat central es el efecto red: con 39.1 millones de cuentas activas y 11.9T en activos, Schwab es la plataforma de infraestructura financiera preferida tanto por clientes retail como por 15,000+ RIAs. La escala permite ofrecer zero-commission trading, tasas competitivas y acceso a productos propios (Schwab Funds, ETFs), reforzando la ventaja vs competidores de menor tamano.",
   "tabla": {
-    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", 11.69, 18.52, 20.76, 18.84, 19.61, "+4.1%"],
-      ["Utilidad Neta ($B)", 3.30, 5.86, 7.18, 5.07, 5.94, "+17.2%"],
-      ["Margen Neto (%)", "28.2%", "31.6%", "34.6%", "26.9%", "30.3%", "+3.4pp"],
-      ["EBITDA ($B)", 4.71, 8.26, 10.04, 7.18, 8.61, "+19.9%"],
-      ["FCF ($B)", 6.22, 1.20, 1.09, 18.89, 2.05, "-89.1%"],
-      ["EPS (GAAP)", 2.12, 2.83, 3.50, 2.54, 2.99, "+17.7%"],
-      ["Deuda Neta ($B)", -26.72, -44.07, -19.37, -17.21, -19.65, "n/a"]
+      [
+        "Revenue (B USD)",
+        "18.52",
+        "20.76",
+        "18.84",
+        "19.61",
+        "23.92",
+        "6.48",
+        "+22%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.86",
+        "7.18",
+        "5.07",
+        "5.94",
+        "8.85",
+        "2.48",
+        "+49%"
+      ],
+      [
+        "Margen Neto",
+        "31.6%",
+        "34.6%",
+        "26.9%",
+        "30.3%",
+        "37.0%",
+        "38.3%",
+        "+6.7pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "6.56",
+        "7.90",
+        "6.24",
+        "7.14",
+        "12.06",
+        "N/D",
+        "+69%"
+      ],
+      [
+        "FCF (B USD)",
+        "1.20",
+        "1.09",
+        "18.89",
+        "2.05",
+        "8.76",
+        "N/D",
+        "+327%"
+      ],
+      [
+        "EPS Diluido",
+        "3.12",
+        "3.84",
+        "2.54",
+        "2.99",
+        "4.65",
+        "1.37",
+        "+56%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-44.06",
+        "N/D",
+        "-0.94",
+        "-19.65",
+        "-23.83",
+        "N/D",
+        "Mejor"
+      ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "29.9x",
-      "signal": "yellow",
-      "note": "vs brokerages ~20-25x historico",
-      "precio_base": 89.44,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "eps_ttm", "valor": 2.99}
+      "label": "P/E Trailing",
+      "value": "19.3x",
+      "signal": "green",
+      "note": "vs. sector financiero ~14x",
+      "precio_base": 89.59,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 4.65
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "22.8x",
-      "signal": "yellow",
-      "note": "Descuento vs TTM; consenso FY2025 EPS ~$3.93",
-      "precio_base": 89.44,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "eps_fwd", "valor": 3.93}
+      "value": "16.0x",
+      "signal": "green",
+      "note": "vs. peers 14-18x",
+      "precio_base": 89.59,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 5.6
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "16.8x",
+      "value": "15.3x",
       "signal": "yellow",
-      "note": "EV = Market cap - posicion neta de caja"
+      "precio_base": 89.59,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 12.06,
+        "shares_m": 1809,
+        "deuda_neta_b": -23.83
+      }
     },
     {
       "label": "P/FCF",
-      "value": "80.0x",
-      "signal": "red",
-      "note": "FCF deprimido por volatilidad de capital de trabajo en brokerages; FY2023 FCF fue $18.89B",
-      "precio_base": 89.44,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "p_fcf", "fcf_b": 2.05, "shares_m": 1834}
+      "value": "18.5x",
+      "signal": "green",
+      "precio_base": 89.59,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 8.76,
+        "shares_m": 1809
+      }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "2.61x",
+      "label": "Deuda Neta/EBITDA",
+      "value": "-1.97x",
       "signal": "green",
-      "note": "Compensado por posicion de caja de $42.1B"
+      "note": "Posicion neta de caja"
     },
     {
       "label": "ROE",
-      "value": "13.3%",
-      "signal": "yellow",
-      "note": "Recuperandose; afectado por activos intangibles post-TDA"
+      "value": "21%",
+      "signal": "green"
     },
     {
       "label": "ROIC",
-      "value": "15.4%",
-      "signal": "green",
-      "note": "Solido ROIC en linea con franquicia de alta calidad"
+      "value": "34.6%",
+      "signal": "green"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {"label": "2020", "revenue": 11.69, "utilidad": 3.30},
-      {"label": "2021", "revenue": 18.52, "utilidad": 5.86},
-      {"label": "2022", "revenue": 20.76, "utilidad": 7.18},
-      {"label": "2023", "revenue": 18.84, "utilidad": 5.07},
-      {"label": "2024", "revenue": 19.61, "utilidad": 5.94}
+      {
+        "label": "FY2021",
+        "revenue": 18.52,
+        "utilidad": 5.86
+      },
+      {
+        "label": "FY2022",
+        "revenue": 20.76,
+        "utilidad": 7.18
+      },
+      {
+        "label": "FY2023",
+        "revenue": 18.84,
+        "utilidad": 5.07
+      },
+      {
+        "label": "FY2024",
+        "revenue": 19.61,
+        "utilidad": 5.94
+      },
+      {
+        "label": "FY2025",
+        "revenue": 23.92,
+        "utilidad": 8.85
+      }
     ],
     "series": [
-      {"key": "revenue", "name": "Revenue"},
-      {"key": "utilidad", "name": "Utilidad Neta"}
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      {"label": "2020", "bruto": 58.4, "operativo": 36.8, "neto": 28.2},
-      {"label": "2021", "bruto": 63.2, "operativo": 41.6, "neto": 31.6},
-      {"label": "2022", "bruto": 66.1, "operativo": 45.2, "neto": 34.6},
-      {"label": "2023", "bruto": 60.3, "operativo": 33.9, "neto": 26.9},
-      {"label": "2024", "bruto": 61.5, "operativo": 39.2, "neto": 30.3}
+      {
+        "label": "FY2021",
+        "bruto": null,
+        "operativo": 37.6,
+        "neto": 31.6
+      },
+      {
+        "label": "FY2022",
+        "bruto": null,
+        "operativo": 42.3,
+        "neto": 34.6
+      },
+      {
+        "label": "FY2023",
+        "bruto": null,
+        "operativo": 33.9,
+        "neto": 26.9
+      },
+      {
+        "label": "FY2024",
+        "bruto": null,
+        "operativo": 39.2,
+        "neto": 30.3
+      },
+      {
+        "label": "FY2025",
+        "bruto": null,
+        "operativo": 47.9,
+        "neto": 37
+      }
     ],
     "series": [
-      {"key": "bruto", "name": "Margen Bruto"},
-      {"key": "operativo", "name": "Margen Operativo"},
-      {"key": "neto", "name": "Margen Neto"}
+      {
+        "key": "operativo",
+        "name": "Margen Operativo (Pre-Tax)"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
+        "label": "Recompras",
+        "value": "7.35B USD",
+        "nota": "Recompro 73M acciones en 2025 (~4.5% del float); senial de confianza a precio de mercado"
+      },
+      {
         "label": "Dividendos",
-        "value": "$1.00/accion",
-        "nota": "Dividendo ordinario de $1.00 por accion en FY2024 ($1.838B pagados en dividendos comunes). Rendimiento de dividendo de ~1.1% al precio actual."
+        "value": "2.33B USD",
+        "nota": "Dividendo por accion de 1.08 en 2025 (+8% YoY); yield ~1.2% al precio actual"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "$0B",
-        "nota": "Sin recompras de acciones comunes en FY2024. Management priorizando fortalecer capital post-TDA integration y reduccion de deuda. Recompras retomadas cuando el ratio de capital alcance niveles objetivo."
+        "label": "Capex",
+        "value": "0.55B USD",
+        "nota": "Capex reducido refleja modelo asset-light y madurez operativa"
       },
       {
-        "label": "Pago total de dividendos",
-        "value": "$2.28B",
-        "nota": "Incluye $437M en dividendos preferentes y $1.838B en dividendos comunes. Payout ratio conservador (~38% del net income)."
+        "label": "M&A",
+        "value": "~0.1B USD",
+        "nota": "Adquisicion de Forge Global (mercados privados) en 2025; expansion hacia activos alternativos"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "SCHW FY2024", "Sector brokerages", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "SCHW TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Net Margin", "30.3%", "~22-28%", "Superior — escala y mix de ingresos bancarios"],
-      ["ROE", "13.3%", "~12-18%", "En linea — afectado por intangibles post-TDA"],
-      ["P/E Forward", "22.8x", "~18-24x", "Prima moderada justificada por escala y franquicia"],
-      ["Debt/EBITDA", "2.61x", "~1.5-3.0x", "Dentro del rango normal; solido balance bancario"],
-      ["Revenue Growth YoY", "+4.1%", "~5-10%", "Debajo del promedio — recuperacion gradual post cash sorting"]
+      [
+        "Margen Operativo Pre-Tax",
+        "47.9%",
+        "~35%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Neto",
+        "37.0%",
+        "~22%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+22%",
+        "~8%",
+        "Muy por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "16.0x",
+        "~14x",
+        "Prima moderada justificada"
+      ],
+      [
+        "ROIC",
+        "34.6%",
+        "~15%",
+        "Muy por encima del sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "Recuperacion en curso tras presion severa por cash sorting en 2022-2023",
-    "analisis": "Schwab experimento una contraccion significativa de revenue e ingresos en 2023 cuando clientes movieron $200B+ de depositos de bajo rendimiento hacia fondos del mercado monetario (cash sorting), comprimiendo el net interest revenue. FY2024 muestra recuperacion tangible: revenue +4.1%, utilidad neta +17.2%, EPS +17.7%. El ciclo de tasas y la normalizacion gradual de depositos bancarios apuntan a crecimiento adicional en FY2025-2026. La integracion de TD Ameritrade (completada en mayo 2024) esta generando sinergias operativas y plataforma tecnologica consolidada.",
+    "veredicto": "Salud financiera excelente: aceleracion sostenida en FY2025 con mejora estructural de margenes y record de captacion de activos",
+    "analisis": "Schwab ejecuto una recuperacion excepcional en 2025 tras los desafios de 2023. La reduccion del funding suplementario, crecimiento de margin lending, y expansion de managed assets impulsaron margenes a maximos historicos. El balance es solido con posicion neta de caja de 23.8B y Tier 1 de 9.3%. Q1 2026 confirma aceleracion: revenue +16% YoY, margen pre-tax 49.2%.",
     "items": [
-      {"metrica": "Revenue YoY", "valor": "+4.1%", "status": "ok"},
-      {"metrica": "Net Income YoY", "valor": "+17.2%", "status": "ok"},
-      {"metrica": "EPS YoY", "valor": "+17.7%", "status": "ok"},
-      {"metrica": "Margen Neto", "valor": "30.3% (+3.4pp)", "status": "ok"},
-      {"metrica": "EBITDA YoY", "valor": "+19.9%", "status": "ok"},
-      {"metrica": "FCF YoY", "valor": "-89.1% (volatilidad estructural)", "status": "warn"},
-      {"metrica": "Client Assets AUC", "valor": "~$9.8 trillones", "status": "ok"}
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+22%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Pre-Tax",
+        "valor": "47.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "37.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "+327% a 8.76B",
+        "status": "ok"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "-23.8B (caja neta)",
+        "status": "ok"
+      },
+      {
+        "metrica": "ROE",
+        "valor": "21% (ROTCE 38%)",
+        "status": "ok"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Liderazgo indiscutido en brokerage retail con escala unica",
+      "title": "Recuperacion estructural de NII confirmada",
       "impact": "Alto",
-      "evidence": "~$9.8 trillones en activos bajo custodia, mayor broker de retail en EEUU, 35+ millones de cuentas activas de brokerage",
-      "context": "La escala de Schwab crea un moat de costos estructural: puede ofrecer zero-commission porque monetiza a traves de interest spread en efectivo de clientes (pago por flujo de ordenes + net interest). Competidores menores no pueden igualar esta economia de escala."
+      "evidence": "Net interest revenue 11.8B en 2025 (+28%), margen pre-tax 47.9% vs 33.9% en 2023",
+      "context": "La reduccion de funding suplementario costoso (FHLB) y el crecimiento de margin lending representan un cambio estructural que mejora la calidad de ingresos de forma sostenida."
     },
     {
       "level": "green",
-      "title": "Modelo de zero-commission y banking hybrid genera revenues diversificados",
+      "title": "Plataforma de escala imbatible",
       "impact": "Alto",
-      "evidence": "Net interest revenue ~60% del total; asset management fees ~15%; trading revenue ~10%. Diversificacion reduce dependencia de volatilidad de mercados.",
-      "context": "La eliminacion de comisiones de trading en 2019 acelero la captacion de activos. Schwab compensa con el spread sobre efectivo de clientes, tarifas de fondos propietarios y servicios premium. Este modelo es altamente escalable y genera ingresos recurrentes."
+      "evidence": "11.9T en activos de clientes, 38.5M cuentas activas, 15000+ RIAs; core net new assets +42% a 519B en 2025",
+      "context": "La escala genera efectos de red que refuerzan la ventaja competitiva: mas activos = menores costos unitarios = mejores productos = mayor retencion. Barrera de entrada estructural."
+    },
+    {
+      "level": "green",
+      "title": "Crecimiento de revenue recurrente",
+      "impact": "Alto",
+      "evidence": "Asset management fees 6.5B (+14%), advisory assets 6.0T (+19%); managed investing solutions +18%",
+      "context": "Los ingresos basados en AUM ofrecen visibilidad y recurrencia superiores al trading revenue ciclico, reduciendo la volatilidad del modelo."
     },
     {
       "level": "yellow",
-      "title": "Alta sensibilidad a tasas de interes y riesgo de cash sorting",
-      "impact": "Alto",
-      "evidence": "Revenue cayo de $20.76B (FY2022) a $18.84B (FY2023) por cash sorting. Net interest margin comprimido cuando tasas suben paradojicamente.",
-      "context": "Cuando las tasas suben rapidamente, los clientes mueven efectivo a fondos del mercado monetario que pagan tasas mas altas, reduciendo los depositos de bajo costo de Schwab. Si las tasas bajan, el proceso se revierte favoreciendo a Schwab. La Fed comenzando ciclo de recortes en 2024 es potencialmente positivo."
-    },
-    {
-      "level": "yellow",
-      "title": "Integracion de TD Ameritrade completada pero genera complejidad y gastos elevados",
+      "title": "Sensibilidad a ciclo de tasas de interes",
       "impact": "Medio",
-      "evidence": "Migracion tecnologica completada en mayo 2024. NonInterestExpense = $11.91B en FY2024, con amortizacion de intangibles (adquisicion TDA) de $519M anuales.",
-      "context": "La integracion agrego ~15 millones de cuentas y amplias capacidades tecnologicas. Las sinergias de costos se materializan gradualmente. Los gastos de amortizacion de intangibles pesaran hasta ~2030. La plataforma unificada mejora la propuesta de valor a asesores independientes (RIAs)."
+      "evidence": "NII representa ~49% de revenues; Fed mantuvo tasas en 3.75% en Q1 2026 sin recortes adicionales",
+      "context": "Si la Fed recorta tasas agresivamente, el NII y BDA fees podrian comprimirse. Schwab estima impacto de ~100M por cada 25bps de baja, mitigado por crecimiento de activos."
     },
     {
       "level": "yellow",
-      "title": "Volatilidad significativa en Free Cash Flow por naturaleza del negocio bancario",
-      "impact": "Bajo",
-      "evidence": "OCF FY2023: $19.59B vs FY2024: $2.67B. Variacion causada por movimientos en depositos de clientes y valores segregados.",
-      "context": "Para brokers/bancos, el OCF no es comparable con el de empresas industriales. Los grandes movimientos reflejan cambios en capital de trabajo de intermediacion financiera. La generacion real de caja libre operativa es mas estable y se aprecia mejor a traves del EPS y dividendos."
+      "title": "Exposicion a volatilidad de mercados",
+      "impact": "Medio",
+      "evidence": "Equity markets cayeron 5-7% en Q1 2026; client assets bajaron 1% a 11.77T",
+      "context": "Una correccion sostenida reduce AUM base para fees, presiona margin lending y puede afectar trading activity. El modelo diversificado mitiga pero no elimina este riesgo."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo regulatorio bancario",
+      "impact": "Medio",
+      "evidence": "Category III banking organization sujeta a propuesta Basel III endgame; nuevos requerimientos de LTD",
+      "context": "Nueva regulacion podria requerir mayor capital o limitar recompras. La adquisicion de TD Ameritrade elevo la complejidad regulatoria y el costo de cumplimiento."
     }
   ],
   "score": {
-    "score": 7.0,
+    "score": 8.4,
     "max": 10,
     "items": [
-      {"label": "Poder de fijacion de precios", "score": 6, "max": 10},
-      {"label": "Crecimiento de revenue", "score": 6, "max": 10},
-      {"label": "Calidad de margenes", "score": 8, "max": 10},
-      {"label": "Solidez del balance", "score": 8, "max": 10},
-      {"label": "Generacion de FCF", "score": 6, "max": 10},
-      {"label": "Ventaja competitiva (moat)", "score": 8, "max": 10},
-      {"label": "Gestion y asignacion de capital", "score": 7, "max": 10}
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 8,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Schwab opera como un ecosistema financiero integrado donde el brokerage de zero-commission sirve como adquisicion de clientes, y la monetizacion ocurre a traves del net interest spread sobre efectivo de clientes, tarifas de fondos propietarios (Schwab Funds, ETFs) y servicios de advisory. La estrategia post-TDA es consolidar su liderazgo en el mercado de RIAs (Registered Investment Advisors) a traves de la plataforma Schwab Advisor Services, la mas grande del mundo con $2.7T+ en activos de asesores.",
-    "ventajas": "Escala masiva con ~$9.8 trillones en AUC que genera economias de costo insuperables. Zero-commission como motor de captacion de activos. Red de 375+ sucursales fisicas combinada con plataforma digital de clase mundial. Marca de confianza de 50+ anos en el mercado retail. Plataforma de RIAs dominante en EEUU. Acceso a funding barato via depositos bancarios de clientes ($300B+).",
-    "debilidades": "Alta dependencia de tasas de interes para net interest revenue. Plataforma tecnologica todavia en proceso de consolidacion post-TDA. Estructura de costos elevada con $11.9B de gastos operativos. Competencia agresiva de fintechs (Robinhood, Webull) en el segmento de jovenes inversores.",
+    "estrategia": "La estrategia Through Clients Eyes prioriza la escala y la propuesta de valor de bajo costo para clientes retail e institucionales. En 2025, Schwab avanzo en: (1) expansion de managed investing solutions +18%; (2) integracion de Forge Global para mercados privados; y (3) optimizacion del balance reduciendo funding suplementario costoso. La compania apunta a ser el proveedor de infraestructura financiera de referencia tanto para inversionistas individuales como para el ecosistema de RIAs.",
+    "ventajas": "Escala imbatible de 11.9T en AUC con economias de escala en tecnologia, compliance y distribucion. Ecosistema integrado de brokerage-banca-asset management con altos switching costs. Plataforma de RIAs con 15,000+ advisors que generan ingresos recurrentes. Zero-commission trading fortalece adquisicion de clientes. Marca de confianza construida en 50 anos.",
+    "debilidades": "Alta sensibilidad al ciclo de tasas de interes (49% del revenue es NII). Dependencia de client cash allocation: si clientes invierten mas en money market, el NII se comprime. Herencia de costos de la integracion TD Ameritrade. Complejidad regulatoria bancaria que limita flexibilidad de capital.",
     "riesgos": [
-      "Reduccion agresiva de tasas de interes que comprima el net interest margin",
-      "Cash sorting masivo si las tasas del mercado monetario superan los depositos bancarios de Schwab",
-      "Competencia de plataformas digitales que capturen el segmento millennial y Gen-Z",
-      "Cambios regulatorios en payment for order flow (PFOF) que impacten revenue de trading",
-      "Riesgo sistemico de mercado: caidas del mercado reducen activos bajo custodia y tarifas"
+      "Recorte agresivo de tasas por la Fed comprimiendo NII y BDA fees; sensibilidad estimada ~100M por cada 25bps de baja",
+      "Regulacion Basel III endgame o nuevas reglas de capital bancario que incrementen requerimientos de CET1 y limiten recompras",
+      "Correccion sostenida de mercados de renta variable reduciendo AUM base y presionando asset management fees y advisory revenue",
+      "Competencia de fintechs como Robinhood, Interactive Brokers que erosionen market share en segmentos especificos",
+      "Riesgo cibernetico y operacional dado el volumen de transacciones (DATs de 7.7M en 2025) y datos de 38.5M clientes"
     ],
-    "inversiones_estrategicas": "Integracion tecnologica de TDA completada en mayo 2024 con migracion de 15M+ cuentas. Inversion continua en plataforma digital y herramientas de planning financiero. Expansion de Schwab Advisor Services para capturar el creciente mercado de RIAs independientes. Schwab Bank como fuente de funding de bajo costo estructural."
+    "inversiones_estrategicas": "Adquisicion de Forge Global (mercados privados) en 2025 para expandir acceso a activos alternativos, ampliando el TAM hacia clientes HNWI. Planes de acceso a criptomonedas seleccionadas. Expansion de managed investing solutions con crecimiento de 18% en activos bajo gestion discrecional. Capex disciplinado de 0.55B para mantener plataforma omnicanal best-in-class."
   },
   "verdict": {
-    "status": "Mantener / Acumular en debilidad",
-    "score": "7.0/10",
-    "color": "yellow",
+    "status": "Comprar con Conviccion",
+    "score": "8.4/10",
+    "color": "green",
     "metrics": [
-      {"label": "Revenue TTM", "value": "$19.61B"},
-      {"label": "Margen Neto", "value": "30.3%"},
-      {"label": "FCF Yield", "value": "1.2%"},
-      {"label": "P/E Forward", "value": "22.8x"},
-      {"label": "Client Assets AUC", "value": "~$9.8T"},
-      {"label": "ROE", "value": "13.3%"}
+      {
+        "label": "Revenue FY2025",
+        "value": "23.9B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "37.0%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "5.4%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "16.0x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+22% YoY"
+      }
     ],
     "bullets": [
-      {"text": "**Escala dominante e irreplicable ->** Con $9.8 trillones en AUC y 35M+ cuentas, Schwab opera en una liga propia. La escala permite ofrecer zero-commission mientras genera spreads masivos sobre efectivo de clientes.", "type": "pro"},
-      {"text": "**Recuperacion post cash sorting bien encaminada ->** EPS +17.7% YoY, margen neto mejoro 3.4pp a 30.3% en FY2024. La normalizacion de depositos bancarios y recortes de tasas apuntan a crecimiento adicional en FY2025.", "type": "pro"},
-      {"text": "**Integracion TDA completada genera plataforma clase mundial ->** La migracion tecnologica de 15M+ cuentas completada en mayo 2024 elimina el riesgo de ejecucion. Las sinergias operativas se materializaran con mas fuerza en FY2025-2026.", "type": "pro"},
-      {"text": "**Balance solido con posicion de caja neta ->** $42.1B en caja vs $22.4B en deuda LP = posicion neta de caja de $19.7B. Deuda/EBITDA de 2.61x manejable para institucion financiera.", "type": "pro"},
-      {"text": "**Sensibilidad a tasas es riesgo bilateral ->** La compania es altamente sensitiva al ciclo de tasas. Recortes benefician el retorno de depositos, pero bajas rapidas de tasas comprimen el net interest margin estructuralmente.", "type": "con"},
-      {"text": "**Valuacion no barata ->** A 22.8x forward P/E y 16.8x EV/EBITDA, el mercado ya descuenta parte de la recuperacion. FCF yield de 1.2% es bajo en terminos absolutos, aunque refleja volatilidad estructural del OCF en empresas financieras.", "type": "con"}
+      {
+        "text": "**Recuperacion estructural ejecutada ->** Schwab completo la transicion de un modelo dependiente de cash sweeps costosos: NII +28%, margen pre-tax 47.9% (vs 33.9% en 2023). La mejora es estructural, no ciclica.",
+        "type": "pro"
+      },
+      {
+        "text": "**Plataforma de escala imbatible ->** 11.9T en AUC, 38.5M cuentas y 15,000+ RIAs crean un moat de red que ningun competidor puede replicar. Core net new assets de 519B (+42%) confirma que el growth flywheel esta activo.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion atractiva para la calidad ->** P/E forward de 16x, P/FCF de 18.5x y FCF yield de 5.4% ofrecen punto de entrada razonable para una compania con ROIC del 35%. Q1 2026 confirma momentum: revenue +16%, EPS +38%.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo de tasas y regulacion ->** Recortes agresivos de la Fed comprimiran NII (49% del revenue). Regulacion Basel III podria limitar recompras. Monitoreo trimestral obligatorio de guidance de NII y postura regulatoria.",
+        "type": "con"
+      }
     ]
   },
   "conclusion": {
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $19.61B en FY2024, +4.1% vs $18.84B en FY2023. La recuperacion es gradual tras el cash sorting que costo ~$1.9B en ingresos anuales en FY2023. El net interest income es el principal motor: $9.14B en FY2024 con spread sobre depositos de clientes. Asset management fees y trading revenue aportan ~40% restante de forma mas estable. Para FY2025, el consenso estima $21-22B en revenue conforme los depositos bancarios se normalizan."
+        "texto": "Schwab genero 23.9B USD en FY2025 (+22% YoY), el mejor ano en su historia. La recuperacion del NII, expansion de asset management fees y crecimiento del trading revenue configuran una base de ingresos mas diversificada. Q1 2026 confirma el momentum con 6.5B (+16% YoY)."
       },
       {
         "label": "Margenes",
-        "texto": "Margen neto de 30.3% en FY2024, recuperandose desde 26.9% en FY2023 y acercandose al pico de 34.6% en FY2022. El ratio de eficiencia (non-interest expense / revenue) mejoro a ~60.8% en FY2024. EBITDA de $8.61B con margen del 43.9%. La amortizacion de intangibles de TDA ($519M anuales) continuara pesando en los margenes reportados hasta ~2030, aunque no representa salida de caja."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS diluido de $2.99 en FY2024, +17.7% vs $2.54 en FY2023. El consenso de analistas estima EPS de ~$3.93 para FY2025 (+31.4%) y ~$5.00+ para FY2026, impulsado por la normalizacion de depositos y el apalancamiento operativo. El EPS pico fue $3.50 en FY2022. Schwab tendra que superar ese nivel en FY2025-2026 para validar la tesis de recuperacion completa."
-      },
-      {
-        "label": "Balance",
-        "texto": "Balance robusto con $42.1B en caja y equivalentes, $22.4B en deuda LP y posicion neta de caja de $19.7B. Total activos del holding superan $400B (incluyendo el banco). Patrimonio de accionistas de $48.4B. La deuda es manejable con Deuda/EBITDA de 2.61x. El banco subsidiario mantiene ratios de capital Tier 1 bien por encima de los minimos regulatorios."
+        "texto": "El margen neto alcanzo 37.0% en FY2025, maximo historico. El margen pre-tax de 47.9% se compara favorablemente con el 33.9% de 2023, evidenciando mejora estructural sostenible. Q1 2026 muestra margen pre-tax de 49.2%."
       },
       {
         "label": "Generacion de caja",
-        "texto": "El OCF de $2.67B en FY2024 (vs $19.59B en FY2023) refleja la alta volatilidad del capital de trabajo en empresas de intermediacion financiera, no deterioro operativo. Los grandes movimientos son causados por cambios en payables a clientes (+$16.8B en FY2024), valores segregados regulatorios y depositos. Para evaluar la generacion real de caja, es mas util el EPS y dividendos. El dividendo de $1.00/accion es sostenible con payout ratio del 38%."
+        "texto": "FCF de 8.76B en FY2025 (+327% YoY). FCF yield del 5.4% es atractivo. Asignacion de capital disciplinada: 7.35B en recompras (4.5% del float), dividendo creciente de 1.08/accion y capex contenido en 0.55B."
+      },
+      {
+        "label": "Balance",
+        "texto": "Posicion neta de caja de 23.8B (LTD 22.2B vs caja 46.0B). Equity total de 49.4B. Tier 1 leverage 9.3%. CET1/RWA de 30.4% indica capitalizacion robusta muy por encima de minimos regulatorios."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 89.59 USD (market cap 162B), SCHW cotiza a P/E TTM de 19.3x y P/E forward de 16.0x. EV/EBITDA de 15.3x y P/FCF de 18.5x son atractivos para una compania con ROIC del 34.6% y ROE del 21%. Multiple comprimido vs historico de 25-30x."
       },
       {
         "label": "Riesgos principales",
-        "texto": "El riesgo principal es la sensibilidad a tasas: si la Fed recorta agresivamente, el net interest margin se comprime. El cash sorting podria reactivarse si los fondos del mercado monetario vuelven a ofrecer rendimientos muy superiores a los depositos de Schwab. La competencia de Robinhood y plataformas digitales presiona el mercado de nuevos inversores jovenes. Cambios regulatorios en PFOF son un riesgo de mediano plazo. A nivel de valuacion, la accion cotiza con prima que requiere ejecucion solida en FY2025-2026."
+        "texto": "Sensibilidad al ciclo de tasas: recortes agresivos de la Fed comprimiran NII (49% del revenue). Una correccion sostenida de equity markets presionaria AUM y advisory fees. La complejidad regulatoria bancaria incrementa el riesgo de nuevos requerimientos de capital."
       }
     ]
-  },
-  "parrafos_gratis": 9
+  }
 }

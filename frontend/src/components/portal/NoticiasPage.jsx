@@ -182,7 +182,7 @@ export default function NoticiasPage() {
     <div className="portal-root">
       <Helmet>
         <title>Noticias del Mercado | Murza Inversiones</title>
-        <meta name="description" content="Noticias e impactos recientes de las empresas del portafolio Murza Inversiones — actualizado diariamente." />
+        <meta name="description" content="Noticias e impactos recientes de las empresas del portal Murza Inversiones — actualizado diariamente." />
       </Helmet>
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
@@ -214,11 +214,6 @@ export default function NoticiasPage() {
             onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
             Blog
           </Link>
-          <Link to="/portafolio" style={NAV_LINK}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-pale)'; e.currentTarget.style.color = 'var(--gold-dark)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
-            Portafolio
-          </Link>
         </nav>
         <div className="portal-header-right">
           <Link to="/login" className="btn-ghost-sm">Iniciar sesion</Link>
@@ -232,7 +227,7 @@ export default function NoticiasPage() {
             Mercado en tiempo real
           </div>
           <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 32, fontWeight: 700, color: 'var(--text)', margin: 0, marginBottom: 8, lineHeight: 1.2 }}>
-            Noticias del Portafolio
+            Noticias del Portal
           </h1>
           <p style={{ fontSize: 15, color: 'var(--text-muted)', margin: 0 }}>
             Impactos relevantes de las empresas del portal — actualizado diariamente por el analista.

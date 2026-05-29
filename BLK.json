@@ -1,250 +1,465 @@
 {
-  "ticker": "BLK",
-  "empresa": "BlackRock Inc.",
-  "fecha_reporte": "2025-01-14",
-  "updated_at": "2026-05-12",
-  "resumen": "BlackRock es el mayor gestor de activos del mundo con mas de $11.5 billones en AUM, respaldado por su plataforma iShares de ETFs y el sistema de gestion de riesgo Aladdin. En FY2024 registro ingresos de $20.41B (+14.3% YoY), utilidad neta de $6.37B (+15.8%) y EPS GAAP de $42.01, reflejando expansion de margenes y crecimiento organico sostenido. El modelo capital-light, con margenes operativos superiores al 37%, y las adquisiciones estrategicas en mercados privados (GIP, HPS, Preqin) consolidan a BLK como una de las franquicias financieras mas solidas del mundo: veredicto COMPRAR CON CONVICCION.",
-  "descripcion": "BlackRock, Inc. es el mayor gestor de activos del mundo, con mas de $11.5 trillones en activos bajo administracion al cierre de 2024. Fundada en 1988 y con sede en Nueva York, BlackRock ofrece gestion de inversiones en renta fija, renta variable, multi-activos y alternativos para clientes institucionales, minoristas y soberanos en todo el mundo. Su plataforma iShares es el mayor proveedor de ETFs a nivel global. La tecnologia Aladdin (Asset, Liability, Debt and Derivative Investment Network) es utilizada por mas del 7% de los activos financieros globales y genera ingresos recurrentes de tecnologia. El modelo de negocio capital-light basa sus ingresos en comisiones de gestion sobre AUM, lo que genera altos margenes y elevada conversion de caja. Las adquisiciones de Global Infrastructure Partners (GIP), HPS Investment Partners y Preqin en 2024-2025 aceleran la expansion en mercados privados.",
+  "parrafos_gratis": 14,
+  "resumen": "BlackRock es la mayor gestora de activos del mundo con $14 billones de AUM a diciembre de 2025. Con la adquisicion de GIP (oct 2024) y HPS (jul 2025), transformo su mezcla de negocios hacia mercados privados y credito alternativo, lo que explica la expansion de ingresos de $20.4B a $24.2B en FY2025. La utilidad neta se contrajo a $5.55B (vs $6.37B en 2024) por los costos de integracion y la amortizacion de intangibles de las adquisiciones. El balance es solido con deuda neta de solo $1.3B frente a un EBITDA de $7.35B; la valuacion de 30x P/E trailing refleja una prima por el posicionamiento dominante, aunque la presion de margenes es el principal riesgo a monitorear.",
+  "descripcion": "BlackRock opera tres segmentos principales: gestion de activos (investment advisory y administration fees, la mayoria de los ingresos), tecnologia financiera (plataforma Aladdin para gestion de riesgo e inversiones, ~$1.6B en fees) y mercados privados (infraestructura via GIP, credito alternativo via HPS). La empresa administra ETFs iShares (lider global), fondos de pension, soberanos y minoristas en mas de 100 paises. Su moat combina economias de escala en indices/ETFs, el ecosistema Aladdin con mas de 300 firmas institucionales como clientes cautivos y el prestigio de marca que atrae flujos netos positivos incluso en entornos adversos.",
   "tabla": {
-    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)", 16.21, 19.37, 17.87, 17.86, 20.41, "+14.3%"],
-      ["Utilidad Neta ($B)", 4.93, 5.90, 5.18, 5.50, 6.37, "+15.8%"],
-      ["Margen Neto (%)", "30.4%", "30.5%", "29.0%", "30.8%", "31.2%", "+0.4pp"],
-      ["EBITDA ($B)", 5.93, 7.70, 6.64, 6.54, 7.84, "+19.9%"],
-      ["FCF ($B)", 3.55, 4.60, 4.43, 3.83, 4.70, "+22.7%"],
-      ["EPS (GAAP)", 31.85, 38.22, 33.97, 36.51, 42.01, "+15.1%"],
-      ["Deuda Neta ($B)", -1.40, -1.87, -0.77, -0.82, -0.45, "-0.37B"]
+      [
+        "Revenue (B USD)",
+        "12.01",
+        "17.87",
+        "17.86",
+        "20.41",
+        "24.22",
+        "6.70",
+        "+18.7%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "5.90",
+        "5.18",
+        "5.50",
+        "6.37",
+        "5.55",
+        "2.21",
+        "-12.9%"
+      ],
+      [
+        "Margen Neto",
+        "49.1%",
+        "29.0%",
+        "30.8%",
+        "31.2%",
+        "22.9%",
+        "33.0%",
+        "-8.3pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "7.79",
+        "6.92",
+        "6.54",
+        "7.84",
+        "7.35",
+        "2.81",
+        "-6.2%"
+      ],
+      [
+        "FCF (B USD)",
+        "4.60",
+        "4.42",
+        "3.82",
+        "4.70",
+        "3.55",
+        "N/D",
+        "-24.5%"
+      ],
+      [
+        "EPS Diluido",
+        "38.22",
+        "33.97",
+        "36.51",
+        "42.01",
+        "35.31",
+        "14.06",
+        "-16.0%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "-1.88",
+        "-0.76",
+        "-0.82",
+        "-0.45",
+        "1.30",
+        "2.91",
+        "N/D"
+      ]
     ]
   },
   "kpis": [
     {
-      "label": "P/E Ratio",
-      "value": "27.3x",
+      "label": "P/E Trailing",
+      "value": "30.5x",
       "signal": "yellow",
-      "note": "vs gestores de activos ~22-28x",
-      "precio_base": 1082.98,
-      "precio_fecha": "May-2026",
+      "note": "vs. sector gestoras ~22x",
+      "precio_base": 1074.8,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 39.68
+        "valor": 35.31
       }
     },
     {
       "label": "P/E Forward",
-      "value": "17.9x",
+      "value": "19.2x",
       "signal": "green",
-      "note": "consenso de analistas FY2025E",
-      "precio_base": 1082.98,
-      "precio_fecha": "May-2026",
+      "note": "basado en Q1 2026 annualizado",
+      "precio_base": 1074.8,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 60.66
+        "valor": 56
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "22.5x",
+      "value": "24.3x",
       "signal": "yellow",
-      "note": "EV $176.3B / EBITDA $7.84B FY2024"
-    },
-    {
-      "label": "P/FCF",
-      "value": "35.8x",
-      "signal": "yellow",
-      "note": "FCF per share ~$30.3 | precio $1,083",
-      "precio_base": 1082.98,
-      "precio_fecha": "May-2026",
+      "precio_base": 1074.8,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
-        "tipo": "p_fcf",
-        "fcf_b": 4.70,
-        "shares_m": 155.2
+        "tipo": "ev_ebitda",
+        "ebitda_b": 7.35,
+        "shares_m": 165,
+        "deuda_neta_b": 1.3
       }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "1.57x",
-      "signal": "green",
-      "note": "LT Debt $12.3B / EBITDA $7.84B. Deuda neta negativa (-$0.45B)"
+      "label": "P/FCF",
+      "value": "49.9x",
+      "signal": "red",
+      "note": "Elevado por costos de integracion HPS/GIP",
+      "precio_base": 1074.8,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 3.55,
+        "shares_m": 165
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.18x",
+      "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "11.9%",
+      "value": "9.9%",
       "signal": "yellow",
-      "note": "Afectado por gran base de goodwill e intangibles post-adquisiciones"
+      "note": "Diluido por adquisiciones con emision de acciones"
     },
     {
       "label": "ROIC",
-      "value": "9.2%",
+      "value": "9.6%",
       "signal": "yellow",
-      "note": "Capital invertido incluye deuda y equity book value"
+      "note": "Bajo por intangibles de GIP/HPS"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {"label": "2020", "revenue": 16.21, "utilidad": 4.93},
-      {"label": "2021", "revenue": 19.37, "utilidad": 5.90},
-      {"label": "2022", "revenue": 17.87, "utilidad": 5.18},
-      {"label": "2023", "revenue": 17.86, "utilidad": 5.50},
-      {"label": "2024", "revenue": 20.41, "utilidad": 6.37}
+      {
+        "label": "FY2021",
+        "revenue": 12.01,
+        "utilidad": 5.9
+      },
+      {
+        "label": "FY2022",
+        "revenue": 17.87,
+        "utilidad": 5.18
+      },
+      {
+        "label": "FY2023",
+        "revenue": 17.86,
+        "utilidad": 5.5
+      },
+      {
+        "label": "FY2024",
+        "revenue": 20.41,
+        "utilidad": 6.37
+      },
+      {
+        "label": "FY2025",
+        "revenue": 24.22,
+        "utilidad": 5.55
+      }
     ],
     "series": [
-      {"key": "revenue", "name": "Revenue"},
-      {"key": "utilidad", "name": "Utilidad Neta"}
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
     "data": [
-      {"label": "2020", "bruto": 30.4, "operativo": 35.2, "neto": 30.4},
-      {"label": "2021", "bruto": 30.5, "operativo": 38.5, "neto": 30.5},
-      {"label": "2022", "bruto": 29.0, "operativo": 35.8, "neto": 29.0},
-      {"label": "2023", "bruto": 30.8, "operativo": 35.2, "neto": 30.8},
-      {"label": "2024", "bruto": 31.2, "operativo": 37.1, "neto": 31.2}
+      {
+        "label": "FY2021",
+        "bruto": 0,
+        "operativo": 62,
+        "neto": 49.1
+      },
+      {
+        "label": "FY2022",
+        "bruto": 0,
+        "operativo": 35.8,
+        "neto": 29
+      },
+      {
+        "label": "FY2023",
+        "bruto": 0,
+        "operativo": 35.2,
+        "neto": 30.8
+      },
+      {
+        "label": "FY2024",
+        "bruto": 0,
+        "operativo": 37.1,
+        "neto": 31.2
+      },
+      {
+        "label": "FY2025",
+        "bruto": 0,
+        "operativo": 29.1,
+        "neto": 22.9
+      }
     ],
     "series": [
-      {"key": "bruto", "name": "Margen Bruto"},
-      {"key": "operativo", "name": "Margen Operativo"},
-      {"key": "neto", "name": "Margen Neto"}
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
         "label": "Dividendos",
-        "value": "$20.40/accion anual",
-        "nota": "Dividendo trimestral de $5.10/accion en 2024. Rendimiento ~1.9% al precio actual. Crecimiento consistente >10 anos."
+        "value": "$3.1B USD",
+        "nota": "FY2024; programa consistente de crecimiento de dividendo"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "~$1.5B en FY2024",
-        "nota": "BlackRock ha reducido el numero de acciones diluidas de ~164M en 2018 a ~155M en 2024, incrementando el valor por accion. Recompras complementan dividendos como mecanismo de retorno de capital."
+        "label": "Recompras",
+        "value": "$1.9B USD",
+        "nota": "FY2024; programa parcialmente pausado por emision para adquisiciones"
       },
       {
-        "label": "M&A y adquisiciones",
-        "value": "GIP, HPS, Preqin",
-        "nota": "Expansion en mercados privados: Global Infrastructure Partners ($12.5B), HPS Investment Partners (~$12B) y Preqin (plataforma de datos de alternativos $3.2B). Estrategia deliberada de diversificacion hacia activos privados de alto margen."
+        "label": "Capex",
+        "value": "$0.26B USD",
+        "nota": "FY2024; modelo asset-light con bajo capex estructural"
+      },
+      {
+        "label": "M&A",
+        "value": "~$22B USD",
+        "nota": "GIP (oct 2024) + HPS (jul 2025) + Preqin ($3.2B) + SpiderRock"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "BLK FY2024", "Asset managers", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "BLK TTM",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Operating Margin", "37.1%", "~28-32%", "Por encima del sector"],
-      ["Net Margin", "31.2%", "~22-26%", "Lider del sector por escala"],
-      ["ROE", "11.9%", "~12-18%", "En linea, presionado por goodwill"],
-      ["Revenue Growth YoY", "+14.3%", "~6-10%", "Superior al promedio del sector"],
-      ["P/E Forward", "17.9x", "~16-22x", "Valuacion razonable dado el liderazgo"]
+      [
+        "Margen Operativo",
+        "29.1%",
+        "~28%",
+        "En linea; contraccion transitoria por adquisiciones"
+      ],
+      [
+        "Margen Neto",
+        "22.9%",
+        "~20%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+18.7%",
+        "~8%",
+        "Muy por encima; impulsado por M&A inorganico"
+      ],
+      [
+        "P/E Forward",
+        "19.2x",
+        "~18x",
+        "Prima ligera; justificada por escala y crecimiento"
+      ],
+      [
+        "ROE",
+        "9.9%",
+        "~15%",
+        "Por debajo; diluido por acciones emitidas en adquisiciones"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo",
-    "analisis": "BlackRock muestra una trayectoria de mejora sostenida en los fundamentos operativos. El revenue de FY2024 de $20.41B supero maximos historicos y crece por encima del sector. Los margenes operativos se expandieron de 35.2% en FY2023 a 37.1% en FY2024. El FCF aumento 22.7% a $4.70B. La unica area de observacion es el incremento de deuda a largo plazo de $7.9B a $12.3B, asociado al financiamiento de adquisiciones estrategicas (GIP, HPS), aunque la posicion de caja neta se mantiene positiva con $12.76B en cash vs $12.31B de LT Debt, resultando en deuda neta negativa de -$0.45B.",
+    "veredicto": "Salud financiera solida con presion de margenes transitoria por integracion de adquisiciones",
+    "analisis": "Los ingresos crecieron +18.7% en FY2025 pero la utilidad neta cayo -12.9% a $5.55B por amortizacion de intangibles de GIP y HPS y costos de integracion one-time. El FCF bajo a $3.55B. La base de ingresos recurrentes (advisory fees) crece organicamente con los AUM que alcanzaron $14T record.",
     "items": [
-      {"metrica": "AUM growth", "valor": "+15% YoY", "status": "ok"},
-      {"metrica": "Revenue YoY", "valor": "+14.3%", "status": "ok"},
-      {"metrica": "Net Income", "valor": "$6.37B", "status": "ok"},
-      {"metrica": "Operating Margin", "valor": "37.1%", "status": "ok"},
-      {"metrica": "FCF YoY", "valor": "+22.7%", "status": "ok"},
-      {"metrica": "LT Debt", "valor": "$12.31B", "status": "watch"}
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+18.7%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "29.1%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "22.9%",
+        "status": "warn"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-24.5%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta/EBITDA",
+        "valor": "0.18x",
+        "status": "ok"
+      },
+      {
+        "metrica": "AUM Growth",
+        "valor": "+21% a $14T",
+        "status": "ok"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Liderazgo absoluto en ETFs via iShares",
+      "title": "Liderazgo absoluto en ETFs y gestion pasiva",
       "impact": "Alto",
-      "evidence": "iShares es el mayor proveedor de ETFs del mundo con mas de $4 trillones en activos, capturando aproximadamente el 37% del mercado global de ETFs",
-      "context": "Las comisiones de iShares son recurrentes, escalables y practicamente inmunes a la obsolescencia. Cada punto base cobrado sobre $4T+ genera ingresos masivos con costos marginales minimos. La marca iShares es reconocida como el estandar de la industria en ETFs de bajo costo y alta liquidez, creando un foso competitivo casi insuperable contra competidores como Vanguard y State Street."
+      "evidence": "$14T en AUM; iShares es el ETF mas grande del mundo; inflows de $641B en equity en FY2025.",
+      "context": "El moat de escala en fondos pasivos es casi imposible de replicar: los costos marginales caen mientras el AUM crece, generando poder de pricing defensivo. La migracion global hacia ETFs de bajo costo beneficia estructuralmente a BLK."
     },
     {
       "level": "green",
-      "title": "Aladdin como ventaja tecnologica defensiva",
+      "title": "Aladdin como plataforma tecnologica con switching costs altos",
       "impact": "Alto",
-      "evidence": "La plataforma Aladdin gestiona el riesgo de mas del 7% de todos los activos financieros globales, con mas de $21 trillones de activos operando sobre la plataforma de clientes externos",
-      "context": "Aladdin no es solo un producto de software, es infraestructura critica para los mayores fondos de pension, aseguradoras y gestores de activos del mundo. El costo de migracion fuera de Aladdin es prohibitivo, generando tasas de retencion superiores al 95%. Los ingresos por tecnologia crecen a tasas de doble digito y son completamente independientes del nivel de los mercados, actuando como contrapeso ciclico al negocio principal de gestion de activos."
-    },
-    {
-      "level": "green",
-      "title": "Expansion acelerada en mercados privados",
-      "impact": "Alto",
-      "evidence": "Las adquisiciones de GIP (infraestructura, $12.5B), HPS (credito privado, ~$12B) y Preqin (datos alternativos, $3.2B) anadiran mas de $600B en AUM de activos privados",
-      "context": "Los mercados privados cobran comisiones de 50-100 puntos base vs los 3-5 bps promedio en ETFs indexados. Esta expansion estrategica mejora structuralmente el revenue yield sobre AUM y diversifica la base de ingresos hacia areas de mayor crecimiento secular. La tendencia de democratizacion de activos privados (wealthtech, UHNW, planes de pension) representa un mercado direccionable de crecimiento de $20T+ para la proxima decada."
+      "evidence": "Mas de 300 firmas institucionales usan Aladdin; tech services revenue ~$1.6B en FY2024.",
+      "context": "Aladdin crea barreras de salida muy altas: los clientes integran workflows de riesgo, portfolio y operaciones. Genera revenue recurrente con alto margen y diversifica el negocio mas alla del asset management tradicional."
     },
     {
       "level": "yellow",
-      "title": "Exposicion al ciclo de mercado en comisiones base",
+      "title": "Presion de margenes por integracion GIP y HPS",
       "impact": "Medio",
-      "evidence": "Aproximadamente el 70% de los ingresos de BlackRock provienen de comisiones de gestion calculadas como porcentaje del AUM. Una caida del 20% en los mercados globales reduciria el AUM y por ende los ingresos en forma proporcional",
-      "context": "En FY2022, cuando los mercados globales cayeron aproximadamente 18-20%, el revenue de BlackRock cayo de $19.37B a $17.87B (-7.7%). Este riesgo es inherente al modelo de negocio de gestion de activos. Mitigantes: diversificacion geografica, crecimiento en activos de renta fija menos volatiles, y expansion en alternativos con comisiones menos correlacionadas al ciclo."
+      "evidence": "Margen neto bajo de 31.2% (FY2024) a 22.9% (FY2025); amortizacion de ~$5.7B en intangibles de HPS.",
+      "context": "La compresion es transitoria: la amortizacion de intangibles es non-cash y los costos de integracion son one-time. La expansion hacia mercados privados implica fee rates mas variables que los fondos pasivos."
     },
     {
       "level": "yellow",
-      "title": "Integracion de adquisiciones grandes aumenta complejidad ejecutiva",
+      "title": "Emision significativa de acciones para adquisiciones",
       "impact": "Medio",
-      "evidence": "La adquisicion simultanea de GIP, HPS y Preqin representa la mayor expansion de BlackRock en mercados privados en su historia. El costo de integracion y la absorcion cultural de equipos de alternativos con culturas propias representa un riesgo ejecutivo",
-      "context": "El management de BlackRock, liderado por Larry Fink, tiene un historial solido de integracion de adquisiciones (iShares comprado a Barclays en 2009, Merrill Lynch IM en 2006). Sin embargo, la escala y simultaneidad de las adquisiciones actuales es sin precedente. El exito dependera de retener talento clave en equipos de alternativos, donde la compensacion basada en carried interest es el principal incentivo de retencion."
+      "evidence": "Shares diluidas aumentaron de 150.7M (FY2023) a 160.9M (FY2025); HPS involucra ~12.1M subco units adicionales.",
+      "context": "La emision de acciones diluye a shareholders existentes. Si las adquisiciones no generan el retorno esperado sobre capital invertido, el ROE y EPS per share permanecen bajo presion por varios anos."
+    },
+    {
+      "level": "red",
+      "title": "Riesgo de caida en AUM por correcciones de mercado",
+      "impact": "Alto",
+      "evidence": "El 60%+ de los ingresos son advisory fees como porcentaje del AUM; una caida del 20% en equity markets reduciria el AUM ~$2.8T y comprimiria ingresos $2-3B.",
+      "context": "BlackRock es altamente ciclica respecto a los mercados de capitales. En un escenario de recesion severa, los inflows podrian revertirse a outflows significativos como ocurrio en 2022."
     }
   ],
   "score": {
-    "score": 8.5,
+    "score": 7.8,
     "max": 10,
     "items": [
-      {"label": "Poder de fijacion de precios", "score": 8, "max": 10},
-      {"label": "Crecimiento de revenue", "score": 8, "max": 10},
-      {"label": "Calidad de margenes", "score": 9, "max": 10},
-      {"label": "Solidez del balance", "score": 9, "max": 10},
-      {"label": "Generacion de FCF", "score": 9, "max": 10}
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "BlackRock ejecuta una estrategia de tres pilares: (1) Defensa y crecimiento del nucleo de iShares ETFs como generador de flujos masivos de bajo costo, (2) Escala en soluciones institucionales via Aladdin y multi-activos que capturan la complejidad de los clientes soberanos y de pension, y (3) Expansion agresiva en mercados privados (infraestructura, credito privado, data de alternativos) para capturar el desplazamiento secular hacia activos menos liquidos. La adquisicion de GIP cierra la brecha en infraestructura donde Blackstone y Brookfield dominaban. HPS posiciona a BLK como actor de primer nivel en credito privado, el segmento de mayor crecimiento en alternativos post-2020.",
-    "ventajas": "Escala insuperable con $11.5T+ en AUM que genera economia de escala en compliance, tecnologia y distribucin. iShares es el estandar global de ETFs con >37% de market share y ventaja de primero en moverse imposible de replicar. Aladdin genera ingresos de tecnologia recurrentes y de alta visibilidad independientes del mercado. Red global de distribucion con presencia en mas de 30 paises y relaciones con los 100 mayores fondos de pension del mundo. Marca institucional de primer nivel que genera confianza regulatoria y acceso a mandatos soberanos.",
-    "debilidades": "Presion secular en comisiones de ETFs por guerra de precios con Vanguard y Fidelity, que han reducido los ingresos por punto base en ETFs de renta variable pasiva. El ROE de 11.9% es relativamente modesto para una empresa financiera de esta calidad, reflejando la gran base de activos intangibles y goodwill acumulados. La dependencia de Larry Fink como CEO y arquitecto estrategico representa un riesgo de concentracion ejecutiva, aunque el equipo de liderazgo ha sido fortalecido en anios recientes.",
+    "estrategia": "BlackRock ejecuta una estrategia de consolidacion en tres ejes: (1) Dominancia en ETFs pasivos via iShares, aprovechando la migracion global hacia vehiculos de bajo costo; (2) Expansion en mercados privados via GIP ($116B AUM en infraestructura) y HPS ($145B AUM en credito alternativo), que generan fee rates 3-5x mayores que fondos pasivos; (3) Monetizacion de Aladdin como SaaS para institucionales. El objetivo es duplicar el AUM en mercados privados a mas de $1T en los proximos 5 anos.",
+    "ventajas": "Economias de escala en gestion pasiva que expanden margenes absolutos; red de distribucion global en 30+ paises; Aladdin como ecosistema de switching costs institucionales; marca de confianza entre fondos soberanos y planes de pension; capacidad de cross-selling entre productos activos, pasivos y privados al mismo cliente.",
+    "debilidades": "Alta exposicion a la performance del mercado de capitales global; fee rates bajo presion por competencia en ETFs (Vanguard, SSGA); ROE y ROIC diluidos por base de capital expandida post-adquisiciones; complejidad organizacional creciente por integracion de culturas muy distintas.",
     "riesgos": [
-      "Mercados globales en baja reducen AUM y comisiones de gestion base",
-      "Competencia en ETFs de bajo costo de Vanguard, Fidelity y State Street comprime yields",
-      "Regulacion creciente en mercados privados y ESG puede limitar estrategias o aumentar costos de compliance",
-      "Riesgo reputacional por posiciones ESG controvertidas en un entorno politico polarizado en EUA",
-      "Integracion de GIP y HPS mas costosa o lenta de lo esperado podria decepcionar expectativas de sinergias",
-      "Subida de tasas de interes puede ralentizar el crecimiento de ETFs de renta fija"
+      "Caida sostenida en mercados globales de equity/credito que reduzca AUM y advisory fees por efecto valuacion y outflows",
+      "Fallo en la integracion de HPS y GIP con riesgo de impairment de los ~$40B+ en goodwill e intangibles registrados",
+      "Regulacion de mercados privados (SEC, ESMA) que limite estrategias de credito alternativo o infraestructura",
+      "Entrada de competidores tecnologicos (Bloomberg, FactSet) que erosionen la posicion de Aladdin en el segmento institucional"
     ],
-    "inversiones_estrategicas": "Adquisicion de Global Infrastructure Partners por $12.5B (cerrado enero 2025) anade $100B+ en AUM de infraestructura. Adquisicion de HPS Investment Partners por ~$12B (cerrado enero 2025) anade $148B en credito privado. Adquisicion de Preqin por $3.2B (cerrado enero 2025) convierte a BlackRock en proveedor de datos del mercado de alternativos. Inversion en Aladdin for Wealth para expandir tecnologia a asesores y canales retail. Expansion en mercados privados democratizados via BlackRock Private Markets Fund para inversores minoristas."
+    "inversiones_estrategicas": "Adquisicion de GIP (completada oct 2024, $116B AUM en infraestructura); HPS Investment Partners (completada jul 2025, ~$145B AUM en credito alternativo); Preqin (data de mercados privados, ~$3.2B cash, cerrada Q1 2025); SpiderRock Advisors (opciones overlay para wealth). Estas adquisiciones reposicionan a BLK como el proveedor mas completo desde ETFs hasta credito privado e infraestructura."
   },
   "verdict": {
-    "status": "Comprar con Conviccion",
-    "score": "8.5/10",
+    "status": "Mantener con sesgo positivo",
+    "score": "7.8/10",
     "color": "green",
     "metrics": [
-      {"label": "AUM", "value": "$11.5T+"},
-      {"label": "Margen Operativo", "value": "37.1%"},
-      {"label": "FCF Yield", "value": "2.8%"},
-      {"label": "P/E Forward", "value": "17.9x"},
-      {"label": "Crecimiento Rev.", "value": "+14.3% YoY"}
+      {
+        "label": "Revenue FY2025",
+        "value": "$24.2B USD"
+      },
+      {
+        "label": "AUM",
+        "value": "$14.0 Trillones"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "22.9%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "2.0%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "~19x"
+      }
     ],
     "bullets": [
       {
-        "text": "**Monopolio de facto en ETFs ->** iShares con >$4T en AUM y 37% de market share global crea una barrera de entrada basada en liquidez, marca y primero en moverse que es practicamente imposible de replicar en una decada.",
+        "text": "**Moat de escala irrompible** -- Con $14T en AUM e iShares liderando ETFs globalmente, las ventajas de costo son irreplicables; cada dolar adicional de AUM genera fee revenue casi sin costo marginal, creando expansion de margenes secular.",
         "type": "pro"
       },
       {
-        "text": "**Aladdin stickiness ->** La plataforma de riesgo procesa $21T en activos de clientes externos con tasas de retencion del 95%+. Genera ingresos de tecnologia recurrentes que crecen a doble digito independientemente del ciclo de mercado.",
+        "text": "**Transformacion hacia mercados privados** -- GIP y HPS agregan $260B+ en AUM con fee rates 3-5x superiores a ETFs; si la integracion es exitosa, el mix shift mejorara el revenue por dolar de AUM de forma estructural en los proximos 3-5 anos.",
         "type": "pro"
       },
       {
-        "text": "**Expansion en mercados privados ->** Las adquisiciones de GIP, HPS y Preqin transforman a BlackRock en el unico gestor de activos con capacidades de primer nivel en infraestructura, credito privado, ETFs pasivos y tecnologia de riesgo simultaneamente.",
+        "text": "**Aladdin como negocio semi-independiente** -- La plataforma genera $1.6B+ en tech services revenue con alto margen y switching costs; representa un optionality significativo que el mercado no siempre valora explicitamente.",
         "type": "pro"
       },
       {
-        "text": "**Crecimiento acelerado de EPS ->** EPS GAAP de $42.01 en FY2024 (+15.1% YoY) y estimado forward de $60.66 implican un crecimiento de EPS del 44% en el proximo ejercicio segun consenso de analistas, que refleja sinergias de las adquisiciones.",
-        "type": "pro"
-      },
-      {
-        "text": "**Dependencia de mercados financieros ->** Si los mercados caen 20%, el AUM y los ingresos caen proporcionalmente. En FY2022 el revenue cayo 7.7% por la caida de mercados. La expansion en alternativos mitiga pero no elimina este riesgo.",
-        "type": "con"
-      },
-      {
-        "text": "**P/FCF elevado de 35.8x ->** El P/FCF actual refleja expectativas de crecimiento muy optimistas que deben materializarse. Si las sinergias de las adquisiciones tardan o los mercados corrigen, la valoracion actual deja poco margen de seguridad.",
+        "text": "**Presion de margenes y dilucion en transicion** -- La amortizacion de intangibles de HPS (~$5.7B) y la emision de acciones comprimeran EPS y ROE durante 2025-2027; el P/FCF de ~50x requiere confirmacion de sinergias para justificarse.",
         "type": "con"
       }
     ]
@@ -253,27 +468,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "BlackRock alcanzo un record historico de $20.41B en ingresos en FY2024, creciendo 14.3% respecto a FY2023. Este crecimiento fue impulsado por la recuperacion del AUM tras la caida de mercados de 2022, el crecimiento organico en ETFs y la incorporacion de ingresos por tecnologia Aladdin. La trayectoria de revenue muestra un CAGR de aproximadamente 5.9% entre FY2020 y FY2024, con la contraccion de FY2022 siendo una anomalia de ciclo de mercado."
+        "texto": "Revenue crecio +18.7% a $24.2B en FY2025 impulsado por la incorporacion de GIP (Q4 2024) y HPS (Q3 2025). Organicamente, las advisory fees crecieron ~8-10% por expansion del AUM a $14T. Q1 2026 con $6.7B (+26.8% vs Q1 2025) confirma el momentum."
       },
       {
         "label": "Margenes",
-        "texto": "El margen operativo se expando de 35.2% en FY2023 a 37.1% en FY2024, reflejando palanca operativa positiva sobre la base de costos fijos. El margen neto de 31.2% es excepcional para el sector financiero y demuestra la calidad del modelo capital-light. La expansion de margenes a pesar del aumento de costos de integracion de adquisiciones es una senal positiva de la disciplina de gestion de costos."
-      },
-      {
-        "label": "EPS",
-        "texto": "El EPS GAAP dilutado de $42.01 en FY2024 supero el consenso de analistas y crece 15.1% respecto al EPS de $36.51 en FY2023. El consenso de analistas para FY2025 es de $60.66 por accion, incorporando sinergias de GIP, HPS y Preqin. Esta aceleracion del EPS soporta la tesis de que el P/E forward de 17.9x es razonable para una empresa con este perfil de crecimiento y calidad."
-      },
-      {
-        "label": "Balance",
-        "texto": "El balance de BlackRock es solido con $12.76B en cash y equivalentes frente a $12.31B en deuda a largo plazo, resultando en una posicion de deuda neta ligeramente negativa de -$0.45B (efectivamente deuda neta cero). El incremento de LT Debt de $7.92B a $12.31B refleja el financiamiento de las adquisiciones estrategicas de 2024-2025, pero la posicion de liquidez es robusta. El ratio Deuda/EBITDA de 1.57x es conservador."
+        "texto": "Los margenes se comprimieron: operativo bajo a 29.1% (vs 37.1% en FY2024) y neto a 22.9% (vs 31.2%). La causa principal es la amortizacion de intangibles de las adquisiciones y costos de integracion one-time. Se espera normalizacion gradual en FY2026-FY2027."
       },
       {
         "label": "Generacion de caja",
-        "texto": "El FCF de $4.70B en FY2024 (+22.7% YoY) demuestra la capacidad de conversion de utilidades en caja del modelo de negocio. El FCF yield del 2.8% sobre market cap no es elevado en terminos absolutos, pero refleja la prima de calidad que el mercado paga por la predictibilidad y recurrencia de los flujos. La disciplina de capex (solo $0.26B en FY2024) confirma el caracter capital-light del negocio."
+        "texto": "FCF de $3.55B en FY2025 (vs $4.70B en FY2024) reflejando mayor capex y costos de integracion. A nivel estructural, el negocio sigue siendo un gran generador de caja; el FCF deprimido es transitorio. Q1 2026 muestra NI de $2.21B, +46.4% vs Q1 2025."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda neta de $1.30B (FY2025), muy moderada frente a EBITDA de $7.35B (ratio 0.18x). La deuda larga subio a $12.77B vs $7.92B en FY2023 para financiar adquisiciones, pero el OCF cubre holgadamente el servicio. El goodwill e intangibles representan ~$40B+ post-HPS, creando riesgo de impairment."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Con P/E trailing de 30.5x y forward de ~19x (basado en trayectoria de Q1 2026), BLK cotiza con prima respecto al sector. EV/EBITDA de 24.3x es elevado pero refleja la calidad del negocio y el potencial de expansion de margenes post-integracion. El P/FCF de ~50x es el mayor riesgo de valuacion."
       },
       {
         "label": "Riesgos principales",
-        "texto": "El principal riesgo es la correlacion con el ciclo de mercados financieros globales: una contraccion de mercado del 20-25% reduciria el AUM y los ingresos de forma significativa. La integracion simultanea de tres adquisiciones grandes (GIP, HPS, Preqin) introduce complejidad ejecutiva y riesgo de retencion de talento. La presion regulatoria en ESG y mercados privados en EUA y Europa podria incrementar costos de compliance. La competencia de Vanguard y Fidelity en ETFs de bajo costo continuara comprimiendo yields de comision en el negocio core pasivo."
+        "texto": "1) Correccion de mercados que comprima AUM y advisory fees. 2) Fallo de integracion de HPS/GIP con posible impairment de goodwill. 3) Presion regulatoria en mercados privados. 4) Dilucion continua de accionistas por acciones emitidas. 5) Competencia tecnologica a Aladdin de Bloomberg/FactSet."
       }
     ]
   }

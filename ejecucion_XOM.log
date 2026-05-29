@@ -1,0 +1,77 @@
+=== REPORTE XOM ===
+CIK: 34088
+[WARN] Concepto 'eps' no encontrado — verificar manualmente
+[WARN] Concepto 'gp' no encontrado — verificar manualmente
+[WARN] Concepto 'oi' no encontrado — verificar manualmente
+{
+  "2021": {
+    "rev": 285.64,
+    "ni": 23.04,
+    "da": 20.61,
+    "ocf": 48.13,
+    "capex": 12.08,
+    "cash": 6.8,
+    "sh": 4239,
+    "repo": 0.16,
+    "div": 14.92,
+    "fcf": 36.05
+  },
+  "2022": {
+    "rev": 413.68,
+    "ni": 55.74,
+    "da": 24.04,
+    "ocf": 76.8,
+    "capex": 18.41,
+    "cash": 29.64,
+    "sh": 4082,
+    "repo": 15.16,
+    "div": 14.94,
+    "fcf": 58.39
+  },
+  "2023": {
+    "rev": 344.58,
+    "ni": 36.01,
+    "da": 20.64,
+    "ocf": 55.37,
+    "capex": 21.92,
+    "cash": 31.54,
+    "sh": 3971,
+    "repo": 17.75,
+    "div": 14.94,
+    "fcf": 33.45
+  },
+  "2024": {
+    "rev": 349.59,
+    "ni": 33.68,
+    "da": 23.44,
+    "ocf": 55.02,
+    "capex": 24.31,
+    "cash": 23.03,
+    "sh": 4353,
+    "repo": 19.63,
+    "div": 16.7,
+    "fcf": 30.72
+  },
+  "2025": {
+    "rev": 332.24,
+    "ni": 28.84,
+    "da": 25.99,
+    "ocf": 51.97,
+    "capex": 28.36,
+    "cash": 10.68,
+    "sh": 4179,
+    "repo": 20.27,
+    "div": 17.23,
+    "fcf": 23.61
+  }
+}
+=== XBRL DONE ===
+Price file size: 1202
+=== DONE ===
+Fetching 10-K: https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm
+[INFO] Descargando documento principal...
+[INFO] 3 seccion(es) no encontradas en doc principal. Buscando en indice del filing...
+[INFO] Indice: https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.json
+[WARN] No se pudo obtener el indice: Unexpected token '<', "<?xml vers"... is not valid JSON
+Re-running _10k_extract.mjs with correct URL...
+Fetching Q1 2026 10-Q...

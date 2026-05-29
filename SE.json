@@ -1,6 +1,6 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "Sea Limited (NYSE: SE) es el mayor conglomerado digital de Asia-Pacifico, con presencia dominante en e-commerce (Shopee), servicios financieros digitales (Monee) y entretenimiento digital (Garena). En FY2025, la compania alcanzo un punto de inflexion: revenue de 22.9B USD (+36.4% YoY), net income de 1.6B USD (vs. 0.45B en FY2024) y FCF de 4.5B USD. Con balance de caja neta de ~9B USD y momentum en los tres segmentos, SE representa una tesis de growth a valuacion razonable en mercados emergentes de alta expansion.",
+  "resumen": "Sea Limited (NYSE: SE) es el mayor conglomerado digital de Asia-Pacifico, con presencia dominante en e-commerce (Shopee), servicios financieros digitales (Monee) y entretenimiento digital (Garena). En Q1 2026, la compania reporto revenue de 7.1B USD (+46.6% YoY), net income de 438M USD (+6.7% YoY) y adj. EBITDA de 1.03B USD (primera vez superando 1B). Con caja neta de ~8.6B USD y momentum en los tres segmentos, SE representa una tesis de growth a valuacion razonable en mercados emergentes de alta expansion.",
   "descripcion": "Sea Limited opera tres segmentos principales: Shopee, la plataforma de e-commerce mas grande de SEA y Taiwan con GMV de 127.4B USD en FY2025 (+26.8% YoY) y 13.9B pedidos; Monee (antes SeaMoney), el brazo fintech con portafolio de prestamos de 9.2B USD y revenue de 3.8B USD (+60.1% YoY); y Garena, la division de gaming con Free Fire como titulo estrella, 633M usuarios activos trimestrales y adj. EBITDA margin del 56.1% sobre bookings. La empresa opera principalmente en Indonesia, Tailandia, Vietnam, Filipinas, Malasia, Singapur, Taiwan y Brasil.",
   "tabla": {
     "headers": [
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q1 2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,7 +21,8 @@
         "13.06",
         "16.82",
         "22.94",
-        "+36.4%"
+        "7.10",
+        "+46.6%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -29,7 +31,8 @@
         "0.16",
         "0.45",
         "1.61",
-        "+259.7%"
+        "0.44",
+        "+6.7%"
       ],
       [
         "Margen Neto",
@@ -38,7 +41,8 @@
         "1.2%",
         "2.7%",
         "7.0%",
-        "+4.3pp"
+        "6.2%",
+        "-2.3pp"
       ],
       [
         "Adj EBITDA (B USD)",
@@ -47,7 +51,8 @@
         "1.11",
         "1.96",
         "3.44",
-        "+75.2%"
+        "1.03",
+        "+9.3%"
       ],
       [
         "FCF (B USD)",
@@ -56,7 +61,8 @@
         "1.53",
         "2.73",
         "4.51",
-        "+65.2%"
+        "0.92",
+        "+46.1%"
       ],
       [
         "EPS Diluido",
@@ -65,7 +71,8 @@
         "0.25",
         "0.74",
         "2.52",
-        "+240.5%"
+        "0.67",
+        "+3.1%"
       ],
       [
         "Deuda Neta (B USD)",
@@ -74,6 +81,7 @@
         "N/D",
         "N/D",
         "-9.01",
+        "-8.58",
         "N/D"
       ]
     ]
@@ -81,11 +89,11 @@
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "34.1x",
+      "value": "34.3x",
       "signal": "yellow",
       "note": "vs. e-commerce peers ~30-40x",
-      "precio_base": 85.92,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 86.54,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_ttm",
         "valor": 2.52
@@ -93,10 +101,10 @@
     },
     {
       "label": "P/E Forward",
-      "value": "17x",
+      "value": "17.2x",
       "signal": "green",
-      "precio_base": 85.92,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 86.54,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_fwd",
         "valor": 5.04
@@ -104,32 +112,32 @@
     },
     {
       "label": "EV/EBITDA",
-      "value": "12.5x",
+      "value": "11.6x",
       "signal": "green",
-      "precio_base": 85.92,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 86.54,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 3.44,
-        "shares_m": 605,
-        "deuda_neta_b": -9.01
+        "ebitda_b": 4.14,
+        "shares_m": 654,
+        "deuda_neta_b": -8.58
       }
     },
     {
       "label": "P/FCF",
-      "value": "11.5x",
+      "value": "15.4x",
       "signal": "green",
-      "precio_base": 85.92,
-      "precio_fecha": "2026-04-10",
+      "precio_base": 86.54,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 4.51,
-        "shares_m": 605
+        "fcf_b": 3.68,
+        "shares_m": 654
       }
     },
     {
       "label": "Caja Neta / EBITDA",
-      "value": "2.6x caja",
+      "value": "2.1x caja",
       "signal": "green"
     },
     {
@@ -426,24 +434,24 @@
     "color": "green",
     "metrics": [
       {
-        "label": "Revenue TTM",
-        "value": "22.94B USD"
+        "label": "Revenue Q1 2026",
+        "value": "7.10B USD"
       },
       {
-        "label": "Margen Neto",
-        "value": "7.0%"
+        "label": "Margen Neto Q1",
+        "value": "6.2%"
       },
       {
-        "label": "FCF FY2025",
-        "value": "4.51B USD"
+        "label": "FCF Q1 2026",
+        "value": "0.92B USD"
       },
       {
         "label": "P/E Forward",
-        "value": "17x"
+        "value": "17.2x"
       },
       {
         "label": "Crecimiento Rev.",
-        "value": "+36.4% YoY"
+        "value": "+46.6% YoY"
       }
     ],
     "bullets": [

@@ -1,0 +1,143 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "Qualcomm (QCOM) es el lider mundial en semiconductores para dispositivos moviles, con una posicion practicamente irremplazable en modems 5G y SoCs Snapdragon. En FY2025 el revenue crecio +13.7% a $44.3B impulsado por QCT, aunque el ingreso neto cayo a $5.5B por una carga fiscal extraordinaria de $5.7B (CAMT) que distorsiona los comparables. La generacion de caja es robusta: FCF de $12.8B (+14.9% YoY) y la diversificacion hacia automotive e IoT va tomando forma. A $207/accion, la valuacion es razonable en P/E forward de 21.8x considerando el catalogo de crecimiento en AI on-device y autos.",
+  "descripcion": "Qualcomm opera en tres segmentos: QCT (chips Snapdragon para smartphones, autos, IoT - 85% del revenue), QTL (licencias de patentes 5G/4G - 15% del revenue) y QSI (inversiones estrategicas). El moat de QTL es uno de los mas duraderos en tech: licencias obligatorias sobre estandares de comunicacion celular que generan royalties predecibles. En QCT, la arquitectura Snapdragon domina el segmento premium Android (Samsung, Xiaomi, OPPO) y Apple sigue siendo un cliente significativo. La diversificacion a automotive (Snapdragon Digital Chassis) y AI on-device representa el principal vector de crecimiento secular a partir de FY2026.",
+  "tabla": {
+    "headers": ["Metrica", "FY2021", "FY2022", "FY2023", "FY2024", "FY2025", "Q2 FY2026", "Var. YoY"],
+    "rows": [
+      ["Revenue (B USD)", "33.57", "44.20", "35.82", "38.96", "44.28", "10.60", "+13.7%"],
+      ["Utilidad Neta (B USD)", "9.04", "12.94", "7.23", "10.14", "5.54", "7.37*", "-45.4%**"],
+      ["Margen Neto", "26.9%", "29.3%", "20.2%", "26.0%", "12.5%", "69.5%*", "-13.5pp"],
+      ["EBITDA (B USD)", "11.37", "17.62", "9.60", "11.78", "13.96", "2.51", "+18.5%"],
+      ["FCF (B USD)", "8.65", "6.84", "9.85", "11.16", "12.82", "n/d", "+14.9%"],
+      ["EPS Diluido", "7.96", "11.45", "6.42", "8.97", "5.01", "6.88*", "-44.1%**"],
+      ["Deuda Neta (B USD)", "6.58", "10.77", "6.03", "6.78", "9.29", "9.34", "+37.0%"]
+    ]
+  },
+  "kpis": [
+    { "label": "P/E Trailing", "value": "41.4x", "signal": "red", "note": "Distorsionado por carga fiscal $5.7B CAMT en FY2025", "precio_base": 207.36, "precio_fecha": "2026-05-12", "fundamento": { "tipo": "eps_ttm", "valor": 5.01 } },
+    { "label": "P/E Forward", "value": "21.8x", "signal": "yellow", "note": "vs. semis ~24x; descuento razonable", "precio_base": 207.36, "precio_fecha": "2026-05-12", "fundamento": { "tipo": "eps_fwd", "valor": 9.50 } },
+    { "label": "EV/EBITDA", "value": "16.6x", "signal": "yellow", "note": "Razonable para lider de sector", "precio_base": 207.36, "precio_fecha": "2026-05-12", "fundamento": { "tipo": "ev_ebitda", "ebitda_b": 13.96, "shares_m": 1074, "deuda_neta_b": 9.29 } },
+    { "label": "P/FCF", "value": "17.4x", "signal": "green", "note": "Atractivo; FCF yield 5.8%", "precio_base": 207.36, "precio_fecha": "2026-05-12", "fundamento": { "tipo": "p_fcf", "fcf_b": 12.82, "shares_m": 1074 } },
+    { "label": "Deuda Neta/EBITDA", "value": "0.67x", "signal": "green" },
+    { "label": "ROE", "value": "26.1%", "signal": "green" },
+    { "label": "ROIC", "value": "34.0%", "signal": "green" }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      { "label": "FY2021", "revenue": 33.57, "utilidad": 9.04 },
+      { "label": "FY2022", "revenue": 44.20, "utilidad": 12.94 },
+      { "label": "FY2023", "revenue": 35.82, "utilidad": 7.23 },
+      { "label": "FY2024", "revenue": 38.96, "utilidad": 10.14 },
+      { "label": "FY2025", "revenue": 44.28, "utilidad": 5.54 }
+    ],
+    "series": [
+      { "key": "revenue", "name": "Revenue" },
+      { "key": "utilidad", "name": "Utilidad Neta" }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      { "label": "FY2021", "bruto": 57.8, "operativo": 29.2, "neto": 26.9 },
+      { "label": "FY2022", "bruto": 55.3, "operativo": 35.9, "neto": 29.3 },
+      { "label": "FY2023", "bruto": 55.7, "operativo": 21.7, "neto": 20.2 },
+      { "label": "FY2024", "bruto": 56.2, "operativo": 25.8, "neto": 26.0 },
+      { "label": "FY2025", "bruto": 55.4, "operativo": 27.9, "neto": 12.5 }
+    ],
+    "series": [
+      { "key": "bruto", "name": "Margen Bruto" },
+      { "key": "operativo", "name": "Margen Operativo" },
+      { "key": "neto", "name": "Margen Neto" }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      { "label": "Recompras", "value": "$8.8B USD", "nota": "Masiva recompra en FY2025; +4.1B en FY2024. Reduccion de shares del 3.5% anual" },
+      { "label": "Dividendos", "value": "$3.8B USD", "nota": "FY2025: $3.465/accion trimestral. Dividend yield ~2.7%. 20+ anos de crecimiento consecutivo" },
+      { "label": "Capex", "value": "$1.2B USD", "nota": "Bajo capex vs revenue (~2.7%): modelo fabless con TSMC como principal proveedor de manufactura" },
+      { "label": "M&A / Inversiones", "value": "$0.7B USD", "nota": "Enfoque en bolt-on acquisitions; Moverius Technologies (Q1 FY2026); Qualcomm Ventures activo en AI/automotive" }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": ["Metrica", "QCOM TTM", "Sector Semis", "Posicion relativa"],
+    "rows": [
+      ["Gross Margin", "55.4%", "~55%", "En linea con peers fabless"],
+      ["Margen Operativo", "27.9%", "~25%", "Por encima del sector"],
+      ["Revenue Growth", "+13.7%", "~12%", "En linea o ligeramente superior"],
+      ["P/E Forward", "21.8x", "~24x", "Descuento vs. sector (CAMT distorsion)"],
+      ["ROIC", "34.0%", "~20%", "Muy por encima del sector; moat real"]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "Balance solido y FCF creciente; NI FY2025 distorsionado por carga fiscal extraordinaria de $5.7B no recurrente",
+    "analisis": "La caida del 45% en utilidad neta es 100% atribuible a la implementacion del Corporate Alternative Minimum Tax (CAMT) bajo el OBBB aprobado en julio 2025, que obligo a QCOM a reconocer una valuacion allowance de $5.7B contra sus deferred tax assets federales. La generacion operativa de caja fue record ($14.0B), el margen operativo mejoro de 25.8% a 27.9% y el FCF crecio 14.9%. El negocio subyacente esta mas sano que nunca.",
+    "items": [
+      { "metrica": "Revenue YoY", "valor": "+13.7%", "status": "ok" },
+      { "metrica": "Margen Bruto", "valor": "55.4%", "status": "ok" },
+      { "metrica": "Margen Operativo", "valor": "27.9%", "status": "ok" },
+      { "metrica": "Margen Neto", "valor": "12.5% (adj: ~26%)", "status": "warn" },
+      { "metrica": "FCF YoY", "valor": "+14.9%", "status": "ok" },
+      { "metrica": "Deuda Neta", "valor": "$9.3B (ND/EBITDA 0.67x)", "status": "ok" }
+    ]
+  },
+  "flags": [
+    { "level": "green", "title": "Moat de licencias irremplazable", "impact": "Alto", "evidence": "QTL genero $6.4B en royalties con margen operativo >70%. Apple, Samsung y Xiaomi cada uno representa >10% del revenue.", "context": "Las licencias sobre estandares 5G/4G son contractuales y de largo plazo. Cualquier dispositivo conectado a red celular paga royalties a QCOM. Este negocio es el motor de valoracion y es muy dificil de replicar." },
+    { "level": "green", "title": "FCF record y capital return agresivo", "impact": "Alto", "evidence": "FCF $12.82B (+14.9% YoY); recompras $8.79B en FY2025; dividendo creciente 20+ anos. Shares bajaron de 1,125M a 1,059M en 5 anos.", "context": "La combinacion de FCF creciente + buybacks agresivos crea un efecto compuesto poderoso para el accionista a largo plazo. FCF yield del 5.8% es atractivo vs. sector." },
+    { "level": "green", "title": "Diversificacion automotive acelerando", "impact": "Alto", "evidence": "Design wins en automotive de $45B (TAM proyectado). Snapdragon Digital Chassis adoptado por 25+ OEMs. Revenue de auto crecio >50% en FY2025.", "context": "Automotive representa hoy ~5% del revenue QCT pero puede llegar a 20%+ en 3-5 anos. Los ciclos de adopcion son largos pero el pipeline es uno de los mas grandes de la industria." },
+    { "level": "yellow", "title": "Riesgo modem in-house de Apple", "impact": "Alto", "evidence": "Apple representa >10% del revenue total y esta desarrollando su propio modem con objetivo de independizarse de QCOM para 2027-2028.", "context": "La perdida del negocio de modems con Apple (~$7-8B de QCT revenue) seria el riesgo mas significativo de la tesis. QCOM tiene contratos extendidos hasta FY2026 y el modem propio de Apple tiene problemas de rendimiento documentados." },
+    { "level": "yellow", "title": "Distorsion fiscal no recurrente FY2025", "impact": "Medio", "evidence": "Cargo de $5.7B por CAMT (Corporate Alternative Minimum Tax) redujo NI a $5.5B vs. $10.1B en FY2024. Tasa efectiva del 56% vs. historico de ~16%.", "context": "Este cargo es contable y no recurrente en la misma magnitud. En FY2026 la tasa efectiva regresara a niveles normalizados (~16-18%), lo que hara que el P/E trailing luzca mucho mas razonable." },
+    { "level": "red", "title": "Exposicion a China y riesgo geopolitico", "impact": "Alto", "evidence": "China representa ~50%+ del revenue de QCT. Xiaomi, OPPO y otros fabricantes chinos son clientes clave. Export controls de EE.UU. podrian expandirse.", "context": "Si EE.UU. amplia las restricciones de exportacion de chips avanzados a China, QCOM podria perder acceso a un mercado que representa ~$20B+ de revenue. Este es el riesgo binario mas relevante de la tesis." }
+  ],
+  "score": {
+    "score": 7.4,
+    "max": 10,
+    "items": [
+      { "label": "Poder de fijacion de precios", "score": 8, "max": 10 },
+      { "label": "Crecimiento de revenue", "score": 7, "max": 10 },
+      { "label": "Calidad de margenes", "score": 8, "max": 10 },
+      { "label": "Solidez del balance", "score": 7, "max": 10 },
+      { "label": "Generacion de FCF", "score": 7, "max": 10 }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "QCOM ejecuta una doble estrategia de defensa y expansion: (1) defender y optimizar su negocio de licencias QTL -el activo de mayor margen y mas defensivo- mientras (2) diversifica QCT mas alla de smartphones hacia automotive, IoT, PCs con ARM y centros de datos. La apuesta por AI on-device con la NPU de Snapdragon es el principal diferenciador tecnologico para el ciclo de actualizacion de smartphones de los proximos 3 anos.",
+    "ventajas": "El portfolio de patentes esenciales para estandares celulares es practicamente incopiable y genera royalties independientemente de quien fabrique los chips. En QCT, la integracion vertical de modem + applications processor + conectividad en un solo SoC (Snapdragon) crea una ventaja de rendimiento/eficiencia energetica que Mediatek no ha podido igualar en el segmento premium.",
+    "debilidades": "Alta concentracion de clientes (Apple + Samsung + Xiaomi = 50%+ revenue). Dependencia de TSMC para manufactura de chips avanzados. El negocio QCT esta expuesto a ciclos de inventario agresivos como el de FY2023 que colapso los ingresos un 19%.",
+    "riesgos": [
+      "Apple desarrolla modem in-house; posible perdida de $7-8B de revenue QCT en FY2027-2028",
+      "Expansion de export controls EE.UU. a China podria impactar 50%+ del revenue de QCT",
+      "Mediatek gana cuota en el segmento premium con Dimensity 9400; competencia de precios en Android",
+      "CAMT y cambios fiscales adicionales podrian elevar la tasa efectiva estructuralmente desde FY2026"
+    ],
+    "inversiones_estrategicas": "QSI invierte en startups de AI, automotive, IoT y 5G a traves de Qualcomm Ventures. En FY2025, QCOM adquirio activos de Movius Technologies. El pipeline de design wins en automotive ($45B TAM) requiere R&D significativo: $9B en FY2025 (+1.7% YoY). La inversion en data center (QGOV + cloud AI) es incipiente pero estrategicamente relevante."
+  },
+  "verdict": {
+    "status": "Comprar con Conviccion",
+    "score": "7.4/10",
+    "color": "green",
+    "metrics": [
+      { "label": "Revenue TTM", "value": "$44.3B" },
+      { "label": "Margen Operativo", "value": "27.9%" },
+      { "label": "FCF Yield", "value": "5.8%" },
+      { "label": "P/E Forward", "value": "21.8x" },
+      { "label": "Crecimiento Rev.", "value": "+13.7% YoY" }
+    ],
+    "bullets": [
+      { "text": "**Moat de licencias + FCF record** -- QTL genera royalties con margen >70% sobre estandares de comunicacion irrenunciables. El FCF de $12.8B (+15% YoY) financia recompras masivas y un dividendo creciente, creando retorno al accionista de doble digito sin necesitar credito.", "type": "pro" },
+      { "text": "**Valuacion descomprimida por distorsion fiscal** -- El P/E trailing de 41x no refleja la realidad operativa; el cargo de $5.7B por CAMT fue no recurrente. En FY2026 el EPS normalizado converge a ~$9.50 lo que situa el P/E forward en 21.8x, por debajo del sector.", "type": "pro" },
+      { "text": "**Catalogo de crecimiento en automotive e IA on-device** -- $45B en design wins de automotive con 25+ OEMs y la NPU de Snapdragon como pieza clave del ciclo de actualizacion de smartphones AI posicionan a QCOM para crecer por encima del mercado en FY2026-2028.", "type": "pro" },
+      { "text": "**Riesgo China + modem Apple** -- El ~50% de revenue expuesto a China es el principal riesgo binario. Si Apple logra igualar el rendimiento de su modem in-house para iPhone 17 o 18, QCOM podria perder $7-8B de revenue QCT sin reemplazo inmediato.", "type": "con" }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      { "label": "Ingresos", "texto": "Revenue de $44.3B en FY2025 representa un maximo historico, con QCT creciendo +14% impulsado por el ciclo de actualizacion premium de Android y la rampa de chips para automotive. El mix de revenue es mas diversificado que hace 3 anos aunque smartphones siguen siendo el 60%+ de QCT." },
+      { "label": "Margenes", "texto": "Margen bruto estable en 55.4% y margen operativo mejorando de 25.8% a 27.9% demuestran disciplina en costos y poder de fijacion de precios. El margen neto del 12.5% es engaosamente bajo por el cargo CAMT de $5.7B; ajustado por ese cargo el margen neto normalizado seria ~26%, consistente con el historial." },
+      { "label": "Generacion de caja", "texto": "OCF record de $14.0B y FCF de $12.8B confirman que el modelo de negocios fabless es altamente eficiente en capital. La conversion de EBITDA a FCF supera el 90%. QCOM distribuyo $12.6B entre recompras ($8.8B) y dividendos ($3.8B) en FY2025, demostrando una asignacion de capital orientada al accionista." },
+      { "label": "Balance", "texto": "Deuda neta de $9.3B con ND/EBITDA de 0.67x es muy manejable para una empresa de este tamano y calidad de caja. La deuda a largo plazo de $14.8B tiene vencimientos escalonados. El balance de Q1 FY2026 muestra activos diferidos de impuestos de $5.97B que podrian generar beneficios en el futuro si cambia la regulacion CAMT." },
+      { "label": "Valuacion", "texto": "A $207/accion el P/E forward de 21.8x (con EPS est. $9.50) representa un punto de entrada razonable para una empresa con ROIC del 34%, FCF yield del 5.8% y catalizadores de crecimiento en AI on-device y automotive. EV/EBITDA de 16.6x esta por debajo de comparables como Broadcom (21x) o Texas Instruments (22x)." },
+      { "label": "Riesgos principales", "texto": "El riesgo China (50% revenue QCT expuesto) es el factor mas vigilado: cualquier escalada de aranceles o restricciones de exportacion podria impactar materialmente los ingresos. En segundo lugar, el progreso de Apple en su modem in-house determinara si hay un hueco de $7-8B en revenue a partir de FY2027. El riesgo de ejecucion en automotive es real pero el pipeline de $45B de design wins mitiga la incertidumbre." }
+    ]
+  }
+}

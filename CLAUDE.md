@@ -8,6 +8,25 @@ Este es el portal de análisis financiero de Murza Inversiones. Cuando el usuari
 
 ---
 
+## Regla de fuentes para noticias — OBLIGATORIA
+
+Al actualizar `/noticias`, solo usar fuentes con score de confiabilidad **7 o mayor**:
+
+| Score | Fuentes |
+|---|---|
+| 10 | SEC EDGAR (8-K, 10-K, 10-Q — siempre preferir para datos de earnings) |
+| 9 | Reuters, Bloomberg |
+| 8 | CNBC |
+| 7 | Yahoo Finance, TheStreet, GuruFocus, TipRanks |
+
+**Prohibido usar:** TradingKey, Intellectia.ai, CoinCentral, Stocktwits, StartupHub, Simply Wall St, Money Morning, Wikipedia, MEXC, Benzinga como fuente unica.
+
+- Datos numericos (EPS, revenue, precio objetivo) → verificar contra SEC EDGAR o Reuters antes de subir
+- Si no hay fuente ≥7 que confirme la noticia → no subir
+- Script: `node backend/upload_noticias.mjs noticias.json` (desde raiz del proyecto)
+
+---
+
 ## Cómo generar un reporte
 
 Cuando el usuario pida un análisis financiero de una empresa, responde ÚNICAMENTE con el JSON completo en el siguiente formato. No agregues texto antes ni después del JSON, solo el bloque de código.

@@ -1,0 +1,481 @@
+{
+  "parrafos_gratis": 14,
+  "resumen": "SpaceX presento su S-1 el 20-may-2026 con IPO previsto el 12-jun-2026 a precio estimado de ~$175/accion (valuacion ~$1.75T). La compania reporto revenue de $18.67B en FY2025 (+33% YoY) impulsado por Starlink (8.9M suscriptores al cierre 2025, 10.3M en Q1 2026), pero registro perdida neta de $4.94B por el agresivo programa R&D de Starship ($3B solo en 2025) y la expansion del cluster de IA xAI. El Adj. EBITDA fue $6.58B (+23% YoY), reflejando alta rentabilidad en Connectivity parcialmente absorbida por perdidas en el segmento AI.",
+  "descripcion": "SpaceX opera tres segmentos: Space (lanzamientos comerciales y gubernamentales, Falcon 9/Heavy, Starship, $4.09B revenue FY2025), Connectivity (Starlink broadband LEO, $11.39B revenue FY2025, 8.9M suscriptores promedio, margen operativo 39%) y AI (xAI+X Holdings, $3.20B revenue FY2025, en expansion agresiva). La ventaja competitiva es la integracion vertical unica: disenan, fabrican, lanzan y operan sus propios cohetes y satelites. Con >80% del mass-to-orbit global desde 2023 y 99%+ tasa de exito, el moat tecnico en acceso espacial es formidable. La estructura de acciones super-voting (Musk controla ~79% votos con ~42% equity) y el perfil de perdidas GAAP son los principales riesgos de gobernanza y valoracion.",
+  "tabla": {
+    "headers": [
+      "Metrica",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Var. YoY"
+    ],
+    "rows": [
+      [
+        "Revenue (B USD)",
+        "10.39",
+        "14.02",
+        "18.67",
+        "+33.2%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "-4.63",
+        "0.79",
+        "-4.94",
+        "Negativa"
+      ],
+      [
+        "Margen Neto",
+        "-44.6%",
+        "5.6%",
+        "-26.4%",
+        "-32pp"
+      ],
+      [
+        "Adj. EBITDA (B USD)",
+        "3.82",
+        "5.35",
+        "6.58",
+        "+23.1%"
+      ],
+      [
+        "FCF (B USD)",
+        "0.11",
+        "-5.39",
+        "-13.95",
+        "Negativo"
+      ],
+      [
+        "EPS Diluido",
+        "-1.68",
+        "0.00",
+        "-1.69",
+        "Negativo"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "N/D",
+        "8.08",
+        "4.36",
+        "-46.0%"
+      ]
+    ]
+  },
+  "kpis": [
+    {
+      "label": "P/E Trailing",
+      "value": "N/A",
+      "signal": "red",
+      "note": "Empresa en perdidas GAAP",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": -1.69
+      }
+    },
+    {
+      "label": "P/E Forward",
+      "value": "N/A",
+      "signal": "red",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": null
+      }
+    },
+    {
+      "label": "EV/EBITDA",
+      "value": "257x",
+      "signal": "red",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 6.584,
+        "shares_m": 9649,
+        "deuda_neta_b": 4.364
+      }
+    },
+    {
+      "label": "P/FCF",
+      "value": "N/A",
+      "signal": "red",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": -13.952,
+        "shares_m": 9649
+      }
+    },
+    {
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.7x",
+      "signal": "green",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "deuda_ebitda",
+        "deuda_neta_b": 4.364,
+        "ebitda_b": 6.584
+      }
+    },
+    {
+      "label": "ROE",
+      "value": "-192%",
+      "signal": "red",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "roe",
+        "ni_b": -4.937,
+        "equity_b": 2.573
+      }
+    },
+    {
+      "label": "ROIC",
+      "value": "N/A",
+      "signal": "red",
+      "precio_base": 175,
+      "precio_fecha": "May-2026",
+      "fundamento": {
+        "tipo": "roic",
+        "nota": "EBIT negativo impide calculo significativo"
+      }
+    }
+  ],
+  "chart_ingresos": {
+    "unit": "B USD",
+    "data": [
+      {
+        "label": "FY2023",
+        "revenue": 10.39,
+        "utilidad": -4.63
+      },
+      {
+        "label": "FY2024",
+        "revenue": 14.02,
+        "utilidad": 0.79
+      },
+      {
+        "label": "FY2025",
+        "revenue": 18.67,
+        "utilidad": -4.94
+      }
+    ],
+    "series": [
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
+    ]
+  },
+  "chart_margenes": {
+    "data": [
+      {
+        "label": "FY2023",
+        "bruto": 41.2,
+        "operativo": -33.7,
+        "neto": -44.6
+      },
+      {
+        "label": "FY2024",
+        "bruto": 42.9,
+        "operativo": 3.3,
+        "neto": 5.6
+      },
+      {
+        "label": "FY2025",
+        "bruto": 49.4,
+        "operativo": -13.9,
+        "neto": -26.4
+      }
+    ],
+    "series": [
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
+    ]
+  },
+  "capital_allocation": {
+    "items": [
+      {
+        "label": "Capex",
+        "value": "$20.7B USD",
+        "nota": "FY2025: Space $3.8B, Connectivity $4.2B, AI $12.7B — inversion masiva en Starship y cluster xAI"
+      },
+      {
+        "label": "R&D",
+        "value": "$8.6B USD",
+        "nota": "FY2025: +149% YoY impulsado por Starship y GPUs para entrenamiento Grok"
+      },
+      {
+        "label": "Recompras",
+        "value": "Sin dividendos",
+        "nota": "No paga dividendos. Reinversion total en growth capex y R&D"
+      },
+      {
+        "label": "M&A",
+        "value": "xAI+X Holdings",
+        "nota": "Adquisicion de xAI (feb-2026) y X Holdings (via xAI, mar-2025) — entidades bajo control comun de Musk"
+      }
+    ]
+  },
+  "comparacion_sector": {
+    "headers": [
+      "Metrica",
+      "SPCX FY2025",
+      "Sector ref.",
+      "Posicion relativa"
+    ],
+    "rows": [
+      [
+        "Gross Margin",
+        "49.4%",
+        "~35% (aerospace)",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "-13.9%",
+        "~8% (aerospace)",
+        "Por debajo (Starship R&D)"
+      ],
+      [
+        "Revenue Growth",
+        "+33.2%",
+        "~8% (aerospace)",
+        "Muy por encima del sector"
+      ],
+      [
+        "EV/EBITDA",
+        "257x",
+        "~15x (aerospace)",
+        "Prima extrema por hipercrecimiento"
+      ],
+      [
+        "Adj. EBITDA Margin",
+        "35.3%",
+        "~12% (aerospace)",
+        "Muy por encima via Starlink"
+      ]
+    ]
+  },
+  "deterioro": {
+    "veredicto": "SpaceX tiene fundamentos hiperlatentes: revenue creciendo 33%, gross margin en expansion, pero perdidas GAAP profundas por inversion deliberada en Starship y xAI.",
+    "analisis": "El deterioro del margen neto (de +5.6% en 2024 a -26.4% en 2025) es consecuencia directa del capex masivo en AI ($12.7B) y R&D Starship ($3B). El Adj. EBITDA de $6.58B demuestra que el negocio subyacente (Starlink) es altamente rentable. El balance es solido con $24.7B en caja a cierre 2025 aunque la deuda aumento a $29.1B por el bridge loan de xAI.",
+    "items": [
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+33.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Gross Margin",
+        "valor": "49.4%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "-13.9%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "-26.4%",
+        "status": "bad"
+      },
+      {
+        "metrica": "FCF (GAAP)",
+        "valor": "-$13.95B",
+        "status": "bad"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "$4.36B",
+        "status": "ok"
+      }
+    ]
+  },
+  "flags": [
+    {
+      "level": "green",
+      "title": "Starlink: monopolio LEO con 10.3M suscriptores",
+      "impact": "Alto",
+      "evidence": "Adj. EBITDA Connectivity de $7.17B en FY2025 con margen bruto >63%. Crecimiento de suscriptores de 2.3M (2023) a 10.3M (Q1 2026): +348% en 2 anos.",
+      "context": "La posicion dominante en internet satelital LEO es practicamente inexpugnable a corto plazo. ViaSat y OneWeb no tienen la escala ni el ritmo de lanzamiento de SpaceX."
+    },
+    {
+      "level": "green",
+      "title": "Moat tecnico: >80% mass-to-orbit mundial",
+      "impact": "Alto",
+      "evidence": "170 lanzamientos en FY2025, 2,213 toneladas a orbita. Tasa de exito >99% con Falcon 9. Reusabilidad superior: primer etapa reflown mas de 20 veces.",
+      "context": "Ventaja de costo y cadencia que ninguna empresa ha podido replicar en 20 anos. El motor Raptor de metano para Starship tiene el mayor ratio empuje/peso en la industria."
+    },
+    {
+      "level": "yellow",
+      "title": "Caida de ARPU Starlink: de $99 a $66/mes",
+      "impact": "Medio",
+      "evidence": "ARPU paso de $99 (2023) a $91 (2024) a $81 (2025 avg) a $66 (Q1 2026). La expansion internacional y planes mas baratos comprimen el ingreso por suscriptor.",
+      "context": "La caida de ARPU es estrategica (penetracion de mercados emergentes) pero presiona el revenue per user. El volumen compensa por ahora pero el ARPU podria estabilizarse en rango bajo."
+    },
+    {
+      "level": "yellow",
+      "title": "FCF profundamente negativo por hiperinversion",
+      "impact": "Medio",
+      "evidence": "FCF FY2025: -$13.95B (capex $20.74B vs OCF $6.79B). Capex AI solo: $12.73B en FY2025 vs $5.63B en FY2024.",
+      "context": "La empresa esta en modo inversion agresiva. El FCF negativo es consecuencia del ciclo de construccion de infraestructura orbital y de AI, no de un deterioro del negocio base."
+    },
+    {
+      "level": "red",
+      "title": "Gobierno corporativo: Musk controla ~79% de votos",
+      "impact": "Alto",
+      "evidence": "Estructura de acciones multi-clase (A/B/C). Clase B tiene voto 10:1. Musk tiene ~42% equity pero ~79% poder de voto. Sin mecanismos independientes de supervision.",
+      "context": "Riesgo real de conflicto de intereses: Musk tambien dirige Tesla, X, xAI y Neuralink. Las transacciones con xAI y X Holdings muestran que puede subordinar intereses de accionistas. Prima de riesgo de gobernanza incorporada al precio."
+    },
+    {
+      "level": "red",
+      "title": "Starship: riesgo tecnico y regulatorio critico",
+      "impact": "Alto",
+      "evidence": "R&D Starship $3.0B en FY2025. El S-1 declara que el fracaso o retraso de Starship amenaza toda la estrategia de crecimiento: V3 satellites, mobile-to-satellite, orbital AI compute.",
+      "context": "Starship es el habilitador clave de la proxima generacion de Starlink (V3), reduccion de costo por kg, y compute orbital. Un accidente o bloqueo regulatorio de la FAA podria retrasar 3-5 anos el plan de crecimiento."
+    }
+  ],
+  "score": {
+    "score": 6.4,
+    "max": 10,
+    "items": [
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 5,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 6,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 4,
+        "max": 10
+      }
+    ]
+  },
+  "analisis_cualitativo": {
+    "estrategia": "SpaceX busca convertirse en la infraestructura de la era espacial: cohetes de bajo costo para democratizar el acceso orbital, Starlink como red de conectividad global, y xAI como capa de inteligencia artificial entrenada en compute orbital futuro. La estrategia de integracion vertical es el core: quien controla el lanzamiento controla el costo del satelite, quien controla el satelite controla la conectividad, y quien controla la conectividad alimenta el AI.",
+    "ventajas": "Ventajas estructurales: (1) Unico proveedor con escala real en lanzamiento comercial (Falcon 9, 170 vuelos/ano). (2) Constelacion Starlink con 9,600 satelites en orbita — barrera de entrada de decenas de miles de millones. (3) Tecnologia de cohetes reutilizables con 10-20 anos de ventaja sobre competidores. (4) Starship, si logra operacion a escala, reducira costo por kg de ~$2,700 (Falcon) a <$100. (5) Capital humano con capacidad de ejecucion rapida demostrada en 20 anos de historia.",
+    "debilidades": "Debilidades: (1) Perdidas GAAP sistematicas dificultan la valoracion tradicional y excluyen fondos de value. (2) ARPU Starlink en declive estructural de $99 a $66. (3) Dependencia de contratos gubernamentales (NASA, DoD) para rentabilidad del segmento Space. (4) Riesgo Musk: multiples empresas bajo su liderazgo reducen foco y generan conflictos de interes. (5) xAI aun no rentable: Adj. EBITDA -$1.24B en FY2025.",
+    "riesgos": [
+      "Fallo o retraso de Starship: amenaza V3 satellite, mobile-to-satellite y orbital AI compute — toda la hoja de ruta de largo plazo.",
+      "Concentracion de poder en Musk (79% votos): riesgo de decisiones que beneficien sus otras empresas sobre accionistas de SPCX.",
+      "ARPU Starlink continua cayendo: de $99 (2023) a $66 (Q1 2026) — si cae a $50 compromete la rentabilidad del segmento Connectivity.",
+      "Regulacion FAA y ambiental: permisos de lanzamiento pueden bloquear cadencia de Starship — ya ocurrio en 2023-2024.",
+      "Hiperinversion capex: si los mercados de AI o satelital se desaceleran, el capex de $20.7B (FY2025) se convierte en activos varados."
+    ],
+    "inversiones_estrategicas": "Principales inversiones: (1) Starship: cohete totalmente reutilizable, $3B R&D en 2025, habilitador de todo el crecimiento futuro. (2) xAI+Grok: cluster AI de gigavatio, $12.7B capex en FY2025, busca competir con OpenAI y Google. (3) V3 Starlink satellites: proxima gen de satelites que requieren Starship para desplegarse — 10x capacidad por satelite. (4) Satellite-to-mobile: ya cubre ~30 paises, 7.4M dispositivos unicos — potencial de monetizar smartphones sin torre celular."
+  },
+  "verdict": {
+    "status": "Especular con Cautela",
+    "score": "6.4/10",
+    "color": "yellow",
+    "metrics": [
+      {
+        "label": "Revenue FY2025",
+        "value": "$18.67B"
+      },
+      {
+        "label": "Adj. EBITDA Margin",
+        "value": "35.3%"
+      },
+      {
+        "label": "FCF FY2025",
+        "value": "-$13.95B"
+      },
+      {
+        "label": "EV/EBITDA",
+        "value": "257x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+33.2% YoY"
+      }
+    ],
+    "bullets": [
+      {
+        "text": "**Moat espacial inexpugnable** — >80% del mass-to-orbit mundial, 170 lanzamientos/ano, tasa de exito >99%. Barrera de entrada que cuesta decadas y cientos de miles de millones replicar.",
+        "type": "pro"
+      },
+      {
+        "text": "**Starlink: maquina de cash generation** — Adj. EBITDA Connectivity de $7.17B en FY2025 con 10.3M suscriptores. Con Starship, el costo por satelite colapsa y el margen se expande aun mas.",
+        "type": "pro"
+      },
+      {
+        "text": "**Crecimiento exponencial documentado** — Revenue de $10.4B (2023) a $18.7B (2025): +80% en 2 anos. La trayectoria es validada, no especulativa.",
+        "type": "pro"
+      },
+      {
+        "text": "**Valuacion extrema sin FCF positivo** — A 257x EV/EBITDA y FCF de -$13.95B, el precio del IPO descuenta perfeccion en la ejecucion de Starship, Starlink y xAI — todo simultaneamente.",
+        "type": "con"
+      },
+      {
+        "text": "**Riesgo Musk y gobernanza** — Control del 79% del voto por un CEO con 5 empresas paralelas y transacciones intra-grupo con xAI y X Holdings.",
+        "type": "con"
+      }
+    ]
+  },
+  "conclusion": {
+    "items": [
+      {
+        "label": "Ingresos",
+        "texto": "Revenue de $18.67B en FY2025 (+33.2% YoY) impulsado por Starlink ($11.4B, +50% YoY) y xAI/X ($3.2B). Conectividad ya representa 61% del revenue total. La trayectoria es solida y diversificada entre 3 segmentos."
+      },
+      {
+        "label": "Margenes",
+        "texto": "Gross margin mejorado a 49.4% (vs 41.2% en 2023) por escala de Starlink. Margen operativo negativo (-13.9%) por R&D masivo en Starship ($8.64B total) y expansion xAI. Adj. EBITDA margin de 35.3% muestra el potencial real sin inversion discrecional."
+      },
+      {
+        "label": "Generacion de caja",
+        "texto": "OCF positivo de $6.79B pero FCF de -$13.95B por capex de $20.74B. El cash burn es deliberado: SpaceX esta construyendo infraestructura que tipicamente toma decadas. La caja de $24.75B al cierre de 2025 y el IPO financian la expansion."
+      },
+      {
+        "label": "Balance",
+        "texto": "Total activos de $92B (FY2025), deuda total $29.1B (bridge loan xAI + financings), caja $24.75B — deuda neta $4.4B. Balance manejable dada la escala y acceso a capital. El riesgo es la velocidad de burn del capex."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A $175/accion (est. IPO), la valuacion de ~$1.69T implica 257x EV/Adj.EBITDA. Comparado con empresas de hipercrecimiento como Palantir (~100x), la prima es extrema. Solo se justifica si Starship democratiza el acceso orbital y xAI alcanza rentabilidad en 2-3 anos."
+      },
+      {
+        "label": "Riesgos principales",
+        "texto": "Cuatro riesgos criticos: (1) Starship: cualquier accidente grave o bloqueo regulatorio resetea la hoja de ruta 3-5 anos. (2) ARPU Starlink en tendencia bajista de $99 a $66. (3) Gobernanza Musk: 79% del voto en manos de un CEO con 5 empresas paralelas. (4) Valuacion: el mercado no perdona errores a 257x EBITDA."
+      }
+    ]
+  }
+}

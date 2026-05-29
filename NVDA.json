@@ -1,78 +1,87 @@
 {
-  "resumen": "NVIDIA (NVDA) reporto ingresos record de $130.5B en FY2025, un crecimiento de +114% interanual impulsado por la demanda explosiva de GPUs para inteligencia artificial y centros de datos. Con un margen neto de 55.8% y un free cash flow de $60.9B, NVIDIA es la empresa mas rentable del sector tecnologico. El balance es solido con deuda neta negativa de -$34.7B (mas caja que deuda). Veredicto: Comprar con Conviccion.",
-  "descripcion": "NVIDIA Corporation disena y vende unidades de procesamiento grafico (GPUs), sistemas de computo acelerado y software relacionado. Sus principales segmentos son Data Center (plataformas de IA, supercomputacion) y Gaming (GPUs para consumidores). La empresa genera ingresos principalmente a traves de ventas de hardware (chips H100, H200, Blackwell B200) a hiperescaladores como Microsoft, Amazon, Google y Meta, asi como a empresas de computacion en la nube y gobiernos. Fundada en 1993 y domiciliada en Santa Clara, California, cotiza en el NASDAQ bajo el ticker NVDA. Con una participacion de mercado superior al 80% en GPUs para IA, NVIDIA ha establecido un moat tecnologico y ecosistema de software (CUDA) virtualmente imposible de replicar en el corto plazo.",
+  "parrafos_gratis": 14,
+  "resumen": "NVIDIA Corporation es el lider mundial en computacion acelerada e infraestructura de inteligencia artificial a escala de centro de datos. En el ano fiscal 2026 (cerrado el 25 de enero de 2026), la empresa reporto ingresos de USD 215.9 mil millones (+65% YoY) y utilidad neta de USD 120.1 mil millones (+65% YoY), impulsados por la adopcion masiva de su arquitectura Blackwell. Q1 FY2027 (periodo al 26 de abril de 2026) entrego USD 81.6B en revenue (+85% YoY), confirmando que el momentum se mantiene intacto. Con posicion neta de caja de USD 2.1B y FCF de USD 96.7B en FY2026, NVDA es una de las mejores generadoras de caja del mundo.",
+  "descripcion": "NVIDIA opera dos segmentos: Compute & Networking (~88% de ingresos en FY2026), que incluye GPUs para Data Center (H100, Blackwell GB300/NVL72), redes InfiniBand y Spectrum-X, DPUs y software CUDA/AI Enterprise; y Graphics (~12%), con GPUs GeForce para gaming y soluciones de visualizacion profesional. El moat se basa en el ecosistema CUDA con millones de desarrolladores, la arquitectura Blackwell codisenada para AI a escala de data center, relaciones profundas con todos los hyperscalers (Microsoft, Google, Amazon, Meta) y fabricantes de modelos de AI, y mas de USD 76.7 mil millones invertidos en I+D desde su fundacion en 1993.",
   "tabla": {
     "headers": [
       "Metrica",
-      "FY2021",
       "FY2022",
       "FY2023",
       "FY2024",
       "FY2025",
+      "FY2026",
+      "Q1 FY2027",
       "Var. YoY"
     ],
     "rows": [
       [
-        "Revenue ($B)",
-        "16.7",
+        "Revenue (B USD)",
         "26.9",
         "27.0",
         "60.9",
         "130.5",
-        "+114%"
+        "215.9",
+        "81.6",
+        "+65%"
       ],
       [
-        "Utilidad Neta ($B)",
-        "4.3",
+        "Utilidad Neta (B USD)",
         "9.8",
         "4.4",
         "29.8",
         "72.9",
+        "120.1",
+        "58.4",
+        "+65%"
+      ],
+      [
+        "Margen Neto",
+        "36.2%",
+        "16.2%",
+        "48.9%",
+        "55.8%",
+        "55.6%",
+        "71.5%",
+        "-0.2pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "11.2",
+        "5.8",
+        "34.5",
+        "83.3",
+        "133.2",
+        "54.5",
         "+145%"
       ],
       [
-        "Margen Neto (%)",
-        "25.9%",
-        "36.2%",
-        "16.2%",
-        "48.8%",
-        "55.8%",
-        "+7.0pp"
-      ],
-      [
-        "EBITDA ($B)",
-        "4.9",
-        "10.7",
-        "5.1",
-        "34.0",
-        "83.7",
-        "+146%"
-      ],
-      [
-        "FCF ($B)",
-        "N/D",
-        "8.1",
-        "3.8",
+        "FCF (B USD)",
+        "8.4",
+        "4.6",
         "27.0",
         "60.9",
-        "+125%"
+        "96.7",
+        "48.6",
+        "+86%"
       ],
       [
-        "EPS GAAP (split-adj)",
-        "$0.69",
-        "$0.39",
-        "$0.17",
-        "$1.19",
-        "$2.94",
-        "+147%"
+        "EPS Diluido",
+        "0.39",
+        "0.18",
+        "1.19",
+        "2.94",
+        "4.90",
+        "2.39",
+        "+214%"
       ],
       [
-        "Deuda Neta ($B)",
-        "-4.6",
-        "-5.3",
-        "-3.5",
-        "-33.1",
-        "-34.7",
+        "Deuda Neta (B USD)",
+        "9.0",
+        "7.6",
+        "2.4",
+        "-0.1",
+        "-2.1",
+        "-5.8",
         "Mejora"
       ]
     ]
@@ -80,12 +89,11 @@
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "37.5x",
-      "change": "vs. ~60x hace 1 ano",
-      "signal": "red",
-      "note": "vs. sector semis ~25x",
-      "precio_base": 183.61,
-      "precio_fecha": "2026-04-09",
+      "value": "45.6x",
+      "signal": "yellow",
+      "note": "vs. sector semis ~35x",
+      "precio_base": 223.47,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_ttm",
         "valor": 4.9
@@ -93,55 +101,63 @@
     },
     {
       "label": "P/E Forward",
-      "value": "16.5x",
-      "signal": "green",
-      "note": "descuento significativo vs. TTM",
-      "precio_base": 183.77,
-      "precio_fecha": "2026-04-09",
+      "value": "51.4x",
+      "signal": "yellow",
+      "note": "prima por liderazgo AI",
+      "precio_base": 223.47,
+      "precio_fecha": "2026-05-20",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 11.1164
+        "valor": 4.35
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "30.2x",
+      "value": "40.7x",
       "signal": "yellow",
-      "note": "premium por liderazgo en IA"
+      "precio_base": 223.47,
+      "precio_fecha": "2026-05-20",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 133.23,
+        "shares_m": 24304,
+        "deuda_neta_b": -2.14
+      }
     },
     {
       "label": "P/FCF",
-      "value": "42.1x",
+      "value": "56.2x",
       "signal": "yellow",
-      "note": "FCF yield 2.4%"
+      "precio_base": 223.47,
+      "precio_fecha": "2026-05-20",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 96.68,
+        "shares_m": 24304
+      }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "0.09x",
+      "label": "Deuda Neta/EBITDA",
+      "value": "-0.02x",
       "signal": "green",
-      "note": "balance virtualmente libre de deuda"
+      "note": "posicion neta de caja"
     },
     {
       "label": "ROE",
-      "value": "101.5%",
+      "value": "173%",
       "signal": "green",
-      "note": "excepcional vs. sector ~20-30%"
+      "note": "extraordinario por bajo patrimonio relativo"
     },
     {
       "label": "ROIC",
-      "value": "126.3%",
+      "value": "162%",
       "signal": "green",
-      "note": "retorno sobre capital invertido record"
+      "note": "retorno sobre capital invertido excepcional"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
     "data": [
-      {
-        "label": "FY2021",
-        "revenue": 16.7,
-        "utilidad": 4.3
-      },
       {
         "label": "FY2022",
         "revenue": 26.9,
@@ -161,6 +177,11 @@
         "label": "FY2025",
         "revenue": 130.5,
         "utilidad": 72.9
+      },
+      {
+        "label": "FY2026",
+        "revenue": 215.9,
+        "utilidad": 120.1
       }
     ],
     "series": [
@@ -177,34 +198,34 @@
   "chart_margenes": {
     "data": [
       {
-        "label": "FY2021",
-        "bruto": 62.3,
-        "operativo": 27.2,
-        "neto": 25.9
-      },
-      {
         "label": "FY2022",
-        "bruto": 64.9,
+        "bruto": 65,
         "operativo": 37.3,
         "neto": 36.2
       },
       {
         "label": "FY2023",
-        "bruto": 56.9,
-        "operativo": 15.7,
+        "bruto": 57,
+        "operativo": 15.6,
         "neto": 16.2
       },
       {
         "label": "FY2024",
         "bruto": 72.7,
         "operativo": 54.1,
-        "neto": 48.8
+        "neto": 48.9
       },
       {
         "label": "FY2025",
         "bruto": 75,
         "operativo": 62.4,
         "neto": 55.8
+      },
+      {
+        "label": "FY2026",
+        "bruto": 71.1,
+        "operativo": 60.4,
+        "neto": 55.6
       }
     ],
     "series": [
@@ -225,176 +246,161 @@
   "capital_allocation": {
     "items": [
       {
-        "label": "Recompra de acciones",
-        "value": "$33.7B",
-        "nota": "FY2025: devolucion masiva de capital a accionistas; $50B adicional autorizado en agosto 2024"
+        "label": "Recompras de acciones",
+        "value": "40.1B USD",
+        "nota": "En FY2026, NVDA recompro acciones por USD 40.1B (+19% vs FY2025 de USD 33.7B). Programa de recompra autorizado de USD 50B vigente."
       },
       {
         "label": "Dividendos",
-        "value": "$0.83B",
-        "nota": "Dividend yield ~0.02%; prioridad es recompras"
+        "value": "0.97B USD",
+        "nota": "Dividendo trimestral de USD 0.01/accion post-split. Modesto frente al FCF; NVDA prioriza recompras."
       },
       {
         "label": "Capex",
-        "value": "$3.2B",
-        "nota": "2.5% del revenue; modelo fabless, sin fabricas propias (TSMC fabrica los chips)"
+        "value": "6.0B USD",
+        "nota": "Capex de USD 6.0B en FY2026 (+86% vs USD 3.2B en FY2025), en infraestructura computacional y equipos para manufactura domestica en EE.UU."
       },
       {
-        "label": "M&A / Adquisiciones",
-        "value": "N/D",
-        "nota": "Intento de adquirir Arm Holdings fue bloqueado por reguladores en 2022; sin grandes M&A en FY2025"
+        "label": "Inversiones estrategicas",
+        "value": "17.5B USD",
+        "nota": "USD 17.5B en empresas privadas y fondos de infraestructura en FY2026. Startups de AI que son clientes directos o indirectos de NVDA."
+      },
+      {
+        "label": "Garantias a socios",
+        "value": "3.5B USD",
+        "nota": "USD 3.5B en garantias de terreno, energia y edificios para compa nias en etapa temprana, por periodos multianno."
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "NVDA FY25",
+      "NVDA FY2026",
       "Sector Semis ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
-        "Gross margin",
-        "75.0%",
-        "~50-55%",
+        "Gross Margin",
+        "71.1%",
+        "~55%",
         "Por encima del sector"
       ],
       [
-        "Margen operativo",
-        "62.4%",
-        "~20-25%",
-        "Por encima del sector"
+        "Margen Operativo",
+        "60.4%",
+        "~25%",
+        "Muy por encima del sector"
       ],
       [
-        "Revenue growth YoY",
-        "+114%",
-        "~10-15%",
-        "Por encima del sector"
+        "Revenue Growth",
+        "+65%",
+        "~12%",
+        "Muy por encima del sector"
       ],
       [
-        "P/E forward",
-        "20.2x",
-        "~18-22x",
-        "En linea con sector"
+        "P/E Forward",
+        "51x",
+        "~25x",
+        "Prima justificada por hipercrecimiento"
       ],
       [
         "ROIC",
-        "126.3%",
-        "~15-25%",
-        "Por encima del sector"
-      ],
-      [
-        "Deuda/EBITDA",
-        "0.09x",
-        "~0.5-1.5x",
-        "Por encima del sector"
+        "162%",
+        "~18%",
+        "Excepcional, sin comparacion en el sector"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro operativo significativo",
-    "analisis": "Todos los indicadores clave mejoran de forma consistente en FY2025. Los margenes alcanzaron maximos historicos, el FCF crecio +125% y la deuda neta negativa se mantiene solida. El unico punto de atencion es la concentracion de ingresos en Data Center (88% del revenue) que implica dependencia de ciclo de inversion en IA.",
+    "veredicto": "NVDA muestra salud financiera excepcional; el unico deterioro marginal en FY2026 fue el gross margin (-3.9pp YoY), ya recuperado en Q1 FY2027.",
+    "analisis": "El margen bruto cayo de 75.0% (FY2025) a 71.1% (FY2026) por: 1) transicion a sistemas Blackwell full-stack de mayor contenido de hardware, y 2) cargo no recurrente de USD 4.5B por inventario H20 en Q1 FY2026. En Q1 FY2027 el margen bruto se recupero a 74.9% y el margen operativo subio a 65.6%, confirmando que el impacto fue temporal. FCF, OCF, deuda neta y EPS mejoraron sustancialmente en todos los periodos analizados.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+114%",
+        "valor": "+65%",
         "status": "ok"
       },
       {
-        "metrica": "Margen bruto",
-        "valor": "75.0%",
+        "metrica": "Margen Bruto",
+        "valor": "71.1% (vs 75.0% FY2025)",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "60.4% (vs 62.4% FY2025)",
+        "status": "warn"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "55.6%",
         "status": "ok"
       },
       {
-        "metrica": "Margen operativo",
-        "valor": "62.4%",
+        "metrica": "FCF YoY",
+        "valor": "+59% a USD 96.7B",
         "status": "ok"
       },
       {
-        "metrica": "Margen neto",
-        "valor": "55.8%",
+        "metrica": "Deuda Neta",
+        "valor": "-USD 2.1B (caja neta)",
         "status": "ok"
-      },
-      {
-        "metrica": "FCF conversion",
-        "valor": "83% del net income",
-        "status": "ok"
-      },
-      {
-        "metrica": "Deuda LT",
-        "valor": "$8.5B",
-        "status": "ok",
-        "nota": "cubierta 5x por caja disponible"
-      },
-      {
-        "metrica": "Concentracion Data Center",
-        "valor": "88% del revenue",
-        "status": "warn",
-        "nota": "alta dependencia de un solo segmento"
       }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Monopolio de facto en GPUs para IA",
+      "title": "Monopolio de facto en AI compute",
       "impact": "Alto",
-      "evidence": "Data Center revenue de $115.2B en FY2025, +142% YoY. Cuota de mercado >80% en aceleradores para IA.",
-      "context": "El ecosistema CUDA tiene 20+ anos de adopcion; los competidores (AMD, Intel, Google TPU) no pueden replicarlo en el corto plazo. Esto genera pricing power excepcional."
-    },
-    {
-      "level": "green",
-      "title": "Margenes en maximos historicos y creciendo",
-      "impact": "Alto",
-      "evidence": "Margen bruto 75.0%, margen operativo 62.4%, margen neto 55.8% en FY2025 vs. 72.7% / 54.1% / 48.8% en FY2024.",
-      "context": "A mayor escala, NVIDIA mejora margenes por apalancamiento operativo. Pocos negocios en el mundo generan $0.62 de ganancia operativa por cada $1.00 de venta."
+      "evidence": "Revenue Data Center FY2026 de ~USD 189B; 3 clientes directos = 21%, 17% y 16% del revenue en Q1 FY2027; todos los CSPs y fabricantes de modelos de AI usan GPUs NVDA.",
+      "context": "El ecosistema CUDA con millones de desarrolladores crea costos de cambio que los competidores no han logrado erosionar. NVDA tiene poder de fijacion de precios sin parangon en semiconductores."
     },
     {
       "level": "green",
       "title": "Generacion de caja extraordinaria",
       "impact": "Alto",
-      "evidence": "FCF de $60.9B en FY2025 (+125% YoY). Operating cash flow de $64.1B sobre revenue de $130.5B = conversion del 49%.",
-      "context": "FCF yield de 2.4% con potencial de expansion significativa. La empresa tiene capacidad de retornar $34B+ al ano en recompras manteniendo crecimiento."
+      "evidence": "OCF FY2026 = USD 102.7B (+60% YoY); FCF = USD 96.7B; USD 62.6B en caja y valores negociables al cierre de FY2026.",
+      "context": "Permite financiar USD 40B en recompras, USD 17.5B en inversiones estrategicas y USD 6B en capex sin recurrir a deuda. El balance es virtualmente sin riesgo financiero."
     },
     {
       "level": "green",
-      "title": "Balance con deuda neta negativa de $34.7B",
-      "impact": "Medio",
-      "evidence": "Cash + inversiones de $43.2B vs. deuda total de $8.5B al 26-ene-2025. Debt/EBITDA de 0.09x.",
-      "context": "Maxima flexibilidad financiera para M&A, R&D agresivo o recompras aceleradas. La empresa puede financiar su crecimiento organicamente sin necesidad de mercados de deuda."
-    },
-    {
-      "level": "yellow",
-      "title": "Concentracion extrema en Data Center y ciclo de IA",
+      "title": "Recuperacion de margenes en Q1 FY2027",
       "impact": "Alto",
-      "evidence": "Data Center represento ~88% del revenue total en FY2025. Gaming y otros segmentos son marginales en comparacion.",
-      "context": "Si el ciclo de inversion en IA desacelera (recortes de capex de hiperescaladores), el revenue podria caer abruptamente. Vigilar guidance trimestral de Microsoft, Google, Amazon y Meta."
+      "evidence": "Gross margin Q1 FY2027 = 74.9% (+14.4pp vs Q1 FY2026); operating margin = 65.6% (+16.6pp); net margin = 71.5% (+28.9pp).",
+      "context": "Confirma que el deterioro de margen en FY2026 fue transitorio. La arquitectura Blackwell Ultra normalizo su curva de produccion y los volumenes absorben los costos fijos con mayor eficiencia."
     },
     {
       "level": "yellow",
-      "title": "Restricciones de exportacion a China",
-      "impact": "Medio",
-      "evidence": "El gobierno de EE.UU. ha expandido las restricciones de exportacion de chips avanzados a China en multiples rondas desde 2022. China represento ~13% del revenue en FY2024.",
-      "context": "Cada nueva ronda de restricciones reduce el mercado direccionable. NVIDIA ha respondido con versiones de chips reducidas (H20), pero el riesgo regulatorio es persistente."
+      "title": "Concentracion de clientes y restricciones de exportacion",
+      "impact": "Alto",
+      "evidence": "3 clientes directos = 54% del revenue en Q1 FY2027. Cargo de USD 4.5B por restricciones H20 en China. H200 bajo arancel del 25% para exportacion a China.",
+      "context": "La concentracion en hyperscalers crea riesgo bilateral: poder de negociacion para los compradores y exposicion a politicas de exportacion de EE.UU. sobre chips avanzados."
     },
     {
       "level": "yellow",
-      "title": "Valuacion premium requiere ejecucion impecable",
+      "title": "Valuacion exigente que descuenta hipercrecimiento",
       "impact": "Medio",
-      "evidence": "P/E TTM de 34x y EV/EBITDA de 30x. El mercado incorpora crecimiento sostenido de 40-60% anual en los proximos anos.",
-      "context": "Cualquier desaceleracion en la demanda de GPUs, retraso en Blackwell o perdida de cuota de mercado podria generar una correccion severa del precio de la accion."
+      "evidence": "P/E TTM = 45.6x; EV/EBITDA = 40.7x; P/FCF = 56.2x. Market cap de ~USD 5.4 billones al precio de USD 223.47.",
+      "context": "La valuacion es racional solo si el crecimiento de AI infrastructure se mantiene a tasas de 40-80% anuales por varios anos mas. Una desaceleracion a 20-25% podria implicar contraccion multiple significativa."
+    },
+    {
+      "level": "yellow",
+      "title": "Competencia emergente en inference y chips propios de CSPs",
+      "impact": "Medio",
+      "evidence": "AMD MI300X gana cuota en inference; modelos open-source (DeepSeek, LLaMA) reducen barreras; AWS Trainium, Google TPU y Microsoft Maia crecen en workloads propios de los hyperscalers.",
+      "context": "El riesgo es gradual y afecta principalmente al inference de menor complejidad. NVDA mantiene ventaja en training y en workloads de maxima escala. La migracion de CSPs tomaria anos en impactar materialmente."
     },
     {
       "level": "red",
-      "title": "Riesgo de competencia creciente y commoditizacion",
+      "title": "Restricciones regulatorias de exportacion en expansion",
       "impact": "Alto",
-      "evidence": "AMD lanzando MI300X/MI325X. Google (TPU v5), Amazon (Trainium), Microsoft (Maia) desarrollando chips propios. Meta e Intel tambien invierten en alternativas.",
-      "context": "Los hiperescaladores tienen incentivos enormes para reducir dependencia de NVIDIA. Si chips alternativos logran paridad de performance en 3-5 anos, el pricing power de NVIDIA se erosionaria significativamente."
+      "evidence": "Arancel del 25% sobre H200 para China. USD 4.5B cargados en FY2026 por inventario H20. Incertidumbre sobre restricciones a proximas generaciones (Rubin).",
+      "context": "El gobierno de EE.UU. continua endureciendo controles sobre semiconductores avanzados. Cualquier expansion de restricciones a Medio Oriente o India representaria un riesgo material adicional para el TAM de NVDA."
     }
   ],
   "score": {
-    "score": 9.4,
+    "score": 8.6,
     "max": 10,
     "items": [
       {
@@ -419,65 +425,65 @@
       },
       {
         "label": "Generacion de FCF",
-        "score": 9,
+        "score": 5,
         "max": 10
       }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "NVIDIA ejecuta una estrategia de plataforma completa: no vende solo chips, sino un ecosistema (CUDA, cuDNN, TensorRT, NIM, DGX Cloud) que genera lock-in de desarrolladores e investigadores. La transicion a 'full-stack computing' (hardware + software + servicios) expande el mercado direccionable mas alla de la venta de GPUs. La arquitectura Blackwell (B200, GB200) lanzada en FY2025 duplica performance vs. Hopper (H100/H200), asegurando demanda sostenida.",
-    "ventajas": "1) Ecosistema CUDA con 20+ anos de adopcion y millones de desarrolladores capacitados — barrera de entrada insuperable a corto plazo. 2) Modelo fabless (TSMC como socio exclusivo en nodos avanzados) que elimina capex de fabricacion y maximiza ROIC. 3) Network effects: a mayor base de GPUs instaladas, mayor adopcion de software NVIDIA, que refuerza ventas de hardware. 4) Primero en escalar produccion de aceleradores para Large Language Models — ventaja de tiempo al mercado de 3-5 anos sobre competidores.",
-    "debilidades": "1) Dependencia de TSMC para manufactura — cualquier disruption en Taiwan es un riesgo sistematico. 2) Alta concentracion en un solo cliente-tipo (hiperescaladores) — 10 clientes representan mayoria del revenue de Data Center. 3) Ausencia de segmento de servicios recurrentes significativo (la mayor parte del revenue es transaccional, no SaaS). 4) Ciclos de producto de 12-18 meses generan riesgo de inventario si la demanda se adelanta o retrasa.",
+    "estrategia": "NVIDIA ejecuta una estrategia de plataforma integral: hardware (GPU Blackwell/Rubin, CPU Grace, NVLink, DPU) + software (CUDA, AI Enterprise, Omniverse, DRIVE, Clara) + sistemas (DGX Spark, HGX, GB300 NVL72) + ecosistema (developers, ISVs, CSPs, AI model makers). La cadencia de un nuevo producto por ano obliga a los clientes a actualizar continuamente. La expansion hacia physical AI (robotica con Cosmos) y automotive con DRIVE amplian el TAM mas alla de data center.",
+    "ventajas": "1) Ecosistema CUDA con millones de desarrolladores: costo de cambio insuperable. 2) Arquitectura Blackwell full-stack codisenada para AI a escala de data center. 3) Relaciones contractuales y de largo plazo con todos los hyperscalers y fabricantes de modelos de AI. 4) Software stack propietario que se acelera exclusivamente en GPUs NVDA. 5) USD 76.7B invertidos en I+D desde inception, con mas de la mitad de ingenieros trabajando en software.",
+    "debilidades": "1) Dependencia extrema en el segmento Data Center (~88% de ingresos). 2) Modelo fabless: dependencia total de TSMC para manufactura de chips de ultima generacion en Taiwan. 3) Concentracion en 3 clientes directos = 54% del revenue. 4) Margen bruto bajo presion en periodos de transicion de arquitectura.",
     "riesgos": [
-      "Desaceleracion del ciclo de inversion en IA: si los hiperescaladores recortan capex en 2025-2026, el revenue podria contraerse 20-40% desde niveles actuales",
-      "Expansion de restricciones de exportacion: nuevas reglas de BIS (Bureau of Industry and Security) podrian bloquear mercados adicionales, incluyendo paises de Medio Oriente y otros emergentes",
-      "Competencia de chips propios: Amazon Trainium 2, Google TPU v5e y Microsoft Maia 100 ya operan en produccion; en 2-3 anos podrian capturar 15-25% de la carga de trabajo de inferencia",
-      "Concentracion en TSMC: cualquier conflicto geopolitico en Taiwan o problema operativo en TSMC podria interrumpir el suministro de chips criticos",
-      "Riesgo de valoracion: con EPS forward de $5.50-6.00 para FY2026, el stock a $110-115 cotiza a 19-21x forward P/E — cualquier revision a la baja del guidance generaria contraccion multiple severa"
+      "Restricciones de exportacion del gobierno de EE.UU. que limiten el acceso a China, Medio Oriente u otros mercados emergentes de AI",
+      "Desaceleracion del gasto en AI infrastructure si los retornos de inversion de los hyperscalers no se materializan segun lo esperado",
+      "Competencia de chips propios de CSPs (AWS Trainium, Google TPU, Microsoft Maia) que reduzcan la dependencia de GPUs NVDA en workloads internos",
+      "Concentracion de manufactura en TSMC Taiwan: cualquier disrupcion geopolitica o de suministro impactaria severamente la produccion",
+      "Contraccion multiple severa si el crecimiento de revenue se desacelera a tasas de un digito o dos digitos bajos"
     ],
-    "inversiones_estrategicas": "R&D de $12.9B en FY2025 (9.9% del revenue), enfocado en arquitectura Blackwell y proxima generacion Rubin (2026). Expansion de DGX Cloud y NIM (NVIDIA Inference Microservices) como capa de software/SaaS. Acuerdos con operadores telecom para IA en edge computing. Inversion en ecosistema de robotica y vehiculos autonomos (DRIVE Thor). El capex fisico es bajo ($3.2B) por el modelo fabless, pero la inversion intangible en software y IP es significativa."
+    "inversiones_estrategicas": "En FY2026, NVDA invirtio USD 17.5B en empresas privadas y fondos de infraestructura, principalmente startups de AI que son clientes directos o indirectos. Proveo USD 3.5B en garantias de terreno, energia y edificios a compa nias en etapa temprana. Tambien adquirio activos por USD 1.5B neto. Estas inversiones crean un ecosistema de demanda cautiva: las startups que NVDA financia necesitan GPUs NVDA para operar y crecer."
   },
   "verdict": {
-    "status": "Comprar con Conviccion",
-    "score": "9.4/10",
+    "status": "Mantener con Sesgo Positivo",
+    "score": "8.6/10",
     "color": "green",
     "metrics": [
       {
-        "label": "Revenue TTM",
-        "value": "$130.5B"
+        "label": "Revenue FY2026",
+        "value": "215.9B USD"
       },
       {
         "label": "Margen Neto",
-        "value": "55.8%"
+        "value": "55.6%"
       },
       {
         "label": "FCF Yield",
-        "value": "2.4%"
+        "value": "~1.8%"
       },
       {
         "label": "P/E Forward",
-        "value": "20.2x"
+        "value": "51x"
       },
       {
         "label": "Crecimiento Rev.",
-        "value": "+114% YoY"
+        "value": "+65% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Monopolio de IA con moat inexpugnable ->** CUDA tiene 20+ anos de adopcion; >80% cuota de mercado en GPUs para IA; revenue Data Center de $115B en FY2025 (+142% YoY).",
+        "text": "**Liderazgo irrefutable en AI compute ->** NVDA controla el mercado de GPUs para entrenamiento e inferencia. CUDA con millones de desarrolladores crea un moat que tomara anos en erosionarse. Revenue Q1 FY2027 crecio +85% YoY a USD 81.6B, superando expectativas.",
         "type": "pro"
       },
       {
-        "text": "**Margenes en maximos historicos ->** Margen neto de 55.8% y operativo de 62.4%, imposibles de alcanzar por cualquier competidor de semiconductores. FCF de $60.9B en un solo ano.",
+        "text": "**Maquina de generacion de caja ->** FCF de USD 96.7B en FY2026 y USD 62.6B en caja y valores negociables. La empresa financia USD 40B en recompras, USD 17.5B en inversiones estrategicas y USD 6B en capex sin necesidad de deuda.",
         "type": "pro"
       },
       {
-        "text": "**Balance fortaleza ->** Deuda neta negativa de -$34.7B; $43.2B en caja; Debt/EBITDA de 0.09x; $33.7B devueltos a accionistas en recompras en FY2025.",
+        "text": "**Recuperacion de margenes verificada ->** Gross margin en Q1 FY2027 = 74.9% y operating margin = 65.6%, confirmando que el impacto por el cargo H20 de USD 4.5B en FY2026 fue transitorio. Los fundamentos del negocio estan intactos.",
         "type": "pro"
       },
       {
-        "text": "**Riesgo de ciclo y competencia ->** 88% del revenue concentrado en Data Center; si el ciclo de inversion en IA desacelera o competidores (AMD, chips propios de hiperescaladores) ganan traccion, el premium de valuacion podria comprimirse significativamente.",
+        "text": "**Riesgo regulatorio y valuacion exigente ->** Las restricciones de exportacion de EE.UU. (H20, H200 con arancel 25%) son el riesgo mas inmediato. La valuacion de 51x P/E forward descuenta hipercrecimiento sostenido y deja poco margen ante cualquier decepcion en AI spending.",
         "type": "con"
       }
     ]
@@ -486,27 +492,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue de $130.5B en FY2025 representa el mayor crecimiento en la historia de la empresa (+114% YoY). El driver es Data Center con $115.2B, impulsado por chips H100/H200/Blackwell para entrenar y correr modelos de IA. Gaming genero $11.4B (+9% YoY). El guidance para FY2026 apunta a crecimiento adicional con Blackwell en plena rampa de produccion."
+        "texto": "Revenue crecio de USD 26.9B (FY2022) a USD 215.9B (FY2026), un incremento de +703% en cuatro anos. Q1 FY2027 entrego USD 81.6B (+85% YoY), confirmando que la aceleracion continua. El crecimiento esta impulsado por Data Center (~88% de ingresos), con Compute & Networking creciendo +88% YoY en Q1 FY2027."
       },
       {
         "label": "Margenes",
-        "texto": "Margen bruto: 75.0% (vs. 72.7% FY2024), margen operativo: 62.4% (vs. 54.1%), margen neto: 55.8% (vs. 48.8%). La expansion de margenes es continua conforme escala el revenue y mejora el mix hacia Data Center premium. Son los margenes mas altos en la historia de NVIDIA y de cualquier empresa de semiconductores a gran escala."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS GAAP diluted de $2.94 en FY2025 (ajustado por split 10:1 de junio 2024), +147% vs. $1.19 en FY2024. La calidad de las ganancias es alta: FCF de $60.9B representa el 83% del net income GAAP, indicando que las utilidades se convierten efectivamente en caja. Las recompras de acciones ($33.7B) han reducido el share count, aportando crecimiento adicional de EPS."
-      },
-      {
-        "label": "Balance",
-        "texto": "Total assets de $111.6B al 26-ene-2025 (+70% YoY). Shareholders equity de $79.3B. Cash + inversiones de $43.2B vs. deuda total de $8.5B (Long-term: $8.5B, sin deuda de corto plazo). Deuda neta negativa de -$34.7B. Debt/EBITDA de solo 0.09x. El balance es uno de los mas solidos del S&P 500."
+        "texto": "Gross margin FY2026: 71.1% (vs 75.0% en FY2025, impactado por cargo H20). En Q1 FY2027 se recupero a 74.9%. Margen operativo FY2026: 60.4%; Q1 FY2027: 65.6%. Margen neto FY2026: 55.6%; Q1 FY2027: 71.5% (este ultimo incluye ganancias por inversiones de ~19.5% del revenue)."
       },
       {
         "label": "Generacion de caja",
-        "texto": "Operating cash flow de $64.1B (+128% YoY) sobre revenue de $130.5B implica conversion del 49%. Capex de solo $3.2B (modelo fabless, TSMC paga la manufactura). FCF de $60.9B. La empresa devolvio $34.5B a accionistas (recompras $33.7B + dividendos $0.83B) y mantiene $43.2B en caja para oportunidades estrategicas."
+        "texto": "OCF de USD 102.7B en FY2026 (47.6% del revenue) y FCF de USD 96.7B. La empresa mantiene USD 62.6B en caja y valores negociables con deuda neta negativa de USD 2.1B (mas caja que deuda). NVDA es una de las mejores generadoras de caja libre del mundo en terminos absolutos."
+      },
+      {
+        "label": "Balance",
+        "texto": "Deuda total de USD 8.47B (bonos a largo plazo), caja y equivalentes de USD 10.61B mas ~USD 52B en marketable securities. Equity de USD 69.3B. Sin riesgo de liquidez en el horizonte visible. La unica vulnerabilidad del balance es la dependencia de manufactura en TSMC Taiwan."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "Al precio de USD 223.47 (20-May-2026), NVDA cotiza a 45.6x P/E TTM, 51x P/E forward (FY2027e), 40.7x EV/EBITDA y 56.2x P/FCF. Market cap de ~USD 5.4 billones. El FCF yield de ~1.8% es bajo pero justificado para inversores con horizonte de 3-5 anos que anticipen continuidad de la expansion del mercado de AI infrastructure."
       },
       {
         "label": "Riesgos principales",
-        "texto": "1) Ciclo de IA: el revenue de NVIDIA depende en un 88% de que los hiperescaladores continuen invirtiendo agresivamente en infraestructura de IA; una desaceleracion podria reducir el revenue 20-40%. 2) Restricciones de exportacion: China y otras regiones restringidas representan ingresos perdidos y el riesgo regulatorio es persistente. 3) Competencia a largo plazo: Amazon, Google y Microsoft estan construyendo chips propios; si logran paridad de performance en 3-5 anos, erosionaran el pricing power de NVIDIA."
+        "texto": "1) Restricciones de exportacion de EE.UU. que limiten acceso a China y otros mercados. 2) Desaceleracion del gasto en AI infrastructure. 3) Competencia de chips propios de CSPs a mediano plazo. 4) Concentracion en TSMC y en 3 clientes directos que representan mas del 50% del revenue. 5) Contraccion de multiples ante cualquier decepcion en crecimiento."
       }
     ]
   }

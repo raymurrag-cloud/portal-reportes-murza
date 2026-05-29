@@ -1,182 +1,65 @@
 [
   {
-    "ticker": "NVDA",
-    "titulo": "NVIDIA mantiene liderazgo en GPUs AI mientras AMD gana cuota en inferencia",
-    "resumen": "El sector de semiconductores subio 6.1% el martes liderado por Micron (+19.3%) y AMD (+7.8%). NVIDIA sigue siendo el lider indiscutible en GPUs de entrenamiento. Analistas señalan que su negocio de networking (~$60B) esta cerca de superar a Broadcom.",
-    "fuente": "StartupHub / CNBC",
-    "url": "https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-05-26",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "MU",
-    "titulo": "Micron supera $1 trillon de market cap — UBS eleva objetivo a $1,625",
-    "resumen": "Micron Technology entro al club del trillon de dolares el 26-mayo al subir +19.3% en un dia. UBS triplico su precio objetivo a $1,625, impulsado por HBM4 completamente vendido para 2026, Q2 FY2026 revenue de $23.9B (+28% vs guidance), y DRAM prices subiendo 58-63%. La accion acumula +213% YTD y +859% en 12 meses.",
-    "fuente": "CNBC / Benzinga",
-    "url": "https://www.cnbc.com/2026/05/26/micron-stock-trillion-market-cap.html",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "AMD",
-    "titulo": "AMD sube 7.8% por demanda de AI — emerge como segundo actor en GPUs para inferencia",
-    "resumen": "Advanced Micro Devices subio 7.8% el martes dentro del rally de semiconductores impulsado por AI. AMD se posiciona junto a Broadcom como jugador fuerte en la fase de inferencia y agentic AI, donde el mercado se esta desplazando tras el entrenamiento de los grandes modelos.",
-    "fuente": "StartupHub / Motley Fool",
-    "url": "https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-05-26",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "AVGO",
-    "titulo": "Broadcom: AI revenue +106% YoY — lanza primer chip 50G PON Gateway con AI integrado",
-    "resumen": "Broadcom reporto que su revenue de semiconductores AI salto 106% YoY en Q1 FY2026 a $8.4B, representando 43% de su revenue total. Esta semana lanzo el primer chip 50G PON Gateway con AI integrado. Market cap ~$2T. Su posicion como proveedor de chips personalizados para Google, Meta y OpenAI sigue siendo clave.",
-    "fuente": "Benzinga / MEXC",
-    "url": "",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "ASML",
-    "titulo": "UBS reinstala ASML como top pick del sector — High-NA EUV listo pronto",
-    "resumen": "UBS subio el precio objetivo de ASML y la restauro como su top pick en el sector de equipos semiconductores. ASML anuncio que los primeros chips fabricados con sus maquinas High-NA EUV estaran listos pronto. Aunque TSMC ha sido cautelosa con la adopcion por precio, otros fabricantes comienzan a adoptar la tecnologia.",
-    "fuente": "Nasdaq / ASML",
-    "url": "https://www.nasdaq.com/articles/tsmc-just-delivered-incredible-news-asml-investors",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "CRM",
-    "titulo": "Salesforce reporta earnings hoy — Agentforce en foco con ARR de $800M y +169% YoY",
-    "resumen": "Salesforce (CRM) presenta resultados Q1 FY2027 hoy miercoles 27-mayo after market close. La accion cae 32% YTD. Wall Street espera EPS $3.13 (+21.3% YoY) y revenue $11.06B (+12.5%). El foco es Agentforce: ARR de $800M creciendo 169% YoY. Opciones pricean movimiento de 8.7% en cualquier direccion — casi el doble del promedio historico.",
-    "fuente": "Money Morning / TradingKey",
-    "url": "https://moneymorning.com/2026/05/26/salesforce-crm-stock-earnings-agentforce-may-2026",
-    "fecha_noticia": "2026-05-27",
-    "impacto": "neutral"
-  },
-  {
-    "ticker": "MSFT",
-    "titulo": "Microsoft lanza M365 Copilot Business a $21/usuario/mes para PYMES",
-    "resumen": "Microsoft amplio el acceso a AI empresarial con el lanzamiento de Microsoft 365 Copilot Business a $21 por usuario por mes, dirigido a pequeñas y medianas empresas. Q1 FY2026 mostro crecimiento de revenue del 18% YoY. Analistas de BNP Paribas señalan que MSFT es uno de los principales beneficiarios del auge de AI compute.",
-    "fuente": "Benzinga",
-    "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52728483/microsoft-oracle-stand-to-benefit-as-ai-compute-becomes-the-new-oil",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "ORCL",
-    "titulo": "Oracle firma contrato con Departamento de Guerra de EEUU para AI en redes clasificadas",
-    "resumen": "Oracle entro en un acuerdo con el Departamento de Guerra de EEUU para desplegar capacidades AI avanzadas en redes clasificadas. SoftBank adopto OCI para su nube soberana en Japon. Oracle lanzo OCI Enterprise AI con acceso a Grok 4.3 y NVIDIA Nemotron 3. Analistas ven a MSFT y ORCL como los mayores beneficiarios del boom de AI compute.",
-    "fuente": "Simply Wall St / Benzinga",
-    "url": "",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "positivo"
-  },
-  {
-    "ticker": "XOM",
-    "titulo": "Exxon cae 2.68% por esperanzas de acuerdo Iran — petroleo bajo $91",
-    "resumen": "Exxon Mobil cayo 2.68% el martes junto con el sector energetico completo tras reportes de que Iran se comprometio a restaurar el trafico comercial por el Estrecho de Ormuz a niveles pre-guerra en un mes. El petroleo cayo mas del 3% a menos de $91/barril. El Estrecho es clave para el 20% del suministro global de crudo.",
-    "fuente": "IEA / Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Economic_impact_of_the_2026_Iran_war",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "negativo"
-  },
-  {
-    "ticker": "CVX",
-    "titulo": "Chevron cae 3.05% — doble presion: petroleo baja por Iran y Q1 revenue debajo de estimados",
-    "resumen": "Chevron sufrio la mayor caida del sector energetico el martes (-3.05%). Doble golpe: caida del crudo por noticias de ceasefire con Iran, y Q1 revenue de $48.61B que quedo 5.41% por debajo de estimados. A pesar del miss, Barclays y Morgan Stanley subieron sus precios objetivo a $213 y $214 respectivamente en la semana previa.",
-    "fuente": "TradingKey",
-    "url": "https://www.tradingkey.com/news/market-movers/261929049-market-movers-cvx-20260526",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "negativo"
-  },
-  {
     "ticker": "LLY",
-    "titulo": "Eli Lilly adquiere 3 empresas de vacunas por ~$4B — BofA sube PT a $1,251",
-    "resumen": "Eli Lilly anuncio la adquisicion de tres empresas de vacunas: Curevo, LimmaTech Biologics y Vaccine Company por aproximadamente $4B en total. BofA elevo su precio objetivo a $1,251 (antes $1,133) manteniendo Buy. Mounjaro y Zepbound siguen siendo los motores de crecimiento con demanda rapidamente creciente.",
-    "fuente": "Yahoo Finance / Robinhood",
-    "url": "",
-    "fecha_noticia": "2026-05-26",
+    "titulo": "CVS restaura cobertura de Zepbound y agrega Foundayo — Eli Lilly alcanza nuevo ATH de $1,147",
+    "resumen": "CVS Health anuncio el 28-mayo que restaurara la cobertura preferencial de Zepbound (tirzepatide) en sus formularios comerciales a partir del 1-octubre, y agregara Foundayo (la nueva pastilla de obesidad de Lilly) desde el 1-junio. El acuerdo llego tras una renegociacion de precios. Eli Lilly subio mas del 5%, alcanzando un nuevo record historico de $1,147.95 y market cap de ~$1.02 trillones — primer cierre record del ano. NVO cedió terreno en respuesta.",
+    "fuente": "CNBC / Yahoo Finance / TipRanks",
+    "url": "https://www.cnbc.com/2026/05/28/cvs-covers-zepbound-adds-eli-lilly-foundayo.html",
+    "fecha_noticia": "2026-05-28",
     "impacto": "positivo"
   },
   {
-    "ticker": "JNJ",
-    "titulo": "J&J paga dividendo — ex-date 26-mayo, $1.34 por accion",
-    "resumen": "Johnson & Johnson tuvo su ex-date de dividendo el 26-mayo por $1.34 por accion. El precio se ubico entre $229-$233.50 el miercoles 27-mayo. La empresa mantiene su perfil defensivo con dividendo consistente mientras el sector salud enfrenta presiones regulatorias.",
-    "fuente": "Yahoo Finance",
-    "url": "",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "neutral"
-  },
-  {
-    "ticker": "NVO",
-    "titulo": "Novo Nordisk mejora guia 2026 — ventas bajaran 4-12% (menos que el 5-13% anterior)",
-    "resumen": "Novo Nordisk actualizo su outlook 2026: ahora espera que ventas ajustadas y utilidad operativa bajen entre 4-12% (antes 5-13%), una mejoria marginal. El catalizador sigue siendo Wegovy, que gana penetracion en nuevos mercados de obesidad. La demanda de GLP-1 continua expandiendose.",
-    "fuente": "Yahoo Finance / CNN",
-    "url": "",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "neutral"
-  },
-  {
-    "ticker": "UNH",
-    "titulo": "UnitedHealth cae 3% — sigue en crisis estructural, -50% desde maximos historicos",
-    "resumen": "UnitedHealth Group cayo 2.99% el martes a $376.86. El sector de seguros de salud sigue bajo presion politica y de costos. El medical care ratio alcanzo 92% en Q4 2025 y el outlook 2026 quedo debajo del consenso. La accion cotiza 50% por debajo de sus maximos historicos. Oscar Health (OSCR) tambien cayo 3.31%.",
-    "fuente": "Finviz / Benzinga",
-    "url": "https://finviz.com/news/288746/oscar-health-oscr-slides-as-medicare-proposal-unitedhealth-miss-rock-insurer-stocks",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "negativo"
-  },
-  {
-    "ticker": "TSLA",
-    "titulo": "Tesla obtiene aprobacion FSD en EU — Europa +46.5% YoY en abril",
-    "resumen": "Tesla recibio aprobacion regulatoria de la UE para su sistema Full Self-Driving, comenzando por Paises Bajos y Lituania. Las ventas en Europa en abril subieron 46.5% YoY a 10,654 unidades — tercer mes consecutivo de recuperacion, aunque siguen por debajo de BYD (27,008). Ademas, reportes señalan que Tesla y SpaceX planean una fab de chips y asistente AI conjuntos.",
-    "fuente": "Investing.com",
-    "url": "https://www.investing.com/analysis/teslas-european-recovery-is-real-but-byd-defines-the-limit-200680993",
-    "fecha_noticia": "2026-05-26",
+    "ticker": "PLTR",
+    "titulo": "Palantir +3.65% el 28-mayo — US commercial +133% YoY, guia full-year sube a +71% de crecimiento",
+    "resumen": "Palantir subio 3.65% el 28-mayo apoyado en sus resultados Q1 FY2027: US commercial revenue disparo 133% a $595M y US government revenue subio 84% a $687M. La empresa elevo su guia de revenue para el ano completo a una tasa de crecimiento del 71%, el mas alto en su historia. Ademas, aseguro un contrato de defensa de $1B a inicios de 2026. PLTR cotiza a ~$155 al 29-mayo.",
+    "fuente": "Motley Fool / TradingKey / SEC EDGAR",
+    "url": "https://www.fool.com/investing/2026/05/28/why-palantir-stock-is-soaring-today/",
+    "fecha_noticia": "2026-05-28",
     "impacto": "positivo"
-  },
-  {
-    "ticker": "BABA",
-    "titulo": "Alibaba reporta EPS de $0.09 vs $1.12 estimado — primera perdida operativa en anos",
-    "resumen": "Alibaba (Q1 FY2026) reporto EPS de $0.09 versus $1.12 estimado — un miss masivo. Primera perdida operativa en varios anos, causada por inversiones agresivas en AI y quick commerce que dispararon el capex y generaron FCF negativo. Sin embargo, Alibaba presento su chip AI Zhenwu M890 el 20-mayo. 41 analistas mantienen 'Strong Buy' con PT promedio $191 (+47%).",
-    "fuente": "TradingKey",
-    "url": "",
-    "fecha_noticia": "2026-05-21",
-    "impacto": "negativo"
-  },
-  {
-    "ticker": "MELI",
-    "titulo": "MercadoLibre -40% YTD — margenes bajo presion por inversion agresiva en Brasil",
-    "resumen": "MercadoLibre reporto Q1 2026 con revenue de $8,845M (+49% YoY) pero sufrio una caida de 13% post-earnings por margenes bajo presion. La empresa invierte agresivamente en logistica, envio gratis y credito en Brasil mientras enfrenta competencia de Amazon y Shopee. La accion cae 40% en 2026. Motley Fool pregunto publicamente si ya es momento de comprar.",
-    "fuente": "Yahoo Finance / Motley Fool",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-meli-releases-financial-results-133100911.html",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "negativo"
-  },
-  {
-    "ticker": "CRWD",
-    "titulo": "CrowdStrike cae 3.55% — Zscaler -23% arrastra al sector cybersecurity",
-    "resumen": "CrowdStrike bajo 3.55% el martes a $647.68. El detonante fue el desplome de Zscaler (-23%) tras dar guidance de revenue Q actual de $875-878M, cayendo corto del estimado de $879M de los analistas. El mercado reacciono negativamente a toda la categoria de cybersecurity cloud. CRWD recupero parte del terreno el miercoles (+1.22%).",
-    "fuente": "TheStreet",
-    "url": "https://www.thestreet.com/latest-news/stock-market-today-may-27-2026-nasdaq-sp-500-open-higher-as-unprecedented-chip-sector-continues-rally",
-    "fecha_noticia": "2026-05-26",
-    "impacto": "negativo"
   },
   {
     "ticker": "JPM",
-    "titulo": "JPMorgan Q1 2026: utilidad $16.5B (+13%), EPS $5.94 beat, 14 anos consecutivos subiendo dividendo",
-    "resumen": "JPMorgan Chase reporto resultados Q1 2026 con utilidad neta de $16.5B (+13% YoY) y EPS de $5.94 versus $5.45 estimado. El revenue de trading subio 21% en renta fija. La empresa continua su racha de 14 anos consecutivos aumentando el dividendo, con un pago de $1.50 por accion. El precio cotiza ~$307.",
-    "fuente": "Robinhood / CNN",
-    "url": "",
+    "titulo": "Dimon en conferencia Bernstein: JPMorgan podria gastar hasta $20B en una adquisicion — accion cae 3%",
+    "resumen": "El CEO Jamie Dimon dijo el 27-mayo en la conferencia Bernstein Strategic Decisions que JPMorgan podria destinar entre $10B y $20B a una adquisicion en los proximos anos. Las condiciones: el target debe encajar en la estructura del banco, alinear cultura y sumar a lineas de negocio centrales. El mercado reacciono negativamente: JPM cayo mas del 3% en la sesion. Dimon tambien señalo que el banco esta 'over-earning' y estimo gastos 2026 cerca de $106B vs $105B antes guiado.",
+    "fuente": "Yahoo Finance / TheStreet / Stocktwits",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/jamie-dimon-says-jpmorgan-could-143808499.html",
+    "fecha_noticia": "2026-05-27",
+    "impacto": "negativo"
+  },
+  {
+    "ticker": "QCOM",
+    "titulo": "Qualcomm +12% — amplia deal con Stellantis para Snapdragon Digital Chassis en ADAS, cockpit y conectividad",
+    "resumen": "Qualcomm y Stellantis ampliaron su asociacion para cubrir cockpit, conectividad y sistemas ADAS (frenado, dirección, alertas de seguridad) bajo la plataforma Snapdragon Digital Chassis para toda la proxima generacion de vehiculos Stellantis (Jeep, Ram, Chrysler, Peugeot). aiMotive, la filial de simulacion y conduccion autonoma de Stellantis, se unira a Qualcomm. La accion subio ~12% con el anuncio y acumulo +17% en la semana. Revenue automotriz de QCOM alcanzo record de $1.33B en Q2 2026.",
+    "fuente": "Yahoo Finance / SeekingAlpha / CoinCentral",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/ai-chip-stocks-jump-qualcomm-122029972.html",
     "fecha_noticia": "2026-05-26",
     "impacto": "positivo"
   },
   {
-    "ticker": "NFLX",
-    "titulo": "Netflix -16% en el mes — sin upgrade de guidance 2026 decepciona al mercado",
-    "resumen": "Netflix ha caido 16% en mayo tras no elevar su guidance para 2026. El Q1 fue solido con $12.25B en revenue y presupuesto de contenido de $20B para el año. Sin embargo, la falta de un upgrade del outlook decepciono a inversores que esperaban aceleracion. La empresa trabaja en nuevas alianzas incluyendo video podcasts con Spotify.",
-    "fuente": "Gurufocus / Yahoo Finance",
-    "url": "https://www.gurufocus.com/news/3143262/netflix-nflx-and-spotify-partner-to-launch-video-podcasts-in-2026",
-    "fecha_noticia": "2026-05-26",
+    "ticker": "SNOW",
+    "titulo": "Snowflake Q1 FY2027 bate ampliamente: EPS $0.39 vs $0.14 estimado (+178%), product revenue +34% YoY",
+    "resumen": "Snowflake reporto Q1 FY2027 el 27-mayo con product revenue de $1.33B (+34% YoY), superando estimados. EPS no-GAAP de $0.39 vs $0.14 esperado — uno de los mayores beats del sector software. Los resultados contrastan con el 'SaaSpocalypse' que ha castigado al sector cloud (-20% YTD el WisdomTree Cloud Fund). La pregunta del mercado: si Snowflake puede crecer 34% con AI como catalizador, el sector podria estar sobrecastigado.",
+    "fuente": "SEC EDGAR / Yahoo Finance / Public.com",
+    "url": "https://finance.yahoo.com/quote/SNOW/",
+    "fecha_noticia": "2026-05-27",
+    "impacto": "positivo"
+  },
+  {
+    "ticker": "NVO",
+    "titulo": "Novo Nordisk presenta nuevos datos de GLP-1 en congreso ADA — buyback de DKK 15B en marcha",
+    "resumen": "Novo Nordisk presento nuevos datos de su portafolio cardiometabolico en el congreso ADA (American Diabetes Association) en mayo 2026, reforzando el perfil clinico de Wegovy y ozempic en outcomes cardiovasculares. La empresa tiene activo un programa de recompra de DKK 15B. La accion cede terreno esta semana ante la noticia de que CVS reincorporo Zepbound de Lilly, que compite directamente con Wegovy en los formularios de seguros.",
+    "fuente": "Yahoo Finance / CNN",
+    "url": "https://finance.yahoo.com/quote/NVO/",
+    "fecha_noticia": "2026-05-28",
+    "impacto": "negativo"
+  },
+  {
+    "ticker": "XOM",
+    "titulo": "Exxon cae por segunda semana — petroleo baja a $87.66 ante avance de negociaciones Iran-EE.UU.",
+    "resumen": "WTI cayo 1.4% a $87.66 el 29-mayo y Brent retrocedio 1.3% a $92.47 ante reportes de progreso en conversaciones de paz entre EE.UU. e Iran que podrian reducir las interrupciones en el Estrecho de Ormuz. Exxon Mobil sigue bajo presion: ya habia caido 2.68% el 26-mayo por el mismo tema. El petroleo cotiza ~7% por debajo de sus maximos recientes y el sector energetico lidera las caidas del mercado esta semana. Analistas advierten que 'Project Freedom' esta pausado, no cancelado.",
+    "fuente": "TheStreet / TipRanks / 247WallSt",
+    "url": "https://tipranks.com/news/xom-cvx-cop-sink-as-crude-drops-below-100-on-u-s-iran-ceasefire-whats-next",
+    "fecha_noticia": "2026-05-29",
     "impacto": "negativo"
   }
 ]

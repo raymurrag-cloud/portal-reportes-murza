@@ -1,7 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "Starbucks Corporation reporto ingresos de $37.18B en FY2025 (+2.8% YoY), pero la utilidad neta se contrajo 50% a $1.86B por costos de reestructuracion y deterioro de margenes operativos. El margen operativo cayo de 15.0% a 7.9%, impulsado por cierres de 627 tiendas, inversiones laborales y deleverage. CEO Brian Niccol ejecuta la estrategia Back to Starbucks con enfoque en experiencia en tienda, simplificacion de menu y renovacion del portfolio. La tesis de inversion es un turnaround — los proximos 2-3 anos determinaran si Niccol puede replicar en SBUX el exito que tuvo en Chipotle.",
-  "descripcion": "Starbucks Corporation opera la mayor cadena de cafeterias del mundo con mas de 40,000 tiendas en 88 paises. El modelo combina tiendas operadas directamente (North America e International) con tiendas licenciadas. Starbucks Rewards cuenta con mas de 34 millones de miembros activos en EE.UU., generando mas del 53% de las ventas en tiendas de EE.UU. El moat del negocio es la marca global, la plataforma digital de lealtad y la escala operativa. La compania enfrenta un turnaround bajo CEO Brian Niccol (desde sep 2024), quien implementa Back to Starbucks para recuperar trafico y margenes.",
+  "resumen": "Starbucks Corporation (SBUX) es la cadena de cafeterias mas grande del mundo con mas de 40,900 ubicaciones en 86 paises. FY2025 fue un ano de transicion bajo la estrategia Back to Starbucks del CEO Brian Niccol: los ingresos crecieron +2.8% a 37.2B USD, pero el margen operativo se contrajo 710 pbs a 7.9% por reestructuracion y reinversion en personal. Con cotizacion de 101 USD, la accion descuenta una recuperacion de margenes significativa; el catalizador clave es la restauracion de trafico en tiendas.",
+  "descripcion": "Starbucks opera en tres segmentos: North America (74% de ingresos), International (21%) y Channel Development (5%). El negocio se divide entre tiendas propias y licenciadas, con la marca como moat central. En FY2025 cerro 627 tiendas en Norteamerica como parte de la reestructuracion. En Q2 FY2026 los ingresos crecieron +8.8% YoY a 9.5B USD con margen operativo de 8.7%, senalando mejora progresiva. La Global Coffee Alliance con Nestle genera regalias de alto margen. China (~10% del negocio) es el mayor riesgo geografico.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -10,6 +10,7 @@
       "FY2023",
       "FY2024",
       "FY2025",
+      "Q2 FY2026",
       "Var. YoY"
     ],
     "rows": [
@@ -20,7 +21,8 @@
         "35.98",
         "36.18",
         "37.18",
-        "+2.8%"
+        "9.53",
+        "+8.8%"
       ],
       [
         "Utilidad Neta (B USD)",
@@ -29,24 +31,27 @@
         "4.12",
         "3.76",
         "1.86",
-        "-50.5%"
+        "0.51",
+        "+33.1%"
       ],
       [
         "Margen Neto",
-        "14.5%",
+        "14.4%",
         "10.2%",
         "11.5%",
         "10.4%",
         "5.0%",
-        "-5.4pp"
+        "5.4%",
+        "+0.4pp"
       ],
       [
         "EBITDA (B USD)",
-        "6.39",
+        "6.40",
         "6.15",
         "7.32",
         "7.00",
         "4.71",
+        "N/D",
         "-32.7%"
       ],
       [
@@ -56,16 +61,18 @@
         "3.68",
         "3.32",
         "2.44",
+        "N/D",
         "-26.5%"
       ],
       [
         "EPS Diluido",
         "3.54",
-        "2.83",
+        "2.86",
         "3.58",
         "3.31",
         "1.63",
-        "-50.8%"
+        "0.45",
+        "+32.4%"
       ],
       [
         "Deuda Neta (B USD)",
@@ -73,7 +80,8 @@
         "12.05",
         "11.82",
         "12.28",
-        "12.85",
+        "12.86",
+        "13.55",
         "+4.6%"
       ]
     ]
@@ -81,23 +89,23 @@
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "65.4x",
+      "value": "77x",
       "signal": "red",
-      "note": "vs QSR sector ~22x — penalizado por reestructuracion",
-      "precio_base": 106.62,
-      "precio_fecha": "2026-05-12",
+      "note": "Deprimido por cargos FY2025; TTM EPS 1.31",
+      "precio_base": 101.05,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 1.63
+        "valor": 1.31
       }
     },
     {
       "label": "P/E Forward",
-      "value": "44.4x",
-      "signal": "yellow",
-      "note": "Basado en EPS estimado FY2026 ~$2.40",
-      "precio_base": 106.62,
-      "precio_fecha": "2026-05-12",
+      "value": "42x",
+      "signal": "red",
+      "note": "vs. sector restaurant ~28x",
+      "precio_base": 101.05,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_fwd",
         "valor": 2.4
@@ -105,11 +113,10 @@
     },
     {
       "label": "EV/EBITDA",
-      "value": "28.5x",
-      "signal": "yellow",
-      "note": "Vs QSR ~15x — prima por marca global y turnaround",
-      "precio_base": 106.62,
-      "precio_fecha": "2026-05-12",
+      "value": "27x",
+      "signal": "red",
+      "precio_base": 101.05,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "ev_ebitda",
         "ebitda_b": 4.71,
@@ -119,11 +126,10 @@
     },
     {
       "label": "P/FCF",
-      "value": "49.7x",
+      "value": "47x",
       "signal": "red",
-      "note": "FCF comprimido por restructuracion y capex elevado",
-      "precio_base": 106.62,
-      "precio_fecha": "2026-05-12",
+      "precio_base": 101.05,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "p_fcf",
         "fcf_b": 2.44,
@@ -132,19 +138,19 @@
     },
     {
       "label": "Deuda Neta/EBITDA",
-      "value": "2.73x",
-      "signal": "yellow"
-    },
-    {
-      "label": "FCF Yield",
-      "value": "2.0%",
+      "value": "2.7x",
       "signal": "yellow"
     },
     {
       "label": "ROE",
-      "value": "N/M",
+      "value": "N/A",
       "signal": "yellow",
-      "note": "Patrimonio negativo estructural por buybacks historicos"
+      "note": "Patrimonio negativo por recompras acumuladas"
+    },
+    {
+      "label": "ROIC",
+      "value": "10.4%",
+      "signal": "yellow"
     }
   ],
   "chart_ingresos": {
@@ -191,31 +197,31 @@
     "data": [
       {
         "label": "FY2021",
-        "bruto": 27.8,
+        "bruto": 69.6,
         "operativo": 16.8,
-        "neto": 14.5
+        "neto": 14.4
       },
       {
         "label": "FY2022",
-        "bruto": 27.1,
-        "operativo": 14.3,
+        "bruto": 69.4,
+        "operativo": 14.4,
         "neto": 10.2
       },
       {
         "label": "FY2023",
-        "bruto": 27.3,
-        "operativo": 16.3,
+        "bruto": 69.6,
+        "operativo": 16.2,
         "neto": 11.5
       },
       {
         "label": "FY2024",
-        "bruto": 26.7,
+        "bruto": 69.1,
         "operativo": 15,
         "neto": 10.4
       },
       {
         "label": "FY2025",
-        "bruto": 25.4,
+        "bruto": 68.7,
         "operativo": 7.9,
         "neto": 5
       }
@@ -239,69 +245,69 @@
     "items": [
       {
         "label": "Dividendos",
-        "value": "$2.77B FY2025",
-        "nota": "Dividendo por accion mantenido ~$2.44/accion anual — compromiso con accionistas durante turnaround"
-      },
-      {
-        "label": "Recompras",
-        "value": "$0 FY2025",
-        "nota": "CEO Niccol pauso recompras para preservar capital y financiar reestructuracion"
+        "value": "2.77B USD",
+        "nota": "FY2025; dividendo anual 2.44/accion; pagado consistentemente"
       },
       {
         "label": "Capex",
-        "value": "$2.31B FY2025",
-        "nota": "Renovacion de tiendas, nuevo equipo de cafe Clover Vertica, mejoras en Mobile Order y tecnologia"
+        "value": "2.31B USD",
+        "nota": "FY2025; foco en aperturas internacionales y tecnologia en tienda"
+      },
+      {
+        "label": "Recompras",
+        "value": "0B USD",
+        "nota": "Suspendidas en FY2025; 1.27B en FY2024"
       },
       {
         "label": "Reestructuracion",
-        "value": "~$1.1B FY2025",
-        "nota": "Costos de cierre de 627 tiendas globales en Q4 FY2025 — parte del Back to Starbucks"
+        "value": "0.89B USD",
+        "nota": "Cierre de 627 tiendas y simplificacion organizacional"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "SBUX FY2025",
-      "QSR Sector",
+      "SBUX TTM",
+      "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
-        "Margen Operativo",
-        "7.9%",
-        "~15%",
-        "Por debajo — impactado por reestructuracion temporal"
+        "Gross Margin",
+        "68.7%",
+        "~65%",
+        "Por encima del sector"
       ],
       [
-        "Margen Neto",
-        "5.0%",
-        "~10%",
-        "Por debajo — en recuperacion"
+        "Margen Operativo",
+        "7.9%",
+        "~13%",
+        "Por debajo del sector (transitorio)"
       ],
       [
         "Revenue Growth",
         "+2.8%",
-        "~3-5%",
+        "~5%",
+        "Por debajo del sector"
+      ],
+      [
+        "P/E Forward",
+        "42x",
+        "~25x",
+        "Prima de recuperacion elevada"
+      ],
+      [
+        "ROIC",
+        "10.4%",
+        "~12%",
         "En linea con sector"
-      ],
-      [
-        "EV/EBITDA",
-        "28.5x",
-        "~15x",
-        "Prima significativa — requiere recuperacion de margenes"
-      ],
-      [
-        "FCF Yield",
-        "2.0%",
-        "~4%",
-        "Por debajo del sector — FCF comprimido por capex turnaround"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "Deterioro de margenes significativo en FY2025 — turnaround en etapas tempranas con riesgo de ejecucion",
-    "analisis": "Los resultados FY2025 reflejan el impacto masivo de la estrategia Back to Starbucks: cierres de 627 tiendas, inversiones laborales (~130 bps de margen), deleverage (-210 bps) y restructuracion (~240 bps) comprimieron el margen operativo de 15.0% a 7.9%. Excluyendo items especiales, el margen operativo ajustado fue ~11-12%. Niccol implemento el Green Apron Service en toda la red de EE.UU. en Q4 FY2025.",
+    "veredicto": "SBUX atraviesa su mayor contraccion de margenes en una decada; la reestructuracion es voluntaria y transitoria",
+    "analisis": "Los cargos de 892M USD por cierre de tiendas y la reinversion en personal comprimieron el margen operativo de 15% a 7.9% en FY2025. Sin estos cargos el margen operativo ajustado seria ~10.3%. El Q2 FY2026 muestra recuperacion: OM del 8.7% con ingresos +8.8% YoY. El riesgo principal es China (trafico negativo) y el nivel de deuda neta de 12.9B.",
     "items": [
       {
         "metrica": "Revenue YoY",
@@ -309,28 +315,28 @@
         "status": "ok"
       },
       {
+        "metrica": "Margen Bruto",
+        "valor": "68.7%",
+        "status": "ok"
+      },
+      {
         "metrica": "Margen Operativo",
-        "valor": "7.9% (-710bps)",
+        "valor": "7.9%",
         "status": "bad"
       },
       {
         "metrica": "Margen Neto",
-        "valor": "5.0% (-540bps)",
-        "status": "bad"
-      },
-      {
-        "metrica": "EBITDA YoY",
-        "valor": "$4.71B (-32.7%)",
-        "status": "bad"
+        "valor": "5.0%",
+        "status": "warn"
       },
       {
         "metrica": "FCF YoY",
-        "valor": "$2.44B (-26.5%)",
+        "valor": "-26.5%",
         "status": "warn"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "$12.85B (+4.6%)",
+        "valor": "12.9B USD",
         "status": "warn"
       }
     ]
@@ -338,49 +344,42 @@
   "flags": [
     {
       "level": "green",
-      "title": "Starbucks Rewards — 34M+ miembros activos en EE.UU.",
+      "title": "Marca global con moat profundo",
       "impact": "Alto",
-      "evidence": "Rewards genera +53% de ventas en EE.UU. — programa de lealtad mas grande en QSR",
-      "context": "La plataforma de datos propietaria permite personalizacion, Mobile Order y promociones dirigidas — un activo que tardaria anos en replicarse y que genera un ciclo virtuoso de engagement."
+      "evidence": "40,990 tiendas en 86 paises; Starbucks Rewards con 34M+ miembros activos en EE.UU.; brand value top 50 mundial",
+      "context": "El poder de marca permite precios premium y trafico recurrente; la barrera de entrada para competidores a escala es muy alta."
     },
     {
       "level": "green",
-      "title": "CEO Brian Niccol — track record probado en turnaround",
+      "title": "Recuperacion visible en Q2 FY2026",
       "impact": "Alto",
-      "evidence": "Niccol duplico margen operativo de Chipotle de ~10% a ~17% en 5 anos como CEO (2018-2024)",
-      "context": "Mismo playbook: simplificacion de menu, velocidad de servicio, empoderamiento de managers y disciplina operativa. Su contratacion en ago-2024 fue el catalizador que elevo SBUX +25% en un dia."
+      "evidence": "Ingresos Q2 FY2026: 9.53B (+8.8% YoY); utilidad neta 0.51B (+33% YoY); EPS 0.45 vs 0.34 hace un ano",
+      "context": "La estrategia Back to Starbucks comienza a generar resultados; si la tendencia continua el EPS FY2026 podria superar estimaciones."
     },
     {
-      "level": "green",
-      "title": "Global Coffee Alliance — royalties de alto margen con Nestle",
+      "level": "yellow",
+      "title": "Deuda elevada y FCF bajo presion",
       "impact": "Medio",
-      "evidence": "Canal Development genero $2.1B en FY2025 (+6% YoY) por acuerdo con Nestle de $7.15B firmado en 2018",
-      "context": "Flujo de ingresos recurrentes y alto margen que no requiere capital de tiendas — amortiguador importante durante el turnaround de las tiendas fisicas."
-    },
-    {
-      "level": "yellow",
-      "title": "China debil — JV con Boyu Capital como nueva estrategia",
-      "impact": "Alto",
-      "evidence": "China comp sales negativas — Luckin Coffee tiene 20,000+ tiendas con precios 40% menores",
-      "context": "El JV con Boyu Capital anunciado en nov 2025 reconoce que la estrategia directa no funcionaba. El desenlace de China es el mayor comodin del modelo a largo plazo."
-    },
-    {
-      "level": "yellow",
-      "title": "Ventas comparables negativas — trafico bajo presion",
-      "impact": "Alto",
-      "evidence": "Comp transactions -4% en North America FY2025 — congestion en tiendas y precios percibidos como altos",
-      "context": "Green Apron Service implementado en Q4 FY2025 busca reducir tiempos y mejorar experiencia. Se necesitan 2-4 trimestres adicionales para confirmar la tendencia de recuperacion."
+      "evidence": "Deuda neta 12.9B USD; ND/EBITDA 2.7x; FCF 2.44B vs dividendo 2.77B en FY2025; recompras suspendidas",
+      "context": "El dividendo consume mas FCF del generado; la normalizacion de margenes es necesaria para restablecer la cobertura de dividendo."
     },
     {
       "level": "red",
-      "title": "Valuacion exigente para un negocio en turnaround",
+      "title": "Valuacion exige ejecucion perfecta",
       "impact": "Alto",
-      "evidence": "P/E trailing 65x y EV/EBITDA 28.5x con margenes en minimos historicos",
-      "context": "Si margen operativo se recupera a 13-15% para FY2027 la valuacion se vuelve razonable. Si el turnaround falla o se retrasa, el riesgo a la baja desde $106 es sustancial."
+      "evidence": "P/E forward 42x; EV/EBITDA 27x vs historico ~18x; precio implica recuperacion de margenes a 13-15% en 2-3 anos",
+      "context": "Cualquier retraso en la recuperacion de trafico o deterioro adicional en China podria presionar significativamente el precio."
+    },
+    {
+      "level": "red",
+      "title": "China con trafico negativo estructural",
+      "impact": "Alto",
+      "evidence": "Comparable store sales China negativas por cuartos consecutivos; Luckin Coffee supera 20,000 tiendas a precios menores",
+      "context": "China era el motor de crecimiento internacional; la estrategia de largo plazo en la region permanece incierta."
     }
   ],
   "score": {
-    "score": 6,
+    "score": 5.8,
     "max": 10,
     "items": [
       {
@@ -400,7 +399,7 @@
       },
       {
         "label": "Solidez del balance",
-        "score": 6,
+        "score": 5,
         "max": 10
       },
       {
@@ -411,58 +410,54 @@
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Back to Starbucks tiene tres pilares: (1) Experiencia en tienda — Green Apron Service model, reduccion de tiempos de espera, menu simplificado con nuevas plataformas de bebidas. (2) Disciplina de portfolio — cierre de tiendas sin path a rentabilidad, JV en China con Boyu Capital. (3) Digital y lealtad — reimaginacion de Starbucks Rewards, mejoras en Mobile Order (35%+ de transacciones en EE.UU.), mayor personalizacion.",
-    "ventajas": "Marca global reconocida en 88 paises con 40,000+ tiendas. Starbucks Rewards con 34M+ miembros es el programa de lealtad mas exitoso en QSR. Escala operativa permite negociacion de commodities y eficiencia logistica. Global Coffee Alliance con Nestle genera royalties de alto margen. Concepto de tercer lugar dificil de replicar en el segmento premium-masivo.",
-    "debilidades": "Estructura de costos elevada vs. competidores especializados. Complejidad de menu que alargo tiempos de servicio. Exposicion al precio del cafe como commodity. Dependencia de expansion China con competencia local feroz. Deuda neta de $12.85B limita flexibilidad financiera. Dividendos en FY2025 superaron el FCF generado.",
+    "estrategia": "Brian Niccol lidera la estrategia Back to Starbucks: restaurar la experiencia de cafeteria con servicio humanizado (Green Apron), reducir la complejidad del menu, cerrar tiendas no rentables (627 en FY2025), y reinvertir en personal de tienda. El objetivo es recuperar el trafico perdido mediante experiencia superior, no guerra de precios.",
+    "ventajas": "Marca con reconocimiento global; ecosistema de lealtad Starbucks Rewards; distribucion via Global Coffee Alliance (Nestle) que genera ingresos de alto margen sin capex adicional; capacidad de fijacion de precios demostrada; 40,900 tiendas como red de distribucion y marketing.",
+    "debilidades": "Patrimonio contable negativo (-8.1B) por recompras agresivas historicas; alta dependencia de trafico de tiendas fisicas; costos laborales crecientes; modelo de tienda propia con alto capex vs. franquicias de competidores; margen operativo en minimos historicos.",
     "riesgos": [
-      "Turnaround mas lento de lo esperado — si margenes no recuperan a 12%+ para FY2027 la tesis se debilita materialmente",
-      "China no se recupera o JV con Boyu no genera sinergias — China representa ~6,000 tiendas y potencial enorme de largo plazo",
-      "Recesion en EE.UU. golpea trafico — SBUX opera en segmento premium, vulnerable a down-trading en desaceleracion economica",
-      "Inflacion en commodities — cafe, leche, energia comprimen margenes adicionales durante la recuperacion"
+      "China: trafico negativo persistente y competencia de Luckin Coffee con modelo de menor precio",
+      "Consumidor: presion sobre gasto discrecional en entorno macro volatil; percepcion de precio elevado",
+      "Ejecucion: riesgo de que Back to Starbucks no restaure el trafico en los plazos esperados por el mercado",
+      "Regulatorio: riesgos laborales en EE.UU., sindicalismo en expansion y costos de cumplimiento crecientes"
     ],
-    "inversiones_estrategicas": "Renovacion de tiendas con nuevo equipo Clover Vertica. Plataforma Mobile Order (35%+ de transacciones en EE.UU.). Reimaginacion de Starbucks Rewards con mayor personalizacion. JV China con Boyu Capital. Expansion en India como mercado emergente clave. Leadership Experience 2025 — inversion en cultura y capacitacion de lideres de tienda."
+    "inversiones_estrategicas": "Adquisicion de 23.5 Degrees Topco (operador UK) por ~177M USD para consolidar mercado britanico. Inversion en tecnologia de tienda (maquinas de espresso automatizadas, app movil mejorada). Global Coffee Alliance con Nestle continua generando regalias de alto margen. Capex FY2025 de 2.31B USD orientado a nuevas tiendas internacionales y renovaciones de tiendas existentes."
   },
   "verdict": {
     "status": "Mantener",
-    "score": "6.0/10",
+    "score": "5.8/10",
     "color": "yellow",
     "metrics": [
       {
         "label": "Revenue FY2025",
-        "value": "$37.18B"
+        "value": "37.2B USD"
       },
       {
-        "label": "Margen Operativo",
-        "value": "7.9%"
+        "label": "Margen Neto",
+        "value": "5.0%"
       },
       {
         "label": "FCF Yield",
-        "value": "2.0%"
+        "value": "2.1%"
       },
       {
         "label": "P/E Forward",
-        "value": "44.4x"
+        "value": "42x"
       },
       {
-        "label": "Comp Sales FY2025",
-        "value": "-2% global"
+        "label": "Rev Q2 FY2026",
+        "value": "+8.8% YoY"
       }
     ],
     "bullets": [
       {
-        "text": "**Niccol y Rewards son activos diferenciadores ->** El CEO tiene track record probado en turnaround y la plataforma de 34M miembros es irremplazable. Si el playbook de Chipotle funciona, el upside es sustancial desde niveles actuales.",
+        "text": "**Recuperacion visible ->** Q2 FY2026 mostro +8.8% en ingresos y +33% en utilidad neta YoY; si la tendencia se mantiene el EPS FY2026 podria acercarse a 2.40-2.60 USD.",
         "type": "pro"
       },
       {
-        "text": "**FCF robusto a pesar del turnaround ->** $2.44B de FCF en el peor ano operativo demuestra la resiliencia estructural del modelo. Con menores costos de reestructuracion en FY2026, el FCF deberia recuperar a $3.5-4B.",
+        "text": "**Marca con moat profundo ->** 40,900 tiendas globales, Starbucks Rewards y la alianza con Nestle generan ventajas competitivas duraderas que ningun competidor puede replicar rapidamente a escala.",
         "type": "pro"
       },
       {
-        "text": "**Marca global con escala y moat de lealtad ->** 40,000+ tiendas, reconocimiento global y el programa de lealtad mas grande en QSR son moats duraderos que ningun competidor puede replicar rapidamente.",
-        "type": "pro"
-      },
-      {
-        "text": "**Valuacion exigente en etapa critica ->** A 44x P/E forward y 28.5x EV/EBITDA, el mercado ya precio parte del exito del turnaround. Si la recuperacion de margenes se retrasa, el riesgo a la baja desde $106 es significativo.",
+        "text": "**Valuacion exigente ->** A 42x P/E forward y 27x EV/EBITDA el mercado ya descuenta una recuperacion exitosa; si la ejecucion decepciona o China sigue deteriorandose el precio tiene espacio considerable a la baja.",
         "type": "con"
       }
     ]
@@ -471,27 +466,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "Revenue crecio 2.8% a $37.18B en FY2025, impulsado por nuevas tiendas y el Canal de Desarrollo (+6%), parcialmente neutralizado por ventas comparables negativas. El modelo tiene el reto de recuperar trafico organico en tiendas existentes."
+        "texto": "Revenue crecio +2.8% a 37.2B USD en FY2025 impulsado por nuevas tiendas; comparable store sales cayo -1% en EE.UU. y fue negativo en China. Q2 FY2026 mostro recuperacion con +8.8% YoY senalando que la estrategia de Niccol comienza a operar."
       },
       {
         "label": "Margenes",
-        "texto": "FY2025 fue el ano de mayor contraccion de margenes en la historia reciente: margen operativo 7.9% vs 15.0% en FY2024. La caida refleja ~$1.1B en costos de reestructuracion, 130 bps de inversiones laborales y 210 bps de deleverage. Excluyendo items especiales, el margen operativo ajustado fue ~11-12%."
-      },
-      {
-        "label": "EPS",
-        "texto": "EPS diluted de $1.63 en FY2025 vs $3.31 en FY2024, caida del 50.8%. El deterioro es en gran parte no recurrente por reestructuracion e impairment de tiendas. El consenso apunta a recuperacion a $2.40-2.70 para FY2026."
-      },
-      {
-        "label": "Balance",
-        "texto": "Patrimonio negativo de ~$8.3B es estructural y resultado de decadas de recompras agresivas — no es senal de deterioro reciente. La deuda neta de $12.85B con EBITDA de $4.71B implica un ratio de 2.73x, manejable. El grado de inversion de SBUX esta intacto."
+        "texto": "Margen operativo colapso de 15% a 7.9% en FY2025 por 892M en cargos de reestructuracion y reinversion en personal. Sin cargos el margen operativo ajustado seria ~10.3%. En Q2 FY2026 el margen operativo recupero a 8.7%."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de $2.44B en FY2025 es el nivel mas bajo en 5 anos, comprimido por mayor capex de renovacion ($2.31B) y costos de reestructuracion. Los dividendos ($2.77B) superaron el FCF — situacion no sostenible si no hay recuperacion en FY2026-FY2027."
+        "texto": "FCF de 2.44B USD en FY2025 (-26.5% YoY); OCF de 4.75B. El dividendo consume 2.77B/ano superando el FCF generado. Las recompras fueron suspendidas. Se espera normalizacion del FCF conforme los margenes recuperen hacia niveles historicos."
+      },
+      {
+        "label": "Balance",
+        "texto": "Patrimonio negativo de -8.1B por recompras historicas acumuladas. Deuda neta de 12.9B USD (ND/EBITDA 2.7x). La posicion es manejable pero limita la flexibilidad para recompras y M&A. La solidez real del balance reside en el FCF estructural del negocio."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "P/E forward 42x y EV/EBITDA 27x implican recuperacion de margenes a niveles historicos en 2-3 anos. A 101 USD la accion tiene upside moderado si la estrategia ejecuta, pero el ratio riesgo/recompensa no es asimetrico dado el nivel de partida."
       },
       {
         "label": "Riesgos principales",
-        "texto": "El riesgo central es la velocidad del turnaround. China es el comodin de mayor impacto — el JV con Boyu reconoce que la estrategia directa no funcionaba. La valuacion exigente (P/E fwd 44x) deja poco margen de error. Indicador clave a monitorear: comp sales Q1-Q2 FY2026."
+        "texto": "China (trafico negativo vs Luckin Coffee), ejecucion de Back to Starbucks, costos laborales crecientes en EE.UU., y valuacion que no perdona errores. Monitorear comparable store sales trimestrales y margen operativo como indicadores lideres de la tesis."
       }
     ]
   }

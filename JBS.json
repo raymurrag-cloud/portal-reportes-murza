@@ -1,7 +1,7 @@
 {
   "parrafos_gratis": 14,
-  "resumen": "JBS S.A. es la mayor procesadora de proteinas animales del mundo, con operaciones en carne vacuna, porcina, aves y derivados en mas de 20 paises. Cotiza en la B3 de Brasil (JBSS3) y como ADR en NYSE (JBSAY). En FY2024 reporto ingresos de USD 73.5B con recuperacion notable del margen neto tras el dificil FY2023. La empresa opera bajo un modelo de integracion vertical con marcas globales como Swift, Pilgrim Pride, Primo Foods y Seara.",
-  "descripcion": "JBS opera cuatro segmentos principales: JBS Beef North America (30% revenue), Pilgrim Pride Corp-PPC (aves, 22%), JBS Brazil (vacuno/porcino/aves, 20%) y JBS International (Europa/Australia/Oceania, 28%). Su moat se sustenta en escala operativa sin precedente, integracion vertical desde granjas hasta retail, y un portafolio de marcas premium en multiples proteinas. Opera mas de 400 plantas de procesamiento.",
+  "resumen": "JBS S.A. es la mayor procesadora de proteinas animales del mundo, con operaciones en carne vacuna, aves, cerdo, cordero y pescado en mas de 180 paises. En FY2024 genero ingresos de USD 77.2B con EBITDA ajustado de USD 7.2B y recupero rentabilidad con margen neto del 2.5%. Cotiza en NYSE como JBS N.V. con valuacion atractiva de 7.9x P/E y 6.1x EV/EBITDA, con FCF yield del 20%.",
+  "descripcion": "JBS opera 7 segmentos: Brazil, Seara, Beef North America, Pork USA, Pilgrims Pride, Australia y Otros. Su moat se basa en escala operativa incomparable (#1 carne bovina global, #1 aves global, #2 cerdo global), diversificacion en 180 paises, marcas Swift, Seara, Friboi y Pilgrim, y capacidad logistica global. En 2025 completo reestructuracion hacia JBS N.V. con listado NYSE.",
   "tabla": {
     "headers": [
       "Metrica",
@@ -9,138 +9,138 @@
       "FY2022",
       "FY2023",
       "FY2024",
-      "FY2025",
+      "FY2025e",
       "Var. YoY"
     ],
     "rows": [
       [
         "Revenue (B USD)",
-        "52.0",
+        "65.0",
+        "72.6",
         "72.9",
-        "72.4",
-        "73.5",
-        "75.2",
-        "+2.3%"
+        "77.2",
+        "~88.3",
+        "+5.8%"
       ],
       [
         "Utilidad Neta (B USD)",
-        "3.20",
-        "3.60",
-        "0.31",
-        "1.82",
-        "2.10",
-        "+15.4%"
+        "3.82",
+        "3.14",
+        "-0.13",
+        "1.97",
+        "~4.0",
+        "+NM"
       ],
       [
         "Margen Neto",
-        "6.2%",
-        "4.9%",
-        "0.4%",
+        "5.9%",
+        "4.3%",
+        "-0.2%",
         "2.5%",
-        "2.8%",
-        "+0.3pp"
+        "~4.5%",
+        "+2.7pp"
       ],
       [
-        "EBITDA (B USD)",
-        "6.5",
-        "8.4",
-        "5.8",
-        "7.2",
-        "7.8",
-        "+8.3%"
+        "EBITDA Adj. (B USD)",
+        "7.66",
+        "6.72",
+        "3.46",
+        "7.19",
+        "~9.0",
+        "+108%"
       ],
       [
         "FCF (B USD)",
-        "2.1",
-        "2.8",
-        "1.4",
-        "1.4",
-        "1.6",
-        "+14.3%"
+        "2.22",
+        "0.41",
+        "0.88",
+        "2.75",
+        "~3.5",
+        "+213%"
       ],
       [
         "EPS Diluido",
-        "1.35",
-        "1.52",
-        "0.13",
-        "0.77",
-        "0.89",
-        "+15.6%"
+        "1.54",
+        "1.34",
+        "-0.09",
+        "0.80",
+        "~1.68",
+        "+NM"
       ],
       [
         "Deuda Neta (B USD)",
-        "12.2",
-        "13.8",
-        "15.1",
-        "14.7",
-        "14.5",
-        "-1.4%"
+        "~13.0",
+        "~15.8",
+        "~14.4",
+        "13.7",
+        "~13.0",
+        "-0.7B"
       ]
     ]
   },
   "kpis": [
     {
       "label": "P/E Trailing",
-      "value": "9.7x",
+      "value": "7.9x",
       "signal": "green",
-      "note": "vs. sector proteico ~14x",
-      "precio_base": 7.5,
-      "precio_fecha": "2026-04-28",
+      "note": "vs. sector ~15x",
+      "precio_base": 12.74,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_ttm",
-        "valor": 0.77
+        "valor": 1.62
       }
     },
     {
       "label": "P/E Forward",
-      "value": "7.1x",
+      "value": "7.6x",
       "signal": "green",
-      "precio_base": 7.5,
-      "precio_fecha": "2026-04-28",
+      "precio_base": 12.74,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "eps_fwd",
-        "valor": 1.05
+        "valor": 1.685
       }
     },
     {
       "label": "EV/EBITDA",
-      "value": "8.7x",
-      "signal": "yellow",
-      "precio_base": 7.5,
-      "precio_fecha": "2026-04-28",
+      "value": "6.1x",
+      "signal": "green",
+      "precio_base": 12.74,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "ev_ebitda",
-        "ebitda_b": 7.8,
-        "shares_m": 7100,
-        "deuda_neta_b": 14.7
+        "ebitda_b": 7.192,
+        "shares_m": 776,
+        "deuda_neta_b": 13.7
       }
     },
     {
       "label": "P/FCF",
-      "value": "33.3x",
-      "signal": "red",
-      "precio_base": 7.5,
-      "precio_fecha": "2026-04-28",
+      "value": "5.0x",
+      "signal": "green",
+      "precio_base": 12.74,
+      "precio_fecha": "2026-05-26",
       "fundamento": {
         "tipo": "p_fcf",
-        "fcf_b": 1.6,
-        "shares_m": 7100
+        "fcf_b": 2.75,
+        "shares_m": 776
       }
     },
     {
       "label": "Deuda Neta/EBITDA",
       "value": "1.9x",
-      "signal": "green"
+      "signal": "yellow"
     },
     {
       "label": "ROE",
-      "value": "15.2%",
+      "value": "24.2%",
       "signal": "green"
     },
     {
       "label": "ROIC",
-      "value": "13.5%",
-      "signal": "green"
+      "value": "~12%",
+      "signal": "yellow"
     }
   ],
   "chart_ingresos": {
@@ -148,28 +148,23 @@
     "data": [
       {
         "label": "FY2021",
-        "revenue": 52,
-        "utilidad": 3.2
+        "revenue": 65,
+        "utilidad": 3.82
       },
       {
         "label": "FY2022",
-        "revenue": 72.9,
-        "utilidad": 3.6
+        "revenue": 72.6,
+        "utilidad": 3.14
       },
       {
         "label": "FY2023",
-        "revenue": 72.4,
-        "utilidad": 0.31
+        "revenue": 72.9,
+        "utilidad": -0.13
       },
       {
         "label": "FY2024",
-        "revenue": 73.5,
-        "utilidad": 1.82
-      },
-      {
-        "label": "FY2025",
-        "revenue": 75.2,
-        "utilidad": 2.1
+        "revenue": 77.2,
+        "utilidad": 1.97
       }
     ],
     "series": [
@@ -187,33 +182,27 @@
     "data": [
       {
         "label": "FY2021",
-        "bruto": 17.5,
-        "operativo": 10.6,
-        "neto": 6.2
+        "bruto": 18.9,
+        "operativo": 9.2,
+        "neto": 5.9
       },
       {
         "label": "FY2022",
-        "bruto": 14.4,
-        "operativo": 9.3,
-        "neto": 4.9
+        "bruto": 15.9,
+        "operativo": 6.6,
+        "neto": 4.3
       },
       {
         "label": "FY2023",
-        "bruto": 11.3,
-        "operativo": 5.4,
-        "neto": 0.4
+        "bruto": 10.9,
+        "operativo": 1.5,
+        "neto": -0.2
       },
       {
         "label": "FY2024",
-        "bruto": 13.3,
-        "operativo": 6.1,
+        "bruto": 15,
+        "operativo": 5.7,
         "neto": 2.5
-      },
-      {
-        "label": "FY2025",
-        "bruto": 13.6,
-        "operativo": 6.4,
-        "neto": 2.8
       }
     ],
     "series": [
@@ -234,85 +223,85 @@
   "capital_allocation": {
     "items": [
       {
-        "label": "Capex",
-        "value": "2.8B USD",
-        "nota": "Inversion sostenida en plantas, automatizacion y expansion en Brasil y EE.UU."
-      },
-      {
         "label": "Dividendos",
-        "value": "~0.5B USD",
-        "nota": "Politica de dividendos moderada, payout ~25% del net income"
+        "value": "~0.8B USD",
+        "nota": "USD 0.48/accion en FY2024; politica de 25% del beneficio neto por ley brasilena"
       },
       {
-        "label": "Reduccion Deuda",
-        "value": "~0.4B USD",
-        "nota": "Reduccion gradual de deuda neta desde maximo FY2023"
+        "label": "Capex",
+        "value": "1.5B USD",
+        "nota": "66% mantenimiento, 34% expansion de capacidad en FY2024"
+      },
+      {
+        "label": "Recompras",
+        "value": "0B USD",
+        "nota": "No se realizaron recompras en FY2024; FY2022 incluyo USD 552M de buybacks"
       },
       {
         "label": "M&A",
-        "value": "~0.3B USD",
-        "nota": "Adquisiciones selectivas en proteinas alternativas y procesados premium"
+        "value": "~0B USD",
+        "nota": "Actividad M&A pausada en FY2024; fase de consolidacion post-adquisiciones"
       }
     ]
   },
   "comparacion_sector": {
     "headers": [
       "Metrica",
-      "JBSAY TTM",
+      "JBS TTM",
       "Sector ref.",
       "Posicion relativa"
     ],
     "rows": [
       [
         "Gross Margin",
-        "13.3%",
-        "~12%",
-        "En linea con sector"
+        "15.0%",
+        "~14%",
+        "En linea con sector carnico"
       ],
       [
         "Margen Operativo",
-        "6.1%",
-        "~5%",
-        "Ligeramente por encima"
+        "5.7%",
+        "~4%",
+        "Por encima del sector"
       ],
       [
         "Revenue Growth",
-        "+2.3%",
+        "+5.8%",
         "~3%",
-        "En linea con sector"
+        "Por encima del sector"
       ],
       [
         "P/E Forward",
-        "7.1x",
-        "~12x",
-        "Descuento vs sector"
+        "7.6x",
+        "~15x",
+        "Descuento significativo vs. sector"
       ],
       [
         "ROIC",
-        "13.5%",
-        "~8%",
+        "~12%",
+        "~10%",
         "Por encima del sector"
       ]
     ]
   },
   "deterioro": {
-    "veredicto": "JBS muestra recuperacion financiera en FY2024 tras el dificil FY2023, con expansion de margenes y FCF positivo.",
-    "analisis": "La empresa sufrio en FY2023 por sobreoferta en carne vacuna norteamericana y presion de costos. La recuperacion en FY2024 refleja normalizacion del ciclo ganadero en EE.UU. y mejora en Brasil. El ratio ND/EBITDA bajo de 2.6x a 1.9x.",
+    "veredicto": "JBS muestra recuperacion solida en FY2024 tras el annus horribilis de FY2023; EBITDA se duplico y FCF alcanzo USD 2.75B.",
+    "analisis": "FY2023 fue contraccion excepcional: ciclo negativo de bovino USA, presion de costos de insumos y tipo de cambio adverso. FY2024 confirma recuperacion estructural con margenes en expansion. Deuda neta de 13.7B es manejable con ND/EBITDA de 1.9x.",
     "items": [
       {
         "metrica": "Revenue YoY",
-        "valor": "+2.3%",
+        "valor": "+5.8%",
         "status": "ok"
       },
       {
         "metrica": "Margen Bruto",
-        "valor": "13.3%",
+        "valor": "15.0%",
         "status": "ok"
       },
       {
         "metrica": "Margen Operativo",
-        "valor": "6.1%",
-        "status": "ok"
+        "valor": "5.7%",
+        "status": "warn"
       },
       {
         "metrica": "Margen Neto",
@@ -321,12 +310,12 @@
       },
       {
         "metrica": "FCF YoY",
-        "valor": "1.4B USD",
-        "status": "warn"
+        "valor": "+213%",
+        "status": "ok"
       },
       {
         "metrica": "Deuda Neta",
-        "valor": "14.7B USD",
+        "valor": "13.7B",
         "status": "warn"
       }
     ]
@@ -334,69 +323,69 @@
   "flags": [
     {
       "level": "green",
-      "title": "Lider global por escala",
+      "title": "Valuacion extremadamente barata",
       "impact": "Alto",
-      "evidence": "Revenue 73.5B USD FY2024, mayor procesadora de proteinas del mundo",
-      "context": "La escala le da poder de negociacion con retailers y acceso preferencial a materia prima. Opera en 20+ paises con mas de 150,000 empleados."
+      "evidence": "P/E 7.9x, EV/EBITDA 6.1x, P/FCF 5.0x. Descuento del 50%+ vs. sector alimentos ~15-20x EV/EBITDA",
+      "context": "El mercado penaliza el stock por riesgo Brasil y volatilidad ciclica. A estos precios el upside es significativo si los multiples se normalizan."
     },
     {
       "level": "green",
-      "title": "Recuperacion del ciclo ganadero en EE.UU.",
+      "title": "Liderazgo mundial en proteinas",
       "impact": "Alto",
-      "evidence": "Margen EBITDA subio de 8.0% en FY2023 a 9.8% en FY2024",
-      "context": "El ciclo ganadero en Norteamerica se normaliza tras sobreoferta de 2022-2023. Se espera mejora continua en FY2025."
+      "evidence": "#1 carne bovina global, #1 aves global, #2 cerdo global por capacidad. 320,000 clientes en 180 paises",
+      "context": "Escala incomparable con barrera de entrada casi insuperable por requerimientos de capital. Posicion consolidada con +20 anos de adquisiciones."
+    },
+    {
+      "level": "green",
+      "title": "FCF recovery excepcional FY2024",
+      "impact": "Alto",
+      "evidence": "FCF de USD 2.75B en FY2024 vs USD 0.88B en FY2023 (+213% YoY). FCF yield ~20% sobre market cap",
+      "context": "Recuperacion impulsada por normalizacion del ciclo bovino USA y mejora de margenes en Seara y Pilgrims. Capacidad para reducir deuda agresivamente."
     },
     {
       "level": "yellow",
-      "title": "Descuento estructural por cotizacion ADR",
+      "title": "Apalancamiento moderado-alto",
       "impact": "Medio",
-      "evidence": "JBSAY cotiza con descuento vs valor intrinseco por riesgo Brasil y estructura corporativa",
-      "context": "La empresa esta en proceso de listado primario en NYSE, lo que podria eliminar el descuento ADR y atraer capital institucional."
+      "evidence": "Deuda neta de USD 13.7B, ND/EBITDA de 1.9x en FY2024",
+      "context": "Mejoro vs. 4.2x en FY2023. Vencimientos escalonados hasta mid-2032. No es riesgo inmediato pero limita buybacks y dividendos extraordinarios."
     },
     {
       "level": "yellow",
-      "title": "Margenes estrechos tipicos del sector proteico",
+      "title": "Margenes ciclicos y volatiles",
       "impact": "Medio",
-      "evidence": "Margen neto 2.5% FY2024, sensible a precios de commodities y costos de energia",
-      "context": "El negocio de proteinas animales opera con margenes de 2-6% neto. Cualquier shock en granos, energia o tipo de cambio impacta directamente."
+      "evidence": "Margen neto oscilo entre -0.2% (FY2023) y 5.9% (FY2021) segun ciclo bovino USA",
+      "context": "La proteina animal es commodity ciclica. El ciclo bovino USA se normaliza lentamente. Seara y aves compensan parte pero no eliminan la volatilidad."
     },
     {
       "level": "red",
-      "title": "Deuda neta elevada 14.7B USD",
+      "title": "Riesgo regulatorio y gobernanza Brasil",
       "impact": "Alto",
-      "evidence": "Deuda Neta/EBITDA de 1.9x pero en terminos absolutos es la mayor carga del sector",
-      "context": "En escenarios de recesion o caida de precios, el servicio de deuda (~1.5B USD por ano) consume buena parte del FCF."
-    },
-    {
-      "level": "yellow",
-      "title": "Riesgo regulatorio y de sostenibilidad",
-      "impact": "Medio",
-      "evidence": "Investigaciones previas de cartel en Brasil, presion ESG por deforestacion",
-      "context": "JBS enfrenta escrutinio regulatorio continuo. El relisting en NYSE requiere cumplimiento ESG mas estricto."
+      "evidence": "Investigacion J&F Leniency activa; familia Batista controla ~40% con estructura de voto concentrada",
+      "context": "Historial de escandalo de corrupcion 2017-2018. Reestructuracion a JBS N.V. busca separar riesgo juridico Brasil. Persisten riesgos de litigios y multas."
     }
   ],
   "score": {
-    "score": 6.4,
+    "score": 7.2,
     "max": 10,
     "items": [
       {
         "label": "Poder de fijacion de precios",
-        "score": 5,
+        "score": 6,
         "max": 10
       },
       {
         "label": "Crecimiento de revenue",
-        "score": 6,
+        "score": 7,
         "max": 10
       },
       {
         "label": "Calidad de margenes",
-        "score": 6,
+        "score": 7,
         "max": 10
       },
       {
         "label": "Solidez del balance",
-        "score": 6,
+        "score": 7,
         "max": 10
       },
       {
@@ -407,58 +396,63 @@
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "JBS ejecuta una estrategia de integracion vertical y diversificacion geografica para reducir volatilidad de ciclos proteicos. La expansion hacia proteinas alternativas y alimentos procesados premium busca margenes mas altos. El relisting en NYSE es el catalizador principal de 2025-2026.",
-    "ventajas": "Escala incomparable con 400+ plantas en 20+ paises, diversificacion por proteina (vacuno, porcino, aves, salmon, procesados), marcas reconocidas globalmente (Swift, Seara, Primo), y acceso preferencial a materia prima por volumen.",
-    "debilidades": "Margenes operativos tipicamente bajos (5-7%) por naturaleza de la industria, alta sensibilidad a ciclos ganaderos y precios de granos, deuda neta significativa (14.7B USD), y exposicion cambiaria al BRL.",
+    "estrategia": "JBS ejecuta estrategia de consolidacion global en proteinas animales: adquisiciones para ganar escala, optimizacion de costos e integracion vertical. En 2025 completo reestructuracion hacia JBS N.V. con cotizacion NYSE, separando el negocio del riesgo juridico Brasil y abriendo acceso a capital institucional americano. La estrategia de marcas premium busca reducir exposicion a volatilidad de commodities.",
+    "ventajas": "Escala sin precedentes en la industria carnica global; diversificacion geografica y de especies reduce concentracion de riesgo; presencia en paises exportadores lideres con acceso a mercados asiaticos; marcas reconocidas con poder de pricing en categorias value-added; alta eficiencia operativa por economias de escala.",
+    "debilidades": "Margenes netos bajos y ciclicos inherentes al negocio de proteinas; apalancamiento que limita flexibilidad financiera; exposicion cambiaria multidivisa compleja; dependencia de insumos agricolas volatiles; riesgo reputacional y regulatorio heredado del escandalo J&F.",
     "riesgos": [
-      "Ciclo ganadero en EE.UU.: si el inventario se recupera mas rapido de lo esperado, presion sobre precios en FY2025",
-      "Tasas de interes: refinanciamiento de deuda en entorno de tasas altas incrementa costo financiero",
-      "Regulatorio: proceso de relisting en NYSE podria enfrentar objeciones por historico de governance",
-      "Tipo de cambio: depreciacion del BRL reduce ingresos en USD de segmento Brasil (~20% del total)"
+      "Ciclo bovino USA: compresion de oferta de ganado puede mantenerse hasta 2026-2027 presionando margenes de Beef NA",
+      "Restricciones sanitarias o arancelarias a exportaciones desde Brasil/Australia hacia China o Japon",
+      "Litigios J&F Leniency: multas adicionales o escandalo reputacional podrian impactar flujo de caja y acceso a credito",
+      "Fortalecimiento de BRL o AUD vs USD erosiona resultados consolidados reportados en dolares",
+      "Disrupciones en cadena de suministro de granos y soya por eventos climaticos extremos"
     ],
-    "inversiones_estrategicas": "Capex de 2.8B USD/ano en automatizacion y modernizacion de plantas, expansion de capacidad en Brasil (Seara) y EE.UU. (Pilgrim Pride). Inversion en plataforma digital de trazabilidad blockchain."
+    "inversiones_estrategicas": "Capex de USD 1.5B en FY2024: expansion de planta de especialidades en Columbia SC, modernizacion de facilidades Seara Brasil y expansion de capacidad avicola. Inversion en tecnologia de procesamiento para mejorar rendimientos. Exploracion de proteinas alternativas bajo marca Incrivel (plant-based) en Brasil."
   },
   "verdict": {
-    "status": "Mantener / Compra Especulativa",
-    "score": "6.4/10",
-    "color": "yellow",
+    "status": "Comprar con Conviccion",
+    "score": "7.2/10",
+    "color": "green",
     "metrics": [
       {
-        "label": "Revenue TTM",
-        "value": "73.5B USD"
+        "label": "Revenue FY2024",
+        "value": "USD 77.2B"
       },
       {
-        "label": "Margen Neto",
-        "value": "2.5%"
+        "label": "EBITDA Adj.",
+        "value": "USD 7.2B"
       },
       {
-        "label": "FCF Yield",
-        "value": "3%"
+        "label": "FCF FY2024",
+        "value": "USD 2.75B"
       },
       {
         "label": "P/E Forward",
-        "value": "7.1x"
+        "value": "7.6x"
       },
       {
-        "label": "Crecimiento Rev.",
-        "value": "+2.3% YoY"
+        "label": "EV/EBITDA",
+        "value": "6.1x"
       }
     ],
     "bullets": [
       {
-        "text": "**Lider global con escala unica** -- Ninguna empresa rivaliza con los 73.5B USD de revenue y presencia en 20+ paises. La escala genera eficiencias que los competidores no pueden replicar.",
+        "text": "**Valuacion de ganga** - Con P/E de 7.9x y EV/EBITDA de 6.1x, JBS cotiza con descuento del 50%+ frente a peers globales de alimentos y ofrece FCF yield del 20%, creando perfil de retorno asimetrico excepcional.",
         "type": "pro"
       },
       {
-        "text": "**Catalizador claro: relisting NYSE** -- El proceso de listado primario en NYSE podria eliminar el descuento ADR (~20-30%) y atraer capital institucional, desbloqueando valor significativo.",
+        "text": "**Liderazgo estructural en proteinas** - JBS es la empresa #1 global en carne bovina y aves por capacidad. Escala inexpugnable consolidada con mas de 20 anos de adquisiciones estrategicas y USD 19B+ de deuda total como reflejo de la escala alcanzada.",
         "type": "pro"
       },
       {
-        "text": "**Recuperacion del ciclo ganadero** -- El ciclo en EE.UU. normaliza en 2025-2026, lo que impulsara margenes de JBS Beef North America, el segmento mas rentable historicamente.",
+        "text": "**Recovery de EBITDA y FCF confirmado** - EBITDA ajustado se duplico a USD 7.2B en FY2024 vs USD 3.5B en FY2023, con FCF de USD 2.75B que permite reduccion acelerada de deuda y mayor retorno de capital en 2025-2026.",
         "type": "pro"
       },
       {
-        "text": "**Deuda neta de 14.7B USD** -- En escenarios adversos, el servicio de deuda consume buena parte del FCF. Es el principal riesgo financiero estructural.",
+        "text": "**Reestructuracion a NYSE como catalizador** - Listado como JBS N.V. en NYSE abre la accion a capital institucional americano antes excluido, y puede ser catalizador para re-rating del multiplo hacia sector.",
+        "type": "pro"
+      },
+      {
+        "text": "**Riesgo ciclico y de gobernanza** - Los margenes son inherentemente ciclicos (margen neto entre -0.2% y 5.9% en 4 anos) y el historial de la familia Batista requiere prima de riesgo permanente que puede limitar re-rating del multiplo.",
         "type": "con"
       }
     ]
@@ -467,27 +461,27 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "JBS genero 73.5B USD en FY2024, un +1.5% vs FY2023. El crecimiento es modesto pero estable. El segmento Pilgrim Pride (aves) fue el mas dinamico con expansion de margenes. Se espera aceleracion en FY2025 impulsada por recuperacion del ciclo vacuno en EE.UU."
+        "texto": "Revenue de USD 77.2B en FY2024 (+5.8% YoY), impulsado por Seara Brasil, Pilgrims Pride y recuperacion parcial de Beef North America. TTM segun Yahoo supera USD 88B, sugiriendo aceleracion adicional en 2025."
       },
       {
         "label": "Margenes",
-        "texto": "El margen EBITDA mejoro de 8.0% (FY2023) a 9.8% (FY2024), y el margen neto recupero de 0.4% a 2.5%. La mejora refleja normalizacion de costos de ganado en Norteamerica y eficiencias operativas en Brasil."
+        "texto": "Margen bruto recuperado al 15.0% (vs 10.9% en FY2023), margen operativo al 5.7% y margen neto del 2.5%. La mejora refleja normalizacion del ciclo bovino USA y expansion de categorias value-added en Seara y Pilgrims Pride."
       },
       {
         "label": "Generacion de caja",
-        "texto": "FCF de 1.4B USD en FY2024, en linea con FY2023 pero por debajo del potencial historico. El Capex de 2.8B USD es elevado pero necesario. Con normalizacion del ciclo, el FCF podria alcanzar 2.5-3.0B USD en FY2026."
+        "texto": "OCF de USD 4.2B y FCF de USD 2.75B en FY2024, el mejor nivel desde FY2021. FCF yield del ~20% sobre market cap actual es excepcional. Liquidez solida con USD 5.6B en caja y USD 3.4B en lineas revolving disponibles."
       },
       {
         "label": "Balance",
-        "texto": "Deuda neta de 14.7B USD es el principal punto de presion. El ratio ND/EBITDA bajo de 2.6x a 1.9x en FY2024, dentro del objetivo de la empresa (<2.0x)."
+        "texto": "Deuda neta de USD 13.7B con ND/EBITDA de 1.9x, mejorada desde pico >4x en FY2023. Deuda total de USD 19.3B con vencimientos escalonados hasta 2032. Equity de USD 8.1B con ROE del 24%."
       },
       {
         "label": "Valuacion",
-        "texto": "A los precios actuales, JBSAY cotiza con descuento significativo vs peers como Tyson Foods (~15x P/E). El descuento refleja riesgo pais Brasil y estructura corporativa compleja. El relisting NYSE es el principal catalizador."
+        "texto": "A USD 12.74 por accion, JBS cotiza a P/E de 7.9x TTM y 7.6x forward, EV/EBITDA de 6.1x y P/FCF de 5.0x. Descuentos del 40-60% vs. peers de alimentos. Upside al precio justo (12-15x EPS fwd) implica potencial del 55-100%."
       },
       {
         "label": "Riesgos principales",
-        "texto": "1) Sobreoferta de proteinas en EE.UU. si el ciclo ganadero revierte. 2) Refinanciamiento de deuda en entorno de tasas altas. 3) Objeciones regulatorias al relisting NYSE. 4) Depreciacion del BRL que reduce valor en USD de operaciones brasilenas."
+        "texto": "(1) Ciclicidad del ciclo bovino USA con oferta comprimida hasta 2026-2027; (2) Riesgo regulatorio y litigios J&F Leniency activos; (3) Restricciones sanitarias o arancelarias a exportaciones hacia Asia (49% del total exportado); (4) Exposicion cambiaria en portafolio multi-divisa."
       }
     ]
   }

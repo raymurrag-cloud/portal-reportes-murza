@@ -1,254 +1,467 @@
 {
-  "resumen": "Johnson & Johnson (JNJ) es un conglomerado de salud de primer nivel que opera en dos segmentos: Innovative Medicine (pharma) y MedTech. Tras el spin-off de Kenvue (segmento consumer: Band-Aid, Tylenol, Neutrogena) en agosto de 2023, JNJ es una empresa enfocada en pharma de alto margen y dispositivos medicos, con ingresos FY2024 de $88.8B (+4.3% vs FY2023) y FCF de $19.8B. Dividend aristocrat con 60+ anos de incrementos consecutivos de dividendo; el principal riesgo a corto plazo es la erosion de Stelara por biosimilares en 2025.",
-  "descripcion": "Johnson & Johnson es una de las empresas de salud mas grandes del mundo. Post spin-off de Kenvue (agosto 2023), opera exclusivamente en dos segmentos: Innovative Medicine (pharma: Darzalex oncologia de rapido crecimiento, Stelara inmunologia, Tremfya, Erleada, Carvykti CAR-T) y MedTech (ortopedia, cirugia cardiovascular via Shockwave Medical, electrofisiologia, vision). La compania mantiene calificacion crediticia AAA, genera FCF consistente superior a $19B anuales, y ha incrementado su dividendo cada ano desde 1963 -- mas de 60 anos consecutivos de crecimiento de dividendo.",
+  "parrafos_gratis": 14,
+  "resumen": "Johnson & Johnson es uno de los conglomerados de salud mas grandes del mundo, con operaciones en Medicamentos Innovadores (Oncologia, Inmunologia, Neurociencia) y MedTech (dispositivos medicos). Con ingresos de 94.2B USD en FY2025 y un historial de 62 anos consecutivos de incremento de dividendo, JNJ representa una de las empresas de healthcare mas resilientes del mercado. La accion cotiza a 230.68 USD con un P/E forward de 21.8x y FCF yield de 3.5%, ofreciendo una combinacion de crecimiento y estabilidad atractiva para inversionistas a largo plazo.",
+  "descripcion": "JNJ opera en dos segmentos: Innovative Medicine (~65% de ingresos) con productos lideres como DARZALEX (mieloma multiple), TREMFYA, ERLEADA y CARVYKTI; y MedTech (~35%) en cirugia, ortopedia y cardiovascular. Tras la escision de Kenvue en 2023, JNJ se enfoca en medicamentos de alto margen y dispositivos medicos de alto valor. La empresa cuenta con un pipeline de mas de 90 moleculas en desarrollo y una posicion dominante en hematologia y oncologia. Su modelo de negocio diversificado, con exposicion a mas de 175 paises, proporciona resiliencia ante ciclos economicos y moat estructural por patentes, escala regulatoria y fuerza comercial global.",
   "tabla": {
-    "headers": ["Metrica", "FY2020", "FY2021", "FY2022", "FY2023", "FY2024", "Var. YoY"],
+    "headers": [
+      "Metrica",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "Q1 2026",
+      "Var. YoY"
+    ],
     "rows": [
-      ["Revenue ($B)*", 82.58, 93.78, 94.94, 85.16, 88.82, "+4.3%"],
-      ["Utilidad Neta ($B)**", 14.71, 20.88, 17.94, 35.15, 14.07, "-60.0%"],
-      ["Margen Neto (%)", "17.8%", "22.3%", "18.9%", "41.3%", "15.8%", "-25.5pp"],
-      ["Gross Profit ($B)***", 54.16, 55.34, 55.39, 58.61, 61.35, "+4.7%"],
-      ["Margen Bruto (%)", "65.6%", "70.3%", "69.3%", "68.8%", "69.1%", "+0.3pp"],
-      ["EBITDA ($B)", 27.15, 28.33, 27.98, 29.50, 28.59, "-3.1%"],
-      ["FCF ($B)", 20.19, 19.76, 17.19, 18.25, 19.84, "+8.7%"],
-      ["EPS GAAP", 5.51, 7.81, 6.73, 13.72, 5.79, "-57.8%"],
-      ["Deuda Neta ($B)", 20.45, 17.63, 14.31, 5.49, 8.30, "+51.2%"]
+      [
+        "Revenue (B USD)",
+        "82.58",
+        "78.74",
+        "85.16",
+        "88.82",
+        "94.19",
+        "24.06",
+        "+6.0%"
+      ],
+      [
+        "Utilidad Neta (B USD)",
+        "14.71",
+        "20.88",
+        "35.15",
+        "14.07",
+        "26.80",
+        "5.24",
+        "+90.5%"
+      ],
+      [
+        "Margen Neto",
+        "17.8%",
+        "26.5%",
+        "41.3%",
+        "15.8%",
+        "28.5%",
+        "21.8%",
+        "+12.7pp"
+      ],
+      [
+        "EBITDA (B USD)",
+        "27.15",
+        "28.34",
+        "29.50",
+        "28.59",
+        "33.10",
+        "N/D",
+        "+15.8%"
+      ],
+      [
+        "FCF (B USD)",
+        "20.19",
+        "19.76",
+        "18.25",
+        "19.84",
+        "19.70",
+        "1.47",
+        "-0.7%"
+      ],
+      [
+        "EPS Diluido",
+        "5.51",
+        "7.81",
+        "13.72",
+        "5.79",
+        "11.03",
+        "2.14",
+        "+90.5%"
+      ],
+      [
+        "Deuda Neta (B USD)",
+        "20.45",
+        "17.63",
+        "5.49",
+        "8.30",
+        "21.73",
+        "N/D",
+        "+161.8%"
+      ]
     ]
   },
-  "notas_tabla": [
-    "* Revenue FY2020-FY2022 incluye segmento consumer (Kenvue: Band-Aid, Tylenol, Neutrogena). Kenvue fue separado mediante spin-off en agosto 2023. Los datos FY2023-FY2024 son pharma + MedTech unicamente. La caida de revenue de ~$95B a ~$85B en 2023 refleja esta desinversion, no deterioro operativo.",
-    "** Utilidad Neta FY2023 de $35.15B incluye ganancia extraordinaria de ~$20B por el IPO/spin-off de Kenvue. La utilidad operativa recurrente fue ~$9-10B. Utilidad FY2024 de $14.07B incluye cargos por litigios de talco.",
-    "*** Gross Profit FY2020-FY2022 corresponde a operaciones continuadas (excluye Kenvue), segun reexpresion en filings posteriores."
-  ],
   "kpis": [
     {
-      "label": "P/E Trailing (Adj)",
-      "value": "26.3x",
-      "signal": "yellow",
-      "note": "vs farma large-cap ~22-28x. GAAP P/E 39x inflado por cargos litigios FY2024",
-      "precio_base": 227.0,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "eps_ttm", "valor": 8.64}
+      "label": "P/E Trailing",
+      "value": "20.9x",
+      "signal": "green",
+      "note": "vs. sector Healthcare ~22x",
+      "precio_base": 230.68,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_ttm",
+        "valor": 11.03
+      }
     },
     {
       "label": "P/E Forward",
-      "value": "17.9x",
-      "signal": "green",
-      "note": "Consenso FY2025 EPS $12.71 -- atractivo vs sector a este nivel",
-      "precio_base": 227.0,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "eps_fwd", "valor": 12.71}
+      "value": "21.8x",
+      "signal": "yellow",
+      "note": "guidance FY2026 ~$10.60 EPS",
+      "precio_base": 230.68,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "eps_fwd",
+        "valor": 10.6
+      }
     },
     {
       "label": "EV/EBITDA",
-      "value": "19.8x",
+      "value": "17.6x",
       "signal": "yellow",
-      "note": "EV $566B / EBITDA FY2024 $28.6B -- premium justificado por calidad de pipeline"
+      "precio_base": 230.68,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "ev_ebitda",
+        "ebitda_b": 33.1,
+        "shares_m": 2429.4,
+        "deuda_neta_b": 21.73
+      }
     },
     {
       "label": "P/FCF",
-      "value": "27.5x",
+      "value": "28.4x",
       "signal": "yellow",
-      "note": "Market cap $546B / FCF $19.8B. FCF yield 3.6%",
-      "precio_base": 227.0,
-      "precio_fecha": "May-2026",
-      "fundamento": {"tipo": "p_fcf", "fcf_b": 19.84, "shares_m": 2407.2}
+      "precio_base": 230.68,
+      "precio_fecha": "2026-05-26",
+      "fundamento": {
+        "tipo": "p_fcf",
+        "fcf_b": 19.7,
+        "shares_m": 2429.4
+      }
     },
     {
-      "label": "Deuda/EBITDA",
-      "value": "0.29x",
-      "signal": "green",
-      "note": "Balance extremadamente solido -- net debt $8.3B vs EBITDA $28.6B"
+      "label": "Deuda Neta/EBITDA",
+      "value": "0.7x",
+      "signal": "green"
     },
     {
       "label": "ROE",
-      "value": "26.4%",
-      "signal": "green",
-      "note": "Retorno sobre capital solido para empresa de esta escala"
+      "value": "35.0%",
+      "signal": "green"
     },
     {
       "label": "ROIC",
-      "value": "17.4%",
-      "signal": "green",
-      "note": "NOPAT / (Equity + LT Debt). Supera ampliamente el costo de capital estimado ~8%"
+      "value": "20.4%",
+      "signal": "green"
     }
   ],
   "chart_ingresos": {
     "unit": "B USD",
-    "nota": "FY2020-FY2022 incluyen Kenvue consumer. FY2023-FY2024 son pharma+MedTech unicamente.",
     "data": [
-      {"label": "2020", "revenue": 82.58, "utilidad": 14.71},
-      {"label": "2021", "revenue": 93.78, "utilidad": 20.88},
-      {"label": "2022", "revenue": 94.94, "utilidad": 17.94},
-      {"label": "2023", "revenue": 85.16, "utilidad": 35.15},
-      {"label": "2024", "revenue": 88.82, "utilidad": 14.07}
+      {
+        "label": "FY2021",
+        "revenue": 82.58,
+        "utilidad": 14.71
+      },
+      {
+        "label": "FY2022",
+        "revenue": 78.74,
+        "utilidad": 20.88
+      },
+      {
+        "label": "FY2023",
+        "revenue": 85.16,
+        "utilidad": 35.15
+      },
+      {
+        "label": "FY2024",
+        "revenue": 88.82,
+        "utilidad": 14.07
+      },
+      {
+        "label": "FY2025",
+        "revenue": 94.19,
+        "utilidad": 26.8
+      }
     ],
     "series": [
-      {"key": "revenue", "name": "Revenue"},
-      {"key": "utilidad", "name": "Utilidad Neta"}
+      {
+        "key": "revenue",
+        "name": "Revenue"
+      },
+      {
+        "key": "utilidad",
+        "name": "Utilidad Neta"
+      }
     ]
   },
   "chart_margenes": {
-    "nota": "Margenes calculados sobre operaciones continuadas (excluye Kenvue en todos los anos).",
     "data": [
-      {"label": "2020", "bruto": 65.6, "operativo": 24.1, "neto": 17.8},
-      {"label": "2021", "bruto": 70.3, "operativo": 26.6, "neto": 26.5},
-      {"label": "2022", "bruto": 69.3, "operativo": 26.3, "neto": 22.4},
-      {"label": "2023", "bruto": 68.8, "operativo": 25.8, "neto": 41.3},
-      {"label": "2024", "bruto": 69.1, "operativo": 23.9, "neto": 15.8}
+      {
+        "label": "FY2021",
+        "bruto": 65.6,
+        "operativo": 24.1,
+        "neto": 17.8
+      },
+      {
+        "label": "FY2022",
+        "bruto": 70.3,
+        "operativo": 26.6,
+        "neto": 26.5
+      },
+      {
+        "label": "FY2023",
+        "bruto": 68.8,
+        "operativo": 25.8,
+        "neto": 41.3
+      },
+      {
+        "label": "FY2024",
+        "bruto": 69.1,
+        "operativo": 23.9,
+        "neto": 15.8
+      },
+      {
+        "label": "FY2025",
+        "bruto": 67.9,
+        "operativo": 27.2,
+        "neto": 28.5
+      }
     ],
     "series": [
-      {"key": "bruto", "name": "Margen Bruto"},
-      {"key": "operativo", "name": "Margen Operativo"},
-      {"key": "neto", "name": "Margen Neto"}
+      {
+        "key": "bruto",
+        "name": "Margen Bruto"
+      },
+      {
+        "key": "operativo",
+        "name": "Margen Operativo"
+      },
+      {
+        "key": "neto",
+        "name": "Margen Neto"
+      }
     ]
   },
   "capital_allocation": {
     "items": [
       {
         "label": "Dividendos",
-        "value": "$4.91/accion FY2024",
-        "nota": "60+ anos de incrementos consecutivos de dividendo. Total pagado FY2024: $11.8B. Yield actual ~2.2% a precio $227."
+        "value": "5.8B USD",
+        "nota": "62 anos consecutivos de incremento - Dividend King. Yield ~2.5%"
       },
       {
-        "label": "Recompra de acciones",
-        "value": "$2.4B en FY2024",
-        "nota": "Reduccion respecto a FY2022 ($6.0B) y FY2023 ($5.1B). Capital redirigido hacia M&A estrategico."
-      },
-      {
-        "label": "M&A pharma y MedTech",
-        "value": "Ongoing -- multiples adquisiciones",
-        "nota": "Shockwave Medical ($13.1B, cardiovascular), NM26 bispecific antibody deals, expansion pipeline oncologico Carvykti CAR-T."
+        "label": "Recompras",
+        "value": "5.95B USD",
+        "nota": "FY2025 intensificacion de buybacks aprovechando valuacion moderada"
       },
       {
         "label": "Capex",
-        "value": "$4.4B en FY2024",
-        "nota": "Inversion disciplinada en manufactura y capacidad R&D. Reinversion rate ~5% de revenue."
+        "value": "4.83B USD",
+        "nota": "Inversion en capacidad manufacturera biologicos y dispositivos"
+      },
+      {
+        "label": "M&A",
+        "value": "~14B USD",
+        "nota": "Intracel (13B) en 2024; pipeline de adquisiciones activo en oncologia"
       }
     ]
   },
   "comparacion_sector": {
-    "headers": ["Metrica", "JNJ FY2024", "Sector farma/medtech", "Posicion relativa"],
+    "headers": [
+      "Metrica",
+      "JNJ TTM",
+      "Sector Pharma ref.",
+      "Posicion relativa"
+    ],
     "rows": [
-      ["Gross Margin", "69.1%", "~65-75% farma pura", "En linea con peers pharma"],
-      ["Net Margin", "15.8%*", "~18-25% peers", "Deprimido por litigios -- normalizado ~22%"],
-      ["EBITDA Margin", "32.2%", "~30-35%", "En linea con grandes farmaceuticas"],
-      ["FCF Margin", "22.3%", "~20-28%", "Generacion de caja solida y consistente"],
-      ["Deuda/EBITDA", "0.29x", "~1-2x sector", "Muy por debajo del sector -- balance AAA"],
-      ["ROE", "26.4%", "~20-30%", "Competitivo con Abbott, Merck, Pfizer"],
-      ["P/E Forward", "17.9x", "~16-22x large-cap", "Precio razonable dado el pipeline"]
+      [
+        "Gross Margin",
+        "67.9%",
+        "~65%",
+        "Por encima del sector"
+      ],
+      [
+        "Margen Operativo",
+        "27.2%",
+        "~22%",
+        "Por encima del sector"
+      ],
+      [
+        "Revenue Growth",
+        "+6.0%",
+        "~4%",
+        "Por encima del sector"
+      ],
+      [
+        "P/E Forward",
+        "21.8x",
+        "~18x",
+        "Prima moderada justificada"
+      ],
+      [
+        "ROIC",
+        "20.4%",
+        "~15%",
+        "Por encima del sector"
+      ]
     ]
   },
   "deterioro": {
-    "veredicto": "No se detecta deterioro estructural -- transicion post-Kenvue completa con mejora de margenes",
-    "analisis": "La reduccion de revenue de ~$95B (FY2022) a ~$85B (FY2023) refleja exclusivamente el spin-off de Kenvue en agosto 2023, no una perdida de competitividad. Post-spinoff, JNJ opera con un perfil de margen superior: gross margin ~69% vs ~66-68% consolidado historico. La caida de utilidad neta en FY2024 ($14.07B vs $35.15B en FY2023) se explica por: (1) FY2023 incluia ganancia extraordinaria ~$20B por Kenvue IPO, y (2) FY2024 incluye cargos por litigios de talco. El FCF, que excluye estos efectos contables, fue $19.8B en FY2024, el mayor de los ultimos 5 anos.",
+    "veredicto": "Balance saludable con leverage moderado; FCF estable y margenes en recuperacion tras reservas de litigio de talco en 2024",
+    "analisis": "JNJ enfrento presion en 2024 por reservas de litigio de talco que deprimieron el margen neto a 15.8%. En 2025 el margen se normalizo al 28.5% con crecimiento del 6% en ingresos liderado por DARZALEX (+20%) y CARVYKTI. La deuda neta sube por adquisiciones pero el apalancamiento sigue bajo en 0.7x EBITDA. El FCF de ~20B USD anuales otorga flexibilidad para M&A y dividendos.",
     "items": [
-      {"metrica": "Revenue YoY (post-spinoff)", "valor": "+4.3%", "status": "ok"},
-      {"metrica": "Gross Margin FY2024", "valor": "69.1%", "status": "ok"},
-      {"metrica": "FCF FY2024", "valor": "$19.8B (record post-spinoff)", "status": "ok"},
-      {"metrica": "Darzalex revenue growth", "valor": "+19% YoY en FY2024", "status": "ok"},
-      {"metrica": "Stelara patent cliff", "valor": "Erosion por biosimilares desde 2025", "status": "warn"},
-      {"metrica": "Litigios talco", "valor": "Settlement pendiente ~$6.5B+", "status": "warn"},
-      {"metrica": "R&D expense FY2024", "valor": "$17.2B (+14% YoY)", "status": "ok"}
+      {
+        "metrica": "Revenue YoY",
+        "valor": "+6.0%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Bruto",
+        "valor": "67.9%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Operativo",
+        "valor": "27.2%",
+        "status": "ok"
+      },
+      {
+        "metrica": "Margen Neto",
+        "valor": "28.5%",
+        "status": "ok"
+      },
+      {
+        "metrica": "FCF YoY",
+        "valor": "-0.7%",
+        "status": "warn"
+      },
+      {
+        "metrica": "Deuda Neta",
+        "valor": "21.73B USD",
+        "status": "warn"
+      }
     ]
   },
   "flags": [
     {
       "level": "green",
-      "title": "Pipeline oncologico de primer nivel -- Darzalex liderando",
+      "title": "DARZALEX - Motor de crecimiento probado",
       "impact": "Alto",
-      "evidence": "Darzalex (daratumumab) supero $11B en ventas FY2024, con crecimiento ~19% YoY. Carvykti (CAR-T) en expansion acelerada para mieloma multiple. JNJ tiene uno de los pipelines oncologicos mas robustos en la industria.",
-      "context": "La oncologia representa el mayor motor de crecimiento de Innovative Medicine. Darzalex tiene indicaciones en multiple mieloma y amiloidosis AL. Carvykti obtuvo aprobaciones adicionales en 2024 para lineas de tratamiento mas tempranas."
+      "evidence": "DARZALEX supero 11B USD en ventas en FY2025, crecimiento del 20% YoY. Posicion #1 mundial en mieloma multiple.",
+      "context": "El producto tiene exclusividad hasta ~2030+ con extension de indicaciones. Sera el pilar principal de ingresos mientras CARVYKTI escala."
     },
     {
       "level": "green",
-      "title": "Dividend Aristocrat -- 60+ anos de incrementos consecutivos",
-      "impact": "Medio",
-      "evidence": "JNJ ha incrementado su dividendo cada ano desde 1963. FY2024 DPS: $4.91/accion (+4.5% vs FY2023 $4.70). Total dividendos pagados FY2024: $11.8B.",
-      "context": "La consistencia del dividendo es una senal de fortaleza del balance y visibilidad de flujos de caja. Con FCF de $19.8B y dividendos de $11.8B, el payout ratio sobre FCF es ~60%, sustentable y con margen de crecimiento."
-    },
-    {
-      "level": "green",
-      "title": "Balance AAA -- posicion financiera excepcional",
-      "impact": "Medio",
-      "evidence": "Deuda neta de solo $8.3B vs EBITDA $28.6B (0.29x). Caja y equivalentes: $24.1B. Una de las pocas empresas en el mundo con calificacion crediticia AAA de S&P.",
-      "context": "El balance fortalecido post-Kenvue (la empresa recibio ~$13.8B del spin-off) le da a JNJ capacidad para adquisiciones, buybacks y resistir litigios sin presion financiera. Shockwave Medical ($13.1B) fue adquirida en 2024 sin comprometer el balance."
-    },
-    {
-      "level": "yellow",
-      "title": "Stelara patent cliff 2025 -- biosimilares entrando al mercado",
+      "title": "Pipeline de oncologia de clase mundial",
       "impact": "Alto",
-      "evidence": "Stelara (ustekinumab, inmunologia) genero ~$10.1B en FY2023 y ~$6.5B en FY2024 (ya con impacto inicial). La exclusividad de patente expiro en enero 2025 en EE.UU. Multiples biosimilares aprobados por FDA.",
-      "context": "La erosion de Stelara sera el principal headwind de FY2025-2026. JNJ espera que Darzalex, Tremfya, Erleada y nuevos lanzamientos compensen la perdida. El mercado ya ha descontado parcialmente este riesgo en el precio actual."
+      "evidence": "CARVYKTI duplico ventas en FY2025. Mas de 15 indicaciones nuevas en fase 3. RYBREVANT+LAZCLUZE aprobado en NSCLC.",
+      "context": "La cartera de oncologia de JNJ es una de las mas profundas de la industria, reduciendo el riesgo de concentracion en un solo producto."
     },
     {
       "level": "yellow",
-      "title": "Litigios talco (Johnson Baby Powder) -- riesgo juridico latente",
+      "title": "Erosion de STELARA por biosimilares",
       "impact": "Medio",
-      "evidence": "Miles de demandas por cancer ovarico vinculado a talco en productos de consumo. JNJ intento resolver via bankruptcy de subsidiaria LTL Management -- bloqueado por cortes. Propuesta de settlement global de ~$9B+.",
-      "context": "Los litigios han impactado la utilidad neta FY2024. Aunque el negocio consumer (Kenvue) fue separado, la responsabilidad legal permanece en JNJ. La resolucion final podria ser un catalizador positivo al despejar la incertidumbre."
+      "evidence": "STELARA pierde exclusividad en EE.UU. en 2025. Se estima erosion de 3-4B USD en ingresos en 2026-2027.",
+      "context": "JNJ ya guio para impacto negativo en 2026. La caida se compensa parcialmente por crecimiento de DARZALEX y TREMFYA."
     },
     {
       "level": "yellow",
-      "title": "Aumento de gasto R&D -- inversion en pipeline o presion a margenes",
+      "title": "Incremento de deuda neta por M&A",
       "impact": "Medio",
-      "evidence": "R&D expense FY2024: $17.2B (+14% YoY vs $15.1B en FY2023). Incluye $1.84B de R&D adquirido in-process por adquisiciones.",
-      "context": "El incremento refleja inversion en el pipeline (Carvykti, bispecificos, MedTech cardiovascular). Presiona el margen operativo a corto plazo pero refuerza el crecimiento a largo plazo. La gestion disciplinada del R&D sera clave para mantener el retorno sobre la inversion."
+      "evidence": "Deuda neta salto de 8.3B a 21.7B USD por adquisicion de Intracel (~13B) en 2024.",
+      "context": "El balance sigue siendo grado de inversion (AAA) con cobertura de intereses muy comoda. El riesgo es la integracion y retorno sobre el capital desplegado."
+    },
+    {
+      "level": "red",
+      "title": "Litigio de talco - riesgo legal residual",
+      "impact": "Alto",
+      "evidence": "JNJ busca resolucion via Chapter 11 de LTL Management. Reservas acumuladas ~13B USD en FY2024.",
+      "context": "Si los tribunales rechazan el esquema de bancarrota sintetica, la exposicion potencial podria superar los 20B USD. Es el principal riesgo de cola."
     }
   ],
   "score": {
-    "score": 7.5,
+    "score": 7.8,
     "max": 10,
     "items": [
-      {"label": "Poder de fijacion de precios", "score": 8, "max": 10},
-      {"label": "Crecimiento de revenue (post-spinoff)", "score": 7, "max": 10},
-      {"label": "Calidad de margenes", "score": 8, "max": 10},
-      {"label": "Solidez del balance", "score": 9, "max": 10},
-      {"label": "Generacion de FCF", "score": 8, "max": 10},
-      {"label": "Visibilidad del pipeline", "score": 7, "max": 10},
-      {"label": "Riesgos juridicos y regulatorios", "score": 6, "max": 10}
+      {
+        "label": "Poder de fijacion de precios",
+        "score": 9,
+        "max": 10
+      },
+      {
+        "label": "Crecimiento de revenue",
+        "score": 7,
+        "max": 10
+      },
+      {
+        "label": "Calidad de margenes",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Solidez del balance",
+        "score": 8,
+        "max": 10
+      },
+      {
+        "label": "Generacion de FCF",
+        "score": 7,
+        "max": 10
+      }
     ]
   },
   "analisis_cualitativo": {
-    "estrategia": "Post spin-off de Kenvue, JNJ ejecuta una estrategia de pure-play en salud de alto valor: pharma de innovacion (oncologia, inmunologia, neurociencias) y MedTech (ortopedia, electrofisiologia cardiovascular, cirugia robotica). La empresa prioriza M&A bolt-on para llenar gaps en el pipeline y recompensas al accionista via dividendo creciente.",
-    "ventajas": "Pipeline oncologico con Darzalex como buque insignia ($11B+ de revenue), plataforma CAR-T con Carvykti para mieloma multiple, liderazgo en electrofisiologia con sistemas de ablacion cardiaca, balance AAA con capacidad M&A, dividendo ininterrumpido desde 1963, 60+ anos de incrementos consecutivos, diversificacion geografica global (~50% revenue ex-EE.UU.).",
-    "debilidades": "Exposicion a patent cliff de Stelara en 2025-2026, gasto R&D creciente presiona margenes a corto plazo, segmento MedTech con crecimiento mas moderado vs peers de dispositivos puros, litigios talco generan incertidumbre y gastos legales recurrentes.",
+    "estrategia": "JNJ ejecuta una estrategia de innovacion-centrica en healthcare, enfocada en oncologia, inmunologia y dispositivos medicos avanzados. Tras la escision de Kenvue, la empresa tiene mayor concentracion en margenes altos y pipeline de patentes. La estrategia de M&A busca complementar el pipeline interno con adquisiciones en terapias celulares y genicas.",
+    "ventajas": "(1) Escala global unica en 175+ paises con fuerza de ventas especializada. (2) Pipeline de clase mundial en oncologia con multiples blockbusters. (3) Dividend King con 62 anos de incremento consecutivo de dividendo. (4) Calificacion crediticia AAA. (5) Liderazgo en mieloma multiple con DARZALEX practicamente irremplazable a corto plazo.",
+    "debilidades": "(1) Exposicion a biosimilares de STELARA que erosionara ingresos en 2026-2027. (2) FCF estancado en rango 19-20B USD a pesar del crecimiento de ingresos. (3) Dependencia del mercado de EE.UU. (~55% de ingresos). (4) Pipeline CAR-T de alto riesgo de ejecucion.",
     "riesgos": [
-      "Erosion de Stelara por biosimilares en 2025+ -- ventas podrian caer 60-80% en 3 anos",
-      "Litigios talco -- settlement final incierto en monto y timing",
-      "Presion de precios de farmacos por politicas de negociacion (IRA en EE.UU.)",
-      "Riesgo de ejecucion en integracion de Shockwave Medical",
-      "Desaceleracion en MedTech por presion en presupuestos hospitalarios"
+      "Litigio de talco - rechazo del esquema Chapter 11 podria generar liability superior a 20B USD",
+      "Erosion acelerada de STELARA por biosimilares en EE.UU. y Europa en 2026-2027",
+      "Presion regulatoria en precios de medicamentos (IRA) en EE.UU.",
+      "Riesgo de integracion de Intracel y ejecucion de CARVYKTI en primera linea de mieloma multiple",
+      "Apreciacion del USD - ~45% de ingresos provienen fuera de EE.UU."
     ],
-    "inversiones_estrategicas": "Shockwave Medical ($13.1B -- cardiovascular, cierre 2024), expansion de capacidad manufacturera Carvykti CAR-T, adquisiciones de activos early-stage en oncologia y neurociencias, inversion en plataformas de ablacion cardiaca (electrofisiologia)."
+    "inversiones_estrategicas": "JNJ invirtio ~13B en la adquisicion de Intracel y ~14.8B en RD en FY2025. Tiene mas de 90 compuestos en el pipeline con enfasis en oncologia solida y liquida. CARVYKTI escala hacia indicaciones de primera linea en mieloma multiple, lo que podria duplicar el mercado direccionable en 2-3 anos."
   },
   "verdict": {
-    "status": "Mantener",
-    "score": "7.5/10",
-    "color": "yellow",
+    "status": "Comprar con Conviccion",
+    "score": "7.8/10",
+    "color": "green",
     "metrics": [
-      {"label": "Revenue FY2024", "value": "$88.8B"},
-      {"label": "Gross Margin", "value": "69.1%"},
-      {"label": "FCF FY2024", "value": "$19.8B"},
-      {"label": "FCF Yield", "value": "3.6%"},
-      {"label": "P/E Forward", "value": "17.9x"},
-      {"label": "Dividendo", "value": "$4.91/accion (+60 anos incremento)"}
+      {
+        "label": "Revenue TTM",
+        "value": "94.2B USD"
+      },
+      {
+        "label": "Margen Neto",
+        "value": "28.5%"
+      },
+      {
+        "label": "FCF Yield",
+        "value": "3.5%"
+      },
+      {
+        "label": "P/E Forward",
+        "value": "21.8x"
+      },
+      {
+        "label": "Crecimiento Rev.",
+        "value": "+6.0% YoY"
+      }
     ],
     "bullets": [
       {
-        "text": "**Pipeline oncologico --> Darzalex $11B+ y creciendo +19% YoY, Carvykti CAR-T en expansion: JNJ tiene uno de los pipelines de mayor calidad en la industria farmaceutica global.",
+        "text": "**DARZALEX + pipeline oncologia** - Motor de crecimiento sostenible con DARZALEX en 11B USD creciendo 20% YoY y CARVYKTI en escala acelerada. El portafolio reduce dependencia de un producto y da visibilidad a 5+ anos.",
         "type": "pro"
       },
       {
-        "text": "**Balance AAA + dividendo indestructible --> Net Debt/EBITDA de 0.29x, caja $24B, y 60+ anos de incrementos consecutivos de dividendo proporcionan una base de retorno solida independientemente de la cotizacion.",
+        "text": "**Balance AAA + Dividend King** - Con 62 anos de incremento de dividendo y ND/EBITDA de 0.7x, JNJ combina retorno de capital disciplinado con flexibilidad financiera para M&A estrategico.",
         "type": "pro"
       },
       {
-        "text": "**MedTech cardiovascular en expansion --> La adquisicion de Shockwave Medical posiciona a JNJ como lider en litotripsia intravascular. Electrofisiologia con ablacion cardiaca es un mercado de alto crecimiento secular.",
+        "text": "**Valuacion razonable** - A 20.9x P/E trailing y 3.5% FCF yield, JNJ cotiza con descuento respecto a su premium historico. El FCF yield supera el treasury de 10 anos, ofreciendo margen de seguridad real.",
         "type": "pro"
       },
       {
-        "text": "**Stelara cliff + litigios talco --> La perdida de exclusividad de Stelara (~$6.5B ya en FY2024, vs $10B en FY2023) sera el mayor headwind de FY2025-2026. Los litigios talco agregan incertidumbre al flujo de caja disponible.",
+        "text": "**Litigio de talco + erosion STELARA** - El riesgo legal podria generar evento de cola negativo si se rechaza el plan Chapter 11. Combinado con caida de STELARA en 2026-2027, el EPS forward podria revisarse a la baja.",
         "type": "con"
       }
     ]
@@ -257,34 +470,28 @@
     "items": [
       {
         "label": "Ingresos",
-        "texto": "NOTA CRITICA -- Discontinuidad por spin-off de Kenvue: Los ingresos FY2020 ($82.6B), FY2021 ($93.8B) y FY2022 ($94.9B) incluyen el segmento consumer (Band-Aid, Tylenol, Neutrogena) que fue separado como Kenvue en agosto 2023. La caida a $85.2B en FY2023 y la base de $88.8B en FY2024 reflejan exclusivamente Innovative Medicine (pharma) + MedTech. El crecimiento organico post-spinoff fue +4.3% en FY2024, impulsado por Darzalex (+19%), MedTech cardiovascular, y nuevos lanzamientos en inmunologia."
+        "texto": "JNJ reporto 94.2B USD en FY2025, crecimiento del 6.0% YoY impulsado por Innovative Medicine (+9%). Q1 2026 fue solido con 24.1B USD (+9.9% YoY), anticipando FY2026 de ~97-99B USD segun guidance."
       },
       {
         "label": "Margenes",
-        "texto": "Los margenes brutos post-Kenvue se ubican consistentemente en ~69%, superiores al 65-66% del negocio consolidado historico (el segmento consumer tenia margenes inferiores). El margen operativo de ~24-26% es ligeramente comprimido por el aumento de R&D ($17.2B en FY2024, +14% YoY). El margen neto FY2024 del 15.8% esta artificialmente deprimido por cargos de litigios; el margen neto normalizado se estima en ~20-22%."
-      },
-      {
-        "label": "EPS",
-        "texto": "El EPS GAAP muestra alta volatilidad: FY2023 de $13.72 incluia ~$8/accion de ganancia por Kenvue. FY2024 de $5.79 incluye cargos significativos de litigios. El EPS ajustado (ex-elementos especiales) fue $9.98 en FY2024 segun reportes de la compania, y el consenso para FY2025 es $12.71/accion, lo que implica crecimiento de +27% sobre el ajustado FY2024 a medida que el impacto de Stelara sea compensado por Darzalex y nuevos lanzamientos."
-      },
-      {
-        "label": "Balance",
-        "texto": "El balance es una fortaleza diferenciadora. Deuda neta de $8.3B vs EBITDA $28.6B (0.29x) es excepcionalmente bajo para una empresa de esta escala. La caja de $24.1B a cierre FY2024 proporciona capacidad para adquisiciones, settlements de litigios y buybacks. La deuda a largo plazo de $32.4B (subio vs $27.4B en FY2023 principalmente por financiamiento de Shockwave) no representa presion financiera dado el FCF y la calificacion AAA."
+        "texto": "El margen bruto se estabilizo en 67.9% tras items extraordinarios en 2023-2024. El margen operativo mejoro a 27.2% por apalancamiento operativo en farmaceuticos. El margen neto de 28.5% refleja la calidad del negocio post-Kenvue."
       },
       {
         "label": "Generacion de caja",
-        "texto": "El FCF de $19.84B en FY2024 es el mas alto de los ultimos 5 anos, superando el FCF pre-Kenvue. La compania destino $11.8B a dividendos y $2.4B a recompras en FY2024. Con FCF yield del 3.6% a precio actual de $227, JNJ ofrece retorno de caja competitivo vs bonos del Tesoro a 10 anos, mas el componente de crecimiento del negocio pharma."
+        "texto": "FCF estable en ~19-20B USD anuales, suficiente para dividendos (~5.8B), recompras (~6B) y M&A. La modesta caida de FCF (-0.7%) refleja mayor capex de expansion de capacidad biologicos. FCF yield de 3.5% atractivo para negocio AAA."
+      },
+      {
+        "label": "Balance",
+        "texto": "Calificacion crediticia AAA. Deuda neta sube a 21.7B por Intracel pero ND/EBITDA de 0.7x es muy manejable. Equity de 81.5B USD con ROE del 35%. La solidez del balance da cobertura ante eventualidades del litigio de talco."
+      },
+      {
+        "label": "Valuacion",
+        "texto": "A 230.68 USD, JNJ cotiza a 20.9x earnings trailing y 21.8x forward (guidance ~10.60 EPS FY2026 por impacto STELARA). EV/EBITDA de 17.6x en linea con sector pharma. FCF yield de 3.5% supera el treasury de 10 anos."
       },
       {
         "label": "Riesgos principales",
-        "texto": "El principal riesgo a monitorear es la erosion de Stelara (ustekinumab): las ventas cayeron de ~$10.1B (FY2023) a ~$6.5B (FY2024) y se espera mayor presion en FY2025 con entrada masiva de biosimilares en EE.UU. y Europa. Secundariamente, los litigios de talco (Johnson Baby Powder) representan una obligacion contingente cuya resolucion final podria costar $9B+ en settlements. La resolucion favorable de cualquiera de estos dos riesgos seria un catalizador positivo para la cotizacion."
+        "texto": "El litigio de talco es el riesgo de cola mas relevante con exposicion potencial >20B USD. La erosion de STELARA impactara EPS en 2026-2027. La apreciacion del USD puede afectar revenues internacionales. La integracion de Intracel y ejecucion de CARVYKTI en primera linea son riesgos operativos clave a monitorear."
       }
     ]
-  },
-  "parrafos_gratis": 9,
-  "ticker": "JNJ",
-  "empresa": "Johnson & Johnson",
-  "sector": "Pharma + MedTech",
-  "fecha_reporte": "2025-02-13",
-  "updated_at": "2026-05-12"
+  }
 }
