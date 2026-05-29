@@ -644,16 +644,31 @@ export default function PortafolioPage() {
         const spyR = await fetch(`/api/historico/SPY?desde=${desde}`).then(r => r.json()).catch(() => null);
         const newSpyMap = {};
         (spyR?.series || []).forEach(d => { newSpyMap[d.fecha] = d.precio; });
-        const newSpyInicial = spyR?.series?.[0]?.precio;
         setSpyMap(newSpyMap);
+
+        // Busca el precio de SPY más cercano (±3 días) para manejar feriados y fines de semana
+        function nearestSpy(map, date) {
+          if (map[date]) return map[date];
+          for (let i = 1; i <= 4; i++) {
+            const d = new Date(date + 'T12:00:00');
+            const prev = new Date(d); prev.setDate(d.getDate() - i);
+            const next = new Date(d); next.setDate(d.getDate() + i);
+            if (map[prev.toISOString().slice(0,10)]) return map[prev.toISOString().slice(0,10)];
+            if (map[next.toISOString().slice(0,10)]) return map[next.toISOString().slice(0,10)];
+          }
+          return null;
+        }
+
+        // El precio inicial de SPY = primer precio disponible cerca del primer NAV
+        const newSpyInicial = nearestSpy(newSpyMap, navRows[0].report_date);
         setSpyInicial(newSpyInicial);
 
-        // Normalizar ambas líneas desde el primer día → ambas arrancan en 0%
+        // Ambas líneas arrancan en 0% desde el primer día disponible
         const buildChart = (rows, spMap, spInit, navInit) => rows.map(n => {
-          const portPct   = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
-          const spyPrecio = spMap[n.report_date];
-          const spyPct    = spInit && spyPrecio ? ((spyPrecio - spInit) / spInit * 100) : null;
-          return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
+          const portPct  = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
+          const spPrecio = nearestSpy(spMap, n.report_date);
+          const spPct    = spInit && spPrecio ? ((spPrecio - spInit) / spInit * 100) : null;
+          return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spPct != null ? parseFloat(spPct.toFixed(2)) : null };
         });
 
         const navInit = navRows[0]?.total_nav;
@@ -677,14 +692,25 @@ export default function PortafolioPage() {
     if (!filteredNav.length) { setChartData(all); return; }
 
     // Re-normalizar ambas líneas desde el primer punto del período → ambas en 0%
+    function nearestSpy(map, date) {
+      if (map[date]) return map[date];
+      for (let i = 1; i <= 4; i++) {
+        const d = new Date(date + 'T12:00:00');
+        const prev = new Date(d); prev.setDate(d.getDate() - i);
+        const next = new Date(d); next.setDate(d.getDate() + i);
+        if (map[prev.toISOString().slice(0,10)]) return map[prev.toISOString().slice(0,10)];
+        if (map[next.toISOString().slice(0,10)]) return map[next.toISOString().slice(0,10)];
+      }
+      return null;
+    }
     const firstDate  = filteredNav[0].report_date;
     const navInit    = filteredNav[0].total_nav;
-    const newSpyInit = spMap[firstDate] || spInit;
+    const newSpyInit = nearestSpy(spMap, firstDate) || spInit;
     const filtered = filteredNav.map(n => {
-      const portPct   = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
-      const spyPrecio = spMap[n.report_date];
-      const spyPct    = newSpyInit && spyPrecio ? ((spyPrecio - newSpyInit) / newSpyInit * 100) : null;
-      return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spyPct != null ? parseFloat(spyPct.toFixed(2)) : null };
+      const portPct  = navInit ? ((n.total_nav - navInit) / navInit * 100) : 0;
+      const spPrecio = nearestSpy(spMap, n.report_date);
+      const spPct    = newSpyInit && spPrecio ? ((spPrecio - newSpyInit) / newSpyInit * 100) : null;
+      return { fecha: n.report_date, portafolio: parseFloat(portPct.toFixed(2)), sp500: spPct != null ? parseFloat(spPct.toFixed(2)) : null };
     });
     setChartData(filtered);
   }
@@ -862,8 +888,8 @@ export default function PortafolioPage() {
                   labelFormatter={v => { const d = new Date(v + 'T12:00:00'); return d.toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' }); }}
                   formatter={(v, name) => [`${v >= 0 ? '+' : ''}${v.toFixed(2)}%`, name === 'portafolio' ? 'Murza' : 'S&P 500']}
                 />
-                <Line type="monotone" dataKey="portafolio" stroke="#A08040" strokeWidth={2} dot={false} />
-                <Line type="monotone" dataKey="sp500" stroke="#6366f1" strokeWidth={1.5} dot={false} strokeDasharray="4 4" />
+                <Line type="monotone" dataKey="portafolio" stroke="#A08040" strokeWidth={2} dot={false} connectNulls />
+                <Line type="monotone" dataKey="sp500" stroke="#6366f1" strokeWidth={1.5} dot={false} strokeDasharray="4 4" connectNulls />
               </LineChart>
             </ResponsiveContainer>
           </div>
