@@ -831,69 +831,6 @@ export default function PortafolioPage() {
           ))}
         </div>
 
-        {/* ── Gráfica NAV vs S&P 500 ───────────────────────────────────────── */}
-        {chartData.length >= 2 && (
-          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '20px 20px 10px', marginBottom: 28 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 10 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                  Rendimiento vs S&P 500
-                </div>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{ width: 10, height: 3, background: '#A08040', display: 'inline-block', borderRadius: 2 }} />
-                  <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Murza</span>
-                </span>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{ width: 10, height: 3, background: '#6366f1', display: 'inline-block', borderRadius: 2, borderTop: '2px dashed #6366f1' }} />
-                  <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>S&P 500</span>
-                </span>
-              </div>
-              {/* Botones de período */}
-              <div style={{ display: 'flex', gap: 4 }}>
-                {['1S', '1M', '3M', '6M', '1A', 'Todo'].map(p => (
-                  <button key={p} onClick={() => {
-                    setChartPeriod(p);
-                    applyPeriod(p, allChartData, spyMap, spyInicial, navData);
-                  }} style={{
-                    padding: '3px 10px', borderRadius: 6, fontSize: 11, fontWeight: 600,
-                    border: `1px solid ${chartPeriod === p ? 'var(--gold)' : 'var(--border)'}`,
-                    background: chartPeriod === p ? 'rgba(160,128,64,0.12)' : 'transparent',
-                    color: chartPeriod === p ? 'var(--gold)' : 'var(--text-muted)',
-                    cursor: 'pointer',
-                  }}>
-                    {p}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <ResponsiveContainer width="100%" height={200}>
-              <LineChart data={chartData}>
-                <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
-                <XAxis
-                  dataKey="fecha"
-                  tick={{ fill: 'var(--text-faint)', fontSize: 10 }}
-                  axisLine={false} tickLine={false}
-                  interval={Math.max(1, Math.floor(chartData.length / 6))}
-                  tickFormatter={v => {
-                    const d = new Date(v + 'T12:00:00');
-                    const mes = d.toLocaleDateString('es-MX', { month: 'short' });
-                    const anio = String(d.getFullYear()).slice(2);
-                    return `${mes.charAt(0).toUpperCase() + mes.slice(1, 3)} '${anio}`;
-                  }}
-                />
-                <YAxis tick={{ fill: 'var(--text-faint)', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`} />
-                <ReferenceLine y={0} stroke="var(--border)" strokeDasharray="4 4" />
-                <Tooltip
-                  contentStyle={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }}
-                  labelFormatter={v => { const d = new Date(v + 'T12:00:00'); return d.toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' }); }}
-                  formatter={(v, name) => [`${v >= 0 ? '+' : ''}${v.toFixed(2)}%`, name === 'portafolio' ? 'Murza' : 'S&P 500']}
-                />
-                <Line type="monotone" dataKey="portafolio" stroke="#A08040" strokeWidth={2} dot={false} connectNulls />
-                <Line type="monotone" dataKey="sp500" stroke="#6366f1" strokeWidth={1.5} dot={false} strokeDasharray="4 4" connectNulls />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        )}
 
         {/* Nota de paper trading */}
         <div style={{
